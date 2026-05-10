@@ -1,0 +1,38 @@
+name: Bot Quet Socolive
+
+on:
+  schedule:
+    - cron: '*/30 * * * *' # Cứ 30 phút tự chạy 1 lần
+  workflow_dispatch: # Nút bấm chạy thủ công bằng tay
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 1. Lấy code từ kho về
+        uses: actions/checkout@v4
+
+      - name: 2. Cài đặt Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: 3. Cài đặt Playwright
+        run: |
+          pip install playwright
+          playwright install chromium
+
+      - name: 4. Kích hoạt Sát thủ quét link
+        run: python main.py
+
+      - name: 5. Lưu thành quả lên GitHub
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git add socolive_live.m3u
+          git commit -m "Bot auto update link M3U" || exit 0
+          git push
