@@ -1,100 +1,132 @@
-from curl_cffi import requests
-from bs4 import BeautifulSoup
+import asyncio
+from playwright.async_api import async_playwright
 import re
 
-# --- CẤU HÌNH SOCOLIVE ---
-DOMAIN_URL = "https://socolivee.cv"
-UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+# --- CẤU HÌNH ---
+TARGET_URL = "https://socolivee.cv"
+CONCURRENCY_LIMIT = 5 # Số trận mở cùng lúc (để 5 cho an toàn, không bị GitHub khóa)
+UA = "Mozilla/5.0_Windows_NT_10.0"
 
-def get_matches(domain_url):
-    """Quét trang chủ Socolive để lấy link trận đấu"""
-    print(f"🚀 Đang thả cào cào vào Socolive: {domain_url}")
-    try:
-        # Dùng lớp vỏ Chrome110 của curl_cffi để qua mặt khiên Cloudflare
-        res = requests.get(domain_url, impersonate="chrome110", timeout=20)
-        soup = BeautifulSoup(res.text, 'html.parser')
-        matches = []
+async def fetch_m3u8(context, match, sem):
+    """Nhiệm vụ: Mở 1 trận, chộp link M3U8 rồi đóng lại thật nhanh"""
+    async with sem:
+        print(f"-> Đang áp sát: {match['title'][:40]}...")
+        page = await context.new_page()
         
-        for a_tag in soup.find_all('a', href=True):
-            href = a_tag['href']
-            # Bắt đúng cấu trúc link trực tiếp của Soco
-            if '/truc-tiep/' in href or '/room/' in href:
-                full_link = href if href.startswith('http') else f"{domain_url.rstrip('/')}{href}"
-                
-                # Bóc tên trận đấu
-                raw_name = a_tag.get('title') or a_tag.text.strip()
-                clean_name = re.sub(r'\s+', ' ', raw_name).strip()
-                
-                # Lọc bỏ mấy nút rác
-                if len(clean_name) > 5 and "Xem ngay" not in clean_name:
-                    if not any(m['url'] == full_link for m in matches):
-                        matches.append({'url': full_link, 'title': clean_name})
-                        
-        return matches
-    except Exception as e:
-        print(f"❌ Lỗi quét trang chủ: {e}")
-        return []
+        # Bóp cổ mạng: Chỉ cho phép tải text và script để tìm link, chặn 100% video/ảnh
+        await page.route("**/*", lambda route: route.continue_() if route.request.resource_type in ["document", "script", "xhr", "fetch"] else route.abort())
 
-def extract_m3u8(url):
-    """Truy cập từng trận để bắt sống link M3U8"""
-    try:
-        res = requests.get(url, impersonate="chrome110", timeout=15)
-        html = res.text
-        streams = []
-        seen = set()
+        m3u8_url = None
         
-        # Quét sạch các đoạn text chứa đuôi .m3u8 trong mã nguồn
-        for l in re.findall(r'(https?://[^\s"\'<>]*\.m3u8[^\s"\'<>]*)', html):
-            clean_link = l.replace('\\/', '/').replace('\\', '')
+        def handle_request(request):
+            nonlocal m3u8_url
+            url = request.url
+            # Lọc luồng xịn, bỏ qua quảng cáo
+            if ".m3u8" in url and "ad" not in url.lower() and "lulu" not in url.lower():
+                m3u8_url = url
+
+        page.on("request", handle_request)
+
+        try:
+            # Nhảy vào trận đấu
+            await page.goto(match['url'], wait_until="domcontentloaded", timeout=15000)
             
-            # Sút bay mấy luồng quảng cáo (ad, lulu)
-            if clean_link not in seen and "ad" not in clean_link.lower() and "lulu" not in clean_link.lower():
-                streams.append(clean_link)
-                seen.add(clean_link)
-                
-        return streams
-    except Exception as e:
-        return []
+            # Vòng lặp chờ thông minh: Cứ 0.5s check 1 lần. Thấy link M3U8 là RÚT LUI NGAY lập tức, không chờ load hết trang.
+            for _ in range(15):
+                if m3u8_url:
+                    break
+                await page.wait_for_timeout(500)
+        except:
+            pass
+        finally:
+            await page.close() # Xong việc đóng tab ngay cho nhẹ RAM
 
-def main():
-    matches = get_matches(DOMAIN_URL)
-    
-    if not matches: 
-        print("❌ Socolive hiện tại không có trận nào hoặc nó đã đổi tên miền.")
-        return
+        if m3u8_url:
+            match['m3u8'] = m3u8_url
+            return match
+        return None
 
-    playlist = "#EXTM3U\n"
-    count = 0
-    print(f"✅ Quét xong trang chủ, túm được {len(matches)} trận. Bắt đầu lôi luồng M3U8...")
-    
-    for m in matches:
-        print(f"-> Đang xử lý: {m['title'][:50]}...")
-        links = extract_m3u8(m['url'])
+async def main():
+    print("🥷 KÍCH HOẠT CHIẾN THUẬT: CÀN QUÉT ĐA LUỒNG SIÊU TỐC...")
+    async with async_playwright() as p:
+        browser = await p.chromium.launch(
+            headless=True,
+            args=[
+                '--disable-blink-features=AutomationControlled', 
+                '--no-sandbox', 
+                '--mute-audio'
+            ]
+        )
+        context = await browser.new_context(viewport={'width': 1280, 'height': 720})
+        page = await context.new_page()
         
-        if links:
-            # Lấy luồng cuối cùng (thường là luồng ổn định nhất sau khi né quảng cáo)
-            final_url = links[-1]
-            
-            # Đóng gói chuẩn chỉ lên Tivi
-            base_domain = "/".join(DOMAIN_URL.split('/')[:3])
-            playlist += f'#EXTINF:-1 tvg-logo="{DOMAIN_URL}/logo.png", Soco: {m["title"]}\n'
-            playlist += f'#EXTVLCOPT:http-user-agent={UA}\n'
-            playlist += f'#EXTVLCOPT:http-referer={base_domain}/\n'
-            playlist += f'#EXTVLCOPT:http-origin={base_domain}\n'
-            
-            # Ép chặt Referer vào link để chống văng IP
-            if "|" not in final_url:
-                final_url += f"|Referer={base_domain}/&Origin={base_domain}&User-Agent={UA}"
-            
-            playlist += f'{final_url}\n'
-            count += 1
-            
-    if count > 0:
-        with open("socolive_live.m3u", "w", encoding="utf-8") as f:
-            f.write(playlist)
-        print(f"\n🎉 HOÀN TẤT VỚI TỐC ĐỘ BÀN THỜ! Đã cắm cờ {count} trận Socolive.")
-    else:
-        print("\n❌ Quét xong nhưng không bóc được link M3U8 nào!")
+        # Ngắt quảng cáo ở trang chủ
+        await page.route("**/*", lambda route: route.continue_() if route.request.resource_type in ["document", "script"] else route.abort())
+
+        print(f"👉 Đang thâm nhập Socolive: {TARGET_URL}")
+        try:
+            await page.goto(TARGET_URL, wait_until="domcontentloaded", timeout=30000)
+            await page.wait_for_timeout(3000)
+        except Exception as e:
+            print("❌ Lỗi mạng khi vào trang chủ.")
+            await browser.close()
+            return
+
+        print("🔍 Đang đếm số lượng trận đấu...")
+        links = await page.evaluate("""() => {
+            let items = [];
+            document.querySelectorAll('a').forEach(a => {
+                let href = a.href;
+                if(href.includes('/truc-tiep/') || href.includes('/room/')) {
+                    let title = a.title || a.innerText.replace(/\\s+/g, ' ').trim();
+                    if(title.length > 5 && !title.includes('Xem ngay') && !items.find(i => i.url === href)) {
+                        items.push({url: href, title: title});
+                    }
+                }
+            });
+            return items;
+        }""")
+
+        await page.close()
+
+        if not links:
+            print("❌ Trang web hiện không có trận nào hoặc nó giấu link!")
+            await browser.close()
+            return
+
+        print(f"✅ Tóm được {len(links)} trận. Bắt đầu ĐÁNH ÚP ĐỒNG LOẠT...")
+        
+        # Tạo hàng đợi, cho phép 5 tab chạy song song
+        sem = asyncio.Semaphore(CONCURRENCY_LIMIT)
+        tasks = [fetch_m3u8(context, m, sem) for m in links]
+        
+        # Kích hoạt chạy đồng loạt tất cả các trận
+        results = await asyncio.gather(*tasks)
+
+        # Xử lý thành phẩm
+        playlist = "#EXTM3U\n"
+        count = 0
+        
+        for res in results:
+            if res and 'm3u8' in res:
+                final_url = res['m3u8']
+                origin = TARGET_URL.rstrip('/')
+                fixed_url = f"{final_url}|Referer={TARGET_URL}/&Origin={origin}&User-Agent={UA}"
+                
+                playlist += f'#EXTINF:-1 tvg-logo="{TARGET_URL}/logo.png", Soco: {res["title"]}\n'
+                playlist += f'#EXTVLCOPT:http-referer={TARGET_URL}/\n'
+                playlist += f'#EXTVLCOPT:http-user-agent={UA}\n'
+                playlist += f'{fixed_url}\n'
+                count += 1
+
+        if count > 0:
+            with open("socolive_live.m3u", "w", encoding="utf-8") as f:
+                f.write(playlist)
+            print(f"\n🎉 QUÁ ĐỈNH! Quét xong {count} trận trong chớp mắt.")
+        else:
+            print("\n❌ Không bắt được luồng nào!")
+
+        await browser.close()
 
 if __name__ == "__main__":
-    main()
+    asyncio.run(main())
