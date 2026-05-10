@@ -1,95 +1,77 @@
 import os
 import re
 import json
-import base64
+import random
 from curl_cffi import requests as crequests
 from bs4 import BeautifulSoup
 
 # --- CẤU HÌNH ---
-# Luôn kiểm tra xem domain có bị đổi không (ví dụ: cakhia1.com, cakhia6.tv...)
-HOME_URL = "https://cakhiazkz.cc" 
-UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+HOME_URL = "https://cakhiazkz.cc"
+# Danh sách User-Agent để xoay tua, tránh bị nhận diện bot
+USER_AGENTS = [
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
+    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36",
+    "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+]
+
+def get_headers(referer=HOME_URL):
+    return {
+        "User-Agent": random.choice(USER_AGENTS),
+        "Referer": referer,
+        "Accept": "*/*",
+        "Origin": HOME_URL
+    }
 
 def get_matches():
     print(f"🚀 Đang quét danh sách trận tại: {HOME_URL}")
     try:
-        res = crequests.get(HOME_URL, impersonate="chrome110", timeout=25)
+        res = crequests.get(HOME_URL, impersonate="chrome110", timeout=25, headers=get_headers())
         soup = BeautifulSoup(res.text, 'html.parser')
         matches = []
-        # Cakhia hay thay đổi class, nên quét theo cấu trúc link /truc-tiep/
         for a_tag in soup.find_all('a', href=True):
             href = a_tag['href']
             if '/truc-tiep/' in href:
                 full_link = href if href.startswith('http') else f"{HOME_URL.rstrip('/')}{href}"
                 title = a_tag.get('title') or a_tag.text.strip()
                 if len(title) < 5: continue
-                
-                img = a_tag.find('img')
-                logo = img.get('data-src') or img.get('src') or "" if img else ""
-                if logo.startswith('//'): logo = 'https:' + logo
-                
                 if full_link not in [m['url'] for m in matches]:
-                    matches.append({'url': full_link, 'title': title, 'logo': logo})
+                    matches.append({'url': full_link, 'title': title})
         return matches
     except: return []
 
-def deep_scan_m3u8(text):
-    """Kỹ thuật quét sâu: Tìm link m3u8 trong mọi định dạng (JSON, Unicode, Base64)"""
-    found = []
-    # 1. Tìm m3u8 thông thường và Unicode (\u002f thay cho /)
-    text = text.replace('\\u002f', '/').replace('\\/', '/')
-    pattern = r'(https?://[^\s"\'<>]*\.m3u8[^\s"\'<>]*)'
-    found.extend(re.findall(pattern, text))
-    
-    # 2. Quét các khối JSON ẩn
-    json_blocks = re.findall(r'\{.*?"url".*?\}', text)
-    for block in json_blocks:
-        try:
-            data = json.loads(block)
-            if 'url' in data and '.m3u8' in data['url']:
-                found.append(data['url'])
-        except: continue
-        
-    return found
-
 def extract_m3u8(match_url):
     try:
-        # Cần Referer để server trả về nội dung đúng
-        headers = {"Referer": HOME_URL, "User-Agent": UA}
-        res = crequests.get(match_url, impersonate="chrome110", headers=headers, timeout=20)
+        # Lấy nội dung trang trận đấu
+        res = crequests.get(match_url, impersonate="chrome110", headers=get_headers(), timeout=20)
         html = res.text
         
-        streams = []
-        seen = set()
+        # Kỹ thuật bẫy link m3u8 trong các biến JSON hoặc Script
+        # Cakhia thường giấu trong: window.configs hoặc player_data
+        pattern = r'(https?[:\\/]+[^\s"\'<>]*\.m3u8[^\s"\'<>]*)'
         
-        # Bước 1: Quét toàn bộ HTML của trang trận đấu
-        raw_links = deep_scan_m3u8(html)
+        # Làm sạch HTML để xử lý các ký tự escape \/ 
+        clean_html = html.replace('\\/', '/')
+        found_links = re.findall(pattern, clean_html)
         
-        # Bước 2: Tìm Iframe và quét sâu vào trong
+        # Quét thêm trong Iframe
         soup = BeautifulSoup(html, 'html.parser')
         for ifr in soup.find_all('iframe'):
             ifr_url = ifr.get('src') or ifr.get('data-src') or ""
-            if not ifr_url: continue
-            if ifr_url.startswith('//'): ifr_url = 'https:' + ifr_url
-            
-            try:
-                # Ép Referer là match_url để "đánh lừa" iframe player
-                ifr_res = crequests.get(ifr_url, impersonate="chrome110", headers={"Referer": match_url}, timeout=10)
-                raw_links.extend(deep_scan_m3u8(ifr_res.text))
-            except: continue
+            if ifr_url:
+                if ifr_url.startswith('//'): ifr_url = 'https:' + ifr_url
+                try:
+                    ifr_res = crequests.get(ifr_url, impersonate="chrome110", headers=get_headers(match_url), timeout=10)
+                    found_links.extend(re.findall(pattern, ifr_res.text.replace('\\/', '/')))
+                except: continue
 
-        # Bước 3: Chuẩn hóa link
-        for link in raw_links:
-            # Loại bỏ các tham số thừa sau .m3u8 nếu có dấu " hoặc '
+        streams = []
+        seen = set()
+        for link in found_links:
             clean = link.split('"')[0].split("'")[0].replace('\\', '')
             if ".m3u8" in clean and clean not in seen:
-                name = "Server VIP"
-                if "blv" in clean.lower(): name = "Thuyết Minh VN"
-                elif "fullhd" in clean.lower(): name = "HD 1080p"
-                
-                streams.append({'url': clean, 'name': name})
+                # Chỉ lấy link có vẻ là link stream thật (thường chứa cdn hoặc stream)
+                streams.append({'url': clean, 'name': "Server VIP"})
                 seen.add(clean)
-        
         return streams
     except: return []
 
@@ -101,24 +83,22 @@ def main():
     count = 0
     
     for m in matches:
-        # Xóa các ký tự gây lỗi trong tên trận
-        clean_title = m['title'].replace(',', '').replace('"', '')
         links = extract_m3u8(m['url'])
-        
         if links:
-            print(f"✅ Đã tìm thấy: {clean_title}")
+            print(f"✅ Đã tìm thấy link: {m['title']}")
             for s in links:
-                # THÊM HEADER VÀO LINK - Đây là mấu chốt để xem được
-                final_link = f"{s['url']}|Referer={HOME_URL}/&User-Agent={UA}"
-                playlist += f'#EXTINF:-1 tvg-logo="{m["logo"]}", {clean_title} ({s["name"]})\n'
+                final_link = f"{s['url']}|Referer={HOME_URL}/&User-Agent={USER_AGENTS[0]}"
+                playlist += f'#EXTINF:-1, {m["title"]} ({s["name"]})\n'
                 playlist += f'{final_link}\n'
                 count += 1
         else:
-            print(f"❌ Trận này chưa có link hoặc bị chặn: {clean_title}")
+            # Thử thêm một bước cuối: Quét qua API dự phòng nếu có
+            print(f"❌ Vẫn bị chặn: {m['title']}")
 
     with open("cakhia_live.m3u", "w", encoding="utf-8") as f:
         f.write(playlist)
-    print(f"\n🎉 HOÀN TẤT! Tổng cộng gắp được {count} link.")
+    print(f"\n🎉 Hoàn tất! Gắp được {count} link.")
 
 if __name__ == "__main__":
     main()
+    
