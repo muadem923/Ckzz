@@ -1,179 +1,417 @@
-import asyncio
-from playwright.async_api import async_playwright
-import re
-
-# --- CẤU HÌNH ---
-TARGET_URL = "https://socolivee.cv"
-CONCURRENCY_LIMIT = 5 
-UA = "Mozilla/5.0_Windows_NT_10.0"
-
-async def fetch_stream(context, match, sem):
-    """Nhiệm vụ: Mở 1 trận, chộp link FLV/M3U8, tên BLV và vớt Logo nếu trang chủ hụt"""
-    async with sem:
-        print(f"-> Đang áp sát: {match['raw_title'][:40]}...")
-        page = await context.new_page()
-        
-        await page.route("**/*", lambda route: route.continue_() if route.request.resource_type in ["document", "script", "xhr", "fetch"] else route.abort())
-
-        stream_url = None
-        
-        def handle_request(request):
-            nonlocal stream_url
-            url = request.url
-            if (".flv" in url or ".m3u8" in url) and "ad" not in url.lower() and "lulu" not in url.lower():
-                stream_url = url
-
-        page.on("request", handle_request)
-
-        try:
-            await page.goto(match['url'], wait_until="domcontentloaded", timeout=15000)
-            
-            blv_name = await page.evaluate("""() => {
-                let el = document.querySelector('.blv-name, .player-info-name, .name-blv, .chat-item-name');
-                return el ? el.innerText.trim() : '';
-            }""")
-            match['blv'] = blv_name
-            
-            # LỚP BẢO MẬT 2: MÓC LOGO TỪ TRONG PHÒNG NẾU BÊN NGOÀI KHÔNG THẤY
-            if not match.get('logo'):
-                room_logo = await page.evaluate("""() => {
-                    let imgs = document.querySelectorAll('.team-logo img, .match-info img, .logo img');
-                    for(let i of imgs) {
-                        let src = i.getAttribute('data-src') || i.src || "";
-                        if(src && !src.includes('base64') && !src.includes('icon') && !src.includes('.svg')) {
-                            return src;
-                        }
-                    }
-                    return "";
-                }""")
-                if room_logo:
-                    match['logo'] = room_logo
-
-            for _ in range(15):
-                if stream_url:
-                    break
-                await page.wait_for_timeout(500)
-        except:
-            pass
-        finally:
-            await page.close() 
-
-        if stream_url:
-            match['stream_url'] = stream_url
-            return match
-        return None
-
-async def main():
-    print("🥷 KHỞI ĐỘNG: BẮT FLV/M3U8 VÀ LỘT BỎ LỚP NGỤY TRANG LOGO...")
-    async with async_playwright() as p:
-        browser = await p.chromium.launch(
-            headless=True,
-            args=['--disable-blink-features=AutomationControlled', '--no-sandbox', '--mute-audio']
-        )
-        context = await browser.new_context(viewport={'width': 1280, 'height': 720})
-        page = await context.new_page()
-        
-        await page.route("**/*", lambda route: route.continue_() if route.request.resource_type in ["document", "script"] else route.abort())
-
-        print(f"👉 Đang thâm nhập Socolive: {TARGET_URL}")
-        try:
-            await page.goto(TARGET_URL, wait_until="domcontentloaded", timeout=30000)
-            await page.wait_for_timeout(3000)
-        except Exception as e:
-            print("❌ Lỗi mạng khi vào trang chủ.")
-            await browser.close()
-            return
-
-        print("🔍 Đang đếm trận đấu và phá ngụy trang Logo...")
-        links = await page.evaluate("""() => {
-            let items = [];
-            document.querySelectorAll('a').forEach(a => {
-                let href = a.href;
-                if(href.includes('/truc-tiep/') || href.includes('/room/')) {
-                    let text = a.innerText || "";
-                    
-                    if(!text.includes('Bóng rổ') && !text.includes('Tennis') && !text.includes('Cầu lông')) {
-                        
-                        // LỚP BẢO MẬT 1: PHÁ GIẤU LOGO TẠI TRANG CHỦ
-                        let logo = "";
-                        let container = a.closest('div[class*="item"]') || a.closest('div');
-                        if (container) {
-                            let imgs = container.querySelectorAll('img');
-                            for (let img of imgs) {
-                                let src = img.getAttribute('data-src') || img.getAttribute('data-original') || img.src || "";
-                                // Sút bay ảnh mồi (base64) và các icon linh tinh
-                                if(src && !src.includes('data:image') && !src.includes('base64') && !src.includes('icon') && !src.includes('gif')) {
-                                    logo = src;
-                                    break; 
-                                }
-                            }
-                        }
-                        
-                        let title = a.title || text.replace(/\\s+/g, ' ').trim();
-                        if(title.length > 5 && !items.find(i => i.url === href)) {
-                            items.push({url: href, raw_title: title, logo: logo});
-                        }
-                    }
-                }
-            });
-            return items;
-        }""")
-
-        await page.close()
-
-        if not links:
-            print("❌ Trang web hiện không có trận nào hoặc giấu link!")
-            await browser.close()
-            return
-
-        print(f"✅ Tóm được {len(links)} trận. Bắt đầu lôi cổ FLV và Logo ra ngoài...")
-        
-        sem = asyncio.Semaphore(CONCURRENCY_LIMIT)
-        tasks = [fetch_stream(context, m, sem) for m in links]
-        results = await asyncio.gather(*tasks)
-
-        playlist = "#EXTM3U\n"
-        count = 0
-        
-        for res in results:
-            if res and 'stream_url' in res:
-                time_match = re.search(r'(\d{2}:\d{2})', res['raw_title'])
-                time_str = f"[{time_match.group(1)}] " if time_match else ""
-                
-                clean_name = re.sub(r'(?i)(Xem ngay|Trực tiếp|Hot|Live|Bóng đá|Sắp diễn ra|\d{2}:\d{2})', '', res['raw_title'])
-                clean_name = re.sub(r'\s+', ' ', clean_name).strip()
-                
-                blv_str = f" [BLV {res['blv']}]" if res['blv'] else ""
-                display_name = f"{time_str}{clean_name}{blv_str}"
-                
-                # XỬ LÝ LINK LOGO CUỐI CÙNG: Điền bù https: nếu bị khuyết
-                logo = res.get('logo', '')
-                if logo:
-                    if logo.startswith('//'): 
-                        logo = 'https:' + logo
-                    elif logo.startswith('/'): 
-                        logo = 'https://socolivee.cv' + logo
-                else:
-                    logo = "https://socolivee.cv/logo.png"
-                    
-                final_url = res['stream_url']
-                origin = TARGET_URL.rstrip('/')
-                fixed_url = f"{final_url}|Referer={TARGET_URL}/&Origin={origin}&User-Agent={UA}"
-                
-                playlist += f'#EXTINF:-1 group-title="Socolive" tvg-logo="{logo}", {display_name}\n'
-                playlist += f'#EXTVLCOPT:http-referer={TARGET_URL}/\n'
-                playlist += f'#EXTVLCOPT:http-user-agent={UA}\n'
-                playlist += f'{fixed_url}\n'
-                count += 1
-
-        if count > 0:
-            with open("socolive_live.m3u", "w", encoding="utf-8") as f:
-                f.write(playlist)
-            print(f"\n🎉 THÀNH CÔNG! Quét xong {count} trận nét căng kèm FULL LOGO.")
-        else:
-            print("\n❌ Không bắt được luồng nào!")
-
-        await browser.close()
-
-if __name__ == "__main__":
-    asyncio.run(main())
+#EXTM3U
+#EXTINF:-1 group-title="Socolive" tvg-logo="https://socolivee.cv/wp-content/uploads/truc-tiep/logos/football/team/d71ebda5c7fbca9093a1c2978c46f619.webp", [22:30] Soco West Ham United vs Arsenal lúc ngày 10/05/2026
+#EXTVLCOPT:http-referer=https://socolivee.cv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0_Windows_NT_10.0
+https://live.inplyr.com/room/327159.m3u8|Referer=https://socolivee.cv/&Origin=https://socolivee.cv&User-Agent=Mozilla/5.0_Windows_NT_10.0
+#EXTINF:-1 group-title="Socolive" tvg-logo="https://sta.vnres.co/file/head/20230309/c0c0b8a45186e11216edc9779ecad64c_ss300.jpg", TẠ BIÊN GIỚI
+#EXTVLCOPT:http-referer=https://socolivee.cv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0_Windows_NT_10.0
+https://live.inplyr.com/room/118206.m3u8|Referer=https://socolivee.cv/&Origin=https://socolivee.cv&User-Agent=Mozilla/5.0_Windows_NT_10.0
+#EXTINF:-1 group-title="Socolive" tvg-logo="https://sta.vnres.co/file/head/20240312/68ef536d79246cefb24db9504c91f313_ss300.jpg", THẠCH TÚ
+#EXTVLCOPT:http-referer=https://socolivee.cv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0_Windows_NT_10.0
+https://live.inplyr.com/room/344370.m3u8|Referer=https://socolivee.cv/&Origin=https://socolivee.cv&User-Agent=Mozilla/5.0_Windows_NT_10.0
+#EXTINF:-1 group-title="Socolive" tvg-logo="https://sta.vnres.co/file/pic/202201/04/0b8fba6a9be73ec9edad44bc4c9b0166", RICKHANTER
+#EXTVLCOPT:http-referer=https://socolivee.cv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0_Windows_NT_10.0
+https://live.inplyr.com/room/123226.m3u8|Referer=https://socolivee.cv/&Origin=https://socolivee.cv&User-Agent=Mozilla/5.0_Windows_NT_10.0
+#EXTINF:-1 group-title="Socolive" tvg-logo="https://sta.vnres.co/file/head/20230410/530a7f04e4608e8d55d1b3159c8296a4_ss300.jpg", Củ Cải
+#EXTVLCOPT:http-referer=https://socolivee.cv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0_Windows_NT_10.0
+https://live.inplyr.com/room/360663.m3u8|Referer=https://socolivee.cv/&Origin=https://socolivee.cv&User-Agent=Mozilla/5.0_Windows_NT_10.0
+#EXTINF:-1 group-title="Socolive" tvg-logo="https://sta.vnres.co/file/head/20240405/d19791f85fa026f71038b7abaf72bb3b_ss300.jpg", CR Bưởi
+#EXTVLCOPT:http-referer=https://socolivee.cv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0_Windows_NT_10.0
+https://live.inplyr.com/room/387694.m3u8|Referer=https://socolivee.cv/&Origin=https://socolivee.cv&User-Agent=Mozilla/5.0_Windows_NT_10.0
+#EXTINF:-1 group-title="Socolive" tvg-logo="https://socolivee.cv/wp-content/uploads/truc-tiep/logos/football/team/21551996567bcd206ee574043d509a84.webp", [23:30] Soco Real Oviedo vs Getafe lúc ngày 10/05/2026
+#EXTVLCOPT:http-referer=https://socolivee.cv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0_Windows_NT_10.0
+https://live.inplyr.com/room/603914.m3u8|Referer=https://socolivee.cv/&Origin=https://socolivee.cv&User-Agent=Mozilla/5.0_Windows_NT_10.0
+#EXTINF:-1 group-title="Socolive" tvg-logo="https://sta.vnres.co/file/head/20240328/2a3a9f105c9849eca502de473e711a18_ss300.jpg", VITAMIN
+#EXTVLCOPT:http-referer=https://socolivee.cv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0_Windows_NT_10.0
+https://live.inplyr.com/room/400722.m3u8|Referer=https://socolivee.cv/&Origin=https://socolivee.cv&User-Agent=Mozilla/5.0_Windows_NT_10.0
+#EXTINF:-1 group-title="Socolive" tvg-logo="https://sta.vnres.co/file/head/20250222/11bf741e48b18aa9d6b12b557cb22a8e_ss300.jpg", WUKONG
+#EXTVLCOPT:http-referer=https://socolivee.cv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0_Windows_NT_10.0
+https://live.inplyr.com/room/511367.m3u8|Referer=https://socolivee.cv/&Origin=https://socolivee.cv&User-Agent=Mozilla/5.0_Windows_NT_10.0
+#EXTINF:-1 group-title="Socolive" tvg-logo="https://socolivee.cv/wp-content/plugins/stream-player-plugin/assets/images/noavatar.png", TRÀ ĐÁ
+#EXTVLCOPT:http-referer=https://socolivee.cv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0_Windows_NT_10.0
+https://pull.niues.live/live/stream-603914_lsd.m3u8?auth_key=1778435154-0-0-1470f47553de6e5e931bde3c88ac424e|Referer=https://socolivee.cv/&Origin=https://socolivee.cv&User-Agent=Mozilla/5.0_Windows_NT_10.0
+#EXTINF:-1 group-title="Socolive" tvg-logo="https://sta.vnres.co/file/head/20241220/e232e148204202b5919511a2e82b7a01_ss300.jpg", MR BÍCH
+#EXTVLCOPT:http-referer=https://socolivee.cv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0_Windows_NT_10.0
+https://live.inplyr.com/room/285067.m3u8|Referer=https://socolivee.cv/&Origin=https://socolivee.cv&User-Agent=Mozilla/5.0_Windows_NT_10.0
+#EXTINF:-1 group-title="Socolive" tvg-logo="https://socolivee.cv/wp-content/uploads/truc-tiep/logos/football/team/9fadd87d190982c8082dddf1567e0b9b.webp", [23:00] Soco Parma vs AS Roma lúc ngày 10/05/2026
+#EXTVLCOPT:http-referer=https://socolivee.cv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0_Windows_NT_10.0
+https://live.inplyr.com/room/531989.m3u8|Referer=https://socolivee.cv/&Origin=https://socolivee.cv&User-Agent=Mozilla/5.0_Windows_NT_10.0
+#EXTINF:-1 group-title="Socolive" tvg-logo="https://sta.vnres.co/file/head/20250710/0cbed45f657ecb28483c1bd26714e064_ss300.jpg", LÃO LÂM
+#EXTVLCOPT:http-referer=https://socolivee.cv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0_Windows_NT_10.0
+https://live.inplyr.com/room/527384.m3u8|Referer=https://socolivee.cv/&Origin=https://socolivee.cv&User-Agent=Mozilla/5.0_Windows_NT_10.0
+#EXTINF:-1 group-title="Socolive" tvg-logo="https://socolivee.cv/wp-content/uploads/truc-tiep/logos/football/team/488df3a9b3fc86ac6c9e8f6d40733067.webp", [23:00] Soco Vietnam U17 vs South Korea U17 lúc ngày 10/05/2026
+#EXTVLCOPT:http-referer=https://socolivee.cv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0_Windows_NT_10.0
+https://live.inplyr.com/room/579144.m3u8|Referer=https://socolivee.cv/&Origin=https://socolivee.cv&User-Agent=Mozilla/5.0_Windows_NT_10.0
+#EXTINF:-1 group-title="Socolive" tvg-logo="https://sta.vnres.co/file/head/20260121/d495aff10b8aeaeef5ed83227eca0100_ss300.jpg", Đình Bắc
+#EXTVLCOPT:http-referer=https://socolivee.cv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0_Windows_NT_10.0
+https://live.inplyr.com/room/579144.m3u8|Referer=https://socolivee.cv/&Origin=https://socolivee.cv&User-Agent=Mozilla/5.0_Windows_NT_10.0
+#EXTINF:-1 group-title="Socolive" tvg-logo="https://sta.vnres.co/file/head/20260316/d5e7a7c583337607d231079e5aedbbd0_ss300.jpg", A TINH
+#EXTVLCOPT:http-referer=https://socolivee.cv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0_Windows_NT_10.0
+https://live.inplyr.com/room/598119.m3u8|Referer=https://socolivee.cv/&Origin=https://socolivee.cv&User-Agent=Mozilla/5.0_Windows_NT_10.0
+#EXTINF:-1 group-title="Socolive" tvg-logo="https://socolivee.cv/wp-content/uploads/truc-tiep/logos/football/team/887b7663a0d47031528921d9972ae3a6.webp", [22:30] Soco FC Köln vs 1. FC Heidenheim 1846 lúc ngày 10/05/2026
+#EXTVLCOPT:http-referer=https://socolivee.cv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0_Windows_NT_10.0
+https://live.inplyr.com/room/462413.m3u8|Referer=https://socolivee.cv/&Origin=https://socolivee.cv&User-Agent=Mozilla/5.0_Windows_NT_10.0
+#EXTINF:-1 group-title="Socolive" tvg-logo="https://sta.vnres.co/file/head/20230902/159792dbdc673152e9e09e085d8a7372_ss300.jpg", SAO LA
+#EXTVLCOPT:http-referer=https://socolivee.cv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0_Windows_NT_10.0
+https://live.inplyr.com/room/462413.m3u8|Referer=https://socolivee.cv/&Origin=https://socolivee.cv&User-Agent=Mozilla/5.0_Windows_NT_10.0
+#EXTINF:-1 group-title="Socolive" tvg-logo="https://socolivee.cv/wp-content/plugins/stream-player-plugin/assets/images/noavatar.png", NGƯỜI CÁ
+#EXTVLCOPT:http-referer=https://socolivee.cv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0_Windows_NT_10.0
+https://live.inplyr.com/room/595335.m3u8|Referer=https://socolivee.cv/&Origin=https://socolivee.cv&User-Agent=Mozilla/5.0_Windows_NT_10.0
+#EXTINF:-1 group-title="Socolive" tvg-logo="https://socolivee.cv/wp-content/uploads/truc-tiep/logos/football/team/b2a647479bd175eb2e61d89f2317e7de.webp", [21:15] Soco Athletic Club vs Valencia CF lúc ngày 10/05/2026
+#EXTVLCOPT:http-referer=https://socolivee.cv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0_Windows_NT_10.0
+https://pull.niues.live/live/stream-285067_lsd.m3u8?auth_key=1778435154-0-0-ef6478459a219bb76f090344f8ba6434|Referer=https://socolivee.cv/&Origin=https://socolivee.cv&User-Agent=Mozilla/5.0_Windows_NT_10.0
+#EXTINF:-1 group-title="Socolive" tvg-logo="https://sta.vnres.co/file/head/20240328/2a3a9f105c9849eca502de473e711a18_ss300.jpg", VITAMIN
+#EXTVLCOPT:http-referer=https://socolivee.cv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0_Windows_NT_10.0
+https://pull.niues.live/live/stream-400722_lsd.m3u8?auth_key=1778435154-0-0-4cf2ea660d4f925c38a96d576bedcc73|Referer=https://socolivee.cv/&Origin=https://socolivee.cv&User-Agent=Mozilla/5.0_Windows_NT_10.0
+#EXTINF:-1 group-title="Socolive" tvg-logo="https://sta.vnres.co/file/head/20241220/e232e148204202b5919511a2e82b7a01_ss300.jpg", MR BÍCH
+#EXTVLCOPT:http-referer=https://socolivee.cv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0_Windows_NT_10.0
+https://pull.niues.live/live/stream-285067_lsd.m3u8?auth_key=1778435154-0-0-ef6478459a219bb76f090344f8ba6434|Referer=https://socolivee.cv/&Origin=https://socolivee.cv&User-Agent=Mozilla/5.0_Windows_NT_10.0
+#EXTINF:-1 group-title="Socolive" tvg-logo="https://socolivee.cv/wp-content/uploads/truc-tiep/logos/football/team/f7768c66a58a4318f14f48cefb1cb420.webp", [21:45] Soco AFC Ajax vs FC Utrecht lúc ngày 10/05/2026
+#EXTVLCOPT:http-referer=https://socolivee.cv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0_Windows_NT_10.0
+https://live.inplyr.com/room/602019.m3u8|Referer=https://socolivee.cv/&Origin=https://socolivee.cv&User-Agent=Mozilla/5.0_Windows_NT_10.0
+#EXTINF:-1 group-title="Socolive" tvg-logo="https://socolivee.cv/wp-content/plugins/stream-player-plugin/assets/images/noavatar.png", PINKMAN
+#EXTVLCOPT:http-referer=https://socolivee.cv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0_Windows_NT_10.0
+https://live.inplyr.com/room/595715.m3u8|Referer=https://socolivee.cv/&Origin=https://socolivee.cv&User-Agent=Mozilla/5.0_Windows_NT_10.0
+#EXTINF:-1 group-title="Socolive" tvg-logo="https://socolivee.cv/wp-content/uploads/truc-tiep/logos/football/team/44073f2d2c979a9388f98505ac3b754d.webp", [21:45] Soco Feyenoord vs AZ Alkmaar lúc ngày 10/05/2026
+#EXTVLCOPT:http-referer=https://socolivee.cv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0_Windows_NT_10.0
+https://live.inplyr.com/room/597929.m3u8|Referer=https://socolivee.cv/&Origin=https://socolivee.cv&User-Agent=Mozilla/5.0_Windows_NT_10.0
+#EXTINF:-1 group-title="Socolive" tvg-logo="https://sta.vnres.co/file/head/20260313/7e6d1ca412426f446f8507e4c8a7eca5_ss300.jpg", HẢI THANH
+#EXTVLCOPT:http-referer=https://socolivee.cv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0_Windows_NT_10.0
+https://live.inplyr.com/room/599634.m3u8|Referer=https://socolivee.cv/&Origin=https://socolivee.cv&User-Agent=Mozilla/5.0_Windows_NT_10.0
+#EXTINF:-1 group-title="Socolive" tvg-logo="https://socolivee.cv/wp-content/uploads/truc-tiep/logos/football/team/7b645392a40dff6e97fd9d9b43af09dd.webp", [23:30] Soco Backa Topola vs Habitpharm Javor lúc ngày 10/05/2026
+#EXTVLCOPT:http-referer=https://socolivee.cv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0_Windows_NT_10.0
+https://live.inplyr.com/default/3glrw7hn9e08qdy.m3u8|Referer=https://socolivee.cv/&Origin=https://socolivee.cv&User-Agent=Mozilla/5.0_Windows_NT_10.0
+#EXTINF:-1 group-title="Socolive" tvg-logo="https://socolivee.cv/wp-content/uploads/truc-tiep/logos/football/team/794c52e40471e247cc8e50dc33841c1d.webp", [23:30] Soco Radnicki Nis vs Mladost Lucani lúc ngày 10/05/2026
+#EXTVLCOPT:http-referer=https://socolivee.cv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0_Windows_NT_10.0
+https://live.inplyr.com/default/vjxm8ghe0o9zr6o.m3u8|Referer=https://socolivee.cv/&Origin=https://socolivee.cv&User-Agent=Mozilla/5.0_Windows_NT_10.0
+#EXTINF:-1 group-title="Socolive" tvg-logo="https://socolivee.cv/wp-content/uploads/truc-tiep/logos/football/team/1b64e442df24728c214ea6e741a6d0bc.webp", [23:30] Soco Mirandes vs Eibar lúc ngày 10/05/2026
+#EXTVLCOPT:http-referer=https://socolivee.cv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0_Windows_NT_10.0
+https://live.inplyr.com/default/k82rekhgywkkrep.m3u8|Referer=https://socolivee.cv/&Origin=https://socolivee.cv&User-Agent=Mozilla/5.0_Windows_NT_10.0
+#EXTINF:-1 group-title="Socolive" tvg-logo="https://socolivee.cv/wp-content/uploads/truc-tiep/logos/football/team/f2908462e6b95194d66d92eb8f48aef6.webp", [23:30] Soco Lokomotiv Moscow vs Baltika Kaliningrad lúc ngày 10/05/2026
+#EXTVLCOPT:http-referer=https://socolivee.cv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0_Windows_NT_10.0
+https://live.inplyr.com/default/2y8m4zh5g8p8ql0.m3u8|Referer=https://socolivee.cv/&Origin=https://socolivee.cv&User-Agent=Mozilla/5.0_Windows_NT_10.0
+#EXTINF:-1 group-title="Socolive" tvg-logo="https://socolivee.cv/wp-content/uploads/truc-tiep/logos/football/team/c00a86090b073cb688d38efb21137784.webp", [23:30] Soco Baumit Jablonec vs Hradec Kralove lúc ngày 10/05/2026
+#EXTVLCOPT:http-referer=https://socolivee.cv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0_Windows_NT_10.0
+https://live.inplyr.com/default/dn1m1ghlgeygmoe.m3u8|Referer=https://socolivee.cv/&Origin=https://socolivee.cv&User-Agent=Mozilla/5.0_Windows_NT_10.0
+#EXTINF:-1 group-title="Socolive" tvg-logo="https://socolivee.cv/wp-content/uploads/truc-tiep/logos/football/team/5aa5f2f1a954448fd5bef463a34830b0.webp", [23:30] Soco KA Akureyri vs IBV Vestmannaeyjar lúc ngày 10/05/2026
+#EXTVLCOPT:http-referer=https://socolivee.cv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0_Windows_NT_10.0
+https://live.inplyr.com/default/k82rekhgwv52rep.m3u8|Referer=https://socolivee.cv/&Origin=https://socolivee.cv&User-Agent=Mozilla/5.0_Windows_NT_10.0
+#EXTINF:-1 group-title="Socolive" tvg-logo="https://socolivee.cv/wp-content/uploads/truc-tiep/logos/football/team/1b141c19b8516ff9a26065d66ecd7146.webp", [23:30] Soco United Arab Emirates U17 vs Yemen U17 lúc ngày 10/05/2026
+#EXTVLCOPT:http-referer=https://socolivee.cv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0_Windows_NT_10.0
+https://live.inplyr.com/default/k82rekhgep50rep.m3u8|Referer=https://socolivee.cv/&Origin=https://socolivee.cv&User-Agent=Mozilla/5.0_Windows_NT_10.0
+#EXTINF:-1 group-title="Socolive" tvg-logo="https://socolivee.cv/wp-content/uploads/truc-tiep/logos/football/team/b796af8f1a3f43d5d56f4a4255b87260.webp", [23:30] Soco Union Saint-Gilloise vs KV Mechelen lúc ngày 10/05/2026
+#EXTVLCOPT:http-referer=https://socolivee.cv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0_Windows_NT_10.0
+https://footballfast.app/sd-6MwdaX8kjXw5KtAtYz_branded/live.m3u8?ver=1778431878|Referer=https://socolivee.cv/&Origin=https://socolivee.cv&User-Agent=Mozilla/5.0_Windows_NT_10.0
+#EXTINF:-1 group-title="Socolive" tvg-logo="https://socolivee.cv/wp-content/uploads/truc-tiep/logos/football/team/f9febad819c8bf2e552267e14127c5b7.webp", [23:30] Soco FK Spartak Subotica vs FK Napredak Krusevac lúc ngày 10/05/2026
+#EXTVLCOPT:http-referer=https://socolivee.cv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0_Windows_NT_10.0
+https://live.inplyr.com/default/x7lm7phjvdnlm2w.m3u8|Referer=https://socolivee.cv/&Origin=https://socolivee.cv&User-Agent=Mozilla/5.0_Windows_NT_10.0
+#EXTINF:-1 group-title="Socolive" tvg-logo="https://socolivee.cv/wp-content/uploads/truc-tiep/logos/football/team/cd6fd11fd9ca07c46747cb03b87f4dbb.webp", [23:30] Soco Cordoba vs Granada CF lúc ngày 10/05/2026
+#EXTVLCOPT:http-referer=https://socolivee.cv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0_Windows_NT_10.0
+https://footballfast.app/sd-6MuTcBwBx6w1NWk2in_branded/live.m3u8?ver=1778431878|Referer=https://socolivee.cv/&Origin=https://socolivee.cv&User-Agent=Mozilla/5.0_Windows_NT_10.0
+#EXTINF:-1 group-title="Socolive" tvg-logo="https://socolivee.cv/wp-content/uploads/truc-tiep/logos/football/team/25cde92a237f9418a491eed48437478e.webp", [23:30] Soco Kansas City Current Women vs Chicago Red Stars Women lúc ngày 10/05/2026
+#EXTVLCOPT:http-referer=https://socolivee.cv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0_Windows_NT_10.0
+https://live.inplyr.com/default/pxwrxlhyl25lryk.m3u8|Referer=https://socolivee.cv/&Origin=https://socolivee.cv&User-Agent=Mozilla/5.0_Windows_NT_10.0
+#EXTINF:-1 group-title="Socolive" tvg-logo="https://socolivee.cv/wp-content/uploads/truc-tiep/logos/football/team/9c1777c5f9d29d3c8ce03960caa52a64.webp", [23:30] Soco FK IMT Belgrad vs Radnicki 1923 Kragujevac lúc ngày 10/05/2026
+#EXTVLCOPT:http-referer=https://socolivee.cv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0_Windows_NT_10.0
+https://live.inplyr.com/default/pxwrxlhynw78ryk.m3u8|Referer=https://socolivee.cv/&Origin=https://socolivee.cv&User-Agent=Mozilla/5.0_Windows_NT_10.0
+#EXTINF:-1 group-title="Socolive" tvg-logo="https://socolivee.cv/wp-content/uploads/truc-tiep/logos/football/team/cfbb124fe648b7b871f2df5c1be15d76.webp", [23:30] Soco AEK Athens vs Panathinaikos lúc ngày 10/05/2026
+#EXTVLCOPT:http-referer=https://socolivee.cv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0_Windows_NT_10.0
+https://live.inplyr.com/default/l5ergph4d462r8k.m3u8|Referer=https://socolivee.cv/&Origin=https://socolivee.cv&User-Agent=Mozilla/5.0_Windows_NT_10.0
+#EXTINF:-1 group-title="Socolive" tvg-logo="https://socolivee.cv/wp-content/uploads/truc-tiep/logos/football/team/fcf62204578f5bbf95d254759781bef7.webp", [23:30] Soco Olympiacos Piraeus vs PAOK Saloniki lúc ngày 10/05/2026
+#EXTVLCOPT:http-referer=https://socolivee.cv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0_Windows_NT_10.0
+https://live.inplyr.com/default/jw2r09hk3kv9rz8.m3u8|Referer=https://socolivee.cv/&Origin=https://socolivee.cv&User-Agent=Mozilla/5.0_Windows_NT_10.0
+#EXTINF:-1 group-title="Socolive" tvg-logo="https://socolivee.cv/wp-content/uploads/truc-tiep/logos/football/team/cc11b2930de16dcd482c4fb976115899.webp", [23:30] Soco Abacha City vs Diamond Stars lúc ngày 10/05/2026
+#EXTVLCOPT:http-referer=https://socolivee.cv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0_Windows_NT_10.0
+https://live.inplyr.com/default/318q66hxg50kqo9.m3u8|Referer=https://socolivee.cv/&Origin=https://socolivee.cv&User-Agent=Mozilla/5.0_Windows_NT_10.0
+#EXTINF:-1 group-title="Socolive" tvg-logo="https://socolivee.cv/wp-content/uploads/truc-tiep/logos/football/team/a0bd72ce219bcc1cc60d9e01b7062b9d.webp", [23:30] Soco USFAS Bamako vs Afrique Football Elite lúc ngày 10/05/2026
+#EXTVLCOPT:http-referer=https://socolivee.cv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0_Windows_NT_10.0
+https://live.inplyr.com/default/2y8m4zh57yvxql0.m3u8|Referer=https://socolivee.cv/&Origin=https://socolivee.cv&User-Agent=Mozilla/5.0_Windows_NT_10.0
+#EXTINF:-1 group-title="Socolive" tvg-logo="https://socolivee.cv/wp-content/uploads/truc-tiep/logos/football/team/e7581fc6c38fb3a0ef7fda8456c48353.webp", [23:30] Soco Mighty Blackpool vs SLIFA lúc ngày 10/05/2026
+#EXTVLCOPT:http-referer=https://socolivee.cv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0_Windows_NT_10.0
+https://live.inplyr.com/default/3glrw7hnpv1eqdy.m3u8|Referer=https://socolivee.cv/&Origin=https://socolivee.cv&User-Agent=Mozilla/5.0_Windows_NT_10.0
+#EXTINF:-1 group-title="Socolive" tvg-logo="https://socolivee.cv/wp-content/uploads/truc-tiep/logos/football/team/cac6a022808457fc0e3b73ae3ba808fe.webp", [23:30] Soco Onze Createurs vs Stade Malien lúc ngày 10/05/2026
+#EXTVLCOPT:http-referer=https://socolivee.cv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0_Windows_NT_10.0
+https://live.inplyr.com/default/y0or5jh85y9wqwz.m3u8|Referer=https://socolivee.cv/&Origin=https://socolivee.cv&User-Agent=Mozilla/5.0_Windows_NT_10.0
+#EXTINF:-1 group-title="Socolive" tvg-logo="https://socolivee.cv/wp-content/uploads/truc-tiep/logos/football/team/8f9127a6f0af855876efc94663fb8f3b.webp", [23:30] Soco Kamboi Eagles vs Wusum Stars lúc ngày 10/05/2026
+#EXTVLCOPT:http-referer=https://socolivee.cv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0_Windows_NT_10.0
+https://live.inplyr.com/default/y0or5jh8o2elqwz.m3u8|Referer=https://socolivee.cv/&Origin=https://socolivee.cv&User-Agent=Mozilla/5.0_Windows_NT_10.0
+#EXTINF:-1 group-title="Socolive" tvg-logo="https://socolivee.cv/wp-content/uploads/truc-tiep/logos/football/team/058ab0bb7d4a90ccef7c471cb9029b2f.webp", [23:15] Soco FC Dobrudzha Dobrich vs Beroe Stara Zagora lúc ngày 10/05/2026
+#EXTVLCOPT:http-referer=https://socolivee.cv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0_Windows_NT_10.0
+https://live.inplyr.com/default/k82rekhge5vlrep.m3u8|Referer=https://socolivee.cv/&Origin=https://socolivee.cv&User-Agent=Mozilla/5.0_Windows_NT_10.0
+#EXTINF:-1 group-title="Socolive" tvg-logo="https://socolivee.cv/wp-content/uploads/truc-tiep/logos/football/team/df2700ad1fa9437dabde18b62b9add70.webp", [23:15] Soco Slaven Belupo vs HNK Gorica lúc ngày 10/05/2026
+#EXTVLCOPT:http-referer=https://socolivee.cv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0_Windows_NT_10.0
+https://live.inplyr.com/default/1l4rjnh9zxvem7v.m3u8|Referer=https://socolivee.cv/&Origin=https://socolivee.cv&User-Agent=Mozilla/5.0_Windows_NT_10.0
+#EXTINF:-1 group-title="Socolive" tvg-logo="https://socolivee.cv/wp-content/uploads/truc-tiep/logos/football/team/91efed8cfa027f07bdbdd3d7c0aee185.webp", [23:15] Soco Skala Itrottarfelag vs AB Argir lúc ngày 10/05/2026
+#EXTVLCOPT:http-referer=https://socolivee.cv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0_Windows_NT_10.0
+https://live.inplyr.com/default/zp5rzghg6lwnq82.m3u8|Referer=https://socolivee.cv/&Origin=https://socolivee.cv&User-Agent=Mozilla/5.0_Windows_NT_10.0
+#EXTINF:-1 group-title="Socolive" tvg-logo="https://socolivee.cv/wp-content/uploads/truc-tiep/logos/football/team/a23e4dea1f7c8bec2371a1d7bb2ff81d.webp", [23:15] Soco 07 Vestur Sorvagur vs Toftir B68 lúc ngày 10/05/2026
+#EXTVLCOPT:http-referer=https://socolivee.cv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0_Windows_NT_10.0
+https://live.inplyr.com/default/n54qllhnpoz0qvy.m3u8|Referer=https://socolivee.cv/&Origin=https://socolivee.cv&User-Agent=Mozilla/5.0_Windows_NT_10.0
+#EXTINF:-1 group-title="Socolive" tvg-logo="https://socolivee.cv/wp-content/uploads/truc-tiep/logos/football/team/aa2d8e24a68822387257f31d692c4297.webp", [23:05] Soco Al Riyadh vs Al Fateh SC lúc ngày 10/05/2026
+#EXTVLCOPT:http-referer=https://socolivee.cv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0_Windows_NT_10.0
+https://live.inplyr.com/default/4jwq2ghn1g8ym0v.m3u8|Referer=https://socolivee.cv/&Origin=https://socolivee.cv&User-Agent=Mozilla/5.0_Windows_NT_10.0
+#EXTINF:-1 group-title="Socolive" tvg-logo="https://socolivee.cv/wp-content/uploads/truc-tiep/logos/football/team/ece6c8b3f7d714b2b8ab4ec95c12a1c9.webp", [23:00] Soco Vysocina Jihlava vs Kromeriz lúc ngày 10/05/2026
+#EXTVLCOPT:http-referer=https://socolivee.cv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0_Windows_NT_10.0
+https://live.inplyr.com/default/23xmvkh6owl4qg8.m3u8|Referer=https://socolivee.cv/&Origin=https://socolivee.cv&User-Agent=Mozilla/5.0_Windows_NT_10.0
+#EXTINF:-1 group-title="Socolive" tvg-logo="https://socolivee.cv/wp-content/uploads/truc-tiep/logos/football/team/39a7871cc6691495aa088b12a9ef8d7f.webp", [23:00] Soco FC Krasnodar Women vs Chertanovo Moscow Women lúc ngày 10/05/2026
+#EXTVLCOPT:http-referer=https://socolivee.cv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0_Windows_NT_10.0
+https://live.inplyr.com/default/dj2ryohl758dq1z.m3u8|Referer=https://socolivee.cv/&Origin=https://socolivee.cv&User-Agent=Mozilla/5.0_Windows_NT_10.0
+#EXTINF:-1 group-title="Socolive" tvg-logo="https://socolivee.cv/wp-content/uploads/truc-tiep/logos/football/team/8be4b7b964d005a23a361cd716a8b03f.webp", [23:00] Soco FC Dinamo 1948 vs Arges lúc ngày 10/05/2026
+#EXTVLCOPT:http-referer=https://socolivee.cv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0_Windows_NT_10.0
+https://live.inplyr.com/default/965mkyhk82ovr1g.m3u8|Referer=https://socolivee.cv/&Origin=https://socolivee.cv&User-Agent=Mozilla/5.0_Windows_NT_10.0
+#EXTINF:-1 group-title="Socolive" tvg-logo="https://socolivee.cv/wp-content/uploads/truc-tiep/logos/football/team/a7971ca9040ab9bf42df4bf8594bf119.webp", [23:00] Soco Al-Shabbab vs Sitra lúc ngày 10/05/2026
+#EXTVLCOPT:http-referer=https://socolivee.cv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0_Windows_NT_10.0
+https://live.inplyr.com/default/x7lm7phj2wy2m2w.m3u8|Referer=https://socolivee.cv/&Origin=https://socolivee.cv&User-Agent=Mozilla/5.0_Windows_NT_10.0
+#EXTINF:-1 group-title="Socolive" tvg-logo="https://socolivee.cv/wp-content/uploads/truc-tiep/logos/football/team/9267370adc28705f1ea49fd4fc37d1df.webp", [23:00] Soco A'Ali FC vs Al-Budaiya lúc ngày 10/05/2026
+#EXTVLCOPT:http-referer=https://socolivee.cv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0_Windows_NT_10.0
+https://live.inplyr.com/default/pxwrxlhy0j8yryk.m3u8|Referer=https://socolivee.cv/&Origin=https://socolivee.cv&User-Agent=Mozilla/5.0_Windows_NT_10.0
+#EXTINF:-1 group-title="Socolive" tvg-logo="https://socolivee.cv/wp-content/uploads/truc-tiep/logos/football/team/625f6bad4acc37546d2f2373b89b7c89.webp", [23:00] Soco Brondby IF vs Aarhus AGF lúc ngày 10/05/2026
+#EXTVLCOPT:http-referer=https://socolivee.cv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0_Windows_NT_10.0
+https://live.inplyr.com/default/6ypq3nhvk4zzmd7.m3u8|Referer=https://socolivee.cv/&Origin=https://socolivee.cv&User-Agent=Mozilla/5.0_Windows_NT_10.0
+#EXTINF:-1 group-title="Socolive" tvg-logo="https://socolivee.cv/wp-content/uploads/truc-tiep/logos/football/team/120f24dadbb90aea10ca5c0c0cde76b4.webp", [23:00] Soco FK Panevezys vs Kauno Zalgiris lúc ngày 10/05/2026
+#EXTVLCOPT:http-referer=https://socolivee.cv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0_Windows_NT_10.0
+https://live.inplyr.com/default/ednm9whwwo80ryo.m3u8|Referer=https://socolivee.cv/&Origin=https://socolivee.cv&User-Agent=Mozilla/5.0_Windows_NT_10.0
+#EXTINF:-1 group-title="Socolive" tvg-logo="https://socolivee.cv/wp-content/uploads/truc-tiep/logos/football/team/1b4ea48402f3dd4443ba5e14c7c28e46.webp", [23:00] Soco Bahrain SC vs Najma Manama lúc ngày 10/05/2026
+#EXTVLCOPT:http-referer=https://socolivee.cv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0_Windows_NT_10.0
+https://live.inplyr.com/default/y0or5jh8w3ydqwz.m3u8|Referer=https://socolivee.cv/&Origin=https://socolivee.cv&User-Agent=Mozilla/5.0_Windows_NT_10.0
+#EXTINF:-1 group-title="Socolive" tvg-logo="https://socolivee.cv/wp-content/uploads/truc-tiep/logos/football/team/d2f2fbc52f72495bbc0499d7cd646be9.webp", [23:00] Soco Ittihad Riadi Tanger vs DHJ Difaa Hassani Jadidi lúc ngày 10/05/2026
+#EXTVLCOPT:http-referer=https://socolivee.cv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0_Windows_NT_10.0
+https://live.inplyr.com/default/y39mp1h6eyzomoj.m3u8|Referer=https://socolivee.cv/&Origin=https://socolivee.cv&User-Agent=Mozilla/5.0_Windows_NT_10.0
+#EXTINF:-1 group-title="Socolive" tvg-logo="https://socolivee.cv/wp-content/uploads/truc-tiep/logos/football/team/f2af5eac26951142bd66740caf1e4aa8.webp", [23:00] Soco Salitas FC vs ASF Bobo Dioulasso lúc ngày 10/05/2026
+#EXTVLCOPT:http-referer=https://socolivee.cv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0_Windows_NT_10.0
+https://live.inplyr.com/default/6ypq3nhve5zkmd7.m3u8|Referer=https://socolivee.cv/&Origin=https://socolivee.cv&User-Agent=Mozilla/5.0_Windows_NT_10.0
+#EXTINF:-1 group-title="Socolive" tvg-logo="https://socolivee.cv/wp-content/uploads/truc-tiep/logos/football/team/fb45c15b10b58f6aea87f77d24593ef9.webp", [23:00] Soco Bo Rangers vs Star Sport Academy lúc ngày 10/05/2026
+#EXTVLCOPT:http-referer=https://socolivee.cv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0_Windows_NT_10.0
+https://live.inplyr.com/default/y39mp1h6ez0vmoj.m3u8|Referer=https://socolivee.cv/&Origin=https://socolivee.cv&User-Agent=Mozilla/5.0_Windows_NT_10.0
+#EXTINF:-1 group-title="Socolive" tvg-logo="https://socolivee.cv/wp-content/uploads/truc-tiep/logos/football/team/20b30b399768795f52c50a38460e94b3.webp", [23:00] Soco RC Bobo Dioulasso vs US Forces Armees lúc ngày 10/05/2026
+#EXTVLCOPT:http-referer=https://socolivee.cv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0_Windows_NT_10.0
+https://live.inplyr.com/default/pxwrxlhye19nryk.m3u8|Referer=https://socolivee.cv/&Origin=https://socolivee.cv&User-Agent=Mozilla/5.0_Windows_NT_10.0
+#EXTINF:-1 group-title="Socolive" tvg-logo="https://socolivee.cv/wp-content/uploads/truc-tiep/logos/football/team/5ed685cd62da3d7e009fe0ff6eb1b4f5.webp", [23:00] Soco Vitesse Delft vs Rahimo FC lúc ngày 10/05/2026
+#EXTVLCOPT:http-referer=https://socolivee.cv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0_Windows_NT_10.0
+https://live.inplyr.com/default/y0or5jh864eyqwz.m3u8|Referer=https://socolivee.cv/&Origin=https://socolivee.cv&User-Agent=Mozilla/5.0_Windows_NT_10.0
+#EXTINF:-1 group-title="Socolive" tvg-logo="https://socolivee.cv/wp-content/uploads/truc-tiep/logos/football/team/e6587c539cae85f46079e58e8fe33e68.webp", [23:00] Soco AJEB vs Sporting Football des Cascades lúc ngày 10/05/2026
+#EXTVLCOPT:http-referer=https://socolivee.cv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0_Windows_NT_10.0
+https://live.inplyr.com/default/3glrw7hn61jgqdy.m3u8|Referer=https://socolivee.cv/&Origin=https://socolivee.cv&User-Agent=Mozilla/5.0_Windows_NT_10.0
+#EXTINF:-1 group-title="Socolive" tvg-logo="https://socolivee.cv/wp-content/uploads/truc-tiep/logos/football/team/02e905e8f407b78d24c8ee895d7dce8e.webp", [23:00] Soco AS Douanes Ouagadougou vs CFFEB lúc ngày 10/05/2026
+#EXTVLCOPT:http-referer=https://socolivee.cv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0_Windows_NT_10.0
+https://live.inplyr.com/default/3glrw7hn61jvqdy.m3u8|Referer=https://socolivee.cv/&Origin=https://socolivee.cv&User-Agent=Mozilla/5.0_Windows_NT_10.0
+#EXTINF:-1 group-title="Socolive" tvg-logo="https://socolivee.cv/wp-content/uploads/truc-tiep/logos/football/team/2d9ea2234c3ada82b3d0355791c45669.webp", [22:30] Soco FC Neftci Baku vs Shamakhi FK lúc ngày 10/05/2026
+#EXTVLCOPT:http-referer=https://socolivee.cv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0_Windows_NT_10.0
+https://live.inplyr.com/default/965mkyhk8390r1g.m3u8|Referer=https://socolivee.cv/&Origin=https://socolivee.cv&User-Agent=Mozilla/5.0_Windows_NT_10.0
+#EXTINF:-1 group-title="Socolive" tvg-logo="https://socolivee.cv/wp-content/uploads/truc-tiep/logos/football/team/865e53e151038994f4de010721c298ee.webp", [22:30] Soco LKS Nieciecza vs Legia Warszawa lúc ngày 10/05/2026
+#EXTVLCOPT:http-referer=https://socolivee.cv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0_Windows_NT_10.0
+https://live.inplyr.com/default/2y8m4zh5j087ql0.m3u8|Referer=https://socolivee.cv/&Origin=https://socolivee.cv&User-Agent=Mozilla/5.0_Windows_NT_10.0
+#EXTINF:-1 group-title="Socolive" tvg-logo="https://socolivee.cv/wp-content/uploads/truc-tiep/logos/football/team/25a7ebe2fc19902b896b3a184ef420c9.webp", [22:25] Soco Baniyas Club vs Shabab Al Ahli lúc ngày 10/05/2026
+#EXTVLCOPT:http-referer=https://socolivee.cv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0_Windows_NT_10.0
+https://live.inplyr.com/default/pxwrxlhy0vkgryk.m3u8|Referer=https://socolivee.cv/&Origin=https://socolivee.cv&User-Agent=Mozilla/5.0_Windows_NT_10.0
+#EXTINF:-1 group-title="Socolive" tvg-logo="https://socolivee.cv/wp-content/uploads/truc-tiep/logos/football/team/1bc0fd978020f45e17121bea39c340e6.webp", [22:25] Soco Dabba Al-Fujairah vs Ajman lúc ngày 10/05/2026
+#EXTVLCOPT:http-referer=https://socolivee.cv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0_Windows_NT_10.0
+https://live.inplyr.com/default/3glrw7hngov1qdy.m3u8|Referer=https://socolivee.cv/&Origin=https://socolivee.cv&User-Agent=Mozilla/5.0_Windows_NT_10.0
+#EXTINF:-1 group-title="Socolive" tvg-logo="https://socolivee.cv/wp-content/uploads/truc-tiep/logos/football/team/2194d8f23b8504ac8ca5861a508ecbe3.webp", [22:25] Soco Al Bataeh vs Al-Sharjah lúc ngày 10/05/2026
+#EXTVLCOPT:http-referer=https://socolivee.cv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0_Windows_NT_10.0
+https://live.inplyr.com/default/y0or5jh8w12xqwz.m3u8|Referer=https://socolivee.cv/&Origin=https://socolivee.cv&User-Agent=Mozilla/5.0_Windows_NT_10.0
+#EXTINF:-1 group-title="Socolive" tvg-logo="https://socolivee.cv/wp-content/uploads/truc-tiep/logos/football/team/f0383cb25545401b71cfbc0c67f12b8a.webp", [22:25] Soco Al-Ain FC vs Al-Dhafra lúc ngày 10/05/2026
+#EXTVLCOPT:http-referer=https://socolivee.cv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0_Windows_NT_10.0
+https://live.inplyr.com/default/x7lm7phj2p64m2w.m3u8|Referer=https://socolivee.cv/&Origin=https://socolivee.cv&User-Agent=Mozilla/5.0_Windows_NT_10.0
+#EXTINF:-1 group-title="Socolive" tvg-logo="https://socolivee.cv/wp-content/uploads/truc-tiep/logos/football/team/fcafc8131a8bb3ae49f77a1378ee1166.webp", [22:00] Soco Strommen vs Hodd lúc ngày 10/05/2026
+#EXTVLCOPT:http-referer=https://socolivee.cv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0_Windows_NT_10.0
+https://live.inplyr.com/default/318q66hx64wjqo9.m3u8|Referer=https://socolivee.cv/&Origin=https://socolivee.cv&User-Agent=Mozilla/5.0_Windows_NT_10.0
+#EXTINF:-1 group-title="Socolive" tvg-logo="https://socolivee.cv/wp-content/uploads/truc-tiep/logos/football/team/7aa5666576faea59e2b4b531a69d2fb4.webp", [22:00] Soco Sandnes Ulf vs Stabaek lúc ngày 10/05/2026
+#EXTVLCOPT:http-referer=https://socolivee.cv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0_Windows_NT_10.0
+https://live.inplyr.com/default/l7oqdehg80g3r51.m3u8|Referer=https://socolivee.cv/&Origin=https://socolivee.cv&User-Agent=Mozilla/5.0_Windows_NT_10.0
+#EXTINF:-1 group-title="Socolive" tvg-logo="https://socolivee.cv/wp-content/uploads/truc-tiep/logos/football/team/995665640dc319973d3173a74a03860c.webp", [22:00] Soco Moss vs Bryne lúc ngày 10/05/2026
+#EXTVLCOPT:http-referer=https://socolivee.cv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0_Windows_NT_10.0
+https://live.inplyr.com/default/4wyrn4h6o4y7q86.m3u8|Referer=https://socolivee.cv/&Origin=https://socolivee.cv&User-Agent=Mozilla/5.0_Windows_NT_10.0
+#EXTINF:-1 group-title="Socolive" tvg-logo="https://socolivee.cv/wp-content/uploads/truc-tiep/logos/football/team/d1b2b32de0a88f2c6c4291d3c7d0cad8.webp", [22:00] Soco Raufoss IL vs Lyn Oslo lúc ngày 10/05/2026
+#EXTVLCOPT:http-referer=https://socolivee.cv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0_Windows_NT_10.0
+https://live.inplyr.com/default/4wyrn4h6o4oeq86.m3u8|Referer=https://socolivee.cv/&Origin=https://socolivee.cv&User-Agent=Mozilla/5.0_Windows_NT_10.0
+#EXTINF:-1 group-title="Socolive" tvg-logo="https://socolivee.cv/wp-content/uploads/truc-tiep/logos/football/team/5d33f831f779428858138d28c9dd4480.webp", [22:00] Soco LASK Linz vs Red Bull Salzburg lúc ngày 10/05/2026
+#EXTVLCOPT:http-referer=https://socolivee.cv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0_Windows_NT_10.0
+https://live.inplyr.com/default/zp5rzghg3w2xq82.m3u8|Referer=https://socolivee.cv/&Origin=https://socolivee.cv&User-Agent=Mozilla/5.0_Windows_NT_10.0
+#EXTINF:-1 group-title="Socolive" tvg-logo="https://socolivee.cv/wp-content/uploads/truc-tiep/logos/football/team/6277e37ca37add055bcf859d528147c8.webp", [22:00] Soco Sandefjord vs Kristiansund BK lúc ngày 10/05/2026
+#EXTVLCOPT:http-referer=https://socolivee.cv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0_Windows_NT_10.0
+https://footballfast.app/sd-6MvZ6ERikznhDNEiKL_branded/live.m3u8?ver=1778431904|Referer=https://socolivee.cv/&Origin=https://socolivee.cv&User-Agent=Mozilla/5.0_Windows_NT_10.0
+#EXTINF:-1 group-title="Socolive" tvg-logo="https://socolivee.cv/wp-content/uploads/truc-tiep/logos/football/team/649f785bd0a18824c53867bd056990e4.webp", [22:00] Soco Rapid Wien vs Austria Vienna lúc ngày 10/05/2026
+#EXTVLCOPT:http-referer=https://socolivee.cv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0_Windows_NT_10.0
+https://live.inplyr.com/default/1l4rjnh9nl3em7v.m3u8|Referer=https://socolivee.cv/&Origin=https://socolivee.cv&User-Agent=Mozilla/5.0_Windows_NT_10.0
+#EXTINF:-1 group-title="Socolive" tvg-logo="https://socolivee.cv/wp-content/uploads/truc-tiep/logos/football/team/aa48c9699a970b34ec9978dce33d62bc.webp", [22:00] Soco FK Kosice vs KFC Komarno lúc ngày 10/05/2026
+#EXTVLCOPT:http-referer=https://socolivee.cv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0_Windows_NT_10.0
+https://live.inplyr.com/default/dn1m1ghl94pnmoe.m3u8|Referer=https://socolivee.cv/&Origin=https://socolivee.cv&User-Agent=Mozilla/5.0_Windows_NT_10.0
+#EXTINF:-1 group-title="Socolive" tvg-logo="https://socolivee.cv/wp-content/uploads/truc-tiep/logos/football/team/78581e2ef61df4a79eb3b24254665b88.webp", [22:00] Soco KFUM Oslo vs Viking lúc ngày 10/05/2026
+#EXTVLCOPT:http-referer=https://socolivee.cv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0_Windows_NT_10.0
+https://live.inplyr.com/default/l7oqdehg80ywr51.m3u8|Referer=https://socolivee.cv/&Origin=https://socolivee.cv&User-Agent=Mozilla/5.0_Windows_NT_10.0
+#EXTINF:-1 group-title="Socolive" tvg-logo="https://socolivee.cv/wp-content/uploads/truc-tiep/logos/football/team/9e6a0e070475570795b446edd47175f6.webp", [22:00] Soco Sogndal vs Haugesund lúc ngày 10/05/2026
+#EXTVLCOPT:http-referer=https://socolivee.cv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0_Windows_NT_10.0
+https://live.inplyr.com/default/23xmvkh6pk6nqg8.m3u8|Referer=https://socolivee.cv/&Origin=https://socolivee.cv&User-Agent=Mozilla/5.0_Windows_NT_10.0
+#EXTINF:-1 group-title="Socolive" tvg-logo="https://socolivee.cv/wp-content/uploads/truc-tiep/logos/football/team/0c29732e9b92eed751cd0f20224b4cd5.webp", [22:00] Soco Brno vs FK Graffin Vlasim lúc ngày 10/05/2026
+#EXTVLCOPT:http-referer=https://socolivee.cv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0_Windows_NT_10.0
+https://live.inplyr.com/default/pxwrxlhy17noryk.m3u8|Referer=https://socolivee.cv/&Origin=https://socolivee.cv&User-Agent=Mozilla/5.0_Windows_NT_10.0
+#EXTINF:-1 group-title="Socolive" tvg-logo="https://socolivee.cv/wp-content/uploads/truc-tiep/logos/football/team/a261990c8ba568a176fbac7ad0f01c12.webp", [22:00] Soco TSV Hartberg vs Sturm Graz lúc ngày 10/05/2026
+#EXTVLCOPT:http-referer=https://socolivee.cv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0_Windows_NT_10.0
+https://live.inplyr.com/default/23xmvkh6y0gkqg8.m3u8|Referer=https://socolivee.cv/&Origin=https://socolivee.cv&User-Agent=Mozilla/5.0_Windows_NT_10.0
+#EXTINF:-1 group-title="Socolive" tvg-logo="https://socolivee.cv/wp-content/uploads/truc-tiep/logos/football/team/e80d49b16e8a1ea6b6d38643e1d429b0.webp", [22:00] Soco FC Iberia 1999 Tbilisi vs Torpedo Kutaisi lúc ngày 10/05/2026
+#EXTVLCOPT:http-referer=https://socolivee.cv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0_Windows_NT_10.0
+https://live.inplyr.com/default/pxwrxlhy5p68ryk.m3u8|Referer=https://socolivee.cv/&Origin=https://socolivee.cv&User-Agent=Mozilla/5.0_Windows_NT_10.0
+#EXTINF:-1 group-title="Socolive" tvg-logo="https://socolivee.cv/wp-content/uploads/truc-tiep/logos/football/team/8888bb52a971c98b7518618bf61e7ad2.webp", [22:00] Soco Maxline Vitebsk vs Dnepr Mogilev lúc ngày 10/05/2026
+#EXTVLCOPT:http-referer=https://socolivee.cv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0_Windows_NT_10.0
+https://live.inplyr.com/default/2y8m4zh55dnyql0.m3u8|Referer=https://socolivee.cv/&Origin=https://socolivee.cv&User-Agent=Mozilla/5.0_Windows_NT_10.0
+#EXTINF:-1 group-title="Socolive" tvg-logo="https://socolivee.cv/wp-content/uploads/truc-tiep/logos/football/team/16a410c5355aed84a9ca41b15073db49.webp", [22:00] Soco Tromso IL vs Molde lúc ngày 10/05/2026
+#EXTVLCOPT:http-referer=https://socolivee.cv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0_Windows_NT_10.0
+https://live.inplyr.com/default/vjxm8ghe584gr6o.m3u8|Referer=https://socolivee.cv/&Origin=https://socolivee.cv&User-Agent=Mozilla/5.0_Windows_NT_10.0
+#EXTINF:-1 group-title="Socolive" tvg-logo="https://socolivee.cv/wp-content/uploads/truc-tiep/logos/football/team/e4f9c760cd9a2fcf6077c54ba72e3aaa.webp", [22:00] Soco Asane Fotball vs Stromsgodset lúc ngày 10/05/2026
+#EXTVLCOPT:http-referer=https://socolivee.cv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0_Windows_NT_10.0
+https://live.inplyr.com/default/vjxm8ghe58wlr6o.m3u8|Referer=https://socolivee.cv/&Origin=https://socolivee.cv&User-Agent=Mozilla/5.0_Windows_NT_10.0
+#EXTINF:-1 group-title="Socolive" tvg-logo="https://socolivee.cv/wp-content/uploads/truc-tiep/logos/football/team/e98ec15ca881228eef64816bcfe6e145.webp", [22:00] Soco Pogon Siedlce vs Stal Rzeszow lúc ngày 10/05/2026
+#EXTVLCOPT:http-referer=https://socolivee.cv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0_Windows_NT_10.0
+https://live.inplyr.com/default/x7lm7phjo1x5m2w.m3u8|Referer=https://socolivee.cv/&Origin=https://socolivee.cv&User-Agent=Mozilla/5.0_Windows_NT_10.0
+#EXTINF:-1 group-title="Socolive" tvg-logo="https://socolivee.cv/wp-content/uploads/truc-tiep/logos/football/team/6961986fd0e44c330328195328a39be4.webp", [21:45] Soco NAC Breda vs SC Heerenveen lúc ngày 10/05/2026
+#EXTVLCOPT:http-referer=https://socolivee.cv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0_Windows_NT_10.0
+https://footballfast.app/sd-6MuT7hpvNXh2E9XNk2_branded/live.m3u8?ver=1778431910|Referer=https://socolivee.cv/&Origin=https://socolivee.cv&User-Agent=Mozilla/5.0_Windows_NT_10.0
+#EXTINF:-1 group-title="Socolive" tvg-logo="https://socolivee.cv/wp-content/uploads/truc-tiep/logos/football/team/7a2d0c79dd5d8589167c88684ac55aca.webp", [21:45] Soco FC Twente Enschede vs Sparta Rotterdam lúc ngày 10/05/2026
+#EXTVLCOPT:http-referer=https://socolivee.cv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0_Windows_NT_10.0
+https://live.inplyr.com/default/2y8m4zh5j1k5ql0.m3u8|Referer=https://socolivee.cv/&Origin=https://socolivee.cv&User-Agent=Mozilla/5.0_Windows_NT_10.0
+#EXTINF:-1 group-title="Socolive" tvg-logo="https://socolivee.cv/wp-content/uploads/truc-tiep/logos/football/team/57b4c68789a8bedcb43174f5f4eb164a.webp", [21:45] Soco Excelsior SBV vs Volendam lúc ngày 10/05/2026
+#EXTVLCOPT:http-referer=https://socolivee.cv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0_Windows_NT_10.0
+https://live.inplyr.com/default/zp5rzghg718pq82.m3u8|Referer=https://socolivee.cv/&Origin=https://socolivee.cv&User-Agent=Mozilla/5.0_Windows_NT_10.0
+#EXTINF:-1 group-title="Socolive" tvg-logo="https://socolivee.cv/wp-content/uploads/truc-tiep/logos/football/team/acc42732b97d91016e37952666003417.webp", [21:45] Soco Go Ahead Eagles vs PSV Eindhoven lúc ngày 10/05/2026
+#EXTVLCOPT:http-referer=https://socolivee.cv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0_Windows_NT_10.0
+https://live.inplyr.com/default/y39mp1h6592ymoj.m3u8|Referer=https://socolivee.cv/&Origin=https://socolivee.cv&User-Agent=Mozilla/5.0_Windows_NT_10.0
+#EXTINF:-1 group-title="Socolive" tvg-logo="https://socolivee.cv/wp-content/uploads/truc-tiep/logos/football/team/f2e98454cf2fc81dea92c1401521eac1.webp", [21:45] Soco SC Telstar vs Heracles Almelo lúc ngày 10/05/2026
+#EXTVLCOPT:http-referer=https://socolivee.cv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0_Windows_NT_10.0
+https://live.inplyr.com/default/1l4rjnh913ykm7v.m3u8|Referer=https://socolivee.cv/&Origin=https://socolivee.cv&User-Agent=Mozilla/5.0_Windows_NT_10.0
+#EXTINF:-1 group-title="Socolive" tvg-logo="https://socolivee.cv/wp-content/uploads/truc-tiep/logos/football/team/98a1646fa8a5b6f02b0505cf3857f6d5.webp", [21:45] Soco Groningen vs NEC Nijmegen lúc ngày 10/05/2026
+#EXTVLCOPT:http-referer=https://socolivee.cv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0_Windows_NT_10.0
+https://live.inplyr.com/default/23xmvkh6og3dqg8.m3u8|Referer=https://socolivee.cv/&Origin=https://socolivee.cv&User-Agent=Mozilla/5.0_Windows_NT_10.0
+#EXTINF:-1 group-title="Socolive" tvg-logo="https://socolivee.cv/wp-content/uploads/truc-tiep/logos/football/team/622951cb622289cb656f2a1a05edcb13.webp", [21:45] Soco Fortuna Sittard vs PEC Zwolle lúc ngày 10/05/2026
+#EXTVLCOPT:http-referer=https://socolivee.cv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0_Windows_NT_10.0
+https://live.inplyr.com/default/vjxm8gheg2vyr6o.m3u8|Referer=https://socolivee.cv/&Origin=https://socolivee.cv&User-Agent=Mozilla/5.0_Windows_NT_10.0
+#EXTINF:-1 group-title="Socolive" tvg-logo="https://socolivee.cv/wp-content/uploads/truc-tiep/logos/football/team/a1d4af58c8dd03838332a1d7f87db3e4.webp", [21:30] Soco FC Viktoria Köln vs Alemannia Aachen lúc ngày 10/05/2026
+#EXTVLCOPT:http-referer=https://socolivee.cv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0_Windows_NT_10.0
+https://live.inplyr.com/default/pxwrxlhy9ovoryk.m3u8|Referer=https://socolivee.cv/&Origin=https://socolivee.cv&User-Agent=Mozilla/5.0_Windows_NT_10.0
+#EXTINF:-1 group-title="Socolive" tvg-logo="https://socolivee.cv/wp-content/uploads/truc-tiep/logos/football/team/c4c7e5d0c7df2788b7fa124578da9b07.webp", [21:30] Soco Dinamo Briansk vs Amkar Perm lúc ngày 10/05/2026
+#EXTVLCOPT:http-referer=https://socolivee.cv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0_Windows_NT_10.0
+https://live.inplyr.com/default/2y8m4zh55ov5ql0.m3u8|Referer=https://socolivee.cv/&Origin=https://socolivee.cv&User-Agent=Mozilla/5.0_Windows_NT_10.0
+#EXTINF:-1 group-title="Socolive" tvg-logo="https://socolivee.cv/wp-content/uploads/truc-tiep/logos/football/team/abd6b953cb787f0861256a3336c1bc2b.webp", [21:30] Soco Naft Missan vs Al-Naft SC lúc ngày 10/05/2026
+#EXTVLCOPT:http-referer=https://socolivee.cv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0_Windows_NT_10.0
+https://live.inplyr.com/default/8yomo4h18132q0j.m3u8|Referer=https://socolivee.cv/&Origin=https://socolivee.cv&User-Agent=Mozilla/5.0_Windows_NT_10.0
+#EXTINF:-1 group-title="Socolive" tvg-logo="https://socolivee.cv/wp-content/uploads/truc-tiep/logos/football/team/8f6a96375a4c1fb7540460af4bd51c27.webp", [21:30] Soco Al-Mina'a SC vs Al Zawraa lúc ngày 10/05/2026
+#EXTVLCOPT:http-referer=https://socolivee.cv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0_Windows_NT_10.0
+https://live.inplyr.com/default/dj2ryohlpl1kq1z.m3u8|Referer=https://socolivee.cv/&Origin=https://socolivee.cv&User-Agent=Mozilla/5.0_Windows_NT_10.0
+#EXTINF:-1 group-title="Socolive" tvg-logo="https://socolivee.cv/wp-content/uploads/truc-tiep/logos/football/team/0bdedfb7840af8a6ae82826773df54d0.webp", [21:30] Soco Neftekhimik Nizhnekamsk vs Volga Ulyanovsk lúc ngày 10/05/2026
+#EXTVLCOPT:http-referer=https://socolivee.cv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0_Windows_NT_10.0
+https://live.inplyr.com/default/l7oqdehg9eo8r51.m3u8|Referer=https://socolivee.cv/&Origin=https://socolivee.cv&User-Agent=Mozilla/5.0_Windows_NT_10.0
+#EXTINF:-1 group-title="Socolive" tvg-logo="https://socolivee.cv/wp-content/uploads/truc-tiep/logos/football/team/cdca6ad5f9eda6ae464383bba09589fb.webp", [21:30] Soco Duhok SC vs Al Qasim SC lúc ngày 10/05/2026
+#EXTVLCOPT:http-referer=https://socolivee.cv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0_Windows_NT_10.0
+https://live.inplyr.com/default/l5ergph4d4lzr8k.m3u8|Referer=https://socolivee.cv/&Origin=https://socolivee.cv&User-Agent=Mozilla/5.0_Windows_NT_10.0
+#EXTINF:-1 group-title="Socolive" tvg-logo="https://socolivee.cv/wp-content/uploads/truc-tiep/logos/football/team/20e11584cbbc5b85e9c5b29054c152ec.webp", [21:30] Soco Tromsdalen vs Honefoss BK lúc ngày 10/05/2026
+#EXTVLCOPT:http-referer=https://socolivee.cv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0_Windows_NT_10.0
+https://live.inplyr.com/default/6ypq3nhv7l89md7.m3u8|Referer=https://socolivee.cv/&Origin=https://socolivee.cv&User-Agent=Mozilla/5.0_Windows_NT_10.0
+#EXTINF:-1 group-title="Socolive" tvg-logo="https://socolivee.cv/wp-content/uploads/truc-tiep/logos/football/team/5ee7149b64dc654c7fa2e43c7a0cf12e.webp", [21:30] Soco Young Boys vs FC Basel 1893 lúc ngày 10/05/2026
+#EXTVLCOPT:http-referer=https://socolivee.cv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0_Windows_NT_10.0
+https://live.inplyr.com/default/y0or5jh856dxqwz.m3u8|Referer=https://socolivee.cv/&Origin=https://socolivee.cv&User-Agent=Mozilla/5.0_Windows_NT_10.0
+#EXTINF:-1 group-title="Socolive" tvg-logo="https://socolivee.cv/wp-content/uploads/truc-tiep/logos/football/team/53b6909a40a5d06ba5548d35c5a85ff2.webp", [21:30] Soco FC Sion vs Thun lúc ngày 10/05/2026
+#EXTVLCOPT:http-referer=https://socolivee.cv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0_Windows_NT_10.0
+https://footballfast.app/sd-6Mwdagu1pFA7g3NKXg_branded/live.m3u8?ver=1778431919|Referer=https://socolivee.cv/&Origin=https://socolivee.cv&User-Agent=Mozilla/5.0_Windows_NT_10.0
