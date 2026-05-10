@@ -4,24 +4,23 @@ import re
 
 # --- CẤU HÌNH ---
 TARGET_URL = "https://socolivee.cv"
-CONCURRENCY_LIMIT = 5 
+# 1. TĂNG TỐC: Cho phép mở 8 trận cùng lúc (GitHub gánh tốt)
+CONCURRENCY_LIMIT = 8 
 UA = "Mozilla/5.0_Windows_NT_10.0"
 
 async def fetch_stream(context, match, sem):
-    """Nhiệm vụ: Mở 1 trận, chộp link FLV/M3U8, tên BLV và vớt Logo nếu trang chủ hụt"""
     async with sem:
-        print(f"-> Đang áp sát: {match['raw_title'][:40]}...")
+        print(f"-> Đang giăng lưới: {match['raw_title'][:40]}...")
         page = await context.new_page()
         
         await page.route("**/*", lambda route: route.continue_() if route.request.resource_type in ["document", "script", "xhr", "fetch"] else route.abort())
 
-        stream_url = None
+        stream_urls = set()
         
         def handle_request(request):
-            nonlocal stream_url
             url = request.url
             if (".flv" in url or ".m3u8" in url) and "ad" not in url.lower() and "lulu" not in url.lower():
-                stream_url = url
+                stream_urls.add(url)
 
         page.on("request", handle_request)
 
@@ -34,7 +33,6 @@ async def fetch_stream(context, match, sem):
             }""")
             match['blv'] = blv_name
             
-            # LỚP BẢO MẬT 2: MÓC LOGO TỪ TRONG PHÒNG NẾU BÊN NGOÀI KHÔNG THẤY
             if not match.get('logo'):
                 room_logo = await page.evaluate("""() => {
                     let imgs = document.querySelectorAll('.team-logo img, .match-info img, .logo img');
@@ -49,22 +47,21 @@ async def fetch_stream(context, match, sem):
                 if room_logo:
                     match['logo'] = room_logo
 
-            for _ in range(15):
-                if stream_url:
-                    break
-                await page.wait_for_timeout(500)
+            # 2. TĂNG TỐC: Giảm thời gian nằm vùng xuống còn 3.5 giây (Tiết kiệm cả đống thời gian)
+            await page.wait_for_timeout(3500)
+            
         except:
             pass
         finally:
             await page.close() 
 
-        if stream_url:
-            match['stream_url'] = stream_url
+        if stream_urls:
+            match['stream_urls'] = list(stream_urls)
             return match
         return None
 
 async def main():
-    print("🥷 KHỞI ĐỘNG: BẮT FLV/M3U8 VÀ LỘT BỎ LỚP NGỤY TRANG LOGO...")
+    print("🥷 KHỞI ĐỘNG BẢN SIÊU TỐC & LỌC IDOL (.JPG)...")
     async with async_playwright() as p:
         browser = await p.chromium.launch(
             headless=True,
@@ -84,7 +81,6 @@ async def main():
             await browser.close()
             return
 
-        print("🔍 Đang đếm trận đấu và phá ngụy trang Logo...")
         links = await page.evaluate("""() => {
             let items = [];
             document.querySelectorAll('a').forEach(a => {
@@ -93,15 +89,12 @@ async def main():
                     let text = a.innerText || "";
                     
                     if(!text.includes('Bóng rổ') && !text.includes('Tennis') && !text.includes('Cầu lông')) {
-                        
-                        // LỚP BẢO MẬT 1: PHÁ GIẤU LOGO TẠI TRANG CHỦ
                         let logo = "";
                         let container = a.closest('div[class*="item"]') || a.closest('div');
                         if (container) {
                             let imgs = container.querySelectorAll('img');
                             for (let img of imgs) {
                                 let src = img.getAttribute('data-src') || img.getAttribute('data-original') || img.src || "";
-                                // Sút bay ảnh mồi (base64) và các icon linh tinh
                                 if(src && !src.includes('data:image') && !src.includes('base64') && !src.includes('icon') && !src.includes('gif')) {
                                     logo = src;
                                     break; 
@@ -126,17 +119,36 @@ async def main():
             await browser.close()
             return
 
-        print(f"✅ Tóm được {len(links)} trận. Bắt đầu lôi cổ FLV và Logo ra ngoài...")
+        print(f"✅ Tóm được {len(links)} trận. Bắt đầu dùng máy hút bụi tốc độ cao...")
         
         sem = asyncio.Semaphore(CONCURRENCY_LIMIT)
         tasks = [fetch_stream(context, m, sem) for m in links]
         results = await asyncio.gather(*tasks)
 
         playlist = "#EXTM3U\n"
-        count = 0
+        count_matches = 0
+        count_links = 0
         
         for res in results:
-            if res and 'stream_url' in res:
+            if res and 'stream_urls' in res and len(res['stream_urls']) > 0:
+                
+                logo = res.get('logo', '')
+                if logo:
+                    if logo.startswith('//'): logo = 'https:' + logo
+                    elif logo.startswith('/'): logo = 'https://socolivee.cv' + logo
+                else:
+                    logo = "https://socolivee.cv/logo.png"
+                    
+                # 3. LỌC IDOL/STREAMER CHÉM GIÓ: Hủy diệt các link có logo chứa .jpg hoặc .jpeg
+                if ".jpg" in logo.lower() or ".jpeg" in logo.lower():
+                    print(f"🚫 Đã loại bỏ phòng Idol: {res['raw_title']}")
+                    continue
+                
+                # Bonus thêm 1 màng lọc: Nếu tên trận không có dấu "vs" thì khả năng cao cũng là rác
+                if "vs" not in res['raw_title'].lower():
+                    continue
+
+                count_matches += 1
                 time_match = re.search(r'(\d{2}:\d{2})', res['raw_title'])
                 time_str = f"[{time_match.group(1)}] " if time_match else ""
                 
@@ -144,32 +156,26 @@ async def main():
                 clean_name = re.sub(r'\s+', ' ', clean_name).strip()
                 
                 blv_str = f" [BLV {res['blv']}]" if res['blv'] else ""
-                display_name = f"{time_str}{clean_name}{blv_str}"
+                base_display_name = f"{time_str}{clean_name}{blv_str}"
                 
-                # XỬ LÝ LINK LOGO CUỐI CÙNG: Điền bù https: nếu bị khuyết
-                logo = res.get('logo', '')
-                if logo:
-                    if logo.startswith('//'): 
-                        logo = 'https:' + logo
-                    elif logo.startswith('/'): 
-                        logo = 'https://socolivee.cv' + logo
-                else:
-                    logo = "https://socolivee.cv/logo.png"
-                    
-                final_url = res['stream_url']
                 origin = TARGET_URL.rstrip('/')
-                fixed_url = f"{final_url}|Referer={TARGET_URL}/&Origin={origin}&User-Agent={UA}"
                 
-                playlist += f'#EXTINF:-1 group-title="Socolive" tvg-logo="{logo}", {display_name}\n'
-                playlist += f'#EXTVLCOPT:http-referer={TARGET_URL}/\n'
-                playlist += f'#EXTVLCOPT:http-user-agent={UA}\n'
-                playlist += f'{fixed_url}\n'
-                count += 1
+                for idx, stream in enumerate(res['stream_urls']):
+                    server_tag = f" (Luồng {idx + 1})" if len(res['stream_urls']) > 1 else ""
+                    display_name = f"{base_display_name}{server_tag}"
+                    
+                    fixed_url = f"{stream}|Referer={TARGET_URL}/&Origin={origin}&User-Agent={UA}"
+                    
+                    playlist += f'#EXTINF:-1 group-title="Socolive" tvg-logo="{logo}", {display_name}\n'
+                    playlist += f'#EXTVLCOPT:http-referer={TARGET_URL}/\n'
+                    playlist += f'#EXTVLCOPT:http-user-agent={UA}\n'
+                    playlist += f'{fixed_url}\n'
+                    count_links += 1
 
-        if count > 0:
+        if count_links > 0:
             with open("socolive_live.m3u", "w", encoding="utf-8") as f:
                 f.write(playlist)
-            print(f"\n🎉 THÀNH CÔNG! Quét xong {count} trận nét căng kèm FULL LOGO.")
+            print(f"\n🎉 VÉT SẠCH VÀ LỌC BÓNG! Lấy được {count_links} link từ {count_matches} trận (Đã dọn sạch Idol JPG).")
         else:
             print("\n❌ Không bắt được luồng nào!")
 
