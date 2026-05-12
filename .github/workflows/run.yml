@@ -1,8 +1,6 @@
 name: Bot Quet Socolive
 
 on:
-  schedule:
-    - cron: '12,43 * * * *' # Cứ 30 phút tự chạy 1 lần
   workflow_dispatch: # Nút bấm chạy thủ công bằng tay
 
 permissions:
