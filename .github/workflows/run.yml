@@ -1,4 +1,4 @@
-name: Bot Quet Socolive V5 Adaptive
+name: Bot Quet Socolive V6 Burst
 
 on:
   workflow_dispatch:
@@ -38,36 +38,26 @@ jobs:
           PYTHONUNBUFFERED: "1"
           PYTHONUTF8: "1"
 
-          SOCOLIVE_MATCH_CONCURRENCY: "2"
-          SOCOLIVE_ROOM_WAIT_SECONDS: "8"
-          SOCOLIVE_RETRY_ROOM_WAIT_SECONDS: "12"
-          SOCOLIVE_MAX_ROOMS_PER_MATCH: "3"
+          # Giữ đúng kiểu V3: 4 tab chạy nhanh, không giãn từng navigation.
+          SOCOLIVE_MATCH_CONCURRENCY: "4"
+          SOCOLIVE_ROOM_WAIT_SECONDS: "7"
+          SOCOLIVE_MAX_ROOMS_PER_MATCH: "1"
           SOCOLIVE_MAX_SUCCESSFUL_ROOMS_PER_MATCH: "1"
 
-          # Tắt request HTTP thừa vì stream chỉ xuất hiện sau khi player chạy JS.
+          # Không gọi HTTP trước khi mở player.
           SOCOLIVE_HTTP_FIRST: "0"
 
-          # Bật bắt network ở lớp Chromium để chẩn đoán chính xác hơn.
+          # Bắt request ở tầng Chromium; không tạo thêm request mạng.
           SOCOLIVE_ENABLE_CDP: "1"
 
-          # Dùng chung một session, chỉ mở tối đa 2 player.
-          SOCOLIVE_NAVIGATION_MIN_INTERVAL_SECONDS: "4"
-
-          # Nếu Cloudflare trả 429, toàn bộ worker nghỉ rồi thử lại đúng URL.
-          SOCOLIVE_RATE_LIMIT_COOLDOWN_SECONDS: "60"
-          SOCOLIVE_RATE_LIMIT_MAX_RETRIES: "2"
-
-          # Quét BLV theo vòng: mỗi trận được thử một phòng trước.
-          SOCOLIVE_ROUND_COOLDOWN_SECONDS: "4"
-
-          # Lưu screenshot/HTML/network cho phòng không bắt được stream.
-          SOCOLIVE_SAVE_FAILURE_ARTIFACTS: "1"
+          # Gặp 429 thì dừng mở trang mới, không retry làm khóa nặng hơn.
+          SOCOLIVE_STOP_ON_429: "1"
 
           TEST_URL: ${{ inputs.test_url }}
         run: |
           echo "=== $(date -u '+%Y-%m-%d %H:%M:%S UTC') | Bắt đầu quét Socolive ==="
           echo "Python: $(python --version)"
-          echo "Concurrency=$SOCOLIVE_MATCH_CONCURRENCY | interval=${SOCOLIVE_NAVIGATION_MIN_INTERVAL_SECONDS}s | 429 cooldown=${SOCOLIVE_RATE_LIMIT_COOLDOWN_SECONDS}s"
+          echo "Concurrency=$SOCOLIVE_MATCH_CONCURRENCY | max_rooms=$SOCOLIVE_MAX_ROOMS_PER_MATCH | stop_on_429=$SOCOLIVE_STOP_ON_429"
 
           if [ -n "$TEST_URL" ]; then
             echo "Test riêng URL: $TEST_URL"
