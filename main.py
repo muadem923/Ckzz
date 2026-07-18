@@ -26,10 +26,10 @@ OUTPUT_MATCHES = "socolive_matches.json"
 TIMEZONE = ZoneInfo("Asia/Ho_Chi_Minh")
 
 # Cơ chế cân bằng: 4 player song song, không quá tải như 8 và không chậm như 1.
-MATCH_CONCURRENCY = int(os.getenv("SOCOLIVE_MATCH_CONCURRENCY", "2"))
+MATCH_CONCURRENCY = int(os.getenv("SOCOLIVE_MATCH_CONCURRENCY", "4"))
 
 # Mỗi phòng chỉ được chờ ngắn. Có stream thì đóng gần như ngay lập tức.
-ROOM_WAIT_SECONDS = float(os.getenv("SOCOLIVE_ROOM_WAIT_SECONDS", "8"))
+ROOM_WAIT_SECONDS = float(os.getenv("SOCOLIVE_ROOM_WAIT_SECONDS", "7"))
 EXTRA_WAIT_AFTER_STREAM = float(
     os.getenv("SOCOLIVE_EXTRA_WAIT_AFTER_STREAM", "0.8")
 )
@@ -59,49 +59,13 @@ MAX_SUCCESSFUL_ROOMS_PER_MATCH = int(
     os.getenv("SOCOLIVE_MAX_SUCCESSFUL_ROOMS_PER_MATCH", "1")
 )
 MAX_ROOMS_PER_MATCH = int(
-    os.getenv("SOCOLIVE_MAX_ROOMS_PER_MATCH", "3")
-)
-
-# Phòng BLV thứ hai/ba được chờ lâu hơn vì nhiều player khởi tạo chậm.
-RETRY_ROOM_WAIT_SECONDS = float(
-    os.getenv("SOCOLIVE_RETRY_ROOM_WAIT_SECONDS", "14")
-)
-
-# Chạy theo từng lô thay vì giữ 4 tab hoạt động liên tục suốt cả danh sách.
-BATCH_COOLDOWN_SECONDS = float(
-    os.getenv("SOCOLIVE_BATCH_COOLDOWN_SECONDS", "2")
-)
-FAILED_BATCH_COOLDOWN_SECONDS = float(
-    os.getenv("SOCOLIVE_FAILED_BATCH_COOLDOWN_SECONDS", "8")
-)
-
-# Giãn thời điểm bắt đầu mỗi navigation để tránh burst Cloudflare.
-NAVIGATION_MIN_INTERVAL_SECONDS = float(
-    os.getenv("SOCOLIVE_NAVIGATION_MIN_INTERVAL_SECONDS", "4")
-)
-
-# Khi gặp 429/challenge, mọi worker cùng nghỉ rồi thử lại.
-RATE_LIMIT_COOLDOWN_SECONDS = float(
-    os.getenv("SOCOLIVE_RATE_LIMIT_COOLDOWN_SECONDS", "60")
-)
-RATE_LIMIT_MAX_RETRIES = int(
-    os.getenv("SOCOLIVE_RATE_LIMIT_MAX_RETRIES", "2")
-)
-
-# Quét theo vòng: vòng 1 thử BLV đầu của mọi trận, vòng 2 mới thử BLV thứ hai.
-ROUND_COOLDOWN_SECONDS = float(
-    os.getenv("SOCOLIVE_ROUND_COOLDOWN_SECONDS", "4")
-)
-
-# Lưu bằng chứng cho các phòng thất bại.
-FAILURE_DIR = Path(
-    os.getenv("SOCOLIVE_FAILURE_DIR", "socolive_failures")
-)
-SAVE_FAILURE_ARTIFACTS = (
-    os.getenv("SOCOLIVE_SAVE_FAILURE_ARTIFACTS", "1") != "0"
+    os.getenv("SOCOLIVE_MAX_ROOMS_PER_MATCH", "1")
 )
 
 HEADLESS = os.getenv("SOCOLIVE_HEADLESS", "1") != "0"
+
+# Khi gặp HTTP 429, không retry trong cùng runner. Dừng mở trang mới và giữ kết quả đã lấy.
+STOP_ON_429 = os.getenv("SOCOLIVE_STOP_ON_429", "1") != "0"
 
 UA = (
     "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
@@ -391,78 +355,6 @@ def unique_rooms(rooms: list[dict[str, str]]) -> list[dict[str, str]]:
 
     # Giữ nguyên thứ tự BLV trên trang. URL tổng chỉ dùng làm fallback sau cùng.
     return with_blv + base_rooms
-
-
-class AdaptiveRateGate:
-    """
-    Điều phối tất cả navigation:
-      - Không cho nhiều trang bắt đầu cùng lúc.
-      - Giãn tối thiểu giữa hai navigation.
-      - Khi một worker gặp 429, toàn bộ worker cùng chờ.
-    """
-
-    def __init__(
-        self,
-        min_interval_seconds: float,
-        cooldown_seconds: float,
-    ) -> None:
-        self.min_interval_seconds = max(
-            0.0,
-            float(min_interval_seconds),
-        )
-        self.cooldown_seconds = max(
-            1.0,
-            float(cooldown_seconds),
-        )
-        self._lock = asyncio.Lock()
-        self._next_start_at = 0.0
-        self._blocked_until = 0.0
-        self.rate_limit_count = 0
-
-    async def wait_turn(self) -> None:
-        async with self._lock:
-            now = time.monotonic()
-            target = max(
-                self._next_start_at,
-                self._blocked_until,
-            )
-            delay = max(0.0, target - now)
-
-            if delay >= 1.0:
-                print(
-                    f"      ⏳ Điều phối chờ {delay:.1f}s "
-                    f"để tránh Cloudflare 429"
-                )
-
-            if delay > 0:
-                await asyncio.sleep(delay)
-
-            self._next_start_at = (
-                time.monotonic()
-                + self.min_interval_seconds
-            )
-
-    async def note_rate_limit(
-        self,
-        reason: str = "HTTP 429",
-    ) -> None:
-        async with self._lock:
-            now = time.monotonic()
-            self.rate_limit_count += 1
-            new_blocked_until = (
-                now + self.cooldown_seconds
-            )
-
-            if new_blocked_until > self._blocked_until:
-                self._blocked_until = new_blocked_until
-
-            if self._blocked_until > self._next_start_at:
-                self._next_start_at = self._blocked_until
-
-            print(
-                f"      🛑 {reason}: tạm dừng toàn bộ "
-                f"{self.cooldown_seconds:g}s trước khi thử lại"
-            )
 
 
 # ============================================================
@@ -1173,164 +1065,54 @@ async def fast_http_probe(
         return set(), result
 
 
-def safe_file_part(value: str, max_length: int = 90) -> str:
-    value = clean_text(value).lower()
-    value = re.sub(r"[^a-z0-9._-]+", "-", value)
-    value = value.strip("-._")
-    return (value or "unknown")[:max_length]
+class RateLimitCircuit:
+    def __init__(self) -> None:
+        self.triggered = asyncio.Event()
+        self.first_url = ""
+        self.first_status = 0
 
-
-def classify_failure(
-    main_status: int | None,
-    diagnostics: dict[str, Any],
-    network_events: list[dict[str, Any]],
-    http_errors: list[str],
-) -> dict[str, Any]:
-    statuses = [
-        int(event["status"])
-        for event in network_events
-        if isinstance(event.get("status"), int)
-    ]
-
-    urls = [
-        str(event.get("url", ""))
-        for event in network_events
-    ]
-
-    lower_body = clean_text(
-        str(diagnostics.get("body_sample", ""))
-    ).lower()
-
-    pull_urls = [
-        url for url in urls
-        if any(
-            marker in url.lower()
-            for marker in (
-                "niur.live",
-                "niues.live",
-                "niu.live",
-                "/live/stream-",
+    def trip(self, url: str, status: int = 429) -> None:
+        if not self.triggered.is_set():
+            self.first_url = url
+            self.first_status = status
+            print(
+                "\n🛑 PHÁT HIỆN HTTP 429 — DỪNG MỞ TRANG MỚI, "
+                "GIỮ TOÀN BỘ LINK ĐÃ LẤY ĐƯỢC.",
+                flush=True,
             )
-        )
-    ]
+        self.triggered.set()
 
-    m3u8_events = [
-        event for event in network_events
-        if ".m3u8" in str(event.get("url", "")).lower()
-    ]
 
-    if main_status == 403:
-        code = "SITE_HTTP_403"
-        explanation = "Trang trận trả HTTP 403."
-    elif main_status == 429 or 429 in statuses:
-        code = "RATE_LIMIT_429"
-        explanation = "Có HTTP 429: máy chủ đang giới hạn tần suất."
-    elif any(
-        event.get("status") in {401, 403}
-        and ".m3u8" in str(event.get("url", "")).lower()
-        for event in network_events
-    ):
-        code = "CDN_TOKEN_REJECTED"
-        explanation = "CDN đã nhận URL m3u8 nhưng trả 401/403."
-    elif any(
-        marker in lower_body
-        for marker in (
-            "checking your browser",
-            "verify you are human",
-            "access denied",
-            "too many requests",
-            "temporarily blocked",
-            "captcha",
-            "cloudflare ray id",
-        )
-    ):
-        code = "CHALLENGE_OR_BLOCK_PAGE"
-        explanation = "Nội dung trang có dấu hiệu challenge/chặn truy cập."
-    elif not pull_urls and diagnostics.get("video_count", 0) == 0:
-        code = "PLAYER_NOT_CREATED"
-        explanation = (
-            "HTML tải được nhưng player/video chưa được tạo; "
-            "thường do script lỗi, tài nguyên bị chặn hoặc trang chưa sẵn sàng."
-        )
-    elif not pull_urls:
-        code = "PLAYER_HAS_NO_SOURCE"
-        explanation = (
-            "Player tồn tại nhưng không gọi tới CDN niu; có thể nguồn chưa được "
-            "gắn, timeout quá ngắn hoặc giới hạn mềm theo session/IP."
-        )
-    elif pull_urls and not m3u8_events:
-        code = "CDN_CONTACTED_NO_MANIFEST"
-        explanation = (
-            "Đã liên hệ hạ tầng CDN/player nhưng chưa thấy manifest m3u8."
-        )
-    elif http_errors:
-        code = "NETWORK_HTTP_ERRORS"
-        explanation = "Có lỗi HTTP trong quá trình khởi tạo player."
+def match_priority_key(match: dict[str, Any]) -> tuple[int, float, str]:
+    """
+    Ưu tiên:
+      1. Card ghi đang diễn ra/trực tiếp.
+      2. Trận đã bắt đầu gần đây.
+      3. Trận sắp bắt đầu.
+    """
+    now = datetime.now(TIMEZONE)
+    status = clean_text(match.get("status", "")).lower()
+    scheduled = match_datetime_from_url(match.get("base_url", ""))
+
+    live_flag = 0 if any(word in status for word in LIVE_STATUS_WORDS) else 1
+
+    if scheduled is None:
+        distance = 10**9
     else:
-        code = "UNKNOWN_NO_STREAM"
-        explanation = (
-            "Trang trả bình thường nhưng không quan sát được luồng trong thời gian chờ."
-        )
+        delta_minutes = (now - scheduled).total_seconds() / 60.0
+        if -30 <= delta_minutes <= 180:
+            # Đang/sắp đá gần hiện tại.
+            distance = abs(delta_minutes)
+        elif delta_minutes > 180:
+            distance = 100000 + delta_minutes
+        else:
+            distance = 200000 + abs(delta_minutes)
 
-    return {
-        "code": code,
-        "explanation": explanation,
-        "main_status": main_status,
-        "status_codes": sorted(set(statuses)),
-        "pull_request_count": len(pull_urls),
-        "m3u8_event_count": len(m3u8_events),
-        "pull_url_samples": pull_urls[:10],
-    }
-
-
-async def save_failure_artifacts(
-    page: Page,
-    match: dict[str, Any],
-    room_url: str,
-    blv_id: str,
-    payload: dict[str, Any],
-) -> dict[str, str]:
-    if not SAVE_FAILURE_ARTIFACTS:
-        return {}
-
-    FAILURE_DIR.mkdir(parents=True, exist_ok=True)
-
-    match_part = safe_file_part(match_display_name(match))
-    blv_part = safe_file_part(blv_id or "base")
-    stem = f"{match_part}__blv-{blv_part}"
-
-    paths = {
-        "json": str(FAILURE_DIR / f"{stem}.json"),
-        "html": str(FAILURE_DIR / f"{stem}.html"),
-        "screenshot": str(FAILURE_DIR / f"{stem}.png"),
-    }
-
-    try:
-        Path(paths["json"]).write_text(
-            json.dumps(payload, ensure_ascii=False, indent=2),
-            encoding="utf-8",
-        )
-    except Exception:
-        paths.pop("json", None)
-
-    try:
-        html_content = await page.content()
-        Path(paths["html"]).write_text(
-            html_content,
-            encoding="utf-8",
-        )
-    except Exception:
-        paths.pop("html", None)
-
-    try:
-        await page.screenshot(
-            path=paths["screenshot"],
-            full_page=False,
-        )
-    except Exception:
-        paths.pop("screenshot", None)
-
-    return paths
+    return (
+        live_flag,
+        distance,
+        match_display_name(match).lower(),
+    )
 
 
 # ============================================================
@@ -1340,29 +1122,18 @@ async def scan_room(
     context: BrowserContext,
     match: dict[str, Any],
     room: dict[str, str],
-    wait_seconds: float | None = None,
-    rate_gate: AdaptiveRateGate | None = None,
+    circuit: RateLimitCircuit,
 ) -> dict[str, Any]:
     room_url = room["url"]
     room_blv = clean_text(room.get("blv", ""))
-    blv_id = room.get("blv_id", "") or room_blv_id(room_url)
-    effective_wait = (
-        float(wait_seconds)
-        if wait_seconds is not None
-        else ROOM_WAIT_SECONDS
-    )
-
     stream_urls: set[str] = set()
     errors: list[str] = []
     failed_requests: list[str] = []
     http_errors: list[str] = []
-    network_events: list[dict[str, Any]] = []
     stream_event = asyncio.Event()
     started = time.monotonic()
-    main_status: int | None = None
-    main_headers: dict[str, str] = {}
 
-    # HTTP-first mặc định đã tắt vì trang Socolive cấp luồng sau khi JS chạy.
+    # Tầng 1: HTTP nhẹ. Nếu có stream trong HTML/config thì không mở browser.
     http_streams, http_probe = await fast_http_probe(
         context,
         room_url,
@@ -1374,7 +1145,7 @@ async def scan_room(
         return {
             "url": room_url,
             "blv": room_blv,
-            "blv_id": blv_id,
+            "blv_id": room.get("blv_id", "") or room_blv_id(room_url),
             "streams": sorted(http_streams),
             "diagnostics": {
                 "scan_mode": "http-first",
@@ -1384,13 +1155,28 @@ async def scan_room(
                 ),
             },
             "http_probe": http_probe,
-            "network_events": network_events,
-            "block_verdict": {
-                "code": "STREAM_FOUND_HTTP_FIRST",
-                "explanation": "Tìm thấy stream ngay trong phản hồi HTTP.",
-            },
-            "failure_artifacts": {},
             "errors": errors,
+            "failed_requests": failed_requests,
+            "http_errors": http_errors,
+        }
+
+    # Tầng 2: mở Chromium và chỉ đợi sự kiện stream, không polling DOM liên tục.
+    if STOP_ON_429 and circuit.triggered.is_set():
+        return {
+            "url": room_url,
+            "blv": room_blv,
+            "blv_id": room.get("blv_id", "") or room_blv_id(room_url),
+            "streams": [],
+            "diagnostics": {
+                "scan_mode": "skipped-after-429",
+                "elapsed_seconds": round(
+                    time.monotonic() - started,
+                    3,
+                ),
+                "main_status": 429,
+            },
+            "http_probe": http_probe,
+            "errors": ["Bỏ qua vì circuit breaker HTTP 429 đã kích hoạt."],
             "failed_requests": failed_requests,
             "http_errors": http_errors,
         }
@@ -1399,53 +1185,18 @@ async def scan_room(
     cdp = None
 
     async def route_handler(route: Any) -> None:
-        # Không chặn stylesheet vì nó có thể ảnh hưởng trạng thái/khả năng click player.
-        if route.request.resource_type in {"image", "font"}:
+        # Không tải các tài nguyên nặng không cần thiết.
+        # Giữ script/xhr/fetch/media/other để player vẫn khởi tạo.
+        if route.request.resource_type in {
+            "image",
+            "font",
+            "stylesheet",
+        }:
             await route.abort()
         else:
             await route.continue_()
 
     await page.route("**/*", route_handler)
-
-    def append_network_event(
-        phase: str,
-        url: str,
-        resource_type: str = "",
-        status: int | None = None,
-    ) -> None:
-        if len(network_events) >= 160:
-            return
-
-        lower = (url or "").lower()
-        important = (
-            resource_type in {
-                "document",
-                "script",
-                "xhr",
-                "fetch",
-                "media",
-                "manifest",
-                "other",
-            }
-            or ".m3u8" in lower
-            or "niur.live" in lower
-            or "niues.live" in lower
-            or "/live/stream-" in lower
-        )
-
-        if not important:
-            return
-
-        event = {
-            "t": round(time.monotonic() - started, 3),
-            "phase": phase,
-            "resource_type": resource_type,
-            "url": url[:1600],
-        }
-        if status is not None:
-            event["status"] = int(status)
-
-        network_events.append(event)
 
     def capture(value: str, source: str) -> None:
         for stream in extract_stream_urls_from_value(value):
@@ -1455,48 +1206,40 @@ async def scan_room(
                 print(f"      🎯 [{source}] {stream}")
 
     def on_request(request: Any) -> None:
-        append_network_event(
-            "request",
-            request.url,
-            request.resource_type,
-        )
         capture(request.url, f"request/{request.resource_type}")
 
     def on_response(response: Any) -> None:
-        append_network_event(
-            "response",
-            response.url,
-            response.request.resource_type,
-            response.status,
-        )
         capture(response.url, f"response/{response.status}")
 
-        if response.status >= 400 and len(http_errors) < 30:
+        if response.status == 429:
+            circuit.trip(response.url, 429)
+
+        if response.status >= 400 and len(http_errors) < 15:
             http_errors.append(
-                f"{response.status} {response.url[:700]}"
+                f"{response.status} {response.url[:500]}"
             )
 
     def on_request_failed(request: Any) -> None:
-        if len(failed_requests) >= 30:
+        if len(failed_requests) >= 15:
             return
         failed_requests.append(
-            f"{request.resource_type} {request.url[:600]} "
+            f"{request.resource_type} {request.url[:400]} "
             f"| {request.failure}"
         )
 
     def on_page_error(error: Any) -> None:
-        if len(errors) < 40:
+        if len(errors) < 20:
             errors.append(f"JS: {error}")
 
     def on_console(message: Any) -> None:
         if (
             message.type in {"error", "warning"}
-            and len(errors) < 40
+            and len(errors) < 20
         ):
             value = clean_text(str(message.text))
             if value:
                 errors.append(
-                    f"console/{message.type}: {value[:900]}"
+                    f"console/{message.type}: {value[:600]}"
                 )
 
     page.on("request", on_request)
@@ -1510,128 +1253,42 @@ async def scan_room(
             try:
                 cdp = await context.new_cdp_session(page)
                 await cdp.send("Network.enable")
-
-                def on_cdp_request(event: dict[str, Any]) -> None:
-                    request_data = event.get("request", {})
-                    url = request_data.get("url", "")
-                    resource_type = str(event.get("type", "")).lower()
-                    append_network_event(
-                        "cdp_request",
-                        url,
-                        resource_type,
-                    )
-                    capture(url, "cdp/request")
-
+                cdp.on(
+                    "Network.requestWillBeSent",
+                    lambda event: capture(
+                        event.get("request", {}).get("url", ""),
+                        "cdp/request",
+                    ),
+                )
                 def on_cdp_response(event: dict[str, Any]) -> None:
                     response_data = event.get("response", {})
-                    url = response_data.get("url", "")
-                    status = response_data.get("status")
-                    resource_type = str(event.get("type", "")).lower()
-                    append_network_event(
-                        "cdp_response",
-                        url,
-                        resource_type,
-                        int(status) if status is not None else None,
+                    response_url = response_data.get("url", "")
+                    response_status = int(
+                        response_data.get("status", 0) or 0
                     )
-                    capture(url, "cdp/response")
+                    capture(response_url, "cdp/response")
+                    if response_status == 429:
+                        circuit.trip(response_url, 429)
 
-                cdp.on("Network.requestWillBeSent", on_cdp_request)
-                cdp.on("Network.responseReceived", on_cdp_response)
-
+                cdp.on(
+                    "Network.responseReceived",
+                    on_cdp_response,
+                )
             except Exception as exc:
                 errors.append(
                     f"CDP unavailable: {type(exc).__name__}: {exc}"
                 )
 
-        if rate_gate is not None:
-            await rate_gate.wait_turn()
-
-        main_response = await page.goto(
+        await page.goto(
             room_url,
             wait_until="domcontentloaded",
-            timeout=22000,
+            timeout=18000,
             referer=TARGET_URL,
         )
 
-        if main_response is not None:
-            main_status = main_response.status
-            try:
-                main_headers = await main_response.all_headers()
-            except Exception:
-                main_headers = {}
-
-        # Cloudflare 429 không thể sinh stream. Trả ngay, không phí thêm 8-14 giây.
-        if main_status == 429:
-            if rate_gate is not None:
-                await rate_gate.note_rate_limit(
-                    f"HTTP 429 tại BLV {blv_id or 'base'}"
-                )
-
-            await page.wait_for_timeout(350)
-            diagnostics = await diagnose_page(page)
-            diagnostics.update(
-                {
-                    "scan_mode": "rate-limited-fast-return",
-                    "elapsed_seconds": round(
-                        time.monotonic() - started,
-                        3,
-                    ),
-                    "wait_seconds": effective_wait,
-                    "main_status": main_status,
-                    "final_url": page.url,
-                    "expected_stream_fragment": (
-                        f"stream-{blv_id}_lhd.m3u8"
-                        if blv_id
-                        else ""
-                    ),
-                }
-            )
-
-            block_verdict = classify_failure(
-                main_status,
-                diagnostics,
-                network_events,
-                http_errors,
-            )
-
-            failure_artifacts = await save_failure_artifacts(
-                page,
-                match,
-                room_url,
-                blv_id,
-                {
-                    "match": match_display_name(match),
-                    "room_url": room_url,
-                    "blv": room_blv,
-                    "blv_id": blv_id,
-                    "diagnostics": diagnostics,
-                    "block_verdict": block_verdict,
-                    "main_headers": main_headers,
-                    "network_events": network_events,
-                    "http_errors": http_errors,
-                    "failed_requests": failed_requests,
-                    "errors": errors,
-                },
-            )
-
-            return {
-                "url": room_url,
-                "blv": room_blv,
-                "blv_id": blv_id,
-                "streams": [],
-                "diagnostics": diagnostics,
-                "http_probe": http_probe,
-                "network_events": network_events,
-                "block_verdict": block_verdict,
-                "failure_artifacts": failure_artifacts,
-                "errors": errors,
-                "failed_requests": failed_requests,
-                "http_errors": http_errors,
-            }
-
-        await page.wait_for_timeout(650)
-
+        # Nếu stream xuất hiện ngay trong lúc goto thì không làm thêm việc.
         if not stream_event.is_set():
+            await page.wait_for_timeout(350)
             await stimulate_player(page)
 
         metadata = await extract_page_metadata(page, room_url)
@@ -1646,13 +1303,10 @@ async def scan_room(
             "away_logo",
         ):
             if not match.get(key) and metadata.get(key):
-                if key.endswith("_logo"):
-                    match[key] = normalize_absolute_url(
-                        metadata[key],
-                        room_url,
-                    )
-                else:
-                    match[key] = metadata[key]
+                match[key] = normalize_absolute_url(
+                    metadata[key],
+                    room_url,
+                )
 
         if (
             (not match.get("home_team") or not match.get("away_team"))
@@ -1662,33 +1316,23 @@ async def scan_room(
             match["home_team"] = match.get("home_team") or home
             match["away_team"] = match.get("away_team") or away
 
-        # Chia thời gian chờ thành hai nhịp để kích hoạt player lại sau khi DOM ổn định.
-        first_wait = min(3.0, effective_wait)
-        if not stream_event.is_set() and first_wait > 0:
+        # Chờ đúng sự kiện stream. Không vòng lặp 700 ms kéo dài 22 giây.
+        if not stream_event.is_set():
             try:
                 await asyncio.wait_for(
                     stream_event.wait(),
-                    timeout=first_wait,
-                )
-            except asyncio.TimeoutError:
-                pass
-
-        remaining_wait = max(0.0, effective_wait - first_wait)
-        if not stream_event.is_set() and remaining_wait > 0:
-            await stimulate_player(page)
-            try:
-                await asyncio.wait_for(
-                    stream_event.wait(),
-                    timeout=remaining_wait,
+                    timeout=ROOM_WAIT_SECONDS,
                 )
             except asyncio.TimeoutError:
                 pass
 
         if stream_event.is_set():
+            # Cho player thêm một khoảng rất ngắn để phát hiện URL dự phòng.
             await page.wait_for_timeout(
                 int(EXTRA_WAIT_AFTER_STREAM * 1000)
             )
         else:
+            # Chỉ scan DOM/JWPlayer một lần cuối khi network không bắt được.
             for value in await collect_frame_candidates(page):
                 capture(value, "final/frame-scan")
 
@@ -1696,106 +1340,21 @@ async def scan_room(
                 await page.wait_for_timeout(250)
 
         diagnostics = await diagnose_page(page)
-        diagnostics.update(
-            {
-                "scan_mode": "browser-event-diagnostic",
-                "elapsed_seconds": round(
-                    time.monotonic() - started,
-                    3,
-                ),
-                "wait_seconds": effective_wait,
-                "main_status": main_status,
-                "final_url": page.url,
-                "expected_stream_fragment": (
-                    f"stream-{blv_id}_lhd.m3u8"
-                    if blv_id
-                    else ""
-                ),
-            }
+        diagnostics["scan_mode"] = "browser-event"
+        diagnostics["elapsed_seconds"] = round(
+            time.monotonic() - started,
+            3,
         )
-
-        block_verdict = classify_failure(
-            main_status,
-            diagnostics,
-            network_events,
-            http_errors,
-        ) if not stream_urls else {
-            "code": "STREAM_FOUND",
-            "explanation": "Đã quan sát được URL stream.",
-            "main_status": main_status,
-        }
-
-        failure_artifacts: dict[str, str] = {}
-
-        if not stream_urls:
-            artifact_payload = {
-                "match": match_display_name(match),
-                "room_url": room_url,
-                "blv": room_blv,
-                "blv_id": blv_id,
-                "diagnostics": diagnostics,
-                "block_verdict": block_verdict,
-                "main_headers": main_headers,
-                "network_events": network_events,
-                "http_errors": http_errors,
-                "failed_requests": failed_requests,
-                "errors": errors,
-            }
-
-            failure_artifacts = await save_failure_artifacts(
-                page,
-                match,
-                room_url,
-                blv_id,
-                artifact_payload,
-            )
 
     except Exception as exc:
         diagnostics = {
-            "scan_mode": "browser-event-diagnostic",
+            "scan_mode": "browser-event",
             "elapsed_seconds": round(
                 time.monotonic() - started,
                 3,
             ),
-            "wait_seconds": effective_wait,
-            "main_status": main_status,
-            "expected_stream_fragment": (
-                f"stream-{blv_id}_lhd.m3u8"
-                if blv_id
-                else ""
-            ),
         }
         errors.append(f"{type(exc).__name__}: {exc}")
-        block_verdict = classify_failure(
-            main_status,
-            diagnostics,
-            network_events,
-            http_errors,
-        )
-        failure_artifacts = {}
-
-        try:
-            failure_artifacts = await save_failure_artifacts(
-                page,
-                match,
-                room_url,
-                blv_id,
-                {
-                    "match": match_display_name(match),
-                    "room_url": room_url,
-                    "blv": room_blv,
-                    "blv_id": blv_id,
-                    "diagnostics": diagnostics,
-                    "block_verdict": block_verdict,
-                    "main_headers": main_headers,
-                    "network_events": network_events,
-                    "http_errors": http_errors,
-                    "failed_requests": failed_requests,
-                    "errors": errors,
-                },
-            )
-        except Exception:
-            pass
     finally:
         if cdp is not None:
             try:
@@ -1807,13 +1366,10 @@ async def scan_room(
     return {
         "url": room_url,
         "blv": room_blv,
-        "blv_id": blv_id,
+        "blv_id": room.get("blv_id", "") or room_blv_id(room_url),
         "streams": sorted(stream_urls),
         "diagnostics": diagnostics,
         "http_probe": http_probe,
-        "network_events": network_events,
-        "block_verdict": block_verdict,
-        "failure_artifacts": failure_artifacts,
         "errors": errors,
         "failed_requests": failed_requests,
         "http_errors": http_errors,
@@ -1827,6 +1383,7 @@ async def scan_match(
     context: BrowserContext,
     match: dict[str, Any],
     semaphore: asyncio.Semaphore,
+    circuit: RateLimitCircuit,
 ) -> dict[str, Any]:
     async with semaphore:
         name = match_display_name(match)
@@ -1861,17 +1418,18 @@ async def scan_match(
                 f"{blv_label}"
             )
 
-            room_wait = (
-                ROOM_WAIT_SECONDS
-                if index == 1
-                else RETRY_ROOM_WAIT_SECONDS
-            )
+            if STOP_ON_429 and circuit.triggered.is_set():
+                print(
+                    "      ⏭ Bỏ qua vì đã gặp HTTP 429.",
+                    flush=True,
+                )
+                break
 
             room_result = await scan_room(
                 context,
                 match,
                 room,
-                wait_seconds=room_wait,
+                circuit,
             )
             match["room_results"].append(room_result)
 
@@ -1903,17 +1461,11 @@ async def scan_match(
                     break
             else:
                 diag = room_result.get("diagnostics", {})
-                verdict = room_result.get(
-                    "block_verdict",
-                    {},
-                )
                 print(
                     "      ⚠️ Không thấy stream trực tiếp"
-                    f" | verdict={verdict.get('code', 'UNKNOWN')}"
-                    f" | HTTP={diag.get('main_status', '?')}"
                     f" | video={diag.get('video_count', '?')}"
                     f" iframe={diag.get('iframe_count', '?')}"
-                    f" | {verdict.get('explanation', '')}"
+                    f" visibility={diag.get('visibility_state', '?')}"
                 )
 
             await asyncio.sleep(DELAY_BETWEEN_ROOMS)
@@ -2066,21 +1618,8 @@ def write_outputs(matches: list[dict[str, Any]]) -> tuple[int, int]:
                     "http_first": HTTP_FIRST,
                     "http_fetch_timeout_seconds": HTTP_FETCH_TIMEOUT_SECONDS,
                     "enable_cdp": ENABLE_CDP,
-                    "retry_room_wait_seconds": RETRY_ROOM_WAIT_SECONDS,
-                    "batch_cooldown_seconds": BATCH_COOLDOWN_SECONDS,
-                    "failed_batch_cooldown_seconds":
-                        FAILED_BATCH_COOLDOWN_SECONDS,
-                    "navigation_min_interval_seconds":
-                        NAVIGATION_MIN_INTERVAL_SECONDS,
-                    "rate_limit_cooldown_seconds":
-                        RATE_LIMIT_COOLDOWN_SECONDS,
-                    "rate_limit_max_retries":
-                        RATE_LIMIT_MAX_RETRIES,
-                    "round_cooldown_seconds":
-                        ROUND_COOLDOWN_SECONDS,
-                    "shared_context": True,
-                    "save_failure_artifacts":
-                        SAVE_FAILURE_ARTIFACTS,
+                    "stop_on_429": STOP_ON_429,
+                    "strategy": "v3-burst-circuit-breaker",
                     "scan_before_minutes": SCAN_BEFORE_MINUTES,
                     "scan_after_minutes": SCAN_AFTER_MINUTES,
                     "scan_all": SCAN_ALL,
@@ -2102,367 +1641,14 @@ def write_outputs(matches: list[dict[str, Any]]) -> tuple[int, int]:
     return count_matches, count_links
 
 
-async def create_scan_context(browser: Any) -> BrowserContext:
-    context = await browser.new_context(
-        viewport={"width": 1366, "height": 768},
-        user_agent=UA,
-        locale="vi-VN",
-        timezone_id="Asia/Ho_Chi_Minh",
-        ignore_https_errors=True,
-        extra_http_headers={
-            "Accept-Language":
-                "vi-VN,vi;q=0.9,en-US;q=0.8,en;q=0.7"
-        },
-    )
-
-    await context.add_init_script(
-        """() => {
-            try {
-                Object.defineProperty(
-                    navigator,
-                    "webdriver",
-                    { get: () => undefined }
-                );
-                Object.defineProperty(
-                    navigator,
-                    "languages",
-                    { get: () => ["vi-VN", "vi", "en-US", "en"] }
-                );
-                Object.defineProperty(
-                    document,
-                    "hidden",
-                    { get: () => false }
-                );
-                Object.defineProperty(
-                    document,
-                    "visibilityState",
-                    { get: () => "visible" }
-                );
-            } catch (_) {}
-        }"""
-    )
-
-    return context
-
-
-async def scan_match_isolated(
-    browser: Any,
-    match: dict[str, Any],
-) -> dict[str, Any]:
-    # Mỗi trận dùng cookie/localStorage/session riêng để tránh nhiễu giữa các player.
-    context = await create_scan_context(browser)
-    try:
-        return await scan_match(
-            context,
-            match,
-            asyncio.Semaphore(1),
-        )
-    finally:
-        await context.close()
-
-
-RETRYABLE_BLOCK_CODES = {
-    "RATE_LIMIT_429",
-    "CHALLENGE_OR_BLOCK_PAGE",
-    "SITE_HTTP_403",
-}
-
-
-async def scan_room_with_backoff(
-    context: BrowserContext,
-    match: dict[str, Any],
-    room: dict[str, str],
-    wait_seconds: float,
-    rate_gate: AdaptiveRateGate,
-) -> dict[str, Any]:
-    retry_history: list[dict[str, Any]] = []
-    final_result: dict[str, Any] | None = None
-
-    for attempt in range(
-        1,
-        RATE_LIMIT_MAX_RETRIES + 2,
-    ):
-        result = await scan_room(
-            context,
-            match,
-            room,
-            wait_seconds=wait_seconds,
-            rate_gate=rate_gate,
-        )
-        final_result = result
-
-        verdict = result.get("block_verdict", {})
-        code = verdict.get("code", "")
-        diagnostics = result.get("diagnostics", {})
-
-        retry_history.append(
-            {
-                "attempt": attempt,
-                "code": code,
-                "main_status": diagnostics.get(
-                    "main_status"
-                ),
-                "elapsed_seconds": diagnostics.get(
-                    "elapsed_seconds"
-                ),
-                "streams_found": len(
-                    result.get("streams", [])
-                ),
-            }
-        )
-
-        if result.get("streams"):
-            break
-
-        if code not in RETRYABLE_BLOCK_CODES:
-            break
-
-        if attempt > RATE_LIMIT_MAX_RETRIES:
-            break
-
-        if code != "RATE_LIMIT_429":
-            await rate_gate.note_rate_limit(code)
-
-        print(
-            f"      🔁 Thử lại phòng "
-            f"{room.get('blv') or room.get('blv_id') or 'base'} "
-            f"sau cooldown ({attempt}/"
-            f"{RATE_LIMIT_MAX_RETRIES + 1})"
-        )
-
-    assert final_result is not None
-    final_result["retry_history"] = retry_history
-    return final_result
-
-
-def append_room_result_to_match(
-    match: dict[str, Any],
-    room_result: dict[str, Any],
-) -> None:
-    match.setdefault("room_results", []).append(
-        room_result
-    )
-
-    existing = {
-        item["url"]
-        for item in match.setdefault("streams", [])
-    }
-
-    for stream in room_result.get("streams", []):
-        if stream in existing:
-            continue
-
-        existing.add(stream)
-        match["streams"].append(
-            {
-                "url": stream,
-                "room_url": room_result["url"],
-                "blv": room_result.get("blv", ""),
-                "blv_id": room_result.get(
-                    "blv_id",
-                    "",
-                ),
-            }
-        )
-
-
-async def scan_one_match_room(
-    context: BrowserContext,
-    match: dict[str, Any],
-    room_index: int,
-    semaphore: asyncio.Semaphore,
-    rate_gate: AdaptiveRateGate,
-) -> dict[str, Any] | None:
-    if match.get("streams"):
-        return None
-
-    rooms = unique_rooms(
-        match.get("rooms", [])
-    )[:MAX_ROOMS_PER_MATCH]
-
-    if not rooms:
-        rooms = [
-            {
-                "url": match["base_url"],
-                "blv": "",
-                "blv_id": "",
-            }
-        ]
-
-    if room_index >= len(rooms):
-        return None
-
-    room = rooms[room_index]
-    name = match_display_name(match)
-    blv_label = (
-        room.get("blv")
-        or room.get("blv_id")
-        or "URL tổng"
-    )
-
-    async with semaphore:
-        print(
-            f"   -> {name} | phòng "
-            f"{room_index + 1}/{len(rooms)}: "
-            f"{blv_label}"
-        )
-
-        room_wait = (
-            ROOM_WAIT_SECONDS
-            if room_index == 0
-            else RETRY_ROOM_WAIT_SECONDS
-        )
-
-        result = await scan_room_with_backoff(
-            context,
-            match,
-            room,
-            wait_seconds=room_wait,
-            rate_gate=rate_gate,
-        )
-
-        append_room_result_to_match(
-            match,
-            result,
-        )
-
-        if result.get("streams"):
-            print(
-                f"      ✅ {name}: "
-                f"{len(result['streams'])} luồng"
-            )
-        else:
-            verdict = result.get(
-                "block_verdict",
-                {},
-            )
-            diagnostics = result.get(
-                "diagnostics",
-                {},
-            )
-            print(
-                f"      ⚠️ {name}: "
-                f"{verdict.get('code', 'UNKNOWN')}"
-                f" | HTTP={diagnostics.get('main_status', '?')}"
-                f" | {verdict.get('explanation', '')}"
-            )
-
-        return result
-
-
-async def scan_matches_round_robin(
-    context: BrowserContext,
-    matches: list[dict[str, Any]],
-) -> list[dict[str, Any]]:
-    semaphore = asyncio.Semaphore(
-        MATCH_CONCURRENCY
-    )
-    rate_gate = AdaptiveRateGate(
-        NAVIGATION_MIN_INTERVAL_SECONDS,
-        RATE_LIMIT_COOLDOWN_SECONDS,
-    )
-
-    for room_index in range(
-        MAX_ROOMS_PER_MATCH
-    ):
-        pending = []
-
-        for match in matches:
-            if match.get("streams"):
-                continue
-
-            rooms = unique_rooms(
-                match.get("rooms", [])
-            )[:MAX_ROOMS_PER_MATCH]
-
-            if not rooms:
-                rooms = [
-                    {
-                        "url": match["base_url"],
-                        "blv": "",
-                        "blv_id": "",
-                    }
-                ]
-
-            if room_index < len(rooms):
-                pending.append(match)
-
-        if not pending:
-            break
-
-        print(
-            f"\\n🔄 VÒNG {room_index + 1}/"
-            f"{MAX_ROOMS_PER_MATCH}: "
-            f"thử một phòng cho {len(pending)} trận"
-        )
-
-        await asyncio.gather(
-            *[
-                scan_one_match_room(
-                    context,
-                    match,
-                    room_index,
-                    semaphore,
-                    rate_gate,
-                )
-                for match in pending
-            ]
-        )
-
-        success_count = sum(
-            1
-            for match in matches
-            if match.get("streams")
-        )
-
-        print(
-            f"📊 Sau vòng {room_index + 1}: "
-            f"{success_count}/{len(matches)} trận có link"
-        )
-
-        if (
-            room_index + 1 < MAX_ROOMS_PER_MATCH
-            and any(
-                not match.get("streams")
-                for match in matches
-            )
-        ):
-            await asyncio.sleep(
-                ROUND_COOLDOWN_SECONDS
-            )
-
-    for match in matches:
-        match["match_name"] = match_display_name(
-            match
-        )
-
-        if match.get("streams"):
-            print(
-                f"   ✅ {match['match_name']}: "
-                f"{len(match['streams'])} link"
-            )
-        else:
-            print(
-                f"   ❌ {match['match_name']}: "
-                "chưa bắt được link"
-            )
-
-    print(
-        f"ℹ️ Tổng số lần Cloudflare rate-limit "
-        f"đã phát hiện: {rate_gate.rate_limit_count}"
-    )
-
-    return matches
-
-
 # ============================================================
 # MAIN
 # ============================================================
 async def main() -> None:
-    print("🥷 SOCOLIVE STREAM SCANNER V5 - SHARED SESSION + 429 BACKOFF")
+    print("🥷 SOCOLIVE STREAM SCANNER V6 - V3 BURST + 429 CIRCUIT BREAKER")
     print(
         "ℹ️ Test riêng một URL:\n"
-        '   python main_socolive_v5_adaptive.py "https://socolivem.cv/truc-tiep/.../?blv=..."'
+        '   python main_socolive_v6_burst.py "https://socolivem.cv/truc-tiep/.../?blv=..."'
     )
 
     direct_urls = [
@@ -2486,7 +1672,45 @@ async def main() -> None:
             ],
         )
 
-        context = await create_scan_context(browser)
+        context = await browser.new_context(
+            viewport={"width": 1366, "height": 768},
+            user_agent=UA,
+            locale="vi-VN",
+            timezone_id="Asia/Ho_Chi_Minh",
+            ignore_https_errors=True,
+            extra_http_headers={
+                "Accept-Language":
+                    "vi-VN,vi;q=0.9,en-US;q=0.8,en;q=0.7"
+            },
+        )
+
+        # Giảm dấu hiệu automation nhưng không can thiệp API player.
+        await context.add_init_script(
+            """() => {
+                try {
+                    Object.defineProperty(
+                        navigator,
+                        "webdriver",
+                        { get: () => undefined }
+                    );
+                    Object.defineProperty(
+                        navigator,
+                        "languages",
+                        { get: () => ["vi-VN", "vi", "en-US", "en"] }
+                    );
+                    Object.defineProperty(
+                        document,
+                        "hidden",
+                        { get: () => false }
+                    );
+                    Object.defineProperty(
+                        document,
+                        "visibilityState",
+                        { get: () => "visible" }
+                    );
+                } catch (_) {}
+            }"""
+        )
 
         if direct_urls:
             grouped: dict[str, dict[str, Any]] = {}
@@ -2575,11 +1799,30 @@ async def main() -> None:
             await browser.close()
             return
 
-        # Dùng lại đúng context đã mở trang chủ để giữ cookie/session Cloudflare.
-        results = await scan_matches_round_robin(
-            context,
-            matches,
+        # Ưu tiên trận đang đá trước vì runner có thể bị giới hạn sau một số page.
+        matches.sort(key=match_priority_key)
+
+        semaphore = asyncio.Semaphore(MATCH_CONCURRENCY)
+        circuit = RateLimitCircuit()
+
+        results = await asyncio.gather(
+            *[
+                scan_match(
+                    context,
+                    match,
+                    semaphore,
+                    circuit,
+                )
+                for match in matches
+            ]
         )
+
+        if circuit.triggered.is_set():
+            print(
+                f"⚠️ Đã dừng sớm vì HTTP 429 tại: "
+                f"{circuit.first_url}",
+                flush=True,
+            )
 
         count_matches, count_links = write_outputs(results)
 
@@ -2599,10 +1842,6 @@ async def main() -> None:
         print(
             f"🧾 Debug chi tiết: "
             f"{Path(OUTPUT_DEBUG).resolve()}"
-        )
-        print(
-            f"🕵️ Bằng chứng phòng thất bại: "
-            f"{FAILURE_DIR.resolve()}"
         )
 
         await context.close()
