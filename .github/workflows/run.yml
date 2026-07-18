@@ -1,4 +1,4 @@
-name: Bot Quet Socolive
+name: Bot Quet Socolive V5 Adaptive
 
 on:
   workflow_dispatch:
@@ -34,9 +34,9 @@ jobs:
 
       - name: 4. Quét link Socolive
         env:
-          SOCOLIVE_MATCH_CONCURRENCY: "4"
+          SOCOLIVE_MATCH_CONCURRENCY: "2"
           SOCOLIVE_ROOM_WAIT_SECONDS: "8"
-          SOCOLIVE_RETRY_ROOM_WAIT_SECONDS: "14"
+          SOCOLIVE_RETRY_ROOM_WAIT_SECONDS: "12"
           SOCOLIVE_MAX_ROOMS_PER_MATCH: "3"
           SOCOLIVE_MAX_SUCCESSFUL_ROOMS_PER_MATCH: "1"
 
@@ -46,9 +46,15 @@ jobs:
           # Bật bắt network ở lớp Chromium để chẩn đoán chính xác hơn.
           SOCOLIVE_ENABLE_CDP: "1"
 
-          # Chạy từng lô 4 trận và nghỉ để tránh giới hạn mềm.
-          SOCOLIVE_BATCH_COOLDOWN_SECONDS: "2"
-          SOCOLIVE_FAILED_BATCH_COOLDOWN_SECONDS: "8"
+          # Dùng chung một session, chỉ mở tối đa 2 player.
+          SOCOLIVE_NAVIGATION_MIN_INTERVAL_SECONDS: "4"
+
+          # Nếu Cloudflare trả 429, toàn bộ worker nghỉ rồi thử lại đúng URL.
+          SOCOLIVE_RATE_LIMIT_COOLDOWN_SECONDS: "60"
+          SOCOLIVE_RATE_LIMIT_MAX_RETRIES: "2"
+
+          # Quét BLV theo vòng: mỗi trận được thử một phòng trước.
+          SOCOLIVE_ROUND_COOLDOWN_SECONDS: "4"
 
           # Lưu screenshot/HTML/network cho phòng không bắt được stream.
           SOCOLIVE_SAVE_FAILURE_ARTIFACTS: "1"
