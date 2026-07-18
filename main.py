@@ -26,7 +26,7 @@ OUTPUT_MATCHES = "socolive_matches.json"
 TIMEZONE = ZoneInfo("Asia/Ho_Chi_Minh")
 
 # Cơ chế cân bằng: 4 player song song, không quá tải như 8 và không chậm như 1.
-MATCH_CONCURRENCY = int(os.getenv("SOCOLIVE_MATCH_CONCURRENCY", "4"))
+MATCH_CONCURRENCY = int(os.getenv("SOCOLIVE_MATCH_CONCURRENCY", "2"))
 
 # Mỗi phòng chỉ được chờ ngắn. Có stream thì đóng gần như ngay lập tức.
 ROOM_WAIT_SECONDS = float(os.getenv("SOCOLIVE_ROOM_WAIT_SECONDS", "8"))
@@ -73,6 +73,24 @@ BATCH_COOLDOWN_SECONDS = float(
 )
 FAILED_BATCH_COOLDOWN_SECONDS = float(
     os.getenv("SOCOLIVE_FAILED_BATCH_COOLDOWN_SECONDS", "8")
+)
+
+# Giãn thời điểm bắt đầu mỗi navigation để tránh burst Cloudflare.
+NAVIGATION_MIN_INTERVAL_SECONDS = float(
+    os.getenv("SOCOLIVE_NAVIGATION_MIN_INTERVAL_SECONDS", "4")
+)
+
+# Khi gặp 429/challenge, mọi worker cùng nghỉ rồi thử lại.
+RATE_LIMIT_COOLDOWN_SECONDS = float(
+    os.getenv("SOCOLIVE_RATE_LIMIT_COOLDOWN_SECONDS", "60")
+)
+RATE_LIMIT_MAX_RETRIES = int(
+    os.getenv("SOCOLIVE_RATE_LIMIT_MAX_RETRIES", "2")
+)
+
+# Quét theo vòng: vòng 1 thử BLV đầu của mọi trận, vòng 2 mới thử BLV thứ hai.
+ROUND_COOLDOWN_SECONDS = float(
+    os.getenv("SOCOLIVE_ROUND_COOLDOWN_SECONDS", "4")
 )
 
 # Lưu bằng chứng cho các phòng thất bại.
@@ -373,6 +391,78 @@ def unique_rooms(rooms: list[dict[str, str]]) -> list[dict[str, str]]:
 
     # Giữ nguyên thứ tự BLV trên trang. URL tổng chỉ dùng làm fallback sau cùng.
     return with_blv + base_rooms
+
+
+class AdaptiveRateGate:
+    """
+    Điều phối tất cả navigation:
+      - Không cho nhiều trang bắt đầu cùng lúc.
+      - Giãn tối thiểu giữa hai navigation.
+      - Khi một worker gặp 429, toàn bộ worker cùng chờ.
+    """
+
+    def __init__(
+        self,
+        min_interval_seconds: float,
+        cooldown_seconds: float,
+    ) -> None:
+        self.min_interval_seconds = max(
+            0.0,
+            float(min_interval_seconds),
+        )
+        self.cooldown_seconds = max(
+            1.0,
+            float(cooldown_seconds),
+        )
+        self._lock = asyncio.Lock()
+        self._next_start_at = 0.0
+        self._blocked_until = 0.0
+        self.rate_limit_count = 0
+
+    async def wait_turn(self) -> None:
+        async with self._lock:
+            now = time.monotonic()
+            target = max(
+                self._next_start_at,
+                self._blocked_until,
+            )
+            delay = max(0.0, target - now)
+
+            if delay >= 1.0:
+                print(
+                    f"      ⏳ Điều phối chờ {delay:.1f}s "
+                    f"để tránh Cloudflare 429"
+                )
+
+            if delay > 0:
+                await asyncio.sleep(delay)
+
+            self._next_start_at = (
+                time.monotonic()
+                + self.min_interval_seconds
+            )
+
+    async def note_rate_limit(
+        self,
+        reason: str = "HTTP 429",
+    ) -> None:
+        async with self._lock:
+            now = time.monotonic()
+            self.rate_limit_count += 1
+            new_blocked_until = (
+                now + self.cooldown_seconds
+            )
+
+            if new_blocked_until > self._blocked_until:
+                self._blocked_until = new_blocked_until
+
+            if self._blocked_until > self._next_start_at:
+                self._next_start_at = self._blocked_until
+
+            print(
+                f"      🛑 {reason}: tạm dừng toàn bộ "
+                f"{self.cooldown_seconds:g}s trước khi thử lại"
+            )
 
 
 # ============================================================
@@ -1251,6 +1341,7 @@ async def scan_room(
     match: dict[str, Any],
     room: dict[str, str],
     wait_seconds: float | None = None,
+    rate_gate: AdaptiveRateGate | None = None,
 ) -> dict[str, Any]:
     room_url = room["url"]
     room_blv = clean_text(room.get("blv", ""))
@@ -1452,6 +1543,9 @@ async def scan_room(
                     f"CDP unavailable: {type(exc).__name__}: {exc}"
                 )
 
+        if rate_gate is not None:
+            await rate_gate.wait_turn()
+
         main_response = await page.goto(
             room_url,
             wait_until="domcontentloaded",
@@ -1465,6 +1559,75 @@ async def scan_room(
                 main_headers = await main_response.all_headers()
             except Exception:
                 main_headers = {}
+
+        # Cloudflare 429 không thể sinh stream. Trả ngay, không phí thêm 8-14 giây.
+        if main_status == 429:
+            if rate_gate is not None:
+                await rate_gate.note_rate_limit(
+                    f"HTTP 429 tại BLV {blv_id or 'base'}"
+                )
+
+            await page.wait_for_timeout(350)
+            diagnostics = await diagnose_page(page)
+            diagnostics.update(
+                {
+                    "scan_mode": "rate-limited-fast-return",
+                    "elapsed_seconds": round(
+                        time.monotonic() - started,
+                        3,
+                    ),
+                    "wait_seconds": effective_wait,
+                    "main_status": main_status,
+                    "final_url": page.url,
+                    "expected_stream_fragment": (
+                        f"stream-{blv_id}_lhd.m3u8"
+                        if blv_id
+                        else ""
+                    ),
+                }
+            )
+
+            block_verdict = classify_failure(
+                main_status,
+                diagnostics,
+                network_events,
+                http_errors,
+            )
+
+            failure_artifacts = await save_failure_artifacts(
+                page,
+                match,
+                room_url,
+                blv_id,
+                {
+                    "match": match_display_name(match),
+                    "room_url": room_url,
+                    "blv": room_blv,
+                    "blv_id": blv_id,
+                    "diagnostics": diagnostics,
+                    "block_verdict": block_verdict,
+                    "main_headers": main_headers,
+                    "network_events": network_events,
+                    "http_errors": http_errors,
+                    "failed_requests": failed_requests,
+                    "errors": errors,
+                },
+            )
+
+            return {
+                "url": room_url,
+                "blv": room_blv,
+                "blv_id": blv_id,
+                "streams": [],
+                "diagnostics": diagnostics,
+                "http_probe": http_probe,
+                "network_events": network_events,
+                "block_verdict": block_verdict,
+                "failure_artifacts": failure_artifacts,
+                "errors": errors,
+                "failed_requests": failed_requests,
+                "http_errors": http_errors,
+            }
 
         await page.wait_for_timeout(650)
 
@@ -1907,6 +2070,15 @@ def write_outputs(matches: list[dict[str, Any]]) -> tuple[int, int]:
                     "batch_cooldown_seconds": BATCH_COOLDOWN_SECONDS,
                     "failed_batch_cooldown_seconds":
                         FAILED_BATCH_COOLDOWN_SECONDS,
+                    "navigation_min_interval_seconds":
+                        NAVIGATION_MIN_INTERVAL_SECONDS,
+                    "rate_limit_cooldown_seconds":
+                        RATE_LIMIT_COOLDOWN_SECONDS,
+                    "rate_limit_max_retries":
+                        RATE_LIMIT_MAX_RETRIES,
+                    "round_cooldown_seconds":
+                        ROUND_COOLDOWN_SECONDS,
+                    "shared_context": True,
                     "save_failure_artifacts":
                         SAVE_FAILURE_ARTIFACTS,
                     "scan_before_minutes": SCAN_BEFORE_MINUTES,
@@ -1989,14 +2161,308 @@ async def scan_match_isolated(
         await context.close()
 
 
+RETRYABLE_BLOCK_CODES = {
+    "RATE_LIMIT_429",
+    "CHALLENGE_OR_BLOCK_PAGE",
+    "SITE_HTTP_403",
+}
+
+
+async def scan_room_with_backoff(
+    context: BrowserContext,
+    match: dict[str, Any],
+    room: dict[str, str],
+    wait_seconds: float,
+    rate_gate: AdaptiveRateGate,
+) -> dict[str, Any]:
+    retry_history: list[dict[str, Any]] = []
+    final_result: dict[str, Any] | None = None
+
+    for attempt in range(
+        1,
+        RATE_LIMIT_MAX_RETRIES + 2,
+    ):
+        result = await scan_room(
+            context,
+            match,
+            room,
+            wait_seconds=wait_seconds,
+            rate_gate=rate_gate,
+        )
+        final_result = result
+
+        verdict = result.get("block_verdict", {})
+        code = verdict.get("code", "")
+        diagnostics = result.get("diagnostics", {})
+
+        retry_history.append(
+            {
+                "attempt": attempt,
+                "code": code,
+                "main_status": diagnostics.get(
+                    "main_status"
+                ),
+                "elapsed_seconds": diagnostics.get(
+                    "elapsed_seconds"
+                ),
+                "streams_found": len(
+                    result.get("streams", [])
+                ),
+            }
+        )
+
+        if result.get("streams"):
+            break
+
+        if code not in RETRYABLE_BLOCK_CODES:
+            break
+
+        if attempt > RATE_LIMIT_MAX_RETRIES:
+            break
+
+        if code != "RATE_LIMIT_429":
+            await rate_gate.note_rate_limit(code)
+
+        print(
+            f"      🔁 Thử lại phòng "
+            f"{room.get('blv') or room.get('blv_id') or 'base'} "
+            f"sau cooldown ({attempt}/"
+            f"{RATE_LIMIT_MAX_RETRIES + 1})"
+        )
+
+    assert final_result is not None
+    final_result["retry_history"] = retry_history
+    return final_result
+
+
+def append_room_result_to_match(
+    match: dict[str, Any],
+    room_result: dict[str, Any],
+) -> None:
+    match.setdefault("room_results", []).append(
+        room_result
+    )
+
+    existing = {
+        item["url"]
+        for item in match.setdefault("streams", [])
+    }
+
+    for stream in room_result.get("streams", []):
+        if stream in existing:
+            continue
+
+        existing.add(stream)
+        match["streams"].append(
+            {
+                "url": stream,
+                "room_url": room_result["url"],
+                "blv": room_result.get("blv", ""),
+                "blv_id": room_result.get(
+                    "blv_id",
+                    "",
+                ),
+            }
+        )
+
+
+async def scan_one_match_room(
+    context: BrowserContext,
+    match: dict[str, Any],
+    room_index: int,
+    semaphore: asyncio.Semaphore,
+    rate_gate: AdaptiveRateGate,
+) -> dict[str, Any] | None:
+    if match.get("streams"):
+        return None
+
+    rooms = unique_rooms(
+        match.get("rooms", [])
+    )[:MAX_ROOMS_PER_MATCH]
+
+    if not rooms:
+        rooms = [
+            {
+                "url": match["base_url"],
+                "blv": "",
+                "blv_id": "",
+            }
+        ]
+
+    if room_index >= len(rooms):
+        return None
+
+    room = rooms[room_index]
+    name = match_display_name(match)
+    blv_label = (
+        room.get("blv")
+        or room.get("blv_id")
+        or "URL tổng"
+    )
+
+    async with semaphore:
+        print(
+            f"   -> {name} | phòng "
+            f"{room_index + 1}/{len(rooms)}: "
+            f"{blv_label}"
+        )
+
+        room_wait = (
+            ROOM_WAIT_SECONDS
+            if room_index == 0
+            else RETRY_ROOM_WAIT_SECONDS
+        )
+
+        result = await scan_room_with_backoff(
+            context,
+            match,
+            room,
+            wait_seconds=room_wait,
+            rate_gate=rate_gate,
+        )
+
+        append_room_result_to_match(
+            match,
+            result,
+        )
+
+        if result.get("streams"):
+            print(
+                f"      ✅ {name}: "
+                f"{len(result['streams'])} luồng"
+            )
+        else:
+            verdict = result.get(
+                "block_verdict",
+                {},
+            )
+            diagnostics = result.get(
+                "diagnostics",
+                {},
+            )
+            print(
+                f"      ⚠️ {name}: "
+                f"{verdict.get('code', 'UNKNOWN')}"
+                f" | HTTP={diagnostics.get('main_status', '?')}"
+                f" | {verdict.get('explanation', '')}"
+            )
+
+        return result
+
+
+async def scan_matches_round_robin(
+    context: BrowserContext,
+    matches: list[dict[str, Any]],
+) -> list[dict[str, Any]]:
+    semaphore = asyncio.Semaphore(
+        MATCH_CONCURRENCY
+    )
+    rate_gate = AdaptiveRateGate(
+        NAVIGATION_MIN_INTERVAL_SECONDS,
+        RATE_LIMIT_COOLDOWN_SECONDS,
+    )
+
+    for room_index in range(
+        MAX_ROOMS_PER_MATCH
+    ):
+        pending = []
+
+        for match in matches:
+            if match.get("streams"):
+                continue
+
+            rooms = unique_rooms(
+                match.get("rooms", [])
+            )[:MAX_ROOMS_PER_MATCH]
+
+            if not rooms:
+                rooms = [
+                    {
+                        "url": match["base_url"],
+                        "blv": "",
+                        "blv_id": "",
+                    }
+                ]
+
+            if room_index < len(rooms):
+                pending.append(match)
+
+        if not pending:
+            break
+
+        print(
+            f"\\n🔄 VÒNG {room_index + 1}/"
+            f"{MAX_ROOMS_PER_MATCH}: "
+            f"thử một phòng cho {len(pending)} trận"
+        )
+
+        await asyncio.gather(
+            *[
+                scan_one_match_room(
+                    context,
+                    match,
+                    room_index,
+                    semaphore,
+                    rate_gate,
+                )
+                for match in pending
+            ]
+        )
+
+        success_count = sum(
+            1
+            for match in matches
+            if match.get("streams")
+        )
+
+        print(
+            f"📊 Sau vòng {room_index + 1}: "
+            f"{success_count}/{len(matches)} trận có link"
+        )
+
+        if (
+            room_index + 1 < MAX_ROOMS_PER_MATCH
+            and any(
+                not match.get("streams")
+                for match in matches
+            )
+        ):
+            await asyncio.sleep(
+                ROUND_COOLDOWN_SECONDS
+            )
+
+    for match in matches:
+        match["match_name"] = match_display_name(
+            match
+        )
+
+        if match.get("streams"):
+            print(
+                f"   ✅ {match['match_name']}: "
+                f"{len(match['streams'])} link"
+            )
+        else:
+            print(
+                f"   ❌ {match['match_name']}: "
+                "chưa bắt được link"
+            )
+
+    print(
+        f"ℹ️ Tổng số lần Cloudflare rate-limit "
+        f"đã phát hiện: {rate_gate.rate_limit_count}"
+    )
+
+    return matches
+
+
 # ============================================================
 # MAIN
 # ============================================================
 async def main() -> None:
-    print("🥷 SOCOLIVE STREAM SCANNER V4 - BATCH + BLOCK DIAGNOSTIC")
+    print("🥷 SOCOLIVE STREAM SCANNER V5 - SHARED SESSION + 429 BACKOFF")
     print(
         "ℹ️ Test riêng một URL:\n"
-        '   python main_socolive_v4_diagnostic.py "https://socolivem.cv/truc-tiep/.../?blv=..."'
+        '   python main_socolive_v5_adaptive.py "https://socolivem.cv/truc-tiep/.../?blv=..."'
     )
 
     direct_urls = [
@@ -2109,59 +2575,11 @@ async def main() -> None:
             await browser.close()
             return
 
-        # Context lấy danh sách trận không được dùng lại cho player.
-        await context.close()
-
-        results: list[dict[str, Any]] = []
-
-        for batch_start in range(
-            0,
-            len(matches),
-            MATCH_CONCURRENCY,
-        ):
-            batch = matches[
-                batch_start:
-                batch_start + MATCH_CONCURRENCY
-            ]
-
-            batch_number = (
-                batch_start // MATCH_CONCURRENCY
-            ) + 1
-            total_batches = (
-                len(matches) + MATCH_CONCURRENCY - 1
-            ) // MATCH_CONCURRENCY
-
-            print(
-                f"\n🚦 LÔ {batch_number}/{total_batches}: "
-                f"{len(batch)} trận, mỗi trận một session riêng"
-            )
-
-            batch_results = await asyncio.gather(
-                *[
-                    scan_match_isolated(browser, item)
-                    for item in batch
-                ]
-            )
-            results.extend(batch_results)
-
-            batch_successes = sum(
-                1
-                for item in batch_results
-                if item.get("streams")
-            )
-
-            if batch_start + MATCH_CONCURRENCY < len(matches):
-                cooldown = (
-                    BATCH_COOLDOWN_SECONDS
-                    if batch_successes
-                    else FAILED_BATCH_COOLDOWN_SECONDS
-                )
-
-                print(
-                    f"⏸ Nghỉ {cooldown:g}s trước lô tiếp theo "
-                    f"(lô vừa rồi thành công {batch_successes}/{len(batch)})"
-                )
-                await asyncio.sleep(cooldown)
+        # Dùng lại đúng context đã mở trang chủ để giữ cookie/session Cloudflare.
+        results = await scan_matches_round_robin(
+            context,
+            matches,
+        )
 
         count_matches, count_links = write_outputs(results)
 
@@ -2187,6 +2605,7 @@ async def main() -> None:
             f"{FAILURE_DIR.resolve()}"
         )
 
+        await context.close()
         await browser.close()
 
 
