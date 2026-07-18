@@ -3,7 +3,7 @@ from playwright.async_api import async_playwright
 import re
 
 # --- CẤU HÌNH ---
-TARGET_URL = "https://socolivee.cv"
+TARGET_URL = "https://socolivem.cv/"
 # 1. TĂNG TỐC: Cho phép mở 8 trận cùng lúc (GitHub gánh tốt)
 CONCURRENCY_LIMIT = 8 
 UA = "Mozilla/5.0_Windows_NT_10.0"
