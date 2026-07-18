@@ -4,7 +4,6 @@ import re
 
 # --- CẤU HÌNH ---
 TARGET_URL = "https://socolivem.cv/"
-# 1. TĂNG TỐC: Cho phép mở 8 trận cùng lúc (GitHub gánh tốt)
 CONCURRENCY_LIMIT = 8 
 UA = "Mozilla/5.0_Windows_NT_10.0"
 
@@ -17,12 +16,26 @@ async def fetch_stream(context, match, sem):
 
         stream_urls = set()
         
+        # 1. BẮT NETWORK REQUEST NHƯ CŨ
         def handle_request(request):
             url = request.url
             if (".flv" in url or ".m3u8" in url) and "ad" not in url.lower() and "lulu" not in url.lower():
                 stream_urls.add(url)
 
+        # 2. BẮT NETWORK RESPONSE (Trị giấu link trong chuỗi JSON trả về)
+        async def handle_response(response):
+            if response.request.resource_type in ["xhr", "fetch", "document"]:
+                try:
+                    text = await response.text()
+                    found = re.findall(r'https?:\/\/[^\"\']+(?:\.m3u8|\.flv)[^\"\']*', text)
+                    for link in found:
+                        if "ad" not in link.lower() and "lulu" not in link.lower():
+                            stream_urls.add(link.replace('\\/', '/'))
+                except:
+                    pass
+
         page.on("request", handle_request)
+        page.on("response", handle_response)
 
         try:
             await page.goto(match['url'], wait_until="domcontentloaded", timeout=15000)
@@ -47,10 +60,25 @@ async def fetch_stream(context, match, sem):
                 if room_logo:
                     match['logo'] = room_logo
 
-            # TĂNG TỐC: Đã nâng thời gian chờ lên 6 giây để đảm bảo bắt được luồng mạng
+            # 3. MÔ PHỎNG CLICK CHUỘT: Tắt quảng cáo đè, kích hoạt video tự chạy
+            try:
+                await page.mouse.click(640, 360) # Click giữa màn hình
+                await page.wait_for_timeout(1000)
+                await page.mouse.click(640, 360) # Double-tap cho chắc ăn
+            except:
+                pass
+
+            # 4. CÀO THẲNG MÃ NGUỒN HTML: Trị link m3u8 giấu trong thẻ <script>
+            html_content = await page.content()
+            found_in_html = re.findall(r'https?:\/\/[^\"\']+(?:\.m3u8|\.flv)[^\"\']*', html_content)
+            for link in found_in_html:
+                if "ad" not in link.lower() and "lulu" not in link.lower():
+                    stream_urls.add(link.replace('\\/', '/'))
+
+            # Chờ để mạng kip trả về file
             await page.wait_for_timeout(6000)
             
-        except:
+        except Exception as e:
             pass
         finally:
             await page.close() 
@@ -138,15 +166,6 @@ async def main():
                     elif logo.startswith('/'): logo = 'https://socolivee.cv' + logo
                 else:
                     logo = "https://socolivee.cv/logo.png"
-                    
-                # 3. LỌC IDOL/STREAMER CHÉM GIÓ: Đã tạm tắt để tránh lọc nhầm logo đội bóng thực
-                # if ".jpg" in logo.lower() or ".jpeg" in logo.lower():
-                #     print(f"🚫 Đã loại bỏ phòng Idol: {res['raw_title']}")
-                #     continue
-                
-                # Bỏ màng lọc "vs" vì nhiều trận chỉ hiển thị tên BLV
-                # if "vs" not in res['raw_title'].lower():
-                #     continue
 
                 count_matches += 1
                 time_match = re.search(r'(\d{2}:\d{2})', res['raw_title'])
