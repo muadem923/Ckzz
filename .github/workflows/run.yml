@@ -1,7 +1,13 @@
 name: Bot Quet Socolive
 
 on:
-  workflow_dispatch: # Nút bấm chạy thủ công bằng tay
+  workflow_dispatch:
+    inputs:
+      test_url:
+        description: "URL trận/BLV cần test riêng; để trống để quét tự động"
+        required: false
+        default: ""
+        type: string
 
 permissions:
   contents: write
@@ -9,6 +15,7 @@ permissions:
 jobs:
   build:
     runs-on: ubuntu-latest
+    timeout-minutes: 30
 
     steps:
       - name: 1. Lấy code từ kho về
@@ -17,25 +24,82 @@ jobs:
       - name: 2. Cài đặt Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.11'
+          python-version: "3.11"
 
       - name: 3. Cài đặt Playwright
         run: |
+          python -m pip install --upgrade pip
           pip install playwright
-          playwright install chromium
+          playwright install --with-deps chromium
 
-      - name: 4. Kích hoạt Sát thủ quét link
+      - name: 4. Quét link Socolive
         env:
           SOCOLIVE_MATCH_CONCURRENCY: "4"
-          SOCOLIVE_ROOM_WAIT_SECONDS: "7"
+          SOCOLIVE_ROOM_WAIT_SECONDS: "8"
+          SOCOLIVE_RETRY_ROOM_WAIT_SECONDS: "14"
           SOCOLIVE_MAX_ROOMS_PER_MATCH: "3"
           SOCOLIVE_MAX_SUCCESSFUL_ROOMS_PER_MATCH: "1"
-        run: python main.py
 
-      - name: 5. Lưu thành quả lên GitHub
+          # Tắt request HTTP thừa vì stream chỉ xuất hiện sau khi player chạy JS.
+          SOCOLIVE_HTTP_FIRST: "0"
+
+          # Bật bắt network ở lớp Chromium để chẩn đoán chính xác hơn.
+          SOCOLIVE_ENABLE_CDP: "1"
+
+          # Chạy từng lô 4 trận và nghỉ để tránh giới hạn mềm.
+          SOCOLIVE_BATCH_COOLDOWN_SECONDS: "2"
+          SOCOLIVE_FAILED_BATCH_COOLDOWN_SECONDS: "8"
+
+          # Lưu screenshot/HTML/network cho phòng không bắt được stream.
+          SOCOLIVE_SAVE_FAILURE_ARTIFACTS: "1"
+
+          TEST_URL: ${{ inputs.test_url }}
         run: |
-          git config --global user.name 'github-actions[bot]'
-          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-          git add socolive_live.m3u
-          git commit -m "Bot auto update link M3U" || exit 0
-          git push
+          if [ -n "$TEST_URL" ]; then
+            echo "Test riêng URL: $TEST_URL"
+            python main.py "$TEST_URL"
+          else
+            python main.py
+          fi
+
+      - name: 5. Kiểm tra file kết quả
+        if: always()
+        run: |
+          echo "=== File tại thư mục chạy ==="
+          ls -lah
+          echo "=== File chẩn đoán thất bại ==="
+          find socolive_failures -maxdepth 1 -type f -printf "%f %k KB\n" 2>/dev/null | head -200 || true
+
+      - name: 6. Tải debug dưới dạng Artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: socolive-debug-run-${{ github.run_number }}
+          path: |
+            socolive_live.m3u
+            socolive_matches.json
+            socolive_debug.json
+            socolive_failures/
+          if-no-files-found: warn
+          retention-days: 7
+          compression-level: 6
+
+      - name: 7. Lưu kết quả chính lên GitHub
+        if: always()
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
+          for file in             socolive_live.m3u             socolive_matches.json             socolive_debug.json
+          do
+            if [ -e "$file" ]; then
+              git add "$file"
+            fi
+          done
+
+          if git diff --cached --quiet; then
+            echo "Không có file kết quả nào thay đổi."
+          else
+            git commit -m "Bot auto update Socolive + debug"
+            git push
+          fi
