@@ -34,6 +34,10 @@ jobs:
 
       - name: 4. Quét link Socolive
         env:
+          # Bắt Python đẩy log ra GitHub ngay, không giữ trong bộ đệm.
+          PYTHONUNBUFFERED: "1"
+          PYTHONUTF8: "1"
+
           SOCOLIVE_MATCH_CONCURRENCY: "2"
           SOCOLIVE_ROOM_WAIT_SECONDS: "8"
           SOCOLIVE_RETRY_ROOM_WAIT_SECONDS: "12"
@@ -61,12 +65,19 @@ jobs:
 
           TEST_URL: ${{ inputs.test_url }}
         run: |
+          echo "=== $(date -u '+%Y-%m-%d %H:%M:%S UTC') | Bắt đầu quét Socolive ==="
+          echo "Python: $(python --version)"
+          echo "Concurrency=$SOCOLIVE_MATCH_CONCURRENCY | interval=${SOCOLIVE_NAVIGATION_MIN_INTERVAL_SECONDS}s | 429 cooldown=${SOCOLIVE_RATE_LIMIT_COOLDOWN_SECONDS}s"
+
           if [ -n "$TEST_URL" ]; then
             echo "Test riêng URL: $TEST_URL"
-            python main.py "$TEST_URL"
+            python -u main.py "$TEST_URL"
           else
-            python main.py
+            echo "Chế độ quét toàn bộ trận đang/sắp đá"
+            python -u main.py
           fi
+
+          echo "=== $(date -u '+%Y-%m-%d %H:%M:%S UTC') | Kết thúc quét ==="
 
       - name: 5. Kiểm tra file kết quả
         if: always()
