@@ -4,6 +4,7 @@ import re
 
 # --- CẤU HÌNH ---
 TARGET_URL = "https://socolivem.cv/"
+# 1. TĂNG TỐC: Cho phép mở 8 trận cùng lúc (GitHub gánh tốt)
 CONCURRENCY_LIMIT = 8 
 UA = "Mozilla/5.0_Windows_NT_10.0"
 
@@ -16,26 +17,12 @@ async def fetch_stream(context, match, sem):
 
         stream_urls = set()
         
-        # 1. BẮT NETWORK REQUEST NHƯ CŨ
         def handle_request(request):
             url = request.url
             if (".flv" in url or ".m3u8" in url) and "ad" not in url.lower() and "lulu" not in url.lower():
                 stream_urls.add(url)
 
-        # 2. BẮT NETWORK RESPONSE (Trị giấu link trong chuỗi JSON trả về)
-        async def handle_response(response):
-            if response.request.resource_type in ["xhr", "fetch", "document"]:
-                try:
-                    text = await response.text()
-                    found = re.findall(r'https?:\/\/[^\"\']+(?:\.m3u8|\.flv)[^\"\']*', text)
-                    for link in found:
-                        if "ad" not in link.lower() and "lulu" not in link.lower():
-                            stream_urls.add(link.replace('\\/', '/'))
-                except:
-                    pass
-
         page.on("request", handle_request)
-        page.on("response", handle_response)
 
         try:
             await page.goto(match['url'], wait_until="domcontentloaded", timeout=15000)
@@ -60,25 +47,10 @@ async def fetch_stream(context, match, sem):
                 if room_logo:
                     match['logo'] = room_logo
 
-            # 3. MÔ PHỎNG CLICK CHUỘT: Tắt quảng cáo đè, kích hoạt video tự chạy
-            try:
-                await page.mouse.click(640, 360) # Click giữa màn hình
-                await page.wait_for_timeout(1000)
-                await page.mouse.click(640, 360) # Double-tap cho chắc ăn
-            except:
-                pass
-
-            # 4. CÀO THẲNG MÃ NGUỒN HTML: Trị link m3u8 giấu trong thẻ <script>
-            html_content = await page.content()
-            found_in_html = re.findall(r'https?:\/\/[^\"\']+(?:\.m3u8|\.flv)[^\"\']*', html_content)
-            for link in found_in_html:
-                if "ad" not in link.lower() and "lulu" not in link.lower():
-                    stream_urls.add(link.replace('\\/', '/'))
-
-            # Chờ để mạng kip trả về file
-            await page.wait_for_timeout(6000)
+            # 2. TĂNG TỐC: Giảm thời gian nằm vùng xuống còn 3.5 giây (Tiết kiệm cả đống thời gian)
+            await page.wait_for_timeout(3500)
             
-        except Exception as e:
+        except:
             pass
         finally:
             await page.close() 
@@ -130,7 +102,7 @@ async def main():
                             }
                         }
                         
-                        let title = a.title || text.replace(/\s+/g, ' ').trim();
+                        let title = a.title || text.replace(/\\s+/g, ' ').trim();
                         if(title.length > 5 && !items.find(i => i.url === href)) {
                             items.push({url: href, raw_title: title, logo: logo});
                         }
@@ -166,6 +138,15 @@ async def main():
                     elif logo.startswith('/'): logo = 'https://socolivee.cv' + logo
                 else:
                     logo = "https://socolivee.cv/logo.png"
+                    
+                # 3. LỌC IDOL/STREAMER CHÉM GIÓ: Hủy diệt các link có logo chứa .jpg hoặc .jpeg
+                if ".jpg" in logo.lower() or ".jpeg" in logo.lower():
+                    print(f"🚫 Đã loại bỏ phòng Idol: {res['raw_title']}")
+                    continue
+                
+                # Bonus thêm 1 màng lọc: Nếu tên trận không có dấu "vs" thì khả năng cao cũng là rác
+                if "vs" not in res['raw_title'].lower():
+                    continue
 
                 count_matches += 1
                 time_match = re.search(r'(\d{2}:\d{2})', res['raw_title'])
@@ -194,7 +175,7 @@ async def main():
         if count_links > 0:
             with open("socolive_live.m3u", "w", encoding="utf-8") as f:
                 f.write(playlist)
-            print(f"\n🎉 VÉT SẠCH VÀ LỌC BÓNG! Lấy được {count_links} link từ {count_matches} trận.")
+            print(f"\n🎉 VÉT SẠCH VÀ LỌC BÓNG! Lấy được {count_links} link từ {count_matches} trận (Đã dọn sạch Idol JPG).")
         else:
             print("\n❌ Không bắt được luồng nào!")
 
