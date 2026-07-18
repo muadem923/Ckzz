@@ -47,8 +47,8 @@ async def fetch_stream(context, match, sem):
                 if room_logo:
                     match['logo'] = room_logo
 
-            # 2. TĂNG TỐC: Giảm thời gian nằm vùng xuống còn 3.5 giây (Tiết kiệm cả đống thời gian)
-            await page.wait_for_timeout(3500)
+            # TĂNG TỐC: Đã nâng thời gian chờ lên 6 giây để đảm bảo bắt được luồng mạng
+            await page.wait_for_timeout(6000)
             
         except:
             pass
@@ -102,7 +102,7 @@ async def main():
                             }
                         }
                         
-                        let title = a.title || text.replace(/\\s+/g, ' ').trim();
+                        let title = a.title || text.replace(/\s+/g, ' ').trim();
                         if(title.length > 5 && !items.find(i => i.url === href)) {
                             items.push({url: href, raw_title: title, logo: logo});
                         }
@@ -139,14 +139,14 @@ async def main():
                 else:
                     logo = "https://socolivee.cv/logo.png"
                     
-                # 3. LỌC IDOL/STREAMER CHÉM GIÓ: Hủy diệt các link có logo chứa .jpg hoặc .jpeg
-                if ".jpg" in logo.lower() or ".jpeg" in logo.lower():
-                    print(f"🚫 Đã loại bỏ phòng Idol: {res['raw_title']}")
-                    continue
+                # 3. LỌC IDOL/STREAMER CHÉM GIÓ: Đã tạm tắt để tránh lọc nhầm logo đội bóng thực
+                # if ".jpg" in logo.lower() or ".jpeg" in logo.lower():
+                #     print(f"🚫 Đã loại bỏ phòng Idol: {res['raw_title']}")
+                #     continue
                 
-                # Bonus thêm 1 màng lọc: Nếu tên trận không có dấu "vs" thì khả năng cao cũng là rác
-                if "vs" not in res['raw_title'].lower():
-                    continue
+                # Bỏ màng lọc "vs" vì nhiều trận chỉ hiển thị tên BLV
+                # if "vs" not in res['raw_title'].lower():
+                #     continue
 
                 count_matches += 1
                 time_match = re.search(r'(\d{2}:\d{2})', res['raw_title'])
@@ -175,7 +175,7 @@ async def main():
         if count_links > 0:
             with open("socolive_live.m3u", "w", encoding="utf-8") as f:
                 f.write(playlist)
-            print(f"\n🎉 VÉT SẠCH VÀ LỌC BÓNG! Lấy được {count_links} link từ {count_matches} trận (Đã dọn sạch Idol JPG).")
+            print(f"\n🎉 VÉT SẠCH VÀ LỌC BÓNG! Lấy được {count_links} link từ {count_matches} trận.")
         else:
             print("\n❌ Không bắt được luồng nào!")
 
