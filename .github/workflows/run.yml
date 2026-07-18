@@ -25,6 +25,11 @@ jobs:
           playwright install chromium
 
       - name: 4. Kích hoạt Sát thủ quét link
+        env:
+          SOCOLIVE_MATCH_CONCURRENCY: "4"
+          SOCOLIVE_ROOM_WAIT_SECONDS: "7"
+          SOCOLIVE_MAX_ROOMS_PER_MATCH: "3"
+          SOCOLIVE_MAX_SUCCESSFUL_ROOMS_PER_MATCH: "1"
         run: python main.py
 
       - name: 5. Lưu thành quả lên GitHub
