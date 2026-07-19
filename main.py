@@ -17,7 +17,13 @@ from playwright.async_api import BrowserContext, Page, async_playwright
 # ============================================================
 # CẤU HÌNH
 # ============================================================
-TARGET_URL = "https://socolivem.cv/"
+TARGET_URL = (
+    os.getenv(
+        "SOCOLIVE_TARGET_URL",
+        "https://socolivep.cv/",
+    ).rstrip("/")
+    + "/"
+)
 
 OUTPUT_M3U = "socolive_live.m3u"
 OUTPUT_DEBUG = "socolive_debug.json"
@@ -60,7 +66,7 @@ SCAN_ALL = os.getenv("SOCOLIVE_SCAN_ALL", "0") == "1"
 # Mục tiêu nhiều luồng cho mỗi trận.
 # Một trang có thể nhúng config/link của nhiều BLV khác nhau.
 MAX_STREAMS_PER_MATCH = int(
-    os.getenv("SOCOLIVE_MAX_STREAMS_PER_MATCH", "10")
+    os.getenv("SOCOLIVE_MAX_STREAMS_PER_MATCH", "12")
 )
 
 # Số trang BLV tối đa được mở cho cùng một trận trong MỘT workflow run.
@@ -83,6 +89,11 @@ EMBEDDED_HARVEST_WAIT_SECONDS = float(
     os.getenv("SOCOLIVE_EMBEDDED_HARVEST_WAIT_SECONDS", "1.4")
 )
 
+# Một BLV tải HTTP 200 nhưng chưa sinh stream sẽ được thử lại ở runner khác.
+ROOM_EMPTY_MAX_ATTEMPTS = int(
+    os.getenv("SOCOLIVE_ROOM_EMPTY_MAX_ATTEMPTS", "2")
+)
+
 HEADLESS = os.getenv("SOCOLIVE_HEADLESS", "1") != "0"
 
 # Khi gặp HTTP 429, không retry trong cùng runner. Dừng mở trang mới và giữ kết quả đã lấy.
@@ -99,6 +110,10 @@ STATE_MAX_CHAIN_RUNS = int(
 STATE_MAX_NO_PROGRESS_RUNS = int(
     os.getenv("SOCOLIVE_STATE_MAX_NO_PROGRESS_RUNS", "2")
 )
+
+# Đổi schema để reset chain/phòng đã thử của V9,
+# vì V9 đã loại sai stream-ID không trùng BLV-ID.
+STATE_SCHEMA_VERSION = "v10-per-blv-queue"
 
 UA = (
     "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
@@ -189,6 +204,176 @@ def match_room_map(
     return output
 
 
+def room_queue_key(
+    room: dict[str, str],
+) -> str:
+    room_id = clean_text(
+        room.get("blv_id", "")
+    ) or room_blv_id(room.get("url", ""))
+
+    if room_id:
+        return room_id
+
+    return "__base__"
+
+
+def ensure_room_progress(
+    match: dict[str, Any],
+) -> dict[str, dict[str, Any]]:
+    rooms = unique_rooms(
+        match.get("rooms", [])
+    )
+    progress = match.setdefault(
+        "room_progress",
+        {},
+    )
+
+    for room in rooms:
+        key = room_queue_key(room)
+        existing = progress.get(key, {})
+
+        progress[key] = {
+            "key": key,
+            "url": room.get("url", ""),
+            "blv": room.get("blv", ""),
+            "blv_id": room.get("blv_id", ""),
+            "status": existing.get(
+                "status",
+                "pending",
+            ),
+            "attempts": int(
+                existing.get("attempts", 0)
+                or 0
+            ),
+            "rate_limit_hits": int(
+                existing.get(
+                    "rate_limit_hits",
+                    0,
+                )
+                or 0
+            ),
+            "last_http_status":
+                existing.get(
+                    "last_http_status"
+                ),
+            "last_stream_count": int(
+                existing.get(
+                    "last_stream_count",
+                    0,
+                )
+                or 0
+            ),
+            "last_error": clean_text(
+                str(
+                    existing.get(
+                        "last_error",
+                        "",
+                    )
+                    or ""
+                )
+            ),
+        }
+
+    match["room_progress"] = progress
+    return progress
+
+
+def explicit_blv_rooms(
+    match: dict[str, Any],
+) -> list[dict[str, str]]:
+    return [
+        room
+        for room in unique_rooms(
+            match.get("rooms", [])
+        )
+        if room_queue_key(room) != "__base__"
+    ]
+
+
+def base_rooms(
+    match: dict[str, Any],
+) -> list[dict[str, str]]:
+    return [
+        room
+        for room in unique_rooms(
+            match.get("rooms", [])
+        )
+        if room_queue_key(room) == "__base__"
+    ]
+
+
+def pending_room_keys(
+    match: dict[str, Any],
+) -> list[str]:
+    progress = ensure_room_progress(match)
+    output: list[str] = []
+
+    # URL ?blv= luôn được ưu tiên. URL tổng chỉ fallback cuối.
+    for room in explicit_blv_rooms(match):
+        key = room_queue_key(room)
+        status = progress.get(
+            key,
+            {},
+        ).get("status", "pending")
+
+        if status in {
+            "pending",
+            "retry",
+            "rate_limited",
+        }:
+            output.append(key)
+
+    if output:
+        return output
+
+    # Chỉ dùng URL tổng sau khi không còn BLV cụ thể để thử.
+    for room in base_rooms(match):
+        key = room_queue_key(room)
+        status = progress.get(
+            key,
+            {},
+        ).get("status", "pending")
+
+        if status in {
+            "pending",
+            "retry",
+            "rate_limited",
+        }:
+            output.append(key)
+
+    return output
+
+
+def room_queue_complete(
+    match: dict[str, Any],
+) -> bool:
+    progress = ensure_room_progress(match)
+    explicit = explicit_blv_rooms(match)
+
+    if explicit:
+        return all(
+            progress.get(
+                room_queue_key(room),
+                {},
+            ).get("status")
+            in {"success", "exhausted"}
+            for room in explicit
+        )
+
+    bases = base_rooms(match)
+    if not bases:
+        return False
+
+    return all(
+        progress.get(
+            room_queue_key(room),
+            {},
+        ).get("status")
+        in {"success", "exhausted"}
+        for room in bases
+    )
+
+
 def match_found_blv_ids(
     match: dict[str, Any],
 ) -> set[str]:
@@ -222,9 +407,14 @@ def match_stream_goal(
 def match_coverage_complete(
     match: dict[str, Any],
 ) -> bool:
-    return (
+    source_goal_reached = (
         len(match_found_blv_ids(match))
         >= match_stream_goal(match)
+    )
+
+    return (
+        source_goal_reached
+        or room_queue_complete(match)
     )
 
 
@@ -234,23 +424,27 @@ def update_match_coverage(
     room_ids = match_found_blv_ids(match)
     goal = match_stream_goal(match)
 
+    progress = ensure_room_progress(match)
+    pending_keys = pending_room_keys(match)
+
     match["coverage"] = {
         "found_streams": len(
             match.get("streams", [])
         ),
         "found_blv_ids": sorted(room_ids),
         "goal": goal,
-        "complete": len(room_ids) >= goal,
-        "attempted_room_ids": sorted(
-            set(
-                str(value)
-                for value in match.get(
-                    "attempted_room_ids",
-                    [],
-                )
-                if value
-            )
+        "source_goal_reached":
+            len(room_ids) >= goal,
+        "room_queue_complete":
+            room_queue_complete(match),
+        "complete":
+            len(room_ids) >= goal
+            or room_queue_complete(match),
+        "total_explicit_blv_rooms": len(
+            explicit_blv_rooms(match)
         ),
+        "pending_room_keys": pending_keys,
+        "room_progress": progress,
     }
 
 
@@ -897,7 +1091,7 @@ def should_scan_match(
 async def extract_page_metadata(
     page: Page,
     room_url: str,
-) -> dict[str, str]:
+) -> dict[str, Any]:
     try:
         data = await page.evaluate(
             r"""() => {
@@ -1001,6 +1195,51 @@ async def extract_page_metadata(
                     }
                 } catch (_) {}
 
+                const roomLinks = [];
+                const roomSeen = new Set();
+
+                for (
+                    const anchor of Array.from(
+                        document.querySelectorAll(
+                            'a[href*="blv="]'
+                        )
+                    )
+                ) {
+                    try {
+                        const absolute = new URL(
+                            anchor.href,
+                            location.href
+                        );
+                        const roomId =
+                            absolute.searchParams.get("blv") || "";
+
+                        if (!roomId) continue;
+
+                        // Chỉ lấy BLV thuộc đúng trang trận hiện tại.
+                        if (
+                            absolute.pathname.replace(/\/$/, "") !==
+                            location.pathname.replace(/\/$/, "")
+                        ) {
+                            continue;
+                        }
+
+                        const key =
+                            absolute.pathname + "?blv=" + roomId;
+                        if (roomSeen.has(key)) continue;
+                        roomSeen.add(key);
+
+                        roomLinks.push({
+                            url: absolute.href,
+                            blv_id: roomId,
+                            blv:
+                                clean(anchor.innerText) ||
+                                clean(anchor.getAttribute("title")) ||
+                                clean(anchor.getAttribute("aria-label")) ||
+                                roomId,
+                        });
+                    } catch (_) {}
+                }
+
                 return {
                     h1,
                     home_team: teams[0]?.name || "",
@@ -1008,14 +1247,43 @@ async def extract_page_metadata(
                     home_logo: teams[0]?.logo || "",
                     away_logo: teams[1]?.logo || "",
                     active_blv: activeBlv,
+                    rooms: roomLinks,
                 };
             }"""
         )
 
-        return {
-            key: clean_text(str(value or ""))
-            for key, value in data.items()
+        output: dict[str, Any] = {
+            key: clean_text(str(data.get(key, "") or ""))
+            for key in (
+                "h1",
+                "home_team",
+                "away_team",
+                "home_logo",
+                "away_logo",
+                "active_blv",
+            )
         }
+
+        raw_rooms = data.get("rooms", [])
+        output["rooms"] = unique_rooms(
+            [
+                {
+                    "url": clean_text(
+                        str(item.get("url", "") or "")
+                    ),
+                    "blv": clean_text(
+                        str(item.get("blv", "") or "")
+                    ),
+                    "blv_id": clean_text(
+                        str(item.get("blv_id", "") or "")
+                    ),
+                }
+                for item in raw_rooms
+                if isinstance(item, dict)
+            ]
+        )
+
+        return output
     except Exception:
         return {}
 
@@ -1296,11 +1564,14 @@ async def scan_room(
     room_url = room["url"]
     room_blv = clean_text(room.get("blv", ""))
     stream_urls: set[str] = set()
+    stream_sources: dict[str, set[str]] = {}
+    stream_first_seen: list[str] = []
     errors: list[str] = []
     failed_requests: list[str] = []
     http_errors: list[str] = []
     stream_event = asyncio.Event()
     started = time.monotonic()
+    main_status: int | None = None
 
     # Tầng 1: HTTP nhẹ. Nếu có stream trong HTML/config thì không mở browser.
     http_streams, http_probe = await fast_http_probe(
@@ -1316,6 +1587,11 @@ async def scan_room(
             "blv": room_blv,
             "blv_id": room.get("blv_id", "") or room_blv_id(room_url),
             "streams": sorted(http_streams),
+            "stream_sources": {
+                stream: ["http-first"]
+                for stream in sorted(http_streams)
+            },
+            "stream_first_seen": sorted(http_streams),
             "diagnostics": {
                 "scan_mode": "http-first",
                 "elapsed_seconds": round(
@@ -1336,6 +1612,8 @@ async def scan_room(
             "blv": room_blv,
             "blv_id": room.get("blv_id", "") or room_blv_id(room_url),
             "streams": [],
+            "stream_sources": {},
+            "stream_first_seen": [],
             "diagnostics": {
                 "scan_mode": "skipped-after-429",
                 "elapsed_seconds": round(
@@ -1369,8 +1647,14 @@ async def scan_room(
 
     def capture(value: str, source: str) -> None:
         for stream in extract_stream_urls_from_value(value):
+            stream_sources.setdefault(
+                stream,
+                set(),
+            ).add(source)
+
             if stream not in stream_urls:
                 stream_urls.add(stream)
+                stream_first_seen.append(stream)
                 stream_event.set()
                 print(f"      🎯 [{source}] {stream}")
 
@@ -1380,7 +1664,11 @@ async def scan_room(
     def on_response(response: Any) -> None:
         capture(response.url, f"response/{response.status}")
 
-        if response.status == 429:
+        if (
+            response.status == 429
+            and response.request.resource_type
+            == "document"
+        ):
             circuit.trip(response.url, 429)
 
         if response.status >= 400 and len(http_errors) < 15:
@@ -1436,8 +1724,17 @@ async def scan_room(
                         response_data.get("status", 0) or 0
                     )
                     capture(response_url, "cdp/response")
-                    if response_status == 429:
-                        circuit.trip(response_url, 429)
+                    response_type = clean_text(
+                        str(event.get("type", "") or "")
+                    ).lower()
+                    if (
+                        response_status == 429
+                        and response_type == "document"
+                    ):
+                        circuit.trip(
+                            response_url,
+                            429,
+                        )
 
                 cdp.on(
                     "Network.responseReceived",
@@ -1448,12 +1745,17 @@ async def scan_room(
                     f"CDP unavailable: {type(exc).__name__}: {exc}"
                 )
 
-        await page.goto(
+        main_response = await page.goto(
             room_url,
             wait_until="domcontentloaded",
             timeout=18000,
             referer=TARGET_URL,
         )
+        if main_response is not None:
+            main_status = main_response.status
+
+        if main_status == 429:
+            circuit.trip(room_url, 429)
 
         # Nếu stream xuất hiện ngay trong lúc goto thì không làm thêm việc.
         if not stream_event.is_set():
@@ -1461,6 +1763,25 @@ async def scan_room(
             await stimulate_player(page)
 
         metadata = await extract_page_metadata(page, room_url)
+
+        discovered_rooms = metadata.get("rooms", [])
+        if discovered_rooms:
+            before_count = len(
+                unique_rooms(match.get("rooms", []))
+            )
+            match["rooms"] = unique_rooms(
+                match.get("rooms", [])
+                + discovered_rooms
+            )
+            after_count = len(match["rooms"])
+
+            if after_count > before_count:
+                print(
+                    f"      🧭 Phát hiện thêm "
+                    f"{after_count - before_count} BLV "
+                    f"trong trang trận | tổng={after_count}",
+                    flush=True,
+                )
 
         if metadata.get("active_blv"):
             room_blv = metadata["active_blv"]
@@ -1519,6 +1840,7 @@ async def scan_room(
         await page.wait_for_timeout(250)
 
         diagnostics = await diagnose_page(page)
+        diagnostics["main_status"] = main_status
         diagnostics["harvested_stream_count"] = len(stream_urls)
         diagnostics["harvested_blv_ids"] = sorted(
             {
@@ -1540,6 +1862,7 @@ async def scan_room(
                 time.monotonic() - started,
                 3,
             ),
+            "main_status": main_status,
         }
         errors.append(f"{type(exc).__name__}: {exc}")
     finally:
@@ -1554,7 +1877,12 @@ async def scan_room(
         "url": room_url,
         "blv": room_blv,
         "blv_id": room.get("blv_id", "") or room_blv_id(room_url),
-        "streams": sorted(stream_urls),
+        "streams": list(stream_first_seen),
+        "stream_sources": {
+            stream: sorted(sources)
+            for stream, sources in stream_sources.items()
+        },
+        "stream_first_seen": list(stream_first_seen),
         "discovered_blv_ids": sorted(
             {
                 stream_blv_id(url)
@@ -1584,87 +1912,27 @@ async def scan_match(
         scheduled = match_datetime_from_url(
             match["base_url"]
         )
-
         time_label = (
             scheduled.strftime("%H:%M %d/%m")
             if scheduled
             else match.get("time_text", "")
         )
 
+        ensure_room_progress(match)
         update_match_coverage(match)
-        goal = match_stream_goal(match)
 
         print(
             f"\n⚽ {name} | {time_label}"
-            f" | coverage="
-            f"{len(match_found_blv_ids(match))}/{goal}"
+            f" | nguồn="
+            f"{len(match_found_blv_ids(match))}/"
+            f"{match_stream_goal(match)}"
+            f" | BLV pending="
+            f"{len(pending_room_keys(match))}"
         )
 
-        rooms = unique_rooms(
-            match.get("rooms", [])
-        )
-        if not rooms:
-            rooms = [
-                {
-                    "url": match["base_url"],
-                    "blv": "",
-                    "blv_id": "",
-                }
-            ]
+        pages_opened = 0
 
-        room_map = match_room_map(match)
-        known_room_ids = set(room_map)
-
-        attempted = {
-            str(value)
-            for value in match.get(
-                "attempted_room_ids",
-                [],
-            )
-            if value
-        }
-        found_ids = match_found_blv_ids(match)
-
-        candidate_rooms: list[dict[str, str]] = []
-        for room in rooms:
-            room_id = clean_text(
-                room.get("blv_id", "")
-            ) or room_blv_id(
-                room.get("url", "")
-            )
-
-            if room_id and room_id in found_ids:
-                continue
-            if room_id and room_id in attempted:
-                continue
-
-            candidate_rooms.append(room)
-
-        if (
-            not candidate_rooms
-            and not match_coverage_complete(match)
-        ):
-            candidate_rooms = [
-                room
-                for room in rooms
-                if (
-                    clean_text(
-                        room.get("blv_id", "")
-                    )
-                    or room_blv_id(
-                        room.get("url", "")
-                    )
-                ) not in found_ids
-            ]
-
-        candidate_rooms = candidate_rooms[
-            :MAX_ROOMS_PER_MATCH
-        ]
-
-        for index, room in enumerate(
-            candidate_rooms,
-            start=1,
-        ):
+        while pages_opened < MAX_ROOMS_PER_MATCH:
             if match_coverage_complete(match):
                 break
 
@@ -1678,25 +1946,50 @@ async def scan_match(
                 )
                 break
 
-            room_id = clean_text(
-                room.get("blv_id", "")
-            ) or room_blv_id(
-                room.get("url", "")
+            ensure_room_progress(match)
+            pending_keys = pending_room_keys(match)
+
+            if not pending_keys:
+                break
+
+            next_key = pending_keys[0]
+            room = next(
+                (
+                    item
+                    for item in unique_rooms(
+                        match.get("rooms", [])
+                    )
+                    if room_queue_key(item)
+                    == next_key
+                ),
+                None,
             )
-            blv_label = (
+
+            if room is None:
+                match["room_progress"].pop(
+                    next_key,
+                    None,
+                )
+                continue
+
+            pages_opened += 1
+            progress = match["room_progress"][
+                next_key
+            ]
+            label = (
                 room.get("blv")
-                or room_id
+                or room.get("blv_id")
                 or "URL tổng"
             )
 
             print(
-                f"   -> Trang BLV {index}/"
-                f"{len(candidate_rooms)}: "
-                f"{blv_label}"
+                f"   -> BLV queue {pages_opened}/"
+                f"{MAX_ROOMS_PER_MATCH}: "
+                f"{label}"
+                f" | attempts={progress['attempts']}"
+                f" | status={progress['status']}",
+                flush=True,
             )
-
-            if room_id:
-                attempted.add(room_id)
 
             room_result = await scan_room(
                 context,
@@ -1709,8 +2002,87 @@ async def scan_match(
                 [],
             ).append(room_result)
 
+            # scan_room có thể phát hiện thêm 10–12 BLV trong trang.
+            ensure_room_progress(match)
+            progress = match["room_progress"][
+                next_key
+            ]
+
+            diagnostics = room_result.get(
+                "diagnostics",
+                {},
+            )
+            main_status = diagnostics.get(
+                "main_status"
+            )
+            scan_mode = clean_text(
+                str(
+                    diagnostics.get(
+                        "scan_mode",
+                        "",
+                    )
+                    or ""
+                )
+            )
+            room_has_streams = bool(
+                room_result.get("streams")
+            )
+            rate_limited = bool(
+                main_status == 429
+                or scan_mode
+                == "skipped-after-429"
+                or (
+                    not room_has_streams
+                    and any(
+                        "429 " in value
+                        for value
+                        in room_result.get(
+                            "http_errors",
+                            [],
+                        )
+                    )
+                )
+            )
+
+            if rate_limited:
+                progress["status"] = (
+                    "rate_limited"
+                )
+                progress["rate_limit_hits"] += 1
+                progress["last_http_status"] = 429
+                progress["last_stream_count"] = 0
+                progress["last_error"] = (
+                    "HTTP 429; giữ nguyên trong "
+                    "pending cho runner kế tiếp."
+                )
+
+                print(
+                    f"      🧱 BLV {label}: HTTP 429"
+                    " — không đánh dấu đã quét.",
+                    flush=True,
+                )
+                break
+
+            progress["attempts"] += 1
+            progress["last_http_status"] = (
+                main_status
+            )
+            progress["last_stream_count"] = len(
+                room_result.get(
+                    "streams",
+                    [],
+                )
+            )
+            progress["last_error"] = (
+                "; ".join(
+                    room_result.get(
+                        "errors",
+                        [],
+                    )[:3]
+                )
+            )
+
             added = 0
-            foreign = 0
             existing_urls = {
                 item.get("url", "")
                 for item in match.get(
@@ -1718,32 +2090,124 @@ async def scan_match(
                     [],
                 )
             }
+            sources_by_stream = room_result.get(
+                "stream_sources",
+                {},
+            )
+            first_seen = room_result.get(
+                "stream_first_seen",
+                room_result.get(
+                    "streams",
+                    [],
+                ),
+            )
+            first_seen_index = {
+                value: index
+                for index, value in enumerate(
+                    first_seen
+                )
+            }
+            ordered_streams = sorted(
+                room_result.get(
+                    "streams",
+                    [],
+                ),
+                key=lambda value:
+                    first_seen_index.get(
+                        value,
+                        10**9,
+                    ),
+            )
 
-            for stream in room_result.get(
-                "streams",
-                [],
+            primary_assigned = False
+            current_room_id = (
+                room.get("blv_id", "")
+                or room_blv_id(
+                    room.get("url", "")
+                )
+            )
+            current_room_blv = (
+                room.get("blv", "")
+                or current_room_id
+                or "URL tổng"
+            )
+            room_map = match_room_map(match)
+
+            for stream_index, stream in enumerate(
+                ordered_streams,
+                start=1,
             ):
+                if stream in existing_urls:
+                    continue
+
                 detected_id = stream_blv_id(
                     stream
                 )
-
-                if (
-                    detected_id
-                    and known_room_ids
-                    and detected_id
-                    not in known_room_ids
-                ):
-                    foreign += 1
-                    continue
-
-                mapped_room = (
+                sources = sources_by_stream.get(
+                    stream,
+                    [],
+                )
+                exact_room = (
                     room_map.get(detected_id)
                     if detected_id
                     else None
-                ) or room
+                )
+                is_network = any(
+                    source.startswith(
+                        (
+                            "request/",
+                            "response/",
+                            "cdp/",
+                        )
+                    )
+                    for source in sources
+                )
 
-                if stream in existing_urls:
-                    continue
+                if exact_room is not None:
+                    display_blv = (
+                        exact_room.get("blv")
+                        or f"Nguồn {detected_id}"
+                    )
+                    display_room_url = (
+                        exact_room.get("url")
+                        or room_result["url"]
+                    )
+                    mapped_blv_id = (
+                        exact_room.get("blv_id")
+                        or detected_id
+                    )
+                    mapping_mode = "exact-room-id"
+                elif (
+                    current_room_id
+                    and is_network
+                    and not primary_assigned
+                ):
+                    # Request network đầu tiên của URL ?blv=X
+                    # được xem là nguồn chính của BLV X.
+                    display_blv = current_room_blv
+                    display_room_url = (
+                        room_result["url"]
+                    )
+                    mapped_blv_id = (
+                        current_room_id
+                    )
+                    mapping_mode = (
+                        "current-room-primary"
+                    )
+                    primary_assigned = True
+                else:
+                    display_blv = (
+                        f"Nguồn {detected_id}"
+                        if detected_id
+                        else f"Nguồn phụ {stream_index}"
+                    )
+                    display_room_url = (
+                        room_result["url"]
+                    )
+                    mapped_blv_id = detected_id
+                    mapping_mode = (
+                        "stream-source-id"
+                    )
 
                 match.setdefault(
                     "streams",
@@ -1751,79 +2215,95 @@ async def scan_match(
                 ).append(
                     {
                         "url": stream,
-                        "room_url": mapped_room.get(
-                            "url",
-                            room_result["url"],
-                        ),
-                        "blv": mapped_room.get(
-                            "blv",
-                            room_result.get(
-                                "blv",
-                                "",
+                        "room_url":
+                            display_room_url,
+                        "blv": display_blv,
+                        "blv_id":
+                            mapped_blv_id,
+                        "source_id":
+                            detected_id,
+                        "source_provenance":
+                            sources,
+                        "source_confidence":
+                            (
+                                "network"
+                                if is_network
+                                else "embedded"
                             ),
-                        ),
-                        "blv_id": (
-                            detected_id
-                            or mapped_room.get(
-                                "blv_id",
-                                "",
-                            )
-                        ),
+                        "mapping_mode":
+                            mapping_mode,
                         "discovered_from_room_url":
                             room_result["url"],
+                        "discovered_from_blv":
+                            current_room_blv,
                     }
                 )
                 existing_urls.add(stream)
                 added += 1
 
-            match["attempted_room_ids"] = sorted(
-                attempted
-            )
             dedup_match_streams(match)
 
-            current_ids = match_found_blv_ids(
-                match
-            )
+            if room_result.get("streams"):
+                progress["status"] = "success"
+                if circuit.triggered.is_set():
+                    progress["last_error"] = (
+                        "Đã giữ stream trước khi "
+                        "cầu dao 429 dừng các trang sau."
+                    )
+            elif (
+                progress["attempts"]
+                >= ROOM_EMPTY_MAX_ATTEMPTS
+            ):
+                progress["status"] = "exhausted"
+            else:
+                progress["status"] = "retry"
 
-            print(
-                f"      ✅ Thu hoạch +{added} link"
-                f" | BLV coverage="
-                f"{len(current_ids)}/{goal}"
-                + (
-                    f" | bỏ {foreign} stream ngoài trận"
-                    if foreign
-                    else ""
+            match["attempted_room_ids"] = sorted(
+                key
+                for key, value
+                in match["room_progress"].items()
+                if (
+                    key != "__base__"
+                    and value.get("attempts", 0)
+                    > 0
                 )
             )
 
-            if match_coverage_complete(match):
-                break
+            update_match_coverage(match)
+
+            print(
+                f"      ✅ BLV {label}: "
+                f"+{added} link"
+                f" | status={progress['status']}"
+                f" | tổng nguồn="
+                f"{len(match.get('streams', []))}"
+                f" | còn BLV="
+                f"{len(pending_room_keys(match))}",
+                flush=True,
+            )
 
             await asyncio.sleep(
                 DELAY_BETWEEN_ROOMS
             )
 
-        match["attempted_room_ids"] = sorted(
-            attempted
-        )
         dedup_match_streams(match)
-        match["match_name"] = match_display_name(
-            match
-        )
-
-        found_count = len(
-            match_found_blv_ids(match)
+        update_match_coverage(match)
+        match["match_name"] = (
+            match_display_name(match)
         )
 
         if match.get("streams"):
             print(
                 f"   ✅ HOÀN TẤT LƯỢT TRẬN: "
                 f"{len(match['streams'])} link"
-                f" | BLV={found_count}/{goal}"
+                f" | pending BLV="
+                f"{len(pending_room_keys(match))}",
+                flush=True,
             )
         else:
             print(
-                "   ❌ Trận này chưa bắt được link"
+                "   ❌ Trận này chưa bắt được link",
+                flush=True,
             )
 
         return match
@@ -1879,6 +2359,7 @@ def load_previous_state() -> dict[str, Any]:
             ),
             "matches": [],
             "_state_is_fresh": False,
+            "_state_schema_matches": False,
         }
 
     print(
@@ -1888,6 +2369,18 @@ def load_previous_state() -> dict[str, Any]:
         flush=True,
     )
     payload["_state_is_fresh"] = True
+    payload["_state_schema_matches"] = (
+        payload.get("state_schema_version")
+        == STATE_SCHEMA_VERSION
+    )
+
+    if not payload["_state_schema_matches"]:
+        print(
+            "🧹 State dùng schema cũ: giữ link còn hạn, "
+            "nhưng reset chain và danh sách phòng đã thử.",
+            flush=True,
+        )
+
     return payload
 
 
@@ -1917,9 +2410,25 @@ def merge_previous_streams(
             "streams",
             [],
         )
-        old_attempted = previous.get(
-            "attempted_room_ids",
-            [],
+        old_attempted = (
+            previous.get(
+                "attempted_room_ids",
+                [],
+            )
+            if previous_state.get(
+                "_state_schema_matches"
+            )
+            else []
+        )
+        old_room_progress = (
+            previous.get(
+                "room_progress",
+                {},
+            )
+            if previous_state.get(
+                "_state_schema_matches"
+            )
+            else {}
         )
 
         if old_streams:
@@ -1935,9 +2444,23 @@ def merge_previous_streams(
                 if value
             }
         )
+        match["room_progress"] = (
+            old_room_progress
+            if isinstance(
+                old_room_progress,
+                dict,
+            )
+            else {}
+        )
+
+        ensure_room_progress(match)
         dedup_match_streams(match)
 
-        if old_streams or old_attempted:
+        if (
+            old_streams
+            or old_attempted
+            or old_room_progress
+        ):
             merged += 1
 
     if merged:
@@ -2008,6 +2531,12 @@ def build_pending_matches(
                     "attempted_room_ids",
                     [],
                 ),
+                "room_progress": match.get(
+                    "room_progress",
+                    {},
+                ),
+                "pending_room_keys":
+                    pending_room_keys(match),
             }
         )
 
@@ -2076,6 +2605,9 @@ def write_resume_state(
     )
     same_target = bool(
         state_is_fresh
+        and previous_state.get(
+            "_state_schema_matches"
+        )
         and previous_target_urls
         and previous_target_urls == current_urls
     )
@@ -2137,6 +2669,7 @@ def write_resume_state(
 
     decision_payload = {
         "generated_at": generated_at,
+        "state_schema_version": STATE_SCHEMA_VERSION,
         "dispatch_next": dispatch_next,
         "pending_count": len(pending),
         "completed_count": completed_count,
@@ -2354,13 +2887,16 @@ def write_outputs(matches: list[dict[str, Any]]) -> tuple[int, int]:
                         MAX_STREAMS_PER_MATCH,
                     "embedded_harvest_wait_seconds":
                         EMBEDDED_HARVEST_WAIT_SECONDS,
+                    "room_empty_max_attempts":
+                        ROOM_EMPTY_MAX_ATTEMPTS,
                     "max_successful_rooms_per_match":
                         MAX_SUCCESSFUL_ROOMS_PER_MATCH,
                     "http_first": HTTP_FIRST,
                     "http_fetch_timeout_seconds": HTTP_FETCH_TIMEOUT_SECONDS,
                     "enable_cdp": ENABLE_CDP,
                     "stop_on_429": STOP_ON_429,
-                    "strategy": "v7-checkpoint-resume",
+                    "strategy": "v10-per-blv-queue",
+                    "state_schema_version": STATE_SCHEMA_VERSION,
                     "state_max_age_minutes": STATE_MAX_AGE_MINUTES,
                     "state_max_chain_runs": STATE_MAX_CHAIN_RUNS,
                     "state_max_no_progress_runs":
@@ -2390,10 +2926,10 @@ def write_outputs(matches: list[dict[str, Any]]) -> tuple[int, int]:
 # MAIN
 # ============================================================
 async def main() -> None:
-    print("🥷 SOCOLIVE STREAM SCANNER V9 - MULTI BLV HARVEST + CHAIN")
+    print("🥷 SOCOLIVE STREAM SCANNER V10 - PER-BLV QUEUE + CHAIN")
     print(
         "ℹ️ Test riêng một URL:\n"
-        '   python main_socolive_v9_multi_blv.py "https://socolivem.cv/truc-tiep/.../?blv=..."'
+        '   python main_socolive_v9_1_multi_source_fix.py "https://socolivem.cv/truc-tiep/.../?blv=..."'
     )
 
     direct_urls = [
