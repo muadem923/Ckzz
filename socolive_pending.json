@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-07-20T03:17:58.623049+07:00",
+  "generated_at": "2026-07-20T03:18:56.450121+07:00",
   "dispatch_next": true,
   "pending_count": 4,
-  "completed_count": 2,
+  "completed_count": 5,
   "coverage_complete_count": 2,
   "total_match_count": 6,
-  "total_stream_count": 6,
-  "progress_count": 2,
-  "chain_runs": 3,
+  "total_stream_count": 9,
+  "progress_count": 3,
+  "chain_runs": 4,
   "no_progress_runs": 0,
   "stop_reason": "",
   "rate_limited": true,
-  "rate_limit_url": "https://socolivep.cv/truc-tiep/sporting-kansas-city-reserves-vs-minnesota-united-b-20-07-2026-0700?blv=598119",
+  "rate_limit_url": "https://socolivep.cv/truc-tiep/independiente-del-valle-vs-club-sport-emelec-20-07-2026-0715?blv=273736",
   "count": 4,
   "matches": [
     {
@@ -90,21 +90,33 @@
           "blv_id": ""
         }
       ],
-      "streams": [],
+      "streams": [
+        {
+          "url": "https://pull.niues.live/live/stream-414317_lhd.m3u8?auth_key=1784490565-0-0-68ac5d988036fabaa16b40855f72dcf4",
+          "room_url": "https://socolivep.cv/truc-tiep/spain-vs-argentina-20-07-2026-0200?blv=414317",
+          "blv": "TOMMY",
+          "blv_id": "414317",
+          "discovered_from_room_url": "https://socolivep.cv/truc-tiep/spain-vs-argentina-20-07-2026-0200?blv=414317"
+        }
+      ],
       "coverage": {
-        "found_streams": 0,
-        "found_blv_ids": [],
+        "found_streams": 1,
+        "found_blv_ids": [
+          "414317"
+        ],
         "goal": 10,
         "complete": false,
         "attempted_room_ids": [
           "118206",
           "360663",
+          "414317",
           "434982"
         ]
       },
       "attempted_room_ids": [
         "118206",
         "360663",
+        "414317",
         "434982"
       ]
     },
@@ -139,10 +151,20 @@
           "blv_id": ""
         }
       ],
-      "streams": [],
+      "streams": [
+        {
+          "url": "https://pull.niur.live/live/stream-598119_lhd.m3u8?txSecret=ca49ed49ff4527e0cca504947a1fb43f&txTime=6a5d6169",
+          "room_url": "https://socolivep.cv/truc-tiep/sporting-kansas-city-reserves-vs-minnesota-united-b-20-07-2026-0700?blv=598119",
+          "blv": "A TINH",
+          "blv_id": "598119",
+          "discovered_from_room_url": "https://socolivep.cv/truc-tiep/sporting-kansas-city-reserves-vs-minnesota-united-b-20-07-2026-0700"
+        }
+      ],
       "coverage": {
-        "found_streams": 0,
-        "found_blv_ids": [],
+        "found_streams": 1,
+        "found_blv_ids": [
+          "598119"
+        ],
         "goal": 3,
         "complete": false,
         "attempted_room_ids": [
@@ -188,15 +210,29 @@
           "blv_id": ""
         }
       ],
-      "streams": [],
+      "streams": [
+        {
+          "url": "https://pull.niur.live/live/stream-534055_lhd.m3u8?txSecret=a08ea6d59bbe33bdf51e64d54ae3ff0c&txTime=6a5cc3be",
+          "room_url": "https://socolivep.cv/truc-tiep/alianza-lima-vs-sport-huancayo-20-07-2026-0700?blv=534055",
+          "blv": "RAMBO",
+          "blv_id": "534055",
+          "discovered_from_room_url": "https://socolivep.cv/truc-tiep/alianza-lima-vs-sport-huancayo-20-07-2026-0700?blv=534055"
+        }
+      ],
       "coverage": {
-        "found_streams": 0,
-        "found_blv_ids": [],
+        "found_streams": 1,
+        "found_blv_ids": [
+          "534055"
+        ],
         "goal": 3,
         "complete": false,
-        "attempted_room_ids": []
+        "attempted_room_ids": [
+          "534055"
+        ]
       },
-      "attempted_room_ids": []
+      "attempted_room_ids": [
+        "534055"
+      ]
     },
     {
       "base_url": "https://socolivep.cv/truc-tiep/independiente-del-valle-vs-club-sport-emelec-20-07-2026-0715/",
@@ -235,9 +271,13 @@
         "found_blv_ids": [],
         "goal": 3,
         "complete": false,
-        "attempted_room_ids": []
+        "attempted_room_ids": [
+          "273736"
+        ]
       },
-      "attempted_room_ids": []
+      "attempted_room_ids": [
+        "273736"
+      ]
     }
   ]
 }

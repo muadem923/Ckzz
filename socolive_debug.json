@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-20T03:17:58.620750+07:00",
+  "generated_at": "2026-07-20T03:18:56.448152+07:00",
   "configuration": {
     "match_concurrency": 4,
     "room_wait_seconds": 7.0,
@@ -105,7 +105,15 @@
       ],
       "match_name": "Spain vs Argentina",
       "scheduled_at": "2026-07-20T02:00:00+07:00",
-      "streams": [],
+      "streams": [
+        {
+          "url": "https://pull.niues.live/live/stream-414317_lhd.m3u8?auth_key=1784490565-0-0-68ac5d988036fabaa16b40855f72dcf4",
+          "room_url": "https://socolivep.cv/truc-tiep/spain-vs-argentina-20-07-2026-0200?blv=414317",
+          "blv": "TOMMY",
+          "blv_id": "414317",
+          "discovered_from_room_url": "https://socolivep.cv/truc-tiep/spain-vs-argentina-20-07-2026-0200?blv=414317"
+        }
+      ],
       "room_results": [
         {
           "url": "https://socolivep.cv/truc-tiep/spain-vs-argentina-20-07-2026-0200?blv=434982",
@@ -334,22 +342,646 @@
           "http_errors": [
             "403 https://socolivep.cv/wp-admin/admin-ajax.php?action=scl_realtime&sport=1"
           ]
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/spain-vs-argentina-20-07-2026-0200?blv=414317",
+          "blv": "TOMMY",
+          "blv_id": "414317",
+          "streams": [
+            "https://pull.niues.live/live/stream-414317_lhd.m3u8?auth_key=1784490565-0-0-68ac5d988036fabaa16b40855f72dcf4"
+          ],
+          "discovered_blv_ids": [
+            "414317"
+          ],
+          "diagnostics": {
+            "url": "https://socolivep.cv/truc-tiep/spain-vs-argentina-20-07-2026-0200/?blv=414317",
+            "title": "Xem trực tiếp bóng đá Spain vs Argentina | 02:00 ngày 20/07/2026",
+            "h1": "Trực tiếp bóng đá Socolive Spain vs Argentina lúc 02:00 ngày 20/07/2026",
+            "ready_state": "complete",
+            "visibility_state": "visible",
+            "hidden": false,
+            "video_count": 1,
+            "iframe_count": 0,
+            "body_sample": "Skip to content Socolive Bảng xếp hạng Lịch thi đấu Kết quả bóng đá Tin thể thao Trực tiếp bóng đá Socolive Spain vs Argentina lúc 02:00 ngày 20/07/2026 WORLD CUP Spain 02:00 20/07 Argentina 00:00 of 00:00Volume 10% Phát TRỰC TIẾP Tải App Bufa ĐỐM Củ Cải TẠ BIÊN GIỚI TOMMY TAP DECO RICKHANTER COCA HẢI THANH CUỘI CR Bưởi MESSI Chat Thống kê Đội hình Diễn Biến Bảng XH \" \" Anh_cua_Tommy: thời của mpappe Itachi Win: a7 van da 2030 ma Pepsicoc9: phát biểu có 1 cáu tới tau khựa ma ra đi luôn Chưa Tàyy Đâu: cháu đang có vị 00 ăn 7 mã một triệu đợi có rung cháu nhồi bảy triệu xem cho nét đc ko chú tom Pepsicoc9: mp3 chi thích mẹc si hôm nay k ghi bàn Aiuem: trận này ko 2 bàn em vĩnh biệt hết cụ hgmmockba: vẫn chưa đá vkll T1 red star: hảo hán hgmmockba: rung luôn 14tr ăn mới to cháu ạ Anhyeue: nó làm kèo ý rồi hgmmockba: nghỉ lâu thế này fifa tác động rồi hgmmockba: messi đang mấy quả Pepsicoc9: 2 năm nưa nó vo dịch copa nưa thi s hgmmockba: chưa chắc . 4 năm nữa messi vẫn đá thì sao Anhyeue: quả bóng là hợp lí Anh_cua_Tommy: đâu chức chủ tịch fifa cho messi đó tommy Admin Sóc Săn Góc: 🍀 KM NẠP LẦN 1&2 LÊN ĐẾN 1TR8 CHỈ VỚI 1 VÒNG CƯỢC LÀ RÚT TIỀN 😘 ⚽️Link đăng ký:https://www.bty9296.com ",
+            "harvested_stream_count": 1,
+            "harvested_blv_ids": [
+              "414317"
+            ],
+            "scan_mode": "browser-event",
+            "elapsed_seconds": 3.475
+          },
+          "http_probe": {
+            "enabled": false,
+            "status": null,
+            "elapsed_seconds": 0.0,
+            "error": ""
+          },
+          "errors": [
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED"
+          ],
+          "failed_requests": [
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/main.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/customize.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/auth.css?ver=180 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat.css?ver=245 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat(1).css?ver=61 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/toast.css?ver=72 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/themes/flatsome/assets/css/flatsome.css?ver=3.18.2 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/themes/flatsome-child/style.css?ver=3.0 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/countdown.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/match.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/livescore.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/style_custom.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/effect/running-border.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/option/option-6.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/highlight/option-1.css?ver=2.8.5 | net::ERR_FAILED"
+          ],
+          "http_errors": [
+            "403 https://socolivep.cv/wp-admin/admin-ajax.php?action=scl_realtime&sport=1"
+          ]
         }
       ],
       "attempted_room_ids": [
         "118206",
         "360663",
+        "414317",
         "434982"
       ],
       "coverage": {
-        "found_streams": 0,
-        "found_blv_ids": [],
+        "found_streams": 1,
+        "found_blv_ids": [
+          "414317"
+        ],
         "goal": 10,
         "complete": false,
         "attempted_room_ids": [
           "118206",
           "360663",
+          "414317",
           "434982"
+        ]
+      },
+      "errors": []
+    },
+    {
+      "base_url": "https://socolivep.cv/truc-tiep/sporting-kansas-city-reserves-vs-minnesota-united-b-20-07-2026-0700/",
+      "raw_title": "Trực tiếp bóng đá Socolive Sporting Kansas City Reserves vs MINNESOTA United B lúc 07:00 ngày 20/07/2026",
+      "home_team": "Sporting Kansas City Reserves",
+      "away_team": "MINNESOTA United B",
+      "home_logo": "https://sta.vnres.co/file/common/20260717/845f64730efcdbb790d776e988fa0237.png",
+      "away_logo": "https://sta.vnres.co/file/common/20260717/b3a45022e3b1dafdc46d0c5e9633e548.png",
+      "time_text": "07:00",
+      "date_text": "20/07",
+      "status": "",
+      "card_text": "USA MLSRv 07:00 20/07 Sporting Kansas City Reserves VS XEM NGAY MINNESOTA United B KÉP BÉO A TINH",
+      "rooms": [
+        {
+          "url": "https://socolivep.cv/truc-tiep/sporting-kansas-city-reserves-vs-minnesota-united-b-20-07-2026-0700?blv=560690",
+          "blv": "KÉP",
+          "blv_id": "560690"
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/sporting-kansas-city-reserves-vs-minnesota-united-b-20-07-2026-0700?blv=459401",
+          "blv": "BÉO",
+          "blv_id": "459401"
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/sporting-kansas-city-reserves-vs-minnesota-united-b-20-07-2026-0700?blv=598119",
+          "blv": "A TINH",
+          "blv_id": "598119"
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/sporting-kansas-city-reserves-vs-minnesota-united-b-20-07-2026-0700",
+          "blv": "XEM NGAY",
+          "blv_id": ""
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/sporting-kansas-city-reserves-vs-minnesota-united-b-20-07-2026-0700/",
+          "blv": "",
+          "blv_id": ""
+        }
+      ],
+      "match_name": "Sporting Kansas City Reserves vs MINNESOTA United B",
+      "scheduled_at": "2026-07-20T07:00:00+07:00",
+      "streams": [
+        {
+          "url": "https://pull.niur.live/live/stream-598119_lhd.m3u8?txSecret=ca49ed49ff4527e0cca504947a1fb43f&txTime=6a5d6169",
+          "room_url": "https://socolivep.cv/truc-tiep/sporting-kansas-city-reserves-vs-minnesota-united-b-20-07-2026-0700?blv=598119",
+          "blv": "A TINH",
+          "blv_id": "598119",
+          "discovered_from_room_url": "https://socolivep.cv/truc-tiep/sporting-kansas-city-reserves-vs-minnesota-united-b-20-07-2026-0700"
+        }
+      ],
+      "room_results": [
+        {
+          "url": "https://socolivep.cv/truc-tiep/sporting-kansas-city-reserves-vs-minnesota-united-b-20-07-2026-0700?blv=560690",
+          "blv": "KÉP",
+          "blv_id": "560690",
+          "streams": [],
+          "discovered_blv_ids": [],
+          "diagnostics": {
+            "url": "https://socolivep.cv/truc-tiep/sporting-kansas-city-reserves-vs-minnesota-united-b-20-07-2026-0700?blv=560690",
+            "title": "Chờ một chút...",
+            "h1": "socolivep.cv",
+            "ready_state": "complete",
+            "visibility_state": "visible",
+            "hidden": false,
+            "video_count": 0,
+            "iframe_count": 0,
+            "body_sample": "socolivep.cv Thực hiện xác minh bảo mật Trang web này sử dụng dịch vụ bảo mật để chống bot độc hại. Trang này hiển thị trong khi trang web xác minh bạn không phải là bot. Ray ID: a1dc66717a3811cd Hiệu suất và Tính bảo mật của Cloudflare Quyền riêng tư",
+            "harvested_stream_count": 0,
+            "harvested_blv_ids": [],
+            "scan_mode": "browser-event",
+            "elapsed_seconds": 9.518
+          },
+          "http_probe": {
+            "enabled": false,
+            "status": null,
+            "elapsed_seconds": 0.0,
+            "error": ""
+          },
+          "errors": [
+            "console/error: Failed to load resource: the server responded with a status of 429 ()",
+            "console/warning: No available adapters.",
+            "console/warning: No available adapters.",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/warning: OTS parsing error: Size of decompressed WOFF 2.0 is less than compressed size",
+            "console/warning: [.WebGL-0x1e740011ba00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+            "console/warning: [.WebGL-0x1e740011ba00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+            "console/error: %c%d font-size:0;color:transparent NaN",
+            "console/error: %c%d font-size:0;color:transparent NaN",
+            "console/warning: %c%d font-size:0;color:transparent NaN",
+            "console/warning: %c%d font-size:0;color:transparent NaN"
+          ],
+          "failed_requests": [
+            "fetch https://brunhild.challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/i/a1dc6677ec9af603/ZOfWztfGFbsIMaLFlWT7FPUk1npmqmx_QE56fBjd6Xo-1784492148-1.2.1.1-UkSK0nwRLQto0TWuHq8iNUqZkmteR8611ouazaLO1uDJ6Tv1qKtfMzgGq750pfMj | net::ERR_NAME_NOT_RESOLVED",
+            "image https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/ci/a1dc6677ec9af603/1784492149131/8gpbRACskFQEpX0 | net::ERR_FAILED"
+          ],
+          "http_errors": [
+            "429 https://socolivep.cv/truc-tiep/sporting-kansas-city-reserves-vs-minnesota-united-b-20-07-2026-0700?blv=560690",
+            "401 https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/pat/a1dc6677ec9af603/1784492149131/9c70818fb0055a7840a6df4408c2190fca2a8c6c3c55ecf7fbfc21a69a7304b4/GIVjFM4MU-aNe04"
+          ]
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/sporting-kansas-city-reserves-vs-minnesota-united-b-20-07-2026-0700?blv=459401",
+          "blv": "BÉO",
+          "blv_id": "459401",
+          "streams": [],
+          "discovered_blv_ids": [],
+          "diagnostics": {
+            "url": "https://socolivep.cv/truc-tiep/sporting-kansas-city-reserves-vs-minnesota-united-b-20-07-2026-0700?blv=459401",
+            "title": "Chờ một chút...",
+            "h1": "socolivep.cv",
+            "ready_state": "complete",
+            "visibility_state": "visible",
+            "hidden": false,
+            "video_count": 0,
+            "iframe_count": 0,
+            "body_sample": "socolivep.cv Thực hiện xác minh bảo mật Trang web này sử dụng dịch vụ bảo mật để chống bot độc hại. Trang này hiển thị trong khi trang web xác minh bạn không phải là bot. Ray ID: a1dc681b2d3d584b Hiệu suất và Tính bảo mật của Cloudflare Quyền riêng tư",
+            "harvested_stream_count": 0,
+            "harvested_blv_ids": [],
+            "scan_mode": "browser-event",
+            "elapsed_seconds": 9.157
+          },
+          "http_probe": {
+            "enabled": false,
+            "status": null,
+            "elapsed_seconds": 0.0,
+            "error": ""
+          },
+          "errors": [
+            "console/error: Failed to load resource: the server responded with a status of 429 ()",
+            "console/warning: No available adapters.",
+            "console/warning: No available adapters.",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/warning: [.WebGL-0x6b4029cbe00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+            "console/warning: [.WebGL-0x6b4029cbe00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+            "console/error: %c%d font-size:0;color:transparent NaN",
+            "console/error: %c%d font-size:0;color:transparent NaN",
+            "console/warning: %c%d font-size:0;color:transparent NaN",
+            "console/warning: %c%d font-size:0;color:transparent NaN",
+            "console/warning: OTS parsing error: Size of decompressed WOFF 2.0 is less than compressed size"
+          ],
+          "failed_requests": [
+            "fetch https://brunhild.challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/i/a1dc68213b2cc213/QeRcWJ2y9nGMsRx9Gpb8s0yGM5gz1K0Yr61.33hGFRU-1784492216-1.2.1.1-yz9j2n.huceQB6xMJMMnKNgXgLnHSL5gTajBlnpqNeQnnfU9RWkUkvB9U95ikxWL | net::ERR_NAME_NOT_RESOLVED",
+            "image https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/ci/a1dc68213b2cc213/1784492216921/jXZmqD-61bGYoHB | net::ERR_FAILED"
+          ],
+          "http_errors": [
+            "429 https://socolivep.cv/truc-tiep/sporting-kansas-city-reserves-vs-minnesota-united-b-20-07-2026-0700?blv=459401",
+            "401 https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/pat/a1dc68213b2cc213/1784492216920/b37360a6bf096bf63cfda303963e6fdbf477b996e178a8dbf6def506c6d46b7e/UJ8GHeEq-ScZwKn"
+          ]
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/sporting-kansas-city-reserves-vs-minnesota-united-b-20-07-2026-0700?blv=598119",
+          "blv": "A TINH",
+          "blv_id": "598119",
+          "streams": [],
+          "discovered_blv_ids": [],
+          "diagnostics": {
+            "url": "https://socolivep.cv/truc-tiep/sporting-kansas-city-reserves-vs-minnesota-united-b-20-07-2026-0700?blv=598119",
+            "title": "Chờ một chút...",
+            "h1": "socolivep.cv",
+            "ready_state": "complete",
+            "visibility_state": "visible",
+            "hidden": false,
+            "video_count": 0,
+            "iframe_count": 0,
+            "body_sample": "socolivep.cv Thực hiện xác minh bảo mật Trang web này sử dụng dịch vụ bảo mật để chống bot độc hại. Trang này hiển thị trong khi trang web xác minh bạn không phải là bot. Ray ID: a1dc696ad9242be6 Hiệu suất và Tính bảo mật của Cloudflare Quyền riêng tư",
+            "harvested_stream_count": 0,
+            "harvested_blv_ids": [],
+            "scan_mode": "browser-event",
+            "elapsed_seconds": 9.391
+          },
+          "http_probe": {
+            "enabled": false,
+            "status": null,
+            "elapsed_seconds": 0.0,
+            "error": ""
+          },
+          "errors": [
+            "console/error: Failed to load resource: the server responded with a status of 429 ()",
+            "console/warning: No available adapters.",
+            "console/warning: No available adapters.",
+            "console/warning: [.WebGL-0x233c00123a00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+            "console/warning: [.WebGL-0x233c00123a00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+            "console/warning: OTS parsing error: Size of decompressed WOFF 2.0 is less than compressed size",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: %c%d font-size:0;color:transparent NaN",
+            "console/error: %c%d font-size:0;color:transparent NaN",
+            "console/warning: %c%d font-size:0;color:transparent NaN",
+            "console/warning: %c%d font-size:0;color:transparent NaN"
+          ],
+          "failed_requests": [
+            "fetch https://brunhild.challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/i/a1dc696f8b3ae98e/pgkFBGLeqKlMZuJtOyiiE4wpr9Qt9Q6LpBlHjRBgeUk-1784492270-1.2.1.1-IZeiTiik6wyqJTeUDUXjOkdx0cNEnY8Mj7at8XnEFbTeVGyEPG4pUIrkQS.7XgGg | net::ERR_NAME_NOT_RESOLVED",
+            "image https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/ci/a1dc696f8b3ae98e/1784492270618/V8cv-fffdCgXpC6 | net::ERR_FAILED"
+          ],
+          "http_errors": [
+            "429 https://socolivep.cv/truc-tiep/sporting-kansas-city-reserves-vs-minnesota-united-b-20-07-2026-0700?blv=598119",
+            "401 https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/pat/a1dc696f8b3ae98e/1784492270618/db466ecb274a13afd5ebd2b4f98deecad5446cdee55efcf733670bb2291c7526/Xw_sEkSPfmwf0L0"
+          ]
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/sporting-kansas-city-reserves-vs-minnesota-united-b-20-07-2026-0700",
+          "blv": "XEM NGAY",
+          "blv_id": "",
+          "streams": [
+            "https://pull.niur.live/live/stream-598119_lhd.m3u8?txSecret=ca49ed49ff4527e0cca504947a1fb43f&txTime=6a5d6169"
+          ],
+          "discovered_blv_ids": [
+            "598119"
+          ],
+          "diagnostics": {
+            "url": "https://socolivep.cv/truc-tiep/sporting-kansas-city-reserves-vs-minnesota-united-b-20-07-2026-0700/",
+            "title": "Xem trực tiếp bóng đá Sporting Kansas City Reserves vs MINNESOTA United B | 07:00 ngày 20/07/2026",
+            "h1": "Trực tiếp bóng đá Socolive Sporting Kansas City Reserves vs MINNESOTA United B lúc 07:00 ngày 20/07/2026",
+            "ready_state": "complete",
+            "visibility_state": "visible",
+            "hidden": false,
+            "video_count": 0,
+            "iframe_count": 0,
+            "body_sample": "Skip to content Socolive Bảng xếp hạng Lịch thi đấu Kết quả bóng đá Tin thể thao Trực tiếp bóng đá Socolive Sporting Kansas City Reserves vs MINNESOTA United B lúc 07:00 ngày 20/07/2026 USA MLSRv Sporting Kansas City Reserves 07:00 20/07 MINNESOTA United B Trận đấu sẽ bắt đầu sau Ngày0 : Giờ3 : Phút41 : Giây3 Trận đấu chưa bắt đầu KÉP A TINH XO Chat Thống kê Đội hình Diễn Biến Bảng XH \" \" Xóa 😀 😁 😃 😄 😅 😆 😇 😉 😊 🙂 😋 😍 😘 😗 😙 😚 😜 😝 😛 😎 🙄 😳 😡 😕 😫 😤 😨 😥 😪 😓 😵 😲 🤧 😷 🤒 🤕 😴 💤 👏 🤙 👍 👎 👊 ✊ ✌ 👌 ✋ 🤚 💪 🤝 👈 👉 🖕 🖐 👄 👂 👀 🎅 🌞 🌙 ⭐ ⚡ 🔥 ❄️ ⚽ 🏀 🏈 ⚾ 🎁 🎉 ✒️ 📝 ❤️ 💛 💚 🆚 💬 🕐 Vô hiệu hóa tất cả Vô hiệu hóa quà tặng Tắt lời chào Đăng nhập để cùng chat nhé Gửi Tỷ lệ kèo Cược Châu Á Chủ Chấp Khách Cược Châu Âu Chủ Hòa Khách Tài xỉu Tài Tỷ lệ kèo Xỉu Kèo góc Tài Tỷ lệ kèo Xỉu Mô phỏng trận đấu Thống kê trận đấu WORLD CUP 02:00 20/07 Spain VS null null null - null Sắp diễn ra Xem ngay Argentina ĐỐM Củ Cải TẠ BIÊN GIỚI TOMMY TAP DECO RICKHANTER COCA HẢI THANH CUỘI CR Bưởi MESSI ECU D1 04:45 20/07 Guayaquil City VS null null null - null Sắp diễn ra Xem ngay Manta FC RAMBO LOGAN YONE USA MLSRv 05:00 20/07 Connecticut United FC VS null null null - nul",
+            "harvested_stream_count": 1,
+            "harvested_blv_ids": [
+              "598119"
+            ],
+            "scan_mode": "browser-event",
+            "elapsed_seconds": 9.312
+          },
+          "http_probe": {
+            "enabled": false,
+            "status": null,
+            "elapsed_seconds": 0.0,
+            "error": ""
+          },
+          "errors": [
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED"
+          ],
+          "failed_requests": [
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/main.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/customize.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/auth.css?ver=497 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat.css?ver=370 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat(1).css?ver=908 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/toast.css?ver=976 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/themes/flatsome/assets/css/flatsome.css?ver=3.18.2 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/themes/flatsome-child/style.css?ver=3.0 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/countdown.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/match.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/livescore.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/style_custom.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/effect/running-border.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/option/option-6.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/highlight/option-1.css?ver=2.8.5 | net::ERR_FAILED"
+          ],
+          "http_errors": [
+            "403 https://socolivep.cv/wp-admin/admin-ajax.php?action=scl_realtime&sport=1",
+            "404 https://live.sportdb.live/api/v1/matchs/assistant-user?roomNum=598119"
+          ]
+        }
+      ],
+      "attempted_room_ids": [
+        "459401",
+        "560690",
+        "598119"
+      ],
+      "coverage": {
+        "found_streams": 1,
+        "found_blv_ids": [
+          "598119"
+        ],
+        "goal": 3,
+        "complete": false,
+        "attempted_room_ids": [
+          "459401",
+          "560690",
+          "598119"
+        ]
+      },
+      "errors": []
+    },
+    {
+      "base_url": "https://socolivep.cv/truc-tiep/alianza-lima-vs-sport-huancayo-20-07-2026-0700/",
+      "raw_title": "Trực tiếp bóng đá Socolive Alianza Lima vs Sport Huancayo lúc 07:00 ngày 20/07/2026",
+      "home_team": "Alianza Lima",
+      "away_team": "Sport Huancayo",
+      "home_logo": "https://sta.vnres.co/file/common/20260717/74e7aa0f487bdb5bcf53c0cc10b12fb1.png",
+      "away_logo": "https://sta.vnres.co/file/common/20260717/3c6eda0a015fee538f089af39a335885.png",
+      "time_text": "07:00",
+      "date_text": "20/07",
+      "status": "",
+      "card_text": "PER D1 07:00 20/07 Alianza Lima VS XEM NGAY Sport Huancayo RAMBO A PÁO HÀ DUY KIÊN",
+      "rooms": [
+        {
+          "url": "https://socolivep.cv/truc-tiep/alianza-lima-vs-sport-huancayo-20-07-2026-0700?blv=534055",
+          "blv": "RAMBO",
+          "blv_id": "534055"
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/alianza-lima-vs-sport-huancayo-20-07-2026-0700?blv=235232",
+          "blv": "A PÁO",
+          "blv_id": "235232"
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/alianza-lima-vs-sport-huancayo-20-07-2026-0700?blv=607400",
+          "blv": "HÀ DUY KIÊN",
+          "blv_id": "607400"
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/alianza-lima-vs-sport-huancayo-20-07-2026-0700",
+          "blv": "XEM NGAY",
+          "blv_id": ""
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/alianza-lima-vs-sport-huancayo-20-07-2026-0700/",
+          "blv": "",
+          "blv_id": ""
+        }
+      ],
+      "match_name": "Alianza Lima vs Sport Huancayo",
+      "scheduled_at": "2026-07-20T07:00:00+07:00",
+      "streams": [
+        {
+          "url": "https://pull.niur.live/live/stream-534055_lhd.m3u8?txSecret=a08ea6d59bbe33bdf51e64d54ae3ff0c&txTime=6a5cc3be",
+          "room_url": "https://socolivep.cv/truc-tiep/alianza-lima-vs-sport-huancayo-20-07-2026-0700?blv=534055",
+          "blv": "RAMBO",
+          "blv_id": "534055",
+          "discovered_from_room_url": "https://socolivep.cv/truc-tiep/alianza-lima-vs-sport-huancayo-20-07-2026-0700?blv=534055"
+        }
+      ],
+      "room_results": [
+        {
+          "url": "https://socolivep.cv/truc-tiep/alianza-lima-vs-sport-huancayo-20-07-2026-0700?blv=534055",
+          "blv": "RAMBO",
+          "blv_id": "534055",
+          "streams": [
+            "https://pull.niur.live/live/stream-534055_lhd.m3u8?txSecret=a08ea6d59bbe33bdf51e64d54ae3ff0c&txTime=6a5cc3be"
+          ],
+          "discovered_blv_ids": [
+            "534055"
+          ],
+          "diagnostics": {
+            "url": "https://socolivep.cv/truc-tiep/alianza-lima-vs-sport-huancayo-20-07-2026-0700/?blv=534055",
+            "title": "Xem trực tiếp bóng đá Alianza Lima vs Sport Huancayo | 07:00 ngày 20/07/2026",
+            "h1": "Trực tiếp bóng đá Socolive Alianza Lima vs Sport Huancayo lúc 07:00 ngày 20/07/2026",
+            "ready_state": "complete",
+            "visibility_state": "visible",
+            "hidden": false,
+            "video_count": 0,
+            "iframe_count": 0,
+            "body_sample": "Skip to content Socolive Bảng xếp hạng Lịch thi đấu Kết quả bóng đá Tin thể thao Trực tiếp bóng đá Socolive Alianza Lima vs Sport Huancayo lúc 07:00 ngày 20/07/2026 PER D1 Alianza Lima 07:00 20/07 Sport Huancayo Trận đấu sẽ bắt đầu sau Ngày0 : Giờ3 : Phút41 : Giây3 Trận đấu chưa bắt đầu RAMBO A PÁO HÀ DUY KIÊN Chat Thống kê Đội hình Diễn Biến Bảng XH \" \" Xóa Tin nhắn riêng 😀 😁 😃 😄 😅 😆 😇 😉 😊 🙂 😋 😍 😘 😗 😙 😚 😜 😝 😛 😎 🙄 😳 😡 😕 😫 😤 😨 😥 😪 😓 😵 😲 🤧 😷 🤒 🤕 😴 💤 👏 🤙 👍 👎 👊 ✊ ✌ 👌 ✋ 🤚 💪 🤝 👈 👉 🖕 🖐 👄 👂 👀 🎅 🌞 🌙 ⭐ ⚡ 🔥 ❄️ ⚽ 🏀 🏈 ⚾ 🎁 🎉 ✒️ 📝 ❤️ 💛 💚 🆚 💬 🕐 Vô hiệu hóa tất cả Vô hiệu hóa quà tặng Tắt lời chào Đăng nhập để cùng chat nhé Gửi Tỷ lệ kèo Cược Châu Á Chủ Chấp Khách Cược Châu Âu Chủ Hòa Khách Tài xỉu Tài Tỷ lệ kèo Xỉu Kèo góc Tài Tỷ lệ kèo Xỉu Mô phỏng trận đấu Thống kê trận đấu WORLD CUP 02:00 20/07 Spain VS null null null - null Sắp diễn ra Xem ngay Argentina ĐỐM Củ Cải TẠ BIÊN GIỚI TOMMY TAP DECO RICKHANTER COCA HẢI THANH CUỘI CR Bưởi MESSI ECU D1 04:45 20/07 Guayaquil City VS null null null - null Sắp diễn ra Xem ngay Manta FC RAMBO LOGAN YONE USA MLSRv 05:00 20/07 Connecticut United FC VS null null null - null Sắp diễn ra Xem ng",
+            "harvested_stream_count": 1,
+            "harvested_blv_ids": [
+              "534055"
+            ],
+            "scan_mode": "browser-event",
+            "elapsed_seconds": 9.282
+          },
+          "http_probe": {
+            "enabled": false,
+            "status": null,
+            "elapsed_seconds": 0.0,
+            "error": ""
+          },
+          "errors": [
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED"
+          ],
+          "failed_requests": [
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/main.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/customize.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/auth.css?ver=497 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat.css?ver=139 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat(1).css?ver=963 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/toast.css?ver=773 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/themes/flatsome/assets/css/flatsome.css?ver=3.18.2 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/themes/flatsome-child/style.css?ver=3.0 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/countdown.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/match.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/livescore.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/style_custom.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/effect/running-border.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/option/option-6.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/highlight/option-1.css?ver=2.8.5 | net::ERR_FAILED"
+          ],
+          "http_errors": [
+            "403 https://socolivep.cv/wp-admin/admin-ajax.php?action=scl_realtime&sport=1"
+          ]
+        }
+      ],
+      "attempted_room_ids": [
+        "534055"
+      ],
+      "coverage": {
+        "found_streams": 1,
+        "found_blv_ids": [
+          "534055"
+        ],
+        "goal": 3,
+        "complete": false,
+        "attempted_room_ids": [
+          "534055"
+        ]
+      },
+      "errors": []
+    },
+    {
+      "base_url": "https://socolivep.cv/truc-tiep/independiente-del-valle-vs-club-sport-emelec-20-07-2026-0715/",
+      "raw_title": "Trực tiếp bóng đá Socolive Independiente del Valle vs Club Sport Emelec lúc 07:15 ngày 20/07/2026",
+      "home_team": "Independiente del Valle",
+      "away_team": "Club Sport Emelec",
+      "home_logo": "https://sta.vnres.co/file/common/20260717/c424eb967d7f92a67df4f6df2ce91590.png",
+      "away_logo": "https://sta.vnres.co/file/common/20260717/29447a3c1f54e276b20171a02ff3baf0.png",
+      "time_text": "07:15",
+      "date_text": "20/07",
+      "status": "",
+      "card_text": "ECU D1 07:15 20/07 Independiente del Valle VS XEM NGAY Club Sport Emelec CHÍ PHÈO KAN LÃO LÂM",
+      "rooms": [
+        {
+          "url": "https://socolivep.cv/truc-tiep/independiente-del-valle-vs-club-sport-emelec-20-07-2026-0715?blv=273736",
+          "blv": "CHÍ PHÈO",
+          "blv_id": "273736"
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/independiente-del-valle-vs-club-sport-emelec-20-07-2026-0715?blv=283501",
+          "blv": "KAN",
+          "blv_id": "283501"
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/independiente-del-valle-vs-club-sport-emelec-20-07-2026-0715?blv=527384",
+          "blv": "LÃO LÂM",
+          "blv_id": "527384"
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/independiente-del-valle-vs-club-sport-emelec-20-07-2026-0715",
+          "blv": "XEM NGAY",
+          "blv_id": ""
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/independiente-del-valle-vs-club-sport-emelec-20-07-2026-0715/",
+          "blv": "",
+          "blv_id": ""
+        }
+      ],
+      "match_name": "Independiente del Valle vs Club Sport Emelec",
+      "scheduled_at": "2026-07-20T07:15:00+07:00",
+      "streams": [],
+      "room_results": [
+        {
+          "url": "https://socolivep.cv/truc-tiep/independiente-del-valle-vs-club-sport-emelec-20-07-2026-0715?blv=273736",
+          "blv": "CHÍ PHÈO",
+          "blv_id": "273736",
+          "streams": [],
+          "discovered_blv_ids": [],
+          "diagnostics": {
+            "url": "https://socolivep.cv/truc-tiep/independiente-del-valle-vs-club-sport-emelec-20-07-2026-0715?blv=273736",
+            "title": "Chờ một chút...",
+            "h1": "socolivep.cv",
+            "ready_state": "complete",
+            "visibility_state": "visible",
+            "hidden": false,
+            "video_count": 0,
+            "iframe_count": 0,
+            "body_sample": "socolivep.cv Thực hiện xác minh bảo mật Trang web này sử dụng dịch vụ bảo mật để chống bot độc hại. Trang này hiển thị trong khi trang web xác minh bạn không phải là bot. Ray ID: a1dc6ad65c7ddc36 Hiệu suất và Tính bảo mật của Cloudflare Quyền riêng tư",
+            "harvested_stream_count": 0,
+            "harvested_blv_ids": [],
+            "scan_mode": "browser-event",
+            "elapsed_seconds": 9.161
+          },
+          "http_probe": {
+            "enabled": false,
+            "status": null,
+            "elapsed_seconds": 0.0,
+            "error": ""
+          },
+          "errors": [
+            "console/error: Failed to load resource: the server responded with a status of 429 ()",
+            "console/warning: No available adapters.",
+            "console/warning: No available adapters.",
+            "console/error: %c%d font-size:0;color:transparent NaN",
+            "console/error: %c%d font-size:0;color:transparent NaN",
+            "console/warning: %c%d font-size:0;color:transparent NaN",
+            "console/warning: %c%d font-size:0;color:transparent NaN",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/warning: OTS parsing error: Size of decompressed WOFF 2.0 is less than compressed size",
+            "console/warning: [.WebGL-0x98c02468e00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+            "console/warning: [.WebGL-0x98c02468e00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels"
+          ],
+          "failed_requests": [
+            "fetch https://brunhild.challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/i/a1dc6adbcfc858fe/QuKmQ84VEacSW4NvtLdtnX71oHkDvkYHPXxuntg2QCA-1784492328-1.2.1.1-7tkzVitMwwqtIrV1ch42cbtGZwcDoh7JK2v..YJ0dUhMKkIG06ovWMhwVbstv_fm | net::ERR_NAME_NOT_RESOLVED",
+            "image https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/ci/a1dc6adbcfc858fe/1784492328714/dCV8Rx8WGCrBSNy | net::ERR_FAILED"
+          ],
+          "http_errors": [
+            "429 https://socolivep.cv/truc-tiep/independiente-del-valle-vs-club-sport-emelec-20-07-2026-0715?blv=273736",
+            "401 https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/pat/a1dc6adbcfc858fe/1784492328714/1a6b00dcc41711666ea4b8ce6c8382d58a6b9a8e3b2e8e2f55636e8fd1745343/UyEhPnJNrmZPZxy"
+          ]
+        }
+      ],
+      "attempted_room_ids": [
+        "273736"
+      ],
+      "coverage": {
+        "found_streams": 0,
+        "found_blv_ids": [],
+        "goal": 3,
+        "complete": false,
+        "attempted_room_ids": [
+          "273736"
         ]
       },
       "errors": []
@@ -981,318 +1613,6 @@
           "321443",
           "485739"
         ]
-      },
-      "errors": []
-    },
-    {
-      "base_url": "https://socolivep.cv/truc-tiep/sporting-kansas-city-reserves-vs-minnesota-united-b-20-07-2026-0700/",
-      "raw_title": "Trực tiếp bóng đá Socolive Sporting Kansas City Reserves vs MINNESOTA United B lúc 07:00 ngày 20/07/2026",
-      "home_team": "Sporting Kansas City Reserves",
-      "away_team": "MINNESOTA United B",
-      "home_logo": "https://sta.vnres.co/file/common/20260717/845f64730efcdbb790d776e988fa0237.png",
-      "away_logo": "https://sta.vnres.co/file/common/20260717/b3a45022e3b1dafdc46d0c5e9633e548.png",
-      "time_text": "07:00",
-      "date_text": "20/07",
-      "status": "",
-      "card_text": "USA MLSRv 07:00 20/07 Sporting Kansas City Reserves VS XEM NGAY MINNESOTA United B KÉP BÉO A TINH",
-      "rooms": [
-        {
-          "url": "https://socolivep.cv/truc-tiep/sporting-kansas-city-reserves-vs-minnesota-united-b-20-07-2026-0700?blv=560690",
-          "blv": "KÉP",
-          "blv_id": "560690"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/sporting-kansas-city-reserves-vs-minnesota-united-b-20-07-2026-0700?blv=459401",
-          "blv": "BÉO",
-          "blv_id": "459401"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/sporting-kansas-city-reserves-vs-minnesota-united-b-20-07-2026-0700?blv=598119",
-          "blv": "A TINH",
-          "blv_id": "598119"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/sporting-kansas-city-reserves-vs-minnesota-united-b-20-07-2026-0700",
-          "blv": "XEM NGAY",
-          "blv_id": ""
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/sporting-kansas-city-reserves-vs-minnesota-united-b-20-07-2026-0700/",
-          "blv": "",
-          "blv_id": ""
-        }
-      ],
-      "match_name": "Sporting Kansas City Reserves vs MINNESOTA United B",
-      "scheduled_at": "2026-07-20T07:00:00+07:00",
-      "streams": [],
-      "room_results": [
-        {
-          "url": "https://socolivep.cv/truc-tiep/sporting-kansas-city-reserves-vs-minnesota-united-b-20-07-2026-0700?blv=560690",
-          "blv": "KÉP",
-          "blv_id": "560690",
-          "streams": [],
-          "discovered_blv_ids": [],
-          "diagnostics": {
-            "url": "https://socolivep.cv/truc-tiep/sporting-kansas-city-reserves-vs-minnesota-united-b-20-07-2026-0700?blv=560690",
-            "title": "Chờ một chút...",
-            "h1": "socolivep.cv",
-            "ready_state": "complete",
-            "visibility_state": "visible",
-            "hidden": false,
-            "video_count": 0,
-            "iframe_count": 0,
-            "body_sample": "socolivep.cv Thực hiện xác minh bảo mật Trang web này sử dụng dịch vụ bảo mật để chống bot độc hại. Trang này hiển thị trong khi trang web xác minh bạn không phải là bot. Ray ID: a1dc66717a3811cd Hiệu suất và Tính bảo mật của Cloudflare Quyền riêng tư",
-            "harvested_stream_count": 0,
-            "harvested_blv_ids": [],
-            "scan_mode": "browser-event",
-            "elapsed_seconds": 9.518
-          },
-          "http_probe": {
-            "enabled": false,
-            "status": null,
-            "elapsed_seconds": 0.0,
-            "error": ""
-          },
-          "errors": [
-            "console/error: Failed to load resource: the server responded with a status of 429 ()",
-            "console/warning: No available adapters.",
-            "console/warning: No available adapters.",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/warning: OTS parsing error: Size of decompressed WOFF 2.0 is less than compressed size",
-            "console/warning: [.WebGL-0x1e740011ba00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
-            "console/warning: [.WebGL-0x1e740011ba00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
-            "console/error: %c%d font-size:0;color:transparent NaN",
-            "console/error: %c%d font-size:0;color:transparent NaN",
-            "console/warning: %c%d font-size:0;color:transparent NaN",
-            "console/warning: %c%d font-size:0;color:transparent NaN"
-          ],
-          "failed_requests": [
-            "fetch https://brunhild.challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/i/a1dc6677ec9af603/ZOfWztfGFbsIMaLFlWT7FPUk1npmqmx_QE56fBjd6Xo-1784492148-1.2.1.1-UkSK0nwRLQto0TWuHq8iNUqZkmteR8611ouazaLO1uDJ6Tv1qKtfMzgGq750pfMj | net::ERR_NAME_NOT_RESOLVED",
-            "image https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/ci/a1dc6677ec9af603/1784492149131/8gpbRACskFQEpX0 | net::ERR_FAILED"
-          ],
-          "http_errors": [
-            "429 https://socolivep.cv/truc-tiep/sporting-kansas-city-reserves-vs-minnesota-united-b-20-07-2026-0700?blv=560690",
-            "401 https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/pat/a1dc6677ec9af603/1784492149131/9c70818fb0055a7840a6df4408c2190fca2a8c6c3c55ecf7fbfc21a69a7304b4/GIVjFM4MU-aNe04"
-          ]
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/sporting-kansas-city-reserves-vs-minnesota-united-b-20-07-2026-0700?blv=459401",
-          "blv": "BÉO",
-          "blv_id": "459401",
-          "streams": [],
-          "discovered_blv_ids": [],
-          "diagnostics": {
-            "url": "https://socolivep.cv/truc-tiep/sporting-kansas-city-reserves-vs-minnesota-united-b-20-07-2026-0700?blv=459401",
-            "title": "Chờ một chút...",
-            "h1": "socolivep.cv",
-            "ready_state": "complete",
-            "visibility_state": "visible",
-            "hidden": false,
-            "video_count": 0,
-            "iframe_count": 0,
-            "body_sample": "socolivep.cv Thực hiện xác minh bảo mật Trang web này sử dụng dịch vụ bảo mật để chống bot độc hại. Trang này hiển thị trong khi trang web xác minh bạn không phải là bot. Ray ID: a1dc681b2d3d584b Hiệu suất và Tính bảo mật của Cloudflare Quyền riêng tư",
-            "harvested_stream_count": 0,
-            "harvested_blv_ids": [],
-            "scan_mode": "browser-event",
-            "elapsed_seconds": 9.157
-          },
-          "http_probe": {
-            "enabled": false,
-            "status": null,
-            "elapsed_seconds": 0.0,
-            "error": ""
-          },
-          "errors": [
-            "console/error: Failed to load resource: the server responded with a status of 429 ()",
-            "console/warning: No available adapters.",
-            "console/warning: No available adapters.",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/warning: [.WebGL-0x6b4029cbe00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
-            "console/warning: [.WebGL-0x6b4029cbe00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
-            "console/error: %c%d font-size:0;color:transparent NaN",
-            "console/error: %c%d font-size:0;color:transparent NaN",
-            "console/warning: %c%d font-size:0;color:transparent NaN",
-            "console/warning: %c%d font-size:0;color:transparent NaN",
-            "console/warning: OTS parsing error: Size of decompressed WOFF 2.0 is less than compressed size"
-          ],
-          "failed_requests": [
-            "fetch https://brunhild.challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/i/a1dc68213b2cc213/QeRcWJ2y9nGMsRx9Gpb8s0yGM5gz1K0Yr61.33hGFRU-1784492216-1.2.1.1-yz9j2n.huceQB6xMJMMnKNgXgLnHSL5gTajBlnpqNeQnnfU9RWkUkvB9U95ikxWL | net::ERR_NAME_NOT_RESOLVED",
-            "image https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/ci/a1dc68213b2cc213/1784492216921/jXZmqD-61bGYoHB | net::ERR_FAILED"
-          ],
-          "http_errors": [
-            "429 https://socolivep.cv/truc-tiep/sporting-kansas-city-reserves-vs-minnesota-united-b-20-07-2026-0700?blv=459401",
-            "401 https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/pat/a1dc68213b2cc213/1784492216920/b37360a6bf096bf63cfda303963e6fdbf477b996e178a8dbf6def506c6d46b7e/UJ8GHeEq-ScZwKn"
-          ]
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/sporting-kansas-city-reserves-vs-minnesota-united-b-20-07-2026-0700?blv=598119",
-          "blv": "A TINH",
-          "blv_id": "598119",
-          "streams": [],
-          "discovered_blv_ids": [],
-          "diagnostics": {
-            "url": "https://socolivep.cv/truc-tiep/sporting-kansas-city-reserves-vs-minnesota-united-b-20-07-2026-0700?blv=598119",
-            "title": "Chờ một chút...",
-            "h1": "socolivep.cv",
-            "ready_state": "complete",
-            "visibility_state": "visible",
-            "hidden": false,
-            "video_count": 0,
-            "iframe_count": 0,
-            "body_sample": "socolivep.cv Thực hiện xác minh bảo mật Trang web này sử dụng dịch vụ bảo mật để chống bot độc hại. Trang này hiển thị trong khi trang web xác minh bạn không phải là bot. Ray ID: a1dc696ad9242be6 Hiệu suất và Tính bảo mật của Cloudflare Quyền riêng tư",
-            "harvested_stream_count": 0,
-            "harvested_blv_ids": [],
-            "scan_mode": "browser-event",
-            "elapsed_seconds": 9.391
-          },
-          "http_probe": {
-            "enabled": false,
-            "status": null,
-            "elapsed_seconds": 0.0,
-            "error": ""
-          },
-          "errors": [
-            "console/error: Failed to load resource: the server responded with a status of 429 ()",
-            "console/warning: No available adapters.",
-            "console/warning: No available adapters.",
-            "console/warning: [.WebGL-0x233c00123a00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
-            "console/warning: [.WebGL-0x233c00123a00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
-            "console/warning: OTS parsing error: Size of decompressed WOFF 2.0 is less than compressed size",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: %c%d font-size:0;color:transparent NaN",
-            "console/error: %c%d font-size:0;color:transparent NaN",
-            "console/warning: %c%d font-size:0;color:transparent NaN",
-            "console/warning: %c%d font-size:0;color:transparent NaN"
-          ],
-          "failed_requests": [
-            "fetch https://brunhild.challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/i/a1dc696f8b3ae98e/pgkFBGLeqKlMZuJtOyiiE4wpr9Qt9Q6LpBlHjRBgeUk-1784492270-1.2.1.1-IZeiTiik6wyqJTeUDUXjOkdx0cNEnY8Mj7at8XnEFbTeVGyEPG4pUIrkQS.7XgGg | net::ERR_NAME_NOT_RESOLVED",
-            "image https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/ci/a1dc696f8b3ae98e/1784492270618/V8cv-fffdCgXpC6 | net::ERR_FAILED"
-          ],
-          "http_errors": [
-            "429 https://socolivep.cv/truc-tiep/sporting-kansas-city-reserves-vs-minnesota-united-b-20-07-2026-0700?blv=598119",
-            "401 https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/pat/a1dc696f8b3ae98e/1784492270618/db466ecb274a13afd5ebd2b4f98deecad5446cdee55efcf733670bb2291c7526/Xw_sEkSPfmwf0L0"
-          ]
-        }
-      ],
-      "attempted_room_ids": [
-        "459401",
-        "560690",
-        "598119"
-      ],
-      "coverage": {
-        "found_streams": 0,
-        "found_blv_ids": [],
-        "goal": 3,
-        "complete": false,
-        "attempted_room_ids": [
-          "459401",
-          "560690",
-          "598119"
-        ]
-      },
-      "errors": []
-    },
-    {
-      "base_url": "https://socolivep.cv/truc-tiep/alianza-lima-vs-sport-huancayo-20-07-2026-0700/",
-      "raw_title": "Trực tiếp bóng đá Socolive Alianza Lima vs Sport Huancayo lúc 07:00 ngày 20/07/2026",
-      "home_team": "Alianza Lima",
-      "away_team": "Sport Huancayo",
-      "home_logo": "https://sta.vnres.co/file/common/20260717/74e7aa0f487bdb5bcf53c0cc10b12fb1.png",
-      "away_logo": "https://sta.vnres.co/file/common/20260717/3c6eda0a015fee538f089af39a335885.png",
-      "time_text": "07:00",
-      "date_text": "20/07",
-      "status": "",
-      "card_text": "PER D1 07:00 20/07 Alianza Lima VS XEM NGAY Sport Huancayo RAMBO A PÁO HÀ DUY KIÊN",
-      "rooms": [
-        {
-          "url": "https://socolivep.cv/truc-tiep/alianza-lima-vs-sport-huancayo-20-07-2026-0700?blv=534055",
-          "blv": "RAMBO",
-          "blv_id": "534055"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/alianza-lima-vs-sport-huancayo-20-07-2026-0700?blv=235232",
-          "blv": "A PÁO",
-          "blv_id": "235232"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/alianza-lima-vs-sport-huancayo-20-07-2026-0700?blv=607400",
-          "blv": "HÀ DUY KIÊN",
-          "blv_id": "607400"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/alianza-lima-vs-sport-huancayo-20-07-2026-0700",
-          "blv": "XEM NGAY",
-          "blv_id": ""
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/alianza-lima-vs-sport-huancayo-20-07-2026-0700/",
-          "blv": "",
-          "blv_id": ""
-        }
-      ],
-      "match_name": "Alianza Lima vs Sport Huancayo",
-      "scheduled_at": "2026-07-20T07:00:00+07:00",
-      "streams": [],
-      "room_results": [],
-      "attempted_room_ids": [],
-      "coverage": {
-        "found_streams": 0,
-        "found_blv_ids": [],
-        "goal": 3,
-        "complete": false,
-        "attempted_room_ids": []
-      },
-      "errors": []
-    },
-    {
-      "base_url": "https://socolivep.cv/truc-tiep/independiente-del-valle-vs-club-sport-emelec-20-07-2026-0715/",
-      "raw_title": "Trực tiếp bóng đá Socolive Independiente del Valle vs Club Sport Emelec lúc 07:15 ngày 20/07/2026",
-      "home_team": "Independiente del Valle",
-      "away_team": "Club Sport Emelec",
-      "home_logo": "https://sta.vnres.co/file/common/20260717/c424eb967d7f92a67df4f6df2ce91590.png",
-      "away_logo": "https://sta.vnres.co/file/common/20260717/29447a3c1f54e276b20171a02ff3baf0.png",
-      "time_text": "07:15",
-      "date_text": "20/07",
-      "status": "",
-      "card_text": "ECU D1 07:15 20/07 Independiente del Valle VS XEM NGAY Club Sport Emelec CHÍ PHÈO KAN LÃO LÂM",
-      "rooms": [
-        {
-          "url": "https://socolivep.cv/truc-tiep/independiente-del-valle-vs-club-sport-emelec-20-07-2026-0715?blv=273736",
-          "blv": "CHÍ PHÈO",
-          "blv_id": "273736"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/independiente-del-valle-vs-club-sport-emelec-20-07-2026-0715?blv=283501",
-          "blv": "KAN",
-          "blv_id": "283501"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/independiente-del-valle-vs-club-sport-emelec-20-07-2026-0715?blv=527384",
-          "blv": "LÃO LÂM",
-          "blv_id": "527384"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/independiente-del-valle-vs-club-sport-emelec-20-07-2026-0715",
-          "blv": "XEM NGAY",
-          "blv_id": ""
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/independiente-del-valle-vs-club-sport-emelec-20-07-2026-0715/",
-          "blv": "",
-          "blv_id": ""
-        }
-      ],
-      "match_name": "Independiente del Valle vs Club Sport Emelec",
-      "scheduled_at": "2026-07-20T07:15:00+07:00",
-      "streams": [],
-      "room_results": [],
-      "attempted_room_ids": [],
-      "coverage": {
-        "found_streams": 0,
-        "found_blv_ids": [],
-        "goal": 3,
-        "complete": false,
-        "attempted_room_ids": []
       },
       "errors": []
     }
