@@ -1,182 +1,266 @@
-name: Quet Chuoi Chien va Luong Son v4.0.0
+name: Bot Quet Socolive V10 Per BLV Queue
 
 on:
   workflow_dispatch:
+    inputs:
+      test_url:
+        description: "URL trận/BLV cần test riêng; để trống để chạy chuỗi tự động"
+        required: false
+        default: ""
+        type: string
+
+concurrency:
+  group: socolive-v10-blv-queue-${{ github.ref }}
+  cancel-in-progress: false
 
 permissions:
   contents: write
-
-concurrency:
-  group: multi-source-live-${{ github.ref }}
-  cancel-in-progress: false
+  actions: write
 
 jobs:
   scan:
     runs-on: ubuntu-latest
-    timeout-minutes: 75
+    timeout-minutes: 15
 
     steps:
-      - name: 1. Lay code tu kho ve
+      - name: 1. Lấy source và checkpoint mới nhất
         uses: actions/checkout@v4
         with:
-          fetch-depth: 3
+          fetch-depth: 0
 
-      - name: 2. Cai dat Python
+      - name: 2. Hiện IP runner
+        run: |
+          echo "Runner public IP:"
+          curl --connect-timeout 5 --max-time 10 -sS https://api.ipify.org || true
+          echo
+
+      - name: 3. Cài Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.11"
 
-      - name: 3. Cai dat Playwright Chromium
-        shell: bash
+      - name: 4. Cài Playwright
         run: |
-          set -euo pipefail
           python -m pip install --upgrade pip
-          python -m pip install playwright
-          python -m playwright install --with-deps chromium
+          pip install playwright
+          playwright install --with-deps chromium
 
-      - name: 4. Audit source va bo gop offline
-        shell: bash
-        run: |
-          set -euo pipefail
-          python -m py_compile main.py merger.py sources/chuoichien.py sources/luongson.py
-          python -m unittest discover -s tests -v
-
-      - name: 5. Quet hai nguon va hien log realtime
-        shell: bash
+      - name: 5. Quét Socolive
         env:
           PYTHONUNBUFFERED: "1"
-          MULTI_MAX_STREAMS_PER_MATCH: "2"
-          MULTI_UPCOMING_KEEP_HOURS: "3"
+          PYTHONUTF8: "1"
+
+          # Domain hiện tại; dùng chung cho trang chủ, Referer và Origin.
+          SOCOLIVE_TARGET_URL: "https://socolivep.cv/"
 
           SOCOLIVE_MATCH_CONCURRENCY: "4"
-          SOCOLIVE_HOME_WAIT_MS: "5000"
-          SOCOLIVE_ROOM_WAIT_SECONDS: "25"
-          SOCOLIVE_FULL_SCAN: "1"
-          SOCOLIVE_VERIFY_STREAMS: "1"
-          SOCOLIVE_VERIFY_TIMEOUT_SECONDS: "8"
-          SOCOLIVE_MAX_VERIFY_CANDIDATES: "6"
-          SOCOLIVE_MAX_OUTPUT_STREAMS_PER_MATCH: "2"
-          SOCOLIVE_UPCOMING_KEEP_HOURS: "3"
-          SOCOLIVE_KEEP_PREVIOUS_UNVERIFIED: "0"
-          SOCOLIVE_ALLOW_UNVERIFIED_BROWSER_FALLBACK: "0"
+          SOCOLIVE_ROOM_WAIT_SECONDS: "7"
+          SOCOLIVE_MAX_ROOMS_PER_MATCH: "3"
+          SOCOLIVE_MAX_SUCCESSFUL_ROOMS_PER_MATCH: "10"
 
-          HYGENIE_MATCH_CONCURRENCY: "4"
-          HYGENIE_HOME_WAIT_MS: "6000"
-          HYGENIE_ROOM_WAIT_SECONDS: "25"
-          HYGENIE_FULL_SCAN: "1"
-          HYGENIE_VERIFY_STREAMS: "1"
-          HYGENIE_VERIFY_TIMEOUT_SECONDS: "8"
-          HYGENIE_MAX_VERIFY_CANDIDATES: "6"
-          HYGENIE_MAX_OUTPUT_STREAMS_PER_MATCH: "4"
+          # Mục tiêu tối đa 10 stream-ID/BLV cho mỗi trận.
+          SOCOLIVE_MAX_STREAMS_PER_MATCH: "12"
+
+          # Mỗi run chỉ mở tối đa 3 trang BLV/trận.
+          # Mỗi trang sẽ quét toàn bộ HTML/config để lấy nhiều link.
+          SOCOLIVE_EMBEDDED_HARVEST_WAIT_SECONDS: "1.4"
+
+          # BLV HTTP 200 nhưng không có stream được thử tối đa 2 runner.
+          SOCOLIVE_ROOM_EMPTY_MAX_ATTEMPTS: "2"
+
+          SOCOLIVE_HTTP_FIRST: "0"
+          SOCOLIVE_ENABLE_CDP: "1"
+          SOCOLIVE_STOP_ON_429: "1"
+
+          # Khung quét:
+          # trận đã bắt đầu trong 90 phút gần nhất
+          # hoặc sẽ bắt đầu trong 240 phút tới.
+          SOCOLIVE_SCAN_BEFORE_MINUTES: "90"
+          SOCOLIVE_SCAN_AFTER_MINUTES: "240"
+          SOCOLIVE_SCAN_ALL: "0"
+
+          SOCOLIVE_STATE_MAX_AGE_MINUTES: "20"
+          SOCOLIVE_STATE_MAX_CHAIN_RUNS: "30"
+          SOCOLIVE_STATE_MAX_NO_PROGRESS_RUNS: "2"
+
+          TEST_URL: ${{ inputs.test_url }}
         run: |
-          set -o pipefail
-          python -u main.py 2>&1 | tee multi_source_scan.log
+          # Không cho bước sau đọc nhầm quyết định của run trước.
+          rm -f socolive_chain_decision.json
 
-      - name: 6. Audit playlist chung
-        shell: bash
-        run: |
-          set -euo pipefail
-          test -f all_live.m3u
-          test -f all_live_pipe.m3u
-          test -f all_live_vlc.m3u
-          test -f all_live_debug.json
+          echo "=== $(date -u '+%Y-%m-%d %H:%M:%S UTC') | Bắt đầu ==="
+          echo "Concurrency=$SOCOLIVE_MATCH_CONCURRENCY | room_pages/run=$SOCOLIVE_MAX_ROOMS_PER_MATCH | stream_goal/match=$SOCOLIVE_MAX_STREAMS_PER_MATCH"
+          echo "V10: queue từng BLV; URL tổng chỉ fallback; chain tối đa=$SOCOLIVE_STATE_MAX_CHAIN_RUNS"
+          echo "Scan window: -${SOCOLIVE_SCAN_BEFORE_MINUTES} phút / +${SOCOLIVE_SCAN_AFTER_MINUTES} phút | scan_all=$SOCOLIVE_SCAN_ALL"
 
-          if grep -E '^https?://.*\|User-Agent=' all_live.m3u; then
-            echo "::error::Playlist mac dinh khong duoc noi pipe header vao URL."
-            exit 1
+          if [ -n "$TEST_URL" ]; then
+            echo "Test riêng: $TEST_URL"
+            python -u main.py "$TEST_URL"
+          else
+            echo "Chế độ chain: chỉ quét pending/chưa có link trong tập trận hiện tại"
+            python -u main.py
           fi
 
-          python - <<'PY_AUDIT'
+          echo "=== $(date -u '+%Y-%m-%d %H:%M:%S UTC') | Kết thúc ==="
+
+      - name: 6. Đọc quyết định của đúng run hiện tại
+        id: resume
+        if: always()
+        shell: bash
+        run: |
+          python - <<'PY'
           import json
-          import re
-          from collections import Counter
+          import os
           from pathlib import Path
 
-          report = json.loads(Path("all_live_debug.json").read_text(encoding="utf-8"))
-          failures = []
-          urls = []
-          per_match_quality = Counter()
+          decision_path = Path("socolive_chain_decision.json")
+          output_path = Path(os.environ["GITHUB_OUTPUT"])
 
-          for channel in report.get("channels", []):
-              url = channel.get("url", "")
-              urls.append(url)
-              if channel.get("playability") not in {"verified", "browser-observed", "upcoming-pending"}:
-                  failures.append(f"Trang thai khong hop le: {url}")
-              key = (channel.get("match_key"), channel.get("quality"))
-              per_match_quality[key] += 1
+          values = {
+              "dispatch_next": "false",
+              "pending_count": "0",
+              "progress_count": "0",
+              "completed_count": "0",
+              "total_match_count": "0",
+              "chain_runs": "0",
+              "stop_reason": "decision_missing",
+          }
 
-          if len(urls) != len(set(urls)):
-              failures.append("Playlist chung co URL trung lap")
+          if decision_path.exists():
+              try:
+                  decision = json.loads(
+                      decision_path.read_text(encoding="utf-8")
+                  )
+                  values.update(
+                      {
+                          "dispatch_next": str(
+                              bool(decision.get("dispatch_next"))
+                          ).lower(),
+                          "pending_count": str(
+                              int(decision.get("pending_count", 0))
+                          ),
+                          "progress_count": str(
+                              int(decision.get("progress_count", 0))
+                          ),
+                          "completed_count": str(
+                              int(decision.get("completed_count", 0))
+                          ),
+                          "total_match_count": str(
+                              int(decision.get("total_match_count", 0))
+                          ),
+                          "chain_runs": str(
+                              int(decision.get("chain_runs", 0))
+                          ),
+                          "stop_reason": str(
+                              decision.get("stop_reason", "")
+                          ),
+                      }
+                  )
+              except Exception as exc:
+                  values["stop_reason"] = (
+                      f"decision_error_{type(exc).__name__}"
+                  )
 
-          for (match_key, quality), count in per_match_quality.items():
-              if count > 1:
-                  failures.append(f"Trung chat luong {quality} trong {match_key}: {count}")
+          with output_path.open("a", encoding="utf-8") as handle:
+              for key, value in values.items():
+                  handle.write(f"{key}={value}\n")
 
-          text = Path("all_live.m3u").read_text(encoding="utf-8")
-          for line in text.splitlines():
-              if line.startswith("#EXTINF"):
-                  match = re.search(r'group-title="([^"]+)"', line)
-                  if not match or match.group(1) not in {"Bóng đá", "Bóng rổ", "Bóng chuyền", "Tennis", "Esports", "Khác"}:
-                      failures.append(f"group-title khong hop le: {line}")
+          print("Current-run decision:", values)
+          PY
 
-          if failures:
-              for item in failures:
-                  print(f"::error::{item}")
-              raise SystemExit(1)
-
-          print(f"Audit OK: {len(urls)} stream chung; nguon={report.get('sources')}")
-          PY_AUDIT
-
-          echo "--- Playlist chung ---"
-          sed -n '1,160p' all_live.m3u
-
-      - name: 7. Tai artifact debug
+      - name: 7. Upload kết quả và checkpoint
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: multi-source-debug-${{ github.run_id }}
+          name: socolive-chain-run-${{ github.run_number }}
           path: |
-            all_live*.m3u
-            all_live_debug.json
-            chuoichien_live*.m3u
-            chuoichien_debug.json
-            hygenie_live*.m3u
-            hygenie_debug.json
-            luongson_live*.m3u
-            luongson_debug.json
-            *_home_debug.html
-            *_home_debug.png
-            multi_source_scan.log
-          if-no-files-found: ignore
-          retention-days: 3
+            socolive_live.m3u
+            socolive_matches.json
+            socolive_debug.json
+            socolive_state.json
+            socolive_pending.json
+            socolive_chain_decision.json
+          if-no-files-found: warn
+          retention-days: 7
+          compression-level: 6
 
-      - name: 8. Luu playlist len GitHub
+      - name: 8. Commit checkpoint
+        if: always()
         shell: bash
         run: |
-          set -euo pipefail
           git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
 
-          candidates=(
-            all_live.m3u all_live_pipe.m3u all_live_vlc.m3u all_live_debug.json
-            chuoichien_live.m3u chuoichien_live_pipe.m3u chuoichien_live_vlc.m3u
-            hygenie_live.m3u hygenie_live_pipe.m3u hygenie_live_vlc.m3u
-            luongson_live.m3u luongson_live_pipe.m3u luongson_live_vlc.m3u
-          )
-          existing=()
-          for file in "${candidates[@]}"; do
-            [[ -f "$file" ]] && existing+=("$file")
+          for file in \
+            socolive_live.m3u \
+            socolive_matches.json \
+            socolive_debug.json \
+            socolive_state.json \
+            socolive_pending.json
+          do
+            if [ -e "$file" ]; then
+              git add "$file"
+            fi
           done
-          if [[ ${#existing[@]} -eq 0 ]]; then
-            echo "::error::Khong co file playlist nao de commit."
-            exit 1
-          fi
 
-          git add -- "${existing[@]}"
           if git diff --cached --quiet; then
-            echo "Playlist khong thay doi; khong can commit."
+            echo "Không có thay đổi cần commit."
             exit 0
           fi
 
-          git commit -m "Update Chuoi Chien + Luong Son streams v4.0.0"
-          git push origin "HEAD:${GITHUB_REF_NAME}"
+          git commit -m "Socolive chain checkpoint run $GITHUB_RUN_NUMBER"
+          git pull --rebase origin "$GITHUB_REF_NAME"
+          git push origin "HEAD:$GITHUB_REF_NAME"
+
+      - name: 9. Gọi runner mới ngay lập tức
+        if: >
+          always() &&
+          steps.resume.outputs.dispatch_next == 'true' &&
+          inputs.test_url == ''
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PENDING_COUNT: ${{ steps.resume.outputs.pending_count }}
+          PROGRESS_COUNT: ${{ steps.resume.outputs.progress_count }}
+          CHAIN_RUNS: ${{ steps.resume.outputs.chain_runs }}
+        shell: bash
+        run: |
+          echo "Còn $PENDING_COUNT trận pending."
+          echo "Run vừa rồi lấy thêm $PROGRESS_COUNT trận."
+          echo "Đang gọi workflow run tiếp theo, chain=$CHAIN_RUNS..."
+
+          payload=$(python - <<'PY'
+          import json
+          import os
+
+          print(
+              json.dumps(
+                  {
+                      "ref": os.environ["GITHUB_REF_NAME"],
+                      "inputs": {
+                          "test_url": ""
+                      },
+                  }
+              )
+          )
+          PY
+          )
+
+          curl --fail-with-body -L \
+            -X POST \
+            -H "Accept: application/vnd.github+json" \
+            -H "Authorization: Bearer $GH_TOKEN" \
+            -H "X-GitHub-Api-Version: 2022-11-28" \
+            "https://api.github.com/repos/$GITHUB_REPOSITORY/actions/workflows/run.yml/dispatches" \
+            -d "$payload"
+
+          echo "✅ Đã xếp một workflow run mới vào hàng đợi."
+
+      - name: 10. Tổng kết chuỗi
+        if: always()
+        run: |
+          echo "Completed=${{ steps.resume.outputs.completed_count }}/${{ steps.resume.outputs.total_match_count }}"
+          echo "Pending=${{ steps.resume.outputs.pending_count }}"
+          echo "Progress run này=${{ steps.resume.outputs.progress_count }}"
+          echo "Chain=${{ steps.resume.outputs.chain_runs }}"
+          echo "Dispatch next=${{ steps.resume.outputs.dispatch_next }}"
+          echo "Stop reason=${{ steps.resume.outputs.stop_reason }}"
