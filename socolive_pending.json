@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-07-20T05:18:55.297749+07:00",
+  "generated_at": "2026-07-20T06:15:57.895691+07:00",
   "state_schema_version": "v10-per-blv-queue",
-  "dispatch_next": false,
+  "dispatch_next": true,
   "pending_count": 7,
-  "completed_count": 4,
+  "completed_count": 3,
   "coverage_complete_count": 0,
   "total_match_count": 7,
-  "total_stream_count": 4,
-  "progress_count": 0,
-  "chain_runs": 4,
-  "no_progress_runs": 2,
-  "stop_reason": "no_progress_guard",
+  "total_stream_count": 3,
+  "progress_count": 3,
+  "chain_runs": 1,
+  "no_progress_runs": 0,
+  "stop_reason": "",
   "rate_limited": true,
   "rate_limit_url": "https://socolivep.cv/truc-tiep/guayaquil-city-vs-manta-fc-20-07-2026-0445?blv=534055",
   "count": 7,
@@ -70,11 +70,9 @@
           "source_id": "304148",
           "source_provenance": [
             "cdp/request",
-            "cdp/response",
             "embedded/frame-html",
             "request/image",
-            "request/xhr",
-            "response/200"
+            "request/xhr"
           ],
           "source_confidence": "network",
           "mapping_mode": "exact-room-id",
@@ -106,12 +104,12 @@
             "url": "https://socolivep.cv/truc-tiep/connecticut-united-fc-vs-new-york-red-bulls-b-20-07-2026-0500/?blv=304148",
             "blv": "LUCAS",
             "blv_id": "304148",
-            "status": "rate_limited",
-            "attempts": 3,
-            "rate_limit_hits": 2,
-            "last_http_status": 429,
-            "last_stream_count": 0,
-            "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
+            "status": "pending",
+            "attempts": 1,
+            "rate_limit_hits": 0,
+            "last_http_status": 200,
+            "last_stream_count": 1,
+            "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
           },
           "485739": {
             "key": "485739",
@@ -160,12 +158,12 @@
           "url": "https://socolivep.cv/truc-tiep/connecticut-united-fc-vs-new-york-red-bulls-b-20-07-2026-0500/?blv=304148",
           "blv": "LUCAS",
           "blv_id": "304148",
-          "status": "rate_limited",
-          "attempts": 3,
-          "rate_limit_hits": 2,
-          "last_http_status": 429,
-          "last_stream_count": 0,
-          "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
+          "status": "pending",
+          "attempts": 1,
+          "rate_limit_hits": 0,
+          "last_http_status": 200,
+          "last_stream_count": 1,
+          "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
         },
         "485739": {
           "key": "485739",
@@ -234,21 +232,6 @@
           "blv_id": "372746"
         },
         {
-          "url": "https://socolivep.cv/truc-tiep/guayaquil-city-vs-manta-fc-20-07-2026-0445/?blv=534055",
-          "blv": "RAMBO",
-          "blv_id": "534055"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/guayaquil-city-vs-manta-fc-20-07-2026-0445/?blv=552832",
-          "blv": "LOGAN",
-          "blv_id": "552832"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/guayaquil-city-vs-manta-fc-20-07-2026-0445/?blv=372746",
-          "blv": "YONE",
-          "blv_id": "372746"
-        },
-        {
           "url": "https://socolivep.cv/truc-tiep/guayaquil-city-vs-manta-fc-20-07-2026-0445",
           "blv": "XEM NGAY",
           "blv_id": ""
@@ -259,41 +242,16 @@
           "blv_id": ""
         }
       ],
-      "streams": [
-        {
-          "url": "https://pull.niur.live/live/stream-534055_lhd.m3u8?txSecret=a08ea6d59bbe33bdf51e64d54ae3ff0c&txTime=6a5cc3be",
-          "room_url": "https://socolivep.cv/truc-tiep/guayaquil-city-vs-manta-fc-20-07-2026-0445/?blv=534055",
-          "blv": "RAMBO",
-          "blv_id": "534055",
-          "source_id": "534055",
-          "source_provenance": [
-            "cdp/request",
-            "cdp/response",
-            "embedded/frame-html",
-            "request/image",
-            "request/xhr",
-            "response/403"
-          ],
-          "source_confidence": "network",
-          "mapping_mode": "exact-room-id",
-          "discovered_from_room_url": "https://socolivep.cv/truc-tiep/guayaquil-city-vs-manta-fc-20-07-2026-0445?blv=534055",
-          "discovered_from_blv": "RAMBO"
-        }
-      ],
+      "streams": [],
       "coverage": {
-        "found_streams": 1,
-        "found_blv_ids": [
-          "534055"
-        ],
+        "found_streams": 0,
+        "found_blv_ids": [],
         "goal": 3,
         "source_goal_reached": false,
         "room_queue_complete": false,
         "complete": false,
-        "total_explicit_blv_rooms": 6,
+        "total_explicit_blv_rooms": 3,
         "pending_room_keys": [
-          "534055",
-          "552832",
-          "372746",
           "534055",
           "552832",
           "372746"
@@ -301,11 +259,11 @@
         "room_progress": {
           "534055": {
             "key": "534055",
-            "url": "https://socolivep.cv/truc-tiep/guayaquil-city-vs-manta-fc-20-07-2026-0445/?blv=534055",
+            "url": "https://socolivep.cv/truc-tiep/guayaquil-city-vs-manta-fc-20-07-2026-0445?blv=534055",
             "blv": "RAMBO",
             "blv_id": "534055",
             "status": "rate_limited",
-            "attempts": 4,
+            "attempts": 0,
             "rate_limit_hits": 1,
             "last_http_status": 429,
             "last_stream_count": 0,
@@ -313,7 +271,7 @@
           },
           "552832": {
             "key": "552832",
-            "url": "https://socolivep.cv/truc-tiep/guayaquil-city-vs-manta-fc-20-07-2026-0445/?blv=552832",
+            "url": "https://socolivep.cv/truc-tiep/guayaquil-city-vs-manta-fc-20-07-2026-0445?blv=552832",
             "blv": "LOGAN",
             "blv_id": "552832",
             "status": "pending",
@@ -325,7 +283,7 @@
           },
           "372746": {
             "key": "372746",
-            "url": "https://socolivep.cv/truc-tiep/guayaquil-city-vs-manta-fc-20-07-2026-0445/?blv=372746",
+            "url": "https://socolivep.cv/truc-tiep/guayaquil-city-vs-manta-fc-20-07-2026-0445?blv=372746",
             "blv": "YONE",
             "blv_id": "372746",
             "status": "pending",
@@ -349,17 +307,15 @@
           }
         }
       },
-      "attempted_room_ids": [
-        "534055"
-      ],
+      "attempted_room_ids": [],
       "room_progress": {
         "534055": {
           "key": "534055",
-          "url": "https://socolivep.cv/truc-tiep/guayaquil-city-vs-manta-fc-20-07-2026-0445/?blv=534055",
+          "url": "https://socolivep.cv/truc-tiep/guayaquil-city-vs-manta-fc-20-07-2026-0445?blv=534055",
           "blv": "RAMBO",
           "blv_id": "534055",
           "status": "rate_limited",
-          "attempts": 4,
+          "attempts": 0,
           "rate_limit_hits": 1,
           "last_http_status": 429,
           "last_stream_count": 0,
@@ -367,7 +323,7 @@
         },
         "552832": {
           "key": "552832",
-          "url": "https://socolivep.cv/truc-tiep/guayaquil-city-vs-manta-fc-20-07-2026-0445/?blv=552832",
+          "url": "https://socolivep.cv/truc-tiep/guayaquil-city-vs-manta-fc-20-07-2026-0445?blv=552832",
           "blv": "LOGAN",
           "blv_id": "552832",
           "status": "pending",
@@ -379,7 +335,7 @@
         },
         "372746": {
           "key": "372746",
-          "url": "https://socolivep.cv/truc-tiep/guayaquil-city-vs-manta-fc-20-07-2026-0445/?blv=372746",
+          "url": "https://socolivep.cv/truc-tiep/guayaquil-city-vs-manta-fc-20-07-2026-0445?blv=372746",
           "blv": "YONE",
           "blv_id": "372746",
           "status": "pending",
@@ -403,9 +359,6 @@
         }
       },
       "pending_room_keys": [
-        "534055",
-        "552832",
-        "372746",
         "534055",
         "552832",
         "372746"
@@ -497,9 +450,9 @@
             "url": "https://socolivep.cv/truc-tiep/sporting-kansas-city-reserves-vs-minnesota-united-b-20-07-2026-0700/?blv=560690",
             "blv": "KÉP",
             "blv_id": "560690",
-            "status": "rate_limited",
-            "attempts": 2,
-            "rate_limit_hits": 2,
+            "status": "pending",
+            "attempts": 1,
+            "rate_limit_hits": 0,
             "last_http_status": 200,
             "last_stream_count": 1,
             "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
@@ -551,9 +504,9 @@
           "url": "https://socolivep.cv/truc-tiep/sporting-kansas-city-reserves-vs-minnesota-united-b-20-07-2026-0700/?blv=560690",
           "blv": "KÉP",
           "blv_id": "560690",
-          "status": "rate_limited",
-          "attempts": 2,
-          "rate_limit_hits": 2,
+          "status": "pending",
+          "attempts": 1,
+          "rate_limit_hits": 0,
           "last_http_status": 200,
           "last_stream_count": 1,
           "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
@@ -690,9 +643,9 @@
             "url": "https://socolivep.cv/truc-tiep/alianza-lima-vs-sport-huancayo-20-07-2026-0700/?blv=534055",
             "blv": "RAMBO",
             "blv_id": "534055",
-            "status": "rate_limited",
-            "attempts": 3,
-            "rate_limit_hits": 1,
+            "status": "pending",
+            "attempts": 1,
+            "rate_limit_hits": 0,
             "last_http_status": 200,
             "last_stream_count": 1,
             "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
@@ -744,9 +697,9 @@
           "url": "https://socolivep.cv/truc-tiep/alianza-lima-vs-sport-huancayo-20-07-2026-0700/?blv=534055",
           "blv": "RAMBO",
           "blv_id": "534055",
-          "status": "rate_limited",
-          "attempts": 3,
-          "rate_limit_hits": 1,
+          "status": "pending",
+          "attempts": 1,
+          "rate_limit_hits": 0,
           "last_http_status": 200,
           "last_stream_count": 1,
           "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
