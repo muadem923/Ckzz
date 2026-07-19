@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-07-20T04:31:50.205972+07:00",
+  "generated_at": "2026-07-20T04:33:00.385956+07:00",
   "state_schema_version": "v10-per-blv-queue",
-  "dispatch_next": true,
+  "dispatch_next": false,
   "pending_count": 7,
   "completed_count": 4,
   "coverage_complete_count": 0,
   "total_match_count": 7,
   "total_stream_count": 8,
   "progress_count": 0,
-  "chain_runs": 1,
-  "no_progress_runs": 1,
-  "stop_reason": "",
+  "chain_runs": 2,
+  "no_progress_runs": 2,
+  "stop_reason": "no_progress_guard",
   "rate_limited": true,
-  "rate_limit_url": "https://socolivep.cv/truc-tiep/sporting-kansas-city-reserves-vs-minnesota-united-b-20-07-2026-0700?blv=560690",
+  "rate_limit_url": "https://socolivep.cv/truc-tiep/connecticut-united-fc-vs-new-york-red-bulls-b-20-07-2026-0500/?blv=304148",
   "count": 7,
   "matches": [
     {
@@ -32,21 +32,6 @@
         },
         {
           "url": "https://socolivep.cv/truc-tiep/guayaquil-city-vs-manta-fc-20-07-2026-0445?blv=372746",
-          "blv": "YONE",
-          "blv_id": "372746"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/guayaquil-city-vs-manta-fc-20-07-2026-0445/?blv=534055",
-          "blv": "RAMBO",
-          "blv_id": "534055"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/guayaquil-city-vs-manta-fc-20-07-2026-0445/?blv=552832",
-          "blv": "LOGAN",
-          "blv_id": "552832"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/guayaquil-city-vs-manta-fc-20-07-2026-0445/?blv=372746",
           "blv": "YONE",
           "blv_id": "372746"
         },
@@ -87,11 +72,8 @@
         "source_goal_reached": false,
         "room_queue_complete": false,
         "complete": false,
-        "total_explicit_blv_rooms": 6,
+        "total_explicit_blv_rooms": 3,
         "pending_room_keys": [
-          "534055",
-          "552832",
-          "372746",
           "534055",
           "552832",
           "372746"
@@ -99,19 +81,19 @@
         "room_progress": {
           "534055": {
             "key": "534055",
-            "url": "https://socolivep.cv/truc-tiep/guayaquil-city-vs-manta-fc-20-07-2026-0445/?blv=534055",
+            "url": "https://socolivep.cv/truc-tiep/guayaquil-city-vs-manta-fc-20-07-2026-0445?blv=534055",
             "blv": "RAMBO",
             "blv_id": "534055",
             "status": "rate_limited",
             "attempts": 1,
-            "rate_limit_hits": 1,
+            "rate_limit_hits": 2,
             "last_http_status": 429,
             "last_stream_count": 0,
             "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
           },
           "552832": {
             "key": "552832",
-            "url": "https://socolivep.cv/truc-tiep/guayaquil-city-vs-manta-fc-20-07-2026-0445/?blv=552832",
+            "url": "https://socolivep.cv/truc-tiep/guayaquil-city-vs-manta-fc-20-07-2026-0445?blv=552832",
             "blv": "LOGAN",
             "blv_id": "552832",
             "status": "pending",
@@ -123,7 +105,7 @@
           },
           "372746": {
             "key": "372746",
-            "url": "https://socolivep.cv/truc-tiep/guayaquil-city-vs-manta-fc-20-07-2026-0445/?blv=372746",
+            "url": "https://socolivep.cv/truc-tiep/guayaquil-city-vs-manta-fc-20-07-2026-0445?blv=372746",
             "blv": "YONE",
             "blv_id": "372746",
             "status": "pending",
@@ -153,19 +135,19 @@
       "room_progress": {
         "534055": {
           "key": "534055",
-          "url": "https://socolivep.cv/truc-tiep/guayaquil-city-vs-manta-fc-20-07-2026-0445/?blv=534055",
+          "url": "https://socolivep.cv/truc-tiep/guayaquil-city-vs-manta-fc-20-07-2026-0445?blv=534055",
           "blv": "RAMBO",
           "blv_id": "534055",
           "status": "rate_limited",
           "attempts": 1,
-          "rate_limit_hits": 1,
+          "rate_limit_hits": 2,
           "last_http_status": 429,
           "last_stream_count": 0,
           "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
         },
         "552832": {
           "key": "552832",
-          "url": "https://socolivep.cv/truc-tiep/guayaquil-city-vs-manta-fc-20-07-2026-0445/?blv=552832",
+          "url": "https://socolivep.cv/truc-tiep/guayaquil-city-vs-manta-fc-20-07-2026-0445?blv=552832",
           "blv": "LOGAN",
           "blv_id": "552832",
           "status": "pending",
@@ -177,7 +159,7 @@
         },
         "372746": {
           "key": "372746",
-          "url": "https://socolivep.cv/truc-tiep/guayaquil-city-vs-manta-fc-20-07-2026-0445/?blv=372746",
+          "url": "https://socolivep.cv/truc-tiep/guayaquil-city-vs-manta-fc-20-07-2026-0445?blv=372746",
           "blv": "YONE",
           "blv_id": "372746",
           "status": "pending",
@@ -203,9 +185,6 @@
       "pending_room_keys": [
         "534055",
         "552832",
-        "372746",
-        "534055",
-        "552832",
         "372746"
       ]
     },
@@ -226,21 +205,6 @@
         },
         {
           "url": "https://socolivep.cv/truc-tiep/connecticut-united-fc-vs-new-york-red-bulls-b-20-07-2026-0500?blv=321443",
-          "blv": "GIÓ",
-          "blv_id": "321443"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/connecticut-united-fc-vs-new-york-red-bulls-b-20-07-2026-0500/?blv=304148",
-          "blv": "LUCAS",
-          "blv_id": "304148"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/connecticut-united-fc-vs-new-york-red-bulls-b-20-07-2026-0500/?blv=485739",
-          "blv": "CHIVAS",
-          "blv_id": "485739"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/connecticut-united-fc-vs-new-york-red-bulls-b-20-07-2026-0500/?blv=321443",
           "blv": "GIÓ",
           "blv_id": "321443"
         },
@@ -281,11 +245,8 @@
         "source_goal_reached": false,
         "room_queue_complete": false,
         "complete": false,
-        "total_explicit_blv_rooms": 6,
+        "total_explicit_blv_rooms": 3,
         "pending_room_keys": [
-          "304148",
-          "485739",
-          "321443",
           "304148",
           "485739",
           "321443"
@@ -293,19 +254,19 @@
         "room_progress": {
           "304148": {
             "key": "304148",
-            "url": "https://socolivep.cv/truc-tiep/connecticut-united-fc-vs-new-york-red-bulls-b-20-07-2026-0500/?blv=304148",
+            "url": "https://socolivep.cv/truc-tiep/connecticut-united-fc-vs-new-york-red-bulls-b-20-07-2026-0500?blv=304148",
             "blv": "LUCAS",
             "blv_id": "304148",
             "status": "rate_limited",
             "attempts": 1,
-            "rate_limit_hits": 1,
+            "rate_limit_hits": 2,
             "last_http_status": 429,
             "last_stream_count": 0,
             "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
           },
           "485739": {
             "key": "485739",
-            "url": "https://socolivep.cv/truc-tiep/connecticut-united-fc-vs-new-york-red-bulls-b-20-07-2026-0500/?blv=485739",
+            "url": "https://socolivep.cv/truc-tiep/connecticut-united-fc-vs-new-york-red-bulls-b-20-07-2026-0500?blv=485739",
             "blv": "CHIVAS",
             "blv_id": "485739",
             "status": "pending",
@@ -317,7 +278,7 @@
           },
           "321443": {
             "key": "321443",
-            "url": "https://socolivep.cv/truc-tiep/connecticut-united-fc-vs-new-york-red-bulls-b-20-07-2026-0500/?blv=321443",
+            "url": "https://socolivep.cv/truc-tiep/connecticut-united-fc-vs-new-york-red-bulls-b-20-07-2026-0500?blv=321443",
             "blv": "GIÓ",
             "blv_id": "321443",
             "status": "pending",
@@ -347,19 +308,19 @@
       "room_progress": {
         "304148": {
           "key": "304148",
-          "url": "https://socolivep.cv/truc-tiep/connecticut-united-fc-vs-new-york-red-bulls-b-20-07-2026-0500/?blv=304148",
+          "url": "https://socolivep.cv/truc-tiep/connecticut-united-fc-vs-new-york-red-bulls-b-20-07-2026-0500?blv=304148",
           "blv": "LUCAS",
           "blv_id": "304148",
           "status": "rate_limited",
           "attempts": 1,
-          "rate_limit_hits": 1,
+          "rate_limit_hits": 2,
           "last_http_status": 429,
           "last_stream_count": 0,
           "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
         },
         "485739": {
           "key": "485739",
-          "url": "https://socolivep.cv/truc-tiep/connecticut-united-fc-vs-new-york-red-bulls-b-20-07-2026-0500/?blv=485739",
+          "url": "https://socolivep.cv/truc-tiep/connecticut-united-fc-vs-new-york-red-bulls-b-20-07-2026-0500?blv=485739",
           "blv": "CHIVAS",
           "blv_id": "485739",
           "status": "pending",
@@ -371,7 +332,7 @@
         },
         "321443": {
           "key": "321443",
-          "url": "https://socolivep.cv/truc-tiep/connecticut-united-fc-vs-new-york-red-bulls-b-20-07-2026-0500/?blv=321443",
+          "url": "https://socolivep.cv/truc-tiep/connecticut-united-fc-vs-new-york-red-bulls-b-20-07-2026-0500?blv=321443",
           "blv": "GIÓ",
           "blv_id": "321443",
           "status": "pending",
@@ -395,9 +356,6 @@
         }
       },
       "pending_room_keys": [
-        "304148",
-        "485739",
-        "321443",
         "304148",
         "485739",
         "321443"
@@ -491,11 +449,11 @@
             "blv": "KÉP",
             "blv_id": "560690",
             "status": "rate_limited",
-            "attempts": 1,
+            "attempts": 2,
             "rate_limit_hits": 1,
-            "last_http_status": 429,
-            "last_stream_count": 0,
-            "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
+            "last_http_status": 200,
+            "last_stream_count": 1,
+            "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
           },
           "598119": {
             "key": "598119",
@@ -545,11 +503,11 @@
           "blv": "KÉP",
           "blv_id": "560690",
           "status": "rate_limited",
-          "attempts": 1,
+          "attempts": 2,
           "rate_limit_hits": 1,
-          "last_http_status": 429,
-          "last_stream_count": 0,
-          "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
+          "last_http_status": 200,
+          "last_stream_count": 1,
+          "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
         },
         "598119": {
           "key": "598119",
@@ -685,11 +643,11 @@
             "blv": "RAMBO",
             "blv_id": "534055",
             "status": "rate_limited",
-            "attempts": 1,
+            "attempts": 2,
             "rate_limit_hits": 1,
-            "last_http_status": 429,
-            "last_stream_count": 0,
-            "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
+            "last_http_status": 200,
+            "last_stream_count": 1,
+            "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
           },
           "235232": {
             "key": "235232",
@@ -739,11 +697,11 @@
           "blv": "RAMBO",
           "blv_id": "534055",
           "status": "rate_limited",
-          "attempts": 1,
+          "attempts": 2,
           "rate_limit_hits": 1,
-          "last_http_status": 429,
-          "last_stream_count": 0,
-          "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
+          "last_http_status": 200,
+          "last_stream_count": 1,
+          "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
         },
         "235232": {
           "key": "235232",
