@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-07-20T03:19:59.232482+07:00",
+  "generated_at": "2026-07-20T03:21:03.235265+07:00",
   "dispatch_next": true,
   "pending_count": 4,
   "completed_count": 5,
   "coverage_complete_count": 2,
   "total_match_count": 6,
-  "total_stream_count": 9,
-  "progress_count": 0,
-  "chain_runs": 5,
-  "no_progress_runs": 1,
+  "total_stream_count": 10,
+  "progress_count": 1,
+  "chain_runs": 6,
+  "no_progress_runs": 0,
   "stop_reason": "",
   "rate_limited": true,
-  "rate_limit_url": "https://socolivep.cv/truc-tiep/alianza-lima-vs-sport-huancayo-20-07-2026-0700/?blv=235232",
+  "rate_limit_url": "https://socolivep.cv/truc-tiep/independiente-del-valle-vs-club-sport-emelec-20-07-2026-0715/?blv=527384",
   "count": 4,
   "matches": [
     {
@@ -109,6 +109,7 @@
         "attempted_room_ids": [
           "118206",
           "147801",
+          "168740",
           "360663",
           "414317",
           "434982"
@@ -117,6 +118,7 @@
       "attempted_room_ids": [
         "118206",
         "147801",
+        "168740",
         "360663",
         "414317",
         "434982"
@@ -219,23 +221,33 @@
           "blv": "RAMBO",
           "blv_id": "534055",
           "discovered_from_room_url": "https://socolivep.cv/truc-tiep/alianza-lima-vs-sport-huancayo-20-07-2026-0700?blv=534055"
+        },
+        {
+          "url": "https://pull.niues.live/live/stream-607400_lhd.m3u8?auth_key=1784491377-0-0-40adb39faa0cc0afa714bd8e499600c7",
+          "room_url": "https://socolivep.cv/truc-tiep/alianza-lima-vs-sport-huancayo-20-07-2026-0700?blv=607400",
+          "blv": "HÀ DUY KIÊN",
+          "blv_id": "607400",
+          "discovered_from_room_url": "https://socolivep.cv/truc-tiep/alianza-lima-vs-sport-huancayo-20-07-2026-0700?blv=607400"
         }
       ],
       "coverage": {
-        "found_streams": 1,
+        "found_streams": 2,
         "found_blv_ids": [
-          "534055"
+          "534055",
+          "607400"
         ],
         "goal": 3,
         "complete": false,
         "attempted_room_ids": [
           "235232",
-          "534055"
+          "534055",
+          "607400"
         ]
       },
       "attempted_room_ids": [
         "235232",
-        "534055"
+        "534055",
+        "607400"
       ]
     },
     {
@@ -277,12 +289,14 @@
         "complete": false,
         "attempted_room_ids": [
           "273736",
-          "283501"
+          "283501",
+          "527384"
         ]
       },
       "attempted_room_ids": [
         "273736",
-        "283501"
+        "283501",
+        "527384"
       ]
     }
   ]
