@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-07-20T05:17:45.619163+07:00",
+  "generated_at": "2026-07-20T05:18:55.297749+07:00",
   "state_schema_version": "v10-per-blv-queue",
-  "dispatch_next": true,
+  "dispatch_next": false,
   "pending_count": 7,
   "completed_count": 4,
   "coverage_complete_count": 0,
   "total_match_count": 7,
   "total_stream_count": 4,
   "progress_count": 0,
-  "chain_runs": 3,
-  "no_progress_runs": 1,
-  "stop_reason": "",
+  "chain_runs": 4,
+  "no_progress_runs": 2,
+  "stop_reason": "no_progress_guard",
   "rate_limited": true,
-  "rate_limit_url": "https://socolivep.cv/truc-tiep/sporting-kansas-city-reserves-vs-minnesota-united-b-20-07-2026-0700?blv=560690",
+  "rate_limit_url": "https://socolivep.cv/truc-tiep/guayaquil-city-vs-manta-fc-20-07-2026-0445?blv=534055",
   "count": 7,
   "matches": [
     {
@@ -107,11 +107,11 @@
             "blv": "LUCAS",
             "blv_id": "304148",
             "status": "rate_limited",
-            "attempts": 2,
-            "rate_limit_hits": 1,
-            "last_http_status": 200,
-            "last_stream_count": 1,
-            "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
+            "attempts": 3,
+            "rate_limit_hits": 2,
+            "last_http_status": 429,
+            "last_stream_count": 0,
+            "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
           },
           "485739": {
             "key": "485739",
@@ -161,11 +161,11 @@
           "blv": "LUCAS",
           "blv_id": "304148",
           "status": "rate_limited",
-          "attempts": 2,
-          "rate_limit_hits": 1,
-          "last_http_status": 200,
-          "last_stream_count": 1,
-          "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
+          "attempts": 3,
+          "rate_limit_hits": 2,
+          "last_http_status": 429,
+          "last_stream_count": 0,
+          "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
         },
         "485739": {
           "key": "485739",
@@ -304,12 +304,12 @@
             "url": "https://socolivep.cv/truc-tiep/guayaquil-city-vs-manta-fc-20-07-2026-0445/?blv=534055",
             "blv": "RAMBO",
             "blv_id": "534055",
-            "status": "pending",
-            "attempts": 3,
-            "rate_limit_hits": 0,
-            "last_http_status": 200,
-            "last_stream_count": 1,
-            "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
+            "status": "rate_limited",
+            "attempts": 4,
+            "rate_limit_hits": 1,
+            "last_http_status": 429,
+            "last_stream_count": 0,
+            "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
           },
           "552832": {
             "key": "552832",
@@ -358,12 +358,12 @@
           "url": "https://socolivep.cv/truc-tiep/guayaquil-city-vs-manta-fc-20-07-2026-0445/?blv=534055",
           "blv": "RAMBO",
           "blv_id": "534055",
-          "status": "pending",
-          "attempts": 3,
-          "rate_limit_hits": 0,
-          "last_http_status": 200,
-          "last_stream_count": 1,
-          "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
+          "status": "rate_limited",
+          "attempts": 4,
+          "rate_limit_hits": 1,
+          "last_http_status": 429,
+          "last_stream_count": 0,
+          "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
         },
         "552832": {
           "key": "552832",
@@ -432,6 +432,21 @@
           "blv_id": "472241"
         },
         {
+          "url": "https://socolivep.cv/truc-tiep/sporting-kansas-city-reserves-vs-minnesota-united-b-20-07-2026-0700/?blv=560690",
+          "blv": "KÉP",
+          "blv_id": "560690"
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/sporting-kansas-city-reserves-vs-minnesota-united-b-20-07-2026-0700/?blv=598119",
+          "blv": "A TINH",
+          "blv_id": "598119"
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/sporting-kansas-city-reserves-vs-minnesota-united-b-20-07-2026-0700/?blv=472241",
+          "blv": "XO",
+          "blv_id": "472241"
+        },
+        {
           "url": "https://socolivep.cv/truc-tiep/sporting-kansas-city-reserves-vs-minnesota-united-b-20-07-2026-0700",
           "blv": "XEM NGAY",
           "blv_id": ""
@@ -467,8 +482,11 @@
         "source_goal_reached": false,
         "room_queue_complete": false,
         "complete": false,
-        "total_explicit_blv_rooms": 3,
+        "total_explicit_blv_rooms": 6,
         "pending_room_keys": [
+          "560690",
+          "598119",
+          "472241",
           "560690",
           "598119",
           "472241"
@@ -476,19 +494,19 @@
         "room_progress": {
           "560690": {
             "key": "560690",
-            "url": "https://socolivep.cv/truc-tiep/sporting-kansas-city-reserves-vs-minnesota-united-b-20-07-2026-0700?blv=560690",
+            "url": "https://socolivep.cv/truc-tiep/sporting-kansas-city-reserves-vs-minnesota-united-b-20-07-2026-0700/?blv=560690",
             "blv": "KÉP",
             "blv_id": "560690",
             "status": "rate_limited",
-            "attempts": 1,
+            "attempts": 2,
             "rate_limit_hits": 2,
-            "last_http_status": 429,
-            "last_stream_count": 0,
-            "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
+            "last_http_status": 200,
+            "last_stream_count": 1,
+            "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
           },
           "598119": {
             "key": "598119",
-            "url": "https://socolivep.cv/truc-tiep/sporting-kansas-city-reserves-vs-minnesota-united-b-20-07-2026-0700?blv=598119",
+            "url": "https://socolivep.cv/truc-tiep/sporting-kansas-city-reserves-vs-minnesota-united-b-20-07-2026-0700/?blv=598119",
             "blv": "A TINH",
             "blv_id": "598119",
             "status": "pending",
@@ -500,7 +518,7 @@
           },
           "472241": {
             "key": "472241",
-            "url": "https://socolivep.cv/truc-tiep/sporting-kansas-city-reserves-vs-minnesota-united-b-20-07-2026-0700?blv=472241",
+            "url": "https://socolivep.cv/truc-tiep/sporting-kansas-city-reserves-vs-minnesota-united-b-20-07-2026-0700/?blv=472241",
             "blv": "XO",
             "blv_id": "472241",
             "status": "pending",
@@ -530,19 +548,19 @@
       "room_progress": {
         "560690": {
           "key": "560690",
-          "url": "https://socolivep.cv/truc-tiep/sporting-kansas-city-reserves-vs-minnesota-united-b-20-07-2026-0700?blv=560690",
+          "url": "https://socolivep.cv/truc-tiep/sporting-kansas-city-reserves-vs-minnesota-united-b-20-07-2026-0700/?blv=560690",
           "blv": "KÉP",
           "blv_id": "560690",
           "status": "rate_limited",
-          "attempts": 1,
+          "attempts": 2,
           "rate_limit_hits": 2,
-          "last_http_status": 429,
-          "last_stream_count": 0,
-          "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
+          "last_http_status": 200,
+          "last_stream_count": 1,
+          "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
         },
         "598119": {
           "key": "598119",
-          "url": "https://socolivep.cv/truc-tiep/sporting-kansas-city-reserves-vs-minnesota-united-b-20-07-2026-0700?blv=598119",
+          "url": "https://socolivep.cv/truc-tiep/sporting-kansas-city-reserves-vs-minnesota-united-b-20-07-2026-0700/?blv=598119",
           "blv": "A TINH",
           "blv_id": "598119",
           "status": "pending",
@@ -554,7 +572,7 @@
         },
         "472241": {
           "key": "472241",
-          "url": "https://socolivep.cv/truc-tiep/sporting-kansas-city-reserves-vs-minnesota-united-b-20-07-2026-0700?blv=472241",
+          "url": "https://socolivep.cv/truc-tiep/sporting-kansas-city-reserves-vs-minnesota-united-b-20-07-2026-0700/?blv=472241",
           "blv": "XO",
           "blv_id": "472241",
           "status": "pending",
@@ -578,6 +596,9 @@
         }
       },
       "pending_room_keys": [
+        "560690",
+        "598119",
+        "472241",
         "560690",
         "598119",
         "472241"
@@ -670,7 +691,7 @@
             "blv": "RAMBO",
             "blv_id": "534055",
             "status": "rate_limited",
-            "attempts": 2,
+            "attempts": 3,
             "rate_limit_hits": 1,
             "last_http_status": 200,
             "last_stream_count": 1,
@@ -724,7 +745,7 @@
           "blv": "RAMBO",
           "blv_id": "534055",
           "status": "rate_limited",
-          "attempts": 2,
+          "attempts": 3,
           "rate_limit_hits": 1,
           "last_http_status": 200,
           "last_stream_count": 1,
