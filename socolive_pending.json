@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-07-20T03:21:03.235265+07:00",
+  "generated_at": "2026-07-20T03:21:59.943023+07:00",
   "dispatch_next": true,
   "pending_count": 4,
-  "completed_count": 5,
+  "completed_count": 6,
   "coverage_complete_count": 2,
   "total_match_count": 6,
-  "total_stream_count": 10,
+  "total_stream_count": 11,
   "progress_count": 1,
-  "chain_runs": 6,
+  "chain_runs": 7,
   "no_progress_runs": 0,
   "stop_reason": "",
   "rate_limited": true,
-  "rate_limit_url": "https://socolivep.cv/truc-tiep/independiente-del-valle-vs-club-sport-emelec-20-07-2026-0715/?blv=527384",
+  "rate_limit_url": "https://socolivep.cv/truc-tiep/sporting-kansas-city-reserves-vs-minnesota-united-b-20-07-2026-0700/",
   "count": 4,
   "matches": [
     {
@@ -108,6 +108,7 @@
         "complete": false,
         "attempted_room_ids": [
           "118206",
+          "123226",
           "147801",
           "168740",
           "360663",
@@ -117,6 +118,7 @@
       },
       "attempted_room_ids": [
         "118206",
+        "123226",
         "147801",
         "168740",
         "360663",
@@ -281,10 +283,20 @@
           "blv_id": ""
         }
       ],
-      "streams": [],
+      "streams": [
+        {
+          "url": "https://pull.niues.live/live/stream-273736_lhd.m3u8?auth_key=1784486852-0-0-e52cd0089420211171b66fe9a3a1c834",
+          "room_url": "https://socolivep.cv/truc-tiep/independiente-del-valle-vs-club-sport-emelec-20-07-2026-0715?blv=273736",
+          "blv": "CHÍ PHÈO",
+          "blv_id": "273736",
+          "discovered_from_room_url": "https://socolivep.cv/truc-tiep/independiente-del-valle-vs-club-sport-emelec-20-07-2026-0715"
+        }
+      ],
       "coverage": {
-        "found_streams": 0,
-        "found_blv_ids": [],
+        "found_streams": 1,
+        "found_blv_ids": [
+          "273736"
+        ],
         "goal": 3,
         "complete": false,
         "attempted_room_ids": [
