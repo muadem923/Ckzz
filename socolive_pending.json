@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-07-20T03:22:53.384154+07:00",
+  "generated_at": "2026-07-20T03:23:55.227712+07:00",
   "dispatch_next": true,
   "pending_count": 3,
   "completed_count": 6,
   "coverage_complete_count": 3,
   "total_match_count": 6,
-  "total_stream_count": 12,
+  "total_stream_count": 13,
   "progress_count": 1,
-  "chain_runs": 8,
+  "chain_runs": 9,
   "no_progress_runs": 0,
   "stop_reason": "",
   "rate_limited": true,
-  "rate_limit_url": "https://socolivep.cv/truc-tiep/spain-vs-argentina-20-07-2026-0200?blv=327159",
+  "rate_limit_url": "https://socolivep.cv/truc-tiep/independiente-del-valle-vs-club-sport-emelec-20-07-2026-0715",
   "count": 3,
   "matches": [
     {
@@ -97,12 +97,20 @@
           "blv": "TOMMY",
           "blv_id": "414317",
           "discovered_from_room_url": "https://socolivep.cv/truc-tiep/spain-vs-argentina-20-07-2026-0200?blv=414317"
+        },
+        {
+          "url": "https://pull.niues.live/live/stream-599634_lhd.m3u8?auth_key=1784490565-0-0-6205a26e8ddc20a684dbcde1e08af339",
+          "room_url": "https://socolivep.cv/truc-tiep/spain-vs-argentina-20-07-2026-0200?blv=599634",
+          "blv": "HẢI THANH",
+          "blv_id": "599634",
+          "discovered_from_room_url": "https://socolivep.cv/truc-tiep/spain-vs-argentina-20-07-2026-0200?blv=599634"
         }
       ],
       "coverage": {
-        "found_streams": 1,
+        "found_streams": 2,
         "found_blv_ids": [
-          "414317"
+          "414317",
+          "599634"
         ],
         "goal": 10,
         "complete": false,
@@ -114,7 +122,8 @@
           "327159",
           "360663",
           "414317",
-          "434982"
+          "434982",
+          "599634"
         ]
       },
       "attempted_room_ids": [
@@ -125,7 +134,8 @@
         "327159",
         "360663",
         "414317",
-        "434982"
+        "434982",
+        "599634"
       ]
     },
     {
