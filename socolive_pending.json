@@ -1,193 +1,20 @@
 {
-  "generated_at": "2026-07-20T04:33:00.385956+07:00",
+  "generated_at": "2026-07-20T05:15:57.694457+07:00",
   "state_schema_version": "v10-per-blv-queue",
-  "dispatch_next": false,
+  "dispatch_next": true,
   "pending_count": 7,
-  "completed_count": 4,
+  "completed_count": 2,
   "coverage_complete_count": 0,
   "total_match_count": 7,
-  "total_stream_count": 8,
-  "progress_count": 0,
-  "chain_runs": 2,
-  "no_progress_runs": 2,
-  "stop_reason": "no_progress_guard",
+  "total_stream_count": 2,
+  "progress_count": 2,
+  "chain_runs": 1,
+  "no_progress_runs": 0,
+  "stop_reason": "",
   "rate_limited": true,
-  "rate_limit_url": "https://socolivep.cv/truc-tiep/connecticut-united-fc-vs-new-york-red-bulls-b-20-07-2026-0500/?blv=304148",
+  "rate_limit_url": "https://socolivep.cv/truc-tiep/sporting-kansas-city-reserves-vs-minnesota-united-b-20-07-2026-0700/?blv=560690",
   "count": 7,
   "matches": [
-    {
-      "base_url": "https://socolivep.cv/truc-tiep/guayaquil-city-vs-manta-fc-20-07-2026-0445/",
-      "match_name": "Guayaquil City vs Manta FC",
-      "scheduled_at": "2026-07-20T04:45:00+07:00",
-      "rooms": [
-        {
-          "url": "https://socolivep.cv/truc-tiep/guayaquil-city-vs-manta-fc-20-07-2026-0445?blv=534055",
-          "blv": "RAMBO",
-          "blv_id": "534055"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/guayaquil-city-vs-manta-fc-20-07-2026-0445?blv=552832",
-          "blv": "LOGAN",
-          "blv_id": "552832"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/guayaquil-city-vs-manta-fc-20-07-2026-0445?blv=372746",
-          "blv": "YONE",
-          "blv_id": "372746"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/guayaquil-city-vs-manta-fc-20-07-2026-0445",
-          "blv": "XEM NGAY",
-          "blv_id": ""
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/guayaquil-city-vs-manta-fc-20-07-2026-0445/",
-          "blv": "",
-          "blv_id": ""
-        }
-      ],
-      "streams": [
-        {
-          "url": "https://pull.niur.live/live/stream-534055_lhd.m3u8?txSecret=a08ea6d59bbe33bdf51e64d54ae3ff0c&txTime=6a5cc3be",
-          "room_url": "https://socolivep.cv/truc-tiep/guayaquil-city-vs-manta-fc-20-07-2026-0445?blv=534055",
-          "blv": "RAMBO",
-          "blv_id": "534055",
-          "discovered_from_room_url": "https://socolivep.cv/truc-tiep/guayaquil-city-vs-manta-fc-20-07-2026-0445?blv=534055"
-        },
-        {
-          "url": "https://pull.niues.live/live/stream-552832_lhd.m3u8?auth_key=1784485446-0-0-8eec43115d612f7466ff8472fc2e3488",
-          "room_url": "https://socolivep.cv/truc-tiep/guayaquil-city-vs-manta-fc-20-07-2026-0445?blv=552832",
-          "blv": "LOGAN",
-          "blv_id": "552832",
-          "discovered_from_room_url": "https://socolivep.cv/truc-tiep/guayaquil-city-vs-manta-fc-20-07-2026-0445?blv=552832"
-        }
-      ],
-      "coverage": {
-        "found_streams": 2,
-        "found_blv_ids": [
-          "534055",
-          "552832"
-        ],
-        "goal": 3,
-        "source_goal_reached": false,
-        "room_queue_complete": false,
-        "complete": false,
-        "total_explicit_blv_rooms": 3,
-        "pending_room_keys": [
-          "534055",
-          "552832",
-          "372746"
-        ],
-        "room_progress": {
-          "534055": {
-            "key": "534055",
-            "url": "https://socolivep.cv/truc-tiep/guayaquil-city-vs-manta-fc-20-07-2026-0445?blv=534055",
-            "blv": "RAMBO",
-            "blv_id": "534055",
-            "status": "rate_limited",
-            "attempts": 1,
-            "rate_limit_hits": 2,
-            "last_http_status": 429,
-            "last_stream_count": 0,
-            "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
-          },
-          "552832": {
-            "key": "552832",
-            "url": "https://socolivep.cv/truc-tiep/guayaquil-city-vs-manta-fc-20-07-2026-0445?blv=552832",
-            "blv": "LOGAN",
-            "blv_id": "552832",
-            "status": "pending",
-            "attempts": 0,
-            "rate_limit_hits": 0,
-            "last_http_status": null,
-            "last_stream_count": 0,
-            "last_error": ""
-          },
-          "372746": {
-            "key": "372746",
-            "url": "https://socolivep.cv/truc-tiep/guayaquil-city-vs-manta-fc-20-07-2026-0445?blv=372746",
-            "blv": "YONE",
-            "blv_id": "372746",
-            "status": "pending",
-            "attempts": 0,
-            "rate_limit_hits": 0,
-            "last_http_status": null,
-            "last_stream_count": 0,
-            "last_error": ""
-          },
-          "__base__": {
-            "key": "__base__",
-            "url": "https://socolivep.cv/truc-tiep/guayaquil-city-vs-manta-fc-20-07-2026-0445/",
-            "blv": "",
-            "blv_id": "",
-            "status": "pending",
-            "attempts": 0,
-            "rate_limit_hits": 0,
-            "last_http_status": null,
-            "last_stream_count": 0,
-            "last_error": ""
-          }
-        }
-      },
-      "attempted_room_ids": [
-        "534055"
-      ],
-      "room_progress": {
-        "534055": {
-          "key": "534055",
-          "url": "https://socolivep.cv/truc-tiep/guayaquil-city-vs-manta-fc-20-07-2026-0445?blv=534055",
-          "blv": "RAMBO",
-          "blv_id": "534055",
-          "status": "rate_limited",
-          "attempts": 1,
-          "rate_limit_hits": 2,
-          "last_http_status": 429,
-          "last_stream_count": 0,
-          "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
-        },
-        "552832": {
-          "key": "552832",
-          "url": "https://socolivep.cv/truc-tiep/guayaquil-city-vs-manta-fc-20-07-2026-0445?blv=552832",
-          "blv": "LOGAN",
-          "blv_id": "552832",
-          "status": "pending",
-          "attempts": 0,
-          "rate_limit_hits": 0,
-          "last_http_status": null,
-          "last_stream_count": 0,
-          "last_error": ""
-        },
-        "372746": {
-          "key": "372746",
-          "url": "https://socolivep.cv/truc-tiep/guayaquil-city-vs-manta-fc-20-07-2026-0445?blv=372746",
-          "blv": "YONE",
-          "blv_id": "372746",
-          "status": "pending",
-          "attempts": 0,
-          "rate_limit_hits": 0,
-          "last_http_status": null,
-          "last_stream_count": 0,
-          "last_error": ""
-        },
-        "__base__": {
-          "key": "__base__",
-          "url": "https://socolivep.cv/truc-tiep/guayaquil-city-vs-manta-fc-20-07-2026-0445/",
-          "blv": "",
-          "blv_id": "",
-          "status": "pending",
-          "attempts": 0,
-          "rate_limit_hits": 0,
-          "last_http_status": null,
-          "last_stream_count": 0,
-          "last_error": ""
-        }
-      },
-      "pending_room_keys": [
-        "534055",
-        "552832",
-        "372746"
-      ]
-    },
     {
       "base_url": "https://socolivep.cv/truc-tiep/connecticut-united-fc-vs-new-york-red-bulls-b-20-07-2026-0500/",
       "match_name": "Connecticut United FC vs New York Red Bulls B",
@@ -209,6 +36,21 @@
           "blv_id": "321443"
         },
         {
+          "url": "https://socolivep.cv/truc-tiep/connecticut-united-fc-vs-new-york-red-bulls-b-20-07-2026-0500/?blv=304148",
+          "blv": "LUCAS",
+          "blv_id": "304148"
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/connecticut-united-fc-vs-new-york-red-bulls-b-20-07-2026-0500/?blv=485739",
+          "blv": "CHIVAS",
+          "blv_id": "485739"
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/connecticut-united-fc-vs-new-york-red-bulls-b-20-07-2026-0500/?blv=321443",
+          "blv": "GIÓ",
+          "blv_id": "321443"
+        },
+        {
           "url": "https://socolivep.cv/truc-tiep/connecticut-united-fc-vs-new-york-red-bulls-b-20-07-2026-0500",
           "blv": "XEM NGAY",
           "blv_id": ""
@@ -221,32 +63,39 @@
       ],
       "streams": [
         {
-          "url": "https://pull.niues.live/live/stream-304148_lhd.m3u8?auth_key=1784467614-0-0-cb109addb08e6a86fdd9f35b47c63053",
-          "room_url": "https://socolivep.cv/truc-tiep/connecticut-united-fc-vs-new-york-red-bulls-b-20-07-2026-0500?blv=304148",
+          "url": "https://pull.niues.live/live/stream-304148_lhd.m3u8?auth_key=1784502625-0-0-184ed4049d51cc87aa4d2efe707f5912",
+          "room_url": "https://socolivep.cv/truc-tiep/connecticut-united-fc-vs-new-york-red-bulls-b-20-07-2026-0500/?blv=304148",
           "blv": "LUCAS",
           "blv_id": "304148",
-          "discovered_from_room_url": "https://socolivep.cv/truc-tiep/connecticut-united-fc-vs-new-york-red-bulls-b-20-07-2026-0500?blv=304148"
-        },
-        {
-          "url": "https://pull.niur.live/live/stream-485739_lhd.m3u8?txSecret=3574dde48a7658e48a972fa39218d9d0&txTime=6a5d4f64",
-          "room_url": "https://socolivep.cv/truc-tiep/connecticut-united-fc-vs-new-york-red-bulls-b-20-07-2026-0500?blv=485739",
-          "blv": "CHIVAS",
-          "blv_id": "485739",
-          "discovered_from_room_url": "https://socolivep.cv/truc-tiep/connecticut-united-fc-vs-new-york-red-bulls-b-20-07-2026-0500?blv=485739"
+          "source_id": "304148",
+          "source_provenance": [
+            "cdp/request",
+            "cdp/response",
+            "embedded/frame-html",
+            "request/image",
+            "request/xhr",
+            "response/200"
+          ],
+          "source_confidence": "network",
+          "mapping_mode": "exact-room-id",
+          "discovered_from_room_url": "https://socolivep.cv/truc-tiep/connecticut-united-fc-vs-new-york-red-bulls-b-20-07-2026-0500?blv=304148",
+          "discovered_from_blv": "LUCAS"
         }
       ],
       "coverage": {
-        "found_streams": 2,
+        "found_streams": 1,
         "found_blv_ids": [
-          "304148",
-          "485739"
+          "304148"
         ],
         "goal": 3,
         "source_goal_reached": false,
         "room_queue_complete": false,
         "complete": false,
-        "total_explicit_blv_rooms": 3,
+        "total_explicit_blv_rooms": 6,
         "pending_room_keys": [
+          "304148",
+          "485739",
+          "321443",
           "304148",
           "485739",
           "321443"
@@ -254,19 +103,19 @@
         "room_progress": {
           "304148": {
             "key": "304148",
-            "url": "https://socolivep.cv/truc-tiep/connecticut-united-fc-vs-new-york-red-bulls-b-20-07-2026-0500?blv=304148",
+            "url": "https://socolivep.cv/truc-tiep/connecticut-united-fc-vs-new-york-red-bulls-b-20-07-2026-0500/?blv=304148",
             "blv": "LUCAS",
             "blv_id": "304148",
-            "status": "rate_limited",
+            "status": "pending",
             "attempts": 1,
-            "rate_limit_hits": 2,
-            "last_http_status": 429,
-            "last_stream_count": 0,
-            "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
+            "rate_limit_hits": 0,
+            "last_http_status": 200,
+            "last_stream_count": 1,
+            "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
           },
           "485739": {
             "key": "485739",
-            "url": "https://socolivep.cv/truc-tiep/connecticut-united-fc-vs-new-york-red-bulls-b-20-07-2026-0500?blv=485739",
+            "url": "https://socolivep.cv/truc-tiep/connecticut-united-fc-vs-new-york-red-bulls-b-20-07-2026-0500/?blv=485739",
             "blv": "CHIVAS",
             "blv_id": "485739",
             "status": "pending",
@@ -278,7 +127,7 @@
           },
           "321443": {
             "key": "321443",
-            "url": "https://socolivep.cv/truc-tiep/connecticut-united-fc-vs-new-york-red-bulls-b-20-07-2026-0500?blv=321443",
+            "url": "https://socolivep.cv/truc-tiep/connecticut-united-fc-vs-new-york-red-bulls-b-20-07-2026-0500/?blv=321443",
             "blv": "GIÓ",
             "blv_id": "321443",
             "status": "pending",
@@ -308,19 +157,19 @@
       "room_progress": {
         "304148": {
           "key": "304148",
-          "url": "https://socolivep.cv/truc-tiep/connecticut-united-fc-vs-new-york-red-bulls-b-20-07-2026-0500?blv=304148",
+          "url": "https://socolivep.cv/truc-tiep/connecticut-united-fc-vs-new-york-red-bulls-b-20-07-2026-0500/?blv=304148",
           "blv": "LUCAS",
           "blv_id": "304148",
-          "status": "rate_limited",
+          "status": "pending",
           "attempts": 1,
-          "rate_limit_hits": 2,
-          "last_http_status": 429,
-          "last_stream_count": 0,
-          "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
+          "rate_limit_hits": 0,
+          "last_http_status": 200,
+          "last_stream_count": 1,
+          "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
         },
         "485739": {
           "key": "485739",
-          "url": "https://socolivep.cv/truc-tiep/connecticut-united-fc-vs-new-york-red-bulls-b-20-07-2026-0500?blv=485739",
+          "url": "https://socolivep.cv/truc-tiep/connecticut-united-fc-vs-new-york-red-bulls-b-20-07-2026-0500/?blv=485739",
           "blv": "CHIVAS",
           "blv_id": "485739",
           "status": "pending",
@@ -332,7 +181,7 @@
         },
         "321443": {
           "key": "321443",
-          "url": "https://socolivep.cv/truc-tiep/connecticut-united-fc-vs-new-york-red-bulls-b-20-07-2026-0500?blv=321443",
+          "url": "https://socolivep.cv/truc-tiep/connecticut-united-fc-vs-new-york-red-bulls-b-20-07-2026-0500/?blv=321443",
           "blv": "GIÓ",
           "blv_id": "321443",
           "status": "pending",
@@ -358,7 +207,208 @@
       "pending_room_keys": [
         "304148",
         "485739",
+        "321443",
+        "304148",
+        "485739",
         "321443"
+      ]
+    },
+    {
+      "base_url": "https://socolivep.cv/truc-tiep/guayaquil-city-vs-manta-fc-20-07-2026-0445/",
+      "match_name": "Guayaquil City vs Manta FC",
+      "scheduled_at": "2026-07-20T04:45:00+07:00",
+      "rooms": [
+        {
+          "url": "https://socolivep.cv/truc-tiep/guayaquil-city-vs-manta-fc-20-07-2026-0445?blv=534055",
+          "blv": "RAMBO",
+          "blv_id": "534055"
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/guayaquil-city-vs-manta-fc-20-07-2026-0445?blv=552832",
+          "blv": "LOGAN",
+          "blv_id": "552832"
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/guayaquil-city-vs-manta-fc-20-07-2026-0445?blv=372746",
+          "blv": "YONE",
+          "blv_id": "372746"
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/guayaquil-city-vs-manta-fc-20-07-2026-0445/?blv=534055",
+          "blv": "RAMBO",
+          "blv_id": "534055"
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/guayaquil-city-vs-manta-fc-20-07-2026-0445/?blv=552832",
+          "blv": "LOGAN",
+          "blv_id": "552832"
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/guayaquil-city-vs-manta-fc-20-07-2026-0445/?blv=372746",
+          "blv": "YONE",
+          "blv_id": "372746"
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/guayaquil-city-vs-manta-fc-20-07-2026-0445",
+          "blv": "XEM NGAY",
+          "blv_id": ""
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/guayaquil-city-vs-manta-fc-20-07-2026-0445/",
+          "blv": "",
+          "blv_id": ""
+        }
+      ],
+      "streams": [
+        {
+          "url": "https://pull.niur.live/live/stream-534055_lhd.m3u8?txSecret=a08ea6d59bbe33bdf51e64d54ae3ff0c&txTime=6a5cc3be",
+          "room_url": "https://socolivep.cv/truc-tiep/guayaquil-city-vs-manta-fc-20-07-2026-0445/?blv=534055",
+          "blv": "RAMBO",
+          "blv_id": "534055",
+          "source_id": "534055",
+          "source_provenance": [
+            "cdp/request",
+            "cdp/response",
+            "embedded/frame-html",
+            "request/image",
+            "request/xhr",
+            "response/403"
+          ],
+          "source_confidence": "network",
+          "mapping_mode": "exact-room-id",
+          "discovered_from_room_url": "https://socolivep.cv/truc-tiep/guayaquil-city-vs-manta-fc-20-07-2026-0445?blv=534055",
+          "discovered_from_blv": "RAMBO"
+        }
+      ],
+      "coverage": {
+        "found_streams": 1,
+        "found_blv_ids": [
+          "534055"
+        ],
+        "goal": 3,
+        "source_goal_reached": false,
+        "room_queue_complete": false,
+        "complete": false,
+        "total_explicit_blv_rooms": 6,
+        "pending_room_keys": [
+          "534055",
+          "552832",
+          "372746",
+          "534055",
+          "552832",
+          "372746"
+        ],
+        "room_progress": {
+          "534055": {
+            "key": "534055",
+            "url": "https://socolivep.cv/truc-tiep/guayaquil-city-vs-manta-fc-20-07-2026-0445/?blv=534055",
+            "blv": "RAMBO",
+            "blv_id": "534055",
+            "status": "pending",
+            "attempts": 1,
+            "rate_limit_hits": 0,
+            "last_http_status": 200,
+            "last_stream_count": 1,
+            "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
+          },
+          "552832": {
+            "key": "552832",
+            "url": "https://socolivep.cv/truc-tiep/guayaquil-city-vs-manta-fc-20-07-2026-0445/?blv=552832",
+            "blv": "LOGAN",
+            "blv_id": "552832",
+            "status": "pending",
+            "attempts": 0,
+            "rate_limit_hits": 0,
+            "last_http_status": null,
+            "last_stream_count": 0,
+            "last_error": ""
+          },
+          "372746": {
+            "key": "372746",
+            "url": "https://socolivep.cv/truc-tiep/guayaquil-city-vs-manta-fc-20-07-2026-0445/?blv=372746",
+            "blv": "YONE",
+            "blv_id": "372746",
+            "status": "pending",
+            "attempts": 0,
+            "rate_limit_hits": 0,
+            "last_http_status": null,
+            "last_stream_count": 0,
+            "last_error": ""
+          },
+          "__base__": {
+            "key": "__base__",
+            "url": "https://socolivep.cv/truc-tiep/guayaquil-city-vs-manta-fc-20-07-2026-0445/",
+            "blv": "",
+            "blv_id": "",
+            "status": "pending",
+            "attempts": 0,
+            "rate_limit_hits": 0,
+            "last_http_status": null,
+            "last_stream_count": 0,
+            "last_error": ""
+          }
+        }
+      },
+      "attempted_room_ids": [
+        "534055"
+      ],
+      "room_progress": {
+        "534055": {
+          "key": "534055",
+          "url": "https://socolivep.cv/truc-tiep/guayaquil-city-vs-manta-fc-20-07-2026-0445/?blv=534055",
+          "blv": "RAMBO",
+          "blv_id": "534055",
+          "status": "pending",
+          "attempts": 1,
+          "rate_limit_hits": 0,
+          "last_http_status": 200,
+          "last_stream_count": 1,
+          "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
+        },
+        "552832": {
+          "key": "552832",
+          "url": "https://socolivep.cv/truc-tiep/guayaquil-city-vs-manta-fc-20-07-2026-0445/?blv=552832",
+          "blv": "LOGAN",
+          "blv_id": "552832",
+          "status": "pending",
+          "attempts": 0,
+          "rate_limit_hits": 0,
+          "last_http_status": null,
+          "last_stream_count": 0,
+          "last_error": ""
+        },
+        "372746": {
+          "key": "372746",
+          "url": "https://socolivep.cv/truc-tiep/guayaquil-city-vs-manta-fc-20-07-2026-0445/?blv=372746",
+          "blv": "YONE",
+          "blv_id": "372746",
+          "status": "pending",
+          "attempts": 0,
+          "rate_limit_hits": 0,
+          "last_http_status": null,
+          "last_stream_count": 0,
+          "last_error": ""
+        },
+        "__base__": {
+          "key": "__base__",
+          "url": "https://socolivep.cv/truc-tiep/guayaquil-city-vs-manta-fc-20-07-2026-0445/",
+          "blv": "",
+          "blv_id": "",
+          "status": "pending",
+          "attempts": 0,
+          "rate_limit_hits": 0,
+          "last_http_status": null,
+          "last_stream_count": 0,
+          "last_error": ""
+        }
+      },
+      "pending_room_keys": [
+        "534055",
+        "552832",
+        "372746",
+        "534055",
+        "552832",
+        "372746"
       ]
     },
     {
@@ -382,21 +432,6 @@
           "blv_id": "472241"
         },
         {
-          "url": "https://socolivep.cv/truc-tiep/sporting-kansas-city-reserves-vs-minnesota-united-b-20-07-2026-0700/?blv=560690",
-          "blv": "KÉP",
-          "blv_id": "560690"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/sporting-kansas-city-reserves-vs-minnesota-united-b-20-07-2026-0700/?blv=598119",
-          "blv": "A TINH",
-          "blv_id": "598119"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/sporting-kansas-city-reserves-vs-minnesota-united-b-20-07-2026-0700/?blv=472241",
-          "blv": "XO",
-          "blv_id": "472241"
-        },
-        {
           "url": "https://socolivep.cv/truc-tiep/sporting-kansas-city-reserves-vs-minnesota-united-b-20-07-2026-0700",
           "blv": "XEM NGAY",
           "blv_id": ""
@@ -407,37 +442,16 @@
           "blv_id": ""
         }
       ],
-      "streams": [
-        {
-          "url": "https://pull.niues.live/live/stream-560690_lhd.m3u8?auth_key=1784467959-0-0-6a3c3ec087deadb49303101de10988ca",
-          "room_url": "https://socolivep.cv/truc-tiep/sporting-kansas-city-reserves-vs-minnesota-united-b-20-07-2026-0700?blv=560690",
-          "blv": "KÉP",
-          "blv_id": "560690",
-          "discovered_from_room_url": "https://socolivep.cv/truc-tiep/sporting-kansas-city-reserves-vs-minnesota-united-b-20-07-2026-0700?blv=560690"
-        },
-        {
-          "url": "https://pull.niur.live/live/stream-598119_lhd.m3u8?txSecret=ca49ed49ff4527e0cca504947a1fb43f&txTime=6a5d6169",
-          "room_url": "https://socolivep.cv/truc-tiep/sporting-kansas-city-reserves-vs-minnesota-united-b-20-07-2026-0700?blv=598119",
-          "blv": "A TINH",
-          "blv_id": "598119",
-          "discovered_from_room_url": "https://socolivep.cv/truc-tiep/sporting-kansas-city-reserves-vs-minnesota-united-b-20-07-2026-0700?blv=598119"
-        }
-      ],
+      "streams": [],
       "coverage": {
-        "found_streams": 2,
-        "found_blv_ids": [
-          "560690",
-          "598119"
-        ],
+        "found_streams": 0,
+        "found_blv_ids": [],
         "goal": 3,
         "source_goal_reached": false,
         "room_queue_complete": false,
         "complete": false,
-        "total_explicit_blv_rooms": 6,
+        "total_explicit_blv_rooms": 3,
         "pending_room_keys": [
-          "560690",
-          "598119",
-          "472241",
           "560690",
           "598119",
           "472241"
@@ -445,19 +459,19 @@
         "room_progress": {
           "560690": {
             "key": "560690",
-            "url": "https://socolivep.cv/truc-tiep/sporting-kansas-city-reserves-vs-minnesota-united-b-20-07-2026-0700/?blv=560690",
+            "url": "https://socolivep.cv/truc-tiep/sporting-kansas-city-reserves-vs-minnesota-united-b-20-07-2026-0700?blv=560690",
             "blv": "KÉP",
             "blv_id": "560690",
             "status": "rate_limited",
-            "attempts": 2,
+            "attempts": 0,
             "rate_limit_hits": 1,
-            "last_http_status": 200,
-            "last_stream_count": 1,
-            "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
+            "last_http_status": 429,
+            "last_stream_count": 0,
+            "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
           },
           "598119": {
             "key": "598119",
-            "url": "https://socolivep.cv/truc-tiep/sporting-kansas-city-reserves-vs-minnesota-united-b-20-07-2026-0700/?blv=598119",
+            "url": "https://socolivep.cv/truc-tiep/sporting-kansas-city-reserves-vs-minnesota-united-b-20-07-2026-0700?blv=598119",
             "blv": "A TINH",
             "blv_id": "598119",
             "status": "pending",
@@ -469,7 +483,7 @@
           },
           "472241": {
             "key": "472241",
-            "url": "https://socolivep.cv/truc-tiep/sporting-kansas-city-reserves-vs-minnesota-united-b-20-07-2026-0700/?blv=472241",
+            "url": "https://socolivep.cv/truc-tiep/sporting-kansas-city-reserves-vs-minnesota-united-b-20-07-2026-0700?blv=472241",
             "blv": "XO",
             "blv_id": "472241",
             "status": "pending",
@@ -493,25 +507,23 @@
           }
         }
       },
-      "attempted_room_ids": [
-        "560690"
-      ],
+      "attempted_room_ids": [],
       "room_progress": {
         "560690": {
           "key": "560690",
-          "url": "https://socolivep.cv/truc-tiep/sporting-kansas-city-reserves-vs-minnesota-united-b-20-07-2026-0700/?blv=560690",
+          "url": "https://socolivep.cv/truc-tiep/sporting-kansas-city-reserves-vs-minnesota-united-b-20-07-2026-0700?blv=560690",
           "blv": "KÉP",
           "blv_id": "560690",
           "status": "rate_limited",
-          "attempts": 2,
+          "attempts": 0,
           "rate_limit_hits": 1,
-          "last_http_status": 200,
-          "last_stream_count": 1,
-          "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
+          "last_http_status": 429,
+          "last_stream_count": 0,
+          "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
         },
         "598119": {
           "key": "598119",
-          "url": "https://socolivep.cv/truc-tiep/sporting-kansas-city-reserves-vs-minnesota-united-b-20-07-2026-0700/?blv=598119",
+          "url": "https://socolivep.cv/truc-tiep/sporting-kansas-city-reserves-vs-minnesota-united-b-20-07-2026-0700?blv=598119",
           "blv": "A TINH",
           "blv_id": "598119",
           "status": "pending",
@@ -523,7 +535,7 @@
         },
         "472241": {
           "key": "472241",
-          "url": "https://socolivep.cv/truc-tiep/sporting-kansas-city-reserves-vs-minnesota-united-b-20-07-2026-0700/?blv=472241",
+          "url": "https://socolivep.cv/truc-tiep/sporting-kansas-city-reserves-vs-minnesota-united-b-20-07-2026-0700?blv=472241",
           "blv": "XO",
           "blv_id": "472241",
           "status": "pending",
@@ -547,9 +559,6 @@
         }
       },
       "pending_room_keys": [
-        "560690",
-        "598119",
-        "472241",
         "560690",
         "598119",
         "472241"
@@ -576,21 +585,6 @@
           "blv_id": "607400"
         },
         {
-          "url": "https://socolivep.cv/truc-tiep/alianza-lima-vs-sport-huancayo-20-07-2026-0700/?blv=534055",
-          "blv": "RAMBO",
-          "blv_id": "534055"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/alianza-lima-vs-sport-huancayo-20-07-2026-0700/?blv=235232",
-          "blv": "A PÁO",
-          "blv_id": "235232"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/alianza-lima-vs-sport-huancayo-20-07-2026-0700/?blv=607400",
-          "blv": "HÀ DUY KIÊN",
-          "blv_id": "607400"
-        },
-        {
           "url": "https://socolivep.cv/truc-tiep/alianza-lima-vs-sport-huancayo-20-07-2026-0700",
           "blv": "XEM NGAY",
           "blv_id": ""
@@ -601,37 +595,16 @@
           "blv_id": ""
         }
       ],
-      "streams": [
-        {
-          "url": "https://pull.niur.live/live/stream-534055_lhd.m3u8?txSecret=a08ea6d59bbe33bdf51e64d54ae3ff0c&txTime=6a5cc3be",
-          "room_url": "https://socolivep.cv/truc-tiep/alianza-lima-vs-sport-huancayo-20-07-2026-0700?blv=534055",
-          "blv": "RAMBO",
-          "blv_id": "534055",
-          "discovered_from_room_url": "https://socolivep.cv/truc-tiep/alianza-lima-vs-sport-huancayo-20-07-2026-0700?blv=534055"
-        },
-        {
-          "url": "https://pull.niues.live/live/stream-235232_lhd.m3u8?auth_key=1784480060-0-0-8b72a1f427740ac277901ac5bba1d57f",
-          "room_url": "https://socolivep.cv/truc-tiep/alianza-lima-vs-sport-huancayo-20-07-2026-0700?blv=235232",
-          "blv": "A PÁO",
-          "blv_id": "235232",
-          "discovered_from_room_url": "https://socolivep.cv/truc-tiep/alianza-lima-vs-sport-huancayo-20-07-2026-0700"
-        }
-      ],
+      "streams": [],
       "coverage": {
-        "found_streams": 2,
-        "found_blv_ids": [
-          "235232",
-          "534055"
-        ],
+        "found_streams": 0,
+        "found_blv_ids": [],
         "goal": 3,
         "source_goal_reached": false,
         "room_queue_complete": false,
         "complete": false,
-        "total_explicit_blv_rooms": 6,
+        "total_explicit_blv_rooms": 3,
         "pending_room_keys": [
-          "534055",
-          "235232",
-          "607400",
           "534055",
           "235232",
           "607400"
@@ -639,19 +612,19 @@
         "room_progress": {
           "534055": {
             "key": "534055",
-            "url": "https://socolivep.cv/truc-tiep/alianza-lima-vs-sport-huancayo-20-07-2026-0700/?blv=534055",
+            "url": "https://socolivep.cv/truc-tiep/alianza-lima-vs-sport-huancayo-20-07-2026-0700?blv=534055",
             "blv": "RAMBO",
             "blv_id": "534055",
             "status": "rate_limited",
-            "attempts": 2,
+            "attempts": 0,
             "rate_limit_hits": 1,
-            "last_http_status": 200,
-            "last_stream_count": 1,
-            "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
+            "last_http_status": 429,
+            "last_stream_count": 0,
+            "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
           },
           "235232": {
             "key": "235232",
-            "url": "https://socolivep.cv/truc-tiep/alianza-lima-vs-sport-huancayo-20-07-2026-0700/?blv=235232",
+            "url": "https://socolivep.cv/truc-tiep/alianza-lima-vs-sport-huancayo-20-07-2026-0700?blv=235232",
             "blv": "A PÁO",
             "blv_id": "235232",
             "status": "pending",
@@ -663,7 +636,7 @@
           },
           "607400": {
             "key": "607400",
-            "url": "https://socolivep.cv/truc-tiep/alianza-lima-vs-sport-huancayo-20-07-2026-0700/?blv=607400",
+            "url": "https://socolivep.cv/truc-tiep/alianza-lima-vs-sport-huancayo-20-07-2026-0700?blv=607400",
             "blv": "HÀ DUY KIÊN",
             "blv_id": "607400",
             "status": "pending",
@@ -687,25 +660,23 @@
           }
         }
       },
-      "attempted_room_ids": [
-        "534055"
-      ],
+      "attempted_room_ids": [],
       "room_progress": {
         "534055": {
           "key": "534055",
-          "url": "https://socolivep.cv/truc-tiep/alianza-lima-vs-sport-huancayo-20-07-2026-0700/?blv=534055",
+          "url": "https://socolivep.cv/truc-tiep/alianza-lima-vs-sport-huancayo-20-07-2026-0700?blv=534055",
           "blv": "RAMBO",
           "blv_id": "534055",
           "status": "rate_limited",
-          "attempts": 2,
+          "attempts": 0,
           "rate_limit_hits": 1,
-          "last_http_status": 200,
-          "last_stream_count": 1,
-          "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
+          "last_http_status": 429,
+          "last_stream_count": 0,
+          "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
         },
         "235232": {
           "key": "235232",
-          "url": "https://socolivep.cv/truc-tiep/alianza-lima-vs-sport-huancayo-20-07-2026-0700/?blv=235232",
+          "url": "https://socolivep.cv/truc-tiep/alianza-lima-vs-sport-huancayo-20-07-2026-0700?blv=235232",
           "blv": "A PÁO",
           "blv_id": "235232",
           "status": "pending",
@@ -717,7 +688,7 @@
         },
         "607400": {
           "key": "607400",
-          "url": "https://socolivep.cv/truc-tiep/alianza-lima-vs-sport-huancayo-20-07-2026-0700/?blv=607400",
+          "url": "https://socolivep.cv/truc-tiep/alianza-lima-vs-sport-huancayo-20-07-2026-0700?blv=607400",
           "blv": "HÀ DUY KIÊN",
           "blv_id": "607400",
           "status": "pending",
@@ -741,9 +712,6 @@
         }
       },
       "pending_room_keys": [
-        "534055",
-        "235232",
-        "607400",
         "534055",
         "235232",
         "607400"
