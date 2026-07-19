@@ -1,10 +1,12 @@
 {
-  "generated_at": "2026-07-20T02:16:59.496133+07:00",
+  "generated_at": "2026-07-20T03:15:56.921526+07:00",
   "configuration": {
     "match_concurrency": 4,
     "room_wait_seconds": 7.0,
-    "max_rooms_per_match": 1,
-    "max_successful_rooms_per_match": 1,
+    "max_rooms_per_match_per_run": 3,
+    "max_streams_per_match": 10,
+    "embedded_harvest_wait_seconds": 1.4,
+    "max_successful_rooms_per_match": 10,
     "http_first": false,
     "http_fetch_timeout_seconds": 5.0,
     "enable_cdp": true,
@@ -13,268 +15,11 @@
     "state_max_age_minutes": 20,
     "state_max_chain_runs": 12,
     "state_max_no_progress_runs": 2,
-    "scan_before_minutes": 300,
-    "scan_after_minutes": 90,
+    "scan_before_minutes": 90,
+    "scan_after_minutes": 240,
     "scan_all": false
   },
   "matches": [
-    {
-      "base_url": "https://socolivep.cv/truc-tiep/petrolul-ploiesti-vs-fc-dinamo-1948-19-07-2026-2330/",
-      "raw_title": "Trực tiếp bóng đá Socolive Petrolul Ploiesti vs FC Dinamo 1948 lúc 23:30 ngày 19/07/2026",
-      "home_team": "Petrolul Ploiesti",
-      "away_team": "FC Dinamo 1948",
-      "home_logo": "https://sta.vnres.co/file/common/20260715/4b33f85c63f623be7b3b7d045ae09179.png",
-      "away_logo": "https://sta.vnres.co/file/common/20260715/ac8e537ff9bfdf6456ab03517a07aa34.png",
-      "time_text": "23:30",
-      "date_text": "19/07",
-      "status": "",
-      "card_text": "ROM D1 23:30 19/07 Petrolul Ploiesti VS XEM NGAY FC Dinamo 1948 PEWPEW A WIN ALEX TOMIA HẢI THANH FIREMAN",
-      "rooms": [
-        {
-          "url": "https://socolivep.cv/truc-tiep/petrolul-ploiesti-vs-fc-dinamo-1948-19-07-2026-2330?blv=109053",
-          "blv": "PEWPEW",
-          "blv_id": "109053"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/petrolul-ploiesti-vs-fc-dinamo-1948-19-07-2026-2330?blv=536185",
-          "blv": "A WIN",
-          "blv_id": "536185"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/petrolul-ploiesti-vs-fc-dinamo-1948-19-07-2026-2330?blv=532081",
-          "blv": "ALEX",
-          "blv_id": "532081"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/petrolul-ploiesti-vs-fc-dinamo-1948-19-07-2026-2330?blv=187579",
-          "blv": "TOMIA",
-          "blv_id": "187579"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/petrolul-ploiesti-vs-fc-dinamo-1948-19-07-2026-2330?blv=599634",
-          "blv": "HẢI THANH",
-          "blv_id": "599634"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/petrolul-ploiesti-vs-fc-dinamo-1948-19-07-2026-2330?blv=250874",
-          "blv": "FIREMAN",
-          "blv_id": "250874"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/petrolul-ploiesti-vs-fc-dinamo-1948-19-07-2026-2330",
-          "blv": "XEM NGAY",
-          "blv_id": ""
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/petrolul-ploiesti-vs-fc-dinamo-1948-19-07-2026-2330/",
-          "blv": "",
-          "blv_id": ""
-        }
-      ],
-      "match_name": "Petrolul Ploiesti vs FC Dinamo 1948",
-      "scheduled_at": "2026-07-19T23:30:00+07:00",
-      "streams": [
-        {
-          "url": "https://pull.niues.live/live/stream-9912015_lhd.m3u8?auth_key=1784489291-0-0-2009ea81897d27b91d24b82aec592262",
-          "room_url": "https://socolivep.cv/truc-tiep/petrolul-ploiesti-vs-fc-dinamo-1948-19-07-2026-2330?blv=109053",
-          "blv": "PEWPEW",
-          "blv_id": "109053"
-        }
-      ],
-      "room_results": [
-        {
-          "url": "https://socolivep.cv/truc-tiep/petrolul-ploiesti-vs-fc-dinamo-1948-19-07-2026-2330?blv=109053",
-          "blv": "PEWPEW",
-          "blv_id": "109053",
-          "streams": [
-            "https://pull.niues.live/live/stream-9912015_lhd.m3u8?auth_key=1784489291-0-0-2009ea81897d27b91d24b82aec592262"
-          ],
-          "diagnostics": {
-            "url": "https://socolivep.cv/truc-tiep/petrolul-ploiesti-vs-fc-dinamo-1948-19-07-2026-2330/?blv=109053",
-            "title": "Xem trực tiếp bóng đá Petrolul Ploiesti vs FC Dinamo 1948 | 23:30 ngày 19/07/2026",
-            "h1": "Trực tiếp bóng đá Socolive Petrolul Ploiesti vs FC Dinamo 1948 lúc 23:30 ngày 19/07/2026",
-            "ready_state": "complete",
-            "visibility_state": "visible",
-            "hidden": false,
-            "video_count": 1,
-            "iframe_count": 0,
-            "body_sample": "Skip to content Socolive Bảng xếp hạng Lịch thi đấu Kết quả bóng đá Tin thể thao Trực tiếp bóng đá Socolive Petrolul Ploiesti vs FC Dinamo 1948 lúc 23:30 ngày 19/07/2026 ROM D1 Petrolul Ploiesti 23:30 19/07 FC Dinamo 1948 Volume 0% Phát 00:00 00:00 Tải App Bufa PEWPEW A WIN ALEX TOMIA HẢI THANH FIREMAN Chat Thống kê Đội hình Diễn Biến Bảng XH \" \" Tin nhắn riêng Vô hiệu hóa tất cả Vô hiệu hóa quà tặng Tắt lời chào Đăng nhập để cùng chat nhé Gửi Tỷ lệ kèo Cược Châu Á Chủ Chấp Khách Cược Châu Âu Chủ Hòa Khách Tài xỉu Tài Tỷ lệ kèo Xỉu Kèo góc Tài Tỷ lệ kèo Xỉu Mô phỏng trận đấu Thống kê trận đấu WORLD CUP 02:00 20/07 Spain VS null null null - null Sắp diễn ra Xem ngay Argentina ĐỐM Củ Cải TẠ BIÊN GIỚI TOMMY TAP DECO RICKHANTER COCA HẢI THANH CUỘI CR Bưởi MESSI SER SL 00:00 20/07 FK Čukarički VS null null null - null Sắp diễn ra Xem ngay FK IMT Belgrad ANH TÀI BEN 10 HÀ DUY KIÊN A TÚ SER SL 00:00 20/07 Radnik Surdulica VS null null null - null Sắp diễn ra Xem ngay Mladost Lucani VOI BÒ TƯƠI CÁP SER SL 00:00 20/07 Vojvodina Novi Sad VS null null null - null Sắp diễn ra Xem ngay OFK Beograd VIP QUỐC KHÁNH NOVA RYO BUL D1 23:30 19/07 Botev Vratsa VS null null null - null Sắp diễn ra Xem n",
-            "scan_mode": "browser-event",
-            "elapsed_seconds": 2.248
-          },
-          "http_probe": {
-            "enabled": false,
-            "status": null,
-            "elapsed_seconds": 0.0,
-            "error": ""
-          },
-          "errors": [
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED"
-          ],
-          "failed_requests": [
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/main.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/customize.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/auth.css?ver=966 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat.css?ver=797 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat(1).css?ver=316 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/toast.css?ver=45 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/themes/flatsome/assets/css/flatsome.css?ver=3.18.2 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/themes/flatsome-child/style.css?ver=3.0 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/countdown.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/match.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/livescore.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/style_custom.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/effect/running-border.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/option/option-6.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/highlight/option-1.css?ver=2.8.5 | net::ERR_FAILED"
-          ],
-          "http_errors": [
-            "403 https://socolivep.cv/wp-admin/admin-ajax.php?action=scl_realtime&sport=1"
-          ]
-        }
-      ],
-      "errors": []
-    },
-    {
-      "base_url": "https://socolivep.cv/truc-tiep/botev-vratsa-vs-cherno-more-varna-19-07-2026-2330/",
-      "raw_title": "Trực tiếp bóng đá Socolive Botev Vratsa vs Cherno More Varna lúc 23:30 ngày 19/07/2026",
-      "home_team": "Botev Vratsa",
-      "away_team": "Cherno More Varna",
-      "home_logo": "https://sta.vnres.co/file/common/20260715/91de6345fda17522e84a71593194eb02.png",
-      "away_logo": "https://sta.vnres.co/file/common/20260715/b7f4af9780225cac72f75f65b5496a7d.png",
-      "time_text": "23:30",
-      "date_text": "19/07",
-      "status": "",
-      "card_text": "BUL D1 23:30 19/07 Botev Vratsa VS XEM NGAY Cherno More Varna ĐỖ TÚ TÀI GRAP LONG",
-      "rooms": [
-        {
-          "url": "https://socolivep.cv/truc-tiep/botev-vratsa-vs-cherno-more-varna-19-07-2026-2330?blv=607552",
-          "blv": "ĐỖ TÚ TÀI",
-          "blv_id": "607552"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/botev-vratsa-vs-cherno-more-varna-19-07-2026-2330?blv=622093",
-          "blv": "GRAP",
-          "blv_id": "622093"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/botev-vratsa-vs-cherno-more-varna-19-07-2026-2330?blv=132343",
-          "blv": "LONG",
-          "blv_id": "132343"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/botev-vratsa-vs-cherno-more-varna-19-07-2026-2330",
-          "blv": "XEM NGAY",
-          "blv_id": ""
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/botev-vratsa-vs-cherno-more-varna-19-07-2026-2330/",
-          "blv": "",
-          "blv_id": ""
-        }
-      ],
-      "match_name": "Botev Vratsa vs Cherno More Varna",
-      "scheduled_at": "2026-07-19T23:30:00+07:00",
-      "streams": [
-        {
-          "url": "https://pull.niues.live/live/stream-607552_lhd.m3u8?auth_key=1784489100-0-0-1f6f4973935b4a1bf6f02354aed78ba2",
-          "room_url": "https://socolivep.cv/truc-tiep/botev-vratsa-vs-cherno-more-varna-19-07-2026-2330?blv=607552",
-          "blv": "ĐỖ TÚ TÀI",
-          "blv_id": "607552"
-        }
-      ],
-      "room_results": [
-        {
-          "url": "https://socolivep.cv/truc-tiep/botev-vratsa-vs-cherno-more-varna-19-07-2026-2330?blv=607552",
-          "blv": "ĐỖ TÚ TÀI",
-          "blv_id": "607552",
-          "streams": [
-            "https://pull.niues.live/live/stream-607552_lhd.m3u8?auth_key=1784489100-0-0-1f6f4973935b4a1bf6f02354aed78ba2"
-          ],
-          "diagnostics": {
-            "url": "https://socolivep.cv/truc-tiep/botev-vratsa-vs-cherno-more-varna-19-07-2026-2330/?blv=607552",
-            "title": "Xem trực tiếp bóng đá Botev Vratsa vs Cherno More Varna | 23:30 ngày 19/07/2026",
-            "h1": "Trực tiếp bóng đá Socolive Botev Vratsa vs Cherno More Varna lúc 23:30 ngày 19/07/2026",
-            "ready_state": "complete",
-            "visibility_state": "visible",
-            "hidden": false,
-            "video_count": 1,
-            "iframe_count": 0,
-            "body_sample": "Skip to content Socolive Bảng xếp hạng Lịch thi đấu Kết quả bóng đá Tin thể thao Trực tiếp bóng đá Socolive Botev Vratsa vs Cherno More Varna lúc 23:30 ngày 19/07/2026 BUL D1 Botev Vratsa 23:30 19/07 Cherno More Varna Volume 0% 00:00 00:00 Tải App Bufa ĐỖ TÚ TÀI GRAP LONG Chat Thống kê Đội hình Diễn Biến Bảng XH \" \" Tin nhắn riêng Vô hiệu hóa tất cả Vô hiệu hóa quà tặng Tắt lời chào Đăng nhập để cùng chat nhé Gửi Tỷ lệ kèo Cược Châu Á Chủ Chấp Khách Cược Châu Âu Chủ Hòa Khách Tài xỉu Tài Tỷ lệ kèo Xỉu Kèo góc Tài Tỷ lệ kèo Xỉu Mô phỏng trận đấu Thống kê trận đấu WORLD CUP 02:00 20/07 Spain VS null null null - null Sắp diễn ra Xem ngay Argentina ĐỐM Củ Cải TẠ BIÊN GIỚI TOMMY TAP DECO RICKHANTER COCA HẢI THANH CUỘI CR Bưởi MESSI SER SL 00:00 20/07 FK Čukarički VS null null null - null Sắp diễn ra Xem ngay FK IMT Belgrad ANH TÀI BEN 10 HÀ DUY KIÊN A TÚ SER SL 00:00 20/07 Radnik Surdulica VS null null null - null Sắp diễn ra Xem ngay Mladost Lucani VOI BÒ TƯƠI CÁP SER SL 00:00 20/07 Vojvodina Novi Sad VS null null null - null Sắp diễn ra Xem ngay OFK Beograd VIP QUỐC KHÁNH NOVA RYO ROM D1 23:30 19/07 Petrolul Ploiesti VS null null null - null Sắp diễn ra Xem ngay FC Dinamo 1948 PEWPEW ",
-            "scan_mode": "browser-event",
-            "elapsed_seconds": 2.354
-          },
-          "http_probe": {
-            "enabled": false,
-            "status": null,
-            "elapsed_seconds": 0.0,
-            "error": ""
-          },
-          "errors": [
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED"
-          ],
-          "failed_requests": [
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/main.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/customize.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/auth.css?ver=583 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat.css?ver=764 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat(1).css?ver=40 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/toast.css?ver=177 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/themes/flatsome/assets/css/flatsome.css?ver=3.18.2 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/themes/flatsome-child/style.css?ver=3.0 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/countdown.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/match.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/livescore.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/style_custom.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/effect/running-border.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/option/option-6.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/highlight/option-1.css?ver=2.8.5 | net::ERR_FAILED"
-          ],
-          "http_errors": [
-            "403 https://socolivep.cv/wp-admin/admin-ajax.php?action=scl_realtime&sport=1"
-          ]
-        }
-      ],
-      "errors": []
-    },
     {
       "base_url": "https://socolivep.cv/truc-tiep/spain-vs-argentina-20-07-2026-0200/",
       "raw_title": "Trực tiếp bóng đá Socolive Spain vs Argentina lúc 02:00 ngày 20/07/2026",
@@ -360,14 +105,7 @@
       ],
       "match_name": "Spain vs Argentina",
       "scheduled_at": "2026-07-20T02:00:00+07:00",
-      "streams": [
-        {
-          "url": "https://pull.niues.live/live/stream-9912110_lhd.m3u8?auth_key=1784490565-0-0-1e972eac120cbd095522c8fa3f61c4db",
-          "room_url": "https://socolivep.cv/truc-tiep/spain-vs-argentina-20-07-2026-0200?blv=434982",
-          "blv": "ĐỐM",
-          "blv_id": "434982"
-        }
-      ],
+      "streams": [],
       "room_results": [
         {
           "url": "https://socolivep.cv/truc-tiep/spain-vs-argentina-20-07-2026-0200?blv=434982",
@@ -375,6 +113,9 @@
           "blv_id": "434982",
           "streams": [
             "https://pull.niues.live/live/stream-9912110_lhd.m3u8?auth_key=1784490565-0-0-1e972eac120cbd095522c8fa3f61c4db"
+          ],
+          "discovered_blv_ids": [
+            "9912110"
           ],
           "diagnostics": {
             "url": "https://socolivep.cv/truc-tiep/spain-vs-argentina-20-07-2026-0200/?blv=434982",
@@ -385,9 +126,13 @@
             "hidden": false,
             "video_count": 1,
             "iframe_count": 0,
-            "body_sample": "Skip to content Socolive Bảng xếp hạng Lịch thi đấu Kết quả bóng đá Tin thể thao Trực tiếp bóng đá Socolive Spain vs Argentina lúc 02:00 ngày 20/07/2026 WORLD CUP Spain 02:00 20/07 Argentina Volume 0% Phát 00:00 00:00 Tải App Bufa ĐỐM Củ Cải TẠ BIÊN GIỚI TOMMY TAP DECO RICKHANTER COCA HẢI THANH CUỘI CR Bưởi MESSI Chat Thống kê Đội hình Diễn Biến Bảng XH \" \" Onizuka Bở Tơi: thg *** sút hiền vl Admin Sóc Lộn Kèo: NHÀ CÁI BSPORT/♈️️️VSPORT ƯU ĐÃI NẠP 1&2 AN TOÀN – UY TÍN FB: https://m.me/vty30net CODE BUFA: FXYDZE TELE: https://t.me/socbode8686 LINK ĐĂNG KÝ: https://bty9287.com Zalo: 0566 040 802 dongpv212: thủ môn tây ra vào hợp lý quá Kèo lên là big: cụ nghỉ thì alo e nha Sangdaigia20: hứa nha cụ [BỞ TƠI] - THỊNH MU: có off cũng làm nồi lẩu nhé cụ he he siuewy: cụ nghỉ hẳn là e nghỉ bet đấy kkk Gấpđôilàthua9: a Admin Sóc Lộn Kèo: Gấpđôilàthua9 Em chào anh !! Anh đã có tài khoản Vsport và Bsport để vào nhóm chiến kèo cũng các BLV tổ 4 chưa ạ !! Vanchien bở tơi: tây nó đá trung lộ rồi Mân đàn bở tơi: vc kh lỗi thế à Onizuka Bở Tơi: bỏ torres ra là hoàn hảo đọ = Admin Sóc Lộn Kèo: NHÀ CÁI BSPORT/♈️️️VSPORT ƯU ĐÃI NẠP 1&2 AN TOÀN – UY TÍN FB: https://m.me/vty30net CODE BUFA: FXYDZE TELE",
+            "body_sample": "Skip to content Socolive Bảng xếp hạng Lịch thi đấu Kết quả bóng đá Tin thể thao Trực tiếp bóng đá Socolive Spain vs Argentina lúc 02:00 ngày 20/07/2026 WORLD CUP Spain 02:00 20/07 Argentina 00:00 of 00:00Volume 10% Phát TRỰC TIẾP Tải App Bufa ĐỐM Củ Cải TẠ BIÊN GIỚI TOMMY TAP DECO RICKHANTER COCA HẢI THANH CUỘI CR Bưởi MESSI Chat Thống kê Đội hình Diễn Biến Bảng XH \" \" Admin Sóc Lộn Kèo: TELE: https://t.me/socbode8686 LINK MỞ TÀI KHOẢN: BSPORT: https://www.bty9287.com KHUYẾN MÃI 2 LẦN NẠP ĐẦU LÊN ĐẾN 1800K - DOANH THU TUẦN 1350K - DOANH THU THÁNG 3000K - PHƠI ĐƠN CƯỢC 98K/ NGÀY - KM ĐIỂM DANH 1116K - BẢO HIỂM HOÀN CƯỢC LÊN ĐẾN 5000K - KM GIỚI THIỆU BẠN BÈ 300K Tuzzy: cucurela với rodri năm nay đá hay quá Phanvanana212: wanbay Phanvanana212: cầu thủ bóng rổ Bongok87: xem đa chan vkl Linh Đình: wabay sang cổ vũ tbn🤣 TSĐN Tổng Cục 2: 😃 Bình Luận Viên BLV ĐỐM: dombay Linh Đình: dombay thì khê cá cá bở tơi: th wanbay bóng rỗ thì đel ném cá cá bở tơi: bóng đá cc Tân Bở Tơi: rung 15p đầu h2 rồi Đớp1: tbn mà k đâm sớm chắc chỉ tbn kiếm chỉ số Admin Sóc Lộn Kèo: NHÀ CÁI BSPORT/♈️️️VSPORT ƯU ĐÃI NẠP 1&2 AN TOÀN – UY TÍN FB: https://m.me/vty30net CODE BUFA: FXYDZE TELE: https://t.me/socbod",
+            "harvested_stream_count": 1,
+            "harvested_blv_ids": [
+              "9912110"
+            ],
             "scan_mode": "browser-event",
-            "elapsed_seconds": 3.927
+            "elapsed_seconds": 4.059
           },
           "http_probe": {
             "enabled": false,
@@ -439,379 +184,514 @@
           ]
         }
       ],
+      "attempted_room_ids": [
+        "434982"
+      ],
+      "coverage": {
+        "found_streams": 0,
+        "found_blv_ids": [],
+        "goal": 10,
+        "complete": false,
+        "attempted_room_ids": [
+          "434982"
+        ]
+      },
       "errors": []
     },
     {
-      "base_url": "https://socolivep.cv/truc-tiep/fk-cukaricki-vs-fk-imt-belgrad-20-07-2026-0000/",
-      "raw_title": "Trực tiếp bóng đá Socolive FK Čukarički vs FK IMT Belgrad lúc 00:00 ngày 20/07/2026",
-      "home_team": "FK Čukarički",
-      "away_team": "FK IMT Belgrad",
-      "home_logo": "https://sta.vnres.co/file/common/20260717/85d4ed8270af6416333d06a7e7c87637.png",
-      "away_logo": "https://sta.vnres.co/file/common/20260717/6d2e8e6d9e55e22623638bed4f3befef.png",
-      "time_text": "00:00",
+      "base_url": "https://socolivep.cv/truc-tiep/guayaquil-city-vs-manta-fc-20-07-2026-0445/",
+      "raw_title": "Trực tiếp bóng đá Socolive Guayaquil City vs Manta FC lúc 04:45 ngày 20/07/2026",
+      "home_team": "Guayaquil City",
+      "away_team": "Manta FC",
+      "home_logo": "https://sta.vnres.co/file/common/20260717/c3fc0246a16ad9f8be842133e0170ea5.png",
+      "away_logo": "https://sta.vnres.co/file/common/20260717/4bde322f4eca0672633cdad66c5c181a.png",
+      "time_text": "04:45",
       "date_text": "20/07",
       "status": "",
-      "card_text": "SER SL 00:00 20/07 FK Čukarički VS XEM NGAY FK IMT Belgrad ANH TÀI BEN 10 HÀ DUY KIÊN A TÚ",
+      "card_text": "ECU D1 04:45 20/07 Guayaquil City VS XEM NGAY Manta FC RAMBO LOGAN YONE",
       "rooms": [
         {
-          "url": "https://socolivep.cv/truc-tiep/fk-cukaricki-vs-fk-imt-belgrad-20-07-2026-0000?blv=406865",
-          "blv": "ANH TÀI",
-          "blv_id": "406865"
+          "url": "https://socolivep.cv/truc-tiep/guayaquil-city-vs-manta-fc-20-07-2026-0445?blv=534055",
+          "blv": "RAMBO",
+          "blv_id": "534055"
         },
         {
-          "url": "https://socolivep.cv/truc-tiep/fk-cukaricki-vs-fk-imt-belgrad-20-07-2026-0000?blv=612098",
-          "blv": "BEN 10",
-          "blv_id": "612098"
+          "url": "https://socolivep.cv/truc-tiep/guayaquil-city-vs-manta-fc-20-07-2026-0445?blv=552832",
+          "blv": "LOGAN",
+          "blv_id": "552832"
         },
         {
-          "url": "https://socolivep.cv/truc-tiep/fk-cukaricki-vs-fk-imt-belgrad-20-07-2026-0000?blv=607400",
+          "url": "https://socolivep.cv/truc-tiep/guayaquil-city-vs-manta-fc-20-07-2026-0445?blv=372746",
+          "blv": "YONE",
+          "blv_id": "372746"
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/guayaquil-city-vs-manta-fc-20-07-2026-0445",
+          "blv": "XEM NGAY",
+          "blv_id": ""
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/guayaquil-city-vs-manta-fc-20-07-2026-0445/",
+          "blv": "",
+          "blv_id": ""
+        }
+      ],
+      "match_name": "Guayaquil City vs Manta FC",
+      "scheduled_at": "2026-07-20T04:45:00+07:00",
+      "streams": [
+        {
+          "url": "https://pull.niur.live/live/stream-534055_lhd.m3u8?txSecret=a08ea6d59bbe33bdf51e64d54ae3ff0c&txTime=6a5cc3be",
+          "room_url": "https://socolivep.cv/truc-tiep/guayaquil-city-vs-manta-fc-20-07-2026-0445?blv=534055",
+          "blv": "RAMBO",
+          "blv_id": "534055",
+          "discovered_from_room_url": "https://socolivep.cv/truc-tiep/guayaquil-city-vs-manta-fc-20-07-2026-0445?blv=534055"
+        }
+      ],
+      "room_results": [
+        {
+          "url": "https://socolivep.cv/truc-tiep/guayaquil-city-vs-manta-fc-20-07-2026-0445?blv=534055",
+          "blv": "RAMBO",
+          "blv_id": "534055",
+          "streams": [
+            "https://pull.niur.live/live/stream-534055_lhd.m3u8?txSecret=a08ea6d59bbe33bdf51e64d54ae3ff0c&txTime=6a5cc3be"
+          ],
+          "discovered_blv_ids": [
+            "534055"
+          ],
+          "diagnostics": {
+            "url": "https://socolivep.cv/truc-tiep/guayaquil-city-vs-manta-fc-20-07-2026-0445/?blv=534055",
+            "title": "Xem trực tiếp bóng đá Guayaquil City vs Manta FC | 04:45 ngày 20/07/2026",
+            "h1": "Trực tiếp bóng đá Socolive Guayaquil City vs Manta FC lúc 04:45 ngày 20/07/2026",
+            "ready_state": "complete",
+            "visibility_state": "visible",
+            "hidden": false,
+            "video_count": 0,
+            "iframe_count": 0,
+            "body_sample": "Skip to content Socolive Bảng xếp hạng Lịch thi đấu Kết quả bóng đá Tin thể thao Trực tiếp bóng đá Socolive Guayaquil City vs Manta FC lúc 04:45 ngày 20/07/2026 ECU D1 Guayaquil City 04:45 20/07 Manta FC Trận đấu sẽ bắt đầu sau Ngày0 : Giờ1 : Phút29 : Giây3 Trận đấu chưa bắt đầu RAMBO LOGAN YONE Chat Thống kê Đội hình Diễn Biến Bảng XH \" \" Xóa Tin nhắn riêng 😀 😁 😃 😄 😅 😆 😇 😉 😊 🙂 😋 😍 😘 😗 😙 😚 😜 😝 😛 😎 🙄 😳 😡 😕 😫 😤 😨 😥 😪 😓 😵 😲 🤧 😷 🤒 🤕 😴 💤 👏 🤙 👍 👎 👊 ✊ ✌ 👌 ✋ 🤚 💪 🤝 👈 👉 🖕 🖐 👄 👂 👀 🎅 🌞 🌙 ⭐ ⚡ 🔥 ❄️ ⚽ 🏀 🏈 ⚾ 🎁 🎉 ✒️ 📝 ❤️ 💛 💚 🆚 💬 🕐 Vô hiệu hóa tất cả Vô hiệu hóa quà tặng Tắt lời chào Đăng nhập để cùng chat nhé Gửi Tỷ lệ kèo Cược Châu Á Chủ Chấp Khách Cược Châu Âu Chủ Hòa Khách Tài xỉu Tài Tỷ lệ kèo Xỉu Kèo góc Tài Tỷ lệ kèo Xỉu Mô phỏng trận đấu Thống kê trận đấu WORLD CUP 02:00 20/07 Spain VS null null null - null Sắp diễn ra Xem ngay Argentina ĐỐM Củ Cải TẠ BIÊN GIỚI TOMMY TAP DECO RICKHANTER COCA HẢI THANH CUỘI CR Bưởi MESSI USA MLSRv 05:00 20/07 Connecticut United FC VS null null null - null Sắp diễn ra Xem ngay New York Red Bulls B LUCAS CHIVAS GIÓ PER D1 07:00 20/07 Alianza Lima VS null null null - null Sắp diễn ra Xem ngay Sp",
+            "harvested_stream_count": 1,
+            "harvested_blv_ids": [
+              "534055"
+            ],
+            "scan_mode": "browser-event",
+            "elapsed_seconds": 9.803
+          },
+          "http_probe": {
+            "enabled": false,
+            "status": null,
+            "elapsed_seconds": 0.0,
+            "error": ""
+          },
+          "errors": [
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED"
+          ],
+          "failed_requests": [
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/main.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/customize.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/auth.css?ver=44 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat.css?ver=902 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat(1).css?ver=760 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/toast.css?ver=929 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/themes/flatsome/assets/css/flatsome.css?ver=3.18.2 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/themes/flatsome-child/style.css?ver=3.0 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/countdown.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/match.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/livescore.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/style_custom.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/effect/running-border.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/option/option-6.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/highlight/option-1.css?ver=2.8.5 | net::ERR_FAILED"
+          ],
+          "http_errors": [
+            "403 https://socolivep.cv/wp-admin/admin-ajax.php?action=scl_realtime&sport=1"
+          ]
+        }
+      ],
+      "attempted_room_ids": [
+        "534055"
+      ],
+      "coverage": {
+        "found_streams": 1,
+        "found_blv_ids": [
+          "534055"
+        ],
+        "goal": 3,
+        "complete": false,
+        "attempted_room_ids": [
+          "534055"
+        ]
+      },
+      "errors": []
+    },
+    {
+      "base_url": "https://socolivep.cv/truc-tiep/connecticut-united-fc-vs-new-york-red-bulls-b-20-07-2026-0500/",
+      "raw_title": "Trực tiếp bóng đá Socolive Connecticut United FC vs New York Red Bulls B lúc 05:00 ngày 20/07/2026",
+      "home_team": "Connecticut United FC",
+      "away_team": "New York Red Bulls B",
+      "home_logo": "https://sta.vnres.co/file/common/20260717/d5685e2233f775189165805a3a20c554.png",
+      "away_logo": "https://sta.vnres.co/file/common/20260717/8d76aaf46de0c4f6f491a0574d5155db.png",
+      "time_text": "05:00",
+      "date_text": "20/07",
+      "status": "",
+      "card_text": "USA MLSRv 05:00 20/07 Connecticut United FC VS XEM NGAY New York Red Bulls B LUCAS CHIVAS GIÓ",
+      "rooms": [
+        {
+          "url": "https://socolivep.cv/truc-tiep/connecticut-united-fc-vs-new-york-red-bulls-b-20-07-2026-0500?blv=304148",
+          "blv": "LUCAS",
+          "blv_id": "304148"
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/connecticut-united-fc-vs-new-york-red-bulls-b-20-07-2026-0500?blv=485739",
+          "blv": "CHIVAS",
+          "blv_id": "485739"
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/connecticut-united-fc-vs-new-york-red-bulls-b-20-07-2026-0500?blv=321443",
+          "blv": "GIÓ",
+          "blv_id": "321443"
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/connecticut-united-fc-vs-new-york-red-bulls-b-20-07-2026-0500",
+          "blv": "XEM NGAY",
+          "blv_id": ""
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/connecticut-united-fc-vs-new-york-red-bulls-b-20-07-2026-0500/",
+          "blv": "",
+          "blv_id": ""
+        }
+      ],
+      "match_name": "Connecticut United FC vs New York Red Bulls B",
+      "scheduled_at": "2026-07-20T05:00:00+07:00",
+      "streams": [
+        {
+          "url": "https://pull.niues.live/live/stream-304148_lhd.m3u8?auth_key=1784467614-0-0-cb109addb08e6a86fdd9f35b47c63053",
+          "room_url": "https://socolivep.cv/truc-tiep/connecticut-united-fc-vs-new-york-red-bulls-b-20-07-2026-0500?blv=304148",
+          "blv": "LUCAS",
+          "blv_id": "304148",
+          "discovered_from_room_url": "https://socolivep.cv/truc-tiep/connecticut-united-fc-vs-new-york-red-bulls-b-20-07-2026-0500?blv=304148"
+        }
+      ],
+      "room_results": [
+        {
+          "url": "https://socolivep.cv/truc-tiep/connecticut-united-fc-vs-new-york-red-bulls-b-20-07-2026-0500?blv=304148",
+          "blv": "LUCAS",
+          "blv_id": "304148",
+          "streams": [
+            "https://pull.niues.live/live/stream-304148_lhd.m3u8?auth_key=1784467614-0-0-cb109addb08e6a86fdd9f35b47c63053"
+          ],
+          "discovered_blv_ids": [
+            "304148"
+          ],
+          "diagnostics": {
+            "url": "https://socolivep.cv/truc-tiep/connecticut-united-fc-vs-new-york-red-bulls-b-20-07-2026-0500/?blv=304148",
+            "title": "Xem trực tiếp bóng đá Connecticut United FC vs New York Red Bulls B | 05:00 ngày 20/07/2026",
+            "h1": "Trực tiếp bóng đá Socolive Connecticut United FC vs New York Red Bulls B lúc 05:00 ngày 20/07/2026",
+            "ready_state": "complete",
+            "visibility_state": "visible",
+            "hidden": false,
+            "video_count": 0,
+            "iframe_count": 0,
+            "body_sample": "Skip to content Socolive Bảng xếp hạng Lịch thi đấu Kết quả bóng đá Tin thể thao Trực tiếp bóng đá Socolive Connecticut United FC vs New York Red Bulls B lúc 05:00 ngày 20/07/2026 USA MLSRv Connecticut United FC 05:00 20/07 New York Red Bulls B Trận đấu sẽ bắt đầu sau Ngày0 : Giờ1 : Phút44 : Giây3 Trận đấu chưa bắt đầu LUCAS CHIVAS GIÓ Chat Thống kê Đội hình Diễn Biến Bảng XH \" \" Xóa Tin nhắn riêng 😀 😁 😃 😄 😅 😆 😇 😉 😊 🙂 😋 😍 😘 😗 😙 😚 😜 😝 😛 😎 🙄 😳 😡 😕 😫 😤 😨 😥 😪 😓 😵 😲 🤧 😷 🤒 🤕 😴 💤 👏 🤙 👍 👎 👊 ✊ ✌ 👌 ✋ 🤚 💪 🤝 👈 👉 🖕 🖐 👄 👂 👀 🎅 🌞 🌙 ⭐ ⚡ 🔥 ❄️ ⚽ 🏀 🏈 ⚾ 🎁 🎉 ✒️ 📝 ❤️ 💛 💚 🆚 💬 🕐 Vô hiệu hóa tất cả Vô hiệu hóa quà tặng Tắt lời chào Đăng nhập để cùng chat nhé Gửi Tỷ lệ kèo Cược Châu Á Chủ Chấp Khách Cược Châu Âu Chủ Hòa Khách Tài xỉu Tài Tỷ lệ kèo Xỉu Kèo góc Tài Tỷ lệ kèo Xỉu Mô phỏng trận đấu Thống kê trận đấu WORLD CUP 02:00 20/07 Spain VS null null null - null Sắp diễn ra Xem ngay Argentina ĐỐM Củ Cải TẠ BIÊN GIỚI TOMMY TAP DECO RICKHANTER COCA HẢI THANH CUỘI CR Bưởi MESSI ECU D1 04:45 20/07 Guayaquil City VS null null null - null Sắp diễn ra Xem ngay Manta FC RAMBO LOGAN YONE PER D1 07:00 20/07 Alianza Lima VS null null null - null Sắp ",
+            "harvested_stream_count": 1,
+            "harvested_blv_ids": [
+              "304148"
+            ],
+            "scan_mode": "browser-event",
+            "elapsed_seconds": 9.838
+          },
+          "http_probe": {
+            "enabled": false,
+            "status": null,
+            "elapsed_seconds": 0.0,
+            "error": ""
+          },
+          "errors": [
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED"
+          ],
+          "failed_requests": [
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/main.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/customize.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/auth.css?ver=171 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat.css?ver=651 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat(1).css?ver=529 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/toast.css?ver=476 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/themes/flatsome/assets/css/flatsome.css?ver=3.18.2 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/themes/flatsome-child/style.css?ver=3.0 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/countdown.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/match.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/livescore.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/style_custom.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/effect/running-border.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/option/option-6.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/highlight/option-1.css?ver=2.8.5 | net::ERR_FAILED"
+          ],
+          "http_errors": [
+            "403 https://socolivep.cv/wp-admin/admin-ajax.php?action=scl_realtime&sport=1"
+          ]
+        }
+      ],
+      "attempted_room_ids": [
+        "304148"
+      ],
+      "coverage": {
+        "found_streams": 1,
+        "found_blv_ids": [
+          "304148"
+        ],
+        "goal": 3,
+        "complete": false,
+        "attempted_room_ids": [
+          "304148"
+        ]
+      },
+      "errors": []
+    },
+    {
+      "base_url": "https://socolivep.cv/truc-tiep/sporting-kansas-city-reserves-vs-minnesota-united-b-20-07-2026-0700/",
+      "raw_title": "Trực tiếp bóng đá Socolive Sporting Kansas City Reserves vs MINNESOTA United B lúc 07:00 ngày 20/07/2026",
+      "home_team": "Sporting Kansas City Reserves",
+      "away_team": "MINNESOTA United B",
+      "home_logo": "https://sta.vnres.co/file/common/20260717/845f64730efcdbb790d776e988fa0237.png",
+      "away_logo": "https://sta.vnres.co/file/common/20260717/b3a45022e3b1dafdc46d0c5e9633e548.png",
+      "time_text": "07:00",
+      "date_text": "20/07",
+      "status": "",
+      "card_text": "USA MLSRv 07:00 20/07 Sporting Kansas City Reserves VS XEM NGAY MINNESOTA United B KÉP BÉO A TINH",
+      "rooms": [
+        {
+          "url": "https://socolivep.cv/truc-tiep/sporting-kansas-city-reserves-vs-minnesota-united-b-20-07-2026-0700?blv=560690",
+          "blv": "KÉP",
+          "blv_id": "560690"
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/sporting-kansas-city-reserves-vs-minnesota-united-b-20-07-2026-0700?blv=459401",
+          "blv": "BÉO",
+          "blv_id": "459401"
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/sporting-kansas-city-reserves-vs-minnesota-united-b-20-07-2026-0700?blv=598119",
+          "blv": "A TINH",
+          "blv_id": "598119"
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/sporting-kansas-city-reserves-vs-minnesota-united-b-20-07-2026-0700",
+          "blv": "XEM NGAY",
+          "blv_id": ""
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/sporting-kansas-city-reserves-vs-minnesota-united-b-20-07-2026-0700/",
+          "blv": "",
+          "blv_id": ""
+        }
+      ],
+      "match_name": "Sporting Kansas City Reserves vs MINNESOTA United B",
+      "scheduled_at": "2026-07-20T07:00:00+07:00",
+      "streams": [],
+      "room_results": [
+        {
+          "url": "https://socolivep.cv/truc-tiep/sporting-kansas-city-reserves-vs-minnesota-united-b-20-07-2026-0700?blv=560690",
+          "blv": "KÉP",
+          "blv_id": "560690",
+          "streams": [],
+          "discovered_blv_ids": [],
+          "diagnostics": {
+            "url": "https://socolivep.cv/truc-tiep/sporting-kansas-city-reserves-vs-minnesota-united-b-20-07-2026-0700?blv=560690",
+            "title": "Chờ một chút...",
+            "h1": "socolivep.cv",
+            "ready_state": "complete",
+            "visibility_state": "visible",
+            "hidden": false,
+            "video_count": 0,
+            "iframe_count": 0,
+            "body_sample": "socolivep.cv Thực hiện xác minh bảo mật Trang web này sử dụng dịch vụ bảo mật để chống bot độc hại. Trang này hiển thị trong khi trang web xác minh bạn không phải là bot. Ray ID: a1dc66717a3811cd Hiệu suất và Tính bảo mật của Cloudflare Quyền riêng tư",
+            "harvested_stream_count": 0,
+            "harvested_blv_ids": [],
+            "scan_mode": "browser-event",
+            "elapsed_seconds": 9.518
+          },
+          "http_probe": {
+            "enabled": false,
+            "status": null,
+            "elapsed_seconds": 0.0,
+            "error": ""
+          },
+          "errors": [
+            "console/error: Failed to load resource: the server responded with a status of 429 ()",
+            "console/warning: No available adapters.",
+            "console/warning: No available adapters.",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/warning: OTS parsing error: Size of decompressed WOFF 2.0 is less than compressed size",
+            "console/warning: [.WebGL-0x1e740011ba00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+            "console/warning: [.WebGL-0x1e740011ba00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+            "console/error: %c%d font-size:0;color:transparent NaN",
+            "console/error: %c%d font-size:0;color:transparent NaN",
+            "console/warning: %c%d font-size:0;color:transparent NaN",
+            "console/warning: %c%d font-size:0;color:transparent NaN"
+          ],
+          "failed_requests": [
+            "fetch https://brunhild.challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/i/a1dc6677ec9af603/ZOfWztfGFbsIMaLFlWT7FPUk1npmqmx_QE56fBjd6Xo-1784492148-1.2.1.1-UkSK0nwRLQto0TWuHq8iNUqZkmteR8611ouazaLO1uDJ6Tv1qKtfMzgGq750pfMj | net::ERR_NAME_NOT_RESOLVED",
+            "image https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/ci/a1dc6677ec9af603/1784492149131/8gpbRACskFQEpX0 | net::ERR_FAILED"
+          ],
+          "http_errors": [
+            "429 https://socolivep.cv/truc-tiep/sporting-kansas-city-reserves-vs-minnesota-united-b-20-07-2026-0700?blv=560690",
+            "401 https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/pat/a1dc6677ec9af603/1784492149131/9c70818fb0055a7840a6df4408c2190fca2a8c6c3c55ecf7fbfc21a69a7304b4/GIVjFM4MU-aNe04"
+          ]
+        }
+      ],
+      "attempted_room_ids": [
+        "560690"
+      ],
+      "coverage": {
+        "found_streams": 0,
+        "found_blv_ids": [],
+        "goal": 3,
+        "complete": false,
+        "attempted_room_ids": [
+          "560690"
+        ]
+      },
+      "errors": []
+    },
+    {
+      "base_url": "https://socolivep.cv/truc-tiep/alianza-lima-vs-sport-huancayo-20-07-2026-0700/",
+      "raw_title": "Trực tiếp bóng đá Socolive Alianza Lima vs Sport Huancayo lúc 07:00 ngày 20/07/2026",
+      "home_team": "Alianza Lima",
+      "away_team": "Sport Huancayo",
+      "home_logo": "https://sta.vnres.co/file/common/20260717/74e7aa0f487bdb5bcf53c0cc10b12fb1.png",
+      "away_logo": "https://sta.vnres.co/file/common/20260717/3c6eda0a015fee538f089af39a335885.png",
+      "time_text": "07:00",
+      "date_text": "20/07",
+      "status": "",
+      "card_text": "PER D1 07:00 20/07 Alianza Lima VS XEM NGAY Sport Huancayo RAMBO A PÁO HÀ DUY KIÊN",
+      "rooms": [
+        {
+          "url": "https://socolivep.cv/truc-tiep/alianza-lima-vs-sport-huancayo-20-07-2026-0700?blv=534055",
+          "blv": "RAMBO",
+          "blv_id": "534055"
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/alianza-lima-vs-sport-huancayo-20-07-2026-0700?blv=235232",
+          "blv": "A PÁO",
+          "blv_id": "235232"
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/alianza-lima-vs-sport-huancayo-20-07-2026-0700?blv=607400",
           "blv": "HÀ DUY KIÊN",
           "blv_id": "607400"
         },
         {
-          "url": "https://socolivep.cv/truc-tiep/fk-cukaricki-vs-fk-imt-belgrad-20-07-2026-0000?blv=557845",
-          "blv": "A TÚ",
-          "blv_id": "557845"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/fk-cukaricki-vs-fk-imt-belgrad-20-07-2026-0000",
+          "url": "https://socolivep.cv/truc-tiep/alianza-lima-vs-sport-huancayo-20-07-2026-0700",
           "blv": "XEM NGAY",
           "blv_id": ""
         },
         {
-          "url": "https://socolivep.cv/truc-tiep/fk-cukaricki-vs-fk-imt-belgrad-20-07-2026-0000/",
+          "url": "https://socolivep.cv/truc-tiep/alianza-lima-vs-sport-huancayo-20-07-2026-0700/",
           "blv": "",
           "blv_id": ""
         }
       ],
-      "match_name": "FK Čukarički vs FK IMT Belgrad",
-      "scheduled_at": "2026-07-20T00:00:00+07:00",
-      "streams": [
-        {
-          "url": "https://pull.niues.live/live/stream-406865_lhd.m3u8?auth_key=1784491358-0-0-57f4f47f55cdd20830e3034c506bd27e",
-          "room_url": "https://socolivep.cv/truc-tiep/fk-cukaricki-vs-fk-imt-belgrad-20-07-2026-0000?blv=406865",
-          "blv": "ANH TÀI",
-          "blv_id": "406865"
-        }
-      ],
-      "room_results": [
-        {
-          "url": "https://socolivep.cv/truc-tiep/fk-cukaricki-vs-fk-imt-belgrad-20-07-2026-0000?blv=406865",
-          "blv": "ANH TÀI",
-          "blv_id": "406865",
-          "streams": [
-            "https://pull.niues.live/live/stream-406865_lhd.m3u8?auth_key=1784491358-0-0-57f4f47f55cdd20830e3034c506bd27e"
-          ],
-          "diagnostics": {
-            "url": "https://socolivep.cv/truc-tiep/fk-cukaricki-vs-fk-imt-belgrad-20-07-2026-0000/?blv=406865",
-            "title": "Xem trực tiếp bóng đá FK Čukarički vs FK IMT Belgrad | 00:00 ngày 20/07/2026",
-            "h1": "Trực tiếp bóng đá Socolive FK Čukarički vs FK IMT Belgrad lúc 00:00 ngày 20/07/2026",
-            "ready_state": "complete",
-            "visibility_state": "visible",
-            "hidden": false,
-            "video_count": 1,
-            "iframe_count": 0,
-            "body_sample": "Skip to content Socolive Bảng xếp hạng Lịch thi đấu Kết quả bóng đá Tin thể thao Trực tiếp bóng đá Socolive FK Čukarički vs FK IMT Belgrad lúc 00:00 ngày 20/07/2026 SER SL FK Čukarički 00:00 20/07 FK IMT Belgrad Volume 0% Phát 00:00 00:00 Tải App Bufa ANH TÀI BEN 10 HÀ DUY KIÊN A TÚ Chat Thống kê Đội hình Diễn Biến Bảng XH \" \" Tin nhắn riêng Vô hiệu hóa tất cả Vô hiệu hóa quà tặng Tắt lời chào Đăng nhập để cùng chat nhé Gửi Tỷ lệ kèo Cược Châu Á Chủ Chấp Khách Cược Châu Âu Chủ Hòa Khách Tài xỉu Tài Tỷ lệ kèo Xỉu Kèo góc Tài Tỷ lệ kèo Xỉu Mô phỏng trận đấu Thống kê trận đấu WORLD CUP 02:00 20/07 Spain VS null null null - null Sắp diễn ra Xem ngay Argentina ĐỐM Củ Cải TẠ BIÊN GIỚI TOMMY TAP DECO RICKHANTER COCA HẢI THANH CUỘI CR Bưởi MESSI SER SL 00:00 20/07 Radnik Surdulica VS null null null - null Sắp diễn ra Xem ngay Mladost Lucani VOI BÒ TƯƠI CÁP SER SL 00:00 20/07 Vojvodina Novi Sad VS null null null - null Sắp diễn ra Xem ngay OFK Beograd VIP QUỐC KHÁNH NOVA RYO ROM D1 23:30 19/07 Petrolul Ploiesti VS null null null - null Sắp diễn ra Xem ngay FC Dinamo 1948 PEWPEW A WIN ALEX TOMIA HẢI THANH FIREMAN BUL D1 23:30 19/07 Botev Vratsa VS null null null - null Sắp diễn ra Xem ngay C",
-            "scan_mode": "browser-event",
-            "elapsed_seconds": 3.899
-          },
-          "http_probe": {
-            "enabled": false,
-            "status": null,
-            "elapsed_seconds": 0.0,
-            "error": ""
-          },
-          "errors": [
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED"
-          ],
-          "failed_requests": [
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/main.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/customize.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/auth.css?ver=975 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat.css?ver=590 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat(1).css?ver=779 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/toast.css?ver=591 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/themes/flatsome/assets/css/flatsome.css?ver=3.18.2 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/themes/flatsome-child/style.css?ver=3.0 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/countdown.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/match.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/livescore.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/style_custom.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/effect/running-border.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/option/option-6.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/highlight/option-1.css?ver=2.8.5 | net::ERR_FAILED"
-          ],
-          "http_errors": [
-            "403 https://socolivep.cv/wp-admin/admin-ajax.php?action=scl_realtime&sport=1"
-          ]
-        }
-      ],
+      "match_name": "Alianza Lima vs Sport Huancayo",
+      "scheduled_at": "2026-07-20T07:00:00+07:00",
+      "streams": [],
+      "room_results": [],
+      "attempted_room_ids": [],
+      "coverage": {
+        "found_streams": 0,
+        "found_blv_ids": [],
+        "goal": 3,
+        "complete": false,
+        "attempted_room_ids": []
+      },
       "errors": []
     },
     {
-      "base_url": "https://socolivep.cv/truc-tiep/radnik-surdulica-vs-mladost-lucani-20-07-2026-0000/",
-      "raw_title": "Trực tiếp bóng đá Socolive Radnik Surdulica vs Mladost Lucani lúc 00:00 ngày 20/07/2026",
-      "home_team": "Radnik Surdulica",
-      "away_team": "Mladost Lucani",
-      "home_logo": "https://sta.vnres.co/file/common/20260717/6a1801962bc3180aeb14a82f25092cd4.png",
-      "away_logo": "https://sta.vnres.co/file/common/20260717/d96f7ec55223d85d99ee802ede6b879b.png",
-      "time_text": "00:00",
+      "base_url": "https://socolivep.cv/truc-tiep/independiente-del-valle-vs-club-sport-emelec-20-07-2026-0715/",
+      "raw_title": "Trực tiếp bóng đá Socolive Independiente del Valle vs Club Sport Emelec lúc 07:15 ngày 20/07/2026",
+      "home_team": "Independiente del Valle",
+      "away_team": "Club Sport Emelec",
+      "home_logo": "https://sta.vnres.co/file/common/20260717/c424eb967d7f92a67df4f6df2ce91590.png",
+      "away_logo": "https://sta.vnres.co/file/common/20260717/29447a3c1f54e276b20171a02ff3baf0.png",
+      "time_text": "07:15",
       "date_text": "20/07",
       "status": "",
-      "card_text": "SER SL 00:00 20/07 Radnik Surdulica VS XEM NGAY Mladost Lucani VOI BÒ TƯƠI CÁP",
+      "card_text": "ECU D1 07:15 20/07 Independiente del Valle VS XEM NGAY Club Sport Emelec CHÍ PHÈO KAN LÃO LÂM",
       "rooms": [
         {
-          "url": "https://socolivep.cv/truc-tiep/radnik-surdulica-vs-mladost-lucani-20-07-2026-0000?blv=552716",
-          "blv": "VOI",
-          "blv_id": "552716"
+          "url": "https://socolivep.cv/truc-tiep/independiente-del-valle-vs-club-sport-emelec-20-07-2026-0715?blv=273736",
+          "blv": "CHÍ PHÈO",
+          "blv_id": "273736"
         },
         {
-          "url": "https://socolivep.cv/truc-tiep/radnik-surdulica-vs-mladost-lucani-20-07-2026-0000?blv=620797",
-          "blv": "BÒ TƯƠI",
-          "blv_id": "620797"
+          "url": "https://socolivep.cv/truc-tiep/independiente-del-valle-vs-club-sport-emelec-20-07-2026-0715?blv=283501",
+          "blv": "KAN",
+          "blv_id": "283501"
         },
         {
-          "url": "https://socolivep.cv/truc-tiep/radnik-surdulica-vs-mladost-lucani-20-07-2026-0000?blv=610677",
-          "blv": "CÁP",
-          "blv_id": "610677"
+          "url": "https://socolivep.cv/truc-tiep/independiente-del-valle-vs-club-sport-emelec-20-07-2026-0715?blv=527384",
+          "blv": "LÃO LÂM",
+          "blv_id": "527384"
         },
         {
-          "url": "https://socolivep.cv/truc-tiep/radnik-surdulica-vs-mladost-lucani-20-07-2026-0000",
+          "url": "https://socolivep.cv/truc-tiep/independiente-del-valle-vs-club-sport-emelec-20-07-2026-0715",
           "blv": "XEM NGAY",
           "blv_id": ""
         },
         {
-          "url": "https://socolivep.cv/truc-tiep/radnik-surdulica-vs-mladost-lucani-20-07-2026-0000/",
+          "url": "https://socolivep.cv/truc-tiep/independiente-del-valle-vs-club-sport-emelec-20-07-2026-0715/",
           "blv": "",
           "blv_id": ""
         }
       ],
-      "match_name": "Radnik Surdulica vs Mladost Lucani",
-      "scheduled_at": "2026-07-20T00:00:00+07:00",
-      "streams": [
-        {
-          "url": "https://pull.niues.live/live/stream-9912114_lhd.m3u8?auth_key=1784490976-0-0-1202c3d0531df37c316745e1fde69a2c",
-          "room_url": "https://socolivep.cv/truc-tiep/radnik-surdulica-vs-mladost-lucani-20-07-2026-0000?blv=552716",
-          "blv": "VOI",
-          "blv_id": "552716"
-        }
-      ],
-      "room_results": [
-        {
-          "url": "https://socolivep.cv/truc-tiep/radnik-surdulica-vs-mladost-lucani-20-07-2026-0000?blv=552716",
-          "blv": "VOI",
-          "blv_id": "552716",
-          "streams": [
-            "https://pull.niues.live/live/stream-9912114_lhd.m3u8?auth_key=1784490976-0-0-1202c3d0531df37c316745e1fde69a2c"
-          ],
-          "diagnostics": {
-            "url": "https://socolivep.cv/truc-tiep/radnik-surdulica-vs-mladost-lucani-20-07-2026-0000/?blv=552716",
-            "title": "Xem trực tiếp bóng đá Radnik Surdulica vs Mladost Lucani | 00:00 ngày 20/07/2026",
-            "h1": "Trực tiếp bóng đá Socolive Radnik Surdulica vs Mladost Lucani lúc 00:00 ngày 20/07/2026",
-            "ready_state": "complete",
-            "visibility_state": "visible",
-            "hidden": false,
-            "video_count": 1,
-            "iframe_count": 0,
-            "body_sample": "Skip to content Socolive Bảng xếp hạng Lịch thi đấu Kết quả bóng đá Tin thể thao Trực tiếp bóng đá Socolive Radnik Surdulica vs Mladost Lucani lúc 00:00 ngày 20/07/2026 SER SL Radnik Surdulica 00:00 20/07 Mladost Lucani Volume 0% Phát 00:00 00:00 Tải App Bufa VOI BÒ TƯƠI CÁP Chat Thống kê Đội hình Diễn Biến Bảng XH \" \" Tin nhắn riêng Vô hiệu hóa tất cả Vô hiệu hóa quà tặng Tắt lời chào Đăng nhập để cùng chat nhé Gửi Tỷ lệ kèo Cược Châu Á Chủ Chấp Khách Cược Châu Âu Chủ Hòa Khách Tài xỉu Tài Tỷ lệ kèo Xỉu Kèo góc Tài Tỷ lệ kèo Xỉu Mô phỏng trận đấu Thống kê trận đấu WORLD CUP 02:00 20/07 Spain VS null null null - null Sắp diễn ra Xem ngay Argentina ĐỐM Củ Cải TẠ BIÊN GIỚI TOMMY TAP DECO RICKHANTER COCA HẢI THANH CUỘI CR Bưởi MESSI SER SL 00:00 20/07 FK Čukarički VS null null null - null Sắp diễn ra Xem ngay FK IMT Belgrad ANH TÀI BEN 10 HÀ DUY KIÊN A TÚ SER SL 00:00 20/07 Vojvodina Novi Sad VS null null null - null Sắp diễn ra Xem ngay OFK Beograd VIP QUỐC KHÁNH NOVA RYO ROM D1 23:30 19/07 Petrolul Ploiesti VS null null null - null Sắp diễn ra Xem ngay FC Dinamo 1948 PEWPEW A WIN ALEX TOMIA HẢI THANH FIREMAN BUL D1 23:30 19/07 Botev Vratsa VS null null null - null Sắp diễn ra Xem ng",
-            "scan_mode": "browser-event",
-            "elapsed_seconds": 3.938
-          },
-          "http_probe": {
-            "enabled": false,
-            "status": null,
-            "elapsed_seconds": 0.0,
-            "error": ""
-          },
-          "errors": [
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED"
-          ],
-          "failed_requests": [
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/main.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/customize.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/auth.css?ver=540 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat.css?ver=775 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat(1).css?ver=43 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/toast.css?ver=678 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/themes/flatsome/assets/css/flatsome.css?ver=3.18.2 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/themes/flatsome-child/style.css?ver=3.0 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/countdown.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/match.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/livescore.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/style_custom.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/effect/running-border.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/option/option-6.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/highlight/option-1.css?ver=2.8.5 | net::ERR_FAILED"
-          ],
-          "http_errors": [
-            "403 https://socolivep.cv/wp-admin/admin-ajax.php?action=scl_realtime&sport=1"
-          ]
-        }
-      ],
-      "errors": []
-    },
-    {
-      "base_url": "https://socolivep.cv/truc-tiep/vojvodina-novi-sad-vs-ofk-beograd-20-07-2026-0000/",
-      "raw_title": "Trực tiếp bóng đá Socolive Vojvodina Novi Sad vs OFK Beograd lúc 00:00 ngày 20/07/2026",
-      "home_team": "Vojvodina Novi Sad",
-      "away_team": "OFK Beograd",
-      "home_logo": "https://sta.vnres.co/file/common/20260717/02bc5c85411bfe9639fea4337d0385e9.png",
-      "away_logo": "https://sta.vnres.co/file/common/20260717/c7b40e2b79e38fc5a526a3bd7bb50a50.png",
-      "time_text": "00:00",
-      "date_text": "20/07",
-      "status": "",
-      "card_text": "SER SL 00:00 20/07 Vojvodina Novi Sad VS XEM NGAY OFK Beograd VIP QUỐC KHÁNH NOVA RYO",
-      "rooms": [
-        {
-          "url": "https://socolivep.cv/truc-tiep/vojvodina-novi-sad-vs-ofk-beograd-20-07-2026-0000?blv=491873",
-          "blv": "VIP",
-          "blv_id": "491873"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/vojvodina-novi-sad-vs-ofk-beograd-20-07-2026-0000?blv=602153",
-          "blv": "QUỐC KHÁNH",
-          "blv_id": "602153"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/vojvodina-novi-sad-vs-ofk-beograd-20-07-2026-0000?blv=619108",
-          "blv": "NOVA",
-          "blv_id": "619108"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/vojvodina-novi-sad-vs-ofk-beograd-20-07-2026-0000?blv=602019",
-          "blv": "RYO",
-          "blv_id": "602019"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/vojvodina-novi-sad-vs-ofk-beograd-20-07-2026-0000",
-          "blv": "XEM NGAY",
-          "blv_id": ""
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/vojvodina-novi-sad-vs-ofk-beograd-20-07-2026-0000/",
-          "blv": "",
-          "blv_id": ""
-        }
-      ],
-      "match_name": "Vojvodina Novi Sad vs OFK Beograd",
-      "scheduled_at": "2026-07-20T00:00:00+07:00",
-      "streams": [
-        {
-          "url": "https://pull.niur.live/live/stream-491873_lhd.m3u8?txSecret=9282635d8610a9d5637cc8b6dd80ddfb&txTime=6a5d71a9",
-          "room_url": "https://socolivep.cv/truc-tiep/vojvodina-novi-sad-vs-ofk-beograd-20-07-2026-0000?blv=491873",
-          "blv": "VIP",
-          "blv_id": "491873"
-        }
-      ],
-      "room_results": [
-        {
-          "url": "https://socolivep.cv/truc-tiep/vojvodina-novi-sad-vs-ofk-beograd-20-07-2026-0000?blv=491873",
-          "blv": "VIP",
-          "blv_id": "491873",
-          "streams": [
-            "https://pull.niur.live/live/stream-491873_lhd.m3u8?txSecret=9282635d8610a9d5637cc8b6dd80ddfb&txTime=6a5d71a9"
-          ],
-          "diagnostics": {
-            "url": "https://socolivep.cv/truc-tiep/vojvodina-novi-sad-vs-ofk-beograd-20-07-2026-0000/?blv=491873",
-            "title": "Xem trực tiếp bóng đá Vojvodina Novi Sad vs OFK Beograd | 00:00 ngày 20/07/2026",
-            "h1": "Trực tiếp bóng đá Socolive Vojvodina Novi Sad vs OFK Beograd lúc 00:00 ngày 20/07/2026",
-            "ready_state": "complete",
-            "visibility_state": "visible",
-            "hidden": false,
-            "video_count": 1,
-            "iframe_count": 0,
-            "body_sample": "Skip to content Socolive Bảng xếp hạng Lịch thi đấu Kết quả bóng đá Tin thể thao Trực tiếp bóng đá Socolive Vojvodina Novi Sad vs OFK Beograd lúc 00:00 ngày 20/07/2026 SER SL Vojvodina Novi Sad 00:00 20/07 OFK Beograd Volume 0% Phát 00:00 00:00 Tải App Bufa VIP QUỐC KHÁNH NOVA RYO Chat Thống kê Đội hình Diễn Biến Bảng XH \" \" Tin nhắn riêng Vô hiệu hóa tất cả Vô hiệu hóa quà tặng Tắt lời chào Đăng nhập để cùng chat nhé Gửi Tỷ lệ kèo Cược Châu Á Chủ Chấp Khách Cược Châu Âu Chủ Hòa Khách Tài xỉu Tài Tỷ lệ kèo Xỉu Kèo góc Tài Tỷ lệ kèo Xỉu Mô phỏng trận đấu Thống kê trận đấu WORLD CUP 02:00 20/07 Spain VS null null null - null Sắp diễn ra Xem ngay Argentina ĐỐM Củ Cải TẠ BIÊN GIỚI TOMMY TAP DECO RICKHANTER COCA HẢI THANH CUỘI CR Bưởi MESSI SER SL 00:00 20/07 FK Čukarički VS null null null - null Sắp diễn ra Xem ngay FK IMT Belgrad ANH TÀI BEN 10 HÀ DUY KIÊN A TÚ SER SL 00:00 20/07 Radnik Surdulica VS null null null - null Sắp diễn ra Xem ngay Mladost Lucani VOI BÒ TƯƠI CÁP ROM D1 23:30 19/07 Petrolul Ploiesti VS null null null - null Sắp diễn ra Xem ngay FC Dinamo 1948 PEWPEW A WIN ALEX TOMIA HẢI THANH FIREMAN BUL D1 23:30 19/07 Botev Vratsa VS null null null - null Sắp diễn ra Xem nga",
-            "scan_mode": "browser-event",
-            "elapsed_seconds": 3.955
-          },
-          "http_probe": {
-            "enabled": false,
-            "status": null,
-            "elapsed_seconds": 0.0,
-            "error": ""
-          },
-          "errors": [
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED"
-          ],
-          "failed_requests": [
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/main.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/customize.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/auth.css?ver=233 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat.css?ver=374 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat(1).css?ver=836 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/toast.css?ver=279 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/themes/flatsome/assets/css/flatsome.css?ver=3.18.2 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/themes/flatsome-child/style.css?ver=3.0 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/countdown.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/match.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/livescore.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/style_custom.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/effect/running-border.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/option/option-6.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/highlight/option-1.css?ver=2.8.5 | net::ERR_FAILED"
-          ],
-          "http_errors": [
-            "403 https://socolivep.cv/wp-admin/admin-ajax.php?action=scl_realtime&sport=1"
-          ]
-        }
-      ],
+      "match_name": "Independiente del Valle vs Club Sport Emelec",
+      "scheduled_at": "2026-07-20T07:15:00+07:00",
+      "streams": [],
+      "room_results": [],
+      "attempted_room_ids": [],
+      "coverage": {
+        "found_streams": 0,
+        "found_blv_ids": [],
+        "goal": 3,
+        "complete": false,
+        "attempted_room_ids": []
+      },
       "errors": []
     }
   ]
