@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-20T05:15:57.688357+07:00",
+  "generated_at": "2026-07-20T05:16:50.837696+07:00",
   "configuration": {
     "match_concurrency": 4,
     "room_wait_seconds": 7.0,
@@ -46,21 +46,6 @@
         },
         {
           "url": "https://socolivep.cv/truc-tiep/connecticut-united-fc-vs-new-york-red-bulls-b-20-07-2026-0500?blv=321443",
-          "blv": "GIÓ",
-          "blv_id": "321443"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/connecticut-united-fc-vs-new-york-red-bulls-b-20-07-2026-0500/?blv=304148",
-          "blv": "LUCAS",
-          "blv_id": "304148"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/connecticut-united-fc-vs-new-york-red-bulls-b-20-07-2026-0500/?blv=485739",
-          "blv": "CHIVAS",
-          "blv_id": "485739"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/connecticut-united-fc-vs-new-york-red-bulls-b-20-07-2026-0500/?blv=321443",
           "blv": "GIÓ",
           "blv_id": "321443"
         },
@@ -188,6 +173,58 @@
           "http_errors": [
             "403 https://socolivep.cv/wp-admin/admin-ajax.php?action=scl_realtime&sport=1"
           ]
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/connecticut-united-fc-vs-new-york-red-bulls-b-20-07-2026-0500?blv=304148",
+          "blv": "LUCAS",
+          "blv_id": "304148",
+          "streams": [],
+          "stream_sources": {},
+          "stream_first_seen": [],
+          "discovered_blv_ids": [],
+          "diagnostics": {
+            "url": "https://socolivep.cv/truc-tiep/connecticut-united-fc-vs-new-york-red-bulls-b-20-07-2026-0500?blv=304148",
+            "title": "Chờ một chút...",
+            "h1": "socolivep.cv",
+            "ready_state": "complete",
+            "visibility_state": "visible",
+            "hidden": false,
+            "video_count": 0,
+            "iframe_count": 0,
+            "body_sample": "socolivep.cv Thực hiện xác minh bảo mật Trang web này sử dụng dịch vụ bảo mật để chống bot độc hại. Trang này hiển thị trong khi trang web xác minh bạn không phải là bot. Ray ID: a1dd1788bba1d962 Hiệu suất và Tính bảo mật của Cloudflare Quyền riêng tư",
+            "main_status": 429,
+            "harvested_stream_count": 0,
+            "harvested_blv_ids": [],
+            "scan_mode": "browser-event",
+            "elapsed_seconds": 9.627
+          },
+          "http_probe": {
+            "enabled": false,
+            "status": null,
+            "elapsed_seconds": 0.0,
+            "error": ""
+          },
+          "errors": [
+            "console/error: Failed to load resource: the server responded with a status of 429 ()",
+            "console/warning: No available adapters.",
+            "console/warning: No available adapters.",
+            "console/error: %c%d font-size:0;color:transparent NaN",
+            "console/error: %c%d font-size:0;color:transparent NaN",
+            "console/warning: %c%d font-size:0;color:transparent NaN",
+            "console/warning: %c%d font-size:0;color:transparent NaN",
+            "console/warning: OTS parsing error: Size of decompressed WOFF 2.0 is less than compressed size",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/warning: [.WebGL-0x2594062b4000]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+            "console/warning: [.WebGL-0x2594062b4000]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels"
+          ],
+          "failed_requests": [
+            "fetch https://brunhild.challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/i/a1dd17900f49d660/TDIZnr1HHX4FYl4Ryi0w6kaVE8G9Aq7EcxCoT2CL6AU-1784499402-1.2.1.1-viJc7c3pB1bhvxhPdIFT9mZAuJngnCClgi42ySp9APy_AJ1RX0KEgFMukhAb3y6A | net::ERR_NAME_NOT_RESOLVED",
+            "image https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/ci/a1dd17900f49d660/1784499402888/vfQY9a5zg7dk_fN | net::ERR_FAILED"
+          ],
+          "http_errors": [
+            "429 https://socolivep.cv/truc-tiep/connecticut-united-fc-vs-new-york-red-bulls-b-20-07-2026-0500?blv=304148",
+            "401 https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/pat/a1dd17900f49d660/1784499402887/4370604bdd7513ed588675f0e2a3fdb4920ba13543f8976fe3f640a6fec83303/iZx_Sf8GsysgtUb"
+          ]
         }
       ],
       "attempted_room_ids": [
@@ -202,11 +239,8 @@
         "source_goal_reached": false,
         "room_queue_complete": false,
         "complete": false,
-        "total_explicit_blv_rooms": 6,
+        "total_explicit_blv_rooms": 3,
         "pending_room_keys": [
-          "304148",
-          "485739",
-          "321443",
           "304148",
           "485739",
           "321443"
@@ -214,19 +248,19 @@
         "room_progress": {
           "304148": {
             "key": "304148",
-            "url": "https://socolivep.cv/truc-tiep/connecticut-united-fc-vs-new-york-red-bulls-b-20-07-2026-0500/?blv=304148",
+            "url": "https://socolivep.cv/truc-tiep/connecticut-united-fc-vs-new-york-red-bulls-b-20-07-2026-0500?blv=304148",
             "blv": "LUCAS",
             "blv_id": "304148",
-            "status": "pending",
+            "status": "rate_limited",
             "attempts": 1,
-            "rate_limit_hits": 0,
-            "last_http_status": 200,
-            "last_stream_count": 1,
-            "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
+            "rate_limit_hits": 1,
+            "last_http_status": 429,
+            "last_stream_count": 0,
+            "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
           },
           "485739": {
             "key": "485739",
-            "url": "https://socolivep.cv/truc-tiep/connecticut-united-fc-vs-new-york-red-bulls-b-20-07-2026-0500/?blv=485739",
+            "url": "https://socolivep.cv/truc-tiep/connecticut-united-fc-vs-new-york-red-bulls-b-20-07-2026-0500?blv=485739",
             "blv": "CHIVAS",
             "blv_id": "485739",
             "status": "pending",
@@ -238,7 +272,7 @@
           },
           "321443": {
             "key": "321443",
-            "url": "https://socolivep.cv/truc-tiep/connecticut-united-fc-vs-new-york-red-bulls-b-20-07-2026-0500/?blv=321443",
+            "url": "https://socolivep.cv/truc-tiep/connecticut-united-fc-vs-new-york-red-bulls-b-20-07-2026-0500?blv=321443",
             "blv": "GIÓ",
             "blv_id": "321443",
             "status": "pending",
@@ -266,19 +300,19 @@
       "room_progress": {
         "304148": {
           "key": "304148",
-          "url": "https://socolivep.cv/truc-tiep/connecticut-united-fc-vs-new-york-red-bulls-b-20-07-2026-0500/?blv=304148",
+          "url": "https://socolivep.cv/truc-tiep/connecticut-united-fc-vs-new-york-red-bulls-b-20-07-2026-0500?blv=304148",
           "blv": "LUCAS",
           "blv_id": "304148",
-          "status": "pending",
+          "status": "rate_limited",
           "attempts": 1,
-          "rate_limit_hits": 0,
-          "last_http_status": 200,
-          "last_stream_count": 1,
-          "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
+          "rate_limit_hits": 1,
+          "last_http_status": 429,
+          "last_stream_count": 0,
+          "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
         },
         "485739": {
           "key": "485739",
-          "url": "https://socolivep.cv/truc-tiep/connecticut-united-fc-vs-new-york-red-bulls-b-20-07-2026-0500/?blv=485739",
+          "url": "https://socolivep.cv/truc-tiep/connecticut-united-fc-vs-new-york-red-bulls-b-20-07-2026-0500?blv=485739",
           "blv": "CHIVAS",
           "blv_id": "485739",
           "status": "pending",
@@ -290,7 +324,7 @@
         },
         "321443": {
           "key": "321443",
-          "url": "https://socolivep.cv/truc-tiep/connecticut-united-fc-vs-new-york-red-bulls-b-20-07-2026-0500/?blv=321443",
+          "url": "https://socolivep.cv/truc-tiep/connecticut-united-fc-vs-new-york-red-bulls-b-20-07-2026-0500?blv=321443",
           "blv": "GIÓ",
           "blv_id": "321443",
           "status": "pending",
@@ -481,6 +515,97 @@
             "403 https://socolivep.cv/wp-admin/admin-ajax.php?action=scl_realtime&sport=1",
             "403 https://pull.niur.live/live/stream-534055_lhd.m3u8?txSecret=a08ea6d59bbe33bdf51e64d54ae3ff0c&txTime=6a5cc3be"
           ]
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/guayaquil-city-vs-manta-fc-20-07-2026-0445?blv=534055",
+          "blv": "RAMBO",
+          "blv_id": "534055",
+          "streams": [
+            "https://pull.niur.live/live/stream-534055_lhd.m3u8?txSecret=a08ea6d59bbe33bdf51e64d54ae3ff0c&txTime=6a5cc3be"
+          ],
+          "stream_sources": {
+            "https://pull.niur.live/live/stream-534055_lhd.m3u8?txSecret=a08ea6d59bbe33bdf51e64d54ae3ff0c&txTime=6a5cc3be": [
+              "cdp/request",
+              "cdp/response",
+              "embedded/frame-html",
+              "request/image",
+              "request/xhr",
+              "response/403"
+            ]
+          },
+          "stream_first_seen": [
+            "https://pull.niur.live/live/stream-534055_lhd.m3u8?txSecret=a08ea6d59bbe33bdf51e64d54ae3ff0c&txTime=6a5cc3be"
+          ],
+          "discovered_blv_ids": [
+            "534055"
+          ],
+          "diagnostics": {
+            "url": "https://socolivep.cv/truc-tiep/guayaquil-city-vs-manta-fc-20-07-2026-0445/?blv=534055",
+            "title": "Xem trực tiếp bóng đá Guayaquil City vs Manta FC | 04:45 ngày 20/07/2026",
+            "h1": "Trực tiếp bóng đá Socolive Guayaquil City vs Manta FC lúc 04:45 ngày 20/07/2026",
+            "ready_state": "complete",
+            "visibility_state": "visible",
+            "hidden": false,
+            "video_count": 1,
+            "iframe_count": 0,
+            "body_sample": "Skip to content Socolive Bảng xếp hạng Lịch thi đấu Kết quả bóng đá Tin thể thao Trực tiếp bóng đá Socolive Guayaquil City vs Manta FC lúc 04:45 ngày 20/07/2026 ECU D1 Guayaquil City 04:45 20/07 Manta FC Volume 0% Tải App Bufa Có vấn đề khi truy cập nội dung được bảo vệ. (Mã lỗi: 232403) RAMBO LOGAN YONE Chat Thống kê Đội hình Diễn Biến Bảng XH \" \" Admin Sóc Level: 🔥 BSPORT – Uy tín Bảo mật Thưởng đến 1.800K💸 Hoàn trả ngày/tuần – chơi là có thưởng🚀 Đăng ký ngay: https://www.BTY9296.com📩 Tele: @levehehe ⚽️ BUFA: WNNZCR📞 Zalo: 0779 549 184🆘Facebook : https://www.facebook.com/profile.phpid=100091629702200⚡️ Vào là có quà – chơi là có tiền! anhcuong955: mới vào hdc hôme toinuoico22: nằm tiếp hdc home đc ko blv toinuoico22: chấp thấp mà tx cao ghê toinuoico22: way áo gì blv anhcuong955: chờ thêm 1.75 ht vâyu Admin Sóc Level: buồn thế nhờ Admin Sóc Level: arg về nhì, đau lòng quá anhcuong955: kịch bản đẹp anhcuong955: k thua trong *** Tin nhắn riêng Vô hiệu hóa tất cả Vô hiệu hóa quà tặng Tắt lời chào Đăng nhập để cùng chat nhé Gửi Tỷ lệ kèo Cược Châu Á Chủ Chấp Khách Cược Châu Âu Chủ Hòa Khách Tài xỉu Tài Tỷ lệ kèo Xỉu Kèo góc Tài Tỷ lệ kèo Xỉu Thống kê trận đấu USA MLSRv 05:00 20",
+            "main_status": 200,
+            "harvested_stream_count": 1,
+            "harvested_blv_ids": [
+              "534055"
+            ],
+            "scan_mode": "browser-event",
+            "elapsed_seconds": 3.937
+          },
+          "http_probe": {
+            "enabled": false,
+            "status": null,
+            "elapsed_seconds": 0.0,
+            "error": ""
+          },
+          "errors": [
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED"
+          ],
+          "failed_requests": [
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/main.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/customize.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/auth.css?ver=892 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat.css?ver=995 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat(1).css?ver=639 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/toast.css?ver=73 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/themes/flatsome/assets/css/flatsome.css?ver=3.18.2 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/themes/flatsome-child/style.css?ver=3.0 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/countdown.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/match.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/livescore.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/style_custom.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/effect/running-border.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/option/option-6.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/highlight/option-1.css?ver=2.8.5 | net::ERR_FAILED"
+          ],
+          "http_errors": [
+            "403 https://socolivep.cv/wp-admin/admin-ajax.php?action=scl_realtime&sport=1",
+            "403 https://pull.niur.live/live/stream-534055_lhd.m3u8?txSecret=a08ea6d59bbe33bdf51e64d54ae3ff0c&txTime=6a5cc3be"
+          ]
         }
       ],
       "attempted_room_ids": [
@@ -511,7 +636,7 @@
             "blv": "RAMBO",
             "blv_id": "534055",
             "status": "pending",
-            "attempts": 1,
+            "attempts": 2,
             "rate_limit_hits": 0,
             "last_http_status": 200,
             "last_stream_count": 1,
@@ -563,7 +688,7 @@
           "blv": "RAMBO",
           "blv_id": "534055",
           "status": "pending",
-          "attempts": 1,
+          "attempts": 2,
           "rate_limit_hits": 0,
           "last_http_status": 200,
           "last_stream_count": 1,
@@ -635,6 +760,21 @@
           "blv_id": "472241"
         },
         {
+          "url": "https://socolivep.cv/truc-tiep/sporting-kansas-city-reserves-vs-minnesota-united-b-20-07-2026-0700/?blv=560690",
+          "blv": "KÉP",
+          "blv_id": "560690"
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/sporting-kansas-city-reserves-vs-minnesota-united-b-20-07-2026-0700/?blv=598119",
+          "blv": "A TINH",
+          "blv_id": "598119"
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/sporting-kansas-city-reserves-vs-minnesota-united-b-20-07-2026-0700/?blv=472241",
+          "blv": "XO",
+          "blv_id": "472241"
+        },
+        {
           "url": "https://socolivep.cv/truc-tiep/sporting-kansas-city-reserves-vs-minnesota-united-b-20-07-2026-0700",
           "blv": "XEM NGAY",
           "blv_id": ""
@@ -647,7 +787,22 @@
       ],
       "match_name": "Sporting Kansas City Reserves vs MINNESOTA United B",
       "scheduled_at": "2026-07-20T07:00:00+07:00",
-      "streams": [],
+      "streams": [
+        {
+          "url": "https://pull.niues.live/live/stream-560690_lhd.m3u8?auth_key=1784467959-0-0-6a3c3ec087deadb49303101de10988ca",
+          "room_url": "https://socolivep.cv/truc-tiep/sporting-kansas-city-reserves-vs-minnesota-united-b-20-07-2026-0700/?blv=560690",
+          "blv": "KÉP",
+          "blv_id": "560690",
+          "source_id": "560690",
+          "source_provenance": [
+            "embedded/frame-html"
+          ],
+          "source_confidence": "embedded",
+          "mapping_mode": "exact-room-id",
+          "discovered_from_room_url": "https://socolivep.cv/truc-tiep/sporting-kansas-city-reserves-vs-minnesota-united-b-20-07-2026-0700?blv=560690",
+          "discovered_from_blv": "KÉP"
+        }
+      ],
       "room_results": [
         {
           "url": "https://socolivep.cv/truc-tiep/sporting-kansas-city-reserves-vs-minnesota-united-b-20-07-2026-0700?blv=560690",
@@ -700,18 +855,110 @@
             "429 https://socolivep.cv/truc-tiep/sporting-kansas-city-reserves-vs-minnesota-united-b-20-07-2026-0700/?blv=560690",
             "401 https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/pat/a1dd1646ab030cda/1784499350191/5d74479d3cd8698da1bb8579b59df32f3c4dcbde4d941c53c5d7cdccc7f07f5c/VXfmnX9ZBBPpWUh"
           ]
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/sporting-kansas-city-reserves-vs-minnesota-united-b-20-07-2026-0700?blv=560690",
+          "blv": "KÉP",
+          "blv_id": "560690",
+          "streams": [
+            "https://pull.niues.live/live/stream-560690_lhd.m3u8?auth_key=1784467959-0-0-6a3c3ec087deadb49303101de10988ca"
+          ],
+          "stream_sources": {
+            "https://pull.niues.live/live/stream-560690_lhd.m3u8?auth_key=1784467959-0-0-6a3c3ec087deadb49303101de10988ca": [
+              "embedded/frame-html"
+            ]
+          },
+          "stream_first_seen": [
+            "https://pull.niues.live/live/stream-560690_lhd.m3u8?auth_key=1784467959-0-0-6a3c3ec087deadb49303101de10988ca"
+          ],
+          "discovered_blv_ids": [
+            "560690"
+          ],
+          "diagnostics": {
+            "url": "https://socolivep.cv/truc-tiep/sporting-kansas-city-reserves-vs-minnesota-united-b-20-07-2026-0700/?blv=560690",
+            "title": "Xem trực tiếp bóng đá Sporting Kansas City Reserves vs MINNESOTA United B | 07:00 ngày 20/07/2026",
+            "h1": "Trực tiếp bóng đá Socolive Sporting Kansas City Reserves vs MINNESOTA United B lúc 07:00 ngày 20/07/2026",
+            "ready_state": "complete",
+            "visibility_state": "visible",
+            "hidden": false,
+            "video_count": 0,
+            "iframe_count": 0,
+            "body_sample": "Skip to content Socolive Bảng xếp hạng Lịch thi đấu Kết quả bóng đá Tin thể thao Trực tiếp bóng đá Socolive Sporting Kansas City Reserves vs MINNESOTA United B lúc 07:00 ngày 20/07/2026 USA MLSRv Sporting Kansas City Reserves 07:00 20/07 MINNESOTA United B Trận đấu sẽ bắt đầu sau Ngày0 : Giờ1 : Phút43 : Giây9 Trận đấu chưa bắt đầu KÉP A TINH XO Chat Thống kê Đội hình Diễn Biến Bảng XH \" \" Xóa Tin nhắn riêng 😀 😁 😃 😄 😅 😆 😇 😉 😊 🙂 😋 😍 😘 😗 😙 😚 😜 😝 😛 😎 🙄 😳 😡 😕 😫 😤 😨 😥 😪 😓 😵 😲 🤧 😷 🤒 🤕 😴 💤 👏 🤙 👍 👎 👊 ✊ ✌ 👌 ✋ 🤚 💪 🤝 👈 👉 🖕 🖐 👄 👂 👀 🎅 🌞 🌙 ⭐ ⚡ 🔥 ❄️ ⚽ 🏀 🏈 ⚾ 🎁 🎉 ✒️ 📝 ❤️ 💛 💚 🆚 💬 🕐 Vô hiệu hóa tất cả Vô hiệu hóa quà tặng Tắt lời chào Đăng nhập để cùng chat nhé Gửi Tỷ lệ kèo Cược Châu Á Chủ Chấp Khách Cược Châu Âu Chủ Hòa Khách Tài xỉu Tài Tỷ lệ kèo Xỉu Kèo góc Tài Tỷ lệ kèo Xỉu Mô phỏng trận đấu Thống kê trận đấu USA MLSRv 05:00 20/07 Connecticut United FC VS null null null - null Sắp diễn ra Xem ngay New York Red Bulls B LUCAS CHIVAS GIÓ ECU D1 04:45 20/07 Guayaquil City VS null null null - null Sắp diễn ra Xem ngay Manta FC RAMBO LOGAN YONE WORLD CUP 02:30 20/07 Spain VS null null null - null Sắp diễn ra Xem ngay Argentina ĐỐM Củ C",
+            "main_status": 200,
+            "harvested_stream_count": 1,
+            "harvested_blv_ids": [
+              "560690"
+            ],
+            "scan_mode": "browser-event",
+            "elapsed_seconds": 9.648
+          },
+          "http_probe": {
+            "enabled": false,
+            "status": null,
+            "elapsed_seconds": 0.0,
+            "error": ""
+          },
+          "errors": [
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED"
+          ],
+          "failed_requests": [
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/main.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/customize.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/auth.css?ver=598 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat.css?ver=927 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat(1).css?ver=696 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/toast.css?ver=852 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/themes/flatsome/assets/css/flatsome.css?ver=3.18.2 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/themes/flatsome-child/style.css?ver=3.0 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/countdown.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/match.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/livescore.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/style_custom.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/effect/running-border.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/option/option-6.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/highlight/option-1.css?ver=2.8.5 | net::ERR_FAILED"
+          ],
+          "http_errors": [
+            "403 https://socolivep.cv/wp-admin/admin-ajax.php?action=scl_realtime&sport=1"
+          ]
         }
       ],
-      "attempted_room_ids": [],
+      "attempted_room_ids": [
+        "560690"
+      ],
       "coverage": {
-        "found_streams": 0,
-        "found_blv_ids": [],
+        "found_streams": 1,
+        "found_blv_ids": [
+          "560690"
+        ],
         "goal": 3,
         "source_goal_reached": false,
         "room_queue_complete": false,
         "complete": false,
-        "total_explicit_blv_rooms": 3,
+        "total_explicit_blv_rooms": 6,
         "pending_room_keys": [
+          "560690",
+          "598119",
+          "472241",
           "560690",
           "598119",
           "472241"
@@ -719,19 +966,19 @@
         "room_progress": {
           "560690": {
             "key": "560690",
-            "url": "https://socolivep.cv/truc-tiep/sporting-kansas-city-reserves-vs-minnesota-united-b-20-07-2026-0700?blv=560690",
+            "url": "https://socolivep.cv/truc-tiep/sporting-kansas-city-reserves-vs-minnesota-united-b-20-07-2026-0700/?blv=560690",
             "blv": "KÉP",
             "blv_id": "560690",
             "status": "rate_limited",
-            "attempts": 0,
+            "attempts": 1,
             "rate_limit_hits": 1,
-            "last_http_status": 429,
-            "last_stream_count": 0,
-            "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
+            "last_http_status": 200,
+            "last_stream_count": 1,
+            "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
           },
           "598119": {
             "key": "598119",
-            "url": "https://socolivep.cv/truc-tiep/sporting-kansas-city-reserves-vs-minnesota-united-b-20-07-2026-0700?blv=598119",
+            "url": "https://socolivep.cv/truc-tiep/sporting-kansas-city-reserves-vs-minnesota-united-b-20-07-2026-0700/?blv=598119",
             "blv": "A TINH",
             "blv_id": "598119",
             "status": "pending",
@@ -743,7 +990,7 @@
           },
           "472241": {
             "key": "472241",
-            "url": "https://socolivep.cv/truc-tiep/sporting-kansas-city-reserves-vs-minnesota-united-b-20-07-2026-0700?blv=472241",
+            "url": "https://socolivep.cv/truc-tiep/sporting-kansas-city-reserves-vs-minnesota-united-b-20-07-2026-0700/?blv=472241",
             "blv": "XO",
             "blv_id": "472241",
             "status": "pending",
@@ -771,19 +1018,19 @@
       "room_progress": {
         "560690": {
           "key": "560690",
-          "url": "https://socolivep.cv/truc-tiep/sporting-kansas-city-reserves-vs-minnesota-united-b-20-07-2026-0700?blv=560690",
+          "url": "https://socolivep.cv/truc-tiep/sporting-kansas-city-reserves-vs-minnesota-united-b-20-07-2026-0700/?blv=560690",
           "blv": "KÉP",
           "blv_id": "560690",
           "status": "rate_limited",
-          "attempts": 0,
+          "attempts": 1,
           "rate_limit_hits": 1,
-          "last_http_status": 429,
-          "last_stream_count": 0,
-          "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
+          "last_http_status": 200,
+          "last_stream_count": 1,
+          "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
         },
         "598119": {
           "key": "598119",
-          "url": "https://socolivep.cv/truc-tiep/sporting-kansas-city-reserves-vs-minnesota-united-b-20-07-2026-0700?blv=598119",
+          "url": "https://socolivep.cv/truc-tiep/sporting-kansas-city-reserves-vs-minnesota-united-b-20-07-2026-0700/?blv=598119",
           "blv": "A TINH",
           "blv_id": "598119",
           "status": "pending",
@@ -795,7 +1042,7 @@
         },
         "472241": {
           "key": "472241",
-          "url": "https://socolivep.cv/truc-tiep/sporting-kansas-city-reserves-vs-minnesota-united-b-20-07-2026-0700?blv=472241",
+          "url": "https://socolivep.cv/truc-tiep/sporting-kansas-city-reserves-vs-minnesota-united-b-20-07-2026-0700/?blv=472241",
           "blv": "XO",
           "blv_id": "472241",
           "status": "pending",
@@ -847,6 +1094,21 @@
           "blv_id": "607400"
         },
         {
+          "url": "https://socolivep.cv/truc-tiep/alianza-lima-vs-sport-huancayo-20-07-2026-0700/?blv=534055",
+          "blv": "RAMBO",
+          "blv_id": "534055"
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/alianza-lima-vs-sport-huancayo-20-07-2026-0700/?blv=235232",
+          "blv": "A PÁO",
+          "blv_id": "235232"
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/alianza-lima-vs-sport-huancayo-20-07-2026-0700/?blv=607400",
+          "blv": "HÀ DUY KIÊN",
+          "blv_id": "607400"
+        },
+        {
           "url": "https://socolivep.cv/truc-tiep/alianza-lima-vs-sport-huancayo-20-07-2026-0700",
           "blv": "XEM NGAY",
           "blv_id": ""
@@ -859,7 +1121,22 @@
       ],
       "match_name": "Alianza Lima vs Sport Huancayo",
       "scheduled_at": "2026-07-20T07:00:00+07:00",
-      "streams": [],
+      "streams": [
+        {
+          "url": "https://pull.niur.live/live/stream-534055_lhd.m3u8?txSecret=fd69dcc350844eaceeb21ab1f4339ace&txTime=6a5d9e85",
+          "room_url": "https://socolivep.cv/truc-tiep/alianza-lima-vs-sport-huancayo-20-07-2026-0700/?blv=534055",
+          "blv": "RAMBO",
+          "blv_id": "534055",
+          "source_id": "534055",
+          "source_provenance": [
+            "embedded/frame-html"
+          ],
+          "source_confidence": "embedded",
+          "mapping_mode": "exact-room-id",
+          "discovered_from_room_url": "https://socolivep.cv/truc-tiep/alianza-lima-vs-sport-huancayo-20-07-2026-0700?blv=534055",
+          "discovered_from_blv": "RAMBO"
+        }
+      ],
       "room_results": [
         {
           "url": "https://socolivep.cv/truc-tiep/alianza-lima-vs-sport-huancayo-20-07-2026-0700?blv=534055",
@@ -912,18 +1189,110 @@
             "429 https://socolivep.cv/truc-tiep/alianza-lima-vs-sport-huancayo-20-07-2026-0700?blv=534055",
             "401 https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/pat/a1dd1646bb1c0cda/1784499350263/491c3da550cb5b2f7d23ebbf85efbd865519513235294edd07c59ed525c96f19/DU5bWNvZdB1S4L8"
           ]
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/alianza-lima-vs-sport-huancayo-20-07-2026-0700?blv=534055",
+          "blv": "RAMBO",
+          "blv_id": "534055",
+          "streams": [
+            "https://pull.niur.live/live/stream-534055_lhd.m3u8?txSecret=fd69dcc350844eaceeb21ab1f4339ace&txTime=6a5d9e85"
+          ],
+          "stream_sources": {
+            "https://pull.niur.live/live/stream-534055_lhd.m3u8?txSecret=fd69dcc350844eaceeb21ab1f4339ace&txTime=6a5d9e85": [
+              "embedded/frame-html"
+            ]
+          },
+          "stream_first_seen": [
+            "https://pull.niur.live/live/stream-534055_lhd.m3u8?txSecret=fd69dcc350844eaceeb21ab1f4339ace&txTime=6a5d9e85"
+          ],
+          "discovered_blv_ids": [
+            "534055"
+          ],
+          "diagnostics": {
+            "url": "https://socolivep.cv/truc-tiep/alianza-lima-vs-sport-huancayo-20-07-2026-0700/?blv=534055",
+            "title": "Xem trực tiếp bóng đá Alianza Lima vs Sport Huancayo | 07:00 ngày 20/07/2026",
+            "h1": "Trực tiếp bóng đá Socolive Alianza Lima vs Sport Huancayo lúc 07:00 ngày 20/07/2026",
+            "ready_state": "complete",
+            "visibility_state": "visible",
+            "hidden": false,
+            "video_count": 0,
+            "iframe_count": 0,
+            "body_sample": "Skip to content Socolive Bảng xếp hạng Lịch thi đấu Kết quả bóng đá Tin thể thao Trực tiếp bóng đá Socolive Alianza Lima vs Sport Huancayo lúc 07:00 ngày 20/07/2026 PER D1 Alianza Lima 07:00 20/07 Sport Huancayo Trận đấu sẽ bắt đầu sau Ngày0 : Giờ1 : Phút43 : Giây9 Trận đấu chưa bắt đầu RAMBO A PÁO HÀ DUY KIÊN Chat Thống kê Đội hình Diễn Biến Bảng XH \" \" Admin Sóc Level: 🔥 BSPORT – Uy tín Bảo mật Thưởng đến 1.800K💸 Hoàn trả ngày/tuần – chơi là có thưởng🚀 Đăng ký ngay: https://www.BTY9296.com📩 Tele: @levehehe ⚽️ BUFA: WNNZCR📞 Zalo: 0779 549 184🆘Facebook : https://www.facebook.com/profile.phpid=100091629702200⚡️ Vào là có quà – chơi là có tiền! anhcuong955: mới vào hdc hôme toinuoico22: nằm tiếp hdc home đc ko blv toinuoico22: chấp thấp mà tx cao ghê toinuoico22: way áo gì blv anhcuong955: chờ thêm 1.75 ht vâyu Admin Sóc Level: buồn thế nhờ Admin Sóc Level: arg về nhì, đau lòng quá anhcuong955: kịch bản đẹp anhcuong955: k thua trong *** Xóa Tin nhắn riêng 😀 😁 😃 😄 😅 😆 😇 😉 😊 🙂 😋 😍 😘 😗 😙 😚 😜 😝 😛 😎 🙄 😳 😡 😕 😫 😤 😨 😥 😪 😓 😵 😲 🤧 😷 🤒 🤕 😴 💤 👏 🤙 👍 👎 👊 ✊ ✌ 👌 ✋ 🤚 💪 🤝 👈 👉 🖕 🖐 👄 👂 👀 🎅 🌞 🌙 ⭐ ⚡ 🔥 ❄️ ⚽ 🏀 🏈 ⚾ 🎁 🎉 ✒️ 📝 ❤️ 💛 💚 🆚 💬 🕐",
+            "main_status": 200,
+            "harvested_stream_count": 1,
+            "harvested_blv_ids": [
+              "534055"
+            ],
+            "scan_mode": "browser-event",
+            "elapsed_seconds": 9.842
+          },
+          "http_probe": {
+            "enabled": false,
+            "status": null,
+            "elapsed_seconds": 0.0,
+            "error": ""
+          },
+          "errors": [
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED"
+          ],
+          "failed_requests": [
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/main.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/customize.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/auth.css?ver=832 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat.css?ver=671 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat(1).css?ver=175 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/toast.css?ver=398 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/themes/flatsome/assets/css/flatsome.css?ver=3.18.2 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/themes/flatsome-child/style.css?ver=3.0 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/countdown.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/match.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/livescore.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/style_custom.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/effect/running-border.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/option/option-6.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/highlight/option-1.css?ver=2.8.5 | net::ERR_FAILED"
+          ],
+          "http_errors": [
+            "403 https://socolivep.cv/wp-admin/admin-ajax.php?action=scl_realtime&sport=1"
+          ]
         }
       ],
-      "attempted_room_ids": [],
+      "attempted_room_ids": [
+        "534055"
+      ],
       "coverage": {
-        "found_streams": 0,
-        "found_blv_ids": [],
+        "found_streams": 1,
+        "found_blv_ids": [
+          "534055"
+        ],
         "goal": 3,
         "source_goal_reached": false,
         "room_queue_complete": false,
         "complete": false,
-        "total_explicit_blv_rooms": 3,
+        "total_explicit_blv_rooms": 6,
         "pending_room_keys": [
+          "534055",
+          "235232",
+          "607400",
           "534055",
           "235232",
           "607400"
@@ -931,19 +1300,19 @@
         "room_progress": {
           "534055": {
             "key": "534055",
-            "url": "https://socolivep.cv/truc-tiep/alianza-lima-vs-sport-huancayo-20-07-2026-0700?blv=534055",
+            "url": "https://socolivep.cv/truc-tiep/alianza-lima-vs-sport-huancayo-20-07-2026-0700/?blv=534055",
             "blv": "RAMBO",
             "blv_id": "534055",
             "status": "rate_limited",
-            "attempts": 0,
+            "attempts": 1,
             "rate_limit_hits": 1,
-            "last_http_status": 429,
-            "last_stream_count": 0,
-            "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
+            "last_http_status": 200,
+            "last_stream_count": 1,
+            "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
           },
           "235232": {
             "key": "235232",
-            "url": "https://socolivep.cv/truc-tiep/alianza-lima-vs-sport-huancayo-20-07-2026-0700?blv=235232",
+            "url": "https://socolivep.cv/truc-tiep/alianza-lima-vs-sport-huancayo-20-07-2026-0700/?blv=235232",
             "blv": "A PÁO",
             "blv_id": "235232",
             "status": "pending",
@@ -955,7 +1324,7 @@
           },
           "607400": {
             "key": "607400",
-            "url": "https://socolivep.cv/truc-tiep/alianza-lima-vs-sport-huancayo-20-07-2026-0700?blv=607400",
+            "url": "https://socolivep.cv/truc-tiep/alianza-lima-vs-sport-huancayo-20-07-2026-0700/?blv=607400",
             "blv": "HÀ DUY KIÊN",
             "blv_id": "607400",
             "status": "pending",
@@ -983,19 +1352,19 @@
       "room_progress": {
         "534055": {
           "key": "534055",
-          "url": "https://socolivep.cv/truc-tiep/alianza-lima-vs-sport-huancayo-20-07-2026-0700?blv=534055",
+          "url": "https://socolivep.cv/truc-tiep/alianza-lima-vs-sport-huancayo-20-07-2026-0700/?blv=534055",
           "blv": "RAMBO",
           "blv_id": "534055",
           "status": "rate_limited",
-          "attempts": 0,
+          "attempts": 1,
           "rate_limit_hits": 1,
-          "last_http_status": 429,
-          "last_stream_count": 0,
-          "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
+          "last_http_status": 200,
+          "last_stream_count": 1,
+          "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
         },
         "235232": {
           "key": "235232",
-          "url": "https://socolivep.cv/truc-tiep/alianza-lima-vs-sport-huancayo-20-07-2026-0700?blv=235232",
+          "url": "https://socolivep.cv/truc-tiep/alianza-lima-vs-sport-huancayo-20-07-2026-0700/?blv=235232",
           "blv": "A PÁO",
           "blv_id": "235232",
           "status": "pending",
@@ -1007,7 +1376,7 @@
         },
         "607400": {
           "key": "607400",
-          "url": "https://socolivep.cv/truc-tiep/alianza-lima-vs-sport-huancayo-20-07-2026-0700?blv=607400",
+          "url": "https://socolivep.cv/truc-tiep/alianza-lima-vs-sport-huancayo-20-07-2026-0700/?blv=607400",
           "blv": "HÀ DUY KIÊN",
           "blv_id": "607400",
           "status": "pending",

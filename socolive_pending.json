@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-07-20T05:15:57.694457+07:00",
+  "generated_at": "2026-07-20T05:16:50.844097+07:00",
   "state_schema_version": "v10-per-blv-queue",
   "dispatch_next": true,
   "pending_count": 7,
-  "completed_count": 2,
+  "completed_count": 4,
   "coverage_complete_count": 0,
   "total_match_count": 7,
-  "total_stream_count": 2,
+  "total_stream_count": 4,
   "progress_count": 2,
-  "chain_runs": 1,
+  "chain_runs": 2,
   "no_progress_runs": 0,
   "stop_reason": "",
   "rate_limited": true,
-  "rate_limit_url": "https://socolivep.cv/truc-tiep/sporting-kansas-city-reserves-vs-minnesota-united-b-20-07-2026-0700/?blv=560690",
+  "rate_limit_url": "https://socolivep.cv/truc-tiep/connecticut-united-fc-vs-new-york-red-bulls-b-20-07-2026-0500?blv=304148",
   "count": 7,
   "matches": [
     {
@@ -32,21 +32,6 @@
         },
         {
           "url": "https://socolivep.cv/truc-tiep/connecticut-united-fc-vs-new-york-red-bulls-b-20-07-2026-0500?blv=321443",
-          "blv": "GIÓ",
-          "blv_id": "321443"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/connecticut-united-fc-vs-new-york-red-bulls-b-20-07-2026-0500/?blv=304148",
-          "blv": "LUCAS",
-          "blv_id": "304148"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/connecticut-united-fc-vs-new-york-red-bulls-b-20-07-2026-0500/?blv=485739",
-          "blv": "CHIVAS",
-          "blv_id": "485739"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/connecticut-united-fc-vs-new-york-red-bulls-b-20-07-2026-0500/?blv=321443",
           "blv": "GIÓ",
           "blv_id": "321443"
         },
@@ -91,11 +76,8 @@
         "source_goal_reached": false,
         "room_queue_complete": false,
         "complete": false,
-        "total_explicit_blv_rooms": 6,
+        "total_explicit_blv_rooms": 3,
         "pending_room_keys": [
-          "304148",
-          "485739",
-          "321443",
           "304148",
           "485739",
           "321443"
@@ -103,19 +85,19 @@
         "room_progress": {
           "304148": {
             "key": "304148",
-            "url": "https://socolivep.cv/truc-tiep/connecticut-united-fc-vs-new-york-red-bulls-b-20-07-2026-0500/?blv=304148",
+            "url": "https://socolivep.cv/truc-tiep/connecticut-united-fc-vs-new-york-red-bulls-b-20-07-2026-0500?blv=304148",
             "blv": "LUCAS",
             "blv_id": "304148",
-            "status": "pending",
+            "status": "rate_limited",
             "attempts": 1,
-            "rate_limit_hits": 0,
-            "last_http_status": 200,
-            "last_stream_count": 1,
-            "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
+            "rate_limit_hits": 1,
+            "last_http_status": 429,
+            "last_stream_count": 0,
+            "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
           },
           "485739": {
             "key": "485739",
-            "url": "https://socolivep.cv/truc-tiep/connecticut-united-fc-vs-new-york-red-bulls-b-20-07-2026-0500/?blv=485739",
+            "url": "https://socolivep.cv/truc-tiep/connecticut-united-fc-vs-new-york-red-bulls-b-20-07-2026-0500?blv=485739",
             "blv": "CHIVAS",
             "blv_id": "485739",
             "status": "pending",
@@ -127,7 +109,7 @@
           },
           "321443": {
             "key": "321443",
-            "url": "https://socolivep.cv/truc-tiep/connecticut-united-fc-vs-new-york-red-bulls-b-20-07-2026-0500/?blv=321443",
+            "url": "https://socolivep.cv/truc-tiep/connecticut-united-fc-vs-new-york-red-bulls-b-20-07-2026-0500?blv=321443",
             "blv": "GIÓ",
             "blv_id": "321443",
             "status": "pending",
@@ -157,19 +139,19 @@
       "room_progress": {
         "304148": {
           "key": "304148",
-          "url": "https://socolivep.cv/truc-tiep/connecticut-united-fc-vs-new-york-red-bulls-b-20-07-2026-0500/?blv=304148",
+          "url": "https://socolivep.cv/truc-tiep/connecticut-united-fc-vs-new-york-red-bulls-b-20-07-2026-0500?blv=304148",
           "blv": "LUCAS",
           "blv_id": "304148",
-          "status": "pending",
+          "status": "rate_limited",
           "attempts": 1,
-          "rate_limit_hits": 0,
-          "last_http_status": 200,
-          "last_stream_count": 1,
-          "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
+          "rate_limit_hits": 1,
+          "last_http_status": 429,
+          "last_stream_count": 0,
+          "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
         },
         "485739": {
           "key": "485739",
-          "url": "https://socolivep.cv/truc-tiep/connecticut-united-fc-vs-new-york-red-bulls-b-20-07-2026-0500/?blv=485739",
+          "url": "https://socolivep.cv/truc-tiep/connecticut-united-fc-vs-new-york-red-bulls-b-20-07-2026-0500?blv=485739",
           "blv": "CHIVAS",
           "blv_id": "485739",
           "status": "pending",
@@ -181,7 +163,7 @@
         },
         "321443": {
           "key": "321443",
-          "url": "https://socolivep.cv/truc-tiep/connecticut-united-fc-vs-new-york-red-bulls-b-20-07-2026-0500/?blv=321443",
+          "url": "https://socolivep.cv/truc-tiep/connecticut-united-fc-vs-new-york-red-bulls-b-20-07-2026-0500?blv=321443",
           "blv": "GIÓ",
           "blv_id": "321443",
           "status": "pending",
@@ -205,9 +187,6 @@
         }
       },
       "pending_room_keys": [
-        "304148",
-        "485739",
-        "321443",
         "304148",
         "485739",
         "321443"
@@ -305,7 +284,7 @@
             "blv": "RAMBO",
             "blv_id": "534055",
             "status": "pending",
-            "attempts": 1,
+            "attempts": 2,
             "rate_limit_hits": 0,
             "last_http_status": 200,
             "last_stream_count": 1,
@@ -359,7 +338,7 @@
           "blv": "RAMBO",
           "blv_id": "534055",
           "status": "pending",
-          "attempts": 1,
+          "attempts": 2,
           "rate_limit_hits": 0,
           "last_http_status": 200,
           "last_stream_count": 1,
@@ -432,6 +411,21 @@
           "blv_id": "472241"
         },
         {
+          "url": "https://socolivep.cv/truc-tiep/sporting-kansas-city-reserves-vs-minnesota-united-b-20-07-2026-0700/?blv=560690",
+          "blv": "KÉP",
+          "blv_id": "560690"
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/sporting-kansas-city-reserves-vs-minnesota-united-b-20-07-2026-0700/?blv=598119",
+          "blv": "A TINH",
+          "blv_id": "598119"
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/sporting-kansas-city-reserves-vs-minnesota-united-b-20-07-2026-0700/?blv=472241",
+          "blv": "XO",
+          "blv_id": "472241"
+        },
+        {
           "url": "https://socolivep.cv/truc-tiep/sporting-kansas-city-reserves-vs-minnesota-united-b-20-07-2026-0700",
           "blv": "XEM NGAY",
           "blv_id": ""
@@ -442,16 +436,36 @@
           "blv_id": ""
         }
       ],
-      "streams": [],
+      "streams": [
+        {
+          "url": "https://pull.niues.live/live/stream-560690_lhd.m3u8?auth_key=1784467959-0-0-6a3c3ec087deadb49303101de10988ca",
+          "room_url": "https://socolivep.cv/truc-tiep/sporting-kansas-city-reserves-vs-minnesota-united-b-20-07-2026-0700/?blv=560690",
+          "blv": "KÉP",
+          "blv_id": "560690",
+          "source_id": "560690",
+          "source_provenance": [
+            "embedded/frame-html"
+          ],
+          "source_confidence": "embedded",
+          "mapping_mode": "exact-room-id",
+          "discovered_from_room_url": "https://socolivep.cv/truc-tiep/sporting-kansas-city-reserves-vs-minnesota-united-b-20-07-2026-0700?blv=560690",
+          "discovered_from_blv": "KÉP"
+        }
+      ],
       "coverage": {
-        "found_streams": 0,
-        "found_blv_ids": [],
+        "found_streams": 1,
+        "found_blv_ids": [
+          "560690"
+        ],
         "goal": 3,
         "source_goal_reached": false,
         "room_queue_complete": false,
         "complete": false,
-        "total_explicit_blv_rooms": 3,
+        "total_explicit_blv_rooms": 6,
         "pending_room_keys": [
+          "560690",
+          "598119",
+          "472241",
           "560690",
           "598119",
           "472241"
@@ -459,19 +473,19 @@
         "room_progress": {
           "560690": {
             "key": "560690",
-            "url": "https://socolivep.cv/truc-tiep/sporting-kansas-city-reserves-vs-minnesota-united-b-20-07-2026-0700?blv=560690",
+            "url": "https://socolivep.cv/truc-tiep/sporting-kansas-city-reserves-vs-minnesota-united-b-20-07-2026-0700/?blv=560690",
             "blv": "KÉP",
             "blv_id": "560690",
             "status": "rate_limited",
-            "attempts": 0,
+            "attempts": 1,
             "rate_limit_hits": 1,
-            "last_http_status": 429,
-            "last_stream_count": 0,
-            "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
+            "last_http_status": 200,
+            "last_stream_count": 1,
+            "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
           },
           "598119": {
             "key": "598119",
-            "url": "https://socolivep.cv/truc-tiep/sporting-kansas-city-reserves-vs-minnesota-united-b-20-07-2026-0700?blv=598119",
+            "url": "https://socolivep.cv/truc-tiep/sporting-kansas-city-reserves-vs-minnesota-united-b-20-07-2026-0700/?blv=598119",
             "blv": "A TINH",
             "blv_id": "598119",
             "status": "pending",
@@ -483,7 +497,7 @@
           },
           "472241": {
             "key": "472241",
-            "url": "https://socolivep.cv/truc-tiep/sporting-kansas-city-reserves-vs-minnesota-united-b-20-07-2026-0700?blv=472241",
+            "url": "https://socolivep.cv/truc-tiep/sporting-kansas-city-reserves-vs-minnesota-united-b-20-07-2026-0700/?blv=472241",
             "blv": "XO",
             "blv_id": "472241",
             "status": "pending",
@@ -507,23 +521,25 @@
           }
         }
       },
-      "attempted_room_ids": [],
+      "attempted_room_ids": [
+        "560690"
+      ],
       "room_progress": {
         "560690": {
           "key": "560690",
-          "url": "https://socolivep.cv/truc-tiep/sporting-kansas-city-reserves-vs-minnesota-united-b-20-07-2026-0700?blv=560690",
+          "url": "https://socolivep.cv/truc-tiep/sporting-kansas-city-reserves-vs-minnesota-united-b-20-07-2026-0700/?blv=560690",
           "blv": "KÉP",
           "blv_id": "560690",
           "status": "rate_limited",
-          "attempts": 0,
+          "attempts": 1,
           "rate_limit_hits": 1,
-          "last_http_status": 429,
-          "last_stream_count": 0,
-          "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
+          "last_http_status": 200,
+          "last_stream_count": 1,
+          "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
         },
         "598119": {
           "key": "598119",
-          "url": "https://socolivep.cv/truc-tiep/sporting-kansas-city-reserves-vs-minnesota-united-b-20-07-2026-0700?blv=598119",
+          "url": "https://socolivep.cv/truc-tiep/sporting-kansas-city-reserves-vs-minnesota-united-b-20-07-2026-0700/?blv=598119",
           "blv": "A TINH",
           "blv_id": "598119",
           "status": "pending",
@@ -535,7 +551,7 @@
         },
         "472241": {
           "key": "472241",
-          "url": "https://socolivep.cv/truc-tiep/sporting-kansas-city-reserves-vs-minnesota-united-b-20-07-2026-0700?blv=472241",
+          "url": "https://socolivep.cv/truc-tiep/sporting-kansas-city-reserves-vs-minnesota-united-b-20-07-2026-0700/?blv=472241",
           "blv": "XO",
           "blv_id": "472241",
           "status": "pending",
@@ -559,6 +575,9 @@
         }
       },
       "pending_room_keys": [
+        "560690",
+        "598119",
+        "472241",
         "560690",
         "598119",
         "472241"
@@ -585,6 +604,21 @@
           "blv_id": "607400"
         },
         {
+          "url": "https://socolivep.cv/truc-tiep/alianza-lima-vs-sport-huancayo-20-07-2026-0700/?blv=534055",
+          "blv": "RAMBO",
+          "blv_id": "534055"
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/alianza-lima-vs-sport-huancayo-20-07-2026-0700/?blv=235232",
+          "blv": "A PÁO",
+          "blv_id": "235232"
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/alianza-lima-vs-sport-huancayo-20-07-2026-0700/?blv=607400",
+          "blv": "HÀ DUY KIÊN",
+          "blv_id": "607400"
+        },
+        {
           "url": "https://socolivep.cv/truc-tiep/alianza-lima-vs-sport-huancayo-20-07-2026-0700",
           "blv": "XEM NGAY",
           "blv_id": ""
@@ -595,16 +629,36 @@
           "blv_id": ""
         }
       ],
-      "streams": [],
+      "streams": [
+        {
+          "url": "https://pull.niur.live/live/stream-534055_lhd.m3u8?txSecret=fd69dcc350844eaceeb21ab1f4339ace&txTime=6a5d9e85",
+          "room_url": "https://socolivep.cv/truc-tiep/alianza-lima-vs-sport-huancayo-20-07-2026-0700/?blv=534055",
+          "blv": "RAMBO",
+          "blv_id": "534055",
+          "source_id": "534055",
+          "source_provenance": [
+            "embedded/frame-html"
+          ],
+          "source_confidence": "embedded",
+          "mapping_mode": "exact-room-id",
+          "discovered_from_room_url": "https://socolivep.cv/truc-tiep/alianza-lima-vs-sport-huancayo-20-07-2026-0700?blv=534055",
+          "discovered_from_blv": "RAMBO"
+        }
+      ],
       "coverage": {
-        "found_streams": 0,
-        "found_blv_ids": [],
+        "found_streams": 1,
+        "found_blv_ids": [
+          "534055"
+        ],
         "goal": 3,
         "source_goal_reached": false,
         "room_queue_complete": false,
         "complete": false,
-        "total_explicit_blv_rooms": 3,
+        "total_explicit_blv_rooms": 6,
         "pending_room_keys": [
+          "534055",
+          "235232",
+          "607400",
           "534055",
           "235232",
           "607400"
@@ -612,19 +666,19 @@
         "room_progress": {
           "534055": {
             "key": "534055",
-            "url": "https://socolivep.cv/truc-tiep/alianza-lima-vs-sport-huancayo-20-07-2026-0700?blv=534055",
+            "url": "https://socolivep.cv/truc-tiep/alianza-lima-vs-sport-huancayo-20-07-2026-0700/?blv=534055",
             "blv": "RAMBO",
             "blv_id": "534055",
             "status": "rate_limited",
-            "attempts": 0,
+            "attempts": 1,
             "rate_limit_hits": 1,
-            "last_http_status": 429,
-            "last_stream_count": 0,
-            "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
+            "last_http_status": 200,
+            "last_stream_count": 1,
+            "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
           },
           "235232": {
             "key": "235232",
-            "url": "https://socolivep.cv/truc-tiep/alianza-lima-vs-sport-huancayo-20-07-2026-0700?blv=235232",
+            "url": "https://socolivep.cv/truc-tiep/alianza-lima-vs-sport-huancayo-20-07-2026-0700/?blv=235232",
             "blv": "A PÁO",
             "blv_id": "235232",
             "status": "pending",
@@ -636,7 +690,7 @@
           },
           "607400": {
             "key": "607400",
-            "url": "https://socolivep.cv/truc-tiep/alianza-lima-vs-sport-huancayo-20-07-2026-0700?blv=607400",
+            "url": "https://socolivep.cv/truc-tiep/alianza-lima-vs-sport-huancayo-20-07-2026-0700/?blv=607400",
             "blv": "HÀ DUY KIÊN",
             "blv_id": "607400",
             "status": "pending",
@@ -660,23 +714,25 @@
           }
         }
       },
-      "attempted_room_ids": [],
+      "attempted_room_ids": [
+        "534055"
+      ],
       "room_progress": {
         "534055": {
           "key": "534055",
-          "url": "https://socolivep.cv/truc-tiep/alianza-lima-vs-sport-huancayo-20-07-2026-0700?blv=534055",
+          "url": "https://socolivep.cv/truc-tiep/alianza-lima-vs-sport-huancayo-20-07-2026-0700/?blv=534055",
           "blv": "RAMBO",
           "blv_id": "534055",
           "status": "rate_limited",
-          "attempts": 0,
+          "attempts": 1,
           "rate_limit_hits": 1,
-          "last_http_status": 429,
-          "last_stream_count": 0,
-          "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
+          "last_http_status": 200,
+          "last_stream_count": 1,
+          "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
         },
         "235232": {
           "key": "235232",
-          "url": "https://socolivep.cv/truc-tiep/alianza-lima-vs-sport-huancayo-20-07-2026-0700?blv=235232",
+          "url": "https://socolivep.cv/truc-tiep/alianza-lima-vs-sport-huancayo-20-07-2026-0700/?blv=235232",
           "blv": "A PÁO",
           "blv_id": "235232",
           "status": "pending",
@@ -688,7 +744,7 @@
         },
         "607400": {
           "key": "607400",
-          "url": "https://socolivep.cv/truc-tiep/alianza-lima-vs-sport-huancayo-20-07-2026-0700?blv=607400",
+          "url": "https://socolivep.cv/truc-tiep/alianza-lima-vs-sport-huancayo-20-07-2026-0700/?blv=607400",
           "blv": "HÀ DUY KIÊN",
           "blv_id": "607400",
           "status": "pending",
@@ -712,6 +768,9 @@
         }
       },
       "pending_room_keys": [
+        "534055",
+        "235232",
+        "607400",
         "534055",
         "235232",
         "607400"
