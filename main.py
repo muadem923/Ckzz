@@ -24,6 +24,7 @@ OUTPUT_DEBUG = "socolive_debug.json"
 OUTPUT_MATCHES = "socolive_matches.json"
 OUTPUT_STATE = "socolive_state.json"
 OUTPUT_PENDING = "socolive_pending.json"
+OUTPUT_DECISION = "socolive_chain_decision.json"
 
 TIMEZONE = ZoneInfo("Asia/Ho_Chi_Minh")
 
@@ -49,19 +50,37 @@ ENABLE_CDP = os.getenv("SOCOLIVE_ENABLE_CDP", "1") == "1"
 
 # Chỉ quét các trận trong khoảng thời gian hợp lý để tránh mở hàng trăm player.
 SCAN_BEFORE_MINUTES = int(
-    os.getenv("SOCOLIVE_SCAN_BEFORE_MINUTES", "300")
+    os.getenv("SOCOLIVE_SCAN_BEFORE_MINUTES", "90")
 )
 SCAN_AFTER_MINUTES = int(
-    os.getenv("SOCOLIVE_SCAN_AFTER_MINUTES", "90")
+    os.getenv("SOCOLIVE_SCAN_AFTER_MINUTES", "240")
 )
 SCAN_ALL = os.getenv("SOCOLIVE_SCAN_ALL", "0") == "1"
 
-# Mặc định chỉ cần một link tốt/trận và thử tối đa 3 phòng BLV.
-MAX_SUCCESSFUL_ROOMS_PER_MATCH = int(
-    os.getenv("SOCOLIVE_MAX_SUCCESSFUL_ROOMS_PER_MATCH", "1")
+# Mục tiêu nhiều luồng cho mỗi trận.
+# Một trang có thể nhúng config/link của nhiều BLV khác nhau.
+MAX_STREAMS_PER_MATCH = int(
+    os.getenv("SOCOLIVE_MAX_STREAMS_PER_MATCH", "10")
 )
+
+# Số trang BLV tối đa được mở cho cùng một trận trong MỘT workflow run.
+# Mỗi trang đều quét toàn bộ HTML/config, nên thường không cần mở đủ 10 trang.
 MAX_ROOMS_PER_MATCH = int(
-    os.getenv("SOCOLIVE_MAX_ROOMS_PER_MATCH", "1")
+    os.getenv("SOCOLIVE_MAX_ROOMS_PER_MATCH", "3")
+)
+
+# Giữ biến cũ để tương thích workflow cũ; V9 dừng theo coverage stream.
+MAX_SUCCESSFUL_ROOMS_PER_MATCH = int(
+    os.getenv(
+        "SOCOLIVE_MAX_SUCCESSFUL_ROOMS_PER_MATCH",
+        str(MAX_STREAMS_PER_MATCH),
+    )
+)
+
+# Sau khi bắt được stream đầu tiên, chờ thêm một chút rồi quét toàn bộ
+# performance entries, JWPlayer playlist và HTML để thu hoạch các BLV khác.
+EMBEDDED_HARVEST_WAIT_SECONDS = float(
+    os.getenv("SOCOLIVE_EMBEDDED_HARVEST_WAIT_SECONDS", "1.4")
 )
 
 HEADLESS = os.getenv("SOCOLIVE_HEADLESS", "1") != "0"
@@ -132,6 +151,140 @@ def room_blv_id(url: str) -> str:
         return parse_qs(urlsplit(url).query).get("blv", [""])[0]
     except Exception:
         return ""
+
+
+def stream_blv_id(stream_url: str) -> str:
+    """
+    Ví dụ:
+      /live/stream-387694_lhd.m3u8 -> 387694
+    """
+    try:
+        path = urlsplit(stream_url).path
+    except Exception:
+        return ""
+
+    match = re.search(
+        r"/stream-(\d+)(?:_|\.|/)",
+        path,
+        flags=re.I,
+    )
+    return match.group(1) if match else ""
+
+
+def match_room_map(
+    match: dict[str, Any],
+) -> dict[str, dict[str, str]]:
+    output: dict[str, dict[str, str]] = {}
+
+    for room in unique_rooms(
+        match.get("rooms", [])
+    ):
+        room_id = clean_text(
+            room.get("blv_id", "")
+        ) or room_blv_id(room.get("url", ""))
+
+        if room_id:
+            output[room_id] = room
+
+    return output
+
+
+def match_found_blv_ids(
+    match: dict[str, Any],
+) -> set[str]:
+    found: set[str] = set()
+
+    for item in match.get("streams", []):
+        room_id = clean_text(
+            item.get("blv_id", "")
+        ) or stream_blv_id(
+            item.get("url", "")
+        )
+        if room_id:
+            found.add(room_id)
+
+    return found
+
+
+def match_stream_goal(
+    match: dict[str, Any],
+) -> int:
+    room_count = len(match_room_map(match))
+    if room_count <= 0:
+        return 1
+
+    return max(
+        1,
+        min(room_count, MAX_STREAMS_PER_MATCH),
+    )
+
+
+def match_coverage_complete(
+    match: dict[str, Any],
+) -> bool:
+    return (
+        len(match_found_blv_ids(match))
+        >= match_stream_goal(match)
+    )
+
+
+def update_match_coverage(
+    match: dict[str, Any],
+) -> None:
+    room_ids = match_found_blv_ids(match)
+    goal = match_stream_goal(match)
+
+    match["coverage"] = {
+        "found_streams": len(
+            match.get("streams", [])
+        ),
+        "found_blv_ids": sorted(room_ids),
+        "goal": goal,
+        "complete": len(room_ids) >= goal,
+        "attempted_room_ids": sorted(
+            set(
+                str(value)
+                for value in match.get(
+                    "attempted_room_ids",
+                    [],
+                )
+                if value
+            )
+        ),
+    }
+
+
+def dedup_match_streams(
+    match: dict[str, Any],
+) -> None:
+    """
+    Mỗi stream-ID/đường dẫn chỉ giữ URL tốt nhất.
+    URL có token/chữ ký và đầy đủ query được ưu tiên.
+    """
+    best: dict[tuple[str, str, str], dict[str, str]] = {}
+
+    for item in match.get("streams", []):
+        stream_url = clean_text(
+            item.get("url", "")
+        )
+        if not stream_url:
+            continue
+
+        parsed = urlsplit(stream_url)
+        key = (
+            parsed.scheme.lower(),
+            parsed.netloc.lower(),
+            parsed.path,
+        )
+
+        old = best.get(key)
+        if old is None or len(stream_url) > len(
+            old.get("url", "")
+        ):
+            best[key] = item
+
+    match["streams"] = list(best.values())
+    update_match_coverage(match)
 
 
 def normalize_absolute_url(url: str, base: str = TARGET_URL) -> str:
@@ -700,6 +853,8 @@ async def collect_home_matches(
                     ),
                     "streams": [],
                     "room_results": [],
+                    "attempted_room_ids": [],
+                    "coverage": {},
                     "errors": [],
                 }
             )
@@ -1341,19 +1496,37 @@ async def scan_room(
                 pass
 
         if stream_event.is_set():
-            # Cho player thêm một khoảng rất ngắn để phát hiện URL dự phòng.
+            # Không đóng tab ngay sau stream đầu tiên.
+            # Nhiều stream BLV khác có thể nằm trong inline config/HTML.
             await page.wait_for_timeout(
-                int(EXTRA_WAIT_AFTER_STREAM * 1000)
+                int(
+                    max(
+                        EXTRA_WAIT_AFTER_STREAM,
+                        EMBEDDED_HARVEST_WAIT_SECONDS,
+                    )
+                    * 1000
+                )
             )
         else:
-            # Chỉ scan DOM/JWPlayer một lần cuối khi network không bắt được.
-            for value in await collect_frame_candidates(page):
-                capture(value, "final/frame-scan")
+            await page.wait_for_timeout(250)
 
-            if stream_event.is_set():
-                await page.wait_for_timeout(250)
+        # V9: LUÔN quét toàn bộ frame/JWPlayer/HTML,
+        # kể cả network đã bắt được stream đầu tiên.
+        for value in await collect_frame_candidates(page):
+            capture(value, "embedded/frame-html")
+
+        # Chờ rất ngắn để các callback network cuối cùng được đẩy ra.
+        await page.wait_for_timeout(250)
 
         diagnostics = await diagnose_page(page)
+        diagnostics["harvested_stream_count"] = len(stream_urls)
+        diagnostics["harvested_blv_ids"] = sorted(
+            {
+                stream_blv_id(url)
+                for url in stream_urls
+                if stream_blv_id(url)
+            }
+        )
         diagnostics["scan_mode"] = "browser-event"
         diagnostics["elapsed_seconds"] = round(
             time.monotonic() - started,
@@ -1382,6 +1555,13 @@ async def scan_room(
         "blv": room_blv,
         "blv_id": room.get("blv_id", "") or room_blv_id(room_url),
         "streams": sorted(stream_urls),
+        "discovered_blv_ids": sorted(
+            {
+                stream_blv_id(url)
+                for url in stream_urls
+                if stream_blv_id(url)
+            }
+        ),
         "diagnostics": diagnostics,
         "http_probe": http_probe,
         "errors": errors,
@@ -1401,7 +1581,9 @@ async def scan_match(
 ) -> dict[str, Any]:
     async with semaphore:
         name = match_display_name(match)
-        scheduled = match_datetime_from_url(match["base_url"])
+        scheduled = match_datetime_from_url(
+            match["base_url"]
+        )
 
         time_label = (
             scheduled.strftime("%H:%M %d/%m")
@@ -1409,9 +1591,18 @@ async def scan_match(
             else match.get("time_text", "")
         )
 
-        print(f"\n⚽ {name} | {time_label}")
+        update_match_coverage(match)
+        goal = match_stream_goal(match)
 
-        rooms = unique_rooms(match.get("rooms", []))
+        print(
+            f"\n⚽ {name} | {time_label}"
+            f" | coverage="
+            f"{len(match_found_blv_ids(match))}/{goal}"
+        )
+
+        rooms = unique_rooms(
+            match.get("rooms", [])
+        )
         if not rooms:
             rooms = [
                 {
@@ -1421,23 +1612,91 @@ async def scan_match(
                 }
             ]
 
-        rooms = rooms[:MAX_ROOMS_PER_MATCH]
-        successful_rooms = 0
+        room_map = match_room_map(match)
+        known_room_ids = set(room_map)
 
-        for index, room in enumerate(rooms, start=1):
-            blv_label = room.get("blv") or room.get("blv_id") or "URL tổng"
+        attempted = {
+            str(value)
+            for value in match.get(
+                "attempted_room_ids",
+                [],
+            )
+            if value
+        }
+        found_ids = match_found_blv_ids(match)
 
-            print(
-                f"   -> Phòng {index}/{len(rooms)}: "
-                f"{blv_label}"
+        candidate_rooms: list[dict[str, str]] = []
+        for room in rooms:
+            room_id = clean_text(
+                room.get("blv_id", "")
+            ) or room_blv_id(
+                room.get("url", "")
             )
 
-            if STOP_ON_429 and circuit.triggered.is_set():
+            if room_id and room_id in found_ids:
+                continue
+            if room_id and room_id in attempted:
+                continue
+
+            candidate_rooms.append(room)
+
+        if (
+            not candidate_rooms
+            and not match_coverage_complete(match)
+        ):
+            candidate_rooms = [
+                room
+                for room in rooms
+                if (
+                    clean_text(
+                        room.get("blv_id", "")
+                    )
+                    or room_blv_id(
+                        room.get("url", "")
+                    )
+                ) not in found_ids
+            ]
+
+        candidate_rooms = candidate_rooms[
+            :MAX_ROOMS_PER_MATCH
+        ]
+
+        for index, room in enumerate(
+            candidate_rooms,
+            start=1,
+        ):
+            if match_coverage_complete(match):
+                break
+
+            if (
+                STOP_ON_429
+                and circuit.triggered.is_set()
+            ):
                 print(
-                    "      ⏭ Bỏ qua vì đã gặp HTTP 429.",
+                    "      ⏭ Dừng trận vì đã gặp HTTP 429.",
                     flush=True,
                 )
                 break
+
+            room_id = clean_text(
+                room.get("blv_id", "")
+            ) or room_blv_id(
+                room.get("url", "")
+            )
+            blv_label = (
+                room.get("blv")
+                or room_id
+                or "URL tổng"
+            )
+
+            print(
+                f"   -> Trang BLV {index}/"
+                f"{len(candidate_rooms)}: "
+                f"{blv_label}"
+            )
+
+            if room_id:
+                attempted.add(room_id)
 
             room_result = await scan_room(
                 context,
@@ -1445,66 +1704,127 @@ async def scan_match(
                 room,
                 circuit,
             )
-            match["room_results"].append(room_result)
+            match.setdefault(
+                "room_results",
+                [],
+            ).append(room_result)
 
-            if room_result["streams"]:
-                successful_rooms += 1
+            added = 0
+            foreign = 0
+            existing_urls = {
+                item.get("url", "")
+                for item in match.get(
+                    "streams",
+                    [],
+                )
+            }
 
-                for stream in room_result["streams"]:
-                    match["streams"].append(
-                        {
-                            "url": stream,
-                            "room_url": room_result["url"],
-                            "blv": room_result.get("blv", ""),
-                            "blv_id": room_result.get(
-                                "blv_id",
-                                "",
-                            ),
-                        }
-                    )
-
-                print(
-                    f"      ✅ {len(room_result['streams'])} "
-                    f"luồng hợp lệ"
+            for stream in room_result.get(
+                "streams",
+                [],
+            ):
+                detected_id = stream_blv_id(
+                    stream
                 )
 
                 if (
-                    successful_rooms
-                    >= MAX_SUCCESSFUL_ROOMS_PER_MATCH
+                    detected_id
+                    and known_room_ids
+                    and detected_id
+                    not in known_room_ids
                 ):
-                    break
-            else:
-                diag = room_result.get("diagnostics", {})
-                print(
-                    "      ⚠️ Không thấy stream trực tiếp"
-                    f" | video={diag.get('video_count', '?')}"
-                    f" iframe={diag.get('iframe_count', '?')}"
-                    f" visibility={diag.get('visibility_state', '?')}"
+                    foreign += 1
+                    continue
+
+                mapped_room = (
+                    room_map.get(detected_id)
+                    if detected_id
+                    else None
+                ) or room
+
+                if stream in existing_urls:
+                    continue
+
+                match.setdefault(
+                    "streams",
+                    [],
+                ).append(
+                    {
+                        "url": stream,
+                        "room_url": mapped_room.get(
+                            "url",
+                            room_result["url"],
+                        ),
+                        "blv": mapped_room.get(
+                            "blv",
+                            room_result.get(
+                                "blv",
+                                "",
+                            ),
+                        ),
+                        "blv_id": (
+                            detected_id
+                            or mapped_room.get(
+                                "blv_id",
+                                "",
+                            )
+                        ),
+                        "discovered_from_room_url":
+                            room_result["url"],
+                    }
                 )
+                existing_urls.add(stream)
+                added += 1
 
-            await asyncio.sleep(DELAY_BETWEEN_ROOMS)
+            match["attempted_room_ids"] = sorted(
+                attempted
+            )
+            dedup_match_streams(match)
 
-        # Dedup stream trong cùng trận.
-        seen_streams: set[str] = set()
-        unique_stream_list: list[dict[str, str]] = []
+            current_ids = match_found_blv_ids(
+                match
+            )
 
-        for item in match["streams"]:
-            url = item["url"]
-            if url in seen_streams:
-                continue
-            seen_streams.add(url)
-            unique_stream_list.append(item)
-
-        match["streams"] = unique_stream_list
-        match["match_name"] = match_display_name(match)
-
-        if match["streams"]:
             print(
-                f"   ✅ HOÀN TẤT TRẬN: "
+                f"      ✅ Thu hoạch +{added} link"
+                f" | BLV coverage="
+                f"{len(current_ids)}/{goal}"
+                + (
+                    f" | bỏ {foreign} stream ngoài trận"
+                    if foreign
+                    else ""
+                )
+            )
+
+            if match_coverage_complete(match):
+                break
+
+            await asyncio.sleep(
+                DELAY_BETWEEN_ROOMS
+            )
+
+        match["attempted_room_ids"] = sorted(
+            attempted
+        )
+        dedup_match_streams(match)
+        match["match_name"] = match_display_name(
+            match
+        )
+
+        found_count = len(
+            match_found_blv_ids(match)
+        )
+
+        if match.get("streams"):
+            print(
+                f"   ✅ HOÀN TẤT LƯỢT TRẬN: "
                 f"{len(match['streams'])} link"
+                f" | BLV={found_count}/{goal}"
             )
         else:
-            print("   ❌ Trận này chưa bắt được link")
+            print(
+                "   ❌ Trận này chưa bắt được link"
+            )
 
         return match
 
@@ -1593,16 +1913,32 @@ def merge_previous_streams(
         if not previous:
             continue
 
-        old_streams = previous.get("streams", [])
-        if not old_streams:
-            continue
+        old_streams = previous.get(
+            "streams",
+            [],
+        )
+        old_attempted = previous.get(
+            "attempted_room_ids",
+            [],
+        )
 
-        match["streams"] = old_streams
+        if old_streams:
+            match["streams"] = old_streams
         match["room_results"] = previous.get(
             "room_results",
             [],
         )
-        merged += 1
+        match["attempted_room_ids"] = sorted(
+            {
+                str(value)
+                for value in old_attempted
+                if value
+            }
+        )
+        dedup_match_streams(match)
+
+        if old_streams or old_attempted:
+            merged += 1
 
     if merged:
         print(
@@ -1645,7 +1981,8 @@ def build_pending_matches(
     pending: list[dict[str, Any]] = []
 
     for match in matches:
-        if match.get("streams"):
+        update_match_coverage(match)
+        if match_coverage_complete(match):
             continue
 
         pending.append(
@@ -1658,6 +1995,18 @@ def build_pending_matches(
                 ),
                 "rooms": unique_rooms(
                     match.get("rooms", [])
+                ),
+                "streams": match.get(
+                    "streams",
+                    [],
+                ),
+                "coverage": match.get(
+                    "coverage",
+                    {},
+                ),
+                "attempted_room_ids": match.get(
+                    "attempted_room_ids",
+                    [],
                 ),
             }
         )
@@ -1675,39 +2024,80 @@ def write_resume_state(
         TIMEZONE
     ).isoformat()
 
+    current_urls = {
+        canonical_match_url(
+            match.get("base_url", "")
+        )
+        for match in matches
+        if match.get("base_url")
+    }
+
+    for match in matches:
+        update_match_coverage(match)
+
     completed_count = sum(
         1
         for match in matches
         if match.get("streams")
+    )
+    coverage_complete_count = sum(
+        1
+        for match in matches
+        if match_coverage_complete(match)
     )
     total_stream_count = sum(
         len(match.get("streams", []))
         for match in matches
     )
 
+    previous_matches = previous_state.get(
+        "matches",
+        [],
+    )
+    previous_total_streams_current = sum(
+        len(item.get("streams", []))
+        for item in previous_matches
+        if canonical_match_url(
+            item.get("base_url", "")
+        ) in current_urls
+    )
+
+    previous_target_urls = {
+        canonical_match_url(url)
+        for url in previous_state.get(
+            "target_base_urls",
+            [],
+        )
+        if url
+    }
+
     state_is_fresh = bool(
         previous_state.get("_state_is_fresh")
     )
-    previous_completed = (
-        int(previous_state.get("completed_count", 0))
-        if state_is_fresh
-        else 0
+    same_target = bool(
+        state_is_fresh
+        and previous_target_urls
+        and previous_target_urls == current_urls
     )
+
+    # Progress V9 tính theo số LINK mới,
+    # không chỉ số trận có ít nhất một link.
     progress_count = max(
         0,
-        completed_count - previous_completed,
+        total_stream_count
+        - previous_total_streams_current,
     )
 
     previous_chain_runs = (
         int(previous_state.get("chain_runs", 0))
-        if state_is_fresh
+        if same_target
         else 0
     )
     chain_runs = previous_chain_runs + 1
 
     previous_no_progress = (
         int(previous_state.get("no_progress_runs", 0))
-        if state_is_fresh
+        if same_target
         else 0
     )
     no_progress_runs = (
@@ -1745,24 +2135,31 @@ def write_resume_state(
     elif not dispatch_next:
         stop_reason = "no_progress_or_no_rate_limit"
 
-    state_payload = {
+    decision_payload = {
         "generated_at": generated_at,
-        "rate_limited": circuit.triggered.is_set(),
-        "rate_limit_url": circuit.first_url,
-        "pending_base_urls": [
-            item["base_url"]
-            for item in pending
-            if item.get("base_url")
-        ],
+        "dispatch_next": dispatch_next,
         "pending_count": len(pending),
         "completed_count": completed_count,
+        "coverage_complete_count":
+            coverage_complete_count,
         "total_match_count": len(matches),
         "total_stream_count": total_stream_count,
         "progress_count": progress_count,
         "chain_runs": chain_runs,
         "no_progress_runs": no_progress_runs,
-        "dispatch_next": dispatch_next,
         "stop_reason": stop_reason,
+        "rate_limited": circuit.triggered.is_set(),
+        "rate_limit_url": circuit.first_url,
+    }
+
+    state_payload = {
+        **decision_payload,
+        "target_base_urls": sorted(current_urls),
+        "pending_base_urls": [
+            item["base_url"]
+            for item in pending
+            if item.get("base_url")
+        ],
         "matches": matches,
     }
 
@@ -1778,13 +2175,8 @@ def write_resume_state(
     Path(OUTPUT_PENDING).write_text(
         json.dumps(
             {
-                "generated_at": generated_at,
+                **decision_payload,
                 "count": len(pending),
-                "completed_count": completed_count,
-                "progress_count": progress_count,
-                "chain_runs": chain_runs,
-                "dispatch_next": dispatch_next,
-                "stop_reason": stop_reason,
                 "matches": pending,
             },
             ensure_ascii=False,
@@ -1793,9 +2185,21 @@ def write_resume_state(
         encoding="utf-8",
     )
 
+    # Workflow chỉ đọc file này. Nó được xóa trước mỗi run,
+    # nên không thể nhầm với state của một run cũ.
+    Path(OUTPUT_DECISION).write_text(
+        json.dumps(
+            decision_payload,
+            ensure_ascii=False,
+            indent=2,
+        ),
+        encoding="utf-8",
+    )
+
     print(
-        f"📈 Tiến triển run này: +{progress_count} trận "
-        f"| hoàn tất={completed_count}/{len(matches)} "
+        f"📈 Tiến triển run này: +{progress_count} link "
+        f"| có link={completed_count}/{len(matches)} "
+        f"| đủ coverage={coverage_complete_count}/{len(matches)} "
         f"| pending={len(pending)}",
         flush=True,
     )
@@ -1944,8 +2348,14 @@ def write_outputs(matches: list[dict[str, Any]]) -> tuple[int, int]:
                 "configuration": {
                     "match_concurrency": MATCH_CONCURRENCY,
                     "room_wait_seconds": ROOM_WAIT_SECONDS,
-                    "max_rooms_per_match": MAX_ROOMS_PER_MATCH,
-                    "max_successful_rooms_per_match": MAX_SUCCESSFUL_ROOMS_PER_MATCH,
+                    "max_rooms_per_match_per_run":
+                        MAX_ROOMS_PER_MATCH,
+                    "max_streams_per_match":
+                        MAX_STREAMS_PER_MATCH,
+                    "embedded_harvest_wait_seconds":
+                        EMBEDDED_HARVEST_WAIT_SECONDS,
+                    "max_successful_rooms_per_match":
+                        MAX_SUCCESSFUL_ROOMS_PER_MATCH,
                     "http_first": HTTP_FIRST,
                     "http_fetch_timeout_seconds": HTTP_FETCH_TIMEOUT_SECONDS,
                     "enable_cdp": ENABLE_CDP,
@@ -1980,10 +2390,10 @@ def write_outputs(matches: list[dict[str, Any]]) -> tuple[int, int]:
 # MAIN
 # ============================================================
 async def main() -> None:
-    print("🥷 SOCOLIVE STREAM SCANNER V8 - IMMEDIATE CHAIN RESUME")
+    print("🥷 SOCOLIVE STREAM SCANNER V9 - MULTI BLV HARVEST + CHAIN")
     print(
         "ℹ️ Test riêng một URL:\n"
-        '   python main_socolive_v8_chain.py "https://socolivem.cv/truc-tiep/.../?blv=..."'
+        '   python main_socolive_v9_multi_blv.py "https://socolivem.cv/truc-tiep/.../?blv=..."'
     )
 
     direct_urls = [
@@ -2155,7 +2565,7 @@ async def main() -> None:
         to_scan = [
             match
             for match in matches
-            if not match.get("streams")
+            if not match_coverage_complete(match)
         ]
 
         print(
@@ -2231,6 +2641,10 @@ async def main() -> None:
         print(
             f"⏭ Danh sách chưa quét: "
             f"{Path(OUTPUT_PENDING).resolve()}"
+        )
+        print(
+            f"🧭 Quyết định chain hiện tại: "
+            f"{Path(OUTPUT_DECISION).resolve()}"
         )
 
         await context.close()
