@@ -1,4 +1,4 @@
-name: Bot Quet Socolive V8 Chain
+name: Bot Quet Socolive V9 Multi BLV
 
 on:
   workflow_dispatch:
@@ -52,11 +52,26 @@ jobs:
 
           SOCOLIVE_MATCH_CONCURRENCY: "4"
           SOCOLIVE_ROOM_WAIT_SECONDS: "7"
-          SOCOLIVE_MAX_ROOMS_PER_MATCH: "1"
-          SOCOLIVE_MAX_SUCCESSFUL_ROOMS_PER_MATCH: "1"
+          SOCOLIVE_MAX_ROOMS_PER_MATCH: "3"
+          SOCOLIVE_MAX_SUCCESSFUL_ROOMS_PER_MATCH: "10"
+
+          # Mục tiêu tối đa 10 stream-ID/BLV cho mỗi trận.
+          SOCOLIVE_MAX_STREAMS_PER_MATCH: "10"
+
+          # Mỗi run chỉ mở tối đa 3 trang BLV/trận.
+          # Mỗi trang sẽ quét toàn bộ HTML/config để lấy nhiều link.
+          SOCOLIVE_EMBEDDED_HARVEST_WAIT_SECONDS: "1.4"
+
           SOCOLIVE_HTTP_FIRST: "0"
           SOCOLIVE_ENABLE_CDP: "1"
           SOCOLIVE_STOP_ON_429: "1"
+
+          # Khung quét:
+          # trận đã bắt đầu trong 90 phút gần nhất
+          # hoặc sẽ bắt đầu trong 240 phút tới.
+          SOCOLIVE_SCAN_BEFORE_MINUTES: "90"
+          SOCOLIVE_SCAN_AFTER_MINUTES: "240"
+          SOCOLIVE_SCAN_ALL: "0"
 
           SOCOLIVE_STATE_MAX_AGE_MINUTES: "20"
           SOCOLIVE_STATE_MAX_CHAIN_RUNS: "12"
@@ -64,20 +79,24 @@ jobs:
 
           TEST_URL: ${{ inputs.test_url }}
         run: |
+          # Không cho bước sau đọc nhầm quyết định của run trước.
+          rm -f socolive_chain_decision.json
+
           echo "=== $(date -u '+%Y-%m-%d %H:%M:%S UTC') | Bắt đầu ==="
-          echo "Concurrency=$SOCOLIVE_MATCH_CONCURRENCY | max_rooms=$SOCOLIVE_MAX_ROOMS_PER_MATCH"
+          echo "Concurrency=$SOCOLIVE_MATCH_CONCURRENCY | room_pages/run=$SOCOLIVE_MAX_ROOMS_PER_MATCH | stream_goal/match=$SOCOLIVE_MAX_STREAMS_PER_MATCH"
+          echo "Scan window: -${SOCOLIVE_SCAN_BEFORE_MINUTES} phút / +${SOCOLIVE_SCAN_AFTER_MINUTES} phút | scan_all=$SOCOLIVE_SCAN_ALL"
 
           if [ -n "$TEST_URL" ]; then
             echo "Test riêng: $TEST_URL"
             python -u main.py "$TEST_URL"
           else
-            echo "Chế độ chain: chỉ quét pending/chưa có link"
+            echo "Chế độ chain: chỉ quét pending/chưa có link trong tập trận hiện tại"
             python -u main.py
           fi
 
           echo "=== $(date -u '+%Y-%m-%d %H:%M:%S UTC') | Kết thúc ==="
 
-      - name: 6. Đọc quyết định chạy tiếp
+      - name: 6. Đọc quyết định của đúng run hiện tại
         id: resume
         if: always()
         shell: bash
@@ -87,55 +106,59 @@ jobs:
           import os
           from pathlib import Path
 
-          state_path = Path("socolive_state.json")
+          decision_path = Path("socolive_chain_decision.json")
           output_path = Path(os.environ["GITHUB_OUTPUT"])
 
-          defaults = {
+          values = {
               "dispatch_next": "false",
               "pending_count": "0",
               "progress_count": "0",
               "completed_count": "0",
+              "total_match_count": "0",
               "chain_runs": "0",
-              "stop_reason": "state_missing",
+              "stop_reason": "decision_missing",
           }
 
-          if state_path.exists():
+          if decision_path.exists():
               try:
-                  state = json.loads(
-                      state_path.read_text(encoding="utf-8")
+                  decision = json.loads(
+                      decision_path.read_text(encoding="utf-8")
                   )
-                  defaults.update(
+                  values.update(
                       {
                           "dispatch_next": str(
-                              bool(state.get("dispatch_next"))
+                              bool(decision.get("dispatch_next"))
                           ).lower(),
                           "pending_count": str(
-                              int(state.get("pending_count", 0))
+                              int(decision.get("pending_count", 0))
                           ),
                           "progress_count": str(
-                              int(state.get("progress_count", 0))
+                              int(decision.get("progress_count", 0))
                           ),
                           "completed_count": str(
-                              int(state.get("completed_count", 0))
+                              int(decision.get("completed_count", 0))
+                          ),
+                          "total_match_count": str(
+                              int(decision.get("total_match_count", 0))
                           ),
                           "chain_runs": str(
-                              int(state.get("chain_runs", 0))
+                              int(decision.get("chain_runs", 0))
                           ),
                           "stop_reason": str(
-                              state.get("stop_reason", "")
+                              decision.get("stop_reason", "")
                           ),
                       }
                   )
               except Exception as exc:
-                  defaults["stop_reason"] = (
-                      f"state_error_{type(exc).__name__}"
+                  values["stop_reason"] = (
+                      f"decision_error_{type(exc).__name__}"
                   )
 
           with output_path.open("a", encoding="utf-8") as handle:
-              for key, value in defaults.items():
+              for key, value in values.items():
                   handle.write(f"{key}={value}\n")
 
-          print("Resume decision:", defaults)
+          print("Current-run decision:", values)
           PY
 
       - name: 7. Upload kết quả và checkpoint
@@ -149,6 +172,7 @@ jobs:
             socolive_debug.json
             socolive_state.json
             socolive_pending.json
+            socolive_chain_decision.json
           if-no-files-found: warn
           retention-days: 7
           compression-level: 6
@@ -227,7 +251,7 @@ jobs:
       - name: 10. Tổng kết chuỗi
         if: always()
         run: |
-          echo "Completed=${{ steps.resume.outputs.completed_count }}"
+          echo "Completed=${{ steps.resume.outputs.completed_count }}/${{ steps.resume.outputs.total_match_count }}"
           echo "Pending=${{ steps.resume.outputs.pending_count }}"
           echo "Progress run này=${{ steps.resume.outputs.progress_count }}"
           echo "Chain=${{ steps.resume.outputs.chain_runs }}"
