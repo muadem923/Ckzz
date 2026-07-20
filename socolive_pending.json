@@ -1,19 +1,19 @@
 {
-  "generated_at": "2026-07-20T18:17:58.690017+07:00",
+  "generated_at": "2026-07-20T19:15:56.277122+07:00",
   "state_schema_version": "v10-per-blv-queue",
-  "dispatch_next": false,
-  "pending_count": 3,
+  "dispatch_next": true,
+  "pending_count": 5,
   "completed_count": 3,
   "coverage_complete_count": 0,
-  "total_match_count": 3,
+  "total_match_count": 5,
   "total_stream_count": 3,
-  "progress_count": 0,
-  "chain_runs": 3,
-  "no_progress_runs": 2,
-  "stop_reason": "no_progress_guard",
+  "progress_count": 3,
+  "chain_runs": 1,
+  "no_progress_runs": 0,
+  "stop_reason": "",
   "rate_limited": true,
-  "rate_limit_url": "https://socolivep.cv/truc-tiep/the-cong-viettel-u21-vs-cong-an-ha-noi-u21-20-07-2026-1800?blv=531989",
-  "count": 3,
+  "rate_limit_url": "https://socolivep.cv/truc-tiep/corvinul-hunedoara-vs-fk-csikszereda-miercurea-ciuc-20-07-2026-2230?blv=132343",
+  "count": 5,
   "matches": [
     {
       "base_url": "https://socolivep.cv/truc-tiep/the-cong-viettel-u21-vs-cong-an-ha-noi-u21-20-07-2026-1800/",
@@ -140,12 +140,12 @@
             "url": "https://socolivep.cv/truc-tiep/the-cong-viettel-u21-vs-cong-an-ha-noi-u21-20-07-2026-1800/?blv=531989",
             "blv": "COZY",
             "blv_id": "531989",
-            "status": "rate_limited",
-            "attempts": 2,
-            "rate_limit_hits": 3,
-            "last_http_status": 429,
-            "last_stream_count": 0,
-            "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
+            "status": "pending",
+            "attempts": 1,
+            "rate_limit_hits": 0,
+            "last_http_status": 200,
+            "last_stream_count": 1,
+            "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
           },
           "552716": {
             "key": "552716",
@@ -230,12 +230,12 @@
           "url": "https://socolivep.cv/truc-tiep/the-cong-viettel-u21-vs-cong-an-ha-noi-u21-20-07-2026-1800/?blv=531989",
           "blv": "COZY",
           "blv_id": "531989",
-          "status": "rate_limited",
-          "attempts": 2,
-          "rate_limit_hits": 3,
-          "last_http_status": 429,
-          "last_stream_count": 0,
-          "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
+          "status": "pending",
+          "attempts": 1,
+          "rate_limit_hits": 0,
+          "last_http_status": 200,
+          "last_stream_count": 1,
+          "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
         },
         "552716": {
           "key": "552716",
@@ -424,7 +424,7 @@
             "blv": "XUÂN TÓC ĐỎ",
             "blv_id": "610518",
             "status": "pending",
-            "attempts": 3,
+            "attempts": 1,
             "rate_limit_hits": 0,
             "last_http_status": 200,
             "last_stream_count": 1,
@@ -490,7 +490,7 @@
           "blv": "XUÂN TÓC ĐỎ",
           "blv_id": "610518",
           "status": "pending",
-          "attempts": 3,
+          "attempts": 1,
           "rate_limit_hits": 0,
           "last_http_status": 200,
           "last_stream_count": 1,
@@ -679,7 +679,7 @@
             "blv": "Củ Cải",
             "blv_id": "360663",
             "status": "pending",
-            "attempts": 3,
+            "attempts": 1,
             "rate_limit_hits": 0,
             "last_http_status": 200,
             "last_stream_count": 1,
@@ -769,7 +769,7 @@
           "blv": "Củ Cải",
           "blv_id": "360663",
           "status": "pending",
-          "attempts": 3,
+          "attempts": 1,
           "rate_limit_hits": 0,
           "last_http_status": 200,
           "last_stream_count": 1,
@@ -861,6 +861,374 @@
         "387694",
         "168740",
         "532081"
+      ]
+    },
+    {
+      "base_url": "https://socolivep.cv/truc-tiep/corvinul-hunedoara-vs-fk-csikszereda-miercurea-ciuc-20-07-2026-2230/",
+      "match_name": "Corvinul Hunedoara vs FK Csikszereda Miercurea Ciuc",
+      "scheduled_at": "2026-07-20T22:30:00+07:00",
+      "rooms": [
+        {
+          "url": "https://socolivep.cv/truc-tiep/corvinul-hunedoara-vs-fk-csikszereda-miercurea-ciuc-20-07-2026-2230?blv=132343",
+          "blv": "LONG",
+          "blv_id": "132343"
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/corvinul-hunedoara-vs-fk-csikszereda-miercurea-ciuc-20-07-2026-2230?blv=250874",
+          "blv": "FIREMAN",
+          "blv_id": "250874"
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/corvinul-hunedoara-vs-fk-csikszereda-miercurea-ciuc-20-07-2026-2230?blv=618546",
+          "blv": "SEVEN",
+          "blv_id": "618546"
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/corvinul-hunedoara-vs-fk-csikszereda-miercurea-ciuc-20-07-2026-2230?blv=291277",
+          "blv": "CÔNG CHẤT",
+          "blv_id": "291277"
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/corvinul-hunedoara-vs-fk-csikszereda-miercurea-ciuc-20-07-2026-2230?blv=620003",
+          "blv": "FOX",
+          "blv_id": "620003"
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/corvinul-hunedoara-vs-fk-csikszereda-miercurea-ciuc-20-07-2026-2230?blv=187579",
+          "blv": "TOMIA",
+          "blv_id": "187579"
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/corvinul-hunedoara-vs-fk-csikszereda-miercurea-ciuc-20-07-2026-2230",
+          "blv": "XEM NGAY",
+          "blv_id": ""
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/corvinul-hunedoara-vs-fk-csikszereda-miercurea-ciuc-20-07-2026-2230/",
+          "blv": "",
+          "blv_id": ""
+        }
+      ],
+      "streams": [],
+      "coverage": {
+        "found_streams": 0,
+        "found_blv_ids": [],
+        "goal": 6,
+        "source_goal_reached": false,
+        "room_queue_complete": false,
+        "complete": false,
+        "total_explicit_blv_rooms": 6,
+        "pending_room_keys": [
+          "132343",
+          "250874",
+          "618546",
+          "291277",
+          "620003",
+          "187579"
+        ],
+        "room_progress": {
+          "132343": {
+            "key": "132343",
+            "url": "https://socolivep.cv/truc-tiep/corvinul-hunedoara-vs-fk-csikszereda-miercurea-ciuc-20-07-2026-2230?blv=132343",
+            "blv": "LONG",
+            "blv_id": "132343",
+            "status": "rate_limited",
+            "attempts": 0,
+            "rate_limit_hits": 1,
+            "last_http_status": 429,
+            "last_stream_count": 0,
+            "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
+          },
+          "250874": {
+            "key": "250874",
+            "url": "https://socolivep.cv/truc-tiep/corvinul-hunedoara-vs-fk-csikszereda-miercurea-ciuc-20-07-2026-2230?blv=250874",
+            "blv": "FIREMAN",
+            "blv_id": "250874",
+            "status": "pending",
+            "attempts": 0,
+            "rate_limit_hits": 0,
+            "last_http_status": null,
+            "last_stream_count": 0,
+            "last_error": ""
+          },
+          "618546": {
+            "key": "618546",
+            "url": "https://socolivep.cv/truc-tiep/corvinul-hunedoara-vs-fk-csikszereda-miercurea-ciuc-20-07-2026-2230?blv=618546",
+            "blv": "SEVEN",
+            "blv_id": "618546",
+            "status": "pending",
+            "attempts": 0,
+            "rate_limit_hits": 0,
+            "last_http_status": null,
+            "last_stream_count": 0,
+            "last_error": ""
+          },
+          "291277": {
+            "key": "291277",
+            "url": "https://socolivep.cv/truc-tiep/corvinul-hunedoara-vs-fk-csikszereda-miercurea-ciuc-20-07-2026-2230?blv=291277",
+            "blv": "CÔNG CHẤT",
+            "blv_id": "291277",
+            "status": "pending",
+            "attempts": 0,
+            "rate_limit_hits": 0,
+            "last_http_status": null,
+            "last_stream_count": 0,
+            "last_error": ""
+          },
+          "620003": {
+            "key": "620003",
+            "url": "https://socolivep.cv/truc-tiep/corvinul-hunedoara-vs-fk-csikszereda-miercurea-ciuc-20-07-2026-2230?blv=620003",
+            "blv": "FOX",
+            "blv_id": "620003",
+            "status": "pending",
+            "attempts": 0,
+            "rate_limit_hits": 0,
+            "last_http_status": null,
+            "last_stream_count": 0,
+            "last_error": ""
+          },
+          "187579": {
+            "key": "187579",
+            "url": "https://socolivep.cv/truc-tiep/corvinul-hunedoara-vs-fk-csikszereda-miercurea-ciuc-20-07-2026-2230?blv=187579",
+            "blv": "TOMIA",
+            "blv_id": "187579",
+            "status": "pending",
+            "attempts": 0,
+            "rate_limit_hits": 0,
+            "last_http_status": null,
+            "last_stream_count": 0,
+            "last_error": ""
+          },
+          "__base__": {
+            "key": "__base__",
+            "url": "https://socolivep.cv/truc-tiep/corvinul-hunedoara-vs-fk-csikszereda-miercurea-ciuc-20-07-2026-2230/",
+            "blv": "",
+            "blv_id": "",
+            "status": "pending",
+            "attempts": 0,
+            "rate_limit_hits": 0,
+            "last_http_status": null,
+            "last_stream_count": 0,
+            "last_error": ""
+          }
+        }
+      },
+      "attempted_room_ids": [],
+      "room_progress": {
+        "132343": {
+          "key": "132343",
+          "url": "https://socolivep.cv/truc-tiep/corvinul-hunedoara-vs-fk-csikszereda-miercurea-ciuc-20-07-2026-2230?blv=132343",
+          "blv": "LONG",
+          "blv_id": "132343",
+          "status": "rate_limited",
+          "attempts": 0,
+          "rate_limit_hits": 1,
+          "last_http_status": 429,
+          "last_stream_count": 0,
+          "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
+        },
+        "250874": {
+          "key": "250874",
+          "url": "https://socolivep.cv/truc-tiep/corvinul-hunedoara-vs-fk-csikszereda-miercurea-ciuc-20-07-2026-2230?blv=250874",
+          "blv": "FIREMAN",
+          "blv_id": "250874",
+          "status": "pending",
+          "attempts": 0,
+          "rate_limit_hits": 0,
+          "last_http_status": null,
+          "last_stream_count": 0,
+          "last_error": ""
+        },
+        "618546": {
+          "key": "618546",
+          "url": "https://socolivep.cv/truc-tiep/corvinul-hunedoara-vs-fk-csikszereda-miercurea-ciuc-20-07-2026-2230?blv=618546",
+          "blv": "SEVEN",
+          "blv_id": "618546",
+          "status": "pending",
+          "attempts": 0,
+          "rate_limit_hits": 0,
+          "last_http_status": null,
+          "last_stream_count": 0,
+          "last_error": ""
+        },
+        "291277": {
+          "key": "291277",
+          "url": "https://socolivep.cv/truc-tiep/corvinul-hunedoara-vs-fk-csikszereda-miercurea-ciuc-20-07-2026-2230?blv=291277",
+          "blv": "CÔNG CHẤT",
+          "blv_id": "291277",
+          "status": "pending",
+          "attempts": 0,
+          "rate_limit_hits": 0,
+          "last_http_status": null,
+          "last_stream_count": 0,
+          "last_error": ""
+        },
+        "620003": {
+          "key": "620003",
+          "url": "https://socolivep.cv/truc-tiep/corvinul-hunedoara-vs-fk-csikszereda-miercurea-ciuc-20-07-2026-2230?blv=620003",
+          "blv": "FOX",
+          "blv_id": "620003",
+          "status": "pending",
+          "attempts": 0,
+          "rate_limit_hits": 0,
+          "last_http_status": null,
+          "last_stream_count": 0,
+          "last_error": ""
+        },
+        "187579": {
+          "key": "187579",
+          "url": "https://socolivep.cv/truc-tiep/corvinul-hunedoara-vs-fk-csikszereda-miercurea-ciuc-20-07-2026-2230?blv=187579",
+          "blv": "TOMIA",
+          "blv_id": "187579",
+          "status": "pending",
+          "attempts": 0,
+          "rate_limit_hits": 0,
+          "last_http_status": null,
+          "last_stream_count": 0,
+          "last_error": ""
+        },
+        "__base__": {
+          "key": "__base__",
+          "url": "https://socolivep.cv/truc-tiep/corvinul-hunedoara-vs-fk-csikszereda-miercurea-ciuc-20-07-2026-2230/",
+          "blv": "",
+          "blv_id": "",
+          "status": "pending",
+          "attempts": 0,
+          "rate_limit_hits": 0,
+          "last_http_status": null,
+          "last_stream_count": 0,
+          "last_error": ""
+        }
+      },
+      "pending_room_keys": [
+        "132343",
+        "250874",
+        "618546",
+        "291277",
+        "620003",
+        "187579"
+      ]
+    },
+    {
+      "base_url": "https://socolivep.cv/truc-tiep/suduva-vs-hegelmann-20-07-2026-2245/",
+      "match_name": "Suduva vs Hegelmann",
+      "scheduled_at": "2026-07-20T22:45:00+07:00",
+      "rooms": [
+        {
+          "url": "https://socolivep.cv/truc-tiep/suduva-vs-hegelmann-20-07-2026-2245?blv=597929",
+          "blv": "CÁO",
+          "blv_id": "597929"
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/suduva-vs-hegelmann-20-07-2026-2245?blv=598549",
+          "blv": "PICK",
+          "blv_id": "598549"
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/suduva-vs-hegelmann-20-07-2026-2245",
+          "blv": "XEM NGAY",
+          "blv_id": ""
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/suduva-vs-hegelmann-20-07-2026-2245/",
+          "blv": "",
+          "blv_id": ""
+        }
+      ],
+      "streams": [],
+      "coverage": {
+        "found_streams": 0,
+        "found_blv_ids": [],
+        "goal": 2,
+        "source_goal_reached": false,
+        "room_queue_complete": false,
+        "complete": false,
+        "total_explicit_blv_rooms": 2,
+        "pending_room_keys": [
+          "597929",
+          "598549"
+        ],
+        "room_progress": {
+          "597929": {
+            "key": "597929",
+            "url": "https://socolivep.cv/truc-tiep/suduva-vs-hegelmann-20-07-2026-2245?blv=597929",
+            "blv": "CÁO",
+            "blv_id": "597929",
+            "status": "pending",
+            "attempts": 0,
+            "rate_limit_hits": 0,
+            "last_http_status": null,
+            "last_stream_count": 0,
+            "last_error": ""
+          },
+          "598549": {
+            "key": "598549",
+            "url": "https://socolivep.cv/truc-tiep/suduva-vs-hegelmann-20-07-2026-2245?blv=598549",
+            "blv": "PICK",
+            "blv_id": "598549",
+            "status": "pending",
+            "attempts": 0,
+            "rate_limit_hits": 0,
+            "last_http_status": null,
+            "last_stream_count": 0,
+            "last_error": ""
+          },
+          "__base__": {
+            "key": "__base__",
+            "url": "https://socolivep.cv/truc-tiep/suduva-vs-hegelmann-20-07-2026-2245/",
+            "blv": "",
+            "blv_id": "",
+            "status": "pending",
+            "attempts": 0,
+            "rate_limit_hits": 0,
+            "last_http_status": null,
+            "last_stream_count": 0,
+            "last_error": ""
+          }
+        }
+      },
+      "attempted_room_ids": [],
+      "room_progress": {
+        "597929": {
+          "key": "597929",
+          "url": "https://socolivep.cv/truc-tiep/suduva-vs-hegelmann-20-07-2026-2245?blv=597929",
+          "blv": "CÁO",
+          "blv_id": "597929",
+          "status": "pending",
+          "attempts": 0,
+          "rate_limit_hits": 0,
+          "last_http_status": null,
+          "last_stream_count": 0,
+          "last_error": ""
+        },
+        "598549": {
+          "key": "598549",
+          "url": "https://socolivep.cv/truc-tiep/suduva-vs-hegelmann-20-07-2026-2245?blv=598549",
+          "blv": "PICK",
+          "blv_id": "598549",
+          "status": "pending",
+          "attempts": 0,
+          "rate_limit_hits": 0,
+          "last_http_status": null,
+          "last_stream_count": 0,
+          "last_error": ""
+        },
+        "__base__": {
+          "key": "__base__",
+          "url": "https://socolivep.cv/truc-tiep/suduva-vs-hegelmann-20-07-2026-2245/",
+          "blv": "",
+          "blv_id": "",
+          "status": "pending",
+          "attempts": 0,
+          "rate_limit_hits": 0,
+          "last_http_status": null,
+          "last_stream_count": 0,
+          "last_error": ""
+        }
+      },
+      "pending_room_keys": [
+        "597929",
+        "598549"
       ]
     }
   ]
