@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-21T03:23:33.765296+07:00",
+  "generated_at": "2026-07-21T03:24:52.528711+07:00",
   "state_schema_version": "v10.1-long-harvest-two-streams",
   "dispatch_next": true,
   "pending_count": 7,
@@ -8,11 +8,11 @@
   "total_match_count": 7,
   "total_stream_count": 4,
   "progress_count": 0,
-  "chain_runs": 19,
-  "no_progress_runs": 16,
+  "chain_runs": 20,
+  "no_progress_runs": 17,
   "stop_reason": "",
   "rate_limited": true,
-  "rate_limit_url": "https://socolivep.cv/truc-tiep/sporting-cp-vs-strasbourg-21-07-2026-0215?blv=602019",
+  "rate_limit_url": "https://socolivep.cv/truc-tiep/keflavik-vs-akranes-21-07-2026-0215?blv=610518",
   "count": 7,
   "matches": [
     {
@@ -105,11 +105,11 @@
             "blv": "XUÂN TÓC ĐỎ",
             "blv_id": "610518",
             "status": "rate_limited",
-            "attempts": 69,
-            "rate_limit_hits": 38,
-            "last_http_status": 200,
-            "last_stream_count": 1,
-            "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
+            "attempts": 70,
+            "rate_limit_hits": 39,
+            "last_http_status": 429,
+            "last_stream_count": 0,
+            "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
           },
           "618546": {
             "key": "618546",
@@ -159,11 +159,11 @@
           "blv": "XUÂN TÓC ĐỎ",
           "blv_id": "610518",
           "status": "rate_limited",
-          "attempts": 69,
-          "rate_limit_hits": 38,
-          "last_http_status": 200,
-          "last_stream_count": 1,
-          "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
+          "attempts": 70,
+          "rate_limit_hits": 39,
+          "last_http_status": 429,
+          "last_stream_count": 0,
+          "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
         },
         "618546": {
           "key": "618546",
@@ -301,8 +301,8 @@
             "blv": "KENCHU",
             "blv_id": "622602",
             "status": "rate_limited",
-            "attempts": 91,
-            "rate_limit_hits": 36,
+            "attempts": 92,
+            "rate_limit_hits": 37,
             "last_http_status": 429,
             "last_stream_count": 0,
             "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
@@ -355,8 +355,8 @@
           "blv": "KENCHU",
           "blv_id": "622602",
           "status": "rate_limited",
-          "attempts": 91,
-          "rate_limit_hits": 36,
+          "attempts": 92,
+          "rate_limit_hits": 37,
           "last_http_status": 429,
           "last_stream_count": 0,
           "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
@@ -509,11 +509,11 @@
             "blv": "RYO",
             "blv_id": "602019",
             "status": "rate_limited",
-            "attempts": 88,
+            "attempts": 89,
             "rate_limit_hits": 38,
-            "last_http_status": 429,
-            "last_stream_count": 0,
-            "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
+            "last_http_status": 200,
+            "last_stream_count": 1,
+            "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
           },
           "620003": {
             "key": "620003",
@@ -575,11 +575,11 @@
           "blv": "RYO",
           "blv_id": "602019",
           "status": "rate_limited",
-          "attempts": 88,
+          "attempts": 89,
           "rate_limit_hits": 38,
-          "last_http_status": 429,
-          "last_stream_count": 0,
-          "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
+          "last_http_status": 200,
+          "last_stream_count": 1,
+          "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
         },
         "620003": {
           "key": "620003",
@@ -719,7 +719,7 @@
             "blv": "VOI",
             "blv_id": "552716",
             "status": "rate_limited",
-            "attempts": 15,
+            "attempts": 16,
             "rate_limit_hits": 4,
             "last_http_status": 200,
             "last_stream_count": 1,
@@ -761,7 +761,7 @@
           "blv": "VOI",
           "blv_id": "552716",
           "status": "rate_limited",
-          "attempts": 15,
+          "attempts": 16,
           "rate_limit_hits": 4,
           "last_http_status": 200,
           "last_stream_count": 1,
