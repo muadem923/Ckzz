@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-21T05:22:16.843804+07:00",
+  "generated_at": "2026-07-21T05:23:42.648108+07:00",
   "state_schema_version": "v10.1-long-harvest-two-streams",
   "dispatch_next": true,
   "pending_count": 5,
@@ -8,11 +8,11 @@
   "total_match_count": 5,
   "total_stream_count": 5,
   "progress_count": 0,
-  "chain_runs": 71,
-  "no_progress_runs": 20,
+  "chain_runs": 72,
+  "no_progress_runs": 21,
   "stop_reason": "",
   "rate_limited": true,
-  "rate_limit_url": "https://socolivep.cv/truc-tiep/colegiales-vs-ferrocarril-midland-21-07-2026-0600/?blv=139384",
+  "rate_limit_url": "https://socolivep.cv/truc-tiep/patronato-parana-vs-atletico-atlanta-21-07-2026-0600?blv=372746",
   "count": 5,
   "matches": [
     {
@@ -93,11 +93,11 @@
             "blv": "VOI",
             "blv_id": "552716",
             "status": "rate_limited",
-            "attempts": 115,
+            "attempts": 117,
             "rate_limit_hits": 53,
-            "last_http_status": 429,
-            "last_stream_count": 0,
-            "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
+            "last_http_status": 200,
+            "last_stream_count": 1,
+            "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
           },
           "321443": {
             "key": "321443",
@@ -135,11 +135,11 @@
           "blv": "VOI",
           "blv_id": "552716",
           "status": "rate_limited",
-          "attempts": 115,
+          "attempts": 117,
           "rate_limit_hits": 53,
-          "last_http_status": 429,
-          "last_stream_count": 0,
-          "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
+          "last_http_status": 200,
+          "last_stream_count": 1,
+          "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
         },
         "321443": {
           "key": "321443",
@@ -251,8 +251,8 @@
             "blv": "YONE",
             "blv_id": "372746",
             "status": "rate_limited",
-            "attempts": 92,
-            "rate_limit_hits": 41,
+            "attempts": 93,
+            "rate_limit_hits": 42,
             "last_http_status": 429,
             "last_stream_count": 0,
             "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
@@ -293,8 +293,8 @@
           "blv": "YONE",
           "blv_id": "372746",
           "status": "rate_limited",
-          "attempts": 92,
-          "rate_limit_hits": 41,
+          "attempts": 93,
+          "rate_limit_hits": 42,
           "last_http_status": 429,
           "last_stream_count": 0,
           "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
@@ -409,8 +409,8 @@
             "blv": "RÔSI",
             "blv_id": "139384",
             "status": "rate_limited",
-            "attempts": 88,
-            "rate_limit_hits": 46,
+            "attempts": 89,
+            "rate_limit_hits": 47,
             "last_http_status": 429,
             "last_stream_count": 0,
             "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
@@ -451,8 +451,8 @@
           "blv": "RÔSI",
           "blv_id": "139384",
           "status": "rate_limited",
-          "attempts": 88,
-          "rate_limit_hits": 46,
+          "attempts": 89,
+          "rate_limit_hits": 47,
           "last_http_status": 429,
           "last_stream_count": 0,
           "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
@@ -567,7 +567,7 @@
             "blv": "A WIN",
             "blv_id": "536185",
             "status": "rate_limited",
-            "attempts": 90,
+            "attempts": 92,
             "rate_limit_hits": 44,
             "last_http_status": 200,
             "last_stream_count": 1,
@@ -609,7 +609,7 @@
           "blv": "A WIN",
           "blv_id": "536185",
           "status": "rate_limited",
-          "attempts": 90,
+          "attempts": 92,
           "rate_limit_hits": 44,
           "last_http_status": 200,
           "last_stream_count": 1,
