@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-07-20T15:19:00.669969+07:00",
+  "generated_at": "2026-07-20T16:16:12.992795+07:00",
   "state_schema_version": "v10-per-blv-queue",
-  "dispatch_next": false,
+  "dispatch_next": true,
   "pending_count": 2,
   "completed_count": 2,
   "coverage_complete_count": 0,
   "total_match_count": 2,
   "total_stream_count": 2,
-  "progress_count": 0,
-  "chain_runs": 3,
-  "no_progress_runs": 2,
-  "stop_reason": "no_progress_guard",
+  "progress_count": 2,
+  "chain_runs": 1,
+  "no_progress_runs": 0,
+  "stop_reason": "",
   "rate_limited": true,
-  "rate_limit_url": "https://socolivep.cv/truc-tiep/the-cong-viettel-u21-vs-cong-an-ha-noi-u21-20-07-2026-1800?blv=531989",
+  "rate_limit_url": "https://socolivep.cv/truc-tiep/ha-noi-u21-vs-shb-da-nang-u21-20-07-2026-1530?blv=527384",
   "count": 2,
   "matches": [
     {
@@ -99,9 +99,14 @@
           "blv_id": "527384",
           "source_id": "527384",
           "source_provenance": [
-            "embedded/frame-html"
+            "cdp/request",
+            "cdp/response",
+            "embedded/frame-html",
+            "request/image",
+            "request/xhr",
+            "response/200"
           ],
-          "source_confidence": "embedded",
+          "source_confidence": "network",
           "mapping_mode": "exact-room-id",
           "discovered_from_room_url": "https://socolivep.cv/truc-tiep/ha-noi-u21-vs-shb-da-nang-u21-20-07-2026-1530?blv=527384",
           "discovered_from_blv": "LÃO LÂM"
@@ -137,12 +142,12 @@
             "url": "https://socolivep.cv/truc-tiep/ha-noi-u21-vs-shb-da-nang-u21-20-07-2026-1530/?blv=527384",
             "blv": "LÃO LÂM",
             "blv_id": "527384",
-            "status": "pending",
-            "attempts": 7,
-            "rate_limit_hits": 0,
-            "last_http_status": 200,
-            "last_stream_count": 1,
-            "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
+            "status": "rate_limited",
+            "attempts": 1,
+            "rate_limit_hits": 1,
+            "last_http_status": 429,
+            "last_stream_count": 0,
+            "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
           },
           "484845": {
             "key": "484845",
@@ -227,12 +232,12 @@
           "url": "https://socolivep.cv/truc-tiep/ha-noi-u21-vs-shb-da-nang-u21-20-07-2026-1530/?blv=527384",
           "blv": "LÃO LÂM",
           "blv_id": "527384",
-          "status": "pending",
-          "attempts": 7,
-          "rate_limit_hits": 0,
-          "last_http_status": 200,
-          "last_stream_count": 1,
-          "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
+          "status": "rate_limited",
+          "attempts": 1,
+          "rate_limit_hits": 1,
+          "last_http_status": 429,
+          "last_stream_count": 0,
+          "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
         },
         "484845": {
           "key": "484845",
@@ -444,12 +449,12 @@
             "url": "https://socolivep.cv/truc-tiep/the-cong-viettel-u21-vs-cong-an-ha-noi-u21-20-07-2026-1800/?blv=531989",
             "blv": "COZY",
             "blv_id": "531989",
-            "status": "rate_limited",
-            "attempts": 5,
-            "rate_limit_hits": 2,
-            "last_http_status": 429,
-            "last_stream_count": 0,
-            "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
+            "status": "pending",
+            "attempts": 1,
+            "rate_limit_hits": 0,
+            "last_http_status": 200,
+            "last_stream_count": 1,
+            "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
           },
           "552716": {
             "key": "552716",
@@ -534,12 +539,12 @@
           "url": "https://socolivep.cv/truc-tiep/the-cong-viettel-u21-vs-cong-an-ha-noi-u21-20-07-2026-1800/?blv=531989",
           "blv": "COZY",
           "blv_id": "531989",
-          "status": "rate_limited",
-          "attempts": 5,
-          "rate_limit_hits": 2,
-          "last_http_status": 429,
-          "last_stream_count": 0,
-          "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
+          "status": "pending",
+          "attempts": 1,
+          "rate_limit_hits": 0,
+          "last_http_status": 200,
+          "last_stream_count": 1,
+          "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
         },
         "552716": {
           "key": "552716",
