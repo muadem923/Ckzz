@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-21T02:49:00.645518+07:00",
+  "generated_at": "2026-07-21T02:50:15.445912+07:00",
   "state_schema_version": "v10.1-long-harvest-two-streams",
   "dispatch_next": true,
   "pending_count": 8,
@@ -8,11 +8,11 @@
   "total_match_count": 8,
   "total_stream_count": 5,
   "progress_count": 0,
-  "chain_runs": 39,
-  "no_progress_runs": 39,
+  "chain_runs": 40,
+  "no_progress_runs": 40,
   "stop_reason": "",
   "rate_limited": true,
-  "rate_limit_url": "https://socolivep.cv/truc-tiep/fc-rapid-1923-vs-sepsi-osk-sfantul-gheorghe-21-07-2026-0130/?blv=235232",
+  "rate_limit_url": "https://socolivep.cv/truc-tiep/hafnarfjordur-vs-breidablik-21-07-2026-0215?blv=622602",
   "count": 8,
   "matches": [
     {
@@ -105,7 +105,7 @@
             "blv": "XUÂN TÓC ĐỎ",
             "blv_id": "610518",
             "status": "rate_limited",
-            "attempts": 40,
+            "attempts": 41,
             "rate_limit_hits": 29,
             "last_http_status": 200,
             "last_stream_count": 1,
@@ -159,7 +159,7 @@
           "blv": "XUÂN TÓC ĐỎ",
           "blv_id": "610518",
           "status": "rate_limited",
-          "attempts": 40,
+          "attempts": 41,
           "rate_limit_hits": 29,
           "last_http_status": 200,
           "last_stream_count": 1,
@@ -301,11 +301,11 @@
             "blv": "KENCHU",
             "blv_id": "622602",
             "status": "rate_limited",
-            "attempts": 60,
-            "rate_limit_hits": 22,
-            "last_http_status": 200,
-            "last_stream_count": 1,
-            "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
+            "attempts": 61,
+            "rate_limit_hits": 23,
+            "last_http_status": 429,
+            "last_stream_count": 0,
+            "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
           },
           "622093": {
             "key": "622093",
@@ -355,11 +355,11 @@
           "blv": "KENCHU",
           "blv_id": "622602",
           "status": "rate_limited",
-          "attempts": 60,
-          "rate_limit_hits": 22,
-          "last_http_status": 200,
-          "last_stream_count": 1,
-          "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
+          "attempts": 61,
+          "rate_limit_hits": 23,
+          "last_http_status": 429,
+          "last_stream_count": 0,
+          "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
         },
         "622093": {
           "key": "622093",
@@ -433,6 +433,26 @@
           "blv_id": "598549"
         },
         {
+          "url": "https://socolivep.cv/truc-tiep/sporting-cp-vs-strasbourg-21-07-2026-0215/?blv=602019",
+          "blv": "RYO",
+          "blv_id": "602019"
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/sporting-cp-vs-strasbourg-21-07-2026-0215/?blv=620003",
+          "blv": "FOX",
+          "blv_id": "620003"
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/sporting-cp-vs-strasbourg-21-07-2026-0215/?blv=602153",
+          "blv": "QUỐC KHÁNH",
+          "blv_id": "602153"
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/sporting-cp-vs-strasbourg-21-07-2026-0215/?blv=598549",
+          "blv": "PICK",
+          "blv_id": "598549"
+        },
+        {
           "url": "https://socolivep.cv/truc-tiep/sporting-cp-vs-strasbourg-21-07-2026-0215",
           "blv": "XEM NGAY",
           "blv_id": ""
@@ -471,8 +491,12 @@
         "room_queue_complete": false,
         "complete": false,
         "max_streams_per_blv": 2,
-        "total_explicit_blv_rooms": 4,
+        "total_explicit_blv_rooms": 8,
         "pending_room_keys": [
+          "602019",
+          "620003",
+          "602153",
+          "598549",
           "602019",
           "620003",
           "602153",
@@ -481,19 +505,19 @@
         "room_progress": {
           "602019": {
             "key": "602019",
-            "url": "https://socolivep.cv/truc-tiep/sporting-cp-vs-strasbourg-21-07-2026-0215?blv=602019",
+            "url": "https://socolivep.cv/truc-tiep/sporting-cp-vs-strasbourg-21-07-2026-0215/?blv=602019",
             "blv": "RYO",
             "blv_id": "602019",
             "status": "rate_limited",
-            "attempts": 57,
+            "attempts": 58,
             "rate_limit_hits": 25,
-            "last_http_status": 429,
-            "last_stream_count": 0,
-            "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
+            "last_http_status": 200,
+            "last_stream_count": 1,
+            "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
           },
           "620003": {
             "key": "620003",
-            "url": "https://socolivep.cv/truc-tiep/sporting-cp-vs-strasbourg-21-07-2026-0215?blv=620003",
+            "url": "https://socolivep.cv/truc-tiep/sporting-cp-vs-strasbourg-21-07-2026-0215/?blv=620003",
             "blv": "FOX",
             "blv_id": "620003",
             "status": "pending",
@@ -505,7 +529,7 @@
           },
           "602153": {
             "key": "602153",
-            "url": "https://socolivep.cv/truc-tiep/sporting-cp-vs-strasbourg-21-07-2026-0215?blv=602153",
+            "url": "https://socolivep.cv/truc-tiep/sporting-cp-vs-strasbourg-21-07-2026-0215/?blv=602153",
             "blv": "QUỐC KHÁNH",
             "blv_id": "602153",
             "status": "pending",
@@ -517,7 +541,7 @@
           },
           "598549": {
             "key": "598549",
-            "url": "https://socolivep.cv/truc-tiep/sporting-cp-vs-strasbourg-21-07-2026-0215?blv=598549",
+            "url": "https://socolivep.cv/truc-tiep/sporting-cp-vs-strasbourg-21-07-2026-0215/?blv=598549",
             "blv": "PICK",
             "blv_id": "598549",
             "status": "pending",
@@ -547,19 +571,19 @@
       "room_progress": {
         "602019": {
           "key": "602019",
-          "url": "https://socolivep.cv/truc-tiep/sporting-cp-vs-strasbourg-21-07-2026-0215?blv=602019",
+          "url": "https://socolivep.cv/truc-tiep/sporting-cp-vs-strasbourg-21-07-2026-0215/?blv=602019",
           "blv": "RYO",
           "blv_id": "602019",
           "status": "rate_limited",
-          "attempts": 57,
+          "attempts": 58,
           "rate_limit_hits": 25,
-          "last_http_status": 429,
-          "last_stream_count": 0,
-          "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
+          "last_http_status": 200,
+          "last_stream_count": 1,
+          "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
         },
         "620003": {
           "key": "620003",
-          "url": "https://socolivep.cv/truc-tiep/sporting-cp-vs-strasbourg-21-07-2026-0215?blv=620003",
+          "url": "https://socolivep.cv/truc-tiep/sporting-cp-vs-strasbourg-21-07-2026-0215/?blv=620003",
           "blv": "FOX",
           "blv_id": "620003",
           "status": "pending",
@@ -571,7 +595,7 @@
         },
         "602153": {
           "key": "602153",
-          "url": "https://socolivep.cv/truc-tiep/sporting-cp-vs-strasbourg-21-07-2026-0215?blv=602153",
+          "url": "https://socolivep.cv/truc-tiep/sporting-cp-vs-strasbourg-21-07-2026-0215/?blv=602153",
           "blv": "QUỐC KHÁNH",
           "blv_id": "602153",
           "status": "pending",
@@ -583,7 +607,7 @@
         },
         "598549": {
           "key": "598549",
-          "url": "https://socolivep.cv/truc-tiep/sporting-cp-vs-strasbourg-21-07-2026-0215?blv=598549",
+          "url": "https://socolivep.cv/truc-tiep/sporting-cp-vs-strasbourg-21-07-2026-0215/?blv=598549",
           "blv": "PICK",
           "blv_id": "598549",
           "status": "pending",
@@ -607,6 +631,10 @@
         }
       },
       "pending_room_keys": [
+        "602019",
+        "620003",
+        "602153",
+        "598549",
         "602019",
         "620003",
         "602153",
@@ -635,6 +663,26 @@
         },
         {
           "url": "https://socolivep.cv/truc-tiep/fc-rapid-1923-vs-sepsi-osk-sfantul-gheorghe-21-07-2026-0130?blv=598119",
+          "blv": "A TINH",
+          "blv_id": "598119"
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/fc-rapid-1923-vs-sepsi-osk-sfantul-gheorghe-21-07-2026-0130/?blv=235232",
+          "blv": "A PÁO",
+          "blv_id": "235232"
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/fc-rapid-1923-vs-sepsi-osk-sfantul-gheorghe-21-07-2026-0130/?blv=617313",
+          "blv": "VINFAST",
+          "blv_id": "617313"
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/fc-rapid-1923-vs-sepsi-osk-sfantul-gheorghe-21-07-2026-0130/?blv=459401",
+          "blv": "BÉO",
+          "blv_id": "459401"
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/fc-rapid-1923-vs-sepsi-osk-sfantul-gheorghe-21-07-2026-0130/?blv=598119",
           "blv": "A TINH",
           "blv_id": "598119"
         },
@@ -677,8 +725,12 @@
         "room_queue_complete": false,
         "complete": false,
         "max_streams_per_blv": 2,
-        "total_explicit_blv_rooms": 4,
+        "total_explicit_blv_rooms": 8,
         "pending_room_keys": [
+          "235232",
+          "617313",
+          "459401",
+          "598119",
           "235232",
           "617313",
           "459401",
@@ -687,19 +739,19 @@
         "room_progress": {
           "235232": {
             "key": "235232",
-            "url": "https://socolivep.cv/truc-tiep/fc-rapid-1923-vs-sepsi-osk-sfantul-gheorghe-21-07-2026-0130?blv=235232",
+            "url": "https://socolivep.cv/truc-tiep/fc-rapid-1923-vs-sepsi-osk-sfantul-gheorghe-21-07-2026-0130/?blv=235232",
             "blv": "A PÁO",
             "blv_id": "235232",
             "status": "rate_limited",
-            "attempts": 87,
-            "rate_limit_hits": 41,
+            "attempts": 88,
+            "rate_limit_hits": 42,
             "last_http_status": 429,
             "last_stream_count": 0,
             "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
           },
           "617313": {
             "key": "617313",
-            "url": "https://socolivep.cv/truc-tiep/fc-rapid-1923-vs-sepsi-osk-sfantul-gheorghe-21-07-2026-0130?blv=617313",
+            "url": "https://socolivep.cv/truc-tiep/fc-rapid-1923-vs-sepsi-osk-sfantul-gheorghe-21-07-2026-0130/?blv=617313",
             "blv": "VINFAST",
             "blv_id": "617313",
             "status": "pending",
@@ -711,7 +763,7 @@
           },
           "459401": {
             "key": "459401",
-            "url": "https://socolivep.cv/truc-tiep/fc-rapid-1923-vs-sepsi-osk-sfantul-gheorghe-21-07-2026-0130?blv=459401",
+            "url": "https://socolivep.cv/truc-tiep/fc-rapid-1923-vs-sepsi-osk-sfantul-gheorghe-21-07-2026-0130/?blv=459401",
             "blv": "BÉO",
             "blv_id": "459401",
             "status": "pending",
@@ -723,7 +775,7 @@
           },
           "598119": {
             "key": "598119",
-            "url": "https://socolivep.cv/truc-tiep/fc-rapid-1923-vs-sepsi-osk-sfantul-gheorghe-21-07-2026-0130?blv=598119",
+            "url": "https://socolivep.cv/truc-tiep/fc-rapid-1923-vs-sepsi-osk-sfantul-gheorghe-21-07-2026-0130/?blv=598119",
             "blv": "A TINH",
             "blv_id": "598119",
             "status": "pending",
@@ -753,19 +805,19 @@
       "room_progress": {
         "235232": {
           "key": "235232",
-          "url": "https://socolivep.cv/truc-tiep/fc-rapid-1923-vs-sepsi-osk-sfantul-gheorghe-21-07-2026-0130?blv=235232",
+          "url": "https://socolivep.cv/truc-tiep/fc-rapid-1923-vs-sepsi-osk-sfantul-gheorghe-21-07-2026-0130/?blv=235232",
           "blv": "A PÁO",
           "blv_id": "235232",
           "status": "rate_limited",
-          "attempts": 87,
-          "rate_limit_hits": 41,
+          "attempts": 88,
+          "rate_limit_hits": 42,
           "last_http_status": 429,
           "last_stream_count": 0,
           "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
         },
         "617313": {
           "key": "617313",
-          "url": "https://socolivep.cv/truc-tiep/fc-rapid-1923-vs-sepsi-osk-sfantul-gheorghe-21-07-2026-0130?blv=617313",
+          "url": "https://socolivep.cv/truc-tiep/fc-rapid-1923-vs-sepsi-osk-sfantul-gheorghe-21-07-2026-0130/?blv=617313",
           "blv": "VINFAST",
           "blv_id": "617313",
           "status": "pending",
@@ -777,7 +829,7 @@
         },
         "459401": {
           "key": "459401",
-          "url": "https://socolivep.cv/truc-tiep/fc-rapid-1923-vs-sepsi-osk-sfantul-gheorghe-21-07-2026-0130?blv=459401",
+          "url": "https://socolivep.cv/truc-tiep/fc-rapid-1923-vs-sepsi-osk-sfantul-gheorghe-21-07-2026-0130/?blv=459401",
           "blv": "BÉO",
           "blv_id": "459401",
           "status": "pending",
@@ -789,7 +841,7 @@
         },
         "598119": {
           "key": "598119",
-          "url": "https://socolivep.cv/truc-tiep/fc-rapid-1923-vs-sepsi-osk-sfantul-gheorghe-21-07-2026-0130?blv=598119",
+          "url": "https://socolivep.cv/truc-tiep/fc-rapid-1923-vs-sepsi-osk-sfantul-gheorghe-21-07-2026-0130/?blv=598119",
           "blv": "A TINH",
           "blv_id": "598119",
           "status": "pending",
@@ -813,6 +865,10 @@
         }
       },
       "pending_room_keys": [
+        "235232",
+        "617313",
+        "459401",
+        "598119",
         "235232",
         "617313",
         "459401",
