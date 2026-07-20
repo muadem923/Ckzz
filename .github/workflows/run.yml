@@ -1,4 +1,4 @@
-name: Bot Quet Socolive V11 Dual Adapter
+name: Bot Quet Socolive V10.1 Long Harvest
 
 on:
   workflow_dispatch:
@@ -10,7 +10,7 @@ on:
         type: string
 
 concurrency:
-  group: socolive-v11-dual-adapter-${{ github.ref }}
+  group: socolive-v10-1-long-harvest-${{ github.ref }}
   cancel-in-progress: false
 
 permissions:
@@ -20,7 +20,7 @@ permissions:
 jobs:
   scan:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 25
 
     steps:
       - name: 1. Lấy source và checkpoint mới nhất
@@ -51,33 +51,32 @@ jobs:
           PYTHONUTF8: "1"
 
           # Domain hiện tại; dùng chung cho trang chủ, Referer và Origin.
-          SOCOLIVE_TARGET_URL: "https://socoliveaus.co/"
-
-          # Tự giải link rút gọn; domain trên vẫn chạy như fallback song song.
-          SOCOLIVE_SHORT_URL: "https://bit.ly/socolive"
-          SOCOLIVE_AUTO_RESOLVE_SHORT_URL: "1"
+          SOCOLIVE_TARGET_URL: "https://socolivep.cv/"
 
           SOCOLIVE_MATCH_CONCURRENCY: "4"
-          SOCOLIVE_ROOM_WAIT_SECONDS: "7"
+          SOCOLIVE_ROOM_WAIT_SECONDS: "12"
           SOCOLIVE_MAX_ROOMS_PER_MATCH: "3"
-          SOCOLIVE_MAX_SUCCESSFUL_ROOMS_PER_MATCH: "10"
+          SOCOLIVE_MAX_SUCCESSFUL_ROOMS_PER_MATCH: "24"
 
           # Mục tiêu tối đa 10 stream-ID/BLV cho mỗi trận.
           SOCOLIVE_MAX_STREAMS_PER_MATCH: "24"
 
           # Mỗi run chỉ mở tối đa 3 trang BLV/trận.
           # Mỗi trang sẽ quét toàn bộ HTML/config để lấy nhiều link.
-          SOCOLIVE_EMBEDDED_HARVEST_WAIT_SECONDS: "1.4"
+          SOCOLIVE_EMBEDDED_HARVEST_WAIT_SECONDS: "6.0"
 
           # BLV HTTP 200 nhưng không có stream được thử tối đa 2 runner.
-          SOCOLIVE_ROOM_EMPTY_MAX_ATTEMPTS: "2"
+          SOCOLIVE_ROOM_EMPTY_MAX_ATTEMPTS: "4"
 
-          # Mỗi BLV/phòng xuất tối đa hai nguồn.
+          # Tìm tối đa hai nguồn cho mỗi BLV.
           SOCOLIVE_MAX_STREAMS_PER_BLV: "2"
 
-          # Bắt link trong JSON/text API và frame WebSocket.
-          SOCOLIVE_CAPTURE_RESPONSE_BODIES: "1"
-          SOCOLIVE_MAX_RESPONSE_BODY_BYTES: "2000000"
+          # Giữ tab tối thiểu 6 giây sau stream đầu, tối đa 12 giây,
+          # quét lặp mỗi 0.8 giây và đóng khi yên 3.5 giây.
+          SOCOLIVE_EXTRA_WAIT_AFTER_STREAM: "4.0"
+          SOCOLIVE_HARVEST_MAX_SECONDS: "12"
+          SOCOLIVE_HARVEST_POLL_SECONDS: "0.8"
+          SOCOLIVE_HARVEST_QUIET_SECONDS: "3.5"
 
           SOCOLIVE_HTTP_FIRST: "0"
           SOCOLIVE_ENABLE_CDP: "1"
@@ -90,9 +89,12 @@ jobs:
           SOCOLIVE_SCAN_AFTER_MINUTES: "240"
           SOCOLIVE_SCAN_ALL: "0"
 
-          SOCOLIVE_STATE_MAX_AGE_MINUTES: "20"
-          SOCOLIVE_STATE_MAX_CHAIN_RUNS: "30"
-          SOCOLIVE_STATE_MAX_NO_PROGRESS_RUNS: "2"
+          SOCOLIVE_STATE_MAX_AGE_MINUTES: "180"
+          SOCOLIVE_STATE_MAX_CHAIN_RUNS: "200"
+          SOCOLIVE_STATE_MAX_NO_PROGRESS_RUNS: "0"
+
+          # Cứ còn BLV pending/partial/rate_limited thì gọi runner mới.
+          SOCOLIVE_CHAIN_UNTIL_PENDING_EMPTY: "1"
 
           TEST_URL: ${{ inputs.test_url }}
         run: |
@@ -101,7 +103,8 @@ jobs:
 
           echo "=== $(date -u '+%Y-%m-%d %H:%M:%S UTC') | Bắt đầu ==="
           echo "Concurrency=$SOCOLIVE_MATCH_CONCURRENCY | room_pages/run=$SOCOLIVE_MAX_ROOMS_PER_MATCH | stream_goal/match=$SOCOLIVE_MAX_STREAMS_PER_MATCH"
-          echo "V11: /truc-tiep + /room | tự giải bit.ly | tối đa 2 link/BLV"
+          echo "Long harvest: wait=${SOCOLIVE_ROOM_WAIT_SECONDS}s | max=${SOCOLIVE_HARVEST_MAX_SECONDS}s | 2 nguồn/BLV"
+          echo "Chain: tiếp tục đến khi pending=0 | hard_max=$SOCOLIVE_STATE_MAX_CHAIN_RUNS"
           echo "Scan window: -${SOCOLIVE_SCAN_BEFORE_MINUTES} phút / +${SOCOLIVE_SCAN_AFTER_MINUTES} phút | scan_all=$SOCOLIVE_SCAN_ALL"
 
           if [ -n "$TEST_URL" ]; then
@@ -191,7 +194,6 @@ jobs:
             socolive_state.json
             socolive_pending.json
             socolive_chain_decision.json
-            socolive_domain.json
           if-no-files-found: warn
           retention-days: 7
           compression-level: 6
@@ -208,8 +210,7 @@ jobs:
             socolive_matches.json \
             socolive_debug.json \
             socolive_state.json \
-            socolive_pending.json \
-            socolive_domain.json
+            socolive_pending.json
           do
             if [ -e "$file" ]; then
               git add "$file"
@@ -238,7 +239,7 @@ jobs:
         shell: bash
         run: |
           echo "Còn $PENDING_COUNT trận pending."
-          echo "Run vừa rồi lấy thêm $PROGRESS_COUNT trận."
+          echo "Run vừa rồi lấy thêm $PROGRESS_COUNT link."
           echo "Đang gọi workflow run tiếp theo, chain=$CHAIN_RUNS..."
 
           payload=$(python - <<'PY'
