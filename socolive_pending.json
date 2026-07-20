@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-21T06:56:38.475679+07:00",
+  "generated_at": "2026-07-21T06:57:50.511627+07:00",
   "state_schema_version": "v10.1-long-harvest-two-streams",
   "dispatch_next": true,
   "pending_count": 4,
@@ -8,11 +8,11 @@
   "total_match_count": 4,
   "total_stream_count": 4,
   "progress_count": 0,
-  "chain_runs": 5,
-  "no_progress_runs": 4,
+  "chain_runs": 6,
+  "no_progress_runs": 5,
   "stop_reason": "",
   "rate_limited": true,
-  "rate_limit_url": "https://socolivep.cv/truc-tiep/patronato-parana-vs-atletico-atlanta-21-07-2026-0600?blv=372746",
+  "rate_limit_url": "https://socolivep.cv/truc-tiep/chaco-for-ever-vs-ca-san-miguel-21-07-2026-0700?blv=536185",
   "count": 4,
   "matches": [
     {
@@ -27,16 +27,6 @@
         },
         {
           "url": "https://socolivep.cv/truc-tiep/chaco-for-ever-vs-ca-san-miguel-21-07-2026-0700?blv=557845",
-          "blv": "A TÚ",
-          "blv_id": "557845"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/chaco-for-ever-vs-ca-san-miguel-21-07-2026-0700/?blv=536185",
-          "blv": "A WIN",
-          "blv_id": "536185"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/chaco-for-ever-vs-ca-san-miguel-21-07-2026-0700/?blv=557845",
           "blv": "A TÚ",
           "blv_id": "557845"
         },
@@ -89,29 +79,27 @@
         "room_queue_complete": false,
         "complete": false,
         "max_streams_per_blv": 2,
-        "total_explicit_blv_rooms": 4,
+        "total_explicit_blv_rooms": 2,
         "pending_room_keys": [
-          "536185",
-          "557845",
           "536185",
           "557845"
         ],
         "room_progress": {
           "536185": {
             "key": "536185",
-            "url": "https://socolivep.cv/truc-tiep/chaco-for-ever-vs-ca-san-miguel-21-07-2026-0700/?blv=536185",
+            "url": "https://socolivep.cv/truc-tiep/chaco-for-ever-vs-ca-san-miguel-21-07-2026-0700?blv=536185",
             "blv": "A WIN",
             "blv_id": "536185",
             "status": "rate_limited",
             "attempts": 5,
-            "rate_limit_hits": 4,
+            "rate_limit_hits": 5,
             "last_http_status": 429,
             "last_stream_count": 0,
             "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
           },
           "557845": {
             "key": "557845",
-            "url": "https://socolivep.cv/truc-tiep/chaco-for-ever-vs-ca-san-miguel-21-07-2026-0700/?blv=557845",
+            "url": "https://socolivep.cv/truc-tiep/chaco-for-ever-vs-ca-san-miguel-21-07-2026-0700?blv=557845",
             "blv": "A TÚ",
             "blv_id": "557845",
             "status": "pending",
@@ -141,19 +129,19 @@
       "room_progress": {
         "536185": {
           "key": "536185",
-          "url": "https://socolivep.cv/truc-tiep/chaco-for-ever-vs-ca-san-miguel-21-07-2026-0700/?blv=536185",
+          "url": "https://socolivep.cv/truc-tiep/chaco-for-ever-vs-ca-san-miguel-21-07-2026-0700?blv=536185",
           "blv": "A WIN",
           "blv_id": "536185",
           "status": "rate_limited",
           "attempts": 5,
-          "rate_limit_hits": 4,
+          "rate_limit_hits": 5,
           "last_http_status": 429,
           "last_stream_count": 0,
           "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
         },
         "557845": {
           "key": "557845",
-          "url": "https://socolivep.cv/truc-tiep/chaco-for-ever-vs-ca-san-miguel-21-07-2026-0700/?blv=557845",
+          "url": "https://socolivep.cv/truc-tiep/chaco-for-ever-vs-ca-san-miguel-21-07-2026-0700?blv=557845",
           "blv": "A TÚ",
           "blv_id": "557845",
           "status": "pending",
@@ -177,8 +165,6 @@
         }
       },
       "pending_room_keys": [
-        "536185",
-        "557845",
         "536185",
         "557845"
       ]
@@ -261,7 +247,7 @@
             "blv": "RÔSI",
             "blv_id": "139384",
             "status": "rate_limited",
-            "attempts": 159,
+            "attempts": 160,
             "rate_limit_hits": 79,
             "last_http_status": 200,
             "last_stream_count": 1,
@@ -303,7 +289,7 @@
           "blv": "RÔSI",
           "blv_id": "139384",
           "status": "rate_limited",
-          "attempts": 159,
+          "attempts": 160,
           "rate_limit_hits": 79,
           "last_http_status": 200,
           "last_stream_count": 1,
@@ -419,11 +405,11 @@
             "blv": "YONE",
             "blv_id": "372746",
             "status": "rate_limited",
-            "attempts": 173,
+            "attempts": 174,
             "rate_limit_hits": 85,
-            "last_http_status": 429,
-            "last_stream_count": 0,
-            "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
+            "last_http_status": 200,
+            "last_stream_count": 1,
+            "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
           },
           "304148": {
             "key": "304148",
@@ -461,11 +447,11 @@
           "blv": "YONE",
           "blv_id": "372746",
           "status": "rate_limited",
-          "attempts": 173,
+          "attempts": 174,
           "rate_limit_hits": 85,
-          "last_http_status": 429,
-          "last_stream_count": 0,
-          "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
+          "last_http_status": 200,
+          "last_stream_count": 1,
+          "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
         },
         "304148": {
           "key": "304148",
@@ -577,7 +563,7 @@
             "blv": "VOI",
             "blv_id": "552716",
             "status": "rate_limited",
-            "attempts": 194,
+            "attempts": 195,
             "rate_limit_hits": 97,
             "last_http_status": 200,
             "last_stream_count": 1,
@@ -619,7 +605,7 @@
           "blv": "VOI",
           "blv_id": "552716",
           "status": "rate_limited",
-          "attempts": 194,
+          "attempts": 195,
           "rate_limit_hits": 97,
           "last_http_status": 200,
           "last_stream_count": 1,
