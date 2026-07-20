@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-07-21T01:33:40.374953+07:00",
+  "generated_at": "2026-07-21T01:35:06.811797+07:00",
   "state_schema_version": "v10.1-long-harvest-two-streams",
   "dispatch_next": true,
   "pending_count": 5,
-  "completed_count": 2,
+  "completed_count": 4,
   "coverage_complete_count": 0,
   "total_match_count": 5,
-  "total_stream_count": 2,
-  "progress_count": 0,
-  "chain_runs": 3,
-  "no_progress_runs": 3,
+  "total_stream_count": 4,
+  "progress_count": 2,
+  "chain_runs": 4,
+  "no_progress_runs": 0,
   "stop_reason": "",
   "rate_limited": true,
-  "rate_limit_url": "https://socolivep.cv/truc-tiep/hafnarfjordur-vs-breidablik-21-07-2026-0215/?blv=622602",
+  "rate_limit_url": "https://socolivep.cv/truc-tiep/fc-rapid-1923-vs-sepsi-osk-sfantul-gheorghe-21-07-2026-0130?blv=235232",
   "count": 5,
   "matches": [
     {
@@ -117,11 +117,11 @@
             "blv": "A PÁO",
             "blv_id": "235232",
             "status": "rate_limited",
-            "attempts": 26,
-            "rate_limit_hits": 6,
-            "last_http_status": 200,
-            "last_stream_count": 1,
-            "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
+            "attempts": 27,
+            "rate_limit_hits": 7,
+            "last_http_status": 429,
+            "last_stream_count": 0,
+            "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
           },
           "617313": {
             "key": "617313",
@@ -183,11 +183,11 @@
           "blv": "A PÁO",
           "blv_id": "235232",
           "status": "rate_limited",
-          "attempts": 26,
-          "rate_limit_hits": 6,
-          "last_http_status": 200,
-          "last_stream_count": 1,
-          "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
+          "attempts": 27,
+          "rate_limit_hits": 7,
+          "last_http_status": 429,
+          "last_stream_count": 0,
+          "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
         },
         "617313": {
           "key": "617313",
@@ -327,11 +327,11 @@
             "blv": "FIREMAN",
             "blv_id": "250874",
             "status": "rate_limited",
-            "attempts": 22,
-            "rate_limit_hits": 7,
-            "last_http_status": 200,
-            "last_stream_count": 1,
-            "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
+            "attempts": 23,
+            "rate_limit_hits": 8,
+            "last_http_status": 429,
+            "last_stream_count": 0,
+            "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
           },
           "589848": {
             "key": "589848",
@@ -369,11 +369,11 @@
           "blv": "FIREMAN",
           "blv_id": "250874",
           "status": "rate_limited",
-          "attempts": 22,
-          "rate_limit_hits": 7,
-          "last_http_status": 200,
-          "last_stream_count": 1,
-          "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
+          "attempts": 23,
+          "rate_limit_hits": 8,
+          "last_http_status": 429,
+          "last_stream_count": 0,
+          "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
         },
         "589848": {
           "key": "589848",
@@ -433,6 +433,26 @@
           "blv_id": "598549"
         },
         {
+          "url": "https://socolivep.cv/truc-tiep/sporting-cp-vs-strasbourg-21-07-2026-0215/?blv=602019",
+          "blv": "RYO",
+          "blv_id": "602019"
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/sporting-cp-vs-strasbourg-21-07-2026-0215/?blv=620003",
+          "blv": "FOX",
+          "blv_id": "620003"
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/sporting-cp-vs-strasbourg-21-07-2026-0215/?blv=602153",
+          "blv": "QUỐC KHÁNH",
+          "blv_id": "602153"
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/sporting-cp-vs-strasbourg-21-07-2026-0215/?blv=598549",
+          "blv": "PICK",
+          "blv_id": "598549"
+        },
+        {
           "url": "https://socolivep.cv/truc-tiep/sporting-cp-vs-strasbourg-21-07-2026-0215",
           "blv": "XEM NGAY",
           "blv_id": ""
@@ -443,17 +463,40 @@
           "blv_id": ""
         }
       ],
-      "streams": [],
+      "streams": [
+        {
+          "url": "https://pull.niues.live/live/stream-602019_lhd.m3u8?auth_key=1784490816-0-0-843b92c62ab5adbb8e44ba4d4307eba4",
+          "queue_room_key": "602019",
+          "room_url": "https://socolivep.cv/truc-tiep/sporting-cp-vs-strasbourg-21-07-2026-0215/?blv=602019",
+          "blv": "RYO",
+          "blv_id": "602019",
+          "source_id": "602019",
+          "source_provenance": [
+            "final-no-stream-scan",
+            "harvest-final"
+          ],
+          "source_confidence": "embedded",
+          "mapping_mode": "exact-room-id",
+          "discovered_from_room_url": "https://socolivep.cv/truc-tiep/sporting-cp-vs-strasbourg-21-07-2026-0215?blv=602019",
+          "discovered_from_blv": "RYO"
+        }
+      ],
       "coverage": {
-        "found_streams": 0,
-        "found_blv_ids": [],
+        "found_streams": 1,
+        "found_blv_ids": [
+          "602019"
+        ],
         "goal": 8,
         "source_goal_reached": false,
         "room_queue_complete": false,
         "complete": false,
         "max_streams_per_blv": 2,
-        "total_explicit_blv_rooms": 4,
+        "total_explicit_blv_rooms": 8,
         "pending_room_keys": [
+          "602019",
+          "620003",
+          "602153",
+          "598549",
           "602019",
           "620003",
           "602153",
@@ -462,19 +505,19 @@
         "room_progress": {
           "602019": {
             "key": "602019",
-            "url": "https://socolivep.cv/truc-tiep/sporting-cp-vs-strasbourg-21-07-2026-0215?blv=602019",
+            "url": "https://socolivep.cv/truc-tiep/sporting-cp-vs-strasbourg-21-07-2026-0215/?blv=602019",
             "blv": "RYO",
             "blv_id": "602019",
             "status": "rate_limited",
-            "attempts": 0,
+            "attempts": 1,
             "rate_limit_hits": 3,
-            "last_http_status": 429,
-            "last_stream_count": 0,
-            "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
+            "last_http_status": 200,
+            "last_stream_count": 1,
+            "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
           },
           "620003": {
             "key": "620003",
-            "url": "https://socolivep.cv/truc-tiep/sporting-cp-vs-strasbourg-21-07-2026-0215?blv=620003",
+            "url": "https://socolivep.cv/truc-tiep/sporting-cp-vs-strasbourg-21-07-2026-0215/?blv=620003",
             "blv": "FOX",
             "blv_id": "620003",
             "status": "pending",
@@ -486,7 +529,7 @@
           },
           "602153": {
             "key": "602153",
-            "url": "https://socolivep.cv/truc-tiep/sporting-cp-vs-strasbourg-21-07-2026-0215?blv=602153",
+            "url": "https://socolivep.cv/truc-tiep/sporting-cp-vs-strasbourg-21-07-2026-0215/?blv=602153",
             "blv": "QUỐC KHÁNH",
             "blv_id": "602153",
             "status": "pending",
@@ -498,7 +541,7 @@
           },
           "598549": {
             "key": "598549",
-            "url": "https://socolivep.cv/truc-tiep/sporting-cp-vs-strasbourg-21-07-2026-0215?blv=598549",
+            "url": "https://socolivep.cv/truc-tiep/sporting-cp-vs-strasbourg-21-07-2026-0215/?blv=598549",
             "blv": "PICK",
             "blv_id": "598549",
             "status": "pending",
@@ -522,23 +565,25 @@
           }
         }
       },
-      "attempted_room_ids": [],
+      "attempted_room_ids": [
+        "602019"
+      ],
       "room_progress": {
         "602019": {
           "key": "602019",
-          "url": "https://socolivep.cv/truc-tiep/sporting-cp-vs-strasbourg-21-07-2026-0215?blv=602019",
+          "url": "https://socolivep.cv/truc-tiep/sporting-cp-vs-strasbourg-21-07-2026-0215/?blv=602019",
           "blv": "RYO",
           "blv_id": "602019",
           "status": "rate_limited",
-          "attempts": 0,
+          "attempts": 1,
           "rate_limit_hits": 3,
-          "last_http_status": 429,
-          "last_stream_count": 0,
-          "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
+          "last_http_status": 200,
+          "last_stream_count": 1,
+          "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
         },
         "620003": {
           "key": "620003",
-          "url": "https://socolivep.cv/truc-tiep/sporting-cp-vs-strasbourg-21-07-2026-0215?blv=620003",
+          "url": "https://socolivep.cv/truc-tiep/sporting-cp-vs-strasbourg-21-07-2026-0215/?blv=620003",
           "blv": "FOX",
           "blv_id": "620003",
           "status": "pending",
@@ -550,7 +595,7 @@
         },
         "602153": {
           "key": "602153",
-          "url": "https://socolivep.cv/truc-tiep/sporting-cp-vs-strasbourg-21-07-2026-0215?blv=602153",
+          "url": "https://socolivep.cv/truc-tiep/sporting-cp-vs-strasbourg-21-07-2026-0215/?blv=602153",
           "blv": "QUỐC KHÁNH",
           "blv_id": "602153",
           "status": "pending",
@@ -562,7 +607,7 @@
         },
         "598549": {
           "key": "598549",
-          "url": "https://socolivep.cv/truc-tiep/sporting-cp-vs-strasbourg-21-07-2026-0215?blv=598549",
+          "url": "https://socolivep.cv/truc-tiep/sporting-cp-vs-strasbourg-21-07-2026-0215/?blv=598549",
           "blv": "PICK",
           "blv_id": "598549",
           "status": "pending",
@@ -586,6 +631,10 @@
         }
       },
       "pending_room_keys": [
+        "602019",
+        "620003",
+        "602153",
+        "598549",
         "602019",
         "620003",
         "602153",
@@ -613,6 +662,21 @@
           "blv_id": "400722"
         },
         {
+          "url": "https://socolivep.cv/truc-tiep/hafnarfjordur-vs-breidablik-21-07-2026-0215/?blv=622602",
+          "blv": "KENCHU",
+          "blv_id": "622602"
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/hafnarfjordur-vs-breidablik-21-07-2026-0215/?blv=622093",
+          "blv": "GRAP",
+          "blv_id": "622093"
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/hafnarfjordur-vs-breidablik-21-07-2026-0215/?blv=400722",
+          "blv": "TUẤN CÙI",
+          "blv_id": "400722"
+        },
+        {
           "url": "https://socolivep.cv/truc-tiep/hafnarfjordur-vs-breidablik-21-07-2026-0215",
           "blv": "XEM NGAY",
           "blv_id": ""
@@ -623,17 +687,39 @@
           "blv_id": ""
         }
       ],
-      "streams": [],
+      "streams": [
+        {
+          "url": "https://pull.niues.live/live/stream-622602_lhd.m3u8?auth_key=1784570155-0-0-869ac499155b900e7d5af8240a325e10",
+          "queue_room_key": "622602",
+          "room_url": "https://socolivep.cv/truc-tiep/hafnarfjordur-vs-breidablik-21-07-2026-0215/?blv=622602",
+          "blv": "KENCHU",
+          "blv_id": "622602",
+          "source_id": "622602",
+          "source_provenance": [
+            "final-no-stream-scan",
+            "harvest-final"
+          ],
+          "source_confidence": "embedded",
+          "mapping_mode": "exact-room-id",
+          "discovered_from_room_url": "https://socolivep.cv/truc-tiep/hafnarfjordur-vs-breidablik-21-07-2026-0215?blv=622602",
+          "discovered_from_blv": "KENCHU"
+        }
+      ],
       "coverage": {
-        "found_streams": 0,
-        "found_blv_ids": [],
+        "found_streams": 1,
+        "found_blv_ids": [
+          "622602"
+        ],
         "goal": 6,
         "source_goal_reached": false,
         "room_queue_complete": false,
         "complete": false,
         "max_streams_per_blv": 2,
-        "total_explicit_blv_rooms": 3,
+        "total_explicit_blv_rooms": 6,
         "pending_room_keys": [
+          "622602",
+          "622093",
+          "400722",
           "622602",
           "622093",
           "400722"
@@ -641,19 +727,19 @@
         "room_progress": {
           "622602": {
             "key": "622602",
-            "url": "https://socolivep.cv/truc-tiep/hafnarfjordur-vs-breidablik-21-07-2026-0215?blv=622602",
+            "url": "https://socolivep.cv/truc-tiep/hafnarfjordur-vs-breidablik-21-07-2026-0215/?blv=622602",
             "blv": "KENCHU",
             "blv_id": "622602",
             "status": "rate_limited",
-            "attempts": 0,
+            "attempts": 1,
             "rate_limit_hits": 3,
-            "last_http_status": 429,
-            "last_stream_count": 0,
-            "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
+            "last_http_status": 200,
+            "last_stream_count": 1,
+            "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
           },
           "622093": {
             "key": "622093",
-            "url": "https://socolivep.cv/truc-tiep/hafnarfjordur-vs-breidablik-21-07-2026-0215?blv=622093",
+            "url": "https://socolivep.cv/truc-tiep/hafnarfjordur-vs-breidablik-21-07-2026-0215/?blv=622093",
             "blv": "GRAP",
             "blv_id": "622093",
             "status": "pending",
@@ -665,7 +751,7 @@
           },
           "400722": {
             "key": "400722",
-            "url": "https://socolivep.cv/truc-tiep/hafnarfjordur-vs-breidablik-21-07-2026-0215?blv=400722",
+            "url": "https://socolivep.cv/truc-tiep/hafnarfjordur-vs-breidablik-21-07-2026-0215/?blv=400722",
             "blv": "TUẤN CÙI",
             "blv_id": "400722",
             "status": "pending",
@@ -689,23 +775,25 @@
           }
         }
       },
-      "attempted_room_ids": [],
+      "attempted_room_ids": [
+        "622602"
+      ],
       "room_progress": {
         "622602": {
           "key": "622602",
-          "url": "https://socolivep.cv/truc-tiep/hafnarfjordur-vs-breidablik-21-07-2026-0215?blv=622602",
+          "url": "https://socolivep.cv/truc-tiep/hafnarfjordur-vs-breidablik-21-07-2026-0215/?blv=622602",
           "blv": "KENCHU",
           "blv_id": "622602",
           "status": "rate_limited",
-          "attempts": 0,
+          "attempts": 1,
           "rate_limit_hits": 3,
-          "last_http_status": 429,
-          "last_stream_count": 0,
-          "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
+          "last_http_status": 200,
+          "last_stream_count": 1,
+          "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
         },
         "622093": {
           "key": "622093",
-          "url": "https://socolivep.cv/truc-tiep/hafnarfjordur-vs-breidablik-21-07-2026-0215?blv=622093",
+          "url": "https://socolivep.cv/truc-tiep/hafnarfjordur-vs-breidablik-21-07-2026-0215/?blv=622093",
           "blv": "GRAP",
           "blv_id": "622093",
           "status": "pending",
@@ -717,7 +805,7 @@
         },
         "400722": {
           "key": "400722",
-          "url": "https://socolivep.cv/truc-tiep/hafnarfjordur-vs-breidablik-21-07-2026-0215?blv=400722",
+          "url": "https://socolivep.cv/truc-tiep/hafnarfjordur-vs-breidablik-21-07-2026-0215/?blv=400722",
           "blv": "TUẤN CÙI",
           "blv_id": "400722",
           "status": "pending",
@@ -741,6 +829,9 @@
         }
       },
       "pending_room_keys": [
+        "622602",
+        "622093",
+        "400722",
         "622602",
         "622093",
         "400722"
