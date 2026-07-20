@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-07-21T03:02:31.665970+07:00",
+  "generated_at": "2026-07-21T03:03:47.423702+07:00",
   "state_schema_version": "v10.1-long-harvest-two-streams",
   "dispatch_next": true,
   "pending_count": 7,
-  "completed_count": 3,
+  "completed_count": 4,
   "coverage_complete_count": 0,
   "total_match_count": 7,
-  "total_stream_count": 3,
-  "progress_count": 0,
-  "chain_runs": 2,
-  "no_progress_runs": 2,
+  "total_stream_count": 4,
+  "progress_count": 1,
+  "chain_runs": 3,
+  "no_progress_runs": 0,
   "stop_reason": "",
   "rate_limited": true,
-  "rate_limit_url": "https://socolivep.cv/truc-tiep/quilmes-vs-gimnasia-jujuy-21-07-2026-0600?blv=552716",
+  "rate_limit_url": "https://socolivep.cv/truc-tiep/keflavik-vs-akranes-21-07-2026-0215?blv=610518",
   "count": 7,
   "matches": [
     {
@@ -105,11 +105,11 @@
             "blv": "XUÂN TÓC ĐỎ",
             "blv_id": "610518",
             "status": "rate_limited",
-            "attempts": 52,
-            "rate_limit_hits": 33,
-            "last_http_status": 200,
-            "last_stream_count": 1,
-            "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
+            "attempts": 53,
+            "rate_limit_hits": 34,
+            "last_http_status": 429,
+            "last_stream_count": 0,
+            "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
           },
           "618546": {
             "key": "618546",
@@ -159,11 +159,11 @@
           "blv": "XUÂN TÓC ĐỎ",
           "blv_id": "610518",
           "status": "rate_limited",
-          "attempts": 52,
-          "rate_limit_hits": 33,
-          "last_http_status": 200,
-          "last_stream_count": 1,
-          "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
+          "attempts": 53,
+          "rate_limit_hits": 34,
+          "last_http_status": 429,
+          "last_stream_count": 0,
+          "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
         },
         "618546": {
           "key": "618546",
@@ -301,7 +301,7 @@
             "blv": "KENCHU",
             "blv_id": "622602",
             "status": "rate_limited",
-            "attempts": 71,
+            "attempts": 72,
             "rate_limit_hits": 27,
             "last_http_status": 200,
             "last_stream_count": 1,
@@ -355,7 +355,7 @@
           "blv": "KENCHU",
           "blv_id": "622602",
           "status": "rate_limited",
-          "attempts": 71,
+          "attempts": 72,
           "rate_limit_hits": 27,
           "last_http_status": 200,
           "last_stream_count": 1,
@@ -509,7 +509,7 @@
             "blv": "RYO",
             "blv_id": "602019",
             "status": "rate_limited",
-            "attempts": 67,
+            "attempts": 68,
             "rate_limit_hits": 30,
             "last_http_status": 200,
             "last_stream_count": 1,
@@ -575,7 +575,7 @@
           "blv": "RYO",
           "blv_id": "602019",
           "status": "rate_limited",
-          "attempts": 67,
+          "attempts": 68,
           "rate_limit_hits": 30,
           "last_http_status": 200,
           "last_stream_count": 1,
@@ -657,6 +657,16 @@
           "blv_id": "321443"
         },
         {
+          "url": "https://socolivep.cv/truc-tiep/quilmes-vs-gimnasia-jujuy-21-07-2026-0600/?blv=552716",
+          "blv": "VOI",
+          "blv_id": "552716"
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/quilmes-vs-gimnasia-jujuy-21-07-2026-0600/?blv=321443",
+          "blv": "GIÓ",
+          "blv_id": "321443"
+        },
+        {
           "url": "https://socolivep.cv/truc-tiep/quilmes-vs-gimnasia-jujuy-21-07-2026-0600",
           "blv": "XEM NGAY",
           "blv_id": ""
@@ -667,36 +677,57 @@
           "blv_id": ""
         }
       ],
-      "streams": [],
+      "streams": [
+        {
+          "url": "https://pull.niues.live/live/stream-9912114_lhd.m3u8?auth_key=1784555695-0-0-0917e05b1d26d2f6158a5c91cf1c5e1e",
+          "queue_room_key": "552716",
+          "room_url": "https://socolivep.cv/truc-tiep/quilmes-vs-gimnasia-jujuy-21-07-2026-0600?blv=552716",
+          "blv": "Nguồn 9912114",
+          "blv_id": "9912114",
+          "source_id": "9912114",
+          "source_provenance": [
+            "final-no-stream-scan",
+            "harvest-final"
+          ],
+          "source_confidence": "embedded",
+          "mapping_mode": "stream-source-id",
+          "discovered_from_room_url": "https://socolivep.cv/truc-tiep/quilmes-vs-gimnasia-jujuy-21-07-2026-0600?blv=552716",
+          "discovered_from_blv": "VOI"
+        }
+      ],
       "coverage": {
-        "found_streams": 0,
-        "found_blv_ids": [],
+        "found_streams": 1,
+        "found_blv_ids": [
+          "9912114"
+        ],
         "goal": 4,
         "source_goal_reached": false,
         "room_queue_complete": false,
         "complete": false,
         "max_streams_per_blv": 2,
-        "total_explicit_blv_rooms": 2,
+        "total_explicit_blv_rooms": 4,
         "pending_room_keys": [
+          "552716",
+          "321443",
           "552716",
           "321443"
         ],
         "room_progress": {
           "552716": {
             "key": "552716",
-            "url": "https://socolivep.cv/truc-tiep/quilmes-vs-gimnasia-jujuy-21-07-2026-0600?blv=552716",
+            "url": "https://socolivep.cv/truc-tiep/quilmes-vs-gimnasia-jujuy-21-07-2026-0600/?blv=552716",
             "blv": "VOI",
             "blv_id": "552716",
             "status": "rate_limited",
-            "attempts": 0,
+            "attempts": 1,
             "rate_limit_hits": 2,
-            "last_http_status": 429,
-            "last_stream_count": 0,
-            "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
+            "last_http_status": 200,
+            "last_stream_count": 1,
+            "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
           },
           "321443": {
             "key": "321443",
-            "url": "https://socolivep.cv/truc-tiep/quilmes-vs-gimnasia-jujuy-21-07-2026-0600?blv=321443",
+            "url": "https://socolivep.cv/truc-tiep/quilmes-vs-gimnasia-jujuy-21-07-2026-0600/?blv=321443",
             "blv": "GIÓ",
             "blv_id": "321443",
             "status": "pending",
@@ -720,23 +751,25 @@
           }
         }
       },
-      "attempted_room_ids": [],
+      "attempted_room_ids": [
+        "552716"
+      ],
       "room_progress": {
         "552716": {
           "key": "552716",
-          "url": "https://socolivep.cv/truc-tiep/quilmes-vs-gimnasia-jujuy-21-07-2026-0600?blv=552716",
+          "url": "https://socolivep.cv/truc-tiep/quilmes-vs-gimnasia-jujuy-21-07-2026-0600/?blv=552716",
           "blv": "VOI",
           "blv_id": "552716",
           "status": "rate_limited",
-          "attempts": 0,
+          "attempts": 1,
           "rate_limit_hits": 2,
-          "last_http_status": 429,
-          "last_stream_count": 0,
-          "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
+          "last_http_status": 200,
+          "last_stream_count": 1,
+          "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
         },
         "321443": {
           "key": "321443",
-          "url": "https://socolivep.cv/truc-tiep/quilmes-vs-gimnasia-jujuy-21-07-2026-0600?blv=321443",
+          "url": "https://socolivep.cv/truc-tiep/quilmes-vs-gimnasia-jujuy-21-07-2026-0600/?blv=321443",
           "blv": "GIÓ",
           "blv_id": "321443",
           "status": "pending",
@@ -760,6 +793,8 @@
         }
       },
       "pending_room_keys": [
+        "552716",
+        "321443",
         "552716",
         "321443"
       ]
