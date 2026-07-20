@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-20T14:16:22.836487+07:00",
+  "generated_at": "2026-07-20T14:17:40.892250+07:00",
   "state_schema_version": "v10-per-blv-queue",
   "dispatch_next": true,
   "pending_count": 2,
@@ -7,12 +7,12 @@
   "coverage_complete_count": 0,
   "total_match_count": 2,
   "total_stream_count": 2,
-  "progress_count": 2,
-  "chain_runs": 1,
-  "no_progress_runs": 0,
+  "progress_count": 0,
+  "chain_runs": 2,
+  "no_progress_runs": 1,
   "stop_reason": "",
   "rate_limited": true,
-  "rate_limit_url": "https://socolivep.cv/truc-tiep/the-cong-viettel-u21-vs-cong-an-ha-noi-u21-20-07-2026-1800?blv=531989",
+  "rate_limit_url": "https://socolivep.cv/truc-tiep/ha-noi-u21-vs-shb-da-nang-u21-20-07-2026-1530?blv=527384",
   "count": 2,
   "matches": [
     {
@@ -137,12 +137,12 @@
             "url": "https://socolivep.cv/truc-tiep/ha-noi-u21-vs-shb-da-nang-u21-20-07-2026-1530/?blv=527384",
             "blv": "LÃO LÂM",
             "blv_id": "527384",
-            "status": "pending",
-            "attempts": 3,
-            "rate_limit_hits": 0,
-            "last_http_status": 200,
-            "last_stream_count": 1,
-            "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
+            "status": "rate_limited",
+            "attempts": 4,
+            "rate_limit_hits": 1,
+            "last_http_status": 429,
+            "last_stream_count": 0,
+            "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
           },
           "484845": {
             "key": "484845",
@@ -227,12 +227,12 @@
           "url": "https://socolivep.cv/truc-tiep/ha-noi-u21-vs-shb-da-nang-u21-20-07-2026-1530/?blv=527384",
           "blv": "LÃO LÂM",
           "blv_id": "527384",
-          "status": "pending",
-          "attempts": 3,
-          "rate_limit_hits": 0,
-          "last_http_status": 200,
-          "last_stream_count": 1,
-          "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
+          "status": "rate_limited",
+          "attempts": 4,
+          "rate_limit_hits": 1,
+          "last_http_status": 429,
+          "last_stream_count": 0,
+          "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
         },
         "484845": {
           "key": "484845",
@@ -445,11 +445,11 @@
             "blv": "COZY",
             "blv_id": "531989",
             "status": "rate_limited",
-            "attempts": 2,
+            "attempts": 4,
             "rate_limit_hits": 1,
-            "last_http_status": 429,
-            "last_stream_count": 0,
-            "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
+            "last_http_status": 200,
+            "last_stream_count": 1,
+            "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
           },
           "552716": {
             "key": "552716",
@@ -535,11 +535,11 @@
           "blv": "COZY",
           "blv_id": "531989",
           "status": "rate_limited",
-          "attempts": 2,
+          "attempts": 4,
           "rate_limit_hits": 1,
-          "last_http_status": 429,
-          "last_stream_count": 0,
-          "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
+          "last_http_status": 200,
+          "last_stream_count": 1,
+          "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
         },
         "552716": {
           "key": "552716",
