@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-21T00:47:31.378736+07:00",
+  "generated_at": "2026-07-21T00:48:41.393063+07:00",
   "state_schema_version": "v10.1-long-harvest-two-streams",
   "dispatch_next": true,
   "pending_count": 9,
@@ -8,11 +8,11 @@
   "total_match_count": 9,
   "total_stream_count": 4,
   "progress_count": 0,
-  "chain_runs": 1,
-  "no_progress_runs": 1,
+  "chain_runs": 2,
+  "no_progress_runs": 2,
   "stop_reason": "",
   "rate_limited": true,
-  "rate_limit_url": "https://socolivep.cv/truc-tiep/rotor-volgograd-vs-ska-khabarovsk-20-07-2026-2330/?blv=622093",
+  "rate_limit_url": "https://socolivep.cv/truc-tiep/norrby-if-vs-gif-sundsvall-21-07-2026-0000?blv=620084",
   "count": 9,
   "matches": [
     {
@@ -144,11 +144,11 @@
             "blv": "RAMBO",
             "blv_id": "534055",
             "status": "rate_limited",
-            "attempts": 1,
+            "attempts": 2,
             "rate_limit_hits": 1,
-            "last_http_status": 429,
-            "last_stream_count": 0,
-            "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
+            "last_http_status": 200,
+            "last_stream_count": 1,
+            "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
           },
           "387694": {
             "key": "387694",
@@ -234,11 +234,11 @@
           "blv": "RAMBO",
           "blv_id": "534055",
           "status": "rate_limited",
-          "attempts": 1,
+          "attempts": 2,
           "rate_limit_hits": 1,
-          "last_http_status": 429,
-          "last_stream_count": 0,
-          "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
+          "last_http_status": 200,
+          "last_stream_count": 1,
+          "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
         },
         "387694": {
           "key": "387694",
@@ -457,7 +457,7 @@
             "blv": "CHÍ PHÈO",
             "blv_id": "273736",
             "status": "pending",
-            "attempts": 2,
+            "attempts": 3,
             "rate_limit_hits": 0,
             "last_http_status": 200,
             "last_stream_count": 1,
@@ -547,7 +547,7 @@
           "blv": "CHÍ PHÈO",
           "blv_id": "273736",
           "status": "pending",
-          "attempts": 2,
+          "attempts": 3,
           "rate_limit_hits": 0,
           "last_http_status": 200,
           "last_stream_count": 1,
@@ -722,8 +722,8 @@
             "blv": "PEANUT",
             "blv_id": "620084",
             "status": "rate_limited",
-            "attempts": 1,
-            "rate_limit_hits": 1,
+            "attempts": 2,
+            "rate_limit_hits": 2,
             "last_http_status": 429,
             "last_stream_count": 0,
             "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
@@ -764,8 +764,8 @@
           "blv": "PEANUT",
           "blv_id": "620084",
           "status": "rate_limited",
-          "attempts": 1,
-          "rate_limit_hits": 1,
+          "attempts": 2,
+          "rate_limit_hits": 2,
           "last_http_status": 429,
           "last_stream_count": 0,
           "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
@@ -883,11 +883,11 @@
             "blv": "GRAP",
             "blv_id": "622093",
             "status": "rate_limited",
-            "attempts": 1,
+            "attempts": 2,
             "rate_limit_hits": 1,
-            "last_http_status": 429,
-            "last_stream_count": 0,
-            "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
+            "last_http_status": 200,
+            "last_stream_count": 1,
+            "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
           },
           "400722": {
             "key": "400722",
@@ -925,11 +925,11 @@
           "blv": "GRAP",
           "blv_id": "622093",
           "status": "rate_limited",
-          "attempts": 1,
+          "attempts": 2,
           "rate_limit_hits": 1,
-          "last_http_status": 429,
-          "last_stream_count": 0,
-          "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
+          "last_http_status": 200,
+          "last_stream_count": 1,
+          "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
         },
         "400722": {
           "key": "400722",
