@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-07-20T09:16:01.317181+07:00",
+  "generated_at": "2026-07-20T09:17:05.422400+07:00",
   "state_schema_version": "v10-per-blv-queue",
   "dispatch_next": true,
   "pending_count": 5,
-  "completed_count": 2,
+  "completed_count": 4,
   "coverage_complete_count": 0,
   "total_match_count": 5,
-  "total_stream_count": 2,
+  "total_stream_count": 4,
   "progress_count": 2,
-  "chain_runs": 1,
+  "chain_runs": 2,
   "no_progress_runs": 0,
   "stop_reason": "",
   "rate_limited": true,
-  "rate_limit_url": "https://socolivep.cv/truc-tiep/real-monarchs-vs-tacoma-defiance-20-07-2026-0830/?blv=109053",
+  "rate_limit_url": "https://socolivep.cv/truc-tiep/alianza-lima-vs-sport-huancayo-20-07-2026-0700?blv=534055",
   "count": 5,
   "matches": [
     {
@@ -51,6 +51,36 @@
           "blv_id": "139384"
         },
         {
+          "url": "https://socolivep.cv/truc-tiep/real-monarchs-vs-tacoma-defiance-20-07-2026-0830/?blv=109053",
+          "blv": "PEWPEW",
+          "blv_id": "109053"
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/real-monarchs-vs-tacoma-defiance-20-07-2026-0830/?blv=494201",
+          "blv": "MESSI",
+          "blv_id": "494201"
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/real-monarchs-vs-tacoma-defiance-20-07-2026-0830/?blv=123226",
+          "blv": "RICKHANTER",
+          "blv_id": "123226"
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/real-monarchs-vs-tacoma-defiance-20-07-2026-0830/?blv=327159",
+          "blv": "COCA",
+          "blv_id": "327159"
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/real-monarchs-vs-tacoma-defiance-20-07-2026-0830/?blv=582342",
+          "blv": "CÒ",
+          "blv_id": "582342"
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/real-monarchs-vs-tacoma-defiance-20-07-2026-0830/?blv=139384",
+          "blv": "RÔSI",
+          "blv_id": "139384"
+        },
+        {
           "url": "https://socolivep.cv/truc-tiep/real-monarchs-vs-tacoma-defiance-20-07-2026-0830",
           "blv": "XEM NGAY",
           "blv_id": ""
@@ -61,16 +91,42 @@
           "blv_id": ""
         }
       ],
-      "streams": [],
+      "streams": [
+        {
+          "url": "https://pull.niues.live/live/stream-9912015_lhd.m3u8?auth_key=1784517145-0-0-e340e128147e74a3bc69601f976704a8",
+          "room_url": "https://socolivep.cv/truc-tiep/real-monarchs-vs-tacoma-defiance-20-07-2026-0830?blv=109053",
+          "blv": "PEWPEW",
+          "blv_id": "109053",
+          "source_id": "9912015",
+          "source_provenance": [
+            "cdp/request",
+            "embedded/frame-html",
+            "request/image",
+            "request/xhr"
+          ],
+          "source_confidence": "network",
+          "mapping_mode": "current-room-primary",
+          "discovered_from_room_url": "https://socolivep.cv/truc-tiep/real-monarchs-vs-tacoma-defiance-20-07-2026-0830?blv=109053",
+          "discovered_from_blv": "PEWPEW"
+        }
+      ],
       "coverage": {
-        "found_streams": 0,
-        "found_blv_ids": [],
+        "found_streams": 1,
+        "found_blv_ids": [
+          "109053"
+        ],
         "goal": 6,
         "source_goal_reached": false,
         "room_queue_complete": false,
         "complete": false,
-        "total_explicit_blv_rooms": 6,
+        "total_explicit_blv_rooms": 12,
         "pending_room_keys": [
+          "109053",
+          "494201",
+          "123226",
+          "327159",
+          "582342",
+          "139384",
           "109053",
           "494201",
           "123226",
@@ -81,19 +137,19 @@
         "room_progress": {
           "109053": {
             "key": "109053",
-            "url": "https://socolivep.cv/truc-tiep/real-monarchs-vs-tacoma-defiance-20-07-2026-0830?blv=109053",
+            "url": "https://socolivep.cv/truc-tiep/real-monarchs-vs-tacoma-defiance-20-07-2026-0830/?blv=109053",
             "blv": "PEWPEW",
             "blv_id": "109053",
             "status": "rate_limited",
-            "attempts": 0,
-            "rate_limit_hits": 1,
+            "attempts": 1,
+            "rate_limit_hits": 2,
             "last_http_status": 429,
             "last_stream_count": 0,
             "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
           },
           "494201": {
             "key": "494201",
-            "url": "https://socolivep.cv/truc-tiep/real-monarchs-vs-tacoma-defiance-20-07-2026-0830?blv=494201",
+            "url": "https://socolivep.cv/truc-tiep/real-monarchs-vs-tacoma-defiance-20-07-2026-0830/?blv=494201",
             "blv": "MESSI",
             "blv_id": "494201",
             "status": "pending",
@@ -105,7 +161,7 @@
           },
           "123226": {
             "key": "123226",
-            "url": "https://socolivep.cv/truc-tiep/real-monarchs-vs-tacoma-defiance-20-07-2026-0830?blv=123226",
+            "url": "https://socolivep.cv/truc-tiep/real-monarchs-vs-tacoma-defiance-20-07-2026-0830/?blv=123226",
             "blv": "RICKHANTER",
             "blv_id": "123226",
             "status": "pending",
@@ -117,7 +173,7 @@
           },
           "327159": {
             "key": "327159",
-            "url": "https://socolivep.cv/truc-tiep/real-monarchs-vs-tacoma-defiance-20-07-2026-0830?blv=327159",
+            "url": "https://socolivep.cv/truc-tiep/real-monarchs-vs-tacoma-defiance-20-07-2026-0830/?blv=327159",
             "blv": "COCA",
             "blv_id": "327159",
             "status": "pending",
@@ -129,7 +185,7 @@
           },
           "582342": {
             "key": "582342",
-            "url": "https://socolivep.cv/truc-tiep/real-monarchs-vs-tacoma-defiance-20-07-2026-0830?blv=582342",
+            "url": "https://socolivep.cv/truc-tiep/real-monarchs-vs-tacoma-defiance-20-07-2026-0830/?blv=582342",
             "blv": "CÒ",
             "blv_id": "582342",
             "status": "pending",
@@ -141,7 +197,7 @@
           },
           "139384": {
             "key": "139384",
-            "url": "https://socolivep.cv/truc-tiep/real-monarchs-vs-tacoma-defiance-20-07-2026-0830?blv=139384",
+            "url": "https://socolivep.cv/truc-tiep/real-monarchs-vs-tacoma-defiance-20-07-2026-0830/?blv=139384",
             "blv": "RÔSI",
             "blv_id": "139384",
             "status": "pending",
@@ -165,23 +221,25 @@
           }
         }
       },
-      "attempted_room_ids": [],
+      "attempted_room_ids": [
+        "109053"
+      ],
       "room_progress": {
         "109053": {
           "key": "109053",
-          "url": "https://socolivep.cv/truc-tiep/real-monarchs-vs-tacoma-defiance-20-07-2026-0830?blv=109053",
+          "url": "https://socolivep.cv/truc-tiep/real-monarchs-vs-tacoma-defiance-20-07-2026-0830/?blv=109053",
           "blv": "PEWPEW",
           "blv_id": "109053",
           "status": "rate_limited",
-          "attempts": 0,
-          "rate_limit_hits": 1,
+          "attempts": 1,
+          "rate_limit_hits": 2,
           "last_http_status": 429,
           "last_stream_count": 0,
           "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
         },
         "494201": {
           "key": "494201",
-          "url": "https://socolivep.cv/truc-tiep/real-monarchs-vs-tacoma-defiance-20-07-2026-0830?blv=494201",
+          "url": "https://socolivep.cv/truc-tiep/real-monarchs-vs-tacoma-defiance-20-07-2026-0830/?blv=494201",
           "blv": "MESSI",
           "blv_id": "494201",
           "status": "pending",
@@ -193,7 +251,7 @@
         },
         "123226": {
           "key": "123226",
-          "url": "https://socolivep.cv/truc-tiep/real-monarchs-vs-tacoma-defiance-20-07-2026-0830?blv=123226",
+          "url": "https://socolivep.cv/truc-tiep/real-monarchs-vs-tacoma-defiance-20-07-2026-0830/?blv=123226",
           "blv": "RICKHANTER",
           "blv_id": "123226",
           "status": "pending",
@@ -205,7 +263,7 @@
         },
         "327159": {
           "key": "327159",
-          "url": "https://socolivep.cv/truc-tiep/real-monarchs-vs-tacoma-defiance-20-07-2026-0830?blv=327159",
+          "url": "https://socolivep.cv/truc-tiep/real-monarchs-vs-tacoma-defiance-20-07-2026-0830/?blv=327159",
           "blv": "COCA",
           "blv_id": "327159",
           "status": "pending",
@@ -217,7 +275,7 @@
         },
         "582342": {
           "key": "582342",
-          "url": "https://socolivep.cv/truc-tiep/real-monarchs-vs-tacoma-defiance-20-07-2026-0830?blv=582342",
+          "url": "https://socolivep.cv/truc-tiep/real-monarchs-vs-tacoma-defiance-20-07-2026-0830/?blv=582342",
           "blv": "CÒ",
           "blv_id": "582342",
           "status": "pending",
@@ -229,7 +287,7 @@
         },
         "139384": {
           "key": "139384",
-          "url": "https://socolivep.cv/truc-tiep/real-monarchs-vs-tacoma-defiance-20-07-2026-0830?blv=139384",
+          "url": "https://socolivep.cv/truc-tiep/real-monarchs-vs-tacoma-defiance-20-07-2026-0830/?blv=139384",
           "blv": "RÔSI",
           "blv_id": "139384",
           "status": "pending",
@@ -253,6 +311,12 @@
         }
       },
       "pending_room_keys": [
+        "109053",
+        "494201",
+        "123226",
+        "327159",
+        "582342",
+        "139384",
         "109053",
         "494201",
         "123226",
@@ -350,12 +414,12 @@
             "url": "https://socolivep.cv/truc-tiep/blooming-vs-real-tomayapo-20-07-2026-0730/?blv=531989",
             "blv": "COZY",
             "blv_id": "531989",
-            "status": "pending",
-            "attempts": 1,
-            "rate_limit_hits": 0,
-            "last_http_status": 200,
-            "last_stream_count": 1,
-            "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
+            "status": "rate_limited",
+            "attempts": 2,
+            "rate_limit_hits": 1,
+            "last_http_status": 429,
+            "last_stream_count": 0,
+            "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
           },
           "187579": {
             "key": "187579",
@@ -404,12 +468,12 @@
           "url": "https://socolivep.cv/truc-tiep/blooming-vs-real-tomayapo-20-07-2026-0730/?blv=531989",
           "blv": "COZY",
           "blv_id": "531989",
-          "status": "pending",
-          "attempts": 1,
-          "rate_limit_hits": 0,
-          "last_http_status": 200,
-          "last_stream_count": 1,
-          "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
+          "status": "rate_limited",
+          "attempts": 2,
+          "rate_limit_hits": 1,
+          "last_http_status": 429,
+          "last_stream_count": 0,
+          "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
         },
         "187579": {
           "key": "187579",
@@ -478,6 +542,21 @@
           "blv_id": "527384"
         },
         {
+          "url": "https://socolivep.cv/truc-tiep/independiente-del-valle-vs-club-sport-emelec-20-07-2026-0715/?blv=273736",
+          "blv": "CHÍ PHÈO",
+          "blv_id": "273736"
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/independiente-del-valle-vs-club-sport-emelec-20-07-2026-0715/?blv=283501",
+          "blv": "KAN",
+          "blv_id": "283501"
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/independiente-del-valle-vs-club-sport-emelec-20-07-2026-0715/?blv=527384",
+          "blv": "LÃO LÂM",
+          "blv_id": "527384"
+        },
+        {
           "url": "https://socolivep.cv/truc-tiep/independiente-del-valle-vs-club-sport-emelec-20-07-2026-0715",
           "blv": "XEM NGAY",
           "blv_id": ""
@@ -488,16 +567,39 @@
           "blv_id": ""
         }
       ],
-      "streams": [],
+      "streams": [
+        {
+          "url": "https://pull.niues.live/live/stream-273736_lhd.m3u8?auth_key=1784510583-0-0-f3ab3b9aab07c533523e449b0bf36d7b",
+          "room_url": "https://socolivep.cv/truc-tiep/independiente-del-valle-vs-club-sport-emelec-20-07-2026-0715/?blv=273736",
+          "blv": "CHÍ PHÈO",
+          "blv_id": "273736",
+          "source_id": "273736",
+          "source_provenance": [
+            "cdp/request",
+            "embedded/frame-html",
+            "request/image",
+            "request/xhr"
+          ],
+          "source_confidence": "network",
+          "mapping_mode": "exact-room-id",
+          "discovered_from_room_url": "https://socolivep.cv/truc-tiep/independiente-del-valle-vs-club-sport-emelec-20-07-2026-0715?blv=273736",
+          "discovered_from_blv": "CHÍ PHÈO"
+        }
+      ],
       "coverage": {
-        "found_streams": 0,
-        "found_blv_ids": [],
+        "found_streams": 1,
+        "found_blv_ids": [
+          "273736"
+        ],
         "goal": 3,
         "source_goal_reached": false,
         "room_queue_complete": false,
         "complete": false,
-        "total_explicit_blv_rooms": 3,
+        "total_explicit_blv_rooms": 6,
         "pending_room_keys": [
+          "273736",
+          "283501",
+          "527384",
           "273736",
           "283501",
           "527384"
@@ -505,19 +607,19 @@
         "room_progress": {
           "273736": {
             "key": "273736",
-            "url": "https://socolivep.cv/truc-tiep/independiente-del-valle-vs-club-sport-emelec-20-07-2026-0715?blv=273736",
+            "url": "https://socolivep.cv/truc-tiep/independiente-del-valle-vs-club-sport-emelec-20-07-2026-0715/?blv=273736",
             "blv": "CHÍ PHÈO",
             "blv_id": "273736",
             "status": "rate_limited",
-            "attempts": 0,
-            "rate_limit_hits": 1,
+            "attempts": 1,
+            "rate_limit_hits": 2,
             "last_http_status": 429,
             "last_stream_count": 0,
             "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
           },
           "283501": {
             "key": "283501",
-            "url": "https://socolivep.cv/truc-tiep/independiente-del-valle-vs-club-sport-emelec-20-07-2026-0715?blv=283501",
+            "url": "https://socolivep.cv/truc-tiep/independiente-del-valle-vs-club-sport-emelec-20-07-2026-0715/?blv=283501",
             "blv": "KAN",
             "blv_id": "283501",
             "status": "pending",
@@ -529,7 +631,7 @@
           },
           "527384": {
             "key": "527384",
-            "url": "https://socolivep.cv/truc-tiep/independiente-del-valle-vs-club-sport-emelec-20-07-2026-0715?blv=527384",
+            "url": "https://socolivep.cv/truc-tiep/independiente-del-valle-vs-club-sport-emelec-20-07-2026-0715/?blv=527384",
             "blv": "LÃO LÂM",
             "blv_id": "527384",
             "status": "pending",
@@ -553,23 +655,25 @@
           }
         }
       },
-      "attempted_room_ids": [],
+      "attempted_room_ids": [
+        "273736"
+      ],
       "room_progress": {
         "273736": {
           "key": "273736",
-          "url": "https://socolivep.cv/truc-tiep/independiente-del-valle-vs-club-sport-emelec-20-07-2026-0715?blv=273736",
+          "url": "https://socolivep.cv/truc-tiep/independiente-del-valle-vs-club-sport-emelec-20-07-2026-0715/?blv=273736",
           "blv": "CHÍ PHÈO",
           "blv_id": "273736",
           "status": "rate_limited",
-          "attempts": 0,
-          "rate_limit_hits": 1,
+          "attempts": 1,
+          "rate_limit_hits": 2,
           "last_http_status": 429,
           "last_stream_count": 0,
           "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
         },
         "283501": {
           "key": "283501",
-          "url": "https://socolivep.cv/truc-tiep/independiente-del-valle-vs-club-sport-emelec-20-07-2026-0715?blv=283501",
+          "url": "https://socolivep.cv/truc-tiep/independiente-del-valle-vs-club-sport-emelec-20-07-2026-0715/?blv=283501",
           "blv": "KAN",
           "blv_id": "283501",
           "status": "pending",
@@ -581,7 +685,7 @@
         },
         "527384": {
           "key": "527384",
-          "url": "https://socolivep.cv/truc-tiep/independiente-del-valle-vs-club-sport-emelec-20-07-2026-0715?blv=527384",
+          "url": "https://socolivep.cv/truc-tiep/independiente-del-valle-vs-club-sport-emelec-20-07-2026-0715/?blv=527384",
           "blv": "LÃO LÂM",
           "blv_id": "527384",
           "status": "pending",
@@ -605,6 +709,9 @@
         }
       },
       "pending_room_keys": [
+        "273736",
+        "283501",
+        "527384",
         "273736",
         "283501",
         "527384"
@@ -699,12 +806,12 @@
             "url": "https://socolivep.cv/truc-tiep/alianza-lima-vs-sport-huancayo-20-07-2026-0700/?blv=534055",
             "blv": "RAMBO",
             "blv_id": "534055",
-            "status": "pending",
-            "attempts": 1,
-            "rate_limit_hits": 0,
-            "last_http_status": 200,
-            "last_stream_count": 1,
-            "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
+            "status": "rate_limited",
+            "attempts": 2,
+            "rate_limit_hits": 1,
+            "last_http_status": 429,
+            "last_stream_count": 0,
+            "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
           },
           "235232": {
             "key": "235232",
@@ -753,12 +860,12 @@
           "url": "https://socolivep.cv/truc-tiep/alianza-lima-vs-sport-huancayo-20-07-2026-0700/?blv=534055",
           "blv": "RAMBO",
           "blv_id": "534055",
-          "status": "pending",
-          "attempts": 1,
-          "rate_limit_hits": 0,
-          "last_http_status": 200,
-          "last_stream_count": 1,
-          "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
+          "status": "rate_limited",
+          "attempts": 2,
+          "rate_limit_hits": 1,
+          "last_http_status": 429,
+          "last_stream_count": 0,
+          "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
         },
         "235232": {
           "key": "235232",
