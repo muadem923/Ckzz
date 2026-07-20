@@ -22,16 +22,6 @@
         "blv_id": "321443"
       },
       {
-        "url": "https://socolivep.cv/truc-tiep/quilmes-vs-gimnasia-jujuy-21-07-2026-0600/?blv=552716",
-        "blv": "VOI",
-        "blv_id": "552716"
-      },
-      {
-        "url": "https://socolivep.cv/truc-tiep/quilmes-vs-gimnasia-jujuy-21-07-2026-0600/?blv=321443",
-        "blv": "GIÓ",
-        "blv_id": "321443"
-      },
-      {
         "url": "https://socolivep.cv/truc-tiep/quilmes-vs-gimnasia-jujuy-21-07-2026-0600",
         "blv": "XEM NGAY",
         "blv_id": ""
@@ -3182,6 +3172,58 @@
         "http_errors": [
           "403 https://socolivep.cv/wp-admin/admin-ajax.php?action=scl_realtime&sport=1"
         ]
+      },
+      {
+        "url": "https://socolivep.cv/truc-tiep/quilmes-vs-gimnasia-jujuy-21-07-2026-0600?blv=552716",
+        "blv": "VOI",
+        "blv_id": "552716",
+        "streams": [],
+        "stream_sources": {},
+        "stream_first_seen": [],
+        "discovered_blv_ids": [],
+        "diagnostics": {
+          "url": "https://socolivep.cv/truc-tiep/quilmes-vs-gimnasia-jujuy-21-07-2026-0600?blv=552716",
+          "title": "Chờ một chút...",
+          "h1": "socolivep.cv",
+          "ready_state": "complete",
+          "visibility_state": "visible",
+          "hidden": false,
+          "video_count": 0,
+          "iframe_count": 0,
+          "body_sample": "socolivep.cv Thực hiện xác minh bảo mật Trang web này sử dụng dịch vụ bảo mật để chống bot độc hại. Trang này hiển thị trong khi trang web xác minh bạn không phải là bot. Ray ID: a1e4d1875d76e99a Hiệu suất và Tính bảo mật của Cloudflare Quyền riêng tư",
+          "harvest_rounds": 0,
+          "harvest_window_seconds": 0.651,
+          "main_status": 429,
+          "harvested_stream_count": 0,
+          "harvested_blv_ids": [],
+          "scan_mode": "browser-event",
+          "elapsed_seconds": 13.672
+        },
+        "http_probe": {
+          "enabled": false,
+          "status": null,
+          "elapsed_seconds": 0.0,
+          "error": ""
+        },
+        "errors": [
+          "console/error: Failed to load resource: the server responded with a status of 429 ()",
+          "console/warning: No available adapters.",
+          "console/warning: No available adapters.",
+          "console/error: Failed to load resource: net::ERR_FAILED",
+          "console/error: %c%d font-size:0;color:transparent NaN",
+          "console/error: %c%d font-size:0;color:transparent NaN",
+          "console/warning: %c%d font-size:0;color:transparent NaN",
+          "console/warning: %c%d font-size:0;color:transparent NaN",
+          "console/warning: OTS parsing error: Size of decompressed WOFF 2.0 is less than compressed size"
+        ],
+        "failed_requests": [
+          "fetch https://brunhild.challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/i/a1e4d18b8cedd630/Vo6X59SYcoAhhRHJGdXA2ToYMC_FvIIi.9LRoXC4r.A-1784580420-1.2.1.1-AePUnZCAYqA2Pc71L0YE1avHSFEKdLKnHKwzPsKpXjMDor00AVNsIJmnse2hhPuP | net::ERR_NAME_NOT_RESOLVED",
+          "image https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/ci/a1e4d18b8cedd630/1784580420985/g6gyTeE8pLOWatg | net::ERR_FAILED"
+        ],
+        "http_errors": [
+          "429 https://socolivep.cv/truc-tiep/quilmes-vs-gimnasia-jujuy-21-07-2026-0600?blv=552716",
+          "401 https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/pat/a1e4d18b8cedd630/1784580420985/ae23b78a5c9363427ee9d297bda28db927662a4157c7eaeb799a31a92fce4bc0/Xw7j6yCUc0oQl58"
+        ]
       }
     ],
     "attempted_room_ids": [
@@ -3197,29 +3239,27 @@
       "room_queue_complete": false,
       "complete": false,
       "max_streams_per_blv": 2,
-      "total_explicit_blv_rooms": 4,
+      "total_explicit_blv_rooms": 2,
       "pending_room_keys": [
-        "552716",
-        "321443",
         "552716",
         "321443"
       ],
       "room_progress": {
         "552716": {
           "key": "552716",
-          "url": "https://socolivep.cv/truc-tiep/quilmes-vs-gimnasia-jujuy-21-07-2026-0600/?blv=552716",
+          "url": "https://socolivep.cv/truc-tiep/quilmes-vs-gimnasia-jujuy-21-07-2026-0600?blv=552716",
           "blv": "VOI",
           "blv_id": "552716",
           "status": "rate_limited",
           "attempts": 33,
-          "rate_limit_hits": 4,
-          "last_http_status": 200,
-          "last_stream_count": 1,
-          "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
+          "rate_limit_hits": 5,
+          "last_http_status": 429,
+          "last_stream_count": 0,
+          "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
         },
         "321443": {
           "key": "321443",
-          "url": "https://socolivep.cv/truc-tiep/quilmes-vs-gimnasia-jujuy-21-07-2026-0600/?blv=321443",
+          "url": "https://socolivep.cv/truc-tiep/quilmes-vs-gimnasia-jujuy-21-07-2026-0600?blv=321443",
           "blv": "GIÓ",
           "blv_id": "321443",
           "status": "pending",
@@ -3247,19 +3287,19 @@
     "room_progress": {
       "552716": {
         "key": "552716",
-        "url": "https://socolivep.cv/truc-tiep/quilmes-vs-gimnasia-jujuy-21-07-2026-0600/?blv=552716",
+        "url": "https://socolivep.cv/truc-tiep/quilmes-vs-gimnasia-jujuy-21-07-2026-0600?blv=552716",
         "blv": "VOI",
         "blv_id": "552716",
         "status": "rate_limited",
         "attempts": 33,
-        "rate_limit_hits": 4,
-        "last_http_status": 200,
-        "last_stream_count": 1,
-        "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
+        "rate_limit_hits": 5,
+        "last_http_status": 429,
+        "last_stream_count": 0,
+        "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
       },
       "321443": {
         "key": "321443",
-        "url": "https://socolivep.cv/truc-tiep/quilmes-vs-gimnasia-jujuy-21-07-2026-0600/?blv=321443",
+        "url": "https://socolivep.cv/truc-tiep/quilmes-vs-gimnasia-jujuy-21-07-2026-0600?blv=321443",
         "blv": "GIÓ",
         "blv_id": "321443",
         "status": "pending",
@@ -3373,6 +3413,60 @@
           "429 https://socolivep.cv/truc-tiep/patronato-parana-vs-atletico-atlanta-21-07-2026-0600?blv=372746",
           "401 https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/pat/a1e4cff3399f6ac7/1784580355735/dd2e655c5f84dc2d8150f18a30b6ade55668292d5f3c287754bf0a9ac75af15f/qnlv1ngoCUcyTcF"
         ]
+      },
+      {
+        "url": "https://socolivep.cv/truc-tiep/patronato-parana-vs-atletico-atlanta-21-07-2026-0600?blv=372746",
+        "blv": "YONE",
+        "blv_id": "372746",
+        "streams": [],
+        "stream_sources": {},
+        "stream_first_seen": [],
+        "discovered_blv_ids": [],
+        "diagnostics": {
+          "url": "https://socolivep.cv/truc-tiep/patronato-parana-vs-atletico-atlanta-21-07-2026-0600?blv=372746",
+          "title": "Chờ một chút...",
+          "h1": "socolivep.cv",
+          "ready_state": "complete",
+          "visibility_state": "visible",
+          "hidden": false,
+          "video_count": 0,
+          "iframe_count": 0,
+          "body_sample": "socolivep.cv Thực hiện xác minh bảo mật Trang web này sử dụng dịch vụ bảo mật để chống bot độc hại. Trang này hiển thị trong khi trang web xác minh bạn không phải là bot. Ray ID: a1e4d1874d56e99a Hiệu suất và Tính bảo mật của Cloudflare Quyền riêng tư",
+          "harvest_rounds": 0,
+          "harvest_window_seconds": 0.636,
+          "main_status": 429,
+          "harvested_stream_count": 0,
+          "harvested_blv_ids": [],
+          "scan_mode": "browser-event",
+          "elapsed_seconds": 13.653
+        },
+        "http_probe": {
+          "enabled": false,
+          "status": null,
+          "elapsed_seconds": 0.0,
+          "error": ""
+        },
+        "errors": [
+          "console/error: Failed to load resource: the server responded with a status of 429 ()",
+          "console/warning: No available adapters.",
+          "console/warning: No available adapters.",
+          "console/error: %c%d font-size:0;color:transparent NaN",
+          "console/error: %c%d font-size:0;color:transparent NaN",
+          "console/warning: %c%d font-size:0;color:transparent NaN",
+          "console/warning: %c%d font-size:0;color:transparent NaN",
+          "console/warning: OTS parsing error: Size of decompressed WOFF 2.0 is less than compressed size",
+          "console/error: Failed to load resource: net::ERR_FAILED",
+          "console/warning: [.WebGL-0x84c03039c00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+          "console/warning: [.WebGL-0x84c03039c00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels"
+        ],
+        "failed_requests": [
+          "fetch https://brunhild.challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/i/a1e4d18acc18d630/sQEsBqE794s1KM_DO29Wo_vuk83pJMmKlrnaCsrsL7A-1784580420-1.2.1.1-qO8RSUoaPEqLUs3H7R9Y4K_OBk16n3V6G4P2Y2b7uIbBZltSS4iFGAUhwy6bi2.F | net::ERR_NAME_NOT_RESOLVED",
+          "image https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/ci/a1e4d18acc18d630/1784580420725/cTJzhl3LsvNQm6q | net::ERR_FAILED"
+        ],
+        "http_errors": [
+          "429 https://socolivep.cv/truc-tiep/patronato-parana-vs-atletico-atlanta-21-07-2026-0600?blv=372746",
+          "401 https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/pat/a1e4d18acc18d630/1784580420724/cd7a628cd8e1723936a5f75790087ee6d671dd443f1cb09ca268b8ed8496e9af/x-PZKtMW7jVLfd4"
+        ]
       }
     ],
     "attempted_room_ids": [],
@@ -3397,7 +3491,7 @@
           "blv_id": "372746",
           "status": "rate_limited",
           "attempts": 0,
-          "rate_limit_hits": 1,
+          "rate_limit_hits": 2,
           "last_http_status": 429,
           "last_stream_count": 0,
           "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
@@ -3437,7 +3531,7 @@
         "blv_id": "372746",
         "status": "rate_limited",
         "attempts": 0,
-        "rate_limit_hits": 1,
+        "rate_limit_hits": 2,
         "last_http_status": 429,
         "last_stream_count": 0,
         "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
@@ -3558,6 +3652,58 @@
           "429 https://socolivep.cv/truc-tiep/colegiales-vs-ferrocarril-midland-21-07-2026-0600/?blv=139384",
           "401 https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/pat/a1e4cff339a86ac7/1784580355706/66fa6d13149e8a153722717741e040de870bde58e6b207316e88f62d395844b7/nR1MpNQlScmv5kJ"
         ]
+      },
+      {
+        "url": "https://socolivep.cv/truc-tiep/colegiales-vs-ferrocarril-midland-21-07-2026-0600?blv=139384",
+        "blv": "RÔSI",
+        "blv_id": "139384",
+        "streams": [],
+        "stream_sources": {},
+        "stream_first_seen": [],
+        "discovered_blv_ids": [],
+        "diagnostics": {
+          "url": "https://socolivep.cv/truc-tiep/colegiales-vs-ferrocarril-midland-21-07-2026-0600?blv=139384",
+          "title": "Chờ một chút...",
+          "h1": "socolivep.cv",
+          "ready_state": "complete",
+          "visibility_state": "visible",
+          "hidden": false,
+          "video_count": 0,
+          "iframe_count": 0,
+          "body_sample": "socolivep.cv Thực hiện xác minh bảo mật Trang web này sử dụng dịch vụ bảo mật để chống bot độc hại. Trang này hiển thị trong khi trang web xác minh bạn không phải là bot. Ray ID: a1e4d1878e01e99a Hiệu suất và Tính bảo mật của Cloudflare Quyền riêng tư",
+          "harvest_rounds": 0,
+          "harvest_window_seconds": 0.638,
+          "main_status": 429,
+          "harvested_stream_count": 0,
+          "harvested_blv_ids": [],
+          "scan_mode": "browser-event",
+          "elapsed_seconds": 13.647
+        },
+        "http_probe": {
+          "enabled": false,
+          "status": null,
+          "elapsed_seconds": 0.0,
+          "error": ""
+        },
+        "errors": [
+          "console/error: Failed to load resource: the server responded with a status of 429 ()",
+          "console/warning: No available adapters.",
+          "console/warning: No available adapters.",
+          "console/error: Failed to load resource: net::ERR_FAILED",
+          "console/error: %c%d font-size:0;color:transparent NaN",
+          "console/error: %c%d font-size:0;color:transparent NaN",
+          "console/warning: %c%d font-size:0;color:transparent NaN",
+          "console/warning: %c%d font-size:0;color:transparent NaN",
+          "console/warning: OTS parsing error: Size of decompressed WOFF 2.0 is less than compressed size"
+        ],
+        "failed_requests": [
+          "fetch https://brunhild.challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/i/a1e4d18b6cd4d630/v5PGHOkdh60ZoOHgU3xmPnDL_RPqofp1hXX04mIP5tU-1784580420-1.2.1.1-MDm_C2Bw04TLmnwASoyttNpz4oXIEN7kOgZMAyKRyYnHGPPZt.flD6vQdtn6SzMr | net::ERR_NAME_NOT_RESOLVED",
+          "image https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/ci/a1e4d18b6cd4d630/1784580420861/T8SVZTcQs2ViVV4 | net::ERR_FAILED"
+        ],
+        "http_errors": [
+          "429 https://socolivep.cv/truc-tiep/colegiales-vs-ferrocarril-midland-21-07-2026-0600?blv=139384",
+          "401 https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/pat/a1e4d18b6cd4d630/1784580420860/256ef32ce93f5ff97df143d0dde704413382d2a87a3a616e048c5e24a22a72ba/CNRf_i8n7tM7ooC"
+        ]
       }
     ],
     "attempted_room_ids": [],
@@ -3582,7 +3728,7 @@
           "blv_id": "139384",
           "status": "rate_limited",
           "attempts": 0,
-          "rate_limit_hits": 1,
+          "rate_limit_hits": 2,
           "last_http_status": 429,
           "last_stream_count": 0,
           "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
@@ -3622,7 +3768,7 @@
         "blv_id": "139384",
         "status": "rate_limited",
         "attempts": 0,
-        "rate_limit_hits": 1,
+        "rate_limit_hits": 2,
         "last_http_status": 429,
         "last_stream_count": 0,
         "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
@@ -3672,16 +3818,6 @@
       },
       {
         "url": "https://socolivep.cv/truc-tiep/chaco-for-ever-vs-ca-san-miguel-21-07-2026-0700?blv=557845",
-        "blv": "A TÚ",
-        "blv_id": "557845"
-      },
-      {
-        "url": "https://socolivep.cv/truc-tiep/chaco-for-ever-vs-ca-san-miguel-21-07-2026-0700/?blv=536185",
-        "blv": "A WIN",
-        "blv_id": "536185"
-      },
-      {
-        "url": "https://socolivep.cv/truc-tiep/chaco-for-ever-vs-ca-san-miguel-21-07-2026-0700/?blv=557845",
         "blv": "A TÚ",
         "blv_id": "557845"
       },
@@ -3804,6 +3940,60 @@
         "http_errors": [
           "403 https://socolivep.cv/wp-admin/admin-ajax.php?action=scl_realtime&sport=1"
         ]
+      },
+      {
+        "url": "https://socolivep.cv/truc-tiep/chaco-for-ever-vs-ca-san-miguel-21-07-2026-0700?blv=536185",
+        "blv": "A WIN",
+        "blv_id": "536185",
+        "streams": [],
+        "stream_sources": {},
+        "stream_first_seen": [],
+        "discovered_blv_ids": [],
+        "diagnostics": {
+          "url": "https://socolivep.cv/truc-tiep/chaco-for-ever-vs-ca-san-miguel-21-07-2026-0700?blv=536185",
+          "title": "Chờ một chút...",
+          "h1": "socolivep.cv",
+          "ready_state": "complete",
+          "visibility_state": "visible",
+          "hidden": false,
+          "video_count": 0,
+          "iframe_count": 0,
+          "body_sample": "socolivep.cv Thực hiện xác minh bảo mật Trang web này sử dụng dịch vụ bảo mật để chống bot độc hại. Trang này hiển thị trong khi trang web xác minh bạn không phải là bot. Ray ID: a1e4d1875d6ee99a Hiệu suất và Tính bảo mật của Cloudflare Quyền riêng tư",
+          "harvest_rounds": 0,
+          "harvest_window_seconds": 0.632,
+          "main_status": 429,
+          "harvested_stream_count": 0,
+          "harvested_blv_ids": [],
+          "scan_mode": "browser-event",
+          "elapsed_seconds": 13.635
+        },
+        "http_probe": {
+          "enabled": false,
+          "status": null,
+          "elapsed_seconds": 0.0,
+          "error": ""
+        },
+        "errors": [
+          "console/error: Failed to load resource: the server responded with a status of 429 ()",
+          "console/warning: No available adapters.",
+          "console/warning: No available adapters.",
+          "console/error: %c%d font-size:0;color:transparent NaN",
+          "console/error: %c%d font-size:0;color:transparent NaN",
+          "console/warning: %c%d font-size:0;color:transparent NaN",
+          "console/warning: %c%d font-size:0;color:transparent NaN",
+          "console/warning: OTS parsing error: Size of decompressed WOFF 2.0 is less than compressed size",
+          "console/error: Failed to load resource: net::ERR_FAILED",
+          "console/warning: [.WebGL-0x84c034bf600]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+          "console/warning: [.WebGL-0x84c034bf600]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels (this message will no longer repeat)"
+        ],
+        "failed_requests": [
+          "fetch https://brunhild.challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/i/a1e4d18aabd7d630/ZkzAWvsBkHwYT3Lknv7dAN0KeNCr9I_ayIGkyZDKhko-1784580420-1.2.1.1-wfDH97XIow2rZ7QefKqQMFYL2VYTzBFLxhGj1wrBk0NaT0TX3xfM50Av8PbKB0WC | net::ERR_NAME_NOT_RESOLVED",
+          "image https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/ci/a1e4d18aabd7d630/1784580420660/DmSK7lhLlDksBOY | net::ERR_FAILED"
+        ],
+        "http_errors": [
+          "429 https://socolivep.cv/truc-tiep/chaco-for-ever-vs-ca-san-miguel-21-07-2026-0700?blv=536185",
+          "401 https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/pat/a1e4d18aabd7d630/1784580420659/4fff84871a4cb79e5244ed3c352cf0986b6a6188e439dd47c68e9552a8fc16bd/jUVRtoJ7Sx027_c"
+        ]
       }
     ],
     "attempted_room_ids": [
@@ -3819,29 +4009,27 @@
       "room_queue_complete": false,
       "complete": false,
       "max_streams_per_blv": 2,
-      "total_explicit_blv_rooms": 4,
+      "total_explicit_blv_rooms": 2,
       "pending_room_keys": [
-        "536185",
-        "557845",
         "536185",
         "557845"
       ],
       "room_progress": {
         "536185": {
           "key": "536185",
-          "url": "https://socolivep.cv/truc-tiep/chaco-for-ever-vs-ca-san-miguel-21-07-2026-0700/?blv=536185",
+          "url": "https://socolivep.cv/truc-tiep/chaco-for-ever-vs-ca-san-miguel-21-07-2026-0700?blv=536185",
           "blv": "A WIN",
           "blv_id": "536185",
-          "status": "pending",
+          "status": "rate_limited",
           "attempts": 1,
-          "rate_limit_hits": 0,
-          "last_http_status": 200,
-          "last_stream_count": 1,
-          "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
+          "rate_limit_hits": 1,
+          "last_http_status": 429,
+          "last_stream_count": 0,
+          "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
         },
         "557845": {
           "key": "557845",
-          "url": "https://socolivep.cv/truc-tiep/chaco-for-ever-vs-ca-san-miguel-21-07-2026-0700/?blv=557845",
+          "url": "https://socolivep.cv/truc-tiep/chaco-for-ever-vs-ca-san-miguel-21-07-2026-0700?blv=557845",
           "blv": "A TÚ",
           "blv_id": "557845",
           "status": "pending",
@@ -3869,19 +4057,19 @@
     "room_progress": {
       "536185": {
         "key": "536185",
-        "url": "https://socolivep.cv/truc-tiep/chaco-for-ever-vs-ca-san-miguel-21-07-2026-0700/?blv=536185",
+        "url": "https://socolivep.cv/truc-tiep/chaco-for-ever-vs-ca-san-miguel-21-07-2026-0700?blv=536185",
         "blv": "A WIN",
         "blv_id": "536185",
-        "status": "pending",
+        "status": "rate_limited",
         "attempts": 1,
-        "rate_limit_hits": 0,
-        "last_http_status": 200,
-        "last_stream_count": 1,
-        "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
+        "rate_limit_hits": 1,
+        "last_http_status": 429,
+        "last_stream_count": 0,
+        "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
       },
       "557845": {
         "key": "557845",
-        "url": "https://socolivep.cv/truc-tiep/chaco-for-ever-vs-ca-san-miguel-21-07-2026-0700/?blv=557845",
+        "url": "https://socolivep.cv/truc-tiep/chaco-for-ever-vs-ca-san-miguel-21-07-2026-0700?blv=557845",
         "blv": "A TÚ",
         "blv_id": "557845",
         "status": "pending",
