@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-21T02:44:22.477053+07:00",
+  "generated_at": "2026-07-21T02:45:25.418398+07:00",
   "configuration": {
     "match_concurrency": 4,
     "room_wait_seconds": 12.0,
@@ -51,21 +51,6 @@
         },
         {
           "url": "https://socolivep.cv/truc-tiep/keflavik-vs-akranes-21-07-2026-0215?blv=603914",
-          "blv": "TRÀ ĐÁ",
-          "blv_id": "603914"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/keflavik-vs-akranes-21-07-2026-0215/?blv=610518",
-          "blv": "XUÂN TÓC ĐỎ",
-          "blv_id": "610518"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/keflavik-vs-akranes-21-07-2026-0215/?blv=618546",
-          "blv": "SEVEN",
-          "blv_id": "618546"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/keflavik-vs-akranes-21-07-2026-0215/?blv=603914",
           "blv": "TRÀ ĐÁ",
           "blv_id": "603914"
         },
@@ -5318,6 +5303,60 @@
             "403 https://socolivep.cv/wp-admin/admin-ajax.php?action=scl_realtime&sport=1",
             "403 https://pull.niur.live/live/stream-610518_lhd.m3u8?txSecret=94b79ed6e0ff5f0c39482123776dd380&txTime=6a5d5c6f"
           ]
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/keflavik-vs-akranes-21-07-2026-0215?blv=610518",
+          "blv": "XUÂN TÓC ĐỎ",
+          "blv_id": "610518",
+          "streams": [],
+          "stream_sources": {},
+          "stream_first_seen": [],
+          "discovered_blv_ids": [],
+          "diagnostics": {
+            "url": "https://socolivep.cv/truc-tiep/keflavik-vs-akranes-21-07-2026-0215?blv=610518",
+            "title": "Chờ một chút...",
+            "h1": "socolivep.cv",
+            "ready_state": "complete",
+            "visibility_state": "visible",
+            "hidden": false,
+            "video_count": 0,
+            "iframe_count": 0,
+            "body_sample": "socolivep.cv Thực hiện xác minh bảo mật Trang web này sử dụng dịch vụ bảo mật để chống bot độc hại. Trang này hiển thị trong khi trang web xác minh bạn không phải là bot. Ray ID: a1e477005bfdc285 Hiệu suất và Tính bảo mật của Cloudflare Quyền riêng tư",
+            "harvest_rounds": 0,
+            "harvest_window_seconds": 0.631,
+            "main_status": 429,
+            "harvested_stream_count": 0,
+            "harvested_blv_ids": [],
+            "scan_mode": "browser-event",
+            "elapsed_seconds": 13.68
+          },
+          "http_probe": {
+            "enabled": false,
+            "status": null,
+            "elapsed_seconds": 0.0,
+            "error": ""
+          },
+          "errors": [
+            "console/error: Failed to load resource: the server responded with a status of 429 ()",
+            "console/warning: No available adapters.",
+            "console/warning: No available adapters.",
+            "console/warning: OTS parsing error: Size of decompressed WOFF 2.0 is less than compressed size",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: %c%d font-size:0;color:transparent NaN",
+            "console/error: %c%d font-size:0;color:transparent NaN",
+            "console/warning: %c%d font-size:0;color:transparent NaN",
+            "console/warning: %c%d font-size:0;color:transparent NaN",
+            "console/warning: [.WebGL-0xf14015e3000]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+            "console/warning: [.WebGL-0xf14015e3000]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels (this message will no longer repeat)"
+          ],
+          "failed_requests": [
+            "fetch https://brunhild.challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/i/a1e4770419542c24/H4VEepRivEv3vkIImGEb_9dCR4Tw8pDU2uC.RW4_37s-1784576712-1.2.1.1-OpYf8r9Nqf_Q7XutDqf62aNmZ14iwraMdSQwG4H66T.bITNjeJc884K8qCh5zjFd | net::ERR_NAME_NOT_RESOLVED",
+            "image https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/ci/a1e4770419542c24/1784576712816/A65-8fAioBngISP | net::ERR_FAILED"
+          ],
+          "http_errors": [
+            "429 https://socolivep.cv/truc-tiep/keflavik-vs-akranes-21-07-2026-0215?blv=610518",
+            "401 https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/pat/a1e4770419542c24/1784576712815/3896fe334c8c91f75199c45283d79b084ec5183d62e262c3e7e604510afb097e/2MvN9Vq7elUT2Sw"
+          ]
         }
       ],
       "attempted_room_ids": [
@@ -5333,11 +5372,8 @@
         "room_queue_complete": false,
         "complete": false,
         "max_streams_per_blv": 2,
-        "total_explicit_blv_rooms": 6,
+        "total_explicit_blv_rooms": 3,
         "pending_room_keys": [
-          "610518",
-          "618546",
-          "603914",
           "610518",
           "618546",
           "603914"
@@ -5345,19 +5381,19 @@
         "room_progress": {
           "610518": {
             "key": "610518",
-            "url": "https://socolivep.cv/truc-tiep/keflavik-vs-akranes-21-07-2026-0215/?blv=610518",
+            "url": "https://socolivep.cv/truc-tiep/keflavik-vs-akranes-21-07-2026-0215?blv=610518",
             "blv": "XUÂN TÓC ĐỎ",
             "blv_id": "610518",
             "status": "rate_limited",
             "attempts": 38,
-            "rate_limit_hits": 27,
-            "last_http_status": 200,
-            "last_stream_count": 1,
-            "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
+            "rate_limit_hits": 28,
+            "last_http_status": 429,
+            "last_stream_count": 0,
+            "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
           },
           "618546": {
             "key": "618546",
-            "url": "https://socolivep.cv/truc-tiep/keflavik-vs-akranes-21-07-2026-0215/?blv=618546",
+            "url": "https://socolivep.cv/truc-tiep/keflavik-vs-akranes-21-07-2026-0215?blv=618546",
             "blv": "SEVEN",
             "blv_id": "618546",
             "status": "pending",
@@ -5369,7 +5405,7 @@
           },
           "603914": {
             "key": "603914",
-            "url": "https://socolivep.cv/truc-tiep/keflavik-vs-akranes-21-07-2026-0215/?blv=603914",
+            "url": "https://socolivep.cv/truc-tiep/keflavik-vs-akranes-21-07-2026-0215?blv=603914",
             "blv": "TRÀ ĐÁ",
             "blv_id": "603914",
             "status": "pending",
@@ -5397,19 +5433,19 @@
       "room_progress": {
         "610518": {
           "key": "610518",
-          "url": "https://socolivep.cv/truc-tiep/keflavik-vs-akranes-21-07-2026-0215/?blv=610518",
+          "url": "https://socolivep.cv/truc-tiep/keflavik-vs-akranes-21-07-2026-0215?blv=610518",
           "blv": "XUÂN TÓC ĐỎ",
           "blv_id": "610518",
           "status": "rate_limited",
           "attempts": 38,
-          "rate_limit_hits": 27,
-          "last_http_status": 200,
-          "last_stream_count": 1,
-          "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
+          "rate_limit_hits": 28,
+          "last_http_status": 429,
+          "last_stream_count": 0,
+          "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
         },
         "618546": {
           "key": "618546",
-          "url": "https://socolivep.cv/truc-tiep/keflavik-vs-akranes-21-07-2026-0215/?blv=618546",
+          "url": "https://socolivep.cv/truc-tiep/keflavik-vs-akranes-21-07-2026-0215?blv=618546",
           "blv": "SEVEN",
           "blv_id": "618546",
           "status": "pending",
@@ -5421,7 +5457,7 @@
         },
         "603914": {
           "key": "603914",
-          "url": "https://socolivep.cv/truc-tiep/keflavik-vs-akranes-21-07-2026-0215/?blv=603914",
+          "url": "https://socolivep.cv/truc-tiep/keflavik-vs-akranes-21-07-2026-0215?blv=603914",
           "blv": "TRÀ ĐÁ",
           "blv_id": "603914",
           "status": "pending",
@@ -5469,21 +5505,6 @@
         },
         {
           "url": "https://socolivep.cv/truc-tiep/hafnarfjordur-vs-breidablik-21-07-2026-0215?blv=400722",
-          "blv": "TUẤN CÙI",
-          "blv_id": "400722"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/hafnarfjordur-vs-breidablik-21-07-2026-0215/?blv=622602",
-          "blv": "KENCHU",
-          "blv_id": "622602"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/hafnarfjordur-vs-breidablik-21-07-2026-0215/?blv=622093",
-          "blv": "GRAP",
-          "blv_id": "622093"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/hafnarfjordur-vs-breidablik-21-07-2026-0215/?blv=400722",
           "blv": "TUẤN CÙI",
           "blv_id": "400722"
         },
@@ -12215,6 +12236,60 @@
             "429 https://socolivep.cv/truc-tiep/hafnarfjordur-vs-breidablik-21-07-2026-0215?blv=622602",
             "401 https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/pat/a1e4757bb9ec5121/1784576650014/bf98a6e670e9759251b25f495bd554f640bbb156ffe4a40e33e8ebcf9cdf0f8f/87dp5ENHz79yitP"
           ]
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/hafnarfjordur-vs-breidablik-21-07-2026-0215?blv=622602",
+          "blv": "KENCHU",
+          "blv_id": "622602",
+          "streams": [],
+          "stream_sources": {},
+          "stream_first_seen": [],
+          "discovered_blv_ids": [],
+          "diagnostics": {
+            "url": "https://socolivep.cv/truc-tiep/hafnarfjordur-vs-breidablik-21-07-2026-0215?blv=622602",
+            "title": "Chờ một chút...",
+            "h1": "socolivep.cv",
+            "ready_state": "complete",
+            "visibility_state": "visible",
+            "hidden": false,
+            "video_count": 0,
+            "iframe_count": 0,
+            "body_sample": "socolivep.cv Thực hiện xác minh bảo mật Trang web này sử dụng dịch vụ bảo mật để chống bot độc hại. Trang này hiển thị trong khi trang web xác minh bạn không phải là bot. Ray ID: a1e477005c0ac285 Hiệu suất và Tính bảo mật của Cloudflare Quyền riêng tư",
+            "harvest_rounds": 0,
+            "harvest_window_seconds": 0.628,
+            "main_status": 429,
+            "harvested_stream_count": 0,
+            "harvested_blv_ids": [],
+            "scan_mode": "browser-event",
+            "elapsed_seconds": 13.743
+          },
+          "http_probe": {
+            "enabled": false,
+            "status": null,
+            "elapsed_seconds": 0.0,
+            "error": ""
+          },
+          "errors": [
+            "console/error: Failed to load resource: the server responded with a status of 429 ()",
+            "console/warning: No available adapters.",
+            "console/warning: No available adapters.",
+            "console/warning: OTS parsing error: Size of decompressed WOFF 2.0 is less than compressed size",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/warning: [.WebGL-0xf1403b88600]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+            "console/warning: [.WebGL-0xf1403b88600]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+            "console/error: %c%d font-size:0;color:transparent NaN",
+            "console/error: %c%d font-size:0;color:transparent NaN",
+            "console/warning: %c%d font-size:0;color:transparent NaN",
+            "console/warning: %c%d font-size:0;color:transparent NaN"
+          ],
+          "failed_requests": [
+            "fetch https://brunhild.challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/i/a1e477048ac32c24/UNjrZdMyfDMNS1ziDend5c8PpTKvf7OJsH74W4f8vQ0-1784576712-1.2.1.1-tCdP3WsNS373lpOdI8oRI_4_nhECvla1gnZPEu2Zx.b.IcF4bG4Bqy0yy8pVIFbc | net::ERR_NAME_NOT_RESOLVED",
+            "image https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/ci/a1e477048ac32c24/1784576712882/g1Qic3mVzJ2e5Qp | net::ERR_FAILED"
+          ],
+          "http_errors": [
+            "429 https://socolivep.cv/truc-tiep/hafnarfjordur-vs-breidablik-21-07-2026-0215?blv=622602",
+            "401 https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/pat/a1e477048ac32c24/1784576712882/551889e9b7331cd8310021ffadfc7fab2a5e821a314e91ab9a61af51ac45f4ce/H84TEGsOAmXQzgp"
+          ]
         }
       ],
       "attempted_room_ids": [
@@ -12230,11 +12305,8 @@
         "room_queue_complete": false,
         "complete": false,
         "max_streams_per_blv": 2,
-        "total_explicit_blv_rooms": 6,
+        "total_explicit_blv_rooms": 3,
         "pending_room_keys": [
-          "622602",
-          "622093",
-          "400722",
           "622602",
           "622093",
           "400722"
@@ -12242,19 +12314,19 @@
         "room_progress": {
           "622602": {
             "key": "622602",
-            "url": "https://socolivep.cv/truc-tiep/hafnarfjordur-vs-breidablik-21-07-2026-0215/?blv=622602",
+            "url": "https://socolivep.cv/truc-tiep/hafnarfjordur-vs-breidablik-21-07-2026-0215?blv=622602",
             "blv": "KENCHU",
             "blv_id": "622602",
             "status": "rate_limited",
             "attempts": 58,
-            "rate_limit_hits": 21,
+            "rate_limit_hits": 22,
             "last_http_status": 429,
             "last_stream_count": 0,
             "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
           },
           "622093": {
             "key": "622093",
-            "url": "https://socolivep.cv/truc-tiep/hafnarfjordur-vs-breidablik-21-07-2026-0215/?blv=622093",
+            "url": "https://socolivep.cv/truc-tiep/hafnarfjordur-vs-breidablik-21-07-2026-0215?blv=622093",
             "blv": "GRAP",
             "blv_id": "622093",
             "status": "pending",
@@ -12266,7 +12338,7 @@
           },
           "400722": {
             "key": "400722",
-            "url": "https://socolivep.cv/truc-tiep/hafnarfjordur-vs-breidablik-21-07-2026-0215/?blv=400722",
+            "url": "https://socolivep.cv/truc-tiep/hafnarfjordur-vs-breidablik-21-07-2026-0215?blv=400722",
             "blv": "TUẤN CÙI",
             "blv_id": "400722",
             "status": "pending",
@@ -12294,19 +12366,19 @@
       "room_progress": {
         "622602": {
           "key": "622602",
-          "url": "https://socolivep.cv/truc-tiep/hafnarfjordur-vs-breidablik-21-07-2026-0215/?blv=622602",
+          "url": "https://socolivep.cv/truc-tiep/hafnarfjordur-vs-breidablik-21-07-2026-0215?blv=622602",
           "blv": "KENCHU",
           "blv_id": "622602",
           "status": "rate_limited",
           "attempts": 58,
-          "rate_limit_hits": 21,
+          "rate_limit_hits": 22,
           "last_http_status": 429,
           "last_stream_count": 0,
           "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
         },
         "622093": {
           "key": "622093",
-          "url": "https://socolivep.cv/truc-tiep/hafnarfjordur-vs-breidablik-21-07-2026-0215/?blv=622093",
+          "url": "https://socolivep.cv/truc-tiep/hafnarfjordur-vs-breidablik-21-07-2026-0215?blv=622093",
           "blv": "GRAP",
           "blv_id": "622093",
           "status": "pending",
@@ -12318,7 +12390,7 @@
         },
         "400722": {
           "key": "400722",
-          "url": "https://socolivep.cv/truc-tiep/hafnarfjordur-vs-breidablik-21-07-2026-0215/?blv=400722",
+          "url": "https://socolivep.cv/truc-tiep/hafnarfjordur-vs-breidablik-21-07-2026-0215?blv=400722",
           "blv": "TUẤN CÙI",
           "blv_id": "400722",
           "status": "pending",
@@ -12371,26 +12443,6 @@
         },
         {
           "url": "https://socolivep.cv/truc-tiep/sporting-cp-vs-strasbourg-21-07-2026-0215?blv=598549",
-          "blv": "PICK",
-          "blv_id": "598549"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/sporting-cp-vs-strasbourg-21-07-2026-0215/?blv=602019",
-          "blv": "RYO",
-          "blv_id": "602019"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/sporting-cp-vs-strasbourg-21-07-2026-0215/?blv=620003",
-          "blv": "FOX",
-          "blv_id": "620003"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/sporting-cp-vs-strasbourg-21-07-2026-0215/?blv=602153",
-          "blv": "QUỐC KHÁNH",
-          "blv_id": "602153"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/sporting-cp-vs-strasbourg-21-07-2026-0215/?blv=598549",
           "blv": "PICK",
           "blv_id": "598549"
         },
@@ -18968,6 +19020,58 @@
             "429 https://socolivep.cv/truc-tiep/sporting-cp-vs-strasbourg-21-07-2026-0215?blv=602019",
             "401 https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/pat/a1e4757ba9bc5121/1784576649916/6774cf847627bbdc8c1918d807fb049939075b256e487fb677341ad47d841ba7/KBrwE7XTMVmaoNR"
           ]
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/sporting-cp-vs-strasbourg-21-07-2026-0215?blv=602019",
+          "blv": "RYO",
+          "blv_id": "602019",
+          "streams": [],
+          "stream_sources": {},
+          "stream_first_seen": [],
+          "discovered_blv_ids": [],
+          "diagnostics": {
+            "url": "https://socolivep.cv/truc-tiep/sporting-cp-vs-strasbourg-21-07-2026-0215?blv=602019",
+            "title": "Chờ một chút...",
+            "h1": "socolivep.cv",
+            "ready_state": "complete",
+            "visibility_state": "visible",
+            "hidden": false,
+            "video_count": 0,
+            "iframe_count": 0,
+            "body_sample": "socolivep.cv Thực hiện xác minh bảo mật Trang web này sử dụng dịch vụ bảo mật để chống bot độc hại. Trang này hiển thị trong khi trang web xác minh bạn không phải là bot. Ray ID: a1e477008c7bc285 Hiệu suất và Tính bảo mật của Cloudflare Quyền riêng tư",
+            "harvest_rounds": 0,
+            "harvest_window_seconds": 0.628,
+            "main_status": 429,
+            "harvested_stream_count": 0,
+            "harvested_blv_ids": [],
+            "scan_mode": "browser-event",
+            "elapsed_seconds": 13.742
+          },
+          "http_probe": {
+            "enabled": false,
+            "status": null,
+            "elapsed_seconds": 0.0,
+            "error": ""
+          },
+          "errors": [
+            "console/error: Failed to load resource: the server responded with a status of 429 ()",
+            "console/warning: No available adapters.",
+            "console/warning: No available adapters.",
+            "console/error: %c%d font-size:0;color:transparent NaN",
+            "console/error: %c%d font-size:0;color:transparent NaN",
+            "console/warning: %c%d font-size:0;color:transparent NaN",
+            "console/warning: %c%d font-size:0;color:transparent NaN",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/warning: OTS parsing error: Size of decompressed WOFF 2.0 is less than compressed size"
+          ],
+          "failed_requests": [
+            "fetch https://brunhild.challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/i/a1e47703f8e42c24/5ygwzb5his93QmletRDy1JyyO7UpO.W2GuFJElUb7bk-1784576712-1.2.1.1-Ekfype3cNtrt_uJ5Y6cXLWbAM4hS1EWRK7LXWzhNf3Khw9gfyr6oBOpOyosSWjNG | net::ERR_NAME_NOT_RESOLVED",
+            "image https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/ci/a1e47703f8e42c24/1784576712776/wYL3vvT_T7ZUQa6 | net::ERR_FAILED"
+          ],
+          "http_errors": [
+            "429 https://socolivep.cv/truc-tiep/sporting-cp-vs-strasbourg-21-07-2026-0215?blv=602019",
+            "401 https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/pat/a1e47703f8e42c24/1784576712776/b47ecf48bcd8b0e1ce785d255c09a46b4bccdbefd4bd2bc0f44e8a2b98e0d05c/AB4qtmc2p5nC0l4"
+          ]
         }
       ],
       "attempted_room_ids": [
@@ -18983,12 +19087,8 @@
         "room_queue_complete": false,
         "complete": false,
         "max_streams_per_blv": 2,
-        "total_explicit_blv_rooms": 8,
+        "total_explicit_blv_rooms": 4,
         "pending_room_keys": [
-          "602019",
-          "620003",
-          "602153",
-          "598549",
           "602019",
           "620003",
           "602153",
@@ -18997,19 +19097,19 @@
         "room_progress": {
           "602019": {
             "key": "602019",
-            "url": "https://socolivep.cv/truc-tiep/sporting-cp-vs-strasbourg-21-07-2026-0215/?blv=602019",
+            "url": "https://socolivep.cv/truc-tiep/sporting-cp-vs-strasbourg-21-07-2026-0215?blv=602019",
             "blv": "RYO",
             "blv_id": "602019",
             "status": "rate_limited",
             "attempts": 56,
-            "rate_limit_hits": 23,
+            "rate_limit_hits": 24,
             "last_http_status": 429,
             "last_stream_count": 0,
             "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
           },
           "620003": {
             "key": "620003",
-            "url": "https://socolivep.cv/truc-tiep/sporting-cp-vs-strasbourg-21-07-2026-0215/?blv=620003",
+            "url": "https://socolivep.cv/truc-tiep/sporting-cp-vs-strasbourg-21-07-2026-0215?blv=620003",
             "blv": "FOX",
             "blv_id": "620003",
             "status": "pending",
@@ -19021,7 +19121,7 @@
           },
           "602153": {
             "key": "602153",
-            "url": "https://socolivep.cv/truc-tiep/sporting-cp-vs-strasbourg-21-07-2026-0215/?blv=602153",
+            "url": "https://socolivep.cv/truc-tiep/sporting-cp-vs-strasbourg-21-07-2026-0215?blv=602153",
             "blv": "QUỐC KHÁNH",
             "blv_id": "602153",
             "status": "pending",
@@ -19033,7 +19133,7 @@
           },
           "598549": {
             "key": "598549",
-            "url": "https://socolivep.cv/truc-tiep/sporting-cp-vs-strasbourg-21-07-2026-0215/?blv=598549",
+            "url": "https://socolivep.cv/truc-tiep/sporting-cp-vs-strasbourg-21-07-2026-0215?blv=598549",
             "blv": "PICK",
             "blv_id": "598549",
             "status": "pending",
@@ -19061,19 +19161,19 @@
       "room_progress": {
         "602019": {
           "key": "602019",
-          "url": "https://socolivep.cv/truc-tiep/sporting-cp-vs-strasbourg-21-07-2026-0215/?blv=602019",
+          "url": "https://socolivep.cv/truc-tiep/sporting-cp-vs-strasbourg-21-07-2026-0215?blv=602019",
           "blv": "RYO",
           "blv_id": "602019",
           "status": "rate_limited",
           "attempts": 56,
-          "rate_limit_hits": 23,
+          "rate_limit_hits": 24,
           "last_http_status": 429,
           "last_stream_count": 0,
           "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
         },
         "620003": {
           "key": "620003",
-          "url": "https://socolivep.cv/truc-tiep/sporting-cp-vs-strasbourg-21-07-2026-0215/?blv=620003",
+          "url": "https://socolivep.cv/truc-tiep/sporting-cp-vs-strasbourg-21-07-2026-0215?blv=620003",
           "blv": "FOX",
           "blv_id": "620003",
           "status": "pending",
@@ -19085,7 +19185,7 @@
         },
         "602153": {
           "key": "602153",
-          "url": "https://socolivep.cv/truc-tiep/sporting-cp-vs-strasbourg-21-07-2026-0215/?blv=602153",
+          "url": "https://socolivep.cv/truc-tiep/sporting-cp-vs-strasbourg-21-07-2026-0215?blv=602153",
           "blv": "QUỐC KHÁNH",
           "blv_id": "602153",
           "status": "pending",
@@ -19097,7 +19197,7 @@
         },
         "598549": {
           "key": "598549",
-          "url": "https://socolivep.cv/truc-tiep/sporting-cp-vs-strasbourg-21-07-2026-0215/?blv=598549",
+          "url": "https://socolivep.cv/truc-tiep/sporting-cp-vs-strasbourg-21-07-2026-0215?blv=598549",
           "blv": "PICK",
           "blv_id": "598549",
           "status": "pending",
@@ -19150,26 +19250,6 @@
         },
         {
           "url": "https://socolivep.cv/truc-tiep/fc-rapid-1923-vs-sepsi-osk-sfantul-gheorghe-21-07-2026-0130?blv=598119",
-          "blv": "A TINH",
-          "blv_id": "598119"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/fc-rapid-1923-vs-sepsi-osk-sfantul-gheorghe-21-07-2026-0130/?blv=235232",
-          "blv": "A PÁO",
-          "blv_id": "235232"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/fc-rapid-1923-vs-sepsi-osk-sfantul-gheorghe-21-07-2026-0130/?blv=617313",
-          "blv": "VINFAST",
-          "blv_id": "617313"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/fc-rapid-1923-vs-sepsi-osk-sfantul-gheorghe-21-07-2026-0130/?blv=459401",
-          "blv": "BÉO",
-          "blv_id": "459401"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/fc-rapid-1923-vs-sepsi-osk-sfantul-gheorghe-21-07-2026-0130/?blv=598119",
           "blv": "A TINH",
           "blv_id": "598119"
         },
@@ -29679,6 +29759,58 @@
             "429 https://socolivep.cv/truc-tiep/fc-rapid-1923-vs-sepsi-osk-sfantul-gheorghe-21-07-2026-0130?blv=235232",
             "401 https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/pat/a1e4757c2b915121/1784576649980/dccfa22f825eec5b462f5f6fccb9c63d992c4e75dcc5759b15515716a67d8959/a0e84y_BJpW2MdI"
           ]
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/fc-rapid-1923-vs-sepsi-osk-sfantul-gheorghe-21-07-2026-0130?blv=235232",
+          "blv": "A PÁO",
+          "blv_id": "235232",
+          "streams": [],
+          "stream_sources": {},
+          "stream_first_seen": [],
+          "discovered_blv_ids": [],
+          "diagnostics": {
+            "url": "https://socolivep.cv/truc-tiep/fc-rapid-1923-vs-sepsi-osk-sfantul-gheorghe-21-07-2026-0130?blv=235232",
+            "title": "Chờ một chút...",
+            "h1": "socolivep.cv",
+            "ready_state": "complete",
+            "visibility_state": "visible",
+            "hidden": false,
+            "video_count": 0,
+            "iframe_count": 0,
+            "body_sample": "socolivep.cv Thực hiện xác minh bảo mật Trang web này sử dụng dịch vụ bảo mật để chống bot độc hại. Trang này hiển thị trong khi trang web xác minh bạn không phải là bot. Ray ID: a1e477006c21c285 Hiệu suất và Tính bảo mật của Cloudflare Quyền riêng tư",
+            "harvest_rounds": 0,
+            "harvest_window_seconds": 0.624,
+            "main_status": 429,
+            "harvested_stream_count": 0,
+            "harvested_blv_ids": [],
+            "scan_mode": "browser-event",
+            "elapsed_seconds": 13.668
+          },
+          "http_probe": {
+            "enabled": false,
+            "status": null,
+            "elapsed_seconds": 0.0,
+            "error": ""
+          },
+          "errors": [
+            "console/error: Failed to load resource: the server responded with a status of 429 ()",
+            "console/warning: No available adapters.",
+            "console/warning: No available adapters.",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: %c%d font-size:0;color:transparent NaN",
+            "console/error: %c%d font-size:0;color:transparent NaN",
+            "console/warning: %c%d font-size:0;color:transparent NaN",
+            "console/warning: %c%d font-size:0;color:transparent NaN",
+            "console/warning: OTS parsing error: Size of decompressed WOFF 2.0 is less than compressed size"
+          ],
+          "failed_requests": [
+            "fetch https://brunhild.challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/i/a1e47704ebf02c24/dmTh.p6npH3WCSBG2e0sk7eDOBAkq0nZxV__u6LINuo-1784576712-1.2.1.1-pDvC28lyk2bLX4BvQnHUucpcIaIBIj2N.bUBAaSJ51mPBbS.uHNL8IqKmBhdXfWa | net::ERR_NAME_NOT_RESOLVED",
+            "image https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/ci/a1e47704ebf02c24/1784576712871/tsBpoZcrvIEm-bt | net::ERR_FAILED"
+          ],
+          "http_errors": [
+            "429 https://socolivep.cv/truc-tiep/fc-rapid-1923-vs-sepsi-osk-sfantul-gheorghe-21-07-2026-0130?blv=235232",
+            "401 https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/pat/a1e47704ebf02c24/1784576712870/f546c9df5208e618a27f890e942e1563b0dec62682951820037e52387c24c2db/kiuPjzz0x_6KN9M"
+          ]
         }
       ],
       "attempted_room_ids": [
@@ -29694,12 +29826,8 @@
         "room_queue_complete": false,
         "complete": false,
         "max_streams_per_blv": 2,
-        "total_explicit_blv_rooms": 8,
+        "total_explicit_blv_rooms": 4,
         "pending_room_keys": [
-          "235232",
-          "617313",
-          "459401",
-          "598119",
           "235232",
           "617313",
           "459401",
@@ -29708,19 +29836,19 @@
         "room_progress": {
           "235232": {
             "key": "235232",
-            "url": "https://socolivep.cv/truc-tiep/fc-rapid-1923-vs-sepsi-osk-sfantul-gheorghe-21-07-2026-0130/?blv=235232",
+            "url": "https://socolivep.cv/truc-tiep/fc-rapid-1923-vs-sepsi-osk-sfantul-gheorghe-21-07-2026-0130?blv=235232",
             "blv": "A PÁO",
             "blv_id": "235232",
             "status": "rate_limited",
             "attempts": 86,
-            "rate_limit_hits": 38,
+            "rate_limit_hits": 39,
             "last_http_status": 429,
             "last_stream_count": 0,
             "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
           },
           "617313": {
             "key": "617313",
-            "url": "https://socolivep.cv/truc-tiep/fc-rapid-1923-vs-sepsi-osk-sfantul-gheorghe-21-07-2026-0130/?blv=617313",
+            "url": "https://socolivep.cv/truc-tiep/fc-rapid-1923-vs-sepsi-osk-sfantul-gheorghe-21-07-2026-0130?blv=617313",
             "blv": "VINFAST",
             "blv_id": "617313",
             "status": "pending",
@@ -29732,7 +29860,7 @@
           },
           "459401": {
             "key": "459401",
-            "url": "https://socolivep.cv/truc-tiep/fc-rapid-1923-vs-sepsi-osk-sfantul-gheorghe-21-07-2026-0130/?blv=459401",
+            "url": "https://socolivep.cv/truc-tiep/fc-rapid-1923-vs-sepsi-osk-sfantul-gheorghe-21-07-2026-0130?blv=459401",
             "blv": "BÉO",
             "blv_id": "459401",
             "status": "pending",
@@ -29744,7 +29872,7 @@
           },
           "598119": {
             "key": "598119",
-            "url": "https://socolivep.cv/truc-tiep/fc-rapid-1923-vs-sepsi-osk-sfantul-gheorghe-21-07-2026-0130/?blv=598119",
+            "url": "https://socolivep.cv/truc-tiep/fc-rapid-1923-vs-sepsi-osk-sfantul-gheorghe-21-07-2026-0130?blv=598119",
             "blv": "A TINH",
             "blv_id": "598119",
             "status": "pending",
@@ -29772,19 +29900,19 @@
       "room_progress": {
         "235232": {
           "key": "235232",
-          "url": "https://socolivep.cv/truc-tiep/fc-rapid-1923-vs-sepsi-osk-sfantul-gheorghe-21-07-2026-0130/?blv=235232",
+          "url": "https://socolivep.cv/truc-tiep/fc-rapid-1923-vs-sepsi-osk-sfantul-gheorghe-21-07-2026-0130?blv=235232",
           "blv": "A PÁO",
           "blv_id": "235232",
           "status": "rate_limited",
           "attempts": 86,
-          "rate_limit_hits": 38,
+          "rate_limit_hits": 39,
           "last_http_status": 429,
           "last_stream_count": 0,
           "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
         },
         "617313": {
           "key": "617313",
-          "url": "https://socolivep.cv/truc-tiep/fc-rapid-1923-vs-sepsi-osk-sfantul-gheorghe-21-07-2026-0130/?blv=617313",
+          "url": "https://socolivep.cv/truc-tiep/fc-rapid-1923-vs-sepsi-osk-sfantul-gheorghe-21-07-2026-0130?blv=617313",
           "blv": "VINFAST",
           "blv_id": "617313",
           "status": "pending",
@@ -29796,7 +29924,7 @@
         },
         "459401": {
           "key": "459401",
-          "url": "https://socolivep.cv/truc-tiep/fc-rapid-1923-vs-sepsi-osk-sfantul-gheorghe-21-07-2026-0130/?blv=459401",
+          "url": "https://socolivep.cv/truc-tiep/fc-rapid-1923-vs-sepsi-osk-sfantul-gheorghe-21-07-2026-0130?blv=459401",
           "blv": "BÉO",
           "blv_id": "459401",
           "status": "pending",
@@ -29808,7 +29936,7 @@
         },
         "598119": {
           "key": "598119",
-          "url": "https://socolivep.cv/truc-tiep/fc-rapid-1923-vs-sepsi-osk-sfantul-gheorghe-21-07-2026-0130/?blv=598119",
+          "url": "https://socolivep.cv/truc-tiep/fc-rapid-1923-vs-sepsi-osk-sfantul-gheorghe-21-07-2026-0130?blv=598119",
           "blv": "A TINH",
           "blv_id": "598119",
           "status": "pending",
