@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-07-20T09:18:11.065342+07:00",
+  "generated_at": "2026-07-20T09:19:11.867727+07:00",
   "state_schema_version": "v10-per-blv-queue",
-  "dispatch_next": true,
+  "dispatch_next": false,
   "pending_count": 5,
   "completed_count": 4,
   "coverage_complete_count": 0,
   "total_match_count": 5,
   "total_stream_count": 4,
   "progress_count": 0,
-  "chain_runs": 3,
-  "no_progress_runs": 1,
-  "stop_reason": "",
+  "chain_runs": 4,
+  "no_progress_runs": 2,
+  "stop_reason": "no_progress_guard",
   "rate_limited": true,
-  "rate_limit_url": "https://socolivep.cv/truc-tiep/blooming-vs-real-tomayapo-20-07-2026-0730?blv=531989",
+  "rate_limit_url": "https://socolivep.cv/truc-tiep/alianza-lima-vs-sport-huancayo-20-07-2026-0700/?blv=534055",
   "count": 5,
   "matches": [
     {
@@ -141,11 +141,11 @@
             "blv": "PEWPEW",
             "blv_id": "109053",
             "status": "rate_limited",
-            "attempts": 2,
+            "attempts": 3,
             "rate_limit_hits": 3,
-            "last_http_status": 429,
-            "last_stream_count": 0,
-            "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
+            "last_http_status": 200,
+            "last_stream_count": 1,
+            "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
           },
           "494201": {
             "key": "494201",
@@ -231,11 +231,11 @@
           "blv": "PEWPEW",
           "blv_id": "109053",
           "status": "rate_limited",
-          "attempts": 2,
+          "attempts": 3,
           "rate_limit_hits": 3,
-          "last_http_status": 429,
-          "last_stream_count": 0,
-          "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
+          "last_http_status": 200,
+          "last_stream_count": 1,
+          "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
         },
         "494201": {
           "key": "494201",
@@ -346,21 +346,6 @@
           "blv_id": "548860"
         },
         {
-          "url": "https://socolivep.cv/truc-tiep/blooming-vs-real-tomayapo-20-07-2026-0730/?blv=531989",
-          "blv": "COZY",
-          "blv_id": "531989"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/blooming-vs-real-tomayapo-20-07-2026-0730/?blv=187579",
-          "blv": "TOMIA",
-          "blv_id": "187579"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/blooming-vs-real-tomayapo-20-07-2026-0730/?blv=548860",
-          "blv": "VƯƠNG ANH",
-          "blv_id": "548860"
-        },
-        {
           "url": "https://socolivep.cv/truc-tiep/blooming-vs-real-tomayapo-20-07-2026-0730",
           "blv": "XEM NGAY",
           "blv_id": ""
@@ -399,11 +384,8 @@
         "source_goal_reached": false,
         "room_queue_complete": false,
         "complete": false,
-        "total_explicit_blv_rooms": 6,
+        "total_explicit_blv_rooms": 3,
         "pending_room_keys": [
-          "531989",
-          "187579",
-          "548860",
           "531989",
           "187579",
           "548860"
@@ -411,19 +393,19 @@
         "room_progress": {
           "531989": {
             "key": "531989",
-            "url": "https://socolivep.cv/truc-tiep/blooming-vs-real-tomayapo-20-07-2026-0730/?blv=531989",
+            "url": "https://socolivep.cv/truc-tiep/blooming-vs-real-tomayapo-20-07-2026-0730?blv=531989",
             "blv": "COZY",
             "blv_id": "531989",
             "status": "rate_limited",
             "attempts": 3,
-            "rate_limit_hits": 2,
+            "rate_limit_hits": 3,
             "last_http_status": 429,
             "last_stream_count": 0,
             "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
           },
           "187579": {
             "key": "187579",
-            "url": "https://socolivep.cv/truc-tiep/blooming-vs-real-tomayapo-20-07-2026-0730/?blv=187579",
+            "url": "https://socolivep.cv/truc-tiep/blooming-vs-real-tomayapo-20-07-2026-0730?blv=187579",
             "blv": "TOMIA",
             "blv_id": "187579",
             "status": "pending",
@@ -435,7 +417,7 @@
           },
           "548860": {
             "key": "548860",
-            "url": "https://socolivep.cv/truc-tiep/blooming-vs-real-tomayapo-20-07-2026-0730/?blv=548860",
+            "url": "https://socolivep.cv/truc-tiep/blooming-vs-real-tomayapo-20-07-2026-0730?blv=548860",
             "blv": "VƯƠNG ANH",
             "blv_id": "548860",
             "status": "pending",
@@ -465,19 +447,19 @@
       "room_progress": {
         "531989": {
           "key": "531989",
-          "url": "https://socolivep.cv/truc-tiep/blooming-vs-real-tomayapo-20-07-2026-0730/?blv=531989",
+          "url": "https://socolivep.cv/truc-tiep/blooming-vs-real-tomayapo-20-07-2026-0730?blv=531989",
           "blv": "COZY",
           "blv_id": "531989",
           "status": "rate_limited",
           "attempts": 3,
-          "rate_limit_hits": 2,
+          "rate_limit_hits": 3,
           "last_http_status": 429,
           "last_stream_count": 0,
           "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
         },
         "187579": {
           "key": "187579",
-          "url": "https://socolivep.cv/truc-tiep/blooming-vs-real-tomayapo-20-07-2026-0730/?blv=187579",
+          "url": "https://socolivep.cv/truc-tiep/blooming-vs-real-tomayapo-20-07-2026-0730?blv=187579",
           "blv": "TOMIA",
           "blv_id": "187579",
           "status": "pending",
@@ -489,7 +471,7 @@
         },
         "548860": {
           "key": "548860",
-          "url": "https://socolivep.cv/truc-tiep/blooming-vs-real-tomayapo-20-07-2026-0730/?blv=548860",
+          "url": "https://socolivep.cv/truc-tiep/blooming-vs-real-tomayapo-20-07-2026-0730?blv=548860",
           "blv": "VƯƠNG ANH",
           "blv_id": "548860",
           "status": "pending",
@@ -513,9 +495,6 @@
         }
       },
       "pending_room_keys": [
-        "531989",
-        "187579",
-        "548860",
         "531989",
         "187579",
         "548860"
@@ -611,11 +590,11 @@
             "blv": "CHÍ PHÈO",
             "blv_id": "273736",
             "status": "rate_limited",
-            "attempts": 2,
+            "attempts": 3,
             "rate_limit_hits": 3,
-            "last_http_status": 429,
-            "last_stream_count": 0,
-            "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
+            "last_http_status": 200,
+            "last_stream_count": 1,
+            "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
           },
           "283501": {
             "key": "283501",
@@ -665,11 +644,11 @@
           "blv": "CHÍ PHÈO",
           "blv_id": "273736",
           "status": "rate_limited",
-          "attempts": 2,
+          "attempts": 3,
           "rate_limit_hits": 3,
-          "last_http_status": 429,
-          "last_stream_count": 0,
-          "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
+          "last_http_status": 200,
+          "last_stream_count": 1,
+          "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
         },
         "283501": {
           "key": "283501",
@@ -738,21 +717,6 @@
           "blv_id": "607400"
         },
         {
-          "url": "https://socolivep.cv/truc-tiep/alianza-lima-vs-sport-huancayo-20-07-2026-0700/?blv=534055",
-          "blv": "RAMBO",
-          "blv_id": "534055"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/alianza-lima-vs-sport-huancayo-20-07-2026-0700/?blv=235232",
-          "blv": "A PÁO",
-          "blv_id": "235232"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/alianza-lima-vs-sport-huancayo-20-07-2026-0700/?blv=607400",
-          "blv": "HÀ DUY KIÊN",
-          "blv_id": "607400"
-        },
-        {
           "url": "https://socolivep.cv/truc-tiep/alianza-lima-vs-sport-huancayo-20-07-2026-0700",
           "blv": "XEM NGAY",
           "blv_id": ""
@@ -791,11 +755,8 @@
         "source_goal_reached": false,
         "room_queue_complete": false,
         "complete": false,
-        "total_explicit_blv_rooms": 6,
+        "total_explicit_blv_rooms": 3,
         "pending_room_keys": [
-          "534055",
-          "235232",
-          "607400",
           "534055",
           "235232",
           "607400"
@@ -803,19 +764,19 @@
         "room_progress": {
           "534055": {
             "key": "534055",
-            "url": "https://socolivep.cv/truc-tiep/alianza-lima-vs-sport-huancayo-20-07-2026-0700/?blv=534055",
+            "url": "https://socolivep.cv/truc-tiep/alianza-lima-vs-sport-huancayo-20-07-2026-0700?blv=534055",
             "blv": "RAMBO",
             "blv_id": "534055",
             "status": "rate_limited",
             "attempts": 3,
-            "rate_limit_hits": 2,
+            "rate_limit_hits": 3,
             "last_http_status": 429,
             "last_stream_count": 0,
             "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
           },
           "235232": {
             "key": "235232",
-            "url": "https://socolivep.cv/truc-tiep/alianza-lima-vs-sport-huancayo-20-07-2026-0700/?blv=235232",
+            "url": "https://socolivep.cv/truc-tiep/alianza-lima-vs-sport-huancayo-20-07-2026-0700?blv=235232",
             "blv": "A PÁO",
             "blv_id": "235232",
             "status": "pending",
@@ -827,7 +788,7 @@
           },
           "607400": {
             "key": "607400",
-            "url": "https://socolivep.cv/truc-tiep/alianza-lima-vs-sport-huancayo-20-07-2026-0700/?blv=607400",
+            "url": "https://socolivep.cv/truc-tiep/alianza-lima-vs-sport-huancayo-20-07-2026-0700?blv=607400",
             "blv": "HÀ DUY KIÊN",
             "blv_id": "607400",
             "status": "pending",
@@ -857,19 +818,19 @@
       "room_progress": {
         "534055": {
           "key": "534055",
-          "url": "https://socolivep.cv/truc-tiep/alianza-lima-vs-sport-huancayo-20-07-2026-0700/?blv=534055",
+          "url": "https://socolivep.cv/truc-tiep/alianza-lima-vs-sport-huancayo-20-07-2026-0700?blv=534055",
           "blv": "RAMBO",
           "blv_id": "534055",
           "status": "rate_limited",
           "attempts": 3,
-          "rate_limit_hits": 2,
+          "rate_limit_hits": 3,
           "last_http_status": 429,
           "last_stream_count": 0,
           "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
         },
         "235232": {
           "key": "235232",
-          "url": "https://socolivep.cv/truc-tiep/alianza-lima-vs-sport-huancayo-20-07-2026-0700/?blv=235232",
+          "url": "https://socolivep.cv/truc-tiep/alianza-lima-vs-sport-huancayo-20-07-2026-0700?blv=235232",
           "blv": "A PÁO",
           "blv_id": "235232",
           "status": "pending",
@@ -881,7 +842,7 @@
         },
         "607400": {
           "key": "607400",
-          "url": "https://socolivep.cv/truc-tiep/alianza-lima-vs-sport-huancayo-20-07-2026-0700/?blv=607400",
+          "url": "https://socolivep.cv/truc-tiep/alianza-lima-vs-sport-huancayo-20-07-2026-0700?blv=607400",
           "blv": "HÀ DUY KIÊN",
           "blv_id": "607400",
           "status": "pending",
@@ -905,9 +866,6 @@
         }
       },
       "pending_room_keys": [
-        "534055",
-        "235232",
-        "607400",
         "534055",
         "235232",
         "607400"
