@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-20T20:17:22.863324+07:00",
+  "generated_at": "2026-07-20T20:18:30.234775+07:00",
   "state_schema_version": "v10-per-blv-queue",
   "dispatch_next": true,
   "pending_count": 5,
@@ -7,12 +7,12 @@
   "coverage_complete_count": 0,
   "total_match_count": 5,
   "total_stream_count": 4,
-  "progress_count": 1,
-  "chain_runs": 2,
-  "no_progress_runs": 0,
+  "progress_count": 0,
+  "chain_runs": 3,
+  "no_progress_runs": 1,
   "stop_reason": "",
   "rate_limited": true,
-  "rate_limit_url": "https://socolivep.cv/truc-tiep/tps-turku-vs-ilves-tampere-20-07-2026-2200/?blv=360663",
+  "rate_limit_url": "https://socolivep.cv/truc-tiep/jelgava-vs-rigas-futbola-skola-20-07-2026-2200/?blv=610518",
   "count": 5,
   "matches": [
     {
@@ -37,26 +37,6 @@
         },
         {
           "url": "https://socolivep.cv/truc-tiep/jelgava-vs-rigas-futbola-skola-20-07-2026-2200?blv=462413",
-          "blv": "SAO LA",
-          "blv_id": "462413"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/jelgava-vs-rigas-futbola-skola-20-07-2026-2200/?blv=610518",
-          "blv": "XUÂN TÓC ĐỎ",
-          "blv_id": "610518"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/jelgava-vs-rigas-futbola-skola-20-07-2026-2200/?blv=603255",
-          "blv": "LION",
-          "blv_id": "603255"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/jelgava-vs-rigas-futbola-skola-20-07-2026-2200/?blv=617313",
-          "blv": "VINFAST",
-          "blv_id": "617313"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/jelgava-vs-rigas-futbola-skola-20-07-2026-2200/?blv=462413",
           "blv": "SAO LA",
           "blv_id": "462413"
         },
@@ -96,12 +76,8 @@
         "source_goal_reached": false,
         "room_queue_complete": false,
         "complete": false,
-        "total_explicit_blv_rooms": 8,
+        "total_explicit_blv_rooms": 4,
         "pending_room_keys": [
-          "610518",
-          "603255",
-          "617313",
-          "462413",
           "610518",
           "603255",
           "617313",
@@ -110,19 +86,19 @@
         "room_progress": {
           "610518": {
             "key": "610518",
-            "url": "https://socolivep.cv/truc-tiep/jelgava-vs-rigas-futbola-skola-20-07-2026-2200/?blv=610518",
+            "url": "https://socolivep.cv/truc-tiep/jelgava-vs-rigas-futbola-skola-20-07-2026-2200?blv=610518",
             "blv": "XUÂN TÓC ĐỎ",
             "blv_id": "610518",
             "status": "rate_limited",
             "attempts": 2,
-            "rate_limit_hits": 1,
+            "rate_limit_hits": 2,
             "last_http_status": 429,
             "last_stream_count": 0,
             "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
           },
           "603255": {
             "key": "603255",
-            "url": "https://socolivep.cv/truc-tiep/jelgava-vs-rigas-futbola-skola-20-07-2026-2200/?blv=603255",
+            "url": "https://socolivep.cv/truc-tiep/jelgava-vs-rigas-futbola-skola-20-07-2026-2200?blv=603255",
             "blv": "LION",
             "blv_id": "603255",
             "status": "pending",
@@ -134,7 +110,7 @@
           },
           "617313": {
             "key": "617313",
-            "url": "https://socolivep.cv/truc-tiep/jelgava-vs-rigas-futbola-skola-20-07-2026-2200/?blv=617313",
+            "url": "https://socolivep.cv/truc-tiep/jelgava-vs-rigas-futbola-skola-20-07-2026-2200?blv=617313",
             "blv": "VINFAST",
             "blv_id": "617313",
             "status": "pending",
@@ -146,7 +122,7 @@
           },
           "462413": {
             "key": "462413",
-            "url": "https://socolivep.cv/truc-tiep/jelgava-vs-rigas-futbola-skola-20-07-2026-2200/?blv=462413",
+            "url": "https://socolivep.cv/truc-tiep/jelgava-vs-rigas-futbola-skola-20-07-2026-2200?blv=462413",
             "blv": "SAO LA",
             "blv_id": "462413",
             "status": "pending",
@@ -176,19 +152,19 @@
       "room_progress": {
         "610518": {
           "key": "610518",
-          "url": "https://socolivep.cv/truc-tiep/jelgava-vs-rigas-futbola-skola-20-07-2026-2200/?blv=610518",
+          "url": "https://socolivep.cv/truc-tiep/jelgava-vs-rigas-futbola-skola-20-07-2026-2200?blv=610518",
           "blv": "XUÂN TÓC ĐỎ",
           "blv_id": "610518",
           "status": "rate_limited",
           "attempts": 2,
-          "rate_limit_hits": 1,
+          "rate_limit_hits": 2,
           "last_http_status": 429,
           "last_stream_count": 0,
           "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
         },
         "603255": {
           "key": "603255",
-          "url": "https://socolivep.cv/truc-tiep/jelgava-vs-rigas-futbola-skola-20-07-2026-2200/?blv=603255",
+          "url": "https://socolivep.cv/truc-tiep/jelgava-vs-rigas-futbola-skola-20-07-2026-2200?blv=603255",
           "blv": "LION",
           "blv_id": "603255",
           "status": "pending",
@@ -200,7 +176,7 @@
         },
         "617313": {
           "key": "617313",
-          "url": "https://socolivep.cv/truc-tiep/jelgava-vs-rigas-futbola-skola-20-07-2026-2200/?blv=617313",
+          "url": "https://socolivep.cv/truc-tiep/jelgava-vs-rigas-futbola-skola-20-07-2026-2200?blv=617313",
           "blv": "VINFAST",
           "blv_id": "617313",
           "status": "pending",
@@ -212,7 +188,7 @@
         },
         "462413": {
           "key": "462413",
-          "url": "https://socolivep.cv/truc-tiep/jelgava-vs-rigas-futbola-skola-20-07-2026-2200/?blv=462413",
+          "url": "https://socolivep.cv/truc-tiep/jelgava-vs-rigas-futbola-skola-20-07-2026-2200?blv=462413",
           "blv": "SAO LA",
           "blv_id": "462413",
           "status": "pending",
@@ -236,10 +212,6 @@
         }
       },
       "pending_room_keys": [
-        "610518",
-        "603255",
-        "617313",
-        "462413",
         "610518",
         "603255",
         "617313",
@@ -369,11 +341,11 @@
             "blv": "Củ Cải",
             "blv_id": "360663",
             "status": "rate_limited",
-            "attempts": 2,
+            "attempts": 3,
             "rate_limit_hits": 1,
-            "last_http_status": 429,
-            "last_stream_count": 0,
-            "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
+            "last_http_status": 200,
+            "last_stream_count": 1,
+            "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
           },
           "599634": {
             "key": "599634",
@@ -459,11 +431,11 @@
           "blv": "Củ Cải",
           "blv_id": "360663",
           "status": "rate_limited",
-          "attempts": 2,
+          "attempts": 3,
           "rate_limit_hits": 1,
-          "last_http_status": 429,
-          "last_stream_count": 0,
-          "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
+          "last_http_status": 200,
+          "last_stream_count": 1,
+          "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
         },
         "599634": {
           "key": "599634",
@@ -676,11 +648,11 @@
             "blv": "LONG",
             "blv_id": "132343",
             "status": "rate_limited",
-            "attempts": 2,
+            "attempts": 3,
             "rate_limit_hits": 1,
-            "last_http_status": 429,
-            "last_stream_count": 0,
-            "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
+            "last_http_status": 200,
+            "last_stream_count": 1,
+            "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
           },
           "250874": {
             "key": "250874",
@@ -766,11 +738,11 @@
           "blv": "LONG",
           "blv_id": "132343",
           "status": "rate_limited",
-          "attempts": 2,
+          "attempts": 3,
           "rate_limit_hits": 1,
-          "last_http_status": 429,
-          "last_stream_count": 0,
-          "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
+          "last_http_status": 200,
+          "last_stream_count": 1,
+          "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
         },
         "250874": {
           "key": "250874",
@@ -876,16 +848,6 @@
           "blv_id": "598549"
         },
         {
-          "url": "https://socolivep.cv/truc-tiep/suduva-vs-hegelmann-20-07-2026-2245/?blv=597929",
-          "blv": "CÁO",
-          "blv_id": "597929"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/suduva-vs-hegelmann-20-07-2026-2245/?blv=598549",
-          "blv": "PICK",
-          "blv_id": "598549"
-        },
-        {
           "url": "https://socolivep.cv/truc-tiep/suduva-vs-hegelmann-20-07-2026-2245",
           "blv": "XEM NGAY",
           "blv_id": ""
@@ -921,29 +883,27 @@
         "source_goal_reached": false,
         "room_queue_complete": false,
         "complete": false,
-        "total_explicit_blv_rooms": 4,
+        "total_explicit_blv_rooms": 2,
         "pending_room_keys": [
-          "597929",
-          "598549",
           "597929",
           "598549"
         ],
         "room_progress": {
           "597929": {
             "key": "597929",
-            "url": "https://socolivep.cv/truc-tiep/suduva-vs-hegelmann-20-07-2026-2245/?blv=597929",
+            "url": "https://socolivep.cv/truc-tiep/suduva-vs-hegelmann-20-07-2026-2245?blv=597929",
             "blv": "CÁO",
             "blv_id": "597929",
             "status": "rate_limited",
             "attempts": 1,
-            "rate_limit_hits": 1,
-            "last_http_status": 200,
-            "last_stream_count": 1,
-            "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
+            "rate_limit_hits": 2,
+            "last_http_status": 429,
+            "last_stream_count": 0,
+            "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
           },
           "598549": {
             "key": "598549",
-            "url": "https://socolivep.cv/truc-tiep/suduva-vs-hegelmann-20-07-2026-2245/?blv=598549",
+            "url": "https://socolivep.cv/truc-tiep/suduva-vs-hegelmann-20-07-2026-2245?blv=598549",
             "blv": "PICK",
             "blv_id": "598549",
             "status": "pending",
@@ -973,19 +933,19 @@
       "room_progress": {
         "597929": {
           "key": "597929",
-          "url": "https://socolivep.cv/truc-tiep/suduva-vs-hegelmann-20-07-2026-2245/?blv=597929",
+          "url": "https://socolivep.cv/truc-tiep/suduva-vs-hegelmann-20-07-2026-2245?blv=597929",
           "blv": "CÁO",
           "blv_id": "597929",
           "status": "rate_limited",
           "attempts": 1,
-          "rate_limit_hits": 1,
-          "last_http_status": 200,
-          "last_stream_count": 1,
-          "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
+          "rate_limit_hits": 2,
+          "last_http_status": 429,
+          "last_stream_count": 0,
+          "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
         },
         "598549": {
           "key": "598549",
-          "url": "https://socolivep.cv/truc-tiep/suduva-vs-hegelmann-20-07-2026-2245/?blv=598549",
+          "url": "https://socolivep.cv/truc-tiep/suduva-vs-hegelmann-20-07-2026-2245?blv=598549",
           "blv": "PICK",
           "blv_id": "598549",
           "status": "pending",
@@ -1009,8 +969,6 @@
         }
       },
       "pending_room_keys": [
-        "597929",
-        "598549",
         "597929",
         "598549"
       ]
