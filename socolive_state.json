@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-21T02:22:13.785098+07:00",
+  "generated_at": "2026-07-21T02:23:26.267079+07:00",
   "state_schema_version": "v10.1-long-harvest-two-streams",
   "dispatch_next": true,
   "pending_count": 8,
@@ -8,11 +8,11 @@
   "total_match_count": 8,
   "total_stream_count": 5,
   "progress_count": 0,
-  "chain_runs": 18,
-  "no_progress_runs": 18,
+  "chain_runs": 19,
+  "no_progress_runs": 19,
   "stop_reason": "",
   "rate_limited": true,
-  "rate_limit_url": "https://socolivep.cv/truc-tiep/sporting-cp-vs-strasbourg-21-07-2026-0215?blv=602019",
+  "rate_limit_url": "https://socolivep.cv/truc-tiep/hafnarfjordur-vs-breidablik-21-07-2026-0215?blv=622602",
   "target_base_urls": [
     "https://socolivep.cv/truc-tiep/botev-plovdiv-vs-lokomotiv-sofia-21-07-2026-0130/",
     "https://socolivep.cv/truc-tiep/colegiales-vs-ferrocarril-midland-21-07-2026-0600/",
@@ -2804,6 +2804,108 @@
             "403 https://socolivep.cv/wp-admin/admin-ajax.php?action=scl_realtime&sport=1",
             "403 https://pull.niur.live/live/stream-610518_lhd.m3u8?txSecret=94b79ed6e0ff5f0c39482123776dd380&txTime=6a5d5c6f"
           ]
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/keflavik-vs-akranes-21-07-2026-0215?blv=610518",
+          "blv": "XUÂN TÓC ĐỎ",
+          "blv_id": "610518",
+          "streams": [
+            "https://pull.niur.live/live/stream-610518_lhd.m3u8?txSecret=94b79ed6e0ff5f0c39482123776dd380&txTime=6a5d5c6f"
+          ],
+          "stream_sources": {
+            "https://pull.niur.live/live/stream-610518_lhd.m3u8?txSecret=94b79ed6e0ff5f0c39482123776dd380&txTime=6a5d5c6f": [
+              "cdp/request",
+              "cdp/response",
+              "harvest-final",
+              "harvest-round-1",
+              "harvest-round-2",
+              "harvest-round-3",
+              "harvest-round-4",
+              "harvest-round-5",
+              "harvest-round-6",
+              "harvest-round-7",
+              "harvest-round-8",
+              "harvest-round-9",
+              "request/image",
+              "request/xhr",
+              "response/403"
+            ]
+          },
+          "stream_first_seen": [
+            "https://pull.niur.live/live/stream-610518_lhd.m3u8?txSecret=94b79ed6e0ff5f0c39482123776dd380&txTime=6a5d5c6f"
+          ],
+          "discovered_blv_ids": [
+            "610518"
+          ],
+          "diagnostics": {
+            "url": "https://socolivep.cv/truc-tiep/keflavik-vs-akranes-21-07-2026-0215/?blv=610518",
+            "title": "Xem trực tiếp bóng đá Keflavik vs Akranes | 02:15 ngày 21/07/2026",
+            "h1": "Trực tiếp bóng đá Socolive Keflavik vs Akranes lúc 02:15 ngày 21/07/2026",
+            "ready_state": "complete",
+            "visibility_state": "visible",
+            "hidden": false,
+            "video_count": 1,
+            "iframe_count": 0,
+            "body_sample": "Skip to content Socolive Bảng xếp hạng Lịch thi đấu Kết quả bóng đá Tin thể thao Trực tiếp bóng đá Socolive Keflavik vs Akranes lúc 02:15 ngày 21/07/2026 ICE PR Keflavik 02:15 21/07 Akranes Volume 0% Tải App Bufa Có vấn đề khi truy cập nội dung được bảo vệ. (Mã lỗi: 232403) XUÂN TÓC ĐỎ SEVEN TRÀ ĐÁ Chat Thống kê Đội hình Diễn Biến Bảng XH \" \" Tin nhắn riêng Vô hiệu hóa tất cả Vô hiệu hóa quà tặng Tắt lời chào Đăng nhập để cùng chat nhé Gửi Tỷ lệ kèo Cược Châu Á Chủ Chấp Khách Cược Châu Âu Chủ Hòa Khách Tài xỉu Tài Tỷ lệ kèo Xỉu Kèo góc Tài Tỷ lệ kèo Xỉu Thống kê trận đấu ICE PR 02:15 21/07 Hafnarfjordur VS null null null - null Sắp diễn ra Xem ngay Breidablik KENCHU GRAP TUẤN CÙI INT CF 02:15 21/07 Sporting CP VS null null null - null Sắp diễn ra Xem ngay Strasbourg RYO FOX QUỐC KHÁNH PICK ROM D1 01:30 21/07 FC Rapid 1923 VS null null null - null Sắp diễn ra Xem ngay Sepsi OSK Sfantul Gheorghe A PÁO VINFAST BÉO A TINH BUL D1 01:30 21/07 Botev Plovdiv VS null null null - null Sắp diễn ra Xem ngay Lokomotiv Sofia FIREMAN LOKA SWE D1 00:00 21/07 Kalmar VS null null null - null Sắp diễn ra Xem ngay Malmo FF RAMBO CR Bưởi LÃO LÂM ALEX COCA HẢI THANH Thành tích đối đầu Không có dữ liệu P",
+            "harvest_rounds": 9,
+            "harvest_window_seconds": 7.131,
+            "main_status": 200,
+            "harvested_stream_count": 1,
+            "harvested_blv_ids": [
+              "610518"
+            ],
+            "scan_mode": "browser-event",
+            "elapsed_seconds": 9.248
+          },
+          "http_probe": {
+            "enabled": false,
+            "status": null,
+            "elapsed_seconds": 0.0,
+            "error": ""
+          },
+          "errors": [
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED"
+          ],
+          "failed_requests": [
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/main.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/customize.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/auth.css?ver=20 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat.css?ver=447 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat(1).css?ver=58 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/toast.css?ver=344 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/themes/flatsome/assets/css/flatsome.css?ver=3.18.2 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/themes/flatsome-child/style.css?ver=3.0 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/countdown.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/match.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/livescore.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/style_custom.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/effect/running-border.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/option/option-6.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/highlight/option-1.css?ver=2.8.5 | net::ERR_FAILED"
+          ],
+          "http_errors": [
+            "403 https://socolivep.cv/wp-admin/admin-ajax.php?action=scl_realtime&sport=1",
+            "403 https://pull.niur.live/live/stream-610518_lhd.m3u8?txSecret=94b79ed6e0ff5f0c39482123776dd380&txTime=6a5d5c6f"
+          ]
         }
       ],
       "attempted_room_ids": [
@@ -2835,7 +2937,7 @@
             "blv": "XUÂN TÓC ĐỎ",
             "blv_id": "610518",
             "status": "rate_limited",
-            "attempts": 20,
+            "attempts": 21,
             "rate_limit_hits": 14,
             "last_http_status": 200,
             "last_stream_count": 1,
@@ -2887,7 +2989,7 @@
           "blv": "XUÂN TÓC ĐỎ",
           "blv_id": "610518",
           "status": "rate_limited",
-          "attempts": 20,
+          "attempts": 21,
           "rate_limit_hits": 14,
           "last_http_status": 200,
           "last_stream_count": 1,
@@ -7300,6 +7402,161 @@
             "429 https://socolivep.cv/truc-tiep/hafnarfjordur-vs-breidablik-21-07-2026-0215?blv=622602",
             "401 https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/pat/a1e4550bbbcdfca8/1784575321281/9758ead1053ae8ce32bb5dad95b8a77d8aaf595bd41f6bd1e865903a8d095523/v1N3VdtV1oI6oqf"
           ]
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/hafnarfjordur-vs-breidablik-21-07-2026-0215?blv=622602",
+          "blv": "KENCHU",
+          "blv_id": "622602",
+          "streams": [
+            "https://pull.niues.live/live/stream-622602_lhd.m3u8?auth_key=1784576324-0-0-a68f776cce494b8a8ff185954d94aa9b"
+          ],
+          "stream_sources": {
+            "https://pull.niues.live/live/stream-622602_lhd.m3u8?auth_key=1784576324-0-0-a68f776cce494b8a8ff185954d94aa9b": [
+              "cdp/request",
+              "cdp/response",
+              "harvest-final",
+              "harvest-round-1",
+              "harvest-round-2",
+              "harvest-round-3",
+              "harvest-round-4",
+              "harvest-round-5",
+              "harvest-round-6",
+              "harvest-round-7",
+              "harvest-round-8",
+              "request/image",
+              "request/xhr",
+              "response/200"
+            ]
+          },
+          "stream_first_seen": [
+            "https://pull.niues.live/live/stream-622602_lhd.m3u8?auth_key=1784576324-0-0-a68f776cce494b8a8ff185954d94aa9b"
+          ],
+          "discovered_blv_ids": [
+            "622602"
+          ],
+          "diagnostics": {
+            "url": "https://socolivep.cv/truc-tiep/hafnarfjordur-vs-breidablik-21-07-2026-0215/?blv=622602",
+            "title": "Xem trực tiếp bóng đá Hafnarfjordur vs Breidablik | 02:15 ngày 21/07/2026",
+            "h1": "Trực tiếp bóng đá Socolive Hafnarfjordur vs Breidablik lúc 02:15 ngày 21/07/2026",
+            "ready_state": "complete",
+            "visibility_state": "visible",
+            "hidden": false,
+            "video_count": 1,
+            "iframe_count": 0,
+            "body_sample": "Skip to content Socolive Bảng xếp hạng Lịch thi đấu Kết quả bóng đá Tin thể thao Trực tiếp bóng đá Socolive Hafnarfjordur vs Breidablik lúc 02:15 ngày 21/07/2026 ICE PR Hafnarfjordur 02:15 21/07 Breidablik Volume 0% Phát 00:00 00:00 Tải App Bufa KENCHU GRAP TUẤN CÙI Chat Thống kê Đội hình Diễn Biến Bảng XH \" \" Admin SÓC TINH ANH 2K1: 💋kết bạn với SÓC để nhận K.MÃI lên đến 𝟏.𝟖𝟎𝟎𝐤 VÀO NHÓM NHẬN KÈO HÀNG NGÀY CÙNG BLV 𝐋𝐢ê𝐧 𝐡ệ bufa 𝐆𝐊𝐉𝐕𝐉𝐄❤️𝐓𝐄𝐋𝐄 : https://t.me/tinhanh1268❤️ 𝐅𝐚𝐜𝐞𝐛𝐨𝐨𝐤 https://m.me/tinhanh1268, nhóm tele https://t.me/vaonhomBTY9287 🆉🅰️🅻🅾️ : +84 566 877 072 đăng kí https://w9.vty39.net/ · Vô hiệu hóa tất cả Vô hiệu hóa quà tặng Tắt lời chào Đăng nhập để cùng chat nhé Gửi Tỷ lệ kèo Cược Châu Á Chủ Chấp Khách Cược Châu Âu Chủ Hòa Khách Tài xỉu Tài Tỷ lệ kèo Xỉu Kèo góc Tài Tỷ lệ kèo Xỉu Mô phỏng trận đấu Thống kê trận đấu ICE PR 02:15 21/07 Keflavik VS null null null - null Sắp diễn ra Xem ngay Akranes XUÂN TÓC ĐỎ SEVEN TRÀ ĐÁ INT CF 02:15 21/07 Sporting CP VS null null null - null Sắp diễn ra Xem ngay Strasbourg RYO FOX QUỐC KHÁNH PICK ROM D1 01:30 21/07 FC Rapid 1923 VS null null null - null Sắp diễn ra Xem ngay Sepsi OSK Sfantul Gheorghe A P",
+            "harvest_rounds": 8,
+            "harvest_window_seconds": 6.326,
+            "main_status": 200,
+            "harvested_stream_count": 1,
+            "harvested_blv_ids": [
+              "622602"
+            ],
+            "scan_mode": "browser-event",
+            "elapsed_seconds": 8.434
+          },
+          "http_probe": {
+            "enabled": false,
+            "status": null,
+            "elapsed_seconds": 0.0,
+            "error": ""
+          },
+          "errors": [
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED"
+          ],
+          "failed_requests": [
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/main.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/customize.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/auth.css?ver=502 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat.css?ver=78 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat(1).css?ver=665 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/toast.css?ver=647 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/themes/flatsome/assets/css/flatsome.css?ver=3.18.2 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/themes/flatsome-child/style.css?ver=3.0 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/countdown.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/match.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/livescore.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/style_custom.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/effect/running-border.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/option/option-6.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/highlight/option-1.css?ver=2.8.5 | net::ERR_FAILED"
+          ],
+          "http_errors": [
+            "403 https://socolivep.cv/wp-admin/admin-ajax.php?action=scl_realtime&sport=1",
+            "404 https://live.sportdb.live/api/v1/matchs/assistant-user?roomNum=622602"
+          ]
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/hafnarfjordur-vs-breidablik-21-07-2026-0215?blv=622602",
+          "blv": "KENCHU",
+          "blv_id": "622602",
+          "streams": [],
+          "stream_sources": {},
+          "stream_first_seen": [],
+          "discovered_blv_ids": [],
+          "diagnostics": {
+            "url": "https://socolivep.cv/truc-tiep/hafnarfjordur-vs-breidablik-21-07-2026-0215?blv=622602",
+            "title": "Chờ một chút...",
+            "h1": "socolivep.cv",
+            "ready_state": "complete",
+            "visibility_state": "visible",
+            "hidden": false,
+            "video_count": 0,
+            "iframe_count": 0,
+            "body_sample": "socolivep.cv Thực hiện xác minh bảo mật Trang web này sử dụng dịch vụ bảo mật để chống bot độc hại. Trang này hiển thị trong khi trang web xác minh bạn không phải là bot. Ray ID: a1e456cdef94cbaa Hiệu suất và Tính bảo mật của Cloudflare Quyền riêng tư",
+            "harvest_rounds": 0,
+            "harvest_window_seconds": 0.621,
+            "main_status": 429,
+            "harvested_stream_count": 0,
+            "harvested_blv_ids": [],
+            "scan_mode": "browser-event",
+            "elapsed_seconds": 13.308
+          },
+          "http_probe": {
+            "enabled": false,
+            "status": null,
+            "elapsed_seconds": 0.0,
+            "error": ""
+          },
+          "errors": [
+            "console/error: Failed to load resource: the server responded with a status of 429 ()",
+            "console/warning: No available adapters.",
+            "console/warning: No available adapters.",
+            "console/warning: [.WebGL-0x39c402320000]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+            "console/warning: [.WebGL-0x39c402320000]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels (this message will no longer repeat)",
+            "console/warning: OTS parsing error: Size of decompressed WOFF 2.0 is less than compressed size",
+            "console/error: %c%d font-size:0;color:transparent NaN",
+            "console/error: %c%d font-size:0;color:transparent NaN",
+            "console/warning: %c%d font-size:0;color:transparent NaN",
+            "console/warning: %c%d font-size:0;color:transparent NaN",
+            "console/error: Failed to load resource: net::ERR_FAILED"
+          ],
+          "failed_requests": [
+            "fetch https://brunhild.challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/i/a1e456d0e954e8ef/RYI.wQTptyBkQMv7HBP8DDE5F8sg5ziu8NdzgyLXjGw-1784575393-1.2.1.1-Wlb4C_wW3I4AKb3jRBT9.gP47rPJN_J8VgzR1pSZ8pSkHsKdRBSg0Y1xO2QzxGn0 | net::ERR_NAME_NOT_RESOLVED",
+            "image https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/ci/a1e456d0e954e8ef/1784575393832/ApBRKKzc5HhHBSB | net::ERR_FAILED"
+          ],
+          "http_errors": [
+            "429 https://socolivep.cv/truc-tiep/hafnarfjordur-vs-breidablik-21-07-2026-0215?blv=622602",
+            "401 https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/pat/a1e456d0e954e8ef/1784575393831/5ddb97480444626eb82716cc1b227a0e4900b8e736390795552b15d92b1cdb3f/cGcXFUsOXfy-VGf"
+          ]
         }
       ],
       "attempted_room_ids": [
@@ -7331,8 +7588,8 @@
             "blv": "KENCHU",
             "blv_id": "622602",
             "status": "rate_limited",
-            "attempts": 39,
-            "rate_limit_hits": 12,
+            "attempts": 40,
+            "rate_limit_hits": 13,
             "last_http_status": 429,
             "last_stream_count": 0,
             "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
@@ -7383,8 +7640,8 @@
           "blv": "KENCHU",
           "blv_id": "622602",
           "status": "rate_limited",
-          "attempts": 39,
-          "rate_limit_hits": 12,
+          "attempts": 40,
+          "rate_limit_hits": 13,
           "last_http_status": 429,
           "last_stream_count": 0,
           "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
@@ -11720,6 +11977,158 @@
             "429 https://socolivep.cv/truc-tiep/sporting-cp-vs-strasbourg-21-07-2026-0215?blv=602019",
             "401 https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/pat/a1e4550bbbd6fca8/1784575321315/ba9bbdc1ebb755b454f154740ef24e4f39cc5c62b1633c75f1730a6322e814f6/dAAu_AIqw0QdTxF"
           ]
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/sporting-cp-vs-strasbourg-21-07-2026-0215?blv=602019",
+          "blv": "RYO",
+          "blv_id": "602019",
+          "streams": [
+            "https://pull.niues.live/live/stream-602019_lhd.m3u8?auth_key=1784577415-0-0-38180e83e5736df86fa1342a92a85161"
+          ],
+          "stream_sources": {
+            "https://pull.niues.live/live/stream-602019_lhd.m3u8?auth_key=1784577415-0-0-38180e83e5736df86fa1342a92a85161": [
+              "cdp/request",
+              "cdp/response",
+              "harvest-final",
+              "harvest-round-1",
+              "harvest-round-2",
+              "harvest-round-3",
+              "harvest-round-4",
+              "harvest-round-5",
+              "harvest-round-6",
+              "harvest-round-7",
+              "harvest-round-8",
+              "request/image",
+              "request/xhr",
+              "response/200"
+            ]
+          },
+          "stream_first_seen": [
+            "https://pull.niues.live/live/stream-602019_lhd.m3u8?auth_key=1784577415-0-0-38180e83e5736df86fa1342a92a85161"
+          ],
+          "discovered_blv_ids": [
+            "602019"
+          ],
+          "diagnostics": {
+            "url": "https://socolivep.cv/truc-tiep/sporting-cp-vs-strasbourg-21-07-2026-0215/?blv=602019",
+            "title": "Xem trực tiếp bóng đá Sporting CP vs Strasbourg | 02:15 ngày 21/07/2026",
+            "h1": "Trực tiếp bóng đá Socolive Sporting CP vs Strasbourg lúc 02:15 ngày 21/07/2026",
+            "ready_state": "complete",
+            "visibility_state": "visible",
+            "hidden": false,
+            "video_count": 1,
+            "iframe_count": 0,
+            "body_sample": "Skip to content Socolive Bảng xếp hạng Lịch thi đấu Kết quả bóng đá Tin thể thao Trực tiếp bóng đá Socolive Sporting CP vs Strasbourg lúc 02:15 ngày 21/07/2026 INT CF Sporting CP 02:15 21/07 Strasbourg 00:00 of 00:00Volume 10% Phát TRỰC TIẾP Tải App Bufa RYO FOX QUỐC KHÁNH PICK Chat Thống kê Đội hình Diễn Biến Bảng XH \" \" Admin Trợ lý Diệp Chi ❤️: ⚽️𝐂Á𝐂 𝐀 𝐓Ạ𝐈 𝐏𝐇Ò𝐍𝐆 𝐋𝐈𝐕𝐄 𝐂𝐇Ư𝐀 𝐂Ó 𝐓À𝐈 𝐊𝐇𝐎Ả𝐍 𝐂𝐇Ơ𝐈 𝐓Ạ𝐈 𝐁𝐒𝐏𝐎𝐑𝐓 https://www.bty9234.com ⚽️𝐋𝐈Ê𝐍 𝐇Ệ 𝐍𝐆𝐀𝐘 𝐄 𝐍𝐇É 📱 𝐙𝐀𝐋𝐎: 👆❤️ 𝐓𝐞𝐥𝐞 : https://t.me/soclantan ❤️ FACEBOOK: https://m.me/BTY9235 Lộc Thợ Xây: hi shop lamz1d: sân này ở đâu đây bạn Lộc Thợ Xây: qua đcm nó đá chán Lộc Thợ Xây: thua trận hạng 3 Tin nhắn riêng Vô hiệu hóa tất cả Vô hiệu hóa quà tặng Tắt lời chào Đăng nhập để cùng chat nhé Gửi Tỷ lệ kèo Cược Châu Á Chủ Chấp Khách Cược Châu Âu Chủ Hòa Khách Tài xỉu Tài Tỷ lệ kèo Xỉu Kèo góc Tài Tỷ lệ kèo Xỉu Mô phỏng trận đấu Thống kê trận đấu ICE PR 02:15 21/07 Keflavik VS null null null - null Sắp diễn ra Xem ngay Akranes XUÂN TÓC ĐỎ SEVEN TRÀ ĐÁ ICE PR 02:15 21/07 Hafnarfjordur VS null null null - null Sắp diễn ra Xem ngay Breidablik KENCHU GRAP TUẤN CÙI ROM D1 01:30 21/07 FC Rapid 1923",
+            "harvest_rounds": 8,
+            "harvest_window_seconds": 6.335,
+            "main_status": 200,
+            "harvested_stream_count": 1,
+            "harvested_blv_ids": [
+              "602019"
+            ],
+            "scan_mode": "browser-event",
+            "elapsed_seconds": 8.45
+          },
+          "http_probe": {
+            "enabled": false,
+            "status": null,
+            "elapsed_seconds": 0.0,
+            "error": ""
+          },
+          "errors": [
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED"
+          ],
+          "failed_requests": [
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/main.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/customize.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/auth.css?ver=656 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat.css?ver=588 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat(1).css?ver=802 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/toast.css?ver=512 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/themes/flatsome/assets/css/flatsome.css?ver=3.18.2 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/themes/flatsome-child/style.css?ver=3.0 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/countdown.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/match.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/livescore.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/style_custom.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/effect/running-border.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/option/option-6.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/highlight/option-1.css?ver=2.8.5 | net::ERR_FAILED"
+          ],
+          "http_errors": [
+            "403 https://socolivep.cv/wp-admin/admin-ajax.php?action=scl_realtime&sport=1"
+          ]
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/sporting-cp-vs-strasbourg-21-07-2026-0215?blv=602019",
+          "blv": "RYO",
+          "blv_id": "602019",
+          "streams": [],
+          "stream_sources": {},
+          "stream_first_seen": [],
+          "discovered_blv_ids": [],
+          "diagnostics": {
+            "url": "https://socolivep.cv/truc-tiep/sporting-cp-vs-strasbourg-21-07-2026-0215?blv=602019",
+            "title": "Chờ một chút...",
+            "h1": "socolivep.cv",
+            "ready_state": "complete",
+            "visibility_state": "visible",
+            "hidden": false,
+            "video_count": 0,
+            "iframe_count": 0,
+            "body_sample": "socolivep.cv Thực hiện xác minh bảo mật Trang web này sử dụng dịch vụ bảo mật để chống bot độc hại. Trang này hiển thị trong khi trang web xác minh bạn không phải là bot. Ray ID: a1e456cdffd5cbaa Hiệu suất và Tính bảo mật của Cloudflare Quyền riêng tư",
+            "harvest_rounds": 0,
+            "harvest_window_seconds": 0.621,
+            "main_status": 429,
+            "harvested_stream_count": 0,
+            "harvested_blv_ids": [],
+            "scan_mode": "browser-event",
+            "elapsed_seconds": 13.272
+          },
+          "http_probe": {
+            "enabled": false,
+            "status": null,
+            "elapsed_seconds": 0.0,
+            "error": ""
+          },
+          "errors": [
+            "console/error: Failed to load resource: the server responded with a status of 429 ()",
+            "console/warning: No available adapters.",
+            "console/warning: No available adapters.",
+            "console/error: %c%d font-size:0;color:transparent NaN",
+            "console/error: %c%d font-size:0;color:transparent NaN",
+            "console/warning: %c%d font-size:0;color:transparent NaN",
+            "console/warning: %c%d font-size:0;color:transparent NaN",
+            "console/warning: OTS parsing error: Size of decompressed WOFF 2.0 is less than compressed size",
+            "console/error: Failed to load resource: net::ERR_FAILED"
+          ],
+          "failed_requests": [
+            "fetch https://brunhild.challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/i/a1e456d0d925e8ef/vcN3674j.KjYtuzE6LSlJWBkekNJC_A8.5u3irEObtc-1784575393-1.2.1.1-VZ3.sHJOlnAEjE2osjf0Xk5ri442XS8BZGDqXjv.f8K.vDl2pl03RqwheuJ_jbaJ | net::ERR_NAME_NOT_RESOLVED",
+            "image https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/ci/a1e456d0d925e8ef/1784575393833/fg8VIztcuRytUpS | net::ERR_FAILED"
+          ],
+          "http_errors": [
+            "429 https://socolivep.cv/truc-tiep/sporting-cp-vs-strasbourg-21-07-2026-0215?blv=602019",
+            "401 https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/pat/a1e456d0d925e8ef/1784575393832/e556bd78a245cfe396d459f5621904256ebcd77822893798b61359a8fdc2afd2/_mi_qdqPnOjykHf"
+          ]
         }
       ],
       "attempted_room_ids": [
@@ -11753,8 +12162,8 @@
             "blv": "RYO",
             "blv_id": "602019",
             "status": "rate_limited",
-            "attempts": 38,
-            "rate_limit_hits": 13,
+            "attempts": 39,
+            "rate_limit_hits": 14,
             "last_http_status": 429,
             "last_stream_count": 0,
             "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
@@ -11817,8 +12226,8 @@
           "blv": "RYO",
           "blv_id": "602019",
           "status": "rate_limited",
-          "attempts": 38,
-          "rate_limit_hits": 13,
+          "attempts": 39,
+          "rate_limit_hits": 14,
           "last_http_status": 429,
           "last_stream_count": 0,
           "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
@@ -20150,6 +20559,160 @@
             "429 https://socolivep.cv/truc-tiep/fc-rapid-1923-vs-sepsi-osk-sfantul-gheorghe-21-07-2026-0130?blv=235232",
             "401 https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/pat/a1e4550bbbe8fca8/1784575321317/629ac9ca50a5a815f4337c6b579870c76d485a5c36102fc74cf5198fa8253fb5/Mjca7UEa4K2VAZf"
           ]
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/fc-rapid-1923-vs-sepsi-osk-sfantul-gheorghe-21-07-2026-0130?blv=235232",
+          "blv": "A PÁO",
+          "blv_id": "235232",
+          "streams": [
+            "https://pull.niues.live/live/stream-235232_lhd.m3u8?auth_key=1784516640-0-0-54566f59d315ac28a2b9e15d47efb468"
+          ],
+          "stream_sources": {
+            "https://pull.niues.live/live/stream-235232_lhd.m3u8?auth_key=1784516640-0-0-54566f59d315ac28a2b9e15d47efb468": [
+              "cdp/request",
+              "cdp/response",
+              "harvest-final",
+              "harvest-round-1",
+              "harvest-round-2",
+              "harvest-round-3",
+              "harvest-round-4",
+              "harvest-round-5",
+              "harvest-round-6",
+              "harvest-round-7",
+              "harvest-round-8",
+              "request/image",
+              "request/xhr",
+              "response/200"
+            ]
+          },
+          "stream_first_seen": [
+            "https://pull.niues.live/live/stream-235232_lhd.m3u8?auth_key=1784516640-0-0-54566f59d315ac28a2b9e15d47efb468"
+          ],
+          "discovered_blv_ids": [
+            "235232"
+          ],
+          "diagnostics": {
+            "url": "https://socolivep.cv/truc-tiep/fc-rapid-1923-vs-sepsi-osk-sfantul-gheorghe-21-07-2026-0130/?blv=235232",
+            "title": "Xem trực tiếp bóng đá FC Rapid 1923 vs Sepsi OSK Sfantul Gheorghe | 01:30 ngày 21/07/2026",
+            "h1": "Trực tiếp bóng đá Socolive FC Rapid 1923 vs Sepsi OSK Sfantul Gheorghe lúc 01:30 ngày 21/07/2026",
+            "ready_state": "complete",
+            "visibility_state": "visible",
+            "hidden": false,
+            "video_count": 1,
+            "iframe_count": 0,
+            "body_sample": "Skip to content Socolive Bảng xếp hạng Lịch thi đấu Kết quả bóng đá Tin thể thao Trực tiếp bóng đá Socolive FC Rapid 1923 vs Sepsi OSK Sfantul Gheorghe lúc 01:30 ngày 21/07/2026 ROM D1 FC Rapid 1923 01:30 21/07 Sepsi OSK Sfantul Gheorghe Volume 0% Phát 00:00 00:00 Tải App Bufa A PÁO VINFAST BÉO A TINH Chat Thống kê Đội hình Diễn Biến Bảng XH \" \" cá cá bở tơi: má Erik Nguyễn: vkl thế mà ra ngoài được quangthanhpham: dcm tưởng vào Ngôinha522: thua cá cá bở tơi: ht h đi Admin Trợ lý Thư Hân: ⚽️ Facebook: https://m.me/soctiendao9235 ⚽️ 𝚃𝙴𝙻𝙴𝙶𝚁𝙰𝙼: https://t.me/Soctiendao ⚽️ 𝙼Ở 𝚃À𝙸 𝙺𝙷𝙾Ả𝙽 - 𝚅À𝙾 𝙽𝙷Ó𝙼 𝙺È𝙾 - 𝙽𝙷Ậ𝙽 𝙺𝙷𝚄𝚈Ế𝙽 𝙼Ã𝙸 🎀 B𝚂𝙿𝙾𝚁𝚃: https://www.bty9234.com/ 🎀 𝙱𝚄𝙵𝙰: 𝐰𝐣𝐳𝐳𝟔𝐩 Bap rang bo: ghi bàn vào bản quảng cáo 👏👏👏 Mua sữa cho con 278: chuẩn bị húp nốt cái hnc way ht Bap rang bo: h2 nghiên cứu đi góc típ Đạt 09: tiền ko tự nhiên sinh ra và mất đi, nó chỉ chuyển từ tk thằng đi tài sang thằng đi xỉu và ngược lại Mua sữa cho con 278: ông về với ae tôi Mua sữa cho con 278: đảm bảo là ra gì đấy Admin Trợ lý Thư Hân: 𝐍Ạ𝐏 𝟓𝟎𝟎𝐊 𝐓Ặ𝐍𝐆 𝟏𝟎𝟎𝐊 - 𝐍Ạ𝐏 𝟑𝐓𝐑𝟓 𝐓Ặ𝐍𝐆 𝟑𝟓𝟎𝐊 - 𝐍Ạ𝐏 𝟏𝟓𝐓𝐑 𝐓Ặ𝐍𝐆 𝟏𝐓𝐑𝟓 🎀 https://www.bty9234.com/ ⚽️ F",
+            "harvest_rounds": 8,
+            "harvest_window_seconds": 6.332,
+            "main_status": 200,
+            "harvested_stream_count": 1,
+            "harvested_blv_ids": [
+              "235232"
+            ],
+            "scan_mode": "browser-event",
+            "elapsed_seconds": 8.412
+          },
+          "http_probe": {
+            "enabled": false,
+            "status": null,
+            "elapsed_seconds": 0.0,
+            "error": ""
+          },
+          "errors": [
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED"
+          ],
+          "failed_requests": [
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/main.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/customize.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/auth.css?ver=909 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat.css?ver=723 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat(1).css?ver=758 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/toast.css?ver=851 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/themes/flatsome/assets/css/flatsome.css?ver=3.18.2 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/themes/flatsome-child/style.css?ver=3.0 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/countdown.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/match.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/livescore.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/style_custom.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/effect/running-border.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/option/option-6.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/highlight/option-1.css?ver=2.8.5 | net::ERR_FAILED"
+          ],
+          "http_errors": [
+            "403 https://socolivep.cv/wp-admin/admin-ajax.php?action=scl_realtime&sport=1"
+          ]
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/fc-rapid-1923-vs-sepsi-osk-sfantul-gheorghe-21-07-2026-0130?blv=235232",
+          "blv": "A PÁO",
+          "blv_id": "235232",
+          "streams": [],
+          "stream_sources": {},
+          "stream_first_seen": [],
+          "discovered_blv_ids": [],
+          "diagnostics": {
+            "url": "https://socolivep.cv/truc-tiep/fc-rapid-1923-vs-sepsi-osk-sfantul-gheorghe-21-07-2026-0130?blv=235232",
+            "title": "Chờ một chút...",
+            "h1": "socolivep.cv",
+            "ready_state": "complete",
+            "visibility_state": "visible",
+            "hidden": false,
+            "video_count": 0,
+            "iframe_count": 0,
+            "body_sample": "socolivep.cv Thực hiện xác minh bảo mật Trang web này sử dụng dịch vụ bảo mật để chống bot độc hại. Trang này hiển thị trong khi trang web xác minh bạn không phải là bot. Ray ID: a1e456cdffdacbaa Hiệu suất và Tính bảo mật của Cloudflare Quyền riêng tư",
+            "harvest_rounds": 0,
+            "harvest_window_seconds": 0.626,
+            "main_status": 429,
+            "harvested_stream_count": 0,
+            "harvested_blv_ids": [],
+            "scan_mode": "browser-event",
+            "elapsed_seconds": 13.325
+          },
+          "http_probe": {
+            "enabled": false,
+            "status": null,
+            "elapsed_seconds": 0.0,
+            "error": ""
+          },
+          "errors": [
+            "console/error: Failed to load resource: the server responded with a status of 429 ()",
+            "console/warning: No available adapters.",
+            "console/warning: No available adapters.",
+            "console/error: %c%d font-size:0;color:transparent NaN",
+            "console/error: %c%d font-size:0;color:transparent NaN",
+            "console/warning: %c%d font-size:0;color:transparent NaN",
+            "console/warning: %c%d font-size:0;color:transparent NaN",
+            "console/warning: [.WebGL-0x39c402759800]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+            "console/warning: [.WebGL-0x39c402759800]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/warning: OTS parsing error: Size of decompressed WOFF 2.0 is less than compressed size"
+          ],
+          "failed_requests": [
+            "fetch https://brunhild.challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/i/a1e456d0f975e8ef/PTtAT8R6yBvhzO7fwEaj27AzJa2Bwoc1XnBUeGaexbE-1784575393-1.2.1.1-kPj0RPekGn3Vt5wkkAlehiahulwx2lHrICikHbfgmyNOOAfban5rthuV9JSFDaBj | net::ERR_NAME_NOT_RESOLVED",
+            "image https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/ci/a1e456d0f975e8ef/1784575393802/mbfBDRXWu02Ee0q | net::ERR_FAILED"
+          ],
+          "http_errors": [
+            "429 https://socolivep.cv/truc-tiep/fc-rapid-1923-vs-sepsi-osk-sfantul-gheorghe-21-07-2026-0130?blv=235232",
+            "401 https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/pat/a1e456d0f975e8ef/1784575393802/4b70320489b52d6c9997f1a02777c26d816e073ea4123959ec8be5aff27d50f0/ddXndWQaJ5KwOy2"
+          ]
         }
       ],
       "attempted_room_ids": [
@@ -20183,8 +20746,8 @@
             "blv": "A PÁO",
             "blv_id": "235232",
             "status": "rate_limited",
-            "attempts": 68,
-            "rate_limit_hits": 29,
+            "attempts": 69,
+            "rate_limit_hits": 30,
             "last_http_status": 429,
             "last_stream_count": 0,
             "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
@@ -20247,8 +20810,8 @@
           "blv": "A PÁO",
           "blv_id": "235232",
           "status": "rate_limited",
-          "attempts": 68,
-          "rate_limit_hits": 29,
+          "attempts": 69,
+          "rate_limit_hits": 30,
           "last_http_status": 429,
           "last_stream_count": 0,
           "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
