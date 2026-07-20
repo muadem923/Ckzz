@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-21T06:24:43.347285+07:00",
+  "generated_at": "2026-07-21T06:26:08.788686+07:00",
   "state_schema_version": "v10.1-long-harvest-two-streams",
   "dispatch_next": true,
   "pending_count": 3,
@@ -8,11 +8,11 @@
   "total_match_count": 3,
   "total_stream_count": 3,
   "progress_count": 0,
-  "chain_runs": 25,
-  "no_progress_runs": 25,
+  "chain_runs": 26,
+  "no_progress_runs": 26,
   "stop_reason": "",
   "rate_limited": true,
-  "rate_limit_url": "https://socolivep.cv/truc-tiep/patronato-parana-vs-atletico-atlanta-21-07-2026-0600?blv=372746",
+  "rate_limit_url": "https://socolivep.cv/truc-tiep/quilmes-vs-gimnasia-jujuy-21-07-2026-0600?blv=552716",
   "count": 3,
   "matches": [
     {
@@ -93,7 +93,7 @@
             "blv": "RÔSI",
             "blv_id": "139384",
             "status": "rate_limited",
-            "attempts": 134,
+            "attempts": 135,
             "rate_limit_hits": 72,
             "last_http_status": 200,
             "last_stream_count": 1,
@@ -135,7 +135,7 @@
           "blv": "RÔSI",
           "blv_id": "139384",
           "status": "rate_limited",
-          "attempts": 134,
+          "attempts": 135,
           "rate_limit_hits": 72,
           "last_http_status": 200,
           "last_stream_count": 1,
@@ -251,11 +251,11 @@
             "blv": "YONE",
             "blv_id": "372746",
             "status": "rate_limited",
-            "attempts": 147,
+            "attempts": 149,
             "rate_limit_hits": 67,
-            "last_http_status": 429,
-            "last_stream_count": 0,
-            "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
+            "last_http_status": 200,
+            "last_stream_count": 1,
+            "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
           },
           "304148": {
             "key": "304148",
@@ -293,11 +293,11 @@
           "blv": "YONE",
           "blv_id": "372746",
           "status": "rate_limited",
-          "attempts": 147,
+          "attempts": 149,
           "rate_limit_hits": 67,
-          "last_http_status": 429,
-          "last_stream_count": 0,
-          "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
+          "last_http_status": 200,
+          "last_stream_count": 1,
+          "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
         },
         "304148": {
           "key": "304148",
@@ -409,8 +409,8 @@
             "blv": "VOI",
             "blv_id": "552716",
             "status": "rate_limited",
-            "attempts": 171,
-            "rate_limit_hits": 77,
+            "attempts": 172,
+            "rate_limit_hits": 78,
             "last_http_status": 429,
             "last_stream_count": 0,
             "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
@@ -451,8 +451,8 @@
           "blv": "VOI",
           "blv_id": "552716",
           "status": "rate_limited",
-          "attempts": 171,
-          "rate_limit_hits": 77,
+          "attempts": 172,
+          "rate_limit_hits": 78,
           "last_http_status": 429,
           "last_stream_count": 0,
           "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
