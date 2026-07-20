@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-07-21T01:54:37.288494+07:00",
+  "generated_at": "2026-07-21T01:55:55.321194+07:00",
   "state_schema_version": "v10.1-long-harvest-two-streams",
   "dispatch_next": true,
   "pending_count": 5,
-  "completed_count": 4,
+  "completed_count": 5,
   "coverage_complete_count": 0,
   "total_match_count": 5,
-  "total_stream_count": 4,
-  "progress_count": 0,
-  "chain_runs": 20,
-  "no_progress_runs": 16,
+  "total_stream_count": 5,
+  "progress_count": 1,
+  "chain_runs": 21,
+  "no_progress_runs": 0,
   "stop_reason": "",
   "rate_limited": true,
-  "rate_limit_url": "https://socolivep.cv/truc-tiep/keflavik-vs-akranes-21-07-2026-0215?blv=610518",
+  "rate_limit_url": "https://socolivep.cv/truc-tiep/fc-rapid-1923-vs-sepsi-osk-sfantul-gheorghe-21-07-2026-0130?blv=235232",
   "count": 5,
   "matches": [
     {
@@ -117,7 +117,7 @@
             "blv": "RYO",
             "blv_id": "602019",
             "status": "rate_limited",
-            "attempts": 17,
+            "attempts": 18,
             "rate_limit_hits": 5,
             "last_http_status": 200,
             "last_stream_count": 1,
@@ -183,7 +183,7 @@
           "blv": "RYO",
           "blv_id": "602019",
           "status": "rate_limited",
-          "attempts": 17,
+          "attempts": 18,
           "rate_limit_hits": 5,
           "last_http_status": 200,
           "last_stream_count": 1,
@@ -339,7 +339,7 @@
             "blv": "KENCHU",
             "blv_id": "622602",
             "status": "rate_limited",
-            "attempts": 17,
+            "attempts": 18,
             "rate_limit_hits": 5,
             "last_http_status": 200,
             "last_stream_count": 1,
@@ -393,7 +393,7 @@
           "blv": "KENCHU",
           "blv_id": "622602",
           "status": "rate_limited",
-          "attempts": 17,
+          "attempts": 18,
           "rate_limit_hits": 5,
           "last_http_status": 200,
           "last_stream_count": 1,
@@ -466,6 +466,21 @@
           "blv_id": "603914"
         },
         {
+          "url": "https://socolivep.cv/truc-tiep/keflavik-vs-akranes-21-07-2026-0215/?blv=610518",
+          "blv": "XUÂN TÓC ĐỎ",
+          "blv_id": "610518"
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/keflavik-vs-akranes-21-07-2026-0215/?blv=618546",
+          "blv": "SEVEN",
+          "blv_id": "618546"
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/keflavik-vs-akranes-21-07-2026-0215/?blv=603914",
+          "blv": "TRÀ ĐÁ",
+          "blv_id": "603914"
+        },
+        {
           "url": "https://socolivep.cv/truc-tiep/keflavik-vs-akranes-21-07-2026-0215",
           "blv": "XEM NGAY",
           "blv_id": ""
@@ -476,17 +491,39 @@
           "blv_id": ""
         }
       ],
-      "streams": [],
+      "streams": [
+        {
+          "url": "https://pull.niur.live/live/stream-610518_lhd.m3u8?txSecret=94b79ed6e0ff5f0c39482123776dd380&txTime=6a5d5c6f",
+          "queue_room_key": "610518",
+          "room_url": "https://socolivep.cv/truc-tiep/keflavik-vs-akranes-21-07-2026-0215/?blv=610518",
+          "blv": "XUÂN TÓC ĐỎ",
+          "blv_id": "610518",
+          "source_id": "610518",
+          "source_provenance": [
+            "final-no-stream-scan",
+            "harvest-final"
+          ],
+          "source_confidence": "embedded",
+          "mapping_mode": "exact-room-id",
+          "discovered_from_room_url": "https://socolivep.cv/truc-tiep/keflavik-vs-akranes-21-07-2026-0215?blv=610518",
+          "discovered_from_blv": "XUÂN TÓC ĐỎ"
+        }
+      ],
       "coverage": {
-        "found_streams": 0,
-        "found_blv_ids": [],
+        "found_streams": 1,
+        "found_blv_ids": [
+          "610518"
+        ],
         "goal": 6,
         "source_goal_reached": false,
         "room_queue_complete": false,
         "complete": false,
         "max_streams_per_blv": 2,
-        "total_explicit_blv_rooms": 3,
+        "total_explicit_blv_rooms": 6,
         "pending_room_keys": [
+          "610518",
+          "618546",
+          "603914",
           "610518",
           "618546",
           "603914"
@@ -494,19 +531,19 @@
         "room_progress": {
           "610518": {
             "key": "610518",
-            "url": "https://socolivep.cv/truc-tiep/keflavik-vs-akranes-21-07-2026-0215?blv=610518",
+            "url": "https://socolivep.cv/truc-tiep/keflavik-vs-akranes-21-07-2026-0215/?blv=610518",
             "blv": "XUÂN TÓC ĐỎ",
             "blv_id": "610518",
             "status": "rate_limited",
-            "attempts": 0,
+            "attempts": 1,
             "rate_limit_hits": 2,
-            "last_http_status": 429,
-            "last_stream_count": 0,
-            "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
+            "last_http_status": 200,
+            "last_stream_count": 1,
+            "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
           },
           "618546": {
             "key": "618546",
-            "url": "https://socolivep.cv/truc-tiep/keflavik-vs-akranes-21-07-2026-0215?blv=618546",
+            "url": "https://socolivep.cv/truc-tiep/keflavik-vs-akranes-21-07-2026-0215/?blv=618546",
             "blv": "SEVEN",
             "blv_id": "618546",
             "status": "pending",
@@ -518,7 +555,7 @@
           },
           "603914": {
             "key": "603914",
-            "url": "https://socolivep.cv/truc-tiep/keflavik-vs-akranes-21-07-2026-0215?blv=603914",
+            "url": "https://socolivep.cv/truc-tiep/keflavik-vs-akranes-21-07-2026-0215/?blv=603914",
             "blv": "TRÀ ĐÁ",
             "blv_id": "603914",
             "status": "pending",
@@ -542,23 +579,25 @@
           }
         }
       },
-      "attempted_room_ids": [],
+      "attempted_room_ids": [
+        "610518"
+      ],
       "room_progress": {
         "610518": {
           "key": "610518",
-          "url": "https://socolivep.cv/truc-tiep/keflavik-vs-akranes-21-07-2026-0215?blv=610518",
+          "url": "https://socolivep.cv/truc-tiep/keflavik-vs-akranes-21-07-2026-0215/?blv=610518",
           "blv": "XUÂN TÓC ĐỎ",
           "blv_id": "610518",
           "status": "rate_limited",
-          "attempts": 0,
+          "attempts": 1,
           "rate_limit_hits": 2,
-          "last_http_status": 429,
-          "last_stream_count": 0,
-          "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
+          "last_http_status": 200,
+          "last_stream_count": 1,
+          "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
         },
         "618546": {
           "key": "618546",
-          "url": "https://socolivep.cv/truc-tiep/keflavik-vs-akranes-21-07-2026-0215?blv=618546",
+          "url": "https://socolivep.cv/truc-tiep/keflavik-vs-akranes-21-07-2026-0215/?blv=618546",
           "blv": "SEVEN",
           "blv_id": "618546",
           "status": "pending",
@@ -570,7 +609,7 @@
         },
         "603914": {
           "key": "603914",
-          "url": "https://socolivep.cv/truc-tiep/keflavik-vs-akranes-21-07-2026-0215?blv=603914",
+          "url": "https://socolivep.cv/truc-tiep/keflavik-vs-akranes-21-07-2026-0215/?blv=603914",
           "blv": "TRÀ ĐÁ",
           "blv_id": "603914",
           "status": "pending",
@@ -594,6 +633,9 @@
         }
       },
       "pending_room_keys": [
+        "610518",
+        "618546",
+        "603914",
         "610518",
         "618546",
         "603914"
@@ -701,11 +743,11 @@
             "blv": "A PÁO",
             "blv_id": "235232",
             "status": "rate_limited",
-            "attempts": 47,
-            "rate_limit_hits": 15,
-            "last_http_status": 200,
-            "last_stream_count": 1,
-            "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
+            "attempts": 48,
+            "rate_limit_hits": 16,
+            "last_http_status": 429,
+            "last_stream_count": 0,
+            "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
           },
           "617313": {
             "key": "617313",
@@ -767,11 +809,11 @@
           "blv": "A PÁO",
           "blv_id": "235232",
           "status": "rate_limited",
-          "attempts": 47,
-          "rate_limit_hits": 15,
-          "last_http_status": 200,
-          "last_stream_count": 1,
-          "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
+          "attempts": 48,
+          "rate_limit_hits": 16,
+          "last_http_status": 429,
+          "last_stream_count": 0,
+          "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
         },
         "617313": {
           "key": "617313",
