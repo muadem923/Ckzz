@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-07-21T00:17:06.772251+07:00",
+  "generated_at": "2026-07-21T00:18:06.114226+07:00",
   "state_schema_version": "v10-per-blv-queue",
   "dispatch_next": true,
   "pending_count": 16,
-  "completed_count": 3,
+  "completed_count": 4,
   "coverage_complete_count": 0,
   "total_match_count": 16,
-  "total_stream_count": 3,
-  "progress_count": 0,
-  "chain_runs": 2,
-  "no_progress_runs": 1,
+  "total_stream_count": 4,
+  "progress_count": 1,
+  "chain_runs": 3,
+  "no_progress_runs": 0,
   "stop_reason": "",
   "rate_limited": true,
-  "rate_limit_url": "https://socolivep.cv/truc-tiep/kalmar-vs-malmo-ff-21-07-2026-0000?blv=534055",
+  "rate_limit_url": "https://socolivep.cv/truc-tiep/rotor-volgograd-vs-ska-khabarovsk-20-07-2026-2330?blv=622093",
   "target_base_urls": [
     "https://socolivep.cv/truc-tiep/botev-plovdiv-vs-lokomotiv-sofia-21-07-2026-0130/",
     "https://socolivep.cv/truc-tiep/corvinul-hunedoara-vs-fk-csikszereda-miercurea-ciuc-20-07-2026-2230/",
@@ -93,6 +93,36 @@
           "blv_id": "599634"
         },
         {
+          "url": "https://socolivep.cv/truc-tiep/kalmar-vs-malmo-ff-21-07-2026-0000/?blv=534055",
+          "blv": "RAMBO",
+          "blv_id": "534055"
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/kalmar-vs-malmo-ff-21-07-2026-0000/?blv=387694",
+          "blv": "CR Bưởi",
+          "blv_id": "387694"
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/kalmar-vs-malmo-ff-21-07-2026-0000/?blv=527384",
+          "blv": "LÃO LÂM",
+          "blv_id": "527384"
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/kalmar-vs-malmo-ff-21-07-2026-0000/?blv=532081",
+          "blv": "ALEX",
+          "blv_id": "532081"
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/kalmar-vs-malmo-ff-21-07-2026-0000/?blv=327159",
+          "blv": "COCA",
+          "blv_id": "327159"
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/kalmar-vs-malmo-ff-21-07-2026-0000/?blv=599634",
+          "blv": "HẢI THANH",
+          "blv_id": "599634"
+        },
+        {
           "url": "https://socolivep.cv/truc-tiep/kalmar-vs-malmo-ff-21-07-2026-0000",
           "blv": "XEM NGAY",
           "blv_id": ""
@@ -105,7 +135,27 @@
       ],
       "match_name": "Kalmar vs Malmo FF",
       "scheduled_at": "2026-07-21T00:00:00+07:00",
-      "streams": [],
+      "streams": [
+        {
+          "url": "https://pull.niur.live/live/stream-534055_lhd.m3u8?txSecret=fb93985850fb7e707f0237258b680b38&txTime=6a5ea6c7",
+          "room_url": "https://socolivep.cv/truc-tiep/kalmar-vs-malmo-ff-21-07-2026-0000/?blv=534055",
+          "blv": "RAMBO",
+          "blv_id": "534055",
+          "source_id": "534055",
+          "source_provenance": [
+            "cdp/request",
+            "cdp/response",
+            "embedded/frame-html",
+            "request/image",
+            "request/xhr",
+            "response/200"
+          ],
+          "source_confidence": "network",
+          "mapping_mode": "exact-room-id",
+          "discovered_from_room_url": "https://socolivep.cv/truc-tiep/kalmar-vs-malmo-ff-21-07-2026-0000?blv=534055",
+          "discovered_from_blv": "RAMBO"
+        }
+      ],
       "room_results": [
         {
           "url": "https://socolivep.cv/truc-tiep/kalmar-vs-malmo-ff-21-07-2026-0000?blv=534055",
@@ -210,18 +260,168 @@
             "429 https://socolivep.cv/truc-tiep/kalmar-vs-malmo-ff-21-07-2026-0000?blv=534055",
             "401 https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/pat/a1e39de49b53acac/1784567819333/0ace9979bbd01da54c413b5ca9f020e4774fc2bfda778d3c2f2a60a5c42ea72c/3bxxn2jgxjMRImQ"
           ]
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/kalmar-vs-malmo-ff-21-07-2026-0000?blv=534055",
+          "blv": "RAMBO",
+          "blv_id": "534055",
+          "streams": [
+            "https://pull.niur.live/live/stream-534055_lhd.m3u8?txSecret=fb93985850fb7e707f0237258b680b38&txTime=6a5ea6c7"
+          ],
+          "stream_sources": {
+            "https://pull.niur.live/live/stream-534055_lhd.m3u8?txSecret=fb93985850fb7e707f0237258b680b38&txTime=6a5ea6c7": [
+              "cdp/request",
+              "cdp/response",
+              "embedded/frame-html",
+              "request/image",
+              "request/xhr",
+              "response/200"
+            ]
+          },
+          "stream_first_seen": [
+            "https://pull.niur.live/live/stream-534055_lhd.m3u8?txSecret=fb93985850fb7e707f0237258b680b38&txTime=6a5ea6c7"
+          ],
+          "discovered_blv_ids": [
+            "534055"
+          ],
+          "diagnostics": {
+            "url": "https://socolivep.cv/truc-tiep/kalmar-vs-malmo-ff-21-07-2026-0000/?blv=534055",
+            "title": "Xem trực tiếp bóng đá Kalmar vs Malmo FF | 00:00 ngày 21/07/2026",
+            "h1": "Trực tiếp bóng đá Socolive Kalmar vs Malmo FF lúc 00:00 ngày 21/07/2026",
+            "ready_state": "complete",
+            "visibility_state": "visible",
+            "hidden": false,
+            "video_count": 1,
+            "iframe_count": 0,
+            "body_sample": "Skip to content Socolive Bảng xếp hạng Lịch thi đấu Kết quả bóng đá Tin thể thao Trực tiếp bóng đá Socolive Kalmar vs Malmo FF lúc 00:00 ngày 21/07/2026 SWE D1 Kalmar 00:00 21/07 Malmo FF 00:00 of 00:00Volume 10% Phát TRỰC TIẾP Tải App Bufa RAMBO CR Bưởi LÃO LÂM ALEX COCA HẢI THANH Chat Thống kê Đội hình Diễn Biến Bảng XH \" \" anhcuong955: hế lô con vợ anhcuong955: chén home Admin Sóc Săn Góc: 🍀 KM NẠP LẦN 1&2 LÊN ĐẾN 1TR8 CHỈ VỚI 1 VÒNG CƯỢC LÀ RÚT TIỀN 😘 ⚽️Link đăng ký:https://www.bty9296.com - 📞 Liên hệ ngay để được hỗ trợ:➡️ Zalo: 0995 852 307👉 𝗧𝗲𝗹𝗲𝗴𝗿𝗮𝗺: https://t.me/sangocbtyVào nhóm : https://bio.site/sangoc6136 Giao lưu, kết bạn cùng BLV và ae bet thủ, hỗ trợ 24/7❤️ Admin Sóc Săn Góc: ❤️ NẠP LẦN ĐẦU 100K NHẬN 180K ❤️❤️ NẠP LẦN ĐẦU 15.000K NHẬN 16.500K ❤️ Admin Sóc Săn Góc: ❤️ KM PHƠI ĐƠN CƯỢC 98K/NGÀY ❤️❤️ DOANH THU TUẦN 1350K ❤️❤️ DOANH THU THÁNG 3000 ❤️ Admin Sóc Săn Góc: ❤️KM ĐIỂM DANH HÀNG NGÀY LÊN TỚI 2TR200K❤️ Admin Sóc Săn Góc: ❤️KM GIỚI THIỆU BẠN BÈ LÊN TỚI 600K❤️ anhcuong955: a big rồi chờ về anhcuong955: khấn đi nhé kk Kua PQ: chao rambo anhcuong955: 1-0 2-1 Admin Sóc Săn Góc: 🍀 KM NẠP LẦN 1&2 LÊN ĐẾN 1TR8 CHỈ VỚI 1 VÒNG CƯỢC LÀ RÚT TIỀN 😘 ⚽️Link đăng ",
+            "main_status": 200,
+            "harvested_stream_count": 1,
+            "harvested_blv_ids": [
+              "534055"
+            ],
+            "scan_mode": "browser-event",
+            "elapsed_seconds": 4.286
+          },
+          "http_probe": {
+            "enabled": false,
+            "status": null,
+            "elapsed_seconds": 0.0,
+            "error": ""
+          },
+          "errors": [
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED"
+          ],
+          "failed_requests": [
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/main.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/customize.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/auth.css?ver=533 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat.css?ver=162 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat(1).css?ver=790 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/toast.css?ver=656 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/themes/flatsome/assets/css/flatsome.css?ver=3.18.2 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/themes/flatsome-child/style.css?ver=3.0 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/countdown.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/match.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/livescore.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/style_custom.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/effect/running-border.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/option/option-6.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/highlight/option-1.css?ver=2.8.5 | net::ERR_FAILED"
+          ],
+          "http_errors": [
+            "403 https://socolivep.cv/wp-admin/admin-ajax.php?action=scl_realtime&sport=1"
+          ]
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/kalmar-vs-malmo-ff-21-07-2026-0000?blv=534055",
+          "blv": "RAMBO",
+          "blv_id": "534055",
+          "streams": [],
+          "stream_sources": {},
+          "stream_first_seen": [],
+          "discovered_blv_ids": [],
+          "diagnostics": {
+            "url": "https://socolivep.cv/truc-tiep/kalmar-vs-malmo-ff-21-07-2026-0000?blv=534055",
+            "title": "Chờ một chút...",
+            "h1": "socolivep.cv",
+            "ready_state": "complete",
+            "visibility_state": "visible",
+            "hidden": false,
+            "video_count": 0,
+            "iframe_count": 0,
+            "body_sample": "socolivep.cv Thực hiện xác minh bảo mật Trang web này sử dụng dịch vụ bảo mật để chống bot độc hại. Trang này hiển thị trong khi trang web xác minh bạn không phải là bot. Ray ID: a1e39f531a8b2f11 Hiệu suất và Tính bảo mật của Cloudflare Quyền riêng tư",
+            "main_status": 429,
+            "harvested_stream_count": 0,
+            "harvested_blv_ids": [],
+            "scan_mode": "browser-event",
+            "elapsed_seconds": 8.528
+          },
+          "http_probe": {
+            "enabled": false,
+            "status": null,
+            "elapsed_seconds": 0.0,
+            "error": ""
+          },
+          "errors": [
+            "console/error: Failed to load resource: the server responded with a status of 429 ()",
+            "console/warning: No available adapters.",
+            "console/warning: No available adapters.",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/warning: OTS parsing error: Size of decompressed WOFF 2.0 is less than compressed size",
+            "console/error: %c%d font-size:0;color:transparent NaN",
+            "console/error: %c%d font-size:0;color:transparent NaN",
+            "console/warning: %c%d font-size:0;color:transparent NaN",
+            "console/warning: %c%d font-size:0;color:transparent NaN"
+          ],
+          "failed_requests": [
+            "fetch https://brunhild.challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/i/a1e39f574b88f514/xmfQ4pg7K8DOz4uOUecGhnXR7FJDldoRgXPAkEv9zBc-1784567878-1.2.1.1-hZZmJ71Qm3VjUrcwwGXz2mSSJGNxYUij_KV1P2wwaLOc2foOhuBVBVgPayJzHoVc | net::ERR_NAME_NOT_RESOLVED",
+            "image https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/ci/a1e39f574b88f514/1784567878668/XPuzfmcdnZ-SDia | net::ERR_FAILED"
+          ],
+          "http_errors": [
+            "429 https://socolivep.cv/truc-tiep/kalmar-vs-malmo-ff-21-07-2026-0000?blv=534055",
+            "401 https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/pat/a1e39f574b88f514/1784567878668/01224fd5bacc75ccff8f02155277f0b05b17a10b8089de86bf39e99c520b6491/IUa8KFCUjijHEPB"
+          ]
         }
       ],
-      "attempted_room_ids": [],
+      "attempted_room_ids": [
+        "534055"
+      ],
       "coverage": {
-        "found_streams": 0,
-        "found_blv_ids": [],
+        "found_streams": 1,
+        "found_blv_ids": [
+          "534055"
+        ],
         "goal": 6,
         "source_goal_reached": false,
         "room_queue_complete": false,
         "complete": false,
-        "total_explicit_blv_rooms": 6,
+        "total_explicit_blv_rooms": 12,
         "pending_room_keys": [
+          "534055",
+          "387694",
+          "527384",
+          "532081",
+          "327159",
+          "599634",
           "534055",
           "387694",
           "527384",
@@ -232,19 +432,19 @@
         "room_progress": {
           "534055": {
             "key": "534055",
-            "url": "https://socolivep.cv/truc-tiep/kalmar-vs-malmo-ff-21-07-2026-0000?blv=534055",
+            "url": "https://socolivep.cv/truc-tiep/kalmar-vs-malmo-ff-21-07-2026-0000/?blv=534055",
             "blv": "RAMBO",
             "blv_id": "534055",
             "status": "rate_limited",
-            "attempts": 0,
-            "rate_limit_hits": 2,
+            "attempts": 1,
+            "rate_limit_hits": 3,
             "last_http_status": 429,
             "last_stream_count": 0,
             "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
           },
           "387694": {
             "key": "387694",
-            "url": "https://socolivep.cv/truc-tiep/kalmar-vs-malmo-ff-21-07-2026-0000?blv=387694",
+            "url": "https://socolivep.cv/truc-tiep/kalmar-vs-malmo-ff-21-07-2026-0000/?blv=387694",
             "blv": "CR Bưởi",
             "blv_id": "387694",
             "status": "pending",
@@ -256,7 +456,7 @@
           },
           "527384": {
             "key": "527384",
-            "url": "https://socolivep.cv/truc-tiep/kalmar-vs-malmo-ff-21-07-2026-0000?blv=527384",
+            "url": "https://socolivep.cv/truc-tiep/kalmar-vs-malmo-ff-21-07-2026-0000/?blv=527384",
             "blv": "LÃO LÂM",
             "blv_id": "527384",
             "status": "pending",
@@ -268,7 +468,7 @@
           },
           "532081": {
             "key": "532081",
-            "url": "https://socolivep.cv/truc-tiep/kalmar-vs-malmo-ff-21-07-2026-0000?blv=532081",
+            "url": "https://socolivep.cv/truc-tiep/kalmar-vs-malmo-ff-21-07-2026-0000/?blv=532081",
             "blv": "ALEX",
             "blv_id": "532081",
             "status": "pending",
@@ -280,7 +480,7 @@
           },
           "327159": {
             "key": "327159",
-            "url": "https://socolivep.cv/truc-tiep/kalmar-vs-malmo-ff-21-07-2026-0000?blv=327159",
+            "url": "https://socolivep.cv/truc-tiep/kalmar-vs-malmo-ff-21-07-2026-0000/?blv=327159",
             "blv": "COCA",
             "blv_id": "327159",
             "status": "pending",
@@ -292,7 +492,7 @@
           },
           "599634": {
             "key": "599634",
-            "url": "https://socolivep.cv/truc-tiep/kalmar-vs-malmo-ff-21-07-2026-0000?blv=599634",
+            "url": "https://socolivep.cv/truc-tiep/kalmar-vs-malmo-ff-21-07-2026-0000/?blv=599634",
             "blv": "HẢI THANH",
             "blv_id": "599634",
             "status": "pending",
@@ -320,19 +520,19 @@
       "room_progress": {
         "534055": {
           "key": "534055",
-          "url": "https://socolivep.cv/truc-tiep/kalmar-vs-malmo-ff-21-07-2026-0000?blv=534055",
+          "url": "https://socolivep.cv/truc-tiep/kalmar-vs-malmo-ff-21-07-2026-0000/?blv=534055",
           "blv": "RAMBO",
           "blv_id": "534055",
           "status": "rate_limited",
-          "attempts": 0,
-          "rate_limit_hits": 2,
+          "attempts": 1,
+          "rate_limit_hits": 3,
           "last_http_status": 429,
           "last_stream_count": 0,
           "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
         },
         "387694": {
           "key": "387694",
-          "url": "https://socolivep.cv/truc-tiep/kalmar-vs-malmo-ff-21-07-2026-0000?blv=387694",
+          "url": "https://socolivep.cv/truc-tiep/kalmar-vs-malmo-ff-21-07-2026-0000/?blv=387694",
           "blv": "CR Bưởi",
           "blv_id": "387694",
           "status": "pending",
@@ -344,7 +544,7 @@
         },
         "527384": {
           "key": "527384",
-          "url": "https://socolivep.cv/truc-tiep/kalmar-vs-malmo-ff-21-07-2026-0000?blv=527384",
+          "url": "https://socolivep.cv/truc-tiep/kalmar-vs-malmo-ff-21-07-2026-0000/?blv=527384",
           "blv": "LÃO LÂM",
           "blv_id": "527384",
           "status": "pending",
@@ -356,7 +556,7 @@
         },
         "532081": {
           "key": "532081",
-          "url": "https://socolivep.cv/truc-tiep/kalmar-vs-malmo-ff-21-07-2026-0000?blv=532081",
+          "url": "https://socolivep.cv/truc-tiep/kalmar-vs-malmo-ff-21-07-2026-0000/?blv=532081",
           "blv": "ALEX",
           "blv_id": "532081",
           "status": "pending",
@@ -368,7 +568,7 @@
         },
         "327159": {
           "key": "327159",
-          "url": "https://socolivep.cv/truc-tiep/kalmar-vs-malmo-ff-21-07-2026-0000?blv=327159",
+          "url": "https://socolivep.cv/truc-tiep/kalmar-vs-malmo-ff-21-07-2026-0000/?blv=327159",
           "blv": "COCA",
           "blv_id": "327159",
           "status": "pending",
@@ -380,7 +580,7 @@
         },
         "599634": {
           "key": "599634",
-          "url": "https://socolivep.cv/truc-tiep/kalmar-vs-malmo-ff-21-07-2026-0000?blv=599634",
+          "url": "https://socolivep.cv/truc-tiep/kalmar-vs-malmo-ff-21-07-2026-0000/?blv=599634",
           "blv": "HẢI THANH",
           "blv_id": "599634",
           "status": "pending",
@@ -688,6 +888,148 @@
           "http_errors": [
             "403 https://socolivep.cv/wp-admin/admin-ajax.php?action=scl_realtime&sport=1"
           ]
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/orgryte-vs-djurgardens-21-07-2026-0000?blv=273736",
+          "blv": "CHÍ PHÈO",
+          "blv_id": "273736",
+          "streams": [
+            "https://pull.niues.live/live/stream-273736_lhd.m3u8?auth_key=1784555672-0-0-5a18bd5834e3e4378caa929bc7b797c2"
+          ],
+          "stream_sources": {
+            "https://pull.niues.live/live/stream-273736_lhd.m3u8?auth_key=1784555672-0-0-5a18bd5834e3e4378caa929bc7b797c2": [
+              "cdp/request",
+              "cdp/response",
+              "embedded/frame-html",
+              "request/image",
+              "request/xhr",
+              "response/200"
+            ]
+          },
+          "stream_first_seen": [
+            "https://pull.niues.live/live/stream-273736_lhd.m3u8?auth_key=1784555672-0-0-5a18bd5834e3e4378caa929bc7b797c2"
+          ],
+          "discovered_blv_ids": [
+            "273736"
+          ],
+          "diagnostics": {
+            "url": "https://socolivep.cv/truc-tiep/orgryte-vs-djurgardens-21-07-2026-0000/?blv=273736",
+            "title": "Xem trực tiếp bóng đá Orgryte vs Djurgardens | 00:00 ngày 21/07/2026",
+            "h1": "Trực tiếp bóng đá Socolive Orgryte vs Djurgardens lúc 00:00 ngày 21/07/2026",
+            "ready_state": "complete",
+            "visibility_state": "visible",
+            "hidden": false,
+            "video_count": 1,
+            "iframe_count": 0,
+            "body_sample": "Skip to content Socolive Bảng xếp hạng Lịch thi đấu Kết quả bóng đá Tin thể thao Trực tiếp bóng đá Socolive Orgryte vs Djurgardens lúc 00:00 ngày 21/07/2026 SWE D1 Orgryte 00:00 21/07 Djurgardens Volume 0% Phát 00:00 00:00 Tải App Bufa CHÍ PHÈO CÁP ROBBEN VIP Củ Cải CÒ Chat Thống kê Đội hình Diễn Biến Bảng XH \" \" Admin Sóc Xanh: ⚽️NẠP 100k TẶNG 80K -NẠP 1TR TẶNG 120K -NẠP 15TR TẶNG 1TR5 CHỈ 1 Vòng cược -Bsport :https://www.BTY9296.com -✈️ TELE :https://t.me/socxanh123 ⚽️BUFA : J7UBKR + ☎️Facebook : http://fb.com/61590739693659 ☎️Zalo :0588 220 609 Admin Sóc Xanh: Hệ sinh thái Trang cược chuyên nghiệp -Liên hệ ❤️ Facebook : http://fb.com/61590739693659 + 🆘 TELE : @socxanh123 ⚽️ZALO : 0588 220 609 Admin Sóc Xanh: a sửa thông itn giúp em nhé Admin Sóc Xanh: trận này mã kết nào ko anh ch í phuonghan599: chậm quá 1p luôn phuonghan599: có link nào nhanh hơn k phèo Tin nhắn riêng Vô hiệu hóa tất cả Vô hiệu hóa quà tặng Tắt lời chào Đăng nhập để cùng chat nhé Gửi Tỷ lệ kèo Cược Châu Á Chủ Chấp Khách Cược Châu Âu Chủ Hòa Khách Tài xỉu Tài Tỷ lệ kèo Xỉu Kèo góc Tài Tỷ lệ kèo Xỉu Mô phỏng trận đấu Thống kê trận đấu SWE D1 00:00 21/07 Kalmar VS null null null - null Sắp diễn ra Xem ngay Malmo",
+            "main_status": 200,
+            "harvested_stream_count": 1,
+            "harvested_blv_ids": [
+              "273736"
+            ],
+            "scan_mode": "browser-event",
+            "elapsed_seconds": 4.241
+          },
+          "http_probe": {
+            "enabled": false,
+            "status": null,
+            "elapsed_seconds": 0.0,
+            "error": ""
+          },
+          "errors": [
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED"
+          ],
+          "failed_requests": [
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/main.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/customize.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/auth.css?ver=468 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat.css?ver=453 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat(1).css?ver=625 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/toast.css?ver=865 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/themes/flatsome/assets/css/flatsome.css?ver=3.18.2 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/themes/flatsome-child/style.css?ver=3.0 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/countdown.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/match.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/livescore.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/style_custom.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/effect/running-border.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/option/option-6.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/highlight/option-1.css?ver=2.8.5 | net::ERR_FAILED"
+          ],
+          "http_errors": [
+            "403 https://socolivep.cv/wp-admin/admin-ajax.php?action=scl_realtime&sport=1"
+          ]
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/orgryte-vs-djurgardens-21-07-2026-0000?blv=273736",
+          "blv": "CHÍ PHÈO",
+          "blv_id": "273736",
+          "streams": [],
+          "stream_sources": {},
+          "stream_first_seen": [],
+          "discovered_blv_ids": [],
+          "diagnostics": {
+            "url": "https://socolivep.cv/truc-tiep/orgryte-vs-djurgardens-21-07-2026-0000?blv=273736",
+            "title": "Chờ một chút...",
+            "h1": "socolivep.cv",
+            "ready_state": "complete",
+            "visibility_state": "visible",
+            "hidden": false,
+            "video_count": 0,
+            "iframe_count": 0,
+            "body_sample": "socolivep.cv Thực hiện xác minh bảo mật Trang web này sử dụng dịch vụ bảo mật để chống bot độc hại. Trang này hiển thị trong khi trang web xác minh bạn không phải là bot. Ray ID: a1e39f52da472f11 Hiệu suất và Tính bảo mật của Cloudflare Quyền riêng tư",
+            "main_status": 429,
+            "harvested_stream_count": 0,
+            "harvested_blv_ids": [],
+            "scan_mode": "browser-event",
+            "elapsed_seconds": 8.508
+          },
+          "http_probe": {
+            "enabled": false,
+            "status": null,
+            "elapsed_seconds": 0.0,
+            "error": ""
+          },
+          "errors": [
+            "console/error: Failed to load resource: the server responded with a status of 429 ()",
+            "console/warning: No available adapters.",
+            "console/warning: No available adapters.",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/warning: OTS parsing error: Size of decompressed WOFF 2.0 is less than compressed size",
+            "console/warning: [.WebGL-0x263c02418a00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+            "console/warning: [.WebGL-0x263c02418a00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels (this message will no longer repeat)",
+            "console/error: %c%d font-size:0;color:transparent NaN",
+            "console/error: %c%d font-size:0;color:transparent NaN",
+            "console/warning: %c%d font-size:0;color:transparent NaN",
+            "console/warning: %c%d font-size:0;color:transparent NaN"
+          ],
+          "failed_requests": [
+            "fetch https://brunhild.challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/i/a1e39f56e9a7f514/aoMIcYGobX25Pr5guoJsmckGWNFzH94JbrJeueas04g-1784567878-1.2.1.1-7vqcwVagAWCdWkQgRFmVcLPycovQfcZoiiuzHwgQdL3_Xfv4GpIWZA2LMktrot9d | net::ERR_NAME_NOT_RESOLVED",
+            "image https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/ci/a1e39f56e9a7f514/1784567878638/jBie9QLq_OB-pum | net::ERR_FAILED"
+          ],
+          "http_errors": [
+            "429 https://socolivep.cv/truc-tiep/orgryte-vs-djurgardens-21-07-2026-0000?blv=273736",
+            "401 https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/pat/a1e39f56e9a7f514/1784567878638/feccad1ce5730b33886f13966c63b5b9d5338dd9f4ca1385fa2ced76cc6a70c6/5_OqpR6UjFqRM46"
+          ]
         }
       ],
       "attempted_room_ids": [
@@ -723,12 +1065,12 @@
             "url": "https://socolivep.cv/truc-tiep/orgryte-vs-djurgardens-21-07-2026-0000/?blv=273736",
             "blv": "CHÍ PHÈO",
             "blv_id": "273736",
-            "status": "pending",
-            "attempts": 2,
-            "rate_limit_hits": 0,
-            "last_http_status": 200,
-            "last_stream_count": 1,
-            "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
+            "status": "rate_limited",
+            "attempts": 3,
+            "rate_limit_hits": 1,
+            "last_http_status": 429,
+            "last_stream_count": 0,
+            "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
           },
           "610677": {
             "key": "610677",
@@ -811,12 +1153,12 @@
           "url": "https://socolivep.cv/truc-tiep/orgryte-vs-djurgardens-21-07-2026-0000/?blv=273736",
           "blv": "CHÍ PHÈO",
           "blv_id": "273736",
-          "status": "pending",
-          "attempts": 2,
-          "rate_limit_hits": 0,
-          "last_http_status": 200,
-          "last_stream_count": 1,
-          "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
+          "status": "rate_limited",
+          "attempts": 3,
+          "rate_limit_hits": 1,
+          "last_http_status": 429,
+          "last_stream_count": 0,
+          "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
         },
         "610677": {
           "key": "610677",
@@ -1136,6 +1478,148 @@
           "http_errors": [
             "403 https://socolivep.cv/wp-admin/admin-ajax.php?action=scl_realtime&sport=1"
           ]
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/norrby-if-vs-gif-sundsvall-21-07-2026-0000?blv=620084",
+          "blv": "PEANUT",
+          "blv_id": "620084",
+          "streams": [
+            "https://pull.niues.live/live/stream-620084_lhd.m3u8?auth_key=1784555647-0-0-668af1d5f7faf336e3c8125ed4b9d96a"
+          ],
+          "stream_sources": {
+            "https://pull.niues.live/live/stream-620084_lhd.m3u8?auth_key=1784555647-0-0-668af1d5f7faf336e3c8125ed4b9d96a": [
+              "cdp/request",
+              "cdp/response",
+              "embedded/frame-html",
+              "request/image",
+              "request/xhr",
+              "response/200"
+            ]
+          },
+          "stream_first_seen": [
+            "https://pull.niues.live/live/stream-620084_lhd.m3u8?auth_key=1784555647-0-0-668af1d5f7faf336e3c8125ed4b9d96a"
+          ],
+          "discovered_blv_ids": [
+            "620084"
+          ],
+          "diagnostics": {
+            "url": "https://socolivep.cv/truc-tiep/norrby-if-vs-gif-sundsvall-21-07-2026-0000/?blv=620084",
+            "title": "Xem trực tiếp bóng đá Norrby IF vs GIF Sundsvall | 00:00 ngày 21/07/2026",
+            "h1": "Trực tiếp bóng đá Socolive Norrby IF vs GIF Sundsvall lúc 00:00 ngày 21/07/2026",
+            "ready_state": "complete",
+            "visibility_state": "visible",
+            "hidden": false,
+            "video_count": 1,
+            "iframe_count": 0,
+            "body_sample": "Skip to content Socolive Bảng xếp hạng Lịch thi đấu Kết quả bóng đá Tin thể thao Trực tiếp bóng đá Socolive Norrby IF vs GIF Sundsvall lúc 00:00 ngày 21/07/2026 SWE D2 Norrby IF 00:00 21/07 GIF Sundsvall Volume 0% Phát 00:00 00:00 Tải App Bufa PEANUT TOMMY Chat Thống kê Đội hình Diễn Biến Bảng XH \" \" Admin Sóc Bánh Mì: B- sport https://www.bty9251.com 👑 👑V-sport https://w9.vty28.net TRANG CƯỢC UY TÍN, NHẬN KÈO BÌNH LUẬN VIÊN ❤️ Telegram: https://t.me/socbanhmi338 , LIÊN HỆ MÃ BUFA 4RZWBN 💎 Zalo: 0567 820 040 Admin Sóc Bánh Mì: Đăng ký Vsport và Bsport ✅ Nạp 100 tặng 80✅Nạp 1100 tặng đủ 380k ✅ Hàng ngày khuyến mại 28-98K ✅1 vòng cược rút tiền✅ Admin Sóc Bánh Mì: trận này đi gì a ơi Admin Sóc Bánh Mì: melm bị lỗi á a Admin Sóc Bánh Mì: hè này hết wc chán a nhờ Tin nhắn riêng Vô hiệu hóa tất cả Vô hiệu hóa quà tặng Tắt lời chào Đăng nhập để cùng chat nhé Gửi Tỷ lệ kèo Cược Châu Á Chủ Chấp Khách Cược Châu Âu Chủ Hòa Khách Tài xỉu Tài Tỷ lệ kèo Xỉu Kèo góc Tài Tỷ lệ kèo Xỉu Mô phỏng trận đấu Thống kê trận đấu SWE D1 00:00 21/07 Kalmar VS null null null - null Sắp diễn ra Xem ngay Malmo FF RAMBO CR Bưởi LÃO LÂM ALEX COCA HẢI THANH SWE D1 00:00 21/07 Orgryte VS null null null - null Sắ",
+            "main_status": 200,
+            "harvested_stream_count": 1,
+            "harvested_blv_ids": [
+              "620084"
+            ],
+            "scan_mode": "browser-event",
+            "elapsed_seconds": 4.228
+          },
+          "http_probe": {
+            "enabled": false,
+            "status": null,
+            "elapsed_seconds": 0.0,
+            "error": ""
+          },
+          "errors": [
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED"
+          ],
+          "failed_requests": [
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/main.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/customize.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/auth.css?ver=988 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat.css?ver=830 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat(1).css?ver=169 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/toast.css?ver=991 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/themes/flatsome/assets/css/flatsome.css?ver=3.18.2 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/themes/flatsome-child/style.css?ver=3.0 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/countdown.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/match.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/livescore.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/style_custom.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/effect/running-border.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/option/option-6.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/highlight/option-1.css?ver=2.8.5 | net::ERR_FAILED"
+          ],
+          "http_errors": [
+            "403 https://socolivep.cv/wp-admin/admin-ajax.php?action=scl_realtime&sport=1"
+          ]
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/norrby-if-vs-gif-sundsvall-21-07-2026-0000?blv=620084",
+          "blv": "PEANUT",
+          "blv_id": "620084",
+          "streams": [],
+          "stream_sources": {},
+          "stream_first_seen": [],
+          "discovered_blv_ids": [],
+          "diagnostics": {
+            "url": "https://socolivep.cv/truc-tiep/norrby-if-vs-gif-sundsvall-21-07-2026-0000?blv=620084",
+            "title": "Chờ một chút...",
+            "h1": "socolivep.cv",
+            "ready_state": "complete",
+            "visibility_state": "visible",
+            "hidden": false,
+            "video_count": 0,
+            "iframe_count": 0,
+            "body_sample": "socolivep.cv Thực hiện xác minh bảo mật Trang web này sử dụng dịch vụ bảo mật để chống bot độc hại. Trang này hiển thị trong khi trang web xác minh bạn không phải là bot. Ray ID: a1e39f52ca352f11 Hiệu suất và Tính bảo mật của Cloudflare Quyền riêng tư",
+            "main_status": 429,
+            "harvested_stream_count": 0,
+            "harvested_blv_ids": [],
+            "scan_mode": "browser-event",
+            "elapsed_seconds": 8.584
+          },
+          "http_probe": {
+            "enabled": false,
+            "status": null,
+            "elapsed_seconds": 0.0,
+            "error": ""
+          },
+          "errors": [
+            "console/error: Failed to load resource: the server responded with a status of 429 ()",
+            "console/warning: No available adapters.",
+            "console/warning: No available adapters.",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/warning: [.WebGL-0x263c0175a200]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+            "console/warning: [.WebGL-0x263c0175a200]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+            "console/error: %c%d font-size:0;color:transparent NaN",
+            "console/error: %c%d font-size:0;color:transparent NaN",
+            "console/warning: %c%d font-size:0;color:transparent NaN",
+            "console/warning: %c%d font-size:0;color:transparent NaN",
+            "console/warning: OTS parsing error: Size of decompressed WOFF 2.0 is less than compressed size"
+          ],
+          "failed_requests": [
+            "fetch https://brunhild.challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/i/a1e39f567fd1f514/GLluQGKF0x_ziJjnaefspZI6VX0TaHgNI076kJjk1lM-1784567878-1.2.1.1-eeUo_7SY2c3SN_DJJhYhpT0WfdkGuUCcFjJCyX_54vqfbi9vUgJd4QZBt3OhqBAG | net::ERR_NAME_NOT_RESOLVED",
+            "image https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/ci/a1e39f567fd1f514/1784567878710/PbBgIkPYDt0wDSA | net::ERR_FAILED"
+          ],
+          "http_errors": [
+            "429 https://socolivep.cv/truc-tiep/norrby-if-vs-gif-sundsvall-21-07-2026-0000?blv=620084",
+            "401 https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/pat/a1e39f567fd1f514/1784567878710/1e013d59c436546b8ff744d1aeab78f4887acac7ce21d6f42087402f64f1f2f8/bDlSgVABoChOChu"
+          ]
         }
       ],
       "attempted_room_ids": [
@@ -1163,12 +1647,12 @@
             "url": "https://socolivep.cv/truc-tiep/norrby-if-vs-gif-sundsvall-21-07-2026-0000/?blv=620084",
             "blv": "PEANUT",
             "blv_id": "620084",
-            "status": "pending",
-            "attempts": 2,
-            "rate_limit_hits": 0,
-            "last_http_status": 200,
-            "last_stream_count": 1,
-            "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
+            "status": "rate_limited",
+            "attempts": 3,
+            "rate_limit_hits": 1,
+            "last_http_status": 429,
+            "last_stream_count": 0,
+            "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
           },
           "414317": {
             "key": "414317",
@@ -1203,12 +1687,12 @@
           "url": "https://socolivep.cv/truc-tiep/norrby-if-vs-gif-sundsvall-21-07-2026-0000/?blv=620084",
           "blv": "PEANUT",
           "blv_id": "620084",
-          "status": "pending",
-          "attempts": 2,
-          "rate_limit_hits": 0,
-          "last_http_status": 200,
-          "last_stream_count": 1,
-          "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
+          "status": "rate_limited",
+          "attempts": 3,
+          "rate_limit_hits": 1,
+          "last_http_status": 429,
+          "last_stream_count": 0,
+          "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
         },
         "414317": {
           "key": "414317",
@@ -1480,6 +1964,146 @@
           "http_errors": [
             "403 https://socolivep.cv/wp-admin/admin-ajax.php?action=scl_realtime&sport=1"
           ]
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/rotor-volgograd-vs-ska-khabarovsk-20-07-2026-2330?blv=622093",
+          "blv": "GRAP",
+          "blv_id": "622093",
+          "streams": [
+            "https://pull.niues.live/live/stream-622093_lhd.m3u8?auth_key=1784567755-0-0-980fc5114ae8b4ca6f03f4013b800dad"
+          ],
+          "stream_sources": {
+            "https://pull.niues.live/live/stream-622093_lhd.m3u8?auth_key=1784567755-0-0-980fc5114ae8b4ca6f03f4013b800dad": [
+              "cdp/request",
+              "cdp/response",
+              "embedded/frame-html",
+              "request/image",
+              "request/xhr",
+              "response/200"
+            ]
+          },
+          "stream_first_seen": [
+            "https://pull.niues.live/live/stream-622093_lhd.m3u8?auth_key=1784567755-0-0-980fc5114ae8b4ca6f03f4013b800dad"
+          ],
+          "discovered_blv_ids": [
+            "622093"
+          ],
+          "diagnostics": {
+            "url": "https://socolivep.cv/truc-tiep/rotor-volgograd-vs-ska-khabarovsk-20-07-2026-2330/?blv=622093",
+            "title": "Xem trực tiếp bóng đá Rotor Volgograd vs SKA Khabarovsk | 23:30 ngày 20/07/2026",
+            "h1": "Trực tiếp bóng đá Socolive Rotor Volgograd vs SKA Khabarovsk lúc 23:30 ngày 20/07/2026",
+            "ready_state": "complete",
+            "visibility_state": "visible",
+            "hidden": false,
+            "video_count": 1,
+            "iframe_count": 0,
+            "body_sample": "Skip to content Socolive Bảng xếp hạng Lịch thi đấu Kết quả bóng đá Tin thể thao Trực tiếp bóng đá Socolive Rotor Volgograd vs SKA Khabarovsk lúc 23:30 ngày 20/07/2026 RUS D2 Rotor Volgograd 23:30 20/07 SKA Khabarovsk Volume 0% Phát 00:00 00:00 Tải App Bufa GRAP TUẤN CÙI Chat Thống kê Đội hình Diễn Biến Bảng XH \" \" Húp187: đánh rung vào nhẹ xỉu g kích nổ linhtai: dm nó Húp187: ***mm xà Tiểu Trần: mẹ đen Húp187: lol má xin chết xỉu g kích rung đi Tiểu Trần: nổ đi, đứt vốn rồi mấy con chó NgocLV: vong 1 ah blv Admin Trợ Lý Grap: NHANH TAY ĐĂNG KÍ VÀ TẠO TÀI KHOẢN.NHẬN NGAY KM KHỦNG 1TR800 TẠI ĐƯỜNG LINK https://www.bty6150.com TELE:https://t.me/bty9222,FACEBOOK http://m.me/bunggbinhh. ZALO https://zalo.me/g/yhixen694 atat: gián tiếp như này 80% bàn r atat: này có sút lừa thoi vthinh123: ko góc nữa thì lạy Tiểu Trần: chưa nổ mà tặng quà huuhoo: tiểu trần bọn ngáo mà OkNhưVậyĐi: 0 1 ht 🤣🤣🤣 Tiểu Trần: huuh*** trong khi ngta khi rung tùm lum. đó cũng là 1 dạng spam đấy. OkNhưVậyĐi: 0 1 ht đó rung mạnh tay đi nào 😂😂😂 Bình Luận Viên GRAP: AE nhắn BUFA : E9FPHU .TELE: https://t.me/bty9222, ZALO : 0928.650.649 thanh tâm OkNhưVậyĐi: rung với way cứu phát 0 1 🤣🤣🤣 OkNhưVậyĐi: 0 1 ht đi",
+            "main_status": 200,
+            "harvested_stream_count": 1,
+            "harvested_blv_ids": [
+              "622093"
+            ],
+            "scan_mode": "browser-event",
+            "elapsed_seconds": 4.203
+          },
+          "http_probe": {
+            "enabled": false,
+            "status": null,
+            "elapsed_seconds": 0.0,
+            "error": ""
+          },
+          "errors": [
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED"
+          ],
+          "failed_requests": [
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/main.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/customize.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/auth.css?ver=771 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat.css?ver=873 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat(1).css?ver=58 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/toast.css?ver=956 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/themes/flatsome/assets/css/flatsome.css?ver=3.18.2 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/themes/flatsome-child/style.css?ver=3.0 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/countdown.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/match.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/livescore.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/style_custom.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/effect/running-border.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/option/option-6.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/highlight/option-1.css?ver=2.8.5 | net::ERR_FAILED"
+          ],
+          "http_errors": [
+            "403 https://socolivep.cv/wp-admin/admin-ajax.php?action=scl_realtime&sport=1"
+          ]
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/rotor-volgograd-vs-ska-khabarovsk-20-07-2026-2330?blv=622093",
+          "blv": "GRAP",
+          "blv_id": "622093",
+          "streams": [],
+          "stream_sources": {},
+          "stream_first_seen": [],
+          "discovered_blv_ids": [],
+          "diagnostics": {
+            "url": "https://socolivep.cv/truc-tiep/rotor-volgograd-vs-ska-khabarovsk-20-07-2026-2330?blv=622093",
+            "title": "Chờ một chút...",
+            "h1": "socolivep.cv",
+            "ready_state": "complete",
+            "visibility_state": "visible",
+            "hidden": false,
+            "video_count": 0,
+            "iframe_count": 0,
+            "body_sample": "socolivep.cv Thực hiện xác minh bảo mật Trang web này sử dụng dịch vụ bảo mật để chống bot độc hại. Trang này hiển thị trong khi trang web xác minh bạn không phải là bot. Ray ID: a1e39f529a082f11 Hiệu suất và Tính bảo mật của Cloudflare Quyền riêng tư",
+            "main_status": 429,
+            "harvested_stream_count": 0,
+            "harvested_blv_ids": [],
+            "scan_mode": "browser-event",
+            "elapsed_seconds": 8.467
+          },
+          "http_probe": {
+            "enabled": false,
+            "status": null,
+            "elapsed_seconds": 0.0,
+            "error": ""
+          },
+          "errors": [
+            "console/error: Failed to load resource: the server responded with a status of 429 ()",
+            "console/warning: No available adapters.",
+            "console/warning: No available adapters.",
+            "console/error: %c%d font-size:0;color:transparent NaN",
+            "console/error: %c%d font-size:0;color:transparent NaN",
+            "console/warning: %c%d font-size:0;color:transparent NaN",
+            "console/warning: %c%d font-size:0;color:transparent NaN",
+            "console/warning: OTS parsing error: Size of decompressed WOFF 2.0 is less than compressed size",
+            "console/error: Failed to load resource: net::ERR_FAILED"
+          ],
+          "failed_requests": [
+            "fetch https://brunhild.challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/i/a1e39f568839f514/W0a65SVmOyCax3RIX08VTyD8Fvs7Xx3EOi87lyFCfoc-1784567878-1.2.1.1-ZNH0oF4WAr0KOdcvq6FynTS8599ZN1xNNsuFpTf0jogcPXZo4TqqxaPfwMe9sWbf | net::ERR_NAME_NOT_RESOLVED",
+            "image https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/ci/a1e39f568839f514/1784567878672/HBIld8XMV4H7Ree | net::ERR_FAILED"
+          ],
+          "http_errors": [
+            "429 https://socolivep.cv/truc-tiep/rotor-volgograd-vs-ska-khabarovsk-20-07-2026-2330?blv=622093",
+            "401 https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/pat/a1e39f568839f514/1784567878672/44518adfdb9214ab3eb61dc38eaaccef7f39a17c60cd69d59fd7dcd92575e9c6/bvLSB5xP1wGheHO"
+          ]
         }
       ],
       "attempted_room_ids": [
@@ -1507,12 +2131,12 @@
             "url": "https://socolivep.cv/truc-tiep/rotor-volgograd-vs-ska-khabarovsk-20-07-2026-2330/?blv=622093",
             "blv": "GRAP",
             "blv_id": "622093",
-            "status": "pending",
-            "attempts": 2,
-            "rate_limit_hits": 0,
-            "last_http_status": 200,
-            "last_stream_count": 1,
-            "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
+            "status": "rate_limited",
+            "attempts": 3,
+            "rate_limit_hits": 1,
+            "last_http_status": 429,
+            "last_stream_count": 0,
+            "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
           },
           "400722": {
             "key": "400722",
@@ -1547,12 +2171,12 @@
           "url": "https://socolivep.cv/truc-tiep/rotor-volgograd-vs-ska-khabarovsk-20-07-2026-2330/?blv=622093",
           "blv": "GRAP",
           "blv_id": "622093",
-          "status": "pending",
-          "attempts": 2,
-          "rate_limit_hits": 0,
-          "last_http_status": 200,
-          "last_stream_count": 1,
-          "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
+          "status": "rate_limited",
+          "attempts": 3,
+          "rate_limit_hits": 1,
+          "last_http_status": 429,
+          "last_stream_count": 0,
+          "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
         },
         "400722": {
           "key": "400722",
