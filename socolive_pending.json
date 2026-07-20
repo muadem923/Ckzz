@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-21T01:21:47.760009+07:00",
+  "generated_at": "2026-07-21T01:22:50.088416+07:00",
   "state_schema_version": "v10.1-long-harvest-two-streams",
   "dispatch_next": true,
   "pending_count": 8,
@@ -8,11 +8,11 @@
   "total_match_count": 8,
   "total_stream_count": 5,
   "progress_count": 0,
-  "chain_runs": 17,
-  "no_progress_runs": 13,
+  "chain_runs": 18,
+  "no_progress_runs": 14,
   "stop_reason": "",
   "rate_limited": true,
-  "rate_limit_url": "https://socolivep.cv/truc-tiep/orgryte-vs-djurgardens-21-07-2026-0000/?blv=273736",
+  "rate_limit_url": "https://socolivep.cv/truc-tiep/botev-plovdiv-vs-lokomotiv-sofia-21-07-2026-0130?blv=250874",
   "count": 8,
   "matches": [
     {
@@ -82,7 +82,7 @@
             "blv_id": "250874",
             "status": "rate_limited",
             "attempts": 14,
-            "rate_limit_hits": 5,
+            "rate_limit_hits": 6,
             "last_http_status": 429,
             "last_stream_count": 0,
             "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
@@ -124,7 +124,7 @@
           "blv_id": "250874",
           "status": "rate_limited",
           "attempts": 14,
-          "rate_limit_hits": 5,
+          "rate_limit_hits": 6,
           "last_http_status": 429,
           "last_stream_count": 0,
           "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
@@ -261,7 +261,7 @@
             "blv": "A PÁO",
             "blv_id": "235232",
             "status": "rate_limited",
-            "attempts": 17,
+            "attempts": 18,
             "rate_limit_hits": 2,
             "last_http_status": 200,
             "last_stream_count": 1,
@@ -327,7 +327,7 @@
           "blv": "A PÁO",
           "blv_id": "235232",
           "status": "rate_limited",
-          "attempts": 17,
+          "attempts": 18,
           "rate_limit_hits": 2,
           "last_http_status": 200,
           "last_stream_count": 1,
@@ -522,7 +522,7 @@
             "blv": "RAMBO",
             "blv_id": "534055",
             "status": "rate_limited",
-            "attempts": 30,
+            "attempts": 31,
             "rate_limit_hits": 20,
             "last_http_status": 200,
             "last_stream_count": 1,
@@ -612,7 +612,7 @@
           "blv": "RAMBO",
           "blv_id": "534055",
           "status": "rate_limited",
-          "attempts": 30,
+          "attempts": 31,
           "rate_limit_hits": 20,
           "last_http_status": 200,
           "last_stream_count": 1,
@@ -742,6 +742,36 @@
           "blv_id": "582342"
         },
         {
+          "url": "https://socolivep.cv/truc-tiep/orgryte-vs-djurgardens-21-07-2026-0000/?blv=273736",
+          "blv": "CHÍ PHÈO",
+          "blv_id": "273736"
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/orgryte-vs-djurgardens-21-07-2026-0000/?blv=610677",
+          "blv": "CÁP",
+          "blv_id": "610677"
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/orgryte-vs-djurgardens-21-07-2026-0000/?blv=527383",
+          "blv": "ROBBEN",
+          "blv_id": "527383"
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/orgryte-vs-djurgardens-21-07-2026-0000/?blv=491873",
+          "blv": "VIP",
+          "blv_id": "491873"
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/orgryte-vs-djurgardens-21-07-2026-0000/?blv=360663",
+          "blv": "Củ Cải",
+          "blv_id": "360663"
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/orgryte-vs-djurgardens-21-07-2026-0000/?blv=582342",
+          "blv": "CÒ",
+          "blv_id": "582342"
+        },
+        {
           "url": "https://socolivep.cv/truc-tiep/orgryte-vs-djurgardens-21-07-2026-0000",
           "blv": "XEM NGAY",
           "blv_id": ""
@@ -783,8 +813,14 @@
         "room_queue_complete": false,
         "complete": false,
         "max_streams_per_blv": 2,
-        "total_explicit_blv_rooms": 6,
+        "total_explicit_blv_rooms": 12,
         "pending_room_keys": [
+          "273736",
+          "610677",
+          "527383",
+          "491873",
+          "360663",
+          "582342",
           "273736",
           "610677",
           "527383",
@@ -795,19 +831,19 @@
         "room_progress": {
           "273736": {
             "key": "273736",
-            "url": "https://socolivep.cv/truc-tiep/orgryte-vs-djurgardens-21-07-2026-0000?blv=273736",
+            "url": "https://socolivep.cv/truc-tiep/orgryte-vs-djurgardens-21-07-2026-0000/?blv=273736",
             "blv": "CHÍ PHÈO",
             "blv_id": "273736",
             "status": "rate_limited",
-            "attempts": 33,
+            "attempts": 34,
             "rate_limit_hits": 16,
-            "last_http_status": 429,
-            "last_stream_count": 0,
-            "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
+            "last_http_status": 200,
+            "last_stream_count": 1,
+            "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
           },
           "610677": {
             "key": "610677",
-            "url": "https://socolivep.cv/truc-tiep/orgryte-vs-djurgardens-21-07-2026-0000?blv=610677",
+            "url": "https://socolivep.cv/truc-tiep/orgryte-vs-djurgardens-21-07-2026-0000/?blv=610677",
             "blv": "CÁP",
             "blv_id": "610677",
             "status": "pending",
@@ -819,7 +855,7 @@
           },
           "527383": {
             "key": "527383",
-            "url": "https://socolivep.cv/truc-tiep/orgryte-vs-djurgardens-21-07-2026-0000?blv=527383",
+            "url": "https://socolivep.cv/truc-tiep/orgryte-vs-djurgardens-21-07-2026-0000/?blv=527383",
             "blv": "ROBBEN",
             "blv_id": "527383",
             "status": "pending",
@@ -831,7 +867,7 @@
           },
           "491873": {
             "key": "491873",
-            "url": "https://socolivep.cv/truc-tiep/orgryte-vs-djurgardens-21-07-2026-0000?blv=491873",
+            "url": "https://socolivep.cv/truc-tiep/orgryte-vs-djurgardens-21-07-2026-0000/?blv=491873",
             "blv": "VIP",
             "blv_id": "491873",
             "status": "pending",
@@ -843,7 +879,7 @@
           },
           "360663": {
             "key": "360663",
-            "url": "https://socolivep.cv/truc-tiep/orgryte-vs-djurgardens-21-07-2026-0000?blv=360663",
+            "url": "https://socolivep.cv/truc-tiep/orgryte-vs-djurgardens-21-07-2026-0000/?blv=360663",
             "blv": "Củ Cải",
             "blv_id": "360663",
             "status": "pending",
@@ -855,7 +891,7 @@
           },
           "582342": {
             "key": "582342",
-            "url": "https://socolivep.cv/truc-tiep/orgryte-vs-djurgardens-21-07-2026-0000?blv=582342",
+            "url": "https://socolivep.cv/truc-tiep/orgryte-vs-djurgardens-21-07-2026-0000/?blv=582342",
             "blv": "CÒ",
             "blv_id": "582342",
             "status": "pending",
@@ -885,19 +921,19 @@
       "room_progress": {
         "273736": {
           "key": "273736",
-          "url": "https://socolivep.cv/truc-tiep/orgryte-vs-djurgardens-21-07-2026-0000?blv=273736",
+          "url": "https://socolivep.cv/truc-tiep/orgryte-vs-djurgardens-21-07-2026-0000/?blv=273736",
           "blv": "CHÍ PHÈO",
           "blv_id": "273736",
           "status": "rate_limited",
-          "attempts": 33,
+          "attempts": 34,
           "rate_limit_hits": 16,
-          "last_http_status": 429,
-          "last_stream_count": 0,
-          "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
+          "last_http_status": 200,
+          "last_stream_count": 1,
+          "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
         },
         "610677": {
           "key": "610677",
-          "url": "https://socolivep.cv/truc-tiep/orgryte-vs-djurgardens-21-07-2026-0000?blv=610677",
+          "url": "https://socolivep.cv/truc-tiep/orgryte-vs-djurgardens-21-07-2026-0000/?blv=610677",
           "blv": "CÁP",
           "blv_id": "610677",
           "status": "pending",
@@ -909,7 +945,7 @@
         },
         "527383": {
           "key": "527383",
-          "url": "https://socolivep.cv/truc-tiep/orgryte-vs-djurgardens-21-07-2026-0000?blv=527383",
+          "url": "https://socolivep.cv/truc-tiep/orgryte-vs-djurgardens-21-07-2026-0000/?blv=527383",
           "blv": "ROBBEN",
           "blv_id": "527383",
           "status": "pending",
@@ -921,7 +957,7 @@
         },
         "491873": {
           "key": "491873",
-          "url": "https://socolivep.cv/truc-tiep/orgryte-vs-djurgardens-21-07-2026-0000?blv=491873",
+          "url": "https://socolivep.cv/truc-tiep/orgryte-vs-djurgardens-21-07-2026-0000/?blv=491873",
           "blv": "VIP",
           "blv_id": "491873",
           "status": "pending",
@@ -933,7 +969,7 @@
         },
         "360663": {
           "key": "360663",
-          "url": "https://socolivep.cv/truc-tiep/orgryte-vs-djurgardens-21-07-2026-0000?blv=360663",
+          "url": "https://socolivep.cv/truc-tiep/orgryte-vs-djurgardens-21-07-2026-0000/?blv=360663",
           "blv": "Củ Cải",
           "blv_id": "360663",
           "status": "pending",
@@ -945,7 +981,7 @@
         },
         "582342": {
           "key": "582342",
-          "url": "https://socolivep.cv/truc-tiep/orgryte-vs-djurgardens-21-07-2026-0000?blv=582342",
+          "url": "https://socolivep.cv/truc-tiep/orgryte-vs-djurgardens-21-07-2026-0000/?blv=582342",
           "blv": "CÒ",
           "blv_id": "582342",
           "status": "pending",
@@ -969,6 +1005,12 @@
         }
       },
       "pending_room_keys": [
+        "273736",
+        "610677",
+        "527383",
+        "491873",
+        "360663",
+        "582342",
         "273736",
         "610677",
         "527383",
