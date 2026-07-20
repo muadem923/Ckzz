@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-07-20T18:17:03.423555+07:00",
+  "generated_at": "2026-07-20T18:17:58.690017+07:00",
   "state_schema_version": "v10-per-blv-queue",
-  "dispatch_next": true,
+  "dispatch_next": false,
   "pending_count": 3,
   "completed_count": 3,
   "coverage_complete_count": 0,
   "total_match_count": 3,
   "total_stream_count": 3,
   "progress_count": 0,
-  "chain_runs": 2,
-  "no_progress_runs": 1,
-  "stop_reason": "",
+  "chain_runs": 3,
+  "no_progress_runs": 2,
+  "stop_reason": "no_progress_guard",
   "rate_limited": true,
   "rate_limit_url": "https://socolivep.cv/truc-tiep/the-cong-viettel-u21-vs-cong-an-ha-noi-u21-20-07-2026-1800?blv=531989",
   "count": 3,
@@ -47,6 +47,36 @@
         },
         {
           "url": "https://socolivep.cv/truc-tiep/the-cong-viettel-u21-vs-cong-an-ha-noi-u21-20-07-2026-1800?blv=527383",
+          "blv": "ROBBEN",
+          "blv_id": "527383"
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/the-cong-viettel-u21-vs-cong-an-ha-noi-u21-20-07-2026-1800/?blv=531989",
+          "blv": "COZY",
+          "blv_id": "531989"
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/the-cong-viettel-u21-vs-cong-an-ha-noi-u21-20-07-2026-1800/?blv=552716",
+          "blv": "VOI",
+          "blv_id": "552716"
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/the-cong-viettel-u21-vs-cong-an-ha-noi-u21-20-07-2026-1800/?blv=548860",
+          "blv": "VƯƠNG ANH",
+          "blv_id": "548860"
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/the-cong-viettel-u21-vs-cong-an-ha-noi-u21-20-07-2026-1800/?blv=273736",
+          "blv": "CHÍ PHÈO",
+          "blv_id": "273736"
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/the-cong-viettel-u21-vs-cong-an-ha-noi-u21-20-07-2026-1800/?blv=620084",
+          "blv": "PEANUT",
+          "blv_id": "620084"
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/the-cong-viettel-u21-vs-cong-an-ha-noi-u21-20-07-2026-1800/?blv=527383",
           "blv": "ROBBEN",
           "blv_id": "527383"
         },
@@ -89,8 +119,14 @@
         "source_goal_reached": false,
         "room_queue_complete": false,
         "complete": false,
-        "total_explicit_blv_rooms": 6,
+        "total_explicit_blv_rooms": 12,
         "pending_room_keys": [
+          "531989",
+          "552716",
+          "548860",
+          "273736",
+          "620084",
+          "527383",
           "531989",
           "552716",
           "548860",
@@ -101,19 +137,19 @@
         "room_progress": {
           "531989": {
             "key": "531989",
-            "url": "https://socolivep.cv/truc-tiep/the-cong-viettel-u21-vs-cong-an-ha-noi-u21-20-07-2026-1800?blv=531989",
+            "url": "https://socolivep.cv/truc-tiep/the-cong-viettel-u21-vs-cong-an-ha-noi-u21-20-07-2026-1800/?blv=531989",
             "blv": "COZY",
             "blv_id": "531989",
             "status": "rate_limited",
-            "attempts": 1,
-            "rate_limit_hits": 2,
+            "attempts": 2,
+            "rate_limit_hits": 3,
             "last_http_status": 429,
             "last_stream_count": 0,
             "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
           },
           "552716": {
             "key": "552716",
-            "url": "https://socolivep.cv/truc-tiep/the-cong-viettel-u21-vs-cong-an-ha-noi-u21-20-07-2026-1800?blv=552716",
+            "url": "https://socolivep.cv/truc-tiep/the-cong-viettel-u21-vs-cong-an-ha-noi-u21-20-07-2026-1800/?blv=552716",
             "blv": "VOI",
             "blv_id": "552716",
             "status": "pending",
@@ -125,7 +161,7 @@
           },
           "548860": {
             "key": "548860",
-            "url": "https://socolivep.cv/truc-tiep/the-cong-viettel-u21-vs-cong-an-ha-noi-u21-20-07-2026-1800?blv=548860",
+            "url": "https://socolivep.cv/truc-tiep/the-cong-viettel-u21-vs-cong-an-ha-noi-u21-20-07-2026-1800/?blv=548860",
             "blv": "VƯƠNG ANH",
             "blv_id": "548860",
             "status": "pending",
@@ -137,7 +173,7 @@
           },
           "273736": {
             "key": "273736",
-            "url": "https://socolivep.cv/truc-tiep/the-cong-viettel-u21-vs-cong-an-ha-noi-u21-20-07-2026-1800?blv=273736",
+            "url": "https://socolivep.cv/truc-tiep/the-cong-viettel-u21-vs-cong-an-ha-noi-u21-20-07-2026-1800/?blv=273736",
             "blv": "CHÍ PHÈO",
             "blv_id": "273736",
             "status": "pending",
@@ -149,7 +185,7 @@
           },
           "620084": {
             "key": "620084",
-            "url": "https://socolivep.cv/truc-tiep/the-cong-viettel-u21-vs-cong-an-ha-noi-u21-20-07-2026-1800?blv=620084",
+            "url": "https://socolivep.cv/truc-tiep/the-cong-viettel-u21-vs-cong-an-ha-noi-u21-20-07-2026-1800/?blv=620084",
             "blv": "PEANUT",
             "blv_id": "620084",
             "status": "pending",
@@ -161,7 +197,7 @@
           },
           "527383": {
             "key": "527383",
-            "url": "https://socolivep.cv/truc-tiep/the-cong-viettel-u21-vs-cong-an-ha-noi-u21-20-07-2026-1800?blv=527383",
+            "url": "https://socolivep.cv/truc-tiep/the-cong-viettel-u21-vs-cong-an-ha-noi-u21-20-07-2026-1800/?blv=527383",
             "blv": "ROBBEN",
             "blv_id": "527383",
             "status": "pending",
@@ -191,19 +227,19 @@
       "room_progress": {
         "531989": {
           "key": "531989",
-          "url": "https://socolivep.cv/truc-tiep/the-cong-viettel-u21-vs-cong-an-ha-noi-u21-20-07-2026-1800?blv=531989",
+          "url": "https://socolivep.cv/truc-tiep/the-cong-viettel-u21-vs-cong-an-ha-noi-u21-20-07-2026-1800/?blv=531989",
           "blv": "COZY",
           "blv_id": "531989",
           "status": "rate_limited",
-          "attempts": 1,
-          "rate_limit_hits": 2,
+          "attempts": 2,
+          "rate_limit_hits": 3,
           "last_http_status": 429,
           "last_stream_count": 0,
           "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
         },
         "552716": {
           "key": "552716",
-          "url": "https://socolivep.cv/truc-tiep/the-cong-viettel-u21-vs-cong-an-ha-noi-u21-20-07-2026-1800?blv=552716",
+          "url": "https://socolivep.cv/truc-tiep/the-cong-viettel-u21-vs-cong-an-ha-noi-u21-20-07-2026-1800/?blv=552716",
           "blv": "VOI",
           "blv_id": "552716",
           "status": "pending",
@@ -215,7 +251,7 @@
         },
         "548860": {
           "key": "548860",
-          "url": "https://socolivep.cv/truc-tiep/the-cong-viettel-u21-vs-cong-an-ha-noi-u21-20-07-2026-1800?blv=548860",
+          "url": "https://socolivep.cv/truc-tiep/the-cong-viettel-u21-vs-cong-an-ha-noi-u21-20-07-2026-1800/?blv=548860",
           "blv": "VƯƠNG ANH",
           "blv_id": "548860",
           "status": "pending",
@@ -227,7 +263,7 @@
         },
         "273736": {
           "key": "273736",
-          "url": "https://socolivep.cv/truc-tiep/the-cong-viettel-u21-vs-cong-an-ha-noi-u21-20-07-2026-1800?blv=273736",
+          "url": "https://socolivep.cv/truc-tiep/the-cong-viettel-u21-vs-cong-an-ha-noi-u21-20-07-2026-1800/?blv=273736",
           "blv": "CHÍ PHÈO",
           "blv_id": "273736",
           "status": "pending",
@@ -239,7 +275,7 @@
         },
         "620084": {
           "key": "620084",
-          "url": "https://socolivep.cv/truc-tiep/the-cong-viettel-u21-vs-cong-an-ha-noi-u21-20-07-2026-1800?blv=620084",
+          "url": "https://socolivep.cv/truc-tiep/the-cong-viettel-u21-vs-cong-an-ha-noi-u21-20-07-2026-1800/?blv=620084",
           "blv": "PEANUT",
           "blv_id": "620084",
           "status": "pending",
@@ -251,7 +287,7 @@
         },
         "527383": {
           "key": "527383",
-          "url": "https://socolivep.cv/truc-tiep/the-cong-viettel-u21-vs-cong-an-ha-noi-u21-20-07-2026-1800?blv=527383",
+          "url": "https://socolivep.cv/truc-tiep/the-cong-viettel-u21-vs-cong-an-ha-noi-u21-20-07-2026-1800/?blv=527383",
           "blv": "ROBBEN",
           "blv_id": "527383",
           "status": "pending",
@@ -275,6 +311,12 @@
         }
       },
       "pending_room_keys": [
+        "531989",
+        "552716",
+        "548860",
+        "273736",
+        "620084",
+        "527383",
         "531989",
         "552716",
         "548860",
@@ -382,7 +424,7 @@
             "blv": "XUÂN TÓC ĐỎ",
             "blv_id": "610518",
             "status": "pending",
-            "attempts": 2,
+            "attempts": 3,
             "rate_limit_hits": 0,
             "last_http_status": 200,
             "last_stream_count": 1,
@@ -448,7 +490,7 @@
           "blv": "XUÂN TÓC ĐỎ",
           "blv_id": "610518",
           "status": "pending",
-          "attempts": 2,
+          "attempts": 3,
           "rate_limit_hits": 0,
           "last_http_status": 200,
           "last_stream_count": 1,
@@ -637,7 +679,7 @@
             "blv": "Củ Cải",
             "blv_id": "360663",
             "status": "pending",
-            "attempts": 2,
+            "attempts": 3,
             "rate_limit_hits": 0,
             "last_http_status": 200,
             "last_stream_count": 1,
@@ -727,7 +769,7 @@
           "blv": "Củ Cải",
           "blv_id": "360663",
           "status": "pending",
-          "attempts": 2,
+          "attempts": 3,
           "rate_limit_hits": 0,
           "last_http_status": 200,
           "last_stream_count": 1,
