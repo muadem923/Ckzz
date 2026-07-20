@@ -1,19 +1,19 @@
 {
-  "generated_at": "2026-07-21T00:20:30.171677+07:00",
-  "state_schema_version": "v10-per-blv-queue",
-  "dispatch_next": false,
-  "pending_count": 16,
+  "generated_at": "2026-07-21T00:47:31.378736+07:00",
+  "state_schema_version": "v10.1-long-harvest-two-streams",
+  "dispatch_next": true,
+  "pending_count": 9,
   "completed_count": 4,
   "coverage_complete_count": 0,
-  "total_match_count": 16,
+  "total_match_count": 9,
   "total_stream_count": 4,
   "progress_count": 0,
-  "chain_runs": 5,
-  "no_progress_runs": 2,
-  "stop_reason": "no_progress_guard",
+  "chain_runs": 1,
+  "no_progress_runs": 1,
+  "stop_reason": "",
   "rate_limited": true,
-  "rate_limit_url": "https://socolivep.cv/truc-tiep/kalmar-vs-malmo-ff-21-07-2026-0000?blv=534055",
-  "count": 16,
+  "rate_limit_url": "https://socolivep.cv/truc-tiep/rotor-volgograd-vs-ska-khabarovsk-20-07-2026-2330/?blv=622093",
+  "count": 9,
   "matches": [
     {
       "base_url": "https://socolivep.cv/truc-tiep/kalmar-vs-malmo-ff-21-07-2026-0000/",
@@ -47,6 +47,36 @@
         },
         {
           "url": "https://socolivep.cv/truc-tiep/kalmar-vs-malmo-ff-21-07-2026-0000?blv=599634",
+          "blv": "HẢI THANH",
+          "blv_id": "599634"
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/kalmar-vs-malmo-ff-21-07-2026-0000/?blv=534055",
+          "blv": "RAMBO",
+          "blv_id": "534055"
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/kalmar-vs-malmo-ff-21-07-2026-0000/?blv=387694",
+          "blv": "CR Bưởi",
+          "blv_id": "387694"
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/kalmar-vs-malmo-ff-21-07-2026-0000/?blv=527384",
+          "blv": "LÃO LÂM",
+          "blv_id": "527384"
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/kalmar-vs-malmo-ff-21-07-2026-0000/?blv=532081",
+          "blv": "ALEX",
+          "blv_id": "532081"
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/kalmar-vs-malmo-ff-21-07-2026-0000/?blv=327159",
+          "blv": "COCA",
+          "blv_id": "327159"
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/kalmar-vs-malmo-ff-21-07-2026-0000/?blv=599634",
           "blv": "HẢI THANH",
           "blv_id": "599634"
         },
@@ -87,12 +117,19 @@
         "found_blv_ids": [
           "534055"
         ],
-        "goal": 6,
+        "goal": 12,
         "source_goal_reached": false,
         "room_queue_complete": false,
         "complete": false,
-        "total_explicit_blv_rooms": 6,
+        "max_streams_per_blv": 2,
+        "total_explicit_blv_rooms": 12,
         "pending_room_keys": [
+          "534055",
+          "387694",
+          "527384",
+          "532081",
+          "327159",
+          "599634",
           "534055",
           "387694",
           "527384",
@@ -103,19 +140,19 @@
         "room_progress": {
           "534055": {
             "key": "534055",
-            "url": "https://socolivep.cv/truc-tiep/kalmar-vs-malmo-ff-21-07-2026-0000?blv=534055",
+            "url": "https://socolivep.cv/truc-tiep/kalmar-vs-malmo-ff-21-07-2026-0000/?blv=534055",
             "blv": "RAMBO",
             "blv_id": "534055",
             "status": "rate_limited",
-            "attempts": 2,
-            "rate_limit_hits": 5,
+            "attempts": 1,
+            "rate_limit_hits": 1,
             "last_http_status": 429,
             "last_stream_count": 0,
             "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
           },
           "387694": {
             "key": "387694",
-            "url": "https://socolivep.cv/truc-tiep/kalmar-vs-malmo-ff-21-07-2026-0000?blv=387694",
+            "url": "https://socolivep.cv/truc-tiep/kalmar-vs-malmo-ff-21-07-2026-0000/?blv=387694",
             "blv": "CR Bưởi",
             "blv_id": "387694",
             "status": "pending",
@@ -127,7 +164,7 @@
           },
           "527384": {
             "key": "527384",
-            "url": "https://socolivep.cv/truc-tiep/kalmar-vs-malmo-ff-21-07-2026-0000?blv=527384",
+            "url": "https://socolivep.cv/truc-tiep/kalmar-vs-malmo-ff-21-07-2026-0000/?blv=527384",
             "blv": "LÃO LÂM",
             "blv_id": "527384",
             "status": "pending",
@@ -139,7 +176,7 @@
           },
           "532081": {
             "key": "532081",
-            "url": "https://socolivep.cv/truc-tiep/kalmar-vs-malmo-ff-21-07-2026-0000?blv=532081",
+            "url": "https://socolivep.cv/truc-tiep/kalmar-vs-malmo-ff-21-07-2026-0000/?blv=532081",
             "blv": "ALEX",
             "blv_id": "532081",
             "status": "pending",
@@ -151,7 +188,7 @@
           },
           "327159": {
             "key": "327159",
-            "url": "https://socolivep.cv/truc-tiep/kalmar-vs-malmo-ff-21-07-2026-0000?blv=327159",
+            "url": "https://socolivep.cv/truc-tiep/kalmar-vs-malmo-ff-21-07-2026-0000/?blv=327159",
             "blv": "COCA",
             "blv_id": "327159",
             "status": "pending",
@@ -163,7 +200,7 @@
           },
           "599634": {
             "key": "599634",
-            "url": "https://socolivep.cv/truc-tiep/kalmar-vs-malmo-ff-21-07-2026-0000?blv=599634",
+            "url": "https://socolivep.cv/truc-tiep/kalmar-vs-malmo-ff-21-07-2026-0000/?blv=599634",
             "blv": "HẢI THANH",
             "blv_id": "599634",
             "status": "pending",
@@ -193,19 +230,19 @@
       "room_progress": {
         "534055": {
           "key": "534055",
-          "url": "https://socolivep.cv/truc-tiep/kalmar-vs-malmo-ff-21-07-2026-0000?blv=534055",
+          "url": "https://socolivep.cv/truc-tiep/kalmar-vs-malmo-ff-21-07-2026-0000/?blv=534055",
           "blv": "RAMBO",
           "blv_id": "534055",
           "status": "rate_limited",
-          "attempts": 2,
-          "rate_limit_hits": 5,
+          "attempts": 1,
+          "rate_limit_hits": 1,
           "last_http_status": 429,
           "last_stream_count": 0,
           "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
         },
         "387694": {
           "key": "387694",
-          "url": "https://socolivep.cv/truc-tiep/kalmar-vs-malmo-ff-21-07-2026-0000?blv=387694",
+          "url": "https://socolivep.cv/truc-tiep/kalmar-vs-malmo-ff-21-07-2026-0000/?blv=387694",
           "blv": "CR Bưởi",
           "blv_id": "387694",
           "status": "pending",
@@ -217,7 +254,7 @@
         },
         "527384": {
           "key": "527384",
-          "url": "https://socolivep.cv/truc-tiep/kalmar-vs-malmo-ff-21-07-2026-0000?blv=527384",
+          "url": "https://socolivep.cv/truc-tiep/kalmar-vs-malmo-ff-21-07-2026-0000/?blv=527384",
           "blv": "LÃO LÂM",
           "blv_id": "527384",
           "status": "pending",
@@ -229,7 +266,7 @@
         },
         "532081": {
           "key": "532081",
-          "url": "https://socolivep.cv/truc-tiep/kalmar-vs-malmo-ff-21-07-2026-0000?blv=532081",
+          "url": "https://socolivep.cv/truc-tiep/kalmar-vs-malmo-ff-21-07-2026-0000/?blv=532081",
           "blv": "ALEX",
           "blv_id": "532081",
           "status": "pending",
@@ -241,7 +278,7 @@
         },
         "327159": {
           "key": "327159",
-          "url": "https://socolivep.cv/truc-tiep/kalmar-vs-malmo-ff-21-07-2026-0000?blv=327159",
+          "url": "https://socolivep.cv/truc-tiep/kalmar-vs-malmo-ff-21-07-2026-0000/?blv=327159",
           "blv": "COCA",
           "blv_id": "327159",
           "status": "pending",
@@ -253,7 +290,7 @@
         },
         "599634": {
           "key": "599634",
-          "url": "https://socolivep.cv/truc-tiep/kalmar-vs-malmo-ff-21-07-2026-0000?blv=599634",
+          "url": "https://socolivep.cv/truc-tiep/kalmar-vs-malmo-ff-21-07-2026-0000/?blv=599634",
           "blv": "HẢI THANH",
           "blv_id": "599634",
           "status": "pending",
@@ -277,6 +314,12 @@
         }
       },
       "pending_room_keys": [
+        "534055",
+        "387694",
+        "527384",
+        "532081",
+        "327159",
+        "599634",
         "534055",
         "387694",
         "527384",
@@ -387,10 +430,11 @@
         "found_blv_ids": [
           "273736"
         ],
-        "goal": 6,
+        "goal": 12,
         "source_goal_reached": false,
         "room_queue_complete": false,
         "complete": false,
+        "max_streams_per_blv": 2,
         "total_explicit_blv_rooms": 12,
         "pending_room_keys": [
           "273736",
@@ -412,9 +456,9 @@
             "url": "https://socolivep.cv/truc-tiep/orgryte-vs-djurgardens-21-07-2026-0000/?blv=273736",
             "blv": "CHÍ PHÈO",
             "blv_id": "273736",
-            "status": "rate_limited",
-            "attempts": 5,
-            "rate_limit_hits": 2,
+            "status": "pending",
+            "attempts": 2,
+            "rate_limit_hits": 0,
             "last_http_status": 200,
             "last_stream_count": 1,
             "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
@@ -502,9 +546,9 @@
           "url": "https://socolivep.cv/truc-tiep/orgryte-vs-djurgardens-21-07-2026-0000/?blv=273736",
           "blv": "CHÍ PHÈO",
           "blv_id": "273736",
-          "status": "rate_limited",
-          "attempts": 5,
-          "rate_limit_hits": 2,
+          "status": "pending",
+          "attempts": 2,
+          "rate_limit_hits": 0,
           "last_http_status": 200,
           "last_stream_count": 1,
           "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
@@ -659,10 +703,11 @@
         "found_blv_ids": [
           "620084"
         ],
-        "goal": 2,
+        "goal": 4,
         "source_goal_reached": false,
         "room_queue_complete": false,
         "complete": false,
+        "max_streams_per_blv": 2,
         "total_explicit_blv_rooms": 4,
         "pending_room_keys": [
           "620084",
@@ -677,11 +722,11 @@
             "blv": "PEANUT",
             "blv_id": "620084",
             "status": "rate_limited",
-            "attempts": 5,
-            "rate_limit_hits": 2,
-            "last_http_status": 200,
-            "last_stream_count": 1,
-            "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
+            "attempts": 1,
+            "rate_limit_hits": 1,
+            "last_http_status": 429,
+            "last_stream_count": 0,
+            "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
           },
           "414317": {
             "key": "414317",
@@ -719,11 +764,11 @@
           "blv": "PEANUT",
           "blv_id": "620084",
           "status": "rate_limited",
-          "attempts": 5,
-          "rate_limit_hits": 2,
-          "last_http_status": 200,
-          "last_stream_count": 1,
-          "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
+          "attempts": 1,
+          "rate_limit_hits": 1,
+          "last_http_status": 429,
+          "last_stream_count": 0,
+          "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
         },
         "414317": {
           "key": "414317",
@@ -819,10 +864,11 @@
         "found_blv_ids": [
           "622093"
         ],
-        "goal": 2,
+        "goal": 4,
         "source_goal_reached": false,
         "room_queue_complete": false,
         "complete": false,
+        "max_streams_per_blv": 2,
         "total_explicit_blv_rooms": 4,
         "pending_room_keys": [
           "622093",
@@ -837,11 +883,11 @@
             "blv": "GRAP",
             "blv_id": "622093",
             "status": "rate_limited",
-            "attempts": 5,
-            "rate_limit_hits": 2,
-            "last_http_status": 200,
-            "last_stream_count": 1,
-            "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
+            "attempts": 1,
+            "rate_limit_hits": 1,
+            "last_http_status": 429,
+            "last_stream_count": 0,
+            "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
           },
           "400722": {
             "key": "400722",
@@ -879,11 +925,11 @@
           "blv": "GRAP",
           "blv_id": "622093",
           "status": "rate_limited",
-          "attempts": 5,
-          "rate_limit_hits": 2,
-          "last_http_status": 200,
-          "last_stream_count": 1,
-          "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
+          "attempts": 1,
+          "rate_limit_hits": 1,
+          "last_http_status": 429,
+          "last_stream_count": 0,
+          "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
         },
         "400722": {
           "key": "400722",
@@ -918,1294 +964,6 @@
       ]
     },
     {
-      "base_url": "https://socolivep.cv/truc-tiep/slavia-sofia-vs-cska-sofia-20-07-2026-2315/",
-      "match_name": "Slavia Sofia vs CSKA Sofia",
-      "scheduled_at": "2026-07-20T23:15:00+07:00",
-      "rooms": [
-        {
-          "url": "https://socolivep.cv/truc-tiep/slavia-sofia-vs-cska-sofia-20-07-2026-2315?blv=603914",
-          "blv": "TRÀ ĐÁ",
-          "blv_id": "603914"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/slavia-sofia-vs-cska-sofia-20-07-2026-2315?blv=622602",
-          "blv": "KENCHU",
-          "blv_id": "622602"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/slavia-sofia-vs-cska-sofia-20-07-2026-2315",
-          "blv": "XEM NGAY",
-          "blv_id": ""
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/slavia-sofia-vs-cska-sofia-20-07-2026-2315/",
-          "blv": "",
-          "blv_id": ""
-        }
-      ],
-      "streams": [],
-      "coverage": {
-        "found_streams": 0,
-        "found_blv_ids": [],
-        "goal": 2,
-        "source_goal_reached": false,
-        "room_queue_complete": false,
-        "complete": false,
-        "total_explicit_blv_rooms": 2,
-        "pending_room_keys": [
-          "603914",
-          "622602"
-        ],
-        "room_progress": {
-          "603914": {
-            "key": "603914",
-            "url": "https://socolivep.cv/truc-tiep/slavia-sofia-vs-cska-sofia-20-07-2026-2315?blv=603914",
-            "blv": "TRÀ ĐÁ",
-            "blv_id": "603914",
-            "status": "pending",
-            "attempts": 0,
-            "rate_limit_hits": 0,
-            "last_http_status": null,
-            "last_stream_count": 0,
-            "last_error": ""
-          },
-          "622602": {
-            "key": "622602",
-            "url": "https://socolivep.cv/truc-tiep/slavia-sofia-vs-cska-sofia-20-07-2026-2315?blv=622602",
-            "blv": "KENCHU",
-            "blv_id": "622602",
-            "status": "pending",
-            "attempts": 0,
-            "rate_limit_hits": 0,
-            "last_http_status": null,
-            "last_stream_count": 0,
-            "last_error": ""
-          },
-          "__base__": {
-            "key": "__base__",
-            "url": "https://socolivep.cv/truc-tiep/slavia-sofia-vs-cska-sofia-20-07-2026-2315/",
-            "blv": "",
-            "blv_id": "",
-            "status": "pending",
-            "attempts": 0,
-            "rate_limit_hits": 0,
-            "last_http_status": null,
-            "last_stream_count": 0,
-            "last_error": ""
-          }
-        }
-      },
-      "attempted_room_ids": [],
-      "room_progress": {
-        "603914": {
-          "key": "603914",
-          "url": "https://socolivep.cv/truc-tiep/slavia-sofia-vs-cska-sofia-20-07-2026-2315?blv=603914",
-          "blv": "TRÀ ĐÁ",
-          "blv_id": "603914",
-          "status": "pending",
-          "attempts": 0,
-          "rate_limit_hits": 0,
-          "last_http_status": null,
-          "last_stream_count": 0,
-          "last_error": ""
-        },
-        "622602": {
-          "key": "622602",
-          "url": "https://socolivep.cv/truc-tiep/slavia-sofia-vs-cska-sofia-20-07-2026-2315?blv=622602",
-          "blv": "KENCHU",
-          "blv_id": "622602",
-          "status": "pending",
-          "attempts": 0,
-          "rate_limit_hits": 0,
-          "last_http_status": null,
-          "last_stream_count": 0,
-          "last_error": ""
-        },
-        "__base__": {
-          "key": "__base__",
-          "url": "https://socolivep.cv/truc-tiep/slavia-sofia-vs-cska-sofia-20-07-2026-2315/",
-          "blv": "",
-          "blv_id": "",
-          "status": "pending",
-          "attempts": 0,
-          "rate_limit_hits": 0,
-          "last_http_status": null,
-          "last_stream_count": 0,
-          "last_error": ""
-        }
-      },
-      "pending_room_keys": [
-        "603914",
-        "622602"
-      ]
-    },
-    {
-      "base_url": "https://socolivep.cv/truc-tiep/ifk-mariehamn-vs-lahti-20-07-2026-2300/",
-      "match_name": "IFK Mariehamn vs Lahti",
-      "scheduled_at": "2026-07-20T23:00:00+07:00",
-      "rooms": [
-        {
-          "url": "https://socolivep.cv/truc-tiep/ifk-mariehamn-vs-lahti-20-07-2026-2300?blv=256080",
-          "blv": "CUỘI",
-          "blv_id": "256080"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/ifk-mariehamn-vs-lahti-20-07-2026-2300?blv=589848",
-          "blv": "LOKA",
-          "blv_id": "589848"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/ifk-mariehamn-vs-lahti-20-07-2026-2300?blv=536185",
-          "blv": "A WIN",
-          "blv_id": "536185"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/ifk-mariehamn-vs-lahti-20-07-2026-2300?blv=557845",
-          "blv": "A TÚ",
-          "blv_id": "557845"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/ifk-mariehamn-vs-lahti-20-07-2026-2300?blv=472241",
-          "blv": "XO",
-          "blv_id": "472241"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/ifk-mariehamn-vs-lahti-20-07-2026-2300?blv=380460",
-          "blv": "ENZO",
-          "blv_id": "380460"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/ifk-mariehamn-vs-lahti-20-07-2026-2300",
-          "blv": "XEM NGAY",
-          "blv_id": ""
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/ifk-mariehamn-vs-lahti-20-07-2026-2300/",
-          "blv": "",
-          "blv_id": ""
-        }
-      ],
-      "streams": [],
-      "coverage": {
-        "found_streams": 0,
-        "found_blv_ids": [],
-        "goal": 6,
-        "source_goal_reached": false,
-        "room_queue_complete": false,
-        "complete": false,
-        "total_explicit_blv_rooms": 6,
-        "pending_room_keys": [
-          "256080",
-          "589848",
-          "536185",
-          "557845",
-          "472241",
-          "380460"
-        ],
-        "room_progress": {
-          "256080": {
-            "key": "256080",
-            "url": "https://socolivep.cv/truc-tiep/ifk-mariehamn-vs-lahti-20-07-2026-2300?blv=256080",
-            "blv": "CUỘI",
-            "blv_id": "256080",
-            "status": "pending",
-            "attempts": 0,
-            "rate_limit_hits": 0,
-            "last_http_status": null,
-            "last_stream_count": 0,
-            "last_error": ""
-          },
-          "589848": {
-            "key": "589848",
-            "url": "https://socolivep.cv/truc-tiep/ifk-mariehamn-vs-lahti-20-07-2026-2300?blv=589848",
-            "blv": "LOKA",
-            "blv_id": "589848",
-            "status": "pending",
-            "attempts": 0,
-            "rate_limit_hits": 0,
-            "last_http_status": null,
-            "last_stream_count": 0,
-            "last_error": ""
-          },
-          "536185": {
-            "key": "536185",
-            "url": "https://socolivep.cv/truc-tiep/ifk-mariehamn-vs-lahti-20-07-2026-2300?blv=536185",
-            "blv": "A WIN",
-            "blv_id": "536185",
-            "status": "pending",
-            "attempts": 0,
-            "rate_limit_hits": 0,
-            "last_http_status": null,
-            "last_stream_count": 0,
-            "last_error": ""
-          },
-          "557845": {
-            "key": "557845",
-            "url": "https://socolivep.cv/truc-tiep/ifk-mariehamn-vs-lahti-20-07-2026-2300?blv=557845",
-            "blv": "A TÚ",
-            "blv_id": "557845",
-            "status": "pending",
-            "attempts": 0,
-            "rate_limit_hits": 0,
-            "last_http_status": null,
-            "last_stream_count": 0,
-            "last_error": ""
-          },
-          "472241": {
-            "key": "472241",
-            "url": "https://socolivep.cv/truc-tiep/ifk-mariehamn-vs-lahti-20-07-2026-2300?blv=472241",
-            "blv": "XO",
-            "blv_id": "472241",
-            "status": "pending",
-            "attempts": 0,
-            "rate_limit_hits": 0,
-            "last_http_status": null,
-            "last_stream_count": 0,
-            "last_error": ""
-          },
-          "380460": {
-            "key": "380460",
-            "url": "https://socolivep.cv/truc-tiep/ifk-mariehamn-vs-lahti-20-07-2026-2300?blv=380460",
-            "blv": "ENZO",
-            "blv_id": "380460",
-            "status": "pending",
-            "attempts": 0,
-            "rate_limit_hits": 0,
-            "last_http_status": null,
-            "last_stream_count": 0,
-            "last_error": ""
-          },
-          "__base__": {
-            "key": "__base__",
-            "url": "https://socolivep.cv/truc-tiep/ifk-mariehamn-vs-lahti-20-07-2026-2300/",
-            "blv": "",
-            "blv_id": "",
-            "status": "pending",
-            "attempts": 0,
-            "rate_limit_hits": 0,
-            "last_http_status": null,
-            "last_stream_count": 0,
-            "last_error": ""
-          }
-        }
-      },
-      "attempted_room_ids": [],
-      "room_progress": {
-        "256080": {
-          "key": "256080",
-          "url": "https://socolivep.cv/truc-tiep/ifk-mariehamn-vs-lahti-20-07-2026-2300?blv=256080",
-          "blv": "CUỘI",
-          "blv_id": "256080",
-          "status": "pending",
-          "attempts": 0,
-          "rate_limit_hits": 0,
-          "last_http_status": null,
-          "last_stream_count": 0,
-          "last_error": ""
-        },
-        "589848": {
-          "key": "589848",
-          "url": "https://socolivep.cv/truc-tiep/ifk-mariehamn-vs-lahti-20-07-2026-2300?blv=589848",
-          "blv": "LOKA",
-          "blv_id": "589848",
-          "status": "pending",
-          "attempts": 0,
-          "rate_limit_hits": 0,
-          "last_http_status": null,
-          "last_stream_count": 0,
-          "last_error": ""
-        },
-        "536185": {
-          "key": "536185",
-          "url": "https://socolivep.cv/truc-tiep/ifk-mariehamn-vs-lahti-20-07-2026-2300?blv=536185",
-          "blv": "A WIN",
-          "blv_id": "536185",
-          "status": "pending",
-          "attempts": 0,
-          "rate_limit_hits": 0,
-          "last_http_status": null,
-          "last_stream_count": 0,
-          "last_error": ""
-        },
-        "557845": {
-          "key": "557845",
-          "url": "https://socolivep.cv/truc-tiep/ifk-mariehamn-vs-lahti-20-07-2026-2300?blv=557845",
-          "blv": "A TÚ",
-          "blv_id": "557845",
-          "status": "pending",
-          "attempts": 0,
-          "rate_limit_hits": 0,
-          "last_http_status": null,
-          "last_stream_count": 0,
-          "last_error": ""
-        },
-        "472241": {
-          "key": "472241",
-          "url": "https://socolivep.cv/truc-tiep/ifk-mariehamn-vs-lahti-20-07-2026-2300?blv=472241",
-          "blv": "XO",
-          "blv_id": "472241",
-          "status": "pending",
-          "attempts": 0,
-          "rate_limit_hits": 0,
-          "last_http_status": null,
-          "last_stream_count": 0,
-          "last_error": ""
-        },
-        "380460": {
-          "key": "380460",
-          "url": "https://socolivep.cv/truc-tiep/ifk-mariehamn-vs-lahti-20-07-2026-2300?blv=380460",
-          "blv": "ENZO",
-          "blv_id": "380460",
-          "status": "pending",
-          "attempts": 0,
-          "rate_limit_hits": 0,
-          "last_http_status": null,
-          "last_stream_count": 0,
-          "last_error": ""
-        },
-        "__base__": {
-          "key": "__base__",
-          "url": "https://socolivep.cv/truc-tiep/ifk-mariehamn-vs-lahti-20-07-2026-2300/",
-          "blv": "",
-          "blv_id": "",
-          "status": "pending",
-          "attempts": 0,
-          "rate_limit_hits": 0,
-          "last_http_status": null,
-          "last_stream_count": 0,
-          "last_error": ""
-        }
-      },
-      "pending_room_keys": [
-        "256080",
-        "589848",
-        "536185",
-        "557845",
-        "472241",
-        "380460"
-      ]
-    },
-    {
-      "base_url": "https://socolivep.cv/truc-tiep/super-nova-vs-grobina-20-07-2026-2300/",
-      "match_name": "Super Nova vs Grobina",
-      "scheduled_at": "2026-07-20T23:00:00+07:00",
-      "rooms": [
-        {
-          "url": "https://socolivep.cv/truc-tiep/super-nova-vs-grobina-20-07-2026-2300?blv=511367",
-          "blv": "WUKONG",
-          "blv_id": "511367"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/super-nova-vs-grobina-20-07-2026-2300?blv=607552",
-          "blv": "ĐỖ TÚ TÀI",
-          "blv_id": "607552"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/super-nova-vs-grobina-20-07-2026-2300",
-          "blv": "XEM NGAY",
-          "blv_id": ""
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/super-nova-vs-grobina-20-07-2026-2300/",
-          "blv": "",
-          "blv_id": ""
-        }
-      ],
-      "streams": [],
-      "coverage": {
-        "found_streams": 0,
-        "found_blv_ids": [],
-        "goal": 2,
-        "source_goal_reached": false,
-        "room_queue_complete": false,
-        "complete": false,
-        "total_explicit_blv_rooms": 2,
-        "pending_room_keys": [
-          "511367",
-          "607552"
-        ],
-        "room_progress": {
-          "511367": {
-            "key": "511367",
-            "url": "https://socolivep.cv/truc-tiep/super-nova-vs-grobina-20-07-2026-2300?blv=511367",
-            "blv": "WUKONG",
-            "blv_id": "511367",
-            "status": "pending",
-            "attempts": 0,
-            "rate_limit_hits": 0,
-            "last_http_status": null,
-            "last_stream_count": 0,
-            "last_error": ""
-          },
-          "607552": {
-            "key": "607552",
-            "url": "https://socolivep.cv/truc-tiep/super-nova-vs-grobina-20-07-2026-2300?blv=607552",
-            "blv": "ĐỖ TÚ TÀI",
-            "blv_id": "607552",
-            "status": "pending",
-            "attempts": 0,
-            "rate_limit_hits": 0,
-            "last_http_status": null,
-            "last_stream_count": 0,
-            "last_error": ""
-          },
-          "__base__": {
-            "key": "__base__",
-            "url": "https://socolivep.cv/truc-tiep/super-nova-vs-grobina-20-07-2026-2300/",
-            "blv": "",
-            "blv_id": "",
-            "status": "pending",
-            "attempts": 0,
-            "rate_limit_hits": 0,
-            "last_http_status": null,
-            "last_stream_count": 0,
-            "last_error": ""
-          }
-        }
-      },
-      "attempted_room_ids": [],
-      "room_progress": {
-        "511367": {
-          "key": "511367",
-          "url": "https://socolivep.cv/truc-tiep/super-nova-vs-grobina-20-07-2026-2300?blv=511367",
-          "blv": "WUKONG",
-          "blv_id": "511367",
-          "status": "pending",
-          "attempts": 0,
-          "rate_limit_hits": 0,
-          "last_http_status": null,
-          "last_stream_count": 0,
-          "last_error": ""
-        },
-        "607552": {
-          "key": "607552",
-          "url": "https://socolivep.cv/truc-tiep/super-nova-vs-grobina-20-07-2026-2300?blv=607552",
-          "blv": "ĐỖ TÚ TÀI",
-          "blv_id": "607552",
-          "status": "pending",
-          "attempts": 0,
-          "rate_limit_hits": 0,
-          "last_http_status": null,
-          "last_stream_count": 0,
-          "last_error": ""
-        },
-        "__base__": {
-          "key": "__base__",
-          "url": "https://socolivep.cv/truc-tiep/super-nova-vs-grobina-20-07-2026-2300/",
-          "blv": "",
-          "blv_id": "",
-          "status": "pending",
-          "attempts": 0,
-          "rate_limit_hits": 0,
-          "last_http_status": null,
-          "last_stream_count": 0,
-          "last_error": ""
-        }
-      },
-      "pending_room_keys": [
-        "511367",
-        "607552"
-      ]
-    },
-    {
-      "base_url": "https://socolivep.cv/truc-tiep/suduva-vs-hegelmann-20-07-2026-2245/",
-      "match_name": "Suduva vs Hegelmann",
-      "scheduled_at": "2026-07-20T22:45:00+07:00",
-      "rooms": [
-        {
-          "url": "https://socolivep.cv/truc-tiep/suduva-vs-hegelmann-20-07-2026-2245?blv=597929",
-          "blv": "CÁO",
-          "blv_id": "597929"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/suduva-vs-hegelmann-20-07-2026-2245?blv=598549",
-          "blv": "PICK",
-          "blv_id": "598549"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/suduva-vs-hegelmann-20-07-2026-2245",
-          "blv": "XEM NGAY",
-          "blv_id": ""
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/suduva-vs-hegelmann-20-07-2026-2245/",
-          "blv": "",
-          "blv_id": ""
-        }
-      ],
-      "streams": [],
-      "coverage": {
-        "found_streams": 0,
-        "found_blv_ids": [],
-        "goal": 2,
-        "source_goal_reached": false,
-        "room_queue_complete": false,
-        "complete": false,
-        "total_explicit_blv_rooms": 2,
-        "pending_room_keys": [
-          "597929",
-          "598549"
-        ],
-        "room_progress": {
-          "597929": {
-            "key": "597929",
-            "url": "https://socolivep.cv/truc-tiep/suduva-vs-hegelmann-20-07-2026-2245?blv=597929",
-            "blv": "CÁO",
-            "blv_id": "597929",
-            "status": "pending",
-            "attempts": 0,
-            "rate_limit_hits": 0,
-            "last_http_status": null,
-            "last_stream_count": 0,
-            "last_error": ""
-          },
-          "598549": {
-            "key": "598549",
-            "url": "https://socolivep.cv/truc-tiep/suduva-vs-hegelmann-20-07-2026-2245?blv=598549",
-            "blv": "PICK",
-            "blv_id": "598549",
-            "status": "pending",
-            "attempts": 0,
-            "rate_limit_hits": 0,
-            "last_http_status": null,
-            "last_stream_count": 0,
-            "last_error": ""
-          },
-          "__base__": {
-            "key": "__base__",
-            "url": "https://socolivep.cv/truc-tiep/suduva-vs-hegelmann-20-07-2026-2245/",
-            "blv": "",
-            "blv_id": "",
-            "status": "pending",
-            "attempts": 0,
-            "rate_limit_hits": 0,
-            "last_http_status": null,
-            "last_stream_count": 0,
-            "last_error": ""
-          }
-        }
-      },
-      "attempted_room_ids": [],
-      "room_progress": {
-        "597929": {
-          "key": "597929",
-          "url": "https://socolivep.cv/truc-tiep/suduva-vs-hegelmann-20-07-2026-2245?blv=597929",
-          "blv": "CÁO",
-          "blv_id": "597929",
-          "status": "pending",
-          "attempts": 0,
-          "rate_limit_hits": 0,
-          "last_http_status": null,
-          "last_stream_count": 0,
-          "last_error": ""
-        },
-        "598549": {
-          "key": "598549",
-          "url": "https://socolivep.cv/truc-tiep/suduva-vs-hegelmann-20-07-2026-2245?blv=598549",
-          "blv": "PICK",
-          "blv_id": "598549",
-          "status": "pending",
-          "attempts": 0,
-          "rate_limit_hits": 0,
-          "last_http_status": null,
-          "last_stream_count": 0,
-          "last_error": ""
-        },
-        "__base__": {
-          "key": "__base__",
-          "url": "https://socolivep.cv/truc-tiep/suduva-vs-hegelmann-20-07-2026-2245/",
-          "blv": "",
-          "blv_id": "",
-          "status": "pending",
-          "attempts": 0,
-          "rate_limit_hits": 0,
-          "last_http_status": null,
-          "last_stream_count": 0,
-          "last_error": ""
-        }
-      },
-      "pending_room_keys": [
-        "597929",
-        "598549"
-      ]
-    },
-    {
-      "base_url": "https://socolivep.cv/truc-tiep/corvinul-hunedoara-vs-fk-csikszereda-miercurea-ciuc-20-07-2026-2230/",
-      "match_name": "Corvinul Hunedoara vs FK Csikszereda Miercurea Ciuc",
-      "scheduled_at": "2026-07-20T22:30:00+07:00",
-      "rooms": [
-        {
-          "url": "https://socolivep.cv/truc-tiep/corvinul-hunedoara-vs-fk-csikszereda-miercurea-ciuc-20-07-2026-2230?blv=132343",
-          "blv": "LONG",
-          "blv_id": "132343"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/corvinul-hunedoara-vs-fk-csikszereda-miercurea-ciuc-20-07-2026-2230?blv=250874",
-          "blv": "FIREMAN",
-          "blv_id": "250874"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/corvinul-hunedoara-vs-fk-csikszereda-miercurea-ciuc-20-07-2026-2230?blv=618546",
-          "blv": "SEVEN",
-          "blv_id": "618546"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/corvinul-hunedoara-vs-fk-csikszereda-miercurea-ciuc-20-07-2026-2230?blv=291277",
-          "blv": "CÔNG CHẤT",
-          "blv_id": "291277"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/corvinul-hunedoara-vs-fk-csikszereda-miercurea-ciuc-20-07-2026-2230?blv=620003",
-          "blv": "FOX",
-          "blv_id": "620003"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/corvinul-hunedoara-vs-fk-csikszereda-miercurea-ciuc-20-07-2026-2230?blv=187579",
-          "blv": "TOMIA",
-          "blv_id": "187579"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/corvinul-hunedoara-vs-fk-csikszereda-miercurea-ciuc-20-07-2026-2230",
-          "blv": "XEM NGAY",
-          "blv_id": ""
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/corvinul-hunedoara-vs-fk-csikszereda-miercurea-ciuc-20-07-2026-2230/",
-          "blv": "",
-          "blv_id": ""
-        }
-      ],
-      "streams": [],
-      "coverage": {
-        "found_streams": 0,
-        "found_blv_ids": [],
-        "goal": 6,
-        "source_goal_reached": false,
-        "room_queue_complete": false,
-        "complete": false,
-        "total_explicit_blv_rooms": 6,
-        "pending_room_keys": [
-          "132343",
-          "250874",
-          "618546",
-          "291277",
-          "620003",
-          "187579"
-        ],
-        "room_progress": {
-          "132343": {
-            "key": "132343",
-            "url": "https://socolivep.cv/truc-tiep/corvinul-hunedoara-vs-fk-csikszereda-miercurea-ciuc-20-07-2026-2230?blv=132343",
-            "blv": "LONG",
-            "blv_id": "132343",
-            "status": "pending",
-            "attempts": 0,
-            "rate_limit_hits": 0,
-            "last_http_status": null,
-            "last_stream_count": 0,
-            "last_error": ""
-          },
-          "250874": {
-            "key": "250874",
-            "url": "https://socolivep.cv/truc-tiep/corvinul-hunedoara-vs-fk-csikszereda-miercurea-ciuc-20-07-2026-2230?blv=250874",
-            "blv": "FIREMAN",
-            "blv_id": "250874",
-            "status": "pending",
-            "attempts": 0,
-            "rate_limit_hits": 0,
-            "last_http_status": null,
-            "last_stream_count": 0,
-            "last_error": ""
-          },
-          "618546": {
-            "key": "618546",
-            "url": "https://socolivep.cv/truc-tiep/corvinul-hunedoara-vs-fk-csikszereda-miercurea-ciuc-20-07-2026-2230?blv=618546",
-            "blv": "SEVEN",
-            "blv_id": "618546",
-            "status": "pending",
-            "attempts": 0,
-            "rate_limit_hits": 0,
-            "last_http_status": null,
-            "last_stream_count": 0,
-            "last_error": ""
-          },
-          "291277": {
-            "key": "291277",
-            "url": "https://socolivep.cv/truc-tiep/corvinul-hunedoara-vs-fk-csikszereda-miercurea-ciuc-20-07-2026-2230?blv=291277",
-            "blv": "CÔNG CHẤT",
-            "blv_id": "291277",
-            "status": "pending",
-            "attempts": 0,
-            "rate_limit_hits": 0,
-            "last_http_status": null,
-            "last_stream_count": 0,
-            "last_error": ""
-          },
-          "620003": {
-            "key": "620003",
-            "url": "https://socolivep.cv/truc-tiep/corvinul-hunedoara-vs-fk-csikszereda-miercurea-ciuc-20-07-2026-2230?blv=620003",
-            "blv": "FOX",
-            "blv_id": "620003",
-            "status": "pending",
-            "attempts": 0,
-            "rate_limit_hits": 0,
-            "last_http_status": null,
-            "last_stream_count": 0,
-            "last_error": ""
-          },
-          "187579": {
-            "key": "187579",
-            "url": "https://socolivep.cv/truc-tiep/corvinul-hunedoara-vs-fk-csikszereda-miercurea-ciuc-20-07-2026-2230?blv=187579",
-            "blv": "TOMIA",
-            "blv_id": "187579",
-            "status": "pending",
-            "attempts": 0,
-            "rate_limit_hits": 0,
-            "last_http_status": null,
-            "last_stream_count": 0,
-            "last_error": ""
-          },
-          "__base__": {
-            "key": "__base__",
-            "url": "https://socolivep.cv/truc-tiep/corvinul-hunedoara-vs-fk-csikszereda-miercurea-ciuc-20-07-2026-2230/",
-            "blv": "",
-            "blv_id": "",
-            "status": "pending",
-            "attempts": 0,
-            "rate_limit_hits": 0,
-            "last_http_status": null,
-            "last_stream_count": 0,
-            "last_error": ""
-          }
-        }
-      },
-      "attempted_room_ids": [],
-      "room_progress": {
-        "132343": {
-          "key": "132343",
-          "url": "https://socolivep.cv/truc-tiep/corvinul-hunedoara-vs-fk-csikszereda-miercurea-ciuc-20-07-2026-2230?blv=132343",
-          "blv": "LONG",
-          "blv_id": "132343",
-          "status": "pending",
-          "attempts": 0,
-          "rate_limit_hits": 0,
-          "last_http_status": null,
-          "last_stream_count": 0,
-          "last_error": ""
-        },
-        "250874": {
-          "key": "250874",
-          "url": "https://socolivep.cv/truc-tiep/corvinul-hunedoara-vs-fk-csikszereda-miercurea-ciuc-20-07-2026-2230?blv=250874",
-          "blv": "FIREMAN",
-          "blv_id": "250874",
-          "status": "pending",
-          "attempts": 0,
-          "rate_limit_hits": 0,
-          "last_http_status": null,
-          "last_stream_count": 0,
-          "last_error": ""
-        },
-        "618546": {
-          "key": "618546",
-          "url": "https://socolivep.cv/truc-tiep/corvinul-hunedoara-vs-fk-csikszereda-miercurea-ciuc-20-07-2026-2230?blv=618546",
-          "blv": "SEVEN",
-          "blv_id": "618546",
-          "status": "pending",
-          "attempts": 0,
-          "rate_limit_hits": 0,
-          "last_http_status": null,
-          "last_stream_count": 0,
-          "last_error": ""
-        },
-        "291277": {
-          "key": "291277",
-          "url": "https://socolivep.cv/truc-tiep/corvinul-hunedoara-vs-fk-csikszereda-miercurea-ciuc-20-07-2026-2230?blv=291277",
-          "blv": "CÔNG CHẤT",
-          "blv_id": "291277",
-          "status": "pending",
-          "attempts": 0,
-          "rate_limit_hits": 0,
-          "last_http_status": null,
-          "last_stream_count": 0,
-          "last_error": ""
-        },
-        "620003": {
-          "key": "620003",
-          "url": "https://socolivep.cv/truc-tiep/corvinul-hunedoara-vs-fk-csikszereda-miercurea-ciuc-20-07-2026-2230?blv=620003",
-          "blv": "FOX",
-          "blv_id": "620003",
-          "status": "pending",
-          "attempts": 0,
-          "rate_limit_hits": 0,
-          "last_http_status": null,
-          "last_stream_count": 0,
-          "last_error": ""
-        },
-        "187579": {
-          "key": "187579",
-          "url": "https://socolivep.cv/truc-tiep/corvinul-hunedoara-vs-fk-csikszereda-miercurea-ciuc-20-07-2026-2230?blv=187579",
-          "blv": "TOMIA",
-          "blv_id": "187579",
-          "status": "pending",
-          "attempts": 0,
-          "rate_limit_hits": 0,
-          "last_http_status": null,
-          "last_stream_count": 0,
-          "last_error": ""
-        },
-        "__base__": {
-          "key": "__base__",
-          "url": "https://socolivep.cv/truc-tiep/corvinul-hunedoara-vs-fk-csikszereda-miercurea-ciuc-20-07-2026-2230/",
-          "blv": "",
-          "blv_id": "",
-          "status": "pending",
-          "attempts": 0,
-          "rate_limit_hits": 0,
-          "last_http_status": null,
-          "last_stream_count": 0,
-          "last_error": ""
-        }
-      },
-      "pending_room_keys": [
-        "132343",
-        "250874",
-        "618546",
-        "291277",
-        "620003",
-        "187579"
-      ]
-    },
-    {
-      "base_url": "https://socolivep.cv/truc-tiep/tps-turku-vs-ilves-tampere-20-07-2026-2200/",
-      "match_name": "TPS Turku vs Ilves Tampere",
-      "scheduled_at": "2026-07-20T22:00:00+07:00",
-      "rooms": [
-        {
-          "url": "https://socolivep.cv/truc-tiep/tps-turku-vs-ilves-tampere-20-07-2026-2200?blv=360663",
-          "blv": "Củ Cải",
-          "blv_id": "360663"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/tps-turku-vs-ilves-tampere-20-07-2026-2200?blv=599634",
-          "blv": "HẢI THANH",
-          "blv_id": "599634"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/tps-turku-vs-ilves-tampere-20-07-2026-2200?blv=414317",
-          "blv": "TOMMY",
-          "blv_id": "414317"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/tps-turku-vs-ilves-tampere-20-07-2026-2200?blv=387694",
-          "blv": "CR Bưởi",
-          "blv_id": "387694"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/tps-turku-vs-ilves-tampere-20-07-2026-2200?blv=532081",
-          "blv": "ALEX",
-          "blv_id": "532081"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/tps-turku-vs-ilves-tampere-20-07-2026-2200?blv=527383",
-          "blv": "ROBBEN",
-          "blv_id": "527383"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/tps-turku-vs-ilves-tampere-20-07-2026-2200",
-          "blv": "XEM NGAY",
-          "blv_id": ""
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/tps-turku-vs-ilves-tampere-20-07-2026-2200/",
-          "blv": "",
-          "blv_id": ""
-        }
-      ],
-      "streams": [],
-      "coverage": {
-        "found_streams": 0,
-        "found_blv_ids": [],
-        "goal": 6,
-        "source_goal_reached": false,
-        "room_queue_complete": false,
-        "complete": false,
-        "total_explicit_blv_rooms": 6,
-        "pending_room_keys": [
-          "360663",
-          "599634",
-          "414317",
-          "387694",
-          "532081",
-          "527383"
-        ],
-        "room_progress": {
-          "360663": {
-            "key": "360663",
-            "url": "https://socolivep.cv/truc-tiep/tps-turku-vs-ilves-tampere-20-07-2026-2200?blv=360663",
-            "blv": "Củ Cải",
-            "blv_id": "360663",
-            "status": "pending",
-            "attempts": 0,
-            "rate_limit_hits": 0,
-            "last_http_status": null,
-            "last_stream_count": 0,
-            "last_error": ""
-          },
-          "599634": {
-            "key": "599634",
-            "url": "https://socolivep.cv/truc-tiep/tps-turku-vs-ilves-tampere-20-07-2026-2200?blv=599634",
-            "blv": "HẢI THANH",
-            "blv_id": "599634",
-            "status": "pending",
-            "attempts": 0,
-            "rate_limit_hits": 0,
-            "last_http_status": null,
-            "last_stream_count": 0,
-            "last_error": ""
-          },
-          "414317": {
-            "key": "414317",
-            "url": "https://socolivep.cv/truc-tiep/tps-turku-vs-ilves-tampere-20-07-2026-2200?blv=414317",
-            "blv": "TOMMY",
-            "blv_id": "414317",
-            "status": "pending",
-            "attempts": 0,
-            "rate_limit_hits": 0,
-            "last_http_status": null,
-            "last_stream_count": 0,
-            "last_error": ""
-          },
-          "387694": {
-            "key": "387694",
-            "url": "https://socolivep.cv/truc-tiep/tps-turku-vs-ilves-tampere-20-07-2026-2200?blv=387694",
-            "blv": "CR Bưởi",
-            "blv_id": "387694",
-            "status": "pending",
-            "attempts": 0,
-            "rate_limit_hits": 0,
-            "last_http_status": null,
-            "last_stream_count": 0,
-            "last_error": ""
-          },
-          "532081": {
-            "key": "532081",
-            "url": "https://socolivep.cv/truc-tiep/tps-turku-vs-ilves-tampere-20-07-2026-2200?blv=532081",
-            "blv": "ALEX",
-            "blv_id": "532081",
-            "status": "pending",
-            "attempts": 0,
-            "rate_limit_hits": 0,
-            "last_http_status": null,
-            "last_stream_count": 0,
-            "last_error": ""
-          },
-          "527383": {
-            "key": "527383",
-            "url": "https://socolivep.cv/truc-tiep/tps-turku-vs-ilves-tampere-20-07-2026-2200?blv=527383",
-            "blv": "ROBBEN",
-            "blv_id": "527383",
-            "status": "pending",
-            "attempts": 0,
-            "rate_limit_hits": 0,
-            "last_http_status": null,
-            "last_stream_count": 0,
-            "last_error": ""
-          },
-          "__base__": {
-            "key": "__base__",
-            "url": "https://socolivep.cv/truc-tiep/tps-turku-vs-ilves-tampere-20-07-2026-2200/",
-            "blv": "",
-            "blv_id": "",
-            "status": "pending",
-            "attempts": 0,
-            "rate_limit_hits": 0,
-            "last_http_status": null,
-            "last_stream_count": 0,
-            "last_error": ""
-          }
-        }
-      },
-      "attempted_room_ids": [],
-      "room_progress": {
-        "360663": {
-          "key": "360663",
-          "url": "https://socolivep.cv/truc-tiep/tps-turku-vs-ilves-tampere-20-07-2026-2200?blv=360663",
-          "blv": "Củ Cải",
-          "blv_id": "360663",
-          "status": "pending",
-          "attempts": 0,
-          "rate_limit_hits": 0,
-          "last_http_status": null,
-          "last_stream_count": 0,
-          "last_error": ""
-        },
-        "599634": {
-          "key": "599634",
-          "url": "https://socolivep.cv/truc-tiep/tps-turku-vs-ilves-tampere-20-07-2026-2200?blv=599634",
-          "blv": "HẢI THANH",
-          "blv_id": "599634",
-          "status": "pending",
-          "attempts": 0,
-          "rate_limit_hits": 0,
-          "last_http_status": null,
-          "last_stream_count": 0,
-          "last_error": ""
-        },
-        "414317": {
-          "key": "414317",
-          "url": "https://socolivep.cv/truc-tiep/tps-turku-vs-ilves-tampere-20-07-2026-2200?blv=414317",
-          "blv": "TOMMY",
-          "blv_id": "414317",
-          "status": "pending",
-          "attempts": 0,
-          "rate_limit_hits": 0,
-          "last_http_status": null,
-          "last_stream_count": 0,
-          "last_error": ""
-        },
-        "387694": {
-          "key": "387694",
-          "url": "https://socolivep.cv/truc-tiep/tps-turku-vs-ilves-tampere-20-07-2026-2200?blv=387694",
-          "blv": "CR Bưởi",
-          "blv_id": "387694",
-          "status": "pending",
-          "attempts": 0,
-          "rate_limit_hits": 0,
-          "last_http_status": null,
-          "last_stream_count": 0,
-          "last_error": ""
-        },
-        "532081": {
-          "key": "532081",
-          "url": "https://socolivep.cv/truc-tiep/tps-turku-vs-ilves-tampere-20-07-2026-2200?blv=532081",
-          "blv": "ALEX",
-          "blv_id": "532081",
-          "status": "pending",
-          "attempts": 0,
-          "rate_limit_hits": 0,
-          "last_http_status": null,
-          "last_stream_count": 0,
-          "last_error": ""
-        },
-        "527383": {
-          "key": "527383",
-          "url": "https://socolivep.cv/truc-tiep/tps-turku-vs-ilves-tampere-20-07-2026-2200?blv=527383",
-          "blv": "ROBBEN",
-          "blv_id": "527383",
-          "status": "pending",
-          "attempts": 0,
-          "rate_limit_hits": 0,
-          "last_http_status": null,
-          "last_stream_count": 0,
-          "last_error": ""
-        },
-        "__base__": {
-          "key": "__base__",
-          "url": "https://socolivep.cv/truc-tiep/tps-turku-vs-ilves-tampere-20-07-2026-2200/",
-          "blv": "",
-          "blv_id": "",
-          "status": "pending",
-          "attempts": 0,
-          "rate_limit_hits": 0,
-          "last_http_status": null,
-          "last_stream_count": 0,
-          "last_error": ""
-        }
-      },
-      "pending_room_keys": [
-        "360663",
-        "599634",
-        "414317",
-        "387694",
-        "532081",
-        "527383"
-      ]
-    },
-    {
-      "base_url": "https://socolivep.cv/truc-tiep/jelgava-vs-rigas-futbola-skola-20-07-2026-2200/",
-      "match_name": "Jelgava vs Rigas Futbola Skola",
-      "scheduled_at": "2026-07-20T22:00:00+07:00",
-      "rooms": [
-        {
-          "url": "https://socolivep.cv/truc-tiep/jelgava-vs-rigas-futbola-skola-20-07-2026-2200?blv=610518",
-          "blv": "XUÂN TÓC ĐỎ",
-          "blv_id": "610518"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/jelgava-vs-rigas-futbola-skola-20-07-2026-2200?blv=603255",
-          "blv": "LION",
-          "blv_id": "603255"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/jelgava-vs-rigas-futbola-skola-20-07-2026-2200?blv=617313",
-          "blv": "VINFAST",
-          "blv_id": "617313"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/jelgava-vs-rigas-futbola-skola-20-07-2026-2200?blv=462413",
-          "blv": "SAO LA",
-          "blv_id": "462413"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/jelgava-vs-rigas-futbola-skola-20-07-2026-2200",
-          "blv": "XEM NGAY",
-          "blv_id": ""
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/jelgava-vs-rigas-futbola-skola-20-07-2026-2200/",
-          "blv": "",
-          "blv_id": ""
-        }
-      ],
-      "streams": [],
-      "coverage": {
-        "found_streams": 0,
-        "found_blv_ids": [],
-        "goal": 4,
-        "source_goal_reached": false,
-        "room_queue_complete": false,
-        "complete": false,
-        "total_explicit_blv_rooms": 4,
-        "pending_room_keys": [
-          "610518",
-          "603255",
-          "617313",
-          "462413"
-        ],
-        "room_progress": {
-          "610518": {
-            "key": "610518",
-            "url": "https://socolivep.cv/truc-tiep/jelgava-vs-rigas-futbola-skola-20-07-2026-2200?blv=610518",
-            "blv": "XUÂN TÓC ĐỎ",
-            "blv_id": "610518",
-            "status": "pending",
-            "attempts": 0,
-            "rate_limit_hits": 0,
-            "last_http_status": null,
-            "last_stream_count": 0,
-            "last_error": ""
-          },
-          "603255": {
-            "key": "603255",
-            "url": "https://socolivep.cv/truc-tiep/jelgava-vs-rigas-futbola-skola-20-07-2026-2200?blv=603255",
-            "blv": "LION",
-            "blv_id": "603255",
-            "status": "pending",
-            "attempts": 0,
-            "rate_limit_hits": 0,
-            "last_http_status": null,
-            "last_stream_count": 0,
-            "last_error": ""
-          },
-          "617313": {
-            "key": "617313",
-            "url": "https://socolivep.cv/truc-tiep/jelgava-vs-rigas-futbola-skola-20-07-2026-2200?blv=617313",
-            "blv": "VINFAST",
-            "blv_id": "617313",
-            "status": "pending",
-            "attempts": 0,
-            "rate_limit_hits": 0,
-            "last_http_status": null,
-            "last_stream_count": 0,
-            "last_error": ""
-          },
-          "462413": {
-            "key": "462413",
-            "url": "https://socolivep.cv/truc-tiep/jelgava-vs-rigas-futbola-skola-20-07-2026-2200?blv=462413",
-            "blv": "SAO LA",
-            "blv_id": "462413",
-            "status": "pending",
-            "attempts": 0,
-            "rate_limit_hits": 0,
-            "last_http_status": null,
-            "last_stream_count": 0,
-            "last_error": ""
-          },
-          "__base__": {
-            "key": "__base__",
-            "url": "https://socolivep.cv/truc-tiep/jelgava-vs-rigas-futbola-skola-20-07-2026-2200/",
-            "blv": "",
-            "blv_id": "",
-            "status": "pending",
-            "attempts": 0,
-            "rate_limit_hits": 0,
-            "last_http_status": null,
-            "last_stream_count": 0,
-            "last_error": ""
-          }
-        }
-      },
-      "attempted_room_ids": [],
-      "room_progress": {
-        "610518": {
-          "key": "610518",
-          "url": "https://socolivep.cv/truc-tiep/jelgava-vs-rigas-futbola-skola-20-07-2026-2200?blv=610518",
-          "blv": "XUÂN TÓC ĐỎ",
-          "blv_id": "610518",
-          "status": "pending",
-          "attempts": 0,
-          "rate_limit_hits": 0,
-          "last_http_status": null,
-          "last_stream_count": 0,
-          "last_error": ""
-        },
-        "603255": {
-          "key": "603255",
-          "url": "https://socolivep.cv/truc-tiep/jelgava-vs-rigas-futbola-skola-20-07-2026-2200?blv=603255",
-          "blv": "LION",
-          "blv_id": "603255",
-          "status": "pending",
-          "attempts": 0,
-          "rate_limit_hits": 0,
-          "last_http_status": null,
-          "last_stream_count": 0,
-          "last_error": ""
-        },
-        "617313": {
-          "key": "617313",
-          "url": "https://socolivep.cv/truc-tiep/jelgava-vs-rigas-futbola-skola-20-07-2026-2200?blv=617313",
-          "blv": "VINFAST",
-          "blv_id": "617313",
-          "status": "pending",
-          "attempts": 0,
-          "rate_limit_hits": 0,
-          "last_http_status": null,
-          "last_stream_count": 0,
-          "last_error": ""
-        },
-        "462413": {
-          "key": "462413",
-          "url": "https://socolivep.cv/truc-tiep/jelgava-vs-rigas-futbola-skola-20-07-2026-2200?blv=462413",
-          "blv": "SAO LA",
-          "blv_id": "462413",
-          "status": "pending",
-          "attempts": 0,
-          "rate_limit_hits": 0,
-          "last_http_status": null,
-          "last_stream_count": 0,
-          "last_error": ""
-        },
-        "__base__": {
-          "key": "__base__",
-          "url": "https://socolivep.cv/truc-tiep/jelgava-vs-rigas-futbola-skola-20-07-2026-2200/",
-          "blv": "",
-          "blv_id": "",
-          "status": "pending",
-          "attempts": 0,
-          "rate_limit_hits": 0,
-          "last_http_status": null,
-          "last_stream_count": 0,
-          "last_error": ""
-        }
-      },
-      "pending_room_keys": [
-        "610518",
-        "603255",
-        "617313",
-        "462413"
-      ]
-    },
-    {
       "base_url": "https://socolivep.cv/truc-tiep/botev-plovdiv-vs-lokomotiv-sofia-21-07-2026-0130/",
       "match_name": "Botev Plovdiv vs Lokomotiv Sofia",
       "scheduled_at": "2026-07-21T01:30:00+07:00",
@@ -2235,10 +993,11 @@
       "coverage": {
         "found_streams": 0,
         "found_blv_ids": [],
-        "goal": 2,
+        "goal": 4,
         "source_goal_reached": false,
         "room_queue_complete": false,
         "complete": false,
+        "max_streams_per_blv": 2,
         "total_explicit_blv_rooms": 2,
         "pending_room_keys": [
           "250874",
@@ -2367,10 +1126,11 @@
       "coverage": {
         "found_streams": 0,
         "found_blv_ids": [],
-        "goal": 4,
+        "goal": 8,
         "source_goal_reached": false,
         "room_queue_complete": false,
         "complete": false,
+        "max_streams_per_blv": 2,
         "total_explicit_blv_rooms": 4,
         "pending_room_keys": [
           "235232",
@@ -2551,10 +1311,11 @@
       "coverage": {
         "found_streams": 0,
         "found_blv_ids": [],
-        "goal": 4,
+        "goal": 8,
         "source_goal_reached": false,
         "room_queue_complete": false,
         "complete": false,
+        "max_streams_per_blv": 2,
         "total_explicit_blv_rooms": 4,
         "pending_room_keys": [
           "602019",
@@ -2730,10 +1491,11 @@
       "coverage": {
         "found_streams": 0,
         "found_blv_ids": [],
-        "goal": 3,
+        "goal": 6,
         "source_goal_reached": false,
         "room_queue_complete": false,
         "complete": false,
+        "max_streams_per_blv": 2,
         "total_explicit_blv_rooms": 3,
         "pending_room_keys": [
           "622602",
@@ -2883,10 +1645,11 @@
       "coverage": {
         "found_streams": 0,
         "found_blv_ids": [],
-        "goal": 3,
+        "goal": 6,
         "source_goal_reached": false,
         "room_queue_complete": false,
         "complete": false,
+        "max_streams_per_blv": 2,
         "total_explicit_blv_rooms": 3,
         "pending_room_keys": [
           "610518",
