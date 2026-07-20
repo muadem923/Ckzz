@@ -20,10 +20,19 @@ from playwright.async_api import BrowserContext, Page, async_playwright
 TARGET_URL = (
     os.getenv(
         "SOCOLIVE_TARGET_URL",
-        "https://socolivep.cv/",
+        "https://socoliveaus.co/",
     ).rstrip("/")
     + "/"
 )
+
+SHORT_URL = os.getenv(
+    "SOCOLIVE_SHORT_URL",
+    "https://bit.ly/socolive",
+).strip()
+AUTO_RESOLVE_SHORT_URL = (
+    os.getenv("SOCOLIVE_AUTO_RESOLVE_SHORT_URL", "1") != "0"
+)
+OUTPUT_DOMAIN = "socolive_domain.json"
 
 OUTPUT_M3U = "socolive_live.m3u"
 OUTPUT_DEBUG = "socolive_debug.json"
@@ -66,7 +75,7 @@ SCAN_ALL = os.getenv("SOCOLIVE_SCAN_ALL", "0") == "1"
 # Mục tiêu nhiều luồng cho mỗi trận.
 # Một trang có thể nhúng config/link của nhiều BLV khác nhau.
 MAX_STREAMS_PER_MATCH = int(
-    os.getenv("SOCOLIVE_MAX_STREAMS_PER_MATCH", "12")
+    os.getenv("SOCOLIVE_MAX_STREAMS_PER_MATCH", "24")
 )
 
 # Số trang BLV tối đa được mở cho cùng một trận trong MỘT workflow run.
@@ -94,6 +103,17 @@ ROOM_EMPTY_MAX_ATTEMPTS = int(
     os.getenv("SOCOLIVE_ROOM_EMPTY_MAX_ATTEMPTS", "2")
 )
 
+MAX_STREAMS_PER_BLV = int(
+    os.getenv("SOCOLIVE_MAX_STREAMS_PER_BLV", "2")
+)
+
+CAPTURE_RESPONSE_BODIES = (
+    os.getenv("SOCOLIVE_CAPTURE_RESPONSE_BODIES", "1") != "0"
+)
+MAX_RESPONSE_BODY_BYTES = int(
+    os.getenv("SOCOLIVE_MAX_RESPONSE_BODY_BYTES", "2000000")
+)
+
 HEADLESS = os.getenv("SOCOLIVE_HEADLESS", "1") != "0"
 
 # Khi gặp HTTP 429, không retry trong cùng runner. Dừng mở trang mới và giữ kết quả đã lấy.
@@ -113,7 +133,7 @@ STATE_MAX_NO_PROGRESS_RUNS = int(
 
 # Đổi schema để reset chain/phòng đã thử của V9,
 # vì V9 đã loại sai stream-ID không trùng BLV-ID.
-STATE_SCHEMA_VERSION = "v10-per-blv-queue"
+STATE_SCHEMA_VERSION = "v11-dual-adapter-two-streams"
 
 UA = (
     "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
@@ -162,10 +182,140 @@ def canonical_match_url(url: str) -> str:
 
 
 def room_blv_id(url: str) -> str:
+    """Hỗ trợ cả ?blv=ID và /room/ID."""
     try:
-        return parse_qs(urlsplit(url).query).get("blv", [""])[0]
+        parsed = urlsplit(url)
+        old_id = parse_qs(
+            parsed.query,
+            keep_blank_values=True,
+        ).get("blv", [""])[0]
+        if old_id:
+            return old_id
+
+        match = re.search(
+            r"/room/(\d+)(?:/|$)",
+            parsed.path,
+            flags=re.I,
+        )
+        return match.group(1) if match else ""
     except Exception:
         return ""
+
+
+def room_schedule_id(url: str) -> str:
+    try:
+        return parse_qs(
+            urlsplit(url).query,
+            keep_blank_values=True,
+        ).get("scheduleId", [""])[0]
+    except Exception:
+        return ""
+
+
+def stream_path_key(url: str) -> tuple[str, str, str]:
+    try:
+        parsed = urlsplit(url)
+        return (
+            parsed.scheme.lower(),
+            parsed.netloc.lower(),
+            parsed.path,
+        )
+    except Exception:
+        return ("", "", clean_text(url))
+
+
+def stream_kind(url: str) -> str:
+    path = urlsplit(url).path.lower()
+    if path.endswith(".m3u8"):
+        return "m3u8"
+    if path.endswith(".flv"):
+        return "flv"
+    return "unknown"
+
+
+def scheduled_datetime_from_match(
+    match: dict[str, Any],
+) -> datetime | None:
+    value = clean_text(
+        str(match.get("scheduled_at", "") or "")
+    )
+    if value:
+        try:
+            parsed = datetime.fromisoformat(value)
+            if parsed.tzinfo is None:
+                parsed = parsed.replace(tzinfo=TIMEZONE)
+            return parsed.astimezone(TIMEZONE)
+        except Exception:
+            pass
+
+    return match_datetime_from_url(
+        match.get("base_url", "")
+    )
+
+
+def streams_for_queue_room(
+    match: dict[str, Any],
+    queue_key: str,
+) -> list[dict[str, Any]]:
+    return [
+        item
+        for item in match.get("streams", [])
+        if clean_text(
+            str(item.get("queue_room_key", "") or "")
+        ) == queue_key
+    ]
+
+
+def limit_streams_per_blv(
+    match: dict[str, Any],
+) -> None:
+    grouped: dict[str, list[dict[str, Any]]] = {}
+
+    for item in match.get("streams", []):
+        key = clean_text(
+            str(
+                item.get("queue_room_key")
+                or item.get("blv_id")
+                or item.get("source_id")
+                or "unknown"
+            )
+        )
+        grouped.setdefault(key, []).append(item)
+
+    kept: list[dict[str, Any]] = []
+
+    for items in grouped.values():
+        best_by_path: dict[
+            tuple[str, str, str],
+            dict[str, Any],
+        ] = {}
+
+        for item in items:
+            url = clean_text(str(item.get("url", "") or ""))
+            if not url:
+                continue
+            key = stream_path_key(url)
+            old = best_by_path.get(key)
+            if old is None or len(url) > len(
+                str(old.get("url", "") or "")
+            ):
+                best_by_path[key] = item
+
+        ranked = sorted(
+            best_by_path.values(),
+            key=lambda item: (
+                0
+                if item.get("source_confidence") == "network"
+                else 1,
+                0
+                if stream_kind(item.get("url", "")) == "m3u8"
+                else 1,
+                -len(str(item.get("url", "") or "")),
+            ),
+        )
+        kept.extend(ranked[:MAX_STREAMS_PER_BLV])
+
+    match["streams"] = kept
 
 
 def stream_blv_id(stream_url: str) -> str:
@@ -318,6 +468,7 @@ def pending_room_keys(
 
         if status in {
             "pending",
+            "partial",
             "retry",
             "rate_limited",
         }:
@@ -336,6 +487,7 @@ def pending_room_keys(
 
         if status in {
             "pending",
+            "partial",
             "retry",
             "rate_limited",
         }:
@@ -394,13 +546,19 @@ def match_found_blv_ids(
 def match_stream_goal(
     match: dict[str, Any],
 ) -> int:
-    room_count = len(match_room_map(match))
+    room_count = len(explicit_blv_rooms(match))
     if room_count <= 0:
-        return 1
+        room_count = max(
+            1,
+            len(unique_rooms(match.get("rooms", []))),
+        )
 
     return max(
         1,
-        min(room_count, MAX_STREAMS_PER_MATCH),
+        min(
+            room_count * MAX_STREAMS_PER_BLV,
+            MAX_STREAMS_PER_MATCH,
+        ),
     )
 
 
@@ -718,9 +876,188 @@ def unique_rooms(rooms: list[dict[str, str]]) -> list[dict[str, str]]:
     return with_blv + base_rooms
 
 
+async def probe_home_candidate(
+    context: BrowserContext,
+    url: str,
+) -> dict[str, Any]:
+    started = time.monotonic()
+    result: dict[str, Any] = {
+        "input_url": url,
+        "final_url": "",
+        "status": None,
+        "score": -1,
+        "room_links": 0,
+        "legacy_links": 0,
+        "elapsed_seconds": 0.0,
+        "error": "",
+    }
+
+    try:
+        response = await context.request.get(
+            url,
+            headers={
+                "User-Agent": UA,
+                "Accept-Language":
+                    "vi-VN,vi;q=0.9,en-US;q=0.8,en;q=0.7",
+            },
+            timeout=15000,
+            fail_on_status_code=False,
+        )
+        body = await response.text()
+        final_url = response.url
+        parsed = urlsplit(final_url)
+        root_url = urlunsplit(
+            (parsed.scheme, parsed.netloc, "/", "", "")
+        ) if parsed.netloc else final_url
+        room_count = len(
+            re.findall(
+                r'''href=["'][^"']*/room/\d+''',
+                body,
+                flags=re.I,
+            )
+        )
+        legacy_count = len(
+            re.findall(
+                r'''href=["'][^"']*/truc-tiep/''',
+                body,
+                flags=re.I,
+            )
+        )
+        result.update(
+            {
+                "final_url": root_url,
+                "status": response.status,
+                "room_links": room_count,
+                "legacy_links": legacy_count,
+                "score": (
+                    (20 if response.status == 200 else 0)
+                    + (1 if "socolive" in body.lower() else 0)
+                    + min(room_count + legacy_count, 50)
+                ),
+                "elapsed_seconds": round(
+                    time.monotonic() - started,
+                    3,
+                ),
+            }
+        )
+    except Exception as exc:
+        result["error"] = f"{type(exc).__name__}: {exc}"
+        result["elapsed_seconds"] = round(
+            time.monotonic() - started,
+            3,
+        )
+
+    return result
+
+
+async def resolve_active_target(
+    context: BrowserContext,
+    explicit_target: str,
+) -> tuple[str, dict[str, Any]]:
+    candidates: list[str] = []
+
+    def add_candidate(value: str) -> None:
+        value = clean_text(value)
+        if not value:
+            return
+        normalized = value.rstrip("/") + "/"
+        if normalized not in candidates:
+            candidates.append(normalized)
+
+    add_candidate(explicit_target)
+    if AUTO_RESOLVE_SHORT_URL and SHORT_URL:
+        add_candidate(SHORT_URL)
+
+    probes = await asyncio.gather(
+        *[probe_home_candidate(context, item) for item in candidates]
+    )
+    valid = [
+        item
+        for item in probes
+        if item.get("status") == 200
+        and item.get("final_url")
+    ]
+    selected = max(
+        valid or probes,
+        key=lambda item: int(item.get("score", -1)),
+        default={"final_url": explicit_target},
+    )
+    resolved = (
+        clean_text(str(selected.get("final_url", "") or ""))
+        or explicit_target
+    ).rstrip("/") + "/"
+
+    payload = {
+        "generated_at": datetime.now(TIMEZONE).isoformat(),
+        "short_url": SHORT_URL,
+        "explicit_target": explicit_target,
+        "selected_target": resolved,
+        "probes": probes,
+    }
+    Path(OUTPUT_DOMAIN).write_text(
+        json.dumps(payload, ensure_ascii=False, indent=2),
+        encoding="utf-8",
+    )
+    print(
+        f"🌐 Domain được chọn: {resolved} "
+        f"| short={SHORT_URL or '(tắt)'}",
+        flush=True,
+    )
+    return resolved, payload
+
+
 # ============================================================
 # LẤY DANH SÁCH TRẬN + LOGO
 # ============================================================
+def build_scheduled_at(
+    date_text: str,
+    time_text: str,
+    base_url: str,
+) -> str:
+    parsed = match_datetime_from_url(base_url)
+    if parsed is not None:
+        return parsed.isoformat()
+
+    date_text = clean_text(date_text)
+    time_text = clean_text(time_text)
+    if not time_text:
+        return ""
+
+    try:
+        hour, minute = [
+            int(value)
+            for value in time_text.split(":", 1)
+        ]
+        now = datetime.now(TIMEZONE)
+
+        if date_text:
+            day, month = [
+                int(value)
+                for value in date_text.split("/", 1)
+            ]
+            candidate = datetime(
+                now.year,
+                month,
+                day,
+                hour,
+                minute,
+                tzinfo=TIMEZONE,
+            )
+        else:
+            candidate = now.replace(
+                hour=hour,
+                minute=minute,
+                second=0,
+                microsecond=0,
+            )
+            if candidate < now - timedelta(hours=12):
+                candidate += timedelta(days=1)
+
+        return candidate.isoformat()
+    except Exception:
+        return ""
+
+
 async def collect_home_matches(
     context: BrowserContext,
 ) -> list[dict[str, Any]]:
@@ -921,12 +1258,27 @@ async def collect_home_matches(
                             : "";
                     }
 
+                    if (!title) {
+                        const vsMatch = cardText.match(
+                            /(.{2,80}?)\s+\bvs\b\s+(.{2,80}?)(?=\s+(?:[01]?\d|2[0-3]):[0-5]\d|$)/i
+                        );
+                        if (vsMatch) {
+                            title = `${clean(vsMatch[1])} vs ${clean(vsMatch[2])}`;
+                        } else {
+                            title = cardText.slice(0, 180);
+                        }
+                    }
+
                     const roomMap = new Map();
 
                     for (const a of links) {
                         try {
                             const u = new URL(a.href, location.href);
-                            const id = u.searchParams.get("blv") || "";
+                            const pathMatch =
+                                u.pathname.match(/\/room\/(\d+)/i);
+                            const id =
+                                u.searchParams.get("blv") ||
+                                (pathMatch ? pathMatch[1] : "");
                             const blv =
                                 clean(a.innerText) ||
                                 clean(a.getAttribute("title")) ||
@@ -1040,10 +1392,10 @@ async def collect_home_matches(
                         else match_name_from_url(base_url)
                     ),
                     "rooms": unique_rooms(item.get("rooms", [])),
-                    "scheduled_at": (
-                        match_datetime_from_url(base_url).isoformat()
-                        if match_datetime_from_url(base_url)
-                        else ""
+                    "scheduled_at": build_scheduled_at(
+                        item.get("date_text", ""),
+                        item.get("time_text", ""),
+                        base_url,
                     ),
                     "streams": [],
                     "room_results": [],
@@ -1076,7 +1428,7 @@ def should_scan_match(
     if any(word in status for word in LIVE_STATUS_WORDS):
         return True
 
-    scheduled = match_datetime_from_url(match.get("base_url", ""))
+    scheduled = scheduled_datetime_from_match(match)
     if not scheduled:
         return False
 
@@ -1165,24 +1517,30 @@ async def extract_page_metadata(
 
                 let activeBlv = "";
                 try {
+                    const currentUrl = new URL(location.href);
+                    const pathMatch =
+                        currentUrl.pathname.match(/\/room\/(\d+)/i);
                     const currentId =
-                        new URL(location.href).searchParams.get("blv");
+                        currentUrl.searchParams.get("blv") ||
+                        (pathMatch ? pathMatch[1] : "");
 
                     if (currentId) {
                         const links = Array.from(
                             document.querySelectorAll(
-                                'a[href*="blv="]'
+                                'a[href*="blv="], a[href*="/room/"]'
                             )
                         );
 
                         const active = links.find((a) => {
                             try {
-                                return (
-                                    new URL(
-                                        a.href,
-                                        location.href
-                                    ).searchParams.get("blv") === currentId
-                                );
+                                const u = new URL(a.href, location.href);
+                                const oldId = u.searchParams.get("blv") || "";
+                                const roomMatch =
+                                    u.pathname.match(/\/room\/(\d+)/i);
+                                const candidateId =
+                                    oldId ||
+                                    (roomMatch ? roomMatch[1] : "");
+                                return candidateId === currentId;
                             } catch (_) {
                                 return false;
                             }
@@ -1201,7 +1559,7 @@ async def extract_page_metadata(
                 for (
                     const anchor of Array.from(
                         document.querySelectorAll(
-                            'a[href*="blv="]'
+                            'a[href*="blv="], a[href*="/room/"]'
                         )
                     )
                 ) {
@@ -1210,21 +1568,42 @@ async def extract_page_metadata(
                             anchor.href,
                             location.href
                         );
-                        const roomId =
+                        const oldRoomId =
                             absolute.searchParams.get("blv") || "";
+                        const roomMatch =
+                            absolute.pathname.match(/\/room\/(\d+)/i);
+                        const roomId =
+                            oldRoomId ||
+                            (roomMatch ? roomMatch[1] : "");
 
                         if (!roomId) continue;
 
-                        // Chỉ lấy BLV thuộc đúng trang trận hiện tại.
-                        if (
-                            absolute.pathname.replace(/\/$/, "") !==
-                            location.pathname.replace(/\/$/, "")
-                        ) {
-                            continue;
+                        if (oldRoomId) {
+                            if (
+                                absolute.pathname.replace(/\/$/, "") !==
+                                location.pathname.replace(/\/$/, "")
+                            ) {
+                                continue;
+                            }
+                        } else {
+                            const currentSchedule =
+                                new URL(location.href)
+                                    .searchParams.get("scheduleId") || "";
+                            const candidateSchedule =
+                                absolute.searchParams.get("scheduleId") || "";
+                            if (
+                                currentSchedule &&
+                                candidateSchedule &&
+                                currentSchedule !== candidateSchedule
+                            ) {
+                                continue;
+                            }
                         }
 
-                        const key =
-                            absolute.pathname + "?blv=" + roomId;
+                        const key = oldRoomId
+                            ? absolute.pathname + "?blv=" + roomId
+                            : absolute.pathname + "?scheduleId=" +
+                                (absolute.searchParams.get("scheduleId") || "");
                         if (roomSeen.has(key)) continue;
                         roomSeen.add(key);
 
@@ -1529,7 +1908,7 @@ def match_priority_key(match: dict[str, Any]) -> tuple[int, float, str]:
     """
     now = datetime.now(TIMEZONE)
     status = clean_text(match.get("status", "")).lower()
-    scheduled = match_datetime_from_url(match.get("base_url", ""))
+    scheduled = scheduled_datetime_from_match(match)
 
     live_flag = 0 if any(word in status for word in LIVE_STATUS_WORDS) else 1
 
@@ -1630,6 +2009,7 @@ async def scan_room(
 
     page = await context.new_page()
     cdp = None
+    response_body_tasks: set[asyncio.Task[Any]] = set()
 
     async def route_handler(route: Any) -> None:
         # Không tải các tài nguyên nặng không cần thiết.
@@ -1658,11 +2038,89 @@ async def scan_room(
                 stream_event.set()
                 print(f"      🎯 [{source}] {stream}")
 
+    async def inspect_response_body(response: Any) -> None:
+        if not CAPTURE_RESPONSE_BODIES:
+            return
+
+        try:
+            resource_type = response.request.resource_type
+            if resource_type not in {
+                "xhr",
+                "fetch",
+                "document",
+                "script",
+                "other",
+            }:
+                return
+
+            headers = await response.all_headers()
+            content_type = clean_text(
+                headers.get("content-type", "")
+            ).lower()
+            content_length = int(
+                headers.get("content-length", "0") or 0
+            )
+
+            if (
+                content_length
+                and content_length > MAX_RESPONSE_BODY_BYTES
+            ):
+                return
+
+            interesting_type = any(
+                token in content_type
+                for token in (
+                    "json",
+                    "text",
+                    "javascript",
+                    "xml",
+                    "mpegurl",
+                )
+            )
+            interesting_url = any(
+                token in response.url.lower()
+                for token in (
+                    "api",
+                    "room",
+                    "live",
+                    "play",
+                    "stream",
+                    "video",
+                    "schedule",
+                    "anchor",
+                    "source",
+                )
+            )
+
+            if not interesting_type and not interesting_url:
+                return
+
+            body = await response.text()
+            if len(body.encode("utf-8", errors="ignore")) > MAX_RESPONSE_BODY_BYTES:
+                return
+
+            capture(
+                body,
+                f"response-body/{resource_type}",
+            )
+        except Exception:
+            return
+
+    def schedule_response_body(response: Any) -> None:
+        task = asyncio.create_task(
+            inspect_response_body(response)
+        )
+        response_body_tasks.add(task)
+        task.add_done_callback(
+            response_body_tasks.discard
+        )
+
     def on_request(request: Any) -> None:
         capture(request.url, f"request/{request.resource_type}")
 
     def on_response(response: Any) -> None:
         capture(response.url, f"response/{response.status}")
+        schedule_response_body(response)
 
         if (
             response.status == 429
@@ -1704,6 +2162,34 @@ async def scan_room(
     page.on("requestfailed", on_request_failed)
     page.on("pageerror", on_page_error)
     page.on("console", on_console)
+
+    def on_websocket(websocket: Any) -> None:
+        capture(websocket.url, "websocket/url")
+
+        def frame_text(payload: Any) -> str:
+            if isinstance(payload, (bytes, bytearray)):
+                return payload.decode(
+                    "utf-8",
+                    errors="ignore",
+                )
+            return str(payload)
+
+        websocket.on(
+            "framereceived",
+            lambda payload: capture(
+                frame_text(payload),
+                "websocket/received",
+            ),
+        )
+        websocket.on(
+            "framesent",
+            lambda payload: capture(
+                frame_text(payload),
+                "websocket/sent",
+            ),
+        )
+
+    page.on("websocket", on_websocket)
 
     try:
         if ENABLE_CDP:
@@ -1838,6 +2324,12 @@ async def scan_room(
 
         # Chờ rất ngắn để các callback network cuối cùng được đẩy ra.
         await page.wait_for_timeout(250)
+
+        if response_body_tasks:
+            await asyncio.gather(
+                *list(response_body_tasks),
+                return_exceptions=True,
+            )
 
         diagnostics = await diagnose_page(page)
         diagnostics["main_status"] = main_status
@@ -2209,12 +2701,21 @@ async def scan_match(
                         "stream-source-id"
                     )
 
+                if len(
+                    streams_for_queue_room(
+                        match,
+                        next_key,
+                    )
+                ) >= MAX_STREAMS_PER_BLV:
+                    continue
+
                 match.setdefault(
                     "streams",
                     [],
                 ).append(
                     {
                         "url": stream,
+                        "queue_room_key": next_key,
                         "room_url":
                             display_room_url,
                         "blv": display_blv,
@@ -2242,14 +2743,25 @@ async def scan_match(
                 added += 1
 
             dedup_match_streams(match)
+            limit_streams_per_blv(match)
 
-            if room_result.get("streams"):
+            room_stream_total = len(
+                streams_for_queue_room(
+                    match,
+                    next_key,
+                )
+            )
+
+            if room_stream_total >= MAX_STREAMS_PER_BLV:
                 progress["status"] = "success"
-                if circuit.triggered.is_set():
-                    progress["last_error"] = (
-                        "Đã giữ stream trước khi "
-                        "cầu dao 429 dừng các trang sau."
-                    )
+            elif (
+                room_stream_total > 0
+                and progress["attempts"]
+                < ROOM_EMPTY_MAX_ATTEMPTS
+            ):
+                progress["status"] = "partial"
+            elif room_stream_total > 0:
+                progress["status"] = "success"
             elif (
                 progress["attempts"]
                 >= ROOM_EMPTY_MAX_ATTEMPTS
@@ -2257,6 +2769,15 @@ async def scan_match(
                 progress["status"] = "exhausted"
             else:
                 progress["status"] = "retry"
+
+            if (
+                room_stream_total > 0
+                and circuit.triggered.is_set()
+            ):
+                progress["last_error"] = (
+                    "Đã giữ stream trước khi "
+                    "cầu dao 429 dừng các trang sau."
+                )
 
             match["attempted_room_ids"] = sorted(
                 key
@@ -2287,6 +2808,7 @@ async def scan_match(
             )
 
         dedup_match_streams(match)
+        limit_streams_per_blv(match)
         update_match_coverage(match)
         match["match_name"] = (
             match_display_name(match)
@@ -2790,7 +3312,7 @@ def write_outputs(matches: list[dict[str, Any]]) -> tuple[int, int]:
 
         match_counted = False
         match_name = match_display_name(match)
-        scheduled = match_datetime_from_url(match["base_url"])
+        scheduled = scheduled_datetime_from_match(match)
         time_prefix = (
             scheduled.strftime("[%H:%M] ")
             if scheduled
@@ -2885,6 +3407,16 @@ def write_outputs(matches: list[dict[str, Any]]) -> tuple[int, int]:
                         MAX_ROOMS_PER_MATCH,
                     "max_streams_per_match":
                         MAX_STREAMS_PER_MATCH,
+                    "max_streams_per_blv":
+                        MAX_STREAMS_PER_BLV,
+                    "capture_response_bodies":
+                        CAPTURE_RESPONSE_BODIES,
+                    "max_response_body_bytes":
+                        MAX_RESPONSE_BODY_BYTES,
+                    "short_url": SHORT_URL,
+                    "auto_resolve_short_url":
+                        AUTO_RESOLVE_SHORT_URL,
+                    "active_target_url": TARGET_URL,
                     "embedded_harvest_wait_seconds":
                         EMBEDDED_HARVEST_WAIT_SECONDS,
                     "room_empty_max_attempts":
@@ -2895,7 +3427,7 @@ def write_outputs(matches: list[dict[str, Any]]) -> tuple[int, int]:
                     "http_fetch_timeout_seconds": HTTP_FETCH_TIMEOUT_SECONDS,
                     "enable_cdp": ENABLE_CDP,
                     "stop_on_429": STOP_ON_429,
-                    "strategy": "v10-per-blv-queue",
+                    "strategy": "v11-dual-adapter-two-streams",
                     "state_schema_version": STATE_SCHEMA_VERSION,
                     "state_max_age_minutes": STATE_MAX_AGE_MINUTES,
                     "state_max_chain_runs": STATE_MAX_CHAIN_RUNS,
@@ -2926,10 +3458,12 @@ def write_outputs(matches: list[dict[str, Any]]) -> tuple[int, int]:
 # MAIN
 # ============================================================
 async def main() -> None:
-    print("🥷 SOCOLIVE STREAM SCANNER V10 - PER-BLV QUEUE + CHAIN")
+    global TARGET_URL
+
+    print("🥷 SOCOLIVE STREAM SCANNER V11 - DUAL ADAPTER + 2 STREAMS/BLV")
     print(
         "ℹ️ Test riêng một URL:\n"
-        '   python main_socolive_v9_1_multi_source_fix.py "https://socolivem.cv/truc-tiep/.../?blv=..."'
+        '   python main_socolive_v11_dual_adapter.py "https://socoliveaus.co/room/557845?scheduleId="'
     )
 
     direct_urls = [
@@ -2994,6 +3528,24 @@ async def main() -> None:
         )
 
         if direct_urls:
+            direct_origin = urlsplit(direct_urls[0])
+            if direct_origin.netloc:
+                TARGET_URL = urlunsplit(
+                    (
+                        direct_origin.scheme,
+                        direct_origin.netloc,
+                        "/",
+                        "",
+                        "",
+                    )
+                )
+        else:
+            TARGET_URL, _domain_info = await resolve_active_target(
+                context,
+                TARGET_URL,
+            )
+
+        if direct_urls:
             grouped: dict[str, dict[str, Any]] = {}
 
             for url in direct_urls:
@@ -3026,6 +3578,9 @@ async def main() -> None:
                         ),
                         "streams": [],
                         "room_results": [],
+                        "attempted_room_ids": [],
+                        "room_progress": {},
+                        "coverage": {},
                         "errors": [],
                     }
 
