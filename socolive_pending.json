@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-21T05:47:46.674299+07:00",
+  "generated_at": "2026-07-21T05:48:51.203186+07:00",
   "state_schema_version": "v10.1-long-harvest-two-streams",
   "dispatch_next": true,
   "pending_count": 5,
@@ -8,8 +8,8 @@
   "total_match_count": 5,
   "total_stream_count": 5,
   "progress_count": 0,
-  "chain_runs": 89,
-  "no_progress_runs": 38,
+  "chain_runs": 90,
+  "no_progress_runs": 39,
   "stop_reason": "",
   "rate_limited": true,
   "rate_limit_url": "https://socolivep.cv/truc-tiep/colegiales-vs-ferrocarril-midland-21-07-2026-0600?blv=139384",
@@ -93,7 +93,7 @@
             "blv": "VOI",
             "blv_id": "552716",
             "status": "rate_limited",
-            "attempts": 136,
+            "attempts": 137,
             "rate_limit_hits": 64,
             "last_http_status": 200,
             "last_stream_count": 1,
@@ -135,7 +135,7 @@
           "blv": "VOI",
           "blv_id": "552716",
           "status": "rate_limited",
-          "attempts": 136,
+          "attempts": 137,
           "rate_limit_hits": 64,
           "last_http_status": 200,
           "last_stream_count": 1,
@@ -251,7 +251,7 @@
             "blv": "YONE",
             "blv_id": "372746",
             "status": "rate_limited",
-            "attempts": 113,
+            "attempts": 114,
             "rate_limit_hits": 52,
             "last_http_status": 200,
             "last_stream_count": 1,
@@ -293,7 +293,7 @@
           "blv": "YONE",
           "blv_id": "372746",
           "status": "rate_limited",
-          "attempts": 113,
+          "attempts": 114,
           "rate_limit_hits": 52,
           "last_http_status": 200,
           "last_stream_count": 1,
@@ -347,16 +347,6 @@
           "blv_id": "607400"
         },
         {
-          "url": "https://socolivep.cv/truc-tiep/colegiales-vs-ferrocarril-midland-21-07-2026-0600/?blv=139384",
-          "blv": "RÔSI",
-          "blv_id": "139384"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/colegiales-vs-ferrocarril-midland-21-07-2026-0600/?blv=607400",
-          "blv": "HÀ DUY KIÊN",
-          "blv_id": "607400"
-        },
-        {
           "url": "https://socolivep.cv/truc-tiep/colegiales-vs-ferrocarril-midland-21-07-2026-0600",
           "blv": "XEM NGAY",
           "blv_id": ""
@@ -395,29 +385,27 @@
         "room_queue_complete": false,
         "complete": false,
         "max_streams_per_blv": 2,
-        "total_explicit_blv_rooms": 4,
+        "total_explicit_blv_rooms": 2,
         "pending_room_keys": [
-          "139384",
-          "607400",
           "139384",
           "607400"
         ],
         "room_progress": {
           "139384": {
             "key": "139384",
-            "url": "https://socolivep.cv/truc-tiep/colegiales-vs-ferrocarril-midland-21-07-2026-0600/?blv=139384",
+            "url": "https://socolivep.cv/truc-tiep/colegiales-vs-ferrocarril-midland-21-07-2026-0600?blv=139384",
             "blv": "RÔSI",
             "blv_id": "139384",
             "status": "rate_limited",
             "attempts": 107,
-            "rate_limit_hits": 59,
+            "rate_limit_hits": 60,
             "last_http_status": 429,
             "last_stream_count": 0,
             "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
           },
           "607400": {
             "key": "607400",
-            "url": "https://socolivep.cv/truc-tiep/colegiales-vs-ferrocarril-midland-21-07-2026-0600/?blv=607400",
+            "url": "https://socolivep.cv/truc-tiep/colegiales-vs-ferrocarril-midland-21-07-2026-0600?blv=607400",
             "blv": "HÀ DUY KIÊN",
             "blv_id": "607400",
             "status": "pending",
@@ -447,19 +435,19 @@
       "room_progress": {
         "139384": {
           "key": "139384",
-          "url": "https://socolivep.cv/truc-tiep/colegiales-vs-ferrocarril-midland-21-07-2026-0600/?blv=139384",
+          "url": "https://socolivep.cv/truc-tiep/colegiales-vs-ferrocarril-midland-21-07-2026-0600?blv=139384",
           "blv": "RÔSI",
           "blv_id": "139384",
           "status": "rate_limited",
           "attempts": 107,
-          "rate_limit_hits": 59,
+          "rate_limit_hits": 60,
           "last_http_status": 429,
           "last_stream_count": 0,
           "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
         },
         "607400": {
           "key": "607400",
-          "url": "https://socolivep.cv/truc-tiep/colegiales-vs-ferrocarril-midland-21-07-2026-0600/?blv=607400",
+          "url": "https://socolivep.cv/truc-tiep/colegiales-vs-ferrocarril-midland-21-07-2026-0600?blv=607400",
           "blv": "HÀ DUY KIÊN",
           "blv_id": "607400",
           "status": "pending",
@@ -483,8 +471,6 @@
         }
       },
       "pending_room_keys": [
-        "139384",
-        "607400",
         "139384",
         "607400"
       ]
@@ -567,11 +553,11 @@
             "blv": "A WIN",
             "blv_id": "536185",
             "status": "rate_limited",
-            "attempts": 109,
+            "attempts": 110,
             "rate_limit_hits": 57,
-            "last_http_status": 429,
-            "last_stream_count": 0,
-            "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
+            "last_http_status": 200,
+            "last_stream_count": 1,
+            "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
           },
           "557845": {
             "key": "557845",
@@ -609,11 +595,11 @@
           "blv": "A WIN",
           "blv_id": "536185",
           "status": "rate_limited",
-          "attempts": 109,
+          "attempts": 110,
           "rate_limit_hits": 57,
-          "last_http_status": 429,
-          "last_stream_count": 0,
-          "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
+          "last_http_status": 200,
+          "last_stream_count": 1,
+          "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
         },
         "557845": {
           "key": "557845",
