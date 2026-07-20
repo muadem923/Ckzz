@@ -1,23 +1,26 @@
 {
-  "generated_at": "2026-07-21T01:59:48.359935+07:00",
+  "generated_at": "2026-07-21T02:01:04.629689+07:00",
   "state_schema_version": "v10.1-long-harvest-two-streams",
   "dispatch_next": true,
-  "pending_count": 5,
+  "pending_count": 8,
   "completed_count": 5,
   "coverage_complete_count": 0,
-  "total_match_count": 5,
+  "total_match_count": 8,
   "total_stream_count": 5,
   "progress_count": 0,
-  "chain_runs": 23,
-  "no_progress_runs": 2,
+  "chain_runs": 1,
+  "no_progress_runs": 1,
   "stop_reason": "",
   "rate_limited": true,
   "rate_limit_url": "https://socolivep.cv/truc-tiep/fc-rapid-1923-vs-sepsi-osk-sfantul-gheorghe-21-07-2026-0130?blv=235232",
   "target_base_urls": [
     "https://socolivep.cv/truc-tiep/botev-plovdiv-vs-lokomotiv-sofia-21-07-2026-0130/",
+    "https://socolivep.cv/truc-tiep/colegiales-vs-ferrocarril-midland-21-07-2026-0600/",
     "https://socolivep.cv/truc-tiep/fc-rapid-1923-vs-sepsi-osk-sfantul-gheorghe-21-07-2026-0130/",
     "https://socolivep.cv/truc-tiep/hafnarfjordur-vs-breidablik-21-07-2026-0215/",
     "https://socolivep.cv/truc-tiep/keflavik-vs-akranes-21-07-2026-0215/",
+    "https://socolivep.cv/truc-tiep/patronato-parana-vs-atletico-atlanta-21-07-2026-0600/",
+    "https://socolivep.cv/truc-tiep/quilmes-vs-gimnasia-jujuy-21-07-2026-0600/",
     "https://socolivep.cv/truc-tiep/sporting-cp-vs-strasbourg-21-07-2026-0215/"
   ],
   "pending_base_urls": [
@@ -25,7 +28,10 @@
     "https://socolivep.cv/truc-tiep/hafnarfjordur-vs-breidablik-21-07-2026-0215/",
     "https://socolivep.cv/truc-tiep/keflavik-vs-akranes-21-07-2026-0215/",
     "https://socolivep.cv/truc-tiep/fc-rapid-1923-vs-sepsi-osk-sfantul-gheorghe-21-07-2026-0130/",
-    "https://socolivep.cv/truc-tiep/botev-plovdiv-vs-lokomotiv-sofia-21-07-2026-0130/"
+    "https://socolivep.cv/truc-tiep/botev-plovdiv-vs-lokomotiv-sofia-21-07-2026-0130/",
+    "https://socolivep.cv/truc-tiep/quilmes-vs-gimnasia-jujuy-21-07-2026-0600/",
+    "https://socolivep.cv/truc-tiep/patronato-parana-vs-atletico-atlanta-21-07-2026-0600/",
+    "https://socolivep.cv/truc-tiep/colegiales-vs-ferrocarril-midland-21-07-2026-0600/"
   ],
   "matches": [
     {
@@ -2141,6 +2147,94 @@
           "http_errors": [
             "403 https://socolivep.cv/wp-admin/admin-ajax.php?action=scl_realtime&sport=1"
           ]
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/sporting-cp-vs-strasbourg-21-07-2026-0215?blv=602019",
+          "blv": "RYO",
+          "blv_id": "602019",
+          "streams": [
+            "https://pull.niues.live/live/stream-602019_lhd.m3u8?auth_key=1784577415-0-0-38180e83e5736df86fa1342a92a85161"
+          ],
+          "stream_sources": {
+            "https://pull.niues.live/live/stream-602019_lhd.m3u8?auth_key=1784577415-0-0-38180e83e5736df86fa1342a92a85161": [
+              "final-no-stream-scan",
+              "harvest-final"
+            ]
+          },
+          "stream_first_seen": [
+            "https://pull.niues.live/live/stream-602019_lhd.m3u8?auth_key=1784577415-0-0-38180e83e5736df86fa1342a92a85161"
+          ],
+          "discovered_blv_ids": [
+            "602019"
+          ],
+          "diagnostics": {
+            "url": "https://socolivep.cv/truc-tiep/sporting-cp-vs-strasbourg-21-07-2026-0215/?blv=602019",
+            "title": "Xem trực tiếp bóng đá Sporting CP vs Strasbourg | 02:15 ngày 21/07/2026",
+            "h1": "Trực tiếp bóng đá Socolive Sporting CP vs Strasbourg lúc 02:15 ngày 21/07/2026",
+            "ready_state": "complete",
+            "visibility_state": "visible",
+            "hidden": false,
+            "video_count": 0,
+            "iframe_count": 0,
+            "body_sample": "Skip to content Socolive Bảng xếp hạng Lịch thi đấu Kết quả bóng đá Tin thể thao Trực tiếp bóng đá Socolive Sporting CP vs Strasbourg lúc 02:15 ngày 21/07/2026 INT CF Sporting CP 02:15 21/07 Strasbourg Trận đấu sẽ bắt đầu sau Ngày0 : Giờ0 : Phút14 : Giây3 Trận đấu chưa bắt đầu RYO FOX QUỐC KHÁNH PICK Chat Thống kê Đội hình Diễn Biến Bảng XH \" \" Admin Trợ lý Diệp Chi ❤️: ⚽️𝐂Á𝐂 𝐀 𝐓Ạ𝐈 𝐏𝐇Ò𝐍𝐆 𝐋𝐈𝐕𝐄 𝐂𝐇Ư𝐀 𝐂Ó 𝐓À𝐈 𝐊𝐇𝐎Ả𝐍 𝐂𝐇Ơ𝐈 𝐓Ạ𝐈 𝐁𝐒𝐏𝐎𝐑𝐓 https://www.bty9234.com ⚽️𝐋𝐈Ê𝐍 𝐇Ệ 𝐍𝐆𝐀𝐘 𝐄 𝐍𝐇É 📱 𝐙𝐀𝐋𝐎: 👆❤️ 𝐓𝐞𝐥𝐞 : https://t.me/soclantan ❤️ FACEBOOK: https://m.me/BTY9235 Xóa Tin nhắn riêng 😀 😁 😃 😄 😅 😆 😇 😉 😊 🙂 😋 😍 😘 😗 😙 😚 😜 😝 😛 😎 🙄 😳 😡 😕 😫 😤 😨 😥 😪 😓 😵 😲 🤧 😷 🤒 🤕 😴 💤 👏 🤙 👍 👎 👊 ✊ ✌ 👌 ✋ 🤚 💪 🤝 👈 👉 🖕 🖐 👄 👂 👀 🎅 🌞 🌙 ⭐ ⚡ 🔥 ❄️ ⚽ 🏀 🏈 ⚾ 🎁 🎉 ✒️ 📝 ❤️ 💛 💚 🆚 💬 🕐 Vô hiệu hóa tất cả Vô hiệu hóa quà tặng Tắt lời chào Đăng nhập để cùng chat nhé Gửi Tỷ lệ kèo Cược Châu Á Chủ Chấp Khách Cược Châu Âu Chủ Hòa Khách Tài xỉu Tài Tỷ lệ kèo Xỉu Kèo góc Tài Tỷ lệ kèo Xỉu Mô phỏng trận đấu Thống kê trận đấu ROM D1 01:30 21/07 FC Rapid 1923 VS null null null - null Sắp diễn ra Xem ngay Sepsi OSK Sfantul Gheorghe A PÁO ",
+            "harvest_rounds": 0,
+            "harvest_window_seconds": 0.626,
+            "main_status": 200,
+            "harvested_stream_count": 1,
+            "harvested_blv_ids": [
+              "602019"
+            ],
+            "scan_mode": "browser-event",
+            "elapsed_seconds": 14.278
+          },
+          "http_probe": {
+            "enabled": false,
+            "status": null,
+            "elapsed_seconds": 0.0,
+            "error": ""
+          },
+          "errors": [
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED"
+          ],
+          "failed_requests": [
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/main.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/customize.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/auth.css?ver=656 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat.css?ver=588 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat(1).css?ver=802 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/toast.css?ver=512 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/themes/flatsome/assets/css/flatsome.css?ver=3.18.2 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/themes/flatsome-child/style.css?ver=3.0 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/countdown.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/match.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/livescore.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/style_custom.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/effect/running-border.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/option/option-6.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/highlight/option-1.css?ver=2.8.5 | net::ERR_FAILED"
+          ],
+          "http_errors": [
+            "403 https://socolivep.cv/wp-admin/admin-ajax.php?action=scl_realtime&sport=1"
+          ]
         }
       ],
       "attempted_room_ids": [
@@ -2174,7 +2268,7 @@
             "blv": "RYO",
             "blv_id": "602019",
             "status": "rate_limited",
-            "attempts": 20,
+            "attempts": 21,
             "rate_limit_hits": 5,
             "last_http_status": 200,
             "last_stream_count": 1,
@@ -2238,7 +2332,7 @@
           "blv": "RYO",
           "blv_id": "602019",
           "status": "rate_limited",
-          "attempts": 20,
+          "attempts": 21,
           "rate_limit_hits": 5,
           "last_http_status": 200,
           "last_stream_count": 1,
@@ -4417,6 +4511,95 @@
             "403 https://socolivep.cv/wp-admin/admin-ajax.php?action=scl_realtime&sport=1",
             "404 https://live.sportdb.live/api/v1/matchs/assistant-user?roomNum=622602"
           ]
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/hafnarfjordur-vs-breidablik-21-07-2026-0215?blv=622602",
+          "blv": "KENCHU",
+          "blv_id": "622602",
+          "streams": [
+            "https://pull.niues.live/live/stream-622602_lhd.m3u8?auth_key=1784576324-0-0-a68f776cce494b8a8ff185954d94aa9b"
+          ],
+          "stream_sources": {
+            "https://pull.niues.live/live/stream-622602_lhd.m3u8?auth_key=1784576324-0-0-a68f776cce494b8a8ff185954d94aa9b": [
+              "final-no-stream-scan",
+              "harvest-final"
+            ]
+          },
+          "stream_first_seen": [
+            "https://pull.niues.live/live/stream-622602_lhd.m3u8?auth_key=1784576324-0-0-a68f776cce494b8a8ff185954d94aa9b"
+          ],
+          "discovered_blv_ids": [
+            "622602"
+          ],
+          "diagnostics": {
+            "url": "https://socolivep.cv/truc-tiep/hafnarfjordur-vs-breidablik-21-07-2026-0215/?blv=622602",
+            "title": "Xem trực tiếp bóng đá Hafnarfjordur vs Breidablik | 02:15 ngày 21/07/2026",
+            "h1": "Trực tiếp bóng đá Socolive Hafnarfjordur vs Breidablik lúc 02:15 ngày 21/07/2026",
+            "ready_state": "complete",
+            "visibility_state": "visible",
+            "hidden": false,
+            "video_count": 0,
+            "iframe_count": 0,
+            "body_sample": "Skip to content Socolive Bảng xếp hạng Lịch thi đấu Kết quả bóng đá Tin thể thao Trực tiếp bóng đá Socolive Hafnarfjordur vs Breidablik lúc 02:15 ngày 21/07/2026 ICE PR Hafnarfjordur 02:15 21/07 Breidablik Trận đấu sẽ bắt đầu sau Ngày0 : Giờ0 : Phút14 : Giây3 Trận đấu chưa bắt đầu KENCHU GRAP TUẤN CÙI Chat Thống kê Đội hình Diễn Biến Bảng XH \" \" Admin SÓC TINH ANH 2K1: 💋kết bạn với SÓC để nhận K.MÃI lên đến 𝟏.𝟖𝟎𝟎𝐤 VÀO NHÓM NHẬN KÈO HÀNG NGÀY CÙNG BLV 𝐋𝐢ê𝐧 𝐡ệ bufa 𝐆𝐊𝐉𝐕𝐉𝐄❤️𝐓𝐄𝐋𝐄 : https://t.me/tinhanh1268❤️ 𝐅𝐚𝐜𝐞𝐛𝐨𝐨𝐤 https://m.me/tinhanh1268, nhóm tele https://t.me/vaonhomBTY9287 🆉🅰️🅻🅾️ : +84 566 877 072 đăng kí https://w9.vty39.net/ · Xóa 😀 😁 😃 😄 😅 😆 😇 😉 😊 🙂 😋 😍 😘 😗 😙 😚 😜 😝 😛 😎 🙄 😳 😡 😕 😫 😤 😨 😥 😪 😓 😵 😲 🤧 😷 🤒 🤕 😴 💤 👏 🤙 👍 👎 👊 ✊ ✌ 👌 ✋ 🤚 💪 🤝 👈 👉 🖕 🖐 👄 👂 👀 🎅 🌞 🌙 ⭐ ⚡ 🔥 ❄️ ⚽ 🏀 🏈 ⚾ 🎁 🎉 ✒️ 📝 ❤️ 💛 💚 🆚 💬 🕐 Vô hiệu hóa tất cả Vô hiệu hóa quà tặng Tắt lời chào Đăng nhập để cùng chat nhé Gửi Tỷ lệ kèo Cược Châu Á Chủ Chấp Khách Cược Châu Âu Chủ Hòa Khách Tài xỉu Tài Tỷ lệ kèo Xỉu Kèo góc Tài Tỷ lệ kèo Xỉu Mô phỏng trận đấu Thống kê trận đấu ROM D1 01:30 21/07 FC Rapid 1923 VS null null null - null Sắp",
+            "harvest_rounds": 0,
+            "harvest_window_seconds": 0.626,
+            "main_status": 200,
+            "harvested_stream_count": 1,
+            "harvested_blv_ids": [
+              "622602"
+            ],
+            "scan_mode": "browser-event",
+            "elapsed_seconds": 14.221
+          },
+          "http_probe": {
+            "enabled": false,
+            "status": null,
+            "elapsed_seconds": 0.0,
+            "error": ""
+          },
+          "errors": [
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED"
+          ],
+          "failed_requests": [
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/main.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/customize.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/auth.css?ver=502 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat.css?ver=78 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat(1).css?ver=665 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/toast.css?ver=647 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/themes/flatsome/assets/css/flatsome.css?ver=3.18.2 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/themes/flatsome-child/style.css?ver=3.0 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/countdown.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/match.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/livescore.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/style_custom.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/effect/running-border.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/option/option-6.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/highlight/option-1.css?ver=2.8.5 | net::ERR_FAILED"
+          ],
+          "http_errors": [
+            "403 https://socolivep.cv/wp-admin/admin-ajax.php?action=scl_realtime&sport=1",
+            "404 https://live.sportdb.live/api/v1/matchs/assistant-user?roomNum=622602"
+          ]
         }
       ],
       "attempted_room_ids": [
@@ -4448,7 +4631,7 @@
             "blv": "KENCHU",
             "blv_id": "622602",
             "status": "rate_limited",
-            "attempts": 20,
+            "attempts": 21,
             "rate_limit_hits": 5,
             "last_http_status": 200,
             "last_stream_count": 1,
@@ -4500,7 +4683,7 @@
           "blv": "KENCHU",
           "blv_id": "622602",
           "status": "rate_limited",
-          "attempts": 20,
+          "attempts": 21,
           "rate_limit_hits": 5,
           "last_http_status": 200,
           "last_stream_count": 1,
@@ -4989,6 +5172,94 @@
           "http_errors": [
             "403 https://socolivep.cv/wp-admin/admin-ajax.php?action=scl_realtime&sport=1"
           ]
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/keflavik-vs-akranes-21-07-2026-0215?blv=610518",
+          "blv": "XUÂN TÓC ĐỎ",
+          "blv_id": "610518",
+          "streams": [
+            "https://pull.niur.live/live/stream-610518_lhd.m3u8?txSecret=94b79ed6e0ff5f0c39482123776dd380&txTime=6a5d5c6f"
+          ],
+          "stream_sources": {
+            "https://pull.niur.live/live/stream-610518_lhd.m3u8?txSecret=94b79ed6e0ff5f0c39482123776dd380&txTime=6a5d5c6f": [
+              "final-no-stream-scan",
+              "harvest-final"
+            ]
+          },
+          "stream_first_seen": [
+            "https://pull.niur.live/live/stream-610518_lhd.m3u8?txSecret=94b79ed6e0ff5f0c39482123776dd380&txTime=6a5d5c6f"
+          ],
+          "discovered_blv_ids": [
+            "610518"
+          ],
+          "diagnostics": {
+            "url": "https://socolivep.cv/truc-tiep/keflavik-vs-akranes-21-07-2026-0215/?blv=610518",
+            "title": "Xem trực tiếp bóng đá Keflavik vs Akranes | 02:15 ngày 21/07/2026",
+            "h1": "Trực tiếp bóng đá Socolive Keflavik vs Akranes lúc 02:15 ngày 21/07/2026",
+            "ready_state": "complete",
+            "visibility_state": "visible",
+            "hidden": false,
+            "video_count": 0,
+            "iframe_count": 0,
+            "body_sample": "Skip to content Socolive Bảng xếp hạng Lịch thi đấu Kết quả bóng đá Tin thể thao Trực tiếp bóng đá Socolive Keflavik vs Akranes lúc 02:15 ngày 21/07/2026 ICE PR Keflavik 02:15 21/07 Akranes Trận đấu sẽ bắt đầu sau Ngày0 : Giờ0 : Phút14 : Giây3 Trận đấu chưa bắt đầu XUÂN TÓC ĐỎ SEVEN TRÀ ĐÁ Chat Thống kê Đội hình Diễn Biến Bảng XH \" \" Xóa Tin nhắn riêng 😀 😁 😃 😄 😅 😆 😇 😉 😊 🙂 😋 😍 😘 😗 😙 😚 😜 😝 😛 😎 🙄 😳 😡 😕 😫 😤 😨 😥 😪 😓 😵 😲 🤧 😷 🤒 🤕 😴 💤 👏 🤙 👍 👎 👊 ✊ ✌ 👌 ✋ 🤚 💪 🤝 👈 👉 🖕 🖐 👄 👂 👀 🎅 🌞 🌙 ⭐ ⚡ 🔥 ❄️ ⚽ 🏀 🏈 ⚾ 🎁 🎉 ✒️ 📝 ❤️ 💛 💚 🆚 💬 🕐 Vô hiệu hóa tất cả Vô hiệu hóa quà tặng Tắt lời chào Đăng nhập để cùng chat nhé Gửi Tỷ lệ kèo Cược Châu Á Chủ Chấp Khách Cược Châu Âu Chủ Hòa Khách Tài xỉu Tài Tỷ lệ kèo Xỉu Kèo góc Tài Tỷ lệ kèo Xỉu Mô phỏng trận đấu Thống kê trận đấu ROM D1 01:30 21/07 FC Rapid 1923 VS null null null - null Sắp diễn ra Xem ngay Sepsi OSK Sfantul Gheorghe A PÁO VINFAST BÉO A TINH BUL D1 01:30 21/07 Botev Plovdiv VS null null null - null Sắp diễn ra Xem ngay Lokomotiv Sofia FIREMAN LOKA SWE D1 00:00 21/07 Kalmar VS null null null - null Sắp diễn ra Xem ngay Malmo FF RAMBO CR Bưởi LÃO LÂM ALEX COCA HẢI THANH SWE D1 00:00 21/07 O",
+            "harvest_rounds": 0,
+            "harvest_window_seconds": 0.624,
+            "main_status": 200,
+            "harvested_stream_count": 1,
+            "harvested_blv_ids": [
+              "610518"
+            ],
+            "scan_mode": "browser-event",
+            "elapsed_seconds": 14.24
+          },
+          "http_probe": {
+            "enabled": false,
+            "status": null,
+            "elapsed_seconds": 0.0,
+            "error": ""
+          },
+          "errors": [
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED"
+          ],
+          "failed_requests": [
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/main.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/customize.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/auth.css?ver=20 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat.css?ver=447 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat(1).css?ver=58 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/toast.css?ver=344 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/themes/flatsome/assets/css/flatsome.css?ver=3.18.2 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/themes/flatsome-child/style.css?ver=3.0 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/countdown.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/match.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/livescore.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/style_custom.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/effect/running-border.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/option/option-6.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/highlight/option-1.css?ver=2.8.5 | net::ERR_FAILED"
+          ],
+          "http_errors": [
+            "403 https://socolivep.cv/wp-admin/admin-ajax.php?action=scl_realtime&sport=1"
+          ]
         }
       ],
       "attempted_room_ids": [
@@ -5020,7 +5291,7 @@
             "blv": "XUÂN TÓC ĐỎ",
             "blv_id": "610518",
             "status": "rate_limited",
-            "attempts": 3,
+            "attempts": 4,
             "rate_limit_hits": 2,
             "last_http_status": 200,
             "last_stream_count": 1,
@@ -5072,7 +5343,7 @@
           "blv": "XUÂN TÓC ĐỎ",
           "blv_id": "610518",
           "status": "rate_limited",
-          "attempts": 3,
+          "attempts": 4,
           "rate_limit_hits": 2,
           "last_http_status": 200,
           "last_stream_count": 1,
@@ -11000,6 +11271,161 @@
             "429 https://socolivep.cv/truc-tiep/fc-rapid-1923-vs-sepsi-osk-sfantul-gheorghe-21-07-2026-0130?blv=235232",
             "401 https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/pat/a1e43432ff3a5009/1784573975800/45d09f6d620a299fd13e43ecc2e0e68b0150d8c11586b329d40a41ecb1e7400b/PClE3j88vDGapho"
           ]
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/fc-rapid-1923-vs-sepsi-osk-sfantul-gheorghe-21-07-2026-0130?blv=235232",
+          "blv": "A PÁO",
+          "blv_id": "235232",
+          "streams": [
+            "https://pull.niues.live/live/stream-235232_lhd.m3u8?auth_key=1784516640-0-0-54566f59d315ac28a2b9e15d47efb468"
+          ],
+          "stream_sources": {
+            "https://pull.niues.live/live/stream-235232_lhd.m3u8?auth_key=1784516640-0-0-54566f59d315ac28a2b9e15d47efb468": [
+              "cdp/request",
+              "cdp/response",
+              "harvest-final",
+              "harvest-round-1",
+              "harvest-round-2",
+              "harvest-round-3",
+              "harvest-round-4",
+              "harvest-round-5",
+              "harvest-round-6",
+              "harvest-round-7",
+              "harvest-round-8",
+              "harvest-round-9",
+              "request/image",
+              "request/xhr",
+              "response/200"
+            ]
+          },
+          "stream_first_seen": [
+            "https://pull.niues.live/live/stream-235232_lhd.m3u8?auth_key=1784516640-0-0-54566f59d315ac28a2b9e15d47efb468"
+          ],
+          "discovered_blv_ids": [
+            "235232"
+          ],
+          "diagnostics": {
+            "url": "https://socolivep.cv/truc-tiep/fc-rapid-1923-vs-sepsi-osk-sfantul-gheorghe-21-07-2026-0130/?blv=235232",
+            "title": "Xem trực tiếp bóng đá FC Rapid 1923 vs Sepsi OSK Sfantul Gheorghe | 01:30 ngày 21/07/2026",
+            "h1": "Trực tiếp bóng đá Socolive FC Rapid 1923 vs Sepsi OSK Sfantul Gheorghe lúc 01:30 ngày 21/07/2026",
+            "ready_state": "complete",
+            "visibility_state": "visible",
+            "hidden": false,
+            "video_count": 1,
+            "iframe_count": 0,
+            "body_sample": "Skip to content Socolive Bảng xếp hạng Lịch thi đấu Kết quả bóng đá Tin thể thao Trực tiếp bóng đá Socolive FC Rapid 1923 vs Sepsi OSK Sfantul Gheorghe lúc 01:30 ngày 21/07/2026 ROM D1 FC Rapid 1923 01:30 21/07 Sepsi OSK Sfantul Gheorghe Volume 0% Tải App Bufa A PÁO VINFAST BÉO A TINH Chat Thống kê Đội hình Diễn Biến Bảng XH \" \" Cảnh sát kinhte: nghi ngờ đó , sao lại kèo như v đc DI TAI DEN CHET: páo đi gì Mua sữa cho con 278: hnc hạ vào.home đc k páo Mua sữa cho con 278: qua páo xem tbn k Mua sữa cho con 278: xem đã con mắt nhể Mua sữa cho con 278: thề,bỏ 3 tiếng ra đáng giá từng phút Admin Trợ lý Thư Hân: ⚽️ Facebook: https://m.me/soctiendao9235 ⚽️ 𝚃𝙴𝙻𝙴𝙶𝚁𝙰𝙼: https://t.me/Soctiendao ⚽️ 𝙼Ở 𝚃À𝙸 𝙺𝙷𝙾Ả𝙽 - 𝚅À𝙾 𝙽𝙷Ó𝙼 𝙺È𝙾 - 𝙽𝙷Ậ𝙽 𝙺𝙷𝚄𝚈Ế𝙽 𝙼Ã𝙸 🎀 B𝚂𝙿𝙾𝚁𝚃: https://www.bty9234.com/ 🎀 𝙱𝚄𝙵𝙰: 𝐰𝐣𝐳𝐳𝟔𝐩 Mua sữa cho con 278: ác hen có triển khai đc đâu thần handicap: g kia Bình Luận Viên A PÁO: tài bàn 2 bơm Ngôinha522: thua thụy điển sml ai ngủ được Mạnh junior: rung được k blv nightmare174: to để làm j a páo Admin Trợ lý Thư Hân: 𝐍Ạ𝐏 𝟓𝟎𝟎𝐊 𝐓Ặ𝐍𝐆 𝟏𝟎𝟎𝐊 - 𝐍Ạ𝐏 𝟑𝐓𝐑𝟓 𝐓Ặ𝐍𝐆 𝟑𝟓𝟎𝐊 - 𝐍Ạ𝐏 𝟏𝟓𝐓𝐑 𝐓Ặ𝐍𝐆 𝟏𝐓𝐑𝟓 🎀 https://www.bty9234.com/",
+            "harvest_rounds": 9,
+            "harvest_window_seconds": 6.963,
+            "main_status": 200,
+            "harvested_stream_count": 1,
+            "harvested_blv_ids": [
+              "235232"
+            ],
+            "scan_mode": "browser-event",
+            "elapsed_seconds": 8.673
+          },
+          "http_probe": {
+            "enabled": false,
+            "status": null,
+            "elapsed_seconds": 0.0,
+            "error": ""
+          },
+          "errors": [
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED"
+          ],
+          "failed_requests": [
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/main.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/customize.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/auth.css?ver=909 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat.css?ver=723 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat(1).css?ver=758 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/toast.css?ver=851 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/themes/flatsome/assets/css/flatsome.css?ver=3.18.2 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/themes/flatsome-child/style.css?ver=3.0 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/countdown.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/match.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/livescore.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/style_custom.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/effect/running-border.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/option/option-6.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/highlight/option-1.css?ver=2.8.5 | net::ERR_FAILED"
+          ],
+          "http_errors": [
+            "403 https://socolivep.cv/wp-admin/admin-ajax.php?action=scl_realtime&sport=1"
+          ]
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/fc-rapid-1923-vs-sepsi-osk-sfantul-gheorghe-21-07-2026-0130?blv=235232",
+          "blv": "A PÁO",
+          "blv_id": "235232",
+          "streams": [],
+          "stream_sources": {},
+          "stream_first_seen": [],
+          "discovered_blv_ids": [],
+          "diagnostics": {
+            "url": "https://socolivep.cv/truc-tiep/fc-rapid-1923-vs-sepsi-osk-sfantul-gheorghe-21-07-2026-0130?blv=235232",
+            "title": "Chờ một chút...",
+            "h1": "socolivep.cv",
+            "ready_state": "complete",
+            "visibility_state": "visible",
+            "hidden": false,
+            "video_count": 0,
+            "iframe_count": 0,
+            "body_sample": "socolivep.cv Thực hiện xác minh bảo mật Trang web này sử dụng dịch vụ bảo mật để chống bot độc hại. Trang này hiển thị trong khi trang web xác minh bạn không phải là bot. Ray ID: a1e4360c8aeff7a9 Hiệu suất và Tính bảo mật của Cloudflare Quyền riêng tư",
+            "harvest_rounds": 0,
+            "harvest_window_seconds": 0.619,
+            "main_status": 429,
+            "harvested_stream_count": 0,
+            "harvested_blv_ids": [],
+            "scan_mode": "browser-event",
+            "elapsed_seconds": 13.187
+          },
+          "http_probe": {
+            "enabled": false,
+            "status": null,
+            "elapsed_seconds": 0.0,
+            "error": ""
+          },
+          "errors": [
+            "console/error: Failed to load resource: the server responded with a status of 429 ()",
+            "console/warning: No available adapters.",
+            "console/warning: No available adapters.",
+            "console/warning: [.WebGL-0x3eac0010e200]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+            "console/warning: [.WebGL-0x3eac0010e200]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+            "console/warning: OTS parsing error: Size of decompressed WOFF 2.0 is less than compressed size",
+            "console/error: %c%d font-size:0;color:transparent NaN",
+            "console/error: %c%d font-size:0;color:transparent NaN",
+            "console/warning: %c%d font-size:0;color:transparent NaN",
+            "console/warning: %c%d font-size:0;color:transparent NaN",
+            "console/error: Failed to load resource: net::ERR_FAILED"
+          ],
+          "failed_requests": [
+            "fetch https://brunhild.challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/i/a1e4360e8ee5cb8a/o63VhhG4.qXgOeUGIKuOFVGPHg4AmPM3tOtlpwwD3Nw-1784574051-1.2.1.1-kl5FyQaYQQfnTZDYe0Sr9juBTxt1ZCrCDf4BhwHlqmMXsyzwa2Wub_02RUnaiIpH | net::ERR_NAME_NOT_RESOLVED",
+            "image https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/ci/a1e4360e8ee5cb8a/1784574051863/xT-pZu-Pl9MD-At | net::ERR_FAILED"
+          ],
+          "http_errors": [
+            "429 https://socolivep.cv/truc-tiep/fc-rapid-1923-vs-sepsi-osk-sfantul-gheorghe-21-07-2026-0130?blv=235232",
+            "401 https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/pat/a1e4360e8ee5cb8a/1784574051862/967156d1a0b7497bd7fcba92d2ebc2d6accd8159a9b7ef741299ddfb8f48eb1c/m1licUsuPJDCfo9"
+          ]
         }
       ],
       "attempted_room_ids": [
@@ -11033,8 +11459,8 @@
             "blv": "A PÁO",
             "blv_id": "235232",
             "status": "rate_limited",
-            "attempts": 50,
-            "rate_limit_hits": 18,
+            "attempts": 51,
+            "rate_limit_hits": 19,
             "last_http_status": 429,
             "last_stream_count": 0,
             "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
@@ -11097,8 +11523,8 @@
           "blv": "A PÁO",
           "blv_id": "235232",
           "status": "rate_limited",
-          "attempts": 50,
-          "rate_limit_hits": 18,
+          "attempts": 51,
+          "rate_limit_hits": 19,
           "last_http_status": 429,
           "last_stream_count": 0,
           "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
@@ -16150,6 +16576,396 @@
         "__base__": {
           "key": "__base__",
           "url": "https://socolivep.cv/truc-tiep/botev-plovdiv-vs-lokomotiv-sofia-21-07-2026-0130/",
+          "blv": "",
+          "blv_id": "",
+          "status": "pending",
+          "attempts": 0,
+          "rate_limit_hits": 0,
+          "last_http_status": null,
+          "last_stream_count": 0,
+          "last_error": ""
+        }
+      }
+    },
+    {
+      "base_url": "https://socolivep.cv/truc-tiep/quilmes-vs-gimnasia-jujuy-21-07-2026-0600/",
+      "raw_title": "Trực tiếp bóng đá Socolive Quilmes vs Gimnasia Jujuy lúc 06:00 ngày 21/07/2026",
+      "home_team": "Quilmes",
+      "away_team": "Gimnasia Jujuy",
+      "home_logo": "https://sta.vnres.co/file/common/20260718/cd88bf405b5b6bbf9414fd7a76acfd34.png",
+      "away_logo": "https://sta.vnres.co/file/common/20260718/0d183e43854948cbccef2997f169ae3c.png",
+      "time_text": "06:00",
+      "date_text": "21/07",
+      "status": "",
+      "card_text": "ARG D2 06:00 21/07 Quilmes VS XEM NGAY Gimnasia Jujuy VOI GIÓ",
+      "rooms": [
+        {
+          "url": "https://socolivep.cv/truc-tiep/quilmes-vs-gimnasia-jujuy-21-07-2026-0600?blv=552716",
+          "blv": "VOI",
+          "blv_id": "552716"
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/quilmes-vs-gimnasia-jujuy-21-07-2026-0600?blv=321443",
+          "blv": "GIÓ",
+          "blv_id": "321443"
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/quilmes-vs-gimnasia-jujuy-21-07-2026-0600",
+          "blv": "XEM NGAY",
+          "blv_id": ""
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/quilmes-vs-gimnasia-jujuy-21-07-2026-0600/",
+          "blv": "",
+          "blv_id": ""
+        }
+      ],
+      "match_name": "Quilmes vs Gimnasia Jujuy",
+      "scheduled_at": "2026-07-21T06:00:00+07:00",
+      "streams": [],
+      "room_results": [],
+      "attempted_room_ids": [],
+      "coverage": {
+        "found_streams": 0,
+        "found_blv_ids": [],
+        "goal": 4,
+        "source_goal_reached": false,
+        "room_queue_complete": false,
+        "complete": false,
+        "max_streams_per_blv": 2,
+        "total_explicit_blv_rooms": 2,
+        "pending_room_keys": [
+          "552716",
+          "321443"
+        ],
+        "room_progress": {
+          "552716": {
+            "key": "552716",
+            "url": "https://socolivep.cv/truc-tiep/quilmes-vs-gimnasia-jujuy-21-07-2026-0600?blv=552716",
+            "blv": "VOI",
+            "blv_id": "552716",
+            "status": "pending",
+            "attempts": 0,
+            "rate_limit_hits": 0,
+            "last_http_status": null,
+            "last_stream_count": 0,
+            "last_error": ""
+          },
+          "321443": {
+            "key": "321443",
+            "url": "https://socolivep.cv/truc-tiep/quilmes-vs-gimnasia-jujuy-21-07-2026-0600?blv=321443",
+            "blv": "GIÓ",
+            "blv_id": "321443",
+            "status": "pending",
+            "attempts": 0,
+            "rate_limit_hits": 0,
+            "last_http_status": null,
+            "last_stream_count": 0,
+            "last_error": ""
+          },
+          "__base__": {
+            "key": "__base__",
+            "url": "https://socolivep.cv/truc-tiep/quilmes-vs-gimnasia-jujuy-21-07-2026-0600/",
+            "blv": "",
+            "blv_id": "",
+            "status": "pending",
+            "attempts": 0,
+            "rate_limit_hits": 0,
+            "last_http_status": null,
+            "last_stream_count": 0,
+            "last_error": ""
+          }
+        }
+      },
+      "errors": [],
+      "room_progress": {
+        "552716": {
+          "key": "552716",
+          "url": "https://socolivep.cv/truc-tiep/quilmes-vs-gimnasia-jujuy-21-07-2026-0600?blv=552716",
+          "blv": "VOI",
+          "blv_id": "552716",
+          "status": "pending",
+          "attempts": 0,
+          "rate_limit_hits": 0,
+          "last_http_status": null,
+          "last_stream_count": 0,
+          "last_error": ""
+        },
+        "321443": {
+          "key": "321443",
+          "url": "https://socolivep.cv/truc-tiep/quilmes-vs-gimnasia-jujuy-21-07-2026-0600?blv=321443",
+          "blv": "GIÓ",
+          "blv_id": "321443",
+          "status": "pending",
+          "attempts": 0,
+          "rate_limit_hits": 0,
+          "last_http_status": null,
+          "last_stream_count": 0,
+          "last_error": ""
+        },
+        "__base__": {
+          "key": "__base__",
+          "url": "https://socolivep.cv/truc-tiep/quilmes-vs-gimnasia-jujuy-21-07-2026-0600/",
+          "blv": "",
+          "blv_id": "",
+          "status": "pending",
+          "attempts": 0,
+          "rate_limit_hits": 0,
+          "last_http_status": null,
+          "last_stream_count": 0,
+          "last_error": ""
+        }
+      }
+    },
+    {
+      "base_url": "https://socolivep.cv/truc-tiep/patronato-parana-vs-atletico-atlanta-21-07-2026-0600/",
+      "raw_title": "Trực tiếp bóng đá Socolive Patronato Parana vs Atletico Atlanta lúc 06:00 ngày 21/07/2026",
+      "home_team": "Patronato Parana",
+      "away_team": "Atletico Atlanta",
+      "home_logo": "https://sta.vnres.co/file/common/20260718/8a58978917b6ff1aa63bf41e1a8f01ff.png",
+      "away_logo": "https://sta.vnres.co/file/common/20260718/0780bb1d459a400d40db9cc5c41cbdeb.png",
+      "time_text": "06:00",
+      "date_text": "21/07",
+      "status": "",
+      "card_text": "ARG D2 06:00 21/07 Patronato Parana VS XEM NGAY Atletico Atlanta YONE LUCAS",
+      "rooms": [
+        {
+          "url": "https://socolivep.cv/truc-tiep/patronato-parana-vs-atletico-atlanta-21-07-2026-0600?blv=372746",
+          "blv": "YONE",
+          "blv_id": "372746"
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/patronato-parana-vs-atletico-atlanta-21-07-2026-0600?blv=304148",
+          "blv": "LUCAS",
+          "blv_id": "304148"
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/patronato-parana-vs-atletico-atlanta-21-07-2026-0600",
+          "blv": "XEM NGAY",
+          "blv_id": ""
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/patronato-parana-vs-atletico-atlanta-21-07-2026-0600/",
+          "blv": "",
+          "blv_id": ""
+        }
+      ],
+      "match_name": "Patronato Parana vs Atletico Atlanta",
+      "scheduled_at": "2026-07-21T06:00:00+07:00",
+      "streams": [],
+      "room_results": [],
+      "attempted_room_ids": [],
+      "coverage": {
+        "found_streams": 0,
+        "found_blv_ids": [],
+        "goal": 4,
+        "source_goal_reached": false,
+        "room_queue_complete": false,
+        "complete": false,
+        "max_streams_per_blv": 2,
+        "total_explicit_blv_rooms": 2,
+        "pending_room_keys": [
+          "372746",
+          "304148"
+        ],
+        "room_progress": {
+          "372746": {
+            "key": "372746",
+            "url": "https://socolivep.cv/truc-tiep/patronato-parana-vs-atletico-atlanta-21-07-2026-0600?blv=372746",
+            "blv": "YONE",
+            "blv_id": "372746",
+            "status": "pending",
+            "attempts": 0,
+            "rate_limit_hits": 0,
+            "last_http_status": null,
+            "last_stream_count": 0,
+            "last_error": ""
+          },
+          "304148": {
+            "key": "304148",
+            "url": "https://socolivep.cv/truc-tiep/patronato-parana-vs-atletico-atlanta-21-07-2026-0600?blv=304148",
+            "blv": "LUCAS",
+            "blv_id": "304148",
+            "status": "pending",
+            "attempts": 0,
+            "rate_limit_hits": 0,
+            "last_http_status": null,
+            "last_stream_count": 0,
+            "last_error": ""
+          },
+          "__base__": {
+            "key": "__base__",
+            "url": "https://socolivep.cv/truc-tiep/patronato-parana-vs-atletico-atlanta-21-07-2026-0600/",
+            "blv": "",
+            "blv_id": "",
+            "status": "pending",
+            "attempts": 0,
+            "rate_limit_hits": 0,
+            "last_http_status": null,
+            "last_stream_count": 0,
+            "last_error": ""
+          }
+        }
+      },
+      "errors": [],
+      "room_progress": {
+        "372746": {
+          "key": "372746",
+          "url": "https://socolivep.cv/truc-tiep/patronato-parana-vs-atletico-atlanta-21-07-2026-0600?blv=372746",
+          "blv": "YONE",
+          "blv_id": "372746",
+          "status": "pending",
+          "attempts": 0,
+          "rate_limit_hits": 0,
+          "last_http_status": null,
+          "last_stream_count": 0,
+          "last_error": ""
+        },
+        "304148": {
+          "key": "304148",
+          "url": "https://socolivep.cv/truc-tiep/patronato-parana-vs-atletico-atlanta-21-07-2026-0600?blv=304148",
+          "blv": "LUCAS",
+          "blv_id": "304148",
+          "status": "pending",
+          "attempts": 0,
+          "rate_limit_hits": 0,
+          "last_http_status": null,
+          "last_stream_count": 0,
+          "last_error": ""
+        },
+        "__base__": {
+          "key": "__base__",
+          "url": "https://socolivep.cv/truc-tiep/patronato-parana-vs-atletico-atlanta-21-07-2026-0600/",
+          "blv": "",
+          "blv_id": "",
+          "status": "pending",
+          "attempts": 0,
+          "rate_limit_hits": 0,
+          "last_http_status": null,
+          "last_stream_count": 0,
+          "last_error": ""
+        }
+      }
+    },
+    {
+      "base_url": "https://socolivep.cv/truc-tiep/colegiales-vs-ferrocarril-midland-21-07-2026-0600/",
+      "raw_title": "Trực tiếp bóng đá Socolive Colegiales vs Ferrocarril Midland lúc 06:00 ngày 21/07/2026",
+      "home_team": "Colegiales",
+      "away_team": "Ferrocarril Midland",
+      "home_logo": "https://sta.vnres.co/file/common/20260718/3aeb6633413f467f57257a2054877cc6.png",
+      "away_logo": "https://sta.vnres.co/file/common/20260718/0a33033e4686c646542b3fac3ebc287a.png",
+      "time_text": "06:00",
+      "date_text": "21/07",
+      "status": "",
+      "card_text": "ARG D2 06:00 21/07 Colegiales VS XEM NGAY Ferrocarril Midland RÔSI HÀ DUY KIÊN",
+      "rooms": [
+        {
+          "url": "https://socolivep.cv/truc-tiep/colegiales-vs-ferrocarril-midland-21-07-2026-0600?blv=139384",
+          "blv": "RÔSI",
+          "blv_id": "139384"
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/colegiales-vs-ferrocarril-midland-21-07-2026-0600?blv=607400",
+          "blv": "HÀ DUY KIÊN",
+          "blv_id": "607400"
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/colegiales-vs-ferrocarril-midland-21-07-2026-0600",
+          "blv": "XEM NGAY",
+          "blv_id": ""
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/colegiales-vs-ferrocarril-midland-21-07-2026-0600/",
+          "blv": "",
+          "blv_id": ""
+        }
+      ],
+      "match_name": "Colegiales vs Ferrocarril Midland",
+      "scheduled_at": "2026-07-21T06:00:00+07:00",
+      "streams": [],
+      "room_results": [],
+      "attempted_room_ids": [],
+      "coverage": {
+        "found_streams": 0,
+        "found_blv_ids": [],
+        "goal": 4,
+        "source_goal_reached": false,
+        "room_queue_complete": false,
+        "complete": false,
+        "max_streams_per_blv": 2,
+        "total_explicit_blv_rooms": 2,
+        "pending_room_keys": [
+          "139384",
+          "607400"
+        ],
+        "room_progress": {
+          "139384": {
+            "key": "139384",
+            "url": "https://socolivep.cv/truc-tiep/colegiales-vs-ferrocarril-midland-21-07-2026-0600?blv=139384",
+            "blv": "RÔSI",
+            "blv_id": "139384",
+            "status": "pending",
+            "attempts": 0,
+            "rate_limit_hits": 0,
+            "last_http_status": null,
+            "last_stream_count": 0,
+            "last_error": ""
+          },
+          "607400": {
+            "key": "607400",
+            "url": "https://socolivep.cv/truc-tiep/colegiales-vs-ferrocarril-midland-21-07-2026-0600?blv=607400",
+            "blv": "HÀ DUY KIÊN",
+            "blv_id": "607400",
+            "status": "pending",
+            "attempts": 0,
+            "rate_limit_hits": 0,
+            "last_http_status": null,
+            "last_stream_count": 0,
+            "last_error": ""
+          },
+          "__base__": {
+            "key": "__base__",
+            "url": "https://socolivep.cv/truc-tiep/colegiales-vs-ferrocarril-midland-21-07-2026-0600/",
+            "blv": "",
+            "blv_id": "",
+            "status": "pending",
+            "attempts": 0,
+            "rate_limit_hits": 0,
+            "last_http_status": null,
+            "last_stream_count": 0,
+            "last_error": ""
+          }
+        }
+      },
+      "errors": [],
+      "room_progress": {
+        "139384": {
+          "key": "139384",
+          "url": "https://socolivep.cv/truc-tiep/colegiales-vs-ferrocarril-midland-21-07-2026-0600?blv=139384",
+          "blv": "RÔSI",
+          "blv_id": "139384",
+          "status": "pending",
+          "attempts": 0,
+          "rate_limit_hits": 0,
+          "last_http_status": null,
+          "last_stream_count": 0,
+          "last_error": ""
+        },
+        "607400": {
+          "key": "607400",
+          "url": "https://socolivep.cv/truc-tiep/colegiales-vs-ferrocarril-midland-21-07-2026-0600?blv=607400",
+          "blv": "HÀ DUY KIÊN",
+          "blv_id": "607400",
+          "status": "pending",
+          "attempts": 0,
+          "rate_limit_hits": 0,
+          "last_http_status": null,
+          "last_stream_count": 0,
+          "last_error": ""
+        },
+        "__base__": {
+          "key": "__base__",
+          "url": "https://socolivep.cv/truc-tiep/colegiales-vs-ferrocarril-midland-21-07-2026-0600/",
           "blv": "",
           "blv_id": "",
           "status": "pending",
