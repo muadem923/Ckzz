@@ -1,618 +1,20 @@
 {
-  "generated_at": "2026-07-21T03:44:59.891475+07:00",
+  "generated_at": "2026-07-21T03:46:09.042652+07:00",
   "state_schema_version": "v10.1-long-harvest-two-streams",
   "dispatch_next": true,
-  "pending_count": 8,
-  "completed_count": 4,
+  "pending_count": 5,
+  "completed_count": 2,
   "coverage_complete_count": 0,
-  "total_match_count": 8,
-  "total_stream_count": 4,
-  "progress_count": 0,
-  "chain_runs": 13,
-  "no_progress_runs": 13,
+  "total_match_count": 5,
+  "total_stream_count": 2,
+  "progress_count": 1,
+  "chain_runs": 1,
+  "no_progress_runs": 0,
   "stop_reason": "",
   "rate_limited": true,
-  "rate_limit_url": "https://socolivep.cv/truc-tiep/sporting-cp-vs-strasbourg-21-07-2026-0215?blv=602019",
-  "count": 8,
+  "rate_limit_url": "https://socolivep.cv/truc-tiep/colegiales-vs-ferrocarril-midland-21-07-2026-0600/?blv=139384",
+  "count": 5,
   "matches": [
-    {
-      "base_url": "https://socolivep.cv/truc-tiep/keflavik-vs-akranes-21-07-2026-0215/",
-      "match_name": "Keflavik vs Akranes",
-      "scheduled_at": "2026-07-21T02:15:00+07:00",
-      "rooms": [
-        {
-          "url": "https://socolivep.cv/truc-tiep/keflavik-vs-akranes-21-07-2026-0215?blv=610518",
-          "blv": "XUÂN TÓC ĐỎ",
-          "blv_id": "610518"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/keflavik-vs-akranes-21-07-2026-0215?blv=618546",
-          "blv": "SEVEN",
-          "blv_id": "618546"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/keflavik-vs-akranes-21-07-2026-0215?blv=603914",
-          "blv": "TRÀ ĐÁ",
-          "blv_id": "603914"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/keflavik-vs-akranes-21-07-2026-0215/?blv=610518",
-          "blv": "XUÂN TÓC ĐỎ",
-          "blv_id": "610518"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/keflavik-vs-akranes-21-07-2026-0215/?blv=618546",
-          "blv": "SEVEN",
-          "blv_id": "618546"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/keflavik-vs-akranes-21-07-2026-0215/?blv=603914",
-          "blv": "TRÀ ĐÁ",
-          "blv_id": "603914"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/keflavik-vs-akranes-21-07-2026-0215",
-          "blv": "XEM NGAY",
-          "blv_id": ""
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/keflavik-vs-akranes-21-07-2026-0215/",
-          "blv": "",
-          "blv_id": ""
-        }
-      ],
-      "streams": [
-        {
-          "url": "https://pull.niur.live/live/stream-610518_lhd.m3u8?txSecret=94b79ed6e0ff5f0c39482123776dd380&txTime=6a5d5c6f",
-          "queue_room_key": "610518",
-          "room_url": "https://socolivep.cv/truc-tiep/keflavik-vs-akranes-21-07-2026-0215/?blv=610518",
-          "blv": "XUÂN TÓC ĐỎ",
-          "blv_id": "610518",
-          "source_id": "610518",
-          "source_provenance": [
-            "final-no-stream-scan",
-            "harvest-final"
-          ],
-          "source_confidence": "embedded",
-          "mapping_mode": "exact-room-id",
-          "discovered_from_room_url": "https://socolivep.cv/truc-tiep/keflavik-vs-akranes-21-07-2026-0215?blv=610518",
-          "discovered_from_blv": "XUÂN TÓC ĐỎ"
-        }
-      ],
-      "coverage": {
-        "found_streams": 1,
-        "found_blv_ids": [
-          "610518"
-        ],
-        "goal": 6,
-        "source_goal_reached": false,
-        "room_queue_complete": false,
-        "complete": false,
-        "max_streams_per_blv": 2,
-        "total_explicit_blv_rooms": 6,
-        "pending_room_keys": [
-          "610518",
-          "618546",
-          "603914",
-          "610518",
-          "618546",
-          "603914"
-        ],
-        "room_progress": {
-          "610518": {
-            "key": "610518",
-            "url": "https://socolivep.cv/truc-tiep/keflavik-vs-akranes-21-07-2026-0215/?blv=610518",
-            "blv": "XUÂN TÓC ĐỎ",
-            "blv_id": "610518",
-            "status": "rate_limited",
-            "attempts": 88,
-            "rate_limit_hits": 44,
-            "last_http_status": 200,
-            "last_stream_count": 1,
-            "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
-          },
-          "618546": {
-            "key": "618546",
-            "url": "https://socolivep.cv/truc-tiep/keflavik-vs-akranes-21-07-2026-0215/?blv=618546",
-            "blv": "SEVEN",
-            "blv_id": "618546",
-            "status": "pending",
-            "attempts": 0,
-            "rate_limit_hits": 0,
-            "last_http_status": null,
-            "last_stream_count": 0,
-            "last_error": ""
-          },
-          "603914": {
-            "key": "603914",
-            "url": "https://socolivep.cv/truc-tiep/keflavik-vs-akranes-21-07-2026-0215/?blv=603914",
-            "blv": "TRÀ ĐÁ",
-            "blv_id": "603914",
-            "status": "pending",
-            "attempts": 0,
-            "rate_limit_hits": 0,
-            "last_http_status": null,
-            "last_stream_count": 0,
-            "last_error": ""
-          },
-          "__base__": {
-            "key": "__base__",
-            "url": "https://socolivep.cv/truc-tiep/keflavik-vs-akranes-21-07-2026-0215/",
-            "blv": "",
-            "blv_id": "",
-            "status": "pending",
-            "attempts": 0,
-            "rate_limit_hits": 0,
-            "last_http_status": null,
-            "last_stream_count": 0,
-            "last_error": ""
-          }
-        }
-      },
-      "attempted_room_ids": [
-        "610518"
-      ],
-      "room_progress": {
-        "610518": {
-          "key": "610518",
-          "url": "https://socolivep.cv/truc-tiep/keflavik-vs-akranes-21-07-2026-0215/?blv=610518",
-          "blv": "XUÂN TÓC ĐỎ",
-          "blv_id": "610518",
-          "status": "rate_limited",
-          "attempts": 88,
-          "rate_limit_hits": 44,
-          "last_http_status": 200,
-          "last_stream_count": 1,
-          "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
-        },
-        "618546": {
-          "key": "618546",
-          "url": "https://socolivep.cv/truc-tiep/keflavik-vs-akranes-21-07-2026-0215/?blv=618546",
-          "blv": "SEVEN",
-          "blv_id": "618546",
-          "status": "pending",
-          "attempts": 0,
-          "rate_limit_hits": 0,
-          "last_http_status": null,
-          "last_stream_count": 0,
-          "last_error": ""
-        },
-        "603914": {
-          "key": "603914",
-          "url": "https://socolivep.cv/truc-tiep/keflavik-vs-akranes-21-07-2026-0215/?blv=603914",
-          "blv": "TRÀ ĐÁ",
-          "blv_id": "603914",
-          "status": "pending",
-          "attempts": 0,
-          "rate_limit_hits": 0,
-          "last_http_status": null,
-          "last_stream_count": 0,
-          "last_error": ""
-        },
-        "__base__": {
-          "key": "__base__",
-          "url": "https://socolivep.cv/truc-tiep/keflavik-vs-akranes-21-07-2026-0215/",
-          "blv": "",
-          "blv_id": "",
-          "status": "pending",
-          "attempts": 0,
-          "rate_limit_hits": 0,
-          "last_http_status": null,
-          "last_stream_count": 0,
-          "last_error": ""
-        }
-      },
-      "pending_room_keys": [
-        "610518",
-        "618546",
-        "603914",
-        "610518",
-        "618546",
-        "603914"
-      ]
-    },
-    {
-      "base_url": "https://socolivep.cv/truc-tiep/hafnarfjordur-vs-breidablik-21-07-2026-0215/",
-      "match_name": "Hafnarfjordur vs Breidablik",
-      "scheduled_at": "2026-07-21T02:15:00+07:00",
-      "rooms": [
-        {
-          "url": "https://socolivep.cv/truc-tiep/hafnarfjordur-vs-breidablik-21-07-2026-0215?blv=622602",
-          "blv": "KENCHU",
-          "blv_id": "622602"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/hafnarfjordur-vs-breidablik-21-07-2026-0215?blv=622093",
-          "blv": "GRAP",
-          "blv_id": "622093"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/hafnarfjordur-vs-breidablik-21-07-2026-0215?blv=400722",
-          "blv": "TUẤN CÙI",
-          "blv_id": "400722"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/hafnarfjordur-vs-breidablik-21-07-2026-0215/?blv=622602",
-          "blv": "KENCHU",
-          "blv_id": "622602"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/hafnarfjordur-vs-breidablik-21-07-2026-0215/?blv=622093",
-          "blv": "GRAP",
-          "blv_id": "622093"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/hafnarfjordur-vs-breidablik-21-07-2026-0215/?blv=400722",
-          "blv": "TUẤN CÙI",
-          "blv_id": "400722"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/hafnarfjordur-vs-breidablik-21-07-2026-0215",
-          "blv": "XEM NGAY",
-          "blv_id": ""
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/hafnarfjordur-vs-breidablik-21-07-2026-0215/",
-          "blv": "",
-          "blv_id": ""
-        }
-      ],
-      "streams": [
-        {
-          "url": "https://pull.niues.live/live/stream-622602_lhd.m3u8?auth_key=1784570155-0-0-869ac499155b900e7d5af8240a325e10",
-          "queue_room_key": "622602",
-          "room_url": "https://socolivep.cv/truc-tiep/hafnarfjordur-vs-breidablik-21-07-2026-0215/?blv=622602",
-          "blv": "KENCHU",
-          "blv_id": "622602",
-          "source_id": "622602",
-          "source_provenance": [
-            "final-no-stream-scan",
-            "harvest-final"
-          ],
-          "source_confidence": "embedded",
-          "mapping_mode": "exact-room-id",
-          "discovered_from_room_url": "https://socolivep.cv/truc-tiep/hafnarfjordur-vs-breidablik-21-07-2026-0215?blv=622602",
-          "discovered_from_blv": "KENCHU"
-        }
-      ],
-      "coverage": {
-        "found_streams": 1,
-        "found_blv_ids": [
-          "622602"
-        ],
-        "goal": 6,
-        "source_goal_reached": false,
-        "room_queue_complete": false,
-        "complete": false,
-        "max_streams_per_blv": 2,
-        "total_explicit_blv_rooms": 6,
-        "pending_room_keys": [
-          "622602",
-          "622093",
-          "400722",
-          "622602",
-          "622093",
-          "400722"
-        ],
-        "room_progress": {
-          "622602": {
-            "key": "622602",
-            "url": "https://socolivep.cv/truc-tiep/hafnarfjordur-vs-breidablik-21-07-2026-0215/?blv=622602",
-            "blv": "KENCHU",
-            "blv_id": "622602",
-            "status": "rate_limited",
-            "attempts": 106,
-            "rate_limit_hits": 49,
-            "last_http_status": 200,
-            "last_stream_count": 1,
-            "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
-          },
-          "622093": {
-            "key": "622093",
-            "url": "https://socolivep.cv/truc-tiep/hafnarfjordur-vs-breidablik-21-07-2026-0215/?blv=622093",
-            "blv": "GRAP",
-            "blv_id": "622093",
-            "status": "pending",
-            "attempts": 0,
-            "rate_limit_hits": 0,
-            "last_http_status": null,
-            "last_stream_count": 0,
-            "last_error": ""
-          },
-          "400722": {
-            "key": "400722",
-            "url": "https://socolivep.cv/truc-tiep/hafnarfjordur-vs-breidablik-21-07-2026-0215/?blv=400722",
-            "blv": "TUẤN CÙI",
-            "blv_id": "400722",
-            "status": "pending",
-            "attempts": 0,
-            "rate_limit_hits": 0,
-            "last_http_status": null,
-            "last_stream_count": 0,
-            "last_error": ""
-          },
-          "__base__": {
-            "key": "__base__",
-            "url": "https://socolivep.cv/truc-tiep/hafnarfjordur-vs-breidablik-21-07-2026-0215/",
-            "blv": "",
-            "blv_id": "",
-            "status": "pending",
-            "attempts": 0,
-            "rate_limit_hits": 0,
-            "last_http_status": null,
-            "last_stream_count": 0,
-            "last_error": ""
-          }
-        }
-      },
-      "attempted_room_ids": [
-        "622602"
-      ],
-      "room_progress": {
-        "622602": {
-          "key": "622602",
-          "url": "https://socolivep.cv/truc-tiep/hafnarfjordur-vs-breidablik-21-07-2026-0215/?blv=622602",
-          "blv": "KENCHU",
-          "blv_id": "622602",
-          "status": "rate_limited",
-          "attempts": 106,
-          "rate_limit_hits": 49,
-          "last_http_status": 200,
-          "last_stream_count": 1,
-          "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
-        },
-        "622093": {
-          "key": "622093",
-          "url": "https://socolivep.cv/truc-tiep/hafnarfjordur-vs-breidablik-21-07-2026-0215/?blv=622093",
-          "blv": "GRAP",
-          "blv_id": "622093",
-          "status": "pending",
-          "attempts": 0,
-          "rate_limit_hits": 0,
-          "last_http_status": null,
-          "last_stream_count": 0,
-          "last_error": ""
-        },
-        "400722": {
-          "key": "400722",
-          "url": "https://socolivep.cv/truc-tiep/hafnarfjordur-vs-breidablik-21-07-2026-0215/?blv=400722",
-          "blv": "TUẤN CÙI",
-          "blv_id": "400722",
-          "status": "pending",
-          "attempts": 0,
-          "rate_limit_hits": 0,
-          "last_http_status": null,
-          "last_stream_count": 0,
-          "last_error": ""
-        },
-        "__base__": {
-          "key": "__base__",
-          "url": "https://socolivep.cv/truc-tiep/hafnarfjordur-vs-breidablik-21-07-2026-0215/",
-          "blv": "",
-          "blv_id": "",
-          "status": "pending",
-          "attempts": 0,
-          "rate_limit_hits": 0,
-          "last_http_status": null,
-          "last_stream_count": 0,
-          "last_error": ""
-        }
-      },
-      "pending_room_keys": [
-        "622602",
-        "622093",
-        "400722",
-        "622602",
-        "622093",
-        "400722"
-      ]
-    },
-    {
-      "base_url": "https://socolivep.cv/truc-tiep/sporting-cp-vs-strasbourg-21-07-2026-0215/",
-      "match_name": "Sporting CP vs Strasbourg",
-      "scheduled_at": "2026-07-21T02:15:00+07:00",
-      "rooms": [
-        {
-          "url": "https://socolivep.cv/truc-tiep/sporting-cp-vs-strasbourg-21-07-2026-0215?blv=602019",
-          "blv": "RYO",
-          "blv_id": "602019"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/sporting-cp-vs-strasbourg-21-07-2026-0215?blv=620003",
-          "blv": "FOX",
-          "blv_id": "620003"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/sporting-cp-vs-strasbourg-21-07-2026-0215?blv=602153",
-          "blv": "QUỐC KHÁNH",
-          "blv_id": "602153"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/sporting-cp-vs-strasbourg-21-07-2026-0215?blv=598549",
-          "blv": "PICK",
-          "blv_id": "598549"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/sporting-cp-vs-strasbourg-21-07-2026-0215",
-          "blv": "XEM NGAY",
-          "blv_id": ""
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/sporting-cp-vs-strasbourg-21-07-2026-0215/",
-          "blv": "",
-          "blv_id": ""
-        }
-      ],
-      "streams": [
-        {
-          "url": "https://pull.niues.live/live/stream-602019_lhd.m3u8?auth_key=1784490816-0-0-843b92c62ab5adbb8e44ba4d4307eba4",
-          "queue_room_key": "602019",
-          "room_url": "https://socolivep.cv/truc-tiep/sporting-cp-vs-strasbourg-21-07-2026-0215/?blv=602019",
-          "blv": "RYO",
-          "blv_id": "602019",
-          "source_id": "602019",
-          "source_provenance": [
-            "final-no-stream-scan",
-            "harvest-final"
-          ],
-          "source_confidence": "embedded",
-          "mapping_mode": "exact-room-id",
-          "discovered_from_room_url": "https://socolivep.cv/truc-tiep/sporting-cp-vs-strasbourg-21-07-2026-0215?blv=602019",
-          "discovered_from_blv": "RYO"
-        }
-      ],
-      "coverage": {
-        "found_streams": 1,
-        "found_blv_ids": [
-          "602019"
-        ],
-        "goal": 8,
-        "source_goal_reached": false,
-        "room_queue_complete": false,
-        "complete": false,
-        "max_streams_per_blv": 2,
-        "total_explicit_blv_rooms": 4,
-        "pending_room_keys": [
-          "602019",
-          "620003",
-          "602153",
-          "598549"
-        ],
-        "room_progress": {
-          "602019": {
-            "key": "602019",
-            "url": "https://socolivep.cv/truc-tiep/sporting-cp-vs-strasbourg-21-07-2026-0215?blv=602019",
-            "blv": "RYO",
-            "blv_id": "602019",
-            "status": "rate_limited",
-            "attempts": 102,
-            "rate_limit_hits": 49,
-            "last_http_status": 429,
-            "last_stream_count": 0,
-            "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
-          },
-          "620003": {
-            "key": "620003",
-            "url": "https://socolivep.cv/truc-tiep/sporting-cp-vs-strasbourg-21-07-2026-0215?blv=620003",
-            "blv": "FOX",
-            "blv_id": "620003",
-            "status": "pending",
-            "attempts": 0,
-            "rate_limit_hits": 0,
-            "last_http_status": null,
-            "last_stream_count": 0,
-            "last_error": ""
-          },
-          "602153": {
-            "key": "602153",
-            "url": "https://socolivep.cv/truc-tiep/sporting-cp-vs-strasbourg-21-07-2026-0215?blv=602153",
-            "blv": "QUỐC KHÁNH",
-            "blv_id": "602153",
-            "status": "pending",
-            "attempts": 0,
-            "rate_limit_hits": 0,
-            "last_http_status": null,
-            "last_stream_count": 0,
-            "last_error": ""
-          },
-          "598549": {
-            "key": "598549",
-            "url": "https://socolivep.cv/truc-tiep/sporting-cp-vs-strasbourg-21-07-2026-0215?blv=598549",
-            "blv": "PICK",
-            "blv_id": "598549",
-            "status": "pending",
-            "attempts": 0,
-            "rate_limit_hits": 0,
-            "last_http_status": null,
-            "last_stream_count": 0,
-            "last_error": ""
-          },
-          "__base__": {
-            "key": "__base__",
-            "url": "https://socolivep.cv/truc-tiep/sporting-cp-vs-strasbourg-21-07-2026-0215/",
-            "blv": "",
-            "blv_id": "",
-            "status": "pending",
-            "attempts": 0,
-            "rate_limit_hits": 0,
-            "last_http_status": null,
-            "last_stream_count": 0,
-            "last_error": ""
-          }
-        }
-      },
-      "attempted_room_ids": [
-        "602019"
-      ],
-      "room_progress": {
-        "602019": {
-          "key": "602019",
-          "url": "https://socolivep.cv/truc-tiep/sporting-cp-vs-strasbourg-21-07-2026-0215?blv=602019",
-          "blv": "RYO",
-          "blv_id": "602019",
-          "status": "rate_limited",
-          "attempts": 102,
-          "rate_limit_hits": 49,
-          "last_http_status": 429,
-          "last_stream_count": 0,
-          "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
-        },
-        "620003": {
-          "key": "620003",
-          "url": "https://socolivep.cv/truc-tiep/sporting-cp-vs-strasbourg-21-07-2026-0215?blv=620003",
-          "blv": "FOX",
-          "blv_id": "620003",
-          "status": "pending",
-          "attempts": 0,
-          "rate_limit_hits": 0,
-          "last_http_status": null,
-          "last_stream_count": 0,
-          "last_error": ""
-        },
-        "602153": {
-          "key": "602153",
-          "url": "https://socolivep.cv/truc-tiep/sporting-cp-vs-strasbourg-21-07-2026-0215?blv=602153",
-          "blv": "QUỐC KHÁNH",
-          "blv_id": "602153",
-          "status": "pending",
-          "attempts": 0,
-          "rate_limit_hits": 0,
-          "last_http_status": null,
-          "last_stream_count": 0,
-          "last_error": ""
-        },
-        "598549": {
-          "key": "598549",
-          "url": "https://socolivep.cv/truc-tiep/sporting-cp-vs-strasbourg-21-07-2026-0215?blv=598549",
-          "blv": "PICK",
-          "blv_id": "598549",
-          "status": "pending",
-          "attempts": 0,
-          "rate_limit_hits": 0,
-          "last_http_status": null,
-          "last_stream_count": 0,
-          "last_error": ""
-        },
-        "__base__": {
-          "key": "__base__",
-          "url": "https://socolivep.cv/truc-tiep/sporting-cp-vs-strasbourg-21-07-2026-0215/",
-          "blv": "",
-          "blv_id": "",
-          "status": "pending",
-          "attempts": 0,
-          "rate_limit_hits": 0,
-          "last_http_status": null,
-          "last_stream_count": 0,
-          "last_error": ""
-        }
-      },
-      "pending_room_keys": [
-        "602019",
-        "620003",
-        "602153",
-        "598549"
-      ]
-    },
     {
       "base_url": "https://socolivep.cv/truc-tiep/quilmes-vs-gimnasia-jujuy-21-07-2026-0600/",
       "match_name": "Quilmes vs Gimnasia Jujuy",
@@ -691,7 +93,7 @@
             "blv": "VOI",
             "blv_id": "552716",
             "status": "rate_limited",
-            "attempts": 32,
+            "attempts": 33,
             "rate_limit_hits": 4,
             "last_http_status": 200,
             "last_stream_count": 1,
@@ -733,7 +135,7 @@
           "blv": "VOI",
           "blv_id": "552716",
           "status": "rate_limited",
-          "attempts": 32,
+          "attempts": 33,
           "rate_limit_hits": 4,
           "last_http_status": 200,
           "last_stream_count": 1,
@@ -817,12 +219,12 @@
             "url": "https://socolivep.cv/truc-tiep/patronato-parana-vs-atletico-atlanta-21-07-2026-0600?blv=372746",
             "blv": "YONE",
             "blv_id": "372746",
-            "status": "pending",
+            "status": "rate_limited",
             "attempts": 0,
-            "rate_limit_hits": 0,
-            "last_http_status": null,
+            "rate_limit_hits": 1,
+            "last_http_status": 429,
             "last_stream_count": 0,
-            "last_error": ""
+            "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
           },
           "304148": {
             "key": "304148",
@@ -857,12 +259,12 @@
           "url": "https://socolivep.cv/truc-tiep/patronato-parana-vs-atletico-atlanta-21-07-2026-0600?blv=372746",
           "blv": "YONE",
           "blv_id": "372746",
-          "status": "pending",
+          "status": "rate_limited",
           "attempts": 0,
-          "rate_limit_hits": 0,
-          "last_http_status": null,
+          "rate_limit_hits": 1,
+          "last_http_status": 429,
           "last_stream_count": 0,
-          "last_error": ""
+          "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
         },
         "304148": {
           "key": "304148",
@@ -940,12 +342,12 @@
             "url": "https://socolivep.cv/truc-tiep/colegiales-vs-ferrocarril-midland-21-07-2026-0600?blv=139384",
             "blv": "RÔSI",
             "blv_id": "139384",
-            "status": "pending",
+            "status": "rate_limited",
             "attempts": 0,
-            "rate_limit_hits": 0,
-            "last_http_status": null,
+            "rate_limit_hits": 1,
+            "last_http_status": 429,
             "last_stream_count": 0,
-            "last_error": ""
+            "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
           },
           "607400": {
             "key": "607400",
@@ -980,12 +382,12 @@
           "url": "https://socolivep.cv/truc-tiep/colegiales-vs-ferrocarril-midland-21-07-2026-0600?blv=139384",
           "blv": "RÔSI",
           "blv_id": "139384",
-          "status": "pending",
+          "status": "rate_limited",
           "attempts": 0,
-          "rate_limit_hits": 0,
-          "last_http_status": null,
+          "rate_limit_hits": 1,
+          "last_http_status": 429,
           "last_stream_count": 0,
-          "last_error": ""
+          "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
         },
         "607400": {
           "key": "607400",
@@ -1033,6 +435,16 @@
           "blv_id": "557845"
         },
         {
+          "url": "https://socolivep.cv/truc-tiep/chaco-for-ever-vs-ca-san-miguel-21-07-2026-0700/?blv=536185",
+          "blv": "A WIN",
+          "blv_id": "536185"
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/chaco-for-ever-vs-ca-san-miguel-21-07-2026-0700/?blv=557845",
+          "blv": "A TÚ",
+          "blv_id": "557845"
+        },
+        {
           "url": "https://socolivep.cv/truc-tiep/chaco-for-ever-vs-ca-san-miguel-21-07-2026-0700",
           "blv": "XEM NGAY",
           "blv_id": ""
@@ -1043,36 +455,57 @@
           "blv_id": ""
         }
       ],
-      "streams": [],
+      "streams": [
+        {
+          "url": "https://pull.niues.live/live/stream-536185_lhd.m3u8?auth_key=1784573722-0-0-7c56a7c00194702996987c7471c2b75d",
+          "queue_room_key": "536185",
+          "room_url": "https://socolivep.cv/truc-tiep/chaco-for-ever-vs-ca-san-miguel-21-07-2026-0700/?blv=536185",
+          "blv": "A WIN",
+          "blv_id": "536185",
+          "source_id": "536185",
+          "source_provenance": [
+            "final-no-stream-scan",
+            "harvest-final"
+          ],
+          "source_confidence": "embedded",
+          "mapping_mode": "exact-room-id",
+          "discovered_from_room_url": "https://socolivep.cv/truc-tiep/chaco-for-ever-vs-ca-san-miguel-21-07-2026-0700?blv=536185",
+          "discovered_from_blv": "A WIN"
+        }
+      ],
       "coverage": {
-        "found_streams": 0,
-        "found_blv_ids": [],
+        "found_streams": 1,
+        "found_blv_ids": [
+          "536185"
+        ],
         "goal": 4,
         "source_goal_reached": false,
         "room_queue_complete": false,
         "complete": false,
         "max_streams_per_blv": 2,
-        "total_explicit_blv_rooms": 2,
+        "total_explicit_blv_rooms": 4,
         "pending_room_keys": [
+          "536185",
+          "557845",
           "536185",
           "557845"
         ],
         "room_progress": {
           "536185": {
             "key": "536185",
-            "url": "https://socolivep.cv/truc-tiep/chaco-for-ever-vs-ca-san-miguel-21-07-2026-0700?blv=536185",
+            "url": "https://socolivep.cv/truc-tiep/chaco-for-ever-vs-ca-san-miguel-21-07-2026-0700/?blv=536185",
             "blv": "A WIN",
             "blv_id": "536185",
             "status": "pending",
-            "attempts": 0,
+            "attempts": 1,
             "rate_limit_hits": 0,
-            "last_http_status": null,
-            "last_stream_count": 0,
-            "last_error": ""
+            "last_http_status": 200,
+            "last_stream_count": 1,
+            "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
           },
           "557845": {
             "key": "557845",
-            "url": "https://socolivep.cv/truc-tiep/chaco-for-ever-vs-ca-san-miguel-21-07-2026-0700?blv=557845",
+            "url": "https://socolivep.cv/truc-tiep/chaco-for-ever-vs-ca-san-miguel-21-07-2026-0700/?blv=557845",
             "blv": "A TÚ",
             "blv_id": "557845",
             "status": "pending",
@@ -1096,23 +529,25 @@
           }
         }
       },
-      "attempted_room_ids": [],
+      "attempted_room_ids": [
+        "536185"
+      ],
       "room_progress": {
         "536185": {
           "key": "536185",
-          "url": "https://socolivep.cv/truc-tiep/chaco-for-ever-vs-ca-san-miguel-21-07-2026-0700?blv=536185",
+          "url": "https://socolivep.cv/truc-tiep/chaco-for-ever-vs-ca-san-miguel-21-07-2026-0700/?blv=536185",
           "blv": "A WIN",
           "blv_id": "536185",
           "status": "pending",
-          "attempts": 0,
+          "attempts": 1,
           "rate_limit_hits": 0,
-          "last_http_status": null,
-          "last_stream_count": 0,
-          "last_error": ""
+          "last_http_status": 200,
+          "last_stream_count": 1,
+          "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
         },
         "557845": {
           "key": "557845",
-          "url": "https://socolivep.cv/truc-tiep/chaco-for-ever-vs-ca-san-miguel-21-07-2026-0700?blv=557845",
+          "url": "https://socolivep.cv/truc-tiep/chaco-for-ever-vs-ca-san-miguel-21-07-2026-0700/?blv=557845",
           "blv": "A TÚ",
           "blv_id": "557845",
           "status": "pending",
@@ -1136,6 +571,8 @@
         }
       },
       "pending_room_keys": [
+        "536185",
+        "557845",
         "536185",
         "557845"
       ]
