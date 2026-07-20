@@ -1,19 +1,19 @@
 {
-  "generated_at": "2026-07-21T02:59:07.237827+07:00",
+  "generated_at": "2026-07-21T03:00:17.243818+07:00",
   "state_schema_version": "v10.1-long-harvest-two-streams",
   "dispatch_next": true,
-  "pending_count": 8,
-  "completed_count": 5,
+  "pending_count": 7,
+  "completed_count": 3,
   "coverage_complete_count": 0,
-  "total_match_count": 8,
-  "total_stream_count": 5,
+  "total_match_count": 7,
+  "total_stream_count": 3,
   "progress_count": 0,
-  "chain_runs": 47,
-  "no_progress_runs": 47,
+  "chain_runs": 1,
+  "no_progress_runs": 1,
   "stop_reason": "",
   "rate_limited": true,
-  "rate_limit_url": "https://socolivep.cv/truc-tiep/sporting-cp-vs-strasbourg-21-07-2026-0215?blv=602019",
-  "count": 8,
+  "rate_limit_url": "https://socolivep.cv/truc-tiep/quilmes-vs-gimnasia-jujuy-21-07-2026-0600?blv=552716",
+  "count": 7,
   "matches": [
     {
       "base_url": "https://socolivep.cv/truc-tiep/keflavik-vs-akranes-21-07-2026-0215/",
@@ -105,7 +105,7 @@
             "blv": "XUÂN TÓC ĐỎ",
             "blv_id": "610518",
             "status": "rate_limited",
-            "attempts": 50,
+            "attempts": 51,
             "rate_limit_hits": 33,
             "last_http_status": 200,
             "last_stream_count": 1,
@@ -159,7 +159,7 @@
           "blv": "XUÂN TÓC ĐỎ",
           "blv_id": "610518",
           "status": "rate_limited",
-          "attempts": 50,
+          "attempts": 51,
           "rate_limit_hits": 33,
           "last_http_status": 200,
           "last_stream_count": 1,
@@ -301,11 +301,11 @@
             "blv": "KENCHU",
             "blv_id": "622602",
             "status": "rate_limited",
-            "attempts": 69,
+            "attempts": 70,
             "rate_limit_hits": 27,
-            "last_http_status": 429,
-            "last_stream_count": 0,
-            "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
+            "last_http_status": 200,
+            "last_stream_count": 1,
+            "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
           },
           "622093": {
             "key": "622093",
@@ -355,11 +355,11 @@
           "blv": "KENCHU",
           "blv_id": "622602",
           "status": "rate_limited",
-          "attempts": 69,
+          "attempts": 70,
           "rate_limit_hits": 27,
-          "last_http_status": 429,
-          "last_stream_count": 0,
-          "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
+          "last_http_status": 200,
+          "last_stream_count": 1,
+          "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
         },
         "622093": {
           "key": "622093",
@@ -509,11 +509,11 @@
             "blv": "RYO",
             "blv_id": "602019",
             "status": "rate_limited",
-            "attempts": 65,
+            "attempts": 66,
             "rate_limit_hits": 30,
-            "last_http_status": 429,
-            "last_stream_count": 0,
-            "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
+            "last_http_status": 200,
+            "last_stream_count": 1,
+            "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
           },
           "620003": {
             "key": "620003",
@@ -575,11 +575,11 @@
           "blv": "RYO",
           "blv_id": "602019",
           "status": "rate_limited",
-          "attempts": 65,
+          "attempts": 66,
           "rate_limit_hits": 30,
-          "last_http_status": 429,
-          "last_stream_count": 0,
-          "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
+          "last_http_status": 200,
+          "last_stream_count": 1,
+          "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
         },
         "620003": {
           "key": "620003",
@@ -642,384 +642,6 @@
       ]
     },
     {
-      "base_url": "https://socolivep.cv/truc-tiep/fc-rapid-1923-vs-sepsi-osk-sfantul-gheorghe-21-07-2026-0130/",
-      "match_name": "FC Rapid 1923 vs Sepsi OSK Sfantul Gheorghe",
-      "scheduled_at": "2026-07-21T01:30:00+07:00",
-      "rooms": [
-        {
-          "url": "https://socolivep.cv/truc-tiep/fc-rapid-1923-vs-sepsi-osk-sfantul-gheorghe-21-07-2026-0130?blv=235232",
-          "blv": "A PÁO",
-          "blv_id": "235232"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/fc-rapid-1923-vs-sepsi-osk-sfantul-gheorghe-21-07-2026-0130?blv=617313",
-          "blv": "VINFAST",
-          "blv_id": "617313"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/fc-rapid-1923-vs-sepsi-osk-sfantul-gheorghe-21-07-2026-0130?blv=459401",
-          "blv": "BÉO",
-          "blv_id": "459401"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/fc-rapid-1923-vs-sepsi-osk-sfantul-gheorghe-21-07-2026-0130?blv=598119",
-          "blv": "A TINH",
-          "blv_id": "598119"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/fc-rapid-1923-vs-sepsi-osk-sfantul-gheorghe-21-07-2026-0130/?blv=235232",
-          "blv": "A PÁO",
-          "blv_id": "235232"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/fc-rapid-1923-vs-sepsi-osk-sfantul-gheorghe-21-07-2026-0130/?blv=617313",
-          "blv": "VINFAST",
-          "blv_id": "617313"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/fc-rapid-1923-vs-sepsi-osk-sfantul-gheorghe-21-07-2026-0130/?blv=459401",
-          "blv": "BÉO",
-          "blv_id": "459401"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/fc-rapid-1923-vs-sepsi-osk-sfantul-gheorghe-21-07-2026-0130/?blv=598119",
-          "blv": "A TINH",
-          "blv_id": "598119"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/fc-rapid-1923-vs-sepsi-osk-sfantul-gheorghe-21-07-2026-0130",
-          "blv": "XEM NGAY",
-          "blv_id": ""
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/fc-rapid-1923-vs-sepsi-osk-sfantul-gheorghe-21-07-2026-0130/",
-          "blv": "",
-          "blv_id": ""
-        }
-      ],
-      "streams": [
-        {
-          "url": "https://pull.niues.live/live/stream-235232_lhd.m3u8?auth_key=1784516640-0-0-54566f59d315ac28a2b9e15d47efb468",
-          "queue_room_key": "235232",
-          "room_url": "https://socolivep.cv/truc-tiep/fc-rapid-1923-vs-sepsi-osk-sfantul-gheorghe-21-07-2026-0130/?blv=235232",
-          "blv": "A PÁO",
-          "blv_id": "235232",
-          "source_id": "235232",
-          "source_provenance": [
-            "final-no-stream-scan",
-            "harvest-final"
-          ],
-          "source_confidence": "embedded",
-          "mapping_mode": "exact-room-id",
-          "discovered_from_room_url": "https://socolivep.cv/truc-tiep/fc-rapid-1923-vs-sepsi-osk-sfantul-gheorghe-21-07-2026-0130?blv=235232",
-          "discovered_from_blv": "A PÁO"
-        }
-      ],
-      "coverage": {
-        "found_streams": 1,
-        "found_blv_ids": [
-          "235232"
-        ],
-        "goal": 8,
-        "source_goal_reached": false,
-        "room_queue_complete": false,
-        "complete": false,
-        "max_streams_per_blv": 2,
-        "total_explicit_blv_rooms": 8,
-        "pending_room_keys": [
-          "235232",
-          "617313",
-          "459401",
-          "598119",
-          "235232",
-          "617313",
-          "459401",
-          "598119"
-        ],
-        "room_progress": {
-          "235232": {
-            "key": "235232",
-            "url": "https://socolivep.cv/truc-tiep/fc-rapid-1923-vs-sepsi-osk-sfantul-gheorghe-21-07-2026-0130/?blv=235232",
-            "blv": "A PÁO",
-            "blv_id": "235232",
-            "status": "rate_limited",
-            "attempts": 95,
-            "rate_limit_hits": 46,
-            "last_http_status": 429,
-            "last_stream_count": 0,
-            "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
-          },
-          "617313": {
-            "key": "617313",
-            "url": "https://socolivep.cv/truc-tiep/fc-rapid-1923-vs-sepsi-osk-sfantul-gheorghe-21-07-2026-0130/?blv=617313",
-            "blv": "VINFAST",
-            "blv_id": "617313",
-            "status": "pending",
-            "attempts": 0,
-            "rate_limit_hits": 0,
-            "last_http_status": null,
-            "last_stream_count": 0,
-            "last_error": ""
-          },
-          "459401": {
-            "key": "459401",
-            "url": "https://socolivep.cv/truc-tiep/fc-rapid-1923-vs-sepsi-osk-sfantul-gheorghe-21-07-2026-0130/?blv=459401",
-            "blv": "BÉO",
-            "blv_id": "459401",
-            "status": "pending",
-            "attempts": 0,
-            "rate_limit_hits": 0,
-            "last_http_status": null,
-            "last_stream_count": 0,
-            "last_error": ""
-          },
-          "598119": {
-            "key": "598119",
-            "url": "https://socolivep.cv/truc-tiep/fc-rapid-1923-vs-sepsi-osk-sfantul-gheorghe-21-07-2026-0130/?blv=598119",
-            "blv": "A TINH",
-            "blv_id": "598119",
-            "status": "pending",
-            "attempts": 0,
-            "rate_limit_hits": 0,
-            "last_http_status": null,
-            "last_stream_count": 0,
-            "last_error": ""
-          },
-          "__base__": {
-            "key": "__base__",
-            "url": "https://socolivep.cv/truc-tiep/fc-rapid-1923-vs-sepsi-osk-sfantul-gheorghe-21-07-2026-0130/",
-            "blv": "",
-            "blv_id": "",
-            "status": "pending",
-            "attempts": 0,
-            "rate_limit_hits": 0,
-            "last_http_status": null,
-            "last_stream_count": 0,
-            "last_error": ""
-          }
-        }
-      },
-      "attempted_room_ids": [
-        "235232"
-      ],
-      "room_progress": {
-        "235232": {
-          "key": "235232",
-          "url": "https://socolivep.cv/truc-tiep/fc-rapid-1923-vs-sepsi-osk-sfantul-gheorghe-21-07-2026-0130/?blv=235232",
-          "blv": "A PÁO",
-          "blv_id": "235232",
-          "status": "rate_limited",
-          "attempts": 95,
-          "rate_limit_hits": 46,
-          "last_http_status": 429,
-          "last_stream_count": 0,
-          "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
-        },
-        "617313": {
-          "key": "617313",
-          "url": "https://socolivep.cv/truc-tiep/fc-rapid-1923-vs-sepsi-osk-sfantul-gheorghe-21-07-2026-0130/?blv=617313",
-          "blv": "VINFAST",
-          "blv_id": "617313",
-          "status": "pending",
-          "attempts": 0,
-          "rate_limit_hits": 0,
-          "last_http_status": null,
-          "last_stream_count": 0,
-          "last_error": ""
-        },
-        "459401": {
-          "key": "459401",
-          "url": "https://socolivep.cv/truc-tiep/fc-rapid-1923-vs-sepsi-osk-sfantul-gheorghe-21-07-2026-0130/?blv=459401",
-          "blv": "BÉO",
-          "blv_id": "459401",
-          "status": "pending",
-          "attempts": 0,
-          "rate_limit_hits": 0,
-          "last_http_status": null,
-          "last_stream_count": 0,
-          "last_error": ""
-        },
-        "598119": {
-          "key": "598119",
-          "url": "https://socolivep.cv/truc-tiep/fc-rapid-1923-vs-sepsi-osk-sfantul-gheorghe-21-07-2026-0130/?blv=598119",
-          "blv": "A TINH",
-          "blv_id": "598119",
-          "status": "pending",
-          "attempts": 0,
-          "rate_limit_hits": 0,
-          "last_http_status": null,
-          "last_stream_count": 0,
-          "last_error": ""
-        },
-        "__base__": {
-          "key": "__base__",
-          "url": "https://socolivep.cv/truc-tiep/fc-rapid-1923-vs-sepsi-osk-sfantul-gheorghe-21-07-2026-0130/",
-          "blv": "",
-          "blv_id": "",
-          "status": "pending",
-          "attempts": 0,
-          "rate_limit_hits": 0,
-          "last_http_status": null,
-          "last_stream_count": 0,
-          "last_error": ""
-        }
-      },
-      "pending_room_keys": [
-        "235232",
-        "617313",
-        "459401",
-        "598119",
-        "235232",
-        "617313",
-        "459401",
-        "598119"
-      ]
-    },
-    {
-      "base_url": "https://socolivep.cv/truc-tiep/botev-plovdiv-vs-lokomotiv-sofia-21-07-2026-0130/",
-      "match_name": "Botev Plovdiv vs Lokomotiv Sofia",
-      "scheduled_at": "2026-07-21T01:30:00+07:00",
-      "rooms": [
-        {
-          "url": "https://socolivep.cv/truc-tiep/botev-plovdiv-vs-lokomotiv-sofia-21-07-2026-0130?blv=250874",
-          "blv": "FIREMAN",
-          "blv_id": "250874"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/botev-plovdiv-vs-lokomotiv-sofia-21-07-2026-0130?blv=589848",
-          "blv": "LOKA",
-          "blv_id": "589848"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/botev-plovdiv-vs-lokomotiv-sofia-21-07-2026-0130",
-          "blv": "XEM NGAY",
-          "blv_id": ""
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/botev-plovdiv-vs-lokomotiv-sofia-21-07-2026-0130/",
-          "blv": "",
-          "blv_id": ""
-        }
-      ],
-      "streams": [
-        {
-          "url": "https://pull.niues.live/live/stream-991140_lhd.m3u8?auth_key=1784567995-0-0-c8f4bd6ebff019d1b887ea6ec21e3927",
-          "queue_room_key": "250874",
-          "room_url": "https://socolivep.cv/truc-tiep/botev-plovdiv-vs-lokomotiv-sofia-21-07-2026-0130?blv=250874",
-          "blv": "Nguồn 991140",
-          "blv_id": "991140",
-          "source_id": "991140",
-          "source_provenance": [
-            "final-no-stream-scan",
-            "harvest-final"
-          ],
-          "source_confidence": "embedded",
-          "mapping_mode": "stream-source-id",
-          "discovered_from_room_url": "https://socolivep.cv/truc-tiep/botev-plovdiv-vs-lokomotiv-sofia-21-07-2026-0130?blv=250874",
-          "discovered_from_blv": "FIREMAN"
-        }
-      ],
-      "coverage": {
-        "found_streams": 1,
-        "found_blv_ids": [
-          "991140"
-        ],
-        "goal": 4,
-        "source_goal_reached": false,
-        "room_queue_complete": false,
-        "complete": false,
-        "max_streams_per_blv": 2,
-        "total_explicit_blv_rooms": 2,
-        "pending_room_keys": [
-          "250874",
-          "589848"
-        ],
-        "room_progress": {
-          "250874": {
-            "key": "250874",
-            "url": "https://socolivep.cv/truc-tiep/botev-plovdiv-vs-lokomotiv-sofia-21-07-2026-0130?blv=250874",
-            "blv": "FIREMAN",
-            "blv_id": "250874",
-            "status": "rate_limited",
-            "attempts": 41,
-            "rate_limit_hits": 17,
-            "last_http_status": 429,
-            "last_stream_count": 0,
-            "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
-          },
-          "589848": {
-            "key": "589848",
-            "url": "https://socolivep.cv/truc-tiep/botev-plovdiv-vs-lokomotiv-sofia-21-07-2026-0130?blv=589848",
-            "blv": "LOKA",
-            "blv_id": "589848",
-            "status": "pending",
-            "attempts": 0,
-            "rate_limit_hits": 0,
-            "last_http_status": null,
-            "last_stream_count": 0,
-            "last_error": ""
-          },
-          "__base__": {
-            "key": "__base__",
-            "url": "https://socolivep.cv/truc-tiep/botev-plovdiv-vs-lokomotiv-sofia-21-07-2026-0130/",
-            "blv": "",
-            "blv_id": "",
-            "status": "pending",
-            "attempts": 0,
-            "rate_limit_hits": 0,
-            "last_http_status": null,
-            "last_stream_count": 0,
-            "last_error": ""
-          }
-        }
-      },
-      "attempted_room_ids": [
-        "250874"
-      ],
-      "room_progress": {
-        "250874": {
-          "key": "250874",
-          "url": "https://socolivep.cv/truc-tiep/botev-plovdiv-vs-lokomotiv-sofia-21-07-2026-0130?blv=250874",
-          "blv": "FIREMAN",
-          "blv_id": "250874",
-          "status": "rate_limited",
-          "attempts": 41,
-          "rate_limit_hits": 17,
-          "last_http_status": 429,
-          "last_stream_count": 0,
-          "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
-        },
-        "589848": {
-          "key": "589848",
-          "url": "https://socolivep.cv/truc-tiep/botev-plovdiv-vs-lokomotiv-sofia-21-07-2026-0130?blv=589848",
-          "blv": "LOKA",
-          "blv_id": "589848",
-          "status": "pending",
-          "attempts": 0,
-          "rate_limit_hits": 0,
-          "last_http_status": null,
-          "last_stream_count": 0,
-          "last_error": ""
-        },
-        "__base__": {
-          "key": "__base__",
-          "url": "https://socolivep.cv/truc-tiep/botev-plovdiv-vs-lokomotiv-sofia-21-07-2026-0130/",
-          "blv": "",
-          "blv_id": "",
-          "status": "pending",
-          "attempts": 0,
-          "rate_limit_hits": 0,
-          "last_http_status": null,
-          "last_stream_count": 0,
-          "last_error": ""
-        }
-      },
-      "pending_room_keys": [
-        "250874",
-        "589848"
-      ]
-    },
-    {
       "base_url": "https://socolivep.cv/truc-tiep/quilmes-vs-gimnasia-jujuy-21-07-2026-0600/",
       "match_name": "Quilmes vs Gimnasia Jujuy",
       "scheduled_at": "2026-07-21T06:00:00+07:00",
@@ -1065,12 +687,12 @@
             "url": "https://socolivep.cv/truc-tiep/quilmes-vs-gimnasia-jujuy-21-07-2026-0600?blv=552716",
             "blv": "VOI",
             "blv_id": "552716",
-            "status": "pending",
+            "status": "rate_limited",
             "attempts": 0,
-            "rate_limit_hits": 0,
-            "last_http_status": null,
+            "rate_limit_hits": 1,
+            "last_http_status": 429,
             "last_stream_count": 0,
-            "last_error": ""
+            "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
           },
           "321443": {
             "key": "321443",
@@ -1105,12 +727,12 @@
           "url": "https://socolivep.cv/truc-tiep/quilmes-vs-gimnasia-jujuy-21-07-2026-0600?blv=552716",
           "blv": "VOI",
           "blv_id": "552716",
-          "status": "pending",
+          "status": "rate_limited",
           "attempts": 0,
-          "rate_limit_hits": 0,
-          "last_http_status": null,
+          "rate_limit_hits": 1,
+          "last_http_status": 429,
           "last_stream_count": 0,
-          "last_error": ""
+          "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
         },
         "321443": {
           "key": "321443",
@@ -1386,6 +1008,129 @@
       "pending_room_keys": [
         "139384",
         "607400"
+      ]
+    },
+    {
+      "base_url": "https://socolivep.cv/truc-tiep/chaco-for-ever-vs-ca-san-miguel-21-07-2026-0700/",
+      "match_name": "Chaco For Ever vs CA San Miguel",
+      "scheduled_at": "2026-07-21T07:00:00+07:00",
+      "rooms": [
+        {
+          "url": "https://socolivep.cv/truc-tiep/chaco-for-ever-vs-ca-san-miguel-21-07-2026-0700?blv=536185",
+          "blv": "A WIN",
+          "blv_id": "536185"
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/chaco-for-ever-vs-ca-san-miguel-21-07-2026-0700?blv=557845",
+          "blv": "A TÚ",
+          "blv_id": "557845"
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/chaco-for-ever-vs-ca-san-miguel-21-07-2026-0700",
+          "blv": "XEM NGAY",
+          "blv_id": ""
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/chaco-for-ever-vs-ca-san-miguel-21-07-2026-0700/",
+          "blv": "",
+          "blv_id": ""
+        }
+      ],
+      "streams": [],
+      "coverage": {
+        "found_streams": 0,
+        "found_blv_ids": [],
+        "goal": 4,
+        "source_goal_reached": false,
+        "room_queue_complete": false,
+        "complete": false,
+        "max_streams_per_blv": 2,
+        "total_explicit_blv_rooms": 2,
+        "pending_room_keys": [
+          "536185",
+          "557845"
+        ],
+        "room_progress": {
+          "536185": {
+            "key": "536185",
+            "url": "https://socolivep.cv/truc-tiep/chaco-for-ever-vs-ca-san-miguel-21-07-2026-0700?blv=536185",
+            "blv": "A WIN",
+            "blv_id": "536185",
+            "status": "pending",
+            "attempts": 0,
+            "rate_limit_hits": 0,
+            "last_http_status": null,
+            "last_stream_count": 0,
+            "last_error": ""
+          },
+          "557845": {
+            "key": "557845",
+            "url": "https://socolivep.cv/truc-tiep/chaco-for-ever-vs-ca-san-miguel-21-07-2026-0700?blv=557845",
+            "blv": "A TÚ",
+            "blv_id": "557845",
+            "status": "pending",
+            "attempts": 0,
+            "rate_limit_hits": 0,
+            "last_http_status": null,
+            "last_stream_count": 0,
+            "last_error": ""
+          },
+          "__base__": {
+            "key": "__base__",
+            "url": "https://socolivep.cv/truc-tiep/chaco-for-ever-vs-ca-san-miguel-21-07-2026-0700/",
+            "blv": "",
+            "blv_id": "",
+            "status": "pending",
+            "attempts": 0,
+            "rate_limit_hits": 0,
+            "last_http_status": null,
+            "last_stream_count": 0,
+            "last_error": ""
+          }
+        }
+      },
+      "attempted_room_ids": [],
+      "room_progress": {
+        "536185": {
+          "key": "536185",
+          "url": "https://socolivep.cv/truc-tiep/chaco-for-ever-vs-ca-san-miguel-21-07-2026-0700?blv=536185",
+          "blv": "A WIN",
+          "blv_id": "536185",
+          "status": "pending",
+          "attempts": 0,
+          "rate_limit_hits": 0,
+          "last_http_status": null,
+          "last_stream_count": 0,
+          "last_error": ""
+        },
+        "557845": {
+          "key": "557845",
+          "url": "https://socolivep.cv/truc-tiep/chaco-for-ever-vs-ca-san-miguel-21-07-2026-0700?blv=557845",
+          "blv": "A TÚ",
+          "blv_id": "557845",
+          "status": "pending",
+          "attempts": 0,
+          "rate_limit_hits": 0,
+          "last_http_status": null,
+          "last_stream_count": 0,
+          "last_error": ""
+        },
+        "__base__": {
+          "key": "__base__",
+          "url": "https://socolivep.cv/truc-tiep/chaco-for-ever-vs-ca-san-miguel-21-07-2026-0700/",
+          "blv": "",
+          "blv_id": "",
+          "status": "pending",
+          "attempts": 0,
+          "rate_limit_hits": 0,
+          "last_http_status": null,
+          "last_stream_count": 0,
+          "last_error": ""
+        }
+      },
+      "pending_room_keys": [
+        "536185",
+        "557845"
       ]
     }
   ]
