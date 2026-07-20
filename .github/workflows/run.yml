@@ -1,4 +1,4 @@
-name: Bot Quet Socolive V10 Per BLV Queue
+name: Bot Quet Socolive V11 Dual Adapter
 
 on:
   workflow_dispatch:
@@ -10,7 +10,7 @@ on:
         type: string
 
 concurrency:
-  group: socolive-v10-blv-queue-${{ github.ref }}
+  group: socolive-v11-dual-adapter-${{ github.ref }}
   cancel-in-progress: false
 
 permissions:
@@ -51,7 +51,11 @@ jobs:
           PYTHONUTF8: "1"
 
           # Domain hiện tại; dùng chung cho trang chủ, Referer và Origin.
-          SOCOLIVE_TARGET_URL: "https://socolivep.cv/"
+          SOCOLIVE_TARGET_URL: "https://socoliveaus.co/"
+
+          # Tự giải link rút gọn; domain trên vẫn chạy như fallback song song.
+          SOCOLIVE_SHORT_URL: "https://bit.ly/socolive"
+          SOCOLIVE_AUTO_RESOLVE_SHORT_URL: "1"
 
           SOCOLIVE_MATCH_CONCURRENCY: "4"
           SOCOLIVE_ROOM_WAIT_SECONDS: "7"
@@ -59,7 +63,7 @@ jobs:
           SOCOLIVE_MAX_SUCCESSFUL_ROOMS_PER_MATCH: "10"
 
           # Mục tiêu tối đa 10 stream-ID/BLV cho mỗi trận.
-          SOCOLIVE_MAX_STREAMS_PER_MATCH: "12"
+          SOCOLIVE_MAX_STREAMS_PER_MATCH: "24"
 
           # Mỗi run chỉ mở tối đa 3 trang BLV/trận.
           # Mỗi trang sẽ quét toàn bộ HTML/config để lấy nhiều link.
@@ -68,6 +72,13 @@ jobs:
           # BLV HTTP 200 nhưng không có stream được thử tối đa 2 runner.
           SOCOLIVE_ROOM_EMPTY_MAX_ATTEMPTS: "2"
 
+          # Mỗi BLV/phòng xuất tối đa hai nguồn.
+          SOCOLIVE_MAX_STREAMS_PER_BLV: "2"
+
+          # Bắt link trong JSON/text API và frame WebSocket.
+          SOCOLIVE_CAPTURE_RESPONSE_BODIES: "1"
+          SOCOLIVE_MAX_RESPONSE_BODY_BYTES: "2000000"
+
           SOCOLIVE_HTTP_FIRST: "0"
           SOCOLIVE_ENABLE_CDP: "1"
           SOCOLIVE_STOP_ON_429: "1"
@@ -75,7 +86,7 @@ jobs:
           # Khung quét:
           # trận đã bắt đầu trong 90 phút gần nhất
           # hoặc sẽ bắt đầu trong 240 phút tới.
-          SOCOLIVE_SCAN_BEFORE_MINUTES: "150"
+          SOCOLIVE_SCAN_BEFORE_MINUTES: "90"
           SOCOLIVE_SCAN_AFTER_MINUTES: "240"
           SOCOLIVE_SCAN_ALL: "0"
 
@@ -90,7 +101,7 @@ jobs:
 
           echo "=== $(date -u '+%Y-%m-%d %H:%M:%S UTC') | Bắt đầu ==="
           echo "Concurrency=$SOCOLIVE_MATCH_CONCURRENCY | room_pages/run=$SOCOLIVE_MAX_ROOMS_PER_MATCH | stream_goal/match=$SOCOLIVE_MAX_STREAMS_PER_MATCH"
-          echo "V10: queue từng BLV; URL tổng chỉ fallback; chain tối đa=$SOCOLIVE_STATE_MAX_CHAIN_RUNS"
+          echo "V11: /truc-tiep + /room | tự giải bit.ly | tối đa 2 link/BLV"
           echo "Scan window: -${SOCOLIVE_SCAN_BEFORE_MINUTES} phút / +${SOCOLIVE_SCAN_AFTER_MINUTES} phút | scan_all=$SOCOLIVE_SCAN_ALL"
 
           if [ -n "$TEST_URL" ]; then
@@ -180,6 +191,7 @@ jobs:
             socolive_state.json
             socolive_pending.json
             socolive_chain_decision.json
+            socolive_domain.json
           if-no-files-found: warn
           retention-days: 7
           compression-level: 6
@@ -196,7 +208,8 @@ jobs:
             socolive_matches.json \
             socolive_debug.json \
             socolive_state.json \
-            socolive_pending.json
+            socolive_pending.json \
+            socolive_domain.json
           do
             if [ -e "$file" ]; then
               git add "$file"
