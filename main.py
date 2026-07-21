@@ -2983,20 +2983,99 @@ def build_pending_matches(
 
 
 
+def pending_room_valid_stream_counts(
+    item: dict[str, Any],
+) -> dict[str, int]:
+    """
+    Đếm link còn hạn theo từng room key trong một pending match.
+
+    Không dùng attempts/rate_limit_hits trong fingerprint:
+    các số đó tăng ở mọi retry và sẽ khiến fingerprint luôn thay đổi,
+    làm stall guard không bao giờ dừng.
+    """
+    counts: dict[str, int] = {}
+
+    for raw in item.get("streams", []):
+        if not isinstance(raw, dict):
+            continue
+
+        enriched = enrich_stream_item(raw)
+        if stream_item_is_expired(enriched):
+            continue
+
+        room_key = clean_text(
+            str(
+                enriched.get("queue_room_key")
+                or enriched.get("blv_id")
+                or enriched.get("source_id")
+                or ""
+            )
+        )
+        if not room_key:
+            continue
+
+        counts[room_key] = counts.get(room_key, 0) + 1
+
+    return counts
+
+
 def pending_fingerprint(
     pending: list[dict[str, Any]],
 ) -> str:
-    normalized = [
-        {
-            "base_url": canonical_match_url(
-                str(item.get("base_url", "") or "")
-            ),
-            "room_keys": sorted(
-                set(item.get("pending_room_keys", []))
-            ),
-        }
-        for item in pending
-    ]
+    """
+    Fingerprint phản ánh TIẾN ĐỘ THẬT của từng BLV:
+      - room key còn pending;
+      - status: pending/partial/retry/rate_limited;
+      - số link hợp lệ còn hạn của room.
+
+    Ví dụ retry/0-link -> partial/1-link sẽ tạo fingerprint mới,
+    dù danh sách room key vẫn giống nhau.
+    """
+    normalized: list[dict[str, Any]] = []
+
+    for item in pending:
+        room_progress = item.get("room_progress", {})
+        if not isinstance(room_progress, dict):
+            room_progress = {}
+
+        valid_counts = pending_room_valid_stream_counts(item)
+        room_states: list[dict[str, Any]] = []
+
+        for room_key in sorted(
+            set(item.get("pending_room_keys", []))
+        ):
+            normalized_key = clean_text(str(room_key))
+            progress = room_progress.get(room_key, {})
+            if not isinstance(progress, dict):
+                progress = {}
+
+            room_states.append(
+                {
+                    "key": normalized_key,
+                    "status": clean_text(
+                        str(
+                            progress.get("status", "pending")
+                            or "pending"
+                        )
+                    ),
+                    "valid_stream_count": int(
+                        valid_counts.get(
+                            normalized_key,
+                            0,
+                        )
+                    ),
+                }
+            )
+
+        normalized.append(
+            {
+                "base_url": canonical_match_url(
+                    str(item.get("base_url", "") or "")
+                ),
+                "rooms": room_states,
+            }
+        )
+
     normalized.sort(key=lambda item: item["base_url"])
     encoded = json.dumps(
         normalized,
@@ -3044,6 +3123,73 @@ def valid_stream_map(
                 output[key] = item
 
     return output
+
+
+def newly_attempted_unique_room_count(
+    matches: list[dict[str, Any]],
+    previous_matches: list[dict[str, Any]],
+    same_target: bool,
+) -> int:
+    """
+    Đếm BLV được chạm tới lần đầu tiên trong chain hiện tại.
+
+    Không dùng tổng attempts vì retry cùng một BLV cũng làm attempts tăng.
+    """
+    if not same_target:
+        return sum(
+            len(
+                set(
+                    str(key)
+                    for key in match.get(
+                        "run_attempted_room_keys",
+                        [],
+                    )
+                    if key
+                )
+            )
+            for match in matches
+        )
+
+    previous_by_url = {
+        canonical_match_url(
+            str(item.get("base_url", "") or "")
+        ): item
+        for item in previous_matches
+        if isinstance(item, dict) and item.get("base_url")
+    }
+
+    count = 0
+
+    for match in matches:
+        base_url = canonical_match_url(
+            str(match.get("base_url", "") or "")
+        )
+        previous = previous_by_url.get(base_url, {})
+        previous_progress = previous.get("room_progress", {})
+        if not isinstance(previous_progress, dict):
+            previous_progress = {}
+
+        for room_key in set(
+            str(key)
+            for key in match.get(
+                "run_attempted_room_keys",
+                [],
+            )
+            if key
+        ):
+            old = previous_progress.get(room_key, {})
+            if not isinstance(old, dict):
+                old = {}
+
+            old_attempts = int(old.get("attempts", 0) or 0)
+            old_429_hits = int(
+                old.get("rate_limit_hits", 0) or 0
+            )
+
+            if old_attempts <= 0 and old_429_hits <= 0:
+                count += 1
+
+    return count
 
 
 def room_attempt_metric(
@@ -3156,11 +3302,6 @@ def write_resume_state(
         int(previous_state.get("unchanged_pending_runs", 0))
         if same_target else 0
     )
-    unchanged_pending_runs = (
-        previous_unchanged + 1
-        if pending and fingerprint == previous_fingerprint
-        else 0
-    )
 
     current_attempt_metric = room_attempt_metric(
         matches,
@@ -3174,9 +3315,15 @@ def write_resume_state(
         if same_target
         else 0
     )
-    newly_attempted_count = max(
+    attempt_metric_delta = max(
         0,
         current_attempt_metric - previous_attempt_metric,
+    )
+
+    newly_attempted_count = newly_attempted_unique_room_count(
+        matches,
+        previous_matches,
+        same_target,
     )
 
     run_attempted_count = sum(
@@ -3187,6 +3334,25 @@ def write_resume_state(
         len(set(match.get("run_rate_limited_room_keys", [])))
         for match in matches
     )
+
+    pending_state_changed = bool(
+        not same_target
+        or fingerprint != previous_fingerprint
+    )
+    real_progress_for_fingerprint = bool(
+        progress_count > 0
+        or newly_attempted_count > 0
+        or pending_state_changed
+    )
+
+    if not pending:
+        unchanged_pending_runs = 0
+    elif real_progress_for_fingerprint:
+        unchanged_pending_runs = 0
+    elif fingerprint == previous_fingerprint:
+        unchanged_pending_runs = previous_unchanged + 1
+    else:
+        unchanged_pending_runs = 0
     rate_limit_only_run = bool(
         circuit.triggered.is_set()
         and progress_count == 0
@@ -3270,6 +3436,10 @@ def write_resume_state(
         "new_link_count": new_link_count,
         "refreshed_link_count": refreshed_link_count,
         "newly_attempted_count": newly_attempted_count,
+        "attempt_metric_delta": attempt_metric_delta,
+        "pending_state_changed": pending_state_changed,
+        "real_progress_for_fingerprint":
+            real_progress_for_fingerprint,
         "run_attempted_count": run_attempted_count,
         "run_rate_limited_count": run_rate_limited_count,
         "useful_activity": useful_activity,
@@ -3331,11 +3501,19 @@ def write_resume_state(
     )
     print(
         f"🧭 Run activity: attempted={run_attempted_count}"
-        f" | newly-attempted={newly_attempted_count}"
+        f" | BLV-mới={newly_attempted_count}"
+        f" | attempt-delta={attempt_metric_delta}"
+        f" | pending-state-changed={pending_state_changed}"
         f" | rate-limited={run_rate_limited_count}"
         f" | useful={useful_activity}",
         flush=True,
     )
+    if progress_count > 0 and unchanged_pending_runs == 0:
+        print(
+            "✅ Có link/token hợp lệ mới — đã reset "
+            "pending-không-đổi về 0.",
+            flush=True,
+        )
 
     if dispatch_next:
         if progress_count == 0:
@@ -3852,7 +4030,7 @@ def write_outputs(matches: list[dict[str, Any]]) -> tuple[int, int]:
 # MAIN
 # ============================================================
 async def main() -> None:
-    print("🥷 SOCOLIVE STREAM SCANNER V10.3.1 - STALL GUARD FIX")
+    print("🥷 SOCOLIVE STREAM SCANNER V10.3.2 - PROGRESS FINGERPRINT FIX")
     print(
         "ℹ️ Test riêng một URL:\n"
         '   python main.py "https://socolivem.cv/truc-tiep/.../?blv=..."'
