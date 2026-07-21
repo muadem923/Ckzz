@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-21T10:16:14.355858+07:00",
+  "generated_at": "2026-07-21T10:17:15.672817+07:00",
   "state_schema_version": "v10.1-long-harvest-two-streams",
   "dispatch_next": true,
   "pending_count": 6,
@@ -8,11 +8,11 @@
   "total_match_count": 6,
   "total_stream_count": 4,
   "progress_count": 0,
-  "chain_runs": 12,
-  "no_progress_runs": 10,
+  "chain_runs": 13,
+  "no_progress_runs": 11,
   "stop_reason": "",
   "rate_limited": true,
-  "rate_limit_url": "https://socolivep.cv/truc-tiep/wuhan-three-towns-vs-shandong-taishan-21-07-2026-1400/?blv=250874",
+  "rate_limit_url": "https://socolivep.cv/truc-tiep/wuhan-three-towns-vs-shandong-taishan-21-07-2026-1400?blv=250874",
   "count": 6,
   "matches": [
     {
@@ -141,7 +141,7 @@
             "blv": "NGƯỜI CÁ",
             "blv_id": "595335",
             "status": "rate_limited",
-            "attempts": 14,
+            "attempts": 15,
             "rate_limit_hits": 7,
             "last_http_status": 200,
             "last_stream_count": 1,
@@ -231,7 +231,7 @@
           "blv": "NGƯỜI CÁ",
           "blv_id": "595335",
           "status": "rate_limited",
-          "attempts": 14,
+          "attempts": 15,
           "rate_limit_hits": 7,
           "last_http_status": 200,
           "last_stream_count": 1,
@@ -427,7 +427,7 @@
             "blv": "BEN 10",
             "blv_id": "612098",
             "status": "rate_limited",
-            "attempts": 17,
+            "attempts": 18,
             "rate_limit_hits": 4,
             "last_http_status": 200,
             "last_stream_count": 1,
@@ -493,7 +493,7 @@
           "blv": "BEN 10",
           "blv_id": "612098",
           "status": "rate_limited",
-          "attempts": 17,
+          "attempts": 18,
           "rate_limit_hits": 4,
           "last_http_status": 200,
           "last_stream_count": 1,
@@ -595,36 +595,6 @@
           "blv_id": "485739"
         },
         {
-          "url": "https://socolivep.cv/truc-tiep/wuhan-three-towns-vs-shandong-taishan-21-07-2026-1400/?blv=250874",
-          "blv": "FIREMAN",
-          "blv_id": "250874"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/wuhan-three-towns-vs-shandong-taishan-21-07-2026-1400/?blv=494201",
-          "blv": "MESSI",
-          "blv_id": "494201"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/wuhan-three-towns-vs-shandong-taishan-21-07-2026-1400/?blv=123226",
-          "blv": "RICKHANTER",
-          "blv_id": "123226"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/wuhan-three-towns-vs-shandong-taishan-21-07-2026-1400/?blv=599634",
-          "blv": "HẢI THANH",
-          "blv_id": "599634"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/wuhan-three-towns-vs-shandong-taishan-21-07-2026-1400/?blv=147801",
-          "blv": "TAP",
-          "blv_id": "147801"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/wuhan-three-towns-vs-shandong-taishan-21-07-2026-1400/?blv=485739",
-          "blv": "CHIVAS",
-          "blv_id": "485739"
-        },
-        {
           "url": "https://socolivep.cv/truc-tiep/wuhan-three-towns-vs-shandong-taishan-21-07-2026-1400",
           "blv": "XEM NGAY",
           "blv_id": ""
@@ -663,14 +633,8 @@
         "room_queue_complete": false,
         "complete": false,
         "max_streams_per_blv": 2,
-        "total_explicit_blv_rooms": 12,
+        "total_explicit_blv_rooms": 6,
         "pending_room_keys": [
-          "250874",
-          "494201",
-          "123226",
-          "599634",
-          "147801",
-          "485739",
           "250874",
           "494201",
           "123226",
@@ -681,19 +645,19 @@
         "room_progress": {
           "250874": {
             "key": "250874",
-            "url": "https://socolivep.cv/truc-tiep/wuhan-three-towns-vs-shandong-taishan-21-07-2026-1400/?blv=250874",
+            "url": "https://socolivep.cv/truc-tiep/wuhan-three-towns-vs-shandong-taishan-21-07-2026-1400?blv=250874",
             "blv": "FIREMAN",
             "blv_id": "250874",
             "status": "rate_limited",
             "attempts": 12,
-            "rate_limit_hits": 9,
+            "rate_limit_hits": 10,
             "last_http_status": 429,
             "last_stream_count": 0,
             "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
           },
           "494201": {
             "key": "494201",
-            "url": "https://socolivep.cv/truc-tiep/wuhan-three-towns-vs-shandong-taishan-21-07-2026-1400/?blv=494201",
+            "url": "https://socolivep.cv/truc-tiep/wuhan-three-towns-vs-shandong-taishan-21-07-2026-1400?blv=494201",
             "blv": "MESSI",
             "blv_id": "494201",
             "status": "pending",
@@ -705,7 +669,7 @@
           },
           "123226": {
             "key": "123226",
-            "url": "https://socolivep.cv/truc-tiep/wuhan-three-towns-vs-shandong-taishan-21-07-2026-1400/?blv=123226",
+            "url": "https://socolivep.cv/truc-tiep/wuhan-three-towns-vs-shandong-taishan-21-07-2026-1400?blv=123226",
             "blv": "RICKHANTER",
             "blv_id": "123226",
             "status": "pending",
@@ -717,7 +681,7 @@
           },
           "599634": {
             "key": "599634",
-            "url": "https://socolivep.cv/truc-tiep/wuhan-three-towns-vs-shandong-taishan-21-07-2026-1400/?blv=599634",
+            "url": "https://socolivep.cv/truc-tiep/wuhan-three-towns-vs-shandong-taishan-21-07-2026-1400?blv=599634",
             "blv": "HẢI THANH",
             "blv_id": "599634",
             "status": "pending",
@@ -729,7 +693,7 @@
           },
           "147801": {
             "key": "147801",
-            "url": "https://socolivep.cv/truc-tiep/wuhan-three-towns-vs-shandong-taishan-21-07-2026-1400/?blv=147801",
+            "url": "https://socolivep.cv/truc-tiep/wuhan-three-towns-vs-shandong-taishan-21-07-2026-1400?blv=147801",
             "blv": "TAP",
             "blv_id": "147801",
             "status": "pending",
@@ -741,7 +705,7 @@
           },
           "485739": {
             "key": "485739",
-            "url": "https://socolivep.cv/truc-tiep/wuhan-three-towns-vs-shandong-taishan-21-07-2026-1400/?blv=485739",
+            "url": "https://socolivep.cv/truc-tiep/wuhan-three-towns-vs-shandong-taishan-21-07-2026-1400?blv=485739",
             "blv": "CHIVAS",
             "blv_id": "485739",
             "status": "pending",
@@ -771,19 +735,19 @@
       "room_progress": {
         "250874": {
           "key": "250874",
-          "url": "https://socolivep.cv/truc-tiep/wuhan-three-towns-vs-shandong-taishan-21-07-2026-1400/?blv=250874",
+          "url": "https://socolivep.cv/truc-tiep/wuhan-three-towns-vs-shandong-taishan-21-07-2026-1400?blv=250874",
           "blv": "FIREMAN",
           "blv_id": "250874",
           "status": "rate_limited",
           "attempts": 12,
-          "rate_limit_hits": 9,
+          "rate_limit_hits": 10,
           "last_http_status": 429,
           "last_stream_count": 0,
           "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
         },
         "494201": {
           "key": "494201",
-          "url": "https://socolivep.cv/truc-tiep/wuhan-three-towns-vs-shandong-taishan-21-07-2026-1400/?blv=494201",
+          "url": "https://socolivep.cv/truc-tiep/wuhan-three-towns-vs-shandong-taishan-21-07-2026-1400?blv=494201",
           "blv": "MESSI",
           "blv_id": "494201",
           "status": "pending",
@@ -795,7 +759,7 @@
         },
         "123226": {
           "key": "123226",
-          "url": "https://socolivep.cv/truc-tiep/wuhan-three-towns-vs-shandong-taishan-21-07-2026-1400/?blv=123226",
+          "url": "https://socolivep.cv/truc-tiep/wuhan-three-towns-vs-shandong-taishan-21-07-2026-1400?blv=123226",
           "blv": "RICKHANTER",
           "blv_id": "123226",
           "status": "pending",
@@ -807,7 +771,7 @@
         },
         "599634": {
           "key": "599634",
-          "url": "https://socolivep.cv/truc-tiep/wuhan-three-towns-vs-shandong-taishan-21-07-2026-1400/?blv=599634",
+          "url": "https://socolivep.cv/truc-tiep/wuhan-three-towns-vs-shandong-taishan-21-07-2026-1400?blv=599634",
           "blv": "HẢI THANH",
           "blv_id": "599634",
           "status": "pending",
@@ -819,7 +783,7 @@
         },
         "147801": {
           "key": "147801",
-          "url": "https://socolivep.cv/truc-tiep/wuhan-three-towns-vs-shandong-taishan-21-07-2026-1400/?blv=147801",
+          "url": "https://socolivep.cv/truc-tiep/wuhan-three-towns-vs-shandong-taishan-21-07-2026-1400?blv=147801",
           "blv": "TAP",
           "blv_id": "147801",
           "status": "pending",
@@ -831,7 +795,7 @@
         },
         "485739": {
           "key": "485739",
-          "url": "https://socolivep.cv/truc-tiep/wuhan-three-towns-vs-shandong-taishan-21-07-2026-1400/?blv=485739",
+          "url": "https://socolivep.cv/truc-tiep/wuhan-three-towns-vs-shandong-taishan-21-07-2026-1400?blv=485739",
           "blv": "CHIVAS",
           "blv_id": "485739",
           "status": "pending",
@@ -855,12 +819,6 @@
         }
       },
       "pending_room_keys": [
-        "250874",
-        "494201",
-        "123226",
-        "599634",
-        "147801",
-        "485739",
         "250874",
         "494201",
         "123226",
@@ -995,11 +953,11 @@
             "blv": "PEWPEW",
             "blv_id": "109053",
             "status": "rate_limited",
-            "attempts": 11,
+            "attempts": 12,
             "rate_limit_hits": 10,
-            "last_http_status": 429,
-            "last_stream_count": 0,
-            "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
+            "last_http_status": 200,
+            "last_stream_count": 1,
+            "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
           },
           "291277": {
             "key": "291277",
@@ -1085,11 +1043,11 @@
           "blv": "PEWPEW",
           "blv_id": "109053",
           "status": "rate_limited",
-          "attempts": 11,
+          "attempts": 12,
           "rate_limit_hits": 10,
-          "last_http_status": 429,
-          "last_stream_count": 0,
-          "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
+          "last_http_status": 200,
+          "last_stream_count": 1,
+          "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
         },
         "291277": {
           "key": "291277",
