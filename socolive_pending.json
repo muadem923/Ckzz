@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-21T08:22:44.507887+07:00",
+  "generated_at": "2026-07-21T08:23:55.669535+07:00",
   "state_schema_version": "v10.1-long-harvest-two-streams",
   "dispatch_next": true,
   "pending_count": 2,
@@ -8,11 +8,11 @@
   "total_match_count": 2,
   "total_stream_count": 2,
   "progress_count": 0,
-  "chain_runs": 39,
-  "no_progress_runs": 39,
+  "chain_runs": 40,
+  "no_progress_runs": 40,
   "stop_reason": "",
-  "rate_limited": false,
-  "rate_limit_url": "",
+  "rate_limited": true,
+  "rate_limit_url": "https://socolivep.cv/truc-tiep/central-norte-salta-vs-deportivo-moron-21-07-2026-0730?blv=414317",
   "count": 2,
   "matches": [
     {
@@ -127,11 +127,11 @@
             "blv": "TOMMY",
             "blv_id": "414317",
             "status": "rate_limited",
-            "attempts": 75,
-            "rate_limit_hits": 24,
-            "last_http_status": 200,
-            "last_stream_count": 1,
-            "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
+            "attempts": 76,
+            "rate_limit_hits": 25,
+            "last_http_status": 429,
+            "last_stream_count": 0,
+            "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
           },
           "109053": {
             "key": "109053",
@@ -193,11 +193,11 @@
           "blv": "TOMMY",
           "blv_id": "414317",
           "status": "rate_limited",
-          "attempts": 75,
-          "rate_limit_hits": 24,
-          "last_http_status": 200,
-          "last_stream_count": 1,
-          "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
+          "attempts": 76,
+          "rate_limit_hits": 25,
+          "last_http_status": 429,
+          "last_stream_count": 0,
+          "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
         },
         "109053": {
           "key": "109053",
@@ -347,7 +347,7 @@
             "blv": "A WIN",
             "blv_id": "536185",
             "status": "rate_limited",
-            "attempts": 94,
+            "attempts": 96,
             "rate_limit_hits": 43,
             "last_http_status": 200,
             "last_stream_count": 1,
@@ -389,7 +389,7 @@
           "blv": "A WIN",
           "blv_id": "536185",
           "status": "rate_limited",
-          "attempts": 94,
+          "attempts": 96,
           "rate_limit_hits": 43,
           "last_http_status": 200,
           "last_stream_count": 1,
