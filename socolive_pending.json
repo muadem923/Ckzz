@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-21T07:38:36.287351+07:00",
+  "generated_at": "2026-07-21T07:39:54.094658+07:00",
   "state_schema_version": "v10.1-long-harvest-two-streams",
   "dispatch_next": true,
   "pending_count": 2,
@@ -8,8 +8,8 @@
   "total_match_count": 2,
   "total_stream_count": 2,
   "progress_count": 0,
-  "chain_runs": 6,
-  "no_progress_runs": 6,
+  "chain_runs": 7,
+  "no_progress_runs": 7,
   "stop_reason": "",
   "rate_limited": true,
   "rate_limit_url": "https://socolivep.cv/truc-tiep/chaco-for-ever-vs-ca-san-miguel-21-07-2026-0700?blv=536185",
@@ -127,11 +127,11 @@
             "blv": "TOMMY",
             "blv_id": "414317",
             "status": "rate_limited",
-            "attempts": 14,
-            "rate_limit_hits": 8,
-            "last_http_status": 200,
-            "last_stream_count": 1,
-            "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
+            "attempts": 15,
+            "rate_limit_hits": 9,
+            "last_http_status": 429,
+            "last_stream_count": 0,
+            "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
           },
           "109053": {
             "key": "109053",
@@ -193,11 +193,11 @@
           "blv": "TOMMY",
           "blv_id": "414317",
           "status": "rate_limited",
-          "attempts": 14,
-          "rate_limit_hits": 8,
-          "last_http_status": 200,
-          "last_stream_count": 1,
-          "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
+          "attempts": 15,
+          "rate_limit_hits": 9,
+          "last_http_status": 429,
+          "last_stream_count": 0,
+          "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
         },
         "109053": {
           "key": "109053",
@@ -347,8 +347,8 @@
             "blv": "A WIN",
             "blv_id": "536185",
             "status": "rate_limited",
-            "attempts": 39,
-            "rate_limit_hits": 22,
+            "attempts": 40,
+            "rate_limit_hits": 23,
             "last_http_status": 429,
             "last_stream_count": 0,
             "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
@@ -389,8 +389,8 @@
           "blv": "A WIN",
           "blv_id": "536185",
           "status": "rate_limited",
-          "attempts": 39,
-          "rate_limit_hits": 22,
+          "attempts": 40,
+          "rate_limit_hits": 23,
           "last_http_status": 429,
           "last_stream_count": 0,
           "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
