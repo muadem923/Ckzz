@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-21T11:20:26.248011+07:00",
+  "generated_at": "2026-07-21T11:21:33.254276+07:00",
   "state_schema_version": "v10.2-cumulative-catalog",
   "dispatch_next": true,
   "pending_count": 6,
@@ -8,11 +8,11 @@
   "total_match_count": 6,
   "total_stream_count": 4,
   "progress_count": 0,
-  "chain_runs": 14,
-  "no_progress_runs": 14,
+  "chain_runs": 15,
+  "no_progress_runs": 15,
   "stop_reason": "",
   "rate_limited": true,
-  "rate_limit_url": "https://socolivep.cv/truc-tiep/henan-fc-vs-dalian-yingbo-21-07-2026-1400?blv=612098",
+  "rate_limit_url": "https://socolivep.cv/truc-tiep/wuhan-three-towns-vs-shandong-taishan-21-07-2026-1400?blv=250874",
   "target_base_urls": [
     "https://socolivep.cv/truc-tiep/dalian-kewei-vs-beijing-guoan-21-07-2026-1400/",
     "https://socolivep.cv/truc-tiep/henan-fc-vs-dalian-yingbo-21-07-2026-1400/",
@@ -69,36 +69,6 @@
         },
         {
           "url": "https://socolivep.cv/truc-tiep/yunnan-yukun-vs-chengdu-rongcheng-21-07-2026-1400?blv=536185",
-          "blv": "A WIN",
-          "blv_id": "536185"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/yunnan-yukun-vs-chengdu-rongcheng-21-07-2026-1400/?blv=595335",
-          "blv": "NGƯỜI CÁ",
-          "blv_id": "595335"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/yunnan-yukun-vs-chengdu-rongcheng-21-07-2026-1400/?blv=531989",
-          "blv": "COZY",
-          "blv_id": "531989"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/yunnan-yukun-vs-chengdu-rongcheng-21-07-2026-1400/?blv=380460",
-          "blv": "ENZO",
-          "blv_id": "380460"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/yunnan-yukun-vs-chengdu-rongcheng-21-07-2026-1400/?blv=607552",
-          "blv": "ĐỖ TÚ TÀI",
-          "blv_id": "607552"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/yunnan-yukun-vs-chengdu-rongcheng-21-07-2026-1400/?blv=622093",
-          "blv": "GRAP",
-          "blv_id": "622093"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/yunnan-yukun-vs-chengdu-rongcheng-21-07-2026-1400/?blv=536185",
           "blv": "A WIN",
           "blv_id": "536185"
         },
@@ -6165,6 +6135,58 @@
           "http_errors": [
             "403 https://socolivep.cv/wp-admin/admin-ajax.php?action=scl_realtime&sport=1"
           ]
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/yunnan-yukun-vs-chengdu-rongcheng-21-07-2026-1400?blv=595335",
+          "blv": "NGƯỜI CÁ",
+          "blv_id": "595335",
+          "streams": [],
+          "stream_sources": {},
+          "stream_first_seen": [],
+          "discovered_blv_ids": [],
+          "diagnostics": {
+            "url": "https://socolivep.cv/truc-tiep/yunnan-yukun-vs-chengdu-rongcheng-21-07-2026-1400?blv=595335",
+            "title": "Chờ một chút...",
+            "h1": "socolivep.cv",
+            "ready_state": "complete",
+            "visibility_state": "visible",
+            "hidden": false,
+            "video_count": 0,
+            "iframe_count": 0,
+            "body_sample": "socolivep.cv Thực hiện xác minh bảo mật Trang web này sử dụng dịch vụ bảo mật để chống bot độc hại. Trang này hiển thị trong khi trang web xác minh bạn không phải là bot. Ray ID: a1e76b0dcc72e538 Hiệu suất và Tính bảo mật của Cloudflare Quyền riêng tư",
+            "harvest_rounds": 0,
+            "harvest_window_seconds": 0.642,
+            "main_status": 429,
+            "harvested_stream_count": 0,
+            "harvested_blv_ids": [],
+            "scan_mode": "browser-event",
+            "elapsed_seconds": 13.789
+          },
+          "http_probe": {
+            "enabled": false,
+            "status": null,
+            "elapsed_seconds": 0.0,
+            "error": ""
+          },
+          "errors": [
+            "console/error: Failed to load resource: the server responded with a status of 429 ()",
+            "console/warning: No available adapters.",
+            "console/warning: No available adapters.",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: %c%d font-size:0;color:transparent NaN",
+            "console/error: %c%d font-size:0;color:transparent NaN",
+            "console/warning: %c%d font-size:0;color:transparent NaN",
+            "console/warning: %c%d font-size:0;color:transparent NaN",
+            "console/warning: OTS parsing error: Size of decompressed WOFF 2.0 is less than compressed size"
+          ],
+          "failed_requests": [
+            "fetch https://brunhild.challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/i/a1e76b11cbec1e08/sCde5AdKFpetskQZurfbUVpOAeeNoOfaBmgiKGqOiDA-1784607680-1.2.1.1-bV41rKN7N9uiFMYYW8xgi1YKI9hXNbmnuwxOj6eoRwk8k0H3upiTNqtrlbbV5C4L | net::ERR_NAME_NOT_RESOLVED",
+            "image https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/ci/a1e76b11cbec1e08/1784607680902/Q1B2qQ7VoSsPjbe | net::ERR_FAILED"
+          ],
+          "http_errors": [
+            "429 https://socolivep.cv/truc-tiep/yunnan-yukun-vs-chengdu-rongcheng-21-07-2026-1400?blv=595335",
+            "401 https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/pat/a1e76b11cbec1e08/1784607680901/7dd67079db1dc90c8443ef9f7d31e2ecc734ff0000d700bbb202019b32ee8a4b/2IfOKOaazDew36z"
+          ]
         }
       ],
       "attempted_room_ids": [
@@ -6180,14 +6202,8 @@
         "room_queue_complete": false,
         "complete": false,
         "max_streams_per_blv": 2,
-        "total_explicit_blv_rooms": 12,
+        "total_explicit_blv_rooms": 6,
         "pending_room_keys": [
-          "595335",
-          "531989",
-          "380460",
-          "607552",
-          "622093",
-          "536185",
           "595335",
           "531989",
           "380460",
@@ -6198,19 +6214,19 @@
         "room_progress": {
           "595335": {
             "key": "595335",
-            "url": "https://socolivep.cv/truc-tiep/yunnan-yukun-vs-chengdu-rongcheng-21-07-2026-1400/?blv=595335",
+            "url": "https://socolivep.cv/truc-tiep/yunnan-yukun-vs-chengdu-rongcheng-21-07-2026-1400?blv=595335",
             "blv": "NGƯỜI CÁ",
             "blv_id": "595335",
             "status": "rate_limited",
             "attempts": 17,
-            "rate_limit_hits": 7,
-            "last_http_status": 200,
-            "last_stream_count": 1,
-            "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
+            "rate_limit_hits": 8,
+            "last_http_status": 429,
+            "last_stream_count": 0,
+            "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
           },
           "531989": {
             "key": "531989",
-            "url": "https://socolivep.cv/truc-tiep/yunnan-yukun-vs-chengdu-rongcheng-21-07-2026-1400/?blv=531989",
+            "url": "https://socolivep.cv/truc-tiep/yunnan-yukun-vs-chengdu-rongcheng-21-07-2026-1400?blv=531989",
             "blv": "COZY",
             "blv_id": "531989",
             "status": "pending",
@@ -6222,7 +6238,7 @@
           },
           "380460": {
             "key": "380460",
-            "url": "https://socolivep.cv/truc-tiep/yunnan-yukun-vs-chengdu-rongcheng-21-07-2026-1400/?blv=380460",
+            "url": "https://socolivep.cv/truc-tiep/yunnan-yukun-vs-chengdu-rongcheng-21-07-2026-1400?blv=380460",
             "blv": "ENZO",
             "blv_id": "380460",
             "status": "pending",
@@ -6234,7 +6250,7 @@
           },
           "607552": {
             "key": "607552",
-            "url": "https://socolivep.cv/truc-tiep/yunnan-yukun-vs-chengdu-rongcheng-21-07-2026-1400/?blv=607552",
+            "url": "https://socolivep.cv/truc-tiep/yunnan-yukun-vs-chengdu-rongcheng-21-07-2026-1400?blv=607552",
             "blv": "ĐỖ TÚ TÀI",
             "blv_id": "607552",
             "status": "pending",
@@ -6246,7 +6262,7 @@
           },
           "622093": {
             "key": "622093",
-            "url": "https://socolivep.cv/truc-tiep/yunnan-yukun-vs-chengdu-rongcheng-21-07-2026-1400/?blv=622093",
+            "url": "https://socolivep.cv/truc-tiep/yunnan-yukun-vs-chengdu-rongcheng-21-07-2026-1400?blv=622093",
             "blv": "GRAP",
             "blv_id": "622093",
             "status": "pending",
@@ -6258,7 +6274,7 @@
           },
           "536185": {
             "key": "536185",
-            "url": "https://socolivep.cv/truc-tiep/yunnan-yukun-vs-chengdu-rongcheng-21-07-2026-1400/?blv=536185",
+            "url": "https://socolivep.cv/truc-tiep/yunnan-yukun-vs-chengdu-rongcheng-21-07-2026-1400?blv=536185",
             "blv": "A WIN",
             "blv_id": "536185",
             "status": "pending",
@@ -6286,19 +6302,19 @@
       "room_progress": {
         "595335": {
           "key": "595335",
-          "url": "https://socolivep.cv/truc-tiep/yunnan-yukun-vs-chengdu-rongcheng-21-07-2026-1400/?blv=595335",
+          "url": "https://socolivep.cv/truc-tiep/yunnan-yukun-vs-chengdu-rongcheng-21-07-2026-1400?blv=595335",
           "blv": "NGƯỜI CÁ",
           "blv_id": "595335",
           "status": "rate_limited",
           "attempts": 17,
-          "rate_limit_hits": 7,
-          "last_http_status": 200,
-          "last_stream_count": 1,
-          "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
+          "rate_limit_hits": 8,
+          "last_http_status": 429,
+          "last_stream_count": 0,
+          "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
         },
         "531989": {
           "key": "531989",
-          "url": "https://socolivep.cv/truc-tiep/yunnan-yukun-vs-chengdu-rongcheng-21-07-2026-1400/?blv=531989",
+          "url": "https://socolivep.cv/truc-tiep/yunnan-yukun-vs-chengdu-rongcheng-21-07-2026-1400?blv=531989",
           "blv": "COZY",
           "blv_id": "531989",
           "status": "pending",
@@ -6310,7 +6326,7 @@
         },
         "380460": {
           "key": "380460",
-          "url": "https://socolivep.cv/truc-tiep/yunnan-yukun-vs-chengdu-rongcheng-21-07-2026-1400/?blv=380460",
+          "url": "https://socolivep.cv/truc-tiep/yunnan-yukun-vs-chengdu-rongcheng-21-07-2026-1400?blv=380460",
           "blv": "ENZO",
           "blv_id": "380460",
           "status": "pending",
@@ -6322,7 +6338,7 @@
         },
         "607552": {
           "key": "607552",
-          "url": "https://socolivep.cv/truc-tiep/yunnan-yukun-vs-chengdu-rongcheng-21-07-2026-1400/?blv=607552",
+          "url": "https://socolivep.cv/truc-tiep/yunnan-yukun-vs-chengdu-rongcheng-21-07-2026-1400?blv=607552",
           "blv": "ĐỖ TÚ TÀI",
           "blv_id": "607552",
           "status": "pending",
@@ -6334,7 +6350,7 @@
         },
         "622093": {
           "key": "622093",
-          "url": "https://socolivep.cv/truc-tiep/yunnan-yukun-vs-chengdu-rongcheng-21-07-2026-1400/?blv=622093",
+          "url": "https://socolivep.cv/truc-tiep/yunnan-yukun-vs-chengdu-rongcheng-21-07-2026-1400?blv=622093",
           "blv": "GRAP",
           "blv_id": "622093",
           "status": "pending",
@@ -6346,7 +6362,7 @@
         },
         "536185": {
           "key": "536185",
-          "url": "https://socolivep.cv/truc-tiep/yunnan-yukun-vs-chengdu-rongcheng-21-07-2026-1400/?blv=536185",
+          "url": "https://socolivep.cv/truc-tiep/yunnan-yukun-vs-chengdu-rongcheng-21-07-2026-1400?blv=536185",
           "blv": "A WIN",
           "blv_id": "536185",
           "status": "pending",
@@ -6399,26 +6415,6 @@
         },
         {
           "url": "https://socolivep.cv/truc-tiep/henan-fc-vs-dalian-yingbo-21-07-2026-1400?blv=304148",
-          "blv": "LUCAS",
-          "blv_id": "304148"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/henan-fc-vs-dalian-yingbo-21-07-2026-1400/?blv=612098",
-          "blv": "BEN 10",
-          "blv_id": "612098"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/henan-fc-vs-dalian-yingbo-21-07-2026-1400/?blv=283501",
-          "blv": "KAN",
-          "blv_id": "283501"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/henan-fc-vs-dalian-yingbo-21-07-2026-1400/?blv=372746",
-          "blv": "YONE",
-          "blv_id": "372746"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/henan-fc-vs-dalian-yingbo-21-07-2026-1400/?blv=304148",
           "blv": "LUCAS",
           "blv_id": "304148"
         },
@@ -12417,6 +12413,60 @@
             "429 https://socolivep.cv/truc-tiep/henan-fc-vs-dalian-yingbo-21-07-2026-1400?blv=612098",
             "401 https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/pat/a1e7696f3d71e830/1784607613591/2d28694357dc052143b9181d55e4463329f5880e21f0dc4798c59ab53360e5f2/Nqi3obfsmF3Cagm"
           ]
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/henan-fc-vs-dalian-yingbo-21-07-2026-1400?blv=612098",
+          "blv": "BEN 10",
+          "blv_id": "612098",
+          "streams": [],
+          "stream_sources": {},
+          "stream_first_seen": [],
+          "discovered_blv_ids": [],
+          "diagnostics": {
+            "url": "https://socolivep.cv/truc-tiep/henan-fc-vs-dalian-yingbo-21-07-2026-1400?blv=612098",
+            "title": "Chờ một chút...",
+            "h1": "socolivep.cv",
+            "ready_state": "complete",
+            "visibility_state": "visible",
+            "hidden": false,
+            "video_count": 0,
+            "iframe_count": 0,
+            "body_sample": "socolivep.cv Thực hiện xác minh bảo mật Trang web này sử dụng dịch vụ bảo mật để chống bot độc hại. Trang này hiển thị trong khi trang web xác minh bạn không phải là bot. Ray ID: a1e76b0d7b0fe538 Hiệu suất và Tính bảo mật của Cloudflare Quyền riêng tư",
+            "harvest_rounds": 0,
+            "harvest_window_seconds": 0.627,
+            "main_status": 429,
+            "harvested_stream_count": 0,
+            "harvested_blv_ids": [],
+            "scan_mode": "browser-event",
+            "elapsed_seconds": 13.757
+          },
+          "http_probe": {
+            "enabled": false,
+            "status": null,
+            "elapsed_seconds": 0.0,
+            "error": ""
+          },
+          "errors": [
+            "console/error: Failed to load resource: the server responded with a status of 429 ()",
+            "console/warning: No available adapters.",
+            "console/warning: No available adapters.",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/warning: [.WebGL-0x2e0405bad800]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+            "console/warning: [.WebGL-0x2e0405bad800]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels (this message will no longer repeat)",
+            "console/error: %c%d font-size:0;color:transparent NaN",
+            "console/error: %c%d font-size:0;color:transparent NaN",
+            "console/warning: %c%d font-size:0;color:transparent NaN",
+            "console/warning: %c%d font-size:0;color:transparent NaN",
+            "console/warning: OTS parsing error: Size of decompressed WOFF 2.0 is less than compressed size"
+          ],
+          "failed_requests": [
+            "fetch https://brunhild.challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/i/a1e76b10dfdb1e08/5tVTi4ztZQq_jl3JCWi7oG3zOIqj14v5XxPXJO_VGMI-1784607680-1.2.1.1-VYUvigfVOKiNQBqN376eiYeF0d4XWtsdidVU9ZXlbculd8lXfsFuY4QBD8yb79_a | net::ERR_NAME_NOT_RESOLVED",
+            "image https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/ci/a1e76b10dfdb1e08/1784607680681/lrtt-D1wi-YtoeB | net::ERR_FAILED"
+          ],
+          "http_errors": [
+            "429 https://socolivep.cv/truc-tiep/henan-fc-vs-dalian-yingbo-21-07-2026-1400?blv=612098",
+            "401 https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/pat/a1e76b10dfdb1e08/1784607680681/0edba649519d4288c5553dc3f819aba25f0c0a7eae374a60c337212168b5d854/uMgr92RVNhEtJ5g"
+          ]
         }
       ],
       "attempted_room_ids": [
@@ -12432,12 +12482,8 @@
         "room_queue_complete": false,
         "complete": false,
         "max_streams_per_blv": 2,
-        "total_explicit_blv_rooms": 8,
+        "total_explicit_blv_rooms": 4,
         "pending_room_keys": [
-          "612098",
-          "283501",
-          "372746",
-          "304148",
           "612098",
           "283501",
           "372746",
@@ -12446,19 +12492,19 @@
         "room_progress": {
           "612098": {
             "key": "612098",
-            "url": "https://socolivep.cv/truc-tiep/henan-fc-vs-dalian-yingbo-21-07-2026-1400/?blv=612098",
+            "url": "https://socolivep.cv/truc-tiep/henan-fc-vs-dalian-yingbo-21-07-2026-1400?blv=612098",
             "blv": "BEN 10",
             "blv_id": "612098",
             "status": "rate_limited",
             "attempts": 13,
-            "rate_limit_hits": 11,
+            "rate_limit_hits": 12,
             "last_http_status": 429,
             "last_stream_count": 0,
             "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
           },
           "283501": {
             "key": "283501",
-            "url": "https://socolivep.cv/truc-tiep/henan-fc-vs-dalian-yingbo-21-07-2026-1400/?blv=283501",
+            "url": "https://socolivep.cv/truc-tiep/henan-fc-vs-dalian-yingbo-21-07-2026-1400?blv=283501",
             "blv": "KAN",
             "blv_id": "283501",
             "status": "pending",
@@ -12470,7 +12516,7 @@
           },
           "372746": {
             "key": "372746",
-            "url": "https://socolivep.cv/truc-tiep/henan-fc-vs-dalian-yingbo-21-07-2026-1400/?blv=372746",
+            "url": "https://socolivep.cv/truc-tiep/henan-fc-vs-dalian-yingbo-21-07-2026-1400?blv=372746",
             "blv": "YONE",
             "blv_id": "372746",
             "status": "pending",
@@ -12482,7 +12528,7 @@
           },
           "304148": {
             "key": "304148",
-            "url": "https://socolivep.cv/truc-tiep/henan-fc-vs-dalian-yingbo-21-07-2026-1400/?blv=304148",
+            "url": "https://socolivep.cv/truc-tiep/henan-fc-vs-dalian-yingbo-21-07-2026-1400?blv=304148",
             "blv": "LUCAS",
             "blv_id": "304148",
             "status": "pending",
@@ -12510,19 +12556,19 @@
       "room_progress": {
         "612098": {
           "key": "612098",
-          "url": "https://socolivep.cv/truc-tiep/henan-fc-vs-dalian-yingbo-21-07-2026-1400/?blv=612098",
+          "url": "https://socolivep.cv/truc-tiep/henan-fc-vs-dalian-yingbo-21-07-2026-1400?blv=612098",
           "blv": "BEN 10",
           "blv_id": "612098",
           "status": "rate_limited",
           "attempts": 13,
-          "rate_limit_hits": 11,
+          "rate_limit_hits": 12,
           "last_http_status": 429,
           "last_stream_count": 0,
           "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
         },
         "283501": {
           "key": "283501",
-          "url": "https://socolivep.cv/truc-tiep/henan-fc-vs-dalian-yingbo-21-07-2026-1400/?blv=283501",
+          "url": "https://socolivep.cv/truc-tiep/henan-fc-vs-dalian-yingbo-21-07-2026-1400?blv=283501",
           "blv": "KAN",
           "blv_id": "283501",
           "status": "pending",
@@ -12534,7 +12580,7 @@
         },
         "372746": {
           "key": "372746",
-          "url": "https://socolivep.cv/truc-tiep/henan-fc-vs-dalian-yingbo-21-07-2026-1400/?blv=372746",
+          "url": "https://socolivep.cv/truc-tiep/henan-fc-vs-dalian-yingbo-21-07-2026-1400?blv=372746",
           "blv": "YONE",
           "blv_id": "372746",
           "status": "pending",
@@ -12546,7 +12592,7 @@
         },
         "304148": {
           "key": "304148",
-          "url": "https://socolivep.cv/truc-tiep/henan-fc-vs-dalian-yingbo-21-07-2026-1400/?blv=304148",
+          "url": "https://socolivep.cv/truc-tiep/henan-fc-vs-dalian-yingbo-21-07-2026-1400?blv=304148",
           "blv": "LUCAS",
           "blv_id": "304148",
           "status": "pending",
@@ -12609,36 +12655,6 @@
         },
         {
           "url": "https://socolivep.cv/truc-tiep/wuhan-three-towns-vs-shandong-taishan-21-07-2026-1400?blv=485739",
-          "blv": "CHIVAS",
-          "blv_id": "485739"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/wuhan-three-towns-vs-shandong-taishan-21-07-2026-1400/?blv=250874",
-          "blv": "FIREMAN",
-          "blv_id": "250874"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/wuhan-three-towns-vs-shandong-taishan-21-07-2026-1400/?blv=494201",
-          "blv": "MESSI",
-          "blv_id": "494201"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/wuhan-three-towns-vs-shandong-taishan-21-07-2026-1400/?blv=123226",
-          "blv": "RICKHANTER",
-          "blv_id": "123226"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/wuhan-three-towns-vs-shandong-taishan-21-07-2026-1400/?blv=599634",
-          "blv": "HẢI THANH",
-          "blv_id": "599634"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/wuhan-three-towns-vs-shandong-taishan-21-07-2026-1400/?blv=147801",
-          "blv": "TAP",
-          "blv_id": "147801"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/wuhan-three-towns-vs-shandong-taishan-21-07-2026-1400/?blv=485739",
           "blv": "CHIVAS",
           "blv_id": "485739"
         },
@@ -18675,6 +18691,60 @@
           "http_errors": [
             "403 https://socolivep.cv/wp-admin/admin-ajax.php?action=scl_realtime&sport=1"
           ]
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/wuhan-three-towns-vs-shandong-taishan-21-07-2026-1400?blv=250874",
+          "blv": "FIREMAN",
+          "blv_id": "250874",
+          "streams": [],
+          "stream_sources": {},
+          "stream_first_seen": [],
+          "discovered_blv_ids": [],
+          "diagnostics": {
+            "url": "https://socolivep.cv/truc-tiep/wuhan-three-towns-vs-shandong-taishan-21-07-2026-1400?blv=250874",
+            "title": "Chờ một chút...",
+            "h1": "socolivep.cv",
+            "ready_state": "complete",
+            "visibility_state": "visible",
+            "hidden": false,
+            "video_count": 0,
+            "iframe_count": 0,
+            "body_sample": "socolivep.cv Thực hiện xác minh bảo mật Trang web này sử dụng dịch vụ bảo mật để chống bot độc hại. Trang này hiển thị trong khi trang web xác minh bạn không phải là bot. Ray ID: a1e76b0d7b04e538 Hiệu suất và Tính bảo mật của Cloudflare Quyền riêng tư",
+            "harvest_rounds": 0,
+            "harvest_window_seconds": 0.623,
+            "main_status": 429,
+            "harvested_stream_count": 0,
+            "harvested_blv_ids": [],
+            "scan_mode": "browser-event",
+            "elapsed_seconds": 13.694
+          },
+          "http_probe": {
+            "enabled": false,
+            "status": null,
+            "elapsed_seconds": 0.0,
+            "error": ""
+          },
+          "errors": [
+            "console/error: Failed to load resource: the server responded with a status of 429 ()",
+            "console/warning: No available adapters.",
+            "console/warning: No available adapters.",
+            "console/error: %c%d font-size:0;color:transparent NaN",
+            "console/error: %c%d font-size:0;color:transparent NaN",
+            "console/warning: %c%d font-size:0;color:transparent NaN",
+            "console/warning: %c%d font-size:0;color:transparent NaN",
+            "console/warning: OTS parsing error: Size of decompressed WOFF 2.0 is less than compressed size",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/warning: [.WebGL-0x2e0402415400]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+            "console/warning: [.WebGL-0x2e0402415400]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels"
+          ],
+          "failed_requests": [
+            "fetch https://brunhild.challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/i/a1e76b10f8471e08/7vMUzxNQKMpuVRmhLnmRFGx9y2y_dQyGVYgIVODqyOU-1784607680-1.2.1.1-S.1HiKHC93b_0hjYZ7qn.iTKtV3XNerMxo4k7x9AqJUjIB5QFF5xYQ9FV9tYxT0p | net::ERR_NAME_NOT_RESOLVED",
+            "image https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/ci/a1e76b10f8471e08/1784607680659/MnW-sFQRMzIEoIQ | net::ERR_FAILED"
+          ],
+          "http_errors": [
+            "429 https://socolivep.cv/truc-tiep/wuhan-three-towns-vs-shandong-taishan-21-07-2026-1400?blv=250874",
+            "401 https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/pat/a1e76b10f8471e08/1784607680658/5199431866ebb995c5564f34be42403cdc2dd76f331f52eb2ff44a9977f9b75f/38m5hPo7HU4rvMg"
+          ]
         }
       ],
       "attempted_room_ids": [
@@ -18690,14 +18760,8 @@
         "room_queue_complete": false,
         "complete": false,
         "max_streams_per_blv": 2,
-        "total_explicit_blv_rooms": 12,
+        "total_explicit_blv_rooms": 6,
         "pending_room_keys": [
-          "250874",
-          "494201",
-          "123226",
-          "599634",
-          "147801",
-          "485739",
           "250874",
           "494201",
           "123226",
@@ -18708,19 +18772,19 @@
         "room_progress": {
           "250874": {
             "key": "250874",
-            "url": "https://socolivep.cv/truc-tiep/wuhan-three-towns-vs-shandong-taishan-21-07-2026-1400/?blv=250874",
+            "url": "https://socolivep.cv/truc-tiep/wuhan-three-towns-vs-shandong-taishan-21-07-2026-1400?blv=250874",
             "blv": "FIREMAN",
             "blv_id": "250874",
             "status": "rate_limited",
             "attempts": 18,
-            "rate_limit_hits": 6,
-            "last_http_status": 200,
-            "last_stream_count": 1,
-            "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
+            "rate_limit_hits": 7,
+            "last_http_status": 429,
+            "last_stream_count": 0,
+            "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
           },
           "494201": {
             "key": "494201",
-            "url": "https://socolivep.cv/truc-tiep/wuhan-three-towns-vs-shandong-taishan-21-07-2026-1400/?blv=494201",
+            "url": "https://socolivep.cv/truc-tiep/wuhan-three-towns-vs-shandong-taishan-21-07-2026-1400?blv=494201",
             "blv": "MESSI",
             "blv_id": "494201",
             "status": "pending",
@@ -18732,7 +18796,7 @@
           },
           "123226": {
             "key": "123226",
-            "url": "https://socolivep.cv/truc-tiep/wuhan-three-towns-vs-shandong-taishan-21-07-2026-1400/?blv=123226",
+            "url": "https://socolivep.cv/truc-tiep/wuhan-three-towns-vs-shandong-taishan-21-07-2026-1400?blv=123226",
             "blv": "RICKHANTER",
             "blv_id": "123226",
             "status": "pending",
@@ -18744,7 +18808,7 @@
           },
           "599634": {
             "key": "599634",
-            "url": "https://socolivep.cv/truc-tiep/wuhan-three-towns-vs-shandong-taishan-21-07-2026-1400/?blv=599634",
+            "url": "https://socolivep.cv/truc-tiep/wuhan-three-towns-vs-shandong-taishan-21-07-2026-1400?blv=599634",
             "blv": "HẢI THANH",
             "blv_id": "599634",
             "status": "pending",
@@ -18756,7 +18820,7 @@
           },
           "147801": {
             "key": "147801",
-            "url": "https://socolivep.cv/truc-tiep/wuhan-three-towns-vs-shandong-taishan-21-07-2026-1400/?blv=147801",
+            "url": "https://socolivep.cv/truc-tiep/wuhan-three-towns-vs-shandong-taishan-21-07-2026-1400?blv=147801",
             "blv": "TAP",
             "blv_id": "147801",
             "status": "pending",
@@ -18768,7 +18832,7 @@
           },
           "485739": {
             "key": "485739",
-            "url": "https://socolivep.cv/truc-tiep/wuhan-three-towns-vs-shandong-taishan-21-07-2026-1400/?blv=485739",
+            "url": "https://socolivep.cv/truc-tiep/wuhan-three-towns-vs-shandong-taishan-21-07-2026-1400?blv=485739",
             "blv": "CHIVAS",
             "blv_id": "485739",
             "status": "pending",
@@ -18796,19 +18860,19 @@
       "room_progress": {
         "250874": {
           "key": "250874",
-          "url": "https://socolivep.cv/truc-tiep/wuhan-three-towns-vs-shandong-taishan-21-07-2026-1400/?blv=250874",
+          "url": "https://socolivep.cv/truc-tiep/wuhan-three-towns-vs-shandong-taishan-21-07-2026-1400?blv=250874",
           "blv": "FIREMAN",
           "blv_id": "250874",
           "status": "rate_limited",
           "attempts": 18,
-          "rate_limit_hits": 6,
-          "last_http_status": 200,
-          "last_stream_count": 1,
-          "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
+          "rate_limit_hits": 7,
+          "last_http_status": 429,
+          "last_stream_count": 0,
+          "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
         },
         "494201": {
           "key": "494201",
-          "url": "https://socolivep.cv/truc-tiep/wuhan-three-towns-vs-shandong-taishan-21-07-2026-1400/?blv=494201",
+          "url": "https://socolivep.cv/truc-tiep/wuhan-three-towns-vs-shandong-taishan-21-07-2026-1400?blv=494201",
           "blv": "MESSI",
           "blv_id": "494201",
           "status": "pending",
@@ -18820,7 +18884,7 @@
         },
         "123226": {
           "key": "123226",
-          "url": "https://socolivep.cv/truc-tiep/wuhan-three-towns-vs-shandong-taishan-21-07-2026-1400/?blv=123226",
+          "url": "https://socolivep.cv/truc-tiep/wuhan-three-towns-vs-shandong-taishan-21-07-2026-1400?blv=123226",
           "blv": "RICKHANTER",
           "blv_id": "123226",
           "status": "pending",
@@ -18832,7 +18896,7 @@
         },
         "599634": {
           "key": "599634",
-          "url": "https://socolivep.cv/truc-tiep/wuhan-three-towns-vs-shandong-taishan-21-07-2026-1400/?blv=599634",
+          "url": "https://socolivep.cv/truc-tiep/wuhan-three-towns-vs-shandong-taishan-21-07-2026-1400?blv=599634",
           "blv": "HẢI THANH",
           "blv_id": "599634",
           "status": "pending",
@@ -18844,7 +18908,7 @@
         },
         "147801": {
           "key": "147801",
-          "url": "https://socolivep.cv/truc-tiep/wuhan-three-towns-vs-shandong-taishan-21-07-2026-1400/?blv=147801",
+          "url": "https://socolivep.cv/truc-tiep/wuhan-three-towns-vs-shandong-taishan-21-07-2026-1400?blv=147801",
           "blv": "TAP",
           "blv_id": "147801",
           "status": "pending",
@@ -18856,7 +18920,7 @@
         },
         "485739": {
           "key": "485739",
-          "url": "https://socolivep.cv/truc-tiep/wuhan-three-towns-vs-shandong-taishan-21-07-2026-1400/?blv=485739",
+          "url": "https://socolivep.cv/truc-tiep/wuhan-three-towns-vs-shandong-taishan-21-07-2026-1400?blv=485739",
           "blv": "CHIVAS",
           "blv_id": "485739",
           "status": "pending",
@@ -18919,36 +18983,6 @@
         },
         {
           "url": "https://socolivep.cv/truc-tiep/shanghai-shenhua-vs-qingdao-hainiu-21-07-2026-1400?blv=472241",
-          "blv": "XO",
-          "blv_id": "472241"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/shanghai-shenhua-vs-qingdao-hainiu-21-07-2026-1400/?blv=109053",
-          "blv": "PEWPEW",
-          "blv_id": "109053"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/shanghai-shenhua-vs-qingdao-hainiu-21-07-2026-1400/?blv=291277",
-          "blv": "CÔNG CHẤT",
-          "blv_id": "291277"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/shanghai-shenhua-vs-qingdao-hainiu-21-07-2026-1400/?blv=484845",
-          "blv": "A BỆU",
-          "blv_id": "484845"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/shanghai-shenhua-vs-qingdao-hainiu-21-07-2026-1400/?blv=548860",
-          "blv": "VƯƠNG ANH",
-          "blv_id": "548860"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/shanghai-shenhua-vs-qingdao-hainiu-21-07-2026-1400/?blv=534055",
-          "blv": "RAMBO",
-          "blv_id": "534055"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/shanghai-shenhua-vs-qingdao-hainiu-21-07-2026-1400/?blv=472241",
           "blv": "XO",
           "blv_id": "472241"
         },
@@ -24849,6 +24883,58 @@
           "http_errors": [
             "403 https://socolivep.cv/wp-admin/admin-ajax.php?action=scl_realtime&sport=1"
           ]
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/shanghai-shenhua-vs-qingdao-hainiu-21-07-2026-1400?blv=109053",
+          "blv": "PEWPEW",
+          "blv_id": "109053",
+          "streams": [],
+          "stream_sources": {},
+          "stream_first_seen": [],
+          "discovered_blv_ids": [],
+          "diagnostics": {
+            "url": "https://socolivep.cv/truc-tiep/shanghai-shenhua-vs-qingdao-hainiu-21-07-2026-1400?blv=109053",
+            "title": "Chờ một chút...",
+            "h1": "socolivep.cv",
+            "ready_state": "complete",
+            "visibility_state": "visible",
+            "hidden": false,
+            "video_count": 0,
+            "iframe_count": 0,
+            "body_sample": "socolivep.cv Thực hiện xác minh bảo mật Trang web này sử dụng dịch vụ bảo mật để chống bot độc hại. Trang này hiển thị trong khi trang web xác minh bạn không phải là bot. Ray ID: a1e76b0d7b17e538 Hiệu suất và Tính bảo mật của Cloudflare Quyền riêng tư",
+            "harvest_rounds": 0,
+            "harvest_window_seconds": 0.627,
+            "main_status": 429,
+            "harvested_stream_count": 0,
+            "harvested_blv_ids": [],
+            "scan_mode": "browser-event",
+            "elapsed_seconds": 13.751
+          },
+          "http_probe": {
+            "enabled": false,
+            "status": null,
+            "elapsed_seconds": 0.0,
+            "error": ""
+          },
+          "errors": [
+            "console/error: Failed to load resource: the server responded with a status of 429 ()",
+            "console/warning: No available adapters.",
+            "console/warning: No available adapters.",
+            "console/error: %c%d font-size:0;color:transparent NaN",
+            "console/error: %c%d font-size:0;color:transparent NaN",
+            "console/warning: %c%d font-size:0;color:transparent NaN",
+            "console/warning: %c%d font-size:0;color:transparent NaN",
+            "console/warning: OTS parsing error: Size of decompressed WOFF 2.0 is less than compressed size",
+            "console/error: Failed to load resource: net::ERR_FAILED"
+          ],
+          "failed_requests": [
+            "fetch https://brunhild.challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/i/a1e76b117a9c1e08/bGMnefIxx4NNkf55fqn4zQz_AC.qxJNhIvCpTX0HfQo-1784607680-1.2.1.1-cqPiho60PxGIy4a4.BsY9rPm3gcC_3fKPIicv1dLPuN9zSm46pzllClyo_TRX3bo | net::ERR_NAME_NOT_RESOLVED",
+            "image https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/ci/a1e76b117a9c1e08/1784607680788/Rl8DLjmipmVs7co | net::ERR_FAILED"
+          ],
+          "http_errors": [
+            "429 https://socolivep.cv/truc-tiep/shanghai-shenhua-vs-qingdao-hainiu-21-07-2026-1400?blv=109053",
+            "401 https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/pat/a1e76b117a9c1e08/1784607680787/ece6e716929d11c1288375d86035ec3d49547b7f67dac032c53951e67bd842a8/Mjf0aQpGD0B4gY7"
+          ]
         }
       ],
       "attempted_room_ids": [
@@ -24864,14 +24950,8 @@
         "room_queue_complete": false,
         "complete": false,
         "max_streams_per_blv": 2,
-        "total_explicit_blv_rooms": 12,
+        "total_explicit_blv_rooms": 6,
         "pending_room_keys": [
-          "109053",
-          "291277",
-          "484845",
-          "548860",
-          "534055",
-          "472241",
           "109053",
           "291277",
           "484845",
@@ -24882,19 +24962,19 @@
         "room_progress": {
           "109053": {
             "key": "109053",
-            "url": "https://socolivep.cv/truc-tiep/shanghai-shenhua-vs-qingdao-hainiu-21-07-2026-1400/?blv=109053",
+            "url": "https://socolivep.cv/truc-tiep/shanghai-shenhua-vs-qingdao-hainiu-21-07-2026-1400?blv=109053",
             "blv": "PEWPEW",
             "blv_id": "109053",
             "status": "rate_limited",
             "attempts": 19,
-            "rate_limit_hits": 5,
-            "last_http_status": 200,
-            "last_stream_count": 1,
-            "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
+            "rate_limit_hits": 6,
+            "last_http_status": 429,
+            "last_stream_count": 0,
+            "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
           },
           "291277": {
             "key": "291277",
-            "url": "https://socolivep.cv/truc-tiep/shanghai-shenhua-vs-qingdao-hainiu-21-07-2026-1400/?blv=291277",
+            "url": "https://socolivep.cv/truc-tiep/shanghai-shenhua-vs-qingdao-hainiu-21-07-2026-1400?blv=291277",
             "blv": "CÔNG CHẤT",
             "blv_id": "291277",
             "status": "pending",
@@ -24906,7 +24986,7 @@
           },
           "484845": {
             "key": "484845",
-            "url": "https://socolivep.cv/truc-tiep/shanghai-shenhua-vs-qingdao-hainiu-21-07-2026-1400/?blv=484845",
+            "url": "https://socolivep.cv/truc-tiep/shanghai-shenhua-vs-qingdao-hainiu-21-07-2026-1400?blv=484845",
             "blv": "A BỆU",
             "blv_id": "484845",
             "status": "pending",
@@ -24918,7 +24998,7 @@
           },
           "548860": {
             "key": "548860",
-            "url": "https://socolivep.cv/truc-tiep/shanghai-shenhua-vs-qingdao-hainiu-21-07-2026-1400/?blv=548860",
+            "url": "https://socolivep.cv/truc-tiep/shanghai-shenhua-vs-qingdao-hainiu-21-07-2026-1400?blv=548860",
             "blv": "VƯƠNG ANH",
             "blv_id": "548860",
             "status": "pending",
@@ -24930,7 +25010,7 @@
           },
           "534055": {
             "key": "534055",
-            "url": "https://socolivep.cv/truc-tiep/shanghai-shenhua-vs-qingdao-hainiu-21-07-2026-1400/?blv=534055",
+            "url": "https://socolivep.cv/truc-tiep/shanghai-shenhua-vs-qingdao-hainiu-21-07-2026-1400?blv=534055",
             "blv": "RAMBO",
             "blv_id": "534055",
             "status": "pending",
@@ -24942,7 +25022,7 @@
           },
           "472241": {
             "key": "472241",
-            "url": "https://socolivep.cv/truc-tiep/shanghai-shenhua-vs-qingdao-hainiu-21-07-2026-1400/?blv=472241",
+            "url": "https://socolivep.cv/truc-tiep/shanghai-shenhua-vs-qingdao-hainiu-21-07-2026-1400?blv=472241",
             "blv": "XO",
             "blv_id": "472241",
             "status": "pending",
@@ -24970,19 +25050,19 @@
       "room_progress": {
         "109053": {
           "key": "109053",
-          "url": "https://socolivep.cv/truc-tiep/shanghai-shenhua-vs-qingdao-hainiu-21-07-2026-1400/?blv=109053",
+          "url": "https://socolivep.cv/truc-tiep/shanghai-shenhua-vs-qingdao-hainiu-21-07-2026-1400?blv=109053",
           "blv": "PEWPEW",
           "blv_id": "109053",
           "status": "rate_limited",
           "attempts": 19,
-          "rate_limit_hits": 5,
-          "last_http_status": 200,
-          "last_stream_count": 1,
-          "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
+          "rate_limit_hits": 6,
+          "last_http_status": 429,
+          "last_stream_count": 0,
+          "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
         },
         "291277": {
           "key": "291277",
-          "url": "https://socolivep.cv/truc-tiep/shanghai-shenhua-vs-qingdao-hainiu-21-07-2026-1400/?blv=291277",
+          "url": "https://socolivep.cv/truc-tiep/shanghai-shenhua-vs-qingdao-hainiu-21-07-2026-1400?blv=291277",
           "blv": "CÔNG CHẤT",
           "blv_id": "291277",
           "status": "pending",
@@ -24994,7 +25074,7 @@
         },
         "484845": {
           "key": "484845",
-          "url": "https://socolivep.cv/truc-tiep/shanghai-shenhua-vs-qingdao-hainiu-21-07-2026-1400/?blv=484845",
+          "url": "https://socolivep.cv/truc-tiep/shanghai-shenhua-vs-qingdao-hainiu-21-07-2026-1400?blv=484845",
           "blv": "A BỆU",
           "blv_id": "484845",
           "status": "pending",
@@ -25006,7 +25086,7 @@
         },
         "548860": {
           "key": "548860",
-          "url": "https://socolivep.cv/truc-tiep/shanghai-shenhua-vs-qingdao-hainiu-21-07-2026-1400/?blv=548860",
+          "url": "https://socolivep.cv/truc-tiep/shanghai-shenhua-vs-qingdao-hainiu-21-07-2026-1400?blv=548860",
           "blv": "VƯƠNG ANH",
           "blv_id": "548860",
           "status": "pending",
@@ -25018,7 +25098,7 @@
         },
         "534055": {
           "key": "534055",
-          "url": "https://socolivep.cv/truc-tiep/shanghai-shenhua-vs-qingdao-hainiu-21-07-2026-1400/?blv=534055",
+          "url": "https://socolivep.cv/truc-tiep/shanghai-shenhua-vs-qingdao-hainiu-21-07-2026-1400?blv=534055",
           "blv": "RAMBO",
           "blv_id": "534055",
           "status": "pending",
@@ -25030,7 +25110,7 @@
         },
         "472241": {
           "key": "472241",
-          "url": "https://socolivep.cv/truc-tiep/shanghai-shenhua-vs-qingdao-hainiu-21-07-2026-1400/?blv=472241",
+          "url": "https://socolivep.cv/truc-tiep/shanghai-shenhua-vs-qingdao-hainiu-21-07-2026-1400?blv=472241",
           "blv": "XO",
           "blv_id": "472241",
           "status": "pending",
