@@ -1,4 +1,6 @@
 import asyncio
+import copy
+import hashlib
 import html
 import json
 import os
@@ -39,7 +41,7 @@ OUTPUT_CATALOG = "socolive_catalog.json"
 TIMEZONE = ZoneInfo("Asia/Ho_Chi_Minh")
 
 # Cơ chế cân bằng: 4 player song song, không quá tải như 8 và không chậm như 1.
-MATCH_CONCURRENCY = int(os.getenv("SOCOLIVE_MATCH_CONCURRENCY", "4"))
+MATCH_CONCURRENCY = int(os.getenv("SOCOLIVE_MATCH_CONCURRENCY", "1"))
 
 # Mỗi phòng chỉ được chờ ngắn. Có stream thì đóng gần như ngay lập tức.
 ROOM_WAIT_SECONDS = float(os.getenv("SOCOLIVE_ROOM_WAIT_SECONDS", "12"))
@@ -47,7 +49,7 @@ EXTRA_WAIT_AFTER_STREAM = float(
     os.getenv("SOCOLIVE_EXTRA_WAIT_AFTER_STREAM", "4.0")
 )
 DELAY_BETWEEN_ROOMS = float(
-    os.getenv("SOCOLIVE_DELAY_BETWEEN_ROOMS", "0.15")
+    os.getenv("SOCOLIVE_DELAY_BETWEEN_ROOMS", "2.0")
 )
 
 # Thử HTTP nhẹ trước khi mở Chromium. Nếu HTML/config đã chứa stream thì xong ngay.
@@ -60,7 +62,7 @@ ENABLE_CDP = os.getenv("SOCOLIVE_ENABLE_CDP", "1") == "1"
 
 # Chỉ quét các trận trong khoảng thời gian hợp lý để tránh mở hàng trăm player.
 SCAN_BEFORE_MINUTES = int(
-    os.getenv("SOCOLIVE_SCAN_BEFORE_MINUTES", "90")
+    os.getenv("SOCOLIVE_SCAN_BEFORE_MINUTES", "180")
 )
 SCAN_AFTER_MINUTES = int(
     os.getenv("SOCOLIVE_SCAN_AFTER_MINUTES", "240")
@@ -76,7 +78,7 @@ MAX_STREAMS_PER_MATCH = int(
 # Số trang BLV tối đa được mở cho cùng một trận trong MỘT workflow run.
 # Mỗi trang đều quét toàn bộ HTML/config, nên thường không cần mở đủ 10 trang.
 MAX_ROOMS_PER_MATCH = int(
-    os.getenv("SOCOLIVE_MAX_ROOMS_PER_MATCH", "3")
+    os.getenv("SOCOLIVE_MAX_ROOMS_PER_MATCH", "2")
 )
 
 # Giữ biến cũ để tương thích workflow cũ; V9 dừng theo coverage stream.
@@ -95,7 +97,7 @@ EMBEDDED_HARVEST_WAIT_SECONDS = float(
 
 # Một BLV tải HTTP 200 nhưng chưa sinh stream sẽ được thử lại ở runner khác.
 ROOM_EMPTY_MAX_ATTEMPTS = int(
-    os.getenv("SOCOLIVE_ROOM_EMPTY_MAX_ATTEMPTS", "4")
+    os.getenv("SOCOLIVE_ROOM_EMPTY_MAX_ATTEMPTS", "3")
 )
 
 # Mỗi BLV giữ tối đa hai nguồn. BLV mới có một nguồn sẽ mang trạng thái
@@ -127,10 +129,10 @@ STATE_MAX_AGE_MINUTES = int(
 )
 
 STATE_MAX_CHAIN_RUNS = int(
-    os.getenv("SOCOLIVE_STATE_MAX_CHAIN_RUNS", "200")
+    os.getenv("SOCOLIVE_STATE_MAX_CHAIN_RUNS", "20")
 )
 STATE_MAX_NO_PROGRESS_RUNS = int(
-    os.getenv("SOCOLIVE_STATE_MAX_NO_PROGRESS_RUNS", "0")
+    os.getenv("SOCOLIVE_STATE_MAX_NO_PROGRESS_RUNS", "3")
 )
 
 # Khi bật, cứ còn BLV pending/partial/rate_limited thì tự gọi runner mới.
@@ -139,13 +141,34 @@ CHAIN_UNTIL_PENDING_EMPTY = (
     os.getenv("SOCOLIVE_CHAIN_UNTIL_PENDING_EMPTY", "1") != "0"
 )
 
+# Tự dừng nếu queue không đổi hoặc mọi runner chỉ gặp 429 liên tiếp.
+STATE_MAX_UNCHANGED_PENDING_RUNS = int(
+    os.getenv("SOCOLIVE_STATE_MAX_UNCHANGED_PENDING_RUNS", "3")
+)
+STATE_MAX_RATE_LIMIT_ONLY_RUNS = int(
+    os.getenv("SOCOLIVE_STATE_MAX_RATE_LIMIT_ONLY_RUNS", "3")
+)
+
+# Flow nối tiếp ưu tiên dùng queue trong state, không tải lại trang chủ.
+RESUME_STATE_FIRST = (
+    os.getenv("SOCOLIVE_RESUME_STATE_FIRST", "1") != "0"
+)
+RESET_CHAIN_GUARD = (
+    os.getenv("SOCOLIVE_RESET_CHAIN_GUARD", "0") == "1"
+)
+
+# Link ký số gần hết hạn hoặc đã hết hạn không được tính vào coverage/catalog.
+TOKEN_EXPIRY_GRACE_SECONDS = int(
+    os.getenv("SOCOLIVE_TOKEN_EXPIRY_GRACE_SECONDS", "60")
+)
+
 # Đổi schema để reset state V10 cũ và cho phép quét lại từng BLV theo
 # mục tiêu tối đa hai nguồn.
 # vì V9 đã loại sai stream-ID không trùng BLV-ID.
-STATE_SCHEMA_VERSION = "v10.2-cumulative-catalog"
+STATE_SCHEMA_VERSION = "v10.3-safe-chain-valid-streams"
 
 # Giữ trận trong playlist sau giờ bắt đầu để các workflow sau không làm
-# biến mất link chỉ vì trận rơi khỏi khung quét -90 phút.
+# biến mất link chỉ vì trận rơi khỏi khung quét -180 phút.
 CATALOG_RETENTION_AFTER_START_MINUTES = int(
     os.getenv(
         "SOCOLIVE_CATALOG_RETENTION_AFTER_START_MINUTES",
@@ -352,44 +375,51 @@ def pending_room_keys(
     match: dict[str, Any],
 ) -> list[str]:
     progress = ensure_room_progress(match)
-    output: list[str] = []
 
-    # URL ?blv= luôn được ưu tiên. URL tổng chỉ fallback cuối.
-    for room in explicit_blv_rooms(match):
-        key = room_queue_key(room)
-        status = progress.get(
-            key,
-            {},
-        ).get("status", "pending")
+    status_priority = {
+        "pending": 0,
+        "partial": 1,
+        "retry": 2,
+        "rate_limited": 3,
+    }
 
-        if status in {
-            "pending",
-            "partial",
-            "retry",
-            "rate_limited",
-        }:
-            output.append(key)
+    def ranked_keys(
+        rooms: list[dict[str, str]],
+    ) -> list[str]:
+        ranked: list[tuple[int, int, int, int, str]] = []
+        seen: set[str] = set()
 
-    if output:
-        return output
+        for order, room in enumerate(rooms):
+            key = room_queue_key(room)
+            if key in seen:
+                continue
+            seen.add(key)
 
-    # Chỉ dùng URL tổng sau khi không còn BLV cụ thể để thử.
-    for room in base_rooms(match):
-        key = room_queue_key(room)
-        status = progress.get(
-            key,
-            {},
-        ).get("status", "pending")
+            item = progress.get(key, {})
+            status = item.get("status", "pending")
+            if status not in status_priority:
+                continue
 
-        if status in {
-            "pending",
-            "partial",
-            "retry",
-            "rate_limited",
-        }:
-            output.append(key)
+            ranked.append(
+                (
+                    status_priority[status],
+                    int(item.get("attempts", 0) or 0),
+                    int(item.get("rate_limit_hits", 0) or 0),
+                    order,
+                    key,
+                )
+            )
 
-    return output
+        ranked.sort()
+        return [item[-1] for item in ranked]
+
+    # BLV chưa thử luôn đứng trước partial/retry/rate_limited.
+    explicit = ranked_keys(explicit_blv_rooms(match))
+    if explicit:
+        return explicit
+
+    # URL tổng chỉ là fallback cuối cùng.
+    return ranked_keys(base_rooms(match))
 
 
 def room_queue_complete(
@@ -454,16 +484,154 @@ def stream_kind(url: str) -> str:
     return "unknown"
 
 
+
+def stream_expiry_datetime(url: str) -> datetime | None:
+    """Đọc thời hạn phổ biến từ auth_key hoặc txTime."""
+    try:
+        query = parse_qs(
+            urlsplit(url).query,
+            keep_blank_values=True,
+        )
+    except Exception:
+        return None
+
+    candidates: list[int] = []
+
+    auth_key = (query.get("auth_key") or [""])[0]
+    if auth_key:
+        first = auth_key.split("-", 1)[0]
+        if first.isdigit():
+            candidates.append(int(first))
+
+    tx_time = (query.get("txTime") or query.get("txtime") or [""])[0]
+    if tx_time:
+        try:
+            candidates.append(int(tx_time, 16))
+        except ValueError:
+            pass
+
+    for key in ("expires", "expire", "expiry", "e"):
+        value = (query.get(key) or [""])[0]
+        if value.isdigit():
+            candidates.append(int(value))
+
+    plausible = [
+        value
+        for value in candidates
+        if 1_500_000_000 <= value <= 4_000_000_000
+    ]
+    if not plausible:
+        return None
+
+    return datetime.fromtimestamp(
+        max(plausible),
+        tz=ZoneInfo("UTC"),
+    ).astimezone(TIMEZONE)
+
+
+def stream_item_expiry(item: dict[str, Any]) -> datetime | None:
+    stored = parse_iso_datetime(
+        str(item.get("valid_until", "") or "")
+    )
+    if stored is not None:
+        return stored
+    return stream_expiry_datetime(
+        str(item.get("url", "") or "")
+    )
+
+
+def stream_item_is_expired(
+    item: dict[str, Any],
+    now: datetime | None = None,
+) -> bool:
+    expiry = stream_item_expiry(item)
+    if expiry is None:
+        return False
+
+    current = now or datetime.now(TIMEZONE)
+    return expiry <= current + timedelta(
+        seconds=TOKEN_EXPIRY_GRACE_SECONDS
+    )
+
+
+def enrich_stream_item(
+    item: dict[str, Any],
+    discovered_at: str | None = None,
+) -> dict[str, Any]:
+    output = dict(item)
+    output["discovered_at"] = (
+        clean_text(str(output.get("discovered_at", "") or ""))
+        or discovered_at
+        or datetime.now(TIMEZONE).isoformat()
+    )
+    expiry = stream_expiry_datetime(
+        str(output.get("url", "") or "")
+    )
+    output["valid_until"] = (
+        expiry.isoformat() if expiry else ""
+    )
+    output["is_expired"] = stream_item_is_expired(output)
+    return output
+
+
+def stream_preference_key(item: dict[str, Any]) -> tuple[int, float, float, int, int]:
+    expiry = stream_item_expiry(item)
+    discovered = parse_iso_datetime(
+        str(item.get("discovered_at", "") or "")
+    )
+    return (
+        0 if not stream_item_is_expired(item) else 1,
+        -(expiry.timestamp() if expiry else 0.0),
+        -(discovered.timestamp() if discovered else 0.0),
+        0 if item.get("source_confidence") == "network" else 1,
+        -len(str(item.get("url", "") or "")),
+    )
+
+
+def prune_expired_streams(match: dict[str, Any]) -> int:
+    now = datetime.now(TIMEZONE)
+    kept: list[dict[str, Any]] = []
+    expired_room_keys: set[str] = set()
+
+    for raw in match.get("streams", []):
+        if not isinstance(raw, dict):
+            continue
+        item = enrich_stream_item(raw)
+        if stream_item_is_expired(item, now):
+            expired_room_keys.add(stream_queue_key(item))
+            continue
+        kept.append(item)
+
+    removed = len(match.get("streams", [])) - len(kept)
+    match["streams"] = kept
+
+    progress = match.get("room_progress", {})
+    for room_key in expired_room_keys:
+        room_state = progress.get(room_key)
+        if not isinstance(room_state, dict):
+            continue
+        if not streams_for_room_key(match, room_key):
+            room_state["status"] = "retry"
+            room_state["attempts"] = 0
+            room_state["last_stream_count"] = 0
+            room_state["last_error"] = (
+                "Link ký số đã hết hạn; đưa BLV trở lại queue."
+            )
+
+    return removed
+
+
 def limit_streams_per_room(
     match: dict[str, Any],
 ) -> None:
-    """
-    Giữ tối đa MAX_STREAMS_PER_BLV cho mỗi BLV.
-    Ưu tiên network > embedded, m3u8 > flv, URL ký số đầy đủ hơn.
-    """
     grouped: dict[str, list[dict[str, Any]]] = {}
 
-    for item in match.get("streams", []):
+    for raw in match.get("streams", []):
+        if not isinstance(raw, dict):
+            continue
+        item = enrich_stream_item(raw)
+        if stream_item_is_expired(item):
+            continue
         grouped.setdefault(
             stream_queue_key(item),
             [],
@@ -471,19 +639,16 @@ def limit_streams_per_room(
 
     kept: list[dict[str, Any]] = []
 
-    for room_key, items in grouped.items():
+    for items in grouped.values():
         best_by_path: dict[
             tuple[str, str, str],
             dict[str, Any],
         ] = {}
 
         for item in items:
-            url = clean_text(
-                str(item.get("url", "") or "")
-            )
+            url = clean_text(str(item.get("url", "") or ""))
             if not url:
                 continue
-
             parsed = urlsplit(url)
             path_key = (
                 parsed.scheme.lower(),
@@ -491,35 +656,21 @@ def limit_streams_per_room(
                 parsed.path,
             )
             previous = best_by_path.get(path_key)
-
             if (
                 previous is None
-                or len(url)
-                > len(str(previous.get("url", "") or ""))
+                or stream_preference_key(item)
+                < stream_preference_key(previous)
             ):
                 best_by_path[path_key] = item
 
         ranked = sorted(
             best_by_path.values(),
-            key=lambda item: (
-                0
-                if item.get("source_confidence")
-                == "network"
-                else 1,
-                0
-                if stream_kind(
-                    str(item.get("url", "") or "")
-                )
-                == "m3u8"
-                else 1,
-                -len(
-                    str(item.get("url", "") or "")
-                ),
-            ),
+            key=stream_preference_key,
         )
         kept.extend(ranked[:MAX_STREAMS_PER_BLV])
 
     match["streams"] = kept
+
 
 def match_found_blv_ids(
     match: dict[str, Any],
@@ -606,17 +757,15 @@ def update_match_coverage(
 def dedup_match_streams(
     match: dict[str, Any],
 ) -> None:
-    """
-    Mỗi stream-ID/đường dẫn chỉ giữ URL tốt nhất.
-    URL có token/chữ ký và đầy đủ query được ưu tiên.
-    """
-    best: dict[tuple[str, str, str], dict[str, str]] = {}
+    prune_expired_streams(match)
+    best: dict[tuple[str, str, str], dict[str, Any]] = {}
 
-    for item in match.get("streams", []):
-        stream_url = clean_text(
-            item.get("url", "")
-        )
-        if not stream_url:
+    for raw in match.get("streams", []):
+        if not isinstance(raw, dict):
+            continue
+        item = enrich_stream_item(raw)
+        stream_url = clean_text(str(item.get("url", "") or ""))
+        if not stream_url or stream_item_is_expired(item):
             continue
 
         parsed = urlsplit(stream_url)
@@ -625,10 +774,11 @@ def dedup_match_streams(
             parsed.netloc.lower(),
             parsed.path,
         )
-
-        old = best.get(key)
-        if old is None or len(stream_url) > len(
-            old.get("url", "")
+        previous = best.get(key)
+        if (
+            previous is None
+            or stream_preference_key(item)
+            < stream_preference_key(previous)
         ):
             best[key] = item
 
@@ -850,28 +1000,38 @@ def extract_stream_urls_from_value(value: str) -> set[str]:
 def unique_rooms(rooms: list[dict[str, str]]) -> list[dict[str, str]]:
     seen: set[str] = set()
     with_blv: list[dict[str, str]] = []
-    base_rooms: list[dict[str, str]] = []
+    base_rooms_output: list[dict[str, str]] = []
 
     for room in rooms:
         url = clean_text(room.get("url", ""))
-        if not url or url in seen:
+        if not url:
             continue
 
-        seen.add(url)
+        blv_id = (
+            clean_text(room.get("blv_id", ""))
+            or room_blv_id(url)
+        )
+        dedup_key = (
+            f"blv:{blv_id}"
+            if blv_id
+            else f"base:{canonical_match_url(url)}"
+        )
+        if dedup_key in seen:
+            continue
+        seen.add(dedup_key)
+
         item = {
             "url": url,
             "blv": clean_text(room.get("blv", "")),
-            "blv_id": clean_text(room.get("blv_id", ""))
-            or room_blv_id(url),
+            "blv_id": blv_id,
         }
 
-        if item["blv_id"]:
+        if blv_id:
             with_blv.append(item)
         else:
-            base_rooms.append(item)
+            base_rooms_output.append(item)
 
-    # Giữ nguyên thứ tự BLV trên trang. URL tổng chỉ dùng làm fallback sau cùng.
-    return with_blv + base_rooms
+    return with_blv + base_rooms_output
 
 
 # ============================================================
@@ -2135,6 +2295,9 @@ async def scan_match(
         )
 
         pages_opened = 0
+        attempted_this_run: set[str] = set()
+        rate_limited_this_run: set[str] = set()
+        completed_this_run: set[str] = set()
 
         while pages_opened < MAX_ROOMS_PER_MATCH:
             if match_coverage_complete(match):
@@ -2151,12 +2314,21 @@ async def scan_match(
                 break
 
             ensure_room_progress(match)
-            pending_keys = pending_room_keys(match)
+            pending_keys = [
+                key
+                for key in pending_room_keys(match)
+                if key not in attempted_this_run
+            ]
 
             if not pending_keys:
+                print(
+                    "      ℹ️ Không mở lại cùng BLV trong một workflow.",
+                    flush=True,
+                )
                 break
 
             next_key = pending_keys[0]
+            attempted_this_run.add(next_key)
             room = next(
                 (
                     item
@@ -2260,6 +2432,7 @@ async def scan_match(
                     "pending cho runner kế tiếp."
                 )
 
+                rate_limited_this_run.add(next_key)
                 print(
                     f"      🧱 BLV {label}: HTTP 429"
                     " — không đánh dấu đã quét.",
@@ -2459,6 +2632,13 @@ async def scan_match(
                             room_result["url"],
                         "discovered_from_blv":
                             current_room_blv,
+                        "discovered_at":
+                            datetime.now(TIMEZONE).isoformat(),
+                        "valid_until": (
+                            stream_expiry_datetime(stream).isoformat()
+                            if stream_expiry_datetime(stream)
+                            else ""
+                        ),
                     }
                 )
                 existing_urls.add(stream)
@@ -2515,6 +2695,7 @@ async def scan_match(
                 )
             )
 
+            completed_this_run.add(next_key)
             update_match_coverage(match)
 
             print(
@@ -2538,6 +2719,15 @@ async def scan_match(
         update_match_coverage(match)
         match["match_name"] = (
             match_display_name(match)
+        )
+        match["run_attempted_room_keys"] = sorted(
+            attempted_this_run
+        )
+        match["run_rate_limited_room_keys"] = sorted(
+            rate_limited_this_run
+        )
+        match["run_completed_room_keys"] = sorted(
+            completed_this_run
         )
 
         if match.get("streams"):
@@ -2791,152 +2981,297 @@ def build_pending_matches(
     return pending
 
 
+
+
+def pending_fingerprint(
+    pending: list[dict[str, Any]],
+) -> str:
+    normalized = [
+        {
+            "base_url": canonical_match_url(
+                str(item.get("base_url", "") or "")
+            ),
+            "room_keys": sorted(
+                set(item.get("pending_room_keys", []))
+            ),
+        }
+        for item in pending
+    ]
+    normalized.sort(key=lambda item: item["base_url"])
+    encoded = json.dumps(
+        normalized,
+        ensure_ascii=False,
+        sort_keys=True,
+        separators=(",", ":"),
+    ).encode("utf-8")
+    return hashlib.sha256(encoded).hexdigest()
+
+
+def valid_stream_map(
+    matches: list[dict[str, Any]],
+    allowed_urls: set[str] | None = None,
+) -> dict[tuple[str, str, str], dict[str, Any]]:
+    output: dict[tuple[str, str, str], dict[str, Any]] = {}
+
+    for match in matches:
+        base_url = canonical_match_url(
+            str(match.get("base_url", "") or "")
+        )
+        if allowed_urls is not None and base_url not in allowed_urls:
+            continue
+
+        for raw in match.get("streams", []):
+            if not isinstance(raw, dict):
+                continue
+            item = enrich_stream_item(raw)
+            if stream_item_is_expired(item):
+                continue
+            url = clean_text(str(item.get("url", "") or ""))
+            if not url:
+                continue
+            parsed = urlsplit(url)
+            key = (
+                parsed.scheme.lower(),
+                parsed.netloc.lower(),
+                parsed.path,
+            )
+            previous = output.get(key)
+            if (
+                previous is None
+                or stream_preference_key(item)
+                < stream_preference_key(previous)
+            ):
+                output[key] = item
+
+    return output
+
+
+def room_attempt_metric(
+    matches: list[dict[str, Any]],
+    allowed_urls: set[str] | None = None,
+) -> int:
+    total = 0
+    for match in matches:
+        base_url = canonical_match_url(
+            str(match.get("base_url", "") or "")
+        )
+        if allowed_urls is not None and base_url not in allowed_urls:
+            continue
+        for item in match.get("room_progress", {}).values():
+            if not isinstance(item, dict):
+                continue
+            total += int(item.get("attempts", 0) or 0)
+            total += int(item.get("rate_limit_hits", 0) or 0)
+    return total
+
 def write_resume_state(
     matches: list[dict[str, Any]],
     circuit: RateLimitCircuit,
     previous_state: dict[str, Any],
 ) -> dict[str, Any]:
+    for match in matches:
+        dedup_match_streams(match)
+
     pending = build_pending_matches(matches)
-    generated_at = datetime.now(
-        TIMEZONE
-    ).isoformat()
+    generated_at = datetime.now(TIMEZONE).isoformat()
 
     current_urls = {
         canonical_match_url(
-            match.get("base_url", "")
+            str(match.get("base_url", "") or "")
         )
         for match in matches
         if match.get("base_url")
     }
 
-    for match in matches:
-        update_match_coverage(match)
-
     completed_count = sum(
-        1
-        for match in matches
-        if match.get("streams")
+        1 for match in matches if match.get("streams")
     )
     coverage_complete_count = sum(
         1
         for match in matches
         if match_coverage_complete(match)
     )
-    total_stream_count = sum(
-        len(match.get("streams", []))
-        for match in matches
+
+    current_streams = valid_stream_map(
+        matches,
+        current_urls,
+    )
+    previous_matches = previous_state.get("matches", [])
+    previous_streams = valid_stream_map(
+        previous_matches,
+        current_urls,
     )
 
-    previous_matches = previous_state.get(
-        "matches",
-        [],
+    new_link_count = len(
+        set(current_streams) - set(previous_streams)
     )
-    previous_total_streams_current = sum(
-        len(item.get("streams", []))
-        for item in previous_matches
-        if canonical_match_url(
-            item.get("base_url", "")
-        ) in current_urls
+    refreshed_link_count = sum(
+        1
+        for key in set(current_streams) & set(previous_streams)
+        if clean_text(
+            str(current_streams[key].get("url", "") or "")
+        )
+        != clean_text(
+            str(previous_streams[key].get("url", "") or "")
+        )
     )
+    progress_count = new_link_count + refreshed_link_count
+    total_stream_count = len(current_streams)
 
     previous_target_urls = {
-        canonical_match_url(url)
-        for url in previous_state.get(
-            "target_base_urls",
-            [],
-        )
+        canonical_match_url(str(url))
+        for url in previous_state.get("target_base_urls", [])
         if url
     }
-
-    state_is_fresh = bool(
-        previous_state.get("_state_is_fresh")
-    )
+    state_is_fresh = bool(previous_state.get("_state_is_fresh"))
     same_target = bool(
         state_is_fresh
-        and previous_state.get(
-            "_state_schema_matches"
-        )
+        and previous_state.get("_state_schema_matches")
         and previous_target_urls
         and previous_target_urls == current_urls
-    )
-
-    # Progress V9 tính theo số LINK mới,
-    # không chỉ số trận có ít nhất một link.
-    progress_count = max(
-        0,
-        total_stream_count
-        - previous_total_streams_current,
+        and not RESET_CHAIN_GUARD
     )
 
     previous_chain_runs = (
         int(previous_state.get("chain_runs", 0))
-        if same_target
-        else 0
+        if same_target else 0
     )
     chain_runs = previous_chain_runs + 1
 
     previous_no_progress = (
         int(previous_state.get("no_progress_runs", 0))
-        if same_target
-        else 0
+        if same_target else 0
     )
     no_progress_runs = (
-        0
-        if progress_count > 0
+        0 if progress_count > 0
         else previous_no_progress + 1
     )
 
+    fingerprint = pending_fingerprint(pending)
+    previous_fingerprint = (
+        str(previous_state.get("pending_fingerprint", ""))
+        if same_target else ""
+    )
+    previous_unchanged = (
+        int(previous_state.get("unchanged_pending_runs", 0))
+        if same_target else 0
+    )
+    unchanged_pending_runs = (
+        previous_unchanged + 1
+        if pending and fingerprint == previous_fingerprint
+        else 0
+    )
+
+    current_attempt_metric = room_attempt_metric(
+        matches,
+        current_urls,
+    )
+    previous_attempt_metric = room_attempt_metric(
+        previous_matches,
+        current_urls,
+    )
+    newly_attempted_count = max(
+        0,
+        current_attempt_metric - previous_attempt_metric,
+    )
+
+    run_attempted_count = sum(
+        len(set(match.get("run_attempted_room_keys", [])))
+        for match in matches
+    )
+    run_rate_limited_count = sum(
+        len(set(match.get("run_rate_limited_room_keys", [])))
+        for match in matches
+    )
+    rate_limit_only_run = bool(
+        circuit.triggered.is_set()
+        and progress_count == 0
+        and run_attempted_count > 0
+        and run_rate_limited_count >= run_attempted_count
+    )
+    previous_rate_limit_only = (
+        int(previous_state.get("rate_limit_only_runs", 0))
+        if same_target else 0
+    )
+    rate_limit_only_runs = (
+        previous_rate_limit_only + 1
+        if rate_limit_only_run else 0
+    )
+
     has_pending = bool(pending)
-    within_chain_limit = bool(
+    pending_room_count = sum(
+        len(item.get("pending_room_keys", []))
+        for item in pending
+    )
+
+    within_chain_limit = (
         STATE_MAX_CHAIN_RUNS <= 0
         or chain_runs < STATE_MAX_CHAIN_RUNS
     )
-    within_no_progress_limit = bool(
+    within_no_progress_limit = (
         STATE_MAX_NO_PROGRESS_RUNS <= 0
-        or no_progress_runs
-        < STATE_MAX_NO_PROGRESS_RUNS
+        or no_progress_runs < STATE_MAX_NO_PROGRESS_RUNS
+    )
+    within_unchanged_limit = (
+        STATE_MAX_UNCHANGED_PENDING_RUNS <= 0
+        or unchanged_pending_runs
+        < STATE_MAX_UNCHANGED_PENDING_RUNS
+    )
+    within_rate_limit_only_limit = (
+        STATE_MAX_RATE_LIMIT_ONLY_RUNS <= 0
+        or rate_limit_only_runs
+        < STATE_MAX_RATE_LIMIT_ONLY_RUNS
     )
 
-    if CHAIN_UNTIL_PENDING_EMPTY:
-        dispatch_next = bool(
-            has_pending
-            and within_chain_limit
-            and within_no_progress_limit
-        )
-    else:
-        dispatch_next = bool(
-            has_pending
-            and within_chain_limit
-            and within_no_progress_limit
-            and (
-                progress_count > 0
-                or circuit.triggered.is_set()
-            )
-        )
+    useful_activity = bool(
+        progress_count > 0
+        or newly_attempted_count > 0
+        or circuit.triggered.is_set()
+    )
+    dispatch_next = bool(
+        has_pending
+        and within_chain_limit
+        and within_no_progress_limit
+        and within_unchanged_limit
+        and within_rate_limit_only_limit
+        and useful_activity
+    )
 
-    stop_reason = ""
     if not has_pending:
         stop_reason = "complete"
     elif not within_chain_limit:
         stop_reason = "max_chain_runs"
     elif not within_no_progress_limit:
-        stop_reason = "no_progress_guard"
-    elif not dispatch_next:
-        stop_reason = "no_progress_or_no_rate_limit"
+        stop_reason = "stalled_no_valid_link_progress"
+    elif not within_unchanged_limit:
+        stop_reason = "stalled_pending_fingerprint_unchanged"
+    elif not within_rate_limit_only_limit:
+        stop_reason = "stalled_rate_limit_only"
+    elif not useful_activity:
+        stop_reason = "no_useful_activity"
+    else:
+        stop_reason = ""
 
     decision_payload = {
         "generated_at": generated_at,
         "state_schema_version": STATE_SCHEMA_VERSION,
         "dispatch_next": dispatch_next,
         "pending_count": len(pending),
+        "pending_room_count": pending_room_count,
         "completed_count": completed_count,
-        "coverage_complete_count":
-            coverage_complete_count,
+        "coverage_complete_count": coverage_complete_count,
         "total_match_count": len(matches),
         "total_stream_count": total_stream_count,
         "progress_count": progress_count,
+        "new_link_count": new_link_count,
+        "refreshed_link_count": refreshed_link_count,
+        "newly_attempted_count": newly_attempted_count,
         "chain_runs": chain_runs,
         "no_progress_runs": no_progress_runs,
+        "unchanged_pending_runs": unchanged_pending_runs,
+        "rate_limit_only_runs": rate_limit_only_runs,
+        "rate_limit_only_run": rate_limit_only_run,
+        "pending_fingerprint": fingerprint,
         "stop_reason": stop_reason,
         "rate_limited": circuit.triggered.is_set(),
         "rate_limit_url": circuit.first_url,
@@ -2954,70 +3289,52 @@ def write_resume_state(
     }
 
     Path(OUTPUT_STATE).write_text(
-        json.dumps(
-            state_payload,
-            ensure_ascii=False,
-            indent=2,
-        ),
+        json.dumps(state_payload, ensure_ascii=False, indent=2),
         encoding="utf-8",
     )
-
     Path(OUTPUT_PENDING).write_text(
         json.dumps(
-            {
-                **decision_payload,
-                "count": len(pending),
-                "matches": pending,
-            },
+            {**decision_payload, "count": len(pending), "matches": pending},
             ensure_ascii=False,
             indent=2,
         ),
         encoding="utf-8",
     )
-
-    # Workflow chỉ đọc file này. Nó được xóa trước mỗi run,
-    # nên không thể nhầm với state của một run cũ.
     Path(OUTPUT_DECISION).write_text(
-        json.dumps(
-            decision_payload,
-            ensure_ascii=False,
-            indent=2,
-        ),
+        json.dumps(decision_payload, ensure_ascii=False, indent=2),
         encoding="utf-8",
     )
 
     print(
-        f"📈 Tiến triển run này: +{progress_count} link "
-        f"| có link={completed_count}/{len(matches)} "
-        f"| đủ coverage={coverage_complete_count}/{len(matches)} "
-        f"| pending={len(pending)}",
+        f"📈 Tiến triển hợp lệ: +{new_link_count} link mới"
+        f" | +{refreshed_link_count} token mới"
+        f" | tổng hợp lệ={total_stream_count}"
+        f" | pending={len(pending)} trận/{pending_room_count} BLV",
         flush=True,
     )
     print(
-        f"🔗 Chuỗi run: {chain_runs}/"
-        f"{STATE_MAX_CHAIN_RUNS if STATE_MAX_CHAIN_RUNS > 0 else '∞'} "
-        f"| không tiến triển liên tiếp="
-        f"{no_progress_runs}/"
-        f"{STATE_MAX_NO_PROGRESS_RUNS if STATE_MAX_NO_PROGRESS_RUNS > 0 else 'tắt'}",
+        f"🛡️ Stall guard: no-progress={no_progress_runs}/"
+        f"{STATE_MAX_NO_PROGRESS_RUNS}"
+        f" | pending-không-đổi={unchanged_pending_runs}/"
+        f"{STATE_MAX_UNCHANGED_PENDING_RUNS}"
+        f" | chỉ-429={rate_limit_only_runs}/"
+        f"{STATE_MAX_RATE_LIMIT_ONLY_RUNS}"
+        f" | chain={chain_runs}/{STATE_MAX_CHAIN_RUNS}",
         flush=True,
     )
 
     if dispatch_next:
         print(
-            "🚀 Còn trận thiếu — workflow sẽ tự gọi "
-            "một runner mới ngay sau khi push checkpoint.",
+            "🚀 Còn BLV thiếu và chưa chạm stall guard — gọi runner mới.",
             flush=True,
         )
     elif pending:
         print(
-            f"⛔ Không tự gọi tiếp: {stop_reason}",
+            f"🛑 TỰ DỪNG CHUỖI: {stop_reason}",
             flush=True,
         )
     else:
-        print(
-            "✅ Không còn trận chờ quét.",
-            flush=True,
-        )
+        print("✅ Không còn BLV chờ quét.", flush=True)
 
     return state_payload
 
@@ -3046,26 +3363,25 @@ def merge_stream_lists(
     old_streams: list[dict[str, Any]],
     new_streams: list[dict[str, Any]],
 ) -> list[dict[str, Any]]:
-    """
-    Hợp nhất theo đường dẫn stream. Stream của run hiện tại được xử lý sau,
-    vì vậy URL chữ ký/token mới sẽ thay URL cũ cùng đường dẫn.
-    """
     merged: dict[
         tuple[str, str, str],
         dict[str, Any],
     ] = {}
 
-    for item in list(old_streams) + list(new_streams):
-        if not isinstance(item, dict):
+    for raw in list(old_streams) + list(new_streams):
+        if not isinstance(raw, dict):
             continue
-
-        url = clean_text(
-            str(item.get("url", "") or "")
-        )
-        if not url:
+        item = enrich_stream_item(raw)
+        if stream_item_is_expired(item):
             continue
-
-        merged[stream_identity(item)] = dict(item)
+        key = stream_identity(item)
+        previous = merged.get(key)
+        if (
+            previous is None
+            or stream_preference_key(item)
+            < stream_preference_key(previous)
+        ):
+            merged[key] = item
 
     return list(merged.values())
 
@@ -3470,13 +3786,21 @@ def write_outputs(matches: list[dict[str, Any]]) -> tuple[int, int]:
                         CATALOG_RETENTION_AFTER_START_MINUTES,
                     "catalog_retention_unseen_minutes":
                         CATALOG_RETENTION_UNSEEN_MINUTES,
+                    "state_max_unchanged_pending_runs":
+                        STATE_MAX_UNCHANGED_PENDING_RUNS,
+                    "state_max_rate_limit_only_runs":
+                        STATE_MAX_RATE_LIMIT_ONLY_RUNS,
+                    "resume_state_first":
+                        RESUME_STATE_FIRST,
+                    "token_expiry_grace_seconds":
+                        TOKEN_EXPIRY_GRACE_SECONDS,
                     "max_successful_rooms_per_match":
                         MAX_SUCCESSFUL_ROOMS_PER_MATCH,
                     "http_first": HTTP_FIRST,
                     "http_fetch_timeout_seconds": HTTP_FETCH_TIMEOUT_SECONDS,
                     "enable_cdp": ENABLE_CDP,
                     "stop_on_429": STOP_ON_429,
-                    "strategy": "v10.2-cumulative-catalog-long-harvest",
+                    "strategy": "v10.3-safe-chain-valid-streams",
                     "state_schema_version": STATE_SCHEMA_VERSION,
                     "state_max_age_minutes": STATE_MAX_AGE_MINUTES,
                     "state_max_chain_runs": STATE_MAX_CHAIN_RUNS,
@@ -3494,11 +3818,12 @@ def write_outputs(matches: list[dict[str, Any]]) -> tuple[int, int]:
         encoding="utf-8",
     )
 
-    if count_links:
-        Path(OUTPUT_M3U).write_text(
-            "\n".join(playlist) + "\n",
-            encoding="utf-8",
-        )
+    # Luôn ghi lại playlist. Nếu catalog đã hết link hợp lệ, file chỉ còn
+    # #EXTM3U thay vì giữ nhầm link hết hạn từ workflow trước.
+    Path(OUTPUT_M3U).write_text(
+        "\n".join(playlist) + "\n",
+        encoding="utf-8",
+    )
 
     return count_matches, count_links
 
@@ -3507,7 +3832,7 @@ def write_outputs(matches: list[dict[str, Any]]) -> tuple[int, int]:
 # MAIN
 # ============================================================
 async def main() -> None:
-    print("🥷 SOCOLIVE STREAM SCANNER V10.2 - CUMULATIVE CATALOG + LONG HARVEST")
+    print("🥷 SOCOLIVE STREAM SCANNER V10.3 - SAFE CHAIN + VALID STREAM AUDIT")
     print(
         "ℹ️ Test riêng một URL:\n"
         '   python main.py "https://socolivem.cv/truc-tiep/.../?blv=..."'
@@ -3574,6 +3899,18 @@ async def main() -> None:
             }"""
         )
 
+        previous_state = load_previous_state()
+
+        can_resume_state = bool(
+            not direct_urls
+            and RESUME_STATE_FIRST
+            and not RESET_CHAIN_GUARD
+            and previous_state.get("_state_is_fresh")
+            and previous_state.get("_state_schema_matches")
+            and previous_state.get("pending_base_urls")
+            and previous_state.get("matches")
+        )
+
         if direct_urls:
             grouped: dict[str, dict[str, Any]] = {}
 
@@ -3627,6 +3964,25 @@ async def main() -> None:
                 f"✅ Chế độ test trực tiếp: "
                 f"{len(matches)} trận."
             )
+        elif can_resume_state:
+            matches = copy.deepcopy(
+                previous_state.get("matches", [])
+            )
+            for match in matches:
+                match["rooms"] = unique_rooms(
+                    match.get("rooms", [])
+                )
+                dedup_match_streams(match)
+            order_pending_first(matches, previous_state)
+            print(
+                f"♻️ Chain resume: dùng trực tiếp queue state "
+                f"({len(matches)} trận), không tải lại trang chủ.",
+                flush=True,
+            )
+            Path(OUTPUT_MATCHES).write_text(
+                json.dumps(matches, ensure_ascii=False, indent=2),
+                encoding="utf-8",
+            )
         else:
             all_matches = await collect_home_matches(context)
             now = datetime.now(TIMEZONE)
@@ -3642,7 +3998,6 @@ async def main() -> None:
                 f"chọn {len(matches)} trận trong khung đang/sắp đá."
             )
 
-            # Ghi metadata ngay cả trước khi quét stream.
             Path(OUTPUT_MATCHES).write_text(
                 json.dumps(
                     all_matches,
@@ -3661,10 +4016,9 @@ async def main() -> None:
             await browser.close()
             return
 
-        previous_state = load_previous_state()
-
-        # Direct-test không trộn với danh sách tự động của lần chạy cũ.
-        if not direct_urls:
+        # Direct-test không trộn state. Chain resume đã mang nguyên queue cũ;
+        # chỉ homepage mới cần hợp nhất state vào danh sách vừa thu thập.
+        if not direct_urls and not can_resume_state:
             merge_previous_streams(
                 matches,
                 previous_state,
@@ -3673,7 +4027,7 @@ async def main() -> None:
                 matches,
                 previous_state,
             )
-        else:
+        elif direct_urls:
             matches.sort(key=match_priority_key)
 
         semaphore = asyncio.Semaphore(MATCH_CONCURRENCY)
