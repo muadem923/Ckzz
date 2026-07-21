@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-21T08:47:50.766410+07:00",
+  "generated_at": "2026-07-21T08:49:09.293765+07:00",
   "state_schema_version": "v10.1-long-harvest-two-streams",
   "dispatch_next": true,
   "pending_count": 1,
@@ -8,11 +8,11 @@
   "total_match_count": 1,
   "total_stream_count": 1,
   "progress_count": 0,
-  "chain_runs": 13,
-  "no_progress_runs": 13,
+  "chain_runs": 14,
+  "no_progress_runs": 14,
   "stop_reason": "",
-  "rate_limited": true,
-  "rate_limit_url": "https://socolivep.cv/truc-tiep/central-norte-salta-vs-deportivo-moron-21-07-2026-0730?blv=414317",
+  "rate_limited": false,
+  "rate_limit_url": "",
   "count": 1,
   "matches": [
     {
@@ -37,6 +37,26 @@
         },
         {
           "url": "https://socolivep.cv/truc-tiep/central-norte-salta-vs-deportivo-moron-21-07-2026-0730?blv=118206",
+          "blv": "TẠ BIÊN GIỚI",
+          "blv_id": "118206"
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/central-norte-salta-vs-deportivo-moron-21-07-2026-0730/?blv=414317",
+          "blv": "TOMMY",
+          "blv_id": "414317"
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/central-norte-salta-vs-deportivo-moron-21-07-2026-0730/?blv=109053",
+          "blv": "PEWPEW",
+          "blv_id": "109053"
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/central-norte-salta-vs-deportivo-moron-21-07-2026-0730/?blv=327159",
+          "blv": "COCA",
+          "blv_id": "327159"
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/central-norte-salta-vs-deportivo-moron-21-07-2026-0730/?blv=118206",
           "blv": "TẠ BIÊN GIỚI",
           "blv_id": "118206"
         },
@@ -89,8 +109,12 @@
         "room_queue_complete": false,
         "complete": false,
         "max_streams_per_blv": 2,
-        "total_explicit_blv_rooms": 4,
+        "total_explicit_blv_rooms": 8,
         "pending_room_keys": [
+          "414317",
+          "109053",
+          "327159",
+          "118206",
           "414317",
           "109053",
           "327159",
@@ -99,19 +123,19 @@
         "room_progress": {
           "414317": {
             "key": "414317",
-            "url": "https://socolivep.cv/truc-tiep/central-norte-salta-vs-deportivo-moron-21-07-2026-0730?blv=414317",
+            "url": "https://socolivep.cv/truc-tiep/central-norte-salta-vs-deportivo-moron-21-07-2026-0730/?blv=414317",
             "blv": "TOMMY",
             "blv_id": "414317",
             "status": "rate_limited",
-            "attempts": 120,
+            "attempts": 123,
             "rate_limit_hits": 27,
-            "last_http_status": 429,
-            "last_stream_count": 0,
-            "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
+            "last_http_status": 200,
+            "last_stream_count": 1,
+            "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
           },
           "109053": {
             "key": "109053",
-            "url": "https://socolivep.cv/truc-tiep/central-norte-salta-vs-deportivo-moron-21-07-2026-0730?blv=109053",
+            "url": "https://socolivep.cv/truc-tiep/central-norte-salta-vs-deportivo-moron-21-07-2026-0730/?blv=109053",
             "blv": "PEWPEW",
             "blv_id": "109053",
             "status": "pending",
@@ -123,7 +147,7 @@
           },
           "327159": {
             "key": "327159",
-            "url": "https://socolivep.cv/truc-tiep/central-norte-salta-vs-deportivo-moron-21-07-2026-0730?blv=327159",
+            "url": "https://socolivep.cv/truc-tiep/central-norte-salta-vs-deportivo-moron-21-07-2026-0730/?blv=327159",
             "blv": "COCA",
             "blv_id": "327159",
             "status": "pending",
@@ -135,7 +159,7 @@
           },
           "118206": {
             "key": "118206",
-            "url": "https://socolivep.cv/truc-tiep/central-norte-salta-vs-deportivo-moron-21-07-2026-0730?blv=118206",
+            "url": "https://socolivep.cv/truc-tiep/central-norte-salta-vs-deportivo-moron-21-07-2026-0730/?blv=118206",
             "blv": "TẠ BIÊN GIỚI",
             "blv_id": "118206",
             "status": "pending",
@@ -165,19 +189,19 @@
       "room_progress": {
         "414317": {
           "key": "414317",
-          "url": "https://socolivep.cv/truc-tiep/central-norte-salta-vs-deportivo-moron-21-07-2026-0730?blv=414317",
+          "url": "https://socolivep.cv/truc-tiep/central-norte-salta-vs-deportivo-moron-21-07-2026-0730/?blv=414317",
           "blv": "TOMMY",
           "blv_id": "414317",
           "status": "rate_limited",
-          "attempts": 120,
+          "attempts": 123,
           "rate_limit_hits": 27,
-          "last_http_status": 429,
-          "last_stream_count": 0,
-          "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
+          "last_http_status": 200,
+          "last_stream_count": 1,
+          "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
         },
         "109053": {
           "key": "109053",
-          "url": "https://socolivep.cv/truc-tiep/central-norte-salta-vs-deportivo-moron-21-07-2026-0730?blv=109053",
+          "url": "https://socolivep.cv/truc-tiep/central-norte-salta-vs-deportivo-moron-21-07-2026-0730/?blv=109053",
           "blv": "PEWPEW",
           "blv_id": "109053",
           "status": "pending",
@@ -189,7 +213,7 @@
         },
         "327159": {
           "key": "327159",
-          "url": "https://socolivep.cv/truc-tiep/central-norte-salta-vs-deportivo-moron-21-07-2026-0730?blv=327159",
+          "url": "https://socolivep.cv/truc-tiep/central-norte-salta-vs-deportivo-moron-21-07-2026-0730/?blv=327159",
           "blv": "COCA",
           "blv_id": "327159",
           "status": "pending",
@@ -201,7 +225,7 @@
         },
         "118206": {
           "key": "118206",
-          "url": "https://socolivep.cv/truc-tiep/central-norte-salta-vs-deportivo-moron-21-07-2026-0730?blv=118206",
+          "url": "https://socolivep.cv/truc-tiep/central-norte-salta-vs-deportivo-moron-21-07-2026-0730/?blv=118206",
           "blv": "TẠ BIÊN GIỚI",
           "blv_id": "118206",
           "status": "pending",
@@ -225,6 +249,10 @@
         }
       },
       "pending_room_keys": [
+        "414317",
+        "109053",
+        "327159",
+        "118206",
         "414317",
         "109053",
         "327159",
