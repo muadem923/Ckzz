@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-21T17:19:10.675253+07:00",
+  "generated_at": "2026-07-21T17:20:08.020626+07:00",
   "state_schema_version": "v10.3-safe-chain-valid-streams",
   "dispatch_next": true,
   "pending_count": 6,
@@ -8,25 +8,25 @@
   "coverage_complete_count": 0,
   "total_match_count": 6,
   "total_stream_count": 6,
-  "progress_count": 1,
+  "progress_count": 0,
   "new_link_count": 0,
-  "refreshed_link_count": 1,
-  "newly_attempted_count": 11,
-  "attempt_metric_delta": 2,
+  "refreshed_link_count": 0,
+  "newly_attempted_count": 1,
+  "attempt_metric_delta": 1,
   "pending_state_changed": true,
   "real_progress_for_fingerprint": true,
-  "run_attempted_count": 12,
-  "run_rate_limited_count": 0,
+  "run_attempted_count": 1,
+  "run_rate_limited_count": 1,
   "useful_activity": true,
-  "chain_runs": 10,
-  "no_progress_runs": 0,
+  "chain_runs": 11,
+  "no_progress_runs": 1,
   "unchanged_pending_runs": 0,
-  "rate_limit_only_runs": 0,
-  "rate_limit_only_run": false,
-  "pending_fingerprint": "c2acd49060f3cc23dd3b7026f604243ae79bfb2835ef289c9a67851c59d949ba",
+  "rate_limit_only_runs": 1,
+  "rate_limit_only_run": true,
+  "pending_fingerprint": "ff28978181b3295badea28c2e0022263e6cc5284bd991c9ce0a4cf886607f18d",
   "stop_reason": "",
-  "rate_limited": false,
-  "rate_limit_url": "",
+  "rate_limited": true,
+  "rate_limit_url": "https://socolivep.cv/truc-tiep/yunnan-yukun-vs-chengdu-rongcheng-21-07-2026-1400?blv=595335",
   "count": 6,
   "matches": [
     {
@@ -103,12 +103,12 @@
         "max_streams_per_blv": 2,
         "total_explicit_blv_rooms": 6,
         "pending_room_keys": [
-          "595335",
           "380460",
           "607552",
           "622093",
           "536185",
-          "531989"
+          "531989",
+          "595335"
         ],
         "room_progress": {
           "595335": {
@@ -116,12 +116,12 @@
             "url": "https://socolivep.cv/truc-tiep/yunnan-yukun-vs-chengdu-rongcheng-21-07-2026-1400?blv=595335",
             "blv": "NGƯỜI CÁ",
             "blv_id": "595335",
-            "status": "retry",
+            "status": "rate_limited",
             "attempts": 0,
-            "rate_limit_hits": 0,
-            "last_http_status": 200,
+            "rate_limit_hits": 1,
+            "last_http_status": 429,
             "last_stream_count": 0,
-            "last_error": "Link ký số đã hết hạn; đưa BLV trở lại queue."
+            "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
           },
           "531989": {
             "key": "531989",
@@ -206,12 +206,12 @@
           "url": "https://socolivep.cv/truc-tiep/yunnan-yukun-vs-chengdu-rongcheng-21-07-2026-1400?blv=595335",
           "blv": "NGƯỜI CÁ",
           "blv_id": "595335",
-          "status": "retry",
+          "status": "rate_limited",
           "attempts": 0,
-          "rate_limit_hits": 0,
-          "last_http_status": 200,
+          "rate_limit_hits": 1,
+          "last_http_status": 429,
           "last_stream_count": 0,
-          "last_error": "Link ký số đã hết hạn; đưa BLV trở lại queue."
+          "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
         },
         "531989": {
           "key": "531989",
@@ -287,12 +287,12 @@
         }
       },
       "pending_room_keys": [
-        "595335",
         "380460",
         "607552",
         "622093",
         "536185",
-        "531989"
+        "531989",
+        "595335"
       ]
     },
     {
