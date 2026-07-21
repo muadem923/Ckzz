@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-21T10:38:05.487939+07:00",
+  "generated_at": "2026-07-21T10:39:38.673491+07:00",
   "state_schema_version": "v10.1-long-harvest-two-streams",
   "dispatch_next": true,
   "pending_count": 6,
@@ -8,11 +8,11 @@
   "total_match_count": 6,
   "total_stream_count": 4,
   "progress_count": 0,
-  "chain_runs": 28,
-  "no_progress_runs": 26,
+  "chain_runs": 29,
+  "no_progress_runs": 27,
   "stop_reason": "",
   "rate_limited": true,
-  "rate_limit_url": "https://socolivep.cv/truc-tiep/henan-fc-vs-dalian-yingbo-21-07-2026-1400?blv=612098",
+  "rate_limit_url": "https://socolivep.cv/truc-tiep/wuhan-three-towns-vs-shandong-taishan-21-07-2026-1400/?blv=250874",
   "count": 6,
   "matches": [
     {
@@ -141,11 +141,11 @@
             "blv": "NGƯỜI CÁ",
             "blv_id": "595335",
             "status": "rate_limited",
-            "attempts": 36,
-            "rate_limit_hits": 16,
-            "last_http_status": 200,
-            "last_stream_count": 1,
-            "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
+            "attempts": 37,
+            "rate_limit_hits": 17,
+            "last_http_status": 429,
+            "last_stream_count": 0,
+            "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
           },
           "531989": {
             "key": "531989",
@@ -231,11 +231,11 @@
           "blv": "NGƯỜI CÁ",
           "blv_id": "595335",
           "status": "rate_limited",
-          "attempts": 36,
-          "rate_limit_hits": 16,
-          "last_http_status": 200,
-          "last_stream_count": 1,
-          "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
+          "attempts": 37,
+          "rate_limit_hits": 17,
+          "last_http_status": 429,
+          "last_stream_count": 0,
+          "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
         },
         "531989": {
           "key": "531989",
@@ -351,6 +351,26 @@
           "blv_id": "304148"
         },
         {
+          "url": "https://socolivep.cv/truc-tiep/henan-fc-vs-dalian-yingbo-21-07-2026-1400/?blv=612098",
+          "blv": "BEN 10",
+          "blv_id": "612098"
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/henan-fc-vs-dalian-yingbo-21-07-2026-1400/?blv=283501",
+          "blv": "KAN",
+          "blv_id": "283501"
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/henan-fc-vs-dalian-yingbo-21-07-2026-1400/?blv=372746",
+          "blv": "YONE",
+          "blv_id": "372746"
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/henan-fc-vs-dalian-yingbo-21-07-2026-1400/?blv=304148",
+          "blv": "LUCAS",
+          "blv_id": "304148"
+        },
+        {
           "url": "https://socolivep.cv/truc-tiep/henan-fc-vs-dalian-yingbo-21-07-2026-1400",
           "blv": "XEM NGAY",
           "blv_id": ""
@@ -389,8 +409,12 @@
         "room_queue_complete": false,
         "complete": false,
         "max_streams_per_blv": 2,
-        "total_explicit_blv_rooms": 4,
+        "total_explicit_blv_rooms": 8,
         "pending_room_keys": [
+          "612098",
+          "283501",
+          "372746",
+          "304148",
           "612098",
           "283501",
           "372746",
@@ -399,19 +423,19 @@
         "room_progress": {
           "612098": {
             "key": "612098",
-            "url": "https://socolivep.cv/truc-tiep/henan-fc-vs-dalian-yingbo-21-07-2026-1400?blv=612098",
+            "url": "https://socolivep.cv/truc-tiep/henan-fc-vs-dalian-yingbo-21-07-2026-1400/?blv=612098",
             "blv": "BEN 10",
             "blv_id": "612098",
             "status": "rate_limited",
-            "attempts": 38,
-            "rate_limit_hits": 14,
+            "attempts": 39,
+            "rate_limit_hits": 15,
             "last_http_status": 429,
             "last_stream_count": 0,
             "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
           },
           "283501": {
             "key": "283501",
-            "url": "https://socolivep.cv/truc-tiep/henan-fc-vs-dalian-yingbo-21-07-2026-1400?blv=283501",
+            "url": "https://socolivep.cv/truc-tiep/henan-fc-vs-dalian-yingbo-21-07-2026-1400/?blv=283501",
             "blv": "KAN",
             "blv_id": "283501",
             "status": "pending",
@@ -423,7 +447,7 @@
           },
           "372746": {
             "key": "372746",
-            "url": "https://socolivep.cv/truc-tiep/henan-fc-vs-dalian-yingbo-21-07-2026-1400?blv=372746",
+            "url": "https://socolivep.cv/truc-tiep/henan-fc-vs-dalian-yingbo-21-07-2026-1400/?blv=372746",
             "blv": "YONE",
             "blv_id": "372746",
             "status": "pending",
@@ -435,7 +459,7 @@
           },
           "304148": {
             "key": "304148",
-            "url": "https://socolivep.cv/truc-tiep/henan-fc-vs-dalian-yingbo-21-07-2026-1400?blv=304148",
+            "url": "https://socolivep.cv/truc-tiep/henan-fc-vs-dalian-yingbo-21-07-2026-1400/?blv=304148",
             "blv": "LUCAS",
             "blv_id": "304148",
             "status": "pending",
@@ -465,19 +489,19 @@
       "room_progress": {
         "612098": {
           "key": "612098",
-          "url": "https://socolivep.cv/truc-tiep/henan-fc-vs-dalian-yingbo-21-07-2026-1400?blv=612098",
+          "url": "https://socolivep.cv/truc-tiep/henan-fc-vs-dalian-yingbo-21-07-2026-1400/?blv=612098",
           "blv": "BEN 10",
           "blv_id": "612098",
           "status": "rate_limited",
-          "attempts": 38,
-          "rate_limit_hits": 14,
+          "attempts": 39,
+          "rate_limit_hits": 15,
           "last_http_status": 429,
           "last_stream_count": 0,
           "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
         },
         "283501": {
           "key": "283501",
-          "url": "https://socolivep.cv/truc-tiep/henan-fc-vs-dalian-yingbo-21-07-2026-1400?blv=283501",
+          "url": "https://socolivep.cv/truc-tiep/henan-fc-vs-dalian-yingbo-21-07-2026-1400/?blv=283501",
           "blv": "KAN",
           "blv_id": "283501",
           "status": "pending",
@@ -489,7 +513,7 @@
         },
         "372746": {
           "key": "372746",
-          "url": "https://socolivep.cv/truc-tiep/henan-fc-vs-dalian-yingbo-21-07-2026-1400?blv=372746",
+          "url": "https://socolivep.cv/truc-tiep/henan-fc-vs-dalian-yingbo-21-07-2026-1400/?blv=372746",
           "blv": "YONE",
           "blv_id": "372746",
           "status": "pending",
@@ -501,7 +525,7 @@
         },
         "304148": {
           "key": "304148",
-          "url": "https://socolivep.cv/truc-tiep/henan-fc-vs-dalian-yingbo-21-07-2026-1400?blv=304148",
+          "url": "https://socolivep.cv/truc-tiep/henan-fc-vs-dalian-yingbo-21-07-2026-1400/?blv=304148",
           "blv": "LUCAS",
           "blv_id": "304148",
           "status": "pending",
@@ -525,6 +549,10 @@
         }
       },
       "pending_room_keys": [
+        "612098",
+        "283501",
+        "372746",
+        "304148",
         "612098",
         "283501",
         "372746",
@@ -657,11 +685,11 @@
             "blv": "FIREMAN",
             "blv_id": "250874",
             "status": "rate_limited",
-            "attempts": 34,
-            "rate_limit_hits": 18,
-            "last_http_status": 200,
-            "last_stream_count": 1,
-            "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
+            "attempts": 35,
+            "rate_limit_hits": 19,
+            "last_http_status": 429,
+            "last_stream_count": 0,
+            "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
           },
           "494201": {
             "key": "494201",
@@ -747,11 +775,11 @@
           "blv": "FIREMAN",
           "blv_id": "250874",
           "status": "rate_limited",
-          "attempts": 34,
-          "rate_limit_hits": 18,
-          "last_http_status": 200,
-          "last_stream_count": 1,
-          "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
+          "attempts": 35,
+          "rate_limit_hits": 19,
+          "last_http_status": 429,
+          "last_stream_count": 0,
+          "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
         },
         "494201": {
           "key": "494201",
@@ -967,11 +995,11 @@
             "blv": "PEWPEW",
             "blv_id": "109053",
             "status": "rate_limited",
-            "attempts": 29,
-            "rate_limit_hits": 23,
-            "last_http_status": 200,
-            "last_stream_count": 1,
-            "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
+            "attempts": 30,
+            "rate_limit_hits": 24,
+            "last_http_status": 429,
+            "last_stream_count": 0,
+            "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
           },
           "291277": {
             "key": "291277",
@@ -1057,11 +1085,11 @@
           "blv": "PEWPEW",
           "blv_id": "109053",
           "status": "rate_limited",
-          "attempts": 29,
-          "rate_limit_hits": 23,
-          "last_http_status": 200,
-          "last_stream_count": 1,
-          "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
+          "attempts": 30,
+          "rate_limit_hits": 24,
+          "last_http_status": 429,
+          "last_stream_count": 0,
+          "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
         },
         "291277": {
           "key": "291277",
