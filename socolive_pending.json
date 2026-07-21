@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-21T17:07:54.526403+07:00",
+  "generated_at": "2026-07-21T17:11:48.996430+07:00",
   "state_schema_version": "v10.3-safe-chain-valid-streams",
   "dispatch_next": true,
   "pending_count": 6,
@@ -7,7 +7,7 @@
   "completed_count": 4,
   "coverage_complete_count": 0,
   "total_match_count": 6,
-  "total_stream_count": 5,
+  "total_stream_count": 6,
   "progress_count": 1,
   "new_link_count": 1,
   "refreshed_link_count": 0,
@@ -18,12 +18,12 @@
   "run_attempted_count": 12,
   "run_rate_limited_count": 0,
   "useful_activity": true,
-  "chain_runs": 7,
+  "chain_runs": 8,
   "no_progress_runs": 0,
   "unchanged_pending_runs": 0,
   "rate_limit_only_runs": 0,
   "rate_limit_only_run": false,
-  "pending_fingerprint": "767281ebf23b4464d056e53f5f2f9ab5eb75a7f147852d724a26b6471fa76e7f",
+  "pending_fingerprint": "92080bfe0db26d9ea919b549d9d98b0547674ea07faa607b728d4a478d28ef7e",
   "stop_reason": "",
   "rate_limited": false,
   "rate_limit_url": "",
@@ -364,11 +364,31 @@
           "discovered_at": "2026-07-21T17:05:56.003053+07:00",
           "valid_until": "2026-07-21T18:00:55+07:00",
           "is_expired": false
+        },
+        {
+          "url": "https://pull.niues.live/live/stream-304148_lhd.m3u8?auth_key=1784631355-0-0-9a6120fae1bc7e2c4efde0fb95f801ee",
+          "queue_room_key": "304148",
+          "room_url": "https://socolivep.cv/truc-tiep/henan-fc-vs-dalian-yingbo-21-07-2026-1400?blv=304148",
+          "blv": "LUCAS",
+          "blv_id": "304148",
+          "source_id": "304148",
+          "source_provenance": [
+            "final-no-stream-scan",
+            "harvest-final"
+          ],
+          "source_confidence": "embedded",
+          "mapping_mode": "exact-room-id",
+          "discovered_from_room_url": "https://socolivep.cv/truc-tiep/henan-fc-vs-dalian-yingbo-21-07-2026-1400?blv=304148",
+          "discovered_from_blv": "LUCAS",
+          "discovered_at": "2026-07-21T17:09:53.354393+07:00",
+          "valid_until": "2026-07-21T17:55:55+07:00",
+          "is_expired": false
         }
       ],
       "coverage": {
-        "found_streams": 2,
+        "found_streams": 3,
         "found_blv_ids": [
+          "304148",
           "372746",
           "612098"
         ],
@@ -380,9 +400,9 @@
         "total_explicit_blv_rooms": 4,
         "pending_room_keys": [
           "283501",
-          "304148",
           "612098",
-          "372746"
+          "372746",
+          "304148"
         ],
         "room_progress": {
           "612098": {
@@ -427,11 +447,11 @@
             "blv": "LUCAS",
             "blv_id": "304148",
             "status": "retry",
-            "attempts": 0,
+            "attempts": 1,
             "rate_limit_hits": 0,
             "last_http_status": 200,
-            "last_stream_count": 0,
-            "last_error": "Link ký số đã hết hạn; đưa BLV trở lại queue."
+            "last_stream_count": 1,
+            "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
           },
           "__base__": {
             "key": "__base__",
@@ -448,6 +468,7 @@
         }
       },
       "attempted_room_ids": [
+        "304148",
         "372746",
         "612098"
       ],
@@ -494,11 +515,11 @@
           "blv": "LUCAS",
           "blv_id": "304148",
           "status": "retry",
-          "attempts": 0,
+          "attempts": 1,
           "rate_limit_hits": 0,
           "last_http_status": 200,
-          "last_stream_count": 0,
-          "last_error": "Link ký số đã hết hạn; đưa BLV trở lại queue."
+          "last_stream_count": 1,
+          "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
         },
         "__base__": {
           "key": "__base__",
@@ -515,9 +536,9 @@
       },
       "pending_room_keys": [
         "283501",
-        "304148",
         "612098",
-        "372746"
+        "372746",
+        "304148"
       ]
     },
     {
