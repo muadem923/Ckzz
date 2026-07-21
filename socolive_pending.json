@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-21T17:31:15.226675+07:00",
+  "generated_at": "2026-07-21T17:34:54.949815+07:00",
   "state_schema_version": "v10.3-safe-chain-valid-streams",
   "dispatch_next": true,
   "pending_count": 6,
@@ -7,7 +7,7 @@
   "completed_count": 5,
   "coverage_complete_count": 0,
   "total_match_count": 6,
-  "total_stream_count": 9,
+  "total_stream_count": 10,
   "progress_count": 1,
   "new_link_count": 1,
   "refreshed_link_count": 0,
@@ -18,12 +18,12 @@
   "run_attempted_count": 12,
   "run_rate_limited_count": 0,
   "useful_activity": true,
-  "chain_runs": 14,
+  "chain_runs": 15,
   "no_progress_runs": 0,
   "unchanged_pending_runs": 0,
   "rate_limit_only_runs": 0,
   "rate_limit_only_run": false,
-  "pending_fingerprint": "4d8fcd62964ab28377f3d922f7f5e06e9421278ccbf1825c8ec8665f71469a38",
+  "pending_fingerprint": "8785596866e1c39168a789a91ed50e75621e958275eeed0690c44a5a435934d2",
   "stop_reason": "",
   "rate_limited": false,
   "rate_limit_url": "",
@@ -400,9 +400,9 @@
         "total_explicit_blv_rooms": 4,
         "pending_room_keys": [
           "283501",
-          "304148",
           "612098",
-          "372746"
+          "372746",
+          "304148"
         ],
         "room_progress": {
           "612098": {
@@ -447,7 +447,7 @@
             "blv": "LUCAS",
             "blv_id": "304148",
             "status": "retry",
-            "attempts": 2,
+            "attempts": 3,
             "rate_limit_hits": 0,
             "last_http_status": 200,
             "last_stream_count": 1,
@@ -515,7 +515,7 @@
           "blv": "LUCAS",
           "blv_id": "304148",
           "status": "retry",
-          "attempts": 2,
+          "attempts": 3,
           "rate_limit_hits": 0,
           "last_http_status": 200,
           "last_stream_count": 1,
@@ -536,9 +536,9 @@
       },
       "pending_room_keys": [
         "283501",
-        "304148",
         "612098",
-        "372746"
+        "372746",
+        "304148"
       ]
     },
     {
@@ -1478,15 +1478,48 @@
           "discovered_at": "2026-07-21T17:31:13.212398+07:00",
           "valid_until": "2026-07-21T18:22:55+07:00",
           "is_expired": false
+        },
+        {
+          "url": "https://pull.niues.live/live/stream-603255_lhd.m3u8?auth_key=1784631955-0-0-bec8f59580cf74e5e89599535e6e7270",
+          "queue_room_key": "603255",
+          "room_url": "https://socolivep.cv/truc-tiep/dalian-kewei-vs-beijing-guoan-21-07-2026-1400?blv=603255",
+          "blv": "LION",
+          "blv_id": "603255",
+          "source_id": "603255",
+          "source_provenance": [
+            "cdp/request",
+            "cdp/response",
+            "harvest-final",
+            "harvest-round-1",
+            "harvest-round-2",
+            "harvest-round-3",
+            "harvest-round-4",
+            "harvest-round-5",
+            "harvest-round-6",
+            "harvest-round-7",
+            "harvest-round-8",
+            "harvest-round-9",
+            "request/image",
+            "request/xhr",
+            "response/200"
+          ],
+          "source_confidence": "network",
+          "mapping_mode": "exact-room-id",
+          "discovered_from_room_url": "https://socolivep.cv/truc-tiep/dalian-kewei-vs-beijing-guoan-21-07-2026-1400?blv=603255",
+          "discovered_from_blv": "LION",
+          "discovered_at": "2026-07-21T17:34:52.937174+07:00",
+          "valid_until": "2026-07-21T18:05:55+07:00",
+          "is_expired": false
         }
       ],
       "coverage": {
-        "found_streams": 4,
+        "found_streams": 5,
         "found_blv_ids": [
           "109053",
           "118206",
           "187579",
-          "484845"
+          "484845",
+          "603255"
         ],
         "goal": 12,
         "source_goal_reached": false,
@@ -1496,11 +1529,11 @@
         "total_explicit_blv_rooms": 6,
         "pending_room_keys": [
           "414317",
-          "603255",
           "109053",
           "484845",
           "187579",
-          "118206"
+          "118206",
+          "603255"
         ],
         "room_progress": {
           "414317": {
@@ -1569,11 +1602,11 @@
             "blv": "LION",
             "blv_id": "603255",
             "status": "retry",
-            "attempts": 0,
+            "attempts": 1,
             "rate_limit_hits": 0,
             "last_http_status": 200,
-            "last_stream_count": 0,
-            "last_error": "Link ký số đã hết hạn; đưa BLV trở lại queue."
+            "last_stream_count": 1,
+            "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
           },
           "__base__": {
             "key": "__base__",
@@ -1593,7 +1626,8 @@
         "109053",
         "118206",
         "187579",
-        "484845"
+        "484845",
+        "603255"
       ],
       "room_progress": {
         "414317": {
@@ -1662,11 +1696,11 @@
           "blv": "LION",
           "blv_id": "603255",
           "status": "retry",
-          "attempts": 0,
+          "attempts": 1,
           "rate_limit_hits": 0,
           "last_http_status": 200,
-          "last_stream_count": 0,
-          "last_error": "Link ký số đã hết hạn; đưa BLV trở lại queue."
+          "last_stream_count": 1,
+          "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
         },
         "__base__": {
           "key": "__base__",
@@ -1683,11 +1717,11 @@
       },
       "pending_room_keys": [
         "414317",
-        "603255",
         "109053",
         "484845",
         "187579",
-        "118206"
+        "118206",
+        "603255"
       ]
     }
   ]
