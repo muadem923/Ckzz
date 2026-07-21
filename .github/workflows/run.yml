@@ -1,4 +1,4 @@
-name: Bot Quet Socolive V10.4 Finite Two Pass Queue
+name: Bot Quet Socolive V10.4.1 Date Display Fix
 
 on:
   workflow_dispatch:
@@ -15,7 +15,7 @@ on:
         type: boolean
 
 concurrency:
-  group: socolive-v10-4-finite-two-pass-${{ github.ref }}
+  group: socolive-v10-4-1-date-display-${{ github.ref }}
   cancel-in-progress: false
 
 permissions:
@@ -127,6 +127,7 @@ jobs:
           echo "Long harvest: wait=${SOCOLIVE_ROOM_WAIT_SECONDS}s | max=${SOCOLIVE_HARVEST_MAX_SECONDS}s | 2 nguồn/BLV"
           echo "Queue hữu hạn: mỗi BLV tối đa 2 lượt | 1 link hợp lệ = success"
           echo "Chain an toàn: hard_max=$SOCOLIVE_STATE_MAX_CHAIN_RUNS | stall=2 run | resume state trước"
+          echo "V10.4.1: tên M3U có đủ giờ + ngày; tvg-name cũng có lịch thi đấu"
           echo "V10.4: attempts_total không reset; success/exhausted là trạng thái terminal"
           echo "Playlist: dựng từ catalog tích lũy, không ghi đè bằng riêng kết quả run hiện tại"
           echo "Scan window: -${SOCOLIVE_SCAN_BEFORE_MINUTES} phút / +${SOCOLIVE_SCAN_AFTER_MINUTES} phút | scan_all=$SOCOLIVE_SCAN_ALL"
