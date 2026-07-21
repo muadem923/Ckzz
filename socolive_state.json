@@ -1,36 +1,36 @@
 {
-  "generated_at": "2026-07-21T23:03:11.367013+07:00",
+  "generated_at": "2026-07-21T23:04:58.197593+07:00",
   "state_schema_version": "v10.4-finite-two-pass-queue",
-  "dispatch_next": true,
-  "pending_count": 1,
-  "pending_room_count": 1,
+  "dispatch_next": false,
+  "pending_count": 0,
+  "pending_room_count": 0,
   "completed_count": 10,
-  "coverage_complete_count": 13,
+  "coverage_complete_count": 14,
   "total_match_count": 14,
   "total_stream_count": 11,
-  "progress_count": 6,
-  "new_link_count": 4,
-  "refreshed_link_count": 2,
-  "queue_progress_count": 68,
-  "terminal_progress_count": 61,
-  "newly_attempted_count": 7,
+  "progress_count": 0,
+  "new_link_count": 0,
+  "refreshed_link_count": 0,
+  "queue_progress_count": 1,
+  "terminal_progress_count": 1,
+  "newly_attempted_count": 0,
   "queue_total_rooms": 62,
   "queue_success_rooms": 40,
-  "queue_exhausted_rooms": 21,
-  "queue_terminal_rooms": 61,
-  "queue_attempts_total": 83,
-  "chain_runs": 1,
+  "queue_exhausted_rooms": 22,
+  "queue_terminal_rooms": 62,
+  "queue_attempts_total": 84,
+  "chain_runs": 2,
   "no_progress_runs": 0,
   "no_queue_progress_runs": 0,
   "unchanged_pending_runs": 0,
   "rate_limit_only_runs": 0,
   "rate_limit_only_run": false,
-  "pending_fingerprint": "e21102fef92e8d73ca8eba2423acaa703ba5ae953de426e54adbde6278aef502",
-  "stop_reason": "",
+  "pending_fingerprint": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "stop_reason": "complete",
   "rate_limited": false,
   "rate_limit_url": "",
   "global_room_budget": 48,
-  "global_room_budget_used": 7,
+  "global_room_budget_used": 5,
   "target_base_urls": [
     "https://socolivep.cv/truc-tiep/aarhus-agf-vs-lech-poznan-22-07-2026-0000/",
     "https://socolivep.cv/truc-tiep/ararat-armenia-fc-vs-shamrock-rovers-21-07-2026-2300/",
@@ -47,10 +47,460 @@
     "https://socolivep.cv/truc-tiep/sturm-graz-vs-heart-of-midlothian-22-07-2026-0130/",
     "https://socolivep.cv/truc-tiep/thun-vs-dinamo-zagreb-22-07-2026-0100/"
   ],
-  "pending_base_urls": [
-    "https://socolivep.cv/truc-tiep/ki-klaksvik-vs-kauno-zalgiris-22-07-2026-0145/"
-  ],
+  "pending_base_urls": [],
   "matches": [
+    {
+      "base_url": "https://socolivep.cv/truc-tiep/ki-klaksvik-vs-kauno-zalgiris-22-07-2026-0145/",
+      "raw_title": "Trực tiếp bóng đá Socolive KI Klaksvik vs Kauno Zalgiris lúc 01:45 ngày 22/07/2026",
+      "home_team": "KI Klaksvik",
+      "away_team": "Kauno Zalgiris",
+      "home_logo": "https://sta.vnres.co/file/common/20260719/43254f859296223c98ee0779d7e643ea.png",
+      "away_logo": "https://sta.vnres.co/file/common/20260719/cf3cdda75f54cd51ce3fe0ce6df86a69.png",
+      "time_text": "01:45",
+      "date_text": "22/07",
+      "status": "",
+      "card_text": "UEFA CL 01:45 22/07 KI Klaksvik VS XEM NGAY Kauno Zalgiris PEANUT A PÁO",
+      "rooms": [
+        {
+          "url": "https://socolivep.cv/truc-tiep/ki-klaksvik-vs-kauno-zalgiris-22-07-2026-0145?blv=620084",
+          "blv": "PEANUT",
+          "blv_id": "620084"
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/ki-klaksvik-vs-kauno-zalgiris-22-07-2026-0145?blv=235232",
+          "blv": "A PÁO",
+          "blv_id": "235232"
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/ki-klaksvik-vs-kauno-zalgiris-22-07-2026-0145",
+          "blv": "XEM NGAY",
+          "blv_id": ""
+        }
+      ],
+      "match_name": "KI Klaksvik vs Kauno Zalgiris",
+      "scheduled_at": "2026-07-22T01:45:00+07:00",
+      "streams": [
+        {
+          "url": "https://pull.niues.live/live/stream-620084_lhd.m3u8?auth_key=1784653015-0-0-c61aab2315fcb784ade97201ba250fe0",
+          "queue_room_key": "620084",
+          "room_url": "https://socolivep.cv/truc-tiep/ki-klaksvik-vs-kauno-zalgiris-22-07-2026-0145?blv=620084",
+          "blv": "PEANUT",
+          "blv_id": "620084",
+          "source_id": "620084",
+          "source_provenance": [
+            "final-no-stream-scan",
+            "harvest-final"
+          ],
+          "source_confidence": "embedded",
+          "mapping_mode": "exact-room-id",
+          "discovered_from_room_url": "https://socolivep.cv/truc-tiep/ki-klaksvik-vs-kauno-zalgiris-22-07-2026-0145?blv=620084",
+          "discovered_from_blv": "PEANUT",
+          "discovered_at": "2026-07-21T23:02:53.219471+07:00",
+          "valid_until": "2026-07-21T23:56:55+07:00",
+          "is_expired": false
+        }
+      ],
+      "room_results": [
+        {
+          "url": "https://socolivep.cv/truc-tiep/ki-klaksvik-vs-kauno-zalgiris-22-07-2026-0145?blv=620084",
+          "blv": "PEANUT",
+          "blv_id": "620084",
+          "streams": [
+            "https://pull.niues.live/live/stream-620084_lhd.m3u8?auth_key=1784653015-0-0-c61aab2315fcb784ade97201ba250fe0"
+          ],
+          "stream_sources": {
+            "https://pull.niues.live/live/stream-620084_lhd.m3u8?auth_key=1784653015-0-0-c61aab2315fcb784ade97201ba250fe0": [
+              "final-no-stream-scan",
+              "harvest-final"
+            ]
+          },
+          "stream_first_seen": [
+            "https://pull.niues.live/live/stream-620084_lhd.m3u8?auth_key=1784653015-0-0-c61aab2315fcb784ade97201ba250fe0"
+          ],
+          "discovered_blv_ids": [
+            "620084"
+          ],
+          "diagnostics": {
+            "url": "https://socolivep.cv/truc-tiep/ki-klaksvik-vs-kauno-zalgiris-22-07-2026-0145/?blv=620084",
+            "title": "Xem trực tiếp bóng đá KI Klaksvik vs Kauno Zalgiris | 01:45 ngày 22/07/2026",
+            "h1": "Trực tiếp bóng đá Socolive KI Klaksvik vs Kauno Zalgiris lúc 01:45 ngày 22/07/2026",
+            "ready_state": "complete",
+            "visibility_state": "visible",
+            "hidden": false,
+            "video_count": 0,
+            "iframe_count": 0,
+            "body_sample": "Skip to content Socolive Bảng xếp hạng Lịch thi đấu Kết quả bóng đá Tin thể thao Trực tiếp bóng đá Socolive KI Klaksvik vs Kauno Zalgiris lúc 01:45 ngày 22/07/2026 UEFA CL KI Klaksvik 01:45 22/07 Kauno Zalgiris Trận đấu sẽ bắt đầu sau Ngày0 : Giờ2 : Phút42 : Giây6 Trận đấu chưa bắt đầu PEANUT A PÁO Chat Thống kê Đội hình Diễn Biến Bảng XH \" \" Admin Sóc Bánh Mì: B- sport https://www.bty9251.com 👑 👑V-sport https://w9.vty28.net TRANG CƯỢC UY TÍN, NHẬN KÈO BÌNH LUẬN VIÊN ❤️ Telegram: https://t.me/socbanhmi338 , LIÊN HỆ MÃ BUFA 4RZWBN 💎 Zalo: 0567 820 040 Mochua13: hello peanut Kaij: kèo này đánh gì vậy blv Xóa Tin nhắn riêng 😀 😁 😃 😄 😅 😆 😇 😉 😊 🙂 😋 😍 😘 😗 😙 😚 😜 😝 😛 😎 🙄 😳 😡 😕 😫 😤 😨 😥 😪 😓 😵 😲 🤧 😷 🤒 🤕 😴 💤 👏 🤙 👍 👎 👊 ✊ ✌ 👌 ✋ 🤚 💪 🤝 👈 👉 🖕 🖐 👄 👂 👀 🎅 🌞 🌙 ⭐ ⚡ 🔥 ❄️ ⚽ 🏀 🏈 ⚾ 🎁 🎉 ✒️ 📝 ❤️ 💛 💚 🆚 💬 🕐 Vô hiệu hóa tất cả Vô hiệu hóa quà tặng Tắt lời chào Đăng nhập để cùng chat nhé Gửi Tỷ lệ kèo Cược Châu Á Chủ Chấp Khách Cược Châu Âu Chủ Hòa Khách Tài xỉu Tài Tỷ lệ kèo Xỉu Kèo góc Tài Tỷ lệ kèo Xỉu Mô phỏng trận đấu Thống kê trận đấu UEFA CL 23:00 21/07 Ararat-Armenia FC VS null null null - null Sắp diễn ra Xem ngay Shamrock Rovers ",
+            "harvest_rounds": 0,
+            "harvest_window_seconds": 0.639,
+            "main_status": 200,
+            "harvested_stream_count": 1,
+            "harvested_blv_ids": [
+              "620084"
+            ],
+            "scan_mode": "browser-event",
+            "elapsed_seconds": 14.033
+          },
+          "http_probe": {
+            "enabled": false,
+            "status": null,
+            "elapsed_seconds": 0.0,
+            "error": ""
+          },
+          "errors": [
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED"
+          ],
+          "failed_requests": [
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/main.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/customize.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/auth.css?ver=295 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat.css?ver=385 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat(1).css?ver=367 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/toast.css?ver=803 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/themes/flatsome/assets/css/flatsome.css?ver=3.18.2 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/themes/flatsome-child/style.css?ver=3.0 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/countdown.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/match.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/livescore.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/style_custom.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/effect/running-border.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/option/option-6.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/highlight/option-1.css?ver=2.8.5 | net::ERR_FAILED"
+          ],
+          "http_errors": [
+            "403 https://socolivep.cv/wp-admin/admin-ajax.php?action=scl_realtime&sport=1"
+          ]
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/ki-klaksvik-vs-kauno-zalgiris-22-07-2026-0145?blv=235232",
+          "blv": "A PÁO",
+          "blv_id": "235232",
+          "streams": [
+            "https://pull.niues.live/live/stream-235232_lhd.m3u8?auth_key=1784640406-0-0-c93505ef203ea37dba98bf3eca94e341"
+          ],
+          "stream_sources": {
+            "https://pull.niues.live/live/stream-235232_lhd.m3u8?auth_key=1784640406-0-0-c93505ef203ea37dba98bf3eca94e341": [
+              "final-no-stream-scan",
+              "harvest-final"
+            ]
+          },
+          "stream_first_seen": [
+            "https://pull.niues.live/live/stream-235232_lhd.m3u8?auth_key=1784640406-0-0-c93505ef203ea37dba98bf3eca94e341"
+          ],
+          "discovered_blv_ids": [
+            "235232"
+          ],
+          "diagnostics": {
+            "url": "https://socolivep.cv/truc-tiep/ki-klaksvik-vs-kauno-zalgiris-22-07-2026-0145/?blv=235232",
+            "title": "Xem trực tiếp bóng đá KI Klaksvik vs Kauno Zalgiris | 01:45 ngày 22/07/2026",
+            "h1": "Trực tiếp bóng đá Socolive KI Klaksvik vs Kauno Zalgiris lúc 01:45 ngày 22/07/2026",
+            "ready_state": "complete",
+            "visibility_state": "visible",
+            "hidden": false,
+            "video_count": 0,
+            "iframe_count": 0,
+            "body_sample": "Skip to content Socolive Bảng xếp hạng Lịch thi đấu Kết quả bóng đá Tin thể thao Trực tiếp bóng đá Socolive KI Klaksvik vs Kauno Zalgiris lúc 01:45 ngày 22/07/2026 UEFA CL KI Klaksvik 01:45 22/07 Kauno Zalgiris Trận đấu sẽ bắt đầu sau Ngày0 : Giờ2 : Phút41 : Giây50 Trận đấu chưa bắt đầu PEANUT A PÁO Chat Thống kê Đội hình Diễn Biến Bảng XH \" \" Xóa Tin nhắn riêng 😀 😁 😃 😄 😅 😆 😇 😉 😊 🙂 😋 😍 😘 😗 😙 😚 😜 😝 😛 😎 🙄 😳 😡 😕 😫 😤 😨 😥 😪 😓 😵 😲 🤧 😷 🤒 🤕 😴 💤 👏 🤙 👍 👎 👊 ✊ ✌ 👌 ✋ 🤚 💪 🤝 👈 👉 🖕 🖐 👄 👂 👀 🎅 🌞 🌙 ⭐ ⚡ 🔥 ❄️ ⚽ 🏀 🏈 ⚾ 🎁 🎉 ✒️ 📝 ❤️ 💛 💚 🆚 💬 🕐 Vô hiệu hóa tất cả Vô hiệu hóa quà tặng Tắt lời chào Đăng nhập để cùng chat nhé Gửi Tỷ lệ kèo Cược Châu Á Chủ Chấp Khách Cược Châu Âu Chủ Hòa Khách Tài xỉu Tài Tỷ lệ kèo Xỉu Kèo góc Tài Tỷ lệ kèo Xỉu Mô phỏng trận đấu Thống kê trận đấu UEFA CL 23:00 21/07 Ararat-Armenia FC VS null null null - null Sắp diễn ra Xem ngay Shamrock Rovers NGƯỜI CÁ CÁP A WIN A TÚ VOI LONG UEFA CL 23:00 21/07 FC Iberia 1999 Tbilisi VS null null null - null Sắp diễn ra Xem ngay Slovan Bratislava XUÂN TÓC ĐỎ PEANUT KENCHU GRAP ROBBEN CÒ UEFA CL 23:00 21/07 Mjallby AIF VS null null null - null Sắp diễn ra Xem ngay Lincoln Red I",
+            "harvest_rounds": 0,
+            "harvest_window_seconds": 0.635,
+            "main_status": 200,
+            "harvested_stream_count": 1,
+            "harvested_blv_ids": [
+              "235232"
+            ],
+            "scan_mode": "browser-event",
+            "elapsed_seconds": 14.099
+          },
+          "http_probe": {
+            "enabled": false,
+            "status": null,
+            "elapsed_seconds": 0.0,
+            "error": ""
+          },
+          "errors": [
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED"
+          ],
+          "failed_requests": [
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/main.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/customize.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/auth.css?ver=226 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat.css?ver=654 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat(1).css?ver=825 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/toast.css?ver=601 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/themes/flatsome/assets/css/flatsome.css?ver=3.18.2 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/themes/flatsome-child/style.css?ver=3.0 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/countdown.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/match.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/livescore.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/style_custom.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/effect/running-border.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/option/option-6.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/highlight/option-1.css?ver=2.8.5 | net::ERR_FAILED"
+          ],
+          "http_errors": [
+            "403 https://socolivep.cv/wp-admin/admin-ajax.php?action=scl_realtime&sport=1"
+          ]
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/ki-klaksvik-vs-kauno-zalgiris-22-07-2026-0145?blv=235232",
+          "blv": "A PÁO",
+          "blv_id": "235232",
+          "streams": [
+            "https://pull.niues.live/live/stream-235232_lhd.m3u8?auth_key=1784640406-0-0-c93505ef203ea37dba98bf3eca94e341"
+          ],
+          "stream_sources": {
+            "https://pull.niues.live/live/stream-235232_lhd.m3u8?auth_key=1784640406-0-0-c93505ef203ea37dba98bf3eca94e341": [
+              "final-no-stream-scan",
+              "harvest-final"
+            ]
+          },
+          "stream_first_seen": [
+            "https://pull.niues.live/live/stream-235232_lhd.m3u8?auth_key=1784640406-0-0-c93505ef203ea37dba98bf3eca94e341"
+          ],
+          "discovered_blv_ids": [
+            "235232"
+          ],
+          "diagnostics": {
+            "url": "https://socolivep.cv/truc-tiep/ki-klaksvik-vs-kauno-zalgiris-22-07-2026-0145/?blv=235232",
+            "title": "Xem trực tiếp bóng đá KI Klaksvik vs Kauno Zalgiris | 01:45 ngày 22/07/2026",
+            "h1": "Trực tiếp bóng đá Socolive KI Klaksvik vs Kauno Zalgiris lúc 01:45 ngày 22/07/2026",
+            "ready_state": "complete",
+            "visibility_state": "visible",
+            "hidden": false,
+            "video_count": 0,
+            "iframe_count": 0,
+            "body_sample": "Skip to content Socolive Bảng xếp hạng Lịch thi đấu Kết quả bóng đá Tin thể thao Trực tiếp bóng đá Socolive KI Klaksvik vs Kauno Zalgiris lúc 01:45 ngày 22/07/2026 UEFA CL KI Klaksvik 01:45 22/07 Kauno Zalgiris Trận đấu sẽ bắt đầu sau Ngày0 : Giờ2 : Phút40 : Giây3 Trận đấu chưa bắt đầu PEANUT A PÁO Chat Thống kê Đội hình Diễn Biến Bảng XH \" \" Xóa Tin nhắn riêng 😀 😁 😃 😄 😅 😆 😇 😉 😊 🙂 😋 😍 😘 😗 😙 😚 😜 😝 😛 😎 🙄 😳 😡 😕 😫 😤 😨 😥 😪 😓 😵 😲 🤧 😷 🤒 🤕 😴 💤 👏 🤙 👍 👎 👊 ✊ ✌ 👌 ✋ 🤚 💪 🤝 👈 👉 🖕 🖐 👄 👂 👀 🎅 🌞 🌙 ⭐ ⚡ 🔥 ❄️ ⚽ 🏀 🏈 ⚾ 🎁 🎉 ✒️ 📝 ❤️ 💛 💚 🆚 💬 🕐 Vô hiệu hóa tất cả Vô hiệu hóa quà tặng Tắt lời chào Đăng nhập để cùng chat nhé Gửi Tỷ lệ kèo Cược Châu Á Chủ Chấp Khách Cược Châu Âu Chủ Hòa Khách Tài xỉu Tài Tỷ lệ kèo Xỉu Kèo góc Tài Tỷ lệ kèo Xỉu Mô phỏng trận đấu Thống kê trận đấu UEFA CL 23:00 21/07 Ararat-Armenia FC VS null null null - null Sắp diễn ra Xem ngay Shamrock Rovers NGƯỜI CÁ CÁP A WIN A TÚ VOI LONG UEFA CL 23:00 21/07 FC Iberia 1999 Tbilisi VS null null null - null Sắp diễn ra Xem ngay Slovan Bratislava XUÂN TÓC ĐỎ PEANUT KENCHU GRAP ROBBEN CÒ UEFA CL 23:00 21/07 Mjallby AIF VS null null null - null Sắp diễn ra Xem ngay Lincoln Red Im",
+            "harvest_rounds": 0,
+            "harvest_window_seconds": 0.628,
+            "main_status": 200,
+            "harvested_stream_count": 1,
+            "harvested_blv_ids": [
+              "235232"
+            ],
+            "scan_mode": "browser-event",
+            "elapsed_seconds": 14.361
+          },
+          "http_probe": {
+            "enabled": false,
+            "status": null,
+            "elapsed_seconds": 0.0,
+            "error": ""
+          },
+          "errors": [
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED"
+          ],
+          "failed_requests": [
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/main.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/customize.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/auth.css?ver=226 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat.css?ver=654 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat(1).css?ver=825 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/toast.css?ver=601 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/themes/flatsome/assets/css/flatsome.css?ver=3.18.2 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/themes/flatsome-child/style.css?ver=3.0 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/countdown.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/match.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/livescore.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/style_custom.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/effect/running-border.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/option/option-6.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/highlight/option-1.css?ver=2.8.5 | net::ERR_FAILED"
+          ],
+          "http_errors": [
+            "403 https://socolivep.cv/wp-admin/admin-ajax.php?action=scl_realtime&sport=1"
+          ]
+        }
+      ],
+      "attempted_room_ids": [
+        "235232",
+        "620084"
+      ],
+      "coverage": {
+        "found_streams": 1,
+        "found_blv_ids": [
+          "620084"
+        ],
+        "goal": 4,
+        "source_goal_reached": false,
+        "room_queue_complete": true,
+        "complete": true,
+        "max_streams_per_blv": 2,
+        "total_explicit_blv_rooms": 2,
+        "pending_room_keys": [
+          "__base__"
+        ],
+        "room_progress": {
+          "620084": {
+            "key": "620084",
+            "url": "https://socolivep.cv/truc-tiep/ki-klaksvik-vs-kauno-zalgiris-22-07-2026-0145?blv=620084",
+            "blv": "PEANUT",
+            "blv_id": "620084",
+            "status": "success",
+            "attempts": 1,
+            "attempts_total": 1,
+            "ever_attempted": true,
+            "valid_stream_ever_found": true,
+            "needs_token_refresh": false,
+            "completion_reason": "valid_stream",
+            "rate_limit_hits": 0,
+            "last_http_status": 200,
+            "last_stream_count": 1,
+            "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
+          },
+          "235232": {
+            "key": "235232",
+            "url": "https://socolivep.cv/truc-tiep/ki-klaksvik-vs-kauno-zalgiris-22-07-2026-0145?blv=235232",
+            "blv": "A PÁO",
+            "blv_id": "235232",
+            "status": "exhausted",
+            "attempts": 2,
+            "attempts_total": 2,
+            "ever_attempted": true,
+            "valid_stream_ever_found": false,
+            "needs_token_refresh": true,
+            "completion_reason": "no_valid_stream_after_max_attempts",
+            "rate_limit_hits": 0,
+            "last_http_status": 200,
+            "last_stream_count": 0,
+            "last_error": "Token cũ đã hết hạn; giữ nguyên attempts_total và trạng thái hoàn tất của BLV."
+          },
+          "__base__": {
+            "key": "__base__",
+            "url": "https://socolivep.cv/truc-tiep/ki-klaksvik-vs-kauno-zalgiris-22-07-2026-0145",
+            "blv": "XEM NGAY",
+            "blv_id": "",
+            "status": "pending",
+            "attempts": 0,
+            "attempts_total": 0,
+            "ever_attempted": false,
+            "valid_stream_ever_found": false,
+            "needs_token_refresh": false,
+            "completion_reason": "",
+            "rate_limit_hits": 0,
+            "last_http_status": null,
+            "last_stream_count": 0,
+            "last_error": ""
+          }
+        }
+      },
+      "errors": [],
+      "room_progress": {
+        "620084": {
+          "key": "620084",
+          "url": "https://socolivep.cv/truc-tiep/ki-klaksvik-vs-kauno-zalgiris-22-07-2026-0145?blv=620084",
+          "blv": "PEANUT",
+          "blv_id": "620084",
+          "status": "success",
+          "attempts": 1,
+          "attempts_total": 1,
+          "ever_attempted": true,
+          "valid_stream_ever_found": true,
+          "needs_token_refresh": false,
+          "completion_reason": "valid_stream",
+          "rate_limit_hits": 0,
+          "last_http_status": 200,
+          "last_stream_count": 1,
+          "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
+        },
+        "235232": {
+          "key": "235232",
+          "url": "https://socolivep.cv/truc-tiep/ki-klaksvik-vs-kauno-zalgiris-22-07-2026-0145?blv=235232",
+          "blv": "A PÁO",
+          "blv_id": "235232",
+          "status": "exhausted",
+          "attempts": 2,
+          "attempts_total": 2,
+          "ever_attempted": true,
+          "valid_stream_ever_found": false,
+          "needs_token_refresh": true,
+          "completion_reason": "no_valid_stream_after_max_attempts",
+          "rate_limit_hits": 0,
+          "last_http_status": 200,
+          "last_stream_count": 0,
+          "last_error": "Token cũ đã hết hạn; giữ nguyên attempts_total và trạng thái hoàn tất của BLV."
+        },
+        "__base__": {
+          "key": "__base__",
+          "url": "https://socolivep.cv/truc-tiep/ki-klaksvik-vs-kauno-zalgiris-22-07-2026-0145",
+          "blv": "XEM NGAY",
+          "blv_id": "",
+          "status": "pending",
+          "attempts": 0,
+          "attempts_total": 0,
+          "ever_attempted": false,
+          "valid_stream_ever_found": false,
+          "needs_token_refresh": false,
+          "completion_reason": "",
+          "rate_limit_hits": 0,
+          "last_http_status": null,
+          "last_stream_count": 0,
+          "last_error": ""
+        }
+      },
+      "run_attempted_room_keys": [
+        "235232"
+      ],
+      "run_rate_limited_room_keys": [],
+      "run_completed_room_keys": [
+        "235232"
+      ],
+      "run_global_budget_used": 1
+    },
     {
       "base_url": "https://socolivep.cv/truc-tiep/ararat-armenia-fc-vs-shamrock-rovers-21-07-2026-2300/",
       "raw_title": "Trực tiếp bóng đá Socolive Ararat-Armenia FC vs Shamrock Rovers lúc 23:00 ngày 21/07/2026",
@@ -6651,392 +7101,6 @@
       }
     },
     {
-      "base_url": "https://socolivep.cv/truc-tiep/ifk-goteborg-vs-levadia-tallinn-22-07-2026-0000/",
-      "raw_title": "Trực tiếp bóng đá Socolive IFK Goteborg vs Levadia Tallinn lúc 00:00 ngày 22/07/2026",
-      "home_team": "IFK Goteborg",
-      "away_team": "Levadia Tallinn",
-      "home_logo": "https://sta.vnres.co/file/common/20260714/056b6e6f71a6439be87d65da8f929f47.png",
-      "away_logo": "https://sta.vnres.co/file/common/20260720/dbb1c1805e87869558ace3754e6e7254.png",
-      "time_text": "00:00",
-      "date_text": "22/07",
-      "status": "",
-      "card_text": "UEFA ECL 00:00 22/07 IFK Goteborg VS XEM NGAY Levadia Tallinn XUÂN SON BÒ TƯƠI",
-      "rooms": [
-        {
-          "url": "https://socolivep.cv/truc-tiep/ifk-goteborg-vs-levadia-tallinn-22-07-2026-0000?blv=501412",
-          "blv": "XUÂN SON",
-          "blv_id": "501412"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/ifk-goteborg-vs-levadia-tallinn-22-07-2026-0000?blv=620797",
-          "blv": "BÒ TƯƠI",
-          "blv_id": "620797"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/ifk-goteborg-vs-levadia-tallinn-22-07-2026-0000",
-          "blv": "XEM NGAY",
-          "blv_id": ""
-        }
-      ],
-      "match_name": "IFK Goteborg vs Levadia Tallinn",
-      "scheduled_at": "2026-07-22T00:00:00+07:00",
-      "streams": [
-        {
-          "url": "https://pull.niur.live/live/stream-501412_lhd.m3u8?txSecret=d31da94093d55bb8a1b39227d9c1ecf6&txTime=6a5feb9f",
-          "queue_room_key": "501412",
-          "room_url": "https://socolivep.cv/truc-tiep/ifk-goteborg-vs-levadia-tallinn-22-07-2026-0000?blv=501412",
-          "blv": "XUÂN SON",
-          "blv_id": "501412",
-          "source_id": "501412",
-          "source_provenance": [
-            "final-no-stream-scan",
-            "harvest-final"
-          ],
-          "source_confidence": "embedded",
-          "mapping_mode": "exact-room-id",
-          "discovered_from_room_url": "https://socolivep.cv/truc-tiep/ifk-goteborg-vs-levadia-tallinn-22-07-2026-0000?blv=501412",
-          "discovered_from_blv": "XUÂN SON",
-          "discovered_at": "2026-07-21T23:01:33.006822+07:00",
-          "valid_until": "2026-07-22T04:58:55+07:00",
-          "is_expired": false
-        },
-        {
-          "url": "https://pull.niues.live/live/stream-620797_lhd.m3u8?auth_key=1784653195-0-0-246c21efad84dc319c2307943366cc45",
-          "queue_room_key": "620797",
-          "room_url": "https://socolivep.cv/truc-tiep/ifk-goteborg-vs-levadia-tallinn-22-07-2026-0000?blv=620797",
-          "blv": "BÒ TƯƠI",
-          "blv_id": "620797",
-          "source_id": "620797",
-          "source_provenance": [
-            "final-no-stream-scan",
-            "harvest-final"
-          ],
-          "source_confidence": "embedded",
-          "mapping_mode": "exact-room-id",
-          "discovered_from_room_url": "https://socolivep.cv/truc-tiep/ifk-goteborg-vs-levadia-tallinn-22-07-2026-0000?blv=620797",
-          "discovered_from_blv": "BÒ TƯƠI",
-          "discovered_at": "2026-07-21T23:01:49.049188+07:00",
-          "valid_until": "2026-07-21T23:59:55+07:00",
-          "is_expired": false
-        }
-      ],
-      "room_results": [
-        {
-          "url": "https://socolivep.cv/truc-tiep/ifk-goteborg-vs-levadia-tallinn-22-07-2026-0000?blv=501412",
-          "blv": "XUÂN SON",
-          "blv_id": "501412",
-          "streams": [
-            "https://pull.niur.live/live/stream-501412_lhd.m3u8?txSecret=d31da94093d55bb8a1b39227d9c1ecf6&txTime=6a5feb9f"
-          ],
-          "stream_sources": {
-            "https://pull.niur.live/live/stream-501412_lhd.m3u8?txSecret=d31da94093d55bb8a1b39227d9c1ecf6&txTime=6a5feb9f": [
-              "final-no-stream-scan",
-              "harvest-final"
-            ]
-          },
-          "stream_first_seen": [
-            "https://pull.niur.live/live/stream-501412_lhd.m3u8?txSecret=d31da94093d55bb8a1b39227d9c1ecf6&txTime=6a5feb9f"
-          ],
-          "discovered_blv_ids": [
-            "501412"
-          ],
-          "diagnostics": {
-            "url": "https://socolivep.cv/truc-tiep/ifk-goteborg-vs-levadia-tallinn-22-07-2026-0000/?blv=501412",
-            "title": "Xem trực tiếp bóng đá IFK Goteborg vs Levadia Tallinn | 00:00 ngày 22/07/2026",
-            "h1": "Trực tiếp bóng đá Socolive IFK Goteborg vs Levadia Tallinn lúc 00:00 ngày 22/07/2026",
-            "ready_state": "complete",
-            "visibility_state": "visible",
-            "hidden": false,
-            "video_count": 0,
-            "iframe_count": 0,
-            "body_sample": "Skip to content Socolive Bảng xếp hạng Lịch thi đấu Kết quả bóng đá Tin thể thao Trực tiếp bóng đá Socolive IFK Goteborg vs Levadia Tallinn lúc 00:00 ngày 22/07/2026 UEFA ECL IFK Goteborg 00:00 22/07 Levadia Tallinn Trận đấu sẽ bắt đầu sau Ngày0 : Giờ0 : Phút58 : Giây27 Trận đấu chưa bắt đầu XUÂN SON BÒ TƯƠI Chat Thống kê Đội hình Diễn Biến Bảng XH \" \" Lovecua28: chưa thấy bất kỳ con nào lộ clip mà bằng hà linh JackKBC: đành phải bỏ mặc em son đi gọi gái thôi xin lỗi em nhé BENATO: linh vừa bảo từ từ xong Admin Trợ Lý XUÂN SON: ❤️NẠP TIỀN XU THU TIỀN TỶ TẠI❤️https://www.bty6150.com LIÊN HỆ 🎯 𝐅𝐚𝐜𝐞𝐛𝐨𝐨𝐤 + 𝐙𝐚𝐥𝐨:https://m.me/Socbebe8899 🎯 𝐓𝐞𝐥𝐞𝐠𝐫𝐚𝐦 :https://t.me/socbebe8899 💵 𝐁𝐮𝐟𝐚 :3559ka 🎯Link bufa: https://bufa.chat/ Lovecua28: uzbe câm 1 trận còn 2 trận tài to BENATO: linh clip thì đéo ra , suốt ngày nhẩy nhót Lovecua28: bú tiếp mã rung 3.5 BENATO: đái mẹ r son ạ Admin Trợ Lý XUÂN SON: ❤️KM NẠP LÊN ĐẾN 3TR6 LINK ĐĂNG KÝ https://www.bty6150.com LIÊN HỆ 🎯 𝐅𝐚𝐜𝐞𝐛𝐨𝐨𝐤 + 𝐙𝐚𝐥𝐨 : https://m.me/Socbebe8899 🎯 𝐓𝐞𝐥𝐞𝐠𝐫𝐚𝐦 :https://t.me/socbebe8899 💵 𝐁𝐮𝐟𝐚 :3559ka 🎯Link bufa: https://bufa.chat/ Lovecua28: vùa vào rung bảo hiểm hdc way hy thì nổ Lo",
-            "harvest_rounds": 0,
-            "harvest_window_seconds": 0.641,
-            "main_status": 200,
-            "harvested_stream_count": 1,
-            "harvested_blv_ids": [
-              "501412"
-            ],
-            "scan_mode": "browser-event",
-            "elapsed_seconds": 14.416
-          },
-          "http_probe": {
-            "enabled": false,
-            "status": null,
-            "elapsed_seconds": 0.0,
-            "error": ""
-          },
-          "errors": [
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED"
-          ],
-          "failed_requests": [
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/main.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/customize.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/auth.css?ver=736 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat.css?ver=941 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat(1).css?ver=4 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/toast.css?ver=983 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/themes/flatsome/assets/css/flatsome.css?ver=3.18.2 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/themes/flatsome-child/style.css?ver=3.0 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/countdown.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/match.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/livescore.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/style_custom.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/effect/running-border.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/option/option-6.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/highlight/option-1.css?ver=2.8.5 | net::ERR_FAILED"
-          ],
-          "http_errors": [
-            "403 https://socolivep.cv/wp-admin/admin-ajax.php?action=scl_realtime&sport=1"
-          ]
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/ifk-goteborg-vs-levadia-tallinn-22-07-2026-0000?blv=620797",
-          "blv": "BÒ TƯƠI",
-          "blv_id": "620797",
-          "streams": [
-            "https://pull.niues.live/live/stream-620797_lhd.m3u8?auth_key=1784653195-0-0-246c21efad84dc319c2307943366cc45"
-          ],
-          "stream_sources": {
-            "https://pull.niues.live/live/stream-620797_lhd.m3u8?auth_key=1784653195-0-0-246c21efad84dc319c2307943366cc45": [
-              "final-no-stream-scan",
-              "harvest-final"
-            ]
-          },
-          "stream_first_seen": [
-            "https://pull.niues.live/live/stream-620797_lhd.m3u8?auth_key=1784653195-0-0-246c21efad84dc319c2307943366cc45"
-          ],
-          "discovered_blv_ids": [
-            "620797"
-          ],
-          "diagnostics": {
-            "url": "https://socolivep.cv/truc-tiep/ifk-goteborg-vs-levadia-tallinn-22-07-2026-0000/?blv=620797",
-            "title": "Xem trực tiếp bóng đá IFK Goteborg vs Levadia Tallinn | 00:00 ngày 22/07/2026",
-            "h1": "Trực tiếp bóng đá Socolive IFK Goteborg vs Levadia Tallinn lúc 00:00 ngày 22/07/2026",
-            "ready_state": "complete",
-            "visibility_state": "visible",
-            "hidden": false,
-            "video_count": 0,
-            "iframe_count": 0,
-            "body_sample": "Skip to content Socolive Bảng xếp hạng Lịch thi đấu Kết quả bóng đá Tin thể thao Trực tiếp bóng đá Socolive IFK Goteborg vs Levadia Tallinn lúc 00:00 ngày 22/07/2026 UEFA ECL IFK Goteborg 00:00 22/07 Levadia Tallinn Trận đấu sẽ bắt đầu sau Ngày0 : Giờ0 : Phút58 : Giây10 Trận đấu chưa bắt đầu XUÂN SON BÒ TƯƠI Chat Thống kê Đội hình Diễn Biến Bảng XH \" \" Phương_SG: là bung bét Admin Trợ Lý BLV BÒ TƯƠI: Đăng ký tài khoản 𝐁-𝐒𝐏𝐎𝐑𝐓 ⚽️ https://www.bty9252.com 𝐕-𝐒𝐏𝐎𝐑𝐓 ⚽️ https://vty32.net Nhắn tele: https://t.me/sos6151 , Hướng dẫn Facebook : http://fb.com/bty9252 .Kết bạn 𝐙𝐀𝐋𝐎 : http://zalo.me/639661779922 ĐỂ EM HỖ TRỢ CHO ANH Ạ zzKoTexzz: trận này 1 3 1 4 Admin Trợ Lý BLV BÒ TƯƠI: 🔥 𝐖𝐎𝐑𝐋𝐃 𝐂𝐔𝐏 𝟐𝟎𝟐𝟔 đang diễn ra ! ⚽️ Anh em đang tìm một nhà cái AN TOÀN – BẢO MẬT – UY TÍN – NẠP RÚT NHANH – KHUYẾN MÃI CỰC KHỦNG , có cả nhóm VIP riêng của BLV để tham khảo kèo 24/7, vui lòng liên hệ 𝗧𝗲𝗹𝗲𝗴𝗿𝗮𝗺 @𝐬𝐨𝐬𝟔𝟏𝟓𝟏 , 📲 𝗭𝗮𝗹𝗼 : +63.966.177.9922 Binhpro: bú Admin Trợ Lý BLV BÒ TƯƠI: 🌷𝐋𝐈Ê𝐍 𝐇Ệ 𝐋Ậ𝐏 𝐓𝐊 𝐍𝐇Ậ𝐍 𝐊𝐌 𝐍Ạ𝐏 𝐋Ầ𝐍 𝟏 & 𝟐, 𝐊𝐌 𝐍𝐆À𝐘, 𝐓𝐔Ầ𝐍, 𝐓𝐇Á𝐍𝐆, 𝐂𝐇𝐔𝐘Ể𝐍 𝐕𝐈𝐏, 𝐆𝐈Ớ𝐈 𝐓𝐇𝐈Ệ𝐔 𝐁Ạ𝐍 𝐁È 🌷 ⚽️kết bạn mã Bufa : AHSFX3 ✨Telegram: h",
-            "harvest_rounds": 0,
-            "harvest_window_seconds": 0.637,
-            "main_status": 200,
-            "harvested_stream_count": 1,
-            "harvested_blv_ids": [
-              "620797"
-            ],
-            "scan_mode": "browser-event",
-            "elapsed_seconds": 14.024
-          },
-          "http_probe": {
-            "enabled": false,
-            "status": null,
-            "elapsed_seconds": 0.0,
-            "error": ""
-          },
-          "errors": [
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED"
-          ],
-          "failed_requests": [
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/main.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/customize.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/auth.css?ver=390 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat.css?ver=438 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat(1).css?ver=29 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/toast.css?ver=652 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/themes/flatsome/assets/css/flatsome.css?ver=3.18.2 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/themes/flatsome-child/style.css?ver=3.0 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/countdown.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/match.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/livescore.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/style_custom.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/effect/running-border.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/option/option-6.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/highlight/option-1.css?ver=2.8.5 | net::ERR_FAILED"
-          ],
-          "http_errors": [
-            "403 https://socolivep.cv/wp-admin/admin-ajax.php?action=scl_realtime&sport=1"
-          ]
-        }
-      ],
-      "attempted_room_ids": [
-        "501412",
-        "620797"
-      ],
-      "coverage": {
-        "found_streams": 2,
-        "found_blv_ids": [
-          "501412",
-          "620797"
-        ],
-        "goal": 4,
-        "source_goal_reached": false,
-        "room_queue_complete": true,
-        "complete": true,
-        "max_streams_per_blv": 2,
-        "total_explicit_blv_rooms": 2,
-        "pending_room_keys": [
-          "__base__"
-        ],
-        "room_progress": {
-          "501412": {
-            "key": "501412",
-            "url": "https://socolivep.cv/truc-tiep/ifk-goteborg-vs-levadia-tallinn-22-07-2026-0000?blv=501412",
-            "blv": "XUÂN SON",
-            "blv_id": "501412",
-            "status": "success",
-            "attempts": 1,
-            "attempts_total": 1,
-            "ever_attempted": true,
-            "valid_stream_ever_found": true,
-            "needs_token_refresh": false,
-            "completion_reason": "valid_stream",
-            "rate_limit_hits": 0,
-            "last_http_status": 200,
-            "last_stream_count": 1,
-            "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
-          },
-          "620797": {
-            "key": "620797",
-            "url": "https://socolivep.cv/truc-tiep/ifk-goteborg-vs-levadia-tallinn-22-07-2026-0000?blv=620797",
-            "blv": "BÒ TƯƠI",
-            "blv_id": "620797",
-            "status": "success",
-            "attempts": 1,
-            "attempts_total": 1,
-            "ever_attempted": true,
-            "valid_stream_ever_found": true,
-            "needs_token_refresh": false,
-            "completion_reason": "valid_stream",
-            "rate_limit_hits": 0,
-            "last_http_status": 200,
-            "last_stream_count": 1,
-            "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
-          },
-          "__base__": {
-            "key": "__base__",
-            "url": "https://socolivep.cv/truc-tiep/ifk-goteborg-vs-levadia-tallinn-22-07-2026-0000",
-            "blv": "XEM NGAY",
-            "blv_id": "",
-            "status": "pending",
-            "attempts": 0,
-            "attempts_total": 0,
-            "ever_attempted": false,
-            "valid_stream_ever_found": false,
-            "needs_token_refresh": false,
-            "completion_reason": "",
-            "rate_limit_hits": 0,
-            "last_http_status": null,
-            "last_stream_count": 0,
-            "last_error": ""
-          }
-        }
-      },
-      "errors": [],
-      "room_progress": {
-        "501412": {
-          "key": "501412",
-          "url": "https://socolivep.cv/truc-tiep/ifk-goteborg-vs-levadia-tallinn-22-07-2026-0000?blv=501412",
-          "blv": "XUÂN SON",
-          "blv_id": "501412",
-          "status": "success",
-          "attempts": 1,
-          "attempts_total": 1,
-          "ever_attempted": true,
-          "valid_stream_ever_found": true,
-          "needs_token_refresh": false,
-          "completion_reason": "valid_stream",
-          "rate_limit_hits": 0,
-          "last_http_status": 200,
-          "last_stream_count": 1,
-          "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
-        },
-        "620797": {
-          "key": "620797",
-          "url": "https://socolivep.cv/truc-tiep/ifk-goteborg-vs-levadia-tallinn-22-07-2026-0000?blv=620797",
-          "blv": "BÒ TƯƠI",
-          "blv_id": "620797",
-          "status": "success",
-          "attempts": 1,
-          "attempts_total": 1,
-          "ever_attempted": true,
-          "valid_stream_ever_found": true,
-          "needs_token_refresh": false,
-          "completion_reason": "valid_stream",
-          "rate_limit_hits": 0,
-          "last_http_status": 200,
-          "last_stream_count": 1,
-          "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
-        },
-        "__base__": {
-          "key": "__base__",
-          "url": "https://socolivep.cv/truc-tiep/ifk-goteborg-vs-levadia-tallinn-22-07-2026-0000",
-          "blv": "XEM NGAY",
-          "blv_id": "",
-          "status": "pending",
-          "attempts": 0,
-          "attempts_total": 0,
-          "ever_attempted": false,
-          "valid_stream_ever_found": false,
-          "needs_token_refresh": false,
-          "completion_reason": "",
-          "rate_limit_hits": 0,
-          "last_http_status": null,
-          "last_stream_count": 0,
-          "last_error": ""
-        }
-      },
-      "run_attempted_room_keys": [
-        "501412",
-        "620797"
-      ],
-      "run_rate_limited_room_keys": [],
-      "run_completed_room_keys": [
-        "501412",
-        "620797"
-      ],
-      "run_global_budget_used": 2
-    },
-    {
       "base_url": "https://socolivep.cv/truc-tiep/aarhus-agf-vs-lech-poznan-22-07-2026-0000/",
       "raw_title": "Trực tiếp bóng đá Socolive Aarhus AGF vs Lech Poznan lúc 00:00 ngày 22/07/2026",
       "home_team": "Aarhus AGF",
@@ -7905,85 +7969,114 @@
       }
     },
     {
-      "base_url": "https://socolivep.cv/truc-tiep/thun-vs-dinamo-zagreb-22-07-2026-0100/",
-      "raw_title": "Trực tiếp bóng đá Socolive Thun vs Dinamo Zagreb lúc 01:00 ngày 22/07/2026",
-      "home_team": "Thun",
-      "away_team": "Dinamo Zagreb",
-      "home_logo": "https://sta.vnres.co/file/common/20260719/6affaafd5c83714bee569f0033191c32.png",
-      "away_logo": "https://sta.vnres.co/file/common/20260719/539ba115ca817b6de5985a30fad45a8b.png",
-      "time_text": "01:00",
+      "base_url": "https://socolivep.cv/truc-tiep/ifk-goteborg-vs-levadia-tallinn-22-07-2026-0000/",
+      "raw_title": "Trực tiếp bóng đá Socolive IFK Goteborg vs Levadia Tallinn lúc 00:00 ngày 22/07/2026",
+      "home_team": "IFK Goteborg",
+      "away_team": "Levadia Tallinn",
+      "home_logo": "https://sta.vnres.co/file/common/20260714/056b6e6f71a6439be87d65da8f929f47.png",
+      "away_logo": "https://sta.vnres.co/file/common/20260720/dbb1c1805e87869558ace3754e6e7254.png",
+      "time_text": "00:00",
       "date_text": "22/07",
       "status": "",
-      "card_text": "UEFA CL 01:00 22/07 Thun VS XEM NGAY Dinamo Zagreb ĐỖ TÚ TÀI ANH TÀI A TÚ XUÂN TÓC ĐỎ",
+      "card_text": "UEFA ECL 00:00 22/07 IFK Goteborg VS XEM NGAY Levadia Tallinn XUÂN SON BÒ TƯƠI",
       "rooms": [
         {
-          "url": "https://socolivep.cv/truc-tiep/thun-vs-dinamo-zagreb-22-07-2026-0100?blv=607552",
-          "blv": "ĐỖ TÚ TÀI",
-          "blv_id": "607552"
+          "url": "https://socolivep.cv/truc-tiep/ifk-goteborg-vs-levadia-tallinn-22-07-2026-0000?blv=501412",
+          "blv": "XUÂN SON",
+          "blv_id": "501412"
         },
         {
-          "url": "https://socolivep.cv/truc-tiep/thun-vs-dinamo-zagreb-22-07-2026-0100?blv=406865",
-          "blv": "ANH TÀI",
-          "blv_id": "406865"
+          "url": "https://socolivep.cv/truc-tiep/ifk-goteborg-vs-levadia-tallinn-22-07-2026-0000?blv=620797",
+          "blv": "BÒ TƯƠI",
+          "blv_id": "620797"
         },
         {
-          "url": "https://socolivep.cv/truc-tiep/thun-vs-dinamo-zagreb-22-07-2026-0100?blv=557845",
-          "blv": "A TÚ",
-          "blv_id": "557845"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/thun-vs-dinamo-zagreb-22-07-2026-0100?blv=610518",
-          "blv": "XUÂN TÓC ĐỎ",
-          "blv_id": "610518"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/thun-vs-dinamo-zagreb-22-07-2026-0100",
+          "url": "https://socolivep.cv/truc-tiep/ifk-goteborg-vs-levadia-tallinn-22-07-2026-0000",
           "blv": "XEM NGAY",
           "blv_id": ""
         }
       ],
-      "match_name": "Thun vs Dinamo Zagreb",
-      "scheduled_at": "2026-07-22T01:00:00+07:00",
-      "streams": [],
+      "match_name": "IFK Goteborg vs Levadia Tallinn",
+      "scheduled_at": "2026-07-22T00:00:00+07:00",
+      "streams": [
+        {
+          "url": "https://pull.niur.live/live/stream-501412_lhd.m3u8?txSecret=d31da94093d55bb8a1b39227d9c1ecf6&txTime=6a5feb9f",
+          "queue_room_key": "501412",
+          "room_url": "https://socolivep.cv/truc-tiep/ifk-goteborg-vs-levadia-tallinn-22-07-2026-0000?blv=501412",
+          "blv": "XUÂN SON",
+          "blv_id": "501412",
+          "source_id": "501412",
+          "source_provenance": [
+            "final-no-stream-scan",
+            "harvest-final"
+          ],
+          "source_confidence": "embedded",
+          "mapping_mode": "exact-room-id",
+          "discovered_from_room_url": "https://socolivep.cv/truc-tiep/ifk-goteborg-vs-levadia-tallinn-22-07-2026-0000?blv=501412",
+          "discovered_from_blv": "XUÂN SON",
+          "discovered_at": "2026-07-21T23:01:33.006822+07:00",
+          "valid_until": "2026-07-22T04:58:55+07:00",
+          "is_expired": false
+        },
+        {
+          "url": "https://pull.niues.live/live/stream-620797_lhd.m3u8?auth_key=1784653195-0-0-246c21efad84dc319c2307943366cc45",
+          "queue_room_key": "620797",
+          "room_url": "https://socolivep.cv/truc-tiep/ifk-goteborg-vs-levadia-tallinn-22-07-2026-0000?blv=620797",
+          "blv": "BÒ TƯƠI",
+          "blv_id": "620797",
+          "source_id": "620797",
+          "source_provenance": [
+            "final-no-stream-scan",
+            "harvest-final"
+          ],
+          "source_confidence": "embedded",
+          "mapping_mode": "exact-room-id",
+          "discovered_from_room_url": "https://socolivep.cv/truc-tiep/ifk-goteborg-vs-levadia-tallinn-22-07-2026-0000?blv=620797",
+          "discovered_from_blv": "BÒ TƯƠI",
+          "discovered_at": "2026-07-21T23:01:49.049188+07:00",
+          "valid_until": "2026-07-21T23:59:55+07:00",
+          "is_expired": false
+        }
+      ],
       "room_results": [
         {
-          "url": "https://socolivep.cv/truc-tiep/thun-vs-dinamo-zagreb-22-07-2026-0100?blv=607552",
-          "blv": "ĐỖ TÚ TÀI",
-          "blv_id": "607552",
+          "url": "https://socolivep.cv/truc-tiep/ifk-goteborg-vs-levadia-tallinn-22-07-2026-0000?blv=501412",
+          "blv": "XUÂN SON",
+          "blv_id": "501412",
           "streams": [
-            "https://pull.niues.live/live/stream-607552_lhd.m3u8?auth_key=1784645815-0-0-39b2af16cc84308c21b71bc1d4741900"
+            "https://pull.niur.live/live/stream-501412_lhd.m3u8?txSecret=d31da94093d55bb8a1b39227d9c1ecf6&txTime=6a5feb9f"
           ],
           "stream_sources": {
-            "https://pull.niues.live/live/stream-607552_lhd.m3u8?auth_key=1784645815-0-0-39b2af16cc84308c21b71bc1d4741900": [
+            "https://pull.niur.live/live/stream-501412_lhd.m3u8?txSecret=d31da94093d55bb8a1b39227d9c1ecf6&txTime=6a5feb9f": [
               "final-no-stream-scan",
               "harvest-final"
             ]
           },
           "stream_first_seen": [
-            "https://pull.niues.live/live/stream-607552_lhd.m3u8?auth_key=1784645815-0-0-39b2af16cc84308c21b71bc1d4741900"
+            "https://pull.niur.live/live/stream-501412_lhd.m3u8?txSecret=d31da94093d55bb8a1b39227d9c1ecf6&txTime=6a5feb9f"
           ],
           "discovered_blv_ids": [
-            "607552"
+            "501412"
           ],
           "diagnostics": {
-            "url": "https://socolivep.cv/truc-tiep/thun-vs-dinamo-zagreb-22-07-2026-0100/?blv=607552",
-            "title": "Xem trực tiếp bóng đá Thun vs Dinamo Zagreb | 01:00 ngày 22/07/2026",
-            "h1": "Trực tiếp bóng đá Socolive Thun vs Dinamo Zagreb lúc 01:00 ngày 22/07/2026",
+            "url": "https://socolivep.cv/truc-tiep/ifk-goteborg-vs-levadia-tallinn-22-07-2026-0000/?blv=501412",
+            "title": "Xem trực tiếp bóng đá IFK Goteborg vs Levadia Tallinn | 00:00 ngày 22/07/2026",
+            "h1": "Trực tiếp bóng đá Socolive IFK Goteborg vs Levadia Tallinn lúc 00:00 ngày 22/07/2026",
             "ready_state": "complete",
             "visibility_state": "visible",
             "hidden": false,
             "video_count": 0,
             "iframe_count": 0,
-            "body_sample": "Skip to content Socolive Bảng xếp hạng Lịch thi đấu Kết quả bóng đá Tin thể thao Trực tiếp bóng đá Socolive Thun vs Dinamo Zagreb lúc 01:00 ngày 22/07/2026 UEFA CL Thun 01:00 22/07 Dinamo Zagreb Trận đấu sẽ bắt đầu sau Ngày0 : Giờ3 : Phút58 : Giây26 Trận đấu chưa bắt đầu ĐỖ TÚ TÀI ANH TÀI A TÚ XUÂN TÓC ĐỎ Chat Thống kê Đội hình Diễn Biến Bảng XH \" \" si22: hết giờ rồi. bù 6p quá Ku giang: chuyền ngu má đàu trọc si22: goc nưa kia Ku giang: dm j mà hụt Ku giang: bịp si22: hp có rung 15p ko ta nobugio: lùm mía away, nỏ bù giờ end game đi Admin Sóc Bánh Bao: ☘️GIỚI THIỆU BẠN BÈ THAM GIA TỔ 2 NHẬN KHUYẾN MÃI BỎNG TAY TỚI 300K ☘️ KÈO CỰC NGON ĐÃ LÊN TRONG NHÓM ☘️ 𝐁𝐒𝐏𝐎𝐑𝐓:: https://www.bty9278.com. LIÊN HỆ BÉ ĐỂ NHẬN KM TẠI: 💥💥𝗧𝗘𝗟𝗘𝗚𝗥𝗔𝗠 : https://t.me/socbanhbao2k2 💥 𝐁𝐮𝐟𝐚: 𝐖𝟓𝐓𝐒𝐑𝟕 ☎️𝐙𝐀𝐋𝐎: 0568 047 936 Ku giang: thằng đàu trọc nó ngu si22: treo sợ người ta đánh dc Ku giang: dm nobugio: chịu Admin Sóc Bánh Bao: 🙄 Hungmap1507: hehe bú xỉu 6.5 Ku giang: căng lol má nó Admin Sóc Bánh Bao: 🔥 KHUYẾN MÃI NẠP 1 VÀ 2 LÊN TỚI 3TR6 💥 ĐỘC QUYỀN TẠI SOCOLIVE, LIÊN HỆ BÉ TẠI: 💥💥𝗧𝗘𝗟𝗘𝗚𝗥𝗔𝗠 : https://t.me/socbanhbao2k2 💥 𝐁𝐮𝐟𝐚: 𝐖𝟓𝐓𝐒𝐑𝟕 ☎️ 𝐙𝐀𝐋�",
+            "body_sample": "Skip to content Socolive Bảng xếp hạng Lịch thi đấu Kết quả bóng đá Tin thể thao Trực tiếp bóng đá Socolive IFK Goteborg vs Levadia Tallinn lúc 00:00 ngày 22/07/2026 UEFA ECL IFK Goteborg 00:00 22/07 Levadia Tallinn Trận đấu sẽ bắt đầu sau Ngày0 : Giờ0 : Phút58 : Giây27 Trận đấu chưa bắt đầu XUÂN SON BÒ TƯƠI Chat Thống kê Đội hình Diễn Biến Bảng XH \" \" Lovecua28: chưa thấy bất kỳ con nào lộ clip mà bằng hà linh JackKBC: đành phải bỏ mặc em son đi gọi gái thôi xin lỗi em nhé BENATO: linh vừa bảo từ từ xong Admin Trợ Lý XUÂN SON: ❤️NẠP TIỀN XU THU TIỀN TỶ TẠI❤️https://www.bty6150.com LIÊN HỆ 🎯 𝐅𝐚𝐜𝐞𝐛𝐨𝐨𝐤 + 𝐙𝐚𝐥𝐨:https://m.me/Socbebe8899 🎯 𝐓𝐞𝐥𝐞𝐠𝐫𝐚𝐦 :https://t.me/socbebe8899 💵 𝐁𝐮𝐟𝐚 :3559ka 🎯Link bufa: https://bufa.chat/ Lovecua28: uzbe câm 1 trận còn 2 trận tài to BENATO: linh clip thì đéo ra , suốt ngày nhẩy nhót Lovecua28: bú tiếp mã rung 3.5 BENATO: đái mẹ r son ạ Admin Trợ Lý XUÂN SON: ❤️KM NẠP LÊN ĐẾN 3TR6 LINK ĐĂNG KÝ https://www.bty6150.com LIÊN HỆ 🎯 𝐅𝐚𝐜𝐞𝐛𝐨𝐨𝐤 + 𝐙𝐚𝐥𝐨 : https://m.me/Socbebe8899 🎯 𝐓𝐞𝐥𝐞𝐠𝐫𝐚𝐦 :https://t.me/socbebe8899 💵 𝐁𝐮𝐟𝐚 :3559ka 🎯Link bufa: https://bufa.chat/ Lovecua28: vùa vào rung bảo hiểm hdc way hy thì nổ Lo",
             "harvest_rounds": 0,
-            "harvest_window_seconds": 0.624,
+            "harvest_window_seconds": 0.641,
             "main_status": 200,
             "harvested_stream_count": 1,
             "harvested_blv_ids": [
-              "607552"
+              "501412"
             ],
             "scan_mode": "browser-event",
-            "elapsed_seconds": 14.215
+            "elapsed_seconds": 14.416
           },
           "http_probe": {
             "enabled": false,
@@ -8016,10 +8109,10 @@
           "failed_requests": [
             "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/main.css?ver=2.8.5 | net::ERR_FAILED",
             "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/customize.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/auth.css?ver=640 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat.css?ver=672 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat(1).css?ver=517 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/toast.css?ver=678 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/auth.css?ver=736 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat.css?ver=941 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat(1).css?ver=4 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/toast.css?ver=983 | net::ERR_FAILED",
             "stylesheet https://socolivep.cv/wp-content/themes/flatsome/assets/css/flatsome.css?ver=3.18.2 | net::ERR_FAILED",
             "stylesheet https://socolivep.cv/wp-content/themes/flatsome-child/style.css?ver=3.0 | net::ERR_FAILED",
             "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/countdown.css?ver=2.8.5 | net::ERR_FAILED",
@@ -8035,43 +8128,43 @@
           ]
         },
         {
-          "url": "https://socolivep.cv/truc-tiep/thun-vs-dinamo-zagreb-22-07-2026-0100?blv=406865",
-          "blv": "ANH TÀI",
-          "blv_id": "406865",
+          "url": "https://socolivep.cv/truc-tiep/ifk-goteborg-vs-levadia-tallinn-22-07-2026-0000?blv=620797",
+          "blv": "BÒ TƯƠI",
+          "blv_id": "620797",
           "streams": [
-            "https://pull.niues.live/live/stream-406865_lhd.m3u8?auth_key=1784640633-0-0-091f6258adf2e6dc4d9c9542558cb2b4"
+            "https://pull.niues.live/live/stream-620797_lhd.m3u8?auth_key=1784653195-0-0-246c21efad84dc319c2307943366cc45"
           ],
           "stream_sources": {
-            "https://pull.niues.live/live/stream-406865_lhd.m3u8?auth_key=1784640633-0-0-091f6258adf2e6dc4d9c9542558cb2b4": [
+            "https://pull.niues.live/live/stream-620797_lhd.m3u8?auth_key=1784653195-0-0-246c21efad84dc319c2307943366cc45": [
               "final-no-stream-scan",
               "harvest-final"
             ]
           },
           "stream_first_seen": [
-            "https://pull.niues.live/live/stream-406865_lhd.m3u8?auth_key=1784640633-0-0-091f6258adf2e6dc4d9c9542558cb2b4"
+            "https://pull.niues.live/live/stream-620797_lhd.m3u8?auth_key=1784653195-0-0-246c21efad84dc319c2307943366cc45"
           ],
           "discovered_blv_ids": [
-            "406865"
+            "620797"
           ],
           "diagnostics": {
-            "url": "https://socolivep.cv/truc-tiep/thun-vs-dinamo-zagreb-22-07-2026-0100/?blv=406865",
-            "title": "Xem trực tiếp bóng đá Thun vs Dinamo Zagreb | 01:00 ngày 22/07/2026",
-            "h1": "Trực tiếp bóng đá Socolive Thun vs Dinamo Zagreb lúc 01:00 ngày 22/07/2026",
+            "url": "https://socolivep.cv/truc-tiep/ifk-goteborg-vs-levadia-tallinn-22-07-2026-0000/?blv=620797",
+            "title": "Xem trực tiếp bóng đá IFK Goteborg vs Levadia Tallinn | 00:00 ngày 22/07/2026",
+            "h1": "Trực tiếp bóng đá Socolive IFK Goteborg vs Levadia Tallinn lúc 00:00 ngày 22/07/2026",
             "ready_state": "complete",
             "visibility_state": "visible",
             "hidden": false,
             "video_count": 0,
             "iframe_count": 0,
-            "body_sample": "Skip to content Socolive Bảng xếp hạng Lịch thi đấu Kết quả bóng đá Tin thể thao Trực tiếp bóng đá Socolive Thun vs Dinamo Zagreb lúc 01:00 ngày 22/07/2026 UEFA CL Thun 01:00 22/07 Dinamo Zagreb Trận đấu sẽ bắt đầu sau Ngày0 : Giờ3 : Phút58 : Giây10 Trận đấu chưa bắt đầu ĐỖ TÚ TÀI ANH TÀI A TÚ XUÂN TÓC ĐỎ Chat Thống kê Đội hình Diễn Biến Bảng XH \" \" Xóa Tin nhắn riêng 😀 😁 😃 😄 😅 😆 😇 😉 😊 🙂 😋 😍 😘 😗 😙 😚 😜 😝 😛 😎 🙄 😳 😡 😕 😫 😤 😨 😥 😪 😓 😵 😲 🤧 😷 🤒 🤕 😴 💤 👏 🤙 👍 👎 👊 ✊ ✌ 👌 ✋ 🤚 💪 🤝 👈 👉 🖕 🖐 👄 👂 👀 🎅 🌞 🌙 ⭐ ⚡ 🔥 ❄️ ⚽ 🏀 🏈 ⚾ 🎁 🎉 ✒️ 📝 ❤️ 💛 💚 🆚 💬 🕐 Vô hiệu hóa tất cả Vô hiệu hóa quà tặng Tắt lời chào Đăng nhập để cùng chat nhé Gửi Tỷ lệ kèo Cược Châu Á Chủ Chấp Khách Cược Châu Âu Chủ Hòa Khách Tài xỉu Tài Tỷ lệ kèo Xỉu Kèo góc Tài Tỷ lệ kèo Xỉu Mô phỏng trận đấu Thống kê trận đấu CHA FACup 19:00 21/07 Henan FC VS null null null - null Sắp diễn ra Xem ngay Dalian Yingbo BEN 10 KAN YONE LUCAS CHA FACup 19:00 21/07 Yunnan Yukun VS null null null - null Sắp diễn ra Xem ngay Chengdu Rongcheng NGƯỜI CÁ COZY ENZO ĐỖ TÚ TÀI A WIN CHA FACup 18:35 21/07 Shanghai Shenhua VS null null null - null Sắp diễn ra Xem ngay Qingdao Hainiu PEWPEW CÔNG CHẤT A ",
+            "body_sample": "Skip to content Socolive Bảng xếp hạng Lịch thi đấu Kết quả bóng đá Tin thể thao Trực tiếp bóng đá Socolive IFK Goteborg vs Levadia Tallinn lúc 00:00 ngày 22/07/2026 UEFA ECL IFK Goteborg 00:00 22/07 Levadia Tallinn Trận đấu sẽ bắt đầu sau Ngày0 : Giờ0 : Phút58 : Giây10 Trận đấu chưa bắt đầu XUÂN SON BÒ TƯƠI Chat Thống kê Đội hình Diễn Biến Bảng XH \" \" Phương_SG: là bung bét Admin Trợ Lý BLV BÒ TƯƠI: Đăng ký tài khoản 𝐁-𝐒𝐏𝐎𝐑𝐓 ⚽️ https://www.bty9252.com 𝐕-𝐒𝐏𝐎𝐑𝐓 ⚽️ https://vty32.net Nhắn tele: https://t.me/sos6151 , Hướng dẫn Facebook : http://fb.com/bty9252 .Kết bạn 𝐙𝐀𝐋𝐎 : http://zalo.me/639661779922 ĐỂ EM HỖ TRỢ CHO ANH Ạ zzKoTexzz: trận này 1 3 1 4 Admin Trợ Lý BLV BÒ TƯƠI: 🔥 𝐖𝐎𝐑𝐋𝐃 𝐂𝐔𝐏 𝟐𝟎𝟐𝟔 đang diễn ra ! ⚽️ Anh em đang tìm một nhà cái AN TOÀN – BẢO MẬT – UY TÍN – NẠP RÚT NHANH – KHUYẾN MÃI CỰC KHỦNG , có cả nhóm VIP riêng của BLV để tham khảo kèo 24/7, vui lòng liên hệ 𝗧𝗲𝗹𝗲𝗴𝗿𝗮𝗺 @𝐬𝐨𝐬𝟔𝟏𝟓𝟏 , 📲 𝗭𝗮𝗹𝗼 : +63.966.177.9922 Binhpro: bú Admin Trợ Lý BLV BÒ TƯƠI: 🌷𝐋𝐈Ê𝐍 𝐇Ệ 𝐋Ậ𝐏 𝐓𝐊 𝐍𝐇Ậ𝐍 𝐊𝐌 𝐍Ạ𝐏 𝐋Ầ𝐍 𝟏 & 𝟐, 𝐊𝐌 𝐍𝐆À𝐘, 𝐓𝐔Ầ𝐍, 𝐓𝐇Á𝐍𝐆, 𝐂𝐇𝐔𝐘Ể𝐍 𝐕𝐈𝐏, 𝐆𝐈Ớ𝐈 𝐓𝐇𝐈Ệ𝐔 𝐁Ạ𝐍 𝐁È 🌷 ⚽️kết bạn mã Bufa : AHSFX3 ✨Telegram: h",
             "harvest_rounds": 0,
-            "harvest_window_seconds": 0.624,
+            "harvest_window_seconds": 0.637,
             "main_status": 200,
             "harvested_stream_count": 1,
             "harvested_blv_ids": [
-              "406865"
+              "620797"
             ],
             "scan_mode": "browser-event",
-            "elapsed_seconds": 14.098
+            "elapsed_seconds": 14.024
           },
           "http_probe": {
             "enabled": false,
@@ -8104,450 +8197,10 @@
           "failed_requests": [
             "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/main.css?ver=2.8.5 | net::ERR_FAILED",
             "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/customize.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/auth.css?ver=63 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat.css?ver=943 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat(1).css?ver=250 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/toast.css?ver=686 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/themes/flatsome/assets/css/flatsome.css?ver=3.18.2 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/themes/flatsome-child/style.css?ver=3.0 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/countdown.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/match.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/livescore.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/style_custom.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/effect/running-border.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/option/option-6.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/highlight/option-1.css?ver=2.8.5 | net::ERR_FAILED"
-          ],
-          "http_errors": [
-            "403 https://socolivep.cv/wp-admin/admin-ajax.php?action=scl_realtime&sport=1"
-          ]
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/thun-vs-dinamo-zagreb-22-07-2026-0100?blv=557845",
-          "blv": "A TÚ",
-          "blv_id": "557845",
-          "streams": [
-            "https://pull.niues.live/live/stream-557845_lhd.m3u8?auth_key=1784640222-0-0-61b6a909b73841fa822abc26617827b8"
-          ],
-          "stream_sources": {
-            "https://pull.niues.live/live/stream-557845_lhd.m3u8?auth_key=1784640222-0-0-61b6a909b73841fa822abc26617827b8": [
-              "final-no-stream-scan",
-              "harvest-final"
-            ]
-          },
-          "stream_first_seen": [
-            "https://pull.niues.live/live/stream-557845_lhd.m3u8?auth_key=1784640222-0-0-61b6a909b73841fa822abc26617827b8"
-          ],
-          "discovered_blv_ids": [
-            "557845"
-          ],
-          "diagnostics": {
-            "url": "https://socolivep.cv/truc-tiep/thun-vs-dinamo-zagreb-22-07-2026-0100/?blv=557845",
-            "title": "Xem trực tiếp bóng đá Thun vs Dinamo Zagreb | 01:00 ngày 22/07/2026",
-            "h1": "Trực tiếp bóng đá Socolive Thun vs Dinamo Zagreb lúc 01:00 ngày 22/07/2026",
-            "ready_state": "complete",
-            "visibility_state": "visible",
-            "hidden": false,
-            "video_count": 0,
-            "iframe_count": 0,
-            "body_sample": "Skip to content Socolive Bảng xếp hạng Lịch thi đấu Kết quả bóng đá Tin thể thao Trực tiếp bóng đá Socolive Thun vs Dinamo Zagreb lúc 01:00 ngày 22/07/2026 UEFA CL Thun 01:00 22/07 Dinamo Zagreb Trận đấu sẽ bắt đầu sau Ngày0 : Giờ3 : Phút57 : Giây54 Trận đấu chưa bắt đầu ĐỖ TÚ TÀI ANH TÀI A TÚ XUÂN TÓC ĐỎ Chat Thống kê Đội hình Diễn Biến Bảng XH \" \" Xóa Tin nhắn riêng 😀 😁 😃 😄 😅 😆 😇 😉 😊 🙂 😋 😍 😘 😗 😙 😚 😜 😝 😛 😎 🙄 😳 😡 😕 😫 😤 😨 😥 😪 😓 😵 😲 🤧 😷 🤒 🤕 😴 💤 👏 🤙 👍 👎 👊 ✊ ✌ 👌 ✋ 🤚 💪 🤝 👈 👉 🖕 🖐 👄 👂 👀 🎅 🌞 🌙 ⭐ ⚡ 🔥 ❄️ ⚽ 🏀 🏈 ⚾ 🎁 🎉 ✒️ 📝 ❤️ 💛 💚 🆚 💬 🕐 Vô hiệu hóa tất cả Vô hiệu hóa quà tặng Tắt lời chào Đăng nhập để cùng chat nhé Gửi Tỷ lệ kèo Cược Châu Á Chủ Chấp Khách Cược Châu Âu Chủ Hòa Khách Tài xỉu Tài Tỷ lệ kèo Xỉu Kèo góc Tài Tỷ lệ kèo Xỉu Mô phỏng trận đấu Thống kê trận đấu CHA FACup 19:00 21/07 Henan FC VS null null null - null Sắp diễn ra Xem ngay Dalian Yingbo BEN 10 KAN YONE LUCAS CHA FACup 19:00 21/07 Yunnan Yukun VS null null null - null Sắp diễn ra Xem ngay Chengdu Rongcheng NGƯỜI CÁ COZY ENZO ĐỖ TÚ TÀI A WIN CHA FACup 18:35 21/07 Shanghai Shenhua VS null null null - null Sắp diễn ra Xem ngay Qingdao Hainiu PEWPEW CÔNG CHẤT A ",
-            "harvest_rounds": 0,
-            "harvest_window_seconds": 0.62,
-            "main_status": 200,
-            "harvested_stream_count": 1,
-            "harvested_blv_ids": [
-              "557845"
-            ],
-            "scan_mode": "browser-event",
-            "elapsed_seconds": 14.206
-          },
-          "http_probe": {
-            "enabled": false,
-            "status": null,
-            "elapsed_seconds": 0.0,
-            "error": ""
-          },
-          "errors": [
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED"
-          ],
-          "failed_requests": [
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/main.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/customize.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/auth.css?ver=737 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat.css?ver=359 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat(1).css?ver=947 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/toast.css?ver=826 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/themes/flatsome/assets/css/flatsome.css?ver=3.18.2 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/themes/flatsome-child/style.css?ver=3.0 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/countdown.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/match.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/livescore.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/style_custom.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/effect/running-border.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/option/option-6.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/highlight/option-1.css?ver=2.8.5 | net::ERR_FAILED"
-          ],
-          "http_errors": [
-            "403 https://socolivep.cv/wp-admin/admin-ajax.php?action=scl_realtime&sport=1"
-          ]
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/thun-vs-dinamo-zagreb-22-07-2026-0100?blv=610518",
-          "blv": "XUÂN TÓC ĐỎ",
-          "blv_id": "610518",
-          "streams": [
-            "https://pull.niur.live/live/stream-610518_lhd.m3u8?txSecret=94b79ed6e0ff5f0c39482123776dd380&txTime=6a5d5c6f"
-          ],
-          "stream_sources": {
-            "https://pull.niur.live/live/stream-610518_lhd.m3u8?txSecret=94b79ed6e0ff5f0c39482123776dd380&txTime=6a5d5c6f": [
-              "final-no-stream-scan",
-              "harvest-final"
-            ]
-          },
-          "stream_first_seen": [
-            "https://pull.niur.live/live/stream-610518_lhd.m3u8?txSecret=94b79ed6e0ff5f0c39482123776dd380&txTime=6a5d5c6f"
-          ],
-          "discovered_blv_ids": [
-            "610518"
-          ],
-          "diagnostics": {
-            "url": "https://socolivep.cv/truc-tiep/thun-vs-dinamo-zagreb-22-07-2026-0100/?blv=610518",
-            "title": "Xem trực tiếp bóng đá Thun vs Dinamo Zagreb | 01:00 ngày 22/07/2026",
-            "h1": "Trực tiếp bóng đá Socolive Thun vs Dinamo Zagreb lúc 01:00 ngày 22/07/2026",
-            "ready_state": "complete",
-            "visibility_state": "visible",
-            "hidden": false,
-            "video_count": 0,
-            "iframe_count": 0,
-            "body_sample": "Skip to content Socolive Bảng xếp hạng Lịch thi đấu Kết quả bóng đá Tin thể thao Trực tiếp bóng đá Socolive Thun vs Dinamo Zagreb lúc 01:00 ngày 22/07/2026 UEFA CL Thun 01:00 22/07 Dinamo Zagreb Trận đấu sẽ bắt đầu sau Ngày0 : Giờ3 : Phút57 : Giây38 Trận đấu chưa bắt đầu ĐỖ TÚ TÀI ANH TÀI A TÚ XUÂN TÓC ĐỎ Chat Thống kê Đội hình Diễn Biến Bảng XH \" \" Xóa Tin nhắn riêng 😀 😁 😃 😄 😅 😆 😇 😉 😊 🙂 😋 😍 😘 😗 😙 😚 😜 😝 😛 😎 🙄 😳 😡 😕 😫 😤 😨 😥 😪 😓 😵 😲 🤧 😷 🤒 🤕 😴 💤 👏 🤙 👍 👎 👊 ✊ ✌ 👌 ✋ 🤚 💪 🤝 👈 👉 🖕 🖐 👄 👂 👀 🎅 🌞 🌙 ⭐ ⚡ 🔥 ❄️ ⚽ 🏀 🏈 ⚾ 🎁 🎉 ✒️ 📝 ❤️ 💛 💚 🆚 💬 🕐 Vô hiệu hóa tất cả Vô hiệu hóa quà tặng Tắt lời chào Đăng nhập để cùng chat nhé Gửi Tỷ lệ kèo Cược Châu Á Chủ Chấp Khách Cược Châu Âu Chủ Hòa Khách Tài xỉu Tài Tỷ lệ kèo Xỉu Kèo góc Tài Tỷ lệ kèo Xỉu Mô phỏng trận đấu Thống kê trận đấu CHA FACup 19:00 21/07 Henan FC VS null null null - null Sắp diễn ra Xem ngay Dalian Yingbo BEN 10 KAN YONE LUCAS CHA FACup 19:00 21/07 Yunnan Yukun VS null null null - null Sắp diễn ra Xem ngay Chengdu Rongcheng NGƯỜI CÁ COZY ENZO ĐỖ TÚ TÀI A WIN CHA FACup 18:35 21/07 Shanghai Shenhua VS null null null - null Sắp diễn ra Xem ngay Qingdao Hainiu PEWPEW CÔNG CHẤT A ",
-            "harvest_rounds": 0,
-            "harvest_window_seconds": 0.623,
-            "main_status": 200,
-            "harvested_stream_count": 1,
-            "harvested_blv_ids": [
-              "610518"
-            ],
-            "scan_mode": "browser-event",
-            "elapsed_seconds": 14.043
-          },
-          "http_probe": {
-            "enabled": false,
-            "status": null,
-            "elapsed_seconds": 0.0,
-            "error": ""
-          },
-          "errors": [
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED"
-          ],
-          "failed_requests": [
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/main.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/customize.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/auth.css?ver=136 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat.css?ver=164 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat(1).css?ver=188 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/toast.css?ver=143 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/themes/flatsome/assets/css/flatsome.css?ver=3.18.2 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/themes/flatsome-child/style.css?ver=3.0 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/countdown.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/match.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/livescore.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/style_custom.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/effect/running-border.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/option/option-6.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/highlight/option-1.css?ver=2.8.5 | net::ERR_FAILED"
-          ],
-          "http_errors": [
-            "403 https://socolivep.cv/wp-admin/admin-ajax.php?action=scl_realtime&sport=1"
-          ]
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/thun-vs-dinamo-zagreb-22-07-2026-0100?blv=406865",
-          "blv": "ANH TÀI",
-          "blv_id": "406865",
-          "streams": [
-            "https://pull.niues.live/live/stream-406865_lhd.m3u8?auth_key=1784640633-0-0-091f6258adf2e6dc4d9c9542558cb2b4"
-          ],
-          "stream_sources": {
-            "https://pull.niues.live/live/stream-406865_lhd.m3u8?auth_key=1784640633-0-0-091f6258adf2e6dc4d9c9542558cb2b4": [
-              "final-no-stream-scan",
-              "harvest-final"
-            ]
-          },
-          "stream_first_seen": [
-            "https://pull.niues.live/live/stream-406865_lhd.m3u8?auth_key=1784640633-0-0-091f6258adf2e6dc4d9c9542558cb2b4"
-          ],
-          "discovered_blv_ids": [
-            "406865"
-          ],
-          "diagnostics": {
-            "url": "https://socolivep.cv/truc-tiep/thun-vs-dinamo-zagreb-22-07-2026-0100/?blv=406865",
-            "title": "Xem trực tiếp bóng đá Thun vs Dinamo Zagreb | 01:00 ngày 22/07/2026",
-            "h1": "Trực tiếp bóng đá Socolive Thun vs Dinamo Zagreb lúc 01:00 ngày 22/07/2026",
-            "ready_state": "complete",
-            "visibility_state": "visible",
-            "hidden": false,
-            "video_count": 0,
-            "iframe_count": 0,
-            "body_sample": "Skip to content Socolive Bảng xếp hạng Lịch thi đấu Kết quả bóng đá Tin thể thao Trực tiếp bóng đá Socolive Thun vs Dinamo Zagreb lúc 01:00 ngày 22/07/2026 UEFA CL Thun 01:00 22/07 Dinamo Zagreb Trận đấu sẽ bắt đầu sau Ngày0 : Giờ3 : Phút54 : Giây30 Trận đấu chưa bắt đầu ĐỖ TÚ TÀI ANH TÀI A TÚ XUÂN TÓC ĐỎ Chat Thống kê Đội hình Diễn Biến Bảng XH \" \" Xóa Tin nhắn riêng 😀 😁 😃 😄 😅 😆 😇 😉 😊 🙂 😋 😍 😘 😗 😙 😚 😜 😝 😛 😎 🙄 😳 😡 😕 😫 😤 😨 😥 😪 😓 😵 😲 🤧 😷 🤒 🤕 😴 💤 👏 🤙 👍 👎 👊 ✊ ✌ 👌 ✋ 🤚 💪 🤝 👈 👉 🖕 🖐 👄 👂 👀 🎅 🌞 🌙 ⭐ ⚡ 🔥 ❄️ ⚽ 🏀 🏈 ⚾ 🎁 🎉 ✒️ 📝 ❤️ 💛 💚 🆚 💬 🕐 Vô hiệu hóa tất cả Vô hiệu hóa quà tặng Tắt lời chào Đăng nhập để cùng chat nhé Gửi Tỷ lệ kèo Cược Châu Á Chủ Chấp Khách Cược Châu Âu Chủ Hòa Khách Tài xỉu Tài Tỷ lệ kèo Xỉu Kèo góc Tài Tỷ lệ kèo Xỉu Mô phỏng trận đấu Thống kê trận đấu CHA FACup 19:00 21/07 Henan FC VS null null null - null Sắp diễn ra Xem ngay Dalian Yingbo BEN 10 KAN YONE LUCAS CHA FACup 19:00 21/07 Yunnan Yukun VS null null null - null Sắp diễn ra Xem ngay Chengdu Rongcheng NGƯỜI CÁ COZY ENZO ĐỖ TÚ TÀI A WIN CHA FACup 18:35 21/07 Shanghai Shenhua VS null null null - null Sắp diễn ra Xem ngay Qingdao Hainiu PEWPEW CÔNG CHẤT A ",
-            "harvest_rounds": 0,
-            "harvest_window_seconds": 0.633,
-            "main_status": 200,
-            "harvested_stream_count": 1,
-            "harvested_blv_ids": [
-              "406865"
-            ],
-            "scan_mode": "browser-event",
-            "elapsed_seconds": 13.492
-          },
-          "http_probe": {
-            "enabled": false,
-            "status": null,
-            "elapsed_seconds": 0.0,
-            "error": ""
-          },
-          "errors": [
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED"
-          ],
-          "failed_requests": [
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/main.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/customize.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/auth.css?ver=63 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat.css?ver=943 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat(1).css?ver=250 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/toast.css?ver=686 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/themes/flatsome/assets/css/flatsome.css?ver=3.18.2 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/themes/flatsome-child/style.css?ver=3.0 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/countdown.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/match.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/livescore.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/style_custom.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/effect/running-border.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/option/option-6.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/highlight/option-1.css?ver=2.8.5 | net::ERR_FAILED"
-          ],
-          "http_errors": [
-            "403 https://socolivep.cv/wp-admin/admin-ajax.php?action=scl_realtime&sport=1"
-          ]
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/thun-vs-dinamo-zagreb-22-07-2026-0100?blv=557845",
-          "blv": "A TÚ",
-          "blv_id": "557845",
-          "streams": [
-            "https://pull.niues.live/live/stream-557845_lhd.m3u8?auth_key=1784640222-0-0-61b6a909b73841fa822abc26617827b8"
-          ],
-          "stream_sources": {
-            "https://pull.niues.live/live/stream-557845_lhd.m3u8?auth_key=1784640222-0-0-61b6a909b73841fa822abc26617827b8": [
-              "final-no-stream-scan",
-              "harvest-final"
-            ]
-          },
-          "stream_first_seen": [
-            "https://pull.niues.live/live/stream-557845_lhd.m3u8?auth_key=1784640222-0-0-61b6a909b73841fa822abc26617827b8"
-          ],
-          "discovered_blv_ids": [
-            "557845"
-          ],
-          "diagnostics": {
-            "url": "https://socolivep.cv/truc-tiep/thun-vs-dinamo-zagreb-22-07-2026-0100/?blv=557845",
-            "title": "Xem trực tiếp bóng đá Thun vs Dinamo Zagreb | 01:00 ngày 22/07/2026",
-            "h1": "Trực tiếp bóng đá Socolive Thun vs Dinamo Zagreb lúc 01:00 ngày 22/07/2026",
-            "ready_state": "complete",
-            "visibility_state": "visible",
-            "hidden": false,
-            "video_count": 0,
-            "iframe_count": 0,
-            "body_sample": "Skip to content Socolive Bảng xếp hạng Lịch thi đấu Kết quả bóng đá Tin thể thao Trực tiếp bóng đá Socolive Thun vs Dinamo Zagreb lúc 01:00 ngày 22/07/2026 UEFA CL Thun 01:00 22/07 Dinamo Zagreb Trận đấu sẽ bắt đầu sau Ngày0 : Giờ3 : Phút54 : Giây14 Trận đấu chưa bắt đầu ĐỖ TÚ TÀI ANH TÀI A TÚ XUÂN TÓC ĐỎ Chat Thống kê Đội hình Diễn Biến Bảng XH \" \" Xóa Tin nhắn riêng 😀 😁 😃 😄 😅 😆 😇 😉 😊 🙂 😋 😍 😘 😗 😙 😚 😜 😝 😛 😎 🙄 😳 😡 😕 😫 😤 😨 😥 😪 😓 😵 😲 🤧 😷 🤒 🤕 😴 💤 👏 🤙 👍 👎 👊 ✊ ✌ 👌 ✋ 🤚 💪 🤝 👈 👉 🖕 🖐 👄 👂 👀 🎅 🌞 🌙 ⭐ ⚡ 🔥 ❄️ ⚽ 🏀 🏈 ⚾ 🎁 🎉 ✒️ 📝 ❤️ 💛 💚 🆚 💬 🕐 Vô hiệu hóa tất cả Vô hiệu hóa quà tặng Tắt lời chào Đăng nhập để cùng chat nhé Gửi Tỷ lệ kèo Cược Châu Á Chủ Chấp Khách Cược Châu Âu Chủ Hòa Khách Tài xỉu Tài Tỷ lệ kèo Xỉu Kèo góc Tài Tỷ lệ kèo Xỉu Mô phỏng trận đấu Thống kê trận đấu CHA FACup 19:00 21/07 Henan FC VS null null null - null Sắp diễn ra Xem ngay Dalian Yingbo BEN 10 KAN YONE LUCAS CHA FACup 19:00 21/07 Yunnan Yukun VS null null null - null Sắp diễn ra Xem ngay Chengdu Rongcheng NGƯỜI CÁ COZY ENZO ĐỖ TÚ TÀI A WIN CHA FACup 18:35 21/07 Shanghai Shenhua VS null null null - null Sắp diễn ra Xem ngay Qingdao Hainiu PEWPEW CÔNG CHẤT A ",
-            "harvest_rounds": 0,
-            "harvest_window_seconds": 0.635,
-            "main_status": 200,
-            "harvested_stream_count": 1,
-            "harvested_blv_ids": [
-              "557845"
-            ],
-            "scan_mode": "browser-event",
-            "elapsed_seconds": 13.523
-          },
-          "http_probe": {
-            "enabled": false,
-            "status": null,
-            "elapsed_seconds": 0.0,
-            "error": ""
-          },
-          "errors": [
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED"
-          ],
-          "failed_requests": [
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/main.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/customize.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/auth.css?ver=737 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat.css?ver=359 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat(1).css?ver=947 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/toast.css?ver=826 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/themes/flatsome/assets/css/flatsome.css?ver=3.18.2 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/themes/flatsome-child/style.css?ver=3.0 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/countdown.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/match.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/livescore.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/style_custom.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/effect/running-border.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/option/option-6.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/highlight/option-1.css?ver=2.8.5 | net::ERR_FAILED"
-          ],
-          "http_errors": [
-            "403 https://socolivep.cv/wp-admin/admin-ajax.php?action=scl_realtime&sport=1"
-          ]
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/thun-vs-dinamo-zagreb-22-07-2026-0100?blv=610518",
-          "blv": "XUÂN TÓC ĐỎ",
-          "blv_id": "610518",
-          "streams": [
-            "https://pull.niur.live/live/stream-610518_lhd.m3u8?txSecret=94b79ed6e0ff5f0c39482123776dd380&txTime=6a5d5c6f"
-          ],
-          "stream_sources": {
-            "https://pull.niur.live/live/stream-610518_lhd.m3u8?txSecret=94b79ed6e0ff5f0c39482123776dd380&txTime=6a5d5c6f": [
-              "final-no-stream-scan",
-              "harvest-final"
-            ]
-          },
-          "stream_first_seen": [
-            "https://pull.niur.live/live/stream-610518_lhd.m3u8?txSecret=94b79ed6e0ff5f0c39482123776dd380&txTime=6a5d5c6f"
-          ],
-          "discovered_blv_ids": [
-            "610518"
-          ],
-          "diagnostics": {
-            "url": "https://socolivep.cv/truc-tiep/thun-vs-dinamo-zagreb-22-07-2026-0100/?blv=610518",
-            "title": "Xem trực tiếp bóng đá Thun vs Dinamo Zagreb | 01:00 ngày 22/07/2026",
-            "h1": "Trực tiếp bóng đá Socolive Thun vs Dinamo Zagreb lúc 01:00 ngày 22/07/2026",
-            "ready_state": "complete",
-            "visibility_state": "visible",
-            "hidden": false,
-            "video_count": 0,
-            "iframe_count": 0,
-            "body_sample": "Skip to content Socolive Bảng xếp hạng Lịch thi đấu Kết quả bóng đá Tin thể thao Trực tiếp bóng đá Socolive Thun vs Dinamo Zagreb lúc 01:00 ngày 22/07/2026 UEFA CL Thun 01:00 22/07 Dinamo Zagreb Trận đấu sẽ bắt đầu sau Ngày0 : Giờ3 : Phút53 : Giây59 Trận đấu chưa bắt đầu ĐỖ TÚ TÀI ANH TÀI A TÚ XUÂN TÓC ĐỎ Chat Thống kê Đội hình Diễn Biến Bảng XH \" \" Xóa Tin nhắn riêng 😀 😁 😃 😄 😅 😆 😇 😉 😊 🙂 😋 😍 😘 😗 😙 😚 😜 😝 😛 😎 🙄 😳 😡 😕 😫 😤 😨 😥 😪 😓 😵 😲 🤧 😷 🤒 🤕 😴 💤 👏 🤙 👍 👎 👊 ✊ ✌ 👌 ✋ 🤚 💪 🤝 👈 👉 🖕 🖐 👄 👂 👀 🎅 🌞 🌙 ⭐ ⚡ 🔥 ❄️ ⚽ 🏀 🏈 ⚾ 🎁 🎉 ✒️ 📝 ❤️ 💛 💚 🆚 💬 🕐 Vô hiệu hóa tất cả Vô hiệu hóa quà tặng Tắt lời chào Đăng nhập để cùng chat nhé Gửi Tỷ lệ kèo Cược Châu Á Chủ Chấp Khách Cược Châu Âu Chủ Hòa Khách Tài xỉu Tài Tỷ lệ kèo Xỉu Kèo góc Tài Tỷ lệ kèo Xỉu Mô phỏng trận đấu Thống kê trận đấu CHA FACup 19:00 21/07 Henan FC VS null null null - null Sắp diễn ra Xem ngay Dalian Yingbo BEN 10 KAN YONE LUCAS CHA FACup 19:00 21/07 Yunnan Yukun VS null null null - null Sắp diễn ra Xem ngay Chengdu Rongcheng NGƯỜI CÁ COZY ENZO ĐỖ TÚ TÀI A WIN CHA FACup 18:35 21/07 Shanghai Shenhua VS null null null - null Sắp diễn ra Xem ngay Qingdao Hainiu PEWPEW CÔNG CHẤT A ",
-            "harvest_rounds": 0,
-            "harvest_window_seconds": 0.633,
-            "main_status": 200,
-            "harvested_stream_count": 1,
-            "harvested_blv_ids": [
-              "610518"
-            ],
-            "scan_mode": "browser-event",
-            "elapsed_seconds": 13.515
-          },
-          "http_probe": {
-            "enabled": false,
-            "status": null,
-            "elapsed_seconds": 0.0,
-            "error": ""
-          },
-          "errors": [
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED"
-          ],
-          "failed_requests": [
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/main.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/customize.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/auth.css?ver=136 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat.css?ver=164 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat(1).css?ver=188 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/toast.css?ver=143 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/auth.css?ver=390 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat.css?ver=438 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat(1).css?ver=29 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/toast.css?ver=652 | net::ERR_FAILED",
             "stylesheet https://socolivep.cv/wp-content/themes/flatsome/assets/css/flatsome.css?ver=3.18.2 | net::ERR_FAILED",
             "stylesheet https://socolivep.cv/wp-content/themes/flatsome-child/style.css?ver=3.0 | net::ERR_FAILED",
             "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/countdown.css?ver=2.8.5 | net::ERR_FAILED",
@@ -8564,95 +8217,62 @@
         }
       ],
       "attempted_room_ids": [
-        "406865",
-        "557845",
-        "607552",
-        "610518"
+        "501412",
+        "620797"
       ],
       "coverage": {
-        "found_streams": 0,
-        "found_blv_ids": [],
-        "goal": 8,
+        "found_streams": 2,
+        "found_blv_ids": [
+          "501412",
+          "620797"
+        ],
+        "goal": 4,
         "source_goal_reached": false,
         "room_queue_complete": true,
         "complete": true,
         "max_streams_per_blv": 2,
-        "total_explicit_blv_rooms": 4,
+        "total_explicit_blv_rooms": 2,
         "pending_room_keys": [
           "__base__"
         ],
         "room_progress": {
-          "607552": {
-            "key": "607552",
-            "url": "https://socolivep.cv/truc-tiep/thun-vs-dinamo-zagreb-22-07-2026-0100?blv=607552",
-            "blv": "ĐỖ TÚ TÀI",
-            "blv_id": "607552",
+          "501412": {
+            "key": "501412",
+            "url": "https://socolivep.cv/truc-tiep/ifk-goteborg-vs-levadia-tallinn-22-07-2026-0000?blv=501412",
+            "blv": "XUÂN SON",
+            "blv_id": "501412",
             "status": "success",
             "attempts": 1,
             "attempts_total": 1,
             "ever_attempted": true,
             "valid_stream_ever_found": true,
-            "needs_token_refresh": true,
-            "completion_reason": "valid_stream_seen_earlier",
+            "needs_token_refresh": false,
+            "completion_reason": "valid_stream",
             "rate_limit_hits": 0,
             "last_http_status": 200,
-            "last_stream_count": 0,
-            "last_error": "Token cũ đã hết hạn; giữ nguyên attempts_total và trạng thái hoàn tất của BLV."
+            "last_stream_count": 1,
+            "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
           },
-          "406865": {
-            "key": "406865",
-            "url": "https://socolivep.cv/truc-tiep/thun-vs-dinamo-zagreb-22-07-2026-0100?blv=406865",
-            "blv": "ANH TÀI",
-            "blv_id": "406865",
-            "status": "exhausted",
-            "attempts": 2,
-            "attempts_total": 2,
+          "620797": {
+            "key": "620797",
+            "url": "https://socolivep.cv/truc-tiep/ifk-goteborg-vs-levadia-tallinn-22-07-2026-0000?blv=620797",
+            "blv": "BÒ TƯƠI",
+            "blv_id": "620797",
+            "status": "success",
+            "attempts": 1,
+            "attempts_total": 1,
             "ever_attempted": true,
-            "valid_stream_ever_found": false,
-            "needs_token_refresh": true,
-            "completion_reason": "no_valid_stream_after_max_attempts",
+            "valid_stream_ever_found": true,
+            "needs_token_refresh": false,
+            "completion_reason": "valid_stream",
             "rate_limit_hits": 0,
             "last_http_status": 200,
-            "last_stream_count": 0,
-            "last_error": "Token cũ đã hết hạn; giữ nguyên attempts_total và trạng thái hoàn tất của BLV."
-          },
-          "557845": {
-            "key": "557845",
-            "url": "https://socolivep.cv/truc-tiep/thun-vs-dinamo-zagreb-22-07-2026-0100?blv=557845",
-            "blv": "A TÚ",
-            "blv_id": "557845",
-            "status": "exhausted",
-            "attempts": 2,
-            "attempts_total": 2,
-            "ever_attempted": true,
-            "valid_stream_ever_found": false,
-            "needs_token_refresh": true,
-            "completion_reason": "no_valid_stream_after_max_attempts",
-            "rate_limit_hits": 0,
-            "last_http_status": 200,
-            "last_stream_count": 0,
-            "last_error": "Token cũ đã hết hạn; giữ nguyên attempts_total và trạng thái hoàn tất của BLV."
-          },
-          "610518": {
-            "key": "610518",
-            "url": "https://socolivep.cv/truc-tiep/thun-vs-dinamo-zagreb-22-07-2026-0100?blv=610518",
-            "blv": "XUÂN TÓC ĐỎ",
-            "blv_id": "610518",
-            "status": "exhausted",
-            "attempts": 2,
-            "attempts_total": 2,
-            "ever_attempted": true,
-            "valid_stream_ever_found": false,
-            "needs_token_refresh": true,
-            "completion_reason": "no_valid_stream_after_max_attempts",
-            "rate_limit_hits": 0,
-            "last_http_status": 200,
-            "last_stream_count": 0,
-            "last_error": "Token cũ đã hết hạn; giữ nguyên attempts_total và trạng thái hoàn tất của BLV."
+            "last_stream_count": 1,
+            "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
           },
           "__base__": {
             "key": "__base__",
-            "url": "https://socolivep.cv/truc-tiep/thun-vs-dinamo-zagreb-22-07-2026-0100",
+            "url": "https://socolivep.cv/truc-tiep/ifk-goteborg-vs-levadia-tallinn-22-07-2026-0000",
             "blv": "XEM NGAY",
             "blv_id": "",
             "status": "pending",
@@ -8671,77 +8291,43 @@
       },
       "errors": [],
       "room_progress": {
-        "607552": {
-          "key": "607552",
-          "url": "https://socolivep.cv/truc-tiep/thun-vs-dinamo-zagreb-22-07-2026-0100?blv=607552",
-          "blv": "ĐỖ TÚ TÀI",
-          "blv_id": "607552",
+        "501412": {
+          "key": "501412",
+          "url": "https://socolivep.cv/truc-tiep/ifk-goteborg-vs-levadia-tallinn-22-07-2026-0000?blv=501412",
+          "blv": "XUÂN SON",
+          "blv_id": "501412",
           "status": "success",
           "attempts": 1,
           "attempts_total": 1,
           "ever_attempted": true,
           "valid_stream_ever_found": true,
-          "needs_token_refresh": true,
-          "completion_reason": "valid_stream_seen_earlier",
+          "needs_token_refresh": false,
+          "completion_reason": "valid_stream",
           "rate_limit_hits": 0,
           "last_http_status": 200,
-          "last_stream_count": 0,
-          "last_error": "Token cũ đã hết hạn; giữ nguyên attempts_total và trạng thái hoàn tất của BLV."
+          "last_stream_count": 1,
+          "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
         },
-        "406865": {
-          "key": "406865",
-          "url": "https://socolivep.cv/truc-tiep/thun-vs-dinamo-zagreb-22-07-2026-0100?blv=406865",
-          "blv": "ANH TÀI",
-          "blv_id": "406865",
-          "status": "exhausted",
-          "attempts": 2,
-          "attempts_total": 2,
+        "620797": {
+          "key": "620797",
+          "url": "https://socolivep.cv/truc-tiep/ifk-goteborg-vs-levadia-tallinn-22-07-2026-0000?blv=620797",
+          "blv": "BÒ TƯƠI",
+          "blv_id": "620797",
+          "status": "success",
+          "attempts": 1,
+          "attempts_total": 1,
           "ever_attempted": true,
-          "valid_stream_ever_found": false,
-          "needs_token_refresh": true,
-          "completion_reason": "no_valid_stream_after_max_attempts",
+          "valid_stream_ever_found": true,
+          "needs_token_refresh": false,
+          "completion_reason": "valid_stream",
           "rate_limit_hits": 0,
           "last_http_status": 200,
-          "last_stream_count": 0,
-          "last_error": "Token cũ đã hết hạn; giữ nguyên attempts_total và trạng thái hoàn tất của BLV."
-        },
-        "557845": {
-          "key": "557845",
-          "url": "https://socolivep.cv/truc-tiep/thun-vs-dinamo-zagreb-22-07-2026-0100?blv=557845",
-          "blv": "A TÚ",
-          "blv_id": "557845",
-          "status": "exhausted",
-          "attempts": 2,
-          "attempts_total": 2,
-          "ever_attempted": true,
-          "valid_stream_ever_found": false,
-          "needs_token_refresh": true,
-          "completion_reason": "no_valid_stream_after_max_attempts",
-          "rate_limit_hits": 0,
-          "last_http_status": 200,
-          "last_stream_count": 0,
-          "last_error": "Token cũ đã hết hạn; giữ nguyên attempts_total và trạng thái hoàn tất của BLV."
-        },
-        "610518": {
-          "key": "610518",
-          "url": "https://socolivep.cv/truc-tiep/thun-vs-dinamo-zagreb-22-07-2026-0100?blv=610518",
-          "blv": "XUÂN TÓC ĐỎ",
-          "blv_id": "610518",
-          "status": "exhausted",
-          "attempts": 2,
-          "attempts_total": 2,
-          "ever_attempted": true,
-          "valid_stream_ever_found": false,
-          "needs_token_refresh": true,
-          "completion_reason": "no_valid_stream_after_max_attempts",
-          "rate_limit_hits": 0,
-          "last_http_status": 200,
-          "last_stream_count": 0,
-          "last_error": "Token cũ đã hết hạn; giữ nguyên attempts_total và trạng thái hoàn tất của BLV."
+          "last_stream_count": 1,
+          "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
         },
         "__base__": {
           "key": "__base__",
-          "url": "https://socolivep.cv/truc-tiep/thun-vs-dinamo-zagreb-22-07-2026-0100",
+          "url": "https://socolivep.cv/truc-tiep/ifk-goteborg-vs-levadia-tallinn-22-07-2026-0000",
           "blv": "XEM NGAY",
           "blv_id": "",
           "status": "pending",
@@ -8756,7 +8342,17 @@
           "last_stream_count": 0,
           "last_error": ""
         }
-      }
+      },
+      "run_attempted_room_keys": [
+        "501412",
+        "620797"
+      ],
+      "run_rate_limited_room_keys": [],
+      "run_completed_room_keys": [
+        "501412",
+        "620797"
+      ],
+      "run_global_budget_used": 2
     },
     {
       "base_url": "https://socolivep.cv/truc-tiep/fenerbahce-vs-gornik-zabrze-22-07-2026-0100/",
@@ -9823,6 +9419,860 @@
       }
     },
     {
+      "base_url": "https://socolivep.cv/truc-tiep/thun-vs-dinamo-zagreb-22-07-2026-0100/",
+      "raw_title": "Trực tiếp bóng đá Socolive Thun vs Dinamo Zagreb lúc 01:00 ngày 22/07/2026",
+      "home_team": "Thun",
+      "away_team": "Dinamo Zagreb",
+      "home_logo": "https://sta.vnres.co/file/common/20260719/6affaafd5c83714bee569f0033191c32.png",
+      "away_logo": "https://sta.vnres.co/file/common/20260719/539ba115ca817b6de5985a30fad45a8b.png",
+      "time_text": "01:00",
+      "date_text": "22/07",
+      "status": "",
+      "card_text": "UEFA CL 01:00 22/07 Thun VS XEM NGAY Dinamo Zagreb ĐỖ TÚ TÀI ANH TÀI A TÚ XUÂN TÓC ĐỎ",
+      "rooms": [
+        {
+          "url": "https://socolivep.cv/truc-tiep/thun-vs-dinamo-zagreb-22-07-2026-0100?blv=607552",
+          "blv": "ĐỖ TÚ TÀI",
+          "blv_id": "607552"
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/thun-vs-dinamo-zagreb-22-07-2026-0100?blv=406865",
+          "blv": "ANH TÀI",
+          "blv_id": "406865"
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/thun-vs-dinamo-zagreb-22-07-2026-0100?blv=557845",
+          "blv": "A TÚ",
+          "blv_id": "557845"
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/thun-vs-dinamo-zagreb-22-07-2026-0100?blv=610518",
+          "blv": "XUÂN TÓC ĐỎ",
+          "blv_id": "610518"
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/thun-vs-dinamo-zagreb-22-07-2026-0100",
+          "blv": "XEM NGAY",
+          "blv_id": ""
+        }
+      ],
+      "match_name": "Thun vs Dinamo Zagreb",
+      "scheduled_at": "2026-07-22T01:00:00+07:00",
+      "streams": [],
+      "room_results": [
+        {
+          "url": "https://socolivep.cv/truc-tiep/thun-vs-dinamo-zagreb-22-07-2026-0100?blv=607552",
+          "blv": "ĐỖ TÚ TÀI",
+          "blv_id": "607552",
+          "streams": [
+            "https://pull.niues.live/live/stream-607552_lhd.m3u8?auth_key=1784645815-0-0-39b2af16cc84308c21b71bc1d4741900"
+          ],
+          "stream_sources": {
+            "https://pull.niues.live/live/stream-607552_lhd.m3u8?auth_key=1784645815-0-0-39b2af16cc84308c21b71bc1d4741900": [
+              "final-no-stream-scan",
+              "harvest-final"
+            ]
+          },
+          "stream_first_seen": [
+            "https://pull.niues.live/live/stream-607552_lhd.m3u8?auth_key=1784645815-0-0-39b2af16cc84308c21b71bc1d4741900"
+          ],
+          "discovered_blv_ids": [
+            "607552"
+          ],
+          "diagnostics": {
+            "url": "https://socolivep.cv/truc-tiep/thun-vs-dinamo-zagreb-22-07-2026-0100/?blv=607552",
+            "title": "Xem trực tiếp bóng đá Thun vs Dinamo Zagreb | 01:00 ngày 22/07/2026",
+            "h1": "Trực tiếp bóng đá Socolive Thun vs Dinamo Zagreb lúc 01:00 ngày 22/07/2026",
+            "ready_state": "complete",
+            "visibility_state": "visible",
+            "hidden": false,
+            "video_count": 0,
+            "iframe_count": 0,
+            "body_sample": "Skip to content Socolive Bảng xếp hạng Lịch thi đấu Kết quả bóng đá Tin thể thao Trực tiếp bóng đá Socolive Thun vs Dinamo Zagreb lúc 01:00 ngày 22/07/2026 UEFA CL Thun 01:00 22/07 Dinamo Zagreb Trận đấu sẽ bắt đầu sau Ngày0 : Giờ3 : Phút58 : Giây26 Trận đấu chưa bắt đầu ĐỖ TÚ TÀI ANH TÀI A TÚ XUÂN TÓC ĐỎ Chat Thống kê Đội hình Diễn Biến Bảng XH \" \" si22: hết giờ rồi. bù 6p quá Ku giang: chuyền ngu má đàu trọc si22: goc nưa kia Ku giang: dm j mà hụt Ku giang: bịp si22: hp có rung 15p ko ta nobugio: lùm mía away, nỏ bù giờ end game đi Admin Sóc Bánh Bao: ☘️GIỚI THIỆU BẠN BÈ THAM GIA TỔ 2 NHẬN KHUYẾN MÃI BỎNG TAY TỚI 300K ☘️ KÈO CỰC NGON ĐÃ LÊN TRONG NHÓM ☘️ 𝐁𝐒𝐏𝐎𝐑𝐓:: https://www.bty9278.com. LIÊN HỆ BÉ ĐỂ NHẬN KM TẠI: 💥💥𝗧𝗘𝗟𝗘𝗚𝗥𝗔𝗠 : https://t.me/socbanhbao2k2 💥 𝐁𝐮𝐟𝐚: 𝐖𝟓𝐓𝐒𝐑𝟕 ☎️𝐙𝐀𝐋𝐎: 0568 047 936 Ku giang: thằng đàu trọc nó ngu si22: treo sợ người ta đánh dc Ku giang: dm nobugio: chịu Admin Sóc Bánh Bao: 🙄 Hungmap1507: hehe bú xỉu 6.5 Ku giang: căng lol má nó Admin Sóc Bánh Bao: 🔥 KHUYẾN MÃI NẠP 1 VÀ 2 LÊN TỚI 3TR6 💥 ĐỘC QUYỀN TẠI SOCOLIVE, LIÊN HỆ BÉ TẠI: 💥💥𝗧𝗘𝗟𝗘𝗚𝗥𝗔𝗠 : https://t.me/socbanhbao2k2 💥 𝐁𝐮𝐟𝐚: 𝐖𝟓𝐓𝐒𝐑𝟕 ☎️ 𝐙𝐀𝐋�",
+            "harvest_rounds": 0,
+            "harvest_window_seconds": 0.624,
+            "main_status": 200,
+            "harvested_stream_count": 1,
+            "harvested_blv_ids": [
+              "607552"
+            ],
+            "scan_mode": "browser-event",
+            "elapsed_seconds": 14.215
+          },
+          "http_probe": {
+            "enabled": false,
+            "status": null,
+            "elapsed_seconds": 0.0,
+            "error": ""
+          },
+          "errors": [
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED"
+          ],
+          "failed_requests": [
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/main.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/customize.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/auth.css?ver=640 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat.css?ver=672 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat(1).css?ver=517 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/toast.css?ver=678 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/themes/flatsome/assets/css/flatsome.css?ver=3.18.2 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/themes/flatsome-child/style.css?ver=3.0 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/countdown.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/match.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/livescore.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/style_custom.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/effect/running-border.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/option/option-6.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/highlight/option-1.css?ver=2.8.5 | net::ERR_FAILED"
+          ],
+          "http_errors": [
+            "403 https://socolivep.cv/wp-admin/admin-ajax.php?action=scl_realtime&sport=1"
+          ]
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/thun-vs-dinamo-zagreb-22-07-2026-0100?blv=406865",
+          "blv": "ANH TÀI",
+          "blv_id": "406865",
+          "streams": [
+            "https://pull.niues.live/live/stream-406865_lhd.m3u8?auth_key=1784640633-0-0-091f6258adf2e6dc4d9c9542558cb2b4"
+          ],
+          "stream_sources": {
+            "https://pull.niues.live/live/stream-406865_lhd.m3u8?auth_key=1784640633-0-0-091f6258adf2e6dc4d9c9542558cb2b4": [
+              "final-no-stream-scan",
+              "harvest-final"
+            ]
+          },
+          "stream_first_seen": [
+            "https://pull.niues.live/live/stream-406865_lhd.m3u8?auth_key=1784640633-0-0-091f6258adf2e6dc4d9c9542558cb2b4"
+          ],
+          "discovered_blv_ids": [
+            "406865"
+          ],
+          "diagnostics": {
+            "url": "https://socolivep.cv/truc-tiep/thun-vs-dinamo-zagreb-22-07-2026-0100/?blv=406865",
+            "title": "Xem trực tiếp bóng đá Thun vs Dinamo Zagreb | 01:00 ngày 22/07/2026",
+            "h1": "Trực tiếp bóng đá Socolive Thun vs Dinamo Zagreb lúc 01:00 ngày 22/07/2026",
+            "ready_state": "complete",
+            "visibility_state": "visible",
+            "hidden": false,
+            "video_count": 0,
+            "iframe_count": 0,
+            "body_sample": "Skip to content Socolive Bảng xếp hạng Lịch thi đấu Kết quả bóng đá Tin thể thao Trực tiếp bóng đá Socolive Thun vs Dinamo Zagreb lúc 01:00 ngày 22/07/2026 UEFA CL Thun 01:00 22/07 Dinamo Zagreb Trận đấu sẽ bắt đầu sau Ngày0 : Giờ3 : Phút58 : Giây10 Trận đấu chưa bắt đầu ĐỖ TÚ TÀI ANH TÀI A TÚ XUÂN TÓC ĐỎ Chat Thống kê Đội hình Diễn Biến Bảng XH \" \" Xóa Tin nhắn riêng 😀 😁 😃 😄 😅 😆 😇 😉 😊 🙂 😋 😍 😘 😗 😙 😚 😜 😝 😛 😎 🙄 😳 😡 😕 😫 😤 😨 😥 😪 😓 😵 😲 🤧 😷 🤒 🤕 😴 💤 👏 🤙 👍 👎 👊 ✊ ✌ 👌 ✋ 🤚 💪 🤝 👈 👉 🖕 🖐 👄 👂 👀 🎅 🌞 🌙 ⭐ ⚡ 🔥 ❄️ ⚽ 🏀 🏈 ⚾ 🎁 🎉 ✒️ 📝 ❤️ 💛 💚 🆚 💬 🕐 Vô hiệu hóa tất cả Vô hiệu hóa quà tặng Tắt lời chào Đăng nhập để cùng chat nhé Gửi Tỷ lệ kèo Cược Châu Á Chủ Chấp Khách Cược Châu Âu Chủ Hòa Khách Tài xỉu Tài Tỷ lệ kèo Xỉu Kèo góc Tài Tỷ lệ kèo Xỉu Mô phỏng trận đấu Thống kê trận đấu CHA FACup 19:00 21/07 Henan FC VS null null null - null Sắp diễn ra Xem ngay Dalian Yingbo BEN 10 KAN YONE LUCAS CHA FACup 19:00 21/07 Yunnan Yukun VS null null null - null Sắp diễn ra Xem ngay Chengdu Rongcheng NGƯỜI CÁ COZY ENZO ĐỖ TÚ TÀI A WIN CHA FACup 18:35 21/07 Shanghai Shenhua VS null null null - null Sắp diễn ra Xem ngay Qingdao Hainiu PEWPEW CÔNG CHẤT A ",
+            "harvest_rounds": 0,
+            "harvest_window_seconds": 0.624,
+            "main_status": 200,
+            "harvested_stream_count": 1,
+            "harvested_blv_ids": [
+              "406865"
+            ],
+            "scan_mode": "browser-event",
+            "elapsed_seconds": 14.098
+          },
+          "http_probe": {
+            "enabled": false,
+            "status": null,
+            "elapsed_seconds": 0.0,
+            "error": ""
+          },
+          "errors": [
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED"
+          ],
+          "failed_requests": [
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/main.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/customize.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/auth.css?ver=63 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat.css?ver=943 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat(1).css?ver=250 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/toast.css?ver=686 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/themes/flatsome/assets/css/flatsome.css?ver=3.18.2 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/themes/flatsome-child/style.css?ver=3.0 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/countdown.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/match.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/livescore.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/style_custom.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/effect/running-border.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/option/option-6.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/highlight/option-1.css?ver=2.8.5 | net::ERR_FAILED"
+          ],
+          "http_errors": [
+            "403 https://socolivep.cv/wp-admin/admin-ajax.php?action=scl_realtime&sport=1"
+          ]
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/thun-vs-dinamo-zagreb-22-07-2026-0100?blv=557845",
+          "blv": "A TÚ",
+          "blv_id": "557845",
+          "streams": [
+            "https://pull.niues.live/live/stream-557845_lhd.m3u8?auth_key=1784640222-0-0-61b6a909b73841fa822abc26617827b8"
+          ],
+          "stream_sources": {
+            "https://pull.niues.live/live/stream-557845_lhd.m3u8?auth_key=1784640222-0-0-61b6a909b73841fa822abc26617827b8": [
+              "final-no-stream-scan",
+              "harvest-final"
+            ]
+          },
+          "stream_first_seen": [
+            "https://pull.niues.live/live/stream-557845_lhd.m3u8?auth_key=1784640222-0-0-61b6a909b73841fa822abc26617827b8"
+          ],
+          "discovered_blv_ids": [
+            "557845"
+          ],
+          "diagnostics": {
+            "url": "https://socolivep.cv/truc-tiep/thun-vs-dinamo-zagreb-22-07-2026-0100/?blv=557845",
+            "title": "Xem trực tiếp bóng đá Thun vs Dinamo Zagreb | 01:00 ngày 22/07/2026",
+            "h1": "Trực tiếp bóng đá Socolive Thun vs Dinamo Zagreb lúc 01:00 ngày 22/07/2026",
+            "ready_state": "complete",
+            "visibility_state": "visible",
+            "hidden": false,
+            "video_count": 0,
+            "iframe_count": 0,
+            "body_sample": "Skip to content Socolive Bảng xếp hạng Lịch thi đấu Kết quả bóng đá Tin thể thao Trực tiếp bóng đá Socolive Thun vs Dinamo Zagreb lúc 01:00 ngày 22/07/2026 UEFA CL Thun 01:00 22/07 Dinamo Zagreb Trận đấu sẽ bắt đầu sau Ngày0 : Giờ3 : Phút57 : Giây54 Trận đấu chưa bắt đầu ĐỖ TÚ TÀI ANH TÀI A TÚ XUÂN TÓC ĐỎ Chat Thống kê Đội hình Diễn Biến Bảng XH \" \" Xóa Tin nhắn riêng 😀 😁 😃 😄 😅 😆 😇 😉 😊 🙂 😋 😍 😘 😗 😙 😚 😜 😝 😛 😎 🙄 😳 😡 😕 😫 😤 😨 😥 😪 😓 😵 😲 🤧 😷 🤒 🤕 😴 💤 👏 🤙 👍 👎 👊 ✊ ✌ 👌 ✋ 🤚 💪 🤝 👈 👉 🖕 🖐 👄 👂 👀 🎅 🌞 🌙 ⭐ ⚡ 🔥 ❄️ ⚽ 🏀 🏈 ⚾ 🎁 🎉 ✒️ 📝 ❤️ 💛 💚 🆚 💬 🕐 Vô hiệu hóa tất cả Vô hiệu hóa quà tặng Tắt lời chào Đăng nhập để cùng chat nhé Gửi Tỷ lệ kèo Cược Châu Á Chủ Chấp Khách Cược Châu Âu Chủ Hòa Khách Tài xỉu Tài Tỷ lệ kèo Xỉu Kèo góc Tài Tỷ lệ kèo Xỉu Mô phỏng trận đấu Thống kê trận đấu CHA FACup 19:00 21/07 Henan FC VS null null null - null Sắp diễn ra Xem ngay Dalian Yingbo BEN 10 KAN YONE LUCAS CHA FACup 19:00 21/07 Yunnan Yukun VS null null null - null Sắp diễn ra Xem ngay Chengdu Rongcheng NGƯỜI CÁ COZY ENZO ĐỖ TÚ TÀI A WIN CHA FACup 18:35 21/07 Shanghai Shenhua VS null null null - null Sắp diễn ra Xem ngay Qingdao Hainiu PEWPEW CÔNG CHẤT A ",
+            "harvest_rounds": 0,
+            "harvest_window_seconds": 0.62,
+            "main_status": 200,
+            "harvested_stream_count": 1,
+            "harvested_blv_ids": [
+              "557845"
+            ],
+            "scan_mode": "browser-event",
+            "elapsed_seconds": 14.206
+          },
+          "http_probe": {
+            "enabled": false,
+            "status": null,
+            "elapsed_seconds": 0.0,
+            "error": ""
+          },
+          "errors": [
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED"
+          ],
+          "failed_requests": [
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/main.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/customize.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/auth.css?ver=737 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat.css?ver=359 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat(1).css?ver=947 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/toast.css?ver=826 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/themes/flatsome/assets/css/flatsome.css?ver=3.18.2 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/themes/flatsome-child/style.css?ver=3.0 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/countdown.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/match.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/livescore.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/style_custom.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/effect/running-border.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/option/option-6.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/highlight/option-1.css?ver=2.8.5 | net::ERR_FAILED"
+          ],
+          "http_errors": [
+            "403 https://socolivep.cv/wp-admin/admin-ajax.php?action=scl_realtime&sport=1"
+          ]
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/thun-vs-dinamo-zagreb-22-07-2026-0100?blv=610518",
+          "blv": "XUÂN TÓC ĐỎ",
+          "blv_id": "610518",
+          "streams": [
+            "https://pull.niur.live/live/stream-610518_lhd.m3u8?txSecret=94b79ed6e0ff5f0c39482123776dd380&txTime=6a5d5c6f"
+          ],
+          "stream_sources": {
+            "https://pull.niur.live/live/stream-610518_lhd.m3u8?txSecret=94b79ed6e0ff5f0c39482123776dd380&txTime=6a5d5c6f": [
+              "final-no-stream-scan",
+              "harvest-final"
+            ]
+          },
+          "stream_first_seen": [
+            "https://pull.niur.live/live/stream-610518_lhd.m3u8?txSecret=94b79ed6e0ff5f0c39482123776dd380&txTime=6a5d5c6f"
+          ],
+          "discovered_blv_ids": [
+            "610518"
+          ],
+          "diagnostics": {
+            "url": "https://socolivep.cv/truc-tiep/thun-vs-dinamo-zagreb-22-07-2026-0100/?blv=610518",
+            "title": "Xem trực tiếp bóng đá Thun vs Dinamo Zagreb | 01:00 ngày 22/07/2026",
+            "h1": "Trực tiếp bóng đá Socolive Thun vs Dinamo Zagreb lúc 01:00 ngày 22/07/2026",
+            "ready_state": "complete",
+            "visibility_state": "visible",
+            "hidden": false,
+            "video_count": 0,
+            "iframe_count": 0,
+            "body_sample": "Skip to content Socolive Bảng xếp hạng Lịch thi đấu Kết quả bóng đá Tin thể thao Trực tiếp bóng đá Socolive Thun vs Dinamo Zagreb lúc 01:00 ngày 22/07/2026 UEFA CL Thun 01:00 22/07 Dinamo Zagreb Trận đấu sẽ bắt đầu sau Ngày0 : Giờ3 : Phút57 : Giây38 Trận đấu chưa bắt đầu ĐỖ TÚ TÀI ANH TÀI A TÚ XUÂN TÓC ĐỎ Chat Thống kê Đội hình Diễn Biến Bảng XH \" \" Xóa Tin nhắn riêng 😀 😁 😃 😄 😅 😆 😇 😉 😊 🙂 😋 😍 😘 😗 😙 😚 😜 😝 😛 😎 🙄 😳 😡 😕 😫 😤 😨 😥 😪 😓 😵 😲 🤧 😷 🤒 🤕 😴 💤 👏 🤙 👍 👎 👊 ✊ ✌ 👌 ✋ 🤚 💪 🤝 👈 👉 🖕 🖐 👄 👂 👀 🎅 🌞 🌙 ⭐ ⚡ 🔥 ❄️ ⚽ 🏀 🏈 ⚾ 🎁 🎉 ✒️ 📝 ❤️ 💛 💚 🆚 💬 🕐 Vô hiệu hóa tất cả Vô hiệu hóa quà tặng Tắt lời chào Đăng nhập để cùng chat nhé Gửi Tỷ lệ kèo Cược Châu Á Chủ Chấp Khách Cược Châu Âu Chủ Hòa Khách Tài xỉu Tài Tỷ lệ kèo Xỉu Kèo góc Tài Tỷ lệ kèo Xỉu Mô phỏng trận đấu Thống kê trận đấu CHA FACup 19:00 21/07 Henan FC VS null null null - null Sắp diễn ra Xem ngay Dalian Yingbo BEN 10 KAN YONE LUCAS CHA FACup 19:00 21/07 Yunnan Yukun VS null null null - null Sắp diễn ra Xem ngay Chengdu Rongcheng NGƯỜI CÁ COZY ENZO ĐỖ TÚ TÀI A WIN CHA FACup 18:35 21/07 Shanghai Shenhua VS null null null - null Sắp diễn ra Xem ngay Qingdao Hainiu PEWPEW CÔNG CHẤT A ",
+            "harvest_rounds": 0,
+            "harvest_window_seconds": 0.623,
+            "main_status": 200,
+            "harvested_stream_count": 1,
+            "harvested_blv_ids": [
+              "610518"
+            ],
+            "scan_mode": "browser-event",
+            "elapsed_seconds": 14.043
+          },
+          "http_probe": {
+            "enabled": false,
+            "status": null,
+            "elapsed_seconds": 0.0,
+            "error": ""
+          },
+          "errors": [
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED"
+          ],
+          "failed_requests": [
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/main.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/customize.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/auth.css?ver=136 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat.css?ver=164 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat(1).css?ver=188 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/toast.css?ver=143 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/themes/flatsome/assets/css/flatsome.css?ver=3.18.2 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/themes/flatsome-child/style.css?ver=3.0 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/countdown.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/match.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/livescore.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/style_custom.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/effect/running-border.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/option/option-6.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/highlight/option-1.css?ver=2.8.5 | net::ERR_FAILED"
+          ],
+          "http_errors": [
+            "403 https://socolivep.cv/wp-admin/admin-ajax.php?action=scl_realtime&sport=1"
+          ]
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/thun-vs-dinamo-zagreb-22-07-2026-0100?blv=406865",
+          "blv": "ANH TÀI",
+          "blv_id": "406865",
+          "streams": [
+            "https://pull.niues.live/live/stream-406865_lhd.m3u8?auth_key=1784640633-0-0-091f6258adf2e6dc4d9c9542558cb2b4"
+          ],
+          "stream_sources": {
+            "https://pull.niues.live/live/stream-406865_lhd.m3u8?auth_key=1784640633-0-0-091f6258adf2e6dc4d9c9542558cb2b4": [
+              "final-no-stream-scan",
+              "harvest-final"
+            ]
+          },
+          "stream_first_seen": [
+            "https://pull.niues.live/live/stream-406865_lhd.m3u8?auth_key=1784640633-0-0-091f6258adf2e6dc4d9c9542558cb2b4"
+          ],
+          "discovered_blv_ids": [
+            "406865"
+          ],
+          "diagnostics": {
+            "url": "https://socolivep.cv/truc-tiep/thun-vs-dinamo-zagreb-22-07-2026-0100/?blv=406865",
+            "title": "Xem trực tiếp bóng đá Thun vs Dinamo Zagreb | 01:00 ngày 22/07/2026",
+            "h1": "Trực tiếp bóng đá Socolive Thun vs Dinamo Zagreb lúc 01:00 ngày 22/07/2026",
+            "ready_state": "complete",
+            "visibility_state": "visible",
+            "hidden": false,
+            "video_count": 0,
+            "iframe_count": 0,
+            "body_sample": "Skip to content Socolive Bảng xếp hạng Lịch thi đấu Kết quả bóng đá Tin thể thao Trực tiếp bóng đá Socolive Thun vs Dinamo Zagreb lúc 01:00 ngày 22/07/2026 UEFA CL Thun 01:00 22/07 Dinamo Zagreb Trận đấu sẽ bắt đầu sau Ngày0 : Giờ3 : Phút54 : Giây30 Trận đấu chưa bắt đầu ĐỖ TÚ TÀI ANH TÀI A TÚ XUÂN TÓC ĐỎ Chat Thống kê Đội hình Diễn Biến Bảng XH \" \" Xóa Tin nhắn riêng 😀 😁 😃 😄 😅 😆 😇 😉 😊 🙂 😋 😍 😘 😗 😙 😚 😜 😝 😛 😎 🙄 😳 😡 😕 😫 😤 😨 😥 😪 😓 😵 😲 🤧 😷 🤒 🤕 😴 💤 👏 🤙 👍 👎 👊 ✊ ✌ 👌 ✋ 🤚 💪 🤝 👈 👉 🖕 🖐 👄 👂 👀 🎅 🌞 🌙 ⭐ ⚡ 🔥 ❄️ ⚽ 🏀 🏈 ⚾ 🎁 🎉 ✒️ 📝 ❤️ 💛 💚 🆚 💬 🕐 Vô hiệu hóa tất cả Vô hiệu hóa quà tặng Tắt lời chào Đăng nhập để cùng chat nhé Gửi Tỷ lệ kèo Cược Châu Á Chủ Chấp Khách Cược Châu Âu Chủ Hòa Khách Tài xỉu Tài Tỷ lệ kèo Xỉu Kèo góc Tài Tỷ lệ kèo Xỉu Mô phỏng trận đấu Thống kê trận đấu CHA FACup 19:00 21/07 Henan FC VS null null null - null Sắp diễn ra Xem ngay Dalian Yingbo BEN 10 KAN YONE LUCAS CHA FACup 19:00 21/07 Yunnan Yukun VS null null null - null Sắp diễn ra Xem ngay Chengdu Rongcheng NGƯỜI CÁ COZY ENZO ĐỖ TÚ TÀI A WIN CHA FACup 18:35 21/07 Shanghai Shenhua VS null null null - null Sắp diễn ra Xem ngay Qingdao Hainiu PEWPEW CÔNG CHẤT A ",
+            "harvest_rounds": 0,
+            "harvest_window_seconds": 0.633,
+            "main_status": 200,
+            "harvested_stream_count": 1,
+            "harvested_blv_ids": [
+              "406865"
+            ],
+            "scan_mode": "browser-event",
+            "elapsed_seconds": 13.492
+          },
+          "http_probe": {
+            "enabled": false,
+            "status": null,
+            "elapsed_seconds": 0.0,
+            "error": ""
+          },
+          "errors": [
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED"
+          ],
+          "failed_requests": [
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/main.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/customize.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/auth.css?ver=63 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat.css?ver=943 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat(1).css?ver=250 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/toast.css?ver=686 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/themes/flatsome/assets/css/flatsome.css?ver=3.18.2 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/themes/flatsome-child/style.css?ver=3.0 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/countdown.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/match.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/livescore.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/style_custom.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/effect/running-border.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/option/option-6.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/highlight/option-1.css?ver=2.8.5 | net::ERR_FAILED"
+          ],
+          "http_errors": [
+            "403 https://socolivep.cv/wp-admin/admin-ajax.php?action=scl_realtime&sport=1"
+          ]
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/thun-vs-dinamo-zagreb-22-07-2026-0100?blv=557845",
+          "blv": "A TÚ",
+          "blv_id": "557845",
+          "streams": [
+            "https://pull.niues.live/live/stream-557845_lhd.m3u8?auth_key=1784640222-0-0-61b6a909b73841fa822abc26617827b8"
+          ],
+          "stream_sources": {
+            "https://pull.niues.live/live/stream-557845_lhd.m3u8?auth_key=1784640222-0-0-61b6a909b73841fa822abc26617827b8": [
+              "final-no-stream-scan",
+              "harvest-final"
+            ]
+          },
+          "stream_first_seen": [
+            "https://pull.niues.live/live/stream-557845_lhd.m3u8?auth_key=1784640222-0-0-61b6a909b73841fa822abc26617827b8"
+          ],
+          "discovered_blv_ids": [
+            "557845"
+          ],
+          "diagnostics": {
+            "url": "https://socolivep.cv/truc-tiep/thun-vs-dinamo-zagreb-22-07-2026-0100/?blv=557845",
+            "title": "Xem trực tiếp bóng đá Thun vs Dinamo Zagreb | 01:00 ngày 22/07/2026",
+            "h1": "Trực tiếp bóng đá Socolive Thun vs Dinamo Zagreb lúc 01:00 ngày 22/07/2026",
+            "ready_state": "complete",
+            "visibility_state": "visible",
+            "hidden": false,
+            "video_count": 0,
+            "iframe_count": 0,
+            "body_sample": "Skip to content Socolive Bảng xếp hạng Lịch thi đấu Kết quả bóng đá Tin thể thao Trực tiếp bóng đá Socolive Thun vs Dinamo Zagreb lúc 01:00 ngày 22/07/2026 UEFA CL Thun 01:00 22/07 Dinamo Zagreb Trận đấu sẽ bắt đầu sau Ngày0 : Giờ3 : Phút54 : Giây14 Trận đấu chưa bắt đầu ĐỖ TÚ TÀI ANH TÀI A TÚ XUÂN TÓC ĐỎ Chat Thống kê Đội hình Diễn Biến Bảng XH \" \" Xóa Tin nhắn riêng 😀 😁 😃 😄 😅 😆 😇 😉 😊 🙂 😋 😍 😘 😗 😙 😚 😜 😝 😛 😎 🙄 😳 😡 😕 😫 😤 😨 😥 😪 😓 😵 😲 🤧 😷 🤒 🤕 😴 💤 👏 🤙 👍 👎 👊 ✊ ✌ 👌 ✋ 🤚 💪 🤝 👈 👉 🖕 🖐 👄 👂 👀 🎅 🌞 🌙 ⭐ ⚡ 🔥 ❄️ ⚽ 🏀 🏈 ⚾ 🎁 🎉 ✒️ 📝 ❤️ 💛 💚 🆚 💬 🕐 Vô hiệu hóa tất cả Vô hiệu hóa quà tặng Tắt lời chào Đăng nhập để cùng chat nhé Gửi Tỷ lệ kèo Cược Châu Á Chủ Chấp Khách Cược Châu Âu Chủ Hòa Khách Tài xỉu Tài Tỷ lệ kèo Xỉu Kèo góc Tài Tỷ lệ kèo Xỉu Mô phỏng trận đấu Thống kê trận đấu CHA FACup 19:00 21/07 Henan FC VS null null null - null Sắp diễn ra Xem ngay Dalian Yingbo BEN 10 KAN YONE LUCAS CHA FACup 19:00 21/07 Yunnan Yukun VS null null null - null Sắp diễn ra Xem ngay Chengdu Rongcheng NGƯỜI CÁ COZY ENZO ĐỖ TÚ TÀI A WIN CHA FACup 18:35 21/07 Shanghai Shenhua VS null null null - null Sắp diễn ra Xem ngay Qingdao Hainiu PEWPEW CÔNG CHẤT A ",
+            "harvest_rounds": 0,
+            "harvest_window_seconds": 0.635,
+            "main_status": 200,
+            "harvested_stream_count": 1,
+            "harvested_blv_ids": [
+              "557845"
+            ],
+            "scan_mode": "browser-event",
+            "elapsed_seconds": 13.523
+          },
+          "http_probe": {
+            "enabled": false,
+            "status": null,
+            "elapsed_seconds": 0.0,
+            "error": ""
+          },
+          "errors": [
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED"
+          ],
+          "failed_requests": [
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/main.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/customize.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/auth.css?ver=737 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat.css?ver=359 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat(1).css?ver=947 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/toast.css?ver=826 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/themes/flatsome/assets/css/flatsome.css?ver=3.18.2 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/themes/flatsome-child/style.css?ver=3.0 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/countdown.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/match.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/livescore.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/style_custom.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/effect/running-border.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/option/option-6.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/highlight/option-1.css?ver=2.8.5 | net::ERR_FAILED"
+          ],
+          "http_errors": [
+            "403 https://socolivep.cv/wp-admin/admin-ajax.php?action=scl_realtime&sport=1"
+          ]
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/thun-vs-dinamo-zagreb-22-07-2026-0100?blv=610518",
+          "blv": "XUÂN TÓC ĐỎ",
+          "blv_id": "610518",
+          "streams": [
+            "https://pull.niur.live/live/stream-610518_lhd.m3u8?txSecret=94b79ed6e0ff5f0c39482123776dd380&txTime=6a5d5c6f"
+          ],
+          "stream_sources": {
+            "https://pull.niur.live/live/stream-610518_lhd.m3u8?txSecret=94b79ed6e0ff5f0c39482123776dd380&txTime=6a5d5c6f": [
+              "final-no-stream-scan",
+              "harvest-final"
+            ]
+          },
+          "stream_first_seen": [
+            "https://pull.niur.live/live/stream-610518_lhd.m3u8?txSecret=94b79ed6e0ff5f0c39482123776dd380&txTime=6a5d5c6f"
+          ],
+          "discovered_blv_ids": [
+            "610518"
+          ],
+          "diagnostics": {
+            "url": "https://socolivep.cv/truc-tiep/thun-vs-dinamo-zagreb-22-07-2026-0100/?blv=610518",
+            "title": "Xem trực tiếp bóng đá Thun vs Dinamo Zagreb | 01:00 ngày 22/07/2026",
+            "h1": "Trực tiếp bóng đá Socolive Thun vs Dinamo Zagreb lúc 01:00 ngày 22/07/2026",
+            "ready_state": "complete",
+            "visibility_state": "visible",
+            "hidden": false,
+            "video_count": 0,
+            "iframe_count": 0,
+            "body_sample": "Skip to content Socolive Bảng xếp hạng Lịch thi đấu Kết quả bóng đá Tin thể thao Trực tiếp bóng đá Socolive Thun vs Dinamo Zagreb lúc 01:00 ngày 22/07/2026 UEFA CL Thun 01:00 22/07 Dinamo Zagreb Trận đấu sẽ bắt đầu sau Ngày0 : Giờ3 : Phút53 : Giây59 Trận đấu chưa bắt đầu ĐỖ TÚ TÀI ANH TÀI A TÚ XUÂN TÓC ĐỎ Chat Thống kê Đội hình Diễn Biến Bảng XH \" \" Xóa Tin nhắn riêng 😀 😁 😃 😄 😅 😆 😇 😉 😊 🙂 😋 😍 😘 😗 😙 😚 😜 😝 😛 😎 🙄 😳 😡 😕 😫 😤 😨 😥 😪 😓 😵 😲 🤧 😷 🤒 🤕 😴 💤 👏 🤙 👍 👎 👊 ✊ ✌ 👌 ✋ 🤚 💪 🤝 👈 👉 🖕 🖐 👄 👂 👀 🎅 🌞 🌙 ⭐ ⚡ 🔥 ❄️ ⚽ 🏀 🏈 ⚾ 🎁 🎉 ✒️ 📝 ❤️ 💛 💚 🆚 💬 🕐 Vô hiệu hóa tất cả Vô hiệu hóa quà tặng Tắt lời chào Đăng nhập để cùng chat nhé Gửi Tỷ lệ kèo Cược Châu Á Chủ Chấp Khách Cược Châu Âu Chủ Hòa Khách Tài xỉu Tài Tỷ lệ kèo Xỉu Kèo góc Tài Tỷ lệ kèo Xỉu Mô phỏng trận đấu Thống kê trận đấu CHA FACup 19:00 21/07 Henan FC VS null null null - null Sắp diễn ra Xem ngay Dalian Yingbo BEN 10 KAN YONE LUCAS CHA FACup 19:00 21/07 Yunnan Yukun VS null null null - null Sắp diễn ra Xem ngay Chengdu Rongcheng NGƯỜI CÁ COZY ENZO ĐỖ TÚ TÀI A WIN CHA FACup 18:35 21/07 Shanghai Shenhua VS null null null - null Sắp diễn ra Xem ngay Qingdao Hainiu PEWPEW CÔNG CHẤT A ",
+            "harvest_rounds": 0,
+            "harvest_window_seconds": 0.633,
+            "main_status": 200,
+            "harvested_stream_count": 1,
+            "harvested_blv_ids": [
+              "610518"
+            ],
+            "scan_mode": "browser-event",
+            "elapsed_seconds": 13.515
+          },
+          "http_probe": {
+            "enabled": false,
+            "status": null,
+            "elapsed_seconds": 0.0,
+            "error": ""
+          },
+          "errors": [
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED"
+          ],
+          "failed_requests": [
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/main.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/customize.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/auth.css?ver=136 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat.css?ver=164 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat(1).css?ver=188 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/toast.css?ver=143 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/themes/flatsome/assets/css/flatsome.css?ver=3.18.2 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/themes/flatsome-child/style.css?ver=3.0 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/countdown.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/match.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/livescore.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/style_custom.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/effect/running-border.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/option/option-6.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/highlight/option-1.css?ver=2.8.5 | net::ERR_FAILED"
+          ],
+          "http_errors": [
+            "403 https://socolivep.cv/wp-admin/admin-ajax.php?action=scl_realtime&sport=1"
+          ]
+        }
+      ],
+      "attempted_room_ids": [
+        "406865",
+        "557845",
+        "607552",
+        "610518"
+      ],
+      "coverage": {
+        "found_streams": 0,
+        "found_blv_ids": [],
+        "goal": 8,
+        "source_goal_reached": false,
+        "room_queue_complete": true,
+        "complete": true,
+        "max_streams_per_blv": 2,
+        "total_explicit_blv_rooms": 4,
+        "pending_room_keys": [
+          "__base__"
+        ],
+        "room_progress": {
+          "607552": {
+            "key": "607552",
+            "url": "https://socolivep.cv/truc-tiep/thun-vs-dinamo-zagreb-22-07-2026-0100?blv=607552",
+            "blv": "ĐỖ TÚ TÀI",
+            "blv_id": "607552",
+            "status": "success",
+            "attempts": 1,
+            "attempts_total": 1,
+            "ever_attempted": true,
+            "valid_stream_ever_found": true,
+            "needs_token_refresh": true,
+            "completion_reason": "valid_stream_seen_earlier",
+            "rate_limit_hits": 0,
+            "last_http_status": 200,
+            "last_stream_count": 0,
+            "last_error": "Token cũ đã hết hạn; giữ nguyên attempts_total và trạng thái hoàn tất của BLV."
+          },
+          "406865": {
+            "key": "406865",
+            "url": "https://socolivep.cv/truc-tiep/thun-vs-dinamo-zagreb-22-07-2026-0100?blv=406865",
+            "blv": "ANH TÀI",
+            "blv_id": "406865",
+            "status": "exhausted",
+            "attempts": 2,
+            "attempts_total": 2,
+            "ever_attempted": true,
+            "valid_stream_ever_found": false,
+            "needs_token_refresh": true,
+            "completion_reason": "no_valid_stream_after_max_attempts",
+            "rate_limit_hits": 0,
+            "last_http_status": 200,
+            "last_stream_count": 0,
+            "last_error": "Token cũ đã hết hạn; giữ nguyên attempts_total và trạng thái hoàn tất của BLV."
+          },
+          "557845": {
+            "key": "557845",
+            "url": "https://socolivep.cv/truc-tiep/thun-vs-dinamo-zagreb-22-07-2026-0100?blv=557845",
+            "blv": "A TÚ",
+            "blv_id": "557845",
+            "status": "exhausted",
+            "attempts": 2,
+            "attempts_total": 2,
+            "ever_attempted": true,
+            "valid_stream_ever_found": false,
+            "needs_token_refresh": true,
+            "completion_reason": "no_valid_stream_after_max_attempts",
+            "rate_limit_hits": 0,
+            "last_http_status": 200,
+            "last_stream_count": 0,
+            "last_error": "Token cũ đã hết hạn; giữ nguyên attempts_total và trạng thái hoàn tất của BLV."
+          },
+          "610518": {
+            "key": "610518",
+            "url": "https://socolivep.cv/truc-tiep/thun-vs-dinamo-zagreb-22-07-2026-0100?blv=610518",
+            "blv": "XUÂN TÓC ĐỎ",
+            "blv_id": "610518",
+            "status": "exhausted",
+            "attempts": 2,
+            "attempts_total": 2,
+            "ever_attempted": true,
+            "valid_stream_ever_found": false,
+            "needs_token_refresh": true,
+            "completion_reason": "no_valid_stream_after_max_attempts",
+            "rate_limit_hits": 0,
+            "last_http_status": 200,
+            "last_stream_count": 0,
+            "last_error": "Token cũ đã hết hạn; giữ nguyên attempts_total và trạng thái hoàn tất của BLV."
+          },
+          "__base__": {
+            "key": "__base__",
+            "url": "https://socolivep.cv/truc-tiep/thun-vs-dinamo-zagreb-22-07-2026-0100",
+            "blv": "XEM NGAY",
+            "blv_id": "",
+            "status": "pending",
+            "attempts": 0,
+            "attempts_total": 0,
+            "ever_attempted": false,
+            "valid_stream_ever_found": false,
+            "needs_token_refresh": false,
+            "completion_reason": "",
+            "rate_limit_hits": 0,
+            "last_http_status": null,
+            "last_stream_count": 0,
+            "last_error": ""
+          }
+        }
+      },
+      "errors": [],
+      "room_progress": {
+        "607552": {
+          "key": "607552",
+          "url": "https://socolivep.cv/truc-tiep/thun-vs-dinamo-zagreb-22-07-2026-0100?blv=607552",
+          "blv": "ĐỖ TÚ TÀI",
+          "blv_id": "607552",
+          "status": "success",
+          "attempts": 1,
+          "attempts_total": 1,
+          "ever_attempted": true,
+          "valid_stream_ever_found": true,
+          "needs_token_refresh": true,
+          "completion_reason": "valid_stream_seen_earlier",
+          "rate_limit_hits": 0,
+          "last_http_status": 200,
+          "last_stream_count": 0,
+          "last_error": "Token cũ đã hết hạn; giữ nguyên attempts_total và trạng thái hoàn tất của BLV."
+        },
+        "406865": {
+          "key": "406865",
+          "url": "https://socolivep.cv/truc-tiep/thun-vs-dinamo-zagreb-22-07-2026-0100?blv=406865",
+          "blv": "ANH TÀI",
+          "blv_id": "406865",
+          "status": "exhausted",
+          "attempts": 2,
+          "attempts_total": 2,
+          "ever_attempted": true,
+          "valid_stream_ever_found": false,
+          "needs_token_refresh": true,
+          "completion_reason": "no_valid_stream_after_max_attempts",
+          "rate_limit_hits": 0,
+          "last_http_status": 200,
+          "last_stream_count": 0,
+          "last_error": "Token cũ đã hết hạn; giữ nguyên attempts_total và trạng thái hoàn tất của BLV."
+        },
+        "557845": {
+          "key": "557845",
+          "url": "https://socolivep.cv/truc-tiep/thun-vs-dinamo-zagreb-22-07-2026-0100?blv=557845",
+          "blv": "A TÚ",
+          "blv_id": "557845",
+          "status": "exhausted",
+          "attempts": 2,
+          "attempts_total": 2,
+          "ever_attempted": true,
+          "valid_stream_ever_found": false,
+          "needs_token_refresh": true,
+          "completion_reason": "no_valid_stream_after_max_attempts",
+          "rate_limit_hits": 0,
+          "last_http_status": 200,
+          "last_stream_count": 0,
+          "last_error": "Token cũ đã hết hạn; giữ nguyên attempts_total và trạng thái hoàn tất của BLV."
+        },
+        "610518": {
+          "key": "610518",
+          "url": "https://socolivep.cv/truc-tiep/thun-vs-dinamo-zagreb-22-07-2026-0100?blv=610518",
+          "blv": "XUÂN TÓC ĐỎ",
+          "blv_id": "610518",
+          "status": "exhausted",
+          "attempts": 2,
+          "attempts_total": 2,
+          "ever_attempted": true,
+          "valid_stream_ever_found": false,
+          "needs_token_refresh": true,
+          "completion_reason": "no_valid_stream_after_max_attempts",
+          "rate_limit_hits": 0,
+          "last_http_status": 200,
+          "last_stream_count": 0,
+          "last_error": "Token cũ đã hết hạn; giữ nguyên attempts_total và trạng thái hoàn tất của BLV."
+        },
+        "__base__": {
+          "key": "__base__",
+          "url": "https://socolivep.cv/truc-tiep/thun-vs-dinamo-zagreb-22-07-2026-0100",
+          "blv": "XEM NGAY",
+          "blv_id": "",
+          "status": "pending",
+          "attempts": 0,
+          "attempts_total": 0,
+          "ever_attempted": false,
+          "valid_stream_ever_found": false,
+          "needs_token_refresh": false,
+          "completion_reason": "",
+          "rate_limit_hits": 0,
+          "last_http_status": null,
+          "last_stream_count": 0,
+          "last_error": ""
+        }
+      }
+    },
+    {
       "base_url": "https://socolivep.cv/truc-tiep/sturm-graz-vs-heart-of-midlothian-22-07-2026-0130/",
       "raw_title": "Trực tiếp bóng đá Socolive Sturm Graz vs Heart of Midlothian lúc 01:30 ngày 22/07/2026",
       "home_team": "Sturm Graz",
@@ -10357,372 +10807,6 @@
         "622093"
       ],
       "run_global_budget_used": 5
-    },
-    {
-      "base_url": "https://socolivep.cv/truc-tiep/ki-klaksvik-vs-kauno-zalgiris-22-07-2026-0145/",
-      "raw_title": "Trực tiếp bóng đá Socolive KI Klaksvik vs Kauno Zalgiris lúc 01:45 ngày 22/07/2026",
-      "home_team": "KI Klaksvik",
-      "away_team": "Kauno Zalgiris",
-      "home_logo": "https://sta.vnres.co/file/common/20260719/43254f859296223c98ee0779d7e643ea.png",
-      "away_logo": "https://sta.vnres.co/file/common/20260719/cf3cdda75f54cd51ce3fe0ce6df86a69.png",
-      "time_text": "01:45",
-      "date_text": "22/07",
-      "status": "",
-      "card_text": "UEFA CL 01:45 22/07 KI Klaksvik VS XEM NGAY Kauno Zalgiris PEANUT A PÁO",
-      "rooms": [
-        {
-          "url": "https://socolivep.cv/truc-tiep/ki-klaksvik-vs-kauno-zalgiris-22-07-2026-0145?blv=620084",
-          "blv": "PEANUT",
-          "blv_id": "620084"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/ki-klaksvik-vs-kauno-zalgiris-22-07-2026-0145?blv=235232",
-          "blv": "A PÁO",
-          "blv_id": "235232"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/ki-klaksvik-vs-kauno-zalgiris-22-07-2026-0145",
-          "blv": "XEM NGAY",
-          "blv_id": ""
-        }
-      ],
-      "match_name": "KI Klaksvik vs Kauno Zalgiris",
-      "scheduled_at": "2026-07-22T01:45:00+07:00",
-      "streams": [
-        {
-          "url": "https://pull.niues.live/live/stream-620084_lhd.m3u8?auth_key=1784653015-0-0-c61aab2315fcb784ade97201ba250fe0",
-          "queue_room_key": "620084",
-          "room_url": "https://socolivep.cv/truc-tiep/ki-klaksvik-vs-kauno-zalgiris-22-07-2026-0145?blv=620084",
-          "blv": "PEANUT",
-          "blv_id": "620084",
-          "source_id": "620084",
-          "source_provenance": [
-            "final-no-stream-scan",
-            "harvest-final"
-          ],
-          "source_confidence": "embedded",
-          "mapping_mode": "exact-room-id",
-          "discovered_from_room_url": "https://socolivep.cv/truc-tiep/ki-klaksvik-vs-kauno-zalgiris-22-07-2026-0145?blv=620084",
-          "discovered_from_blv": "PEANUT",
-          "discovered_at": "2026-07-21T23:02:53.219471+07:00",
-          "valid_until": "2026-07-21T23:56:55+07:00",
-          "is_expired": false
-        }
-      ],
-      "room_results": [
-        {
-          "url": "https://socolivep.cv/truc-tiep/ki-klaksvik-vs-kauno-zalgiris-22-07-2026-0145?blv=620084",
-          "blv": "PEANUT",
-          "blv_id": "620084",
-          "streams": [
-            "https://pull.niues.live/live/stream-620084_lhd.m3u8?auth_key=1784653015-0-0-c61aab2315fcb784ade97201ba250fe0"
-          ],
-          "stream_sources": {
-            "https://pull.niues.live/live/stream-620084_lhd.m3u8?auth_key=1784653015-0-0-c61aab2315fcb784ade97201ba250fe0": [
-              "final-no-stream-scan",
-              "harvest-final"
-            ]
-          },
-          "stream_first_seen": [
-            "https://pull.niues.live/live/stream-620084_lhd.m3u8?auth_key=1784653015-0-0-c61aab2315fcb784ade97201ba250fe0"
-          ],
-          "discovered_blv_ids": [
-            "620084"
-          ],
-          "diagnostics": {
-            "url": "https://socolivep.cv/truc-tiep/ki-klaksvik-vs-kauno-zalgiris-22-07-2026-0145/?blv=620084",
-            "title": "Xem trực tiếp bóng đá KI Klaksvik vs Kauno Zalgiris | 01:45 ngày 22/07/2026",
-            "h1": "Trực tiếp bóng đá Socolive KI Klaksvik vs Kauno Zalgiris lúc 01:45 ngày 22/07/2026",
-            "ready_state": "complete",
-            "visibility_state": "visible",
-            "hidden": false,
-            "video_count": 0,
-            "iframe_count": 0,
-            "body_sample": "Skip to content Socolive Bảng xếp hạng Lịch thi đấu Kết quả bóng đá Tin thể thao Trực tiếp bóng đá Socolive KI Klaksvik vs Kauno Zalgiris lúc 01:45 ngày 22/07/2026 UEFA CL KI Klaksvik 01:45 22/07 Kauno Zalgiris Trận đấu sẽ bắt đầu sau Ngày0 : Giờ2 : Phút42 : Giây6 Trận đấu chưa bắt đầu PEANUT A PÁO Chat Thống kê Đội hình Diễn Biến Bảng XH \" \" Admin Sóc Bánh Mì: B- sport https://www.bty9251.com 👑 👑V-sport https://w9.vty28.net TRANG CƯỢC UY TÍN, NHẬN KÈO BÌNH LUẬN VIÊN ❤️ Telegram: https://t.me/socbanhmi338 , LIÊN HỆ MÃ BUFA 4RZWBN 💎 Zalo: 0567 820 040 Mochua13: hello peanut Kaij: kèo này đánh gì vậy blv Xóa Tin nhắn riêng 😀 😁 😃 😄 😅 😆 😇 😉 😊 🙂 😋 😍 😘 😗 😙 😚 😜 😝 😛 😎 🙄 😳 😡 😕 😫 😤 😨 😥 😪 😓 😵 😲 🤧 😷 🤒 🤕 😴 💤 👏 🤙 👍 👎 👊 ✊ ✌ 👌 ✋ 🤚 💪 🤝 👈 👉 🖕 🖐 👄 👂 👀 🎅 🌞 🌙 ⭐ ⚡ 🔥 ❄️ ⚽ 🏀 🏈 ⚾ 🎁 🎉 ✒️ 📝 ❤️ 💛 💚 🆚 💬 🕐 Vô hiệu hóa tất cả Vô hiệu hóa quà tặng Tắt lời chào Đăng nhập để cùng chat nhé Gửi Tỷ lệ kèo Cược Châu Á Chủ Chấp Khách Cược Châu Âu Chủ Hòa Khách Tài xỉu Tài Tỷ lệ kèo Xỉu Kèo góc Tài Tỷ lệ kèo Xỉu Mô phỏng trận đấu Thống kê trận đấu UEFA CL 23:00 21/07 Ararat-Armenia FC VS null null null - null Sắp diễn ra Xem ngay Shamrock Rovers ",
-            "harvest_rounds": 0,
-            "harvest_window_seconds": 0.639,
-            "main_status": 200,
-            "harvested_stream_count": 1,
-            "harvested_blv_ids": [
-              "620084"
-            ],
-            "scan_mode": "browser-event",
-            "elapsed_seconds": 14.033
-          },
-          "http_probe": {
-            "enabled": false,
-            "status": null,
-            "elapsed_seconds": 0.0,
-            "error": ""
-          },
-          "errors": [
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED"
-          ],
-          "failed_requests": [
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/main.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/customize.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/auth.css?ver=295 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat.css?ver=385 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat(1).css?ver=367 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/toast.css?ver=803 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/themes/flatsome/assets/css/flatsome.css?ver=3.18.2 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/themes/flatsome-child/style.css?ver=3.0 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/countdown.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/match.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/livescore.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/style_custom.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/effect/running-border.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/option/option-6.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/highlight/option-1.css?ver=2.8.5 | net::ERR_FAILED"
-          ],
-          "http_errors": [
-            "403 https://socolivep.cv/wp-admin/admin-ajax.php?action=scl_realtime&sport=1"
-          ]
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/ki-klaksvik-vs-kauno-zalgiris-22-07-2026-0145?blv=235232",
-          "blv": "A PÁO",
-          "blv_id": "235232",
-          "streams": [
-            "https://pull.niues.live/live/stream-235232_lhd.m3u8?auth_key=1784640406-0-0-c93505ef203ea37dba98bf3eca94e341"
-          ],
-          "stream_sources": {
-            "https://pull.niues.live/live/stream-235232_lhd.m3u8?auth_key=1784640406-0-0-c93505ef203ea37dba98bf3eca94e341": [
-              "final-no-stream-scan",
-              "harvest-final"
-            ]
-          },
-          "stream_first_seen": [
-            "https://pull.niues.live/live/stream-235232_lhd.m3u8?auth_key=1784640406-0-0-c93505ef203ea37dba98bf3eca94e341"
-          ],
-          "discovered_blv_ids": [
-            "235232"
-          ],
-          "diagnostics": {
-            "url": "https://socolivep.cv/truc-tiep/ki-klaksvik-vs-kauno-zalgiris-22-07-2026-0145/?blv=235232",
-            "title": "Xem trực tiếp bóng đá KI Klaksvik vs Kauno Zalgiris | 01:45 ngày 22/07/2026",
-            "h1": "Trực tiếp bóng đá Socolive KI Klaksvik vs Kauno Zalgiris lúc 01:45 ngày 22/07/2026",
-            "ready_state": "complete",
-            "visibility_state": "visible",
-            "hidden": false,
-            "video_count": 0,
-            "iframe_count": 0,
-            "body_sample": "Skip to content Socolive Bảng xếp hạng Lịch thi đấu Kết quả bóng đá Tin thể thao Trực tiếp bóng đá Socolive KI Klaksvik vs Kauno Zalgiris lúc 01:45 ngày 22/07/2026 UEFA CL KI Klaksvik 01:45 22/07 Kauno Zalgiris Trận đấu sẽ bắt đầu sau Ngày0 : Giờ2 : Phút41 : Giây50 Trận đấu chưa bắt đầu PEANUT A PÁO Chat Thống kê Đội hình Diễn Biến Bảng XH \" \" Xóa Tin nhắn riêng 😀 😁 😃 😄 😅 😆 😇 😉 😊 🙂 😋 😍 😘 😗 😙 😚 😜 😝 😛 😎 🙄 😳 😡 😕 😫 😤 😨 😥 😪 😓 😵 😲 🤧 😷 🤒 🤕 😴 💤 👏 🤙 👍 👎 👊 ✊ ✌ 👌 ✋ 🤚 💪 🤝 👈 👉 🖕 🖐 👄 👂 👀 🎅 🌞 🌙 ⭐ ⚡ 🔥 ❄️ ⚽ 🏀 🏈 ⚾ 🎁 🎉 ✒️ 📝 ❤️ 💛 💚 🆚 💬 🕐 Vô hiệu hóa tất cả Vô hiệu hóa quà tặng Tắt lời chào Đăng nhập để cùng chat nhé Gửi Tỷ lệ kèo Cược Châu Á Chủ Chấp Khách Cược Châu Âu Chủ Hòa Khách Tài xỉu Tài Tỷ lệ kèo Xỉu Kèo góc Tài Tỷ lệ kèo Xỉu Mô phỏng trận đấu Thống kê trận đấu UEFA CL 23:00 21/07 Ararat-Armenia FC VS null null null - null Sắp diễn ra Xem ngay Shamrock Rovers NGƯỜI CÁ CÁP A WIN A TÚ VOI LONG UEFA CL 23:00 21/07 FC Iberia 1999 Tbilisi VS null null null - null Sắp diễn ra Xem ngay Slovan Bratislava XUÂN TÓC ĐỎ PEANUT KENCHU GRAP ROBBEN CÒ UEFA CL 23:00 21/07 Mjallby AIF VS null null null - null Sắp diễn ra Xem ngay Lincoln Red I",
-            "harvest_rounds": 0,
-            "harvest_window_seconds": 0.635,
-            "main_status": 200,
-            "harvested_stream_count": 1,
-            "harvested_blv_ids": [
-              "235232"
-            ],
-            "scan_mode": "browser-event",
-            "elapsed_seconds": 14.099
-          },
-          "http_probe": {
-            "enabled": false,
-            "status": null,
-            "elapsed_seconds": 0.0,
-            "error": ""
-          },
-          "errors": [
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED"
-          ],
-          "failed_requests": [
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/main.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/customize.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/auth.css?ver=226 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat.css?ver=654 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat(1).css?ver=825 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/toast.css?ver=601 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/themes/flatsome/assets/css/flatsome.css?ver=3.18.2 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/themes/flatsome-child/style.css?ver=3.0 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/countdown.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/match.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/livescore.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/style_custom.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/effect/running-border.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/option/option-6.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/highlight/option-1.css?ver=2.8.5 | net::ERR_FAILED"
-          ],
-          "http_errors": [
-            "403 https://socolivep.cv/wp-admin/admin-ajax.php?action=scl_realtime&sport=1"
-          ]
-        }
-      ],
-      "attempted_room_ids": [
-        "235232",
-        "620084"
-      ],
-      "coverage": {
-        "found_streams": 1,
-        "found_blv_ids": [
-          "620084"
-        ],
-        "goal": 4,
-        "source_goal_reached": false,
-        "room_queue_complete": false,
-        "complete": false,
-        "max_streams_per_blv": 2,
-        "total_explicit_blv_rooms": 2,
-        "pending_room_keys": [
-          "235232"
-        ],
-        "room_progress": {
-          "620084": {
-            "key": "620084",
-            "url": "https://socolivep.cv/truc-tiep/ki-klaksvik-vs-kauno-zalgiris-22-07-2026-0145?blv=620084",
-            "blv": "PEANUT",
-            "blv_id": "620084",
-            "status": "success",
-            "attempts": 1,
-            "attempts_total": 1,
-            "ever_attempted": true,
-            "valid_stream_ever_found": true,
-            "needs_token_refresh": false,
-            "completion_reason": "valid_stream",
-            "rate_limit_hits": 0,
-            "last_http_status": 200,
-            "last_stream_count": 1,
-            "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
-          },
-          "235232": {
-            "key": "235232",
-            "url": "https://socolivep.cv/truc-tiep/ki-klaksvik-vs-kauno-zalgiris-22-07-2026-0145?blv=235232",
-            "blv": "A PÁO",
-            "blv_id": "235232",
-            "status": "retry",
-            "attempts": 1,
-            "attempts_total": 1,
-            "ever_attempted": true,
-            "valid_stream_ever_found": false,
-            "needs_token_refresh": true,
-            "completion_reason": "",
-            "rate_limit_hits": 0,
-            "last_http_status": 200,
-            "last_stream_count": 0,
-            "last_error": "Token cũ đã hết hạn; giữ nguyên attempts_total và trạng thái hoàn tất của BLV."
-          },
-          "__base__": {
-            "key": "__base__",
-            "url": "https://socolivep.cv/truc-tiep/ki-klaksvik-vs-kauno-zalgiris-22-07-2026-0145",
-            "blv": "XEM NGAY",
-            "blv_id": "",
-            "status": "pending",
-            "attempts": 0,
-            "attempts_total": 0,
-            "ever_attempted": false,
-            "valid_stream_ever_found": false,
-            "needs_token_refresh": false,
-            "completion_reason": "",
-            "rate_limit_hits": 0,
-            "last_http_status": null,
-            "last_stream_count": 0,
-            "last_error": ""
-          }
-        }
-      },
-      "errors": [],
-      "room_progress": {
-        "620084": {
-          "key": "620084",
-          "url": "https://socolivep.cv/truc-tiep/ki-klaksvik-vs-kauno-zalgiris-22-07-2026-0145?blv=620084",
-          "blv": "PEANUT",
-          "blv_id": "620084",
-          "status": "success",
-          "attempts": 1,
-          "attempts_total": 1,
-          "ever_attempted": true,
-          "valid_stream_ever_found": true,
-          "needs_token_refresh": false,
-          "completion_reason": "valid_stream",
-          "rate_limit_hits": 0,
-          "last_http_status": 200,
-          "last_stream_count": 1,
-          "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
-        },
-        "235232": {
-          "key": "235232",
-          "url": "https://socolivep.cv/truc-tiep/ki-klaksvik-vs-kauno-zalgiris-22-07-2026-0145?blv=235232",
-          "blv": "A PÁO",
-          "blv_id": "235232",
-          "status": "retry",
-          "attempts": 1,
-          "attempts_total": 1,
-          "ever_attempted": true,
-          "valid_stream_ever_found": false,
-          "needs_token_refresh": true,
-          "completion_reason": "",
-          "rate_limit_hits": 0,
-          "last_http_status": 200,
-          "last_stream_count": 0,
-          "last_error": "Token cũ đã hết hạn; giữ nguyên attempts_total và trạng thái hoàn tất của BLV."
-        },
-        "__base__": {
-          "key": "__base__",
-          "url": "https://socolivep.cv/truc-tiep/ki-klaksvik-vs-kauno-zalgiris-22-07-2026-0145",
-          "blv": "XEM NGAY",
-          "blv_id": "",
-          "status": "pending",
-          "attempts": 0,
-          "attempts_total": 0,
-          "ever_attempted": false,
-          "valid_stream_ever_found": false,
-          "needs_token_refresh": false,
-          "completion_reason": "",
-          "rate_limit_hits": 0,
-          "last_http_status": null,
-          "last_stream_count": 0,
-          "last_error": ""
-        }
-      },
-      "run_attempted_room_keys": [
-        "235232",
-        "620084"
-      ],
-      "run_rate_limited_room_keys": [],
-      "run_completed_room_keys": [
-        "235232",
-        "620084"
-      ],
-      "run_global_budget_used": 7
     },
     {
       "base_url": "https://socolivep.cv/truc-tiep/larne-fc-vs-crvena-zvezda-22-07-2026-0200/",
