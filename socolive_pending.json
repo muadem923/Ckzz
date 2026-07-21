@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-21T11:18:25.845761+07:00",
+  "generated_at": "2026-07-21T11:20:26.248011+07:00",
   "state_schema_version": "v10.2-cumulative-catalog",
   "dispatch_next": true,
   "pending_count": 6,
@@ -8,11 +8,11 @@
   "total_match_count": 6,
   "total_stream_count": 4,
   "progress_count": 0,
-  "chain_runs": 13,
-  "no_progress_runs": 13,
+  "chain_runs": 14,
+  "no_progress_runs": 14,
   "stop_reason": "",
   "rate_limited": true,
-  "rate_limit_url": "https://socolivep.cv/truc-tiep/yunnan-yukun-vs-chengdu-rongcheng-21-07-2026-1400?blv=595335",
+  "rate_limit_url": "https://socolivep.cv/truc-tiep/henan-fc-vs-dalian-yingbo-21-07-2026-1400?blv=612098",
   "count": 6,
   "matches": [
     {
@@ -141,11 +141,11 @@
             "blv": "NGƯỜI CÁ",
             "blv_id": "595335",
             "status": "rate_limited",
-            "attempts": 15,
+            "attempts": 17,
             "rate_limit_hits": 7,
-            "last_http_status": 429,
-            "last_stream_count": 0,
-            "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
+            "last_http_status": 200,
+            "last_stream_count": 1,
+            "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
           },
           "531989": {
             "key": "531989",
@@ -231,11 +231,11 @@
           "blv": "NGƯỜI CÁ",
           "blv_id": "595335",
           "status": "rate_limited",
-          "attempts": 15,
+          "attempts": 17,
           "rate_limit_hits": 7,
-          "last_http_status": 429,
-          "last_stream_count": 0,
-          "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
+          "last_http_status": 200,
+          "last_stream_count": 1,
+          "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
         },
         "531989": {
           "key": "531989",
@@ -427,11 +427,11 @@
             "blv": "BEN 10",
             "blv_id": "612098",
             "status": "rate_limited",
-            "attempts": 12,
-            "rate_limit_hits": 10,
-            "last_http_status": 200,
-            "last_stream_count": 1,
-            "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
+            "attempts": 13,
+            "rate_limit_hits": 11,
+            "last_http_status": 429,
+            "last_stream_count": 0,
+            "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
           },
           "283501": {
             "key": "283501",
@@ -493,11 +493,11 @@
           "blv": "BEN 10",
           "blv_id": "612098",
           "status": "rate_limited",
-          "attempts": 12,
-          "rate_limit_hits": 10,
-          "last_http_status": 200,
-          "last_stream_count": 1,
-          "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
+          "attempts": 13,
+          "rate_limit_hits": 11,
+          "last_http_status": 429,
+          "last_stream_count": 0,
+          "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
         },
         "283501": {
           "key": "283501",
@@ -685,7 +685,7 @@
             "blv": "FIREMAN",
             "blv_id": "250874",
             "status": "rate_limited",
-            "attempts": 16,
+            "attempts": 18,
             "rate_limit_hits": 6,
             "last_http_status": 200,
             "last_stream_count": 1,
@@ -775,7 +775,7 @@
           "blv": "FIREMAN",
           "blv_id": "250874",
           "status": "rate_limited",
-          "attempts": 16,
+          "attempts": 18,
           "rate_limit_hits": 6,
           "last_http_status": 200,
           "last_stream_count": 1,
@@ -995,7 +995,7 @@
             "blv": "PEWPEW",
             "blv_id": "109053",
             "status": "rate_limited",
-            "attempts": 17,
+            "attempts": 19,
             "rate_limit_hits": 5,
             "last_http_status": 200,
             "last_stream_count": 1,
@@ -1085,7 +1085,7 @@
           "blv": "PEWPEW",
           "blv_id": "109053",
           "status": "rate_limited",
-          "attempts": 17,
+          "attempts": 19,
           "rate_limit_hits": 5,
           "last_http_status": 200,
           "last_stream_count": 1,
