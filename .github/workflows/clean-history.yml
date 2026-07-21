@@ -1,0 +1,18 @@
+name: Clean Workflow History
+
+on:
+  workflow_dispatch: # Cho phép bạn bấm nút kích hoạt thủ công từ giao diện Web
+
+jobs:
+  del_runs:
+    runs-on: ubuntu-latest
+    permissions:
+      actions: write  # Cấp quyền xóa lịch sử
+    steps:
+      - name: Delete workflow runs
+        uses: Mattraks/delete-workflow-runs@v2
+        with:
+          token: ${{ github.token }}
+          repository: ${{ github.repository }}
+          retain_days: 0          # Giữ lại 0 ngày (Xóa sạch toàn bộ lịch sử cũ)
+          keep_minimum_runs: 0    # Không giữ lại số lượng chạy tối thiểu nào
