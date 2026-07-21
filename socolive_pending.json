@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-21T17:38:36.421388+07:00",
+  "generated_at": "2026-07-21T17:42:32.515110+07:00",
   "state_schema_version": "v10.3-safe-chain-valid-streams",
   "dispatch_next": true,
   "pending_count": 6,
@@ -8,22 +8,22 @@
   "coverage_complete_count": 0,
   "total_match_count": 6,
   "total_stream_count": 10,
-  "progress_count": 0,
+  "progress_count": 1,
   "new_link_count": 0,
-  "refreshed_link_count": 0,
+  "refreshed_link_count": 1,
   "newly_attempted_count": 10,
-  "attempt_metric_delta": 2,
-  "pending_state_changed": false,
+  "attempt_metric_delta": 3,
+  "pending_state_changed": true,
   "real_progress_for_fingerprint": true,
   "run_attempted_count": 12,
   "run_rate_limited_count": 0,
   "useful_activity": true,
-  "chain_runs": 16,
-  "no_progress_runs": 1,
+  "chain_runs": 17,
+  "no_progress_runs": 0,
   "unchanged_pending_runs": 0,
   "rate_limit_only_runs": 0,
   "rate_limit_only_run": false,
-  "pending_fingerprint": "8785596866e1c39168a789a91ed50e75621e958275eeed0690c44a5a435934d2",
+  "pending_fingerprint": "9d4812ec1018974fb5fe0eefcadfdcee834a95728d8c1c0219ef9272ee714381",
   "stop_reason": "",
   "rate_limited": false,
   "rate_limit_url": "",
@@ -400,9 +400,9 @@
         "total_explicit_blv_rooms": 4,
         "pending_room_keys": [
           "283501",
-          "372746",
           "304148",
-          "612098"
+          "612098",
+          "372746"
         ],
         "room_progress": {
           "612098": {
@@ -435,7 +435,7 @@
             "blv": "YONE",
             "blv_id": "372746",
             "status": "retry",
-            "attempts": 3,
+            "attempts": 4,
             "rate_limit_hits": 0,
             "last_http_status": 200,
             "last_stream_count": 1,
@@ -503,7 +503,7 @@
           "blv": "YONE",
           "blv_id": "372746",
           "status": "retry",
-          "attempts": 3,
+          "attempts": 4,
           "rate_limit_hits": 0,
           "last_http_status": 200,
           "last_stream_count": 1,
@@ -536,9 +536,9 @@
       },
       "pending_room_keys": [
         "283501",
-        "372746",
         "304148",
-        "612098"
+        "612098",
+        "372746"
       ]
     },
     {
@@ -867,11 +867,31 @@
           "discovered_at": "2026-07-21T17:02:54.138110+07:00",
           "valid_until": "2026-07-21T18:01:55+07:00",
           "is_expired": false
+        },
+        {
+          "url": "https://pull.niues.live/live/stream-484845_lhd.m3u8?auth_key=1784631994-0-0-cb7803e2a4f81b4d947a3f94f92e6b87",
+          "queue_room_key": "484845",
+          "room_url": "https://socolivep.cv/truc-tiep/shanghai-shenhua-vs-qingdao-hainiu-21-07-2026-1400?blv=484845",
+          "blv": "A BỆU",
+          "blv_id": "484845",
+          "source_id": "484845",
+          "source_provenance": [
+            "final-no-stream-scan",
+            "harvest-final"
+          ],
+          "source_confidence": "embedded",
+          "mapping_mode": "exact-room-id",
+          "discovered_from_room_url": "https://socolivep.cv/truc-tiep/shanghai-shenhua-vs-qingdao-hainiu-21-07-2026-1400?blv=484845",
+          "discovered_from_blv": "A BỆU",
+          "discovered_at": "2026-07-21T17:41:39.672035+07:00",
+          "valid_until": "2026-07-21T18:06:34+07:00",
+          "is_expired": false
         }
       ],
       "coverage": {
-        "found_streams": 1,
+        "found_streams": 2,
         "found_blv_ids": [
+          "484845",
           "9912015"
         ],
         "goal": 12,
@@ -882,11 +902,11 @@
         "total_explicit_blv_rooms": 6,
         "pending_room_keys": [
           "291277",
-          "484845",
           "548860",
           "534055",
           "472241",
-          "109053"
+          "109053",
+          "484845"
         ],
         "room_progress": {
           "109053": {
@@ -919,11 +939,11 @@
             "blv": "A BỆU",
             "blv_id": "484845",
             "status": "retry",
-            "attempts": 0,
+            "attempts": 1,
             "rate_limit_hits": 0,
             "last_http_status": 200,
-            "last_stream_count": 0,
-            "last_error": "Link ký số đã hết hạn; đưa BLV trở lại queue."
+            "last_stream_count": 1,
+            "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
           },
           "548860": {
             "key": "548860",
@@ -976,7 +996,8 @@
         }
       },
       "attempted_room_ids": [
-        "109053"
+        "109053",
+        "484845"
       ],
       "room_progress": {
         "109053": {
@@ -1009,11 +1030,11 @@
           "blv": "A BỆU",
           "blv_id": "484845",
           "status": "retry",
-          "attempts": 0,
+          "attempts": 1,
           "rate_limit_hits": 0,
           "last_http_status": 200,
-          "last_stream_count": 0,
-          "last_error": "Link ký số đã hết hạn; đưa BLV trở lại queue."
+          "last_stream_count": 1,
+          "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
         },
         "548860": {
           "key": "548860",
@@ -1066,11 +1087,11 @@
       },
       "pending_room_keys": [
         "291277",
-        "484845",
         "548860",
         "534055",
         "472241",
-        "109053"
+        "109053",
+        "484845"
       ]
     },
     {
@@ -1529,11 +1550,11 @@
         "total_explicit_blv_rooms": 6,
         "pending_room_keys": [
           "414317",
-          "484845",
           "187579",
           "118206",
           "603255",
-          "109053"
+          "109053",
+          "484845"
         ],
         "room_progress": {
           "414317": {
@@ -1566,7 +1587,7 @@
             "blv": "A BỆU",
             "blv_id": "484845",
             "status": "retry",
-            "attempts": 1,
+            "attempts": 2,
             "rate_limit_hits": 0,
             "last_http_status": 200,
             "last_stream_count": 1,
@@ -1660,7 +1681,7 @@
           "blv": "A BỆU",
           "blv_id": "484845",
           "status": "retry",
-          "attempts": 1,
+          "attempts": 2,
           "rate_limit_hits": 0,
           "last_http_status": 200,
           "last_stream_count": 1,
@@ -1717,11 +1738,11 @@
       },
       "pending_room_keys": [
         "414317",
-        "484845",
         "187579",
         "118206",
         "603255",
-        "109053"
+        "109053",
+        "484845"
       ]
     }
   ]
