@@ -1,24 +1,24 @@
 {
-  "generated_at": "2026-07-21T14:04:17.108408+07:00",
+  "generated_at": "2026-07-21T14:08:26.489821+07:00",
   "state_schema_version": "v10.3-safe-chain-valid-streams",
-  "dispatch_next": true,
+  "dispatch_next": false,
   "pending_count": 6,
   "pending_room_count": 34,
   "completed_count": 1,
   "coverage_complete_count": 0,
   "total_match_count": 6,
   "total_stream_count": 1,
-  "progress_count": 1,
-  "new_link_count": 1,
+  "progress_count": 0,
+  "new_link_count": 0,
   "refreshed_link_count": 0,
-  "newly_attempted_count": 1,
-  "chain_runs": 2,
-  "no_progress_runs": 0,
-  "unchanged_pending_runs": 1,
+  "newly_attempted_count": 0,
+  "chain_runs": 3,
+  "no_progress_runs": 1,
+  "unchanged_pending_runs": 2,
   "rate_limit_only_runs": 0,
   "rate_limit_only_run": false,
   "pending_fingerprint": "5468b6c9ef022be485d179069189776508115914f2cec6836dfb80a3eb5f72c4",
-  "stop_reason": "",
+  "stop_reason": "no_useful_activity",
   "rate_limited": false,
   "rate_limit_url": "",
   "count": 6,
@@ -75,12 +75,12 @@
         "max_streams_per_blv": 2,
         "total_explicit_blv_rooms": 6,
         "pending_room_keys": [
-          "536185",
           "595335",
           "531989",
           "380460",
           "607552",
-          "622093"
+          "622093",
+          "536185"
         ],
         "room_progress": {
           "595335": {
@@ -91,7 +91,7 @@
             "status": "retry",
             "attempts": 0,
             "rate_limit_hits": 0,
-            "last_http_status": null,
+            "last_http_status": 200,
             "last_stream_count": 0,
             "last_error": "Link ký số đã hết hạn; đưa BLV trở lại queue."
           },
@@ -148,12 +148,12 @@
             "url": "https://socolivep.cv/truc-tiep/yunnan-yukun-vs-chengdu-rongcheng-21-07-2026-1400?blv=536185",
             "blv": "A WIN",
             "blv_id": "536185",
-            "status": "pending",
+            "status": "retry",
             "attempts": 0,
             "rate_limit_hits": 0,
-            "last_http_status": null,
+            "last_http_status": 200,
             "last_stream_count": 0,
-            "last_error": ""
+            "last_error": "Link ký số đã hết hạn; đưa BLV trở lại queue."
           },
           "__base__": {
             "key": "__base__",
@@ -179,7 +179,7 @@
           "status": "retry",
           "attempts": 0,
           "rate_limit_hits": 0,
-          "last_http_status": null,
+          "last_http_status": 200,
           "last_stream_count": 0,
           "last_error": "Link ký số đã hết hạn; đưa BLV trở lại queue."
         },
@@ -236,12 +236,12 @@
           "url": "https://socolivep.cv/truc-tiep/yunnan-yukun-vs-chengdu-rongcheng-21-07-2026-1400?blv=536185",
           "blv": "A WIN",
           "blv_id": "536185",
-          "status": "pending",
+          "status": "retry",
           "attempts": 0,
           "rate_limit_hits": 0,
-          "last_http_status": null,
+          "last_http_status": 200,
           "last_stream_count": 0,
-          "last_error": ""
+          "last_error": "Link ký số đã hết hạn; đưa BLV trở lại queue."
         },
         "__base__": {
           "key": "__base__",
@@ -257,12 +257,12 @@
         }
       },
       "pending_room_keys": [
-        "536185",
         "595335",
         "531989",
         "380460",
         "607552",
-        "622093"
+        "622093",
+        "536185"
       ]
     },
     {
@@ -497,12 +497,12 @@
         "max_streams_per_blv": 2,
         "total_explicit_blv_rooms": 6,
         "pending_room_keys": [
-          "485739",
           "250874",
           "494201",
           "123226",
           "599634",
-          "147801"
+          "147801",
+          "485739"
         ],
         "room_progress": {
           "250874": {
@@ -513,7 +513,7 @@
             "status": "retry",
             "attempts": 0,
             "rate_limit_hits": 0,
-            "last_http_status": null,
+            "last_http_status": 200,
             "last_stream_count": 0,
             "last_error": "Link ký số đã hết hạn; đưa BLV trở lại queue."
           },
@@ -570,12 +570,12 @@
             "url": "https://socolivep.cv/truc-tiep/wuhan-three-towns-vs-shandong-taishan-21-07-2026-1400?blv=485739",
             "blv": "CHIVAS",
             "blv_id": "485739",
-            "status": "pending",
+            "status": "retry",
             "attempts": 0,
             "rate_limit_hits": 0,
-            "last_http_status": null,
+            "last_http_status": 200,
             "last_stream_count": 0,
-            "last_error": ""
+            "last_error": "Link ký số đã hết hạn; đưa BLV trở lại queue."
           },
           "__base__": {
             "key": "__base__",
@@ -601,7 +601,7 @@
           "status": "retry",
           "attempts": 0,
           "rate_limit_hits": 0,
-          "last_http_status": null,
+          "last_http_status": 200,
           "last_stream_count": 0,
           "last_error": "Link ký số đã hết hạn; đưa BLV trở lại queue."
         },
@@ -658,12 +658,12 @@
           "url": "https://socolivep.cv/truc-tiep/wuhan-three-towns-vs-shandong-taishan-21-07-2026-1400?blv=485739",
           "blv": "CHIVAS",
           "blv_id": "485739",
-          "status": "pending",
+          "status": "retry",
           "attempts": 0,
           "rate_limit_hits": 0,
-          "last_http_status": null,
+          "last_http_status": 200,
           "last_stream_count": 0,
-          "last_error": ""
+          "last_error": "Link ký số đã hết hạn; đưa BLV trở lại queue."
         },
         "__base__": {
           "key": "__base__",
@@ -679,12 +679,12 @@
         }
       },
       "pending_room_keys": [
-        "485739",
         "250874",
         "494201",
         "123226",
         "599634",
-        "147801"
+        "147801",
+        "485739"
       ]
     },
     {
@@ -739,12 +739,12 @@
         "max_streams_per_blv": 2,
         "total_explicit_blv_rooms": 6,
         "pending_room_keys": [
-          "472241",
           "109053",
           "291277",
           "484845",
           "548860",
-          "534055"
+          "534055",
+          "472241"
         ],
         "room_progress": {
           "109053": {
@@ -755,7 +755,7 @@
             "status": "retry",
             "attempts": 0,
             "rate_limit_hits": 0,
-            "last_http_status": null,
+            "last_http_status": 200,
             "last_stream_count": 0,
             "last_error": "Link ký số đã hết hạn; đưa BLV trở lại queue."
           },
@@ -812,12 +812,12 @@
             "url": "https://socolivep.cv/truc-tiep/shanghai-shenhua-vs-qingdao-hainiu-21-07-2026-1400?blv=472241",
             "blv": "XO",
             "blv_id": "472241",
-            "status": "pending",
+            "status": "retry",
             "attempts": 0,
             "rate_limit_hits": 0,
-            "last_http_status": null,
+            "last_http_status": 200,
             "last_stream_count": 0,
-            "last_error": ""
+            "last_error": "Link ký số đã hết hạn; đưa BLV trở lại queue."
           },
           "__base__": {
             "key": "__base__",
@@ -843,7 +843,7 @@
           "status": "retry",
           "attempts": 0,
           "rate_limit_hits": 0,
-          "last_http_status": null,
+          "last_http_status": 200,
           "last_stream_count": 0,
           "last_error": "Link ký số đã hết hạn; đưa BLV trở lại queue."
         },
@@ -900,12 +900,12 @@
           "url": "https://socolivep.cv/truc-tiep/shanghai-shenhua-vs-qingdao-hainiu-21-07-2026-1400?blv=472241",
           "blv": "XO",
           "blv_id": "472241",
-          "status": "pending",
+          "status": "retry",
           "attempts": 0,
           "rate_limit_hits": 0,
-          "last_http_status": null,
+          "last_http_status": 200,
           "last_stream_count": 0,
-          "last_error": ""
+          "last_error": "Link ký số đã hết hạn; đưa BLV trở lại queue."
         },
         "__base__": {
           "key": "__base__",
@@ -921,12 +921,12 @@
         }
       },
       "pending_room_keys": [
-        "472241",
         "109053",
         "291277",
         "484845",
         "548860",
-        "534055"
+        "534055",
+        "472241"
       ]
     },
     {
@@ -981,12 +981,12 @@
         "max_streams_per_blv": 2,
         "total_explicit_blv_rooms": 6,
         "pending_room_keys": [
-          "607400",
-          "603914",
           "532081",
           "459401",
           "118206",
-          "256080"
+          "256080",
+          "607400",
+          "603914"
         ],
         "room_progress": {
           "532081": {
@@ -1042,24 +1042,24 @@
             "url": "https://socolivep.cv/truc-tiep/shanghai-port-vs-shenzhen-peng-city-21-07-2026-1400?blv=607400",
             "blv": "HÀ DUY KIÊN",
             "blv_id": "607400",
-            "status": "pending",
+            "status": "retry",
             "attempts": 0,
             "rate_limit_hits": 0,
-            "last_http_status": null,
+            "last_http_status": 200,
             "last_stream_count": 0,
-            "last_error": ""
+            "last_error": "Link ký số đã hết hạn; đưa BLV trở lại queue."
           },
           "603914": {
             "key": "603914",
             "url": "https://socolivep.cv/truc-tiep/shanghai-port-vs-shenzhen-peng-city-21-07-2026-1400?blv=603914",
             "blv": "TRÀ ĐÁ",
             "blv_id": "603914",
-            "status": "pending",
+            "status": "retry",
             "attempts": 0,
             "rate_limit_hits": 0,
-            "last_http_status": null,
+            "last_http_status": 200,
             "last_stream_count": 0,
-            "last_error": ""
+            "last_error": "Link ký số đã hết hạn; đưa BLV trở lại queue."
           },
           "__base__": {
             "key": "__base__",
@@ -1130,24 +1130,24 @@
           "url": "https://socolivep.cv/truc-tiep/shanghai-port-vs-shenzhen-peng-city-21-07-2026-1400?blv=607400",
           "blv": "HÀ DUY KIÊN",
           "blv_id": "607400",
-          "status": "pending",
+          "status": "retry",
           "attempts": 0,
           "rate_limit_hits": 0,
-          "last_http_status": null,
+          "last_http_status": 200,
           "last_stream_count": 0,
-          "last_error": ""
+          "last_error": "Link ký số đã hết hạn; đưa BLV trở lại queue."
         },
         "603914": {
           "key": "603914",
           "url": "https://socolivep.cv/truc-tiep/shanghai-port-vs-shenzhen-peng-city-21-07-2026-1400?blv=603914",
           "blv": "TRÀ ĐÁ",
           "blv_id": "603914",
-          "status": "pending",
+          "status": "retry",
           "attempts": 0,
           "rate_limit_hits": 0,
-          "last_http_status": null,
+          "last_http_status": 200,
           "last_stream_count": 0,
-          "last_error": ""
+          "last_error": "Link ký số đã hết hạn; đưa BLV trở lại queue."
         },
         "__base__": {
           "key": "__base__",
@@ -1163,12 +1163,12 @@
         }
       },
       "pending_room_keys": [
-        "607400",
-        "603914",
         "532081",
         "459401",
         "118206",
-        "256080"
+        "256080",
+        "607400",
+        "603914"
       ]
     },
     {
@@ -1245,12 +1245,12 @@
         "max_streams_per_blv": 2,
         "total_explicit_blv_rooms": 6,
         "pending_room_keys": [
-          "118206",
-          "603255",
           "484845",
           "414317",
           "109053",
-          "187579"
+          "187579",
+          "118206",
+          "603255"
         ],
         "room_progress": {
           "414317": {
@@ -1306,24 +1306,24 @@
             "url": "https://socolivep.cv/truc-tiep/dalian-kewei-vs-beijing-guoan-21-07-2026-1400?blv=118206",
             "blv": "TẠ BIÊN GIỚI",
             "blv_id": "118206",
-            "status": "pending",
+            "status": "retry",
             "attempts": 0,
             "rate_limit_hits": 0,
-            "last_http_status": null,
+            "last_http_status": 200,
             "last_stream_count": 0,
-            "last_error": ""
+            "last_error": "Link ký số đã hết hạn; đưa BLV trở lại queue."
           },
           "603255": {
             "key": "603255",
             "url": "https://socolivep.cv/truc-tiep/dalian-kewei-vs-beijing-guoan-21-07-2026-1400?blv=603255",
             "blv": "LION",
             "blv_id": "603255",
-            "status": "pending",
+            "status": "retry",
             "attempts": 0,
             "rate_limit_hits": 0,
-            "last_http_status": null,
+            "last_http_status": 200,
             "last_stream_count": 0,
-            "last_error": ""
+            "last_error": "Link ký số đã hết hạn; đưa BLV trở lại queue."
           },
           "__base__": {
             "key": "__base__",
@@ -1396,24 +1396,24 @@
           "url": "https://socolivep.cv/truc-tiep/dalian-kewei-vs-beijing-guoan-21-07-2026-1400?blv=118206",
           "blv": "TẠ BIÊN GIỚI",
           "blv_id": "118206",
-          "status": "pending",
+          "status": "retry",
           "attempts": 0,
           "rate_limit_hits": 0,
-          "last_http_status": null,
+          "last_http_status": 200,
           "last_stream_count": 0,
-          "last_error": ""
+          "last_error": "Link ký số đã hết hạn; đưa BLV trở lại queue."
         },
         "603255": {
           "key": "603255",
           "url": "https://socolivep.cv/truc-tiep/dalian-kewei-vs-beijing-guoan-21-07-2026-1400?blv=603255",
           "blv": "LION",
           "blv_id": "603255",
-          "status": "pending",
+          "status": "retry",
           "attempts": 0,
           "rate_limit_hits": 0,
-          "last_http_status": null,
+          "last_http_status": 200,
           "last_stream_count": 0,
-          "last_error": ""
+          "last_error": "Link ký số đã hết hạn; đưa BLV trở lại queue."
         },
         "__base__": {
           "key": "__base__",
@@ -1429,12 +1429,12 @@
         }
       },
       "pending_room_keys": [
-        "118206",
-        "603255",
         "484845",
         "414317",
         "109053",
-        "187579"
+        "187579",
+        "118206",
+        "603255"
       ]
     }
   ]
