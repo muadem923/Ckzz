@@ -1,23 +1,23 @@
 {
-  "generated_at": "2026-07-21T15:03:52.699715+07:00",
+  "generated_at": "2026-07-21T16:03:54.528652+07:00",
   "state_schema_version": "v10.3-safe-chain-valid-streams",
   "dispatch_next": false,
   "pending_count": 6,
   "pending_room_count": 34,
-  "completed_count": 0,
+  "completed_count": 2,
   "coverage_complete_count": 0,
   "total_match_count": 6,
-  "total_stream_count": 0,
-  "progress_count": 0,
-  "new_link_count": 0,
+  "total_stream_count": 3,
+  "progress_count": 3,
+  "new_link_count": 3,
   "refreshed_link_count": 0,
-  "newly_attempted_count": 0,
+  "newly_attempted_count": 3,
   "run_attempted_count": 12,
   "run_rate_limited_count": 0,
   "useful_activity": true,
-  "chain_runs": 4,
-  "no_progress_runs": 2,
-  "unchanged_pending_runs": 3,
+  "chain_runs": 5,
+  "no_progress_runs": 0,
+  "unchanged_pending_runs": 4,
   "rate_limit_only_runs": 0,
   "rate_limit_only_run": false,
   "pending_fingerprint": "5468b6c9ef022be485d179069189776508115914f2cec6836dfb80a3eb5f72c4",
@@ -731,10 +731,32 @@
           "blv_id": ""
         }
       ],
-      "streams": [],
+      "streams": [
+        {
+          "url": "https://pull.niues.live/live/stream-291277_lhd.m3u8?auth_key=1784628115-0-0-d413a52a8fa8e890affd1a2e5b913c88",
+          "queue_room_key": "291277",
+          "room_url": "https://socolivep.cv/truc-tiep/shanghai-shenhua-vs-qingdao-hainiu-21-07-2026-1400?blv=291277",
+          "blv": "CÔNG CHẤT",
+          "blv_id": "291277",
+          "source_id": "291277",
+          "source_provenance": [
+            "final-no-stream-scan",
+            "harvest-final"
+          ],
+          "source_confidence": "embedded",
+          "mapping_mode": "exact-room-id",
+          "discovered_from_room_url": "https://socolivep.cv/truc-tiep/shanghai-shenhua-vs-qingdao-hainiu-21-07-2026-1400?blv=291277",
+          "discovered_from_blv": "CÔNG CHẤT",
+          "discovered_at": "2026-07-21T16:03:01.180818+07:00",
+          "valid_until": "2026-07-21T17:01:55+07:00",
+          "is_expired": false
+        }
+      ],
       "coverage": {
-        "found_streams": 0,
-        "found_blv_ids": [],
+        "found_streams": 1,
+        "found_blv_ids": [
+          "291277"
+        ],
         "goal": 12,
         "source_goal_reached": false,
         "room_queue_complete": false,
@@ -743,11 +765,11 @@
         "total_explicit_blv_rooms": 6,
         "pending_room_keys": [
           "109053",
-          "291277",
           "484845",
           "548860",
           "534055",
-          "472241"
+          "472241",
+          "291277"
         ],
         "room_progress": {
           "109053": {
@@ -768,11 +790,11 @@
             "blv": "CÔNG CHẤT",
             "blv_id": "291277",
             "status": "retry",
-            "attempts": 0,
+            "attempts": 1,
             "rate_limit_hits": 0,
             "last_http_status": 200,
-            "last_stream_count": 0,
-            "last_error": "Link ký số đã hết hạn; đưa BLV trở lại queue."
+            "last_stream_count": 1,
+            "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
           },
           "484845": {
             "key": "484845",
@@ -836,7 +858,9 @@
           }
         }
       },
-      "attempted_room_ids": [],
+      "attempted_room_ids": [
+        "291277"
+      ],
       "room_progress": {
         "109053": {
           "key": "109053",
@@ -856,11 +880,11 @@
           "blv": "CÔNG CHẤT",
           "blv_id": "291277",
           "status": "retry",
-          "attempts": 0,
+          "attempts": 1,
           "rate_limit_hits": 0,
           "last_http_status": 200,
-          "last_stream_count": 0,
-          "last_error": "Link ký số đã hết hạn; đưa BLV trở lại queue."
+          "last_stream_count": 1,
+          "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
         },
         "484845": {
           "key": "484845",
@@ -925,11 +949,11 @@
       },
       "pending_room_keys": [
         "109053",
-        "291277",
         "484845",
         "548860",
         "534055",
-        "472241"
+        "472241",
+        "291277"
       ]
     },
     {
@@ -1215,10 +1239,78 @@
           "blv_id": ""
         }
       ],
-      "streams": [],
+      "streams": [
+        {
+          "url": "https://pull.niues.live/live/stream-414317_lhd.m3u8?auth_key=1784627875-0-0-23fdd83c8eb3c06f89de06e0687c51d9",
+          "queue_room_key": "414317",
+          "room_url": "https://socolivep.cv/truc-tiep/dalian-kewei-vs-beijing-guoan-21-07-2026-1400?blv=414317",
+          "blv": "TOMMY",
+          "blv_id": "414317",
+          "source_id": "414317",
+          "source_provenance": [
+            "cdp/request",
+            "cdp/response",
+            "harvest-final",
+            "harvest-round-1",
+            "harvest-round-2",
+            "harvest-round-3",
+            "harvest-round-4",
+            "harvest-round-5",
+            "harvest-round-6",
+            "harvest-round-7",
+            "harvest-round-8",
+            "harvest-round-9",
+            "request/image",
+            "request/xhr",
+            "response/200"
+          ],
+          "source_confidence": "network",
+          "mapping_mode": "exact-room-id",
+          "discovered_from_room_url": "https://socolivep.cv/truc-tiep/dalian-kewei-vs-beijing-guoan-21-07-2026-1400?blv=414317",
+          "discovered_from_blv": "TOMMY",
+          "discovered_at": "2026-07-21T16:03:42.572151+07:00",
+          "valid_until": "2026-07-21T16:57:55+07:00",
+          "is_expired": false
+        },
+        {
+          "url": "https://pull.niues.live/live/stream-9912015_lhd.m3u8?auth_key=1784625415-0-0-fec12cedce573203186372bebaf595a6",
+          "queue_room_key": "109053",
+          "room_url": "https://socolivep.cv/truc-tiep/dalian-kewei-vs-beijing-guoan-21-07-2026-1400?blv=109053",
+          "blv": "PEWPEW",
+          "blv_id": "109053",
+          "source_id": "9912015",
+          "source_provenance": [
+            "cdp/request",
+            "cdp/response",
+            "harvest-final",
+            "harvest-round-1",
+            "harvest-round-2",
+            "harvest-round-3",
+            "harvest-round-4",
+            "harvest-round-5",
+            "harvest-round-6",
+            "harvest-round-7",
+            "harvest-round-8",
+            "harvest-round-9",
+            "request/image",
+            "request/xhr",
+            "response/200"
+          ],
+          "source_confidence": "network",
+          "mapping_mode": "current-room-primary",
+          "discovered_from_room_url": "https://socolivep.cv/truc-tiep/dalian-kewei-vs-beijing-guoan-21-07-2026-1400?blv=109053",
+          "discovered_from_blv": "PEWPEW",
+          "discovered_at": "2026-07-21T16:03:52.516335+07:00",
+          "valid_until": "2026-07-21T16:16:55+07:00",
+          "is_expired": false
+        }
+      ],
       "coverage": {
-        "found_streams": 0,
-        "found_blv_ids": [],
+        "found_streams": 2,
+        "found_blv_ids": [
+          "109053",
+          "414317"
+        ],
         "goal": 12,
         "source_goal_reached": false,
         "room_queue_complete": false,
@@ -1226,12 +1318,12 @@
         "max_streams_per_blv": 2,
         "total_explicit_blv_rooms": 6,
         "pending_room_keys": [
-          "414317",
-          "109053",
           "484845",
           "187579",
           "118206",
-          "603255"
+          "603255",
+          "414317",
+          "109053"
         ],
         "room_progress": {
           "414317": {
@@ -1240,11 +1332,11 @@
             "blv": "TOMMY",
             "blv_id": "414317",
             "status": "retry",
-            "attempts": 0,
+            "attempts": 1,
             "rate_limit_hits": 0,
             "last_http_status": 200,
-            "last_stream_count": 0,
-            "last_error": "Link ký số đã hết hạn; đưa BLV trở lại queue."
+            "last_stream_count": 1,
+            "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
           },
           "109053": {
             "key": "109053",
@@ -1252,11 +1344,11 @@
             "blv": "PEWPEW",
             "blv_id": "109053",
             "status": "retry",
-            "attempts": 0,
+            "attempts": 1,
             "rate_limit_hits": 0,
             "last_http_status": 200,
-            "last_stream_count": 0,
-            "last_error": "Link ký số đã hết hạn; đưa BLV trở lại queue."
+            "last_stream_count": 1,
+            "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
           },
           "484845": {
             "key": "484845",
@@ -1320,7 +1412,10 @@
           }
         }
       },
-      "attempted_room_ids": [],
+      "attempted_room_ids": [
+        "109053",
+        "414317"
+      ],
       "room_progress": {
         "414317": {
           "key": "414317",
@@ -1328,11 +1423,11 @@
           "blv": "TOMMY",
           "blv_id": "414317",
           "status": "retry",
-          "attempts": 0,
+          "attempts": 1,
           "rate_limit_hits": 0,
           "last_http_status": 200,
-          "last_stream_count": 0,
-          "last_error": "Link ký số đã hết hạn; đưa BLV trở lại queue."
+          "last_stream_count": 1,
+          "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
         },
         "109053": {
           "key": "109053",
@@ -1340,11 +1435,11 @@
           "blv": "PEWPEW",
           "blv_id": "109053",
           "status": "retry",
-          "attempts": 0,
+          "attempts": 1,
           "rate_limit_hits": 0,
           "last_http_status": 200,
-          "last_stream_count": 0,
-          "last_error": "Link ký số đã hết hạn; đưa BLV trở lại queue."
+          "last_stream_count": 1,
+          "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
         },
         "484845": {
           "key": "484845",
@@ -1408,12 +1503,12 @@
         }
       },
       "pending_room_keys": [
-        "414317",
-        "109053",
         "484845",
         "187579",
         "118206",
-        "603255"
+        "603255",
+        "414317",
+        "109053"
       ]
     }
   ]
