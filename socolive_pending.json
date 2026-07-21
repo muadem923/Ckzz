@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-21T17:11:48.996430+07:00",
+  "generated_at": "2026-07-21T17:15:28.975359+07:00",
   "state_schema_version": "v10.3-safe-chain-valid-streams",
   "dispatch_next": true,
   "pending_count": 6,
@@ -8,18 +8,18 @@
   "coverage_complete_count": 0,
   "total_match_count": 6,
   "total_stream_count": 6,
-  "progress_count": 1,
-  "new_link_count": 1,
+  "progress_count": 0,
+  "new_link_count": 0,
   "refreshed_link_count": 0,
-  "newly_attempted_count": 12,
+  "newly_attempted_count": 11,
   "attempt_metric_delta": 1,
-  "pending_state_changed": true,
+  "pending_state_changed": false,
   "real_progress_for_fingerprint": true,
   "run_attempted_count": 12,
   "run_rate_limited_count": 0,
   "useful_activity": true,
-  "chain_runs": 8,
-  "no_progress_runs": 0,
+  "chain_runs": 9,
+  "no_progress_runs": 1,
   "unchanged_pending_runs": 0,
   "rate_limit_only_runs": 0,
   "rate_limit_only_run": false,
@@ -400,9 +400,9 @@
         "total_explicit_blv_rooms": 4,
         "pending_room_keys": [
           "283501",
-          "612098",
           "372746",
-          "304148"
+          "304148",
+          "612098"
         ],
         "room_progress": {
           "612098": {
@@ -411,7 +411,7 @@
             "blv": "BEN 10",
             "blv_id": "612098",
             "status": "retry",
-            "attempts": 1,
+            "attempts": 2,
             "rate_limit_hits": 0,
             "last_http_status": 200,
             "last_stream_count": 1,
@@ -479,7 +479,7 @@
           "blv": "BEN 10",
           "blv_id": "612098",
           "status": "retry",
-          "attempts": 1,
+          "attempts": 2,
           "rate_limit_hits": 0,
           "last_http_status": 200,
           "last_stream_count": 1,
@@ -536,9 +536,9 @@
       },
       "pending_room_keys": [
         "283501",
-        "612098",
         "372746",
-        "304148"
+        "304148",
+        "612098"
       ]
     },
     {
