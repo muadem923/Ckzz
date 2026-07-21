@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-21T17:04:02.977649+07:00",
+  "generated_at": "2026-07-21T17:07:54.526403+07:00",
   "state_schema_version": "v10.3-safe-chain-valid-streams",
   "dispatch_next": true,
   "pending_count": 6,
@@ -7,23 +7,23 @@
   "completed_count": 4,
   "coverage_complete_count": 0,
   "total_match_count": 6,
-  "total_stream_count": 4,
-  "progress_count": 4,
-  "new_link_count": 4,
+  "total_stream_count": 5,
+  "progress_count": 1,
+  "new_link_count": 1,
   "refreshed_link_count": 0,
-  "newly_attempted_count": 9,
+  "newly_attempted_count": 12,
   "attempt_metric_delta": 1,
   "pending_state_changed": true,
   "real_progress_for_fingerprint": true,
   "run_attempted_count": 12,
   "run_rate_limited_count": 0,
   "useful_activity": true,
-  "chain_runs": 6,
+  "chain_runs": 7,
   "no_progress_runs": 0,
   "unchanged_pending_runs": 0,
   "rate_limit_only_runs": 0,
   "rate_limit_only_run": false,
-  "pending_fingerprint": "b80f4863d0df0ac0fd6c21a11afed7d03a3fbec61ce99168334ffc9c29783a69",
+  "pending_fingerprint": "767281ebf23b4464d056e53f5f2f9ab5eb75a7f147852d724a26b6471fa76e7f",
   "stop_reason": "",
   "rate_limited": false,
   "rate_limit_url": "",
@@ -345,11 +345,31 @@
           "discovered_at": "2026-07-21T17:01:50.435421+07:00",
           "valid_until": "2026-07-21T18:00:55+07:00",
           "is_expired": false
+        },
+        {
+          "url": "https://pull.niues.live/live/stream-372746_lhd.m3u8?auth_key=1784631655-0-0-0a07939932bfd2dbbaacf78d23aa93e0",
+          "queue_room_key": "372746",
+          "room_url": "https://socolivep.cv/truc-tiep/henan-fc-vs-dalian-yingbo-21-07-2026-1400?blv=372746",
+          "blv": "YONE",
+          "blv_id": "372746",
+          "source_id": "372746",
+          "source_provenance": [
+            "final-no-stream-scan",
+            "harvest-final"
+          ],
+          "source_confidence": "embedded",
+          "mapping_mode": "exact-room-id",
+          "discovered_from_room_url": "https://socolivep.cv/truc-tiep/henan-fc-vs-dalian-yingbo-21-07-2026-1400?blv=372746",
+          "discovered_from_blv": "YONE",
+          "discovered_at": "2026-07-21T17:05:56.003053+07:00",
+          "valid_until": "2026-07-21T18:00:55+07:00",
+          "is_expired": false
         }
       ],
       "coverage": {
-        "found_streams": 1,
+        "found_streams": 2,
         "found_blv_ids": [
+          "372746",
           "612098"
         ],
         "goal": 8,
@@ -360,9 +380,9 @@
         "total_explicit_blv_rooms": 4,
         "pending_room_keys": [
           "283501",
-          "372746",
           "304148",
-          "612098"
+          "612098",
+          "372746"
         ],
         "room_progress": {
           "612098": {
@@ -395,11 +415,11 @@
             "blv": "YONE",
             "blv_id": "372746",
             "status": "retry",
-            "attempts": 0,
+            "attempts": 1,
             "rate_limit_hits": 0,
             "last_http_status": 200,
-            "last_stream_count": 0,
-            "last_error": "Link ký số đã hết hạn; đưa BLV trở lại queue."
+            "last_stream_count": 1,
+            "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
           },
           "304148": {
             "key": "304148",
@@ -428,6 +448,7 @@
         }
       },
       "attempted_room_ids": [
+        "372746",
         "612098"
       ],
       "room_progress": {
@@ -461,11 +482,11 @@
           "blv": "YONE",
           "blv_id": "372746",
           "status": "retry",
-          "attempts": 0,
+          "attempts": 1,
           "rate_limit_hits": 0,
           "last_http_status": 200,
-          "last_stream_count": 0,
-          "last_error": "Link ký số đã hết hạn; đưa BLV trở lại queue."
+          "last_stream_count": 1,
+          "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
         },
         "304148": {
           "key": "304148",
@@ -494,9 +515,9 @@
       },
       "pending_room_keys": [
         "283501",
-        "372746",
         "304148",
-        "612098"
+        "612098",
+        "372746"
       ]
     },
     {
