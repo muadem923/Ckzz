@@ -1,396 +1,173 @@
 {
-  "generated_at": "2026-07-21T17:42:32.515110+07:00",
-  "state_schema_version": "v10.3-safe-chain-valid-streams",
+  "generated_at": "2026-07-21T18:08:19.242837+07:00",
+  "state_schema_version": "v10.4-finite-two-pass-queue",
   "dispatch_next": true,
-  "pending_count": 6,
-  "pending_room_count": 34,
-  "completed_count": 5,
-  "coverage_complete_count": 0,
-  "total_match_count": 6,
-  "total_stream_count": 10,
-  "progress_count": 1,
-  "new_link_count": 0,
-  "refreshed_link_count": 1,
-  "newly_attempted_count": 10,
-  "attempt_metric_delta": 3,
-  "pending_state_changed": true,
-  "real_progress_for_fingerprint": true,
-  "run_attempted_count": 12,
-  "run_rate_limited_count": 0,
-  "useful_activity": true,
-  "chain_runs": 17,
+  "pending_count": 5,
+  "pending_room_count": 10,
+  "completed_count": 10,
+  "coverage_complete_count": 6,
+  "total_match_count": 11,
+  "total_stream_count": 29,
+  "progress_count": 29,
+  "new_link_count": 29,
+  "refreshed_link_count": 0,
+  "queue_progress_count": 70,
+  "terminal_progress_count": 30,
+  "newly_attempted_count": 40,
+  "queue_total_rooms": 40,
+  "queue_success_rooms": 30,
+  "queue_exhausted_rooms": 0,
+  "queue_terminal_rooms": 30,
+  "queue_attempts_total": 40,
+  "chain_runs": 1,
   "no_progress_runs": 0,
+  "no_queue_progress_runs": 0,
   "unchanged_pending_runs": 0,
   "rate_limit_only_runs": 0,
   "rate_limit_only_run": false,
-  "pending_fingerprint": "9d4812ec1018974fb5fe0eefcadfdcee834a95728d8c1c0219ef9272ee714381",
+  "pending_fingerprint": "40b03ff189597b761cc5344a15febfb93448390fa769c467374e75b2ab254db5",
   "stop_reason": "",
   "rate_limited": false,
   "rate_limit_url": "",
-  "count": 6,
+  "global_room_budget": 48,
+  "global_room_budget_used": 40,
+  "count": 5,
   "matches": [
     {
-      "base_url": "https://socolivep.cv/truc-tiep/yunnan-yukun-vs-chengdu-rongcheng-21-07-2026-1400/",
-      "match_name": "Yunnan Yukun vs Chengdu Rongcheng",
-      "scheduled_at": "2026-07-21T14:00:00+07:00",
+      "base_url": "https://socolivep.cv/truc-tiep/jeju-sk-fc-vs-gangwon-fc-21-07-2026-1730/",
+      "match_name": "Jeju SK FC vs Gangwon FC",
+      "scheduled_at": "2026-07-21T17:30:00+07:00",
       "rooms": [
         {
-          "url": "https://socolivep.cv/truc-tiep/yunnan-yukun-vs-chengdu-rongcheng-21-07-2026-1400?blv=595335",
-          "blv": "NGƯỜI CÁ",
-          "blv_id": "595335"
+          "url": "https://socolivep.cv/truc-tiep/jeju-sk-fc-vs-gangwon-fc-21-07-2026-1730?blv=610518",
+          "blv": "XUÂN TÓC ĐỎ",
+          "blv_id": "610518"
         },
         {
-          "url": "https://socolivep.cv/truc-tiep/yunnan-yukun-vs-chengdu-rongcheng-21-07-2026-1400?blv=531989",
-          "blv": "COZY",
-          "blv_id": "531989"
+          "url": "https://socolivep.cv/truc-tiep/jeju-sk-fc-vs-gangwon-fc-21-07-2026-1730?blv=406865",
+          "blv": "ANH TÀI",
+          "blv_id": "406865"
         },
         {
-          "url": "https://socolivep.cv/truc-tiep/yunnan-yukun-vs-chengdu-rongcheng-21-07-2026-1400?blv=380460",
-          "blv": "ENZO",
-          "blv_id": "380460"
+          "url": "https://socolivep.cv/truc-tiep/jeju-sk-fc-vs-gangwon-fc-21-07-2026-1730?blv=620003",
+          "blv": "FOX",
+          "blv_id": "620003"
         },
         {
-          "url": "https://socolivep.cv/truc-tiep/yunnan-yukun-vs-chengdu-rongcheng-21-07-2026-1400?blv=607552",
-          "blv": "ĐỖ TÚ TÀI",
-          "blv_id": "607552"
+          "url": "https://socolivep.cv/truc-tiep/jeju-sk-fc-vs-gangwon-fc-21-07-2026-1730?blv=610677",
+          "blv": "CÁP",
+          "blv_id": "610677"
         },
         {
-          "url": "https://socolivep.cv/truc-tiep/yunnan-yukun-vs-chengdu-rongcheng-21-07-2026-1400?blv=622093",
-          "blv": "GRAP",
-          "blv_id": "622093"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/yunnan-yukun-vs-chengdu-rongcheng-21-07-2026-1400?blv=536185",
-          "blv": "A WIN",
-          "blv_id": "536185"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/yunnan-yukun-vs-chengdu-rongcheng-21-07-2026-1400",
+          "url": "https://socolivep.cv/truc-tiep/jeju-sk-fc-vs-gangwon-fc-21-07-2026-1730",
           "blv": "XEM NGAY",
           "blv_id": ""
         }
       ],
       "streams": [
         {
-          "url": "https://pull.niues.live/live/stream-531989_lhd.m3u8?auth_key=1784631535-0-0-2837126afcd3b0a58fcfc235c120332b",
-          "queue_room_key": "531989",
-          "room_url": "https://socolivep.cv/truc-tiep/yunnan-yukun-vs-chengdu-rongcheng-21-07-2026-1400?blv=531989",
-          "blv": "COZY",
-          "blv_id": "531989",
-          "source_id": "531989",
+          "url": "https://pull.niues.live/live/stream-406865_lhd.m3u8?auth_key=1784633455-0-0-0fa8e2b947bc35a3c0d6d70d6567f2cd",
+          "queue_room_key": "406865",
+          "room_url": "https://socolivep.cv/truc-tiep/jeju-sk-fc-vs-gangwon-fc-21-07-2026-1730?blv=406865",
+          "blv": "ANH TÀI",
+          "blv_id": "406865",
+          "source_id": "406865",
           "source_provenance": [
-            "final-no-stream-scan",
-            "harvest-final"
+            "cdp/request",
+            "cdp/response",
+            "harvest-final",
+            "harvest-round-1",
+            "harvest-round-2",
+            "harvest-round-3",
+            "harvest-round-4",
+            "harvest-round-5",
+            "harvest-round-6",
+            "harvest-round-7",
+            "harvest-round-8",
+            "harvest-round-9",
+            "request/image",
+            "request/xhr",
+            "response/200"
           ],
-          "source_confidence": "embedded",
+          "source_confidence": "network",
           "mapping_mode": "exact-room-id",
-          "discovered_from_room_url": "https://socolivep.cv/truc-tiep/yunnan-yukun-vs-chengdu-rongcheng-21-07-2026-1400?blv=531989",
-          "discovered_from_blv": "COZY",
-          "discovered_at": "2026-07-21T17:01:34.027475+07:00",
-          "valid_until": "2026-07-21T17:58:55+07:00",
-          "is_expired": false
-        }
-      ],
-      "coverage": {
-        "found_streams": 1,
-        "found_blv_ids": [
-          "531989"
-        ],
-        "goal": 12,
-        "source_goal_reached": false,
-        "room_queue_complete": false,
-        "complete": false,
-        "max_streams_per_blv": 2,
-        "total_explicit_blv_rooms": 6,
-        "pending_room_keys": [
-          "380460",
-          "607552",
-          "622093",
-          "536185",
-          "531989",
-          "595335"
-        ],
-        "room_progress": {
-          "595335": {
-            "key": "595335",
-            "url": "https://socolivep.cv/truc-tiep/yunnan-yukun-vs-chengdu-rongcheng-21-07-2026-1400?blv=595335",
-            "blv": "NGƯỜI CÁ",
-            "blv_id": "595335",
-            "status": "rate_limited",
-            "attempts": 0,
-            "rate_limit_hits": 1,
-            "last_http_status": 429,
-            "last_stream_count": 0,
-            "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
-          },
-          "531989": {
-            "key": "531989",
-            "url": "https://socolivep.cv/truc-tiep/yunnan-yukun-vs-chengdu-rongcheng-21-07-2026-1400?blv=531989",
-            "blv": "COZY",
-            "blv_id": "531989",
-            "status": "retry",
-            "attempts": 1,
-            "rate_limit_hits": 0,
-            "last_http_status": 200,
-            "last_stream_count": 1,
-            "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
-          },
-          "380460": {
-            "key": "380460",
-            "url": "https://socolivep.cv/truc-tiep/yunnan-yukun-vs-chengdu-rongcheng-21-07-2026-1400?blv=380460",
-            "blv": "ENZO",
-            "blv_id": "380460",
-            "status": "retry",
-            "attempts": 0,
-            "rate_limit_hits": 0,
-            "last_http_status": 200,
-            "last_stream_count": 0,
-            "last_error": "Link ký số đã hết hạn; đưa BLV trở lại queue."
-          },
-          "607552": {
-            "key": "607552",
-            "url": "https://socolivep.cv/truc-tiep/yunnan-yukun-vs-chengdu-rongcheng-21-07-2026-1400?blv=607552",
-            "blv": "ĐỖ TÚ TÀI",
-            "blv_id": "607552",
-            "status": "retry",
-            "attempts": 0,
-            "rate_limit_hits": 0,
-            "last_http_status": 200,
-            "last_stream_count": 0,
-            "last_error": "Link ký số đã hết hạn; đưa BLV trở lại queue."
-          },
-          "622093": {
-            "key": "622093",
-            "url": "https://socolivep.cv/truc-tiep/yunnan-yukun-vs-chengdu-rongcheng-21-07-2026-1400?blv=622093",
-            "blv": "GRAP",
-            "blv_id": "622093",
-            "status": "retry",
-            "attempts": 0,
-            "rate_limit_hits": 0,
-            "last_http_status": 200,
-            "last_stream_count": 0,
-            "last_error": "Link ký số đã hết hạn; đưa BLV trở lại queue."
-          },
-          "536185": {
-            "key": "536185",
-            "url": "https://socolivep.cv/truc-tiep/yunnan-yukun-vs-chengdu-rongcheng-21-07-2026-1400?blv=536185",
-            "blv": "A WIN",
-            "blv_id": "536185",
-            "status": "retry",
-            "attempts": 0,
-            "rate_limit_hits": 0,
-            "last_http_status": 200,
-            "last_stream_count": 0,
-            "last_error": "Link ký số đã hết hạn; đưa BLV trở lại queue."
-          },
-          "__base__": {
-            "key": "__base__",
-            "url": "https://socolivep.cv/truc-tiep/yunnan-yukun-vs-chengdu-rongcheng-21-07-2026-1400",
-            "blv": "XEM NGAY",
-            "blv_id": "",
-            "status": "pending",
-            "attempts": 0,
-            "rate_limit_hits": 0,
-            "last_http_status": null,
-            "last_stream_count": 0,
-            "last_error": ""
-          }
-        }
-      },
-      "attempted_room_ids": [
-        "531989"
-      ],
-      "room_progress": {
-        "595335": {
-          "key": "595335",
-          "url": "https://socolivep.cv/truc-tiep/yunnan-yukun-vs-chengdu-rongcheng-21-07-2026-1400?blv=595335",
-          "blv": "NGƯỜI CÁ",
-          "blv_id": "595335",
-          "status": "rate_limited",
-          "attempts": 0,
-          "rate_limit_hits": 1,
-          "last_http_status": 429,
-          "last_stream_count": 0,
-          "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
-        },
-        "531989": {
-          "key": "531989",
-          "url": "https://socolivep.cv/truc-tiep/yunnan-yukun-vs-chengdu-rongcheng-21-07-2026-1400?blv=531989",
-          "blv": "COZY",
-          "blv_id": "531989",
-          "status": "retry",
-          "attempts": 1,
-          "rate_limit_hits": 0,
-          "last_http_status": 200,
-          "last_stream_count": 1,
-          "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
-        },
-        "380460": {
-          "key": "380460",
-          "url": "https://socolivep.cv/truc-tiep/yunnan-yukun-vs-chengdu-rongcheng-21-07-2026-1400?blv=380460",
-          "blv": "ENZO",
-          "blv_id": "380460",
-          "status": "retry",
-          "attempts": 0,
-          "rate_limit_hits": 0,
-          "last_http_status": 200,
-          "last_stream_count": 0,
-          "last_error": "Link ký số đã hết hạn; đưa BLV trở lại queue."
-        },
-        "607552": {
-          "key": "607552",
-          "url": "https://socolivep.cv/truc-tiep/yunnan-yukun-vs-chengdu-rongcheng-21-07-2026-1400?blv=607552",
-          "blv": "ĐỖ TÚ TÀI",
-          "blv_id": "607552",
-          "status": "retry",
-          "attempts": 0,
-          "rate_limit_hits": 0,
-          "last_http_status": 200,
-          "last_stream_count": 0,
-          "last_error": "Link ký số đã hết hạn; đưa BLV trở lại queue."
-        },
-        "622093": {
-          "key": "622093",
-          "url": "https://socolivep.cv/truc-tiep/yunnan-yukun-vs-chengdu-rongcheng-21-07-2026-1400?blv=622093",
-          "blv": "GRAP",
-          "blv_id": "622093",
-          "status": "retry",
-          "attempts": 0,
-          "rate_limit_hits": 0,
-          "last_http_status": 200,
-          "last_stream_count": 0,
-          "last_error": "Link ký số đã hết hạn; đưa BLV trở lại queue."
-        },
-        "536185": {
-          "key": "536185",
-          "url": "https://socolivep.cv/truc-tiep/yunnan-yukun-vs-chengdu-rongcheng-21-07-2026-1400?blv=536185",
-          "blv": "A WIN",
-          "blv_id": "536185",
-          "status": "retry",
-          "attempts": 0,
-          "rate_limit_hits": 0,
-          "last_http_status": 200,
-          "last_stream_count": 0,
-          "last_error": "Link ký số đã hết hạn; đưa BLV trở lại queue."
-        },
-        "__base__": {
-          "key": "__base__",
-          "url": "https://socolivep.cv/truc-tiep/yunnan-yukun-vs-chengdu-rongcheng-21-07-2026-1400",
-          "blv": "XEM NGAY",
-          "blv_id": "",
-          "status": "pending",
-          "attempts": 0,
-          "rate_limit_hits": 0,
-          "last_http_status": null,
-          "last_stream_count": 0,
-          "last_error": ""
-        }
-      },
-      "pending_room_keys": [
-        "380460",
-        "607552",
-        "622093",
-        "536185",
-        "531989",
-        "595335"
-      ]
-    },
-    {
-      "base_url": "https://socolivep.cv/truc-tiep/henan-fc-vs-dalian-yingbo-21-07-2026-1400/",
-      "match_name": "Henan FC vs Dalian Yingbo",
-      "scheduled_at": "2026-07-21T14:00:00+07:00",
-      "rooms": [
-        {
-          "url": "https://socolivep.cv/truc-tiep/henan-fc-vs-dalian-yingbo-21-07-2026-1400?blv=612098",
-          "blv": "BEN 10",
-          "blv_id": "612098"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/henan-fc-vs-dalian-yingbo-21-07-2026-1400?blv=283501",
-          "blv": "KAN",
-          "blv_id": "283501"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/henan-fc-vs-dalian-yingbo-21-07-2026-1400?blv=372746",
-          "blv": "YONE",
-          "blv_id": "372746"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/henan-fc-vs-dalian-yingbo-21-07-2026-1400?blv=304148",
-          "blv": "LUCAS",
-          "blv_id": "304148"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/henan-fc-vs-dalian-yingbo-21-07-2026-1400",
-          "blv": "XEM NGAY",
-          "blv_id": ""
-        }
-      ],
-      "streams": [
-        {
-          "url": "https://pull.niues.live/live/stream-612098_lhd.m3u8?auth_key=1784631655-0-0-28eb64748a130aacd17a2b52f00523ad",
-          "queue_room_key": "612098",
-          "room_url": "https://socolivep.cv/truc-tiep/henan-fc-vs-dalian-yingbo-21-07-2026-1400?blv=612098",
-          "blv": "BEN 10",
-          "blv_id": "612098",
-          "source_id": "612098",
-          "source_provenance": [
-            "final-no-stream-scan",
-            "harvest-final"
-          ],
-          "source_confidence": "embedded",
-          "mapping_mode": "exact-room-id",
-          "discovered_from_room_url": "https://socolivep.cv/truc-tiep/henan-fc-vs-dalian-yingbo-21-07-2026-1400?blv=612098",
-          "discovered_from_blv": "BEN 10",
-          "discovered_at": "2026-07-21T17:01:50.435421+07:00",
-          "valid_until": "2026-07-21T18:00:55+07:00",
+          "discovered_from_room_url": "https://socolivep.cv/truc-tiep/jeju-sk-fc-vs-gangwon-fc-21-07-2026-1730?blv=406865",
+          "discovered_from_blv": "ANH TÀI",
+          "discovered_at": "2026-07-21T18:01:41.807475+07:00",
+          "valid_until": "2026-07-21T18:30:55+07:00",
           "is_expired": false
         },
         {
-          "url": "https://pull.niues.live/live/stream-372746_lhd.m3u8?auth_key=1784631655-0-0-0a07939932bfd2dbbaacf78d23aa93e0",
-          "queue_room_key": "372746",
-          "room_url": "https://socolivep.cv/truc-tiep/henan-fc-vs-dalian-yingbo-21-07-2026-1400?blv=372746",
-          "blv": "YONE",
-          "blv_id": "372746",
-          "source_id": "372746",
+          "url": "https://pull.niues.live/live/stream-620003_lhd.m3u8?auth_key=1784633455-0-0-dfdc6d831986f401783dc1f823f4b8c6",
+          "queue_room_key": "620003",
+          "room_url": "https://socolivep.cv/truc-tiep/jeju-sk-fc-vs-gangwon-fc-21-07-2026-1730?blv=620003",
+          "blv": "FOX",
+          "blv_id": "620003",
+          "source_id": "620003",
           "source_provenance": [
-            "final-no-stream-scan",
-            "harvest-final"
+            "cdp/request",
+            "cdp/response",
+            "harvest-final",
+            "harvest-round-1",
+            "harvest-round-2",
+            "harvest-round-3",
+            "harvest-round-4",
+            "harvest-round-5",
+            "harvest-round-6",
+            "harvest-round-7",
+            "harvest-round-8",
+            "harvest-round-9",
+            "request/image",
+            "request/xhr",
+            "response/200"
           ],
-          "source_confidence": "embedded",
+          "source_confidence": "network",
           "mapping_mode": "exact-room-id",
-          "discovered_from_room_url": "https://socolivep.cv/truc-tiep/henan-fc-vs-dalian-yingbo-21-07-2026-1400?blv=372746",
-          "discovered_from_blv": "YONE",
-          "discovered_at": "2026-07-21T17:05:56.003053+07:00",
-          "valid_until": "2026-07-21T18:00:55+07:00",
+          "discovered_from_room_url": "https://socolivep.cv/truc-tiep/jeju-sk-fc-vs-gangwon-fc-21-07-2026-1730?blv=620003",
+          "discovered_from_blv": "FOX",
+          "discovered_at": "2026-07-21T18:01:52.167702+07:00",
+          "valid_until": "2026-07-21T18:30:55+07:00",
           "is_expired": false
         },
         {
-          "url": "https://pull.niues.live/live/stream-304148_lhd.m3u8?auth_key=1784631355-0-0-9a6120fae1bc7e2c4efde0fb95f801ee",
-          "queue_room_key": "304148",
-          "room_url": "https://socolivep.cv/truc-tiep/henan-fc-vs-dalian-yingbo-21-07-2026-1400?blv=304148",
-          "blv": "LUCAS",
-          "blv_id": "304148",
-          "source_id": "304148",
+          "url": "https://pull.niues.live/live/stream-610677_lhd.m3u8?auth_key=1784632495-0-0-b2afb6856bfd3f7f86590a74f7e5667d",
+          "queue_room_key": "610677",
+          "room_url": "https://socolivep.cv/truc-tiep/jeju-sk-fc-vs-gangwon-fc-21-07-2026-1730?blv=610677",
+          "blv": "CÁP",
+          "blv_id": "610677",
+          "source_id": "610677",
           "source_provenance": [
-            "final-no-stream-scan",
-            "harvest-final"
+            "cdp/request",
+            "cdp/response",
+            "harvest-final",
+            "harvest-round-1",
+            "harvest-round-2",
+            "harvest-round-3",
+            "harvest-round-4",
+            "harvest-round-5",
+            "harvest-round-6",
+            "harvest-round-7",
+            "harvest-round-8",
+            "harvest-round-9",
+            "request/image",
+            "request/xhr",
+            "response/200"
           ],
-          "source_confidence": "embedded",
+          "source_confidence": "network",
           "mapping_mode": "exact-room-id",
-          "discovered_from_room_url": "https://socolivep.cv/truc-tiep/henan-fc-vs-dalian-yingbo-21-07-2026-1400?blv=304148",
-          "discovered_from_blv": "LUCAS",
-          "discovered_at": "2026-07-21T17:09:53.354393+07:00",
-          "valid_until": "2026-07-21T17:55:55+07:00",
+          "discovered_from_room_url": "https://socolivep.cv/truc-tiep/jeju-sk-fc-vs-gangwon-fc-21-07-2026-1730?blv=610677",
+          "discovered_from_blv": "CÁP",
+          "discovered_at": "2026-07-21T18:02:02.496270+07:00",
+          "valid_until": "2026-07-21T18:14:55+07:00",
           "is_expired": false
         }
       ],
       "coverage": {
         "found_streams": 3,
         "found_blv_ids": [
-          "304148",
-          "372746",
-          "612098"
+          "406865",
+          "610677",
+          "620003"
         ],
         "goal": 8,
         "source_goal_reached": false,
@@ -399,309 +176,89 @@
         "max_streams_per_blv": 2,
         "total_explicit_blv_rooms": 4,
         "pending_room_keys": [
-          "283501",
-          "304148",
-          "612098",
-          "372746"
+          "610518"
         ],
         "room_progress": {
-          "612098": {
-            "key": "612098",
-            "url": "https://socolivep.cv/truc-tiep/henan-fc-vs-dalian-yingbo-21-07-2026-1400?blv=612098",
-            "blv": "BEN 10",
-            "blv_id": "612098",
-            "status": "retry",
-            "attempts": 4,
-            "rate_limit_hits": 0,
-            "last_http_status": 200,
-            "last_stream_count": 1,
-            "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
-          },
-          "283501": {
-            "key": "283501",
-            "url": "https://socolivep.cv/truc-tiep/henan-fc-vs-dalian-yingbo-21-07-2026-1400?blv=283501",
-            "blv": "KAN",
-            "blv_id": "283501",
-            "status": "retry",
-            "attempts": 0,
-            "rate_limit_hits": 0,
-            "last_http_status": 200,
-            "last_stream_count": 0,
-            "last_error": "Link ký số đã hết hạn; đưa BLV trở lại queue."
-          },
-          "372746": {
-            "key": "372746",
-            "url": "https://socolivep.cv/truc-tiep/henan-fc-vs-dalian-yingbo-21-07-2026-1400?blv=372746",
-            "blv": "YONE",
-            "blv_id": "372746",
-            "status": "retry",
-            "attempts": 4,
-            "rate_limit_hits": 0,
-            "last_http_status": 200,
-            "last_stream_count": 1,
-            "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
-          },
-          "304148": {
-            "key": "304148",
-            "url": "https://socolivep.cv/truc-tiep/henan-fc-vs-dalian-yingbo-21-07-2026-1400?blv=304148",
-            "blv": "LUCAS",
-            "blv_id": "304148",
-            "status": "retry",
-            "attempts": 3,
-            "rate_limit_hits": 0,
-            "last_http_status": 200,
-            "last_stream_count": 1,
-            "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
-          },
-          "__base__": {
-            "key": "__base__",
-            "url": "https://socolivep.cv/truc-tiep/henan-fc-vs-dalian-yingbo-21-07-2026-1400",
-            "blv": "XEM NGAY",
-            "blv_id": "",
-            "status": "pending",
-            "attempts": 0,
-            "rate_limit_hits": 0,
-            "last_http_status": null,
-            "last_stream_count": 0,
-            "last_error": ""
-          }
-        }
-      },
-      "attempted_room_ids": [
-        "304148",
-        "372746",
-        "612098"
-      ],
-      "room_progress": {
-        "612098": {
-          "key": "612098",
-          "url": "https://socolivep.cv/truc-tiep/henan-fc-vs-dalian-yingbo-21-07-2026-1400?blv=612098",
-          "blv": "BEN 10",
-          "blv_id": "612098",
-          "status": "retry",
-          "attempts": 4,
-          "rate_limit_hits": 0,
-          "last_http_status": 200,
-          "last_stream_count": 1,
-          "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
-        },
-        "283501": {
-          "key": "283501",
-          "url": "https://socolivep.cv/truc-tiep/henan-fc-vs-dalian-yingbo-21-07-2026-1400?blv=283501",
-          "blv": "KAN",
-          "blv_id": "283501",
-          "status": "retry",
-          "attempts": 0,
-          "rate_limit_hits": 0,
-          "last_http_status": 200,
-          "last_stream_count": 0,
-          "last_error": "Link ký số đã hết hạn; đưa BLV trở lại queue."
-        },
-        "372746": {
-          "key": "372746",
-          "url": "https://socolivep.cv/truc-tiep/henan-fc-vs-dalian-yingbo-21-07-2026-1400?blv=372746",
-          "blv": "YONE",
-          "blv_id": "372746",
-          "status": "retry",
-          "attempts": 4,
-          "rate_limit_hits": 0,
-          "last_http_status": 200,
-          "last_stream_count": 1,
-          "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
-        },
-        "304148": {
-          "key": "304148",
-          "url": "https://socolivep.cv/truc-tiep/henan-fc-vs-dalian-yingbo-21-07-2026-1400?blv=304148",
-          "blv": "LUCAS",
-          "blv_id": "304148",
-          "status": "retry",
-          "attempts": 3,
-          "rate_limit_hits": 0,
-          "last_http_status": 200,
-          "last_stream_count": 1,
-          "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
-        },
-        "__base__": {
-          "key": "__base__",
-          "url": "https://socolivep.cv/truc-tiep/henan-fc-vs-dalian-yingbo-21-07-2026-1400",
-          "blv": "XEM NGAY",
-          "blv_id": "",
-          "status": "pending",
-          "attempts": 0,
-          "rate_limit_hits": 0,
-          "last_http_status": null,
-          "last_stream_count": 0,
-          "last_error": ""
-        }
-      },
-      "pending_room_keys": [
-        "283501",
-        "304148",
-        "612098",
-        "372746"
-      ]
-    },
-    {
-      "base_url": "https://socolivep.cv/truc-tiep/wuhan-three-towns-vs-shandong-taishan-21-07-2026-1400/",
-      "match_name": "Wuhan Three Towns vs Shandong Taishan",
-      "scheduled_at": "2026-07-21T14:00:00+07:00",
-      "rooms": [
-        {
-          "url": "https://socolivep.cv/truc-tiep/wuhan-three-towns-vs-shandong-taishan-21-07-2026-1400?blv=250874",
-          "blv": "FIREMAN",
-          "blv_id": "250874"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/wuhan-three-towns-vs-shandong-taishan-21-07-2026-1400?blv=494201",
-          "blv": "MESSI",
-          "blv_id": "494201"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/wuhan-three-towns-vs-shandong-taishan-21-07-2026-1400?blv=123226",
-          "blv": "RICKHANTER",
-          "blv_id": "123226"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/wuhan-three-towns-vs-shandong-taishan-21-07-2026-1400?blv=599634",
-          "blv": "HẢI THANH",
-          "blv_id": "599634"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/wuhan-three-towns-vs-shandong-taishan-21-07-2026-1400?blv=147801",
-          "blv": "TAP",
-          "blv_id": "147801"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/wuhan-three-towns-vs-shandong-taishan-21-07-2026-1400?blv=485739",
-          "blv": "CHIVAS",
-          "blv_id": "485739"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/wuhan-three-towns-vs-shandong-taishan-21-07-2026-1400",
-          "blv": "XEM NGAY",
-          "blv_id": ""
-        }
-      ],
-      "streams": [
-        {
-          "url": "https://pull.niues.live/live/stream-991140_lhd.m3u8?auth_key=1784631715-0-0-edaf2a440fc611ea1ebdc46e1da066b0",
-          "queue_room_key": "250874",
-          "room_url": "https://socolivep.cv/truc-tiep/wuhan-three-towns-vs-shandong-taishan-21-07-2026-1400?blv=250874",
-          "blv": "Nguồn 991140",
-          "blv_id": "991140",
-          "source_id": "991140",
-          "source_provenance": [
-            "final-no-stream-scan",
-            "harvest-final"
-          ],
-          "source_confidence": "embedded",
-          "mapping_mode": "stream-source-id",
-          "discovered_from_room_url": "https://socolivep.cv/truc-tiep/wuhan-three-towns-vs-shandong-taishan-21-07-2026-1400?blv=250874",
-          "discovered_from_blv": "FIREMAN",
-          "discovered_at": "2026-07-21T17:02:22.290372+07:00",
-          "valid_until": "2026-07-21T18:01:55+07:00",
-          "is_expired": false
-        }
-      ],
-      "coverage": {
-        "found_streams": 1,
-        "found_blv_ids": [
-          "991140"
-        ],
-        "goal": 12,
-        "source_goal_reached": false,
-        "room_queue_complete": false,
-        "complete": false,
-        "max_streams_per_blv": 2,
-        "total_explicit_blv_rooms": 6,
-        "pending_room_keys": [
-          "494201",
-          "123226",
-          "599634",
-          "147801",
-          "485739",
-          "250874"
-        ],
-        "room_progress": {
-          "250874": {
-            "key": "250874",
-            "url": "https://socolivep.cv/truc-tiep/wuhan-three-towns-vs-shandong-taishan-21-07-2026-1400?blv=250874",
-            "blv": "FIREMAN",
-            "blv_id": "250874",
+          "610518": {
+            "key": "610518",
+            "url": "https://socolivep.cv/truc-tiep/jeju-sk-fc-vs-gangwon-fc-21-07-2026-1730?blv=610518",
+            "blv": "XUÂN TÓC ĐỎ",
+            "blv_id": "610518",
             "status": "retry",
             "attempts": 1,
+            "attempts_total": 1,
+            "ever_attempted": true,
+            "valid_stream_ever_found": false,
+            "needs_token_refresh": true,
+            "completion_reason": "",
+            "rate_limit_hits": 0,
+            "last_http_status": 200,
+            "last_stream_count": 0,
+            "last_error": "Token cũ đã hết hạn; giữ nguyên attempts_total và trạng thái hoàn tất của BLV."
+          },
+          "406865": {
+            "key": "406865",
+            "url": "https://socolivep.cv/truc-tiep/jeju-sk-fc-vs-gangwon-fc-21-07-2026-1730?blv=406865",
+            "blv": "ANH TÀI",
+            "blv_id": "406865",
+            "status": "success",
+            "attempts": 1,
+            "attempts_total": 1,
+            "ever_attempted": true,
+            "valid_stream_ever_found": true,
+            "needs_token_refresh": false,
+            "completion_reason": "valid_stream",
             "rate_limit_hits": 0,
             "last_http_status": 200,
             "last_stream_count": 1,
             "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
           },
-          "494201": {
-            "key": "494201",
-            "url": "https://socolivep.cv/truc-tiep/wuhan-three-towns-vs-shandong-taishan-21-07-2026-1400?blv=494201",
-            "blv": "MESSI",
-            "blv_id": "494201",
-            "status": "retry",
-            "attempts": 0,
+          "620003": {
+            "key": "620003",
+            "url": "https://socolivep.cv/truc-tiep/jeju-sk-fc-vs-gangwon-fc-21-07-2026-1730?blv=620003",
+            "blv": "FOX",
+            "blv_id": "620003",
+            "status": "success",
+            "attempts": 1,
+            "attempts_total": 1,
+            "ever_attempted": true,
+            "valid_stream_ever_found": true,
+            "needs_token_refresh": false,
+            "completion_reason": "valid_stream",
             "rate_limit_hits": 0,
             "last_http_status": 200,
-            "last_stream_count": 0,
-            "last_error": "Link ký số đã hết hạn; đưa BLV trở lại queue."
+            "last_stream_count": 1,
+            "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
           },
-          "123226": {
-            "key": "123226",
-            "url": "https://socolivep.cv/truc-tiep/wuhan-three-towns-vs-shandong-taishan-21-07-2026-1400?blv=123226",
-            "blv": "RICKHANTER",
-            "blv_id": "123226",
-            "status": "retry",
-            "attempts": 0,
+          "610677": {
+            "key": "610677",
+            "url": "https://socolivep.cv/truc-tiep/jeju-sk-fc-vs-gangwon-fc-21-07-2026-1730?blv=610677",
+            "blv": "CÁP",
+            "blv_id": "610677",
+            "status": "success",
+            "attempts": 1,
+            "attempts_total": 1,
+            "ever_attempted": true,
+            "valid_stream_ever_found": true,
+            "needs_token_refresh": false,
+            "completion_reason": "valid_stream",
             "rate_limit_hits": 0,
             "last_http_status": 200,
-            "last_stream_count": 0,
-            "last_error": "Link ký số đã hết hạn; đưa BLV trở lại queue."
-          },
-          "599634": {
-            "key": "599634",
-            "url": "https://socolivep.cv/truc-tiep/wuhan-three-towns-vs-shandong-taishan-21-07-2026-1400?blv=599634",
-            "blv": "HẢI THANH",
-            "blv_id": "599634",
-            "status": "retry",
-            "attempts": 0,
-            "rate_limit_hits": 0,
-            "last_http_status": 200,
-            "last_stream_count": 0,
-            "last_error": "Link ký số đã hết hạn; đưa BLV trở lại queue."
-          },
-          "147801": {
-            "key": "147801",
-            "url": "https://socolivep.cv/truc-tiep/wuhan-three-towns-vs-shandong-taishan-21-07-2026-1400?blv=147801",
-            "blv": "TAP",
-            "blv_id": "147801",
-            "status": "retry",
-            "attempts": 0,
-            "rate_limit_hits": 0,
-            "last_http_status": 200,
-            "last_stream_count": 0,
-            "last_error": "Link ký số đã hết hạn; đưa BLV trở lại queue."
-          },
-          "485739": {
-            "key": "485739",
-            "url": "https://socolivep.cv/truc-tiep/wuhan-three-towns-vs-shandong-taishan-21-07-2026-1400?blv=485739",
-            "blv": "CHIVAS",
-            "blv_id": "485739",
-            "status": "retry",
-            "attempts": 0,
-            "rate_limit_hits": 0,
-            "last_http_status": 200,
-            "last_stream_count": 0,
-            "last_error": "Link ký số đã hết hạn; đưa BLV trở lại queue."
+            "last_stream_count": 1,
+            "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
           },
           "__base__": {
             "key": "__base__",
-            "url": "https://socolivep.cv/truc-tiep/wuhan-three-towns-vs-shandong-taishan-21-07-2026-1400",
+            "url": "https://socolivep.cv/truc-tiep/jeju-sk-fc-vs-gangwon-fc-21-07-2026-1730",
             "blv": "XEM NGAY",
             "blv_id": "",
             "status": "pending",
             "attempts": 0,
+            "attempts_total": 0,
+            "ever_attempted": false,
+            "valid_stream_ever_found": false,
+            "needs_token_refresh": false,
+            "completion_reason": "",
             "rate_limit_hits": 0,
             "last_http_status": null,
             "last_stream_count": 0,
@@ -710,88 +267,92 @@
         }
       },
       "attempted_room_ids": [
-        "250874"
+        "406865",
+        "610518",
+        "610677",
+        "620003"
       ],
       "room_progress": {
-        "250874": {
-          "key": "250874",
-          "url": "https://socolivep.cv/truc-tiep/wuhan-three-towns-vs-shandong-taishan-21-07-2026-1400?blv=250874",
-          "blv": "FIREMAN",
-          "blv_id": "250874",
+        "610518": {
+          "key": "610518",
+          "url": "https://socolivep.cv/truc-tiep/jeju-sk-fc-vs-gangwon-fc-21-07-2026-1730?blv=610518",
+          "blv": "XUÂN TÓC ĐỎ",
+          "blv_id": "610518",
           "status": "retry",
           "attempts": 1,
+          "attempts_total": 1,
+          "ever_attempted": true,
+          "valid_stream_ever_found": false,
+          "needs_token_refresh": true,
+          "completion_reason": "",
+          "rate_limit_hits": 0,
+          "last_http_status": 200,
+          "last_stream_count": 0,
+          "last_error": "Token cũ đã hết hạn; giữ nguyên attempts_total và trạng thái hoàn tất của BLV."
+        },
+        "406865": {
+          "key": "406865",
+          "url": "https://socolivep.cv/truc-tiep/jeju-sk-fc-vs-gangwon-fc-21-07-2026-1730?blv=406865",
+          "blv": "ANH TÀI",
+          "blv_id": "406865",
+          "status": "success",
+          "attempts": 1,
+          "attempts_total": 1,
+          "ever_attempted": true,
+          "valid_stream_ever_found": true,
+          "needs_token_refresh": false,
+          "completion_reason": "valid_stream",
           "rate_limit_hits": 0,
           "last_http_status": 200,
           "last_stream_count": 1,
           "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
         },
-        "494201": {
-          "key": "494201",
-          "url": "https://socolivep.cv/truc-tiep/wuhan-three-towns-vs-shandong-taishan-21-07-2026-1400?blv=494201",
-          "blv": "MESSI",
-          "blv_id": "494201",
-          "status": "retry",
-          "attempts": 0,
+        "620003": {
+          "key": "620003",
+          "url": "https://socolivep.cv/truc-tiep/jeju-sk-fc-vs-gangwon-fc-21-07-2026-1730?blv=620003",
+          "blv": "FOX",
+          "blv_id": "620003",
+          "status": "success",
+          "attempts": 1,
+          "attempts_total": 1,
+          "ever_attempted": true,
+          "valid_stream_ever_found": true,
+          "needs_token_refresh": false,
+          "completion_reason": "valid_stream",
           "rate_limit_hits": 0,
           "last_http_status": 200,
-          "last_stream_count": 0,
-          "last_error": "Link ký số đã hết hạn; đưa BLV trở lại queue."
+          "last_stream_count": 1,
+          "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
         },
-        "123226": {
-          "key": "123226",
-          "url": "https://socolivep.cv/truc-tiep/wuhan-three-towns-vs-shandong-taishan-21-07-2026-1400?blv=123226",
-          "blv": "RICKHANTER",
-          "blv_id": "123226",
-          "status": "retry",
-          "attempts": 0,
+        "610677": {
+          "key": "610677",
+          "url": "https://socolivep.cv/truc-tiep/jeju-sk-fc-vs-gangwon-fc-21-07-2026-1730?blv=610677",
+          "blv": "CÁP",
+          "blv_id": "610677",
+          "status": "success",
+          "attempts": 1,
+          "attempts_total": 1,
+          "ever_attempted": true,
+          "valid_stream_ever_found": true,
+          "needs_token_refresh": false,
+          "completion_reason": "valid_stream",
           "rate_limit_hits": 0,
           "last_http_status": 200,
-          "last_stream_count": 0,
-          "last_error": "Link ký số đã hết hạn; đưa BLV trở lại queue."
-        },
-        "599634": {
-          "key": "599634",
-          "url": "https://socolivep.cv/truc-tiep/wuhan-three-towns-vs-shandong-taishan-21-07-2026-1400?blv=599634",
-          "blv": "HẢI THANH",
-          "blv_id": "599634",
-          "status": "retry",
-          "attempts": 0,
-          "rate_limit_hits": 0,
-          "last_http_status": 200,
-          "last_stream_count": 0,
-          "last_error": "Link ký số đã hết hạn; đưa BLV trở lại queue."
-        },
-        "147801": {
-          "key": "147801",
-          "url": "https://socolivep.cv/truc-tiep/wuhan-three-towns-vs-shandong-taishan-21-07-2026-1400?blv=147801",
-          "blv": "TAP",
-          "blv_id": "147801",
-          "status": "retry",
-          "attempts": 0,
-          "rate_limit_hits": 0,
-          "last_http_status": 200,
-          "last_stream_count": 0,
-          "last_error": "Link ký số đã hết hạn; đưa BLV trở lại queue."
-        },
-        "485739": {
-          "key": "485739",
-          "url": "https://socolivep.cv/truc-tiep/wuhan-three-towns-vs-shandong-taishan-21-07-2026-1400?blv=485739",
-          "blv": "CHIVAS",
-          "blv_id": "485739",
-          "status": "retry",
-          "attempts": 0,
-          "rate_limit_hits": 0,
-          "last_http_status": 200,
-          "last_stream_count": 0,
-          "last_error": "Link ký số đã hết hạn; đưa BLV trở lại queue."
+          "last_stream_count": 1,
+          "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
         },
         "__base__": {
           "key": "__base__",
-          "url": "https://socolivep.cv/truc-tiep/wuhan-three-towns-vs-shandong-taishan-21-07-2026-1400",
+          "url": "https://socolivep.cv/truc-tiep/jeju-sk-fc-vs-gangwon-fc-21-07-2026-1730",
           "blv": "XEM NGAY",
           "blv_id": "",
           "status": "pending",
           "attempts": 0,
+          "attempts_total": 0,
+          "ever_attempted": false,
+          "valid_stream_ever_found": false,
+          "needs_token_refresh": false,
+          "completion_reason": "",
           "rate_limit_hits": 0,
           "last_http_status": null,
           "last_stream_count": 0,
@@ -799,100 +360,220 @@
         }
       },
       "pending_room_keys": [
-        "494201",
-        "123226",
-        "599634",
-        "147801",
-        "485739",
-        "250874"
+        "610518"
       ]
     },
     {
-      "base_url": "https://socolivep.cv/truc-tiep/shanghai-shenhua-vs-qingdao-hainiu-21-07-2026-1400/",
-      "match_name": "Shanghai Shenhua vs Qingdao Hainiu",
-      "scheduled_at": "2026-07-21T14:00:00+07:00",
+      "base_url": "https://socolivep.cv/truc-tiep/jeonbuk-hyundai-motors-vs-daejeon-citizen-21-07-2026-1730/",
+      "match_name": "Jeonbuk Hyundai Motors vs Daejeon Citizen",
+      "scheduled_at": "2026-07-21T17:30:00+07:00",
       "rooms": [
         {
-          "url": "https://socolivep.cv/truc-tiep/shanghai-shenhua-vs-qingdao-hainiu-21-07-2026-1400?blv=109053",
-          "blv": "PEWPEW",
-          "blv_id": "109053"
+          "url": "https://socolivep.cv/truc-tiep/jeonbuk-hyundai-motors-vs-daejeon-citizen-21-07-2026-1730?blv=527384",
+          "blv": "LÃO LÂM",
+          "blv_id": "527384"
         },
         {
-          "url": "https://socolivep.cv/truc-tiep/shanghai-shenhua-vs-qingdao-hainiu-21-07-2026-1400?blv=291277",
-          "blv": "CÔNG CHẤT",
-          "blv_id": "291277"
+          "url": "https://socolivep.cv/truc-tiep/jeonbuk-hyundai-motors-vs-daejeon-citizen-21-07-2026-1730?blv=552716",
+          "blv": "VOI",
+          "blv_id": "552716"
         },
         {
-          "url": "https://socolivep.cv/truc-tiep/shanghai-shenhua-vs-qingdao-hainiu-21-07-2026-1400?blv=484845",
-          "blv": "A BỆU",
-          "blv_id": "484845"
+          "url": "https://socolivep.cv/truc-tiep/jeonbuk-hyundai-motors-vs-daejeon-citizen-21-07-2026-1730?blv=582342",
+          "blv": "CÒ",
+          "blv_id": "582342"
         },
         {
-          "url": "https://socolivep.cv/truc-tiep/shanghai-shenhua-vs-qingdao-hainiu-21-07-2026-1400?blv=548860",
-          "blv": "VƯƠNG ANH",
-          "blv_id": "548860"
+          "url": "https://socolivep.cv/truc-tiep/jeonbuk-hyundai-motors-vs-daejeon-citizen-21-07-2026-1730?blv=273736",
+          "blv": "CHÍ PHÈO",
+          "blv_id": "273736"
         },
         {
-          "url": "https://socolivep.cv/truc-tiep/shanghai-shenhua-vs-qingdao-hainiu-21-07-2026-1400?blv=534055",
-          "blv": "RAMBO",
-          "blv_id": "534055"
+          "url": "https://socolivep.cv/truc-tiep/jeonbuk-hyundai-motors-vs-daejeon-citizen-21-07-2026-1730?blv=560690",
+          "blv": "KÉP",
+          "blv_id": "560690"
         },
         {
-          "url": "https://socolivep.cv/truc-tiep/shanghai-shenhua-vs-qingdao-hainiu-21-07-2026-1400?blv=472241",
-          "blv": "XO",
-          "blv_id": "472241"
+          "url": "https://socolivep.cv/truc-tiep/jeonbuk-hyundai-motors-vs-daejeon-citizen-21-07-2026-1730?blv=589848",
+          "blv": "LOKA",
+          "blv_id": "589848"
         },
         {
-          "url": "https://socolivep.cv/truc-tiep/shanghai-shenhua-vs-qingdao-hainiu-21-07-2026-1400",
+          "url": "https://socolivep.cv/truc-tiep/jeonbuk-hyundai-motors-vs-daejeon-citizen-21-07-2026-1730",
           "blv": "XEM NGAY",
           "blv_id": ""
         }
       ],
       "streams": [
         {
-          "url": "https://pull.niues.live/live/stream-9912015_lhd.m3u8?auth_key=1784631715-0-0-6960ada0bae3a790f252fa33d0d453b1",
-          "queue_room_key": "109053",
-          "room_url": "https://socolivep.cv/truc-tiep/shanghai-shenhua-vs-qingdao-hainiu-21-07-2026-1400?blv=109053",
-          "blv": "Nguồn 9912015",
-          "blv_id": "9912015",
-          "source_id": "9912015",
+          "url": "https://pull.niues.live/live/stream-9912114_lhd.m3u8?auth_key=1784632555-0-0-e982f2ddd03ceae11177552b355d035f",
+          "queue_room_key": "552716",
+          "room_url": "https://socolivep.cv/truc-tiep/jeonbuk-hyundai-motors-vs-daejeon-citizen-21-07-2026-1730?blv=552716",
+          "blv": "VOI",
+          "blv_id": "552716",
+          "source_id": "9912114",
           "source_provenance": [
-            "final-no-stream-scan",
-            "harvest-final"
+            "cdp/request",
+            "cdp/response",
+            "harvest-final",
+            "harvest-round-1",
+            "harvest-round-2",
+            "harvest-round-3",
+            "harvest-round-4",
+            "harvest-round-5",
+            "harvest-round-6",
+            "harvest-round-7",
+            "harvest-round-8",
+            "harvest-round-9",
+            "request/image",
+            "request/xhr",
+            "response/200"
           ],
-          "source_confidence": "embedded",
-          "mapping_mode": "stream-source-id",
-          "discovered_from_room_url": "https://socolivep.cv/truc-tiep/shanghai-shenhua-vs-qingdao-hainiu-21-07-2026-1400?blv=109053",
-          "discovered_from_blv": "PEWPEW",
-          "discovered_at": "2026-07-21T17:02:54.138110+07:00",
-          "valid_until": "2026-07-21T18:01:55+07:00",
+          "source_confidence": "network",
+          "mapping_mode": "current-room-primary",
+          "discovered_from_room_url": "https://socolivep.cv/truc-tiep/jeonbuk-hyundai-motors-vs-daejeon-citizen-21-07-2026-1730?blv=552716",
+          "discovered_from_blv": "VOI",
+          "discovered_at": "2026-07-21T18:02:23.171070+07:00",
+          "valid_until": "2026-07-21T18:15:55+07:00",
           "is_expired": false
         },
         {
-          "url": "https://pull.niues.live/live/stream-484845_lhd.m3u8?auth_key=1784631994-0-0-cb7803e2a4f81b4d947a3f94f92e6b87",
-          "queue_room_key": "484845",
-          "room_url": "https://socolivep.cv/truc-tiep/shanghai-shenhua-vs-qingdao-hainiu-21-07-2026-1400?blv=484845",
-          "blv": "A BỆU",
-          "blv_id": "484845",
-          "source_id": "484845",
+          "url": "https://pull.niues.live/live/stream-582342_lhd.m3u8?auth_key=1784632435-0-0-3b02c1cc6539b89db2b330bd2692c258",
+          "queue_room_key": "582342",
+          "room_url": "https://socolivep.cv/truc-tiep/jeonbuk-hyundai-motors-vs-daejeon-citizen-21-07-2026-1730?blv=582342",
+          "blv": "CÒ",
+          "blv_id": "582342",
+          "source_id": "582342",
           "source_provenance": [
-            "final-no-stream-scan",
-            "harvest-final"
+            "cdp/request",
+            "cdp/response",
+            "harvest-final",
+            "harvest-round-1",
+            "harvest-round-2",
+            "harvest-round-3",
+            "harvest-round-4",
+            "harvest-round-5",
+            "harvest-round-6",
+            "harvest-round-7",
+            "harvest-round-8",
+            "harvest-round-9",
+            "request/image",
+            "request/xhr",
+            "response/200"
           ],
-          "source_confidence": "embedded",
+          "source_confidence": "network",
           "mapping_mode": "exact-room-id",
-          "discovered_from_room_url": "https://socolivep.cv/truc-tiep/shanghai-shenhua-vs-qingdao-hainiu-21-07-2026-1400?blv=484845",
-          "discovered_from_blv": "A BỆU",
-          "discovered_at": "2026-07-21T17:41:39.672035+07:00",
-          "valid_until": "2026-07-21T18:06:34+07:00",
+          "discovered_from_room_url": "https://socolivep.cv/truc-tiep/jeonbuk-hyundai-motors-vs-daejeon-citizen-21-07-2026-1730?blv=582342",
+          "discovered_from_blv": "CÒ",
+          "discovered_at": "2026-07-21T18:02:33.512281+07:00",
+          "valid_until": "2026-07-21T18:13:55+07:00",
+          "is_expired": false
+        },
+        {
+          "url": "https://pull.niues.live/live/stream-273736_lhd.m3u8?auth_key=1784632555-0-0-368a548213db5ba189bcd9f5d23856b3",
+          "queue_room_key": "273736",
+          "room_url": "https://socolivep.cv/truc-tiep/jeonbuk-hyundai-motors-vs-daejeon-citizen-21-07-2026-1730?blv=273736",
+          "blv": "CHÍ PHÈO",
+          "blv_id": "273736",
+          "source_id": "273736",
+          "source_provenance": [
+            "cdp/request",
+            "cdp/response",
+            "harvest-final",
+            "harvest-round-1",
+            "harvest-round-2",
+            "harvest-round-3",
+            "harvest-round-4",
+            "harvest-round-5",
+            "harvest-round-6",
+            "harvest-round-7",
+            "harvest-round-8",
+            "harvest-round-9",
+            "request/image",
+            "request/xhr",
+            "response/200"
+          ],
+          "source_confidence": "network",
+          "mapping_mode": "exact-room-id",
+          "discovered_from_room_url": "https://socolivep.cv/truc-tiep/jeonbuk-hyundai-motors-vs-daejeon-citizen-21-07-2026-1730?blv=273736",
+          "discovered_from_blv": "CHÍ PHÈO",
+          "discovered_at": "2026-07-21T18:02:43.834363+07:00",
+          "valid_until": "2026-07-21T18:15:55+07:00",
+          "is_expired": false
+        },
+        {
+          "url": "https://pull.niues.live/live/stream-560690_lhd.m3u8?auth_key=1784633455-0-0-e8f924e7ff240bb6de54710f82207c83",
+          "queue_room_key": "560690",
+          "room_url": "https://socolivep.cv/truc-tiep/jeonbuk-hyundai-motors-vs-daejeon-citizen-21-07-2026-1730?blv=560690",
+          "blv": "KÉP",
+          "blv_id": "560690",
+          "source_id": "560690",
+          "source_provenance": [
+            "cdp/request",
+            "cdp/response",
+            "harvest-final",
+            "harvest-round-1",
+            "harvest-round-2",
+            "harvest-round-3",
+            "harvest-round-4",
+            "harvest-round-5",
+            "harvest-round-6",
+            "harvest-round-7",
+            "harvest-round-8",
+            "harvest-round-9",
+            "request/image",
+            "request/xhr",
+            "response/200"
+          ],
+          "source_confidence": "network",
+          "mapping_mode": "exact-room-id",
+          "discovered_from_room_url": "https://socolivep.cv/truc-tiep/jeonbuk-hyundai-motors-vs-daejeon-citizen-21-07-2026-1730?blv=560690",
+          "discovered_from_blv": "KÉP",
+          "discovered_at": "2026-07-21T18:02:54.221745+07:00",
+          "valid_until": "2026-07-21T18:30:55+07:00",
+          "is_expired": false
+        },
+        {
+          "url": "https://pull.niues.live/live/stream-589848_lhd.m3u8?auth_key=1784633455-0-0-580e542e1402d3c2afa9721192b4dd83",
+          "queue_room_key": "589848",
+          "room_url": "https://socolivep.cv/truc-tiep/jeonbuk-hyundai-motors-vs-daejeon-citizen-21-07-2026-1730?blv=589848",
+          "blv": "LOKA",
+          "blv_id": "589848",
+          "source_id": "589848",
+          "source_provenance": [
+            "cdp/request",
+            "cdp/response",
+            "harvest-final",
+            "harvest-round-1",
+            "harvest-round-2",
+            "harvest-round-3",
+            "harvest-round-4",
+            "harvest-round-5",
+            "harvest-round-6",
+            "harvest-round-7",
+            "harvest-round-8",
+            "harvest-round-9",
+            "request/image",
+            "request/xhr",
+            "response/200"
+          ],
+          "source_confidence": "network",
+          "mapping_mode": "exact-room-id",
+          "discovered_from_room_url": "https://socolivep.cv/truc-tiep/jeonbuk-hyundai-motors-vs-daejeon-citizen-21-07-2026-1730?blv=589848",
+          "discovered_from_blv": "LOKA",
+          "discovered_at": "2026-07-21T18:03:04.660683+07:00",
+          "valid_until": "2026-07-21T18:30:55+07:00",
           "is_expired": false
         }
       ],
       "coverage": {
-        "found_streams": 2,
+        "found_streams": 5,
         "found_blv_ids": [
-          "484845",
-          "9912015"
+          "273736",
+          "552716",
+          "560690",
+          "582342",
+          "589848"
         ],
         "goal": 12,
         "source_goal_reached": false,
@@ -901,93 +582,123 @@
         "max_streams_per_blv": 2,
         "total_explicit_blv_rooms": 6,
         "pending_room_keys": [
-          "291277",
-          "548860",
-          "534055",
-          "472241",
-          "109053",
-          "484845"
+          "527384"
         ],
         "room_progress": {
-          "109053": {
-            "key": "109053",
-            "url": "https://socolivep.cv/truc-tiep/shanghai-shenhua-vs-qingdao-hainiu-21-07-2026-1400?blv=109053",
-            "blv": "PEWPEW",
-            "blv_id": "109053",
+          "527384": {
+            "key": "527384",
+            "url": "https://socolivep.cv/truc-tiep/jeonbuk-hyundai-motors-vs-daejeon-citizen-21-07-2026-1730?blv=527384",
+            "blv": "LÃO LÂM",
+            "blv_id": "527384",
             "status": "retry",
             "attempts": 1,
+            "attempts_total": 1,
+            "ever_attempted": true,
+            "valid_stream_ever_found": false,
+            "needs_token_refresh": true,
+            "completion_reason": "",
+            "rate_limit_hits": 0,
+            "last_http_status": 200,
+            "last_stream_count": 0,
+            "last_error": "Token cũ đã hết hạn; giữ nguyên attempts_total và trạng thái hoàn tất của BLV."
+          },
+          "552716": {
+            "key": "552716",
+            "url": "https://socolivep.cv/truc-tiep/jeonbuk-hyundai-motors-vs-daejeon-citizen-21-07-2026-1730?blv=552716",
+            "blv": "VOI",
+            "blv_id": "552716",
+            "status": "success",
+            "attempts": 1,
+            "attempts_total": 1,
+            "ever_attempted": true,
+            "valid_stream_ever_found": true,
+            "needs_token_refresh": false,
+            "completion_reason": "valid_stream",
             "rate_limit_hits": 0,
             "last_http_status": 200,
             "last_stream_count": 1,
             "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
           },
-          "291277": {
-            "key": "291277",
-            "url": "https://socolivep.cv/truc-tiep/shanghai-shenhua-vs-qingdao-hainiu-21-07-2026-1400?blv=291277",
-            "blv": "CÔNG CHẤT",
-            "blv_id": "291277",
-            "status": "retry",
-            "attempts": 0,
-            "rate_limit_hits": 0,
-            "last_http_status": 200,
-            "last_stream_count": 0,
-            "last_error": "Link ký số đã hết hạn; đưa BLV trở lại queue."
-          },
-          "484845": {
-            "key": "484845",
-            "url": "https://socolivep.cv/truc-tiep/shanghai-shenhua-vs-qingdao-hainiu-21-07-2026-1400?blv=484845",
-            "blv": "A BỆU",
-            "blv_id": "484845",
-            "status": "retry",
+          "582342": {
+            "key": "582342",
+            "url": "https://socolivep.cv/truc-tiep/jeonbuk-hyundai-motors-vs-daejeon-citizen-21-07-2026-1730?blv=582342",
+            "blv": "CÒ",
+            "blv_id": "582342",
+            "status": "success",
             "attempts": 1,
+            "attempts_total": 1,
+            "ever_attempted": true,
+            "valid_stream_ever_found": true,
+            "needs_token_refresh": false,
+            "completion_reason": "valid_stream",
             "rate_limit_hits": 0,
             "last_http_status": 200,
             "last_stream_count": 1,
             "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
           },
-          "548860": {
-            "key": "548860",
-            "url": "https://socolivep.cv/truc-tiep/shanghai-shenhua-vs-qingdao-hainiu-21-07-2026-1400?blv=548860",
-            "blv": "VƯƠNG ANH",
-            "blv_id": "548860",
-            "status": "retry",
-            "attempts": 0,
+          "273736": {
+            "key": "273736",
+            "url": "https://socolivep.cv/truc-tiep/jeonbuk-hyundai-motors-vs-daejeon-citizen-21-07-2026-1730?blv=273736",
+            "blv": "CHÍ PHÈO",
+            "blv_id": "273736",
+            "status": "success",
+            "attempts": 1,
+            "attempts_total": 1,
+            "ever_attempted": true,
+            "valid_stream_ever_found": true,
+            "needs_token_refresh": false,
+            "completion_reason": "valid_stream",
             "rate_limit_hits": 0,
             "last_http_status": 200,
-            "last_stream_count": 0,
-            "last_error": "Link ký số đã hết hạn; đưa BLV trở lại queue."
+            "last_stream_count": 1,
+            "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
           },
-          "534055": {
-            "key": "534055",
-            "url": "https://socolivep.cv/truc-tiep/shanghai-shenhua-vs-qingdao-hainiu-21-07-2026-1400?blv=534055",
-            "blv": "RAMBO",
-            "blv_id": "534055",
-            "status": "retry",
-            "attempts": 0,
+          "560690": {
+            "key": "560690",
+            "url": "https://socolivep.cv/truc-tiep/jeonbuk-hyundai-motors-vs-daejeon-citizen-21-07-2026-1730?blv=560690",
+            "blv": "KÉP",
+            "blv_id": "560690",
+            "status": "success",
+            "attempts": 1,
+            "attempts_total": 1,
+            "ever_attempted": true,
+            "valid_stream_ever_found": true,
+            "needs_token_refresh": false,
+            "completion_reason": "valid_stream",
             "rate_limit_hits": 0,
             "last_http_status": 200,
-            "last_stream_count": 0,
-            "last_error": "Link ký số đã hết hạn; đưa BLV trở lại queue."
+            "last_stream_count": 1,
+            "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
           },
-          "472241": {
-            "key": "472241",
-            "url": "https://socolivep.cv/truc-tiep/shanghai-shenhua-vs-qingdao-hainiu-21-07-2026-1400?blv=472241",
-            "blv": "XO",
-            "blv_id": "472241",
-            "status": "retry",
-            "attempts": 0,
+          "589848": {
+            "key": "589848",
+            "url": "https://socolivep.cv/truc-tiep/jeonbuk-hyundai-motors-vs-daejeon-citizen-21-07-2026-1730?blv=589848",
+            "blv": "LOKA",
+            "blv_id": "589848",
+            "status": "success",
+            "attempts": 1,
+            "attempts_total": 1,
+            "ever_attempted": true,
+            "valid_stream_ever_found": true,
+            "needs_token_refresh": false,
+            "completion_reason": "valid_stream",
             "rate_limit_hits": 0,
             "last_http_status": 200,
-            "last_stream_count": 0,
-            "last_error": "Link ký số đã hết hạn; đưa BLV trở lại queue."
+            "last_stream_count": 1,
+            "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
           },
           "__base__": {
             "key": "__base__",
-            "url": "https://socolivep.cv/truc-tiep/shanghai-shenhua-vs-qingdao-hainiu-21-07-2026-1400",
+            "url": "https://socolivep.cv/truc-tiep/jeonbuk-hyundai-motors-vs-daejeon-citizen-21-07-2026-1730",
             "blv": "XEM NGAY",
             "blv_id": "",
             "status": "pending",
             "attempts": 0,
+            "attempts_total": 0,
+            "ever_attempted": false,
+            "valid_stream_ever_found": false,
+            "needs_token_refresh": false,
+            "completion_reason": "",
             "rate_limit_hits": 0,
             "last_http_status": null,
             "last_stream_count": 0,
@@ -996,89 +707,128 @@
         }
       },
       "attempted_room_ids": [
-        "109053",
-        "484845"
+        "273736",
+        "527384",
+        "552716",
+        "560690",
+        "582342",
+        "589848"
       ],
       "room_progress": {
-        "109053": {
-          "key": "109053",
-          "url": "https://socolivep.cv/truc-tiep/shanghai-shenhua-vs-qingdao-hainiu-21-07-2026-1400?blv=109053",
-          "blv": "PEWPEW",
-          "blv_id": "109053",
+        "527384": {
+          "key": "527384",
+          "url": "https://socolivep.cv/truc-tiep/jeonbuk-hyundai-motors-vs-daejeon-citizen-21-07-2026-1730?blv=527384",
+          "blv": "LÃO LÂM",
+          "blv_id": "527384",
           "status": "retry",
           "attempts": 1,
+          "attempts_total": 1,
+          "ever_attempted": true,
+          "valid_stream_ever_found": false,
+          "needs_token_refresh": true,
+          "completion_reason": "",
+          "rate_limit_hits": 0,
+          "last_http_status": 200,
+          "last_stream_count": 0,
+          "last_error": "Token cũ đã hết hạn; giữ nguyên attempts_total và trạng thái hoàn tất của BLV."
+        },
+        "552716": {
+          "key": "552716",
+          "url": "https://socolivep.cv/truc-tiep/jeonbuk-hyundai-motors-vs-daejeon-citizen-21-07-2026-1730?blv=552716",
+          "blv": "VOI",
+          "blv_id": "552716",
+          "status": "success",
+          "attempts": 1,
+          "attempts_total": 1,
+          "ever_attempted": true,
+          "valid_stream_ever_found": true,
+          "needs_token_refresh": false,
+          "completion_reason": "valid_stream",
           "rate_limit_hits": 0,
           "last_http_status": 200,
           "last_stream_count": 1,
           "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
         },
-        "291277": {
-          "key": "291277",
-          "url": "https://socolivep.cv/truc-tiep/shanghai-shenhua-vs-qingdao-hainiu-21-07-2026-1400?blv=291277",
-          "blv": "CÔNG CHẤT",
-          "blv_id": "291277",
-          "status": "retry",
-          "attempts": 0,
-          "rate_limit_hits": 0,
-          "last_http_status": 200,
-          "last_stream_count": 0,
-          "last_error": "Link ký số đã hết hạn; đưa BLV trở lại queue."
-        },
-        "484845": {
-          "key": "484845",
-          "url": "https://socolivep.cv/truc-tiep/shanghai-shenhua-vs-qingdao-hainiu-21-07-2026-1400?blv=484845",
-          "blv": "A BỆU",
-          "blv_id": "484845",
-          "status": "retry",
+        "582342": {
+          "key": "582342",
+          "url": "https://socolivep.cv/truc-tiep/jeonbuk-hyundai-motors-vs-daejeon-citizen-21-07-2026-1730?blv=582342",
+          "blv": "CÒ",
+          "blv_id": "582342",
+          "status": "success",
           "attempts": 1,
+          "attempts_total": 1,
+          "ever_attempted": true,
+          "valid_stream_ever_found": true,
+          "needs_token_refresh": false,
+          "completion_reason": "valid_stream",
           "rate_limit_hits": 0,
           "last_http_status": 200,
           "last_stream_count": 1,
           "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
         },
-        "548860": {
-          "key": "548860",
-          "url": "https://socolivep.cv/truc-tiep/shanghai-shenhua-vs-qingdao-hainiu-21-07-2026-1400?blv=548860",
-          "blv": "VƯƠNG ANH",
-          "blv_id": "548860",
-          "status": "retry",
-          "attempts": 0,
+        "273736": {
+          "key": "273736",
+          "url": "https://socolivep.cv/truc-tiep/jeonbuk-hyundai-motors-vs-daejeon-citizen-21-07-2026-1730?blv=273736",
+          "blv": "CHÍ PHÈO",
+          "blv_id": "273736",
+          "status": "success",
+          "attempts": 1,
+          "attempts_total": 1,
+          "ever_attempted": true,
+          "valid_stream_ever_found": true,
+          "needs_token_refresh": false,
+          "completion_reason": "valid_stream",
           "rate_limit_hits": 0,
           "last_http_status": 200,
-          "last_stream_count": 0,
-          "last_error": "Link ký số đã hết hạn; đưa BLV trở lại queue."
+          "last_stream_count": 1,
+          "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
         },
-        "534055": {
-          "key": "534055",
-          "url": "https://socolivep.cv/truc-tiep/shanghai-shenhua-vs-qingdao-hainiu-21-07-2026-1400?blv=534055",
-          "blv": "RAMBO",
-          "blv_id": "534055",
-          "status": "retry",
-          "attempts": 0,
+        "560690": {
+          "key": "560690",
+          "url": "https://socolivep.cv/truc-tiep/jeonbuk-hyundai-motors-vs-daejeon-citizen-21-07-2026-1730?blv=560690",
+          "blv": "KÉP",
+          "blv_id": "560690",
+          "status": "success",
+          "attempts": 1,
+          "attempts_total": 1,
+          "ever_attempted": true,
+          "valid_stream_ever_found": true,
+          "needs_token_refresh": false,
+          "completion_reason": "valid_stream",
           "rate_limit_hits": 0,
           "last_http_status": 200,
-          "last_stream_count": 0,
-          "last_error": "Link ký số đã hết hạn; đưa BLV trở lại queue."
+          "last_stream_count": 1,
+          "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
         },
-        "472241": {
-          "key": "472241",
-          "url": "https://socolivep.cv/truc-tiep/shanghai-shenhua-vs-qingdao-hainiu-21-07-2026-1400?blv=472241",
-          "blv": "XO",
-          "blv_id": "472241",
-          "status": "retry",
-          "attempts": 0,
+        "589848": {
+          "key": "589848",
+          "url": "https://socolivep.cv/truc-tiep/jeonbuk-hyundai-motors-vs-daejeon-citizen-21-07-2026-1730?blv=589848",
+          "blv": "LOKA",
+          "blv_id": "589848",
+          "status": "success",
+          "attempts": 1,
+          "attempts_total": 1,
+          "ever_attempted": true,
+          "valid_stream_ever_found": true,
+          "needs_token_refresh": false,
+          "completion_reason": "valid_stream",
           "rate_limit_hits": 0,
           "last_http_status": 200,
-          "last_stream_count": 0,
-          "last_error": "Link ký số đã hết hạn; đưa BLV trở lại queue."
+          "last_stream_count": 1,
+          "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
         },
         "__base__": {
           "key": "__base__",
-          "url": "https://socolivep.cv/truc-tiep/shanghai-shenhua-vs-qingdao-hainiu-21-07-2026-1400",
+          "url": "https://socolivep.cv/truc-tiep/jeonbuk-hyundai-motors-vs-daejeon-citizen-21-07-2026-1730",
           "blv": "XEM NGAY",
           "blv_id": "",
           "status": "pending",
           "attempts": 0,
+          "attempts_total": 0,
+          "ever_attempted": false,
+          "valid_stream_ever_found": false,
+          "needs_token_refresh": false,
+          "completion_reason": "",
           "rate_limit_hits": 0,
           "last_http_status": null,
           "last_stream_count": 0,
@@ -1086,51 +836,26 @@
         }
       },
       "pending_room_keys": [
-        "291277",
-        "548860",
-        "534055",
-        "472241",
-        "109053",
-        "484845"
+        "527384"
       ]
     },
     {
-      "base_url": "https://socolivep.cv/truc-tiep/shanghai-port-vs-shenzhen-peng-city-21-07-2026-1400/",
-      "match_name": "Shanghai Port vs Shenzhen Peng City",
-      "scheduled_at": "2026-07-21T14:00:00+07:00",
+      "base_url": "https://socolivep.cv/truc-tiep/cumberland-united-fc-vs-heidelberg-united-21-07-2026-1700/",
+      "match_name": "Cumberland United FC vs Heidelberg United",
+      "scheduled_at": "2026-07-21T17:00:00+07:00",
       "rooms": [
         {
-          "url": "https://socolivep.cv/truc-tiep/shanghai-port-vs-shenzhen-peng-city-21-07-2026-1400?blv=532081",
-          "blv": "ALEX",
-          "blv_id": "532081"
+          "url": "https://socolivep.cv/truc-tiep/cumberland-united-fc-vs-heidelberg-united-21-07-2026-1700?blv=603255",
+          "blv": "LION",
+          "blv_id": "603255"
         },
         {
-          "url": "https://socolivep.cv/truc-tiep/shanghai-port-vs-shenzhen-peng-city-21-07-2026-1400?blv=459401",
-          "blv": "BÉO",
-          "blv_id": "459401"
+          "url": "https://socolivep.cv/truc-tiep/cumberland-united-fc-vs-heidelberg-united-21-07-2026-1700?blv=617313",
+          "blv": "VINFAST",
+          "blv_id": "617313"
         },
         {
-          "url": "https://socolivep.cv/truc-tiep/shanghai-port-vs-shenzhen-peng-city-21-07-2026-1400?blv=118206",
-          "blv": "TẠ BIÊN GIỚI",
-          "blv_id": "118206"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/shanghai-port-vs-shenzhen-peng-city-21-07-2026-1400?blv=256080",
-          "blv": "CUỘI",
-          "blv_id": "256080"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/shanghai-port-vs-shenzhen-peng-city-21-07-2026-1400?blv=607400",
-          "blv": "HÀ DUY KIÊN",
-          "blv_id": "607400"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/shanghai-port-vs-shenzhen-peng-city-21-07-2026-1400?blv=603914",
-          "blv": "TRÀ ĐÁ",
-          "blv_id": "603914"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/shanghai-port-vs-shenzhen-peng-city-21-07-2026-1400",
+          "url": "https://socolivep.cv/truc-tiep/cumberland-united-fc-vs-heidelberg-united-21-07-2026-1700",
           "blv": "XEM NGAY",
           "blv_id": ""
         }
@@ -1139,503 +864,63 @@
       "coverage": {
         "found_streams": 0,
         "found_blv_ids": [],
-        "goal": 12,
+        "goal": 4,
         "source_goal_reached": false,
         "room_queue_complete": false,
         "complete": false,
         "max_streams_per_blv": 2,
-        "total_explicit_blv_rooms": 6,
+        "total_explicit_blv_rooms": 2,
         "pending_room_keys": [
-          "532081",
-          "459401",
-          "118206",
-          "256080",
-          "607400",
-          "603914"
-        ],
-        "room_progress": {
-          "532081": {
-            "key": "532081",
-            "url": "https://socolivep.cv/truc-tiep/shanghai-port-vs-shenzhen-peng-city-21-07-2026-1400?blv=532081",
-            "blv": "ALEX",
-            "blv_id": "532081",
-            "status": "retry",
-            "attempts": 0,
-            "rate_limit_hits": 0,
-            "last_http_status": 200,
-            "last_stream_count": 0,
-            "last_error": "Link ký số đã hết hạn; đưa BLV trở lại queue."
-          },
-          "459401": {
-            "key": "459401",
-            "url": "https://socolivep.cv/truc-tiep/shanghai-port-vs-shenzhen-peng-city-21-07-2026-1400?blv=459401",
-            "blv": "BÉO",
-            "blv_id": "459401",
-            "status": "retry",
-            "attempts": 0,
-            "rate_limit_hits": 0,
-            "last_http_status": 200,
-            "last_stream_count": 0,
-            "last_error": "Link ký số đã hết hạn; đưa BLV trở lại queue."
-          },
-          "118206": {
-            "key": "118206",
-            "url": "https://socolivep.cv/truc-tiep/shanghai-port-vs-shenzhen-peng-city-21-07-2026-1400?blv=118206",
-            "blv": "TẠ BIÊN GIỚI",
-            "blv_id": "118206",
-            "status": "retry",
-            "attempts": 0,
-            "rate_limit_hits": 0,
-            "last_http_status": 200,
-            "last_stream_count": 0,
-            "last_error": "Link ký số đã hết hạn; đưa BLV trở lại queue."
-          },
-          "256080": {
-            "key": "256080",
-            "url": "https://socolivep.cv/truc-tiep/shanghai-port-vs-shenzhen-peng-city-21-07-2026-1400?blv=256080",
-            "blv": "CUỘI",
-            "blv_id": "256080",
-            "status": "retry",
-            "attempts": 0,
-            "rate_limit_hits": 0,
-            "last_http_status": 200,
-            "last_stream_count": 0,
-            "last_error": "Link ký số đã hết hạn; đưa BLV trở lại queue."
-          },
-          "607400": {
-            "key": "607400",
-            "url": "https://socolivep.cv/truc-tiep/shanghai-port-vs-shenzhen-peng-city-21-07-2026-1400?blv=607400",
-            "blv": "HÀ DUY KIÊN",
-            "blv_id": "607400",
-            "status": "retry",
-            "attempts": 0,
-            "rate_limit_hits": 0,
-            "last_http_status": 200,
-            "last_stream_count": 0,
-            "last_error": "Link ký số đã hết hạn; đưa BLV trở lại queue."
-          },
-          "603914": {
-            "key": "603914",
-            "url": "https://socolivep.cv/truc-tiep/shanghai-port-vs-shenzhen-peng-city-21-07-2026-1400?blv=603914",
-            "blv": "TRÀ ĐÁ",
-            "blv_id": "603914",
-            "status": "retry",
-            "attempts": 0,
-            "rate_limit_hits": 0,
-            "last_http_status": 200,
-            "last_stream_count": 0,
-            "last_error": "Link ký số đã hết hạn; đưa BLV trở lại queue."
-          },
-          "__base__": {
-            "key": "__base__",
-            "url": "https://socolivep.cv/truc-tiep/shanghai-port-vs-shenzhen-peng-city-21-07-2026-1400",
-            "blv": "XEM NGAY",
-            "blv_id": "",
-            "status": "pending",
-            "attempts": 0,
-            "rate_limit_hits": 0,
-            "last_http_status": null,
-            "last_stream_count": 0,
-            "last_error": ""
-          }
-        }
-      },
-      "attempted_room_ids": [],
-      "room_progress": {
-        "532081": {
-          "key": "532081",
-          "url": "https://socolivep.cv/truc-tiep/shanghai-port-vs-shenzhen-peng-city-21-07-2026-1400?blv=532081",
-          "blv": "ALEX",
-          "blv_id": "532081",
-          "status": "retry",
-          "attempts": 0,
-          "rate_limit_hits": 0,
-          "last_http_status": 200,
-          "last_stream_count": 0,
-          "last_error": "Link ký số đã hết hạn; đưa BLV trở lại queue."
-        },
-        "459401": {
-          "key": "459401",
-          "url": "https://socolivep.cv/truc-tiep/shanghai-port-vs-shenzhen-peng-city-21-07-2026-1400?blv=459401",
-          "blv": "BÉO",
-          "blv_id": "459401",
-          "status": "retry",
-          "attempts": 0,
-          "rate_limit_hits": 0,
-          "last_http_status": 200,
-          "last_stream_count": 0,
-          "last_error": "Link ký số đã hết hạn; đưa BLV trở lại queue."
-        },
-        "118206": {
-          "key": "118206",
-          "url": "https://socolivep.cv/truc-tiep/shanghai-port-vs-shenzhen-peng-city-21-07-2026-1400?blv=118206",
-          "blv": "TẠ BIÊN GIỚI",
-          "blv_id": "118206",
-          "status": "retry",
-          "attempts": 0,
-          "rate_limit_hits": 0,
-          "last_http_status": 200,
-          "last_stream_count": 0,
-          "last_error": "Link ký số đã hết hạn; đưa BLV trở lại queue."
-        },
-        "256080": {
-          "key": "256080",
-          "url": "https://socolivep.cv/truc-tiep/shanghai-port-vs-shenzhen-peng-city-21-07-2026-1400?blv=256080",
-          "blv": "CUỘI",
-          "blv_id": "256080",
-          "status": "retry",
-          "attempts": 0,
-          "rate_limit_hits": 0,
-          "last_http_status": 200,
-          "last_stream_count": 0,
-          "last_error": "Link ký số đã hết hạn; đưa BLV trở lại queue."
-        },
-        "607400": {
-          "key": "607400",
-          "url": "https://socolivep.cv/truc-tiep/shanghai-port-vs-shenzhen-peng-city-21-07-2026-1400?blv=607400",
-          "blv": "HÀ DUY KIÊN",
-          "blv_id": "607400",
-          "status": "retry",
-          "attempts": 0,
-          "rate_limit_hits": 0,
-          "last_http_status": 200,
-          "last_stream_count": 0,
-          "last_error": "Link ký số đã hết hạn; đưa BLV trở lại queue."
-        },
-        "603914": {
-          "key": "603914",
-          "url": "https://socolivep.cv/truc-tiep/shanghai-port-vs-shenzhen-peng-city-21-07-2026-1400?blv=603914",
-          "blv": "TRÀ ĐÁ",
-          "blv_id": "603914",
-          "status": "retry",
-          "attempts": 0,
-          "rate_limit_hits": 0,
-          "last_http_status": 200,
-          "last_stream_count": 0,
-          "last_error": "Link ký số đã hết hạn; đưa BLV trở lại queue."
-        },
-        "__base__": {
-          "key": "__base__",
-          "url": "https://socolivep.cv/truc-tiep/shanghai-port-vs-shenzhen-peng-city-21-07-2026-1400",
-          "blv": "XEM NGAY",
-          "blv_id": "",
-          "status": "pending",
-          "attempts": 0,
-          "rate_limit_hits": 0,
-          "last_http_status": null,
-          "last_stream_count": 0,
-          "last_error": ""
-        }
-      },
-      "pending_room_keys": [
-        "532081",
-        "459401",
-        "118206",
-        "256080",
-        "607400",
-        "603914"
-      ]
-    },
-    {
-      "base_url": "https://socolivep.cv/truc-tiep/dalian-kewei-vs-beijing-guoan-21-07-2026-1400/",
-      "match_name": "Dalian Kewei vs Beijing Guoan",
-      "scheduled_at": "2026-07-21T14:00:00+07:00",
-      "rooms": [
-        {
-          "url": "https://socolivep.cv/truc-tiep/dalian-kewei-vs-beijing-guoan-21-07-2026-1400?blv=414317",
-          "blv": "TOMMY",
-          "blv_id": "414317"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/dalian-kewei-vs-beijing-guoan-21-07-2026-1400?blv=109053",
-          "blv": "PEWPEW",
-          "blv_id": "109053"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/dalian-kewei-vs-beijing-guoan-21-07-2026-1400?blv=484845",
-          "blv": "A BỆU",
-          "blv_id": "484845"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/dalian-kewei-vs-beijing-guoan-21-07-2026-1400?blv=187579",
-          "blv": "TOMIA",
-          "blv_id": "187579"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/dalian-kewei-vs-beijing-guoan-21-07-2026-1400?blv=118206",
-          "blv": "TẠ BIÊN GIỚI",
-          "blv_id": "118206"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/dalian-kewei-vs-beijing-guoan-21-07-2026-1400?blv=603255",
-          "blv": "LION",
-          "blv_id": "603255"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/dalian-kewei-vs-beijing-guoan-21-07-2026-1400",
-          "blv": "XEM NGAY",
-          "blv_id": ""
-        }
-      ],
-      "streams": [
-        {
-          "url": "https://pull.niues.live/live/stream-9912015_lhd.m3u8?auth_key=1784632045-0-0-da35c73de7b04a849f0855a4fd5942f7",
-          "queue_room_key": "109053",
-          "room_url": "https://socolivep.cv/truc-tiep/dalian-kewei-vs-beijing-guoan-21-07-2026-1400?blv=109053",
-          "blv": "PEWPEW",
-          "blv_id": "109053",
-          "source_id": "9912015",
-          "source_provenance": [
-            "cdp/request",
-            "harvest-final",
-            "harvest-round-1",
-            "harvest-round-2",
-            "harvest-round-3",
-            "harvest-round-4",
-            "harvest-round-5",
-            "harvest-round-6",
-            "harvest-round-7",
-            "harvest-round-8",
-            "harvest-round-9",
-            "request/image",
-            "request/xhr"
-          ],
-          "source_confidence": "network",
-          "mapping_mode": "current-room-primary",
-          "discovered_from_room_url": "https://socolivep.cv/truc-tiep/dalian-kewei-vs-beijing-guoan-21-07-2026-1400?blv=109053",
-          "discovered_from_blv": "PEWPEW",
-          "discovered_at": "2026-07-21T17:19:08.661527+07:00",
-          "valid_until": "2026-07-21T18:07:25+07:00",
-          "is_expired": false
-        },
-        {
-          "url": "https://pull.niues.live/live/stream-484845_lhd.m3u8?auth_key=1784631355-0-0-d55d2c61be2d7c0b809d64e9e68c56a3",
-          "queue_room_key": "484845",
-          "room_url": "https://socolivep.cv/truc-tiep/dalian-kewei-vs-beijing-guoan-21-07-2026-1400?blv=484845",
-          "blv": "A BỆU",
-          "blv_id": "484845",
-          "source_id": "484845",
-          "source_provenance": [
-            "cdp/request",
-            "harvest-final",
-            "harvest-round-1",
-            "harvest-round-2",
-            "harvest-round-3",
-            "harvest-round-4",
-            "harvest-round-5",
-            "harvest-round-6",
-            "harvest-round-7",
-            "harvest-round-8",
-            "harvest-round-9",
-            "request/image",
-            "request/xhr"
-          ],
-          "source_confidence": "network",
-          "mapping_mode": "exact-room-id",
-          "discovered_from_room_url": "https://socolivep.cv/truc-tiep/dalian-kewei-vs-beijing-guoan-21-07-2026-1400?blv=484845",
-          "discovered_from_blv": "A BỆU",
-          "discovered_at": "2026-07-21T17:23:48.242102+07:00",
-          "valid_until": "2026-07-21T17:55:55+07:00",
-          "is_expired": false
-        },
-        {
-          "url": "https://pull.niues.live/live/stream-9912008_lhd.m3u8?auth_key=1784630935-0-0-60f5ea6ef054321c5cb446eb52a4ab09",
-          "queue_room_key": "187579",
-          "room_url": "https://socolivep.cv/truc-tiep/dalian-kewei-vs-beijing-guoan-21-07-2026-1400?blv=187579",
-          "blv": "TOMIA",
-          "blv_id": "187579",
-          "source_id": "9912008",
-          "source_provenance": [
-            "cdp/request",
-            "harvest-final",
-            "harvest-round-1",
-            "harvest-round-2",
-            "harvest-round-3",
-            "harvest-round-4",
-            "harvest-round-5",
-            "harvest-round-6",
-            "harvest-round-7",
-            "harvest-round-8",
-            "harvest-round-9",
-            "request/image",
-            "request/xhr"
-          ],
-          "source_confidence": "network",
-          "mapping_mode": "current-room-primary",
-          "discovered_from_room_url": "https://socolivep.cv/truc-tiep/dalian-kewei-vs-beijing-guoan-21-07-2026-1400?blv=187579",
-          "discovered_from_blv": "TOMIA",
-          "discovered_at": "2026-07-21T17:27:30.105763+07:00",
-          "valid_until": "2026-07-21T17:48:55+07:00",
-          "is_expired": false
-        },
-        {
-          "url": "https://pull.niues.live/live/stream-9912108_lhd.m3u8?auth_key=1784632975-0-0-d72797319c8eb9ceead12aae672d8144",
-          "queue_room_key": "118206",
-          "room_url": "https://socolivep.cv/truc-tiep/dalian-kewei-vs-beijing-guoan-21-07-2026-1400?blv=118206",
-          "blv": "TẠ BIÊN GIỚI",
-          "blv_id": "118206",
-          "source_id": "9912108",
-          "source_provenance": [
-            "cdp/request",
-            "cdp/response",
-            "harvest-final",
-            "harvest-round-1",
-            "harvest-round-2",
-            "harvest-round-3",
-            "harvest-round-4",
-            "harvest-round-5",
-            "harvest-round-6",
-            "harvest-round-7",
-            "harvest-round-8",
-            "harvest-round-9",
-            "request/image",
-            "request/xhr",
-            "response/200"
-          ],
-          "source_confidence": "network",
-          "mapping_mode": "current-room-primary",
-          "discovered_from_room_url": "https://socolivep.cv/truc-tiep/dalian-kewei-vs-beijing-guoan-21-07-2026-1400?blv=118206",
-          "discovered_from_blv": "TẠ BIÊN GIỚI",
-          "discovered_at": "2026-07-21T17:31:13.212398+07:00",
-          "valid_until": "2026-07-21T18:22:55+07:00",
-          "is_expired": false
-        },
-        {
-          "url": "https://pull.niues.live/live/stream-603255_lhd.m3u8?auth_key=1784631955-0-0-bec8f59580cf74e5e89599535e6e7270",
-          "queue_room_key": "603255",
-          "room_url": "https://socolivep.cv/truc-tiep/dalian-kewei-vs-beijing-guoan-21-07-2026-1400?blv=603255",
-          "blv": "LION",
-          "blv_id": "603255",
-          "source_id": "603255",
-          "source_provenance": [
-            "cdp/request",
-            "cdp/response",
-            "harvest-final",
-            "harvest-round-1",
-            "harvest-round-2",
-            "harvest-round-3",
-            "harvest-round-4",
-            "harvest-round-5",
-            "harvest-round-6",
-            "harvest-round-7",
-            "harvest-round-8",
-            "harvest-round-9",
-            "request/image",
-            "request/xhr",
-            "response/200"
-          ],
-          "source_confidence": "network",
-          "mapping_mode": "exact-room-id",
-          "discovered_from_room_url": "https://socolivep.cv/truc-tiep/dalian-kewei-vs-beijing-guoan-21-07-2026-1400?blv=603255",
-          "discovered_from_blv": "LION",
-          "discovered_at": "2026-07-21T17:34:52.937174+07:00",
-          "valid_until": "2026-07-21T18:05:55+07:00",
-          "is_expired": false
-        }
-      ],
-      "coverage": {
-        "found_streams": 5,
-        "found_blv_ids": [
-          "109053",
-          "118206",
-          "187579",
-          "484845",
-          "603255"
-        ],
-        "goal": 12,
-        "source_goal_reached": false,
-        "room_queue_complete": false,
-        "complete": false,
-        "max_streams_per_blv": 2,
-        "total_explicit_blv_rooms": 6,
-        "pending_room_keys": [
-          "414317",
-          "187579",
-          "118206",
           "603255",
-          "109053",
-          "484845"
+          "617313"
         ],
         "room_progress": {
-          "414317": {
-            "key": "414317",
-            "url": "https://socolivep.cv/truc-tiep/dalian-kewei-vs-beijing-guoan-21-07-2026-1400?blv=414317",
-            "blv": "TOMMY",
-            "blv_id": "414317",
-            "status": "retry",
-            "attempts": 0,
-            "rate_limit_hits": 0,
-            "last_http_status": 200,
-            "last_stream_count": 0,
-            "last_error": "Link ký số đã hết hạn; đưa BLV trở lại queue."
-          },
-          "109053": {
-            "key": "109053",
-            "url": "https://socolivep.cv/truc-tiep/dalian-kewei-vs-beijing-guoan-21-07-2026-1400?blv=109053",
-            "blv": "PEWPEW",
-            "blv_id": "109053",
-            "status": "retry",
-            "attempts": 2,
-            "rate_limit_hits": 0,
-            "last_http_status": 200,
-            "last_stream_count": 1,
-            "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
-          },
-          "484845": {
-            "key": "484845",
-            "url": "https://socolivep.cv/truc-tiep/dalian-kewei-vs-beijing-guoan-21-07-2026-1400?blv=484845",
-            "blv": "A BỆU",
-            "blv_id": "484845",
-            "status": "retry",
-            "attempts": 2,
-            "rate_limit_hits": 0,
-            "last_http_status": 200,
-            "last_stream_count": 1,
-            "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
-          },
-          "187579": {
-            "key": "187579",
-            "url": "https://socolivep.cv/truc-tiep/dalian-kewei-vs-beijing-guoan-21-07-2026-1400?blv=187579",
-            "blv": "TOMIA",
-            "blv_id": "187579",
-            "status": "retry",
-            "attempts": 1,
-            "rate_limit_hits": 0,
-            "last_http_status": 200,
-            "last_stream_count": 1,
-            "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
-          },
-          "118206": {
-            "key": "118206",
-            "url": "https://socolivep.cv/truc-tiep/dalian-kewei-vs-beijing-guoan-21-07-2026-1400?blv=118206",
-            "blv": "TẠ BIÊN GIỚI",
-            "blv_id": "118206",
-            "status": "retry",
-            "attempts": 1,
-            "rate_limit_hits": 0,
-            "last_http_status": 200,
-            "last_stream_count": 1,
-            "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
-          },
           "603255": {
             "key": "603255",
-            "url": "https://socolivep.cv/truc-tiep/dalian-kewei-vs-beijing-guoan-21-07-2026-1400?blv=603255",
+            "url": "https://socolivep.cv/truc-tiep/cumberland-united-fc-vs-heidelberg-united-21-07-2026-1700?blv=603255",
             "blv": "LION",
             "blv_id": "603255",
             "status": "retry",
             "attempts": 1,
+            "attempts_total": 1,
+            "ever_attempted": true,
+            "valid_stream_ever_found": false,
+            "needs_token_refresh": true,
+            "completion_reason": "",
             "rate_limit_hits": 0,
             "last_http_status": 200,
-            "last_stream_count": 1,
-            "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
+            "last_stream_count": 0,
+            "last_error": "Token cũ đã hết hạn; giữ nguyên attempts_total và trạng thái hoàn tất của BLV."
+          },
+          "617313": {
+            "key": "617313",
+            "url": "https://socolivep.cv/truc-tiep/cumberland-united-fc-vs-heidelberg-united-21-07-2026-1700?blv=617313",
+            "blv": "VINFAST",
+            "blv_id": "617313",
+            "status": "retry",
+            "attempts": 1,
+            "attempts_total": 1,
+            "ever_attempted": true,
+            "valid_stream_ever_found": false,
+            "needs_token_refresh": true,
+            "completion_reason": "",
+            "rate_limit_hits": 0,
+            "last_http_status": 200,
+            "last_stream_count": 0,
+            "last_error": "Token cũ đã hết hạn; giữ nguyên attempts_total và trạng thái hoàn tất của BLV."
           },
           "__base__": {
             "key": "__base__",
-            "url": "https://socolivep.cv/truc-tiep/dalian-kewei-vs-beijing-guoan-21-07-2026-1400",
+            "url": "https://socolivep.cv/truc-tiep/cumberland-united-fc-vs-heidelberg-united-21-07-2026-1700",
             "blv": "XEM NGAY",
             "blv_id": "",
             "status": "pending",
             "attempts": 0,
+            "attempts_total": 0,
+            "ever_attempted": false,
+            "valid_stream_ever_found": false,
+            "needs_token_refresh": false,
+            "completion_reason": "",
             "rate_limit_hits": 0,
             "last_http_status": null,
             "last_stream_count": 0,
@@ -1644,92 +929,56 @@
         }
       },
       "attempted_room_ids": [
-        "109053",
-        "118206",
-        "187579",
-        "484845",
-        "603255"
+        "603255",
+        "617313"
       ],
       "room_progress": {
-        "414317": {
-          "key": "414317",
-          "url": "https://socolivep.cv/truc-tiep/dalian-kewei-vs-beijing-guoan-21-07-2026-1400?blv=414317",
-          "blv": "TOMMY",
-          "blv_id": "414317",
-          "status": "retry",
-          "attempts": 0,
-          "rate_limit_hits": 0,
-          "last_http_status": 200,
-          "last_stream_count": 0,
-          "last_error": "Link ký số đã hết hạn; đưa BLV trở lại queue."
-        },
-        "109053": {
-          "key": "109053",
-          "url": "https://socolivep.cv/truc-tiep/dalian-kewei-vs-beijing-guoan-21-07-2026-1400?blv=109053",
-          "blv": "PEWPEW",
-          "blv_id": "109053",
-          "status": "retry",
-          "attempts": 2,
-          "rate_limit_hits": 0,
-          "last_http_status": 200,
-          "last_stream_count": 1,
-          "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
-        },
-        "484845": {
-          "key": "484845",
-          "url": "https://socolivep.cv/truc-tiep/dalian-kewei-vs-beijing-guoan-21-07-2026-1400?blv=484845",
-          "blv": "A BỆU",
-          "blv_id": "484845",
-          "status": "retry",
-          "attempts": 2,
-          "rate_limit_hits": 0,
-          "last_http_status": 200,
-          "last_stream_count": 1,
-          "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
-        },
-        "187579": {
-          "key": "187579",
-          "url": "https://socolivep.cv/truc-tiep/dalian-kewei-vs-beijing-guoan-21-07-2026-1400?blv=187579",
-          "blv": "TOMIA",
-          "blv_id": "187579",
-          "status": "retry",
-          "attempts": 1,
-          "rate_limit_hits": 0,
-          "last_http_status": 200,
-          "last_stream_count": 1,
-          "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
-        },
-        "118206": {
-          "key": "118206",
-          "url": "https://socolivep.cv/truc-tiep/dalian-kewei-vs-beijing-guoan-21-07-2026-1400?blv=118206",
-          "blv": "TẠ BIÊN GIỚI",
-          "blv_id": "118206",
-          "status": "retry",
-          "attempts": 1,
-          "rate_limit_hits": 0,
-          "last_http_status": 200,
-          "last_stream_count": 1,
-          "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
-        },
         "603255": {
           "key": "603255",
-          "url": "https://socolivep.cv/truc-tiep/dalian-kewei-vs-beijing-guoan-21-07-2026-1400?blv=603255",
+          "url": "https://socolivep.cv/truc-tiep/cumberland-united-fc-vs-heidelberg-united-21-07-2026-1700?blv=603255",
           "blv": "LION",
           "blv_id": "603255",
           "status": "retry",
           "attempts": 1,
+          "attempts_total": 1,
+          "ever_attempted": true,
+          "valid_stream_ever_found": false,
+          "needs_token_refresh": true,
+          "completion_reason": "",
           "rate_limit_hits": 0,
           "last_http_status": 200,
-          "last_stream_count": 1,
-          "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
+          "last_stream_count": 0,
+          "last_error": "Token cũ đã hết hạn; giữ nguyên attempts_total và trạng thái hoàn tất của BLV."
+        },
+        "617313": {
+          "key": "617313",
+          "url": "https://socolivep.cv/truc-tiep/cumberland-united-fc-vs-heidelberg-united-21-07-2026-1700?blv=617313",
+          "blv": "VINFAST",
+          "blv_id": "617313",
+          "status": "retry",
+          "attempts": 1,
+          "attempts_total": 1,
+          "ever_attempted": true,
+          "valid_stream_ever_found": false,
+          "needs_token_refresh": true,
+          "completion_reason": "",
+          "rate_limit_hits": 0,
+          "last_http_status": 200,
+          "last_stream_count": 0,
+          "last_error": "Token cũ đã hết hạn; giữ nguyên attempts_total và trạng thái hoàn tất của BLV."
         },
         "__base__": {
           "key": "__base__",
-          "url": "https://socolivep.cv/truc-tiep/dalian-kewei-vs-beijing-guoan-21-07-2026-1400",
+          "url": "https://socolivep.cv/truc-tiep/cumberland-united-fc-vs-heidelberg-united-21-07-2026-1700",
           "blv": "XEM NGAY",
           "blv_id": "",
           "status": "pending",
           "attempts": 0,
+          "attempts_total": 0,
+          "ever_attempted": false,
+          "valid_stream_ever_found": false,
+          "needs_token_refresh": false,
+          "completion_reason": "",
           "rate_limit_hits": 0,
           "last_http_status": null,
           "last_stream_count": 0,
@@ -1737,12 +986,544 @@
         }
       },
       "pending_room_keys": [
-        "414317",
-        "187579",
-        "118206",
         "603255",
-        "109053",
-        "484845"
+        "617313"
+      ]
+    },
+    {
+      "base_url": "https://socolivep.cv/truc-tiep/preston-lions-vs-newcastle-jets-21-07-2026-1630/",
+      "match_name": "Preston Lions vs Newcastle Jets",
+      "scheduled_at": "2026-07-21T16:30:00+07:00",
+      "rooms": [
+        {
+          "url": "https://socolivep.cv/truc-tiep/preston-lions-vs-newcastle-jets-21-07-2026-1630?blv=283501",
+          "blv": "KAN",
+          "blv_id": "283501"
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/preston-lions-vs-newcastle-jets-21-07-2026-1630?blv=291277",
+          "blv": "CÔNG CHẤT",
+          "blv_id": "291277"
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/preston-lions-vs-newcastle-jets-21-07-2026-1630?blv=250874",
+          "blv": "FIREMAN",
+          "blv_id": "250874"
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/preston-lions-vs-newcastle-jets-21-07-2026-1630?blv=531989",
+          "blv": "COZY",
+          "blv_id": "531989"
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/preston-lions-vs-newcastle-jets-21-07-2026-1630",
+          "blv": "XEM NGAY",
+          "blv_id": ""
+        }
+      ],
+      "streams": [
+        {
+          "url": "https://pull.niur.live/live/stream-283501_lhd.m3u8?txSecret=08d352e064657f37f413d4e595d40be7&txTime=6a5f8e57",
+          "queue_room_key": "283501",
+          "room_url": "https://socolivep.cv/truc-tiep/preston-lions-vs-newcastle-jets-21-07-2026-1630?blv=283501",
+          "blv": "KAN",
+          "blv_id": "283501",
+          "source_id": "283501",
+          "source_provenance": [
+            "cdp/request",
+            "cdp/response",
+            "harvest-final",
+            "harvest-round-1",
+            "harvest-round-2",
+            "harvest-round-3",
+            "harvest-round-4",
+            "harvest-round-5",
+            "harvest-round-6",
+            "harvest-round-7",
+            "harvest-round-8",
+            "harvest-round-9",
+            "request/image",
+            "request/xhr",
+            "response/200"
+          ],
+          "source_confidence": "network",
+          "mapping_mode": "exact-room-id",
+          "discovered_from_room_url": "https://socolivep.cv/truc-tiep/preston-lions-vs-newcastle-jets-21-07-2026-1630?blv=283501",
+          "discovered_from_blv": "KAN",
+          "discovered_at": "2026-07-21T18:05:29.788981+07:00",
+          "valid_until": "2026-07-21T22:20:55+07:00",
+          "is_expired": false
+        }
+      ],
+      "coverage": {
+        "found_streams": 1,
+        "found_blv_ids": [
+          "283501"
+        ],
+        "goal": 8,
+        "source_goal_reached": false,
+        "room_queue_complete": false,
+        "complete": false,
+        "max_streams_per_blv": 2,
+        "total_explicit_blv_rooms": 4,
+        "pending_room_keys": [
+          "291277",
+          "250874",
+          "531989"
+        ],
+        "room_progress": {
+          "283501": {
+            "key": "283501",
+            "url": "https://socolivep.cv/truc-tiep/preston-lions-vs-newcastle-jets-21-07-2026-1630?blv=283501",
+            "blv": "KAN",
+            "blv_id": "283501",
+            "status": "success",
+            "attempts": 1,
+            "attempts_total": 1,
+            "ever_attempted": true,
+            "valid_stream_ever_found": true,
+            "needs_token_refresh": false,
+            "completion_reason": "valid_stream",
+            "rate_limit_hits": 0,
+            "last_http_status": 200,
+            "last_stream_count": 1,
+            "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
+          },
+          "291277": {
+            "key": "291277",
+            "url": "https://socolivep.cv/truc-tiep/preston-lions-vs-newcastle-jets-21-07-2026-1630?blv=291277",
+            "blv": "CÔNG CHẤT",
+            "blv_id": "291277",
+            "status": "retry",
+            "attempts": 1,
+            "attempts_total": 1,
+            "ever_attempted": true,
+            "valid_stream_ever_found": false,
+            "needs_token_refresh": true,
+            "completion_reason": "",
+            "rate_limit_hits": 0,
+            "last_http_status": 200,
+            "last_stream_count": 0,
+            "last_error": "Token cũ đã hết hạn; giữ nguyên attempts_total và trạng thái hoàn tất của BLV."
+          },
+          "250874": {
+            "key": "250874",
+            "url": "https://socolivep.cv/truc-tiep/preston-lions-vs-newcastle-jets-21-07-2026-1630?blv=250874",
+            "blv": "FIREMAN",
+            "blv_id": "250874",
+            "status": "retry",
+            "attempts": 1,
+            "attempts_total": 1,
+            "ever_attempted": true,
+            "valid_stream_ever_found": false,
+            "needs_token_refresh": true,
+            "completion_reason": "",
+            "rate_limit_hits": 0,
+            "last_http_status": 200,
+            "last_stream_count": 0,
+            "last_error": "Token cũ đã hết hạn; giữ nguyên attempts_total và trạng thái hoàn tất của BLV."
+          },
+          "531989": {
+            "key": "531989",
+            "url": "https://socolivep.cv/truc-tiep/preston-lions-vs-newcastle-jets-21-07-2026-1630?blv=531989",
+            "blv": "COZY",
+            "blv_id": "531989",
+            "status": "retry",
+            "attempts": 1,
+            "attempts_total": 1,
+            "ever_attempted": true,
+            "valid_stream_ever_found": false,
+            "needs_token_refresh": true,
+            "completion_reason": "",
+            "rate_limit_hits": 0,
+            "last_http_status": 200,
+            "last_stream_count": 0,
+            "last_error": "Token cũ đã hết hạn; giữ nguyên attempts_total và trạng thái hoàn tất của BLV."
+          },
+          "__base__": {
+            "key": "__base__",
+            "url": "https://socolivep.cv/truc-tiep/preston-lions-vs-newcastle-jets-21-07-2026-1630",
+            "blv": "XEM NGAY",
+            "blv_id": "",
+            "status": "pending",
+            "attempts": 0,
+            "attempts_total": 0,
+            "ever_attempted": false,
+            "valid_stream_ever_found": false,
+            "needs_token_refresh": false,
+            "completion_reason": "",
+            "rate_limit_hits": 0,
+            "last_http_status": null,
+            "last_stream_count": 0,
+            "last_error": ""
+          }
+        }
+      },
+      "attempted_room_ids": [
+        "250874",
+        "283501",
+        "291277",
+        "531989"
+      ],
+      "room_progress": {
+        "283501": {
+          "key": "283501",
+          "url": "https://socolivep.cv/truc-tiep/preston-lions-vs-newcastle-jets-21-07-2026-1630?blv=283501",
+          "blv": "KAN",
+          "blv_id": "283501",
+          "status": "success",
+          "attempts": 1,
+          "attempts_total": 1,
+          "ever_attempted": true,
+          "valid_stream_ever_found": true,
+          "needs_token_refresh": false,
+          "completion_reason": "valid_stream",
+          "rate_limit_hits": 0,
+          "last_http_status": 200,
+          "last_stream_count": 1,
+          "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
+        },
+        "291277": {
+          "key": "291277",
+          "url": "https://socolivep.cv/truc-tiep/preston-lions-vs-newcastle-jets-21-07-2026-1630?blv=291277",
+          "blv": "CÔNG CHẤT",
+          "blv_id": "291277",
+          "status": "retry",
+          "attempts": 1,
+          "attempts_total": 1,
+          "ever_attempted": true,
+          "valid_stream_ever_found": false,
+          "needs_token_refresh": true,
+          "completion_reason": "",
+          "rate_limit_hits": 0,
+          "last_http_status": 200,
+          "last_stream_count": 0,
+          "last_error": "Token cũ đã hết hạn; giữ nguyên attempts_total và trạng thái hoàn tất của BLV."
+        },
+        "250874": {
+          "key": "250874",
+          "url": "https://socolivep.cv/truc-tiep/preston-lions-vs-newcastle-jets-21-07-2026-1630?blv=250874",
+          "blv": "FIREMAN",
+          "blv_id": "250874",
+          "status": "retry",
+          "attempts": 1,
+          "attempts_total": 1,
+          "ever_attempted": true,
+          "valid_stream_ever_found": false,
+          "needs_token_refresh": true,
+          "completion_reason": "",
+          "rate_limit_hits": 0,
+          "last_http_status": 200,
+          "last_stream_count": 0,
+          "last_error": "Token cũ đã hết hạn; giữ nguyên attempts_total và trạng thái hoàn tất của BLV."
+        },
+        "531989": {
+          "key": "531989",
+          "url": "https://socolivep.cv/truc-tiep/preston-lions-vs-newcastle-jets-21-07-2026-1630?blv=531989",
+          "blv": "COZY",
+          "blv_id": "531989",
+          "status": "retry",
+          "attempts": 1,
+          "attempts_total": 1,
+          "ever_attempted": true,
+          "valid_stream_ever_found": false,
+          "needs_token_refresh": true,
+          "completion_reason": "",
+          "rate_limit_hits": 0,
+          "last_http_status": 200,
+          "last_stream_count": 0,
+          "last_error": "Token cũ đã hết hạn; giữ nguyên attempts_total và trạng thái hoàn tất của BLV."
+        },
+        "__base__": {
+          "key": "__base__",
+          "url": "https://socolivep.cv/truc-tiep/preston-lions-vs-newcastle-jets-21-07-2026-1630",
+          "blv": "XEM NGAY",
+          "blv_id": "",
+          "status": "pending",
+          "attempts": 0,
+          "attempts_total": 0,
+          "ever_attempted": false,
+          "valid_stream_ever_found": false,
+          "needs_token_refresh": false,
+          "completion_reason": "",
+          "rate_limit_hits": 0,
+          "last_http_status": null,
+          "last_stream_count": 0,
+          "last_error": ""
+        }
+      },
+      "pending_room_keys": [
+        "291277",
+        "250874",
+        "531989"
+      ]
+    },
+    {
+      "base_url": "https://socolivep.cv/truc-tiep/queensland-lions-sc-vs-perth-glory-21-07-2026-1630/",
+      "match_name": "Queensland Lions SC vs Perth Glory",
+      "scheduled_at": "2026-07-21T16:30:00+07:00",
+      "rooms": [
+        {
+          "url": "https://socolivep.cv/truc-tiep/queensland-lions-sc-vs-perth-glory-21-07-2026-1630?blv=235232",
+          "blv": "A PÁO",
+          "blv_id": "235232"
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/queensland-lions-sc-vs-perth-glory-21-07-2026-1630?blv=557845",
+          "blv": "A TÚ",
+          "blv_id": "557845"
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/queensland-lions-sc-vs-perth-glory-21-07-2026-1630?blv=472241",
+          "blv": "XO",
+          "blv_id": "472241"
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/queensland-lions-sc-vs-perth-glory-21-07-2026-1630?blv=598119",
+          "blv": "A TINH",
+          "blv_id": "598119"
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/queensland-lions-sc-vs-perth-glory-21-07-2026-1630",
+          "blv": "XEM NGAY",
+          "blv_id": ""
+        }
+      ],
+      "streams": [
+        {
+          "url": "https://pull.niur.live/live/stream-598119_lhd.m3u8?txSecret=709695108ba010a57135a5a7a21ded56&txTime=6a5f903c",
+          "queue_room_key": "598119",
+          "room_url": "https://socolivep.cv/truc-tiep/queensland-lions-sc-vs-perth-glory-21-07-2026-1630?blv=598119",
+          "blv": "A TINH",
+          "blv_id": "598119",
+          "source_id": "598119",
+          "source_provenance": [
+            "cdp/request",
+            "cdp/response",
+            "harvest-final",
+            "harvest-round-1",
+            "harvest-round-2",
+            "harvest-round-3",
+            "harvest-round-4",
+            "harvest-round-5",
+            "harvest-round-6",
+            "harvest-round-7",
+            "harvest-round-8",
+            "harvest-round-9",
+            "request/image",
+            "request/xhr",
+            "response/200"
+          ],
+          "source_confidence": "network",
+          "mapping_mode": "exact-room-id",
+          "discovered_from_room_url": "https://socolivep.cv/truc-tiep/queensland-lions-sc-vs-perth-glory-21-07-2026-1630?blv=598119",
+          "discovered_from_blv": "A TINH",
+          "discovered_at": "2026-07-21T18:06:42.417649+07:00",
+          "valid_until": "2026-07-21T22:29:00+07:00",
+          "is_expired": false
+        }
+      ],
+      "coverage": {
+        "found_streams": 1,
+        "found_blv_ids": [
+          "598119"
+        ],
+        "goal": 8,
+        "source_goal_reached": false,
+        "room_queue_complete": false,
+        "complete": false,
+        "max_streams_per_blv": 2,
+        "total_explicit_blv_rooms": 4,
+        "pending_room_keys": [
+          "235232",
+          "557845",
+          "472241"
+        ],
+        "room_progress": {
+          "235232": {
+            "key": "235232",
+            "url": "https://socolivep.cv/truc-tiep/queensland-lions-sc-vs-perth-glory-21-07-2026-1630?blv=235232",
+            "blv": "A PÁO",
+            "blv_id": "235232",
+            "status": "retry",
+            "attempts": 1,
+            "attempts_total": 1,
+            "ever_attempted": true,
+            "valid_stream_ever_found": false,
+            "needs_token_refresh": true,
+            "completion_reason": "",
+            "rate_limit_hits": 0,
+            "last_http_status": 200,
+            "last_stream_count": 0,
+            "last_error": "Token cũ đã hết hạn; giữ nguyên attempts_total và trạng thái hoàn tất của BLV."
+          },
+          "557845": {
+            "key": "557845",
+            "url": "https://socolivep.cv/truc-tiep/queensland-lions-sc-vs-perth-glory-21-07-2026-1630?blv=557845",
+            "blv": "A TÚ",
+            "blv_id": "557845",
+            "status": "retry",
+            "attempts": 1,
+            "attempts_total": 1,
+            "ever_attempted": true,
+            "valid_stream_ever_found": false,
+            "needs_token_refresh": true,
+            "completion_reason": "",
+            "rate_limit_hits": 0,
+            "last_http_status": 200,
+            "last_stream_count": 0,
+            "last_error": "Token cũ đã hết hạn; giữ nguyên attempts_total và trạng thái hoàn tất của BLV."
+          },
+          "472241": {
+            "key": "472241",
+            "url": "https://socolivep.cv/truc-tiep/queensland-lions-sc-vs-perth-glory-21-07-2026-1630?blv=472241",
+            "blv": "XO",
+            "blv_id": "472241",
+            "status": "retry",
+            "attempts": 1,
+            "attempts_total": 1,
+            "ever_attempted": true,
+            "valid_stream_ever_found": false,
+            "needs_token_refresh": true,
+            "completion_reason": "",
+            "rate_limit_hits": 0,
+            "last_http_status": 200,
+            "last_stream_count": 0,
+            "last_error": "Token cũ đã hết hạn; giữ nguyên attempts_total và trạng thái hoàn tất của BLV."
+          },
+          "598119": {
+            "key": "598119",
+            "url": "https://socolivep.cv/truc-tiep/queensland-lions-sc-vs-perth-glory-21-07-2026-1630?blv=598119",
+            "blv": "A TINH",
+            "blv_id": "598119",
+            "status": "success",
+            "attempts": 1,
+            "attempts_total": 1,
+            "ever_attempted": true,
+            "valid_stream_ever_found": true,
+            "needs_token_refresh": false,
+            "completion_reason": "valid_stream",
+            "rate_limit_hits": 0,
+            "last_http_status": 200,
+            "last_stream_count": 1,
+            "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
+          },
+          "__base__": {
+            "key": "__base__",
+            "url": "https://socolivep.cv/truc-tiep/queensland-lions-sc-vs-perth-glory-21-07-2026-1630",
+            "blv": "XEM NGAY",
+            "blv_id": "",
+            "status": "pending",
+            "attempts": 0,
+            "attempts_total": 0,
+            "ever_attempted": false,
+            "valid_stream_ever_found": false,
+            "needs_token_refresh": false,
+            "completion_reason": "",
+            "rate_limit_hits": 0,
+            "last_http_status": null,
+            "last_stream_count": 0,
+            "last_error": ""
+          }
+        }
+      },
+      "attempted_room_ids": [
+        "235232",
+        "472241",
+        "557845",
+        "598119"
+      ],
+      "room_progress": {
+        "235232": {
+          "key": "235232",
+          "url": "https://socolivep.cv/truc-tiep/queensland-lions-sc-vs-perth-glory-21-07-2026-1630?blv=235232",
+          "blv": "A PÁO",
+          "blv_id": "235232",
+          "status": "retry",
+          "attempts": 1,
+          "attempts_total": 1,
+          "ever_attempted": true,
+          "valid_stream_ever_found": false,
+          "needs_token_refresh": true,
+          "completion_reason": "",
+          "rate_limit_hits": 0,
+          "last_http_status": 200,
+          "last_stream_count": 0,
+          "last_error": "Token cũ đã hết hạn; giữ nguyên attempts_total và trạng thái hoàn tất của BLV."
+        },
+        "557845": {
+          "key": "557845",
+          "url": "https://socolivep.cv/truc-tiep/queensland-lions-sc-vs-perth-glory-21-07-2026-1630?blv=557845",
+          "blv": "A TÚ",
+          "blv_id": "557845",
+          "status": "retry",
+          "attempts": 1,
+          "attempts_total": 1,
+          "ever_attempted": true,
+          "valid_stream_ever_found": false,
+          "needs_token_refresh": true,
+          "completion_reason": "",
+          "rate_limit_hits": 0,
+          "last_http_status": 200,
+          "last_stream_count": 0,
+          "last_error": "Token cũ đã hết hạn; giữ nguyên attempts_total và trạng thái hoàn tất của BLV."
+        },
+        "472241": {
+          "key": "472241",
+          "url": "https://socolivep.cv/truc-tiep/queensland-lions-sc-vs-perth-glory-21-07-2026-1630?blv=472241",
+          "blv": "XO",
+          "blv_id": "472241",
+          "status": "retry",
+          "attempts": 1,
+          "attempts_total": 1,
+          "ever_attempted": true,
+          "valid_stream_ever_found": false,
+          "needs_token_refresh": true,
+          "completion_reason": "",
+          "rate_limit_hits": 0,
+          "last_http_status": 200,
+          "last_stream_count": 0,
+          "last_error": "Token cũ đã hết hạn; giữ nguyên attempts_total và trạng thái hoàn tất của BLV."
+        },
+        "598119": {
+          "key": "598119",
+          "url": "https://socolivep.cv/truc-tiep/queensland-lions-sc-vs-perth-glory-21-07-2026-1630?blv=598119",
+          "blv": "A TINH",
+          "blv_id": "598119",
+          "status": "success",
+          "attempts": 1,
+          "attempts_total": 1,
+          "ever_attempted": true,
+          "valid_stream_ever_found": true,
+          "needs_token_refresh": false,
+          "completion_reason": "valid_stream",
+          "rate_limit_hits": 0,
+          "last_http_status": 200,
+          "last_stream_count": 1,
+          "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
+        },
+        "__base__": {
+          "key": "__base__",
+          "url": "https://socolivep.cv/truc-tiep/queensland-lions-sc-vs-perth-glory-21-07-2026-1630",
+          "blv": "XEM NGAY",
+          "blv_id": "",
+          "status": "pending",
+          "attempts": 0,
+          "attempts_total": 0,
+          "ever_attempted": false,
+          "valid_stream_ever_found": false,
+          "needs_token_refresh": false,
+          "completion_reason": "",
+          "rate_limit_hits": 0,
+          "last_http_status": null,
+          "last_stream_count": 0,
+          "last_error": ""
+        }
+      },
+      "pending_room_keys": [
+        "235232",
+        "557845",
+        "472241"
       ]
     }
   ]
