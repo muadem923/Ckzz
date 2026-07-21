@@ -1,4 +1,4 @@
-name: Bot Quet Socolive V10.3.1 Stall Guard Fix
+name: Bot Quet Socolive V10.3.2 Progress Fingerprint Fix
 
 on:
   workflow_dispatch:
@@ -15,7 +15,7 @@ on:
         type: boolean
 
 concurrency:
-  group: socolive-v10-3-1-stall-guard-fix-${{ github.ref }}
+  group: socolive-v10-3-2-progress-fingerprint-${{ github.ref }}
   cancel-in-progress: false
 
 permissions:
@@ -121,7 +121,7 @@ jobs:
           echo "Concurrency=$SOCOLIVE_MATCH_CONCURRENCY | room_pages/run=$SOCOLIVE_MAX_ROOMS_PER_MATCH | stream_goal/match=$SOCOLIVE_MAX_STREAMS_PER_MATCH"
           echo "Long harvest: wait=${SOCOLIVE_ROOM_WAIT_SECONDS}s | max=${SOCOLIVE_HARVEST_MAX_SECONDS}s | 2 nguồn/BLV"
           echo "Chain an toàn: hard_max=$SOCOLIVE_STATE_MAX_CHAIN_RUNS | stall=3 run | resume state trước"
-          echo "V10.3.1: không dừng ở no_useful_activity; chỉ dừng khi stall guard thật sự đạt ngưỡng"
+          echo "V10.3.2: fingerprint gồm status + link hợp lệ; tiến triển thật reset pending-không-đổi"
           echo "Playlist: dựng từ catalog tích lũy, không ghi đè bằng riêng kết quả run hiện tại"
           echo "Scan window: -${SOCOLIVE_SCAN_BEFORE_MINUTES} phút / +${SOCOLIVE_SCAN_AFTER_MINUTES} phút | scan_all=$SOCOLIVE_SCAN_ALL"
 
