@@ -1,36 +1,208 @@
 {
-  "generated_at": "2026-07-21T22:05:53.548418+07:00",
+  "generated_at": "2026-07-21T23:03:11.367013+07:00",
   "state_schema_version": "v10.4-finite-two-pass-queue",
-  "dispatch_next": false,
-  "pending_count": 0,
-  "pending_room_count": 0,
-  "completed_count": 8,
-  "coverage_complete_count": 11,
-  "total_match_count": 11,
-  "total_stream_count": 15,
-  "progress_count": 0,
-  "new_link_count": 0,
-  "refreshed_link_count": 0,
-  "queue_progress_count": 4,
-  "terminal_progress_count": 4,
-  "newly_attempted_count": 0,
-  "queue_total_rooms": 55,
-  "queue_success_rooms": 34,
+  "dispatch_next": true,
+  "pending_count": 1,
+  "pending_room_count": 1,
+  "completed_count": 10,
+  "coverage_complete_count": 13,
+  "total_match_count": 14,
+  "total_stream_count": 11,
+  "progress_count": 6,
+  "new_link_count": 4,
+  "refreshed_link_count": 2,
+  "queue_progress_count": 68,
+  "terminal_progress_count": 61,
+  "newly_attempted_count": 7,
+  "queue_total_rooms": 62,
+  "queue_success_rooms": 40,
   "queue_exhausted_rooms": 21,
-  "queue_terminal_rooms": 55,
-  "queue_attempts_total": 76,
-  "chain_runs": 2,
+  "queue_terminal_rooms": 61,
+  "queue_attempts_total": 83,
+  "chain_runs": 1,
   "no_progress_runs": 0,
   "no_queue_progress_runs": 0,
   "unchanged_pending_runs": 0,
   "rate_limit_only_runs": 0,
   "rate_limit_only_run": false,
-  "pending_fingerprint": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
-  "stop_reason": "complete",
+  "pending_fingerprint": "e21102fef92e8d73ca8eba2423acaa703ba5ae953de426e54adbde6278aef502",
+  "stop_reason": "",
   "rate_limited": false,
   "rate_limit_url": "",
   "global_room_budget": 48,
-  "global_room_budget_used": 12,
-  "count": 0,
-  "matches": []
+  "global_room_budget_used": 7,
+  "count": 1,
+  "matches": [
+    {
+      "base_url": "https://socolivep.cv/truc-tiep/ki-klaksvik-vs-kauno-zalgiris-22-07-2026-0145/",
+      "match_name": "KI Klaksvik vs Kauno Zalgiris",
+      "scheduled_at": "2026-07-22T01:45:00+07:00",
+      "rooms": [
+        {
+          "url": "https://socolivep.cv/truc-tiep/ki-klaksvik-vs-kauno-zalgiris-22-07-2026-0145?blv=620084",
+          "blv": "PEANUT",
+          "blv_id": "620084"
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/ki-klaksvik-vs-kauno-zalgiris-22-07-2026-0145?blv=235232",
+          "blv": "A PÁO",
+          "blv_id": "235232"
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/ki-klaksvik-vs-kauno-zalgiris-22-07-2026-0145",
+          "blv": "XEM NGAY",
+          "blv_id": ""
+        }
+      ],
+      "streams": [
+        {
+          "url": "https://pull.niues.live/live/stream-620084_lhd.m3u8?auth_key=1784653015-0-0-c61aab2315fcb784ade97201ba250fe0",
+          "queue_room_key": "620084",
+          "room_url": "https://socolivep.cv/truc-tiep/ki-klaksvik-vs-kauno-zalgiris-22-07-2026-0145?blv=620084",
+          "blv": "PEANUT",
+          "blv_id": "620084",
+          "source_id": "620084",
+          "source_provenance": [
+            "final-no-stream-scan",
+            "harvest-final"
+          ],
+          "source_confidence": "embedded",
+          "mapping_mode": "exact-room-id",
+          "discovered_from_room_url": "https://socolivep.cv/truc-tiep/ki-klaksvik-vs-kauno-zalgiris-22-07-2026-0145?blv=620084",
+          "discovered_from_blv": "PEANUT",
+          "discovered_at": "2026-07-21T23:02:53.219471+07:00",
+          "valid_until": "2026-07-21T23:56:55+07:00",
+          "is_expired": false
+        }
+      ],
+      "coverage": {
+        "found_streams": 1,
+        "found_blv_ids": [
+          "620084"
+        ],
+        "goal": 4,
+        "source_goal_reached": false,
+        "room_queue_complete": false,
+        "complete": false,
+        "max_streams_per_blv": 2,
+        "total_explicit_blv_rooms": 2,
+        "pending_room_keys": [
+          "235232"
+        ],
+        "room_progress": {
+          "620084": {
+            "key": "620084",
+            "url": "https://socolivep.cv/truc-tiep/ki-klaksvik-vs-kauno-zalgiris-22-07-2026-0145?blv=620084",
+            "blv": "PEANUT",
+            "blv_id": "620084",
+            "status": "success",
+            "attempts": 1,
+            "attempts_total": 1,
+            "ever_attempted": true,
+            "valid_stream_ever_found": true,
+            "needs_token_refresh": false,
+            "completion_reason": "valid_stream",
+            "rate_limit_hits": 0,
+            "last_http_status": 200,
+            "last_stream_count": 1,
+            "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
+          },
+          "235232": {
+            "key": "235232",
+            "url": "https://socolivep.cv/truc-tiep/ki-klaksvik-vs-kauno-zalgiris-22-07-2026-0145?blv=235232",
+            "blv": "A PÁO",
+            "blv_id": "235232",
+            "status": "retry",
+            "attempts": 1,
+            "attempts_total": 1,
+            "ever_attempted": true,
+            "valid_stream_ever_found": false,
+            "needs_token_refresh": true,
+            "completion_reason": "",
+            "rate_limit_hits": 0,
+            "last_http_status": 200,
+            "last_stream_count": 0,
+            "last_error": "Token cũ đã hết hạn; giữ nguyên attempts_total và trạng thái hoàn tất của BLV."
+          },
+          "__base__": {
+            "key": "__base__",
+            "url": "https://socolivep.cv/truc-tiep/ki-klaksvik-vs-kauno-zalgiris-22-07-2026-0145",
+            "blv": "XEM NGAY",
+            "blv_id": "",
+            "status": "pending",
+            "attempts": 0,
+            "attempts_total": 0,
+            "ever_attempted": false,
+            "valid_stream_ever_found": false,
+            "needs_token_refresh": false,
+            "completion_reason": "",
+            "rate_limit_hits": 0,
+            "last_http_status": null,
+            "last_stream_count": 0,
+            "last_error": ""
+          }
+        }
+      },
+      "attempted_room_ids": [
+        "235232",
+        "620084"
+      ],
+      "room_progress": {
+        "620084": {
+          "key": "620084",
+          "url": "https://socolivep.cv/truc-tiep/ki-klaksvik-vs-kauno-zalgiris-22-07-2026-0145?blv=620084",
+          "blv": "PEANUT",
+          "blv_id": "620084",
+          "status": "success",
+          "attempts": 1,
+          "attempts_total": 1,
+          "ever_attempted": true,
+          "valid_stream_ever_found": true,
+          "needs_token_refresh": false,
+          "completion_reason": "valid_stream",
+          "rate_limit_hits": 0,
+          "last_http_status": 200,
+          "last_stream_count": 1,
+          "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
+        },
+        "235232": {
+          "key": "235232",
+          "url": "https://socolivep.cv/truc-tiep/ki-klaksvik-vs-kauno-zalgiris-22-07-2026-0145?blv=235232",
+          "blv": "A PÁO",
+          "blv_id": "235232",
+          "status": "retry",
+          "attempts": 1,
+          "attempts_total": 1,
+          "ever_attempted": true,
+          "valid_stream_ever_found": false,
+          "needs_token_refresh": true,
+          "completion_reason": "",
+          "rate_limit_hits": 0,
+          "last_http_status": 200,
+          "last_stream_count": 0,
+          "last_error": "Token cũ đã hết hạn; giữ nguyên attempts_total và trạng thái hoàn tất của BLV."
+        },
+        "__base__": {
+          "key": "__base__",
+          "url": "https://socolivep.cv/truc-tiep/ki-klaksvik-vs-kauno-zalgiris-22-07-2026-0145",
+          "blv": "XEM NGAY",
+          "blv_id": "",
+          "status": "pending",
+          "attempts": 0,
+          "attempts_total": 0,
+          "ever_attempted": false,
+          "valid_stream_ever_found": false,
+          "needs_token_refresh": false,
+          "completion_reason": "",
+          "rate_limit_hits": 0,
+          "last_http_status": null,
+          "last_stream_count": 0,
+          "last_error": ""
+        }
+      },
+      "pending_room_keys": [
+        "235232"
+      ]
+    }
+  ]
 }
