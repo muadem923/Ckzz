@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-21T07:51:06.146233+07:00",
+  "generated_at": "2026-07-21T07:52:28.110071+07:00",
   "state_schema_version": "v10.1-long-harvest-two-streams",
   "dispatch_next": true,
   "pending_count": 2,
@@ -8,8 +8,8 @@
   "total_match_count": 2,
   "total_stream_count": 2,
   "progress_count": 0,
-  "chain_runs": 15,
-  "no_progress_runs": 15,
+  "chain_runs": 16,
+  "no_progress_runs": 16,
   "stop_reason": "",
   "rate_limited": true,
   "rate_limit_url": "https://socolivep.cv/truc-tiep/chaco-for-ever-vs-ca-san-miguel-21-07-2026-0700?blv=536185",
@@ -3882,6 +3882,204 @@
           "http_errors": [
             "403 https://socolivep.cv/wp-admin/admin-ajax.php?action=scl_realtime&sport=1"
           ]
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/central-norte-salta-vs-deportivo-moron-21-07-2026-0730?blv=414317",
+          "blv": "TOMMY",
+          "blv_id": "414317",
+          "streams": [
+            "https://pull.niues.live/live/stream-414317_lhd.m3u8?auth_key=1784578349-0-0-2f79731ae4f1da319b06181792c072a7"
+          ],
+          "stream_sources": {
+            "https://pull.niues.live/live/stream-414317_lhd.m3u8?auth_key=1784578349-0-0-2f79731ae4f1da319b06181792c072a7": [
+              "cdp/request",
+              "harvest-final",
+              "harvest-round-1",
+              "harvest-round-2",
+              "harvest-round-3",
+              "harvest-round-4",
+              "harvest-round-5",
+              "harvest-round-6",
+              "harvest-round-7",
+              "harvest-round-8",
+              "harvest-round-9",
+              "request/image",
+              "request/xhr"
+            ]
+          },
+          "stream_first_seen": [
+            "https://pull.niues.live/live/stream-414317_lhd.m3u8?auth_key=1784578349-0-0-2f79731ae4f1da319b06181792c072a7"
+          ],
+          "discovered_blv_ids": [
+            "414317"
+          ],
+          "diagnostics": {
+            "url": "https://socolivep.cv/truc-tiep/central-norte-salta-vs-deportivo-moron-21-07-2026-0730/?blv=414317",
+            "title": "Xem trực tiếp bóng đá Central Norte Salta vs Deportivo Moron | 07:30 ngày 21/07/2026",
+            "h1": "Trực tiếp bóng đá Socolive Central Norte Salta vs Deportivo Moron lúc 07:30 ngày 21/07/2026",
+            "ready_state": "complete",
+            "visibility_state": "visible",
+            "hidden": false,
+            "video_count": 1,
+            "iframe_count": 0,
+            "body_sample": "Skip to content Socolive Bảng xếp hạng Lịch thi đấu Kết quả bóng đá Tin thể thao Trực tiếp bóng đá Socolive Central Norte Salta vs Deportivo Moron lúc 07:30 ngày 21/07/2026 ARG D2 Central Norte Salta 07:30 21/07 Deportivo Moron Volume 0% Tải App Bufa TOMMY PEWPEW COCA TẠ BIÊN GIỚI Chat Thống kê Đội hình Diễn Biến Bảng XH \" \" Tin nhắn riêng Vô hiệu hóa tất cả Vô hiệu hóa quà tặng Tắt lời chào Đăng nhập để cùng chat nhé Gửi Tỷ lệ kèo Cược Châu Á Chủ Chấp Khách Cược Châu Âu Chủ Hòa Khách Tài xỉu Tài Tỷ lệ kèo Xỉu Kèo góc Tài Tỷ lệ kèo Xỉu Mô phỏng trận đấu Thống kê trận đấu ARG D2 07:00 21/07 Chaco For Ever VS null null null - null Sắp diễn ra Xem ngay CA San Miguel A WIN A TÚ ARG D2 06:00 21/07 Colegiales VS null null null - null Sắp diễn ra Xem ngay Ferrocarril Midland RÔSI HÀ DUY KIÊN ARG D2 06:00 21/07 Patronato Parana VS null null null - null Sắp diễn ra Xem ngay Atletico Atlanta YONE LUCAS ARG D2 06:00 21/07 Quilmes VS null null null - null Sắp diễn ra Xem ngay Gimnasia Jujuy VOI GIÓ CHA FACup 15:00 21/07 Dalian Kewei VS null null null - null Sắp diễn ra Xem ngay Beijing Guoan TOMMY PEWPEW A BỆU TOMIA TẠ BIÊN GIỚI LION Thành tích đối đầu Không có dữ liệu Phong độ gần đây Không c",
+            "harvest_rounds": 9,
+            "harvest_window_seconds": 6.987,
+            "main_status": 200,
+            "harvested_stream_count": 1,
+            "harvested_blv_ids": [
+              "414317"
+            ],
+            "scan_mode": "browser-event",
+            "elapsed_seconds": 8.164
+          },
+          "http_probe": {
+            "enabled": false,
+            "status": null,
+            "elapsed_seconds": 0.0,
+            "error": ""
+          },
+          "errors": [
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED"
+          ],
+          "failed_requests": [
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/main.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/customize.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/auth.css?ver=572 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat.css?ver=172 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat(1).css?ver=148 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/toast.css?ver=698 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/themes/flatsome/assets/css/flatsome.css?ver=3.18.2 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/themes/flatsome-child/style.css?ver=3.0 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/countdown.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/match.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/livescore.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/style_custom.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/effect/running-border.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/option/option-6.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/highlight/option-1.css?ver=2.8.5 | net::ERR_FAILED"
+          ],
+          "http_errors": [
+            "403 https://socolivep.cv/wp-admin/admin-ajax.php?action=scl_realtime&sport=1"
+          ]
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/central-norte-salta-vs-deportivo-moron-21-07-2026-0730?blv=414317",
+          "blv": "TOMMY",
+          "blv_id": "414317",
+          "streams": [
+            "https://pull.niues.live/live/stream-414317_lhd.m3u8?auth_key=1784578349-0-0-2f79731ae4f1da319b06181792c072a7"
+          ],
+          "stream_sources": {
+            "https://pull.niues.live/live/stream-414317_lhd.m3u8?auth_key=1784578349-0-0-2f79731ae4f1da319b06181792c072a7": [
+              "cdp/request",
+              "harvest-final",
+              "harvest-round-1",
+              "harvest-round-2",
+              "harvest-round-3",
+              "harvest-round-4",
+              "harvest-round-5",
+              "harvest-round-6",
+              "harvest-round-7",
+              "harvest-round-8",
+              "harvest-round-9",
+              "request/image",
+              "request/xhr"
+            ]
+          },
+          "stream_first_seen": [
+            "https://pull.niues.live/live/stream-414317_lhd.m3u8?auth_key=1784578349-0-0-2f79731ae4f1da319b06181792c072a7"
+          ],
+          "discovered_blv_ids": [
+            "414317"
+          ],
+          "diagnostics": {
+            "url": "https://socolivep.cv/truc-tiep/central-norte-salta-vs-deportivo-moron-21-07-2026-0730/?blv=414317",
+            "title": "Xem trực tiếp bóng đá Central Norte Salta vs Deportivo Moron | 07:30 ngày 21/07/2026",
+            "h1": "Trực tiếp bóng đá Socolive Central Norte Salta vs Deportivo Moron lúc 07:30 ngày 21/07/2026",
+            "ready_state": "complete",
+            "visibility_state": "visible",
+            "hidden": false,
+            "video_count": 1,
+            "iframe_count": 0,
+            "body_sample": "Skip to content Socolive Bảng xếp hạng Lịch thi đấu Kết quả bóng đá Tin thể thao Trực tiếp bóng đá Socolive Central Norte Salta vs Deportivo Moron lúc 07:30 ngày 21/07/2026 ARG D2 Central Norte Salta 07:30 21/07 Deportivo Moron Volume 0% Tải App Bufa File video này không phát được. (Mã lỗi: 232011) TOMMY PEWPEW COCA TẠ BIÊN GIỚI Chat Thống kê Đội hình Diễn Biến Bảng XH \" \" Tin nhắn riêng Vô hiệu hóa tất cả Vô hiệu hóa quà tặng Tắt lời chào Đăng nhập để cùng chat nhé Gửi Tỷ lệ kèo Cược Châu Á Chủ Chấp Khách Cược Châu Âu Chủ Hòa Khách Tài xỉu Tài Tỷ lệ kèo Xỉu Kèo góc Tài Tỷ lệ kèo Xỉu Thống kê trận đấu ARG D2 07:00 21/07 Chaco For Ever VS null null null - null Sắp diễn ra Xem ngay CA San Miguel A WIN A TÚ ARG D2 06:00 21/07 Colegiales VS null null null - null Sắp diễn ra Xem ngay Ferrocarril Midland RÔSI HÀ DUY KIÊN ARG D2 06:00 21/07 Patronato Parana VS null null null - null Sắp diễn ra Xem ngay Atletico Atlanta YONE LUCAS ARG D2 06:00 21/07 Quilmes VS null null null - null Sắp diễn ra Xem ngay Gimnasia Jujuy VOI GIÓ CHA FACup 15:00 21/07 Dalian Kewei VS null null null - null Sắp diễn ra Xem ngay Beijing Guoan TOMMY PEWPEW A BỆU TOMIA TẠ BIÊN GIỚI LION Thành tích đối đầu Không có d",
+            "harvest_rounds": 9,
+            "harvest_window_seconds": 6.925,
+            "main_status": 200,
+            "harvested_stream_count": 1,
+            "harvested_blv_ids": [
+              "414317"
+            ],
+            "scan_mode": "browser-event",
+            "elapsed_seconds": 7.964
+          },
+          "http_probe": {
+            "enabled": false,
+            "status": null,
+            "elapsed_seconds": 0.0,
+            "error": ""
+          },
+          "errors": [
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED"
+          ],
+          "failed_requests": [
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/main.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/customize.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/auth.css?ver=572 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat.css?ver=172 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat(1).css?ver=148 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/toast.css?ver=698 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/themes/flatsome/assets/css/flatsome.css?ver=3.18.2 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/themes/flatsome-child/style.css?ver=3.0 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/countdown.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/match.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/livescore.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/style_custom.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/effect/running-border.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/option/option-6.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/highlight/option-1.css?ver=2.8.5 | net::ERR_FAILED"
+          ],
+          "http_errors": [
+            "403 https://socolivep.cv/wp-admin/admin-ajax.php?action=scl_realtime&sport=1"
+          ]
         }
       ],
       "attempted_room_ids": [
@@ -3915,7 +4113,7 @@
             "blv": "TOMMY",
             "blv_id": "414317",
             "status": "rate_limited",
-            "attempts": 31,
+            "attempts": 33,
             "rate_limit_hits": 13,
             "last_http_status": 200,
             "last_stream_count": 1,
@@ -3979,7 +4177,7 @@
           "blv": "TOMMY",
           "blv_id": "414317",
           "status": "rate_limited",
-          "attempts": 31,
+          "attempts": 33,
           "rate_limit_hits": 13,
           "last_http_status": 200,
           "last_stream_count": 1,
@@ -10981,6 +11179,159 @@
             "429 https://socolivep.cv/truc-tiep/chaco-for-ever-vs-ca-san-miguel-21-07-2026-0700?blv=536185",
             "401 https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/pat/a1e636ca9b7c5616/1784595053606/04d2346f3888c12e2f94c9714f41a1575cac9104aa2414e2442573f783428e26/bEp7iLOT9R1iOAz"
           ]
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/chaco-for-ever-vs-ca-san-miguel-21-07-2026-0700?blv=536185",
+          "blv": "A WIN",
+          "blv_id": "536185",
+          "streams": [
+            "https://pull.niues.live/live/stream-536185_lhd.m3u8?auth_key=1784573722-0-0-7c56a7c00194702996987c7471c2b75d"
+          ],
+          "stream_sources": {
+            "https://pull.niues.live/live/stream-536185_lhd.m3u8?auth_key=1784573722-0-0-7c56a7c00194702996987c7471c2b75d": [
+              "cdp/request",
+              "harvest-final",
+              "harvest-round-1",
+              "harvest-round-2",
+              "harvest-round-3",
+              "harvest-round-4",
+              "harvest-round-5",
+              "harvest-round-6",
+              "harvest-round-7",
+              "harvest-round-8",
+              "harvest-round-9",
+              "request/image",
+              "request/xhr"
+            ]
+          },
+          "stream_first_seen": [
+            "https://pull.niues.live/live/stream-536185_lhd.m3u8?auth_key=1784573722-0-0-7c56a7c00194702996987c7471c2b75d"
+          ],
+          "discovered_blv_ids": [
+            "536185"
+          ],
+          "diagnostics": {
+            "url": "https://socolivep.cv/truc-tiep/chaco-for-ever-vs-ca-san-miguel-21-07-2026-0700/?blv=536185",
+            "title": "Xem trực tiếp bóng đá Chaco For Ever vs CA San Miguel | 07:00 ngày 21/07/2026",
+            "h1": "Trực tiếp bóng đá Socolive Chaco For Ever vs CA San Miguel lúc 07:00 ngày 21/07/2026",
+            "ready_state": "complete",
+            "visibility_state": "visible",
+            "hidden": false,
+            "video_count": 1,
+            "iframe_count": 0,
+            "body_sample": "Skip to content Socolive Bảng xếp hạng Lịch thi đấu Kết quả bóng đá Tin thể thao Trực tiếp bóng đá Socolive Chaco For Ever vs CA San Miguel lúc 07:00 ngày 21/07/2026 ARG D2 Chaco For Ever 07:00 21/07 CA San Miguel Volume 0% Tải App Bufa A WIN A TÚ Chat Thống kê Đội hình Diễn Biến Bảng XH \" \" Tin nhắn riêng Vô hiệu hóa tất cả Vô hiệu hóa quà tặng Tắt lời chào Đăng nhập để cùng chat nhé Gửi Tỷ lệ kèo Cược Châu Á Chủ Chấp Khách Cược Châu Âu Chủ Hòa Khách Tài xỉu Tài Tỷ lệ kèo Xỉu Kèo góc Tài Tỷ lệ kèo Xỉu Mô phỏng trận đấu Thống kê trận đấu ARG D2 07:30 21/07 Central Norte Salta VS null null null - null Sắp diễn ra Xem ngay Deportivo Moron TOMMY PEWPEW COCA TẠ BIÊN GIỚI ARG D2 06:00 21/07 Colegiales VS null null null - null Sắp diễn ra Xem ngay Ferrocarril Midland RÔSI HÀ DUY KIÊN ARG D2 06:00 21/07 Patronato Parana VS null null null - null Sắp diễn ra Xem ngay Atletico Atlanta YONE LUCAS ARG D2 06:00 21/07 Quilmes VS null null null - null Sắp diễn ra Xem ngay Gimnasia Jujuy VOI GIÓ CHA FACup 15:00 21/07 Dalian Kewei VS null null null - null Sắp diễn ra Xem ngay Beijing Guoan TOMMY PEWPEW A BỆU TOMIA TẠ BIÊN GIỚI LION Thành tích đối đầu Không có dữ liệu Phong độ gần đây Không có dữ li",
+            "harvest_rounds": 9,
+            "harvest_window_seconds": 6.977,
+            "main_status": 200,
+            "harvested_stream_count": 1,
+            "harvested_blv_ids": [
+              "536185"
+            ],
+            "scan_mode": "browser-event",
+            "elapsed_seconds": 8.276
+          },
+          "http_probe": {
+            "enabled": false,
+            "status": null,
+            "elapsed_seconds": 0.0,
+            "error": ""
+          },
+          "errors": [
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED"
+          ],
+          "failed_requests": [
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/main.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/customize.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/auth.css?ver=476 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat.css?ver=439 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat(1).css?ver=739 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/toast.css?ver=454 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/themes/flatsome/assets/css/flatsome.css?ver=3.18.2 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/themes/flatsome-child/style.css?ver=3.0 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/countdown.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/match.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/livescore.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/style_custom.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/effect/running-border.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/option/option-6.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/highlight/option-1.css?ver=2.8.5 | net::ERR_FAILED"
+          ],
+          "http_errors": [
+            "403 https://socolivep.cv/wp-admin/admin-ajax.php?action=scl_realtime&sport=1"
+          ]
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/chaco-for-ever-vs-ca-san-miguel-21-07-2026-0700?blv=536185",
+          "blv": "A WIN",
+          "blv_id": "536185",
+          "streams": [],
+          "stream_sources": {},
+          "stream_first_seen": [],
+          "discovered_blv_ids": [],
+          "diagnostics": {
+            "url": "https://socolivep.cv/truc-tiep/chaco-for-ever-vs-ca-san-miguel-21-07-2026-0700?blv=536185",
+            "title": "Chờ một chút...",
+            "h1": "socolivep.cv",
+            "ready_state": "complete",
+            "visibility_state": "visible",
+            "hidden": false,
+            "video_count": 0,
+            "iframe_count": 0,
+            "body_sample": "socolivep.cv Thực hiện xác minh bảo mật Trang web này sử dụng dịch vụ bảo mật để chống bot độc hại. Trang này hiển thị trong khi trang web xác minh bạn không phải là bot. Ray ID: a1e638c90edddd6d Hiệu suất và Tính bảo mật của Cloudflare Quyền riêng tư",
+            "harvest_rounds": 0,
+            "harvest_window_seconds": 0.622,
+            "main_status": 429,
+            "harvested_stream_count": 0,
+            "harvested_blv_ids": [],
+            "scan_mode": "browser-event",
+            "elapsed_seconds": 13.381
+          },
+          "http_probe": {
+            "enabled": false,
+            "status": null,
+            "elapsed_seconds": 0.0,
+            "error": ""
+          },
+          "errors": [
+            "console/error: Failed to load resource: the server responded with a status of 429 ()",
+            "console/warning: No available adapters.",
+            "console/warning: No available adapters.",
+            "console/error: %c%d font-size:0;color:transparent NaN",
+            "console/error: %c%d font-size:0;color:transparent NaN",
+            "console/warning: %c%d font-size:0;color:transparent NaN",
+            "console/warning: %c%d font-size:0;color:transparent NaN",
+            "console/warning: [.WebGL-0x32f402409400]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+            "console/warning: [.WebGL-0x32f402409400]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+            "console/warning: OTS parsing error: Size of decompressed WOFF 2.0 is less than compressed size",
+            "console/error: Failed to load resource: net::ERR_FAILED"
+          ],
+          "failed_requests": [
+            "fetch https://brunhild.challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/i/a1e638cbdfbed300/DIkPwpOQ90z0LKy4FV9L9hy20DPp39mAoncdq5VnEyk-1784595135-1.2.1.1-HrQ6KFS3Rpl7bjdIhAf_8_ApuIIdLKgIFr4uAio5Wc5VVUqZeJs_EGuVNPZWiQMR | net::ERR_NAME_NOT_RESOLVED",
+            "image https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/ci/a1e638cbdfbed300/1784595135655/asS1_r8vgYZ44vx | net::ERR_FAILED"
+          ],
+          "http_errors": [
+            "429 https://socolivep.cv/truc-tiep/chaco-for-ever-vs-ca-san-miguel-21-07-2026-0700?blv=536185",
+            "401 https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/pat/a1e638cbdfbed300/1784595135655/80ea71f81500e1ea6beea270f05583e4bf0d7ad4b79a7f896591c74da40c301f/cLN5YYEXO1HwOCy"
+          ]
         }
       ],
       "attempted_room_ids": [
@@ -11010,8 +11361,8 @@
             "blv": "A WIN",
             "blv_id": "536185",
             "status": "rate_limited",
-            "attempts": 55,
-            "rate_limit_hits": 27,
+            "attempts": 56,
+            "rate_limit_hits": 28,
             "last_http_status": 429,
             "last_stream_count": 0,
             "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
@@ -11050,8 +11401,8 @@
           "blv": "A WIN",
           "blv_id": "536185",
           "status": "rate_limited",
-          "attempts": 55,
-          "rate_limit_hits": 27,
+          "attempts": 56,
+          "rate_limit_hits": 28,
           "last_http_status": 429,
           "last_stream_count": 0,
           "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
