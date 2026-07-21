@@ -1,4 +1,4 @@
-name: Bot Quet Socolive V10.3.2 Progress Fingerprint Fix
+name: Bot Quet Socolive V10.4 Finite Two Pass Queue
 
 on:
   workflow_dispatch:
@@ -15,7 +15,7 @@ on:
         type: boolean
 
 concurrency:
-  group: socolive-v10-3-2-progress-fingerprint-${{ github.ref }}
+  group: socolive-v10-4-finite-two-pass-${{ github.ref }}
   cancel-in-progress: false
 
 permissions:
@@ -25,7 +25,7 @@ permissions:
 jobs:
   scan:
     runs-on: ubuntu-latest
-    timeout-minutes: 25
+    timeout-minutes: 30
 
     steps:
       - name: 1. Lấy source và checkpoint mới nhất
@@ -60,7 +60,12 @@ jobs:
 
           SOCOLIVE_MATCH_CONCURRENCY: "1"
           SOCOLIVE_ROOM_WAIT_SECONDS: "12"
-          SOCOLIVE_MAX_ROOMS_PER_MATCH: "2"
+          # Một flow quét tối đa toàn bộ BLV mỗi trận một lần.
+          SOCOLIVE_MAX_ROOMS_PER_MATCH: "12"
+
+          # Cầu chì thời gian toàn workflow.
+          SOCOLIVE_GLOBAL_ROOM_BUDGET: "48"
+
           SOCOLIVE_MAX_SUCCESSFUL_ROOMS_PER_MATCH: "24"
 
           # Mục tiêu tối đa 10 stream-ID/BLV cho mỗi trận.
@@ -70,10 +75,10 @@ jobs:
           # Mỗi trang sẽ quét toàn bộ HTML/config để lấy nhiều link.
           SOCOLIVE_EMBEDDED_HARVEST_WAIT_SECONDS: "6.0"
 
-          # BLV HTTP 200 nhưng không có stream được thử tối đa 2 runner.
-          SOCOLIVE_ROOM_EMPTY_MAX_ATTEMPTS: "3"
+          # Queue hữu hạn: mỗi BLV chỉ thử tối đa hai lần tổng cộng.
+          SOCOLIVE_ROOM_EMPTY_MAX_ATTEMPTS: "2"
 
-          # Tìm tối đa hai nguồn cho mỗi BLV.
+          # Tối đa hai nguồn; chỉ cần một link hợp lệ là success.
           SOCOLIVE_MAX_STREAMS_PER_BLV: "2"
 
           # Giữ tab tối thiểu 6 giây sau stream đầu, tối đa 12 giây,
@@ -95,10 +100,10 @@ jobs:
           SOCOLIVE_SCAN_ALL: "0"
 
           SOCOLIVE_STATE_MAX_AGE_MINUTES: "180"
-          SOCOLIVE_STATE_MAX_CHAIN_RUNS: "20"
-          SOCOLIVE_STATE_MAX_NO_PROGRESS_RUNS: "3"
-          SOCOLIVE_STATE_MAX_UNCHANGED_PENDING_RUNS: "3"
-          SOCOLIVE_STATE_MAX_RATE_LIMIT_ONLY_RUNS: "3"
+          SOCOLIVE_STATE_MAX_CHAIN_RUNS: "8"
+          SOCOLIVE_STATE_MAX_NO_PROGRESS_RUNS: "2"
+          SOCOLIVE_STATE_MAX_UNCHANGED_PENDING_RUNS: "2"
+          SOCOLIVE_STATE_MAX_RATE_LIMIT_ONLY_RUNS: "2"
 
           # Tiếp tục khi còn pending, nhưng stall guard sẽ tự dừng khi bất thường.
           SOCOLIVE_CHAIN_UNTIL_PENDING_EMPTY: "1"
@@ -118,10 +123,11 @@ jobs:
           rm -f socolive_chain_decision.json
 
           echo "=== $(date -u '+%Y-%m-%d %H:%M:%S UTC') | Bắt đầu ==="
-          echo "Concurrency=$SOCOLIVE_MATCH_CONCURRENCY | room_pages/run=$SOCOLIVE_MAX_ROOMS_PER_MATCH | stream_goal/match=$SOCOLIVE_MAX_STREAMS_PER_MATCH"
+          echo "Concurrency=$SOCOLIVE_MATCH_CONCURRENCY | room_pages/run=$SOCOLIVE_MAX_ROOMS_PER_MATCH | global_budget=$SOCOLIVE_GLOBAL_ROOM_BUDGET"
           echo "Long harvest: wait=${SOCOLIVE_ROOM_WAIT_SECONDS}s | max=${SOCOLIVE_HARVEST_MAX_SECONDS}s | 2 nguồn/BLV"
-          echo "Chain an toàn: hard_max=$SOCOLIVE_STATE_MAX_CHAIN_RUNS | stall=3 run | resume state trước"
-          echo "V10.3.2: fingerprint gồm status + link hợp lệ; tiến triển thật reset pending-không-đổi"
+          echo "Queue hữu hạn: mỗi BLV tối đa 2 lượt | 1 link hợp lệ = success"
+          echo "Chain an toàn: hard_max=$SOCOLIVE_STATE_MAX_CHAIN_RUNS | stall=2 run | resume state trước"
+          echo "V10.4: attempts_total không reset; success/exhausted là trạng thái terminal"
           echo "Playlist: dựng từ catalog tích lũy, không ghi đè bằng riêng kết quả run hiện tại"
           echo "Scan window: -${SOCOLIVE_SCAN_BEFORE_MINUTES} phút / +${SOCOLIVE_SCAN_AFTER_MINUTES} phút | scan_all=$SOCOLIVE_SCAN_ALL"
 
