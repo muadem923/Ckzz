@@ -32,6 +32,10 @@ OUTPUT_STATE = "socolive_state.json"
 OUTPUT_PENDING = "socolive_pending.json"
 OUTPUT_DECISION = "socolive_chain_decision.json"
 
+# Catalog độc lập với state quét. M3U luôn được dựng từ catalog tích lũy,
+# không dựng riêng từ số trận vừa quét trong workflow hiện tại.
+OUTPUT_CATALOG = "socolive_catalog.json"
+
 TIMEZONE = ZoneInfo("Asia/Ho_Chi_Minh")
 
 # Cơ chế cân bằng: 4 player song song, không quá tải như 8 và không chậm như 1.
@@ -138,7 +142,24 @@ CHAIN_UNTIL_PENDING_EMPTY = (
 # Đổi schema để reset state V10 cũ và cho phép quét lại từng BLV theo
 # mục tiêu tối đa hai nguồn.
 # vì V9 đã loại sai stream-ID không trùng BLV-ID.
-STATE_SCHEMA_VERSION = "v10.1-long-harvest-two-streams"
+STATE_SCHEMA_VERSION = "v10.2-cumulative-catalog"
+
+# Giữ trận trong playlist sau giờ bắt đầu để các workflow sau không làm
+# biến mất link chỉ vì trận rơi khỏi khung quét -90 phút.
+CATALOG_RETENTION_AFTER_START_MINUTES = int(
+    os.getenv(
+        "SOCOLIVE_CATALOG_RETENTION_AFTER_START_MINUTES",
+        "360",
+    )
+)
+
+# Trận không đọc được giờ vẫn được giữ theo thời điểm cuối xuất hiện.
+CATALOG_RETENTION_UNSEEN_MINUTES = int(
+    os.getenv(
+        "SOCOLIVE_CATALOG_RETENTION_UNSEEN_MINUTES",
+        "240",
+    )
+)
 
 UA = (
     "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
@@ -3002,6 +3023,312 @@ def write_resume_state(
 
 
 # ============================================================
+# CATALOG TÍCH LŨY QUA NHIỀU WORKFLOW
+# ============================================================
+def stream_identity(
+    item: dict[str, Any],
+) -> tuple[str, str, str]:
+    url = clean_text(
+        str(item.get("url", "") or "")
+    )
+    try:
+        parsed = urlsplit(url)
+        return (
+            parsed.scheme.lower(),
+            parsed.netloc.lower(),
+            parsed.path,
+        )
+    except Exception:
+        return ("", "", url)
+
+
+def merge_stream_lists(
+    old_streams: list[dict[str, Any]],
+    new_streams: list[dict[str, Any]],
+) -> list[dict[str, Any]]:
+    """
+    Hợp nhất theo đường dẫn stream. Stream của run hiện tại được xử lý sau,
+    vì vậy URL chữ ký/token mới sẽ thay URL cũ cùng đường dẫn.
+    """
+    merged: dict[
+        tuple[str, str, str],
+        dict[str, Any],
+    ] = {}
+
+    for item in list(old_streams) + list(new_streams):
+        if not isinstance(item, dict):
+            continue
+
+        url = clean_text(
+            str(item.get("url", "") or "")
+        )
+        if not url:
+            continue
+
+        merged[stream_identity(item)] = dict(item)
+
+    return list(merged.values())
+
+
+def load_cumulative_catalog(
+    previous_state: dict[str, Any],
+) -> list[dict[str, Any]]:
+    path = Path(OUTPUT_CATALOG)
+
+    if path.exists():
+        try:
+            payload = json.loads(
+                path.read_text(encoding="utf-8")
+            )
+            raw_matches = (
+                payload.get("matches", [])
+                if isinstance(payload, dict)
+                else payload
+            )
+            if isinstance(raw_matches, list):
+                return [
+                    item
+                    for item in raw_matches
+                    if isinstance(item, dict)
+                ]
+        except Exception as exc:
+            print(
+                f"⚠️ Không đọc được catalog cũ: "
+                f"{type(exc).__name__}: {exc}",
+                flush=True,
+            )
+
+    # Nâng cấp mềm: lần đầu dùng V10.2, lấy state V10.1 làm catalog nền.
+    return [
+        dict(item)
+        for item in previous_state.get(
+            "matches",
+            [],
+        )
+        if (
+            isinstance(item, dict)
+            and item.get("streams")
+        )
+    ]
+
+
+def catalog_match_scheduled_at(
+    match: dict[str, Any],
+) -> datetime | None:
+    scheduled = parse_iso_datetime(
+        str(match.get("scheduled_at", "") or "")
+    )
+    if scheduled is not None:
+        return scheduled
+
+    return match_datetime_from_url(
+        str(match.get("base_url", "") or "")
+    )
+
+
+def catalog_entry_is_fresh(
+    match: dict[str, Any],
+    current_urls: set[str],
+    now: datetime,
+) -> bool:
+    base_url = canonical_match_url(
+        str(match.get("base_url", "") or "")
+    )
+
+    if base_url in current_urls:
+        return True
+
+    scheduled = catalog_match_scheduled_at(match)
+    if scheduled is not None:
+        age_after_start = (
+            now - scheduled
+        ).total_seconds() / 60.0
+
+        # Giữ cả trận sắp đá và trận đã bắt đầu chưa quá thời gian retention.
+        return (
+            age_after_start
+            <= CATALOG_RETENTION_AFTER_START_MINUTES
+        )
+
+    last_seen = parse_iso_datetime(
+        str(
+            match.get("catalog_last_seen_at", "")
+            or match.get("catalog_updated_at", "")
+            or ""
+        )
+    )
+    if last_seen is None:
+        return False
+
+    unseen_minutes = (
+        now - last_seen
+    ).total_seconds() / 60.0
+
+    return (
+        unseen_minutes
+        <= CATALOG_RETENTION_UNSEEN_MINUTES
+    )
+
+
+def merge_cumulative_catalog(
+    current_results: list[dict[str, Any]],
+    previous_state: dict[str, Any],
+) -> tuple[list[dict[str, Any]], dict[str, int]]:
+    now = datetime.now(TIMEZONE)
+    generated_at = now.isoformat()
+
+    old_catalog = load_cumulative_catalog(
+        previous_state
+    )
+    old_by_url = {
+        canonical_match_url(
+            str(item.get("base_url", "") or "")
+        ): dict(item)
+        for item in old_catalog
+        if item.get("base_url")
+    }
+
+    current_urls = {
+        canonical_match_url(
+            str(item.get("base_url", "") or "")
+        )
+        for item in current_results
+        if item.get("base_url")
+    }
+
+    before_links = sum(
+        len(item.get("streams", []))
+        for item in old_catalog
+    )
+
+    for current in current_results:
+        key = canonical_match_url(
+            str(current.get("base_url", "") or "")
+        )
+        previous = old_by_url.get(key, {})
+
+        merged = dict(previous)
+
+        # Metadata/trạng thái mới ghi đè dữ liệu cũ, nhưng stream được hợp nhất.
+        for field, value in current.items():
+            if field == "streams":
+                continue
+            merged[field] = value
+
+        merged["streams"] = merge_stream_lists(
+            previous.get("streams", []),
+            current.get("streams", []),
+        )
+        merged["rooms"] = unique_rooms(
+            list(previous.get("rooms", []))
+            + list(current.get("rooms", []))
+        )
+        merged["catalog_last_seen_at"] = generated_at
+
+        previous_paths = {
+            stream_identity(item)
+            for item in previous.get("streams", [])
+            if isinstance(item, dict)
+        }
+        current_paths = {
+            stream_identity(item)
+            for item in current.get("streams", [])
+            if isinstance(item, dict)
+        }
+
+        if current_paths - previous_paths:
+            merged["catalog_updated_at"] = generated_at
+        else:
+            merged["catalog_updated_at"] = (
+                previous.get("catalog_updated_at")
+                or generated_at
+            )
+
+        # Chỉ catalog hóa trận đã từng có ít nhất một stream.
+        if merged.get("streams"):
+            old_by_url[key] = merged
+
+    retained: list[dict[str, Any]] = []
+    pruned_matches = 0
+    pruned_links = 0
+
+    for item in old_by_url.values():
+        if not item.get("streams"):
+            continue
+
+        if catalog_entry_is_fresh(
+            item,
+            current_urls,
+            now,
+        ):
+            retained.append(item)
+        else:
+            pruned_matches += 1
+            pruned_links += len(
+                item.get("streams", [])
+            )
+
+    retained.sort(
+        key=lambda item: (
+            catalog_match_scheduled_at(item)
+            or now + timedelta(days=365),
+            match_display_name(item).lower(),
+        )
+    )
+
+    after_links = sum(
+        len(item.get("streams", []))
+        for item in retained
+    )
+
+    payload = {
+        "generated_at": generated_at,
+        "retention_after_start_minutes":
+            CATALOG_RETENTION_AFTER_START_MINUTES,
+        "retention_unseen_minutes":
+            CATALOG_RETENTION_UNSEEN_MINUTES,
+        "match_count": sum(
+            1 for item in retained
+            if item.get("streams")
+        ),
+        "link_count": after_links,
+        "matches": retained,
+    }
+
+    Path(OUTPUT_CATALOG).write_text(
+        json.dumps(
+            payload,
+            ensure_ascii=False,
+            indent=2,
+        ),
+        encoding="utf-8",
+    )
+
+    stats = {
+        "before_links": before_links,
+        "after_links": after_links,
+        "added_or_refreshed_links": max(
+            0,
+            after_links - before_links,
+        ),
+        "pruned_matches": pruned_matches,
+        "pruned_links": pruned_links,
+    }
+
+    print(
+        f"📚 Catalog tích lũy: "
+        f"{after_links} link từ "
+        f"{payload['match_count']} trận"
+        f" | trước={before_links}"
+        f" | loại cũ={pruned_links} link/"
+        f"{pruned_matches} trận",
+        flush=True,
+    )
+
+    return retained, stats
+
+
+# ============================================================
 # XUẤT FILE
 # ============================================================
 def escape_m3u(value: str) -> str:
@@ -3137,13 +3464,19 @@ def write_outputs(matches: list[dict[str, Any]]) -> tuple[int, int]:
                         HARVEST_QUIET_SECONDS,
                     "chain_until_pending_empty":
                         CHAIN_UNTIL_PENDING_EMPTY,
+                    "catalog_output":
+                        OUTPUT_CATALOG,
+                    "catalog_retention_after_start_minutes":
+                        CATALOG_RETENTION_AFTER_START_MINUTES,
+                    "catalog_retention_unseen_minutes":
+                        CATALOG_RETENTION_UNSEEN_MINUTES,
                     "max_successful_rooms_per_match":
                         MAX_SUCCESSFUL_ROOMS_PER_MATCH,
                     "http_first": HTTP_FIRST,
                     "http_fetch_timeout_seconds": HTTP_FETCH_TIMEOUT_SECONDS,
                     "enable_cdp": ENABLE_CDP,
                     "stop_on_429": STOP_ON_429,
-                    "strategy": "v10.1-long-harvest-complete-chain",
+                    "strategy": "v10.2-cumulative-catalog-long-harvest",
                     "state_schema_version": STATE_SCHEMA_VERSION,
                     "state_max_age_minutes": STATE_MAX_AGE_MINUTES,
                     "state_max_chain_runs": STATE_MAX_CHAIN_RUNS,
@@ -3174,10 +3507,10 @@ def write_outputs(matches: list[dict[str, Any]]) -> tuple[int, int]:
 # MAIN
 # ============================================================
 async def main() -> None:
-    print("🥷 SOCOLIVE STREAM SCANNER V10.1 - LONG HARVEST + COMPLETE CHAIN")
+    print("🥷 SOCOLIVE STREAM SCANNER V10.2 - CUMULATIVE CATALOG + LONG HARVEST")
     print(
         "ℹ️ Test riêng một URL:\n"
-        '   python main_socolive_v9_1_multi_source_fix.py "https://socolivem.cv/truc-tiep/.../?blv=..."'
+        '   python main.py "https://socolivem.cv/truc-tiep/.../?blv=..."'
     )
 
     direct_urls = [
@@ -3394,21 +3727,72 @@ async def main() -> None:
                 flush=True,
             )
 
-        count_matches, count_links = write_outputs(results)
+        # State/pending chỉ quản lý tập trận đang nằm trong khung quét.
         resume_state = write_resume_state(
             results,
             circuit,
             previous_state,
         )
 
-        if count_links:
-            print(
-                f"\n🎉 HOÀN TẤT: {count_links} link "
-                f"từ {count_matches} trận."
+        # M3U không dựng trực tiếp từ riêng run hiện tại nữa.
+        # Catalog hợp nhất link của mọi workflow trước rồi mới xuất playlist.
+        catalog_matches, catalog_stats = (
+            merge_cumulative_catalog(
+                results,
+                previous_state,
             )
-            print(f"📺 Playlist: {Path(OUTPUT_M3U).resolve()}")
+        )
+        count_matches, count_links = write_outputs(
+            catalog_matches
+        )
+
+        run_active_links = sum(
+            len(match.get("streams", []))
+            for match in results
+        )
+        run_new_links = int(
+            resume_state.get("progress_count", 0)
+        )
+        pending_count = int(
+            resume_state.get("pending_count", 0)
+        )
+
+        print(
+            f"\n🧩 RUN HIỆN TẠI: "
+            f"mới +{run_new_links} link"
+            f" | active-state={run_active_links} link"
+            f" | pending={pending_count}",
+            flush=True,
+        )
+
+        if count_links:
+            if pending_count == 0:
+                print(
+                    f"🎉 CHUỖI HOÀN TẤT: "
+                    f"playlist tích lũy có "
+                    f"{count_links} link từ "
+                    f"{count_matches} trận."
+                )
+            else:
+                print(
+                    f"💾 CHECKPOINT: playlist tích lũy hiện có "
+                    f"{count_links} link từ "
+                    f"{count_matches} trận; "
+                    "workflow sau sẽ tiếp tục BLV còn thiếu."
+                )
+
+            print(
+                f"📺 Playlist tích lũy: "
+                f"{Path(OUTPUT_M3U).resolve()}"
+            )
+            print(
+                f"📚 Catalog tích lũy: "
+                f"{Path(OUTPUT_CATALOG).resolve()}"
+            )
         else:
-            print("\n❌ Chưa bắt được stream trực tiếp nào.")
+            print(
+                "\n❌ Catalog chưa có stream trực tiếp nào."
+            )
 
         print(
             f"⚽ Metadata trận/logo: "
