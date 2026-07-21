@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-21T07:59:45.889508+07:00",
+  "generated_at": "2026-07-21T08:01:09.007660+07:00",
   "state_schema_version": "v10.1-long-harvest-two-streams",
   "dispatch_next": true,
   "pending_count": 2,
@@ -8,11 +8,11 @@
   "total_match_count": 2,
   "total_stream_count": 2,
   "progress_count": 0,
-  "chain_runs": 21,
-  "no_progress_runs": 21,
+  "chain_runs": 22,
+  "no_progress_runs": 22,
   "stop_reason": "",
   "rate_limited": true,
-  "rate_limit_url": "https://socolivep.cv/truc-tiep/chaco-for-ever-vs-ca-san-miguel-21-07-2026-0700?blv=536185",
+  "rate_limit_url": "https://socolivep.cv/truc-tiep/central-norte-salta-vs-deportivo-moron-21-07-2026-0730?blv=414317",
   "target_base_urls": [
     "https://socolivep.cv/truc-tiep/central-norte-salta-vs-deportivo-moron-21-07-2026-0730/",
     "https://socolivep.cv/truc-tiep/chaco-for-ever-vs-ca-san-miguel-21-07-2026-0700/"
@@ -51,26 +51,6 @@
         },
         {
           "url": "https://socolivep.cv/truc-tiep/central-norte-salta-vs-deportivo-moron-21-07-2026-0730?blv=118206",
-          "blv": "TẠ BIÊN GIỚI",
-          "blv_id": "118206"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/central-norte-salta-vs-deportivo-moron-21-07-2026-0730/?blv=414317",
-          "blv": "TOMMY",
-          "blv_id": "414317"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/central-norte-salta-vs-deportivo-moron-21-07-2026-0730/?blv=109053",
-          "blv": "PEWPEW",
-          "blv_id": "109053"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/central-norte-salta-vs-deportivo-moron-21-07-2026-0730/?blv=327159",
-          "blv": "COCA",
-          "blv_id": "327159"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/central-norte-salta-vs-deportivo-moron-21-07-2026-0730/?blv=118206",
           "blv": "TẠ BIÊN GIỚI",
           "blv_id": "118206"
         },
@@ -5322,6 +5302,60 @@
           "http_errors": [
             "403 https://socolivep.cv/wp-admin/admin-ajax.php?action=scl_realtime&sport=1"
           ]
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/central-norte-salta-vs-deportivo-moron-21-07-2026-0730?blv=414317",
+          "blv": "TOMMY",
+          "blv_id": "414317",
+          "streams": [],
+          "stream_sources": {},
+          "stream_first_seen": [],
+          "discovered_blv_ids": [],
+          "diagnostics": {
+            "url": "https://socolivep.cv/truc-tiep/central-norte-salta-vs-deportivo-moron-21-07-2026-0730?blv=414317",
+            "title": "Chờ một chút...",
+            "h1": "socolivep.cv",
+            "ready_state": "complete",
+            "visibility_state": "visible",
+            "hidden": false,
+            "video_count": 0,
+            "iframe_count": 0,
+            "body_sample": "socolivep.cv Thực hiện xác minh bảo mật Trang web này sử dụng dịch vụ bảo mật để chống bot độc hại. Trang này hiển thị trong khi trang web xác minh bạn không phải là bot. Ray ID: a1e64580cf7e89cc Hiệu suất và Tính bảo mật của Cloudflare Quyền riêng tư",
+            "harvest_rounds": 0,
+            "harvest_window_seconds": 0.622,
+            "main_status": 429,
+            "harvested_stream_count": 0,
+            "harvested_blv_ids": [],
+            "scan_mode": "browser-event",
+            "elapsed_seconds": 13.229
+          },
+          "http_probe": {
+            "enabled": false,
+            "status": null,
+            "elapsed_seconds": 0.0,
+            "error": ""
+          },
+          "errors": [
+            "console/error: Failed to load resource: the server responded with a status of 429 ()",
+            "console/warning: No available adapters.",
+            "console/warning: No available adapters.",
+            "console/error: %c%d font-size:0;color:transparent NaN",
+            "console/error: %c%d font-size:0;color:transparent NaN",
+            "console/warning: %c%d font-size:0;color:transparent NaN",
+            "console/warning: %c%d font-size:0;color:transparent NaN",
+            "console/warning: OTS parsing error: Size of decompressed WOFF 2.0 is less than compressed size",
+            "console/warning: [.WebGL-0x169c02957400]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+            "console/warning: [.WebGL-0x169c02957400]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels (this message will no longer repeat)",
+            "console/error: Failed to load resource: net::ERR_FAILED"
+          ],
+          "failed_requests": [
+            "fetch https://brunhild.challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/i/a1e64582e951fc53/82XewxitEKApfS3EOnq7Ah4qpxrSg.xDIMvVgQ9Djhs-1784595656-1.2.1.1-LHpHZKXkz9P9LGSuthO_4AjzGQ1lBJ3Vs07o3XisD3dvW7_7tj.EW7gxdGPlAF0t | net::ERR_NAME_NOT_RESOLVED",
+            "image https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/ci/a1e64582e951fc53/1784595656456/5Vu_U-32tqQEcB7 | net::ERR_FAILED"
+          ],
+          "http_errors": [
+            "429 https://socolivep.cv/truc-tiep/central-norte-salta-vs-deportivo-moron-21-07-2026-0730?blv=414317",
+            "401 https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/pat/a1e64582e951fc53/1784595656455/2826a1aacd4a13340e2214d757e786fbbda30d2332fd6646eb9bc0664697d3a9/MU-eIU1YgnsXa8X"
+          ]
         }
       ],
       "attempted_room_ids": [
@@ -5337,12 +5371,8 @@
         "room_queue_complete": false,
         "complete": false,
         "max_streams_per_blv": 2,
-        "total_explicit_blv_rooms": 8,
+        "total_explicit_blv_rooms": 4,
         "pending_room_keys": [
-          "414317",
-          "109053",
-          "327159",
-          "118206",
           "414317",
           "109053",
           "327159",
@@ -5351,19 +5381,19 @@
         "room_progress": {
           "414317": {
             "key": "414317",
-            "url": "https://socolivep.cv/truc-tiep/central-norte-salta-vs-deportivo-moron-21-07-2026-0730/?blv=414317",
+            "url": "https://socolivep.cv/truc-tiep/central-norte-salta-vs-deportivo-moron-21-07-2026-0730?blv=414317",
             "blv": "TOMMY",
             "blv_id": "414317",
             "status": "rate_limited",
             "attempts": 45,
-            "rate_limit_hits": 14,
-            "last_http_status": 200,
-            "last_stream_count": 1,
-            "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
+            "rate_limit_hits": 15,
+            "last_http_status": 429,
+            "last_stream_count": 0,
+            "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
           },
           "109053": {
             "key": "109053",
-            "url": "https://socolivep.cv/truc-tiep/central-norte-salta-vs-deportivo-moron-21-07-2026-0730/?blv=109053",
+            "url": "https://socolivep.cv/truc-tiep/central-norte-salta-vs-deportivo-moron-21-07-2026-0730?blv=109053",
             "blv": "PEWPEW",
             "blv_id": "109053",
             "status": "pending",
@@ -5375,7 +5405,7 @@
           },
           "327159": {
             "key": "327159",
-            "url": "https://socolivep.cv/truc-tiep/central-norte-salta-vs-deportivo-moron-21-07-2026-0730/?blv=327159",
+            "url": "https://socolivep.cv/truc-tiep/central-norte-salta-vs-deportivo-moron-21-07-2026-0730?blv=327159",
             "blv": "COCA",
             "blv_id": "327159",
             "status": "pending",
@@ -5387,7 +5417,7 @@
           },
           "118206": {
             "key": "118206",
-            "url": "https://socolivep.cv/truc-tiep/central-norte-salta-vs-deportivo-moron-21-07-2026-0730/?blv=118206",
+            "url": "https://socolivep.cv/truc-tiep/central-norte-salta-vs-deportivo-moron-21-07-2026-0730?blv=118206",
             "blv": "TẠ BIÊN GIỚI",
             "blv_id": "118206",
             "status": "pending",
@@ -5415,19 +5445,19 @@
       "room_progress": {
         "414317": {
           "key": "414317",
-          "url": "https://socolivep.cv/truc-tiep/central-norte-salta-vs-deportivo-moron-21-07-2026-0730/?blv=414317",
+          "url": "https://socolivep.cv/truc-tiep/central-norte-salta-vs-deportivo-moron-21-07-2026-0730?blv=414317",
           "blv": "TOMMY",
           "blv_id": "414317",
           "status": "rate_limited",
           "attempts": 45,
-          "rate_limit_hits": 14,
-          "last_http_status": 200,
-          "last_stream_count": 1,
-          "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
+          "rate_limit_hits": 15,
+          "last_http_status": 429,
+          "last_stream_count": 0,
+          "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
         },
         "109053": {
           "key": "109053",
-          "url": "https://socolivep.cv/truc-tiep/central-norte-salta-vs-deportivo-moron-21-07-2026-0730/?blv=109053",
+          "url": "https://socolivep.cv/truc-tiep/central-norte-salta-vs-deportivo-moron-21-07-2026-0730?blv=109053",
           "blv": "PEWPEW",
           "blv_id": "109053",
           "status": "pending",
@@ -5439,7 +5469,7 @@
         },
         "327159": {
           "key": "327159",
-          "url": "https://socolivep.cv/truc-tiep/central-norte-salta-vs-deportivo-moron-21-07-2026-0730/?blv=327159",
+          "url": "https://socolivep.cv/truc-tiep/central-norte-salta-vs-deportivo-moron-21-07-2026-0730?blv=327159",
           "blv": "COCA",
           "blv_id": "327159",
           "status": "pending",
@@ -5451,7 +5481,7 @@
         },
         "118206": {
           "key": "118206",
-          "url": "https://socolivep.cv/truc-tiep/central-norte-salta-vs-deportivo-moron-21-07-2026-0730/?blv=118206",
+          "url": "https://socolivep.cv/truc-tiep/central-norte-salta-vs-deportivo-moron-21-07-2026-0730?blv=118206",
           "blv": "TẠ BIÊN GIỚI",
           "blv_id": "118206",
           "status": "pending",
@@ -5494,16 +5524,6 @@
         },
         {
           "url": "https://socolivep.cv/truc-tiep/chaco-for-ever-vs-ca-san-miguel-21-07-2026-0700?blv=557845",
-          "blv": "A TÚ",
-          "blv_id": "557845"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/chaco-for-ever-vs-ca-san-miguel-21-07-2026-0700/?blv=536185",
-          "blv": "A WIN",
-          "blv_id": "536185"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/chaco-for-ever-vs-ca-san-miguel-21-07-2026-0700/?blv=557845",
           "blv": "A TÚ",
           "blv_id": "557845"
         },
@@ -13681,6 +13701,60 @@
             "429 https://socolivep.cv/truc-tiep/chaco-for-ever-vs-ca-san-miguel-21-07-2026-0700?blv=536185",
             "401 https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/pat/a1e6437bbb5ef094/1784595573427/6dbcd91e2db3e58f4df1ddbd43a6fff88639737939d623c97d1ca0b72007bbe1/jpge8Ct3hRehqOy"
           ]
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/chaco-for-ever-vs-ca-san-miguel-21-07-2026-0700?blv=536185",
+          "blv": "A WIN",
+          "blv_id": "536185",
+          "streams": [],
+          "stream_sources": {},
+          "stream_first_seen": [],
+          "discovered_blv_ids": [],
+          "diagnostics": {
+            "url": "https://socolivep.cv/truc-tiep/chaco-for-ever-vs-ca-san-miguel-21-07-2026-0700?blv=536185",
+            "title": "Chờ một chút...",
+            "h1": "socolivep.cv",
+            "ready_state": "complete",
+            "visibility_state": "visible",
+            "hidden": false,
+            "video_count": 0,
+            "iframe_count": 0,
+            "body_sample": "socolivep.cv Thực hiện xác minh bảo mật Trang web này sử dụng dịch vụ bảo mật để chống bot độc hại. Trang này hiển thị trong khi trang web xác minh bạn không phải là bot. Ray ID: a1e64580efc889cc Hiệu suất và Tính bảo mật của Cloudflare Quyền riêng tư",
+            "harvest_rounds": 0,
+            "harvest_window_seconds": 0.619,
+            "main_status": 429,
+            "harvested_stream_count": 0,
+            "harvested_blv_ids": [],
+            "scan_mode": "browser-event",
+            "elapsed_seconds": 13.215
+          },
+          "http_probe": {
+            "enabled": false,
+            "status": null,
+            "elapsed_seconds": 0.0,
+            "error": ""
+          },
+          "errors": [
+            "console/error: Failed to load resource: the server responded with a status of 429 ()",
+            "console/warning: No available adapters.",
+            "console/warning: No available adapters.",
+            "console/warning: OTS parsing error: Size of decompressed WOFF 2.0 is less than compressed size",
+            "console/error: %c%d font-size:0;color:transparent NaN",
+            "console/error: %c%d font-size:0;color:transparent NaN",
+            "console/warning: %c%d font-size:0;color:transparent NaN",
+            "console/warning: %c%d font-size:0;color:transparent NaN",
+            "console/warning: [.WebGL-0x169c021a0e00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+            "console/warning: [.WebGL-0x169c021a0e00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+            "console/error: Failed to load resource: net::ERR_FAILED"
+          ],
+          "failed_requests": [
+            "fetch https://brunhild.challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/i/a1e64582e94ffc53/_PngDNmSxaSeUqFjxOHXEv8eL26288o1qOCTw7OTVfA-1784595656-1.2.1.1-ekLnGTNaeOYy5YgRKWzH6ijYe9VKwF84no45oP8kWz8huTfOy09B_0gDX6KM8V7X | net::ERR_NAME_NOT_RESOLVED",
+            "image https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/ci/a1e64582e94ffc53/1784595656447/rPrEsiPjl14KDFH | net::ERR_FAILED"
+          ],
+          "http_errors": [
+            "429 https://socolivep.cv/truc-tiep/chaco-for-ever-vs-ca-san-miguel-21-07-2026-0700?blv=536185",
+            "401 https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/pat/a1e64582e94ffc53/1784595656445/2e57a625cc8ae2e7c1965a8c0a3f98f86d02d37a86da92365c49c0e4343d6e7d/uXiGLeV-WnDM-Ka"
+          ]
         }
       ],
       "attempted_room_ids": [
@@ -13696,29 +13770,27 @@
         "room_queue_complete": false,
         "complete": false,
         "max_streams_per_blv": 2,
-        "total_explicit_blv_rooms": 4,
+        "total_explicit_blv_rooms": 2,
         "pending_room_keys": [
-          "536185",
-          "557845",
           "536185",
           "557845"
         ],
         "room_progress": {
           "536185": {
             "key": "536185",
-            "url": "https://socolivep.cv/truc-tiep/chaco-for-ever-vs-ca-san-miguel-21-07-2026-0700/?blv=536185",
+            "url": "https://socolivep.cv/truc-tiep/chaco-for-ever-vs-ca-san-miguel-21-07-2026-0700?blv=536185",
             "blv": "A WIN",
             "blv_id": "536185",
             "status": "rate_limited",
             "attempts": 65,
-            "rate_limit_hits": 32,
+            "rate_limit_hits": 33,
             "last_http_status": 429,
             "last_stream_count": 0,
             "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
           },
           "557845": {
             "key": "557845",
-            "url": "https://socolivep.cv/truc-tiep/chaco-for-ever-vs-ca-san-miguel-21-07-2026-0700/?blv=557845",
+            "url": "https://socolivep.cv/truc-tiep/chaco-for-ever-vs-ca-san-miguel-21-07-2026-0700?blv=557845",
             "blv": "A TÚ",
             "blv_id": "557845",
             "status": "pending",
@@ -13746,19 +13818,19 @@
       "room_progress": {
         "536185": {
           "key": "536185",
-          "url": "https://socolivep.cv/truc-tiep/chaco-for-ever-vs-ca-san-miguel-21-07-2026-0700/?blv=536185",
+          "url": "https://socolivep.cv/truc-tiep/chaco-for-ever-vs-ca-san-miguel-21-07-2026-0700?blv=536185",
           "blv": "A WIN",
           "blv_id": "536185",
           "status": "rate_limited",
           "attempts": 65,
-          "rate_limit_hits": 32,
+          "rate_limit_hits": 33,
           "last_http_status": 429,
           "last_stream_count": 0,
           "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
         },
         "557845": {
           "key": "557845",
-          "url": "https://socolivep.cv/truc-tiep/chaco-for-ever-vs-ca-san-miguel-21-07-2026-0700/?blv=557845",
+          "url": "https://socolivep.cv/truc-tiep/chaco-for-ever-vs-ca-san-miguel-21-07-2026-0700?blv=557845",
           "blv": "A TÚ",
           "blv_id": "557845",
           "status": "pending",
