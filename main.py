@@ -457,9 +457,13 @@ def pending_room_keys(
         ranked.sort()
         return [item[-1] for item in ranked]
 
-    explicit = ranked_keys(explicit_blv_rooms(match))
-    if explicit:
-        return explicit
+    explicit_rooms = explicit_blv_rooms(match)
+
+    # Khi đã có danh sách BLV cụ thể, URL tổng chỉ là fallback thu thập,
+    # không phải một BLV độc lập. Nếu tất cả BLV cụ thể đã terminal thì
+    # pending phải bằng 0, không trả thêm "__base__".
+    if explicit_rooms:
+        return ranked_keys(explicit_rooms)
 
     return ranked_keys(base_rooms(match))
 
@@ -4067,11 +4071,17 @@ def write_outputs(matches: list[dict[str, Any]]) -> tuple[int, int]:
 
         match_counted = False
         match_name = match_display_name(match)
-        scheduled = match_datetime_from_url(match["base_url"])
-        time_prefix = (
-            scheduled.strftime("[%H:%M] ")
+
+        # Ưu tiên scheduled_at đã lưu trong catalog; fallback sang ngày/giờ
+        # trong URL. V10.4 cũ chỉ format [%H:%M] nên mất ngày đá.
+        scheduled = catalog_match_scheduled_at(match)
+        schedule_prefix = (
+            scheduled.strftime("[%H:%M %d/%m] ")
             if scheduled
             else ""
+        )
+        scheduled_match_name = (
+            f"{schedule_prefix}{match_name}"
         )
 
         home_logo = escape_m3u(
@@ -4101,7 +4111,7 @@ def write_outputs(matches: list[dict[str, Any]]) -> tuple[int, int]:
             blv = clean_text(stream_item.get("blv", ""))
             room_url = stream_item.get("room_url") or match["base_url"]
 
-            display_name = f"{time_prefix}{match_name}"
+            display_name = scheduled_match_name
             if blv:
                 display_name += f" [BLV {blv}]"
             if len(streams) > 1:
@@ -4114,7 +4124,9 @@ def write_outputs(matches: list[dict[str, Any]]) -> tuple[int, int]:
                 f'tvg-logo="{standard_logo}"',
                 f'tvg-logo-home="{home_logo}"',
                 f'tvg-logo-away="{away_logo}"',
-                f'tvg-name="{escape_m3u(match_name)}"',
+                f'tvg-name="{escape_m3u(scheduled_match_name)}"',
+                f'tvg-date="{scheduled.strftime("%d/%m/%Y") if scheduled else ""}"',
+                f'tvg-time="{scheduled.strftime("%H:%M") if scheduled else ""}"',
             ]
 
             playlist.append(
@@ -4198,7 +4210,7 @@ def write_outputs(matches: list[dict[str, Any]]) -> tuple[int, int]:
                     "http_fetch_timeout_seconds": HTTP_FETCH_TIMEOUT_SECONDS,
                     "enable_cdp": ENABLE_CDP,
                     "stop_on_429": STOP_ON_429,
-                    "strategy": "v10.4-finite-two-pass-queue",
+                    "strategy": "v10.4.1-date-display-fix",
                     "state_schema_version": STATE_SCHEMA_VERSION,
                     "state_max_age_minutes": STATE_MAX_AGE_MINUTES,
                     "state_max_chain_runs": STATE_MAX_CHAIN_RUNS,
@@ -4230,7 +4242,7 @@ def write_outputs(matches: list[dict[str, Any]]) -> tuple[int, int]:
 # MAIN
 # ============================================================
 async def main() -> None:
-    print("🥷 SOCOLIVE STREAM SCANNER V10.4 - FINITE TWO-PASS QUEUE")
+    print("🥷 SOCOLIVE STREAM SCANNER V10.4.1 - DATE DISPLAY FIX")
     print(
         "ℹ️ Test riêng một URL:\n"
         '   python main.py "https://socolivem.cv/truc-tiep/.../?blv=..."'
