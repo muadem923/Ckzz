@@ -78,7 +78,13 @@ MAX_STREAMS_PER_MATCH = int(
 # Số trang BLV tối đa được mở cho cùng một trận trong MỘT workflow run.
 # Mỗi trang đều quét toàn bộ HTML/config, nên thường không cần mở đủ 10 trang.
 MAX_ROOMS_PER_MATCH = int(
-    os.getenv("SOCOLIVE_MAX_ROOMS_PER_MATCH", "2")
+    os.getenv("SOCOLIVE_MAX_ROOMS_PER_MATCH", "12")
+)
+
+# Ngân sách toàn cục bảo đảm một workflow không vượt thời gian.
+# Không có 429 thì 34 BLV thường được quét hết vòng một ngay trong một flow.
+GLOBAL_ROOM_BUDGET = int(
+    os.getenv("SOCOLIVE_GLOBAL_ROOM_BUDGET", "48")
 )
 
 # Giữ biến cũ để tương thích workflow cũ; V9 dừng theo coverage stream.
@@ -97,11 +103,11 @@ EMBEDDED_HARVEST_WAIT_SECONDS = float(
 
 # Một BLV tải HTTP 200 nhưng chưa sinh stream sẽ được thử lại ở runner khác.
 ROOM_EMPTY_MAX_ATTEMPTS = int(
-    os.getenv("SOCOLIVE_ROOM_EMPTY_MAX_ATTEMPTS", "3")
+    os.getenv("SOCOLIVE_ROOM_EMPTY_MAX_ATTEMPTS", "2")
 )
 
-# Mỗi BLV giữ tối đa hai nguồn. BLV mới có một nguồn sẽ mang trạng thái
-# "partial" và được runner sau mở lại để tìm nguồn thứ hai.
+# Mỗi BLV giữ tối đa hai nguồn, nhưng chỉ cần MỘT link hợp lệ là success.
+# Nguồn thứ hai là phần thưởng trong cùng phiên, không phải điều kiện hoàn tất.
 MAX_STREAMS_PER_BLV = int(
     os.getenv("SOCOLIVE_MAX_STREAMS_PER_BLV", "2")
 )
@@ -129,10 +135,10 @@ STATE_MAX_AGE_MINUTES = int(
 )
 
 STATE_MAX_CHAIN_RUNS = int(
-    os.getenv("SOCOLIVE_STATE_MAX_CHAIN_RUNS", "20")
+    os.getenv("SOCOLIVE_STATE_MAX_CHAIN_RUNS", "8")
 )
 STATE_MAX_NO_PROGRESS_RUNS = int(
-    os.getenv("SOCOLIVE_STATE_MAX_NO_PROGRESS_RUNS", "3")
+    os.getenv("SOCOLIVE_STATE_MAX_NO_PROGRESS_RUNS", "2")
 )
 
 # Khi bật, cứ còn BLV pending/partial/rate_limited thì tự gọi runner mới.
@@ -143,10 +149,10 @@ CHAIN_UNTIL_PENDING_EMPTY = (
 
 # Tự dừng nếu queue không đổi hoặc mọi runner chỉ gặp 429 liên tiếp.
 STATE_MAX_UNCHANGED_PENDING_RUNS = int(
-    os.getenv("SOCOLIVE_STATE_MAX_UNCHANGED_PENDING_RUNS", "3")
+    os.getenv("SOCOLIVE_STATE_MAX_UNCHANGED_PENDING_RUNS", "2")
 )
 STATE_MAX_RATE_LIMIT_ONLY_RUNS = int(
-    os.getenv("SOCOLIVE_STATE_MAX_RATE_LIMIT_ONLY_RUNS", "3")
+    os.getenv("SOCOLIVE_STATE_MAX_RATE_LIMIT_ONLY_RUNS", "2")
 )
 
 # Flow nối tiếp ưu tiên dùng queue trong state, không tải lại trang chủ.
@@ -165,7 +171,7 @@ TOKEN_EXPIRY_GRACE_SECONDS = int(
 # Đổi schema để reset state V10 cũ và cho phép quét lại từng BLV theo
 # mục tiêu tối đa hai nguồn.
 # vì V9 đã loại sai stream-ID không trùng BLV-ID.
-STATE_SCHEMA_VERSION = "v10.3-safe-chain-valid-streams"
+STATE_SCHEMA_VERSION = "v10.4-finite-two-pass-queue"
 
 # Giữ trận trong playlist sau giờ bắt đầu để các workflow sau không làm
 # biến mất link chỉ vì trận rơi khỏi khung quét -180 phút.
@@ -289,63 +295,82 @@ def room_queue_key(
 def ensure_room_progress(
     match: dict[str, Any],
 ) -> dict[str, dict[str, Any]]:
-    rooms = unique_rooms(
-        match.get("rooms", [])
-    )
-    progress = match.setdefault(
-        "room_progress",
-        {},
-    )
+    rooms = unique_rooms(match.get("rooms", []))
+    progress = match.setdefault("room_progress", {})
 
     for room in rooms:
         key = room_queue_key(room)
         existing = progress.get(key, {})
+        if not isinstance(existing, dict):
+            existing = {}
+
+        attempts_total = int(
+            existing.get(
+                "attempts_total",
+                existing.get("attempts", 0),
+            )
+            or 0
+        )
+        rate_limit_hits = int(
+            existing.get("rate_limit_hits", 0) or 0
+        )
+        ever_attempted = bool(
+            existing.get(
+                "ever_attempted",
+                attempts_total > 0 or rate_limit_hits > 0,
+            )
+        )
+        valid_stream_ever_found = bool(
+            existing.get(
+                "valid_stream_ever_found",
+                existing.get("status") == "success",
+            )
+        )
+
+        status = clean_text(
+            str(existing.get("status", "pending") or "pending")
+        )
+        # Trạng thái partial của bản cũ không còn tồn tại.
+        if status == "partial":
+            status = (
+                "success"
+                if valid_stream_ever_found
+                else "retry"
+            )
 
         progress[key] = {
             "key": key,
             "url": room.get("url", ""),
             "blv": room.get("blv", ""),
             "blv_id": room.get("blv_id", ""),
-            "status": existing.get(
-                "status",
-                "pending",
+            "status": status,
+            "attempts": attempts_total,
+            "attempts_total": attempts_total,
+            "ever_attempted": ever_attempted,
+            "valid_stream_ever_found":
+                valid_stream_ever_found,
+            "needs_token_refresh": bool(
+                existing.get("needs_token_refresh", False)
             ),
-            "attempts": int(
-                existing.get("attempts", 0)
-                or 0
-            ),
-            "rate_limit_hits": int(
-                existing.get(
-                    "rate_limit_hits",
-                    0,
-                )
-                or 0
-            ),
-            "last_http_status":
-                existing.get(
-                    "last_http_status"
-                ),
-            "last_stream_count": int(
-                existing.get(
-                    "last_stream_count",
-                    0,
-                )
-                or 0
-            ),
-            "last_error": clean_text(
+            "completion_reason": clean_text(
                 str(
-                    existing.get(
-                        "last_error",
-                        "",
-                    )
+                    existing.get("completion_reason", "")
                     or ""
                 )
+            ),
+            "rate_limit_hits": rate_limit_hits,
+            "last_http_status":
+                existing.get("last_http_status"),
+            "last_stream_count": int(
+                existing.get("last_stream_count", 0) or 0
+            ),
+            "last_error": clean_text(
+                str(existing.get("last_error", "") or "")
             ),
         }
 
     match["room_progress"] = progress
     return progress
-
 
 def explicit_blv_rooms(
     match: dict[str, Any],
@@ -378,9 +403,8 @@ def pending_room_keys(
 
     status_priority = {
         "pending": 0,
-        "partial": 1,
-        "retry": 2,
-        "rate_limited": 3,
+        "retry": 1,
+        "rate_limited": 2,
     }
 
     def ranked_keys(
@@ -400,10 +424,30 @@ def pending_room_keys(
             if status not in status_priority:
                 continue
 
+            attempts_total = int(
+                item.get(
+                    "attempts_total",
+                    item.get("attempts", 0),
+                )
+                or 0
+            )
+
+            # Phòng đã hết hai lượt phải chuyển terminal, không được nằm pending.
+            if (
+                status != "rate_limited"
+                and attempts_total >= ROOM_EMPTY_MAX_ATTEMPTS
+                and not item.get("valid_stream_ever_found")
+            ):
+                item["status"] = "exhausted"
+                item["completion_reason"] = (
+                    "no_valid_stream_after_max_attempts"
+                )
+                continue
+
             ranked.append(
                 (
                     status_priority[status],
-                    int(item.get("attempts", 0) or 0),
+                    attempts_total,
                     int(item.get("rate_limit_hits", 0) or 0),
                     order,
                     key,
@@ -413,14 +457,11 @@ def pending_room_keys(
         ranked.sort()
         return [item[-1] for item in ranked]
 
-    # BLV chưa thử luôn đứng trước partial/retry/rate_limited.
     explicit = ranked_keys(explicit_blv_rooms(match))
     if explicit:
         return explicit
 
-    # URL tổng chỉ là fallback cuối cùng.
     return ranked_keys(base_rooms(match))
-
 
 def room_queue_complete(
     match: dict[str, Any],
@@ -596,30 +637,55 @@ def prune_expired_streams(match: dict[str, Any]) -> int:
     for raw in match.get("streams", []):
         if not isinstance(raw, dict):
             continue
+
         item = enrich_stream_item(raw)
         if stream_item_is_expired(item, now):
             expired_room_keys.add(stream_queue_key(item))
             continue
+
         kept.append(item)
 
     removed = len(match.get("streams", [])) - len(kept)
     match["streams"] = kept
 
-    progress = match.get("room_progress", {})
+    progress = ensure_room_progress(match)
+
     for room_key in expired_room_keys:
         room_state = progress.get(room_key)
         if not isinstance(room_state, dict):
             continue
-        if not streams_for_room_key(match, room_key):
-            room_state["status"] = "retry"
-            room_state["attempts"] = 0
-            room_state["last_stream_count"] = 0
-            room_state["last_error"] = (
-                "Link ký số đã hết hạn; đưa BLV trở lại queue."
+
+        room_state["last_stream_count"] = len(
+            streams_for_room_key(match, room_key)
+        )
+        room_state["needs_token_refresh"] = True
+        room_state["last_error"] = (
+            "Token cũ đã hết hạn; giữ nguyên attempts_total "
+            "và trạng thái hoàn tất của BLV."
+        )
+
+        # BLV từng có link hợp lệ vẫn là success của queue hữu hạn.
+        # Refresh token không được chặn việc kết thúc chain.
+        if room_state.get("valid_stream_ever_found"):
+            room_state["status"] = "success"
+            room_state["completion_reason"] = (
+                "valid_stream_seen_earlier"
             )
+        else:
+            attempts_total = int(
+                room_state.get("attempts_total", 0) or 0
+            )
+            if attempts_total >= ROOM_EMPTY_MAX_ATTEMPTS:
+                room_state["status"] = "exhausted"
+                room_state["completion_reason"] = (
+                    "no_valid_stream_after_max_attempts"
+                )
+            elif room_state.get("ever_attempted"):
+                room_state["status"] = "retry"
+            else:
+                room_state["status"] = "pending"
 
     return removed
-
 
 def limit_streams_per_room(
     match: dict[str, Any],
@@ -711,16 +777,9 @@ def match_stream_goal(
 def match_coverage_complete(
     match: dict[str, Any],
 ) -> bool:
-    source_goal_reached = (
-        len(match.get("streams", []))
-        >= match_stream_goal(match)
-    )
-
-    return (
-        source_goal_reached
-        or room_queue_complete(match)
-    )
-
+    # Không được hoàn tất chỉ vì một số BLV tạo ra nhiều stream.
+    # Chỉ hoàn tất khi mọi BLV đều success hoặc exhausted.
+    return room_queue_complete(match)
 
 def update_match_coverage(
     match: dict[str, Any],
@@ -741,9 +800,7 @@ def update_match_coverage(
             len(match.get("streams", [])) >= goal,
         "room_queue_complete":
             room_queue_complete(match),
-        "complete":
-            len(match.get("streams", [])) >= goal
-            or room_queue_complete(match),
+        "complete": room_queue_complete(match),
         "max_streams_per_blv":
             MAX_STREAMS_PER_BLV,
         "total_explicit_blv_rooms": len(
@@ -752,6 +809,64 @@ def update_match_coverage(
         "pending_room_keys": pending_keys,
         "room_progress": progress,
     }
+
+
+def reconcile_room_progress(
+    match: dict[str, Any],
+) -> None:
+    """
+    Đồng bộ trạng thái queue với link hợp lệ và lịch sử hai lượt.
+
+    Một link hợp lệ là đủ success. Nguồn thứ hai không bắt buộc.
+    """
+    progress = ensure_room_progress(match)
+    candidate_rooms = (
+        explicit_blv_rooms(match)
+        or base_rooms(match)
+    )
+
+    for room in candidate_rooms:
+        key = room_queue_key(room)
+        state = progress.get(key, {})
+        valid_count = len(
+            streams_for_room_key(match, key)
+        )
+        attempts_total = int(
+            state.get(
+                "attempts_total",
+                state.get("attempts", 0),
+            )
+            or 0
+        )
+
+        state["attempts"] = attempts_total
+        state["attempts_total"] = attempts_total
+        state["last_stream_count"] = valid_count
+
+        if valid_count > 0:
+            state["status"] = "success"
+            state["valid_stream_ever_found"] = True
+            state["needs_token_refresh"] = False
+            state["completion_reason"] = "valid_stream"
+        elif state.get("valid_stream_ever_found"):
+            # Link đã hết hạn sau khi từng lấy thành công:
+            # không mở lại vô hạn trong completion chain.
+            state["status"] = "success"
+            state["needs_token_refresh"] = True
+            state["completion_reason"] = (
+                "valid_stream_seen_earlier"
+            )
+        elif attempts_total >= ROOM_EMPTY_MAX_ATTEMPTS:
+            state["status"] = "exhausted"
+            state["completion_reason"] = (
+                "no_valid_stream_after_max_attempts"
+            )
+        elif state.get("status") == "rate_limited":
+            pass
+        elif state.get("ever_attempted"):
+            state["status"] = "retry"
+        else:
+            state["status"] = "pending"
 
 
 def dedup_match_streams(
@@ -784,6 +899,7 @@ def dedup_match_streams(
 
     match["streams"] = list(best.values())
     limit_streams_per_room(match)
+    reconcile_room_progress(match)
     update_match_coverage(match)
 
 
@@ -2262,6 +2378,27 @@ async def scan_room(
     }
 
 
+class GlobalRoomBudget:
+    def __init__(self, limit: int) -> None:
+        self.limit = max(0, int(limit))
+        self.used = 0
+
+    def try_take(self) -> bool:
+        if self.limit <= 0:
+            self.used += 1
+            return True
+        if self.used >= self.limit:
+            return False
+        self.used += 1
+        return True
+
+    @property
+    def remaining(self) -> int:
+        if self.limit <= 0:
+            return 10**9
+        return max(0, self.limit - self.used)
+
+
 # ============================================================
 # QUÉT MỘT TRẬN
 # ============================================================
@@ -2270,6 +2407,7 @@ async def scan_match(
     match: dict[str, Any],
     semaphore: asyncio.Semaphore,
     circuit: RateLimitCircuit,
+    room_budget: GlobalRoomBudget,
 ) -> dict[str, Any]:
     async with semaphore:
         name = match_display_name(match)
@@ -2327,6 +2465,15 @@ async def scan_match(
                 )
                 break
 
+            if not room_budget.try_take():
+                match["run_budget_exhausted"] = True
+                print(
+                    f"      ⏹ Hết ngân sách toàn cục "
+                    f"{GLOBAL_ROOM_BUDGET} phòng — checkpoint runner sau.",
+                    flush=True,
+                )
+                break
+
             next_key = pending_keys[0]
             attempted_this_run.add(next_key)
             room = next(
@@ -2362,8 +2509,11 @@ async def scan_match(
                 f"   -> BLV queue {pages_opened}/"
                 f"{MAX_ROOMS_PER_MATCH}: "
                 f"{label}"
-                f" | attempts={progress['attempts']}"
-                f" | status={progress['status']}",
+                f" | attempts_total="
+                f"{progress.get('attempts_total', progress.get('attempts', 0))}"
+                f"/{ROOM_EMPTY_MAX_ATTEMPTS}"
+                f" | status={progress['status']}"
+                f" | global_left={room_budget.remaining}",
                 flush=True,
             )
 
@@ -2421,9 +2571,8 @@ async def scan_match(
             )
 
             if rate_limited:
-                progress["status"] = (
-                    "rate_limited"
-                )
+                progress["status"] = "rate_limited"
+                progress["ever_attempted"] = True
                 progress["rate_limit_hits"] += 1
                 progress["last_http_status"] = 429
                 progress["last_stream_count"] = 0
@@ -2440,10 +2589,16 @@ async def scan_match(
                 )
                 break
 
-            progress["attempts"] += 1
-            progress["last_http_status"] = (
-                main_status
-            )
+            progress["ever_attempted"] = True
+            progress["attempts_total"] = int(
+                progress.get(
+                    "attempts_total",
+                    progress.get("attempts", 0),
+                )
+                or 0
+            ) + 1
+            progress["attempts"] = progress["attempts_total"]
+            progress["last_http_status"] = main_status
             progress["last_stream_count"] = len(
                 room_result.get(
                     "streams",
@@ -2509,6 +2664,24 @@ async def scan_match(
                 or "URL tổng"
             )
             room_map = match_room_map(match)
+
+            raw_candidate_count = len(ordered_streams)
+            expired_candidate_count = sum(
+                1
+                for candidate in ordered_streams
+                if stream_item_is_expired(
+                    enrich_stream_item(
+                        {
+                            "url": candidate,
+                            "discovered_at":
+                                datetime.now(TIMEZONE).isoformat(),
+                        }
+                    )
+                )
+            )
+            valid_before_total = len(
+                match.get("streams", [])
+            )
 
             for stream_index, stream in enumerate(
                 ordered_streams,
@@ -2646,34 +2819,16 @@ async def scan_match(
 
             dedup_match_streams(match)
 
+            reconcile_room_progress(match)
+            progress = match["room_progress"][next_key]
             current_room_stream_count = len(
-                streams_for_room_key(
-                    match,
-                    next_key,
-                )
+                streams_for_room_key(match, next_key)
             )
-
-            if (
-                current_room_stream_count
-                >= MAX_STREAMS_PER_BLV
-            ):
-                progress["status"] = "success"
-            elif (
-                current_room_stream_count > 0
-                and progress["attempts"]
-                < ROOM_EMPTY_MAX_ATTEMPTS
-            ):
-                progress["status"] = "partial"
-            elif current_room_stream_count > 0:
-                # Đã thử đủ số lần nhưng BLV chỉ có một nguồn khả dụng.
-                progress["status"] = "success"
-            elif (
-                progress["attempts"]
-                >= ROOM_EMPTY_MAX_ATTEMPTS
-            ):
-                progress["status"] = "exhausted"
-            else:
-                progress["status"] = "retry"
+            valid_added_count = max(
+                0,
+                len(match.get("streams", []))
+                - valid_before_total,
+            )
 
             if (
                 room_result.get("streams")
@@ -2690,8 +2845,7 @@ async def scan_match(
                 in match["room_progress"].items()
                 if (
                     key != "__base__"
-                    and value.get("attempts", 0)
-                    > 0
+                    and value.get("ever_attempted")
                 )
             )
 
@@ -2700,8 +2854,12 @@ async def scan_match(
 
             print(
                 f"      ✅ BLV {label}: "
-                f"+{added} link"
+                f"ứng viên={raw_candidate_count}"
+                f" | hợp lệ mới=+{valid_added_count}"
+                f" | hết hạn={expired_candidate_count}"
                 f" | status={progress['status']}"
+                f" | attempts_total={progress.get('attempts_total', 0)}"
+                f"/{ROOM_EMPTY_MAX_ATTEMPTS}"
                 f" | nguồn BLV này="
                 f"{current_room_stream_count}/{MAX_STREAMS_PER_BLV}"
                 f" | tổng nguồn="
@@ -2729,6 +2887,7 @@ async def scan_match(
         match["run_completed_room_keys"] = sorted(
             completed_this_run
         )
+        match["run_global_budget_used"] = room_budget.used
 
         if match.get("streams"):
             print(
@@ -3131,25 +3290,9 @@ def newly_attempted_unique_room_count(
     same_target: bool,
 ) -> int:
     """
-    Đếm BLV được chạm tới lần đầu tiên trong chain hiện tại.
-
-    Không dùng tổng attempts vì retry cùng một BLV cũng làm attempts tăng.
+    Chỉ đếm chuyển đổi ever_attempted=False -> True.
+    Token hết hạn và retry không thể biến BLV cũ thành BLV mới.
     """
-    if not same_target:
-        return sum(
-            len(
-                set(
-                    str(key)
-                    for key in match.get(
-                        "run_attempted_room_keys",
-                        [],
-                    )
-                    if key
-                )
-            )
-            for match in matches
-        )
-
     previous_by_url = {
         canonical_match_url(
             str(item.get("base_url", "") or "")
@@ -3161,13 +3304,21 @@ def newly_attempted_unique_room_count(
     count = 0
 
     for match in matches:
-        base_url = canonical_match_url(
-            str(match.get("base_url", "") or "")
+        previous = (
+            previous_by_url.get(
+                canonical_match_url(
+                    str(match.get("base_url", "") or "")
+                ),
+                {},
+            )
+            if same_target
+            else {}
         )
-        previous = previous_by_url.get(base_url, {})
         previous_progress = previous.get("room_progress", {})
         if not isinstance(previous_progress, dict):
             previous_progress = {}
+
+        current_progress = ensure_room_progress(match)
 
         for room_key in set(
             str(key)
@@ -3177,20 +3328,26 @@ def newly_attempted_unique_room_count(
             )
             if key
         ):
+            current = current_progress.get(room_key, {})
             old = previous_progress.get(room_key, {})
             if not isinstance(old, dict):
                 old = {}
 
-            old_attempts = int(old.get("attempts", 0) or 0)
-            old_429_hits = int(
-                old.get("rate_limit_hits", 0) or 0
+            old_ever = bool(
+                old.get(
+                    "ever_attempted",
+                    int(old.get("attempts_total", old.get("attempts", 0)) or 0) > 0
+                    or int(old.get("rate_limit_hits", 0) or 0) > 0,
+                )
+            )
+            current_ever = bool(
+                current.get("ever_attempted")
             )
 
-            if old_attempts <= 0 and old_429_hits <= 0:
+            if current_ever and not old_ever:
                 count += 1
 
     return count
-
 
 def room_attempt_metric(
     matches: list[dict[str, Any]],
@@ -3210,6 +3367,57 @@ def room_attempt_metric(
             total += int(item.get("rate_limit_hits", 0) or 0)
     return total
 
+def queue_room_metrics(
+    matches: list[dict[str, Any]],
+    allowed_urls: set[str] | None = None,
+) -> dict[str, int]:
+    metrics = {
+        "total": 0,
+        "success": 0,
+        "exhausted": 0,
+        "pending": 0,
+        "retry": 0,
+        "rate_limited": 0,
+        "terminal": 0,
+        "attempts_total": 0,
+    }
+
+    for match in matches:
+        base_url = canonical_match_url(
+            str(match.get("base_url", "") or "")
+        )
+        if allowed_urls is not None and base_url not in allowed_urls:
+            continue
+
+        reconcile_room_progress(match)
+        progress = ensure_room_progress(match)
+        rooms = explicit_blv_rooms(match) or base_rooms(match)
+
+        for room in rooms:
+            state = progress.get(room_queue_key(room), {})
+            status = clean_text(
+                str(state.get("status", "pending") or "pending")
+            )
+            metrics["total"] += 1
+            metrics["attempts_total"] += int(
+                state.get(
+                    "attempts_total",
+                    state.get("attempts", 0),
+                )
+                or 0
+            )
+
+            if status in metrics:
+                metrics[status] += 1
+            else:
+                metrics["pending"] += 1
+
+            if status in {"success", "exhausted"}:
+                metrics["terminal"] += 1
+
+    return metrics
+
+
 def write_resume_state(
     matches: list[dict[str, Any]],
     circuit: RateLimitCircuit,
@@ -3217,6 +3425,8 @@ def write_resume_state(
 ) -> dict[str, Any]:
     for match in matches:
         dedup_match_streams(match)
+        reconcile_room_progress(match)
+        update_match_coverage(match)
 
     pending = build_pending_matches(matches)
     generated_at = datetime.now(TIMEZONE).isoformat()
@@ -3229,25 +3439,27 @@ def write_resume_state(
         if match.get("base_url")
     }
 
-    completed_count = sum(
-        1 for match in matches if match.get("streams")
-    )
-    coverage_complete_count = sum(
-        1
-        for match in matches
-        if match_coverage_complete(match)
+    previous_matches = previous_state.get("matches", [])
+    previous_target_urls = {
+        canonical_match_url(str(url))
+        for url in previous_state.get("target_base_urls", [])
+        if url
+    }
+    state_is_fresh = bool(previous_state.get("_state_is_fresh"))
+    same_target = bool(
+        state_is_fresh
+        and previous_state.get("_state_schema_matches")
+        and previous_target_urls
+        and previous_target_urls == current_urls
+        and not RESET_CHAIN_GUARD
     )
 
-    current_streams = valid_stream_map(
-        matches,
-        current_urls,
-    )
-    previous_matches = previous_state.get("matches", [])
+    # Playlist progress is informative only; it no longer controls queue completion.
+    current_streams = valid_stream_map(matches, current_urls)
     previous_streams = valid_stream_map(
         previous_matches,
         current_urls,
     )
-
     new_link_count = len(
         set(current_streams) - set(previous_streams)
     )
@@ -3264,18 +3476,35 @@ def write_resume_state(
     progress_count = new_link_count + refreshed_link_count
     total_stream_count = len(current_streams)
 
-    previous_target_urls = {
-        canonical_match_url(str(url))
-        for url in previous_state.get("target_base_urls", [])
-        if url
-    }
-    state_is_fresh = bool(previous_state.get("_state_is_fresh"))
-    same_target = bool(
-        state_is_fresh
-        and previous_state.get("_state_schema_matches")
-        and previous_target_urls
-        and previous_target_urls == current_urls
-        and not RESET_CHAIN_GUARD
+    current_queue = queue_room_metrics(matches, current_urls)
+    previous_queue = (
+        queue_room_metrics(previous_matches, current_urls)
+        if same_target
+        else {
+            "total": 0,
+            "success": 0,
+            "exhausted": 0,
+            "pending": 0,
+            "retry": 0,
+            "rate_limited": 0,
+            "terminal": 0,
+            "attempts_total": 0,
+        }
+    )
+
+    terminal_progress_count = max(
+        0,
+        current_queue["terminal"]
+        - previous_queue["terminal"],
+    )
+    newly_attempted_count = newly_attempted_unique_room_count(
+        matches,
+        previous_matches,
+        same_target,
+    )
+    queue_progress_count = (
+        terminal_progress_count
+        + newly_attempted_count
     )
 
     previous_chain_runs = (
@@ -3284,13 +3513,14 @@ def write_resume_state(
     )
     chain_runs = previous_chain_runs + 1
 
-    previous_no_progress = (
-        int(previous_state.get("no_progress_runs", 0))
+    previous_no_queue_progress = (
+        int(previous_state.get("no_queue_progress_runs", 0))
         if same_target else 0
     )
-    no_progress_runs = (
-        0 if progress_count > 0
-        else previous_no_progress + 1
+    no_queue_progress_runs = (
+        0
+        if queue_progress_count > 0
+        else previous_no_queue_progress + 1
     )
 
     fingerprint = pending_fingerprint(pending)
@@ -3302,28 +3532,14 @@ def write_resume_state(
         int(previous_state.get("unchanged_pending_runs", 0))
         if same_target else 0
     )
-
-    current_attempt_metric = room_attempt_metric(
-        matches,
-        current_urls,
-    )
-    previous_attempt_metric = (
-        room_attempt_metric(
-            previous_matches,
-            current_urls,
+    unchanged_pending_runs = (
+        previous_unchanged + 1
+        if (
+            pending
+            and queue_progress_count == 0
+            and fingerprint == previous_fingerprint
         )
-        if same_target
         else 0
-    )
-    attempt_metric_delta = max(
-        0,
-        current_attempt_metric - previous_attempt_metric,
-    )
-
-    newly_attempted_count = newly_attempted_unique_room_count(
-        matches,
-        previous_matches,
-        same_target,
     )
 
     run_attempted_count = sum(
@@ -3334,30 +3550,11 @@ def write_resume_state(
         len(set(match.get("run_rate_limited_room_keys", [])))
         for match in matches
     )
-
-    pending_state_changed = bool(
-        not same_target
-        or fingerprint != previous_fingerprint
-    )
-    real_progress_for_fingerprint = bool(
-        progress_count > 0
-        or newly_attempted_count > 0
-        or pending_state_changed
-    )
-
-    if not pending:
-        unchanged_pending_runs = 0
-    elif real_progress_for_fingerprint:
-        unchanged_pending_runs = 0
-    elif fingerprint == previous_fingerprint:
-        unchanged_pending_runs = previous_unchanged + 1
-    else:
-        unchanged_pending_runs = 0
     rate_limit_only_run = bool(
         circuit.triggered.is_set()
-        and progress_count == 0
         and run_attempted_count > 0
         and run_rate_limited_count >= run_attempted_count
+        and queue_progress_count == 0
     )
     previous_rate_limit_only = (
         int(previous_state.get("rate_limit_only_runs", 0))
@@ -3373,51 +3570,52 @@ def write_resume_state(
         len(item.get("pending_room_keys", []))
         for item in pending
     )
+    completed_count = sum(
+        1 for match in matches if match.get("streams")
+    )
+    coverage_complete_count = sum(
+        1
+        for match in matches
+        if match_coverage_complete(match)
+    )
 
     within_chain_limit = (
         STATE_MAX_CHAIN_RUNS <= 0
         or chain_runs < STATE_MAX_CHAIN_RUNS
     )
-    within_no_progress_limit = (
+    within_queue_progress_limit = (
         STATE_MAX_NO_PROGRESS_RUNS <= 0
-        or no_progress_runs < STATE_MAX_NO_PROGRESS_RUNS
+        or no_queue_progress_runs
+        < STATE_MAX_NO_PROGRESS_RUNS
     )
     within_unchanged_limit = (
         STATE_MAX_UNCHANGED_PENDING_RUNS <= 0
         or unchanged_pending_runs
         < STATE_MAX_UNCHANGED_PENDING_RUNS
     )
-    within_rate_limit_only_limit = (
+    within_rate_limit_limit = (
         STATE_MAX_RATE_LIMIT_ONLY_RUNS <= 0
         or rate_limit_only_runs
         < STATE_MAX_RATE_LIMIT_ONLY_RUNS
     )
 
-    # Không dừng ngay chỉ vì một run chưa lấy được link hợp lệ.
-    # Còn pending thì tiếp tục cho đến khi một stall guard thực sự đạt ngưỡng.
-    useful_activity = bool(
-        progress_count > 0
-        or newly_attempted_count > 0
-        or run_attempted_count > 0
-        or circuit.triggered.is_set()
-    )
     dispatch_next = bool(
         has_pending
         and within_chain_limit
-        and within_no_progress_limit
+        and within_queue_progress_limit
         and within_unchanged_limit
-        and within_rate_limit_only_limit
+        and within_rate_limit_limit
     )
 
     if not has_pending:
         stop_reason = "complete"
     elif not within_chain_limit:
         stop_reason = "max_chain_runs"
-    elif not within_no_progress_limit:
-        stop_reason = "stalled_no_valid_link_progress"
+    elif not within_queue_progress_limit:
+        stop_reason = "stalled_no_queue_progress"
     elif not within_unchanged_limit:
-        stop_reason = "stalled_pending_fingerprint_unchanged"
-    elif not within_rate_limit_only_limit:
+        stop_reason = "stalled_pending_unchanged"
+    elif not within_rate_limit_limit:
         stop_reason = "stalled_rate_limit_only"
     else:
         stop_reason = ""
@@ -3435,16 +3633,18 @@ def write_resume_state(
         "progress_count": progress_count,
         "new_link_count": new_link_count,
         "refreshed_link_count": refreshed_link_count,
+        "queue_progress_count": queue_progress_count,
+        "terminal_progress_count": terminal_progress_count,
         "newly_attempted_count": newly_attempted_count,
-        "attempt_metric_delta": attempt_metric_delta,
-        "pending_state_changed": pending_state_changed,
-        "real_progress_for_fingerprint":
-            real_progress_for_fingerprint,
-        "run_attempted_count": run_attempted_count,
-        "run_rate_limited_count": run_rate_limited_count,
-        "useful_activity": useful_activity,
+        "queue_total_rooms": current_queue["total"],
+        "queue_success_rooms": current_queue["success"],
+        "queue_exhausted_rooms": current_queue["exhausted"],
+        "queue_terminal_rooms": current_queue["terminal"],
+        "queue_attempts_total": current_queue["attempts_total"],
         "chain_runs": chain_runs,
-        "no_progress_runs": no_progress_runs,
+        # Giữ field cũ cho workflow/log tương thích.
+        "no_progress_runs": no_queue_progress_runs,
+        "no_queue_progress_runs": no_queue_progress_runs,
         "unchanged_pending_runs": unchanged_pending_runs,
         "rate_limit_only_runs": rate_limit_only_runs,
         "rate_limit_only_run": rate_limit_only_run,
@@ -3452,6 +3652,14 @@ def write_resume_state(
         "stop_reason": stop_reason,
         "rate_limited": circuit.triggered.is_set(),
         "rate_limit_url": circuit.first_url,
+        "global_room_budget": GLOBAL_ROOM_BUDGET,
+        "global_room_budget_used": max(
+            (
+                int(match.get("run_global_budget_used", 0) or 0)
+                for match in matches
+            ),
+            default=0,
+        ),
     }
 
     state_payload = {
@@ -3483,14 +3691,22 @@ def write_resume_state(
     )
 
     print(
-        f"📈 Tiến triển hợp lệ: +{new_link_count} link mới"
+        f"📈 Playlist: +{new_link_count} link mới"
         f" | +{refreshed_link_count} token mới"
-        f" | tổng hợp lệ={total_stream_count}"
-        f" | pending={len(pending)} trận/{pending_room_count} BLV",
+        f" | tổng hợp lệ={total_stream_count}",
         flush=True,
     )
     print(
-        f"🛡️ Stall guard: no-progress={no_progress_runs}/"
+        f"🏁 Queue hữu hạn: terminal +{terminal_progress_count}"
+        f" | BLV chạm lần đầu +{newly_attempted_count}"
+        f" | success={current_queue['success']}"
+        f" | exhausted={current_queue['exhausted']}"
+        f" | terminal={current_queue['terminal']}/{current_queue['total']}"
+        f" | pending={pending_room_count}",
+        flush=True,
+    )
+    print(
+        f"🛡️ Guard: no-queue-progress={no_queue_progress_runs}/"
         f"{STATE_MAX_NO_PROGRESS_RUNS}"
         f" | pending-không-đổi={unchanged_pending_runs}/"
         f"{STATE_MAX_UNCHANGED_PENDING_RUNS}"
@@ -3499,31 +3715,10 @@ def write_resume_state(
         f" | chain={chain_runs}/{STATE_MAX_CHAIN_RUNS}",
         flush=True,
     )
-    print(
-        f"🧭 Run activity: attempted={run_attempted_count}"
-        f" | BLV-mới={newly_attempted_count}"
-        f" | attempt-delta={attempt_metric_delta}"
-        f" | pending-state-changed={pending_state_changed}"
-        f" | rate-limited={run_rate_limited_count}"
-        f" | useful={useful_activity}",
-        flush=True,
-    )
-    if progress_count > 0 and unchanged_pending_runs == 0:
-        print(
-            "✅ Có link/token hợp lệ mới — đã reset "
-            "pending-không-đổi về 0.",
-            flush=True,
-        )
 
     if dispatch_next:
-        if progress_count == 0:
-            print(
-                "🔄 Run chưa có link/token hợp lệ mới, "
-                "nhưng stall guard chưa đủ ngưỡng — vẫn gọi runner kế tiếp.",
-                flush=True,
-            )
         print(
-            "🚀 Còn BLV thiếu và chưa chạm stall guard — gọi runner mới.",
+            "🚀 Queue còn phòng chưa terminal — gọi runner kế tiếp.",
             flush=True,
         )
     elif pending:
@@ -3532,7 +3727,10 @@ def write_resume_state(
             flush=True,
         )
     else:
-        print("✅ Không còn BLV chờ quét.", flush=True)
+        print(
+            "✅ Toàn bộ BLV đã success hoặc exhausted.",
+            flush=True,
+        )
 
     return state_payload
 
@@ -3962,6 +4160,8 @@ def write_outputs(matches: list[dict[str, Any]]) -> tuple[int, int]:
                     "room_wait_seconds": ROOM_WAIT_SECONDS,
                     "max_rooms_per_match_per_run":
                         MAX_ROOMS_PER_MATCH,
+                    "global_room_budget":
+                        GLOBAL_ROOM_BUDGET,
                     "max_streams_per_match":
                         MAX_STREAMS_PER_MATCH,
                     "embedded_harvest_wait_seconds":
@@ -3998,7 +4198,7 @@ def write_outputs(matches: list[dict[str, Any]]) -> tuple[int, int]:
                     "http_fetch_timeout_seconds": HTTP_FETCH_TIMEOUT_SECONDS,
                     "enable_cdp": ENABLE_CDP,
                     "stop_on_429": STOP_ON_429,
-                    "strategy": "v10.3-safe-chain-valid-streams",
+                    "strategy": "v10.4-finite-two-pass-queue",
                     "state_schema_version": STATE_SCHEMA_VERSION,
                     "state_max_age_minutes": STATE_MAX_AGE_MINUTES,
                     "state_max_chain_runs": STATE_MAX_CHAIN_RUNS,
@@ -4030,7 +4230,7 @@ def write_outputs(matches: list[dict[str, Any]]) -> tuple[int, int]:
 # MAIN
 # ============================================================
 async def main() -> None:
-    print("🥷 SOCOLIVE STREAM SCANNER V10.3.2 - PROGRESS FINGERPRINT FIX")
+    print("🥷 SOCOLIVE STREAM SCANNER V10.4 - FINITE TWO-PASS QUEUE")
     print(
         "ℹ️ Test riêng một URL:\n"
         '   python main.py "https://socolivem.cv/truc-tiep/.../?blv=..."'
@@ -4230,6 +4430,7 @@ async def main() -> None:
 
         semaphore = asyncio.Semaphore(MATCH_CONCURRENCY)
         circuit = RateLimitCircuit()
+        room_budget = GlobalRoomBudget(GLOBAL_ROOM_BUDGET)
 
         to_scan = [
             match
@@ -4250,6 +4451,7 @@ async def main() -> None:
                     match,
                     semaphore,
                     circuit,
+                    room_budget,
                 )
                 for match in to_scan
             ]
