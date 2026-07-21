@@ -6650,7 +6650,7 @@
         "is_expired": false
       }
     ],
-    "catalog_last_seen_at": "2026-07-22T01:04:00.503771+07:00",
+    "catalog_last_seen_at": "2026-07-22T02:02:19.480305+07:00",
     "catalog_updated_at": "2026-07-21T23:03:11.390776+07:00"
   },
   {
@@ -7418,9 +7418,8 @@
       "602153"
     ],
     "coverage": {
-      "found_streams": 2,
+      "found_streams": 1,
       "found_blv_ids": [
-        "491873",
         "602153"
       ],
       "goal": 12,
@@ -7458,12 +7457,12 @@
           "attempts_total": 1,
           "ever_attempted": true,
           "valid_stream_ever_found": true,
-          "needs_token_refresh": false,
-          "completion_reason": "valid_stream",
+          "needs_token_refresh": true,
+          "completion_reason": "valid_stream_seen_earlier",
           "rate_limit_hits": 0,
           "last_http_status": 200,
-          "last_stream_count": 1,
-          "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
+          "last_stream_count": 0,
+          "last_error": "Token cũ đã hết hạn; giữ nguyên attempts_total và trạng thái hoàn tất của BLV."
         },
         "602153": {
           "key": "602153",
@@ -7581,12 +7580,12 @@
         "attempts_total": 1,
         "ever_attempted": true,
         "valid_stream_ever_found": true,
-        "needs_token_refresh": false,
-        "completion_reason": "valid_stream",
+        "needs_token_refresh": true,
+        "completion_reason": "valid_stream_seen_earlier",
         "rate_limit_hits": 0,
         "last_http_status": 200,
-        "last_stream_count": 1,
-        "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
+        "last_stream_count": 0,
+        "last_error": "Token cũ đã hết hạn; giữ nguyên attempts_total và trạng thái hoàn tất của BLV."
       },
       "602153": {
         "key": "602153",
@@ -7686,25 +7685,6 @@
     "run_global_budget_used": 2,
     "streams": [
       {
-        "url": "https://pull.niur.live/live/stream-491873_lhd.m3u8?txSecret=c58b8d86dffaeb728df521cc046206ee&txTime=6a5fbcad",
-        "queue_room_key": "491873",
-        "room_url": "https://socolivep.cv/truc-tiep/fenerbahce-vs-gornik-zabrze-22-07-2026-0100?blv=491873",
-        "blv": "VIP",
-        "blv_id": "491873",
-        "source_id": "491873",
-        "source_provenance": [
-          "final-no-stream-scan",
-          "harvest-final"
-        ],
-        "source_confidence": "embedded",
-        "mapping_mode": "exact-room-id",
-        "discovered_from_room_url": "https://socolivep.cv/truc-tiep/fenerbahce-vs-gornik-zabrze-22-07-2026-0100?blv=491873",
-        "discovered_from_blv": "VIP",
-        "discovered_at": "2026-07-21T21:02:54.526728+07:00",
-        "valid_until": "2026-07-22T01:38:37+07:00",
-        "is_expired": false
-      },
-      {
         "url": "https://pull.niur.live/live/stream-602153_lhd.m3u8?txSecret=7625ff1e58da55f64eaed9cd06d15af6&txTime=6a5fc99a",
         "queue_room_key": "602153",
         "room_url": "https://socolivep.cv/truc-tiep/fenerbahce-vs-gornik-zabrze-22-07-2026-0100?blv=602153",
@@ -7724,7 +7704,7 @@
         "is_expired": false
       }
     ],
-    "catalog_last_seen_at": "2026-07-22T01:04:00.503771+07:00",
+    "catalog_last_seen_at": "2026-07-22T02:02:19.480305+07:00",
     "catalog_updated_at": "2026-07-21T21:04:01.344150+07:00"
   },
   {
@@ -9110,7 +9090,7 @@
         "is_expired": false
       }
     ],
-    "catalog_last_seen_at": "2026-07-22T01:04:00.503771+07:00",
+    "catalog_last_seen_at": "2026-07-22T02:02:19.480305+07:00",
     "catalog_updated_at": "2026-07-21T23:03:11.390776+07:00"
   },
   {
