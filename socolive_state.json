@@ -1,36 +1,36 @@
 {
-  "generated_at": "2026-07-22T01:02:29.069310+07:00",
+  "generated_at": "2026-07-22T01:04:00.482465+07:00",
   "state_schema_version": "v10.4-finite-two-pass-queue",
-  "dispatch_next": true,
-  "pending_count": 1,
-  "pending_room_count": 2,
+  "dispatch_next": false,
+  "pending_count": 0,
+  "pending_room_count": 0,
   "completed_count": 6,
-  "coverage_complete_count": 12,
+  "coverage_complete_count": 13,
   "total_match_count": 13,
   "total_stream_count": 7,
-  "progress_count": 2,
-  "new_link_count": 2,
+  "progress_count": 0,
+  "new_link_count": 0,
   "refreshed_link_count": 0,
-  "queue_progress_count": 59,
-  "terminal_progress_count": 55,
-  "newly_attempted_count": 4,
+  "queue_progress_count": 2,
+  "terminal_progress_count": 2,
+  "newly_attempted_count": 0,
   "queue_total_rooms": 57,
   "queue_success_rooms": 34,
-  "queue_exhausted_rooms": 21,
-  "queue_terminal_rooms": 55,
-  "queue_attempts_total": 78,
-  "chain_runs": 1,
+  "queue_exhausted_rooms": 23,
+  "queue_terminal_rooms": 57,
+  "queue_attempts_total": 80,
+  "chain_runs": 2,
   "no_progress_runs": 0,
   "no_queue_progress_runs": 0,
   "unchanged_pending_runs": 0,
   "rate_limit_only_runs": 0,
   "rate_limit_only_run": false,
-  "pending_fingerprint": "a69d0da4c37fbf55ea97225b8c69f24cfae3f9dee97831084794843930f0ac36",
-  "stop_reason": "",
+  "pending_fingerprint": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "stop_reason": "complete",
   "rate_limited": false,
   "rate_limit_url": "",
   "global_room_budget": 48,
-  "global_room_budget_used": 4,
+  "global_room_budget_used": 2,
   "target_base_urls": [
     "https://socolivep.cv/truc-tiep/aarhus-agf-vs-lech-poznan-22-07-2026-0000/",
     "https://socolivep.cv/truc-tiep/ararat-armenia-fc-vs-shamrock-rovers-21-07-2026-2300/",
@@ -46,10 +46,825 @@
     "https://socolivep.cv/truc-tiep/thun-vs-dinamo-zagreb-22-07-2026-0100/",
     "https://socolivep.cv/truc-tiep/vikingur-reykjavik-vs-hapoel-beer-sheva-22-07-2026-0200/"
   ],
-  "pending_base_urls": [
-    "https://socolivep.cv/truc-tiep/nacional-montevideo-vs-club-atletico-tigre-22-07-2026-0500/"
-  ],
+  "pending_base_urls": [],
   "matches": [
+    {
+      "base_url": "https://socolivep.cv/truc-tiep/nacional-montevideo-vs-club-atletico-tigre-22-07-2026-0500/",
+      "raw_title": "Trực tiếp bóng đá Socolive Nacional Montevideo vs Club Atletico Tigre lúc 05:00 ngày 22/07/2026",
+      "home_team": "Nacional Montevideo",
+      "away_team": "Club Atletico Tigre",
+      "home_logo": "https://sta.vnres.co/file/common/20260719/bf14b1209792494d3dfaa2967d8bebb3.png",
+      "away_logo": "https://sta.vnres.co/file/common/20260719/0963717c1ca869b15471be6df3d2f8fe.png",
+      "time_text": "05:00",
+      "date_text": "22/07",
+      "status": "",
+      "card_text": "CON CSA 05:00 22/07 Nacional Montevideo VS XEM NGAY Club Atletico Tigre A TINH YONE COZY CHIVAS",
+      "rooms": [
+        {
+          "url": "https://socolivep.cv/truc-tiep/nacional-montevideo-vs-club-atletico-tigre-22-07-2026-0500?blv=598119",
+          "blv": "A TINH",
+          "blv_id": "598119"
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/nacional-montevideo-vs-club-atletico-tigre-22-07-2026-0500?blv=372746",
+          "blv": "YONE",
+          "blv_id": "372746"
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/nacional-montevideo-vs-club-atletico-tigre-22-07-2026-0500?blv=531989",
+          "blv": "COZY",
+          "blv_id": "531989"
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/nacional-montevideo-vs-club-atletico-tigre-22-07-2026-0500?blv=485739",
+          "blv": "CHIVAS",
+          "blv_id": "485739"
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/nacional-montevideo-vs-club-atletico-tigre-22-07-2026-0500",
+          "blv": "XEM NGAY",
+          "blv_id": ""
+        }
+      ],
+      "match_name": "Nacional Montevideo vs Club Atletico Tigre",
+      "scheduled_at": "2026-07-22T05:00:00+07:00",
+      "streams": [
+        {
+          "url": "https://pull.niur.live/live/stream-598119_lhd.m3u8?txSecret=b1ea907592b0d08782d13dfc36284e5a&txTime=6a5fb933",
+          "queue_room_key": "598119",
+          "room_url": "https://socolivep.cv/truc-tiep/nacional-montevideo-vs-club-atletico-tigre-22-07-2026-0500?blv=598119",
+          "blv": "A TINH",
+          "blv_id": "598119",
+          "source_id": "598119",
+          "source_provenance": [
+            "final-no-stream-scan",
+            "harvest-final"
+          ],
+          "source_confidence": "embedded",
+          "mapping_mode": "exact-room-id",
+          "discovered_from_room_url": "https://socolivep.cv/truc-tiep/nacional-montevideo-vs-club-atletico-tigre-22-07-2026-0500?blv=598119",
+          "discovered_from_blv": "A TINH",
+          "discovered_at": "2026-07-22T01:01:38.619169+07:00",
+          "valid_until": "2026-07-22T01:23:47+07:00",
+          "is_expired": false
+        },
+        {
+          "url": "https://pull.niur.live/live/stream-485739_lhd.m3u8?txSecret=b9f039123e46261bb470dbc2a6b07437&txTime=6a5fd565",
+          "queue_room_key": "485739",
+          "room_url": "https://socolivep.cv/truc-tiep/nacional-montevideo-vs-club-atletico-tigre-22-07-2026-0500?blv=485739",
+          "blv": "CHIVAS",
+          "blv_id": "485739",
+          "source_id": "485739",
+          "source_provenance": [
+            "final-no-stream-scan",
+            "harvest-final"
+          ],
+          "source_confidence": "embedded",
+          "mapping_mode": "exact-room-id",
+          "discovered_from_room_url": "https://socolivep.cv/truc-tiep/nacional-montevideo-vs-club-atletico-tigre-22-07-2026-0500?blv=485739",
+          "discovered_from_blv": "CHIVAS",
+          "discovered_at": "2026-07-22T01:02:27.040785+07:00",
+          "valid_until": "2026-07-22T03:24:05+07:00",
+          "is_expired": false
+        }
+      ],
+      "room_results": [
+        {
+          "url": "https://socolivep.cv/truc-tiep/nacional-montevideo-vs-club-atletico-tigre-22-07-2026-0500?blv=598119",
+          "blv": "A TINH",
+          "blv_id": "598119",
+          "streams": [
+            "https://pull.niur.live/live/stream-598119_lhd.m3u8?txSecret=b1ea907592b0d08782d13dfc36284e5a&txTime=6a5fb933"
+          ],
+          "stream_sources": {
+            "https://pull.niur.live/live/stream-598119_lhd.m3u8?txSecret=b1ea907592b0d08782d13dfc36284e5a&txTime=6a5fb933": [
+              "final-no-stream-scan",
+              "harvest-final"
+            ]
+          },
+          "stream_first_seen": [
+            "https://pull.niur.live/live/stream-598119_lhd.m3u8?txSecret=b1ea907592b0d08782d13dfc36284e5a&txTime=6a5fb933"
+          ],
+          "discovered_blv_ids": [
+            "598119"
+          ],
+          "diagnostics": {
+            "url": "https://socolivep.cv/truc-tiep/nacional-montevideo-vs-club-atletico-tigre-22-07-2026-0500/?blv=598119",
+            "title": "Xem trực tiếp bóng đá Nacional Montevideo vs Club Atletico Tigre | 05:00 ngày 22/07/2026",
+            "h1": "Trực tiếp bóng đá Socolive Nacional Montevideo vs Club Atletico Tigre lúc 05:00 ngày 22/07/2026",
+            "ready_state": "complete",
+            "visibility_state": "visible",
+            "hidden": false,
+            "video_count": 0,
+            "iframe_count": 0,
+            "body_sample": "Skip to content Socolive Bảng xếp hạng Lịch thi đấu Kết quả bóng đá Tin thể thao Trực tiếp bóng đá Socolive Nacional Montevideo vs Club Atletico Tigre lúc 05:00 ngày 22/07/2026 CON CSA Nacional Montevideo 05:00 22/07 Club Atletico Tigre Trận đấu sẽ bắt đầu sau Ngày0 : Giờ3 : Phút58 : Giây21 Trận đấu chưa bắt đầu A TINH YONE COZY CHIVAS Chat Thống kê Đội hình Diễn Biến Bảng XH \" \" Xóa 😀 😁 😃 😄 😅 😆 😇 😉 😊 🙂 😋 😍 😘 😗 😙 😚 😜 😝 😛 😎 🙄 😳 😡 😕 😫 😤 😨 😥 😪 😓 😵 😲 🤧 😷 🤒 🤕 😴 💤 👏 🤙 👍 👎 👊 ✊ ✌ 👌 ✋ 🤚 💪 🤝 👈 👉 🖕 🖐 👄 👂 👀 🎅 🌞 🌙 ⭐ ⚡ 🔥 ❄️ ⚽ 🏀 🏈 ⚾ 🎁 🎉 ✒️ 📝 ❤️ 💛 💚 🆚 💬 🕐 Vô hiệu hóa tất cả Vô hiệu hóa quà tặng Tắt lời chào Đăng nhập để cùng chat nhé Gửi Tỷ lệ kèo Cược Châu Á Chủ Chấp Khách Cược Châu Âu Chủ Hòa Khách Tài xỉu Tài Tỷ lệ kèo Xỉu Kèo góc Tài Tỷ lệ kèo Xỉu Mô phỏng trận đấu Thống kê trận đấu UEFA CL 01:00 22/07 Fenerbahce VS null null null - null Sắp diễn ra Xem ngay Gornik Zabrze MESSI VIP QUỐC KHÁNH HẢI THANH NGƯỜI CÁ LOKA UEFA CL 01:00 22/07 Thun VS null null null - null Sắp diễn ra Xem ngay Dinamo Zagreb ĐỖ TÚ TÀI ANH TÀI A TÚ XUÂN TÓC ĐỎ UEFA CL 00:00 22/07 Aarhus AGF VS null null null - null Sắp diễn ra Xem ngay Lech Poznan PEWPE",
+            "harvest_rounds": 0,
+            "harvest_window_seconds": 0.633,
+            "main_status": 200,
+            "harvested_stream_count": 1,
+            "harvested_blv_ids": [
+              "598119"
+            ],
+            "scan_mode": "browser-event",
+            "elapsed_seconds": 14.261
+          },
+          "http_probe": {
+            "enabled": false,
+            "status": null,
+            "elapsed_seconds": 0.0,
+            "error": ""
+          },
+          "errors": [
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED"
+          ],
+          "failed_requests": [
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/main.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/customize.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/auth.css?ver=670 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat.css?ver=138 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat(1).css?ver=385 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/toast.css?ver=726 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/themes/flatsome/assets/css/flatsome.css?ver=3.18.2 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/themes/flatsome-child/style.css?ver=3.0 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/countdown.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/match.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/livescore.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/style_custom.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/effect/running-border.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/option/option-6.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/highlight/option-1.css?ver=2.8.5 | net::ERR_FAILED"
+          ],
+          "http_errors": [
+            "403 https://socolivep.cv/wp-admin/admin-ajax.php?action=scl_realtime&sport=1",
+            "404 https://live.sportdb.live/api/v1/matchs/assistant-user?roomNum=598119"
+          ]
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/nacional-montevideo-vs-club-atletico-tigre-22-07-2026-0500?blv=372746",
+          "blv": "YONE",
+          "blv_id": "372746",
+          "streams": [
+            "https://pull.niues.live/live/stream-372746_lhd.m3u8?auth_key=1784649569-0-0-efcb3ae518418fd234678574cc91c184"
+          ],
+          "stream_sources": {
+            "https://pull.niues.live/live/stream-372746_lhd.m3u8?auth_key=1784649569-0-0-efcb3ae518418fd234678574cc91c184": [
+              "final-no-stream-scan",
+              "harvest-final"
+            ]
+          },
+          "stream_first_seen": [
+            "https://pull.niues.live/live/stream-372746_lhd.m3u8?auth_key=1784649569-0-0-efcb3ae518418fd234678574cc91c184"
+          ],
+          "discovered_blv_ids": [
+            "372746"
+          ],
+          "diagnostics": {
+            "url": "https://socolivep.cv/truc-tiep/nacional-montevideo-vs-club-atletico-tigre-22-07-2026-0500/?blv=372746",
+            "title": "Xem trực tiếp bóng đá Nacional Montevideo vs Club Atletico Tigre | 05:00 ngày 22/07/2026",
+            "h1": "Trực tiếp bóng đá Socolive Nacional Montevideo vs Club Atletico Tigre lúc 05:00 ngày 22/07/2026",
+            "ready_state": "complete",
+            "visibility_state": "visible",
+            "hidden": false,
+            "video_count": 0,
+            "iframe_count": 0,
+            "body_sample": "Skip to content Socolive Bảng xếp hạng Lịch thi đấu Kết quả bóng đá Tin thể thao Trực tiếp bóng đá Socolive Nacional Montevideo vs Club Atletico Tigre lúc 05:00 ngày 22/07/2026 CON CSA Nacional Montevideo 05:00 22/07 Club Atletico Tigre Trận đấu sẽ bắt đầu sau Ngày0 : Giờ3 : Phút58 : Giây5 Trận đấu chưa bắt đầu A TINH YONE COZY CHIVAS Chat Thống kê Đội hình Diễn Biến Bảng XH \" \" Xóa Tin nhắn riêng 😀 😁 😃 😄 😅 😆 😇 😉 😊 🙂 😋 😍 😘 😗 😙 😚 😜 😝 😛 😎 🙄 😳 😡 😕 😫 😤 😨 😥 😪 😓 😵 😲 🤧 😷 🤒 🤕 😴 💤 👏 🤙 👍 👎 👊 ✊ ✌ 👌 ✋ 🤚 💪 🤝 👈 👉 🖕 🖐 👄 👂 👀 🎅 🌞 🌙 ⭐ ⚡ 🔥 ❄️ ⚽ 🏀 🏈 ⚾ 🎁 🎉 ✒️ 📝 ❤️ 💛 💚 🆚 💬 🕐 Vô hiệu hóa tất cả Vô hiệu hóa quà tặng Tắt lời chào Đăng nhập để cùng chat nhé Gửi Tỷ lệ kèo Cược Châu Á Chủ Chấp Khách Cược Châu Âu Chủ Hòa Khách Tài xỉu Tài Tỷ lệ kèo Xỉu Kèo góc Tài Tỷ lệ kèo Xỉu Mô phỏng trận đấu Thống kê trận đấu UEFA CL 01:00 22/07 Fenerbahce VS null null null - null Sắp diễn ra Xem ngay Gornik Zabrze MESSI VIP QUỐC KHÁNH HẢI THANH NGƯỜI CÁ LOKA UEFA CL 01:00 22/07 Thun VS null null null - null Sắp diễn ra Xem ngay Dinamo Zagreb ĐỖ TÚ TÀI ANH TÀI A TÚ XUÂN TÓC ĐỎ UEFA CL 00:00 22/07 Aarhus AGF VS null null null - null Sắp diễn ra Xem ngay Lec",
+            "harvest_rounds": 0,
+            "harvest_window_seconds": 0.633,
+            "main_status": 200,
+            "harvested_stream_count": 1,
+            "harvested_blv_ids": [
+              "372746"
+            ],
+            "scan_mode": "browser-event",
+            "elapsed_seconds": 14.015
+          },
+          "http_probe": {
+            "enabled": false,
+            "status": null,
+            "elapsed_seconds": 0.0,
+            "error": ""
+          },
+          "errors": [
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED"
+          ],
+          "failed_requests": [
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/main.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/customize.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/auth.css?ver=369 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat.css?ver=125 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat(1).css?ver=68 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/toast.css?ver=353 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/themes/flatsome/assets/css/flatsome.css?ver=3.18.2 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/themes/flatsome-child/style.css?ver=3.0 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/countdown.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/match.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/livescore.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/style_custom.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/effect/running-border.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/option/option-6.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/highlight/option-1.css?ver=2.8.5 | net::ERR_FAILED"
+          ],
+          "http_errors": [
+            "403 https://socolivep.cv/wp-admin/admin-ajax.php?action=scl_realtime&sport=1"
+          ]
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/nacional-montevideo-vs-club-atletico-tigre-22-07-2026-0500?blv=531989",
+          "blv": "COZY",
+          "blv_id": "531989",
+          "streams": [
+            "https://pull.niues.live/live/stream-531989_lhd.m3u8?auth_key=1784648734-0-0-2e8a441c6a4cbb724f8d95843f0d8d5c"
+          ],
+          "stream_sources": {
+            "https://pull.niues.live/live/stream-531989_lhd.m3u8?auth_key=1784648734-0-0-2e8a441c6a4cbb724f8d95843f0d8d5c": [
+              "final-no-stream-scan",
+              "harvest-final"
+            ]
+          },
+          "stream_first_seen": [
+            "https://pull.niues.live/live/stream-531989_lhd.m3u8?auth_key=1784648734-0-0-2e8a441c6a4cbb724f8d95843f0d8d5c"
+          ],
+          "discovered_blv_ids": [
+            "531989"
+          ],
+          "diagnostics": {
+            "url": "https://socolivep.cv/truc-tiep/nacional-montevideo-vs-club-atletico-tigre-22-07-2026-0500/?blv=531989",
+            "title": "Xem trực tiếp bóng đá Nacional Montevideo vs Club Atletico Tigre | 05:00 ngày 22/07/2026",
+            "h1": "Trực tiếp bóng đá Socolive Nacional Montevideo vs Club Atletico Tigre lúc 05:00 ngày 22/07/2026",
+            "ready_state": "complete",
+            "visibility_state": "visible",
+            "hidden": false,
+            "video_count": 0,
+            "iframe_count": 0,
+            "body_sample": "Skip to content Socolive Bảng xếp hạng Lịch thi đấu Kết quả bóng đá Tin thể thao Trực tiếp bóng đá Socolive Nacional Montevideo vs Club Atletico Tigre lúc 05:00 ngày 22/07/2026 CON CSA Nacional Montevideo 05:00 22/07 Club Atletico Tigre Trận đấu sẽ bắt đầu sau Ngày0 : Giờ3 : Phút57 : Giây49 Trận đấu chưa bắt đầu A TINH YONE COZY CHIVAS Chat Thống kê Đội hình Diễn Biến Bảng XH \" \" Xóa Tin nhắn riêng 😀 😁 😃 😄 😅 😆 😇 😉 😊 🙂 😋 😍 😘 😗 😙 😚 😜 😝 😛 😎 🙄 😳 😡 😕 😫 😤 😨 😥 😪 😓 😵 😲 🤧 😷 🤒 🤕 😴 💤 👏 🤙 👍 👎 👊 ✊ ✌ 👌 ✋ 🤚 💪 🤝 👈 👉 🖕 🖐 👄 👂 👀 🎅 🌞 🌙 ⭐ ⚡ 🔥 ❄️ ⚽ 🏀 🏈 ⚾ 🎁 🎉 ✒️ 📝 ❤️ 💛 💚 🆚 💬 🕐 Vô hiệu hóa tất cả Vô hiệu hóa quà tặng Tắt lời chào Đăng nhập để cùng chat nhé Gửi Tỷ lệ kèo Cược Châu Á Chủ Chấp Khách Cược Châu Âu Chủ Hòa Khách Tài xỉu Tài Tỷ lệ kèo Xỉu Kèo góc Tài Tỷ lệ kèo Xỉu Mô phỏng trận đấu Thống kê trận đấu UEFA CL 01:00 22/07 Fenerbahce VS null null null - null Sắp diễn ra Xem ngay Gornik Zabrze MESSI VIP QUỐC KHÁNH HẢI THANH NGƯỜI CÁ LOKA UEFA CL 01:00 22/07 Thun VS null null null - null Sắp diễn ra Xem ngay Dinamo Zagreb ĐỖ TÚ TÀI ANH TÀI A TÚ XUÂN TÓC ĐỎ UEFA CL 00:00 22/07 Aarhus AGF VS null null null - null Sắp diễn ra Xem ngay Le",
+            "harvest_rounds": 0,
+            "harvest_window_seconds": 0.633,
+            "main_status": 200,
+            "harvested_stream_count": 1,
+            "harvested_blv_ids": [
+              "531989"
+            ],
+            "scan_mode": "browser-event",
+            "elapsed_seconds": 14.083
+          },
+          "http_probe": {
+            "enabled": false,
+            "status": null,
+            "elapsed_seconds": 0.0,
+            "error": ""
+          },
+          "errors": [
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED"
+          ],
+          "failed_requests": [
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/main.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/customize.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/auth.css?ver=838 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat.css?ver=771 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat(1).css?ver=149 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/toast.css?ver=705 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/themes/flatsome/assets/css/flatsome.css?ver=3.18.2 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/themes/flatsome-child/style.css?ver=3.0 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/countdown.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/match.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/livescore.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/style_custom.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/effect/running-border.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/option/option-6.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/highlight/option-1.css?ver=2.8.5 | net::ERR_FAILED"
+          ],
+          "http_errors": [
+            "403 https://socolivep.cv/wp-admin/admin-ajax.php?action=scl_realtime&sport=1"
+          ]
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/nacional-montevideo-vs-club-atletico-tigre-22-07-2026-0500?blv=485739",
+          "blv": "CHIVAS",
+          "blv_id": "485739",
+          "streams": [
+            "https://pull.niur.live/live/stream-485739_lhd.m3u8?txSecret=b9f039123e46261bb470dbc2a6b07437&txTime=6a5fd565"
+          ],
+          "stream_sources": {
+            "https://pull.niur.live/live/stream-485739_lhd.m3u8?txSecret=b9f039123e46261bb470dbc2a6b07437&txTime=6a5fd565": [
+              "final-no-stream-scan",
+              "harvest-final"
+            ]
+          },
+          "stream_first_seen": [
+            "https://pull.niur.live/live/stream-485739_lhd.m3u8?txSecret=b9f039123e46261bb470dbc2a6b07437&txTime=6a5fd565"
+          ],
+          "discovered_blv_ids": [
+            "485739"
+          ],
+          "diagnostics": {
+            "url": "https://socolivep.cv/truc-tiep/nacional-montevideo-vs-club-atletico-tigre-22-07-2026-0500/?blv=485739",
+            "title": "Xem trực tiếp bóng đá Nacional Montevideo vs Club Atletico Tigre | 05:00 ngày 22/07/2026",
+            "h1": "Trực tiếp bóng đá Socolive Nacional Montevideo vs Club Atletico Tigre lúc 05:00 ngày 22/07/2026",
+            "ready_state": "complete",
+            "visibility_state": "visible",
+            "hidden": false,
+            "video_count": 0,
+            "iframe_count": 0,
+            "body_sample": "Skip to content Socolive Bảng xếp hạng Lịch thi đấu Kết quả bóng đá Tin thể thao Trực tiếp bóng đá Socolive Nacional Montevideo vs Club Atletico Tigre lúc 05:00 ngày 22/07/2026 CON CSA Nacional Montevideo 05:00 22/07 Club Atletico Tigre Trận đấu sẽ bắt đầu sau Ngày0 : Giờ3 : Phút57 : Giây32 Trận đấu chưa bắt đầu A TINH YONE COZY CHIVAS Chat Thống kê Đội hình Diễn Biến Bảng XH \" \" Xóa Tin nhắn riêng 😀 😁 😃 😄 😅 😆 😇 😉 😊 🙂 😋 😍 😘 😗 😙 😚 😜 😝 😛 😎 🙄 😳 😡 😕 😫 😤 😨 😥 😪 😓 😵 😲 🤧 😷 🤒 🤕 😴 💤 👏 🤙 👍 👎 👊 ✊ ✌ 👌 ✋ 🤚 💪 🤝 👈 👉 🖕 🖐 👄 👂 👀 🎅 🌞 🌙 ⭐ ⚡ 🔥 ❄️ ⚽ 🏀 🏈 ⚾ 🎁 🎉 ✒️ 📝 ❤️ 💛 💚 🆚 💬 🕐 Vô hiệu hóa tất cả Vô hiệu hóa quà tặng Tắt lời chào Đăng nhập để cùng chat nhé Gửi Tỷ lệ kèo Cược Châu Á Chủ Chấp Khách Cược Châu Âu Chủ Hòa Khách Tài xỉu Tài Tỷ lệ kèo Xỉu Kèo góc Tài Tỷ lệ kèo Xỉu Mô phỏng trận đấu Thống kê trận đấu UEFA CL 01:00 22/07 Fenerbahce VS null null null - null Sắp diễn ra Xem ngay Gornik Zabrze MESSI VIP QUỐC KHÁNH HẢI THANH NGƯỜI CÁ LOKA UEFA CL 01:00 22/07 Thun VS null null null - null Sắp diễn ra Xem ngay Dinamo Zagreb ĐỖ TÚ TÀI ANH TÀI A TÚ XUÂN TÓC ĐỎ UEFA CL 00:00 22/07 Aarhus AGF VS null null null - null Sắp diễn ra Xem ngay Le",
+            "harvest_rounds": 0,
+            "harvest_window_seconds": 0.633,
+            "main_status": 200,
+            "harvested_stream_count": 1,
+            "harvested_blv_ids": [
+              "485739"
+            ],
+            "scan_mode": "browser-event",
+            "elapsed_seconds": 14.272
+          },
+          "http_probe": {
+            "enabled": false,
+            "status": null,
+            "elapsed_seconds": 0.0,
+            "error": ""
+          },
+          "errors": [
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED"
+          ],
+          "failed_requests": [
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/main.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/customize.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/auth.css?ver=57 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat.css?ver=840 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat(1).css?ver=318 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/toast.css?ver=133 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/themes/flatsome/assets/css/flatsome.css?ver=3.18.2 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/themes/flatsome-child/style.css?ver=3.0 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/countdown.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/match.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/livescore.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/style_custom.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/effect/running-border.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/option/option-6.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/highlight/option-1.css?ver=2.8.5 | net::ERR_FAILED"
+          ],
+          "http_errors": [
+            "403 https://socolivep.cv/wp-admin/admin-ajax.php?action=scl_realtime&sport=1"
+          ]
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/nacional-montevideo-vs-club-atletico-tigre-22-07-2026-0500?blv=372746",
+          "blv": "YONE",
+          "blv_id": "372746",
+          "streams": [
+            "https://pull.niues.live/live/stream-372746_lhd.m3u8?auth_key=1784649569-0-0-efcb3ae518418fd234678574cc91c184"
+          ],
+          "stream_sources": {
+            "https://pull.niues.live/live/stream-372746_lhd.m3u8?auth_key=1784649569-0-0-efcb3ae518418fd234678574cc91c184": [
+              "final-no-stream-scan",
+              "harvest-final"
+            ]
+          },
+          "stream_first_seen": [
+            "https://pull.niues.live/live/stream-372746_lhd.m3u8?auth_key=1784649569-0-0-efcb3ae518418fd234678574cc91c184"
+          ],
+          "discovered_blv_ids": [
+            "372746"
+          ],
+          "diagnostics": {
+            "url": "https://socolivep.cv/truc-tiep/nacional-montevideo-vs-club-atletico-tigre-22-07-2026-0500/?blv=372746",
+            "title": "Xem trực tiếp bóng đá Nacional Montevideo vs Club Atletico Tigre | 05:00 ngày 22/07/2026",
+            "h1": "Trực tiếp bóng đá Socolive Nacional Montevideo vs Club Atletico Tigre lúc 05:00 ngày 22/07/2026",
+            "ready_state": "complete",
+            "visibility_state": "visible",
+            "hidden": false,
+            "video_count": 0,
+            "iframe_count": 0,
+            "body_sample": "Skip to content Socolive Bảng xếp hạng Lịch thi đấu Kết quả bóng đá Tin thể thao Trực tiếp bóng đá Socolive Nacional Montevideo vs Club Atletico Tigre lúc 05:00 ngày 22/07/2026 CON CSA Nacional Montevideo 05:00 22/07 Club Atletico Tigre Trận đấu sẽ bắt đầu sau Ngày0 : Giờ3 : Phút56 : Giây17 Trận đấu chưa bắt đầu A TINH YONE COZY CHIVAS Chat Thống kê Đội hình Diễn Biến Bảng XH \" \" Xóa Tin nhắn riêng 😀 😁 😃 😄 😅 😆 😇 😉 😊 🙂 😋 😍 😘 😗 😙 😚 😜 😝 😛 😎 🙄 😳 😡 😕 😫 😤 😨 😥 😪 😓 😵 😲 🤧 😷 🤒 🤕 😴 💤 👏 🤙 👍 👎 👊 ✊ ✌ 👌 ✋ 🤚 💪 🤝 👈 👉 🖕 🖐 👄 👂 👀 🎅 🌞 🌙 ⭐ ⚡ 🔥 ❄️ ⚽ 🏀 🏈 ⚾ 🎁 🎉 ✒️ 📝 ❤️ 💛 💚 🆚 💬 🕐 Vô hiệu hóa tất cả Vô hiệu hóa quà tặng Tắt lời chào Đăng nhập để cùng chat nhé Gửi Tỷ lệ kèo Cược Châu Á Chủ Chấp Khách Cược Châu Âu Chủ Hòa Khách Tài xỉu Tài Tỷ lệ kèo Xỉu Kèo góc Tài Tỷ lệ kèo Xỉu Mô phỏng trận đấu Thống kê trận đấu UEFA CL 01:00 22/07 Fenerbahce VS null null null - null Sắp diễn ra Xem ngay Gornik Zabrze MESSI VIP QUỐC KHÁNH HẢI THANH NGƯỜI CÁ LOKA UEFA CL 01:00 22/07 Thun VS null null null - null Sắp diễn ra Xem ngay Dinamo Zagreb ĐỖ TÚ TÀI ANH TÀI A TÚ XUÂN TÓC ĐỎ UEFA CL 00:00 22/07 Aarhus AGF VS null null null - null Sắp diễn ra Xem ngay Le",
+            "harvest_rounds": 0,
+            "harvest_window_seconds": 0.634,
+            "main_status": 200,
+            "harvested_stream_count": 1,
+            "harvested_blv_ids": [
+              "372746"
+            ],
+            "scan_mode": "browser-event",
+            "elapsed_seconds": 13.674
+          },
+          "http_probe": {
+            "enabled": false,
+            "status": null,
+            "elapsed_seconds": 0.0,
+            "error": ""
+          },
+          "errors": [
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED"
+          ],
+          "failed_requests": [
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/main.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/customize.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/auth.css?ver=369 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat.css?ver=125 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat(1).css?ver=68 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/toast.css?ver=353 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/themes/flatsome/assets/css/flatsome.css?ver=3.18.2 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/themes/flatsome-child/style.css?ver=3.0 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/countdown.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/match.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/livescore.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/style_custom.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/effect/running-border.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/option/option-6.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/highlight/option-1.css?ver=2.8.5 | net::ERR_FAILED"
+          ],
+          "http_errors": [
+            "403 https://socolivep.cv/wp-admin/admin-ajax.php?action=scl_realtime&sport=1"
+          ]
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/nacional-montevideo-vs-club-atletico-tigre-22-07-2026-0500?blv=531989",
+          "blv": "COZY",
+          "blv_id": "531989",
+          "streams": [
+            "https://pull.niues.live/live/stream-531989_lhd.m3u8?auth_key=1784648734-0-0-2e8a441c6a4cbb724f8d95843f0d8d5c"
+          ],
+          "stream_sources": {
+            "https://pull.niues.live/live/stream-531989_lhd.m3u8?auth_key=1784648734-0-0-2e8a441c6a4cbb724f8d95843f0d8d5c": [
+              "final-no-stream-scan",
+              "harvest-final"
+            ]
+          },
+          "stream_first_seen": [
+            "https://pull.niues.live/live/stream-531989_lhd.m3u8?auth_key=1784648734-0-0-2e8a441c6a4cbb724f8d95843f0d8d5c"
+          ],
+          "discovered_blv_ids": [
+            "531989"
+          ],
+          "diagnostics": {
+            "url": "https://socolivep.cv/truc-tiep/nacional-montevideo-vs-club-atletico-tigre-22-07-2026-0500/?blv=531989",
+            "title": "Xem trực tiếp bóng đá Nacional Montevideo vs Club Atletico Tigre | 05:00 ngày 22/07/2026",
+            "h1": "Trực tiếp bóng đá Socolive Nacional Montevideo vs Club Atletico Tigre lúc 05:00 ngày 22/07/2026",
+            "ready_state": "complete",
+            "visibility_state": "visible",
+            "hidden": false,
+            "video_count": 0,
+            "iframe_count": 0,
+            "body_sample": "Skip to content Socolive Bảng xếp hạng Lịch thi đấu Kết quả bóng đá Tin thể thao Trực tiếp bóng đá Socolive Nacional Montevideo vs Club Atletico Tigre lúc 05:00 ngày 22/07/2026 CON CSA Nacional Montevideo 05:00 22/07 Club Atletico Tigre Trận đấu sẽ bắt đầu sau Ngày0 : Giờ3 : Phút56 : Giây1 Trận đấu chưa bắt đầu A TINH YONE COZY CHIVAS Chat Thống kê Đội hình Diễn Biến Bảng XH \" \" Xóa Tin nhắn riêng 😀 😁 😃 😄 😅 😆 😇 😉 😊 🙂 😋 😍 😘 😗 😙 😚 😜 😝 😛 😎 🙄 😳 😡 😕 😫 😤 😨 😥 😪 😓 😵 😲 🤧 😷 🤒 🤕 😴 💤 👏 🤙 👍 👎 👊 ✊ ✌ 👌 ✋ 🤚 💪 🤝 👈 👉 🖕 🖐 👄 👂 👀 🎅 🌞 🌙 ⭐ ⚡ 🔥 ❄️ ⚽ 🏀 🏈 ⚾ 🎁 🎉 ✒️ 📝 ❤️ 💛 💚 🆚 💬 🕐 Vô hiệu hóa tất cả Vô hiệu hóa quà tặng Tắt lời chào Đăng nhập để cùng chat nhé Gửi Tỷ lệ kèo Cược Châu Á Chủ Chấp Khách Cược Châu Âu Chủ Hòa Khách Tài xỉu Tài Tỷ lệ kèo Xỉu Kèo góc Tài Tỷ lệ kèo Xỉu Mô phỏng trận đấu Thống kê trận đấu UEFA CL 01:00 22/07 Fenerbahce VS null null null - null Sắp diễn ra Xem ngay Gornik Zabrze MESSI VIP QUỐC KHÁNH HẢI THANH NGƯỜI CÁ LOKA UEFA CL 01:00 22/07 Thun VS null null null - null Sắp diễn ra Xem ngay Dinamo Zagreb ĐỖ TÚ TÀI ANH TÀI A TÚ XUÂN TÓC ĐỎ UEFA CL 00:00 22/07 Aarhus AGF VS null null null - null Sắp diễn ra Xem ngay Lec",
+            "harvest_rounds": 0,
+            "harvest_window_seconds": 0.632,
+            "main_status": 200,
+            "harvested_stream_count": 1,
+            "harvested_blv_ids": [
+              "531989"
+            ],
+            "scan_mode": "browser-event",
+            "elapsed_seconds": 13.494
+          },
+          "http_probe": {
+            "enabled": false,
+            "status": null,
+            "elapsed_seconds": 0.0,
+            "error": ""
+          },
+          "errors": [
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED"
+          ],
+          "failed_requests": [
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/main.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/customize.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/auth.css?ver=838 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat.css?ver=771 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat(1).css?ver=149 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/toast.css?ver=705 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/themes/flatsome/assets/css/flatsome.css?ver=3.18.2 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/themes/flatsome-child/style.css?ver=3.0 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/countdown.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/match.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/livescore.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/style_custom.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/effect/running-border.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/option/option-6.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/highlight/option-1.css?ver=2.8.5 | net::ERR_FAILED"
+          ],
+          "http_errors": [
+            "403 https://socolivep.cv/wp-admin/admin-ajax.php?action=scl_realtime&sport=1"
+          ]
+        }
+      ],
+      "attempted_room_ids": [
+        "372746",
+        "485739",
+        "531989",
+        "598119"
+      ],
+      "coverage": {
+        "found_streams": 2,
+        "found_blv_ids": [
+          "485739",
+          "598119"
+        ],
+        "goal": 8,
+        "source_goal_reached": false,
+        "room_queue_complete": true,
+        "complete": true,
+        "max_streams_per_blv": 2,
+        "total_explicit_blv_rooms": 4,
+        "pending_room_keys": [],
+        "room_progress": {
+          "598119": {
+            "key": "598119",
+            "url": "https://socolivep.cv/truc-tiep/nacional-montevideo-vs-club-atletico-tigre-22-07-2026-0500?blv=598119",
+            "blv": "A TINH",
+            "blv_id": "598119",
+            "status": "success",
+            "attempts": 1,
+            "attempts_total": 1,
+            "ever_attempted": true,
+            "valid_stream_ever_found": true,
+            "needs_token_refresh": false,
+            "completion_reason": "valid_stream",
+            "rate_limit_hits": 0,
+            "last_http_status": 200,
+            "last_stream_count": 1,
+            "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
+          },
+          "372746": {
+            "key": "372746",
+            "url": "https://socolivep.cv/truc-tiep/nacional-montevideo-vs-club-atletico-tigre-22-07-2026-0500?blv=372746",
+            "blv": "YONE",
+            "blv_id": "372746",
+            "status": "exhausted",
+            "attempts": 2,
+            "attempts_total": 2,
+            "ever_attempted": true,
+            "valid_stream_ever_found": false,
+            "needs_token_refresh": true,
+            "completion_reason": "no_valid_stream_after_max_attempts",
+            "rate_limit_hits": 0,
+            "last_http_status": 200,
+            "last_stream_count": 0,
+            "last_error": "Token cũ đã hết hạn; giữ nguyên attempts_total và trạng thái hoàn tất của BLV."
+          },
+          "531989": {
+            "key": "531989",
+            "url": "https://socolivep.cv/truc-tiep/nacional-montevideo-vs-club-atletico-tigre-22-07-2026-0500?blv=531989",
+            "blv": "COZY",
+            "blv_id": "531989",
+            "status": "exhausted",
+            "attempts": 2,
+            "attempts_total": 2,
+            "ever_attempted": true,
+            "valid_stream_ever_found": false,
+            "needs_token_refresh": true,
+            "completion_reason": "no_valid_stream_after_max_attempts",
+            "rate_limit_hits": 0,
+            "last_http_status": 200,
+            "last_stream_count": 0,
+            "last_error": "Token cũ đã hết hạn; giữ nguyên attempts_total và trạng thái hoàn tất của BLV."
+          },
+          "485739": {
+            "key": "485739",
+            "url": "https://socolivep.cv/truc-tiep/nacional-montevideo-vs-club-atletico-tigre-22-07-2026-0500?blv=485739",
+            "blv": "CHIVAS",
+            "blv_id": "485739",
+            "status": "success",
+            "attempts": 1,
+            "attempts_total": 1,
+            "ever_attempted": true,
+            "valid_stream_ever_found": true,
+            "needs_token_refresh": false,
+            "completion_reason": "valid_stream",
+            "rate_limit_hits": 0,
+            "last_http_status": 200,
+            "last_stream_count": 1,
+            "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
+          },
+          "__base__": {
+            "key": "__base__",
+            "url": "https://socolivep.cv/truc-tiep/nacional-montevideo-vs-club-atletico-tigre-22-07-2026-0500",
+            "blv": "XEM NGAY",
+            "blv_id": "",
+            "status": "pending",
+            "attempts": 0,
+            "attempts_total": 0,
+            "ever_attempted": false,
+            "valid_stream_ever_found": false,
+            "needs_token_refresh": false,
+            "completion_reason": "",
+            "rate_limit_hits": 0,
+            "last_http_status": null,
+            "last_stream_count": 0,
+            "last_error": ""
+          }
+        }
+      },
+      "errors": [],
+      "room_progress": {
+        "598119": {
+          "key": "598119",
+          "url": "https://socolivep.cv/truc-tiep/nacional-montevideo-vs-club-atletico-tigre-22-07-2026-0500?blv=598119",
+          "blv": "A TINH",
+          "blv_id": "598119",
+          "status": "success",
+          "attempts": 1,
+          "attempts_total": 1,
+          "ever_attempted": true,
+          "valid_stream_ever_found": true,
+          "needs_token_refresh": false,
+          "completion_reason": "valid_stream",
+          "rate_limit_hits": 0,
+          "last_http_status": 200,
+          "last_stream_count": 1,
+          "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
+        },
+        "372746": {
+          "key": "372746",
+          "url": "https://socolivep.cv/truc-tiep/nacional-montevideo-vs-club-atletico-tigre-22-07-2026-0500?blv=372746",
+          "blv": "YONE",
+          "blv_id": "372746",
+          "status": "exhausted",
+          "attempts": 2,
+          "attempts_total": 2,
+          "ever_attempted": true,
+          "valid_stream_ever_found": false,
+          "needs_token_refresh": true,
+          "completion_reason": "no_valid_stream_after_max_attempts",
+          "rate_limit_hits": 0,
+          "last_http_status": 200,
+          "last_stream_count": 0,
+          "last_error": "Token cũ đã hết hạn; giữ nguyên attempts_total và trạng thái hoàn tất của BLV."
+        },
+        "531989": {
+          "key": "531989",
+          "url": "https://socolivep.cv/truc-tiep/nacional-montevideo-vs-club-atletico-tigre-22-07-2026-0500?blv=531989",
+          "blv": "COZY",
+          "blv_id": "531989",
+          "status": "exhausted",
+          "attempts": 2,
+          "attempts_total": 2,
+          "ever_attempted": true,
+          "valid_stream_ever_found": false,
+          "needs_token_refresh": true,
+          "completion_reason": "no_valid_stream_after_max_attempts",
+          "rate_limit_hits": 0,
+          "last_http_status": 200,
+          "last_stream_count": 0,
+          "last_error": "Token cũ đã hết hạn; giữ nguyên attempts_total và trạng thái hoàn tất của BLV."
+        },
+        "485739": {
+          "key": "485739",
+          "url": "https://socolivep.cv/truc-tiep/nacional-montevideo-vs-club-atletico-tigre-22-07-2026-0500?blv=485739",
+          "blv": "CHIVAS",
+          "blv_id": "485739",
+          "status": "success",
+          "attempts": 1,
+          "attempts_total": 1,
+          "ever_attempted": true,
+          "valid_stream_ever_found": true,
+          "needs_token_refresh": false,
+          "completion_reason": "valid_stream",
+          "rate_limit_hits": 0,
+          "last_http_status": 200,
+          "last_stream_count": 1,
+          "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
+        },
+        "__base__": {
+          "key": "__base__",
+          "url": "https://socolivep.cv/truc-tiep/nacional-montevideo-vs-club-atletico-tigre-22-07-2026-0500",
+          "blv": "XEM NGAY",
+          "blv_id": "",
+          "status": "pending",
+          "attempts": 0,
+          "attempts_total": 0,
+          "ever_attempted": false,
+          "valid_stream_ever_found": false,
+          "needs_token_refresh": false,
+          "completion_reason": "",
+          "rate_limit_hits": 0,
+          "last_http_status": null,
+          "last_stream_count": 0,
+          "last_error": ""
+        }
+      },
+      "run_attempted_room_keys": [
+        "372746",
+        "531989"
+      ],
+      "run_rate_limited_room_keys": [],
+      "run_completed_room_keys": [
+        "372746",
+        "531989"
+      ],
+      "run_global_budget_used": 2
+    },
     {
       "base_url": "https://socolivep.cv/truc-tiep/fenerbahce-vs-gornik-zabrze-22-07-2026-0100/",
       "raw_title": "Trực tiếp bóng đá Socolive Fenerbahce vs Gornik Zabrze lúc 01:00 ngày 22/07/2026",
@@ -8780,466 +9595,6 @@
       }
     },
     {
-      "base_url": "https://socolivep.cv/truc-tiep/vikingur-reykjavik-vs-hapoel-beer-sheva-22-07-2026-0200/",
-      "raw_title": "Trực tiếp bóng đá Socolive Vikingur Reykjavik vs Hapoel Beer Sheva lúc 02:00 ngày 22/07/2026",
-      "home_team": "Vikingur Reykjavik",
-      "away_team": "Hapoel Beer Sheva",
-      "home_logo": "https://sta.vnres.co/file/common/20260719/44c597c1b93ce7f5b058d5eea8cb0a74.png",
-      "away_logo": "https://sta.vnres.co/file/common/20260719/7dda7c674ca34ffbcb20c3e5b754e8e3.png",
-      "time_text": "02:00",
-      "date_text": "22/07",
-      "status": "",
-      "card_text": "UEFA CL 02:00 22/07 Vikingur Reykjavik VS XEM NGAY Hapoel Beer Sheva FIREMAN SEVEN RYO",
-      "rooms": [
-        {
-          "url": "https://socolivep.cv/truc-tiep/vikingur-reykjavik-vs-hapoel-beer-sheva-22-07-2026-0200?blv=250874",
-          "blv": "FIREMAN",
-          "blv_id": "250874"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/vikingur-reykjavik-vs-hapoel-beer-sheva-22-07-2026-0200?blv=618546",
-          "blv": "SEVEN",
-          "blv_id": "618546"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/vikingur-reykjavik-vs-hapoel-beer-sheva-22-07-2026-0200?blv=602019",
-          "blv": "RYO",
-          "blv_id": "602019"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/vikingur-reykjavik-vs-hapoel-beer-sheva-22-07-2026-0200",
-          "blv": "XEM NGAY",
-          "blv_id": ""
-        }
-      ],
-      "match_name": "Vikingur Reykjavik vs Hapoel Beer Sheva",
-      "scheduled_at": "2026-07-22T02:00:00+07:00",
-      "streams": [],
-      "room_results": [
-        {
-          "url": "https://socolivep.cv/truc-tiep/vikingur-reykjavik-vs-hapoel-beer-sheva-22-07-2026-0200?blv=250874",
-          "blv": "FIREMAN",
-          "blv_id": "250874",
-          "streams": [
-            "https://pull.niues.live/live/stream-991140_lhd.m3u8?auth_key=1784656255-0-0-bca148119b97340dd71b298578c69a02"
-          ],
-          "stream_sources": {
-            "https://pull.niues.live/live/stream-991140_lhd.m3u8?auth_key=1784656255-0-0-bca148119b97340dd71b298578c69a02": [
-              "final-no-stream-scan",
-              "harvest-final"
-            ]
-          },
-          "stream_first_seen": [
-            "https://pull.niues.live/live/stream-991140_lhd.m3u8?auth_key=1784656255-0-0-bca148119b97340dd71b298578c69a02"
-          ],
-          "discovered_blv_ids": [
-            "991140"
-          ],
-          "diagnostics": {
-            "url": "https://socolivep.cv/truc-tiep/vikingur-reykjavik-vs-hapoel-beer-sheva-22-07-2026-0200/?blv=250874",
-            "title": "Xem trực tiếp bóng đá Vikingur Reykjavik vs Hapoel Beer Sheva | 02:00 ngày 22/07/2026",
-            "h1": "Trực tiếp bóng đá Socolive Vikingur Reykjavik vs Hapoel Beer Sheva lúc 02:00 ngày 22/07/2026",
-            "ready_state": "complete",
-            "visibility_state": "visible",
-            "hidden": false,
-            "video_count": 0,
-            "iframe_count": 0,
-            "body_sample": "Skip to content Socolive Bảng xếp hạng Lịch thi đấu Kết quả bóng đá Tin thể thao Trực tiếp bóng đá Socolive Vikingur Reykjavik vs Hapoel Beer Sheva lúc 02:00 ngày 22/07/2026 UEFA CL Vikingur Reykjavik 02:00 22/07 Hapoel Beer Sheva Trận đấu sẽ bắt đầu sau Ngày0 : Giờ1 : Phút58 : Giây16 Trận đấu chưa bắt đầu FIREMAN SEVEN RYO Chat Thống kê Đội hình Diễn Biến Bảng XH \" \" Admin Sóc Xanh: ⚽️NẠP 100k TẶNG 80K -NẠP 1TR TẶNG 120K -NẠP 15TR TẶNG 1TR5 CHỈ 1 Vòng cược -Bsport :https://www.BTY9296.com -✈️ TELE :https://t.me/socxanh123 ⚽️BUFA : J7UBKR + ☎️Facebook : http://fb.com/61590739693659 ☎️Zalo : 0567.381.606 Admin Sóc Xanh: Hệ sinh thái Trang cược chuyên nghiệp -Liên hệ ❤️ Facebook : http://fb.com/61590739693659 + TELE : @socxanh123 ⚽️ZALO : 0567.381.606 Xóa Tin nhắn riêng 😀 😁 😃 😄 😅 😆 😇 😉 😊 🙂 😋 😍 😘 😗 😙 😚 😜 😝 😛 😎 🙄 😳 😡 😕 😫 😤 😨 😥 😪 😓 😵 😲 🤧 😷 🤒 🤕 😴 💤 👏 🤙 👍 👎 👊 ✊ ✌ 👌 ✋ 🤚 💪 🤝 👈 👉 🖕 🖐 👄 👂 👀 🎅 🌞 🌙 ⭐ ⚡ 🔥 ❄️ ⚽ 🏀 🏈 ⚾ 🎁 🎉 ✒️ 📝 ❤️ 💛 💚 🆚 💬 🕐 Vô hiệu hóa tất cả Vô hiệu hóa quà tặng Tắt lời chào Đăng nhập để cùng chat nhé Gửi Tỷ lệ kèo Cược Châu Á Chủ Chấp Khách Cược Châu Âu Chủ Hòa Khách Tài xỉu Tài Tỷ lệ kèo Xỉu Kèo góc Tài Tỷ lệ kè",
-            "harvest_rounds": 0,
-            "harvest_window_seconds": 0.63,
-            "main_status": 200,
-            "harvested_stream_count": 1,
-            "harvested_blv_ids": [
-              "991140"
-            ],
-            "scan_mode": "browser-event",
-            "elapsed_seconds": 14.14
-          },
-          "http_probe": {
-            "enabled": false,
-            "status": null,
-            "elapsed_seconds": 0.0,
-            "error": ""
-          },
-          "errors": [
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED"
-          ],
-          "failed_requests": [
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/main.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/customize.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/auth.css?ver=221 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat.css?ver=230 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat(1).css?ver=992 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/toast.css?ver=805 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/themes/flatsome/assets/css/flatsome.css?ver=3.18.2 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/themes/flatsome-child/style.css?ver=3.0 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/countdown.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/match.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/livescore.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/style_custom.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/effect/running-border.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/option/option-6.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/highlight/option-1.css?ver=2.8.5 | net::ERR_FAILED"
-          ],
-          "http_errors": [
-            "403 https://socolivep.cv/wp-admin/admin-ajax.php?action=scl_realtime&sport=1"
-          ]
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/vikingur-reykjavik-vs-hapoel-beer-sheva-22-07-2026-0200?blv=618546",
-          "blv": "SEVEN",
-          "blv_id": "618546",
-          "streams": [
-            "https://pull.niues.live/live/stream-618546_lhd.m3u8?auth_key=1784656855-0-0-0ff350fd2f86357ed18c367fde313ffc"
-          ],
-          "stream_sources": {
-            "https://pull.niues.live/live/stream-618546_lhd.m3u8?auth_key=1784656855-0-0-0ff350fd2f86357ed18c367fde313ffc": [
-              "final-no-stream-scan",
-              "harvest-final"
-            ]
-          },
-          "stream_first_seen": [
-            "https://pull.niues.live/live/stream-618546_lhd.m3u8?auth_key=1784656855-0-0-0ff350fd2f86357ed18c367fde313ffc"
-          ],
-          "discovered_blv_ids": [
-            "618546"
-          ],
-          "diagnostics": {
-            "url": "https://socolivep.cv/truc-tiep/vikingur-reykjavik-vs-hapoel-beer-sheva-22-07-2026-0200/?blv=618546",
-            "title": "Xem trực tiếp bóng đá Vikingur Reykjavik vs Hapoel Beer Sheva | 02:00 ngày 22/07/2026",
-            "h1": "Trực tiếp bóng đá Socolive Vikingur Reykjavik vs Hapoel Beer Sheva lúc 02:00 ngày 22/07/2026",
-            "ready_state": "complete",
-            "visibility_state": "visible",
-            "hidden": false,
-            "video_count": 0,
-            "iframe_count": 0,
-            "body_sample": "Skip to content Socolive Bảng xếp hạng Lịch thi đấu Kết quả bóng đá Tin thể thao Trực tiếp bóng đá Socolive Vikingur Reykjavik vs Hapoel Beer Sheva lúc 02:00 ngày 22/07/2026 UEFA CL Vikingur Reykjavik 02:00 22/07 Hapoel Beer Sheva Trận đấu sẽ bắt đầu sau Ngày0 : Giờ1 : Phút57 : Giây59 Trận đấu chưa bắt đầu FIREMAN SEVEN RYO Chat Thống kê Đội hình Diễn Biến Bảng XH \" \" DuyAnhhh: thôi dcm lại vv r Admin Sóc Bánh Mì: B- sport https://www.bty9251.com 👑 👑V-sport https://w9.vty28.net TRANG CƯỢC TOP 1, NHÓM KÈO UY TÍN ❤️ Telegram: https://t.me/socbanhmi338 , LIÊN HỆ MÃ BUFA 4RZWBN 💎 Zalo: 0567 820 040 HoangSay16: vv cmnr Hieuasd: var vv DuyAnhhh: nhìn là vv r đấy DuyAnhhh: var thì xđịnh hủy luôn DuyAnhhh: tính từ vai TienDat0612: nhạy cảm đấy Admin Sóc Bánh Mì: B- sport https://www.bty9251.com 👑 👑V-sport https://w9.vty28.net KHUYẾN MÃI ĐA DẠNG, KÈO CƯỢC PHONG PHÚ ❤️ Telegram: https://t.me/socbanhmi338 , LIÊN HỆ MÃ BUFA 4RZWBN 💎 Zalo: 0567 820 040 DuyAnhhh: nữa vai r TienDat0612: chắc vv 1 tí tí TienDat0612: hủy thì h2 chơi góc to tiền béokk: ra mà check var DuyAnhhh: nghe ý kiến DuyAnhhh: thế thì ngonn Admin Sóc Bánh Mì: B- sport https://www.bty9251.com 👑 👑V-sport https://w9.vty28",
-            "harvest_rounds": 0,
-            "harvest_window_seconds": 0.632,
-            "main_status": 200,
-            "harvested_stream_count": 1,
-            "harvested_blv_ids": [
-              "618546"
-            ],
-            "scan_mode": "browser-event",
-            "elapsed_seconds": 14.902
-          },
-          "http_probe": {
-            "enabled": false,
-            "status": null,
-            "elapsed_seconds": 0.0,
-            "error": ""
-          },
-          "errors": [
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED"
-          ],
-          "failed_requests": [
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/main.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/customize.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/auth.css?ver=178 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat.css?ver=896 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat(1).css?ver=316 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/toast.css?ver=520 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/themes/flatsome/assets/css/flatsome.css?ver=3.18.2 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/themes/flatsome-child/style.css?ver=3.0 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/countdown.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/match.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/livescore.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/style_custom.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/effect/running-border.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/option/option-6.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/highlight/option-1.css?ver=2.8.5 | net::ERR_FAILED"
-          ],
-          "http_errors": [
-            "403 https://socolivep.cv/wp-admin/admin-ajax.php?action=scl_realtime&sport=1"
-          ]
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/vikingur-reykjavik-vs-hapoel-beer-sheva-22-07-2026-0200?blv=602019",
-          "blv": "RYO",
-          "blv_id": "602019",
-          "streams": [
-            "https://pull.niues.live/live/stream-602019_lhd.m3u8?auth_key=1784656855-0-0-e626201d0e0e2c21640f8a24c9bb45bb"
-          ],
-          "stream_sources": {
-            "https://pull.niues.live/live/stream-602019_lhd.m3u8?auth_key=1784656855-0-0-e626201d0e0e2c21640f8a24c9bb45bb": [
-              "final-no-stream-scan",
-              "harvest-final"
-            ]
-          },
-          "stream_first_seen": [
-            "https://pull.niues.live/live/stream-602019_lhd.m3u8?auth_key=1784656855-0-0-e626201d0e0e2c21640f8a24c9bb45bb"
-          ],
-          "discovered_blv_ids": [
-            "602019"
-          ],
-          "diagnostics": {
-            "url": "https://socolivep.cv/truc-tiep/vikingur-reykjavik-vs-hapoel-beer-sheva-22-07-2026-0200/?blv=602019",
-            "title": "Xem trực tiếp bóng đá Vikingur Reykjavik vs Hapoel Beer Sheva | 02:00 ngày 22/07/2026",
-            "h1": "Trực tiếp bóng đá Socolive Vikingur Reykjavik vs Hapoel Beer Sheva lúc 02:00 ngày 22/07/2026",
-            "ready_state": "complete",
-            "visibility_state": "visible",
-            "hidden": false,
-            "video_count": 0,
-            "iframe_count": 0,
-            "body_sample": "Skip to content Socolive Bảng xếp hạng Lịch thi đấu Kết quả bóng đá Tin thể thao Trực tiếp bóng đá Socolive Vikingur Reykjavik vs Hapoel Beer Sheva lúc 02:00 ngày 22/07/2026 UEFA CL Vikingur Reykjavik 02:00 22/07 Hapoel Beer Sheva Trận đấu sẽ bắt đầu sau Ngày0 : Giờ1 : Phút57 : Giây43 Trận đấu chưa bắt đầu FIREMAN SEVEN RYO Chat Thống kê Đội hình Diễn Biến Bảng XH \" \" kaka0506: đang muốn có 1 bộ phim hay để cày , ryo biết phim nào ok ko Admin Trợ lý Diệu Thương: KẾT BẠN EM HỖ TRỢ VÀO NHÓM NHẬN KÈO VÍP ☎️ 𝙕𝙖𝙡𝙤: / FACEBOOK: https://m.me/socthuoc6789 ♨️ 𝘽𝙐𝙁𝘼 : 2MJ5QT ✅ Tele :https://t.me/socthuoc6789 Mua sữa cho con 278: việt vị mà Thanhquang: huy đi kaka0506: tình yêu hoặc phim dễ chảy nước mắt cx dc ryo Mua sữa cho con 278: bàn chân kaka0506: xog tìm hộ nha ryo , tui tìm mãi chả có cái nào ok Admin Trợ lý Diệu Thương: KHUYẾN MÃI CHO 2 L ẦN NẠP ĐẦU LÊN TỚI 3 TRIỆU 6 https://www.bty9235.com . ☎️ 𝙕𝙖𝙡𝙤: FACEBOOK: https://m.me/socthuoc6789 ☘️ 𝘽𝙐𝙁𝘼 : 2MJ5QT♨️𝙏𝙀𝙇𝙀 : https://t.me/socthuoc6789 🍄 link bufa : https://bufa.chat Thanhquang: vv rui check lâu, thế Thanhquang: moa no Thanhquang: ảo vải kaka0506: ryo hay xem phim việt thì chịu chết kaka0506: có khi ryo xem trấn ",
-            "harvest_rounds": 0,
-            "harvest_window_seconds": 0.631,
-            "main_status": 200,
-            "harvested_stream_count": 1,
-            "harvested_blv_ids": [
-              "602019"
-            ],
-            "scan_mode": "browser-event",
-            "elapsed_seconds": 14.048
-          },
-          "http_probe": {
-            "enabled": false,
-            "status": null,
-            "elapsed_seconds": 0.0,
-            "error": ""
-          },
-          "errors": [
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED"
-          ],
-          "failed_requests": [
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/main.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/customize.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/auth.css?ver=28 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat.css?ver=614 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat(1).css?ver=351 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/toast.css?ver=515 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/themes/flatsome/assets/css/flatsome.css?ver=3.18.2 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/themes/flatsome-child/style.css?ver=3.0 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/countdown.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/match.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/livescore.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/style_custom.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/effect/running-border.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/option/option-6.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/highlight/option-1.css?ver=2.8.5 | net::ERR_FAILED"
-          ],
-          "http_errors": [
-            "403 https://socolivep.cv/wp-admin/admin-ajax.php?action=scl_realtime&sport=1"
-          ]
-        }
-      ],
-      "attempted_room_ids": [
-        "250874",
-        "602019",
-        "618546"
-      ],
-      "coverage": {
-        "found_streams": 0,
-        "found_blv_ids": [],
-        "goal": 6,
-        "source_goal_reached": false,
-        "room_queue_complete": true,
-        "complete": true,
-        "max_streams_per_blv": 2,
-        "total_explicit_blv_rooms": 3,
-        "pending_room_keys": [],
-        "room_progress": {
-          "250874": {
-            "key": "250874",
-            "url": "https://socolivep.cv/truc-tiep/vikingur-reykjavik-vs-hapoel-beer-sheva-22-07-2026-0200?blv=250874",
-            "blv": "FIREMAN",
-            "blv_id": "250874",
-            "status": "success",
-            "attempts": 1,
-            "attempts_total": 1,
-            "ever_attempted": true,
-            "valid_stream_ever_found": true,
-            "needs_token_refresh": true,
-            "completion_reason": "valid_stream_seen_earlier",
-            "rate_limit_hits": 0,
-            "last_http_status": 200,
-            "last_stream_count": 0,
-            "last_error": "Token cũ đã hết hạn; giữ nguyên attempts_total và trạng thái hoàn tất của BLV."
-          },
-          "618546": {
-            "key": "618546",
-            "url": "https://socolivep.cv/truc-tiep/vikingur-reykjavik-vs-hapoel-beer-sheva-22-07-2026-0200?blv=618546",
-            "blv": "SEVEN",
-            "blv_id": "618546",
-            "status": "success",
-            "attempts": 1,
-            "attempts_total": 1,
-            "ever_attempted": true,
-            "valid_stream_ever_found": true,
-            "needs_token_refresh": true,
-            "completion_reason": "valid_stream_seen_earlier",
-            "rate_limit_hits": 0,
-            "last_http_status": 200,
-            "last_stream_count": 0,
-            "last_error": "Token cũ đã hết hạn; giữ nguyên attempts_total và trạng thái hoàn tất của BLV."
-          },
-          "602019": {
-            "key": "602019",
-            "url": "https://socolivep.cv/truc-tiep/vikingur-reykjavik-vs-hapoel-beer-sheva-22-07-2026-0200?blv=602019",
-            "blv": "RYO",
-            "blv_id": "602019",
-            "status": "success",
-            "attempts": 1,
-            "attempts_total": 1,
-            "ever_attempted": true,
-            "valid_stream_ever_found": true,
-            "needs_token_refresh": true,
-            "completion_reason": "valid_stream_seen_earlier",
-            "rate_limit_hits": 0,
-            "last_http_status": 200,
-            "last_stream_count": 0,
-            "last_error": "Token cũ đã hết hạn; giữ nguyên attempts_total và trạng thái hoàn tất của BLV."
-          },
-          "__base__": {
-            "key": "__base__",
-            "url": "https://socolivep.cv/truc-tiep/vikingur-reykjavik-vs-hapoel-beer-sheva-22-07-2026-0200",
-            "blv": "XEM NGAY",
-            "blv_id": "",
-            "status": "pending",
-            "attempts": 0,
-            "attempts_total": 0,
-            "ever_attempted": false,
-            "valid_stream_ever_found": false,
-            "needs_token_refresh": false,
-            "completion_reason": "",
-            "rate_limit_hits": 0,
-            "last_http_status": null,
-            "last_stream_count": 0,
-            "last_error": ""
-          }
-        }
-      },
-      "errors": [],
-      "room_progress": {
-        "250874": {
-          "key": "250874",
-          "url": "https://socolivep.cv/truc-tiep/vikingur-reykjavik-vs-hapoel-beer-sheva-22-07-2026-0200?blv=250874",
-          "blv": "FIREMAN",
-          "blv_id": "250874",
-          "status": "success",
-          "attempts": 1,
-          "attempts_total": 1,
-          "ever_attempted": true,
-          "valid_stream_ever_found": true,
-          "needs_token_refresh": true,
-          "completion_reason": "valid_stream_seen_earlier",
-          "rate_limit_hits": 0,
-          "last_http_status": 200,
-          "last_stream_count": 0,
-          "last_error": "Token cũ đã hết hạn; giữ nguyên attempts_total và trạng thái hoàn tất của BLV."
-        },
-        "618546": {
-          "key": "618546",
-          "url": "https://socolivep.cv/truc-tiep/vikingur-reykjavik-vs-hapoel-beer-sheva-22-07-2026-0200?blv=618546",
-          "blv": "SEVEN",
-          "blv_id": "618546",
-          "status": "success",
-          "attempts": 1,
-          "attempts_total": 1,
-          "ever_attempted": true,
-          "valid_stream_ever_found": true,
-          "needs_token_refresh": true,
-          "completion_reason": "valid_stream_seen_earlier",
-          "rate_limit_hits": 0,
-          "last_http_status": 200,
-          "last_stream_count": 0,
-          "last_error": "Token cũ đã hết hạn; giữ nguyên attempts_total và trạng thái hoàn tất của BLV."
-        },
-        "602019": {
-          "key": "602019",
-          "url": "https://socolivep.cv/truc-tiep/vikingur-reykjavik-vs-hapoel-beer-sheva-22-07-2026-0200?blv=602019",
-          "blv": "RYO",
-          "blv_id": "602019",
-          "status": "success",
-          "attempts": 1,
-          "attempts_total": 1,
-          "ever_attempted": true,
-          "valid_stream_ever_found": true,
-          "needs_token_refresh": true,
-          "completion_reason": "valid_stream_seen_earlier",
-          "rate_limit_hits": 0,
-          "last_http_status": 200,
-          "last_stream_count": 0,
-          "last_error": "Token cũ đã hết hạn; giữ nguyên attempts_total và trạng thái hoàn tất của BLV."
-        },
-        "__base__": {
-          "key": "__base__",
-          "url": "https://socolivep.cv/truc-tiep/vikingur-reykjavik-vs-hapoel-beer-sheva-22-07-2026-0200",
-          "blv": "XEM NGAY",
-          "blv_id": "",
-          "status": "pending",
-          "attempts": 0,
-          "attempts_total": 0,
-          "ever_attempted": false,
-          "valid_stream_ever_found": false,
-          "needs_token_refresh": false,
-          "completion_reason": "",
-          "rate_limit_hits": 0,
-          "last_http_status": null,
-          "last_stream_count": 0,
-          "last_error": ""
-        }
-      }
-    },
-    {
       "base_url": "https://socolivep.cv/truc-tiep/larne-fc-vs-crvena-zvezda-22-07-2026-0200/",
       "raw_title": "Trực tiếp bóng đá Socolive Larne FC vs Crvena Zvezda lúc 02:00 ngày 22/07/2026",
       "home_team": "Larne FC",
@@ -9966,124 +10321,80 @@
       }
     },
     {
-      "base_url": "https://socolivep.cv/truc-tiep/nacional-montevideo-vs-club-atletico-tigre-22-07-2026-0500/",
-      "raw_title": "Trực tiếp bóng đá Socolive Nacional Montevideo vs Club Atletico Tigre lúc 05:00 ngày 22/07/2026",
-      "home_team": "Nacional Montevideo",
-      "away_team": "Club Atletico Tigre",
-      "home_logo": "https://sta.vnres.co/file/common/20260719/bf14b1209792494d3dfaa2967d8bebb3.png",
-      "away_logo": "https://sta.vnres.co/file/common/20260719/0963717c1ca869b15471be6df3d2f8fe.png",
-      "time_text": "05:00",
+      "base_url": "https://socolivep.cv/truc-tiep/vikingur-reykjavik-vs-hapoel-beer-sheva-22-07-2026-0200/",
+      "raw_title": "Trực tiếp bóng đá Socolive Vikingur Reykjavik vs Hapoel Beer Sheva lúc 02:00 ngày 22/07/2026",
+      "home_team": "Vikingur Reykjavik",
+      "away_team": "Hapoel Beer Sheva",
+      "home_logo": "https://sta.vnres.co/file/common/20260719/44c597c1b93ce7f5b058d5eea8cb0a74.png",
+      "away_logo": "https://sta.vnres.co/file/common/20260719/7dda7c674ca34ffbcb20c3e5b754e8e3.png",
+      "time_text": "02:00",
       "date_text": "22/07",
       "status": "",
-      "card_text": "CON CSA 05:00 22/07 Nacional Montevideo VS XEM NGAY Club Atletico Tigre A TINH YONE COZY CHIVAS",
+      "card_text": "UEFA CL 02:00 22/07 Vikingur Reykjavik VS XEM NGAY Hapoel Beer Sheva FIREMAN SEVEN RYO",
       "rooms": [
         {
-          "url": "https://socolivep.cv/truc-tiep/nacional-montevideo-vs-club-atletico-tigre-22-07-2026-0500?blv=598119",
-          "blv": "A TINH",
-          "blv_id": "598119"
+          "url": "https://socolivep.cv/truc-tiep/vikingur-reykjavik-vs-hapoel-beer-sheva-22-07-2026-0200?blv=250874",
+          "blv": "FIREMAN",
+          "blv_id": "250874"
         },
         {
-          "url": "https://socolivep.cv/truc-tiep/nacional-montevideo-vs-club-atletico-tigre-22-07-2026-0500?blv=372746",
-          "blv": "YONE",
-          "blv_id": "372746"
+          "url": "https://socolivep.cv/truc-tiep/vikingur-reykjavik-vs-hapoel-beer-sheva-22-07-2026-0200?blv=618546",
+          "blv": "SEVEN",
+          "blv_id": "618546"
         },
         {
-          "url": "https://socolivep.cv/truc-tiep/nacional-montevideo-vs-club-atletico-tigre-22-07-2026-0500?blv=531989",
-          "blv": "COZY",
-          "blv_id": "531989"
+          "url": "https://socolivep.cv/truc-tiep/vikingur-reykjavik-vs-hapoel-beer-sheva-22-07-2026-0200?blv=602019",
+          "blv": "RYO",
+          "blv_id": "602019"
         },
         {
-          "url": "https://socolivep.cv/truc-tiep/nacional-montevideo-vs-club-atletico-tigre-22-07-2026-0500?blv=485739",
-          "blv": "CHIVAS",
-          "blv_id": "485739"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/nacional-montevideo-vs-club-atletico-tigre-22-07-2026-0500",
+          "url": "https://socolivep.cv/truc-tiep/vikingur-reykjavik-vs-hapoel-beer-sheva-22-07-2026-0200",
           "blv": "XEM NGAY",
           "blv_id": ""
         }
       ],
-      "match_name": "Nacional Montevideo vs Club Atletico Tigre",
-      "scheduled_at": "2026-07-22T05:00:00+07:00",
-      "streams": [
-        {
-          "url": "https://pull.niur.live/live/stream-598119_lhd.m3u8?txSecret=b1ea907592b0d08782d13dfc36284e5a&txTime=6a5fb933",
-          "queue_room_key": "598119",
-          "room_url": "https://socolivep.cv/truc-tiep/nacional-montevideo-vs-club-atletico-tigre-22-07-2026-0500?blv=598119",
-          "blv": "A TINH",
-          "blv_id": "598119",
-          "source_id": "598119",
-          "source_provenance": [
-            "final-no-stream-scan",
-            "harvest-final"
-          ],
-          "source_confidence": "embedded",
-          "mapping_mode": "exact-room-id",
-          "discovered_from_room_url": "https://socolivep.cv/truc-tiep/nacional-montevideo-vs-club-atletico-tigre-22-07-2026-0500?blv=598119",
-          "discovered_from_blv": "A TINH",
-          "discovered_at": "2026-07-22T01:01:38.619169+07:00",
-          "valid_until": "2026-07-22T01:23:47+07:00",
-          "is_expired": false
-        },
-        {
-          "url": "https://pull.niur.live/live/stream-485739_lhd.m3u8?txSecret=b9f039123e46261bb470dbc2a6b07437&txTime=6a5fd565",
-          "queue_room_key": "485739",
-          "room_url": "https://socolivep.cv/truc-tiep/nacional-montevideo-vs-club-atletico-tigre-22-07-2026-0500?blv=485739",
-          "blv": "CHIVAS",
-          "blv_id": "485739",
-          "source_id": "485739",
-          "source_provenance": [
-            "final-no-stream-scan",
-            "harvest-final"
-          ],
-          "source_confidence": "embedded",
-          "mapping_mode": "exact-room-id",
-          "discovered_from_room_url": "https://socolivep.cv/truc-tiep/nacional-montevideo-vs-club-atletico-tigre-22-07-2026-0500?blv=485739",
-          "discovered_from_blv": "CHIVAS",
-          "discovered_at": "2026-07-22T01:02:27.040785+07:00",
-          "valid_until": "2026-07-22T03:24:05+07:00",
-          "is_expired": false
-        }
-      ],
+      "match_name": "Vikingur Reykjavik vs Hapoel Beer Sheva",
+      "scheduled_at": "2026-07-22T02:00:00+07:00",
+      "streams": [],
       "room_results": [
         {
-          "url": "https://socolivep.cv/truc-tiep/nacional-montevideo-vs-club-atletico-tigre-22-07-2026-0500?blv=598119",
-          "blv": "A TINH",
-          "blv_id": "598119",
+          "url": "https://socolivep.cv/truc-tiep/vikingur-reykjavik-vs-hapoel-beer-sheva-22-07-2026-0200?blv=250874",
+          "blv": "FIREMAN",
+          "blv_id": "250874",
           "streams": [
-            "https://pull.niur.live/live/stream-598119_lhd.m3u8?txSecret=b1ea907592b0d08782d13dfc36284e5a&txTime=6a5fb933"
+            "https://pull.niues.live/live/stream-991140_lhd.m3u8?auth_key=1784656255-0-0-bca148119b97340dd71b298578c69a02"
           ],
           "stream_sources": {
-            "https://pull.niur.live/live/stream-598119_lhd.m3u8?txSecret=b1ea907592b0d08782d13dfc36284e5a&txTime=6a5fb933": [
+            "https://pull.niues.live/live/stream-991140_lhd.m3u8?auth_key=1784656255-0-0-bca148119b97340dd71b298578c69a02": [
               "final-no-stream-scan",
               "harvest-final"
             ]
           },
           "stream_first_seen": [
-            "https://pull.niur.live/live/stream-598119_lhd.m3u8?txSecret=b1ea907592b0d08782d13dfc36284e5a&txTime=6a5fb933"
+            "https://pull.niues.live/live/stream-991140_lhd.m3u8?auth_key=1784656255-0-0-bca148119b97340dd71b298578c69a02"
           ],
           "discovered_blv_ids": [
-            "598119"
+            "991140"
           ],
           "diagnostics": {
-            "url": "https://socolivep.cv/truc-tiep/nacional-montevideo-vs-club-atletico-tigre-22-07-2026-0500/?blv=598119",
-            "title": "Xem trực tiếp bóng đá Nacional Montevideo vs Club Atletico Tigre | 05:00 ngày 22/07/2026",
-            "h1": "Trực tiếp bóng đá Socolive Nacional Montevideo vs Club Atletico Tigre lúc 05:00 ngày 22/07/2026",
+            "url": "https://socolivep.cv/truc-tiep/vikingur-reykjavik-vs-hapoel-beer-sheva-22-07-2026-0200/?blv=250874",
+            "title": "Xem trực tiếp bóng đá Vikingur Reykjavik vs Hapoel Beer Sheva | 02:00 ngày 22/07/2026",
+            "h1": "Trực tiếp bóng đá Socolive Vikingur Reykjavik vs Hapoel Beer Sheva lúc 02:00 ngày 22/07/2026",
             "ready_state": "complete",
             "visibility_state": "visible",
             "hidden": false,
             "video_count": 0,
             "iframe_count": 0,
-            "body_sample": "Skip to content Socolive Bảng xếp hạng Lịch thi đấu Kết quả bóng đá Tin thể thao Trực tiếp bóng đá Socolive Nacional Montevideo vs Club Atletico Tigre lúc 05:00 ngày 22/07/2026 CON CSA Nacional Montevideo 05:00 22/07 Club Atletico Tigre Trận đấu sẽ bắt đầu sau Ngày0 : Giờ3 : Phút58 : Giây21 Trận đấu chưa bắt đầu A TINH YONE COZY CHIVAS Chat Thống kê Đội hình Diễn Biến Bảng XH \" \" Xóa 😀 😁 😃 😄 😅 😆 😇 😉 😊 🙂 😋 😍 😘 😗 😙 😚 😜 😝 😛 😎 🙄 😳 😡 😕 😫 😤 😨 😥 😪 😓 😵 😲 🤧 😷 🤒 🤕 😴 💤 👏 🤙 👍 👎 👊 ✊ ✌ 👌 ✋ 🤚 💪 🤝 👈 👉 🖕 🖐 👄 👂 👀 🎅 🌞 🌙 ⭐ ⚡ 🔥 ❄️ ⚽ 🏀 🏈 ⚾ 🎁 🎉 ✒️ 📝 ❤️ 💛 💚 🆚 💬 🕐 Vô hiệu hóa tất cả Vô hiệu hóa quà tặng Tắt lời chào Đăng nhập để cùng chat nhé Gửi Tỷ lệ kèo Cược Châu Á Chủ Chấp Khách Cược Châu Âu Chủ Hòa Khách Tài xỉu Tài Tỷ lệ kèo Xỉu Kèo góc Tài Tỷ lệ kèo Xỉu Mô phỏng trận đấu Thống kê trận đấu UEFA CL 01:00 22/07 Fenerbahce VS null null null - null Sắp diễn ra Xem ngay Gornik Zabrze MESSI VIP QUỐC KHÁNH HẢI THANH NGƯỜI CÁ LOKA UEFA CL 01:00 22/07 Thun VS null null null - null Sắp diễn ra Xem ngay Dinamo Zagreb ĐỖ TÚ TÀI ANH TÀI A TÚ XUÂN TÓC ĐỎ UEFA CL 00:00 22/07 Aarhus AGF VS null null null - null Sắp diễn ra Xem ngay Lech Poznan PEWPE",
+            "body_sample": "Skip to content Socolive Bảng xếp hạng Lịch thi đấu Kết quả bóng đá Tin thể thao Trực tiếp bóng đá Socolive Vikingur Reykjavik vs Hapoel Beer Sheva lúc 02:00 ngày 22/07/2026 UEFA CL Vikingur Reykjavik 02:00 22/07 Hapoel Beer Sheva Trận đấu sẽ bắt đầu sau Ngày0 : Giờ1 : Phút58 : Giây16 Trận đấu chưa bắt đầu FIREMAN SEVEN RYO Chat Thống kê Đội hình Diễn Biến Bảng XH \" \" Admin Sóc Xanh: ⚽️NẠP 100k TẶNG 80K -NẠP 1TR TẶNG 120K -NẠP 15TR TẶNG 1TR5 CHỈ 1 Vòng cược -Bsport :https://www.BTY9296.com -✈️ TELE :https://t.me/socxanh123 ⚽️BUFA : J7UBKR + ☎️Facebook : http://fb.com/61590739693659 ☎️Zalo : 0567.381.606 Admin Sóc Xanh: Hệ sinh thái Trang cược chuyên nghiệp -Liên hệ ❤️ Facebook : http://fb.com/61590739693659 + TELE : @socxanh123 ⚽️ZALO : 0567.381.606 Xóa Tin nhắn riêng 😀 😁 😃 😄 😅 😆 😇 😉 😊 🙂 😋 😍 😘 😗 😙 😚 😜 😝 😛 😎 🙄 😳 😡 😕 😫 😤 😨 😥 😪 😓 😵 😲 🤧 😷 🤒 🤕 😴 💤 👏 🤙 👍 👎 👊 ✊ ✌ 👌 ✋ 🤚 💪 🤝 👈 👉 🖕 🖐 👄 👂 👀 🎅 🌞 🌙 ⭐ ⚡ 🔥 ❄️ ⚽ 🏀 🏈 ⚾ 🎁 🎉 ✒️ 📝 ❤️ 💛 💚 🆚 💬 🕐 Vô hiệu hóa tất cả Vô hiệu hóa quà tặng Tắt lời chào Đăng nhập để cùng chat nhé Gửi Tỷ lệ kèo Cược Châu Á Chủ Chấp Khách Cược Châu Âu Chủ Hòa Khách Tài xỉu Tài Tỷ lệ kèo Xỉu Kèo góc Tài Tỷ lệ kè",
             "harvest_rounds": 0,
-            "harvest_window_seconds": 0.633,
+            "harvest_window_seconds": 0.63,
             "main_status": 200,
             "harvested_stream_count": 1,
             "harvested_blv_ids": [
-              "598119"
+              "991140"
             ],
             "scan_mode": "browser-event",
-            "elapsed_seconds": 14.261
+            "elapsed_seconds": 14.14
           },
           "http_probe": {
             "enabled": false,
@@ -10116,99 +10427,10 @@
           "failed_requests": [
             "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/main.css?ver=2.8.5 | net::ERR_FAILED",
             "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/customize.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/auth.css?ver=670 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat.css?ver=138 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat(1).css?ver=385 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/toast.css?ver=726 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/themes/flatsome/assets/css/flatsome.css?ver=3.18.2 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/themes/flatsome-child/style.css?ver=3.0 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/countdown.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/match.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/livescore.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/style_custom.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/effect/running-border.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/option/option-6.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/highlight/option-1.css?ver=2.8.5 | net::ERR_FAILED"
-          ],
-          "http_errors": [
-            "403 https://socolivep.cv/wp-admin/admin-ajax.php?action=scl_realtime&sport=1",
-            "404 https://live.sportdb.live/api/v1/matchs/assistant-user?roomNum=598119"
-          ]
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/nacional-montevideo-vs-club-atletico-tigre-22-07-2026-0500?blv=372746",
-          "blv": "YONE",
-          "blv_id": "372746",
-          "streams": [
-            "https://pull.niues.live/live/stream-372746_lhd.m3u8?auth_key=1784649569-0-0-efcb3ae518418fd234678574cc91c184"
-          ],
-          "stream_sources": {
-            "https://pull.niues.live/live/stream-372746_lhd.m3u8?auth_key=1784649569-0-0-efcb3ae518418fd234678574cc91c184": [
-              "final-no-stream-scan",
-              "harvest-final"
-            ]
-          },
-          "stream_first_seen": [
-            "https://pull.niues.live/live/stream-372746_lhd.m3u8?auth_key=1784649569-0-0-efcb3ae518418fd234678574cc91c184"
-          ],
-          "discovered_blv_ids": [
-            "372746"
-          ],
-          "diagnostics": {
-            "url": "https://socolivep.cv/truc-tiep/nacional-montevideo-vs-club-atletico-tigre-22-07-2026-0500/?blv=372746",
-            "title": "Xem trực tiếp bóng đá Nacional Montevideo vs Club Atletico Tigre | 05:00 ngày 22/07/2026",
-            "h1": "Trực tiếp bóng đá Socolive Nacional Montevideo vs Club Atletico Tigre lúc 05:00 ngày 22/07/2026",
-            "ready_state": "complete",
-            "visibility_state": "visible",
-            "hidden": false,
-            "video_count": 0,
-            "iframe_count": 0,
-            "body_sample": "Skip to content Socolive Bảng xếp hạng Lịch thi đấu Kết quả bóng đá Tin thể thao Trực tiếp bóng đá Socolive Nacional Montevideo vs Club Atletico Tigre lúc 05:00 ngày 22/07/2026 CON CSA Nacional Montevideo 05:00 22/07 Club Atletico Tigre Trận đấu sẽ bắt đầu sau Ngày0 : Giờ3 : Phút58 : Giây5 Trận đấu chưa bắt đầu A TINH YONE COZY CHIVAS Chat Thống kê Đội hình Diễn Biến Bảng XH \" \" Xóa Tin nhắn riêng 😀 😁 😃 😄 😅 😆 😇 😉 😊 🙂 😋 😍 😘 😗 😙 😚 😜 😝 😛 😎 🙄 😳 😡 😕 😫 😤 😨 😥 😪 😓 😵 😲 🤧 😷 🤒 🤕 😴 💤 👏 🤙 👍 👎 👊 ✊ ✌ 👌 ✋ 🤚 💪 🤝 👈 👉 🖕 🖐 👄 👂 👀 🎅 🌞 🌙 ⭐ ⚡ 🔥 ❄️ ⚽ 🏀 🏈 ⚾ 🎁 🎉 ✒️ 📝 ❤️ 💛 💚 🆚 💬 🕐 Vô hiệu hóa tất cả Vô hiệu hóa quà tặng Tắt lời chào Đăng nhập để cùng chat nhé Gửi Tỷ lệ kèo Cược Châu Á Chủ Chấp Khách Cược Châu Âu Chủ Hòa Khách Tài xỉu Tài Tỷ lệ kèo Xỉu Kèo góc Tài Tỷ lệ kèo Xỉu Mô phỏng trận đấu Thống kê trận đấu UEFA CL 01:00 22/07 Fenerbahce VS null null null - null Sắp diễn ra Xem ngay Gornik Zabrze MESSI VIP QUỐC KHÁNH HẢI THANH NGƯỜI CÁ LOKA UEFA CL 01:00 22/07 Thun VS null null null - null Sắp diễn ra Xem ngay Dinamo Zagreb ĐỖ TÚ TÀI ANH TÀI A TÚ XUÂN TÓC ĐỎ UEFA CL 00:00 22/07 Aarhus AGF VS null null null - null Sắp diễn ra Xem ngay Lec",
-            "harvest_rounds": 0,
-            "harvest_window_seconds": 0.633,
-            "main_status": 200,
-            "harvested_stream_count": 1,
-            "harvested_blv_ids": [
-              "372746"
-            ],
-            "scan_mode": "browser-event",
-            "elapsed_seconds": 14.015
-          },
-          "http_probe": {
-            "enabled": false,
-            "status": null,
-            "elapsed_seconds": 0.0,
-            "error": ""
-          },
-          "errors": [
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED"
-          ],
-          "failed_requests": [
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/main.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/customize.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/auth.css?ver=369 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat.css?ver=125 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat(1).css?ver=68 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/toast.css?ver=353 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/auth.css?ver=221 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat.css?ver=230 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat(1).css?ver=992 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/toast.css?ver=805 | net::ERR_FAILED",
             "stylesheet https://socolivep.cv/wp-content/themes/flatsome/assets/css/flatsome.css?ver=3.18.2 | net::ERR_FAILED",
             "stylesheet https://socolivep.cv/wp-content/themes/flatsome-child/style.css?ver=3.0 | net::ERR_FAILED",
             "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/countdown.css?ver=2.8.5 | net::ERR_FAILED",
@@ -10224,43 +10446,43 @@
           ]
         },
         {
-          "url": "https://socolivep.cv/truc-tiep/nacional-montevideo-vs-club-atletico-tigre-22-07-2026-0500?blv=531989",
-          "blv": "COZY",
-          "blv_id": "531989",
+          "url": "https://socolivep.cv/truc-tiep/vikingur-reykjavik-vs-hapoel-beer-sheva-22-07-2026-0200?blv=618546",
+          "blv": "SEVEN",
+          "blv_id": "618546",
           "streams": [
-            "https://pull.niues.live/live/stream-531989_lhd.m3u8?auth_key=1784648734-0-0-2e8a441c6a4cbb724f8d95843f0d8d5c"
+            "https://pull.niues.live/live/stream-618546_lhd.m3u8?auth_key=1784656855-0-0-0ff350fd2f86357ed18c367fde313ffc"
           ],
           "stream_sources": {
-            "https://pull.niues.live/live/stream-531989_lhd.m3u8?auth_key=1784648734-0-0-2e8a441c6a4cbb724f8d95843f0d8d5c": [
+            "https://pull.niues.live/live/stream-618546_lhd.m3u8?auth_key=1784656855-0-0-0ff350fd2f86357ed18c367fde313ffc": [
               "final-no-stream-scan",
               "harvest-final"
             ]
           },
           "stream_first_seen": [
-            "https://pull.niues.live/live/stream-531989_lhd.m3u8?auth_key=1784648734-0-0-2e8a441c6a4cbb724f8d95843f0d8d5c"
+            "https://pull.niues.live/live/stream-618546_lhd.m3u8?auth_key=1784656855-0-0-0ff350fd2f86357ed18c367fde313ffc"
           ],
           "discovered_blv_ids": [
-            "531989"
+            "618546"
           ],
           "diagnostics": {
-            "url": "https://socolivep.cv/truc-tiep/nacional-montevideo-vs-club-atletico-tigre-22-07-2026-0500/?blv=531989",
-            "title": "Xem trực tiếp bóng đá Nacional Montevideo vs Club Atletico Tigre | 05:00 ngày 22/07/2026",
-            "h1": "Trực tiếp bóng đá Socolive Nacional Montevideo vs Club Atletico Tigre lúc 05:00 ngày 22/07/2026",
+            "url": "https://socolivep.cv/truc-tiep/vikingur-reykjavik-vs-hapoel-beer-sheva-22-07-2026-0200/?blv=618546",
+            "title": "Xem trực tiếp bóng đá Vikingur Reykjavik vs Hapoel Beer Sheva | 02:00 ngày 22/07/2026",
+            "h1": "Trực tiếp bóng đá Socolive Vikingur Reykjavik vs Hapoel Beer Sheva lúc 02:00 ngày 22/07/2026",
             "ready_state": "complete",
             "visibility_state": "visible",
             "hidden": false,
             "video_count": 0,
             "iframe_count": 0,
-            "body_sample": "Skip to content Socolive Bảng xếp hạng Lịch thi đấu Kết quả bóng đá Tin thể thao Trực tiếp bóng đá Socolive Nacional Montevideo vs Club Atletico Tigre lúc 05:00 ngày 22/07/2026 CON CSA Nacional Montevideo 05:00 22/07 Club Atletico Tigre Trận đấu sẽ bắt đầu sau Ngày0 : Giờ3 : Phút57 : Giây49 Trận đấu chưa bắt đầu A TINH YONE COZY CHIVAS Chat Thống kê Đội hình Diễn Biến Bảng XH \" \" Xóa Tin nhắn riêng 😀 😁 😃 😄 😅 😆 😇 😉 😊 🙂 😋 😍 😘 😗 😙 😚 😜 😝 😛 😎 🙄 😳 😡 😕 😫 😤 😨 😥 😪 😓 😵 😲 🤧 😷 🤒 🤕 😴 💤 👏 🤙 👍 👎 👊 ✊ ✌ 👌 ✋ 🤚 💪 🤝 👈 👉 🖕 🖐 👄 👂 👀 🎅 🌞 🌙 ⭐ ⚡ 🔥 ❄️ ⚽ 🏀 🏈 ⚾ 🎁 🎉 ✒️ 📝 ❤️ 💛 💚 🆚 💬 🕐 Vô hiệu hóa tất cả Vô hiệu hóa quà tặng Tắt lời chào Đăng nhập để cùng chat nhé Gửi Tỷ lệ kèo Cược Châu Á Chủ Chấp Khách Cược Châu Âu Chủ Hòa Khách Tài xỉu Tài Tỷ lệ kèo Xỉu Kèo góc Tài Tỷ lệ kèo Xỉu Mô phỏng trận đấu Thống kê trận đấu UEFA CL 01:00 22/07 Fenerbahce VS null null null - null Sắp diễn ra Xem ngay Gornik Zabrze MESSI VIP QUỐC KHÁNH HẢI THANH NGƯỜI CÁ LOKA UEFA CL 01:00 22/07 Thun VS null null null - null Sắp diễn ra Xem ngay Dinamo Zagreb ĐỖ TÚ TÀI ANH TÀI A TÚ XUÂN TÓC ĐỎ UEFA CL 00:00 22/07 Aarhus AGF VS null null null - null Sắp diễn ra Xem ngay Le",
+            "body_sample": "Skip to content Socolive Bảng xếp hạng Lịch thi đấu Kết quả bóng đá Tin thể thao Trực tiếp bóng đá Socolive Vikingur Reykjavik vs Hapoel Beer Sheva lúc 02:00 ngày 22/07/2026 UEFA CL Vikingur Reykjavik 02:00 22/07 Hapoel Beer Sheva Trận đấu sẽ bắt đầu sau Ngày0 : Giờ1 : Phút57 : Giây59 Trận đấu chưa bắt đầu FIREMAN SEVEN RYO Chat Thống kê Đội hình Diễn Biến Bảng XH \" \" DuyAnhhh: thôi dcm lại vv r Admin Sóc Bánh Mì: B- sport https://www.bty9251.com 👑 👑V-sport https://w9.vty28.net TRANG CƯỢC TOP 1, NHÓM KÈO UY TÍN ❤️ Telegram: https://t.me/socbanhmi338 , LIÊN HỆ MÃ BUFA 4RZWBN 💎 Zalo: 0567 820 040 HoangSay16: vv cmnr Hieuasd: var vv DuyAnhhh: nhìn là vv r đấy DuyAnhhh: var thì xđịnh hủy luôn DuyAnhhh: tính từ vai TienDat0612: nhạy cảm đấy Admin Sóc Bánh Mì: B- sport https://www.bty9251.com 👑 👑V-sport https://w9.vty28.net KHUYẾN MÃI ĐA DẠNG, KÈO CƯỢC PHONG PHÚ ❤️ Telegram: https://t.me/socbanhmi338 , LIÊN HỆ MÃ BUFA 4RZWBN 💎 Zalo: 0567 820 040 DuyAnhhh: nữa vai r TienDat0612: chắc vv 1 tí tí TienDat0612: hủy thì h2 chơi góc to tiền béokk: ra mà check var DuyAnhhh: nghe ý kiến DuyAnhhh: thế thì ngonn Admin Sóc Bánh Mì: B- sport https://www.bty9251.com 👑 👑V-sport https://w9.vty28",
             "harvest_rounds": 0,
-            "harvest_window_seconds": 0.633,
+            "harvest_window_seconds": 0.632,
             "main_status": 200,
             "harvested_stream_count": 1,
             "harvested_blv_ids": [
-              "531989"
+              "618546"
             ],
             "scan_mode": "browser-event",
-            "elapsed_seconds": 14.083
+            "elapsed_seconds": 14.902
           },
           "http_probe": {
             "enabled": false,
@@ -10293,10 +10515,10 @@
           "failed_requests": [
             "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/main.css?ver=2.8.5 | net::ERR_FAILED",
             "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/customize.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/auth.css?ver=838 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat.css?ver=771 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat(1).css?ver=149 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/toast.css?ver=705 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/auth.css?ver=178 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat.css?ver=896 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat(1).css?ver=316 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/toast.css?ver=520 | net::ERR_FAILED",
             "stylesheet https://socolivep.cv/wp-content/themes/flatsome/assets/css/flatsome.css?ver=3.18.2 | net::ERR_FAILED",
             "stylesheet https://socolivep.cv/wp-content/themes/flatsome-child/style.css?ver=3.0 | net::ERR_FAILED",
             "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/countdown.css?ver=2.8.5 | net::ERR_FAILED",
@@ -10312,43 +10534,43 @@
           ]
         },
         {
-          "url": "https://socolivep.cv/truc-tiep/nacional-montevideo-vs-club-atletico-tigre-22-07-2026-0500?blv=485739",
-          "blv": "CHIVAS",
-          "blv_id": "485739",
+          "url": "https://socolivep.cv/truc-tiep/vikingur-reykjavik-vs-hapoel-beer-sheva-22-07-2026-0200?blv=602019",
+          "blv": "RYO",
+          "blv_id": "602019",
           "streams": [
-            "https://pull.niur.live/live/stream-485739_lhd.m3u8?txSecret=b9f039123e46261bb470dbc2a6b07437&txTime=6a5fd565"
+            "https://pull.niues.live/live/stream-602019_lhd.m3u8?auth_key=1784656855-0-0-e626201d0e0e2c21640f8a24c9bb45bb"
           ],
           "stream_sources": {
-            "https://pull.niur.live/live/stream-485739_lhd.m3u8?txSecret=b9f039123e46261bb470dbc2a6b07437&txTime=6a5fd565": [
+            "https://pull.niues.live/live/stream-602019_lhd.m3u8?auth_key=1784656855-0-0-e626201d0e0e2c21640f8a24c9bb45bb": [
               "final-no-stream-scan",
               "harvest-final"
             ]
           },
           "stream_first_seen": [
-            "https://pull.niur.live/live/stream-485739_lhd.m3u8?txSecret=b9f039123e46261bb470dbc2a6b07437&txTime=6a5fd565"
+            "https://pull.niues.live/live/stream-602019_lhd.m3u8?auth_key=1784656855-0-0-e626201d0e0e2c21640f8a24c9bb45bb"
           ],
           "discovered_blv_ids": [
-            "485739"
+            "602019"
           ],
           "diagnostics": {
-            "url": "https://socolivep.cv/truc-tiep/nacional-montevideo-vs-club-atletico-tigre-22-07-2026-0500/?blv=485739",
-            "title": "Xem trực tiếp bóng đá Nacional Montevideo vs Club Atletico Tigre | 05:00 ngày 22/07/2026",
-            "h1": "Trực tiếp bóng đá Socolive Nacional Montevideo vs Club Atletico Tigre lúc 05:00 ngày 22/07/2026",
+            "url": "https://socolivep.cv/truc-tiep/vikingur-reykjavik-vs-hapoel-beer-sheva-22-07-2026-0200/?blv=602019",
+            "title": "Xem trực tiếp bóng đá Vikingur Reykjavik vs Hapoel Beer Sheva | 02:00 ngày 22/07/2026",
+            "h1": "Trực tiếp bóng đá Socolive Vikingur Reykjavik vs Hapoel Beer Sheva lúc 02:00 ngày 22/07/2026",
             "ready_state": "complete",
             "visibility_state": "visible",
             "hidden": false,
             "video_count": 0,
             "iframe_count": 0,
-            "body_sample": "Skip to content Socolive Bảng xếp hạng Lịch thi đấu Kết quả bóng đá Tin thể thao Trực tiếp bóng đá Socolive Nacional Montevideo vs Club Atletico Tigre lúc 05:00 ngày 22/07/2026 CON CSA Nacional Montevideo 05:00 22/07 Club Atletico Tigre Trận đấu sẽ bắt đầu sau Ngày0 : Giờ3 : Phút57 : Giây32 Trận đấu chưa bắt đầu A TINH YONE COZY CHIVAS Chat Thống kê Đội hình Diễn Biến Bảng XH \" \" Xóa Tin nhắn riêng 😀 😁 😃 😄 😅 😆 😇 😉 😊 🙂 😋 😍 😘 😗 😙 😚 😜 😝 😛 😎 🙄 😳 😡 😕 😫 😤 😨 😥 😪 😓 😵 😲 🤧 😷 🤒 🤕 😴 💤 👏 🤙 👍 👎 👊 ✊ ✌ 👌 ✋ 🤚 💪 🤝 👈 👉 🖕 🖐 👄 👂 👀 🎅 🌞 🌙 ⭐ ⚡ 🔥 ❄️ ⚽ 🏀 🏈 ⚾ 🎁 🎉 ✒️ 📝 ❤️ 💛 💚 🆚 💬 🕐 Vô hiệu hóa tất cả Vô hiệu hóa quà tặng Tắt lời chào Đăng nhập để cùng chat nhé Gửi Tỷ lệ kèo Cược Châu Á Chủ Chấp Khách Cược Châu Âu Chủ Hòa Khách Tài xỉu Tài Tỷ lệ kèo Xỉu Kèo góc Tài Tỷ lệ kèo Xỉu Mô phỏng trận đấu Thống kê trận đấu UEFA CL 01:00 22/07 Fenerbahce VS null null null - null Sắp diễn ra Xem ngay Gornik Zabrze MESSI VIP QUỐC KHÁNH HẢI THANH NGƯỜI CÁ LOKA UEFA CL 01:00 22/07 Thun VS null null null - null Sắp diễn ra Xem ngay Dinamo Zagreb ĐỖ TÚ TÀI ANH TÀI A TÚ XUÂN TÓC ĐỎ UEFA CL 00:00 22/07 Aarhus AGF VS null null null - null Sắp diễn ra Xem ngay Le",
+            "body_sample": "Skip to content Socolive Bảng xếp hạng Lịch thi đấu Kết quả bóng đá Tin thể thao Trực tiếp bóng đá Socolive Vikingur Reykjavik vs Hapoel Beer Sheva lúc 02:00 ngày 22/07/2026 UEFA CL Vikingur Reykjavik 02:00 22/07 Hapoel Beer Sheva Trận đấu sẽ bắt đầu sau Ngày0 : Giờ1 : Phút57 : Giây43 Trận đấu chưa bắt đầu FIREMAN SEVEN RYO Chat Thống kê Đội hình Diễn Biến Bảng XH \" \" kaka0506: đang muốn có 1 bộ phim hay để cày , ryo biết phim nào ok ko Admin Trợ lý Diệu Thương: KẾT BẠN EM HỖ TRỢ VÀO NHÓM NHẬN KÈO VÍP ☎️ 𝙕𝙖𝙡𝙤: / FACEBOOK: https://m.me/socthuoc6789 ♨️ 𝘽𝙐𝙁𝘼 : 2MJ5QT ✅ Tele :https://t.me/socthuoc6789 Mua sữa cho con 278: việt vị mà Thanhquang: huy đi kaka0506: tình yêu hoặc phim dễ chảy nước mắt cx dc ryo Mua sữa cho con 278: bàn chân kaka0506: xog tìm hộ nha ryo , tui tìm mãi chả có cái nào ok Admin Trợ lý Diệu Thương: KHUYẾN MÃI CHO 2 L ẦN NẠP ĐẦU LÊN TỚI 3 TRIỆU 6 https://www.bty9235.com . ☎️ 𝙕𝙖𝙡𝙤: FACEBOOK: https://m.me/socthuoc6789 ☘️ 𝘽𝙐𝙁𝘼 : 2MJ5QT♨️𝙏𝙀𝙇𝙀 : https://t.me/socthuoc6789 🍄 link bufa : https://bufa.chat Thanhquang: vv rui check lâu, thế Thanhquang: moa no Thanhquang: ảo vải kaka0506: ryo hay xem phim việt thì chịu chết kaka0506: có khi ryo xem trấn ",
             "harvest_rounds": 0,
-            "harvest_window_seconds": 0.633,
+            "harvest_window_seconds": 0.631,
             "main_status": 200,
             "harvested_stream_count": 1,
             "harvested_blv_ids": [
-              "485739"
+              "602019"
             ],
             "scan_mode": "browser-event",
-            "elapsed_seconds": 14.272
+            "elapsed_seconds": 14.048
           },
           "http_probe": {
             "enabled": false,
@@ -10381,10 +10603,10 @@
           "failed_requests": [
             "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/main.css?ver=2.8.5 | net::ERR_FAILED",
             "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/customize.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/auth.css?ver=57 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat.css?ver=840 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat(1).css?ver=318 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/toast.css?ver=133 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/auth.css?ver=28 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat.css?ver=614 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat(1).css?ver=351 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/toast.css?ver=515 | net::ERR_FAILED",
             "stylesheet https://socolivep.cv/wp-content/themes/flatsome/assets/css/flatsome.css?ver=3.18.2 | net::ERR_FAILED",
             "stylesheet https://socolivep.cv/wp-content/themes/flatsome-child/style.css?ver=3.0 | net::ERR_FAILED",
             "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/countdown.css?ver=2.8.5 | net::ERR_FAILED",
@@ -10401,99 +10623,75 @@
         }
       ],
       "attempted_room_ids": [
-        "372746",
-        "485739",
-        "531989",
-        "598119"
+        "250874",
+        "602019",
+        "618546"
       ],
       "coverage": {
-        "found_streams": 2,
-        "found_blv_ids": [
-          "485739",
-          "598119"
-        ],
-        "goal": 8,
+        "found_streams": 0,
+        "found_blv_ids": [],
+        "goal": 6,
         "source_goal_reached": false,
-        "room_queue_complete": false,
-        "complete": false,
+        "room_queue_complete": true,
+        "complete": true,
         "max_streams_per_blv": 2,
-        "total_explicit_blv_rooms": 4,
-        "pending_room_keys": [
-          "372746",
-          "531989"
-        ],
+        "total_explicit_blv_rooms": 3,
+        "pending_room_keys": [],
         "room_progress": {
-          "598119": {
-            "key": "598119",
-            "url": "https://socolivep.cv/truc-tiep/nacional-montevideo-vs-club-atletico-tigre-22-07-2026-0500?blv=598119",
-            "blv": "A TINH",
-            "blv_id": "598119",
+          "250874": {
+            "key": "250874",
+            "url": "https://socolivep.cv/truc-tiep/vikingur-reykjavik-vs-hapoel-beer-sheva-22-07-2026-0200?blv=250874",
+            "blv": "FIREMAN",
+            "blv_id": "250874",
             "status": "success",
             "attempts": 1,
             "attempts_total": 1,
             "ever_attempted": true,
             "valid_stream_ever_found": true,
-            "needs_token_refresh": false,
-            "completion_reason": "valid_stream",
-            "rate_limit_hits": 0,
-            "last_http_status": 200,
-            "last_stream_count": 1,
-            "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
-          },
-          "372746": {
-            "key": "372746",
-            "url": "https://socolivep.cv/truc-tiep/nacional-montevideo-vs-club-atletico-tigre-22-07-2026-0500?blv=372746",
-            "blv": "YONE",
-            "blv_id": "372746",
-            "status": "retry",
-            "attempts": 1,
-            "attempts_total": 1,
-            "ever_attempted": true,
-            "valid_stream_ever_found": false,
             "needs_token_refresh": true,
-            "completion_reason": "",
+            "completion_reason": "valid_stream_seen_earlier",
             "rate_limit_hits": 0,
             "last_http_status": 200,
             "last_stream_count": 0,
             "last_error": "Token cũ đã hết hạn; giữ nguyên attempts_total và trạng thái hoàn tất của BLV."
           },
-          "531989": {
-            "key": "531989",
-            "url": "https://socolivep.cv/truc-tiep/nacional-montevideo-vs-club-atletico-tigre-22-07-2026-0500?blv=531989",
-            "blv": "COZY",
-            "blv_id": "531989",
-            "status": "retry",
-            "attempts": 1,
-            "attempts_total": 1,
-            "ever_attempted": true,
-            "valid_stream_ever_found": false,
-            "needs_token_refresh": true,
-            "completion_reason": "",
-            "rate_limit_hits": 0,
-            "last_http_status": 200,
-            "last_stream_count": 0,
-            "last_error": "Token cũ đã hết hạn; giữ nguyên attempts_total và trạng thái hoàn tất của BLV."
-          },
-          "485739": {
-            "key": "485739",
-            "url": "https://socolivep.cv/truc-tiep/nacional-montevideo-vs-club-atletico-tigre-22-07-2026-0500?blv=485739",
-            "blv": "CHIVAS",
-            "blv_id": "485739",
+          "618546": {
+            "key": "618546",
+            "url": "https://socolivep.cv/truc-tiep/vikingur-reykjavik-vs-hapoel-beer-sheva-22-07-2026-0200?blv=618546",
+            "blv": "SEVEN",
+            "blv_id": "618546",
             "status": "success",
             "attempts": 1,
             "attempts_total": 1,
             "ever_attempted": true,
             "valid_stream_ever_found": true,
-            "needs_token_refresh": false,
-            "completion_reason": "valid_stream",
+            "needs_token_refresh": true,
+            "completion_reason": "valid_stream_seen_earlier",
             "rate_limit_hits": 0,
             "last_http_status": 200,
-            "last_stream_count": 1,
-            "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
+            "last_stream_count": 0,
+            "last_error": "Token cũ đã hết hạn; giữ nguyên attempts_total và trạng thái hoàn tất của BLV."
+          },
+          "602019": {
+            "key": "602019",
+            "url": "https://socolivep.cv/truc-tiep/vikingur-reykjavik-vs-hapoel-beer-sheva-22-07-2026-0200?blv=602019",
+            "blv": "RYO",
+            "blv_id": "602019",
+            "status": "success",
+            "attempts": 1,
+            "attempts_total": 1,
+            "ever_attempted": true,
+            "valid_stream_ever_found": true,
+            "needs_token_refresh": true,
+            "completion_reason": "valid_stream_seen_earlier",
+            "rate_limit_hits": 0,
+            "last_http_status": 200,
+            "last_stream_count": 0,
+            "last_error": "Token cũ đã hết hạn; giữ nguyên attempts_total và trạng thái hoàn tất của BLV."
           },
           "__base__": {
             "key": "__base__",
-            "url": "https://socolivep.cv/truc-tiep/nacional-montevideo-vs-club-atletico-tigre-22-07-2026-0500",
+            "url": "https://socolivep.cv/truc-tiep/vikingur-reykjavik-vs-hapoel-beer-sheva-22-07-2026-0200",
             "blv": "XEM NGAY",
             "blv_id": "",
             "status": "pending",
@@ -10512,77 +10710,60 @@
       },
       "errors": [],
       "room_progress": {
-        "598119": {
-          "key": "598119",
-          "url": "https://socolivep.cv/truc-tiep/nacional-montevideo-vs-club-atletico-tigre-22-07-2026-0500?blv=598119",
-          "blv": "A TINH",
-          "blv_id": "598119",
+        "250874": {
+          "key": "250874",
+          "url": "https://socolivep.cv/truc-tiep/vikingur-reykjavik-vs-hapoel-beer-sheva-22-07-2026-0200?blv=250874",
+          "blv": "FIREMAN",
+          "blv_id": "250874",
           "status": "success",
           "attempts": 1,
           "attempts_total": 1,
           "ever_attempted": true,
           "valid_stream_ever_found": true,
-          "needs_token_refresh": false,
-          "completion_reason": "valid_stream",
-          "rate_limit_hits": 0,
-          "last_http_status": 200,
-          "last_stream_count": 1,
-          "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
-        },
-        "372746": {
-          "key": "372746",
-          "url": "https://socolivep.cv/truc-tiep/nacional-montevideo-vs-club-atletico-tigre-22-07-2026-0500?blv=372746",
-          "blv": "YONE",
-          "blv_id": "372746",
-          "status": "retry",
-          "attempts": 1,
-          "attempts_total": 1,
-          "ever_attempted": true,
-          "valid_stream_ever_found": false,
           "needs_token_refresh": true,
-          "completion_reason": "",
+          "completion_reason": "valid_stream_seen_earlier",
           "rate_limit_hits": 0,
           "last_http_status": 200,
           "last_stream_count": 0,
           "last_error": "Token cũ đã hết hạn; giữ nguyên attempts_total và trạng thái hoàn tất của BLV."
         },
-        "531989": {
-          "key": "531989",
-          "url": "https://socolivep.cv/truc-tiep/nacional-montevideo-vs-club-atletico-tigre-22-07-2026-0500?blv=531989",
-          "blv": "COZY",
-          "blv_id": "531989",
-          "status": "retry",
-          "attempts": 1,
-          "attempts_total": 1,
-          "ever_attempted": true,
-          "valid_stream_ever_found": false,
-          "needs_token_refresh": true,
-          "completion_reason": "",
-          "rate_limit_hits": 0,
-          "last_http_status": 200,
-          "last_stream_count": 0,
-          "last_error": "Token cũ đã hết hạn; giữ nguyên attempts_total và trạng thái hoàn tất của BLV."
-        },
-        "485739": {
-          "key": "485739",
-          "url": "https://socolivep.cv/truc-tiep/nacional-montevideo-vs-club-atletico-tigre-22-07-2026-0500?blv=485739",
-          "blv": "CHIVAS",
-          "blv_id": "485739",
+        "618546": {
+          "key": "618546",
+          "url": "https://socolivep.cv/truc-tiep/vikingur-reykjavik-vs-hapoel-beer-sheva-22-07-2026-0200?blv=618546",
+          "blv": "SEVEN",
+          "blv_id": "618546",
           "status": "success",
           "attempts": 1,
           "attempts_total": 1,
           "ever_attempted": true,
           "valid_stream_ever_found": true,
-          "needs_token_refresh": false,
-          "completion_reason": "valid_stream",
+          "needs_token_refresh": true,
+          "completion_reason": "valid_stream_seen_earlier",
           "rate_limit_hits": 0,
           "last_http_status": 200,
-          "last_stream_count": 1,
-          "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
+          "last_stream_count": 0,
+          "last_error": "Token cũ đã hết hạn; giữ nguyên attempts_total và trạng thái hoàn tất của BLV."
+        },
+        "602019": {
+          "key": "602019",
+          "url": "https://socolivep.cv/truc-tiep/vikingur-reykjavik-vs-hapoel-beer-sheva-22-07-2026-0200?blv=602019",
+          "blv": "RYO",
+          "blv_id": "602019",
+          "status": "success",
+          "attempts": 1,
+          "attempts_total": 1,
+          "ever_attempted": true,
+          "valid_stream_ever_found": true,
+          "needs_token_refresh": true,
+          "completion_reason": "valid_stream_seen_earlier",
+          "rate_limit_hits": 0,
+          "last_http_status": 200,
+          "last_stream_count": 0,
+          "last_error": "Token cũ đã hết hạn; giữ nguyên attempts_total và trạng thái hoàn tất của BLV."
         },
         "__base__": {
           "key": "__base__",
-          "url": "https://socolivep.cv/truc-tiep/nacional-montevideo-vs-club-atletico-tigre-22-07-2026-0500",
+          "url": "https://socolivep.cv/truc-tiep/vikingur-reykjavik-vs-hapoel-beer-sheva-22-07-2026-0200",
           "blv": "XEM NGAY",
           "blv_id": "",
           "status": "pending",
@@ -10597,21 +10778,7 @@
           "last_stream_count": 0,
           "last_error": ""
         }
-      },
-      "run_attempted_room_keys": [
-        "372746",
-        "485739",
-        "531989",
-        "598119"
-      ],
-      "run_rate_limited_room_keys": [],
-      "run_completed_room_keys": [
-        "372746",
-        "485739",
-        "531989",
-        "598119"
-      ],
-      "run_global_budget_used": 4
+      }
     }
   ]
 }
