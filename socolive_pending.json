@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-21T17:20:08.020626+07:00",
+  "generated_at": "2026-07-21T17:23:50.255025+07:00",
   "state_schema_version": "v10.3-safe-chain-valid-streams",
   "dispatch_next": true,
   "pending_count": 6,
@@ -7,26 +7,26 @@
   "completed_count": 5,
   "coverage_complete_count": 0,
   "total_match_count": 6,
-  "total_stream_count": 6,
-  "progress_count": 0,
-  "new_link_count": 0,
+  "total_stream_count": 7,
+  "progress_count": 1,
+  "new_link_count": 1,
   "refreshed_link_count": 0,
-  "newly_attempted_count": 1,
-  "attempt_metric_delta": 1,
+  "newly_attempted_count": 11,
+  "attempt_metric_delta": 2,
   "pending_state_changed": true,
   "real_progress_for_fingerprint": true,
-  "run_attempted_count": 1,
-  "run_rate_limited_count": 1,
+  "run_attempted_count": 12,
+  "run_rate_limited_count": 0,
   "useful_activity": true,
-  "chain_runs": 11,
-  "no_progress_runs": 1,
+  "chain_runs": 12,
+  "no_progress_runs": 0,
   "unchanged_pending_runs": 0,
-  "rate_limit_only_runs": 1,
-  "rate_limit_only_run": true,
-  "pending_fingerprint": "ff28978181b3295badea28c2e0022263e6cc5284bd991c9ce0a4cf886607f18d",
+  "rate_limit_only_runs": 0,
+  "rate_limit_only_run": false,
+  "pending_fingerprint": "cd277829b38b196129fed69265d2bcd772676166b5f3221b980e89ee66841fea",
   "stop_reason": "",
-  "rate_limited": true,
-  "rate_limit_url": "https://socolivep.cv/truc-tiep/yunnan-yukun-vs-chengdu-rongcheng-21-07-2026-1400?blv=595335",
+  "rate_limited": false,
+  "rate_limit_url": "",
   "count": 6,
   "matches": [
     {
@@ -400,9 +400,9 @@
         "total_explicit_blv_rooms": 4,
         "pending_room_keys": [
           "283501",
-          "304148",
           "612098",
-          "372746"
+          "372746",
+          "304148"
         ],
         "room_progress": {
           "612098": {
@@ -447,7 +447,7 @@
             "blv": "LUCAS",
             "blv_id": "304148",
             "status": "retry",
-            "attempts": 1,
+            "attempts": 2,
             "rate_limit_hits": 0,
             "last_http_status": 200,
             "last_stream_count": 1,
@@ -515,7 +515,7 @@
           "blv": "LUCAS",
           "blv_id": "304148",
           "status": "retry",
-          "attempts": 1,
+          "attempts": 2,
           "rate_limit_hits": 0,
           "last_http_status": 200,
           "last_stream_count": 1,
@@ -536,9 +536,9 @@
       },
       "pending_room_keys": [
         "283501",
-        "304148",
         "612098",
-        "372746"
+        "372746",
+        "304148"
       ]
     },
     {
@@ -1386,12 +1386,43 @@
           "discovered_at": "2026-07-21T17:19:08.661527+07:00",
           "valid_until": "2026-07-21T18:07:25+07:00",
           "is_expired": false
+        },
+        {
+          "url": "https://pull.niues.live/live/stream-484845_lhd.m3u8?auth_key=1784631355-0-0-d55d2c61be2d7c0b809d64e9e68c56a3",
+          "queue_room_key": "484845",
+          "room_url": "https://socolivep.cv/truc-tiep/dalian-kewei-vs-beijing-guoan-21-07-2026-1400?blv=484845",
+          "blv": "A BỆU",
+          "blv_id": "484845",
+          "source_id": "484845",
+          "source_provenance": [
+            "cdp/request",
+            "harvest-final",
+            "harvest-round-1",
+            "harvest-round-2",
+            "harvest-round-3",
+            "harvest-round-4",
+            "harvest-round-5",
+            "harvest-round-6",
+            "harvest-round-7",
+            "harvest-round-8",
+            "harvest-round-9",
+            "request/image",
+            "request/xhr"
+          ],
+          "source_confidence": "network",
+          "mapping_mode": "exact-room-id",
+          "discovered_from_room_url": "https://socolivep.cv/truc-tiep/dalian-kewei-vs-beijing-guoan-21-07-2026-1400?blv=484845",
+          "discovered_from_blv": "A BỆU",
+          "discovered_at": "2026-07-21T17:23:48.242102+07:00",
+          "valid_until": "2026-07-21T17:55:55+07:00",
+          "is_expired": false
         }
       ],
       "coverage": {
-        "found_streams": 1,
+        "found_streams": 2,
         "found_blv_ids": [
-          "109053"
+          "109053",
+          "484845"
         ],
         "goal": 12,
         "source_goal_reached": false,
@@ -1401,11 +1432,11 @@
         "total_explicit_blv_rooms": 6,
         "pending_room_keys": [
           "414317",
-          "484845",
           "187579",
           "118206",
           "603255",
-          "109053"
+          "109053",
+          "484845"
         ],
         "room_progress": {
           "414317": {
@@ -1438,11 +1469,11 @@
             "blv": "A BỆU",
             "blv_id": "484845",
             "status": "retry",
-            "attempts": 0,
+            "attempts": 1,
             "rate_limit_hits": 0,
             "last_http_status": 200,
-            "last_stream_count": 0,
-            "last_error": "Link ký số đã hết hạn; đưa BLV trở lại queue."
+            "last_stream_count": 1,
+            "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
           },
           "187579": {
             "key": "187579",
@@ -1495,7 +1526,8 @@
         }
       },
       "attempted_room_ids": [
-        "109053"
+        "109053",
+        "484845"
       ],
       "room_progress": {
         "414317": {
@@ -1528,11 +1560,11 @@
           "blv": "A BỆU",
           "blv_id": "484845",
           "status": "retry",
-          "attempts": 0,
+          "attempts": 1,
           "rate_limit_hits": 0,
           "last_http_status": 200,
-          "last_stream_count": 0,
-          "last_error": "Link ký số đã hết hạn; đưa BLV trở lại queue."
+          "last_stream_count": 1,
+          "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
         },
         "187579": {
           "key": "187579",
@@ -1585,11 +1617,11 @@
       },
       "pending_room_keys": [
         "414317",
-        "484845",
         "187579",
         "118206",
         "603255",
-        "109053"
+        "109053",
+        "484845"
       ]
     }
   ]
