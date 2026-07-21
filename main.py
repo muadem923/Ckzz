@@ -3166,9 +3166,13 @@ def write_resume_state(
         matches,
         current_urls,
     )
-    previous_attempt_metric = room_attempt_metric(
-        previous_matches,
-        current_urls,
+    previous_attempt_metric = (
+        room_attempt_metric(
+            previous_matches,
+            current_urls,
+        )
+        if same_target
+        else 0
     )
     newly_attempted_count = max(
         0,
@@ -3223,9 +3227,12 @@ def write_resume_state(
         < STATE_MAX_RATE_LIMIT_ONLY_RUNS
     )
 
+    # Không dừng ngay chỉ vì một run chưa lấy được link hợp lệ.
+    # Còn pending thì tiếp tục cho đến khi một stall guard thực sự đạt ngưỡng.
     useful_activity = bool(
         progress_count > 0
         or newly_attempted_count > 0
+        or run_attempted_count > 0
         or circuit.triggered.is_set()
     )
     dispatch_next = bool(
@@ -3234,7 +3241,6 @@ def write_resume_state(
         and within_no_progress_limit
         and within_unchanged_limit
         and within_rate_limit_only_limit
-        and useful_activity
     )
 
     if not has_pending:
@@ -3247,8 +3253,6 @@ def write_resume_state(
         stop_reason = "stalled_pending_fingerprint_unchanged"
     elif not within_rate_limit_only_limit:
         stop_reason = "stalled_rate_limit_only"
-    elif not useful_activity:
-        stop_reason = "no_useful_activity"
     else:
         stop_reason = ""
 
@@ -3266,6 +3270,9 @@ def write_resume_state(
         "new_link_count": new_link_count,
         "refreshed_link_count": refreshed_link_count,
         "newly_attempted_count": newly_attempted_count,
+        "run_attempted_count": run_attempted_count,
+        "run_rate_limited_count": run_rate_limited_count,
+        "useful_activity": useful_activity,
         "chain_runs": chain_runs,
         "no_progress_runs": no_progress_runs,
         "unchanged_pending_runs": unchanged_pending_runs,
@@ -3322,8 +3329,21 @@ def write_resume_state(
         f" | chain={chain_runs}/{STATE_MAX_CHAIN_RUNS}",
         flush=True,
     )
+    print(
+        f"🧭 Run activity: attempted={run_attempted_count}"
+        f" | newly-attempted={newly_attempted_count}"
+        f" | rate-limited={run_rate_limited_count}"
+        f" | useful={useful_activity}",
+        flush=True,
+    )
 
     if dispatch_next:
+        if progress_count == 0:
+            print(
+                "🔄 Run chưa có link/token hợp lệ mới, "
+                "nhưng stall guard chưa đủ ngưỡng — vẫn gọi runner kế tiếp.",
+                flush=True,
+            )
         print(
             "🚀 Còn BLV thiếu và chưa chạm stall guard — gọi runner mới.",
             flush=True,
@@ -3832,7 +3852,7 @@ def write_outputs(matches: list[dict[str, Any]]) -> tuple[int, int]:
 # MAIN
 # ============================================================
 async def main() -> None:
-    print("🥷 SOCOLIVE STREAM SCANNER V10.3 - SAFE CHAIN + VALID STREAM AUDIT")
+    print("🥷 SOCOLIVE STREAM SCANNER V10.3.1 - STALL GUARD FIX")
     print(
         "ℹ️ Test riêng một URL:\n"
         '   python main.py "https://socolivem.cv/truc-tiep/.../?blv=..."'
