@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-21T17:23:50.255025+07:00",
+  "generated_at": "2026-07-21T17:27:32.119194+07:00",
   "state_schema_version": "v10.3-safe-chain-valid-streams",
   "dispatch_next": true,
   "pending_count": 6,
@@ -7,7 +7,7 @@
   "completed_count": 5,
   "coverage_complete_count": 0,
   "total_match_count": 6,
-  "total_stream_count": 7,
+  "total_stream_count": 8,
   "progress_count": 1,
   "new_link_count": 1,
   "refreshed_link_count": 0,
@@ -18,12 +18,12 @@
   "run_attempted_count": 12,
   "run_rate_limited_count": 0,
   "useful_activity": true,
-  "chain_runs": 12,
+  "chain_runs": 13,
   "no_progress_runs": 0,
   "unchanged_pending_runs": 0,
   "rate_limit_only_runs": 0,
   "rate_limit_only_run": false,
-  "pending_fingerprint": "cd277829b38b196129fed69265d2bcd772676166b5f3221b980e89ee66841fea",
+  "pending_fingerprint": "ed4db61d3cc69354766ac0314e4f284e7fa3980dd45bef85173c6d3025fe472d",
   "stop_reason": "",
   "rate_limited": false,
   "rate_limit_url": "",
@@ -9428,6 +9428,182 @@
             ],
             "scan_mode": "browser-event",
             "elapsed_seconds": 14.087
+          },
+          "http_probe": {
+            "enabled": false,
+            "status": null,
+            "elapsed_seconds": 0.0,
+            "error": ""
+          },
+          "errors": [
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED"
+          ],
+          "failed_requests": [
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/main.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/customize.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/auth.css?ver=518 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat.css?ver=299 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat(1).css?ver=555 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/toast.css?ver=539 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/themes/flatsome/assets/css/flatsome.css?ver=3.18.2 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/themes/flatsome-child/style.css?ver=3.0 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/countdown.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/match.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/livescore.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/style_custom.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/effect/running-border.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/option/option-6.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/highlight/option-1.css?ver=2.8.5 | net::ERR_FAILED"
+          ],
+          "http_errors": [
+            "403 https://socolivep.cv/wp-admin/admin-ajax.php?action=scl_realtime&sport=1"
+          ]
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/yunnan-yukun-vs-chengdu-rongcheng-21-07-2026-1400?blv=380460",
+          "blv": "ENZO",
+          "blv_id": "380460",
+          "streams": [
+            "https://pull.niues.live/live/stream-380460_lhd.m3u8?auth_key=1784573995-0-0-53f70bb7f1045a0b34287c4ccd24f980"
+          ],
+          "stream_sources": {
+            "https://pull.niues.live/live/stream-380460_lhd.m3u8?auth_key=1784573995-0-0-53f70bb7f1045a0b34287c4ccd24f980": [
+              "final-no-stream-scan",
+              "harvest-final"
+            ]
+          },
+          "stream_first_seen": [
+            "https://pull.niues.live/live/stream-380460_lhd.m3u8?auth_key=1784573995-0-0-53f70bb7f1045a0b34287c4ccd24f980"
+          ],
+          "discovered_blv_ids": [
+            "380460"
+          ],
+          "diagnostics": {
+            "url": "https://socolivep.cv/truc-tiep/yunnan-yukun-vs-chengdu-rongcheng-21-07-2026-1400/?blv=380460",
+            "title": "Xem trực tiếp bóng đá Yunnan Yukun vs Chengdu Rongcheng | 19:00 ngày 21/07/2026",
+            "h1": "Trực tiếp bóng đá Socolive Yunnan Yukun vs Chengdu Rongcheng lúc 14:00 ngày 21/07/2026",
+            "ready_state": "complete",
+            "visibility_state": "visible",
+            "hidden": false,
+            "video_count": 0,
+            "iframe_count": 0,
+            "body_sample": "Skip to content Socolive Bảng xếp hạng Lịch thi đấu Kết quả bóng đá Tin thể thao Trực tiếp bóng đá Socolive Yunnan Yukun vs Chengdu Rongcheng lúc 14:00 ngày 21/07/2026 CHA FACup Yunnan Yukun 19:00 21/07 Chengdu Rongcheng Trận đấu sẽ bắt đầu sau Ngày0 : Giờ1 : Phút35 : Giây10 Trận đấu chưa bắt đầu NGƯỜI CÁ COZY ENZO ĐỖ TÚ TÀI GRAP A WIN Chat Thống kê Đội hình Diễn Biến Bảng XH \" \" Xóa Tin nhắn riêng 😀 😁 😃 😄 😅 😆 😇 😉 😊 🙂 😋 😍 😘 😗 😙 😚 😜 😝 😛 😎 🙄 😳 😡 😕 😫 😤 😨 😥 😪 😓 😵 😲 🤧 😷 🤒 🤕 😴 💤 👏 🤙 👍 👎 👊 ✊ ✌ 👌 ✋ 🤚 💪 🤝 👈 👉 🖕 🖐 👄 👂 👀 🎅 🌞 🌙 ⭐ ⚡ 🔥 ❄️ ⚽ 🏀 🏈 ⚾ 🎁 🎉 ✒️ 📝 ❤️ 💛 💚 🆚 💬 🕐 Vô hiệu hóa tất cả Vô hiệu hóa quà tặng Tắt lời chào Đăng nhập để cùng chat nhé Gửi Tỷ lệ kèo Cược Châu Á Chủ Chấp Khách Cược Châu Âu Chủ Hòa Khách Tài xỉu Tài Tỷ lệ kèo Xỉu Kèo góc Tài Tỷ lệ kèo Xỉu Mô phỏng trận đấu Thống kê trận đấu KOR D1 17:30 21/07 Jeju SK FC VS null null null - null Sắp diễn ra Xem ngay Gangwon FC XUÂN TÓC ĐỎ ANH TÀI FOX CÁP KOR D1 17:30 21/07 Jeonbuk Hyundai Motors VS null null null - null Sắp diễn ra Xem ngay Daejeon Citizen LÃO LÂM VOI CÒ CHÍ PHÈO KÉP LOKA KOR D1 17:30 21/07 Ulsan HD FC VS null null null - null Sắp diễn ra Xem ngay Incheo",
+            "harvest_rounds": 0,
+            "harvest_window_seconds": 0.635,
+            "main_status": 200,
+            "harvested_stream_count": 1,
+            "harvested_blv_ids": [
+              "380460"
+            ],
+            "scan_mode": "browser-event",
+            "elapsed_seconds": 13.767
+          },
+          "http_probe": {
+            "enabled": false,
+            "status": null,
+            "elapsed_seconds": 0.0,
+            "error": ""
+          },
+          "errors": [
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED"
+          ],
+          "failed_requests": [
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/main.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/customize.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/auth.css?ver=576 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat.css?ver=910 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat(1).css?ver=336 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/toast.css?ver=634 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/themes/flatsome/assets/css/flatsome.css?ver=3.18.2 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/themes/flatsome-child/style.css?ver=3.0 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/countdown.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/match.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/livescore.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/style_custom.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/effect/running-border.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/option/option-6.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/highlight/option-1.css?ver=2.8.5 | net::ERR_FAILED"
+          ],
+          "http_errors": [
+            "403 https://socolivep.cv/wp-admin/admin-ajax.php?action=scl_realtime&sport=1"
+          ]
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/yunnan-yukun-vs-chengdu-rongcheng-21-07-2026-1400?blv=607552",
+          "blv": "ĐỖ TÚ TÀI",
+          "blv_id": "607552",
+          "streams": [
+            "https://pull.niues.live/live/stream-607552_lhd.m3u8?auth_key=1784573573-0-0-08a7caa1aa3560ca6f0aa2668e4b9034"
+          ],
+          "stream_sources": {
+            "https://pull.niues.live/live/stream-607552_lhd.m3u8?auth_key=1784573573-0-0-08a7caa1aa3560ca6f0aa2668e4b9034": [
+              "final-no-stream-scan",
+              "harvest-final"
+            ]
+          },
+          "stream_first_seen": [
+            "https://pull.niues.live/live/stream-607552_lhd.m3u8?auth_key=1784573573-0-0-08a7caa1aa3560ca6f0aa2668e4b9034"
+          ],
+          "discovered_blv_ids": [
+            "607552"
+          ],
+          "diagnostics": {
+            "url": "https://socolivep.cv/truc-tiep/yunnan-yukun-vs-chengdu-rongcheng-21-07-2026-1400/?blv=607552",
+            "title": "Xem trực tiếp bóng đá Yunnan Yukun vs Chengdu Rongcheng | 19:00 ngày 21/07/2026",
+            "h1": "Trực tiếp bóng đá Socolive Yunnan Yukun vs Chengdu Rongcheng lúc 14:00 ngày 21/07/2026",
+            "ready_state": "complete",
+            "visibility_state": "visible",
+            "hidden": false,
+            "video_count": 0,
+            "iframe_count": 0,
+            "body_sample": "Skip to content Socolive Bảng xếp hạng Lịch thi đấu Kết quả bóng đá Tin thể thao Trực tiếp bóng đá Socolive Yunnan Yukun vs Chengdu Rongcheng lúc 14:00 ngày 21/07/2026 CHA FACup Yunnan Yukun 19:00 21/07 Chengdu Rongcheng Trận đấu sẽ bắt đầu sau Ngày0 : Giờ1 : Phút34 : Giây54 Trận đấu chưa bắt đầu NGƯỜI CÁ COZY ENZO ĐỖ TÚ TÀI GRAP A WIN Chat Thống kê Đội hình Diễn Biến Bảng XH \" \" Xóa Tin nhắn riêng 😀 😁 😃 😄 😅 😆 😇 😉 😊 🙂 😋 😍 😘 😗 😙 😚 😜 😝 😛 😎 🙄 😳 😡 😕 😫 😤 😨 😥 😪 😓 😵 😲 🤧 😷 🤒 🤕 😴 💤 👏 🤙 👍 👎 👊 ✊ ✌ 👌 ✋ 🤚 💪 🤝 👈 👉 🖕 🖐 👄 👂 👀 🎅 🌞 🌙 ⭐ ⚡ 🔥 ❄️ ⚽ 🏀 🏈 ⚾ 🎁 🎉 ✒️ 📝 ❤️ 💛 💚 🆚 💬 🕐 Vô hiệu hóa tất cả Vô hiệu hóa quà tặng Tắt lời chào Đăng nhập để cùng chat nhé Gửi Tỷ lệ kèo Cược Châu Á Chủ Chấp Khách Cược Châu Âu Chủ Hòa Khách Tài xỉu Tài Tỷ lệ kèo Xỉu Kèo góc Tài Tỷ lệ kèo Xỉu Mô phỏng trận đấu Thống kê trận đấu KOR D1 17:30 21/07 Jeju SK FC VS null null null - null Sắp diễn ra Xem ngay Gangwon FC XUÂN TÓC ĐỎ ANH TÀI FOX CÁP KOR D1 17:30 21/07 Jeonbuk Hyundai Motors VS null null null - null Sắp diễn ra Xem ngay Daejeon Citizen LÃO LÂM VOI CÒ CHÍ PHÈO KÉP LOKA KOR D1 17:30 21/07 Ulsan HD FC VS null null null - null Sắp diễn ra Xem ngay Incheo",
+            "harvest_rounds": 0,
+            "harvest_window_seconds": 0.633,
+            "main_status": 200,
+            "harvested_stream_count": 1,
+            "harvested_blv_ids": [
+              "607552"
+            ],
+            "scan_mode": "browser-event",
+            "elapsed_seconds": 13.991
           },
           "http_probe": {
             "enabled": false,
@@ -19028,6 +19204,182 @@
           "http_errors": [
             "403 https://socolivep.cv/wp-admin/admin-ajax.php?action=scl_realtime&sport=1"
           ]
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/henan-fc-vs-dalian-yingbo-21-07-2026-1400?blv=283501",
+          "blv": "KAN",
+          "blv_id": "283501",
+          "streams": [
+            "https://pull.niur.live/live/stream-283501_lhd.m3u8?txSecret=d285a5524b9348e00d146cd041969d17&txTime=6a5dc033"
+          ],
+          "stream_sources": {
+            "https://pull.niur.live/live/stream-283501_lhd.m3u8?txSecret=d285a5524b9348e00d146cd041969d17&txTime=6a5dc033": [
+              "final-no-stream-scan",
+              "harvest-final"
+            ]
+          },
+          "stream_first_seen": [
+            "https://pull.niur.live/live/stream-283501_lhd.m3u8?txSecret=d285a5524b9348e00d146cd041969d17&txTime=6a5dc033"
+          ],
+          "discovered_blv_ids": [
+            "283501"
+          ],
+          "diagnostics": {
+            "url": "https://socolivep.cv/truc-tiep/henan-fc-vs-dalian-yingbo-21-07-2026-1400/?blv=283501",
+            "title": "Xem trực tiếp bóng đá Henan FC vs Dalian Yingbo | 19:00 ngày 21/07/2026",
+            "h1": "Trực tiếp bóng đá Socolive Henan FC vs Dalian Yingbo lúc 14:00 ngày 21/07/2026",
+            "ready_state": "complete",
+            "visibility_state": "visible",
+            "hidden": false,
+            "video_count": 0,
+            "iframe_count": 0,
+            "body_sample": "Skip to content Socolive Bảng xếp hạng Lịch thi đấu Kết quả bóng đá Tin thể thao Trực tiếp bóng đá Socolive Henan FC vs Dalian Yingbo lúc 14:00 ngày 21/07/2026 CHA FACup Henan FC 19:00 21/07 Dalian Yingbo Trận đấu sẽ bắt đầu sau Ngày0 : Giờ1 : Phút34 : Giây38 Trận đấu chưa bắt đầu BEN 10 KAN YONE LUCAS Chat Thống kê Đội hình Diễn Biến Bảng XH \" \" ụt ịt đáng iu: góc 3 đợi ụt ịt đáng iu: bú bú bú Admin Sóc Bánh Bao: ☘️GIỚI THIỆU BẠN BÈ THAM GIA TỔ 2 NHẬN KHUYẾN MÃI BỎNG TAY TỚI 300K ☘️ KÈO CỰC NGON ĐÃ LÊN TRONG NHÓM ☘️ 𝐁𝐒𝐏𝐎𝐑𝐓:: https://www.bty9278.com. LIÊN HỆ BÉ ĐỂ NHẬN KM TẠI: 💥💥𝗧𝗘𝗟𝗘𝗚𝗥𝗔𝗠 : https://t.me/socbanhbao2k2 💥 𝐁𝐮𝐟𝐚: 𝐖𝟓𝐓𝐒𝐑𝟕 ☎️𝐙𝐀𝐋𝐎: 0568 047 936 ụt ịt đáng iu: full h1 nhé ụt ịt đáng iu: kệ ae ụt ịt đáng iu: t về bờ rồi ụt ịt đáng iu: home hết lực rồi TuTrung68: tài mấy vô đc e kan TuTrung68: tài 3 way đc ko kan NBITA: chấp 025 Admin Sóc Bánh Bao: 🔥 KHUYẾN MÃI NẠP 1 VÀ 2 LÊN TỚI 3TR6 💥 ĐỘC QUYỀN TẠI SOCOLIVE, LIÊN HỆ BÉ TẠI: 💥💥𝗧𝗘𝗟𝗘𝗚𝗥𝗔𝗠 : https://t.me/socbanhbao2k2 💥 𝐁𝐮𝐟𝐚: 𝐖𝟓𝐓𝐒𝐑𝟕 ☎️ 𝐙𝐀𝐋𝐎: 0568 047 936 Nvc31bc: newcastel jet này phải của giải a league k nhỉ tân hoàng tử: dm đa thì ngu . thua còn ăn vạ clmn win123ok: ôi ko",
+            "harvest_rounds": 0,
+            "harvest_window_seconds": 0.634,
+            "main_status": 200,
+            "harvested_stream_count": 1,
+            "harvested_blv_ids": [
+              "283501"
+            ],
+            "scan_mode": "browser-event",
+            "elapsed_seconds": 13.521
+          },
+          "http_probe": {
+            "enabled": false,
+            "status": null,
+            "elapsed_seconds": 0.0,
+            "error": ""
+          },
+          "errors": [
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED"
+          ],
+          "failed_requests": [
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/main.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/customize.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/auth.css?ver=610 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat.css?ver=671 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat(1).css?ver=651 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/toast.css?ver=463 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/themes/flatsome/assets/css/flatsome.css?ver=3.18.2 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/themes/flatsome-child/style.css?ver=3.0 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/countdown.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/match.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/livescore.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/style_custom.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/effect/running-border.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/option/option-6.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/highlight/option-1.css?ver=2.8.5 | net::ERR_FAILED"
+          ],
+          "http_errors": [
+            "403 https://socolivep.cv/wp-admin/admin-ajax.php?action=scl_realtime&sport=1"
+          ]
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/henan-fc-vs-dalian-yingbo-21-07-2026-1400?blv=612098",
+          "blv": "BEN 10",
+          "blv_id": "612098",
+          "streams": [
+            "https://pull.niues.live/live/stream-612098_lhd.m3u8?auth_key=1784631655-0-0-28eb64748a130aacd17a2b52f00523ad"
+          ],
+          "stream_sources": {
+            "https://pull.niues.live/live/stream-612098_lhd.m3u8?auth_key=1784631655-0-0-28eb64748a130aacd17a2b52f00523ad": [
+              "final-no-stream-scan",
+              "harvest-final"
+            ]
+          },
+          "stream_first_seen": [
+            "https://pull.niues.live/live/stream-612098_lhd.m3u8?auth_key=1784631655-0-0-28eb64748a130aacd17a2b52f00523ad"
+          ],
+          "discovered_blv_ids": [
+            "612098"
+          ],
+          "diagnostics": {
+            "url": "https://socolivep.cv/truc-tiep/henan-fc-vs-dalian-yingbo-21-07-2026-1400/?blv=612098",
+            "title": "Xem trực tiếp bóng đá Henan FC vs Dalian Yingbo | 19:00 ngày 21/07/2026",
+            "h1": "Trực tiếp bóng đá Socolive Henan FC vs Dalian Yingbo lúc 14:00 ngày 21/07/2026",
+            "ready_state": "complete",
+            "visibility_state": "visible",
+            "hidden": false,
+            "video_count": 0,
+            "iframe_count": 0,
+            "body_sample": "Skip to content Socolive Bảng xếp hạng Lịch thi đấu Kết quả bóng đá Tin thể thao Trực tiếp bóng đá Socolive Henan FC vs Dalian Yingbo lúc 14:00 ngày 21/07/2026 CHA FACup Henan FC 19:00 21/07 Dalian Yingbo Trận đấu sẽ bắt đầu sau Ngày0 : Giờ1 : Phút34 : Giây23 Trận đấu chưa bắt đầu BEN 10 KAN YONE LUCAS Chat Thống kê Đội hình Diễn Biến Bảng XH \" \" Admin Sóc Như Ý: 🎰🎰🎯🎯🎮🎮🔥🔥📞💬📱🐂 SLOT ⚽️️️ THỂ THAO ⚽️️️ LÔ ĐỀ ESPORT TẤT CẢ ĐỀU CÓ TẠI ➡️️️ https://www.bty9296.com LIÊN HỆ EM NGAY ĐỂ ĐƯỢC HỖ TRỢ NHANH NHẤT Facebook: https://m.me/socnhuy9296 ✈️️️ Telegram: https://t.me/emnhuyday8 Zalo : 0562 796 069 -- Phương Anh Bufa: dhs7a4 · winwin…: giờ cho ăn tới x3 sao mà nổ winwin…: làm cái xỉu bẩn 10c ăn 2.8c winwin…: bắt bịp các cháu winwin…: qua các best thủ sợ giờ ko thấy ngó vào giải này winwin…: cứ kêu úc bịp winwin…: các cháu còn bip hơn úc winwin…: trận này mà max bets 115.5c Admin Sóc Như Ý: 👑👑🛡🛡🌐📩💬🐂 WORLD CUP 2026 ️ BẢO HIỂM ĐƠN CƯỢC 10% ️NHANH TAY NHẮN EM ĐỂ ĐĂNG KÝ NHẬN ƯU ĐÃI! LINK : https://www.bty9296.com Facebook: https://m.me/socnhuy9296✈️️️ Telegram: https://t.me/emnhuyday8 ☎️ zalo: 0562 796 069 Quang Phu · winwin…: cho đá 15p nữa mà hlv ko ám hiệu nổ thì cũng c",
+            "harvest_rounds": 0,
+            "harvest_window_seconds": 0.632,
+            "main_status": 200,
+            "harvested_stream_count": 1,
+            "harvested_blv_ids": [
+              "612098"
+            ],
+            "scan_mode": "browser-event",
+            "elapsed_seconds": 13.507
+          },
+          "http_probe": {
+            "enabled": false,
+            "status": null,
+            "elapsed_seconds": 0.0,
+            "error": ""
+          },
+          "errors": [
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED"
+          ],
+          "failed_requests": [
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/main.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/customize.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/auth.css?ver=212 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat.css?ver=118 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat(1).css?ver=15 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/toast.css?ver=671 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/themes/flatsome/assets/css/flatsome.css?ver=3.18.2 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/themes/flatsome-child/style.css?ver=3.0 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/countdown.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/match.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/livescore.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/style_custom.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/effect/running-border.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/option/option-6.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/highlight/option-1.css?ver=2.8.5 | net::ERR_FAILED"
+          ],
+          "http_errors": [
+            "403 https://socolivep.cv/wp-admin/admin-ajax.php?action=scl_realtime&sport=1"
+          ]
         }
       ],
       "attempted_room_ids": [
@@ -19050,9 +19402,9 @@
         "total_explicit_blv_rooms": 4,
         "pending_room_keys": [
           "283501",
-          "612098",
           "372746",
-          "304148"
+          "304148",
+          "612098"
         ],
         "room_progress": {
           "612098": {
@@ -19061,7 +19413,7 @@
             "blv": "BEN 10",
             "blv_id": "612098",
             "status": "retry",
-            "attempts": 2,
+            "attempts": 3,
             "rate_limit_hits": 0,
             "last_http_status": 200,
             "last_stream_count": 1,
@@ -19125,7 +19477,7 @@
           "blv": "BEN 10",
           "blv_id": "612098",
           "status": "retry",
-          "attempts": 2,
+          "attempts": 3,
           "rate_limit_hits": 0,
           "last_http_status": 200,
           "last_stream_count": 1,
@@ -19182,12 +19534,12 @@
       },
       "run_attempted_room_keys": [
         "283501",
-        "304148"
+        "612098"
       ],
       "run_rate_limited_room_keys": [],
       "run_completed_room_keys": [
         "283501",
-        "304148"
+        "612098"
       ]
     },
     {
@@ -28490,6 +28842,182 @@
             ],
             "scan_mode": "browser-event",
             "elapsed_seconds": 13.45
+          },
+          "http_probe": {
+            "enabled": false,
+            "status": null,
+            "elapsed_seconds": 0.0,
+            "error": ""
+          },
+          "errors": [
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED"
+          ],
+          "failed_requests": [
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/main.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/customize.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/auth.css?ver=767 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat.css?ver=32 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat(1).css?ver=768 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/toast.css?ver=707 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/themes/flatsome/assets/css/flatsome.css?ver=3.18.2 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/themes/flatsome-child/style.css?ver=3.0 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/countdown.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/match.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/livescore.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/style_custom.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/effect/running-border.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/option/option-6.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/highlight/option-1.css?ver=2.8.5 | net::ERR_FAILED"
+          ],
+          "http_errors": [
+            "403 https://socolivep.cv/wp-admin/admin-ajax.php?action=scl_realtime&sport=1"
+          ]
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/wuhan-three-towns-vs-shandong-taishan-21-07-2026-1400?blv=494201",
+          "blv": "MESSI",
+          "blv_id": "494201",
+          "streams": [
+            "https://pull.niues.live/live/stream-494201_lhd.m3u8?auth_key=1784521886-0-0-89690f28ff7647e3741233ae8b2c53a2"
+          ],
+          "stream_sources": {
+            "https://pull.niues.live/live/stream-494201_lhd.m3u8?auth_key=1784521886-0-0-89690f28ff7647e3741233ae8b2c53a2": [
+              "final-no-stream-scan",
+              "harvest-final"
+            ]
+          },
+          "stream_first_seen": [
+            "https://pull.niues.live/live/stream-494201_lhd.m3u8?auth_key=1784521886-0-0-89690f28ff7647e3741233ae8b2c53a2"
+          ],
+          "discovered_blv_ids": [
+            "494201"
+          ],
+          "diagnostics": {
+            "url": "https://socolivep.cv/truc-tiep/wuhan-three-towns-vs-shandong-taishan-21-07-2026-1400/?blv=494201",
+            "title": "Xem trực tiếp bóng đá Wuhan Three Towns vs Shandong Taishan | 18:35 ngày 21/07/2026",
+            "h1": "Trực tiếp bóng đá Socolive Wuhan Three Towns vs Shandong Taishan lúc 14:00 ngày 21/07/2026",
+            "ready_state": "complete",
+            "visibility_state": "visible",
+            "hidden": false,
+            "video_count": 0,
+            "iframe_count": 0,
+            "body_sample": "Skip to content Socolive Bảng xếp hạng Lịch thi đấu Kết quả bóng đá Tin thể thao Trực tiếp bóng đá Socolive Wuhan Three Towns vs Shandong Taishan lúc 14:00 ngày 21/07/2026 CHA FACup Wuhan Three Towns 18:35 21/07 Shandong Taishan Trận đấu sẽ bắt đầu sau Ngày0 : Giờ1 : Phút9 : Giây7 Trận đấu chưa bắt đầu FIREMAN MESSI RICKHANTER HẢI THANH TAP CHIVAS Chat Thống kê Đội hình Diễn Biến Bảng XH \" \" Dương Bình: Dương Bình vào phòng trò chuyện Xóa Tin nhắn riêng 😀 😁 😃 😄 😅 😆 😇 😉 😊 🙂 😋 😍 😘 😗 😙 😚 😜 😝 😛 😎 🙄 😳 😡 😕 😫 😤 😨 😥 😪 😓 😵 😲 🤧 😷 🤒 🤕 😴 💤 👏 🤙 👍 👎 👊 ✊ ✌ 👌 ✋ 🤚 💪 🤝 👈 👉 🖕 🖐 👄 👂 👀 🎅 🌞 🌙 ⭐ ⚡ 🔥 ❄️ ⚽ 🏀 🏈 ⚾ 🎁 🎉 ✒️ 📝 ❤️ 💛 💚 🆚 💬 🕐 Vô hiệu hóa tất cả Vô hiệu hóa quà tặng Tắt lời chào Đăng nhập để cùng chat nhé Gửi Tỷ lệ kèo Cược Châu Á Chủ Chấp Khách Cược Châu Âu Chủ Hòa Khách Tài xỉu Tài Tỷ lệ kèo Xỉu Kèo góc Tài Tỷ lệ kèo Xỉu Mô phỏng trận đấu Thống kê trận đấu KOR D1 17:30 21/07 Jeju SK FC VS null null null - null Sắp diễn ra Xem ngay Gangwon FC XUÂN TÓC ĐỎ ANH TÀI FOX CÁP KOR D1 17:30 21/07 Jeonbuk Hyundai Motors VS null null null - null Sắp diễn ra Xem ngay Daejeon Citizen LÃO LÂM VOI CÒ CHÍ PHÈO KÉP LOKA KOR D1 17:30 21/07 Ulsan HD",
+            "harvest_rounds": 0,
+            "harvest_window_seconds": 0.63,
+            "main_status": 200,
+            "harvested_stream_count": 1,
+            "harvested_blv_ids": [
+              "494201"
+            ],
+            "scan_mode": "browser-event",
+            "elapsed_seconds": 13.522
+          },
+          "http_probe": {
+            "enabled": false,
+            "status": null,
+            "elapsed_seconds": 0.0,
+            "error": ""
+          },
+          "errors": [
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED"
+          ],
+          "failed_requests": [
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/main.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/customize.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/auth.css?ver=208 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat.css?ver=133 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat(1).css?ver=529 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/toast.css?ver=468 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/themes/flatsome/assets/css/flatsome.css?ver=3.18.2 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/themes/flatsome-child/style.css?ver=3.0 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/countdown.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/match.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/livescore.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/style_custom.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/effect/running-border.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/option/option-6.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/highlight/option-1.css?ver=2.8.5 | net::ERR_FAILED"
+          ],
+          "http_errors": [
+            "403 https://socolivep.cv/wp-admin/admin-ajax.php?action=scl_realtime&sport=1"
+          ]
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/wuhan-three-towns-vs-shandong-taishan-21-07-2026-1400?blv=123226",
+          "blv": "RICKHANTER",
+          "blv_id": "123226",
+          "streams": [
+            "https://pull.niur.live/live/stream-9912122_lhd.m3u8?txSecret=a65c3253d234cd35d3ccda0e5689d1be&txTime=6a5deaf0"
+          ],
+          "stream_sources": {
+            "https://pull.niur.live/live/stream-9912122_lhd.m3u8?txSecret=a65c3253d234cd35d3ccda0e5689d1be&txTime=6a5deaf0": [
+              "final-no-stream-scan",
+              "harvest-final"
+            ]
+          },
+          "stream_first_seen": [
+            "https://pull.niur.live/live/stream-9912122_lhd.m3u8?txSecret=a65c3253d234cd35d3ccda0e5689d1be&txTime=6a5deaf0"
+          ],
+          "discovered_blv_ids": [
+            "9912122"
+          ],
+          "diagnostics": {
+            "url": "https://socolivep.cv/truc-tiep/wuhan-three-towns-vs-shandong-taishan-21-07-2026-1400/?blv=123226",
+            "title": "Xem trực tiếp bóng đá Wuhan Three Towns vs Shandong Taishan | 18:35 ngày 21/07/2026",
+            "h1": "Trực tiếp bóng đá Socolive Wuhan Three Towns vs Shandong Taishan lúc 14:00 ngày 21/07/2026",
+            "ready_state": "complete",
+            "visibility_state": "visible",
+            "hidden": false,
+            "video_count": 0,
+            "iframe_count": 0,
+            "body_sample": "Skip to content Socolive Bảng xếp hạng Lịch thi đấu Kết quả bóng đá Tin thể thao Trực tiếp bóng đá Socolive Wuhan Three Towns vs Shandong Taishan lúc 14:00 ngày 21/07/2026 CHA FACup Wuhan Three Towns 18:35 21/07 Shandong Taishan Trận đấu sẽ bắt đầu sau Ngày0 : Giờ1 : Phút8 : Giây52 Trận đấu chưa bắt đầu FIREMAN MESSI RICKHANTER HẢI THANH TAP CHIVAS Chat Thống kê Đội hình Diễn Biến Bảng XH \" \" Xóa Tin nhắn riêng 😀 😁 😃 😄 😅 😆 😇 😉 😊 🙂 😋 😍 😘 😗 😙 😚 😜 😝 😛 😎 🙄 😳 😡 😕 😫 😤 😨 😥 😪 😓 😵 😲 🤧 😷 🤒 🤕 😴 💤 👏 🤙 👍 👎 👊 ✊ ✌ 👌 ✋ 🤚 💪 🤝 👈 👉 🖕 🖐 👄 👂 👀 🎅 🌞 🌙 ⭐ ⚡ 🔥 ❄️ ⚽ 🏀 🏈 ⚾ 🎁 🎉 ✒️ 📝 ❤️ 💛 💚 🆚 💬 🕐 Vô hiệu hóa tất cả Vô hiệu hóa quà tặng Tắt lời chào Đăng nhập để cùng chat nhé Gửi Tỷ lệ kèo Cược Châu Á Chủ Chấp Khách Cược Châu Âu Chủ Hòa Khách Tài xỉu Tài Tỷ lệ kèo Xỉu Kèo góc Tài Tỷ lệ kèo Xỉu Mô phỏng trận đấu Thống kê trận đấu KOR D1 17:30 21/07 Jeju SK FC VS null null null - null Sắp diễn ra Xem ngay Gangwon FC XUÂN TÓC ĐỎ ANH TÀI FOX CÁP KOR D1 17:30 21/07 Jeonbuk Hyundai Motors VS null null null - null Sắp diễn ra Xem ngay Daejeon Citizen LÃO LÂM VOI CÒ CHÍ PHÈO KÉP LOKA KOR D1 17:30 21/07 Ulsan HD FC VS null null null - null Sắp diễn ra Xe",
+            "harvest_rounds": 0,
+            "harvest_window_seconds": 0.633,
+            "main_status": 200,
+            "harvested_stream_count": 1,
+            "harvested_blv_ids": [
+              "9912122"
+            ],
+            "scan_mode": "browser-event",
+            "elapsed_seconds": 13.466
           },
           "http_probe": {
             "enabled": false,
@@ -37926,6 +38454,182 @@
           "http_errors": [
             "403 https://socolivep.cv/wp-admin/admin-ajax.php?action=scl_realtime&sport=1"
           ]
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/shanghai-shenhua-vs-qingdao-hainiu-21-07-2026-1400?blv=291277",
+          "blv": "CÔNG CHẤT",
+          "blv_id": "291277",
+          "streams": [
+            "https://pull.niues.live/live/stream-291277_lhd.m3u8?auth_key=1784628115-0-0-d413a52a8fa8e890affd1a2e5b913c88"
+          ],
+          "stream_sources": {
+            "https://pull.niues.live/live/stream-291277_lhd.m3u8?auth_key=1784628115-0-0-d413a52a8fa8e890affd1a2e5b913c88": [
+              "final-no-stream-scan",
+              "harvest-final"
+            ]
+          },
+          "stream_first_seen": [
+            "https://pull.niues.live/live/stream-291277_lhd.m3u8?auth_key=1784628115-0-0-d413a52a8fa8e890affd1a2e5b913c88"
+          ],
+          "discovered_blv_ids": [
+            "291277"
+          ],
+          "diagnostics": {
+            "url": "https://socolivep.cv/truc-tiep/shanghai-shenhua-vs-qingdao-hainiu-21-07-2026-1400/?blv=291277",
+            "title": "Xem trực tiếp bóng đá Shanghai Shenhua vs Qingdao Hainiu | 18:35 ngày 21/07/2026",
+            "h1": "Trực tiếp bóng đá Socolive Shanghai Shenhua vs Qingdao Hainiu lúc 14:00 ngày 21/07/2026",
+            "ready_state": "complete",
+            "visibility_state": "visible",
+            "hidden": false,
+            "video_count": 0,
+            "iframe_count": 0,
+            "body_sample": "Skip to content Socolive Bảng xếp hạng Lịch thi đấu Kết quả bóng đá Tin thể thao Trực tiếp bóng đá Socolive Shanghai Shenhua vs Qingdao Hainiu lúc 14:00 ngày 21/07/2026 CHA FACup Shanghai Shenhua 18:35 21/07 Qingdao Hainiu Trận đấu sẽ bắt đầu sau Ngày0 : Giờ1 : Phút8 : Giây36 Trận đấu chưa bắt đầu PEWPEW CÔNG CHẤT A BỆU VƯƠNG ANH RAMBO XO Chat Thống kê Đội hình Diễn Biến Bảng XH \" \" linka2401: tây ban nha wc 2030 đá vẫn tốt chán Admin Trợ lý Thanh Vy: NẠP LẦN 1 NHẬN KHUYẾN MÃI LÊN TỚI 80% . ⛔️️ LINK ĐĂNG KÝ: https://www.bty9234.com . ☎️ ✅️ TELE: https://t.me/sockiennho . ⚽️️BUFA: PXQ6SX . ️ Facebook : https://m.me/sockiennho/ . ZALO : https://zalo.me/84364870395 NB20: kaka xin thử phát xem có linh k anh Suund85: k góc. cay vupoet: nhìn home non quá a chất Toan65: e xỉu 5,5 tai góc 3 hanny18: kèo đầu tbn vô địch là nhiêu chất linka2401: tbn năm nào nó cũng có người lắp vào chỗ trống mà a Toan65: biết được hup kg minhhiennn: vc chết góc cay thế linka2401: 1 2 năm nữa thêm thằng tiền đạo như fernando torres nữa là bá đạ Admin Trợ lý Thanh Vy: TẠO TÀI KHOẢN NHẬN NGAY KHUYẾN MÃI LÊN TỚI 3TR6 VÀ THAM GIA NHÓM NHẬN KÈO.⛔️️️LINK ĐĂNG KÝ: https://www.bty9234.com .☎️TELE: https://t.me/sockie",
+            "harvest_rounds": 0,
+            "harvest_window_seconds": 0.632,
+            "main_status": 200,
+            "harvested_stream_count": 1,
+            "harvested_blv_ids": [
+              "291277"
+            ],
+            "scan_mode": "browser-event",
+            "elapsed_seconds": 13.516
+          },
+          "http_probe": {
+            "enabled": false,
+            "status": null,
+            "elapsed_seconds": 0.0,
+            "error": ""
+          },
+          "errors": [
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED"
+          ],
+          "failed_requests": [
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/main.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/customize.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/auth.css?ver=637 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat.css?ver=488 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat(1).css?ver=258 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/toast.css?ver=55 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/themes/flatsome/assets/css/flatsome.css?ver=3.18.2 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/themes/flatsome-child/style.css?ver=3.0 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/countdown.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/match.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/livescore.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/style_custom.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/effect/running-border.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/option/option-6.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/highlight/option-1.css?ver=2.8.5 | net::ERR_FAILED"
+          ],
+          "http_errors": [
+            "403 https://socolivep.cv/wp-admin/admin-ajax.php?action=scl_realtime&sport=1"
+          ]
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/shanghai-shenhua-vs-qingdao-hainiu-21-07-2026-1400?blv=484845",
+          "blv": "A BỆU",
+          "blv_id": "484845",
+          "streams": [
+            "https://pull.niues.live/live/stream-484845_lhd.m3u8?auth_key=1784626675-0-0-87873c9ffdf68a872783e3baef0eed7d"
+          ],
+          "stream_sources": {
+            "https://pull.niues.live/live/stream-484845_lhd.m3u8?auth_key=1784626675-0-0-87873c9ffdf68a872783e3baef0eed7d": [
+              "final-no-stream-scan",
+              "harvest-final"
+            ]
+          },
+          "stream_first_seen": [
+            "https://pull.niues.live/live/stream-484845_lhd.m3u8?auth_key=1784626675-0-0-87873c9ffdf68a872783e3baef0eed7d"
+          ],
+          "discovered_blv_ids": [
+            "484845"
+          ],
+          "diagnostics": {
+            "url": "https://socolivep.cv/truc-tiep/shanghai-shenhua-vs-qingdao-hainiu-21-07-2026-1400/?blv=484845",
+            "title": "Xem trực tiếp bóng đá Shanghai Shenhua vs Qingdao Hainiu | 18:35 ngày 21/07/2026",
+            "h1": "Trực tiếp bóng đá Socolive Shanghai Shenhua vs Qingdao Hainiu lúc 14:00 ngày 21/07/2026",
+            "ready_state": "complete",
+            "visibility_state": "visible",
+            "hidden": false,
+            "video_count": 0,
+            "iframe_count": 0,
+            "body_sample": "Skip to content Socolive Bảng xếp hạng Lịch thi đấu Kết quả bóng đá Tin thể thao Trực tiếp bóng đá Socolive Shanghai Shenhua vs Qingdao Hainiu lúc 14:00 ngày 21/07/2026 CHA FACup Shanghai Shenhua 18:35 21/07 Qingdao Hainiu Trận đấu sẽ bắt đầu sau Ngày0 : Giờ1 : Phút8 : Giây21 Trận đấu chưa bắt đầu PEWPEW CÔNG CHẤT A BỆU VƯƠNG ANH RAMBO XO Chat Thống kê Đội hình Diễn Biến Bảng XH \" \" Xóa Tin nhắn riêng 😀 😁 😃 😄 😅 😆 😇 😉 😊 🙂 😋 😍 😘 😗 😙 😚 😜 😝 😛 😎 🙄 😳 😡 😕 😫 😤 😨 😥 😪 😓 😵 😲 🤧 😷 🤒 🤕 😴 💤 👏 🤙 👍 👎 👊 ✊ ✌ 👌 ✋ 🤚 💪 🤝 👈 👉 🖕 🖐 👄 👂 👀 🎅 🌞 🌙 ⭐ ⚡ 🔥 ❄️ ⚽ 🏀 🏈 ⚾ 🎁 🎉 ✒️ 📝 ❤️ 💛 💚 🆚 💬 🕐 Vô hiệu hóa tất cả Vô hiệu hóa quà tặng Tắt lời chào Đăng nhập để cùng chat nhé Gửi Tỷ lệ kèo Cược Châu Á Chủ Chấp Khách Cược Châu Âu Chủ Hòa Khách Tài xỉu Tài Tỷ lệ kèo Xỉu Kèo góc Tài Tỷ lệ kèo Xỉu Mô phỏng trận đấu Thống kê trận đấu KOR D1 17:30 21/07 Jeju SK FC VS null null null - null Sắp diễn ra Xem ngay Gangwon FC XUÂN TÓC ĐỎ ANH TÀI FOX CÁP KOR D1 17:30 21/07 Jeonbuk Hyundai Motors VS null null null - null Sắp diễn ra Xem ngay Daejeon Citizen LÃO LÂM VOI CÒ CHÍ PHÈO KÉP LOKA KOR D1 17:30 21/07 Ulsan HD FC VS null null null - null Sắp diễn ra Xem ngay Inc",
+            "harvest_rounds": 0,
+            "harvest_window_seconds": 0.632,
+            "main_status": 200,
+            "harvested_stream_count": 1,
+            "harvested_blv_ids": [
+              "484845"
+            ],
+            "scan_mode": "browser-event",
+            "elapsed_seconds": 13.453
+          },
+          "http_probe": {
+            "enabled": false,
+            "status": null,
+            "elapsed_seconds": 0.0,
+            "error": ""
+          },
+          "errors": [
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED"
+          ],
+          "failed_requests": [
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/main.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/customize.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/auth.css?ver=511 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat.css?ver=443 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat(1).css?ver=144 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/toast.css?ver=920 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/themes/flatsome/assets/css/flatsome.css?ver=3.18.2 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/themes/flatsome-child/style.css?ver=3.0 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/countdown.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/match.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/livescore.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/style_custom.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/effect/running-border.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/option/option-6.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/highlight/option-1.css?ver=2.8.5 | net::ERR_FAILED"
+          ],
+          "http_errors": [
+            "403 https://socolivep.cv/wp-admin/admin-ajax.php?action=scl_realtime&sport=1"
+          ]
         }
       ],
       "attempted_room_ids": [
@@ -40121,6 +40825,182 @@
           "http_errors": [
             "403 https://socolivep.cv/wp-admin/admin-ajax.php?action=scl_realtime&sport=1"
           ]
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/shanghai-port-vs-shenzhen-peng-city-21-07-2026-1400?blv=532081",
+          "blv": "ALEX",
+          "blv_id": "532081",
+          "streams": [
+            "https://pull.niues.live/live/stream-532081_lhd.m3u8?auth_key=1784577155-0-0-b0cc3877d641f9dea38f9acdd5893747"
+          ],
+          "stream_sources": {
+            "https://pull.niues.live/live/stream-532081_lhd.m3u8?auth_key=1784577155-0-0-b0cc3877d641f9dea38f9acdd5893747": [
+              "final-no-stream-scan",
+              "harvest-final"
+            ]
+          },
+          "stream_first_seen": [
+            "https://pull.niues.live/live/stream-532081_lhd.m3u8?auth_key=1784577155-0-0-b0cc3877d641f9dea38f9acdd5893747"
+          ],
+          "discovered_blv_ids": [
+            "532081"
+          ],
+          "diagnostics": {
+            "url": "https://socolivep.cv/truc-tiep/shanghai-port-vs-shenzhen-peng-city-21-07-2026-1400/?blv=532081",
+            "title": "Xem trực tiếp bóng đá Shanghai Port vs Shenzhen Peng City | 18:00 ngày 21/07/2026",
+            "h1": "Trực tiếp bóng đá Socolive Shanghai Port vs Shenzhen Peng City lúc 14:00 ngày 21/07/2026",
+            "ready_state": "complete",
+            "visibility_state": "visible",
+            "hidden": false,
+            "video_count": 0,
+            "iframe_count": 0,
+            "body_sample": "Skip to content Socolive Bảng xếp hạng Lịch thi đấu Kết quả bóng đá Tin thể thao Trực tiếp bóng đá Socolive Shanghai Port vs Shenzhen Peng City lúc 14:00 ngày 21/07/2026 CHA FACup Shanghai Port 18:00 21/07 Shenzhen Peng City Trận đấu sẽ bắt đầu sau Ngày0 : Giờ0 : Phút33 : Giây5 Trận đấu chưa bắt đầu ALEX BÉO TẠ BIÊN GIỚI CUỘI HÀ DUY KIÊN TRÀ ĐÁ Chat Thống kê Đội hình Diễn Biến Bảng XH \" \" Xóa Tin nhắn riêng 😀 😁 😃 😄 😅 😆 😇 😉 😊 🙂 😋 😍 😘 😗 😙 😚 😜 😝 😛 😎 🙄 😳 😡 😕 😫 😤 😨 😥 😪 😓 😵 😲 🤧 😷 🤒 🤕 😴 💤 👏 🤙 👍 👎 👊 ✊ ✌ 👌 ✋ 🤚 💪 🤝 👈 👉 🖕 🖐 👄 👂 👀 🎅 🌞 🌙 ⭐ ⚡ 🔥 ❄️ ⚽ 🏀 🏈 ⚾ 🎁 🎉 ✒️ 📝 ❤️ 💛 💚 🆚 💬 🕐 Vô hiệu hóa tất cả Vô hiệu hóa quà tặng Tắt lời chào Đăng nhập để cùng chat nhé Gửi Tỷ lệ kèo Cược Châu Á Chủ Chấp Khách Cược Châu Âu Chủ Hòa Khách Tài xỉu Tài Tỷ lệ kèo Xỉu Kèo góc Tài Tỷ lệ kèo Xỉu Mô phỏng trận đấu Thống kê trận đấu KOR D1 17:30 21/07 Jeju SK FC VS null null null - null Sắp diễn ra Xem ngay Gangwon FC XUÂN TÓC ĐỎ ANH TÀI FOX CÁP KOR D1 17:30 21/07 Jeonbuk Hyundai Motors VS null null null - null Sắp diễn ra Xem ngay Daejeon Citizen LÃO LÂM VOI CÒ CHÍ PHÈO KÉP LOKA KOR D1 17:30 21/07 Ulsan HD FC VS null null null - null Sắp diễn ra Xem ng",
+            "harvest_rounds": 0,
+            "harvest_window_seconds": 0.631,
+            "main_status": 200,
+            "harvested_stream_count": 1,
+            "harvested_blv_ids": [
+              "532081"
+            ],
+            "scan_mode": "browser-event",
+            "elapsed_seconds": 13.49
+          },
+          "http_probe": {
+            "enabled": false,
+            "status": null,
+            "elapsed_seconds": 0.0,
+            "error": ""
+          },
+          "errors": [
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED"
+          ],
+          "failed_requests": [
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/main.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/customize.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/auth.css?ver=98 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat.css?ver=252 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat(1).css?ver=980 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/toast.css?ver=778 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/themes/flatsome/assets/css/flatsome.css?ver=3.18.2 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/themes/flatsome-child/style.css?ver=3.0 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/countdown.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/match.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/livescore.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/style_custom.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/effect/running-border.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/option/option-6.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/highlight/option-1.css?ver=2.8.5 | net::ERR_FAILED"
+          ],
+          "http_errors": [
+            "403 https://socolivep.cv/wp-admin/admin-ajax.php?action=scl_realtime&sport=1"
+          ]
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/shanghai-port-vs-shenzhen-peng-city-21-07-2026-1400?blv=459401",
+          "blv": "BÉO",
+          "blv_id": "459401",
+          "streams": [
+            "https://pull.niur.live/live/stream-459401_lhd.m3u8?txSecret=053d4fc15bad33a42df8a4988d853a0d&txTime=6a5edbc1"
+          ],
+          "stream_sources": {
+            "https://pull.niur.live/live/stream-459401_lhd.m3u8?txSecret=053d4fc15bad33a42df8a4988d853a0d&txTime=6a5edbc1": [
+              "final-no-stream-scan",
+              "harvest-final"
+            ]
+          },
+          "stream_first_seen": [
+            "https://pull.niur.live/live/stream-459401_lhd.m3u8?txSecret=053d4fc15bad33a42df8a4988d853a0d&txTime=6a5edbc1"
+          ],
+          "discovered_blv_ids": [
+            "459401"
+          ],
+          "diagnostics": {
+            "url": "https://socolivep.cv/truc-tiep/shanghai-port-vs-shenzhen-peng-city-21-07-2026-1400/?blv=459401",
+            "title": "Xem trực tiếp bóng đá Shanghai Port vs Shenzhen Peng City | 18:00 ngày 21/07/2026",
+            "h1": "Trực tiếp bóng đá Socolive Shanghai Port vs Shenzhen Peng City lúc 14:00 ngày 21/07/2026",
+            "ready_state": "complete",
+            "visibility_state": "visible",
+            "hidden": false,
+            "video_count": 0,
+            "iframe_count": 0,
+            "body_sample": "Skip to content Socolive Bảng xếp hạng Lịch thi đấu Kết quả bóng đá Tin thể thao Trực tiếp bóng đá Socolive Shanghai Port vs Shenzhen Peng City lúc 14:00 ngày 21/07/2026 CHA FACup Shanghai Port 18:00 21/07 Shenzhen Peng City Trận đấu sẽ bắt đầu sau Ngày0 : Giờ0 : Phút32 : Giây50 Trận đấu chưa bắt đầu ALEX BÉO TẠ BIÊN GIỚI CUỘI HÀ DUY KIÊN TRÀ ĐÁ Chat Thống kê Đội hình Diễn Biến Bảng XH \" \" Bình Luận Viên BLV BÉO: BLV BÉO vào phòng trò chuyện Bình Luận Viên BLV BÉO: ae nhắn tin fb và tele e hỗ trợ lấy kèo miễn phí Xóa Tin nhắn riêng 😀 😁 😃 😄 😅 😆 😇 😉 😊 🙂 😋 😍 😘 😗 😙 😚 😜 😝 😛 😎 🙄 😳 😡 😕 😫 😤 😨 😥 😪 😓 😵 😲 🤧 😷 🤒 🤕 😴 💤 👏 🤙 👍 👎 👊 ✊ ✌ 👌 ✋ 🤚 💪 🤝 👈 👉 🖕 🖐 👄 👂 👀 🎅 🌞 🌙 ⭐ ⚡ 🔥 ❄️ ⚽ 🏀 🏈 ⚾ 🎁 🎉 ✒️ 📝 ❤️ 💛 💚 🆚 💬 🕐 Vô hiệu hóa tất cả Vô hiệu hóa quà tặng Tắt lời chào Đăng nhập để cùng chat nhé Gửi Tỷ lệ kèo Cược Châu Á Chủ Chấp Khách Cược Châu Âu Chủ Hòa Khách Tài xỉu Tài Tỷ lệ kèo Xỉu Kèo góc Tài Tỷ lệ kèo Xỉu Mô phỏng trận đấu Thống kê trận đấu KOR D1 17:30 21/07 Jeju SK FC VS null null null - null Sắp diễn ra Xem ngay Gangwon FC XUÂN TÓC ĐỎ ANH TÀI FOX CÁP KOR D1 17:30 21/07 Jeonbuk Hyundai Motors VS null null null - null Sắp diễn ra Xem n",
+            "harvest_rounds": 0,
+            "harvest_window_seconds": 0.657,
+            "main_status": 200,
+            "harvested_stream_count": 1,
+            "harvested_blv_ids": [
+              "459401"
+            ],
+            "scan_mode": "browser-event",
+            "elapsed_seconds": 13.523
+          },
+          "http_probe": {
+            "enabled": false,
+            "status": null,
+            "elapsed_seconds": 0.0,
+            "error": ""
+          },
+          "errors": [
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED"
+          ],
+          "failed_requests": [
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/main.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/customize.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/auth.css?ver=189 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat.css?ver=951 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat(1).css?ver=225 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/toast.css?ver=20 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/themes/flatsome/assets/css/flatsome.css?ver=3.18.2 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/themes/flatsome-child/style.css?ver=3.0 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/countdown.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/match.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/livescore.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/style_custom.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/effect/running-border.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/option/option-6.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/highlight/option-1.css?ver=2.8.5 | net::ERR_FAILED"
+          ],
+          "http_errors": [
+            "403 https://socolivep.cv/wp-admin/admin-ajax.php?action=scl_realtime&sport=1"
+          ]
         }
       ],
       "attempted_room_ids": [],
@@ -40434,6 +41314,36 @@
           "discovered_from_blv": "A BỆU",
           "discovered_at": "2026-07-21T17:23:48.242102+07:00",
           "valid_until": "2026-07-21T17:55:55+07:00",
+          "is_expired": false
+        },
+        {
+          "url": "https://pull.niues.live/live/stream-9912008_lhd.m3u8?auth_key=1784630935-0-0-60f5ea6ef054321c5cb446eb52a4ab09",
+          "queue_room_key": "187579",
+          "room_url": "https://socolivep.cv/truc-tiep/dalian-kewei-vs-beijing-guoan-21-07-2026-1400?blv=187579",
+          "blv": "TOMIA",
+          "blv_id": "187579",
+          "source_id": "9912008",
+          "source_provenance": [
+            "cdp/request",
+            "harvest-final",
+            "harvest-round-1",
+            "harvest-round-2",
+            "harvest-round-3",
+            "harvest-round-4",
+            "harvest-round-5",
+            "harvest-round-6",
+            "harvest-round-7",
+            "harvest-round-8",
+            "harvest-round-9",
+            "request/image",
+            "request/xhr"
+          ],
+          "source_confidence": "network",
+          "mapping_mode": "current-room-primary",
+          "discovered_from_room_url": "https://socolivep.cv/truc-tiep/dalian-kewei-vs-beijing-guoan-21-07-2026-1400?blv=187579",
+          "discovered_from_blv": "TOMIA",
+          "discovered_at": "2026-07-21T17:27:30.105763+07:00",
+          "valid_until": "2026-07-21T17:48:55+07:00",
           "is_expired": false
         }
       ],
@@ -42569,16 +43479,218 @@
           "http_errors": [
             "403 https://socolivep.cv/wp-admin/admin-ajax.php?action=scl_realtime&sport=1"
           ]
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/dalian-kewei-vs-beijing-guoan-21-07-2026-1400?blv=414317",
+          "blv": "TOMMY",
+          "blv_id": "414317",
+          "streams": [
+            "https://pull.niues.live/live/stream-414317_lhd.m3u8?auth_key=1784627875-0-0-23fdd83c8eb3c06f89de06e0687c51d9"
+          ],
+          "stream_sources": {
+            "https://pull.niues.live/live/stream-414317_lhd.m3u8?auth_key=1784627875-0-0-23fdd83c8eb3c06f89de06e0687c51d9": [
+              "cdp/request",
+              "cdp/response",
+              "harvest-final",
+              "harvest-round-1",
+              "harvest-round-2",
+              "harvest-round-3",
+              "harvest-round-4",
+              "harvest-round-5",
+              "harvest-round-6",
+              "harvest-round-7",
+              "harvest-round-8",
+              "harvest-round-9",
+              "request/image",
+              "request/xhr",
+              "response/200"
+            ]
+          },
+          "stream_first_seen": [
+            "https://pull.niues.live/live/stream-414317_lhd.m3u8?auth_key=1784627875-0-0-23fdd83c8eb3c06f89de06e0687c51d9"
+          ],
+          "discovered_blv_ids": [
+            "414317"
+          ],
+          "diagnostics": {
+            "url": "https://socolivep.cv/truc-tiep/dalian-kewei-vs-beijing-guoan-21-07-2026-1400/?blv=414317",
+            "title": "Xem trực tiếp bóng đá Dalian Kewei vs Beijing Guoan | 15:00 ngày 21/07/2026",
+            "h1": "Trực tiếp bóng đá Socolive Dalian Kewei vs Beijing Guoan lúc 14:00 ngày 21/07/2026",
+            "ready_state": "complete",
+            "visibility_state": "visible",
+            "hidden": false,
+            "video_count": 1,
+            "iframe_count": 0,
+            "body_sample": "Skip to content Socolive Bảng xếp hạng Lịch thi đấu Kết quả bóng đá Tin thể thao Trực tiếp bóng đá Socolive Dalian Kewei vs Beijing Guoan lúc 14:00 ngày 21/07/2026 CHA FACup Dalian Kewei 15:00 21/07 Beijing Guoan Volume 0% Tải App Bufa TOMMY PEWPEW A BỆU TOMIA TẠ BIÊN GIỚI LION Chat Thống kê Đội hình Diễn Biến Bảng XH \" \" Admin SÓC SANG: 💥 VÀO CHƠI CÙNG SÓC SANG 💥 ⚽️ Kèo chuẩn – Nhanh – Uy tín 📲 Hỗ trợ tận tình mọi lúc 👉 ?𝐀𝐋𝐎: https://zalo.me/g/3hqdv5c24qmqxk9ixxlx FB https://m.me/besang1111 TELE https://t.me/socsang8888 🎯 Mã BUFA : DNC79W 🌐 https://www.bty9275.com/ 🌐 https://www.bty9279.com/ Admin SÓC SANG: 👉SÓC SANG hỗ trợ anh ạ 👉 𝐙𝐀𝐋𝐎: https://zalo.me/g/3hqdv5c24qmqxk9ixxlx👉 FB: https://m.me/besang1111✈️ TELE :https://t.me/socsang8888 ⚽️ Mã BUFA:DNC79W Admin SÓC SANG: A muốn vào nhóm bấm link 👉🔗 VSPORT: 👉 http://m9.vtyv19.net Admin SÓC SANG: A muốn vào nhóm bấm 👉✈️ tele https://t.me/socsang8888 Bình Luận Viên BLV TOMMY: nhạc hay không các huynh Tin nhắn riêng Vô hiệu hóa tất cả Vô hiệu hóa quà tặng Tắt lời chào Đăng nhập để cùng chat nhé Gửi Tỷ lệ kèo Cược Châu Á Chủ Chấp Khách Cược Châu Âu Chủ Hòa Khách Tài xỉu Tài Tỷ lệ kèo Xỉu Kèo góc Tài Tỷ lệ kèo Xỉu Mô",
+            "harvest_rounds": 9,
+            "harvest_window_seconds": 7.015,
+            "main_status": 200,
+            "harvested_stream_count": 1,
+            "harvested_blv_ids": [
+              "414317"
+            ],
+            "scan_mode": "browser-event",
+            "elapsed_seconds": 7.933
+          },
+          "http_probe": {
+            "enabled": false,
+            "status": null,
+            "elapsed_seconds": 0.0,
+            "error": ""
+          },
+          "errors": [
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED"
+          ],
+          "failed_requests": [
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/main.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/customize.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/auth.css?ver=35 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat.css?ver=414 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat(1).css?ver=840 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/toast.css?ver=850 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/themes/flatsome/assets/css/flatsome.css?ver=3.18.2 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/themes/flatsome-child/style.css?ver=3.0 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/countdown.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/match.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/livescore.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/style_custom.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/effect/running-border.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/option/option-6.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/highlight/option-1.css?ver=2.8.5 | net::ERR_FAILED"
+          ],
+          "http_errors": [
+            "403 https://socolivep.cv/wp-admin/admin-ajax.php?action=scl_realtime&sport=1"
+          ]
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/dalian-kewei-vs-beijing-guoan-21-07-2026-1400?blv=187579",
+          "blv": "TOMIA",
+          "blv_id": "187579",
+          "streams": [
+            "https://pull.niues.live/live/stream-9912008_lhd.m3u8?auth_key=1784630935-0-0-60f5ea6ef054321c5cb446eb52a4ab09"
+          ],
+          "stream_sources": {
+            "https://pull.niues.live/live/stream-9912008_lhd.m3u8?auth_key=1784630935-0-0-60f5ea6ef054321c5cb446eb52a4ab09": [
+              "cdp/request",
+              "harvest-final",
+              "harvest-round-1",
+              "harvest-round-2",
+              "harvest-round-3",
+              "harvest-round-4",
+              "harvest-round-5",
+              "harvest-round-6",
+              "harvest-round-7",
+              "harvest-round-8",
+              "harvest-round-9",
+              "request/image",
+              "request/xhr"
+            ]
+          },
+          "stream_first_seen": [
+            "https://pull.niues.live/live/stream-9912008_lhd.m3u8?auth_key=1784630935-0-0-60f5ea6ef054321c5cb446eb52a4ab09"
+          ],
+          "discovered_blv_ids": [
+            "9912008"
+          ],
+          "diagnostics": {
+            "url": "https://socolivep.cv/truc-tiep/dalian-kewei-vs-beijing-guoan-21-07-2026-1400/?blv=187579",
+            "title": "Xem trực tiếp bóng đá Dalian Kewei vs Beijing Guoan | 15:00 ngày 21/07/2026",
+            "h1": "Trực tiếp bóng đá Socolive Dalian Kewei vs Beijing Guoan lúc 14:00 ngày 21/07/2026",
+            "ready_state": "complete",
+            "visibility_state": "visible",
+            "hidden": false,
+            "video_count": 1,
+            "iframe_count": 0,
+            "body_sample": "Skip to content Socolive Bảng xếp hạng Lịch thi đấu Kết quả bóng đá Tin thể thao Trực tiếp bóng đá Socolive Dalian Kewei vs Beijing Guoan lúc 14:00 ngày 21/07/2026 CHA FACup Dalian Kewei 15:00 21/07 Beijing Guoan Volume 0% Tải App Bufa TOMMY PEWPEW A BỆU TOMIA TẠ BIÊN GIỚI LION Chat Thống kê Đội hình Diễn Biến Bảng XH \" \" Tin nhắn riêng Vô hiệu hóa tất cả Vô hiệu hóa quà tặng Tắt lời chào Đăng nhập để cùng chat nhé Gửi Tỷ lệ kèo Cược Châu Á Chủ Chấp Khách Cược Châu Âu Chủ Hòa Khách Tài xỉu Tài Tỷ lệ kèo Xỉu Kèo góc Tài Tỷ lệ kèo Xỉu Mô phỏng trận đấu Thống kê trận đấu KOR D1 17:30 21/07 Jeju SK FC VS null null null - null Sắp diễn ra Xem ngay Gangwon FC XUÂN TÓC ĐỎ ANH TÀI FOX CÁP KOR D1 17:30 21/07 Jeonbuk Hyundai Motors VS null null null - null Sắp diễn ra Xem ngay Daejeon Citizen LÃO LÂM VOI CÒ CHÍ PHÈO KÉP LOKA KOR D1 17:30 21/07 Ulsan HD FC VS null null null - null Sắp diễn ra Xem ngay Incheon United Club TOMMY CR Bưởi ZIDANE VIP XUÂN SON GIÓ AUS FFA 17:30 21/07 Bayswater City VS null null null - null Sắp diễn ra Xem ngay Sydney FC SEVEN CÁO BÒ TƯƠI AUS FFA 17:00 21/07 Cumberland United FC VS null null null - null Sắp diễn ra Xem ngay Heidelberg United LION VINFAST Thành tích ",
+            "harvest_rounds": 9,
+            "harvest_window_seconds": 6.992,
+            "main_status": 200,
+            "harvested_stream_count": 1,
+            "harvested_blv_ids": [
+              "9912008"
+            ],
+            "scan_mode": "browser-event",
+            "elapsed_seconds": 8.195
+          },
+          "http_probe": {
+            "enabled": false,
+            "status": null,
+            "elapsed_seconds": 0.0,
+            "error": ""
+          },
+          "errors": [
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED"
+          ],
+          "failed_requests": [
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/main.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/customize.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/auth.css?ver=685 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat.css?ver=493 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat(1).css?ver=902 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/toast.css?ver=616 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/themes/flatsome/assets/css/flatsome.css?ver=3.18.2 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/themes/flatsome-child/style.css?ver=3.0 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/countdown.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/match.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/livescore.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/style_custom.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/effect/running-border.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/option/option-6.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/highlight/option-1.css?ver=2.8.5 | net::ERR_FAILED"
+          ],
+          "http_errors": [
+            "403 https://socolivep.cv/wp-admin/admin-ajax.php?action=scl_realtime&sport=1"
+          ]
         }
       ],
       "attempted_room_ids": [
         "109053",
+        "187579",
         "484845"
       ],
       "coverage": {
-        "found_streams": 2,
+        "found_streams": 3,
         "found_blv_ids": [
           "109053",
+          "187579",
           "484845"
         ],
         "goal": 12,
@@ -42589,11 +43701,11 @@
         "total_explicit_blv_rooms": 6,
         "pending_room_keys": [
           "414317",
-          "187579",
           "118206",
           "603255",
           "109053",
-          "484845"
+          "484845",
+          "187579"
         ],
         "room_progress": {
           "414317": {
@@ -42638,11 +43750,11 @@
             "blv": "TOMIA",
             "blv_id": "187579",
             "status": "retry",
-            "attempts": 0,
+            "attempts": 1,
             "rate_limit_hits": 0,
             "last_http_status": 200,
-            "last_stream_count": 0,
-            "last_error": "Link ký số đã hết hạn; đưa BLV trở lại queue."
+            "last_stream_count": 1,
+            "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
           },
           "118206": {
             "key": "118206",
@@ -42726,11 +43838,11 @@
           "blv": "TOMIA",
           "blv_id": "187579",
           "status": "retry",
-          "attempts": 0,
+          "attempts": 1,
           "rate_limit_hits": 0,
           "last_http_status": 200,
-          "last_stream_count": 0,
-          "last_error": "Link ký số đã hết hạn; đưa BLV trở lại queue."
+          "last_stream_count": 1,
+          "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
         },
         "118206": {
           "key": "118206",
@@ -42770,13 +43882,13 @@
         }
       },
       "run_attempted_room_keys": [
-        "414317",
-        "484845"
+        "187579",
+        "414317"
       ],
       "run_rate_limited_room_keys": [],
       "run_completed_room_keys": [
-        "414317",
-        "484845"
+        "187579",
+        "414317"
       ]
     }
   ]
