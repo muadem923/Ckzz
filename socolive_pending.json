@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-21T10:02:42.484945+07:00",
+  "generated_at": "2026-07-21T10:03:45.195339+07:00",
   "state_schema_version": "v10.1-long-harvest-two-streams",
   "dispatch_next": true,
   "pending_count": 6,
@@ -7,12 +7,12 @@
   "coverage_complete_count": 0,
   "total_match_count": 6,
   "total_stream_count": 4,
-  "progress_count": 3,
-  "chain_runs": 2,
-  "no_progress_runs": 0,
+  "progress_count": 0,
+  "chain_runs": 3,
+  "no_progress_runs": 1,
   "stop_reason": "",
   "rate_limited": true,
-  "rate_limit_url": "https://socolivep.cv/truc-tiep/yunnan-yukun-vs-chengdu-rongcheng-21-07-2026-1400?blv=595335",
+  "rate_limit_url": "https://socolivep.cv/truc-tiep/shanghai-shenhua-vs-qingdao-hainiu-21-07-2026-1400?blv=109053",
   "count": 6,
   "matches": [
     {
@@ -141,11 +141,11 @@
             "blv": "NGƯỜI CÁ",
             "blv_id": "595335",
             "status": "rate_limited",
-            "attempts": 1,
+            "attempts": 2,
             "rate_limit_hits": 2,
-            "last_http_status": 429,
-            "last_stream_count": 0,
-            "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
+            "last_http_status": 200,
+            "last_stream_count": 1,
+            "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
           },
           "531989": {
             "key": "531989",
@@ -231,11 +231,11 @@
           "blv": "NGƯỜI CÁ",
           "blv_id": "595335",
           "status": "rate_limited",
-          "attempts": 1,
+          "attempts": 2,
           "rate_limit_hits": 2,
-          "last_http_status": 429,
-          "last_stream_count": 0,
-          "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
+          "last_http_status": 200,
+          "last_stream_count": 1,
+          "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
         },
         "531989": {
           "key": "531989",
@@ -427,7 +427,7 @@
             "blv": "BEN 10",
             "blv_id": "612098",
             "status": "pending",
-            "attempts": 3,
+            "attempts": 4,
             "rate_limit_hits": 0,
             "last_http_status": 200,
             "last_stream_count": 1,
@@ -493,7 +493,7 @@
           "blv": "BEN 10",
           "blv_id": "612098",
           "status": "pending",
-          "attempts": 3,
+          "attempts": 4,
           "rate_limit_hits": 0,
           "last_http_status": 200,
           "last_stream_count": 1,
@@ -685,11 +685,11 @@
             "blv": "FIREMAN",
             "blv_id": "250874",
             "status": "rate_limited",
-            "attempts": 1,
+            "attempts": 2,
             "rate_limit_hits": 2,
-            "last_http_status": 429,
-            "last_stream_count": 0,
-            "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
+            "last_http_status": 200,
+            "last_stream_count": 1,
+            "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
           },
           "494201": {
             "key": "494201",
@@ -775,11 +775,11 @@
           "blv": "FIREMAN",
           "blv_id": "250874",
           "status": "rate_limited",
-          "attempts": 1,
+          "attempts": 2,
           "rate_limit_hits": 2,
-          "last_http_status": 429,
-          "last_stream_count": 0,
-          "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
+          "last_http_status": 200,
+          "last_stream_count": 1,
+          "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
         },
         "494201": {
           "key": "494201",
@@ -905,36 +905,6 @@
           "blv_id": "472241"
         },
         {
-          "url": "https://socolivep.cv/truc-tiep/shanghai-shenhua-vs-qingdao-hainiu-21-07-2026-1400/?blv=109053",
-          "blv": "PEWPEW",
-          "blv_id": "109053"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/shanghai-shenhua-vs-qingdao-hainiu-21-07-2026-1400/?blv=291277",
-          "blv": "CÔNG CHẤT",
-          "blv_id": "291277"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/shanghai-shenhua-vs-qingdao-hainiu-21-07-2026-1400/?blv=484845",
-          "blv": "A BỆU",
-          "blv_id": "484845"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/shanghai-shenhua-vs-qingdao-hainiu-21-07-2026-1400/?blv=548860",
-          "blv": "VƯƠNG ANH",
-          "blv_id": "548860"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/shanghai-shenhua-vs-qingdao-hainiu-21-07-2026-1400/?blv=534055",
-          "blv": "RAMBO",
-          "blv_id": "534055"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/shanghai-shenhua-vs-qingdao-hainiu-21-07-2026-1400/?blv=472241",
-          "blv": "XO",
-          "blv_id": "472241"
-        },
-        {
           "url": "https://socolivep.cv/truc-tiep/shanghai-shenhua-vs-qingdao-hainiu-21-07-2026-1400",
           "blv": "XEM NGAY",
           "blv_id": ""
@@ -973,14 +943,8 @@
         "room_queue_complete": false,
         "complete": false,
         "max_streams_per_blv": 2,
-        "total_explicit_blv_rooms": 12,
+        "total_explicit_blv_rooms": 6,
         "pending_room_keys": [
-          "109053",
-          "291277",
-          "484845",
-          "548860",
-          "534055",
-          "472241",
           "109053",
           "291277",
           "484845",
@@ -991,19 +955,19 @@
         "room_progress": {
           "109053": {
             "key": "109053",
-            "url": "https://socolivep.cv/truc-tiep/shanghai-shenhua-vs-qingdao-hainiu-21-07-2026-1400/?blv=109053",
+            "url": "https://socolivep.cv/truc-tiep/shanghai-shenhua-vs-qingdao-hainiu-21-07-2026-1400?blv=109053",
             "blv": "PEWPEW",
             "blv_id": "109053",
             "status": "rate_limited",
             "attempts": 2,
-            "rate_limit_hits": 1,
-            "last_http_status": 200,
-            "last_stream_count": 1,
-            "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
+            "rate_limit_hits": 2,
+            "last_http_status": 429,
+            "last_stream_count": 0,
+            "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
           },
           "291277": {
             "key": "291277",
-            "url": "https://socolivep.cv/truc-tiep/shanghai-shenhua-vs-qingdao-hainiu-21-07-2026-1400/?blv=291277",
+            "url": "https://socolivep.cv/truc-tiep/shanghai-shenhua-vs-qingdao-hainiu-21-07-2026-1400?blv=291277",
             "blv": "CÔNG CHẤT",
             "blv_id": "291277",
             "status": "pending",
@@ -1015,7 +979,7 @@
           },
           "484845": {
             "key": "484845",
-            "url": "https://socolivep.cv/truc-tiep/shanghai-shenhua-vs-qingdao-hainiu-21-07-2026-1400/?blv=484845",
+            "url": "https://socolivep.cv/truc-tiep/shanghai-shenhua-vs-qingdao-hainiu-21-07-2026-1400?blv=484845",
             "blv": "A BỆU",
             "blv_id": "484845",
             "status": "pending",
@@ -1027,7 +991,7 @@
           },
           "548860": {
             "key": "548860",
-            "url": "https://socolivep.cv/truc-tiep/shanghai-shenhua-vs-qingdao-hainiu-21-07-2026-1400/?blv=548860",
+            "url": "https://socolivep.cv/truc-tiep/shanghai-shenhua-vs-qingdao-hainiu-21-07-2026-1400?blv=548860",
             "blv": "VƯƠNG ANH",
             "blv_id": "548860",
             "status": "pending",
@@ -1039,7 +1003,7 @@
           },
           "534055": {
             "key": "534055",
-            "url": "https://socolivep.cv/truc-tiep/shanghai-shenhua-vs-qingdao-hainiu-21-07-2026-1400/?blv=534055",
+            "url": "https://socolivep.cv/truc-tiep/shanghai-shenhua-vs-qingdao-hainiu-21-07-2026-1400?blv=534055",
             "blv": "RAMBO",
             "blv_id": "534055",
             "status": "pending",
@@ -1051,7 +1015,7 @@
           },
           "472241": {
             "key": "472241",
-            "url": "https://socolivep.cv/truc-tiep/shanghai-shenhua-vs-qingdao-hainiu-21-07-2026-1400/?blv=472241",
+            "url": "https://socolivep.cv/truc-tiep/shanghai-shenhua-vs-qingdao-hainiu-21-07-2026-1400?blv=472241",
             "blv": "XO",
             "blv_id": "472241",
             "status": "pending",
@@ -1081,19 +1045,19 @@
       "room_progress": {
         "109053": {
           "key": "109053",
-          "url": "https://socolivep.cv/truc-tiep/shanghai-shenhua-vs-qingdao-hainiu-21-07-2026-1400/?blv=109053",
+          "url": "https://socolivep.cv/truc-tiep/shanghai-shenhua-vs-qingdao-hainiu-21-07-2026-1400?blv=109053",
           "blv": "PEWPEW",
           "blv_id": "109053",
           "status": "rate_limited",
           "attempts": 2,
-          "rate_limit_hits": 1,
-          "last_http_status": 200,
-          "last_stream_count": 1,
-          "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
+          "rate_limit_hits": 2,
+          "last_http_status": 429,
+          "last_stream_count": 0,
+          "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
         },
         "291277": {
           "key": "291277",
-          "url": "https://socolivep.cv/truc-tiep/shanghai-shenhua-vs-qingdao-hainiu-21-07-2026-1400/?blv=291277",
+          "url": "https://socolivep.cv/truc-tiep/shanghai-shenhua-vs-qingdao-hainiu-21-07-2026-1400?blv=291277",
           "blv": "CÔNG CHẤT",
           "blv_id": "291277",
           "status": "pending",
@@ -1105,7 +1069,7 @@
         },
         "484845": {
           "key": "484845",
-          "url": "https://socolivep.cv/truc-tiep/shanghai-shenhua-vs-qingdao-hainiu-21-07-2026-1400/?blv=484845",
+          "url": "https://socolivep.cv/truc-tiep/shanghai-shenhua-vs-qingdao-hainiu-21-07-2026-1400?blv=484845",
           "blv": "A BỆU",
           "blv_id": "484845",
           "status": "pending",
@@ -1117,7 +1081,7 @@
         },
         "548860": {
           "key": "548860",
-          "url": "https://socolivep.cv/truc-tiep/shanghai-shenhua-vs-qingdao-hainiu-21-07-2026-1400/?blv=548860",
+          "url": "https://socolivep.cv/truc-tiep/shanghai-shenhua-vs-qingdao-hainiu-21-07-2026-1400?blv=548860",
           "blv": "VƯƠNG ANH",
           "blv_id": "548860",
           "status": "pending",
@@ -1129,7 +1093,7 @@
         },
         "534055": {
           "key": "534055",
-          "url": "https://socolivep.cv/truc-tiep/shanghai-shenhua-vs-qingdao-hainiu-21-07-2026-1400/?blv=534055",
+          "url": "https://socolivep.cv/truc-tiep/shanghai-shenhua-vs-qingdao-hainiu-21-07-2026-1400?blv=534055",
           "blv": "RAMBO",
           "blv_id": "534055",
           "status": "pending",
@@ -1141,7 +1105,7 @@
         },
         "472241": {
           "key": "472241",
-          "url": "https://socolivep.cv/truc-tiep/shanghai-shenhua-vs-qingdao-hainiu-21-07-2026-1400/?blv=472241",
+          "url": "https://socolivep.cv/truc-tiep/shanghai-shenhua-vs-qingdao-hainiu-21-07-2026-1400?blv=472241",
           "blv": "XO",
           "blv_id": "472241",
           "status": "pending",
@@ -1165,12 +1129,6 @@
         }
       },
       "pending_room_keys": [
-        "109053",
-        "291277",
-        "484845",
-        "548860",
-        "534055",
-        "472241",
         "109053",
         "291277",
         "484845",
