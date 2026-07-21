@@ -1,4 +1,4 @@
-name: Bot Quet Socolive V10.1 Long Harvest
+name: Bot Quet Socolive V10.2 Cumulative Catalog
 
 on:
   workflow_dispatch:
@@ -10,7 +10,7 @@ on:
         type: string
 
 concurrency:
-  group: socolive-v10-1-long-harvest-${{ github.ref }}
+  group: socolive-v10-2-cumulative-catalog-${{ github.ref }}
   cancel-in-progress: false
 
 permissions:
@@ -96,6 +96,11 @@ jobs:
           # Cứ còn BLV pending/partial/rate_limited thì gọi runner mới.
           SOCOLIVE_CHAIN_UNTIL_PENDING_EMPTY: "1"
 
+          # Catalog giữ link xuyên nhiều workflow, kể cả khi trận rơi khỏi
+          # khung quét hiện tại. Sau 6 giờ tính từ giờ bắt đầu mới loại.
+          SOCOLIVE_CATALOG_RETENTION_AFTER_START_MINUTES: "360"
+          SOCOLIVE_CATALOG_RETENTION_UNSEEN_MINUTES: "240"
+
           TEST_URL: ${{ inputs.test_url }}
         run: |
           # Không cho bước sau đọc nhầm quyết định của run trước.
@@ -105,6 +110,7 @@ jobs:
           echo "Concurrency=$SOCOLIVE_MATCH_CONCURRENCY | room_pages/run=$SOCOLIVE_MAX_ROOMS_PER_MATCH | stream_goal/match=$SOCOLIVE_MAX_STREAMS_PER_MATCH"
           echo "Long harvest: wait=${SOCOLIVE_ROOM_WAIT_SECONDS}s | max=${SOCOLIVE_HARVEST_MAX_SECONDS}s | 2 nguồn/BLV"
           echo "Chain: tiếp tục đến khi pending=0 | hard_max=$SOCOLIVE_STATE_MAX_CHAIN_RUNS"
+          echo "Playlist: dựng từ catalog tích lũy, không ghi đè bằng riêng kết quả run hiện tại"
           echo "Scan window: -${SOCOLIVE_SCAN_BEFORE_MINUTES} phút / +${SOCOLIVE_SCAN_AFTER_MINUTES} phút | scan_all=$SOCOLIVE_SCAN_ALL"
 
           if [ -n "$TEST_URL" ]; then
@@ -194,6 +200,7 @@ jobs:
             socolive_state.json
             socolive_pending.json
             socolive_chain_decision.json
+            socolive_catalog.json
           if-no-files-found: warn
           retention-days: 7
           compression-level: 6
@@ -210,7 +217,8 @@ jobs:
             socolive_matches.json \
             socolive_debug.json \
             socolive_state.json \
-            socolive_pending.json
+            socolive_pending.json \
+            socolive_catalog.json
           do
             if [ -e "$file" ]; then
               git add "$file"
