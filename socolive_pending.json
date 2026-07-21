@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-21T07:34:23.624570+07:00",
+  "generated_at": "2026-07-21T07:35:48.026216+07:00",
   "state_schema_version": "v10.1-long-harvest-two-streams",
   "dispatch_next": true,
   "pending_count": 2,
@@ -8,11 +8,11 @@
   "total_match_count": 2,
   "total_stream_count": 2,
   "progress_count": 0,
-  "chain_runs": 3,
-  "no_progress_runs": 3,
+  "chain_runs": 4,
+  "no_progress_runs": 4,
   "stop_reason": "",
   "rate_limited": true,
-  "rate_limit_url": "https://socolivep.cv/truc-tiep/central-norte-salta-vs-deportivo-moron-21-07-2026-0730/?blv=414317",
+  "rate_limit_url": "https://socolivep.cv/truc-tiep/central-norte-salta-vs-deportivo-moron-21-07-2026-0730?blv=414317",
   "count": 2,
   "matches": [
     {
@@ -127,8 +127,8 @@
             "blv": "TOMMY",
             "blv_id": "414317",
             "status": "rate_limited",
-            "attempts": 8,
-            "rate_limit_hits": 6,
+            "attempts": 10,
+            "rate_limit_hits": 7,
             "last_http_status": 429,
             "last_stream_count": 0,
             "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
@@ -193,8 +193,8 @@
           "blv": "TOMMY",
           "blv_id": "414317",
           "status": "rate_limited",
-          "attempts": 8,
-          "rate_limit_hits": 6,
+          "attempts": 10,
+          "rate_limit_hits": 7,
           "last_http_status": 429,
           "last_stream_count": 0,
           "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
@@ -347,11 +347,11 @@
             "blv": "A WIN",
             "blv_id": "536185",
             "status": "rate_limited",
-            "attempts": 32,
+            "attempts": 35,
             "rate_limit_hits": 21,
-            "last_http_status": 429,
-            "last_stream_count": 0,
-            "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
+            "last_http_status": 200,
+            "last_stream_count": 1,
+            "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
           },
           "557845": {
             "key": "557845",
@@ -389,11 +389,11 @@
           "blv": "A WIN",
           "blv_id": "536185",
           "status": "rate_limited",
-          "attempts": 32,
+          "attempts": 35,
           "rate_limit_hits": 21,
-          "last_http_status": 429,
-          "last_stream_count": 0,
-          "last_error": "HTTP 429; giữ nguyên trong pending cho runner kế tiếp."
+          "last_http_status": 200,
+          "last_stream_count": 1,
+          "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
         },
         "557845": {
           "key": "557845",
