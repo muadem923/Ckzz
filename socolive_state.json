@@ -1,24 +1,24 @@
 {
-  "generated_at": "2026-07-22T08:02:02.835904+07:00",
+  "generated_at": "2026-07-22T09:01:13.547283+07:00",
   "state_schema_version": "v10.4-finite-two-pass-queue",
   "dispatch_next": false,
   "pending_count": 0,
   "pending_room_count": 0,
-  "completed_count": 3,
-  "coverage_complete_count": 10,
-  "total_match_count": 10,
-  "total_stream_count": 7,
-  "progress_count": 5,
-  "new_link_count": 5,
+  "completed_count": 2,
+  "coverage_complete_count": 7,
+  "total_match_count": 7,
+  "total_stream_count": 2,
+  "progress_count": 1,
+  "new_link_count": 1,
   "refreshed_link_count": 0,
-  "queue_progress_count": 35,
-  "terminal_progress_count": 30,
-  "newly_attempted_count": 5,
-  "queue_total_rooms": 30,
-  "queue_success_rooms": 15,
-  "queue_exhausted_rooms": 15,
-  "queue_terminal_rooms": 30,
-  "queue_attempts_total": 45,
+  "queue_progress_count": 23,
+  "terminal_progress_count": 22,
+  "newly_attempted_count": 1,
+  "queue_total_rooms": 22,
+  "queue_success_rooms": 11,
+  "queue_exhausted_rooms": 11,
+  "queue_terminal_rooms": 22,
+  "queue_attempts_total": 33,
   "chain_runs": 1,
   "no_progress_runs": 0,
   "no_queue_progress_runs": 0,
@@ -30,21 +30,278 @@
   "rate_limited": false,
   "rate_limit_url": "",
   "global_room_budget": 48,
-  "global_room_budget_used": 5,
+  "global_room_budget_used": 1,
   "target_base_urls": [
-    "https://socolivep.cv/truc-tiep/atletico-mineiro-mg-vs-bahia-ba-22-07-2026-0530/",
-    "https://socolivep.cv/truc-tiep/avai-fc-vs-america-mg-22-07-2026-0530/",
+    "https://socolivep.cv/truc-tiep/america-de-cali-vs-real-cartagena-22-07-2026-0830/",
     "https://socolivep.cv/truc-tiep/cruz-azul-vs-puebla-22-07-2026-0800/",
-    "https://socolivep.cv/truc-tiep/deportes-tolima-vs-deportes-quindio-22-07-2026-0600/",
     "https://socolivep.cv/truc-tiep/deportiva-once-caldas-vs-envigado-fc-22-07-2026-0700/",
     "https://socolivep.cv/truc-tiep/deportivo-pasto-vs-bogota-fc-22-07-2026-0700/",
-    "https://socolivep.cv/truc-tiep/gremio-novorizontino-vs-criciuma-22-07-2026-0530/",
     "https://socolivep.cv/truc-tiep/toluca-vs-pumas-u-n-a-m-22-07-2026-1005/",
     "https://socolivep.cv/truc-tiep/universidad-central-de-venezuela-vs-santos-fc-sp-22-07-2026-0730/",
     "https://socolivep.cv/truc-tiep/vila-nova-vs-fortaleza-22-07-2026-0735/"
   ],
   "pending_base_urls": [],
   "matches": [
+    {
+      "base_url": "https://socolivep.cv/truc-tiep/america-de-cali-vs-real-cartagena-22-07-2026-0830/",
+      "raw_title": "Trực tiếp bóng đá Socolive America de Cali vs Real Cartagena lúc 08:30 ngày 22/07/2026",
+      "home_team": "America de Cali",
+      "away_team": "Real Cartagena",
+      "home_logo": "https://sta.vnres.co/file/common/20260719/bebed02967ed493237a8d06c79b1af45.png",
+      "away_logo": "https://sta.vnres.co/file/common/20260719/30817c485e54e9f0d085adf0014eb9d1.png",
+      "time_text": "08:30",
+      "date_text": "22/07",
+      "status": "",
+      "card_text": "COL Cup 08:30 22/07 America de Cali VS XEM NGAY Real Cartagena CHIVAS",
+      "rooms": [
+        {
+          "url": "https://socolivep.cv/truc-tiep/america-de-cali-vs-real-cartagena-22-07-2026-0830?blv=485739",
+          "blv": "CHIVAS",
+          "blv_id": "485739"
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/america-de-cali-vs-real-cartagena-22-07-2026-0830",
+          "blv": "XEM NGAY",
+          "blv_id": ""
+        }
+      ],
+      "match_name": "America de Cali vs Real Cartagena",
+      "scheduled_at": "2026-07-22T08:30:00+07:00",
+      "streams": [
+        {
+          "url": "https://pull.niur.live/live/stream-485739_lhd.m3u8?txSecret=e8a3dbdbf230f6ef91dccc680341ae64&txTime=6a60765f",
+          "queue_room_key": "485739",
+          "room_url": "https://socolivep.cv/truc-tiep/america-de-cali-vs-real-cartagena-22-07-2026-0830?blv=485739",
+          "blv": "CHIVAS",
+          "blv_id": "485739",
+          "source_id": "485739",
+          "source_provenance": [
+            "cdp/request",
+            "cdp/response",
+            "harvest-final",
+            "harvest-round-1",
+            "harvest-round-2",
+            "harvest-round-3",
+            "harvest-round-4",
+            "harvest-round-5",
+            "harvest-round-6",
+            "harvest-round-7",
+            "harvest-round-8",
+            "harvest-round-9",
+            "request/image",
+            "request/xhr",
+            "response/200"
+          ],
+          "source_confidence": "network",
+          "mapping_mode": "exact-room-id",
+          "discovered_from_room_url": "https://socolivep.cv/truc-tiep/america-de-cali-vs-real-cartagena-22-07-2026-0830?blv=485739",
+          "discovered_from_blv": "CHIVAS",
+          "discovered_at": "2026-07-22T09:01:11.534597+07:00",
+          "valid_until": "2026-07-22T14:50:55+07:00",
+          "is_expired": false
+        }
+      ],
+      "room_results": [
+        {
+          "url": "https://socolivep.cv/truc-tiep/america-de-cali-vs-real-cartagena-22-07-2026-0830?blv=485739",
+          "blv": "CHIVAS",
+          "blv_id": "485739",
+          "streams": [
+            "https://pull.niur.live/live/stream-485739_lhd.m3u8?txSecret=e8a3dbdbf230f6ef91dccc680341ae64&txTime=6a60765f"
+          ],
+          "stream_sources": {
+            "https://pull.niur.live/live/stream-485739_lhd.m3u8?txSecret=e8a3dbdbf230f6ef91dccc680341ae64&txTime=6a60765f": [
+              "cdp/request",
+              "cdp/response",
+              "harvest-final",
+              "harvest-round-1",
+              "harvest-round-2",
+              "harvest-round-3",
+              "harvest-round-4",
+              "harvest-round-5",
+              "harvest-round-6",
+              "harvest-round-7",
+              "harvest-round-8",
+              "harvest-round-9",
+              "request/image",
+              "request/xhr",
+              "response/200"
+            ]
+          },
+          "stream_first_seen": [
+            "https://pull.niur.live/live/stream-485739_lhd.m3u8?txSecret=e8a3dbdbf230f6ef91dccc680341ae64&txTime=6a60765f"
+          ],
+          "discovered_blv_ids": [
+            "485739"
+          ],
+          "diagnostics": {
+            "url": "https://socolivep.cv/truc-tiep/america-de-cali-vs-real-cartagena-22-07-2026-0830/?blv=485739",
+            "title": "Xem trực tiếp bóng đá America de Cali vs Real Cartagena | 08:30 ngày 22/07/2026",
+            "h1": "Trực tiếp bóng đá Socolive America de Cali vs Real Cartagena lúc 08:30 ngày 22/07/2026",
+            "ready_state": "complete",
+            "visibility_state": "visible",
+            "hidden": false,
+            "video_count": 1,
+            "iframe_count": 0,
+            "body_sample": "Skip to content Socolive Bảng xếp hạng Lịch thi đấu Kết quả bóng đá Tin thể thao Trực tiếp bóng đá Socolive America de Cali vs Real Cartagena lúc 08:30 ngày 22/07/2026 COL Cup America de Cali 08:30 22/07 Real Cartagena 00:00 of 00:00Volume 10% Tải App Bufa CHIVAS Chat Thống kê Đội hình Diễn Biến Bảng XH \" \" Hoàng coca: pen ak SIÊU MÁY TÍNH: pen nguội SIÊU MÁY TÍNH: xe buýt 2 tânf Kimmich: trận này có lượt về ko chivas Hoàng coca: quả này dễ hơn pen đấy dkm Admin Trợ Lý CHIVAS: zalo vào nhóm : 056 692 8368 ng văn lương Húp187: 2,5 đấy đừng xịt Bap rang bo: hdc đầu trận chấp nhiu blv Húp187: xịt là ***m 2-0 ft thật Hoàng coca: khó thế SIÊU MÁY TÍNH: mai vào Admin Trợ Lý CHIVAS: 💰🦅🌐📌 GIÀU SANG PHÚ QUÝ – RINH TÀI LỘC WORLD CUP 2026 CÙNG SÓC TỔ 5 ⚽️️ Sân cỏ sôi động - Tài khoản nổ số! Chờ gì mà không chiến Click ngay: https://www.bty9222.com✨ Tele nhận code: https://t.me/phuonganhdao86 Fanpage chính thức: http://m.me/socdao.6886.vip Mã kết bạn Bufa: NBD59Z Húp187: pen có rào Lika lu: siêu máy tính câm mõm tró vao SIÊU MÁY TÍNH: quả này sút trúng tay pen thật mới bú nỗi Hoàng coca: chặn kín gôn r Shinji Ono: 2-2 nào Admin Trợ Lý CHIVAS: https://t.me/phuonganhdao86 FB : http://m.me/so",
+            "harvest_rounds": 9,
+            "harvest_window_seconds": 7.018,
+            "main_status": 200,
+            "harvested_stream_count": 1,
+            "harvested_blv_ids": [
+              "485739"
+            ],
+            "scan_mode": "browser-event",
+            "elapsed_seconds": 8.802
+          },
+          "http_probe": {
+            "enabled": false,
+            "status": null,
+            "elapsed_seconds": 0.0,
+            "error": ""
+          },
+          "errors": [
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED"
+          ],
+          "failed_requests": [
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/main.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/customize.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/auth.css?ver=463 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat.css?ver=344 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat(1).css?ver=924 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/toast.css?ver=101 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/themes/flatsome/assets/css/flatsome.css?ver=3.18.2 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/themes/flatsome-child/style.css?ver=3.0 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/countdown.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/match.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/livescore.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/style_custom.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/effect/running-border.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/option/option-6.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/highlight/option-1.css?ver=2.8.5 | net::ERR_FAILED"
+          ],
+          "http_errors": [
+            "403 https://socolivep.cv/wp-admin/admin-ajax.php?action=scl_realtime&sport=1"
+          ]
+        }
+      ],
+      "attempted_room_ids": [
+        "485739"
+      ],
+      "coverage": {
+        "found_streams": 1,
+        "found_blv_ids": [
+          "485739"
+        ],
+        "goal": 2,
+        "source_goal_reached": false,
+        "room_queue_complete": true,
+        "complete": true,
+        "max_streams_per_blv": 2,
+        "total_explicit_blv_rooms": 1,
+        "pending_room_keys": [],
+        "room_progress": {
+          "485739": {
+            "key": "485739",
+            "url": "https://socolivep.cv/truc-tiep/america-de-cali-vs-real-cartagena-22-07-2026-0830?blv=485739",
+            "blv": "CHIVAS",
+            "blv_id": "485739",
+            "status": "success",
+            "attempts": 1,
+            "attempts_total": 1,
+            "ever_attempted": true,
+            "valid_stream_ever_found": true,
+            "needs_token_refresh": false,
+            "completion_reason": "valid_stream",
+            "rate_limit_hits": 0,
+            "last_http_status": 200,
+            "last_stream_count": 1,
+            "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
+          },
+          "__base__": {
+            "key": "__base__",
+            "url": "https://socolivep.cv/truc-tiep/america-de-cali-vs-real-cartagena-22-07-2026-0830",
+            "blv": "XEM NGAY",
+            "blv_id": "",
+            "status": "pending",
+            "attempts": 0,
+            "attempts_total": 0,
+            "ever_attempted": false,
+            "valid_stream_ever_found": false,
+            "needs_token_refresh": false,
+            "completion_reason": "",
+            "rate_limit_hits": 0,
+            "last_http_status": null,
+            "last_stream_count": 0,
+            "last_error": ""
+          }
+        }
+      },
+      "errors": [],
+      "room_progress": {
+        "485739": {
+          "key": "485739",
+          "url": "https://socolivep.cv/truc-tiep/america-de-cali-vs-real-cartagena-22-07-2026-0830?blv=485739",
+          "blv": "CHIVAS",
+          "blv_id": "485739",
+          "status": "success",
+          "attempts": 1,
+          "attempts_total": 1,
+          "ever_attempted": true,
+          "valid_stream_ever_found": true,
+          "needs_token_refresh": false,
+          "completion_reason": "valid_stream",
+          "rate_limit_hits": 0,
+          "last_http_status": 200,
+          "last_stream_count": 1,
+          "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
+        },
+        "__base__": {
+          "key": "__base__",
+          "url": "https://socolivep.cv/truc-tiep/america-de-cali-vs-real-cartagena-22-07-2026-0830",
+          "blv": "XEM NGAY",
+          "blv_id": "",
+          "status": "pending",
+          "attempts": 0,
+          "attempts_total": 0,
+          "ever_attempted": false,
+          "valid_stream_ever_found": false,
+          "needs_token_refresh": false,
+          "completion_reason": "",
+          "rate_limit_hits": 0,
+          "last_http_status": null,
+          "last_stream_count": 0,
+          "last_error": ""
+        }
+      },
+      "run_attempted_room_keys": [
+        "485739"
+      ],
+      "run_rate_limited_room_keys": [],
+      "run_completed_room_keys": [
+        "485739"
+      ],
+      "run_global_budget_used": 1
+    },
     {
       "base_url": "https://socolivep.cv/truc-tiep/cruz-azul-vs-puebla-22-07-2026-0800/",
       "raw_title": "Trực tiếp bóng đá Socolive Cruz Azul vs Puebla lúc 08:00 ngày 22/07/2026",
@@ -1668,15 +1925,7 @@
           "last_stream_count": 0,
           "last_error": ""
         }
-      },
-      "run_attempted_room_keys": [
-        "598119"
-      ],
-      "run_rate_limited_room_keys": [],
-      "run_completed_room_keys": [
-        "598119"
-      ],
-      "run_global_budget_used": 1
+      }
     },
     {
       "base_url": "https://socolivep.cv/truc-tiep/universidad-central-de-venezuela-vs-santos-fc-sp-22-07-2026-0730/",
@@ -1718,136 +1967,7 @@
       ],
       "match_name": "Universidad Central de Venezuela vs Santos Fc - SP",
       "scheduled_at": "2026-07-22T07:30:00+07:00",
-      "streams": [
-        {
-          "url": "https://pull.niues.live/live/stream-273736_lhd.m3u8?auth_key=1784682415-0-0-36d8f878cf654d9cd375e6b8ca4e59ea",
-          "queue_room_key": "273736",
-          "room_url": "https://socolivep.cv/truc-tiep/universidad-central-de-venezuela-vs-santos-fc-sp-22-07-2026-0730?blv=273736",
-          "blv": "CHÍ PHÈO",
-          "blv_id": "273736",
-          "source_id": "273736",
-          "source_provenance": [
-            "cdp/request",
-            "cdp/response",
-            "harvest-final",
-            "harvest-round-1",
-            "harvest-round-2",
-            "harvest-round-3",
-            "harvest-round-4",
-            "harvest-round-5",
-            "harvest-round-6",
-            "harvest-round-7",
-            "harvest-round-8",
-            "harvest-round-9",
-            "request/image",
-            "request/xhr",
-            "response/200"
-          ],
-          "source_confidence": "network",
-          "mapping_mode": "exact-room-id",
-          "discovered_from_room_url": "https://socolivep.cv/truc-tiep/universidad-central-de-venezuela-vs-santos-fc-sp-22-07-2026-0730?blv=273736",
-          "discovered_from_blv": "CHÍ PHÈO",
-          "discovered_at": "2026-07-22T08:01:29.494717+07:00",
-          "valid_until": "2026-07-22T08:06:55+07:00",
-          "is_expired": false
-        },
-        {
-          "url": "https://pull.niues.live/live/stream-607400_lhd.m3u8?auth_key=1784683315-0-0-82af8697564907f16bd100e2a10f1723",
-          "queue_room_key": "607400",
-          "room_url": "https://socolivep.cv/truc-tiep/universidad-central-de-venezuela-vs-santos-fc-sp-22-07-2026-0730?blv=607400",
-          "blv": "HÀ DUY KIÊN",
-          "blv_id": "607400",
-          "source_id": "607400",
-          "source_provenance": [
-            "cdp/request",
-            "cdp/response",
-            "harvest-final",
-            "harvest-round-1",
-            "harvest-round-2",
-            "harvest-round-3",
-            "harvest-round-4",
-            "harvest-round-5",
-            "harvest-round-6",
-            "harvest-round-7",
-            "harvest-round-8",
-            "harvest-round-9",
-            "request/image",
-            "request/xhr",
-            "response/200"
-          ],
-          "source_confidence": "network",
-          "mapping_mode": "exact-room-id",
-          "discovered_from_room_url": "https://socolivep.cv/truc-tiep/universidad-central-de-venezuela-vs-santos-fc-sp-22-07-2026-0730?blv=607400",
-          "discovered_from_blv": "HÀ DUY KIÊN",
-          "discovered_at": "2026-07-22T08:01:39.935056+07:00",
-          "valid_until": "2026-07-22T08:21:55+07:00",
-          "is_expired": false
-        },
-        {
-          "url": "https://pull.niues.live/live/stream-536185_lhd.m3u8?auth_key=1784683195-0-0-8a03190ac519280ec21b375488ec859f",
-          "queue_room_key": "536185",
-          "room_url": "https://socolivep.cv/truc-tiep/universidad-central-de-venezuela-vs-santos-fc-sp-22-07-2026-0730?blv=536185",
-          "blv": "A WIN",
-          "blv_id": "536185",
-          "source_id": "536185",
-          "source_provenance": [
-            "cdp/request",
-            "cdp/response",
-            "harvest-final",
-            "harvest-round-1",
-            "harvest-round-2",
-            "harvest-round-3",
-            "harvest-round-4",
-            "harvest-round-5",
-            "harvest-round-6",
-            "harvest-round-7",
-            "harvest-round-8",
-            "harvest-round-9",
-            "request/image",
-            "request/xhr",
-            "response/200"
-          ],
-          "source_confidence": "network",
-          "mapping_mode": "exact-room-id",
-          "discovered_from_room_url": "https://socolivep.cv/truc-tiep/universidad-central-de-venezuela-vs-santos-fc-sp-22-07-2026-0730?blv=536185",
-          "discovered_from_blv": "A WIN",
-          "discovered_at": "2026-07-22T08:01:50.401385+07:00",
-          "valid_until": "2026-07-22T08:19:55+07:00",
-          "is_expired": false
-        },
-        {
-          "url": "https://pull.niues.live/live/stream-620003_lhd.m3u8?auth_key=1784683315-0-0-8716bee5004178bec154f6777442ead9",
-          "queue_room_key": "620003",
-          "room_url": "https://socolivep.cv/truc-tiep/universidad-central-de-venezuela-vs-santos-fc-sp-22-07-2026-0730?blv=620003",
-          "blv": "FOX",
-          "blv_id": "620003",
-          "source_id": "620003",
-          "source_provenance": [
-            "cdp/request",
-            "cdp/response",
-            "harvest-final",
-            "harvest-round-1",
-            "harvest-round-2",
-            "harvest-round-3",
-            "harvest-round-4",
-            "harvest-round-5",
-            "harvest-round-6",
-            "harvest-round-7",
-            "harvest-round-8",
-            "harvest-round-9",
-            "request/image",
-            "request/xhr",
-            "response/200"
-          ],
-          "source_confidence": "network",
-          "mapping_mode": "exact-room-id",
-          "discovered_from_room_url": "https://socolivep.cv/truc-tiep/universidad-central-de-venezuela-vs-santos-fc-sp-22-07-2026-0730?blv=620003",
-          "discovered_from_blv": "FOX",
-          "discovered_at": "2026-07-22T08:02:00.816799+07:00",
-          "valid_until": "2026-07-22T08:21:55+07:00",
-          "is_expired": false
-        }
-      ],
+      "streams": [],
       "room_results": [
         {
           "url": "https://socolivep.cv/truc-tiep/universidad-central-de-venezuela-vs-santos-fc-sp-22-07-2026-0730?blv=273736",
@@ -2262,13 +2382,8 @@
         "620003"
       ],
       "coverage": {
-        "found_streams": 4,
-        "found_blv_ids": [
-          "273736",
-          "536185",
-          "607400",
-          "620003"
-        ],
+        "found_streams": 0,
+        "found_blv_ids": [],
         "goal": 8,
         "source_goal_reached": false,
         "room_queue_complete": true,
@@ -2287,12 +2402,12 @@
             "attempts_total": 1,
             "ever_attempted": true,
             "valid_stream_ever_found": true,
-            "needs_token_refresh": false,
-            "completion_reason": "valid_stream",
+            "needs_token_refresh": true,
+            "completion_reason": "valid_stream_seen_earlier",
             "rate_limit_hits": 0,
             "last_http_status": 200,
-            "last_stream_count": 1,
-            "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
+            "last_stream_count": 0,
+            "last_error": "Token cũ đã hết hạn; giữ nguyên attempts_total và trạng thái hoàn tất của BLV."
           },
           "607400": {
             "key": "607400",
@@ -2304,12 +2419,12 @@
             "attempts_total": 1,
             "ever_attempted": true,
             "valid_stream_ever_found": true,
-            "needs_token_refresh": false,
-            "completion_reason": "valid_stream",
+            "needs_token_refresh": true,
+            "completion_reason": "valid_stream_seen_earlier",
             "rate_limit_hits": 0,
             "last_http_status": 200,
-            "last_stream_count": 1,
-            "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
+            "last_stream_count": 0,
+            "last_error": "Token cũ đã hết hạn; giữ nguyên attempts_total và trạng thái hoàn tất của BLV."
           },
           "536185": {
             "key": "536185",
@@ -2321,12 +2436,12 @@
             "attempts_total": 1,
             "ever_attempted": true,
             "valid_stream_ever_found": true,
-            "needs_token_refresh": false,
-            "completion_reason": "valid_stream",
+            "needs_token_refresh": true,
+            "completion_reason": "valid_stream_seen_earlier",
             "rate_limit_hits": 0,
             "last_http_status": 200,
-            "last_stream_count": 1,
-            "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
+            "last_stream_count": 0,
+            "last_error": "Token cũ đã hết hạn; giữ nguyên attempts_total và trạng thái hoàn tất của BLV."
           },
           "620003": {
             "key": "620003",
@@ -2338,12 +2453,12 @@
             "attempts_total": 1,
             "ever_attempted": true,
             "valid_stream_ever_found": true,
-            "needs_token_refresh": false,
-            "completion_reason": "valid_stream",
+            "needs_token_refresh": true,
+            "completion_reason": "valid_stream_seen_earlier",
             "rate_limit_hits": 0,
             "last_http_status": 200,
-            "last_stream_count": 1,
-            "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
+            "last_stream_count": 0,
+            "last_error": "Token cũ đã hết hạn; giữ nguyên attempts_total và trạng thái hoàn tất của BLV."
           },
           "__base__": {
             "key": "__base__",
@@ -2376,12 +2491,12 @@
           "attempts_total": 1,
           "ever_attempted": true,
           "valid_stream_ever_found": true,
-          "needs_token_refresh": false,
-          "completion_reason": "valid_stream",
+          "needs_token_refresh": true,
+          "completion_reason": "valid_stream_seen_earlier",
           "rate_limit_hits": 0,
           "last_http_status": 200,
-          "last_stream_count": 1,
-          "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
+          "last_stream_count": 0,
+          "last_error": "Token cũ đã hết hạn; giữ nguyên attempts_total và trạng thái hoàn tất của BLV."
         },
         "607400": {
           "key": "607400",
@@ -2393,12 +2508,12 @@
           "attempts_total": 1,
           "ever_attempted": true,
           "valid_stream_ever_found": true,
-          "needs_token_refresh": false,
-          "completion_reason": "valid_stream",
+          "needs_token_refresh": true,
+          "completion_reason": "valid_stream_seen_earlier",
           "rate_limit_hits": 0,
           "last_http_status": 200,
-          "last_stream_count": 1,
-          "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
+          "last_stream_count": 0,
+          "last_error": "Token cũ đã hết hạn; giữ nguyên attempts_total và trạng thái hoàn tất của BLV."
         },
         "536185": {
           "key": "536185",
@@ -2410,12 +2525,12 @@
           "attempts_total": 1,
           "ever_attempted": true,
           "valid_stream_ever_found": true,
-          "needs_token_refresh": false,
-          "completion_reason": "valid_stream",
+          "needs_token_refresh": true,
+          "completion_reason": "valid_stream_seen_earlier",
           "rate_limit_hits": 0,
           "last_http_status": 200,
-          "last_stream_count": 1,
-          "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
+          "last_stream_count": 0,
+          "last_error": "Token cũ đã hết hạn; giữ nguyên attempts_total và trạng thái hoàn tất của BLV."
         },
         "620003": {
           "key": "620003",
@@ -2427,12 +2542,12 @@
           "attempts_total": 1,
           "ever_attempted": true,
           "valid_stream_ever_found": true,
-          "needs_token_refresh": false,
-          "completion_reason": "valid_stream",
+          "needs_token_refresh": true,
+          "completion_reason": "valid_stream_seen_earlier",
           "rate_limit_hits": 0,
           "last_http_status": 200,
-          "last_stream_count": 1,
-          "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
+          "last_stream_count": 0,
+          "last_error": "Token cũ đã hết hạn; giữ nguyên attempts_total và trạng thái hoàn tất của BLV."
         },
         "__base__": {
           "key": "__base__",
@@ -2451,21 +2566,7 @@
           "last_stream_count": 0,
           "last_error": ""
         }
-      },
-      "run_attempted_room_keys": [
-        "273736",
-        "536185",
-        "607400",
-        "620003"
-      ],
-      "run_rate_limited_room_keys": [],
-      "run_completed_room_keys": [
-        "273736",
-        "536185",
-        "607400",
-        "620003"
-      ],
-      "run_global_budget_used": 5
+      }
     },
     {
       "base_url": "https://socolivep.cv/truc-tiep/deportivo-pasto-vs-bogota-fc-22-07-2026-0700/",
@@ -3180,2181 +3281,6 @@
           "last_http_status": 200,
           "last_stream_count": 0,
           "last_error": "Token cũ đã hết hạn; giữ nguyên attempts_total và trạng thái hoàn tất của BLV."
-        }
-      }
-    },
-    {
-      "base_url": "https://socolivep.cv/truc-tiep/deportes-tolima-vs-deportes-quindio-22-07-2026-0600/",
-      "raw_title": "Trực tiếp bóng đá Socolive Deportes Tolima vs Deportes Quindio lúc 06:00 ngày 22/07/2026",
-      "home_team": "Deportes Tolima",
-      "away_team": "Deportes Quindio",
-      "home_logo": "https://sta.vnres.co/file/common/20260720/c014f259cd80e44c8eabf50538f2b78a.png",
-      "away_logo": "https://sta.vnres.co/file/common/20260720/8c1aef73d3048c4c71dc22cc6f926e73.png",
-      "time_text": "06:00",
-      "date_text": "22/07",
-      "status": "",
-      "card_text": "COL Cup 06:00 22/07 Deportes Tolima VS XEM NGAY Deportes Quindio VOI",
-      "rooms": [
-        {
-          "url": "https://socolivep.cv/truc-tiep/deportes-tolima-vs-deportes-quindio-22-07-2026-0600?blv=552716",
-          "blv": "VOI",
-          "blv_id": "552716"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/deportes-tolima-vs-deportes-quindio-22-07-2026-0600",
-          "blv": "XEM NGAY",
-          "blv_id": ""
-        }
-      ],
-      "match_name": "Deportes Tolima vs Deportes Quindio",
-      "scheduled_at": "2026-07-22T06:00:00+07:00",
-      "streams": [],
-      "room_results": [
-        {
-          "url": "https://socolivep.cv/truc-tiep/deportes-tolima-vs-deportes-quindio-22-07-2026-0600?blv=552716",
-          "blv": "VOI",
-          "blv_id": "552716",
-          "streams": [
-            "https://pull.niues.live/live/stream-9912114_lhd.m3u8?auth_key=1784677555-0-0-3a2270556811ddfb7dcd004545b09204"
-          ],
-          "stream_sources": {
-            "https://pull.niues.live/live/stream-9912114_lhd.m3u8?auth_key=1784677555-0-0-3a2270556811ddfb7dcd004545b09204": [
-              "cdp/request",
-              "cdp/response",
-              "harvest-final",
-              "harvest-round-1",
-              "harvest-round-2",
-              "harvest-round-3",
-              "harvest-round-4",
-              "harvest-round-5",
-              "harvest-round-6",
-              "harvest-round-7",
-              "harvest-round-8",
-              "harvest-round-9",
-              "request/image",
-              "request/xhr",
-              "response/200"
-            ]
-          },
-          "stream_first_seen": [
-            "https://pull.niues.live/live/stream-9912114_lhd.m3u8?auth_key=1784677555-0-0-3a2270556811ddfb7dcd004545b09204"
-          ],
-          "discovered_blv_ids": [
-            "9912114"
-          ],
-          "diagnostics": {
-            "url": "https://socolivep.cv/truc-tiep/deportes-tolima-vs-deportes-quindio-22-07-2026-0600/?blv=552716",
-            "title": "Xem trực tiếp bóng đá Deportes Tolima vs Deportes Quindio | 06:00 ngày 22/07/2026",
-            "h1": "Trực tiếp bóng đá Socolive Deportes Tolima vs Deportes Quindio lúc 06:00 ngày 22/07/2026",
-            "ready_state": "complete",
-            "visibility_state": "visible",
-            "hidden": false,
-            "video_count": 1,
-            "iframe_count": 0,
-            "body_sample": "Skip to content Socolive Bảng xếp hạng Lịch thi đấu Kết quả bóng đá Tin thể thao Trực tiếp bóng đá Socolive Deportes Tolima vs Deportes Quindio lúc 06:00 ngày 22/07/2026 COL Cup Deportes Tolima 06:00 22/07 Deportes Quindio Volume 0% Tải App Bufa VOI CÒ Chat Thống kê Đội hình Diễn Biến Bảng XH \" \" Admin Trợ Lý BLV VOI: ❤️NẠP TIỀN XU THU TIỀN TỶ TẠI❤️https://www.bty6150.com LIÊN HỆ 🎯 𝐅𝐚𝐜𝐞𝐛𝐨𝐨𝐤 + 𝐙𝐚𝐥𝐨:https://m.me/Socbebe8899 🎯 𝐓𝐞𝐥𝐞𝐠𝐫𝐚𝐦 :https://t.me/socbebe8899 💵 𝐁𝐮𝐟𝐚 :3559ka 🎯Link bufa: https://bufa.chat/ Tin nhắn riêng Vô hiệu hóa tất cả Vô hiệu hóa quà tặng Tắt lời chào Đăng nhập để cùng chat nhé Gửi Tỷ lệ kèo Cược Châu Á Chủ Chấp Khách Cược Châu Âu Chủ Hòa Khách Tài xỉu Tài Tỷ lệ kèo Xỉu Kèo góc Tài Tỷ lệ kèo Xỉu Mô phỏng trận đấu Thống kê trận đấu BRA D1 05:30 22/07 Atlético Mineiro - MG VS null null null - null Sắp diễn ra Xem ngay Bahia - BA CHÍ PHÈO HÀ DUY KIÊN XO NOVA BRA D2 05:30 22/07 Avaí FC VS null null null - null Sắp diễn ra Xem ngay America MG TRÀ ĐÁ FOX BRA D2 05:30 22/07 Gremio Novorizontino VS null null null - null Sắp diễn ra Xem ngay Criciuma RAMBO KAN CON CSA 05:00 22/07 Nacional Montevideo VS null null null - null Sắp diễn ra Xem ngay",
-            "harvest_rounds": 9,
-            "harvest_window_seconds": 7.008,
-            "main_status": 200,
-            "harvested_stream_count": 1,
-            "harvested_blv_ids": [
-              "9912114"
-            ],
-            "scan_mode": "browser-event",
-            "elapsed_seconds": 8.791
-          },
-          "http_probe": {
-            "enabled": false,
-            "status": null,
-            "elapsed_seconds": 0.0,
-            "error": ""
-          },
-          "errors": [
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED"
-          ],
-          "failed_requests": [
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/main.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/customize.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/auth.css?ver=248 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat.css?ver=513 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat(1).css?ver=162 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/toast.css?ver=319 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/themes/flatsome/assets/css/flatsome.css?ver=3.18.2 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/themes/flatsome-child/style.css?ver=3.0 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/countdown.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/match.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/livescore.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/style_custom.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/effect/running-border.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/option/option-6.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/highlight/option-1.css?ver=2.8.5 | net::ERR_FAILED"
-          ],
-          "http_errors": [
-            "403 https://socolivep.cv/wp-admin/admin-ajax.php?action=scl_realtime&sport=1"
-          ]
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/deportes-tolima-vs-deportes-quindio-22-07-2026-0600?blv=582342",
-          "blv": "CÒ",
-          "blv_id": "582342",
-          "streams": [
-            "https://pull.niues.live/live/stream-582342_lhd.m3u8?auth_key=1784659984-0-0-570ed0bba8f3cf8a2b7dd260cd8a94d8"
-          ],
-          "stream_sources": {
-            "https://pull.niues.live/live/stream-582342_lhd.m3u8?auth_key=1784659984-0-0-570ed0bba8f3cf8a2b7dd260cd8a94d8": [
-              "cdp/request",
-              "harvest-final",
-              "harvest-round-1",
-              "harvest-round-2",
-              "harvest-round-3",
-              "harvest-round-4",
-              "harvest-round-5",
-              "harvest-round-6",
-              "harvest-round-7",
-              "harvest-round-8",
-              "harvest-round-9",
-              "request/image",
-              "request/xhr"
-            ]
-          },
-          "stream_first_seen": [
-            "https://pull.niues.live/live/stream-582342_lhd.m3u8?auth_key=1784659984-0-0-570ed0bba8f3cf8a2b7dd260cd8a94d8"
-          ],
-          "discovered_blv_ids": [
-            "582342"
-          ],
-          "diagnostics": {
-            "url": "https://socolivep.cv/truc-tiep/deportes-tolima-vs-deportes-quindio-22-07-2026-0600/?blv=582342",
-            "title": "Xem trực tiếp bóng đá Deportes Tolima vs Deportes Quindio | 06:00 ngày 22/07/2026",
-            "h1": "Trực tiếp bóng đá Socolive Deportes Tolima vs Deportes Quindio lúc 06:00 ngày 22/07/2026",
-            "ready_state": "complete",
-            "visibility_state": "visible",
-            "hidden": false,
-            "video_count": 1,
-            "iframe_count": 0,
-            "body_sample": "Skip to content Socolive Bảng xếp hạng Lịch thi đấu Kết quả bóng đá Tin thể thao Trực tiếp bóng đá Socolive Deportes Tolima vs Deportes Quindio lúc 06:00 ngày 22/07/2026 COL Cup Deportes Tolima 06:00 22/07 Deportes Quindio Volume 0% Tải App Bufa VOI CÒ Chat Thống kê Đội hình Diễn Biến Bảng XH \" \" Tin nhắn riêng Vô hiệu hóa tất cả Vô hiệu hóa quà tặng Tắt lời chào Đăng nhập để cùng chat nhé Gửi Tỷ lệ kèo Cược Châu Á Chủ Chấp Khách Cược Châu Âu Chủ Hòa Khách Tài xỉu Tài Tỷ lệ kèo Xỉu Kèo góc Tài Tỷ lệ kèo Xỉu Mô phỏng trận đấu Thống kê trận đấu BRA D1 05:30 22/07 Atlético Mineiro - MG VS null null null - null Sắp diễn ra Xem ngay Bahia - BA CHÍ PHÈO HÀ DUY KIÊN XO NOVA BRA D2 05:30 22/07 Avaí FC VS null null null - null Sắp diễn ra Xem ngay America MG TRÀ ĐÁ FOX BRA D2 05:30 22/07 Gremio Novorizontino VS null null null - null Sắp diễn ra Xem ngay Criciuma RAMBO KAN CON CSA 05:00 22/07 Nacional Montevideo VS null null null - null Sắp diễn ra Xem ngay Club Atletico Tigre A TINH YONE COZY CHIVAS MEX D1 08:00 22/07 Cruz Azul VS null null null - null Sắp diễn ra Xem ngay Puebla VƯƠNG ANH CUỘI ROBBEN ALEX COCA TAP Thành tích đối đầu Không có dữ liệu Phong độ gần đây Không có dữ liệu Không ",
-            "harvest_rounds": 9,
-            "harvest_window_seconds": 6.972,
-            "main_status": 200,
-            "harvested_stream_count": 1,
-            "harvested_blv_ids": [
-              "582342"
-            ],
-            "scan_mode": "browser-event",
-            "elapsed_seconds": 8.246
-          },
-          "http_probe": {
-            "enabled": false,
-            "status": null,
-            "elapsed_seconds": 0.0,
-            "error": ""
-          },
-          "errors": [
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED"
-          ],
-          "failed_requests": [
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/main.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/customize.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/auth.css?ver=93 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat.css?ver=453 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat(1).css?ver=119 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/toast.css?ver=22 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/themes/flatsome/assets/css/flatsome.css?ver=3.18.2 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/themes/flatsome-child/style.css?ver=3.0 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/countdown.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/match.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/livescore.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/style_custom.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/effect/running-border.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/option/option-6.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/highlight/option-1.css?ver=2.8.5 | net::ERR_FAILED"
-          ],
-          "http_errors": [
-            "403 https://socolivep.cv/wp-admin/admin-ajax.php?action=scl_realtime&sport=1"
-          ]
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/deportes-tolima-vs-deportes-quindio-22-07-2026-0600?blv=582342",
-          "blv": "CÒ",
-          "blv_id": "582342",
-          "streams": [
-            "https://pull.niues.live/live/stream-582342_lhd.m3u8?auth_key=1784659984-0-0-570ed0bba8f3cf8a2b7dd260cd8a94d8"
-          ],
-          "stream_sources": {
-            "https://pull.niues.live/live/stream-582342_lhd.m3u8?auth_key=1784659984-0-0-570ed0bba8f3cf8a2b7dd260cd8a94d8": [
-              "cdp/request",
-              "harvest-final",
-              "harvest-round-1",
-              "harvest-round-2",
-              "harvest-round-3",
-              "harvest-round-4",
-              "harvest-round-5",
-              "harvest-round-6",
-              "harvest-round-7",
-              "harvest-round-8",
-              "harvest-round-9",
-              "request/image",
-              "request/xhr"
-            ]
-          },
-          "stream_first_seen": [
-            "https://pull.niues.live/live/stream-582342_lhd.m3u8?auth_key=1784659984-0-0-570ed0bba8f3cf8a2b7dd260cd8a94d8"
-          ],
-          "discovered_blv_ids": [
-            "582342"
-          ],
-          "diagnostics": {
-            "url": "https://socolivep.cv/truc-tiep/deportes-tolima-vs-deportes-quindio-22-07-2026-0600/?blv=582342",
-            "title": "Xem trực tiếp bóng đá Deportes Tolima vs Deportes Quindio | 06:00 ngày 22/07/2026",
-            "h1": "Trực tiếp bóng đá Socolive Deportes Tolima vs Deportes Quindio lúc 06:00 ngày 22/07/2026",
-            "ready_state": "complete",
-            "visibility_state": "visible",
-            "hidden": false,
-            "video_count": 1,
-            "iframe_count": 0,
-            "body_sample": "Skip to content Socolive Bảng xếp hạng Lịch thi đấu Kết quả bóng đá Tin thể thao Trực tiếp bóng đá Socolive Deportes Tolima vs Deportes Quindio lúc 06:00 ngày 22/07/2026 COL Cup Deportes Tolima 06:00 22/07 Deportes Quindio Volume 0% Tải App Bufa VOI CÒ Chat Thống kê Đội hình Diễn Biến Bảng XH \" \" Tin nhắn riêng Vô hiệu hóa tất cả Vô hiệu hóa quà tặng Tắt lời chào Đăng nhập để cùng chat nhé Gửi Tỷ lệ kèo Cược Châu Á Chủ Chấp Khách Cược Châu Âu Chủ Hòa Khách Tài xỉu Tài Tỷ lệ kèo Xỉu Kèo góc Tài Tỷ lệ kèo Xỉu Mô phỏng trận đấu Thống kê trận đấu BRA D1 05:30 22/07 Atlético Mineiro - MG VS null null null - null Sắp diễn ra Xem ngay Bahia - BA CHÍ PHÈO HÀ DUY KIÊN XO NOVA BRA D2 05:30 22/07 Avaí FC VS null null null - null Sắp diễn ra Xem ngay America MG TRÀ ĐÁ FOX BRA D2 05:30 22/07 Gremio Novorizontino VS null null null - null Sắp diễn ra Xem ngay Criciuma RAMBO KAN CON CSA 05:00 22/07 Nacional Montevideo VS null null null - null Sắp diễn ra Xem ngay Club Atletico Tigre A TINH YONE COZY CHIVAS MEX D1 08:00 22/07 Cruz Azul VS null null null - null Sắp diễn ra Xem ngay Puebla VƯƠNG ANH CUỘI ROBBEN ALEX COCA TAP Thành tích đối đầu Không có dữ liệu Phong độ gần đây Không có dữ liệu Không ",
-            "harvest_rounds": 9,
-            "harvest_window_seconds": 6.922,
-            "main_status": 200,
-            "harvested_stream_count": 1,
-            "harvested_blv_ids": [
-              "582342"
-            ],
-            "scan_mode": "browser-event",
-            "elapsed_seconds": 8.074
-          },
-          "http_probe": {
-            "enabled": false,
-            "status": null,
-            "elapsed_seconds": 0.0,
-            "error": ""
-          },
-          "errors": [
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED"
-          ],
-          "failed_requests": [
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/main.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/customize.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/auth.css?ver=93 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat.css?ver=453 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat(1).css?ver=119 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/toast.css?ver=22 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/themes/flatsome/assets/css/flatsome.css?ver=3.18.2 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/themes/flatsome-child/style.css?ver=3.0 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/countdown.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/match.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/livescore.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/style_custom.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/effect/running-border.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/option/option-6.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/highlight/option-1.css?ver=2.8.5 | net::ERR_FAILED"
-          ],
-          "http_errors": [
-            "403 https://socolivep.cv/wp-admin/admin-ajax.php?action=scl_realtime&sport=1"
-          ]
-        }
-      ],
-      "attempted_room_ids": [
-        "552716",
-        "582342"
-      ],
-      "coverage": {
-        "found_streams": 0,
-        "found_blv_ids": [],
-        "goal": 2,
-        "source_goal_reached": false,
-        "room_queue_complete": true,
-        "complete": true,
-        "max_streams_per_blv": 2,
-        "total_explicit_blv_rooms": 1,
-        "pending_room_keys": [],
-        "room_progress": {
-          "552716": {
-            "key": "552716",
-            "url": "https://socolivep.cv/truc-tiep/deportes-tolima-vs-deportes-quindio-22-07-2026-0600?blv=552716",
-            "blv": "VOI",
-            "blv_id": "552716",
-            "status": "success",
-            "attempts": 1,
-            "attempts_total": 1,
-            "ever_attempted": true,
-            "valid_stream_ever_found": true,
-            "needs_token_refresh": true,
-            "completion_reason": "valid_stream_seen_earlier",
-            "rate_limit_hits": 0,
-            "last_http_status": 200,
-            "last_stream_count": 0,
-            "last_error": "Token cũ đã hết hạn; giữ nguyên attempts_total và trạng thái hoàn tất của BLV."
-          },
-          "582342": {
-            "key": "582342",
-            "url": "https://socolivep.cv/truc-tiep/deportes-tolima-vs-deportes-quindio-22-07-2026-0600?blv=582342",
-            "blv": "CÒ",
-            "blv_id": "582342",
-            "status": "exhausted",
-            "attempts": 2,
-            "attempts_total": 2,
-            "ever_attempted": true,
-            "valid_stream_ever_found": false,
-            "needs_token_refresh": true,
-            "completion_reason": "no_valid_stream_after_max_attempts",
-            "rate_limit_hits": 0,
-            "last_http_status": 200,
-            "last_stream_count": 0,
-            "last_error": "Token cũ đã hết hạn; giữ nguyên attempts_total và trạng thái hoàn tất của BLV."
-          },
-          "__base__": {
-            "key": "__base__",
-            "url": "https://socolivep.cv/truc-tiep/deportes-tolima-vs-deportes-quindio-22-07-2026-0600",
-            "blv": "XEM NGAY",
-            "blv_id": "",
-            "status": "pending",
-            "attempts": 0,
-            "attempts_total": 0,
-            "ever_attempted": false,
-            "valid_stream_ever_found": false,
-            "needs_token_refresh": false,
-            "completion_reason": "",
-            "rate_limit_hits": 0,
-            "last_http_status": null,
-            "last_stream_count": 0,
-            "last_error": ""
-          }
-        }
-      },
-      "errors": [],
-      "room_progress": {
-        "552716": {
-          "key": "552716",
-          "url": "https://socolivep.cv/truc-tiep/deportes-tolima-vs-deportes-quindio-22-07-2026-0600?blv=552716",
-          "blv": "VOI",
-          "blv_id": "552716",
-          "status": "success",
-          "attempts": 1,
-          "attempts_total": 1,
-          "ever_attempted": true,
-          "valid_stream_ever_found": true,
-          "needs_token_refresh": true,
-          "completion_reason": "valid_stream_seen_earlier",
-          "rate_limit_hits": 0,
-          "last_http_status": 200,
-          "last_stream_count": 0,
-          "last_error": "Token cũ đã hết hạn; giữ nguyên attempts_total và trạng thái hoàn tất của BLV."
-        },
-        "582342": {
-          "key": "582342",
-          "url": "https://socolivep.cv/truc-tiep/deportes-tolima-vs-deportes-quindio-22-07-2026-0600?blv=582342",
-          "blv": "CÒ",
-          "blv_id": "582342",
-          "status": "exhausted",
-          "attempts": 2,
-          "attempts_total": 2,
-          "ever_attempted": true,
-          "valid_stream_ever_found": false,
-          "needs_token_refresh": true,
-          "completion_reason": "no_valid_stream_after_max_attempts",
-          "rate_limit_hits": 0,
-          "last_http_status": 200,
-          "last_stream_count": 0,
-          "last_error": "Token cũ đã hết hạn; giữ nguyên attempts_total và trạng thái hoàn tất của BLV."
-        },
-        "__base__": {
-          "key": "__base__",
-          "url": "https://socolivep.cv/truc-tiep/deportes-tolima-vs-deportes-quindio-22-07-2026-0600",
-          "blv": "XEM NGAY",
-          "blv_id": "",
-          "status": "pending",
-          "attempts": 0,
-          "attempts_total": 0,
-          "ever_attempted": false,
-          "valid_stream_ever_found": false,
-          "needs_token_refresh": false,
-          "completion_reason": "",
-          "rate_limit_hits": 0,
-          "last_http_status": null,
-          "last_stream_count": 0,
-          "last_error": ""
-        }
-      }
-    },
-    {
-      "base_url": "https://socolivep.cv/truc-tiep/atletico-mineiro-mg-vs-bahia-ba-22-07-2026-0530/",
-      "raw_title": "Trực tiếp bóng đá Socolive Atlético Mineiro - MG vs Bahia - BA lúc 05:30 ngày 22/07/2026",
-      "home_team": "Atlético Mineiro - MG",
-      "away_team": "Bahia - BA",
-      "home_logo": "https://sta.vnres.co/file/common/20260719/0c895d1ae8ea6ceb59506dcbfb982923.png",
-      "away_logo": "https://sta.vnres.co/file/common/20260714/a51dd38694faf16e3276b383dd615074.png",
-      "time_text": "05:30",
-      "date_text": "22/07",
-      "status": "",
-      "card_text": "BRA D1 05:30 22/07 Atlético Mineiro - MG VS XEM NGAY Bahia - BA CHÍ PHÈO HÀ DUY KIÊN XO NOVA",
-      "rooms": [
-        {
-          "url": "https://socolivep.cv/truc-tiep/atletico-mineiro-mg-vs-bahia-ba-22-07-2026-0530?blv=273736",
-          "blv": "CHÍ PHÈO",
-          "blv_id": "273736"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/atletico-mineiro-mg-vs-bahia-ba-22-07-2026-0530?blv=607400",
-          "blv": "HÀ DUY KIÊN",
-          "blv_id": "607400"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/atletico-mineiro-mg-vs-bahia-ba-22-07-2026-0530?blv=472241",
-          "blv": "XO",
-          "blv_id": "472241"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/atletico-mineiro-mg-vs-bahia-ba-22-07-2026-0530?blv=619108",
-          "blv": "NOVA",
-          "blv_id": "619108"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/atletico-mineiro-mg-vs-bahia-ba-22-07-2026-0530",
-          "blv": "XEM NGAY",
-          "blv_id": ""
-        }
-      ],
-      "match_name": "Atlético Mineiro - MG vs Bahia - BA",
-      "scheduled_at": "2026-07-22T05:30:00+07:00",
-      "streams": [],
-      "room_results": [
-        {
-          "url": "https://socolivep.cv/truc-tiep/atletico-mineiro-mg-vs-bahia-ba-22-07-2026-0530?blv=273736",
-          "blv": "CHÍ PHÈO",
-          "blv_id": "273736",
-          "streams": [
-            "https://pull.niues.live/live/stream-273736_lhd.m3u8?auth_key=1784656533-0-0-778751e4e1ddc0fabba07ce2b26b9cb3"
-          ],
-          "stream_sources": {
-            "https://pull.niues.live/live/stream-273736_lhd.m3u8?auth_key=1784656533-0-0-778751e4e1ddc0fabba07ce2b26b9cb3": [
-              "final-no-stream-scan",
-              "harvest-final"
-            ]
-          },
-          "stream_first_seen": [
-            "https://pull.niues.live/live/stream-273736_lhd.m3u8?auth_key=1784656533-0-0-778751e4e1ddc0fabba07ce2b26b9cb3"
-          ],
-          "discovered_blv_ids": [
-            "273736"
-          ],
-          "diagnostics": {
-            "url": "https://socolivep.cv/truc-tiep/atletico-mineiro-mg-vs-bahia-ba-22-07-2026-0530/?blv=273736",
-            "title": "Xem trực tiếp bóng đá Atlético Mineiro - MG vs Bahia - BA | 05:30 ngày 22/07/2026",
-            "h1": "Trực tiếp bóng đá Socolive Atlético Mineiro – MG vs Bahia – BA lúc 05:30 ngày 22/07/2026",
-            "ready_state": "complete",
-            "visibility_state": "visible",
-            "hidden": false,
-            "video_count": 0,
-            "iframe_count": 0,
-            "body_sample": "Skip to content Socolive Bảng xếp hạng Lịch thi đấu Kết quả bóng đá Tin thể thao Trực tiếp bóng đá Socolive Atlético Mineiro – MG vs Bahia – BA lúc 05:30 ngày 22/07/2026 BRA D1 Atlético Mineiro - MG 05:30 22/07 Bahia - BA Trận đấu sẽ bắt đầu sau Ngày0 : Giờ3 : Phút28 : Giây32 Trận đấu chưa bắt đầu CHÍ PHÈO HÀ DUY KIÊN XO NOVA Chat Thống kê Đội hình Diễn Biến Bảng XH \" \" Xóa Tin nhắn riêng 😀 😁 😃 😄 😅 😆 😇 😉 😊 🙂 😋 😍 😘 😗 😙 😚 😜 😝 😛 😎 🙄 😳 😡 😕 😫 😤 😨 😥 😪 😓 😵 😲 🤧 😷 🤒 🤕 😴 💤 👏 🤙 👍 👎 👊 ✊ ✌ 👌 ✋ 🤚 💪 🤝 👈 👉 🖕 🖐 👄 👂 👀 🎅 🌞 🌙 ⭐ ⚡ 🔥 ❄️ ⚽ 🏀 🏈 ⚾ 🎁 🎉 ✒️ 📝 ❤️ 💛 💚 🆚 💬 🕐 Vô hiệu hóa tất cả Vô hiệu hóa quà tặng Tắt lời chào Đăng nhập để cùng chat nhé Gửi Tỷ lệ kèo Cược Châu Á Chủ Chấp Khách Cược Châu Âu Chủ Hòa Khách Tài xỉu Tài Tỷ lệ kèo Xỉu Kèo góc Tài Tỷ lệ kèo Xỉu Mô phỏng trận đấu Thống kê trận đấu UEFA CL 02:00 22/07 Larne FC VS null null null - null Sắp diễn ra Xem ngay Crvena Zvezda KENCHU CÁO TUẤN CÙI UEFA CL 02:00 22/07 Vikingur Reykjavik VS null null null - null Sắp diễn ra Xem ngay Hapoel Beer Sheva FIREMAN SEVEN RYO UEFA CL 01:45 22/07 KI Klaksvik VS null null null - null Sắp diễn ra Xem ngay Kauno Zalgiris PEANUT A PÁO UEFA CL 0",
-            "harvest_rounds": 0,
-            "harvest_window_seconds": 0.633,
-            "main_status": 200,
-            "harvested_stream_count": 1,
-            "harvested_blv_ids": [
-              "273736"
-            ],
-            "scan_mode": "browser-event",
-            "elapsed_seconds": 14.932
-          },
-          "http_probe": {
-            "enabled": false,
-            "status": null,
-            "elapsed_seconds": 0.0,
-            "error": ""
-          },
-          "errors": [
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED"
-          ],
-          "failed_requests": [
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/main.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/customize.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/auth.css?ver=109 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat.css?ver=393 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat(1).css?ver=133 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/toast.css?ver=336 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/themes/flatsome/assets/css/flatsome.css?ver=3.18.2 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/themes/flatsome-child/style.css?ver=3.0 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/countdown.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/match.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/livescore.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/style_custom.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/effect/running-border.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/option/option-6.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/highlight/option-1.css?ver=2.8.5 | net::ERR_FAILED"
-          ],
-          "http_errors": [
-            "403 https://socolivep.cv/wp-admin/admin-ajax.php?action=scl_realtime&sport=1"
-          ]
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/atletico-mineiro-mg-vs-bahia-ba-22-07-2026-0530?blv=607400",
-          "blv": "HÀ DUY KIÊN",
-          "blv_id": "607400",
-          "streams": [
-            "https://pull.niues.live/live/stream-607400_lhd.m3u8?auth_key=1784645645-0-0-59b9e1cfbf470d0b6ef8931a42d978d4"
-          ],
-          "stream_sources": {
-            "https://pull.niues.live/live/stream-607400_lhd.m3u8?auth_key=1784645645-0-0-59b9e1cfbf470d0b6ef8931a42d978d4": [
-              "final-no-stream-scan",
-              "harvest-final"
-            ]
-          },
-          "stream_first_seen": [
-            "https://pull.niues.live/live/stream-607400_lhd.m3u8?auth_key=1784645645-0-0-59b9e1cfbf470d0b6ef8931a42d978d4"
-          ],
-          "discovered_blv_ids": [
-            "607400"
-          ],
-          "diagnostics": {
-            "url": "https://socolivep.cv/truc-tiep/atletico-mineiro-mg-vs-bahia-ba-22-07-2026-0530/?blv=607400",
-            "title": "Xem trực tiếp bóng đá Atlético Mineiro - MG vs Bahia - BA | 05:30 ngày 22/07/2026",
-            "h1": "Trực tiếp bóng đá Socolive Atlético Mineiro – MG vs Bahia – BA lúc 05:30 ngày 22/07/2026",
-            "ready_state": "complete",
-            "visibility_state": "visible",
-            "hidden": false,
-            "video_count": 0,
-            "iframe_count": 0,
-            "body_sample": "Skip to content Socolive Bảng xếp hạng Lịch thi đấu Kết quả bóng đá Tin thể thao Trực tiếp bóng đá Socolive Atlético Mineiro – MG vs Bahia – BA lúc 05:30 ngày 22/07/2026 BRA D1 Atlético Mineiro - MG 05:30 22/07 Bahia - BA Trận đấu sẽ bắt đầu sau Ngày0 : Giờ3 : Phút28 : Giây14 Trận đấu chưa bắt đầu CHÍ PHÈO HÀ DUY KIÊN XO NOVA Chat Thống kê Đội hình Diễn Biến Bảng XH \" \" Xóa Tin nhắn riêng 😀 😁 😃 😄 😅 😆 😇 😉 😊 🙂 😋 😍 😘 😗 😙 😚 😜 😝 😛 😎 🙄 😳 😡 😕 😫 😤 😨 😥 😪 😓 😵 😲 🤧 😷 🤒 🤕 😴 💤 👏 🤙 👍 👎 👊 ✊ ✌ 👌 ✋ 🤚 💪 🤝 👈 👉 🖕 🖐 👄 👂 👀 🎅 🌞 🌙 ⭐ ⚡ 🔥 ❄️ ⚽ 🏀 🏈 ⚾ 🎁 🎉 ✒️ 📝 ❤️ 💛 💚 🆚 💬 🕐 Vô hiệu hóa tất cả Vô hiệu hóa quà tặng Tắt lời chào Đăng nhập để cùng chat nhé Gửi Tỷ lệ kèo Cược Châu Á Chủ Chấp Khách Cược Châu Âu Chủ Hòa Khách Tài xỉu Tài Tỷ lệ kèo Xỉu Kèo góc Tài Tỷ lệ kèo Xỉu Mô phỏng trận đấu Thống kê trận đấu UEFA CL 02:00 22/07 Larne FC VS null null null - null Sắp diễn ra Xem ngay Crvena Zvezda KENCHU CÁO TUẤN CÙI UEFA CL 02:00 22/07 Vikingur Reykjavik VS null null null - null Sắp diễn ra Xem ngay Hapoel Beer Sheva FIREMAN SEVEN RYO UEFA CL 01:45 22/07 KI Klaksvik VS null null null - null Sắp diễn ra Xem ngay Kauno Zalgiris PEANUT A PÁO UEFA CL 0",
-            "harvest_rounds": 0,
-            "harvest_window_seconds": 0.633,
-            "main_status": 200,
-            "harvested_stream_count": 1,
-            "harvested_blv_ids": [
-              "607400"
-            ],
-            "scan_mode": "browser-event",
-            "elapsed_seconds": 15.405
-          },
-          "http_probe": {
-            "enabled": false,
-            "status": null,
-            "elapsed_seconds": 0.0,
-            "error": ""
-          },
-          "errors": [
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED"
-          ],
-          "failed_requests": [
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/main.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/customize.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/auth.css?ver=93 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat.css?ver=545 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat(1).css?ver=906 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/toast.css?ver=213 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/themes/flatsome/assets/css/flatsome.css?ver=3.18.2 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/themes/flatsome-child/style.css?ver=3.0 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/countdown.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/match.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/livescore.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/style_custom.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/effect/running-border.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/option/option-6.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/highlight/option-1.css?ver=2.8.5 | net::ERR_FAILED"
-          ],
-          "http_errors": [
-            "403 https://socolivep.cv/wp-admin/admin-ajax.php?action=scl_realtime&sport=1"
-          ]
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/atletico-mineiro-mg-vs-bahia-ba-22-07-2026-0530?blv=472241",
-          "blv": "XO",
-          "blv_id": "472241",
-          "streams": [
-            "https://pull.niues.live/live/stream-472241_lhd.m3u8?auth_key=1784644173-0-0-590a8718655bbb6347be9d58925a6743"
-          ],
-          "stream_sources": {
-            "https://pull.niues.live/live/stream-472241_lhd.m3u8?auth_key=1784644173-0-0-590a8718655bbb6347be9d58925a6743": [
-              "final-no-stream-scan",
-              "harvest-final"
-            ]
-          },
-          "stream_first_seen": [
-            "https://pull.niues.live/live/stream-472241_lhd.m3u8?auth_key=1784644173-0-0-590a8718655bbb6347be9d58925a6743"
-          ],
-          "discovered_blv_ids": [
-            "472241"
-          ],
-          "diagnostics": {
-            "url": "https://socolivep.cv/truc-tiep/atletico-mineiro-mg-vs-bahia-ba-22-07-2026-0530/?blv=472241",
-            "title": "Xem trực tiếp bóng đá Atlético Mineiro - MG vs Bahia - BA | 05:30 ngày 22/07/2026",
-            "h1": "Trực tiếp bóng đá Socolive Atlético Mineiro – MG vs Bahia – BA lúc 05:30 ngày 22/07/2026",
-            "ready_state": "complete",
-            "visibility_state": "visible",
-            "hidden": false,
-            "video_count": 0,
-            "iframe_count": 0,
-            "body_sample": "Skip to content Socolive Bảng xếp hạng Lịch thi đấu Kết quả bóng đá Tin thể thao Trực tiếp bóng đá Socolive Atlético Mineiro – MG vs Bahia – BA lúc 05:30 ngày 22/07/2026 BRA D1 Atlético Mineiro - MG 05:30 22/07 Bahia - BA Trận đấu sẽ bắt đầu sau Ngày0 : Giờ3 : Phút27 : Giây58 Trận đấu chưa bắt đầu CHÍ PHÈO HÀ DUY KIÊN XO NOVA Chat Thống kê Đội hình Diễn Biến Bảng XH \" \" Xóa Tin nhắn riêng 😀 😁 😃 😄 😅 😆 😇 😉 😊 🙂 😋 😍 😘 😗 😙 😚 😜 😝 😛 😎 🙄 😳 😡 😕 😫 😤 😨 😥 😪 😓 😵 😲 🤧 😷 🤒 🤕 😴 💤 👏 🤙 👍 👎 👊 ✊ ✌ 👌 ✋ 🤚 💪 🤝 👈 👉 🖕 🖐 👄 👂 👀 🎅 🌞 🌙 ⭐ ⚡ 🔥 ❄️ ⚽ 🏀 🏈 ⚾ 🎁 🎉 ✒️ 📝 ❤️ 💛 💚 🆚 💬 🕐 Vô hiệu hóa tất cả Vô hiệu hóa quà tặng Tắt lời chào Đăng nhập để cùng chat nhé Gửi Tỷ lệ kèo Cược Châu Á Chủ Chấp Khách Cược Châu Âu Chủ Hòa Khách Tài xỉu Tài Tỷ lệ kèo Xỉu Kèo góc Tài Tỷ lệ kèo Xỉu Mô phỏng trận đấu Thống kê trận đấu UEFA CL 02:00 22/07 Larne FC VS null null null - null Sắp diễn ra Xem ngay Crvena Zvezda KENCHU CÁO TUẤN CÙI UEFA CL 02:00 22/07 Vikingur Reykjavik VS null null null - null Sắp diễn ra Xem ngay Hapoel Beer Sheva FIREMAN SEVEN RYO UEFA CL 01:45 22/07 KI Klaksvik VS null null null - null Sắp diễn ra Xem ngay Kauno Zalgiris PEANUT A PÁO UEFA CL 0",
-            "harvest_rounds": 0,
-            "harvest_window_seconds": 0.631,
-            "main_status": 200,
-            "harvested_stream_count": 1,
-            "harvested_blv_ids": [
-              "472241"
-            ],
-            "scan_mode": "browser-event",
-            "elapsed_seconds": 14.046
-          },
-          "http_probe": {
-            "enabled": false,
-            "status": null,
-            "elapsed_seconds": 0.0,
-            "error": ""
-          },
-          "errors": [
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED"
-          ],
-          "failed_requests": [
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/main.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/customize.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/auth.css?ver=135 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat.css?ver=487 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat(1).css?ver=982 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/toast.css?ver=60 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/themes/flatsome/assets/css/flatsome.css?ver=3.18.2 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/themes/flatsome-child/style.css?ver=3.0 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/countdown.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/match.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/livescore.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/style_custom.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/effect/running-border.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/option/option-6.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/highlight/option-1.css?ver=2.8.5 | net::ERR_FAILED"
-          ],
-          "http_errors": [
-            "403 https://socolivep.cv/wp-admin/admin-ajax.php?action=scl_realtime&sport=1"
-          ]
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/atletico-mineiro-mg-vs-bahia-ba-22-07-2026-0530?blv=619108",
-          "blv": "NOVA",
-          "blv_id": "619108",
-          "streams": [
-            "https://pull.niues.live/live/stream-619108_lhd.m3u8?auth_key=1784642131-0-0-3c22df7e471b64a2c5601b170b89eb9b"
-          ],
-          "stream_sources": {
-            "https://pull.niues.live/live/stream-619108_lhd.m3u8?auth_key=1784642131-0-0-3c22df7e471b64a2c5601b170b89eb9b": [
-              "final-no-stream-scan",
-              "harvest-final"
-            ]
-          },
-          "stream_first_seen": [
-            "https://pull.niues.live/live/stream-619108_lhd.m3u8?auth_key=1784642131-0-0-3c22df7e471b64a2c5601b170b89eb9b"
-          ],
-          "discovered_blv_ids": [
-            "619108"
-          ],
-          "diagnostics": {
-            "url": "https://socolivep.cv/truc-tiep/atletico-mineiro-mg-vs-bahia-ba-22-07-2026-0530/?blv=619108",
-            "title": "Xem trực tiếp bóng đá Atlético Mineiro - MG vs Bahia - BA | 05:30 ngày 22/07/2026",
-            "h1": "Trực tiếp bóng đá Socolive Atlético Mineiro – MG vs Bahia – BA lúc 05:30 ngày 22/07/2026",
-            "ready_state": "complete",
-            "visibility_state": "visible",
-            "hidden": false,
-            "video_count": 0,
-            "iframe_count": 0,
-            "body_sample": "Skip to content Socolive Bảng xếp hạng Lịch thi đấu Kết quả bóng đá Tin thể thao Trực tiếp bóng đá Socolive Atlético Mineiro – MG vs Bahia – BA lúc 05:30 ngày 22/07/2026 BRA D1 Atlético Mineiro - MG 05:30 22/07 Bahia - BA Trận đấu sẽ bắt đầu sau Ngày0 : Giờ3 : Phút27 : Giây42 Trận đấu chưa bắt đầu CHÍ PHÈO HÀ DUY KIÊN XO NOVA Chat Thống kê Đội hình Diễn Biến Bảng XH \" \" Xóa Tin nhắn riêng 😀 😁 😃 😄 😅 😆 😇 😉 😊 🙂 😋 😍 😘 😗 😙 😚 😜 😝 😛 😎 🙄 😳 😡 😕 😫 😤 😨 😥 😪 😓 😵 😲 🤧 😷 🤒 🤕 😴 💤 👏 🤙 👍 👎 👊 ✊ ✌ 👌 ✋ 🤚 💪 🤝 👈 👉 🖕 🖐 👄 👂 👀 🎅 🌞 🌙 ⭐ ⚡ 🔥 ❄️ ⚽ 🏀 🏈 ⚾ 🎁 🎉 ✒️ 📝 ❤️ 💛 💚 🆚 💬 🕐 Vô hiệu hóa tất cả Vô hiệu hóa quà tặng Tắt lời chào Đăng nhập để cùng chat nhé Gửi Tỷ lệ kèo Cược Châu Á Chủ Chấp Khách Cược Châu Âu Chủ Hòa Khách Tài xỉu Tài Tỷ lệ kèo Xỉu Kèo góc Tài Tỷ lệ kèo Xỉu Mô phỏng trận đấu Thống kê trận đấu UEFA CL 02:00 22/07 Larne FC VS null null null - null Sắp diễn ra Xem ngay Crvena Zvezda KENCHU CÁO TUẤN CÙI UEFA CL 02:00 22/07 Vikingur Reykjavik VS null null null - null Sắp diễn ra Xem ngay Hapoel Beer Sheva FIREMAN SEVEN RYO UEFA CL 01:45 22/07 KI Klaksvik VS null null null - null Sắp diễn ra Xem ngay Kauno Zalgiris PEANUT A PÁO UEFA CL 0",
-            "harvest_rounds": 0,
-            "harvest_window_seconds": 0.635,
-            "main_status": 200,
-            "harvested_stream_count": 1,
-            "harvested_blv_ids": [
-              "619108"
-            ],
-            "scan_mode": "browser-event",
-            "elapsed_seconds": 14.067
-          },
-          "http_probe": {
-            "enabled": false,
-            "status": null,
-            "elapsed_seconds": 0.0,
-            "error": ""
-          },
-          "errors": [
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED"
-          ],
-          "failed_requests": [
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/main.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/customize.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/auth.css?ver=780 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat.css?ver=289 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat(1).css?ver=194 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/toast.css?ver=839 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/themes/flatsome/assets/css/flatsome.css?ver=3.18.2 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/themes/flatsome-child/style.css?ver=3.0 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/countdown.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/match.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/livescore.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/style_custom.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/effect/running-border.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/option/option-6.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/highlight/option-1.css?ver=2.8.5 | net::ERR_FAILED"
-          ],
-          "http_errors": [
-            "403 https://socolivep.cv/wp-admin/admin-ajax.php?action=scl_realtime&sport=1"
-          ]
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/atletico-mineiro-mg-vs-bahia-ba-22-07-2026-0530?blv=273736",
-          "blv": "CHÍ PHÈO",
-          "blv_id": "273736",
-          "streams": [
-            "https://pull.niues.live/live/stream-273736_lhd.m3u8?auth_key=1784656533-0-0-778751e4e1ddc0fabba07ce2b26b9cb3"
-          ],
-          "stream_sources": {
-            "https://pull.niues.live/live/stream-273736_lhd.m3u8?auth_key=1784656533-0-0-778751e4e1ddc0fabba07ce2b26b9cb3": [
-              "final-no-stream-scan",
-              "harvest-final"
-            ]
-          },
-          "stream_first_seen": [
-            "https://pull.niues.live/live/stream-273736_lhd.m3u8?auth_key=1784656533-0-0-778751e4e1ddc0fabba07ce2b26b9cb3"
-          ],
-          "discovered_blv_ids": [
-            "273736"
-          ],
-          "diagnostics": {
-            "url": "https://socolivep.cv/truc-tiep/atletico-mineiro-mg-vs-bahia-ba-22-07-2026-0530/?blv=273736",
-            "title": "Xem trực tiếp bóng đá Atlético Mineiro - MG vs Bahia - BA | 05:30 ngày 22/07/2026",
-            "h1": "Trực tiếp bóng đá Socolive Atlético Mineiro – MG vs Bahia – BA lúc 05:30 ngày 22/07/2026",
-            "ready_state": "complete",
-            "visibility_state": "visible",
-            "hidden": false,
-            "video_count": 0,
-            "iframe_count": 0,
-            "body_sample": "Skip to content Socolive Bảng xếp hạng Lịch thi đấu Kết quả bóng đá Tin thể thao Trực tiếp bóng đá Socolive Atlético Mineiro – MG vs Bahia – BA lúc 05:30 ngày 22/07/2026 BRA D1 Atlético Mineiro - MG 05:30 22/07 Bahia - BA Trận đấu sẽ bắt đầu sau Ngày0 : Giờ3 : Phút26 : Giây39 Trận đấu chưa bắt đầu CHÍ PHÈO HÀ DUY KIÊN XO NOVA Chat Thống kê Đội hình Diễn Biến Bảng XH \" \" Xóa Tin nhắn riêng 😀 😁 😃 😄 😅 😆 😇 😉 😊 🙂 😋 😍 😘 😗 😙 😚 😜 😝 😛 😎 🙄 😳 😡 😕 😫 😤 😨 😥 😪 😓 😵 😲 🤧 😷 🤒 🤕 😴 💤 👏 🤙 👍 👎 👊 ✊ ✌ 👌 ✋ 🤚 💪 🤝 👈 👉 🖕 🖐 👄 👂 👀 🎅 🌞 🌙 ⭐ ⚡ 🔥 ❄️ ⚽ 🏀 🏈 ⚾ 🎁 🎉 ✒️ 📝 ❤️ 💛 💚 🆚 💬 🕐 Vô hiệu hóa tất cả Vô hiệu hóa quà tặng Tắt lời chào Đăng nhập để cùng chat nhé Gửi Tỷ lệ kèo Cược Châu Á Chủ Chấp Khách Cược Châu Âu Chủ Hòa Khách Tài xỉu Tài Tỷ lệ kèo Xỉu Kèo góc Tài Tỷ lệ kèo Xỉu Mô phỏng trận đấu Thống kê trận đấu UEFA CL 02:00 22/07 Larne FC VS null null null - null Sắp diễn ra Xem ngay Crvena Zvezda KENCHU CÁO TUẤN CÙI UEFA CL 02:00 22/07 Vikingur Reykjavik VS null null null - null Sắp diễn ra Xem ngay Hapoel Beer Sheva FIREMAN SEVEN RYO UEFA CL 01:45 22/07 KI Klaksvik VS null null null - null Sắp diễn ra Xem ngay Kauno Zalgiris PEANUT A PÁO UEFA CL 0",
-            "harvest_rounds": 0,
-            "harvest_window_seconds": 0.634,
-            "main_status": 200,
-            "harvested_stream_count": 1,
-            "harvested_blv_ids": [
-              "273736"
-            ],
-            "scan_mode": "browser-event",
-            "elapsed_seconds": 14.339
-          },
-          "http_probe": {
-            "enabled": false,
-            "status": null,
-            "elapsed_seconds": 0.0,
-            "error": ""
-          },
-          "errors": [
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED"
-          ],
-          "failed_requests": [
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/main.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/customize.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/auth.css?ver=109 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat.css?ver=393 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat(1).css?ver=133 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/toast.css?ver=336 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/themes/flatsome/assets/css/flatsome.css?ver=3.18.2 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/themes/flatsome-child/style.css?ver=3.0 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/countdown.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/match.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/livescore.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/style_custom.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/effect/running-border.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/option/option-6.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/highlight/option-1.css?ver=2.8.5 | net::ERR_FAILED"
-          ],
-          "http_errors": [
-            "403 https://socolivep.cv/wp-admin/admin-ajax.php?action=scl_realtime&sport=1"
-          ]
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/atletico-mineiro-mg-vs-bahia-ba-22-07-2026-0530?blv=607400",
-          "blv": "HÀ DUY KIÊN",
-          "blv_id": "607400",
-          "streams": [
-            "https://pull.niues.live/live/stream-607400_lhd.m3u8?auth_key=1784645645-0-0-59b9e1cfbf470d0b6ef8931a42d978d4"
-          ],
-          "stream_sources": {
-            "https://pull.niues.live/live/stream-607400_lhd.m3u8?auth_key=1784645645-0-0-59b9e1cfbf470d0b6ef8931a42d978d4": [
-              "final-no-stream-scan",
-              "harvest-final"
-            ]
-          },
-          "stream_first_seen": [
-            "https://pull.niues.live/live/stream-607400_lhd.m3u8?auth_key=1784645645-0-0-59b9e1cfbf470d0b6ef8931a42d978d4"
-          ],
-          "discovered_blv_ids": [
-            "607400"
-          ],
-          "diagnostics": {
-            "url": "https://socolivep.cv/truc-tiep/atletico-mineiro-mg-vs-bahia-ba-22-07-2026-0530/?blv=607400",
-            "title": "Xem trực tiếp bóng đá Atlético Mineiro - MG vs Bahia - BA | 05:30 ngày 22/07/2026",
-            "h1": "Trực tiếp bóng đá Socolive Atlético Mineiro – MG vs Bahia – BA lúc 05:30 ngày 22/07/2026",
-            "ready_state": "complete",
-            "visibility_state": "visible",
-            "hidden": false,
-            "video_count": 0,
-            "iframe_count": 0,
-            "body_sample": "Skip to content Socolive Bảng xếp hạng Lịch thi đấu Kết quả bóng đá Tin thể thao Trực tiếp bóng đá Socolive Atlético Mineiro – MG vs Bahia – BA lúc 05:30 ngày 22/07/2026 BRA D1 Atlético Mineiro - MG 05:30 22/07 Bahia - BA Trận đấu sẽ bắt đầu sau Ngày0 : Giờ3 : Phút26 : Giây23 Trận đấu chưa bắt đầu CHÍ PHÈO HÀ DUY KIÊN XO NOVA Chat Thống kê Đội hình Diễn Biến Bảng XH \" \" Xóa Tin nhắn riêng 😀 😁 😃 😄 😅 😆 😇 😉 😊 🙂 😋 😍 😘 😗 😙 😚 😜 😝 😛 😎 🙄 😳 😡 😕 😫 😤 😨 😥 😪 😓 😵 😲 🤧 😷 🤒 🤕 😴 💤 👏 🤙 👍 👎 👊 ✊ ✌ 👌 ✋ 🤚 💪 🤝 👈 👉 🖕 🖐 👄 👂 👀 🎅 🌞 🌙 ⭐ ⚡ 🔥 ❄️ ⚽ 🏀 🏈 ⚾ 🎁 🎉 ✒️ 📝 ❤️ 💛 💚 🆚 💬 🕐 Vô hiệu hóa tất cả Vô hiệu hóa quà tặng Tắt lời chào Đăng nhập để cùng chat nhé Gửi Tỷ lệ kèo Cược Châu Á Chủ Chấp Khách Cược Châu Âu Chủ Hòa Khách Tài xỉu Tài Tỷ lệ kèo Xỉu Kèo góc Tài Tỷ lệ kèo Xỉu Mô phỏng trận đấu Thống kê trận đấu UEFA CL 02:00 22/07 Larne FC VS null null null - null Sắp diễn ra Xem ngay Crvena Zvezda KENCHU CÁO TUẤN CÙI UEFA CL 02:00 22/07 Vikingur Reykjavik VS null null null - null Sắp diễn ra Xem ngay Hapoel Beer Sheva FIREMAN SEVEN RYO UEFA CL 01:45 22/07 KI Klaksvik VS null null null - null Sắp diễn ra Xem ngay Kauno Zalgiris PEANUT A PÁO UEFA CL 0",
-            "harvest_rounds": 0,
-            "harvest_window_seconds": 0.631,
-            "main_status": 200,
-            "harvested_stream_count": 1,
-            "harvested_blv_ids": [
-              "607400"
-            ],
-            "scan_mode": "browser-event",
-            "elapsed_seconds": 14.025
-          },
-          "http_probe": {
-            "enabled": false,
-            "status": null,
-            "elapsed_seconds": 0.0,
-            "error": ""
-          },
-          "errors": [
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED"
-          ],
-          "failed_requests": [
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/main.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/customize.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/auth.css?ver=93 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat.css?ver=545 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat(1).css?ver=906 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/toast.css?ver=213 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/themes/flatsome/assets/css/flatsome.css?ver=3.18.2 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/themes/flatsome-child/style.css?ver=3.0 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/countdown.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/match.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/livescore.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/style_custom.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/effect/running-border.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/option/option-6.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/highlight/option-1.css?ver=2.8.5 | net::ERR_FAILED"
-          ],
-          "http_errors": [
-            "403 https://socolivep.cv/wp-admin/admin-ajax.php?action=scl_realtime&sport=1"
-          ]
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/atletico-mineiro-mg-vs-bahia-ba-22-07-2026-0530?blv=472241",
-          "blv": "XO",
-          "blv_id": "472241",
-          "streams": [
-            "https://pull.niues.live/live/stream-472241_lhd.m3u8?auth_key=1784644173-0-0-590a8718655bbb6347be9d58925a6743"
-          ],
-          "stream_sources": {
-            "https://pull.niues.live/live/stream-472241_lhd.m3u8?auth_key=1784644173-0-0-590a8718655bbb6347be9d58925a6743": [
-              "final-no-stream-scan",
-              "harvest-final"
-            ]
-          },
-          "stream_first_seen": [
-            "https://pull.niues.live/live/stream-472241_lhd.m3u8?auth_key=1784644173-0-0-590a8718655bbb6347be9d58925a6743"
-          ],
-          "discovered_blv_ids": [
-            "472241"
-          ],
-          "diagnostics": {
-            "url": "https://socolivep.cv/truc-tiep/atletico-mineiro-mg-vs-bahia-ba-22-07-2026-0530/?blv=472241",
-            "title": "Xem trực tiếp bóng đá Atlético Mineiro - MG vs Bahia - BA | 05:30 ngày 22/07/2026",
-            "h1": "Trực tiếp bóng đá Socolive Atlético Mineiro – MG vs Bahia – BA lúc 05:30 ngày 22/07/2026",
-            "ready_state": "complete",
-            "visibility_state": "visible",
-            "hidden": false,
-            "video_count": 0,
-            "iframe_count": 0,
-            "body_sample": "Skip to content Socolive Bảng xếp hạng Lịch thi đấu Kết quả bóng đá Tin thể thao Trực tiếp bóng đá Socolive Atlético Mineiro – MG vs Bahia – BA lúc 05:30 ngày 22/07/2026 BRA D1 Atlético Mineiro - MG 05:30 22/07 Bahia - BA Trận đấu sẽ bắt đầu sau Ngày0 : Giờ3 : Phút26 : Giây7 Trận đấu chưa bắt đầu CHÍ PHÈO HÀ DUY KIÊN XO NOVA Chat Thống kê Đội hình Diễn Biến Bảng XH \" \" Xóa Tin nhắn riêng 😀 😁 😃 😄 😅 😆 😇 😉 😊 🙂 😋 😍 😘 😗 😙 😚 😜 😝 😛 😎 🙄 😳 😡 😕 😫 😤 😨 😥 😪 😓 😵 😲 🤧 😷 🤒 🤕 😴 💤 👏 🤙 👍 👎 👊 ✊ ✌ 👌 ✋ 🤚 💪 🤝 👈 👉 🖕 🖐 👄 👂 👀 🎅 🌞 🌙 ⭐ ⚡ 🔥 ❄️ ⚽ 🏀 🏈 ⚾ 🎁 🎉 ✒️ 📝 ❤️ 💛 💚 🆚 💬 🕐 Vô hiệu hóa tất cả Vô hiệu hóa quà tặng Tắt lời chào Đăng nhập để cùng chat nhé Gửi Tỷ lệ kèo Cược Châu Á Chủ Chấp Khách Cược Châu Âu Chủ Hòa Khách Tài xỉu Tài Tỷ lệ kèo Xỉu Kèo góc Tài Tỷ lệ kèo Xỉu Mô phỏng trận đấu Thống kê trận đấu UEFA CL 02:00 22/07 Larne FC VS null null null - null Sắp diễn ra Xem ngay Crvena Zvezda KENCHU CÁO TUẤN CÙI UEFA CL 02:00 22/07 Vikingur Reykjavik VS null null null - null Sắp diễn ra Xem ngay Hapoel Beer Sheva FIREMAN SEVEN RYO UEFA CL 01:45 22/07 KI Klaksvik VS null null null - null Sắp diễn ra Xem ngay Kauno Zalgiris PEANUT A PÁO UEFA CL 01",
-            "harvest_rounds": 0,
-            "harvest_window_seconds": 0.632,
-            "main_status": 200,
-            "harvested_stream_count": 1,
-            "harvested_blv_ids": [
-              "472241"
-            ],
-            "scan_mode": "browser-event",
-            "elapsed_seconds": 13.979
-          },
-          "http_probe": {
-            "enabled": false,
-            "status": null,
-            "elapsed_seconds": 0.0,
-            "error": ""
-          },
-          "errors": [
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED"
-          ],
-          "failed_requests": [
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/main.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/customize.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/auth.css?ver=135 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat.css?ver=487 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat(1).css?ver=982 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/toast.css?ver=60 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/themes/flatsome/assets/css/flatsome.css?ver=3.18.2 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/themes/flatsome-child/style.css?ver=3.0 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/countdown.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/match.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/livescore.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/style_custom.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/effect/running-border.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/option/option-6.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/highlight/option-1.css?ver=2.8.5 | net::ERR_FAILED"
-          ],
-          "http_errors": [
-            "403 https://socolivep.cv/wp-admin/admin-ajax.php?action=scl_realtime&sport=1"
-          ]
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/atletico-mineiro-mg-vs-bahia-ba-22-07-2026-0530?blv=619108",
-          "blv": "NOVA",
-          "blv_id": "619108",
-          "streams": [
-            "https://pull.niues.live/live/stream-619108_lhd.m3u8?auth_key=1784642131-0-0-3c22df7e471b64a2c5601b170b89eb9b"
-          ],
-          "stream_sources": {
-            "https://pull.niues.live/live/stream-619108_lhd.m3u8?auth_key=1784642131-0-0-3c22df7e471b64a2c5601b170b89eb9b": [
-              "final-no-stream-scan",
-              "harvest-final"
-            ]
-          },
-          "stream_first_seen": [
-            "https://pull.niues.live/live/stream-619108_lhd.m3u8?auth_key=1784642131-0-0-3c22df7e471b64a2c5601b170b89eb9b"
-          ],
-          "discovered_blv_ids": [
-            "619108"
-          ],
-          "diagnostics": {
-            "url": "https://socolivep.cv/truc-tiep/atletico-mineiro-mg-vs-bahia-ba-22-07-2026-0530/?blv=619108",
-            "title": "Xem trực tiếp bóng đá Atlético Mineiro - MG vs Bahia - BA | 05:30 ngày 22/07/2026",
-            "h1": "Trực tiếp bóng đá Socolive Atlético Mineiro – MG vs Bahia – BA lúc 05:30 ngày 22/07/2026",
-            "ready_state": "complete",
-            "visibility_state": "visible",
-            "hidden": false,
-            "video_count": 0,
-            "iframe_count": 0,
-            "body_sample": "Skip to content Socolive Bảng xếp hạng Lịch thi đấu Kết quả bóng đá Tin thể thao Trực tiếp bóng đá Socolive Atlético Mineiro – MG vs Bahia – BA lúc 05:30 ngày 22/07/2026 BRA D1 Atlético Mineiro - MG 05:30 22/07 Bahia - BA Trận đấu sẽ bắt đầu sau Ngày0 : Giờ3 : Phút25 : Giây51 Trận đấu chưa bắt đầu CHÍ PHÈO HÀ DUY KIÊN XO NOVA Chat Thống kê Đội hình Diễn Biến Bảng XH \" \" Xóa Tin nhắn riêng 😀 😁 😃 😄 😅 😆 😇 😉 😊 🙂 😋 😍 😘 😗 😙 😚 😜 😝 😛 😎 🙄 😳 😡 😕 😫 😤 😨 😥 😪 😓 😵 😲 🤧 😷 🤒 🤕 😴 💤 👏 🤙 👍 👎 👊 ✊ ✌ 👌 ✋ 🤚 💪 🤝 👈 👉 🖕 🖐 👄 👂 👀 🎅 🌞 🌙 ⭐ ⚡ 🔥 ❄️ ⚽ 🏀 🏈 ⚾ 🎁 🎉 ✒️ 📝 ❤️ 💛 💚 🆚 💬 🕐 Vô hiệu hóa tất cả Vô hiệu hóa quà tặng Tắt lời chào Đăng nhập để cùng chat nhé Gửi Tỷ lệ kèo Cược Châu Á Chủ Chấp Khách Cược Châu Âu Chủ Hòa Khách Tài xỉu Tài Tỷ lệ kèo Xỉu Kèo góc Tài Tỷ lệ kèo Xỉu Mô phỏng trận đấu Thống kê trận đấu UEFA CL 02:00 22/07 Larne FC VS null null null - null Sắp diễn ra Xem ngay Crvena Zvezda KENCHU CÁO TUẤN CÙI UEFA CL 02:00 22/07 Vikingur Reykjavik VS null null null - null Sắp diễn ra Xem ngay Hapoel Beer Sheva FIREMAN SEVEN RYO UEFA CL 01:45 22/07 KI Klaksvik VS null null null - null Sắp diễn ra Xem ngay Kauno Zalgiris PEANUT A PÁO UEFA CL 0",
-            "harvest_rounds": 0,
-            "harvest_window_seconds": 0.63,
-            "main_status": 200,
-            "harvested_stream_count": 1,
-            "harvested_blv_ids": [
-              "619108"
-            ],
-            "scan_mode": "browser-event",
-            "elapsed_seconds": 13.892
-          },
-          "http_probe": {
-            "enabled": false,
-            "status": null,
-            "elapsed_seconds": 0.0,
-            "error": ""
-          },
-          "errors": [
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED"
-          ],
-          "failed_requests": [
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/main.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/customize.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/auth.css?ver=780 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat.css?ver=289 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat(1).css?ver=194 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/toast.css?ver=839 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/themes/flatsome/assets/css/flatsome.css?ver=3.18.2 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/themes/flatsome-child/style.css?ver=3.0 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/countdown.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/match.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/livescore.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/style_custom.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/effect/running-border.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/option/option-6.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/highlight/option-1.css?ver=2.8.5 | net::ERR_FAILED"
-          ],
-          "http_errors": [
-            "403 https://socolivep.cv/wp-admin/admin-ajax.php?action=scl_realtime&sport=1"
-          ]
-        }
-      ],
-      "attempted_room_ids": [
-        "273736",
-        "472241",
-        "607400",
-        "619108"
-      ],
-      "coverage": {
-        "found_streams": 0,
-        "found_blv_ids": [],
-        "goal": 8,
-        "source_goal_reached": false,
-        "room_queue_complete": true,
-        "complete": true,
-        "max_streams_per_blv": 2,
-        "total_explicit_blv_rooms": 4,
-        "pending_room_keys": [],
-        "room_progress": {
-          "273736": {
-            "key": "273736",
-            "url": "https://socolivep.cv/truc-tiep/atletico-mineiro-mg-vs-bahia-ba-22-07-2026-0530?blv=273736",
-            "blv": "CHÍ PHÈO",
-            "blv_id": "273736",
-            "status": "exhausted",
-            "attempts": 2,
-            "attempts_total": 2,
-            "ever_attempted": true,
-            "valid_stream_ever_found": false,
-            "needs_token_refresh": true,
-            "completion_reason": "no_valid_stream_after_max_attempts",
-            "rate_limit_hits": 0,
-            "last_http_status": 200,
-            "last_stream_count": 0,
-            "last_error": "Token cũ đã hết hạn; giữ nguyên attempts_total và trạng thái hoàn tất của BLV."
-          },
-          "607400": {
-            "key": "607400",
-            "url": "https://socolivep.cv/truc-tiep/atletico-mineiro-mg-vs-bahia-ba-22-07-2026-0530?blv=607400",
-            "blv": "HÀ DUY KIÊN",
-            "blv_id": "607400",
-            "status": "exhausted",
-            "attempts": 2,
-            "attempts_total": 2,
-            "ever_attempted": true,
-            "valid_stream_ever_found": false,
-            "needs_token_refresh": true,
-            "completion_reason": "no_valid_stream_after_max_attempts",
-            "rate_limit_hits": 0,
-            "last_http_status": 200,
-            "last_stream_count": 0,
-            "last_error": "Token cũ đã hết hạn; giữ nguyên attempts_total và trạng thái hoàn tất của BLV."
-          },
-          "472241": {
-            "key": "472241",
-            "url": "https://socolivep.cv/truc-tiep/atletico-mineiro-mg-vs-bahia-ba-22-07-2026-0530?blv=472241",
-            "blv": "XO",
-            "blv_id": "472241",
-            "status": "exhausted",
-            "attempts": 2,
-            "attempts_total": 2,
-            "ever_attempted": true,
-            "valid_stream_ever_found": false,
-            "needs_token_refresh": true,
-            "completion_reason": "no_valid_stream_after_max_attempts",
-            "rate_limit_hits": 0,
-            "last_http_status": 200,
-            "last_stream_count": 0,
-            "last_error": "Token cũ đã hết hạn; giữ nguyên attempts_total và trạng thái hoàn tất của BLV."
-          },
-          "619108": {
-            "key": "619108",
-            "url": "https://socolivep.cv/truc-tiep/atletico-mineiro-mg-vs-bahia-ba-22-07-2026-0530?blv=619108",
-            "blv": "NOVA",
-            "blv_id": "619108",
-            "status": "exhausted",
-            "attempts": 2,
-            "attempts_total": 2,
-            "ever_attempted": true,
-            "valid_stream_ever_found": false,
-            "needs_token_refresh": true,
-            "completion_reason": "no_valid_stream_after_max_attempts",
-            "rate_limit_hits": 0,
-            "last_http_status": 200,
-            "last_stream_count": 0,
-            "last_error": "Token cũ đã hết hạn; giữ nguyên attempts_total và trạng thái hoàn tất của BLV."
-          },
-          "__base__": {
-            "key": "__base__",
-            "url": "https://socolivep.cv/truc-tiep/atletico-mineiro-mg-vs-bahia-ba-22-07-2026-0530",
-            "blv": "XEM NGAY",
-            "blv_id": "",
-            "status": "pending",
-            "attempts": 0,
-            "attempts_total": 0,
-            "ever_attempted": false,
-            "valid_stream_ever_found": false,
-            "needs_token_refresh": false,
-            "completion_reason": "",
-            "rate_limit_hits": 0,
-            "last_http_status": null,
-            "last_stream_count": 0,
-            "last_error": ""
-          }
-        }
-      },
-      "errors": [],
-      "room_progress": {
-        "273736": {
-          "key": "273736",
-          "url": "https://socolivep.cv/truc-tiep/atletico-mineiro-mg-vs-bahia-ba-22-07-2026-0530?blv=273736",
-          "blv": "CHÍ PHÈO",
-          "blv_id": "273736",
-          "status": "exhausted",
-          "attempts": 2,
-          "attempts_total": 2,
-          "ever_attempted": true,
-          "valid_stream_ever_found": false,
-          "needs_token_refresh": true,
-          "completion_reason": "no_valid_stream_after_max_attempts",
-          "rate_limit_hits": 0,
-          "last_http_status": 200,
-          "last_stream_count": 0,
-          "last_error": "Token cũ đã hết hạn; giữ nguyên attempts_total và trạng thái hoàn tất của BLV."
-        },
-        "607400": {
-          "key": "607400",
-          "url": "https://socolivep.cv/truc-tiep/atletico-mineiro-mg-vs-bahia-ba-22-07-2026-0530?blv=607400",
-          "blv": "HÀ DUY KIÊN",
-          "blv_id": "607400",
-          "status": "exhausted",
-          "attempts": 2,
-          "attempts_total": 2,
-          "ever_attempted": true,
-          "valid_stream_ever_found": false,
-          "needs_token_refresh": true,
-          "completion_reason": "no_valid_stream_after_max_attempts",
-          "rate_limit_hits": 0,
-          "last_http_status": 200,
-          "last_stream_count": 0,
-          "last_error": "Token cũ đã hết hạn; giữ nguyên attempts_total và trạng thái hoàn tất của BLV."
-        },
-        "472241": {
-          "key": "472241",
-          "url": "https://socolivep.cv/truc-tiep/atletico-mineiro-mg-vs-bahia-ba-22-07-2026-0530?blv=472241",
-          "blv": "XO",
-          "blv_id": "472241",
-          "status": "exhausted",
-          "attempts": 2,
-          "attempts_total": 2,
-          "ever_attempted": true,
-          "valid_stream_ever_found": false,
-          "needs_token_refresh": true,
-          "completion_reason": "no_valid_stream_after_max_attempts",
-          "rate_limit_hits": 0,
-          "last_http_status": 200,
-          "last_stream_count": 0,
-          "last_error": "Token cũ đã hết hạn; giữ nguyên attempts_total và trạng thái hoàn tất của BLV."
-        },
-        "619108": {
-          "key": "619108",
-          "url": "https://socolivep.cv/truc-tiep/atletico-mineiro-mg-vs-bahia-ba-22-07-2026-0530?blv=619108",
-          "blv": "NOVA",
-          "blv_id": "619108",
-          "status": "exhausted",
-          "attempts": 2,
-          "attempts_total": 2,
-          "ever_attempted": true,
-          "valid_stream_ever_found": false,
-          "needs_token_refresh": true,
-          "completion_reason": "no_valid_stream_after_max_attempts",
-          "rate_limit_hits": 0,
-          "last_http_status": 200,
-          "last_stream_count": 0,
-          "last_error": "Token cũ đã hết hạn; giữ nguyên attempts_total và trạng thái hoàn tất của BLV."
-        },
-        "__base__": {
-          "key": "__base__",
-          "url": "https://socolivep.cv/truc-tiep/atletico-mineiro-mg-vs-bahia-ba-22-07-2026-0530",
-          "blv": "XEM NGAY",
-          "blv_id": "",
-          "status": "pending",
-          "attempts": 0,
-          "attempts_total": 0,
-          "ever_attempted": false,
-          "valid_stream_ever_found": false,
-          "needs_token_refresh": false,
-          "completion_reason": "",
-          "rate_limit_hits": 0,
-          "last_http_status": null,
-          "last_stream_count": 0,
-          "last_error": ""
-        }
-      }
-    },
-    {
-      "base_url": "https://socolivep.cv/truc-tiep/avai-fc-vs-america-mg-22-07-2026-0530/",
-      "raw_title": "Trực tiếp bóng đá Socolive Avaí FC vs America MG lúc 05:30 ngày 22/07/2026",
-      "home_team": "Avaí FC",
-      "away_team": "America MG",
-      "home_logo": "https://sta.vnres.co/file/common/20260714/edf6e0edeae1ad86b90a1029ac728acb.png",
-      "away_logo": "https://sta.vnres.co/file/common/20260714/9e81acf9015279444bddda585b9d4ef0.png",
-      "time_text": "05:30",
-      "date_text": "22/07",
-      "status": "",
-      "card_text": "BRA D2 05:30 22/07 Avaí FC VS XEM NGAY America MG TRÀ ĐÁ FOX",
-      "rooms": [
-        {
-          "url": "https://socolivep.cv/truc-tiep/avai-fc-vs-america-mg-22-07-2026-0530?blv=603914",
-          "blv": "TRÀ ĐÁ",
-          "blv_id": "603914"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/avai-fc-vs-america-mg-22-07-2026-0530?blv=620003",
-          "blv": "FOX",
-          "blv_id": "620003"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/avai-fc-vs-america-mg-22-07-2026-0530",
-          "blv": "XEM NGAY",
-          "blv_id": ""
-        }
-      ],
-      "match_name": "Avaí FC vs America MG",
-      "scheduled_at": "2026-07-22T05:30:00+07:00",
-      "streams": [],
-      "room_results": [
-        {
-          "url": "https://socolivep.cv/truc-tiep/avai-fc-vs-america-mg-22-07-2026-0530?blv=603914",
-          "blv": "TRÀ ĐÁ",
-          "blv_id": "603914",
-          "streams": [
-            "https://pull.niues.live/live/stream-603914_lhd.m3u8?auth_key=1784676535-0-0-69a54f0a9a597528c88b5cd8472b3a13"
-          ],
-          "stream_sources": {
-            "https://pull.niues.live/live/stream-603914_lhd.m3u8?auth_key=1784676535-0-0-69a54f0a9a597528c88b5cd8472b3a13": [
-              "cdp/request",
-              "cdp/response",
-              "harvest-final",
-              "harvest-round-1",
-              "harvest-round-2",
-              "harvest-round-3",
-              "harvest-round-4",
-              "harvest-round-5",
-              "harvest-round-6",
-              "harvest-round-7",
-              "harvest-round-8",
-              "harvest-round-9",
-              "request/image",
-              "request/xhr",
-              "response/200"
-            ]
-          },
-          "stream_first_seen": [
-            "https://pull.niues.live/live/stream-603914_lhd.m3u8?auth_key=1784676535-0-0-69a54f0a9a597528c88b5cd8472b3a13"
-          ],
-          "discovered_blv_ids": [
-            "603914"
-          ],
-          "diagnostics": {
-            "url": "https://socolivep.cv/truc-tiep/avai-fc-vs-america-mg-22-07-2026-0530/?blv=603914",
-            "title": "Xem trực tiếp bóng đá Avaí FC vs America MG | 05:30 ngày 22/07/2026",
-            "h1": "Trực tiếp bóng đá Socolive Avaí FC vs America MG lúc 05:30 ngày 22/07/2026",
-            "ready_state": "complete",
-            "visibility_state": "visible",
-            "hidden": false,
-            "video_count": 1,
-            "iframe_count": 0,
-            "body_sample": "Skip to content Socolive Bảng xếp hạng Lịch thi đấu Kết quả bóng đá Tin thể thao Trực tiếp bóng đá Socolive Avaí FC vs America MG lúc 05:30 ngày 22/07/2026 BRA D2 Avaí FC 05:30 22/07 America MG Volume 0% Tải App Bufa TRÀ ĐÁ FOX Chat Thống kê Đội hình Diễn Biến Bảng XH \" \" Admin Trợ lý Diệp Chi ❤️: ⚽️ Facebook: https://m.me/soctiendao9235 ⚽️ 𝚃𝙴𝙻𝙴𝙶𝚁𝙰𝙼: https://t.me/Soctiendao ⚽️ 𝙼Ở 𝚃À𝙸 𝙺𝙷𝙾Ả𝙽 - 𝚅À𝙾 𝙽𝙷Ó𝙼 𝙺È𝙾 - 𝙽𝙷Ậ𝙽 𝙺𝙷𝚄𝚈Ế𝙽 𝙼Ã𝙸 🎀 B𝚂𝙿𝙾𝚁𝚃: https://www.bty9234.com/ 🎀 𝙱𝚄𝙵𝙰: 𝐰𝐣𝐳𝐳𝟔𝐩 Admin Trợ lý Diệp Chi ❤️: 𝐍Ạ𝐏 𝟓𝟎𝟎𝐊 𝐓Ặ𝐍𝐆 𝟏𝟎𝟎𝐊 - 𝐍Ạ𝐏 𝟑𝐓𝐑𝟓 𝐓Ặ𝐍𝐆 𝟑𝟓𝟎𝐊 - 𝐍Ạ𝐏 𝟏𝟓𝐓𝐑 𝐓Ặ𝐍𝐆 𝟏𝐓𝐑𝟓 🎀 https://www.bty9234.com/ ⚽️ Facebook: https://m.me/soctiendao9235 ⚽️ 𝚃𝚎𝚕𝚎𝚐𝚛𝚊𝚖: https://t.me/Soctiendao kaka0506: trà đá ngoài đời là 1 người hướng nội hay hướng ngoại kaka0506: mới cày phim xong trà ơi , trà bt bộ nào về tình yeu hay chủ đề dễ gây xúc động làm người xem khóc k , giới thiệu để cày kaka0506: trà đá thích làm ngày hơn nhỉ , làm sáng sớm vs đêm mệt hơn dễ mất ngủ kaka0506: ủa vậy ngủ ngày à trà kaka0506: trà biết bình luận rổ k kaka0506: qua tàu toàn pen trà ơi Admin Trợ lý Diệp Chi ❤️: 𝐍Ạ𝐏 𝟓𝟎𝟎𝐊 𝐓Ặ𝐍𝐆 𝟏𝟎𝟎𝐊 -",
-            "harvest_rounds": 9,
-            "harvest_window_seconds": 6.976,
-            "main_status": 200,
-            "harvested_stream_count": 1,
-            "harvested_blv_ids": [
-              "603914"
-            ],
-            "scan_mode": "browser-event",
-            "elapsed_seconds": 8.287
-          },
-          "http_probe": {
-            "enabled": false,
-            "status": null,
-            "elapsed_seconds": 0.0,
-            "error": ""
-          },
-          "errors": [
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED"
-          ],
-          "failed_requests": [
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/main.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/customize.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/auth.css?ver=880 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat.css?ver=306 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat(1).css?ver=865 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/toast.css?ver=13 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/themes/flatsome/assets/css/flatsome.css?ver=3.18.2 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/themes/flatsome-child/style.css?ver=3.0 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/countdown.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/match.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/livescore.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/style_custom.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/effect/running-border.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/option/option-6.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/highlight/option-1.css?ver=2.8.5 | net::ERR_FAILED"
-          ],
-          "http_errors": [
-            "403 https://socolivep.cv/wp-admin/admin-ajax.php?action=scl_realtime&sport=1"
-          ]
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/avai-fc-vs-america-mg-22-07-2026-0530?blv=620003",
-          "blv": "FOX",
-          "blv_id": "620003",
-          "streams": [
-            "https://pull.niues.live/live/stream-620003_lhd.m3u8?auth_key=1784676895-0-0-e27fe3c901096c6e7b3580937df29996"
-          ],
-          "stream_sources": {
-            "https://pull.niues.live/live/stream-620003_lhd.m3u8?auth_key=1784676895-0-0-e27fe3c901096c6e7b3580937df29996": [
-              "cdp/request",
-              "cdp/response",
-              "harvest-final",
-              "harvest-round-1",
-              "harvest-round-2",
-              "harvest-round-3",
-              "harvest-round-4",
-              "harvest-round-5",
-              "harvest-round-6",
-              "harvest-round-7",
-              "harvest-round-8",
-              "harvest-round-9",
-              "request/image",
-              "request/xhr",
-              "response/200"
-            ]
-          },
-          "stream_first_seen": [
-            "https://pull.niues.live/live/stream-620003_lhd.m3u8?auth_key=1784676895-0-0-e27fe3c901096c6e7b3580937df29996"
-          ],
-          "discovered_blv_ids": [
-            "620003"
-          ],
-          "diagnostics": {
-            "url": "https://socolivep.cv/truc-tiep/avai-fc-vs-america-mg-22-07-2026-0530/?blv=620003",
-            "title": "Xem trực tiếp bóng đá Avaí FC vs America MG | 05:30 ngày 22/07/2026",
-            "h1": "Trực tiếp bóng đá Socolive Avaí FC vs America MG lúc 05:30 ngày 22/07/2026",
-            "ready_state": "complete",
-            "visibility_state": "visible",
-            "hidden": false,
-            "video_count": 1,
-            "iframe_count": 0,
-            "body_sample": "Skip to content Socolive Bảng xếp hạng Lịch thi đấu Kết quả bóng đá Tin thể thao Trực tiếp bóng đá Socolive Avaí FC vs America MG lúc 05:30 ngày 22/07/2026 BRA D2 Avaí FC 05:30 22/07 America MG 00:00 of 00:00Volume 0% Tải App Bufa TRÀ ĐÁ FOX Chat Thống kê Đội hình Diễn Biến Bảng XH \" \" Admin Sóc Sành Điệu: 🔥 KHUYẾN MÃI NẠP LẦN 1 VÀ LẦN 2 TỔNG KM LÊN ĐẾN 1800K👉𝐍ạp 200k + KM 80k👉𝐍ạp 500k + KM 100k👉𝐍ạp 1tr + KM 120k👉𝐍ạp 3tr5 + KM 350k👉𝐍ạp 8tr + KM 800k👉𝐍ạp 15tr + KM 1 tr500🔥TẠO 2 TRANG SONG SONG NHẬN KHUYẾN MÃI SIU HỜI.💰 TIỀN VỀ SAU KHI NẠP THÀNH CÔNG ☘️✅ 𝐋𝐢𝐧𝐤 𝐭𝐫𝐮𝐲 𝐜ậ𝐩 : 𝘽-𝙎𝙋𝙊𝙍𝙏: http://www.bty9286.com/ 𝙑-𝙎𝙋𝙊𝙍𝙏: https://w9.vty40.net/☎️LIÊN HỆ HỖ TRỢ : 🧧BUFA : 𝟐𝟒𝟗𝟔𝐉𝟖 SÓC SÀNH ĐIỆU 🌈✈️ TELEGRAM: https://t.me/socsanhdieu2k5 🌸𝐁𝐮𝐟𝐚 : 𝟐𝟒𝟗𝟔𝐉𝟖 ❤️💗link mess https://m.me/tinhanh1268 🆉🅰️🅻🅾️ 0569. 486. 817 Admin Sóc Sành Điệu: em chào anh FOX nhá Bình Luận Viên BLV FOX: hell***o Admin Sóc Sành Điệu: BLV FOX 😘 dũng ka 94: a chào sóc Admin Sóc Sành Điệu: dũng ka 94 dạ em chào anhhhh Admin Sóc Sành Điệu: 😜 nguyenduy: g9,5 thiu ghê cau2hp: dm bọn này ko biết đá góc à Admin Sóc Sành Điệu: Ai chưa có 2 tài khoản song song Vsport và Bsport n",
-            "harvest_rounds": 9,
-            "harvest_window_seconds": 6.996,
-            "main_status": 200,
-            "harvested_stream_count": 1,
-            "harvested_blv_ids": [
-              "620003"
-            ],
-            "scan_mode": "browser-event",
-            "elapsed_seconds": 8.286
-          },
-          "http_probe": {
-            "enabled": false,
-            "status": null,
-            "elapsed_seconds": 0.0,
-            "error": ""
-          },
-          "errors": [
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED"
-          ],
-          "failed_requests": [
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/main.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/customize.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/auth.css?ver=763 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat.css?ver=497 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat(1).css?ver=689 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/toast.css?ver=905 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/themes/flatsome/assets/css/flatsome.css?ver=3.18.2 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/themes/flatsome-child/style.css?ver=3.0 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/countdown.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/match.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/livescore.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/style_custom.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/effect/running-border.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/option/option-6.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/highlight/option-1.css?ver=2.8.5 | net::ERR_FAILED"
-          ],
-          "http_errors": [
-            "403 https://socolivep.cv/wp-admin/admin-ajax.php?action=scl_realtime&sport=1",
-            "404 https://live.sportdb.live/api/v1/matchs/assistant-user?roomNum=620003"
-          ]
-        }
-      ],
-      "attempted_room_ids": [
-        "603914",
-        "620003"
-      ],
-      "coverage": {
-        "found_streams": 0,
-        "found_blv_ids": [],
-        "goal": 4,
-        "source_goal_reached": false,
-        "room_queue_complete": true,
-        "complete": true,
-        "max_streams_per_blv": 2,
-        "total_explicit_blv_rooms": 2,
-        "pending_room_keys": [],
-        "room_progress": {
-          "603914": {
-            "key": "603914",
-            "url": "https://socolivep.cv/truc-tiep/avai-fc-vs-america-mg-22-07-2026-0530?blv=603914",
-            "blv": "TRÀ ĐÁ",
-            "blv_id": "603914",
-            "status": "success",
-            "attempts": 1,
-            "attempts_total": 1,
-            "ever_attempted": true,
-            "valid_stream_ever_found": true,
-            "needs_token_refresh": true,
-            "completion_reason": "valid_stream_seen_earlier",
-            "rate_limit_hits": 0,
-            "last_http_status": 200,
-            "last_stream_count": 0,
-            "last_error": "Token cũ đã hết hạn; giữ nguyên attempts_total và trạng thái hoàn tất của BLV."
-          },
-          "620003": {
-            "key": "620003",
-            "url": "https://socolivep.cv/truc-tiep/avai-fc-vs-america-mg-22-07-2026-0530?blv=620003",
-            "blv": "FOX",
-            "blv_id": "620003",
-            "status": "success",
-            "attempts": 1,
-            "attempts_total": 1,
-            "ever_attempted": true,
-            "valid_stream_ever_found": true,
-            "needs_token_refresh": true,
-            "completion_reason": "valid_stream_seen_earlier",
-            "rate_limit_hits": 0,
-            "last_http_status": 200,
-            "last_stream_count": 0,
-            "last_error": "Token cũ đã hết hạn; giữ nguyên attempts_total và trạng thái hoàn tất của BLV."
-          },
-          "__base__": {
-            "key": "__base__",
-            "url": "https://socolivep.cv/truc-tiep/avai-fc-vs-america-mg-22-07-2026-0530",
-            "blv": "XEM NGAY",
-            "blv_id": "",
-            "status": "pending",
-            "attempts": 0,
-            "attempts_total": 0,
-            "ever_attempted": false,
-            "valid_stream_ever_found": false,
-            "needs_token_refresh": false,
-            "completion_reason": "",
-            "rate_limit_hits": 0,
-            "last_http_status": null,
-            "last_stream_count": 0,
-            "last_error": ""
-          }
-        }
-      },
-      "errors": [],
-      "room_progress": {
-        "603914": {
-          "key": "603914",
-          "url": "https://socolivep.cv/truc-tiep/avai-fc-vs-america-mg-22-07-2026-0530?blv=603914",
-          "blv": "TRÀ ĐÁ",
-          "blv_id": "603914",
-          "status": "success",
-          "attempts": 1,
-          "attempts_total": 1,
-          "ever_attempted": true,
-          "valid_stream_ever_found": true,
-          "needs_token_refresh": true,
-          "completion_reason": "valid_stream_seen_earlier",
-          "rate_limit_hits": 0,
-          "last_http_status": 200,
-          "last_stream_count": 0,
-          "last_error": "Token cũ đã hết hạn; giữ nguyên attempts_total và trạng thái hoàn tất của BLV."
-        },
-        "620003": {
-          "key": "620003",
-          "url": "https://socolivep.cv/truc-tiep/avai-fc-vs-america-mg-22-07-2026-0530?blv=620003",
-          "blv": "FOX",
-          "blv_id": "620003",
-          "status": "success",
-          "attempts": 1,
-          "attempts_total": 1,
-          "ever_attempted": true,
-          "valid_stream_ever_found": true,
-          "needs_token_refresh": true,
-          "completion_reason": "valid_stream_seen_earlier",
-          "rate_limit_hits": 0,
-          "last_http_status": 200,
-          "last_stream_count": 0,
-          "last_error": "Token cũ đã hết hạn; giữ nguyên attempts_total và trạng thái hoàn tất của BLV."
-        },
-        "__base__": {
-          "key": "__base__",
-          "url": "https://socolivep.cv/truc-tiep/avai-fc-vs-america-mg-22-07-2026-0530",
-          "blv": "XEM NGAY",
-          "blv_id": "",
-          "status": "pending",
-          "attempts": 0,
-          "attempts_total": 0,
-          "ever_attempted": false,
-          "valid_stream_ever_found": false,
-          "needs_token_refresh": false,
-          "completion_reason": "",
-          "rate_limit_hits": 0,
-          "last_http_status": null,
-          "last_stream_count": 0,
-          "last_error": ""
-        }
-      }
-    },
-    {
-      "base_url": "https://socolivep.cv/truc-tiep/gremio-novorizontino-vs-criciuma-22-07-2026-0530/",
-      "raw_title": "Trực tiếp bóng đá Socolive Gremio Novorizontino vs Criciuma lúc 05:30 ngày 22/07/2026",
-      "home_team": "Gremio Novorizontino",
-      "away_team": "Criciuma",
-      "home_logo": "https://sta.vnres.co/file/common/20260714/3ac3377ebf90b7897a33e44ca465f24b.png",
-      "away_logo": "https://sta.vnres.co/file/common/20260715/b22f851dd1ff5a23e68c6ebf3753a29c.png",
-      "time_text": "05:30",
-      "date_text": "22/07",
-      "status": "",
-      "card_text": "BRA D2 05:30 22/07 Gremio Novorizontino VS XEM NGAY Criciuma RAMBO KAN",
-      "rooms": [
-        {
-          "url": "https://socolivep.cv/truc-tiep/gremio-novorizontino-vs-criciuma-22-07-2026-0530?blv=534055",
-          "blv": "RAMBO",
-          "blv_id": "534055"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/gremio-novorizontino-vs-criciuma-22-07-2026-0530?blv=283501",
-          "blv": "KAN",
-          "blv_id": "283501"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/gremio-novorizontino-vs-criciuma-22-07-2026-0530",
-          "blv": "XEM NGAY",
-          "blv_id": ""
-        }
-      ],
-      "match_name": "Gremio Novorizontino vs Criciuma",
-      "scheduled_at": "2026-07-22T05:30:00+07:00",
-      "streams": [
-        {
-          "url": "https://pull.niur.live/live/stream-534055_lhd.m3u8?txSecret=55b7088176fe93c5a85ec7c01db12a1a&txTime=6a604bf3",
-          "queue_room_key": "534055",
-          "room_url": "https://socolivep.cv/truc-tiep/gremio-novorizontino-vs-criciuma-22-07-2026-0530?blv=534055",
-          "blv": "RAMBO",
-          "blv_id": "534055",
-          "source_id": "534055",
-          "source_provenance": [
-            "cdp/request",
-            "cdp/response",
-            "harvest-final",
-            "harvest-round-1",
-            "harvest-round-2",
-            "harvest-round-3",
-            "harvest-round-4",
-            "harvest-round-5",
-            "harvest-round-6",
-            "harvest-round-7",
-            "harvest-round-8",
-            "harvest-round-9",
-            "request/image",
-            "request/xhr",
-            "response/200"
-          ],
-          "source_confidence": "network",
-          "mapping_mode": "exact-room-id",
-          "discovered_from_room_url": "https://socolivep.cv/truc-tiep/gremio-novorizontino-vs-criciuma-22-07-2026-0530?blv=534055",
-          "discovered_from_blv": "RAMBO",
-          "discovered_at": "2026-07-22T06:02:19.406105+07:00",
-          "valid_until": "2026-07-22T11:49:55+07:00",
-          "is_expired": false
-        },
-        {
-          "url": "https://pull.niur.live/live/stream-283501_lhd.m3u8?txSecret=e20f296b572fba62b780bdb7aff76a83&txTime=6a60486f",
-          "queue_room_key": "283501",
-          "room_url": "https://socolivep.cv/truc-tiep/gremio-novorizontino-vs-criciuma-22-07-2026-0530?blv=283501",
-          "blv": "KAN",
-          "blv_id": "283501",
-          "source_id": "283501",
-          "source_provenance": [
-            "cdp/request",
-            "cdp/response",
-            "harvest-final",
-            "harvest-round-1",
-            "harvest-round-2",
-            "harvest-round-3",
-            "harvest-round-4",
-            "harvest-round-5",
-            "harvest-round-6",
-            "harvest-round-7",
-            "harvest-round-8",
-            "harvest-round-9",
-            "request/image",
-            "request/xhr",
-            "response/200"
-          ],
-          "source_confidence": "network",
-          "mapping_mode": "exact-room-id",
-          "discovered_from_room_url": "https://socolivep.cv/truc-tiep/gremio-novorizontino-vs-criciuma-22-07-2026-0530?blv=283501",
-          "discovered_from_blv": "KAN",
-          "discovered_at": "2026-07-22T06:02:29.677037+07:00",
-          "valid_until": "2026-07-22T11:34:55+07:00",
-          "is_expired": false
-        }
-      ],
-      "room_results": [
-        {
-          "url": "https://socolivep.cv/truc-tiep/gremio-novorizontino-vs-criciuma-22-07-2026-0530?blv=534055",
-          "blv": "RAMBO",
-          "blv_id": "534055",
-          "streams": [
-            "https://pull.niur.live/live/stream-534055_lhd.m3u8?txSecret=55b7088176fe93c5a85ec7c01db12a1a&txTime=6a604bf3"
-          ],
-          "stream_sources": {
-            "https://pull.niur.live/live/stream-534055_lhd.m3u8?txSecret=55b7088176fe93c5a85ec7c01db12a1a&txTime=6a604bf3": [
-              "cdp/request",
-              "cdp/response",
-              "harvest-final",
-              "harvest-round-1",
-              "harvest-round-2",
-              "harvest-round-3",
-              "harvest-round-4",
-              "harvest-round-5",
-              "harvest-round-6",
-              "harvest-round-7",
-              "harvest-round-8",
-              "harvest-round-9",
-              "request/image",
-              "request/xhr",
-              "response/200"
-            ]
-          },
-          "stream_first_seen": [
-            "https://pull.niur.live/live/stream-534055_lhd.m3u8?txSecret=55b7088176fe93c5a85ec7c01db12a1a&txTime=6a604bf3"
-          ],
-          "discovered_blv_ids": [
-            "534055"
-          ],
-          "diagnostics": {
-            "url": "https://socolivep.cv/truc-tiep/gremio-novorizontino-vs-criciuma-22-07-2026-0530/?blv=534055",
-            "title": "Xem trực tiếp bóng đá Gremio Novorizontino vs Criciuma | 05:30 ngày 22/07/2026",
-            "h1": "Trực tiếp bóng đá Socolive Gremio Novorizontino vs Criciuma lúc 05:30 ngày 22/07/2026",
-            "ready_state": "complete",
-            "visibility_state": "visible",
-            "hidden": false,
-            "video_count": 1,
-            "iframe_count": 0,
-            "body_sample": "Skip to content Socolive Bảng xếp hạng Lịch thi đấu Kết quả bóng đá Tin thể thao Trực tiếp bóng đá Socolive Gremio Novorizontino vs Criciuma lúc 05:30 ngày 22/07/2026 BRA D2 Gremio Novorizontino 05:30 22/07 Criciuma 00:00 of 00:00Volume 10% Tải App Bufa RAMBO KAN Chat Thống kê Đội hình Diễn Biến Bảng XH \" \" anhcuong955: góc đi nào hmqs: 0 0 @ 2 chơi chẵn được không ae anhcuong955: nằm g home h1 anhcuong955: mới nói xong hmqs: giải năm vừa rồi 2 đội đứng thứ mấy bxh blv anhcuong955: cày g đi nào anhcuong955: tầm này chỉ đợi bóng chính Admin Sóc Level: ⚽️ NẠP NGAY – NHẬN QUÀ LIỀN TAY 💥💰 100K ➝ +80K 1TR ➝ +120K 15TR ➝ +1.5TR🎯 Chỉ 1 vòng cược🚀 Bsport: https://www.BTY9296.com✈️ Tele: https://t.me/levehehe ⚽️ BUFA: WNNZCR📞 Zalo: 0779 549 184🆘Facebook : https://www.facebook.com/profile.phpid=100091629702200 ViệtNam984: tai 3/4 ht ViệtNam984: bong lên tài xiu lại xuống khó cjoi hmqs: ou có 2 thì rung sớm thôi hmqs: mình có rồi anhcuong955: away toàn thủ nhể ViệtNam984: home cam bóng nhieu ko thay xo cơ hôi Bình Luận Viên BLV RAMBO: ĐOÀN NHÀ MÌNH CHỦ ĐỘNG KẾT NỐI BÉ SÓC VÀO NGÔI NHÀ CHUNG NHÉ Admin Sóc Level: rung nhẹ ht nào anhcuong955: đá nhàn vl Admin Sóc Level: 🔥 THAM GIA NGAY – ",
-            "harvest_rounds": 9,
-            "harvest_window_seconds": 6.987,
-            "main_status": 200,
-            "harvested_stream_count": 1,
-            "harvested_blv_ids": [
-              "534055"
-            ],
-            "scan_mode": "browser-event",
-            "elapsed_seconds": 8.307
-          },
-          "http_probe": {
-            "enabled": false,
-            "status": null,
-            "elapsed_seconds": 0.0,
-            "error": ""
-          },
-          "errors": [
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED"
-          ],
-          "failed_requests": [
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/main.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/customize.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/auth.css?ver=939 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat.css?ver=104 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat(1).css?ver=629 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/toast.css?ver=96 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/themes/flatsome/assets/css/flatsome.css?ver=3.18.2 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/themes/flatsome-child/style.css?ver=3.0 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/countdown.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/match.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/livescore.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/style_custom.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/effect/running-border.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/option/option-6.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/highlight/option-1.css?ver=2.8.5 | net::ERR_FAILED"
-          ],
-          "http_errors": [
-            "403 https://socolivep.cv/wp-admin/admin-ajax.php?action=scl_realtime&sport=1"
-          ]
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/gremio-novorizontino-vs-criciuma-22-07-2026-0530?blv=283501",
-          "blv": "KAN",
-          "blv_id": "283501",
-          "streams": [
-            "https://pull.niur.live/live/stream-283501_lhd.m3u8?txSecret=e20f296b572fba62b780bdb7aff76a83&txTime=6a60486f"
-          ],
-          "stream_sources": {
-            "https://pull.niur.live/live/stream-283501_lhd.m3u8?txSecret=e20f296b572fba62b780bdb7aff76a83&txTime=6a60486f": [
-              "cdp/request",
-              "cdp/response",
-              "harvest-final",
-              "harvest-round-1",
-              "harvest-round-2",
-              "harvest-round-3",
-              "harvest-round-4",
-              "harvest-round-5",
-              "harvest-round-6",
-              "harvest-round-7",
-              "harvest-round-8",
-              "harvest-round-9",
-              "request/image",
-              "request/xhr",
-              "response/200"
-            ]
-          },
-          "stream_first_seen": [
-            "https://pull.niur.live/live/stream-283501_lhd.m3u8?txSecret=e20f296b572fba62b780bdb7aff76a83&txTime=6a60486f"
-          ],
-          "discovered_blv_ids": [
-            "283501"
-          ],
-          "diagnostics": {
-            "url": "https://socolivep.cv/truc-tiep/gremio-novorizontino-vs-criciuma-22-07-2026-0530/?blv=283501",
-            "title": "Xem trực tiếp bóng đá Gremio Novorizontino vs Criciuma | 05:30 ngày 22/07/2026",
-            "h1": "Trực tiếp bóng đá Socolive Gremio Novorizontino vs Criciuma lúc 05:30 ngày 22/07/2026",
-            "ready_state": "complete",
-            "visibility_state": "visible",
-            "hidden": false,
-            "video_count": 1,
-            "iframe_count": 0,
-            "body_sample": "Skip to content Socolive Bảng xếp hạng Lịch thi đấu Kết quả bóng đá Tin thể thao Trực tiếp bóng đá Socolive Gremio Novorizontino vs Criciuma lúc 05:30 ngày 22/07/2026 BRA D2 Gremio Novorizontino 05:30 22/07 Criciuma 00:00 of 00:00Volume 10% Tải App Bufa RAMBO KAN Chat Thống kê Đội hình Diễn Biến Bảng XH \" \" MÔNG TO: tất xanh chắc giờ xanh cỏ r e kan nhỉ barcanumberone: chào kan MÔNG TO: kkk FCBm10: thấy bảo leao bản pha kè anh ạ Húp187: xỉu 0,75 là 1 món quà FCBm10: lãi chứ anh :v FCBm10: mừng rời nước mắt tự nhiên psg lại mua giá cao thế FCBm10: nhưng nó đá thế bán được giá vậy là lãi rồi anh ạ Admin Sóc Khá Lửng 💢: 🚀🔥LÊN ĐỈNH WC CÙNG BSPORT🔥🚀 KM 4 lần nạp đầu tổng 3Tr6💰 Bảo hiểm cược max 5Tr🛡️ Nhóm BUFA lên kèo xuyên đêm 24/7 uy tín💸 🌐 https://www.bty9276.com 📌 https://t.me/socbty338 ☎️ https://www.facebook.com/bsportbty338 🔴 BUFA: DHHLFL 📞 ZALO: 0528 566 860 Bình Luận Viên BLV KAN: g3 FCBm10: deal giá từ trận bán kết rồi anh ạ FCBm10: sau ck mà deal thì khéo lên 60 :v FCBm10: giờ đang đợi xem chốt th st nào về thay lewy thì ngon FCBm10: thôi xin anh vừa cho đi ông torres lại mang về nu nống FCBm10: torres ghi bàn ck wc ngon hơn là rõ anh :v FCBm10: nổ bàn được rồi đấ",
-            "harvest_rounds": 9,
-            "harvest_window_seconds": 6.982,
-            "main_status": 200,
-            "harvested_stream_count": 1,
-            "harvested_blv_ids": [
-              "283501"
-            ],
-            "scan_mode": "browser-event",
-            "elapsed_seconds": 8.255
-          },
-          "http_probe": {
-            "enabled": false,
-            "status": null,
-            "elapsed_seconds": 0.0,
-            "error": ""
-          },
-          "errors": [
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED"
-          ],
-          "failed_requests": [
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/main.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/customize.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/auth.css?ver=77 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat.css?ver=960 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat(1).css?ver=118 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/toast.css?ver=375 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/themes/flatsome/assets/css/flatsome.css?ver=3.18.2 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/themes/flatsome-child/style.css?ver=3.0 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/countdown.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/match.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/livescore.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/style_custom.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/effect/running-border.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/option/option-6.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/highlight/option-1.css?ver=2.8.5 | net::ERR_FAILED"
-          ],
-          "http_errors": [
-            "403 https://socolivep.cv/wp-admin/admin-ajax.php?action=scl_realtime&sport=1"
-          ]
-        }
-      ],
-      "attempted_room_ids": [
-        "283501",
-        "534055"
-      ],
-      "coverage": {
-        "found_streams": 2,
-        "found_blv_ids": [
-          "283501",
-          "534055"
-        ],
-        "goal": 4,
-        "source_goal_reached": false,
-        "room_queue_complete": true,
-        "complete": true,
-        "max_streams_per_blv": 2,
-        "total_explicit_blv_rooms": 2,
-        "pending_room_keys": [],
-        "room_progress": {
-          "534055": {
-            "key": "534055",
-            "url": "https://socolivep.cv/truc-tiep/gremio-novorizontino-vs-criciuma-22-07-2026-0530?blv=534055",
-            "blv": "RAMBO",
-            "blv_id": "534055",
-            "status": "success",
-            "attempts": 1,
-            "attempts_total": 1,
-            "ever_attempted": true,
-            "valid_stream_ever_found": true,
-            "needs_token_refresh": false,
-            "completion_reason": "valid_stream",
-            "rate_limit_hits": 0,
-            "last_http_status": 200,
-            "last_stream_count": 1,
-            "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
-          },
-          "283501": {
-            "key": "283501",
-            "url": "https://socolivep.cv/truc-tiep/gremio-novorizontino-vs-criciuma-22-07-2026-0530?blv=283501",
-            "blv": "KAN",
-            "blv_id": "283501",
-            "status": "success",
-            "attempts": 1,
-            "attempts_total": 1,
-            "ever_attempted": true,
-            "valid_stream_ever_found": true,
-            "needs_token_refresh": false,
-            "completion_reason": "valid_stream",
-            "rate_limit_hits": 0,
-            "last_http_status": 200,
-            "last_stream_count": 1,
-            "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
-          },
-          "__base__": {
-            "key": "__base__",
-            "url": "https://socolivep.cv/truc-tiep/gremio-novorizontino-vs-criciuma-22-07-2026-0530",
-            "blv": "XEM NGAY",
-            "blv_id": "",
-            "status": "pending",
-            "attempts": 0,
-            "attempts_total": 0,
-            "ever_attempted": false,
-            "valid_stream_ever_found": false,
-            "needs_token_refresh": false,
-            "completion_reason": "",
-            "rate_limit_hits": 0,
-            "last_http_status": null,
-            "last_stream_count": 0,
-            "last_error": ""
-          }
-        }
-      },
-      "errors": [],
-      "room_progress": {
-        "534055": {
-          "key": "534055",
-          "url": "https://socolivep.cv/truc-tiep/gremio-novorizontino-vs-criciuma-22-07-2026-0530?blv=534055",
-          "blv": "RAMBO",
-          "blv_id": "534055",
-          "status": "success",
-          "attempts": 1,
-          "attempts_total": 1,
-          "ever_attempted": true,
-          "valid_stream_ever_found": true,
-          "needs_token_refresh": false,
-          "completion_reason": "valid_stream",
-          "rate_limit_hits": 0,
-          "last_http_status": 200,
-          "last_stream_count": 1,
-          "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
-        },
-        "283501": {
-          "key": "283501",
-          "url": "https://socolivep.cv/truc-tiep/gremio-novorizontino-vs-criciuma-22-07-2026-0530?blv=283501",
-          "blv": "KAN",
-          "blv_id": "283501",
-          "status": "success",
-          "attempts": 1,
-          "attempts_total": 1,
-          "ever_attempted": true,
-          "valid_stream_ever_found": true,
-          "needs_token_refresh": false,
-          "completion_reason": "valid_stream",
-          "rate_limit_hits": 0,
-          "last_http_status": 200,
-          "last_stream_count": 1,
-          "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
-        },
-        "__base__": {
-          "key": "__base__",
-          "url": "https://socolivep.cv/truc-tiep/gremio-novorizontino-vs-criciuma-22-07-2026-0530",
-          "blv": "XEM NGAY",
-          "blv_id": "",
-          "status": "pending",
-          "attempts": 0,
-          "attempts_total": 0,
-          "ever_attempted": false,
-          "valid_stream_ever_found": false,
-          "needs_token_refresh": false,
-          "completion_reason": "",
-          "rate_limit_hits": 0,
-          "last_http_status": null,
-          "last_stream_count": 0,
-          "last_error": ""
         }
       }
     },
