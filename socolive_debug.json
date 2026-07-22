@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-22T17:05:00.670986+07:00",
+  "generated_at": "2026-07-22T18:04:48.086989+07:00",
   "configuration": {
     "match_concurrency": 1,
     "room_wait_seconds": 12.0,
@@ -1383,7 +1383,7 @@
           "is_expired": false
         }
       ],
-      "catalog_last_seen_at": "2026-07-22T17:05:00.657555+07:00",
+      "catalog_last_seen_at": "2026-07-22T18:04:48.070642+07:00",
       "catalog_updated_at": "2026-07-22T16:01:43.639822+07:00"
     },
     {
@@ -1625,10 +1625,9 @@
         "612098"
       ],
       "coverage": {
-        "found_streams": 2,
+        "found_streams": 1,
         "found_blv_ids": [
-          "283501",
-          "612098"
+          "283501"
         ],
         "goal": 4,
         "source_goal_reached": false,
@@ -1648,12 +1647,12 @@
             "attempts_total": 1,
             "ever_attempted": true,
             "valid_stream_ever_found": true,
-            "needs_token_refresh": false,
-            "completion_reason": "valid_stream",
+            "needs_token_refresh": true,
+            "completion_reason": "valid_stream_seen_earlier",
             "rate_limit_hits": 0,
             "last_http_status": 200,
-            "last_stream_count": 1,
-            "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
+            "last_stream_count": 0,
+            "last_error": "Token cũ đã hết hạn; giữ nguyên attempts_total và trạng thái hoàn tất của BLV."
           },
           "283501": {
             "key": "283501",
@@ -1703,12 +1702,12 @@
           "attempts_total": 1,
           "ever_attempted": true,
           "valid_stream_ever_found": true,
-          "needs_token_refresh": false,
-          "completion_reason": "valid_stream",
+          "needs_token_refresh": true,
+          "completion_reason": "valid_stream_seen_earlier",
           "rate_limit_hits": 0,
           "last_http_status": 200,
-          "last_stream_count": 1,
-          "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
+          "last_stream_count": 0,
+          "last_error": "Token cũ đã hết hạn; giữ nguyên attempts_total và trạng thái hoàn tất của BLV."
         },
         "283501": {
           "key": "283501",
@@ -1757,38 +1756,6 @@
       "run_global_budget_used": 4,
       "streams": [
         {
-          "url": "https://pull.niues.live/live/stream-612098_lhd.m3u8?auth_key=1784717575-0-0-2b7d4a8dfd6580879c59068d8993be4e",
-          "queue_room_key": "612098",
-          "room_url": "https://socolivep.cv/truc-tiep/maitland-vs-fremantle-city-22-07-2026-1630?blv=612098",
-          "blv": "BEN 10",
-          "blv_id": "612098",
-          "source_id": "612098",
-          "source_provenance": [
-            "cdp/request",
-            "cdp/response",
-            "harvest-final",
-            "harvest-round-1",
-            "harvest-round-2",
-            "harvest-round-3",
-            "harvest-round-4",
-            "harvest-round-5",
-            "harvest-round-6",
-            "harvest-round-7",
-            "harvest-round-8",
-            "harvest-round-9",
-            "request/image",
-            "request/xhr",
-            "response/200"
-          ],
-          "source_confidence": "network",
-          "mapping_mode": "exact-room-id",
-          "discovered_from_room_url": "https://socolivep.cv/truc-tiep/maitland-vs-fremantle-city-22-07-2026-1630?blv=612098",
-          "discovered_from_blv": "BEN 10",
-          "discovered_at": "2026-07-22T17:01:41.289510+07:00",
-          "valid_until": "2026-07-22T17:52:55+07:00",
-          "is_expired": false
-        },
-        {
           "url": "https://pull.niur.live/live/stream-283501_lhd.m3u8?txSecret=ddd1f459584eb0ead9aca716b954a4cc&txTime=6a60df9b",
           "queue_room_key": "283501",
           "room_url": "https://socolivep.cv/truc-tiep/maitland-vs-fremantle-city-22-07-2026-1630?blv=283501",
@@ -1821,7 +1788,7 @@
           "is_expired": false
         }
       ],
-      "catalog_last_seen_at": "2026-07-22T17:05:00.657555+07:00",
+      "catalog_last_seen_at": "2026-07-22T18:04:48.070642+07:00",
       "catalog_updated_at": "2026-07-22T17:03:30.084478+07:00"
     },
     {
@@ -2063,9 +2030,8 @@
         "491873"
       ],
       "coverage": {
-        "found_streams": 2,
+        "found_streams": 1,
         "found_blv_ids": [
-          "235232",
           "491873"
         ],
         "goal": 4,
@@ -2086,12 +2052,12 @@
             "attempts_total": 1,
             "ever_attempted": true,
             "valid_stream_ever_found": true,
-            "needs_token_refresh": false,
-            "completion_reason": "valid_stream",
+            "needs_token_refresh": true,
+            "completion_reason": "valid_stream_seen_earlier",
             "rate_limit_hits": 0,
             "last_http_status": 200,
-            "last_stream_count": 1,
-            "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
+            "last_stream_count": 0,
+            "last_error": "Token cũ đã hết hạn; giữ nguyên attempts_total và trạng thái hoàn tất của BLV."
           },
           "491873": {
             "key": "491873",
@@ -2141,12 +2107,12 @@
           "attempts_total": 1,
           "ever_attempted": true,
           "valid_stream_ever_found": true,
-          "needs_token_refresh": false,
-          "completion_reason": "valid_stream",
+          "needs_token_refresh": true,
+          "completion_reason": "valid_stream_seen_earlier",
           "rate_limit_hits": 0,
           "last_http_status": 200,
-          "last_stream_count": 1,
-          "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
+          "last_stream_count": 0,
+          "last_error": "Token cũ đã hết hạn; giữ nguyên attempts_total và trạng thái hoàn tất của BLV."
         },
         "491873": {
           "key": "491873",
@@ -2195,38 +2161,6 @@
       "run_global_budget_used": 2,
       "streams": [
         {
-          "url": "https://pull.niues.live/live/stream-235232_lhd.m3u8?auth_key=1784715595-0-0-f9ac8a9b2bca1d92b269f23826d7b5f7",
-          "queue_room_key": "235232",
-          "room_url": "https://socolivep.cv/truc-tiep/tuggeranong-united-vs-canberra-white-eagles-22-07-2026-1630?blv=235232",
-          "blv": "A PÁO",
-          "blv_id": "235232",
-          "source_id": "235232",
-          "source_provenance": [
-            "cdp/request",
-            "cdp/response",
-            "harvest-final",
-            "harvest-round-1",
-            "harvest-round-2",
-            "harvest-round-3",
-            "harvest-round-4",
-            "harvest-round-5",
-            "harvest-round-6",
-            "harvest-round-7",
-            "harvest-round-8",
-            "harvest-round-9",
-            "request/image",
-            "request/xhr",
-            "response/200"
-          ],
-          "source_confidence": "network",
-          "mapping_mode": "exact-room-id",
-          "discovered_from_room_url": "https://socolivep.cv/truc-tiep/tuggeranong-united-vs-canberra-white-eagles-22-07-2026-1630?blv=235232",
-          "discovered_from_blv": "A PÁO",
-          "discovered_at": "2026-07-22T17:01:20.240351+07:00",
-          "valid_until": "2026-07-22T17:19:55+07:00",
-          "is_expired": false
-        },
-        {
           "url": "https://pull.niur.live/live/stream-491873_lhd.m3u8?txSecret=5c4282675aecfc73e770ddbc4f8cf4e1&txTime=6a60e44b",
           "queue_room_key": "491873",
           "room_url": "https://socolivep.cv/truc-tiep/tuggeranong-united-vs-canberra-white-eagles-22-07-2026-1630?blv=491873",
@@ -2259,7 +2193,7 @@
           "is_expired": false
         }
       ],
-      "catalog_last_seen_at": "2026-07-22T17:05:00.657555+07:00",
+      "catalog_last_seen_at": "2026-07-22T18:04:48.070642+07:00",
       "catalog_updated_at": "2026-07-22T17:03:30.084478+07:00"
     },
     {
@@ -4259,10 +4193,9 @@
         "552716"
       ],
       "coverage": {
-        "found_streams": 3,
+        "found_streams": 2,
         "found_blv_ids": [
           "283501",
-          "532081",
           "9912102"
         ],
         "goal": 12,
@@ -4351,12 +4284,12 @@
             "attempts_total": 1,
             "ever_attempted": true,
             "valid_stream_ever_found": true,
-            "needs_token_refresh": false,
-            "completion_reason": "valid_stream",
+            "needs_token_refresh": true,
+            "completion_reason": "valid_stream_seen_earlier",
             "rate_limit_hits": 0,
             "last_http_status": 200,
-            "last_stream_count": 1,
-            "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
+            "last_stream_count": 0,
+            "last_error": "Token cũ đã hết hạn; giữ nguyên attempts_total và trạng thái hoàn tất của BLV."
           },
           "552716": {
             "key": "552716",
@@ -4474,12 +4407,12 @@
           "attempts_total": 1,
           "ever_attempted": true,
           "valid_stream_ever_found": true,
-          "needs_token_refresh": false,
-          "completion_reason": "valid_stream",
+          "needs_token_refresh": true,
+          "completion_reason": "valid_stream_seen_earlier",
           "rate_limit_hits": 0,
           "last_http_status": 200,
-          "last_stream_count": 1,
-          "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
+          "last_stream_count": 0,
+          "last_error": "Token cũ đã hết hạn; giữ nguyên attempts_total và trạng thái hoàn tất của BLV."
         },
         "552716": {
           "key": "552716",
@@ -4566,29 +4499,1459 @@
           "discovered_at": "2026-07-22T17:02:39.833816+07:00",
           "valid_until": "2026-07-22T22:49:55+07:00",
           "is_expired": false
+        }
+      ],
+      "catalog_last_seen_at": "2026-07-22T18:04:48.070642+07:00",
+      "catalog_updated_at": "2026-07-22T17:03:30.084478+07:00"
+    },
+    {
+      "base_url": "https://socolivep.cv/truc-tiep/fk-kokand-1912-vs-fc-okmk-olmaliq-22-07-2026-2200/",
+      "raw_title": "Trực tiếp bóng đá Socolive FK Kokand 1912 vs FC OKMK Olmaliq lúc 22:00 ngày 22/07/2026",
+      "home_team": "FK Kokand 1912",
+      "away_team": "FC OKMK Olmaliq",
+      "home_logo": "https://sta.vnres.co/file/common/20260713/c656d06a7d2340c1066ba9d9e6a4c716.png",
+      "away_logo": "https://sta.vnres.co/file/common/20260713/84145e949df22bf8d267496a63dc3f41.png",
+      "time_text": "22:00",
+      "date_text": "22/07",
+      "status": "",
+      "card_text": "UZB PFL 22:00 22/07 FK Kokand 1912 VS XEM NGAY FC OKMK Olmaliq CR Bưởi FIREMAN LONG",
+      "rooms": [
+        {
+          "url": "https://socolivep.cv/truc-tiep/fk-kokand-1912-vs-fc-okmk-olmaliq-22-07-2026-2200?blv=387694",
+          "blv": "CR Bưởi",
+          "blv_id": "387694"
         },
         {
-          "url": "https://pull.niues.live/live/stream-532081_lhd.m3u8?auth_key=1784717395-0-0-c27060ceaf8daefe15dd02bd5d8a8c21",
-          "queue_room_key": "532081",
-          "room_url": "https://socolivep.cv/truc-tiep/bologna-vs-1-fc-heidenheim-1846-22-07-2026-2100?blv=532081",
-          "blv": "ALEX",
-          "blv_id": "532081",
-          "source_id": "532081",
+          "url": "https://socolivep.cv/truc-tiep/fk-kokand-1912-vs-fc-okmk-olmaliq-22-07-2026-2200?blv=250874",
+          "blv": "FIREMAN",
+          "blv_id": "250874"
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/fk-kokand-1912-vs-fc-okmk-olmaliq-22-07-2026-2200?blv=132343",
+          "blv": "LONG",
+          "blv_id": "132343"
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/fk-kokand-1912-vs-fc-okmk-olmaliq-22-07-2026-2200",
+          "blv": "XEM NGAY",
+          "blv_id": ""
+        }
+      ],
+      "match_name": "FK Kokand 1912 vs FC OKMK Olmaliq",
+      "scheduled_at": "2026-07-22T22:00:00+07:00",
+      "room_results": [
+        {
+          "url": "https://socolivep.cv/truc-tiep/fk-kokand-1912-vs-fc-okmk-olmaliq-22-07-2026-2200?blv=387694",
+          "blv": "CR Bưởi",
+          "blv_id": "387694",
+          "streams": [
+            "https://pull.niur.live/live/stream-387694_lhd.m3u8?txSecret=4a63adaf93bddcfc793b72c2eeef84f9&txTime=6a60a551"
+          ],
+          "stream_sources": {
+            "https://pull.niur.live/live/stream-387694_lhd.m3u8?txSecret=4a63adaf93bddcfc793b72c2eeef84f9&txTime=6a60a551": [
+              "final-no-stream-scan",
+              "harvest-final"
+            ]
+          },
+          "stream_first_seen": [
+            "https://pull.niur.live/live/stream-387694_lhd.m3u8?txSecret=4a63adaf93bddcfc793b72c2eeef84f9&txTime=6a60a551"
+          ],
+          "discovered_blv_ids": [
+            "387694"
+          ],
+          "diagnostics": {
+            "url": "https://socolivep.cv/truc-tiep/fk-kokand-1912-vs-fc-okmk-olmaliq-22-07-2026-2200/?blv=387694",
+            "title": "Xem trực tiếp bóng đá FK Kokand 1912 vs FC OKMK Olmaliq | 22:00 ngày 22/07/2026",
+            "h1": "Trực tiếp bóng đá Socolive FK Kokand 1912 vs FC OKMK Olmaliq lúc 22:00 ngày 22/07/2026",
+            "ready_state": "complete",
+            "visibility_state": "visible",
+            "hidden": false,
+            "video_count": 0,
+            "iframe_count": 0,
+            "body_sample": "Skip to content Socolive Bảng xếp hạng Lịch thi đấu Kết quả bóng đá Tin thể thao Trực tiếp bóng đá Socolive FK Kokand 1912 vs FC OKMK Olmaliq lúc 22:00 ngày 22/07/2026 UZB PFL FK Kokand 1912 22:00 22/07 FC OKMK Olmaliq Trận đấu sẽ bắt đầu sau Ngày0 : Giờ3 : Phút57 : Giây22 Trận đấu chưa bắt đầu CR Bưởi FIREMAN LONG Chat Thống kê Đội hình Diễn Biến Bảng XH \" \" Xóa Tin nhắn riêng 😀 😁 😃 😄 😅 😆 😇 😉 😊 🙂 😋 😍 😘 😗 😙 😚 😜 😝 😛 😎 🙄 😳 😡 😕 😫 😤 😨 😥 😪 😓 😵 😲 🤧 😷 🤒 🤕 😴 💤 👏 🤙 👍 👎 👊 ✊ ✌ 👌 ✋ 🤚 💪 🤝 👈 👉 🖕 🖐 👄 👂 👀 🎅 🌞 🌙 ⭐ ⚡ 🔥 ❄️ ⚽ 🏀 🏈 ⚾ 🎁 🎉 ✒️ 📝 ❤️ 💛 💚 🆚 💬 🕐 Vô hiệu hóa tất cả Vô hiệu hóa quà tặng Tắt lời chào Đăng nhập để cùng chat nhé Gửi Tỷ lệ kèo Cược Châu Á Chủ Chấp Khách Cược Châu Âu Chủ Hòa Khách Tài xỉu Tài Tỷ lệ kèo Xỉu Kèo góc Tài Tỷ lệ kèo Xỉu Mô phỏng trận đấu Thống kê trận đấu KOR D1 17:30 22/07 Bucheon FC 1995 VS null null null - null Sắp diễn ra Xem ngay FC Anyang CÒ RAMBO PEANUT XO KOR D1 17:30 22/07 Gwangju FC VS null null null - null Sắp diễn ra Xem ngay Gimcheon Sangmu FC CHÍ PHÈO SEVEN RYO KÉP KOR D1 17:30 22/07 FC Seoul VS null null null - null Sắp diễn ra Xem ngay Pohang Steelers A BỆU VOI RÔSI LOGAN CÔNG CHẤT ENZO AU",
+            "harvest_rounds": 0,
+            "harvest_window_seconds": 0.631,
+            "main_status": 200,
+            "harvested_stream_count": 1,
+            "harvested_blv_ids": [
+              "387694"
+            ],
+            "scan_mode": "browser-event",
+            "elapsed_seconds": 13.838
+          },
+          "http_probe": {
+            "enabled": false,
+            "status": null,
+            "elapsed_seconds": 0.0,
+            "error": ""
+          },
+          "errors": [
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED"
+          ],
+          "failed_requests": [
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/main.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/customize.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/auth.css?ver=440 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat.css?ver=70 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat(1).css?ver=456 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/toast.css?ver=230 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/themes/flatsome/assets/css/flatsome.css?ver=3.18.2 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/themes/flatsome-child/style.css?ver=3.0 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/countdown.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/match.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/livescore.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/style_custom.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/effect/running-border.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/option/option-6.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/highlight/option-1.css?ver=2.8.5 | net::ERR_FAILED"
+          ],
+          "http_errors": [
+            "403 https://socolivep.cv/wp-admin/admin-ajax.php?action=scl_realtime&sport=1"
+          ]
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/fk-kokand-1912-vs-fc-okmk-olmaliq-22-07-2026-2200?blv=250874",
+          "blv": "FIREMAN",
+          "blv_id": "250874",
+          "streams": [
+            "https://pull.niues.live/live/stream-991140_lhd.m3u8?auth_key=1784671374-0-0-6c25b17c79e9f1fe9db1ec18e21736ba"
+          ],
+          "stream_sources": {
+            "https://pull.niues.live/live/stream-991140_lhd.m3u8?auth_key=1784671374-0-0-6c25b17c79e9f1fe9db1ec18e21736ba": [
+              "final-no-stream-scan",
+              "harvest-final"
+            ]
+          },
+          "stream_first_seen": [
+            "https://pull.niues.live/live/stream-991140_lhd.m3u8?auth_key=1784671374-0-0-6c25b17c79e9f1fe9db1ec18e21736ba"
+          ],
+          "discovered_blv_ids": [
+            "991140"
+          ],
+          "diagnostics": {
+            "url": "https://socolivep.cv/truc-tiep/fk-kokand-1912-vs-fc-okmk-olmaliq-22-07-2026-2200/?blv=250874",
+            "title": "Xem trực tiếp bóng đá FK Kokand 1912 vs FC OKMK Olmaliq | 22:00 ngày 22/07/2026",
+            "h1": "Trực tiếp bóng đá Socolive FK Kokand 1912 vs FC OKMK Olmaliq lúc 22:00 ngày 22/07/2026",
+            "ready_state": "complete",
+            "visibility_state": "visible",
+            "hidden": false,
+            "video_count": 0,
+            "iframe_count": 0,
+            "body_sample": "Skip to content Socolive Bảng xếp hạng Lịch thi đấu Kết quả bóng đá Tin thể thao Trực tiếp bóng đá Socolive FK Kokand 1912 vs FC OKMK Olmaliq lúc 22:00 ngày 22/07/2026 UZB PFL FK Kokand 1912 22:00 22/07 FC OKMK Olmaliq Trận đấu sẽ bắt đầu sau Ngày0 : Giờ3 : Phút57 : Giây6 Trận đấu chưa bắt đầu CR Bưởi FIREMAN LONG Chat Thống kê Đội hình Diễn Biến Bảng XH \" \" Xóa Tin nhắn riêng 😀 😁 😃 😄 😅 😆 😇 😉 😊 🙂 😋 😍 😘 😗 😙 😚 😜 😝 😛 😎 🙄 😳 😡 😕 😫 😤 😨 😥 😪 😓 😵 😲 🤧 😷 🤒 🤕 😴 💤 👏 🤙 👍 👎 👊 ✊ ✌ 👌 ✋ 🤚 💪 🤝 👈 👉 🖕 🖐 👄 👂 👀 🎅 🌞 🌙 ⭐ ⚡ 🔥 ❄️ ⚽ 🏀 🏈 ⚾ 🎁 🎉 ✒️ 📝 ❤️ 💛 💚 🆚 💬 🕐 Vô hiệu hóa tất cả Vô hiệu hóa quà tặng Tắt lời chào Đăng nhập để cùng chat nhé Gửi Tỷ lệ kèo Cược Châu Á Chủ Chấp Khách Cược Châu Âu Chủ Hòa Khách Tài xỉu Tài Tỷ lệ kèo Xỉu Kèo góc Tài Tỷ lệ kèo Xỉu Mô phỏng trận đấu Thống kê trận đấu KOR D1 17:30 22/07 Bucheon FC 1995 VS null null null - null Sắp diễn ra Xem ngay FC Anyang CÒ RAMBO PEANUT XO KOR D1 17:30 22/07 Gwangju FC VS null null null - null Sắp diễn ra Xem ngay Gimcheon Sangmu FC CHÍ PHÈO SEVEN RYO KÉP KOR D1 17:30 22/07 FC Seoul VS null null null - null Sắp diễn ra Xem ngay Pohang Steelers A BỆU VOI RÔSI LOGAN CÔNG CHẤT ENZO AUS",
+            "harvest_rounds": 0,
+            "harvest_window_seconds": 0.631,
+            "main_status": 200,
+            "harvested_stream_count": 1,
+            "harvested_blv_ids": [
+              "991140"
+            ],
+            "scan_mode": "browser-event",
+            "elapsed_seconds": 14.066
+          },
+          "http_probe": {
+            "enabled": false,
+            "status": null,
+            "elapsed_seconds": 0.0,
+            "error": ""
+          },
+          "errors": [
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED"
+          ],
+          "failed_requests": [
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/main.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/customize.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/auth.css?ver=637 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat.css?ver=683 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat(1).css?ver=576 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/toast.css?ver=863 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/themes/flatsome/assets/css/flatsome.css?ver=3.18.2 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/themes/flatsome-child/style.css?ver=3.0 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/countdown.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/match.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/livescore.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/style_custom.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/effect/running-border.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/option/option-6.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/highlight/option-1.css?ver=2.8.5 | net::ERR_FAILED"
+          ],
+          "http_errors": [
+            "403 https://socolivep.cv/wp-admin/admin-ajax.php?action=scl_realtime&sport=1"
+          ]
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/fk-kokand-1912-vs-fc-okmk-olmaliq-22-07-2026-2200?blv=132343",
+          "blv": "LONG",
+          "blv_id": "132343",
+          "streams": [
+            "https://pull.niur.live/live/stream-9912117_lhd.m3u8?txSecret=f959ab28dede489fe973d3832d9bd653&txTime=6a602a25"
+          ],
+          "stream_sources": {
+            "https://pull.niur.live/live/stream-9912117_lhd.m3u8?txSecret=f959ab28dede489fe973d3832d9bd653&txTime=6a602a25": [
+              "final-no-stream-scan",
+              "harvest-final"
+            ]
+          },
+          "stream_first_seen": [
+            "https://pull.niur.live/live/stream-9912117_lhd.m3u8?txSecret=f959ab28dede489fe973d3832d9bd653&txTime=6a602a25"
+          ],
+          "discovered_blv_ids": [
+            "9912117"
+          ],
+          "diagnostics": {
+            "url": "https://socolivep.cv/truc-tiep/fk-kokand-1912-vs-fc-okmk-olmaliq-22-07-2026-2200/?blv=132343",
+            "title": "Xem trực tiếp bóng đá FK Kokand 1912 vs FC OKMK Olmaliq | 22:00 ngày 22/07/2026",
+            "h1": "Trực tiếp bóng đá Socolive FK Kokand 1912 vs FC OKMK Olmaliq lúc 22:00 ngày 22/07/2026",
+            "ready_state": "complete",
+            "visibility_state": "visible",
+            "hidden": false,
+            "video_count": 0,
+            "iframe_count": 0,
+            "body_sample": "Skip to content Socolive Bảng xếp hạng Lịch thi đấu Kết quả bóng đá Tin thể thao Trực tiếp bóng đá Socolive FK Kokand 1912 vs FC OKMK Olmaliq lúc 22:00 ngày 22/07/2026 UZB PFL FK Kokand 1912 22:00 22/07 FC OKMK Olmaliq Trận đấu sẽ bắt đầu sau Ngày0 : Giờ3 : Phút56 : Giây50 Trận đấu chưa bắt đầu CR Bưởi FIREMAN LONG Chat Thống kê Đội hình Diễn Biến Bảng XH \" \" Xóa Tin nhắn riêng 😀 😁 😃 😄 😅 😆 😇 😉 😊 🙂 😋 😍 😘 😗 😙 😚 😜 😝 😛 😎 🙄 😳 😡 😕 😫 😤 😨 😥 😪 😓 😵 😲 🤧 😷 🤒 🤕 😴 💤 👏 🤙 👍 👎 👊 ✊ ✌ 👌 ✋ 🤚 💪 🤝 👈 👉 🖕 🖐 👄 👂 👀 🎅 🌞 🌙 ⭐ ⚡ 🔥 ❄️ ⚽ 🏀 🏈 ⚾ 🎁 🎉 ✒️ 📝 ❤️ 💛 💚 🆚 💬 🕐 Vô hiệu hóa tất cả Vô hiệu hóa quà tặng Tắt lời chào Đăng nhập để cùng chat nhé Gửi Tỷ lệ kèo Cược Châu Á Chủ Chấp Khách Cược Châu Âu Chủ Hòa Khách Tài xỉu Tài Tỷ lệ kèo Xỉu Kèo góc Tài Tỷ lệ kèo Xỉu Mô phỏng trận đấu Thống kê trận đấu KOR D1 17:30 22/07 Bucheon FC 1995 VS null null null - null Sắp diễn ra Xem ngay FC Anyang CÒ RAMBO PEANUT XO KOR D1 17:30 22/07 Gwangju FC VS null null null - null Sắp diễn ra Xem ngay Gimcheon Sangmu FC CHÍ PHÈO SEVEN RYO KÉP KOR D1 17:30 22/07 FC Seoul VS null null null - null Sắp diễn ra Xem ngay Pohang Steelers A BỆU VOI RÔSI LOGAN CÔNG CHẤT ENZO AU",
+            "harvest_rounds": 0,
+            "harvest_window_seconds": 0.632,
+            "main_status": 200,
+            "harvested_stream_count": 1,
+            "harvested_blv_ids": [
+              "9912117"
+            ],
+            "scan_mode": "browser-event",
+            "elapsed_seconds": 13.731
+          },
+          "http_probe": {
+            "enabled": false,
+            "status": null,
+            "elapsed_seconds": 0.0,
+            "error": ""
+          },
+          "errors": [
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED"
+          ],
+          "failed_requests": [
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/main.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/customize.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/auth.css?ver=312 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat.css?ver=357 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat(1).css?ver=786 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/toast.css?ver=184 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/themes/flatsome/assets/css/flatsome.css?ver=3.18.2 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/themes/flatsome-child/style.css?ver=3.0 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/countdown.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/match.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/livescore.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/style_custom.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/effect/running-border.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/option/option-6.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/highlight/option-1.css?ver=2.8.5 | net::ERR_FAILED"
+          ],
+          "http_errors": [
+            "403 https://socolivep.cv/wp-admin/admin-ajax.php?action=scl_realtime&sport=1"
+          ]
+        }
+      ],
+      "attempted_room_ids": [
+        "132343",
+        "250874",
+        "387694"
+      ],
+      "coverage": {
+        "found_streams": 1,
+        "found_blv_ids": [
+          "387694"
+        ],
+        "goal": 6,
+        "source_goal_reached": false,
+        "room_queue_complete": false,
+        "complete": false,
+        "max_streams_per_blv": 2,
+        "total_explicit_blv_rooms": 3,
+        "pending_room_keys": [
+          "250874",
+          "132343"
+        ],
+        "room_progress": {
+          "387694": {
+            "key": "387694",
+            "url": "https://socolivep.cv/truc-tiep/fk-kokand-1912-vs-fc-okmk-olmaliq-22-07-2026-2200?blv=387694",
+            "blv": "CR Bưởi",
+            "blv_id": "387694",
+            "status": "success",
+            "attempts": 1,
+            "attempts_total": 1,
+            "ever_attempted": true,
+            "valid_stream_ever_found": true,
+            "needs_token_refresh": false,
+            "completion_reason": "valid_stream",
+            "rate_limit_hits": 0,
+            "last_http_status": 200,
+            "last_stream_count": 1,
+            "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
+          },
+          "250874": {
+            "key": "250874",
+            "url": "https://socolivep.cv/truc-tiep/fk-kokand-1912-vs-fc-okmk-olmaliq-22-07-2026-2200?blv=250874",
+            "blv": "FIREMAN",
+            "blv_id": "250874",
+            "status": "retry",
+            "attempts": 1,
+            "attempts_total": 1,
+            "ever_attempted": true,
+            "valid_stream_ever_found": false,
+            "needs_token_refresh": true,
+            "completion_reason": "",
+            "rate_limit_hits": 0,
+            "last_http_status": 200,
+            "last_stream_count": 0,
+            "last_error": "Token cũ đã hết hạn; giữ nguyên attempts_total và trạng thái hoàn tất của BLV."
+          },
+          "132343": {
+            "key": "132343",
+            "url": "https://socolivep.cv/truc-tiep/fk-kokand-1912-vs-fc-okmk-olmaliq-22-07-2026-2200?blv=132343",
+            "blv": "LONG",
+            "blv_id": "132343",
+            "status": "retry",
+            "attempts": 1,
+            "attempts_total": 1,
+            "ever_attempted": true,
+            "valid_stream_ever_found": false,
+            "needs_token_refresh": true,
+            "completion_reason": "",
+            "rate_limit_hits": 0,
+            "last_http_status": 200,
+            "last_stream_count": 0,
+            "last_error": "Token cũ đã hết hạn; giữ nguyên attempts_total và trạng thái hoàn tất của BLV."
+          },
+          "__base__": {
+            "key": "__base__",
+            "url": "https://socolivep.cv/truc-tiep/fk-kokand-1912-vs-fc-okmk-olmaliq-22-07-2026-2200",
+            "blv": "XEM NGAY",
+            "blv_id": "",
+            "status": "pending",
+            "attempts": 0,
+            "attempts_total": 0,
+            "ever_attempted": false,
+            "valid_stream_ever_found": false,
+            "needs_token_refresh": false,
+            "completion_reason": "",
+            "rate_limit_hits": 0,
+            "last_http_status": null,
+            "last_stream_count": 0,
+            "last_error": ""
+          }
+        }
+      },
+      "errors": [],
+      "room_progress": {
+        "387694": {
+          "key": "387694",
+          "url": "https://socolivep.cv/truc-tiep/fk-kokand-1912-vs-fc-okmk-olmaliq-22-07-2026-2200?blv=387694",
+          "blv": "CR Bưởi",
+          "blv_id": "387694",
+          "status": "success",
+          "attempts": 1,
+          "attempts_total": 1,
+          "ever_attempted": true,
+          "valid_stream_ever_found": true,
+          "needs_token_refresh": false,
+          "completion_reason": "valid_stream",
+          "rate_limit_hits": 0,
+          "last_http_status": 200,
+          "last_stream_count": 1,
+          "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
+        },
+        "250874": {
+          "key": "250874",
+          "url": "https://socolivep.cv/truc-tiep/fk-kokand-1912-vs-fc-okmk-olmaliq-22-07-2026-2200?blv=250874",
+          "blv": "FIREMAN",
+          "blv_id": "250874",
+          "status": "retry",
+          "attempts": 1,
+          "attempts_total": 1,
+          "ever_attempted": true,
+          "valid_stream_ever_found": false,
+          "needs_token_refresh": true,
+          "completion_reason": "",
+          "rate_limit_hits": 0,
+          "last_http_status": 200,
+          "last_stream_count": 0,
+          "last_error": "Token cũ đã hết hạn; giữ nguyên attempts_total và trạng thái hoàn tất của BLV."
+        },
+        "132343": {
+          "key": "132343",
+          "url": "https://socolivep.cv/truc-tiep/fk-kokand-1912-vs-fc-okmk-olmaliq-22-07-2026-2200?blv=132343",
+          "blv": "LONG",
+          "blv_id": "132343",
+          "status": "retry",
+          "attempts": 1,
+          "attempts_total": 1,
+          "ever_attempted": true,
+          "valid_stream_ever_found": false,
+          "needs_token_refresh": true,
+          "completion_reason": "",
+          "rate_limit_hits": 0,
+          "last_http_status": 200,
+          "last_stream_count": 0,
+          "last_error": "Token cũ đã hết hạn; giữ nguyên attempts_total và trạng thái hoàn tất của BLV."
+        },
+        "__base__": {
+          "key": "__base__",
+          "url": "https://socolivep.cv/truc-tiep/fk-kokand-1912-vs-fc-okmk-olmaliq-22-07-2026-2200",
+          "blv": "XEM NGAY",
+          "blv_id": "",
+          "status": "pending",
+          "attempts": 0,
+          "attempts_total": 0,
+          "ever_attempted": false,
+          "valid_stream_ever_found": false,
+          "needs_token_refresh": false,
+          "completion_reason": "",
+          "rate_limit_hits": 0,
+          "last_http_status": null,
+          "last_stream_count": 0,
+          "last_error": ""
+        }
+      },
+      "run_attempted_room_keys": [
+        "132343",
+        "250874",
+        "387694"
+      ],
+      "run_rate_limited_room_keys": [],
+      "run_completed_room_keys": [
+        "132343",
+        "250874",
+        "387694"
+      ],
+      "run_global_budget_used": 8,
+      "streams": [
+        {
+          "url": "https://pull.niur.live/live/stream-387694_lhd.m3u8?txSecret=4a63adaf93bddcfc793b72c2eeef84f9&txTime=6a60a551",
+          "queue_room_key": "387694",
+          "room_url": "https://socolivep.cv/truc-tiep/fk-kokand-1912-vs-fc-okmk-olmaliq-22-07-2026-2200?blv=387694",
+          "blv": "CR Bưởi",
+          "blv_id": "387694",
+          "source_id": "387694",
           "source_provenance": [
             "final-no-stream-scan",
             "harvest-final"
           ],
           "source_confidence": "embedded",
           "mapping_mode": "exact-room-id",
-          "discovered_from_room_url": "https://socolivep.cv/truc-tiep/bologna-vs-1-fc-heidenheim-1846-22-07-2026-2100?blv=532081",
-          "discovered_from_blv": "ALEX",
-          "discovered_at": "2026-07-22T17:03:11.957762+07:00",
-          "valid_until": "2026-07-22T17:49:55+07:00",
+          "discovered_from_room_url": "https://socolivep.cv/truc-tiep/fk-kokand-1912-vs-fc-okmk-olmaliq-22-07-2026-2200?blv=387694",
+          "discovered_from_blv": "CR Bưởi",
+          "discovered_at": "2026-07-22T18:02:37.721870+07:00",
+          "valid_until": "2026-07-22T18:11:13+07:00",
           "is_expired": false
         }
       ],
-      "catalog_last_seen_at": "2026-07-22T17:05:00.657555+07:00",
-      "catalog_updated_at": "2026-07-22T17:03:30.084478+07:00"
+      "catalog_last_seen_at": "2026-07-22T18:04:48.070642+07:00",
+      "catalog_updated_at": "2026-07-22T18:04:48.070642+07:00"
+    },
+    {
+      "base_url": "https://socolivep.cv/truc-tiep/tottenham-hotspur-vs-milton-keynes-dons-22-07-2026-2200/",
+      "raw_title": "Trực tiếp bóng đá Socolive Tottenham Hotspur vs Milton Keynes Dons lúc 22:00 ngày 22/07/2026",
+      "home_team": "Tottenham Hotspur",
+      "away_team": "Milton Keynes Dons",
+      "home_logo": "https://sta.vnres.co/file/common/20260720/0b62a24138bfd7d9dba8755fbbb3a0fb.png",
+      "away_logo": "https://sta.vnres.co/file/common/20260720/4b66ff86e13c7a9f41eec8ce3798f591.png",
+      "time_text": "23:00",
+      "date_text": "22/07",
+      "status": "",
+      "card_text": "INT CF 23:00 22/07 Tottenham Hotspur VS XEM NGAY Milton Keynes Dons ZIDANE A TÚ BÉO BEN 10 A TINH LOGAN",
+      "rooms": [
+        {
+          "url": "https://socolivep.cv/truc-tiep/tottenham-hotspur-vs-milton-keynes-dons-22-07-2026-2200?blv=168740",
+          "blv": "ZIDANE",
+          "blv_id": "168740"
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/tottenham-hotspur-vs-milton-keynes-dons-22-07-2026-2200?blv=557845",
+          "blv": "A TÚ",
+          "blv_id": "557845"
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/tottenham-hotspur-vs-milton-keynes-dons-22-07-2026-2200?blv=459401",
+          "blv": "BÉO",
+          "blv_id": "459401"
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/tottenham-hotspur-vs-milton-keynes-dons-22-07-2026-2200?blv=612098",
+          "blv": "BEN 10",
+          "blv_id": "612098"
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/tottenham-hotspur-vs-milton-keynes-dons-22-07-2026-2200?blv=598119",
+          "blv": "A TINH",
+          "blv_id": "598119"
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/tottenham-hotspur-vs-milton-keynes-dons-22-07-2026-2200?blv=552832",
+          "blv": "LOGAN",
+          "blv_id": "552832"
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/tottenham-hotspur-vs-milton-keynes-dons-22-07-2026-2200",
+          "blv": "XEM NGAY",
+          "blv_id": ""
+        }
+      ],
+      "match_name": "Tottenham Hotspur vs Milton Keynes Dons",
+      "scheduled_at": "2026-07-22T22:00:00+07:00",
+      "room_results": [
+        {
+          "url": "https://socolivep.cv/truc-tiep/tottenham-hotspur-vs-milton-keynes-dons-22-07-2026-2200?blv=168740",
+          "blv": "ZIDANE",
+          "blv_id": "168740",
+          "streams": [
+            "https://pull.niues.live/live/stream-9912060_lhd.m3u8?auth_key=1784700512-0-0-81757c2bd3a6a95a70ebe1b354adb6a8"
+          ],
+          "stream_sources": {
+            "https://pull.niues.live/live/stream-9912060_lhd.m3u8?auth_key=1784700512-0-0-81757c2bd3a6a95a70ebe1b354adb6a8": [
+              "final-no-stream-scan",
+              "harvest-final"
+            ]
+          },
+          "stream_first_seen": [
+            "https://pull.niues.live/live/stream-9912060_lhd.m3u8?auth_key=1784700512-0-0-81757c2bd3a6a95a70ebe1b354adb6a8"
+          ],
+          "discovered_blv_ids": [
+            "9912060"
+          ],
+          "diagnostics": {
+            "url": "https://socolivep.cv/truc-tiep/tottenham-hotspur-vs-milton-keynes-dons-22-07-2026-2200/?blv=168740",
+            "title": "Xem trực tiếp bóng đá Tottenham Hotspur vs Milton Keynes Dons | 23:00 ngày 22/07/2026",
+            "h1": "Trực tiếp bóng đá Socolive Tottenham Hotspur vs Milton Keynes Dons lúc 22:00 ngày 22/07/2026",
+            "ready_state": "complete",
+            "visibility_state": "visible",
+            "hidden": false,
+            "video_count": 0,
+            "iframe_count": 0,
+            "body_sample": "Skip to content Socolive Bảng xếp hạng Lịch thi đấu Kết quả bóng đá Tin thể thao Trực tiếp bóng đá Socolive Tottenham Hotspur vs Milton Keynes Dons lúc 22:00 ngày 22/07/2026 INT CF Tottenham Hotspur 23:00 22/07 Milton Keynes Dons Trận đấu sẽ bắt đầu sau Ngày0 : Giờ4 : Phút56 : Giây34 Trận đấu chưa bắt đầu ZIDANE A TÚ BÉO BEN 10 A TINH LOGAN Chat Thống kê Đội hình Diễn Biến Bảng XH \" \" Xóa Tin nhắn riêng 😀 😁 😃 😄 😅 😆 😇 😉 😊 🙂 😋 😍 😘 😗 😙 😚 😜 😝 😛 😎 🙄 😳 😡 😕 😫 😤 😨 😥 😪 😓 😵 😲 🤧 😷 🤒 🤕 😴 💤 👏 🤙 👍 👎 👊 ✊ ✌ 👌 ✋ 🤚 💪 🤝 👈 👉 🖕 🖐 👄 👂 👀 🎅 🌞 🌙 ⭐ ⚡ 🔥 ❄️ ⚽ 🏀 🏈 ⚾ 🎁 🎉 ✒️ 📝 ❤️ 💛 💚 🆚 💬 🕐 Vô hiệu hóa tất cả Vô hiệu hóa quà tặng Tắt lời chào Đăng nhập để cùng chat nhé Gửi Tỷ lệ kèo Cược Châu Á Chủ Chấp Khách Cược Châu Âu Chủ Hòa Khách Tài xỉu Tài Tỷ lệ kèo Xỉu Kèo góc Tài Tỷ lệ kèo Xỉu Mô phỏng trận đấu Thống kê trận đấu KOR D1 17:30 22/07 Bucheon FC 1995 VS null null null - null Sắp diễn ra Xem ngay FC Anyang CÒ RAMBO PEANUT XO KOR D1 17:30 22/07 Gwangju FC VS null null null - null Sắp diễn ra Xem ngay Gimcheon Sangmu FC CHÍ PHÈO SEVEN RYO KÉP KOR D1 17:30 22/07 FC Seoul VS null null null - null Sắp diễn ra Xem ngay Pohang Steelers A BỆU VOI RÔ",
+            "harvest_rounds": 0,
+            "harvest_window_seconds": 0.634,
+            "main_status": 200,
+            "harvested_stream_count": 1,
+            "harvested_blv_ids": [
+              "9912060"
+            ],
+            "scan_mode": "browser-event",
+            "elapsed_seconds": 14.091
+          },
+          "http_probe": {
+            "enabled": false,
+            "status": null,
+            "elapsed_seconds": 0.0,
+            "error": ""
+          },
+          "errors": [
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED"
+          ],
+          "failed_requests": [
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/main.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/customize.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/auth.css?ver=601 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat.css?ver=168 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat(1).css?ver=589 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/toast.css?ver=950 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/themes/flatsome/assets/css/flatsome.css?ver=3.18.2 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/themes/flatsome-child/style.css?ver=3.0 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/countdown.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/match.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/livescore.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/style_custom.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/effect/running-border.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/option/option-6.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/highlight/option-1.css?ver=2.8.5 | net::ERR_FAILED"
+          ],
+          "http_errors": [
+            "403 https://socolivep.cv/wp-admin/admin-ajax.php?action=scl_realtime&sport=1"
+          ]
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/tottenham-hotspur-vs-milton-keynes-dons-22-07-2026-2200?blv=557845",
+          "blv": "A TÚ",
+          "blv_id": "557845",
+          "streams": [
+            "https://pull.niues.live/live/stream-557845_lhd.m3u8?auth_key=1784721715-0-0-9d13c77988b7abc2697f9dc1fe425a4e"
+          ],
+          "stream_sources": {
+            "https://pull.niues.live/live/stream-557845_lhd.m3u8?auth_key=1784721715-0-0-9d13c77988b7abc2697f9dc1fe425a4e": [
+              "final-no-stream-scan",
+              "harvest-final"
+            ]
+          },
+          "stream_first_seen": [
+            "https://pull.niues.live/live/stream-557845_lhd.m3u8?auth_key=1784721715-0-0-9d13c77988b7abc2697f9dc1fe425a4e"
+          ],
+          "discovered_blv_ids": [
+            "557845"
+          ],
+          "diagnostics": {
+            "url": "https://socolivep.cv/truc-tiep/tottenham-hotspur-vs-milton-keynes-dons-22-07-2026-2200/?blv=557845",
+            "title": "Xem trực tiếp bóng đá Tottenham Hotspur vs Milton Keynes Dons | 23:00 ngày 22/07/2026",
+            "h1": "Trực tiếp bóng đá Socolive Tottenham Hotspur vs Milton Keynes Dons lúc 22:00 ngày 22/07/2026",
+            "ready_state": "complete",
+            "visibility_state": "visible",
+            "hidden": false,
+            "video_count": 0,
+            "iframe_count": 0,
+            "body_sample": "Skip to content Socolive Bảng xếp hạng Lịch thi đấu Kết quả bóng đá Tin thể thao Trực tiếp bóng đá Socolive Tottenham Hotspur vs Milton Keynes Dons lúc 22:00 ngày 22/07/2026 INT CF Tottenham Hotspur 23:00 22/07 Milton Keynes Dons Trận đấu sẽ bắt đầu sau Ngày0 : Giờ4 : Phút56 : Giây18 Trận đấu chưa bắt đầu ZIDANE A TÚ BÉO BEN 10 A TINH LOGAN Chat Thống kê Đội hình Diễn Biến Bảng XH \" \" grimalone123: chắc thôi tú ơi , khỏi rung grimalone123: kkk đá lộ quá grimalone123: đợi tiền xỉu 2,5 và 6,25 về Kimricha: vào xỉu ht lúc 1-0 cái giờ thơm vch Kimricha: xỉu hiệp 1 úc ăn đẫy luôn grimalone123: kimricha bú luôn haha grimalone123: éo hiểu sao để 6,25 QuangH136: mấy góc rồi tú ơi Admin Sóc Tài Lộc: 🧧 AI CHƯA CÓ TK VÀO NHÓM BUFA NHẬN KÈO HẰNG NGÀY TỪ BLV THÌ KẾT BẠN EM HỖ TRỢ Ạ ⚽️ ❤️𝙕𝘼𝙇𝙊 0562 169 107 🧧TELE: https://t.me/soctailocvty07 Ku giang: 175 với 1.5 mà ko ăn dc.má úc bịp grimalone123: kk Ku giang: nổ đi dmm ngai86 sịp rách bở tơi: bù 2p dũng húp bóg: chắc éo bù h grimalone123: búuuu xỉu 2,5 grimalone123: chia buồn ae tìa Admin Sóc Tài Lộc: TRANG CƯỢC 𝐁-𝐒𝐏𝐎𝐑𝐓𝐒 ⚽️THỂ THAO🎲CASINO↔️ SỔ SỐ .NẠP RÚT NHANH↔️BẢO MẬT AN TOÀN 👉LINK ĐĂ𝐍𝐆 𝐊Ý: https://www.bty1268.com 𝐋𝐢ê",
+            "harvest_rounds": 0,
+            "harvest_window_seconds": 0.632,
+            "main_status": 200,
+            "harvested_stream_count": 1,
+            "harvested_blv_ids": [
+              "557845"
+            ],
+            "scan_mode": "browser-event",
+            "elapsed_seconds": 14.063
+          },
+          "http_probe": {
+            "enabled": false,
+            "status": null,
+            "elapsed_seconds": 0.0,
+            "error": ""
+          },
+          "errors": [
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED"
+          ],
+          "failed_requests": [
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/main.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/customize.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/auth.css?ver=696 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat.css?ver=779 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat(1).css?ver=188 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/toast.css?ver=632 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/themes/flatsome/assets/css/flatsome.css?ver=3.18.2 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/themes/flatsome-child/style.css?ver=3.0 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/countdown.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/match.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/livescore.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/style_custom.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/effect/running-border.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/option/option-6.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/highlight/option-1.css?ver=2.8.5 | net::ERR_FAILED"
+          ],
+          "http_errors": [
+            "403 https://socolivep.cv/wp-admin/admin-ajax.php?action=scl_realtime&sport=1"
+          ]
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/tottenham-hotspur-vs-milton-keynes-dons-22-07-2026-2200?blv=459401",
+          "blv": "BÉO",
+          "blv_id": "459401",
+          "streams": [
+            "https://pull.niur.live/live/stream-459401_lhd.m3u8?txSecret=d2c80f73ba2dabfc16a59725f4e3cd75&txTime=6a60f4ef"
+          ],
+          "stream_sources": {
+            "https://pull.niur.live/live/stream-459401_lhd.m3u8?txSecret=d2c80f73ba2dabfc16a59725f4e3cd75&txTime=6a60f4ef": [
+              "final-no-stream-scan",
+              "harvest-final"
+            ]
+          },
+          "stream_first_seen": [
+            "https://pull.niur.live/live/stream-459401_lhd.m3u8?txSecret=d2c80f73ba2dabfc16a59725f4e3cd75&txTime=6a60f4ef"
+          ],
+          "discovered_blv_ids": [
+            "459401"
+          ],
+          "diagnostics": {
+            "url": "https://socolivep.cv/truc-tiep/tottenham-hotspur-vs-milton-keynes-dons-22-07-2026-2200/?blv=459401",
+            "title": "Xem trực tiếp bóng đá Tottenham Hotspur vs Milton Keynes Dons | 23:00 ngày 22/07/2026",
+            "h1": "Trực tiếp bóng đá Socolive Tottenham Hotspur vs Milton Keynes Dons lúc 22:00 ngày 22/07/2026",
+            "ready_state": "complete",
+            "visibility_state": "visible",
+            "hidden": false,
+            "video_count": 0,
+            "iframe_count": 0,
+            "body_sample": "Skip to content Socolive Bảng xếp hạng Lịch thi đấu Kết quả bóng đá Tin thể thao Trực tiếp bóng đá Socolive Tottenham Hotspur vs Milton Keynes Dons lúc 22:00 ngày 22/07/2026 INT CF Tottenham Hotspur 23:00 22/07 Milton Keynes Dons Trận đấu sẽ bắt đầu sau Ngày0 : Giờ4 : Phút56 : Giây2 Trận đấu chưa bắt đầu ZIDANE A TÚ BÉO BEN 10 A TINH LOGAN Chat Thống kê Đội hình Diễn Biến Bảng XH \" \" Bình Luận Viên BLV BÉO: 19H00 AE CÓ BIG BET TIẾP NHÉ Bình Luận Viên BLV BÉO: BÚ RUNG NOTTM AE ƠI SIUUU Từ Hòa Tới Thắn: vào 5m. ăn 2.7 Admin Trợ Lý BÉO: 🚨Khuyến mãi nạp x2 1tr8, mỗi ngày nhận 98k , tuần 1350k 🚨 ✈️️ MÃ BUFA : YVMC8M ❤️Telegram https://t.me/soctrieudovty57 Bsports https://www.bty9229.com/login/register ❤️ Zalo : 0779 404 300 Pepsicoc9: bon home nhìn tù qua Pepsicoc9: yêu đuối nữa Từ Hòa Tới Thắn: góc đi Bình Luận Viên BLV BÉO: sóc đang hỗ trợ 1 ae vào chơi kèo , ae cứ nt nhé hỗ trợ mất 1p ae chơi được rồi ạ Bình Luận Viên BLV BÉO: ❤️ Zalo vào nhóm : 0779 404 300 Admin Trợ Lý BÉO: 🚨 CHƯA CÓ NHÓM LẤY KÈO CỦA BLV NHẮN EM HỖ TRỢ 🚨 ✈️ ZALO+ https://m.me/soctrieudo ❤️Telegram https://t.me/soctrieudovty57 Bsports https://www.bty9229.com/login/register ❤️ Zalo : 0779 404 300 Bình Luậ",
+            "harvest_rounds": 0,
+            "harvest_window_seconds": 0.632,
+            "main_status": 200,
+            "harvested_stream_count": 1,
+            "harvested_blv_ids": [
+              "459401"
+            ],
+            "scan_mode": "browser-event",
+            "elapsed_seconds": 14.071
+          },
+          "http_probe": {
+            "enabled": false,
+            "status": null,
+            "elapsed_seconds": 0.0,
+            "error": ""
+          },
+          "errors": [
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED"
+          ],
+          "failed_requests": [
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/main.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/customize.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/auth.css?ver=259 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat.css?ver=645 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat(1).css?ver=605 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/toast.css?ver=294 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/themes/flatsome/assets/css/flatsome.css?ver=3.18.2 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/themes/flatsome-child/style.css?ver=3.0 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/countdown.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/match.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/livescore.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/style_custom.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/effect/running-border.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/option/option-6.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/highlight/option-1.css?ver=2.8.5 | net::ERR_FAILED"
+          ],
+          "http_errors": [
+            "403 https://socolivep.cv/wp-admin/admin-ajax.php?action=scl_realtime&sport=1"
+          ]
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/tottenham-hotspur-vs-milton-keynes-dons-22-07-2026-2200?blv=612098",
+          "blv": "BEN 10",
+          "blv_id": "612098",
+          "streams": [
+            "https://pull.niues.live/live/stream-612098_lhd.m3u8?auth_key=1784721235-0-0-b5c2ed0f325cfbfc1243b3b805c1a232"
+          ],
+          "stream_sources": {
+            "https://pull.niues.live/live/stream-612098_lhd.m3u8?auth_key=1784721235-0-0-b5c2ed0f325cfbfc1243b3b805c1a232": [
+              "final-no-stream-scan",
+              "harvest-final"
+            ]
+          },
+          "stream_first_seen": [
+            "https://pull.niues.live/live/stream-612098_lhd.m3u8?auth_key=1784721235-0-0-b5c2ed0f325cfbfc1243b3b805c1a232"
+          ],
+          "discovered_blv_ids": [
+            "612098"
+          ],
+          "diagnostics": {
+            "url": "https://socolivep.cv/truc-tiep/tottenham-hotspur-vs-milton-keynes-dons-22-07-2026-2200/?blv=612098",
+            "title": "Xem trực tiếp bóng đá Tottenham Hotspur vs Milton Keynes Dons | 23:00 ngày 22/07/2026",
+            "h1": "Trực tiếp bóng đá Socolive Tottenham Hotspur vs Milton Keynes Dons lúc 22:00 ngày 22/07/2026",
+            "ready_state": "complete",
+            "visibility_state": "visible",
+            "hidden": false,
+            "video_count": 0,
+            "iframe_count": 0,
+            "body_sample": "Skip to content Socolive Bảng xếp hạng Lịch thi đấu Kết quả bóng đá Tin thể thao Trực tiếp bóng đá Socolive Tottenham Hotspur vs Milton Keynes Dons lúc 22:00 ngày 22/07/2026 INT CF Tottenham Hotspur 23:00 22/07 Milton Keynes Dons Trận đấu sẽ bắt đầu sau Ngày0 : Giờ4 : Phút55 : Giây46 Trận đấu chưa bắt đầu ZIDANE A TÚ BÉO BEN 10 A TINH LOGAN Chat Thống kê Đội hình Diễn Biến Bảng XH \" \" trumcuoc: da nhu cccc trumcuoc: thoi me ft luon di Admin Sóc Phê Lắm: 🔥TRANG CƯỢC BSPORT UY TÍN 🔥 http://www.bty1282.com - https://www.bty9296.com💥KHUYẾN MÃI ƯU ĐÃI NHỀU✈️ TELE https://t.me/phelam20 MAI TRƯƠNG Mã BUFA: L2DYEA 𝑵𝒉𝒂̆́𝒏 𝑻𝒊𝒏👉 𝐙𝐀𝐋𝐎 : 0568.691.528 PHƯỚC HẬU ⚽️ĐỂ EM HỖ TRỢ NHÉ ❤️ Admin Sóc Săn Góc: anh ơi BuKaChuBu: lỏ cc r BuKaChuBu: djtme chúng m BuKaChuBu: xin quả nữa BuKaChuBu: đúp đi Admin Sóc Săn Góc: đổi mã cho em anh nha Baonam123: đúp đi nào BuKaChuBu: ô lỗi gì BuKaChuBu: mẹ cướp góc trumcuoc: da cccc nhin gom bo me Admin Sóc Săn Góc: NHANH TAY ĐĂNG KÍ TÀI KHOẢN.NHẬN NGAY KM KHỦNG TẠI B SPORT ĐƯỜNG LINK: https://www.bty9296.com/ https://www.bty9275.com/GIỚI THIỆU BẠN BÉ NHẬN KM LÊN ĐẾN 600k📞 Liên hệ ngay để được hỗ trợ:👉 𝗙𝗮𝗰𝗲𝗯𝗼𝗼𝗸: https://www.facebook.com/",
+            "harvest_rounds": 0,
+            "harvest_window_seconds": 0.633,
+            "main_status": 200,
+            "harvested_stream_count": 1,
+            "harvested_blv_ids": [
+              "612098"
+            ],
+            "scan_mode": "browser-event",
+            "elapsed_seconds": 14.036
+          },
+          "http_probe": {
+            "enabled": false,
+            "status": null,
+            "elapsed_seconds": 0.0,
+            "error": ""
+          },
+          "errors": [
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED"
+          ],
+          "failed_requests": [
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/main.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/customize.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/auth.css?ver=178 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat.css?ver=45 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat(1).css?ver=810 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/toast.css?ver=516 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/themes/flatsome/assets/css/flatsome.css?ver=3.18.2 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/themes/flatsome-child/style.css?ver=3.0 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/countdown.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/match.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/livescore.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/style_custom.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/effect/running-border.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/option/option-6.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/highlight/option-1.css?ver=2.8.5 | net::ERR_FAILED"
+          ],
+          "http_errors": [
+            "403 https://socolivep.cv/wp-admin/admin-ajax.php?action=scl_realtime&sport=1"
+          ]
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/tottenham-hotspur-vs-milton-keynes-dons-22-07-2026-2200?blv=598119",
+          "blv": "A TINH",
+          "blv_id": "598119",
+          "streams": [
+            "https://pull.niur.live/live/stream-598119_lhd.m3u8?txSecret=e5437ecf13ad871f6d805b58c471856e&txTime=6a607fec"
+          ],
+          "stream_sources": {
+            "https://pull.niur.live/live/stream-598119_lhd.m3u8?txSecret=e5437ecf13ad871f6d805b58c471856e&txTime=6a607fec": [
+              "final-no-stream-scan",
+              "harvest-final"
+            ]
+          },
+          "stream_first_seen": [
+            "https://pull.niur.live/live/stream-598119_lhd.m3u8?txSecret=e5437ecf13ad871f6d805b58c471856e&txTime=6a607fec"
+          ],
+          "discovered_blv_ids": [
+            "598119"
+          ],
+          "diagnostics": {
+            "url": "https://socolivep.cv/truc-tiep/tottenham-hotspur-vs-milton-keynes-dons-22-07-2026-2200/?blv=598119",
+            "title": "Xem trực tiếp bóng đá Tottenham Hotspur vs Milton Keynes Dons | 23:00 ngày 22/07/2026",
+            "h1": "Trực tiếp bóng đá Socolive Tottenham Hotspur vs Milton Keynes Dons lúc 22:00 ngày 22/07/2026",
+            "ready_state": "complete",
+            "visibility_state": "visible",
+            "hidden": false,
+            "video_count": 0,
+            "iframe_count": 0,
+            "body_sample": "Skip to content Socolive Bảng xếp hạng Lịch thi đấu Kết quả bóng đá Tin thể thao Trực tiếp bóng đá Socolive Tottenham Hotspur vs Milton Keynes Dons lúc 22:00 ngày 22/07/2026 INT CF Tottenham Hotspur 23:00 22/07 Milton Keynes Dons Trận đấu sẽ bắt đầu sau Ngày0 : Giờ4 : Phút55 : Giây30 Trận đấu chưa bắt đầu ZIDANE A TÚ BÉO BEN 10 A TINH LOGAN Chat Thống kê Đội hình Diễn Biến Bảng XH \" \" Xóa 😀 😁 😃 😄 😅 😆 😇 😉 😊 🙂 😋 😍 😘 😗 😙 😚 😜 😝 😛 😎 🙄 😳 😡 😕 😫 😤 😨 😥 😪 😓 😵 😲 🤧 😷 🤒 🤕 😴 💤 👏 🤙 👍 👎 👊 ✊ ✌ 👌 ✋ 🤚 💪 🤝 👈 👉 🖕 🖐 👄 👂 👀 🎅 🌞 🌙 ⭐ ⚡ 🔥 ❄️ ⚽ 🏀 🏈 ⚾ 🎁 🎉 ✒️ 📝 ❤️ 💛 💚 🆚 💬 🕐 Vô hiệu hóa tất cả Vô hiệu hóa quà tặng Tắt lời chào Đăng nhập để cùng chat nhé Gửi Tỷ lệ kèo Cược Châu Á Chủ Chấp Khách Cược Châu Âu Chủ Hòa Khách Tài xỉu Tài Tỷ lệ kèo Xỉu Kèo góc Tài Tỷ lệ kèo Xỉu Mô phỏng trận đấu Thống kê trận đấu KOR D1 17:30 22/07 Bucheon FC 1995 VS null null null - null Sắp diễn ra Xem ngay FC Anyang CÒ RAMBO PEANUT XO KOR D1 17:30 22/07 Gwangju FC VS null null null - null Sắp diễn ra Xem ngay Gimcheon Sangmu FC CHÍ PHÈO SEVEN RYO KÉP KOR D1 17:30 22/07 FC Seoul VS null null null - null Sắp diễn ra Xem ngay Pohang Steelers A BỆU VOI RÔSI LOGAN CÔNG C",
+            "harvest_rounds": 0,
+            "harvest_window_seconds": 0.632,
+            "main_status": 200,
+            "harvested_stream_count": 1,
+            "harvested_blv_ids": [
+              "598119"
+            ],
+            "scan_mode": "browser-event",
+            "elapsed_seconds": 14.082
+          },
+          "http_probe": {
+            "enabled": false,
+            "status": null,
+            "elapsed_seconds": 0.0,
+            "error": ""
+          },
+          "errors": [
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED"
+          ],
+          "failed_requests": [
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/main.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/customize.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/auth.css?ver=48 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat.css?ver=650 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat(1).css?ver=977 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/toast.css?ver=67 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/themes/flatsome/assets/css/flatsome.css?ver=3.18.2 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/themes/flatsome-child/style.css?ver=3.0 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/countdown.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/match.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/livescore.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/style_custom.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/effect/running-border.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/option/option-6.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/highlight/option-1.css?ver=2.8.5 | net::ERR_FAILED"
+          ],
+          "http_errors": [
+            "403 https://socolivep.cv/wp-admin/admin-ajax.php?action=scl_realtime&sport=1",
+            "404 https://live.sportdb.live/api/v1/matchs/assistant-user?roomNum=598119"
+          ]
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/tottenham-hotspur-vs-milton-keynes-dons-22-07-2026-2200?blv=552832",
+          "blv": "LOGAN",
+          "blv_id": "552832",
+          "streams": [
+            "https://pull.niues.live/live/stream-552832_lhd.m3u8?auth_key=1784721055-0-0-6b690b9baf42a97573cb413444111b11"
+          ],
+          "stream_sources": {
+            "https://pull.niues.live/live/stream-552832_lhd.m3u8?auth_key=1784721055-0-0-6b690b9baf42a97573cb413444111b11": [
+              "final-no-stream-scan",
+              "harvest-final"
+            ]
+          },
+          "stream_first_seen": [
+            "https://pull.niues.live/live/stream-552832_lhd.m3u8?auth_key=1784721055-0-0-6b690b9baf42a97573cb413444111b11"
+          ],
+          "discovered_blv_ids": [
+            "552832"
+          ],
+          "diagnostics": {
+            "url": "https://socolivep.cv/truc-tiep/tottenham-hotspur-vs-milton-keynes-dons-22-07-2026-2200/?blv=552832",
+            "title": "Xem trực tiếp bóng đá Tottenham Hotspur vs Milton Keynes Dons | 23:00 ngày 22/07/2026",
+            "h1": "Trực tiếp bóng đá Socolive Tottenham Hotspur vs Milton Keynes Dons lúc 22:00 ngày 22/07/2026",
+            "ready_state": "complete",
+            "visibility_state": "visible",
+            "hidden": false,
+            "video_count": 0,
+            "iframe_count": 0,
+            "body_sample": "Skip to content Socolive Bảng xếp hạng Lịch thi đấu Kết quả bóng đá Tin thể thao Trực tiếp bóng đá Socolive Tottenham Hotspur vs Milton Keynes Dons lúc 22:00 ngày 22/07/2026 INT CF Tottenham Hotspur 23:00 22/07 Milton Keynes Dons Trận đấu sẽ bắt đầu sau Ngày0 : Giờ4 : Phút55 : Giây13 Trận đấu chưa bắt đầu ZIDANE A TÚ BÉO BEN 10 A TINH LOGAN Chat Thống kê Đội hình Diễn Biến Bảng XH \" \" Tốp ghêm: chịu r Ngày xin 5x: cặp này lệch bàn góc ra nhiều lắm đó bác Admin Sóc mờ lem: HỖ TRỢ ĐĂNG KÍ TÀI KHOẢN B-PSPORT https://www.bty9250.com❤️ ❤️ V-PSPORT ➡️ https://w9.vty36.net/ ❤️THAM GIA NHÓM KÈO VÀ NHẬN KHUYẾN MÃI 2 LẦN NẠP ĐẦU LÊN ĐẾN 1TR800K , 👉 kết bạn qua IDBUFA: J3ZVSU ✈️ telegram https://t.me/socmlembty338 ➕FACEBOOK https://www.facebook.com/bsportbty338 📞 ZALO 0565 180 351 caoky: 2g Trong198: g3 😁 EMXINH: chỉ số góc cũng ổn Cannabis DN: hello logan Trong198: g3 mà k ăn là tôi nghỉ cược luôn lgan Trong198: tôi thua liên tục gần 15 tr r ,chắc đây là trận win đầu😁 Admin Sóc mờ lem: ❤️THAM GIA NHÓM NHẬN KÈO FREE & KM HẤP DẪN ,CHỈ 1 VÒNG CƯỢC RÚY TIỀN NGAY ĐĂNG KÍ B SPORT ➡️https://www.bty9250.com ➡️ https://www.bty0990.com ĐĂNG KÍ TÀI KHOẢN LIÊN HỆ MLEM QUA IDBUFA: J3ZVSU❤️ telegram h",
+            "harvest_rounds": 0,
+            "harvest_window_seconds": 0.633,
+            "main_status": 200,
+            "harvested_stream_count": 1,
+            "harvested_blv_ids": [
+              "552832"
+            ],
+            "scan_mode": "browser-event",
+            "elapsed_seconds": 14.025
+          },
+          "http_probe": {
+            "enabled": false,
+            "status": null,
+            "elapsed_seconds": 0.0,
+            "error": ""
+          },
+          "errors": [
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED"
+          ],
+          "failed_requests": [
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/main.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/customize.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/auth.css?ver=914 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat.css?ver=393 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat(1).css?ver=731 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/toast.css?ver=927 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/themes/flatsome/assets/css/flatsome.css?ver=3.18.2 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/themes/flatsome-child/style.css?ver=3.0 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/countdown.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/match.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/livescore.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/style_custom.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/effect/running-border.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/option/option-6.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/highlight/option-1.css?ver=2.8.5 | net::ERR_FAILED"
+          ],
+          "http_errors": [
+            "403 https://socolivep.cv/wp-admin/admin-ajax.php?action=scl_realtime&sport=1"
+          ]
+        }
+      ],
+      "attempted_room_ids": [
+        "168740",
+        "459401",
+        "552832",
+        "557845",
+        "598119",
+        "612098"
+      ],
+      "coverage": {
+        "found_streams": 4,
+        "found_blv_ids": [
+          "459401",
+          "552832",
+          "557845",
+          "612098"
+        ],
+        "goal": 12,
+        "source_goal_reached": false,
+        "room_queue_complete": false,
+        "complete": false,
+        "max_streams_per_blv": 2,
+        "total_explicit_blv_rooms": 6,
+        "pending_room_keys": [
+          "168740",
+          "598119"
+        ],
+        "room_progress": {
+          "168740": {
+            "key": "168740",
+            "url": "https://socolivep.cv/truc-tiep/tottenham-hotspur-vs-milton-keynes-dons-22-07-2026-2200?blv=168740",
+            "blv": "ZIDANE",
+            "blv_id": "168740",
+            "status": "retry",
+            "attempts": 1,
+            "attempts_total": 1,
+            "ever_attempted": true,
+            "valid_stream_ever_found": false,
+            "needs_token_refresh": true,
+            "completion_reason": "",
+            "rate_limit_hits": 0,
+            "last_http_status": 200,
+            "last_stream_count": 0,
+            "last_error": "Token cũ đã hết hạn; giữ nguyên attempts_total và trạng thái hoàn tất của BLV."
+          },
+          "557845": {
+            "key": "557845",
+            "url": "https://socolivep.cv/truc-tiep/tottenham-hotspur-vs-milton-keynes-dons-22-07-2026-2200?blv=557845",
+            "blv": "A TÚ",
+            "blv_id": "557845",
+            "status": "success",
+            "attempts": 1,
+            "attempts_total": 1,
+            "ever_attempted": true,
+            "valid_stream_ever_found": true,
+            "needs_token_refresh": false,
+            "completion_reason": "valid_stream",
+            "rate_limit_hits": 0,
+            "last_http_status": 200,
+            "last_stream_count": 1,
+            "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
+          },
+          "459401": {
+            "key": "459401",
+            "url": "https://socolivep.cv/truc-tiep/tottenham-hotspur-vs-milton-keynes-dons-22-07-2026-2200?blv=459401",
+            "blv": "BÉO",
+            "blv_id": "459401",
+            "status": "success",
+            "attempts": 1,
+            "attempts_total": 1,
+            "ever_attempted": true,
+            "valid_stream_ever_found": true,
+            "needs_token_refresh": false,
+            "completion_reason": "valid_stream",
+            "rate_limit_hits": 0,
+            "last_http_status": 200,
+            "last_stream_count": 1,
+            "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
+          },
+          "612098": {
+            "key": "612098",
+            "url": "https://socolivep.cv/truc-tiep/tottenham-hotspur-vs-milton-keynes-dons-22-07-2026-2200?blv=612098",
+            "blv": "BEN 10",
+            "blv_id": "612098",
+            "status": "success",
+            "attempts": 1,
+            "attempts_total": 1,
+            "ever_attempted": true,
+            "valid_stream_ever_found": true,
+            "needs_token_refresh": false,
+            "completion_reason": "valid_stream",
+            "rate_limit_hits": 0,
+            "last_http_status": 200,
+            "last_stream_count": 1,
+            "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
+          },
+          "598119": {
+            "key": "598119",
+            "url": "https://socolivep.cv/truc-tiep/tottenham-hotspur-vs-milton-keynes-dons-22-07-2026-2200?blv=598119",
+            "blv": "A TINH",
+            "blv_id": "598119",
+            "status": "retry",
+            "attempts": 1,
+            "attempts_total": 1,
+            "ever_attempted": true,
+            "valid_stream_ever_found": false,
+            "needs_token_refresh": true,
+            "completion_reason": "",
+            "rate_limit_hits": 0,
+            "last_http_status": 200,
+            "last_stream_count": 0,
+            "last_error": "Token cũ đã hết hạn; giữ nguyên attempts_total và trạng thái hoàn tất của BLV."
+          },
+          "552832": {
+            "key": "552832",
+            "url": "https://socolivep.cv/truc-tiep/tottenham-hotspur-vs-milton-keynes-dons-22-07-2026-2200?blv=552832",
+            "blv": "LOGAN",
+            "blv_id": "552832",
+            "status": "success",
+            "attempts": 1,
+            "attempts_total": 1,
+            "ever_attempted": true,
+            "valid_stream_ever_found": true,
+            "needs_token_refresh": false,
+            "completion_reason": "valid_stream",
+            "rate_limit_hits": 0,
+            "last_http_status": 200,
+            "last_stream_count": 1,
+            "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
+          },
+          "__base__": {
+            "key": "__base__",
+            "url": "https://socolivep.cv/truc-tiep/tottenham-hotspur-vs-milton-keynes-dons-22-07-2026-2200",
+            "blv": "XEM NGAY",
+            "blv_id": "",
+            "status": "pending",
+            "attempts": 0,
+            "attempts_total": 0,
+            "ever_attempted": false,
+            "valid_stream_ever_found": false,
+            "needs_token_refresh": false,
+            "completion_reason": "",
+            "rate_limit_hits": 0,
+            "last_http_status": null,
+            "last_stream_count": 0,
+            "last_error": ""
+          }
+        }
+      },
+      "errors": [],
+      "room_progress": {
+        "168740": {
+          "key": "168740",
+          "url": "https://socolivep.cv/truc-tiep/tottenham-hotspur-vs-milton-keynes-dons-22-07-2026-2200?blv=168740",
+          "blv": "ZIDANE",
+          "blv_id": "168740",
+          "status": "retry",
+          "attempts": 1,
+          "attempts_total": 1,
+          "ever_attempted": true,
+          "valid_stream_ever_found": false,
+          "needs_token_refresh": true,
+          "completion_reason": "",
+          "rate_limit_hits": 0,
+          "last_http_status": 200,
+          "last_stream_count": 0,
+          "last_error": "Token cũ đã hết hạn; giữ nguyên attempts_total và trạng thái hoàn tất của BLV."
+        },
+        "557845": {
+          "key": "557845",
+          "url": "https://socolivep.cv/truc-tiep/tottenham-hotspur-vs-milton-keynes-dons-22-07-2026-2200?blv=557845",
+          "blv": "A TÚ",
+          "blv_id": "557845",
+          "status": "success",
+          "attempts": 1,
+          "attempts_total": 1,
+          "ever_attempted": true,
+          "valid_stream_ever_found": true,
+          "needs_token_refresh": false,
+          "completion_reason": "valid_stream",
+          "rate_limit_hits": 0,
+          "last_http_status": 200,
+          "last_stream_count": 1,
+          "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
+        },
+        "459401": {
+          "key": "459401",
+          "url": "https://socolivep.cv/truc-tiep/tottenham-hotspur-vs-milton-keynes-dons-22-07-2026-2200?blv=459401",
+          "blv": "BÉO",
+          "blv_id": "459401",
+          "status": "success",
+          "attempts": 1,
+          "attempts_total": 1,
+          "ever_attempted": true,
+          "valid_stream_ever_found": true,
+          "needs_token_refresh": false,
+          "completion_reason": "valid_stream",
+          "rate_limit_hits": 0,
+          "last_http_status": 200,
+          "last_stream_count": 1,
+          "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
+        },
+        "612098": {
+          "key": "612098",
+          "url": "https://socolivep.cv/truc-tiep/tottenham-hotspur-vs-milton-keynes-dons-22-07-2026-2200?blv=612098",
+          "blv": "BEN 10",
+          "blv_id": "612098",
+          "status": "success",
+          "attempts": 1,
+          "attempts_total": 1,
+          "ever_attempted": true,
+          "valid_stream_ever_found": true,
+          "needs_token_refresh": false,
+          "completion_reason": "valid_stream",
+          "rate_limit_hits": 0,
+          "last_http_status": 200,
+          "last_stream_count": 1,
+          "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
+        },
+        "598119": {
+          "key": "598119",
+          "url": "https://socolivep.cv/truc-tiep/tottenham-hotspur-vs-milton-keynes-dons-22-07-2026-2200?blv=598119",
+          "blv": "A TINH",
+          "blv_id": "598119",
+          "status": "retry",
+          "attempts": 1,
+          "attempts_total": 1,
+          "ever_attempted": true,
+          "valid_stream_ever_found": false,
+          "needs_token_refresh": true,
+          "completion_reason": "",
+          "rate_limit_hits": 0,
+          "last_http_status": 200,
+          "last_stream_count": 0,
+          "last_error": "Token cũ đã hết hạn; giữ nguyên attempts_total và trạng thái hoàn tất của BLV."
+        },
+        "552832": {
+          "key": "552832",
+          "url": "https://socolivep.cv/truc-tiep/tottenham-hotspur-vs-milton-keynes-dons-22-07-2026-2200?blv=552832",
+          "blv": "LOGAN",
+          "blv_id": "552832",
+          "status": "success",
+          "attempts": 1,
+          "attempts_total": 1,
+          "ever_attempted": true,
+          "valid_stream_ever_found": true,
+          "needs_token_refresh": false,
+          "completion_reason": "valid_stream",
+          "rate_limit_hits": 0,
+          "last_http_status": 200,
+          "last_stream_count": 1,
+          "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
+        },
+        "__base__": {
+          "key": "__base__",
+          "url": "https://socolivep.cv/truc-tiep/tottenham-hotspur-vs-milton-keynes-dons-22-07-2026-2200",
+          "blv": "XEM NGAY",
+          "blv_id": "",
+          "status": "pending",
+          "attempts": 0,
+          "attempts_total": 0,
+          "ever_attempted": false,
+          "valid_stream_ever_found": false,
+          "needs_token_refresh": false,
+          "completion_reason": "",
+          "rate_limit_hits": 0,
+          "last_http_status": null,
+          "last_stream_count": 0,
+          "last_error": ""
+        }
+      },
+      "run_attempted_room_keys": [
+        "168740",
+        "459401",
+        "552832",
+        "557845",
+        "598119",
+        "612098"
+      ],
+      "run_rate_limited_room_keys": [],
+      "run_completed_room_keys": [
+        "168740",
+        "459401",
+        "552832",
+        "557845",
+        "598119",
+        "612098"
+      ],
+      "run_global_budget_used": 14,
+      "streams": [
+        {
+          "url": "https://pull.niues.live/live/stream-557845_lhd.m3u8?auth_key=1784721715-0-0-9d13c77988b7abc2697f9dc1fe425a4e",
+          "queue_room_key": "557845",
+          "room_url": "https://socolivep.cv/truc-tiep/tottenham-hotspur-vs-milton-keynes-dons-22-07-2026-2200?blv=557845",
+          "blv": "A TÚ",
+          "blv_id": "557845",
+          "source_id": "557845",
+          "source_provenance": [
+            "final-no-stream-scan",
+            "harvest-final"
+          ],
+          "source_confidence": "embedded",
+          "mapping_mode": "exact-room-id",
+          "discovered_from_room_url": "https://socolivep.cv/truc-tiep/tottenham-hotspur-vs-milton-keynes-dons-22-07-2026-2200?blv=557845",
+          "discovered_from_blv": "A TÚ",
+          "discovered_at": "2026-07-22T18:03:41.737308+07:00",
+          "valid_until": "2026-07-22T19:01:55+07:00",
+          "is_expired": false
+        },
+        {
+          "url": "https://pull.niur.live/live/stream-459401_lhd.m3u8?txSecret=d2c80f73ba2dabfc16a59725f4e3cd75&txTime=6a60f4ef",
+          "queue_room_key": "459401",
+          "room_url": "https://socolivep.cv/truc-tiep/tottenham-hotspur-vs-milton-keynes-dons-22-07-2026-2200?blv=459401",
+          "blv": "BÉO",
+          "blv_id": "459401",
+          "source_id": "459401",
+          "source_provenance": [
+            "final-no-stream-scan",
+            "harvest-final"
+          ],
+          "source_confidence": "embedded",
+          "mapping_mode": "exact-room-id",
+          "discovered_from_room_url": "https://socolivep.cv/truc-tiep/tottenham-hotspur-vs-milton-keynes-dons-22-07-2026-2200?blv=459401",
+          "discovered_from_blv": "BÉO",
+          "discovered_at": "2026-07-22T18:03:57.825459+07:00",
+          "valid_until": "2026-07-22T23:50:55+07:00",
+          "is_expired": false
+        },
+        {
+          "url": "https://pull.niues.live/live/stream-612098_lhd.m3u8?auth_key=1784721235-0-0-b5c2ed0f325cfbfc1243b3b805c1a232",
+          "queue_room_key": "612098",
+          "room_url": "https://socolivep.cv/truc-tiep/tottenham-hotspur-vs-milton-keynes-dons-22-07-2026-2200?blv=612098",
+          "blv": "BEN 10",
+          "blv_id": "612098",
+          "source_id": "612098",
+          "source_provenance": [
+            "final-no-stream-scan",
+            "harvest-final"
+          ],
+          "source_confidence": "embedded",
+          "mapping_mode": "exact-room-id",
+          "discovered_from_room_url": "https://socolivep.cv/truc-tiep/tottenham-hotspur-vs-milton-keynes-dons-22-07-2026-2200?blv=612098",
+          "discovered_from_blv": "BEN 10",
+          "discovered_at": "2026-07-22T18:04:13.879293+07:00",
+          "valid_until": "2026-07-22T18:53:55+07:00",
+          "is_expired": false
+        },
+        {
+          "url": "https://pull.niues.live/live/stream-552832_lhd.m3u8?auth_key=1784721055-0-0-6b690b9baf42a97573cb413444111b11",
+          "queue_room_key": "552832",
+          "room_url": "https://socolivep.cv/truc-tiep/tottenham-hotspur-vs-milton-keynes-dons-22-07-2026-2200?blv=552832",
+          "blv": "LOGAN",
+          "blv_id": "552832",
+          "source_id": "552832",
+          "source_provenance": [
+            "final-no-stream-scan",
+            "harvest-final"
+          ],
+          "source_confidence": "embedded",
+          "mapping_mode": "exact-room-id",
+          "discovered_from_room_url": "https://socolivep.cv/truc-tiep/tottenham-hotspur-vs-milton-keynes-dons-22-07-2026-2200?blv=552832",
+          "discovered_from_blv": "LOGAN",
+          "discovered_at": "2026-07-22T18:04:46.019886+07:00",
+          "valid_until": "2026-07-22T18:50:55+07:00",
+          "is_expired": false
+        }
+      ],
+      "catalog_last_seen_at": "2026-07-22T18:04:48.070642+07:00",
+      "catalog_updated_at": "2026-07-22T18:04:48.070642+07:00"
     }
   ]
 }
