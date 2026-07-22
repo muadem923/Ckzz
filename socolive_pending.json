@@ -1,36 +1,901 @@
 {
-  "generated_at": "2026-07-23T03:08:00.268645+07:00",
+  "generated_at": "2026-07-23T04:09:10.319418+07:00",
   "state_schema_version": "v10.4-finite-two-pass-queue",
-  "dispatch_next": false,
-  "pending_count": 0,
-  "pending_room_count": 0,
+  "dispatch_next": true,
+  "pending_count": 6,
+  "pending_room_count": 11,
   "completed_count": 1,
-  "coverage_complete_count": 12,
-  "total_match_count": 12,
+  "coverage_complete_count": 10,
+  "total_match_count": 16,
   "total_stream_count": 1,
-  "progress_count": 1,
-  "new_link_count": 1,
+  "progress_count": 0,
+  "new_link_count": 0,
   "refreshed_link_count": 0,
-  "queue_progress_count": 12,
-  "terminal_progress_count": 12,
-  "newly_attempted_count": 0,
-  "queue_total_rooms": 34,
+  "queue_progress_count": 41,
+  "terminal_progress_count": 30,
+  "newly_attempted_count": 11,
+  "queue_total_rooms": 41,
   "queue_success_rooms": 1,
-  "queue_exhausted_rooms": 33,
-  "queue_terminal_rooms": 34,
-  "queue_attempts_total": 68,
-  "chain_runs": 2,
+  "queue_exhausted_rooms": 29,
+  "queue_terminal_rooms": 30,
+  "queue_attempts_total": 71,
+  "chain_runs": 1,
   "no_progress_runs": 0,
   "no_queue_progress_runs": 0,
   "unchanged_pending_runs": 0,
   "rate_limit_only_runs": 0,
   "rate_limit_only_run": false,
-  "pending_fingerprint": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
-  "stop_reason": "complete",
+  "pending_fingerprint": "f85e8293ad6cd9b9a620bdea95a5a30cc582579d9db2b8c210902bedc60373db",
+  "stop_reason": "",
   "rate_limited": false,
   "rate_limit_url": "",
   "global_room_budget": 48,
-  "global_room_budget_used": 12,
-  "count": 0,
-  "matches": []
+  "global_room_budget_used": 11,
+  "count": 6,
+  "matches": [
+    {
+      "base_url": "https://socolive.watch/truc-tiep/charlotte-fc-vs-atlanta-united-23-07-2026-0715/",
+      "match_name": "Charlotte FC vs Atlanta United",
+      "scheduled_at": "2026-07-23T07:15:00+07:00",
+      "rooms": [
+        {
+          "url": "https://socolive.watch/truc-tiep/charlotte-fc-vs-atlanta-united-23-07-2026-0715?blv=168740",
+          "blv": "ZIDANE",
+          "blv_id": "168740"
+        },
+        {
+          "url": "https://socolive.watch/truc-tiep/charlotte-fc-vs-atlanta-united-23-07-2026-0715",
+          "blv": "XEM NGAY",
+          "blv_id": ""
+        }
+      ],
+      "streams": [],
+      "coverage": {
+        "found_streams": 0,
+        "found_blv_ids": [],
+        "goal": 2,
+        "source_goal_reached": false,
+        "room_queue_complete": false,
+        "complete": false,
+        "max_streams_per_blv": 2,
+        "total_explicit_blv_rooms": 1,
+        "pending_room_keys": [
+          "168740"
+        ],
+        "room_progress": {
+          "168740": {
+            "key": "168740",
+            "url": "https://socolive.watch/truc-tiep/charlotte-fc-vs-atlanta-united-23-07-2026-0715?blv=168740",
+            "blv": "ZIDANE",
+            "blv_id": "168740",
+            "status": "retry",
+            "attempts": 1,
+            "attempts_total": 1,
+            "ever_attempted": true,
+            "valid_stream_ever_found": false,
+            "needs_token_refresh": false,
+            "completion_reason": "",
+            "rate_limit_hits": 0,
+            "last_http_status": 403,
+            "last_stream_count": 0,
+            "last_error": "console/error: Failed to load resource: the server responded with a status of 403 (); console/warning: No available adapters.; console/warning: No available adapters."
+          },
+          "__base__": {
+            "key": "__base__",
+            "url": "https://socolive.watch/truc-tiep/charlotte-fc-vs-atlanta-united-23-07-2026-0715",
+            "blv": "XEM NGAY",
+            "blv_id": "",
+            "status": "pending",
+            "attempts": 0,
+            "attempts_total": 0,
+            "ever_attempted": false,
+            "valid_stream_ever_found": false,
+            "needs_token_refresh": false,
+            "completion_reason": "",
+            "rate_limit_hits": 0,
+            "last_http_status": null,
+            "last_stream_count": 0,
+            "last_error": ""
+          }
+        }
+      },
+      "attempted_room_ids": [
+        "168740"
+      ],
+      "room_progress": {
+        "168740": {
+          "key": "168740",
+          "url": "https://socolive.watch/truc-tiep/charlotte-fc-vs-atlanta-united-23-07-2026-0715?blv=168740",
+          "blv": "ZIDANE",
+          "blv_id": "168740",
+          "status": "retry",
+          "attempts": 1,
+          "attempts_total": 1,
+          "ever_attempted": true,
+          "valid_stream_ever_found": false,
+          "needs_token_refresh": false,
+          "completion_reason": "",
+          "rate_limit_hits": 0,
+          "last_http_status": 403,
+          "last_stream_count": 0,
+          "last_error": "console/error: Failed to load resource: the server responded with a status of 403 (); console/warning: No available adapters.; console/warning: No available adapters."
+        },
+        "__base__": {
+          "key": "__base__",
+          "url": "https://socolive.watch/truc-tiep/charlotte-fc-vs-atlanta-united-23-07-2026-0715",
+          "blv": "XEM NGAY",
+          "blv_id": "",
+          "status": "pending",
+          "attempts": 0,
+          "attempts_total": 0,
+          "ever_attempted": false,
+          "valid_stream_ever_found": false,
+          "needs_token_refresh": false,
+          "completion_reason": "",
+          "rate_limit_hits": 0,
+          "last_http_status": null,
+          "last_stream_count": 0,
+          "last_error": ""
+        }
+      },
+      "pending_room_keys": [
+        "168740"
+      ]
+    },
+    {
+      "base_url": "https://socolive.watch/truc-tiep/sporting-kansas-city-vs-minnesota-united-fc-23-07-2026-0730/",
+      "match_name": "Sporting Kansas City vs Minnesota United FC",
+      "scheduled_at": "2026-07-23T07:30:00+07:00",
+      "rooms": [
+        {
+          "url": "https://socolive.watch/truc-tiep/sporting-kansas-city-vs-minnesota-united-fc-23-07-2026-0730?blv=531989",
+          "blv": "COZY",
+          "blv_id": "531989"
+        },
+        {
+          "url": "https://socolive.watch/truc-tiep/sporting-kansas-city-vs-minnesota-united-fc-23-07-2026-0730?blv=360663",
+          "blv": "Củ Cải",
+          "blv_id": "360663"
+        },
+        {
+          "url": "https://socolive.watch/truc-tiep/sporting-kansas-city-vs-minnesota-united-fc-23-07-2026-0730?blv=118206",
+          "blv": "TẠ BIÊN GIỚI",
+          "blv_id": "118206"
+        },
+        {
+          "url": "https://socolive.watch/truc-tiep/sporting-kansas-city-vs-minnesota-united-fc-23-07-2026-0730?blv=414317",
+          "blv": "THOMAS",
+          "blv_id": "414317"
+        },
+        {
+          "url": "https://socolive.watch/truc-tiep/sporting-kansas-city-vs-minnesota-united-fc-23-07-2026-0730?blv=494201",
+          "blv": "MESSI",
+          "blv_id": "494201"
+        },
+        {
+          "url": "https://socolive.watch/truc-tiep/sporting-kansas-city-vs-minnesota-united-fc-23-07-2026-0730?blv=620084",
+          "blv": "PEANUT",
+          "blv_id": "620084"
+        },
+        {
+          "url": "https://socolive.watch/truc-tiep/sporting-kansas-city-vs-minnesota-united-fc-23-07-2026-0730",
+          "blv": "XEM NGAY",
+          "blv_id": ""
+        }
+      ],
+      "streams": [],
+      "coverage": {
+        "found_streams": 0,
+        "found_blv_ids": [],
+        "goal": 12,
+        "source_goal_reached": false,
+        "room_queue_complete": false,
+        "complete": false,
+        "max_streams_per_blv": 2,
+        "total_explicit_blv_rooms": 6,
+        "pending_room_keys": [
+          "531989",
+          "360663",
+          "118206",
+          "414317",
+          "494201",
+          "620084"
+        ],
+        "room_progress": {
+          "531989": {
+            "key": "531989",
+            "url": "https://socolive.watch/truc-tiep/sporting-kansas-city-vs-minnesota-united-fc-23-07-2026-0730?blv=531989",
+            "blv": "COZY",
+            "blv_id": "531989",
+            "status": "retry",
+            "attempts": 1,
+            "attempts_total": 1,
+            "ever_attempted": true,
+            "valid_stream_ever_found": false,
+            "needs_token_refresh": false,
+            "completion_reason": "",
+            "rate_limit_hits": 0,
+            "last_http_status": 403,
+            "last_stream_count": 0,
+            "last_error": "console/error: Failed to load resource: the server responded with a status of 403 (); console/warning: No available adapters.; console/warning: No available adapters."
+          },
+          "360663": {
+            "key": "360663",
+            "url": "https://socolive.watch/truc-tiep/sporting-kansas-city-vs-minnesota-united-fc-23-07-2026-0730?blv=360663",
+            "blv": "Củ Cải",
+            "blv_id": "360663",
+            "status": "retry",
+            "attempts": 1,
+            "attempts_total": 1,
+            "ever_attempted": true,
+            "valid_stream_ever_found": false,
+            "needs_token_refresh": false,
+            "completion_reason": "",
+            "rate_limit_hits": 0,
+            "last_http_status": 403,
+            "last_stream_count": 0,
+            "last_error": "console/error: Failed to load resource: the server responded with a status of 403 (); console/warning: No available adapters.; console/warning: No available adapters."
+          },
+          "118206": {
+            "key": "118206",
+            "url": "https://socolive.watch/truc-tiep/sporting-kansas-city-vs-minnesota-united-fc-23-07-2026-0730?blv=118206",
+            "blv": "TẠ BIÊN GIỚI",
+            "blv_id": "118206",
+            "status": "retry",
+            "attempts": 1,
+            "attempts_total": 1,
+            "ever_attempted": true,
+            "valid_stream_ever_found": false,
+            "needs_token_refresh": false,
+            "completion_reason": "",
+            "rate_limit_hits": 0,
+            "last_http_status": 403,
+            "last_stream_count": 0,
+            "last_error": "console/error: Failed to load resource: the server responded with a status of 403 (); console/warning: No available adapters.; console/warning: No available adapters."
+          },
+          "414317": {
+            "key": "414317",
+            "url": "https://socolive.watch/truc-tiep/sporting-kansas-city-vs-minnesota-united-fc-23-07-2026-0730?blv=414317",
+            "blv": "THOMAS",
+            "blv_id": "414317",
+            "status": "retry",
+            "attempts": 1,
+            "attempts_total": 1,
+            "ever_attempted": true,
+            "valid_stream_ever_found": false,
+            "needs_token_refresh": false,
+            "completion_reason": "",
+            "rate_limit_hits": 0,
+            "last_http_status": 403,
+            "last_stream_count": 0,
+            "last_error": "console/error: Failed to load resource: the server responded with a status of 403 (); console/warning: No available adapters.; console/warning: No available adapters."
+          },
+          "494201": {
+            "key": "494201",
+            "url": "https://socolive.watch/truc-tiep/sporting-kansas-city-vs-minnesota-united-fc-23-07-2026-0730?blv=494201",
+            "blv": "MESSI",
+            "blv_id": "494201",
+            "status": "retry",
+            "attempts": 1,
+            "attempts_total": 1,
+            "ever_attempted": true,
+            "valid_stream_ever_found": false,
+            "needs_token_refresh": false,
+            "completion_reason": "",
+            "rate_limit_hits": 0,
+            "last_http_status": 403,
+            "last_stream_count": 0,
+            "last_error": "console/error: Failed to load resource: the server responded with a status of 403 (); console/warning: No available adapters.; console/warning: No available adapters."
+          },
+          "620084": {
+            "key": "620084",
+            "url": "https://socolive.watch/truc-tiep/sporting-kansas-city-vs-minnesota-united-fc-23-07-2026-0730?blv=620084",
+            "blv": "PEANUT",
+            "blv_id": "620084",
+            "status": "retry",
+            "attempts": 1,
+            "attempts_total": 1,
+            "ever_attempted": true,
+            "valid_stream_ever_found": false,
+            "needs_token_refresh": false,
+            "completion_reason": "",
+            "rate_limit_hits": 0,
+            "last_http_status": 403,
+            "last_stream_count": 0,
+            "last_error": "console/error: Failed to load resource: the server responded with a status of 403 (); console/warning: No available adapters.; console/warning: No available adapters."
+          },
+          "__base__": {
+            "key": "__base__",
+            "url": "https://socolive.watch/truc-tiep/sporting-kansas-city-vs-minnesota-united-fc-23-07-2026-0730",
+            "blv": "XEM NGAY",
+            "blv_id": "",
+            "status": "pending",
+            "attempts": 0,
+            "attempts_total": 0,
+            "ever_attempted": false,
+            "valid_stream_ever_found": false,
+            "needs_token_refresh": false,
+            "completion_reason": "",
+            "rate_limit_hits": 0,
+            "last_http_status": null,
+            "last_stream_count": 0,
+            "last_error": ""
+          }
+        }
+      },
+      "attempted_room_ids": [
+        "118206",
+        "360663",
+        "414317",
+        "494201",
+        "531989",
+        "620084"
+      ],
+      "room_progress": {
+        "531989": {
+          "key": "531989",
+          "url": "https://socolive.watch/truc-tiep/sporting-kansas-city-vs-minnesota-united-fc-23-07-2026-0730?blv=531989",
+          "blv": "COZY",
+          "blv_id": "531989",
+          "status": "retry",
+          "attempts": 1,
+          "attempts_total": 1,
+          "ever_attempted": true,
+          "valid_stream_ever_found": false,
+          "needs_token_refresh": false,
+          "completion_reason": "",
+          "rate_limit_hits": 0,
+          "last_http_status": 403,
+          "last_stream_count": 0,
+          "last_error": "console/error: Failed to load resource: the server responded with a status of 403 (); console/warning: No available adapters.; console/warning: No available adapters."
+        },
+        "360663": {
+          "key": "360663",
+          "url": "https://socolive.watch/truc-tiep/sporting-kansas-city-vs-minnesota-united-fc-23-07-2026-0730?blv=360663",
+          "blv": "Củ Cải",
+          "blv_id": "360663",
+          "status": "retry",
+          "attempts": 1,
+          "attempts_total": 1,
+          "ever_attempted": true,
+          "valid_stream_ever_found": false,
+          "needs_token_refresh": false,
+          "completion_reason": "",
+          "rate_limit_hits": 0,
+          "last_http_status": 403,
+          "last_stream_count": 0,
+          "last_error": "console/error: Failed to load resource: the server responded with a status of 403 (); console/warning: No available adapters.; console/warning: No available adapters."
+        },
+        "118206": {
+          "key": "118206",
+          "url": "https://socolive.watch/truc-tiep/sporting-kansas-city-vs-minnesota-united-fc-23-07-2026-0730?blv=118206",
+          "blv": "TẠ BIÊN GIỚI",
+          "blv_id": "118206",
+          "status": "retry",
+          "attempts": 1,
+          "attempts_total": 1,
+          "ever_attempted": true,
+          "valid_stream_ever_found": false,
+          "needs_token_refresh": false,
+          "completion_reason": "",
+          "rate_limit_hits": 0,
+          "last_http_status": 403,
+          "last_stream_count": 0,
+          "last_error": "console/error: Failed to load resource: the server responded with a status of 403 (); console/warning: No available adapters.; console/warning: No available adapters."
+        },
+        "414317": {
+          "key": "414317",
+          "url": "https://socolive.watch/truc-tiep/sporting-kansas-city-vs-minnesota-united-fc-23-07-2026-0730?blv=414317",
+          "blv": "THOMAS",
+          "blv_id": "414317",
+          "status": "retry",
+          "attempts": 1,
+          "attempts_total": 1,
+          "ever_attempted": true,
+          "valid_stream_ever_found": false,
+          "needs_token_refresh": false,
+          "completion_reason": "",
+          "rate_limit_hits": 0,
+          "last_http_status": 403,
+          "last_stream_count": 0,
+          "last_error": "console/error: Failed to load resource: the server responded with a status of 403 (); console/warning: No available adapters.; console/warning: No available adapters."
+        },
+        "494201": {
+          "key": "494201",
+          "url": "https://socolive.watch/truc-tiep/sporting-kansas-city-vs-minnesota-united-fc-23-07-2026-0730?blv=494201",
+          "blv": "MESSI",
+          "blv_id": "494201",
+          "status": "retry",
+          "attempts": 1,
+          "attempts_total": 1,
+          "ever_attempted": true,
+          "valid_stream_ever_found": false,
+          "needs_token_refresh": false,
+          "completion_reason": "",
+          "rate_limit_hits": 0,
+          "last_http_status": 403,
+          "last_stream_count": 0,
+          "last_error": "console/error: Failed to load resource: the server responded with a status of 403 (); console/warning: No available adapters.; console/warning: No available adapters."
+        },
+        "620084": {
+          "key": "620084",
+          "url": "https://socolive.watch/truc-tiep/sporting-kansas-city-vs-minnesota-united-fc-23-07-2026-0730?blv=620084",
+          "blv": "PEANUT",
+          "blv_id": "620084",
+          "status": "retry",
+          "attempts": 1,
+          "attempts_total": 1,
+          "ever_attempted": true,
+          "valid_stream_ever_found": false,
+          "needs_token_refresh": false,
+          "completion_reason": "",
+          "rate_limit_hits": 0,
+          "last_http_status": 403,
+          "last_stream_count": 0,
+          "last_error": "console/error: Failed to load resource: the server responded with a status of 403 (); console/warning: No available adapters.; console/warning: No available adapters."
+        },
+        "__base__": {
+          "key": "__base__",
+          "url": "https://socolive.watch/truc-tiep/sporting-kansas-city-vs-minnesota-united-fc-23-07-2026-0730",
+          "blv": "XEM NGAY",
+          "blv_id": "",
+          "status": "pending",
+          "attempts": 0,
+          "attempts_total": 0,
+          "ever_attempted": false,
+          "valid_stream_ever_found": false,
+          "needs_token_refresh": false,
+          "completion_reason": "",
+          "rate_limit_hits": 0,
+          "last_http_status": null,
+          "last_stream_count": 0,
+          "last_error": ""
+        }
+      },
+      "pending_room_keys": [
+        "531989",
+        "360663",
+        "118206",
+        "414317",
+        "494201",
+        "620084"
+      ]
+    },
+    {
+      "base_url": "https://socolive.watch/truc-tiep/nashville-vs-montreal-impact-23-07-2026-0730/",
+      "match_name": "Nashville vs Montreal Impact",
+      "scheduled_at": "2026-07-23T07:30:00+07:00",
+      "rooms": [
+        {
+          "url": "https://socolive.watch/truc-tiep/nashville-vs-montreal-impact-23-07-2026-0730?blv=612098",
+          "blv": "BEN 10",
+          "blv_id": "612098"
+        },
+        {
+          "url": "https://socolive.watch/truc-tiep/nashville-vs-montreal-impact-23-07-2026-0730",
+          "blv": "XEM NGAY",
+          "blv_id": ""
+        }
+      ],
+      "streams": [],
+      "coverage": {
+        "found_streams": 0,
+        "found_blv_ids": [],
+        "goal": 2,
+        "source_goal_reached": false,
+        "room_queue_complete": false,
+        "complete": false,
+        "max_streams_per_blv": 2,
+        "total_explicit_blv_rooms": 1,
+        "pending_room_keys": [
+          "612098"
+        ],
+        "room_progress": {
+          "612098": {
+            "key": "612098",
+            "url": "https://socolive.watch/truc-tiep/nashville-vs-montreal-impact-23-07-2026-0730?blv=612098",
+            "blv": "BEN 10",
+            "blv_id": "612098",
+            "status": "retry",
+            "attempts": 1,
+            "attempts_total": 1,
+            "ever_attempted": true,
+            "valid_stream_ever_found": false,
+            "needs_token_refresh": false,
+            "completion_reason": "",
+            "rate_limit_hits": 0,
+            "last_http_status": 403,
+            "last_stream_count": 0,
+            "last_error": "console/error: Failed to load resource: the server responded with a status of 403 (); console/warning: No available adapters.; console/warning: No available adapters."
+          },
+          "__base__": {
+            "key": "__base__",
+            "url": "https://socolive.watch/truc-tiep/nashville-vs-montreal-impact-23-07-2026-0730",
+            "blv": "XEM NGAY",
+            "blv_id": "",
+            "status": "pending",
+            "attempts": 0,
+            "attempts_total": 0,
+            "ever_attempted": false,
+            "valid_stream_ever_found": false,
+            "needs_token_refresh": false,
+            "completion_reason": "",
+            "rate_limit_hits": 0,
+            "last_http_status": null,
+            "last_stream_count": 0,
+            "last_error": ""
+          }
+        }
+      },
+      "attempted_room_ids": [
+        "612098"
+      ],
+      "room_progress": {
+        "612098": {
+          "key": "612098",
+          "url": "https://socolive.watch/truc-tiep/nashville-vs-montreal-impact-23-07-2026-0730?blv=612098",
+          "blv": "BEN 10",
+          "blv_id": "612098",
+          "status": "retry",
+          "attempts": 1,
+          "attempts_total": 1,
+          "ever_attempted": true,
+          "valid_stream_ever_found": false,
+          "needs_token_refresh": false,
+          "completion_reason": "",
+          "rate_limit_hits": 0,
+          "last_http_status": 403,
+          "last_stream_count": 0,
+          "last_error": "console/error: Failed to load resource: the server responded with a status of 403 (); console/warning: No available adapters.; console/warning: No available adapters."
+        },
+        "__base__": {
+          "key": "__base__",
+          "url": "https://socolive.watch/truc-tiep/nashville-vs-montreal-impact-23-07-2026-0730",
+          "blv": "XEM NGAY",
+          "blv_id": "",
+          "status": "pending",
+          "attempts": 0,
+          "attempts_total": 0,
+          "ever_attempted": false,
+          "valid_stream_ever_found": false,
+          "needs_token_refresh": false,
+          "completion_reason": "",
+          "rate_limit_hits": 0,
+          "last_http_status": null,
+          "last_stream_count": 0,
+          "last_error": ""
+        }
+      },
+      "pending_room_keys": [
+        "612098"
+      ]
+    },
+    {
+      "base_url": "https://socolive.watch/truc-tiep/houston-dynamo-vs-dc-united-23-07-2026-0730/",
+      "match_name": "Houston Dynamo vs DC United",
+      "scheduled_at": "2026-07-23T07:30:00+07:00",
+      "rooms": [
+        {
+          "url": "https://socolive.watch/truc-tiep/houston-dynamo-vs-dc-united-23-07-2026-0730?blv=620003",
+          "blv": "FOX",
+          "blv_id": "620003"
+        },
+        {
+          "url": "https://socolive.watch/truc-tiep/houston-dynamo-vs-dc-united-23-07-2026-0730",
+          "blv": "XEM NGAY",
+          "blv_id": ""
+        }
+      ],
+      "streams": [],
+      "coverage": {
+        "found_streams": 0,
+        "found_blv_ids": [],
+        "goal": 2,
+        "source_goal_reached": false,
+        "room_queue_complete": false,
+        "complete": false,
+        "max_streams_per_blv": 2,
+        "total_explicit_blv_rooms": 1,
+        "pending_room_keys": [
+          "620003"
+        ],
+        "room_progress": {
+          "620003": {
+            "key": "620003",
+            "url": "https://socolive.watch/truc-tiep/houston-dynamo-vs-dc-united-23-07-2026-0730?blv=620003",
+            "blv": "FOX",
+            "blv_id": "620003",
+            "status": "retry",
+            "attempts": 1,
+            "attempts_total": 1,
+            "ever_attempted": true,
+            "valid_stream_ever_found": false,
+            "needs_token_refresh": false,
+            "completion_reason": "",
+            "rate_limit_hits": 0,
+            "last_http_status": 403,
+            "last_stream_count": 0,
+            "last_error": "console/error: Failed to load resource: the server responded with a status of 403 (); console/warning: No available adapters.; console/warning: No available adapters."
+          },
+          "__base__": {
+            "key": "__base__",
+            "url": "https://socolive.watch/truc-tiep/houston-dynamo-vs-dc-united-23-07-2026-0730",
+            "blv": "XEM NGAY",
+            "blv_id": "",
+            "status": "pending",
+            "attempts": 0,
+            "attempts_total": 0,
+            "ever_attempted": false,
+            "valid_stream_ever_found": false,
+            "needs_token_refresh": false,
+            "completion_reason": "",
+            "rate_limit_hits": 0,
+            "last_http_status": null,
+            "last_stream_count": 0,
+            "last_error": ""
+          }
+        }
+      },
+      "attempted_room_ids": [
+        "620003"
+      ],
+      "room_progress": {
+        "620003": {
+          "key": "620003",
+          "url": "https://socolive.watch/truc-tiep/houston-dynamo-vs-dc-united-23-07-2026-0730?blv=620003",
+          "blv": "FOX",
+          "blv_id": "620003",
+          "status": "retry",
+          "attempts": 1,
+          "attempts_total": 1,
+          "ever_attempted": true,
+          "valid_stream_ever_found": false,
+          "needs_token_refresh": false,
+          "completion_reason": "",
+          "rate_limit_hits": 0,
+          "last_http_status": 403,
+          "last_stream_count": 0,
+          "last_error": "console/error: Failed to load resource: the server responded with a status of 403 (); console/warning: No available adapters.; console/warning: No available adapters."
+        },
+        "__base__": {
+          "key": "__base__",
+          "url": "https://socolive.watch/truc-tiep/houston-dynamo-vs-dc-united-23-07-2026-0730",
+          "blv": "XEM NGAY",
+          "blv_id": "",
+          "status": "pending",
+          "attempts": 0,
+          "attempts_total": 0,
+          "ever_attempted": false,
+          "valid_stream_ever_found": false,
+          "needs_token_refresh": false,
+          "completion_reason": "",
+          "rate_limit_hits": 0,
+          "last_http_status": null,
+          "last_stream_count": 0,
+          "last_error": ""
+        }
+      },
+      "pending_room_keys": [
+        "620003"
+      ]
+    },
+    {
+      "base_url": "https://socolive.watch/truc-tiep/austin-fc-vs-seattle-sounders-23-07-2026-0730/",
+      "match_name": "Austin FC vs Seattle Sounders",
+      "scheduled_at": "2026-07-23T07:30:00+07:00",
+      "rooms": [
+        {
+          "url": "https://socolive.watch/truc-tiep/austin-fc-vs-seattle-sounders-23-07-2026-0730?blv=607400",
+          "blv": "HÀ DUY KIÊN",
+          "blv_id": "607400"
+        },
+        {
+          "url": "https://socolive.watch/truc-tiep/austin-fc-vs-seattle-sounders-23-07-2026-0730",
+          "blv": "XEM NGAY",
+          "blv_id": ""
+        }
+      ],
+      "streams": [],
+      "coverage": {
+        "found_streams": 0,
+        "found_blv_ids": [],
+        "goal": 2,
+        "source_goal_reached": false,
+        "room_queue_complete": false,
+        "complete": false,
+        "max_streams_per_blv": 2,
+        "total_explicit_blv_rooms": 1,
+        "pending_room_keys": [
+          "607400"
+        ],
+        "room_progress": {
+          "607400": {
+            "key": "607400",
+            "url": "https://socolive.watch/truc-tiep/austin-fc-vs-seattle-sounders-23-07-2026-0730?blv=607400",
+            "blv": "HÀ DUY KIÊN",
+            "blv_id": "607400",
+            "status": "retry",
+            "attempts": 1,
+            "attempts_total": 1,
+            "ever_attempted": true,
+            "valid_stream_ever_found": false,
+            "needs_token_refresh": false,
+            "completion_reason": "",
+            "rate_limit_hits": 0,
+            "last_http_status": 403,
+            "last_stream_count": 0,
+            "last_error": "console/error: Failed to load resource: the server responded with a status of 403 (); console/warning: No available adapters.; console/warning: No available adapters."
+          },
+          "__base__": {
+            "key": "__base__",
+            "url": "https://socolive.watch/truc-tiep/austin-fc-vs-seattle-sounders-23-07-2026-0730",
+            "blv": "XEM NGAY",
+            "blv_id": "",
+            "status": "pending",
+            "attempts": 0,
+            "attempts_total": 0,
+            "ever_attempted": false,
+            "valid_stream_ever_found": false,
+            "needs_token_refresh": false,
+            "completion_reason": "",
+            "rate_limit_hits": 0,
+            "last_http_status": null,
+            "last_stream_count": 0,
+            "last_error": ""
+          }
+        }
+      },
+      "attempted_room_ids": [
+        "607400"
+      ],
+      "room_progress": {
+        "607400": {
+          "key": "607400",
+          "url": "https://socolive.watch/truc-tiep/austin-fc-vs-seattle-sounders-23-07-2026-0730?blv=607400",
+          "blv": "HÀ DUY KIÊN",
+          "blv_id": "607400",
+          "status": "retry",
+          "attempts": 1,
+          "attempts_total": 1,
+          "ever_attempted": true,
+          "valid_stream_ever_found": false,
+          "needs_token_refresh": false,
+          "completion_reason": "",
+          "rate_limit_hits": 0,
+          "last_http_status": 403,
+          "last_stream_count": 0,
+          "last_error": "console/error: Failed to load resource: the server responded with a status of 403 (); console/warning: No available adapters.; console/warning: No available adapters."
+        },
+        "__base__": {
+          "key": "__base__",
+          "url": "https://socolive.watch/truc-tiep/austin-fc-vs-seattle-sounders-23-07-2026-0730",
+          "blv": "XEM NGAY",
+          "blv_id": "",
+          "status": "pending",
+          "attempts": 0,
+          "attempts_total": 0,
+          "ever_attempted": false,
+          "valid_stream_ever_found": false,
+          "needs_token_refresh": false,
+          "completion_reason": "",
+          "rate_limit_hits": 0,
+          "last_http_status": null,
+          "last_stream_count": 0,
+          "last_error": ""
+        }
+      },
+      "pending_room_keys": [
+        "607400"
+      ]
+    },
+    {
+      "base_url": "https://socolive.watch/truc-tiep/chapecoense-sc-vs-flamengo-rj-23-07-2026-0730/",
+      "match_name": "Chapecoense - SC vs Flamengo - RJ",
+      "scheduled_at": "2026-07-23T07:30:00+07:00",
+      "rooms": [
+        {
+          "url": "https://socolive.watch/truc-tiep/chapecoense-sc-vs-flamengo-rj-23-07-2026-0730?blv=380460",
+          "blv": "ENZO",
+          "blv_id": "380460"
+        },
+        {
+          "url": "https://socolive.watch/truc-tiep/chapecoense-sc-vs-flamengo-rj-23-07-2026-0730",
+          "blv": "XEM NGAY",
+          "blv_id": ""
+        }
+      ],
+      "streams": [],
+      "coverage": {
+        "found_streams": 0,
+        "found_blv_ids": [],
+        "goal": 2,
+        "source_goal_reached": false,
+        "room_queue_complete": false,
+        "complete": false,
+        "max_streams_per_blv": 2,
+        "total_explicit_blv_rooms": 1,
+        "pending_room_keys": [
+          "380460"
+        ],
+        "room_progress": {
+          "380460": {
+            "key": "380460",
+            "url": "https://socolive.watch/truc-tiep/chapecoense-sc-vs-flamengo-rj-23-07-2026-0730?blv=380460",
+            "blv": "ENZO",
+            "blv_id": "380460",
+            "status": "retry",
+            "attempts": 1,
+            "attempts_total": 1,
+            "ever_attempted": true,
+            "valid_stream_ever_found": false,
+            "needs_token_refresh": false,
+            "completion_reason": "",
+            "rate_limit_hits": 0,
+            "last_http_status": 403,
+            "last_stream_count": 0,
+            "last_error": "console/error: Failed to load resource: the server responded with a status of 403 (); console/warning: No available adapters.; console/warning: No available adapters."
+          },
+          "__base__": {
+            "key": "__base__",
+            "url": "https://socolive.watch/truc-tiep/chapecoense-sc-vs-flamengo-rj-23-07-2026-0730",
+            "blv": "XEM NGAY",
+            "blv_id": "",
+            "status": "pending",
+            "attempts": 0,
+            "attempts_total": 0,
+            "ever_attempted": false,
+            "valid_stream_ever_found": false,
+            "needs_token_refresh": false,
+            "completion_reason": "",
+            "rate_limit_hits": 0,
+            "last_http_status": null,
+            "last_stream_count": 0,
+            "last_error": ""
+          }
+        }
+      },
+      "attempted_room_ids": [
+        "380460"
+      ],
+      "room_progress": {
+        "380460": {
+          "key": "380460",
+          "url": "https://socolive.watch/truc-tiep/chapecoense-sc-vs-flamengo-rj-23-07-2026-0730?blv=380460",
+          "blv": "ENZO",
+          "blv_id": "380460",
+          "status": "retry",
+          "attempts": 1,
+          "attempts_total": 1,
+          "ever_attempted": true,
+          "valid_stream_ever_found": false,
+          "needs_token_refresh": false,
+          "completion_reason": "",
+          "rate_limit_hits": 0,
+          "last_http_status": 403,
+          "last_stream_count": 0,
+          "last_error": "console/error: Failed to load resource: the server responded with a status of 403 (); console/warning: No available adapters.; console/warning: No available adapters."
+        },
+        "__base__": {
+          "key": "__base__",
+          "url": "https://socolive.watch/truc-tiep/chapecoense-sc-vs-flamengo-rj-23-07-2026-0730",
+          "blv": "XEM NGAY",
+          "blv_id": "",
+          "status": "pending",
+          "attempts": 0,
+          "attempts_total": 0,
+          "ever_attempted": false,
+          "valid_stream_ever_found": false,
+          "needs_token_refresh": false,
+          "completion_reason": "",
+          "rate_limit_hits": 0,
+          "last_http_status": null,
+          "last_stream_count": 0,
+          "last_error": ""
+        }
+      },
+      "pending_room_keys": [
+        "380460"
+      ]
+    }
+  ]
 }
