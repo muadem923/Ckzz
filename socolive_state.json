@@ -1,36 +1,36 @@
 {
-  "generated_at": "2026-07-22T07:03:37.948703+07:00",
+  "generated_at": "2026-07-22T07:05:43.587951+07:00",
   "state_schema_version": "v10.4-finite-two-pass-queue",
-  "dispatch_next": true,
-  "pending_count": 1,
-  "pending_room_count": 5,
-  "completed_count": 5,
-  "coverage_complete_count": 8,
+  "dispatch_next": false,
+  "pending_count": 0,
+  "pending_room_count": 0,
+  "completed_count": 4,
+  "coverage_complete_count": 9,
   "total_match_count": 9,
-  "total_stream_count": 9,
-  "progress_count": 5,
-  "new_link_count": 5,
+  "total_stream_count": 8,
+  "progress_count": 0,
+  "new_link_count": 0,
   "refreshed_link_count": 0,
-  "queue_progress_count": 35,
-  "terminal_progress_count": 25,
-  "newly_attempted_count": 10,
+  "queue_progress_count": 5,
+  "terminal_progress_count": 5,
+  "newly_attempted_count": 0,
   "queue_total_rooms": 30,
   "queue_success_rooms": 14,
-  "queue_exhausted_rooms": 11,
-  "queue_terminal_rooms": 25,
-  "queue_attempts_total": 41,
-  "chain_runs": 1,
+  "queue_exhausted_rooms": 16,
+  "queue_terminal_rooms": 30,
+  "queue_attempts_total": 46,
+  "chain_runs": 2,
   "no_progress_runs": 0,
   "no_queue_progress_runs": 0,
   "unchanged_pending_runs": 0,
   "rate_limit_only_runs": 0,
   "rate_limit_only_run": false,
-  "pending_fingerprint": "ed9c995354a651230b98ba407865c25556f7ff30e0e451f4a28714cc4b685ecb",
-  "stop_reason": "",
+  "pending_fingerprint": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "stop_reason": "complete",
   "rate_limited": false,
   "rate_limit_url": "",
   "global_room_budget": 48,
-  "global_room_budget_used": 10,
+  "global_room_budget_used": 5,
   "target_base_urls": [
     "https://socolivep.cv/truc-tiep/atletico-mineiro-mg-vs-bahia-ba-22-07-2026-0530/",
     "https://socolivep.cv/truc-tiep/avai-fc-vs-america-mg-22-07-2026-0530/",
@@ -42,10 +42,1308 @@
     "https://socolivep.cv/truc-tiep/nacional-montevideo-vs-club-atletico-tigre-22-07-2026-0500/",
     "https://socolivep.cv/truc-tiep/toluca-vs-pumas-u-n-a-m-22-07-2026-1005/"
   ],
-  "pending_base_urls": [
-    "https://socolivep.cv/truc-tiep/toluca-vs-pumas-u-n-a-m-22-07-2026-1005/"
-  ],
+  "pending_base_urls": [],
   "matches": [
+    {
+      "base_url": "https://socolivep.cv/truc-tiep/toluca-vs-pumas-u-n-a-m-22-07-2026-1005/",
+      "raw_title": "Trực tiếp bóng đá Socolive Toluca vs Pumas U.N.A.M. lúc 10:05 ngày 22/07/2026",
+      "home_team": "Toluca",
+      "away_team": "Pumas U.N.A.M.",
+      "home_logo": "https://sta.vnres.co/file/common/20260715/ae9712ee1150ef7d14192c71f9e987b7.png",
+      "away_logo": "https://sta.vnres.co/file/common/20260715/1850bd100bd741d902ce36a85f71cdf8.png",
+      "time_text": "10:05",
+      "date_text": "22/07",
+      "status": "",
+      "card_text": "MEX D1 10:05 22/07 Toluca VS XEM NGAY Pumas U.N.A.M. TOMMY CR Bưởi ZIDANE COZY Củ Cải TẠ BIÊN GIỚI",
+      "rooms": [
+        {
+          "url": "https://socolivep.cv/truc-tiep/toluca-vs-pumas-u-n-a-m-22-07-2026-1005?blv=414317",
+          "blv": "TOMMY",
+          "blv_id": "414317"
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/toluca-vs-pumas-u-n-a-m-22-07-2026-1005?blv=387694",
+          "blv": "CR Bưởi",
+          "blv_id": "387694"
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/toluca-vs-pumas-u-n-a-m-22-07-2026-1005?blv=168740",
+          "blv": "ZIDANE",
+          "blv_id": "168740"
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/toluca-vs-pumas-u-n-a-m-22-07-2026-1005?blv=531989",
+          "blv": "COZY",
+          "blv_id": "531989"
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/toluca-vs-pumas-u-n-a-m-22-07-2026-1005?blv=360663",
+          "blv": "Củ Cải",
+          "blv_id": "360663"
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/toluca-vs-pumas-u-n-a-m-22-07-2026-1005?blv=118206",
+          "blv": "TẠ BIÊN GIỚI",
+          "blv_id": "118206"
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/toluca-vs-pumas-u-n-a-m-22-07-2026-1005",
+          "blv": "XEM NGAY",
+          "blv_id": ""
+        }
+      ],
+      "match_name": "Toluca vs Pumas U.N.A.M.",
+      "scheduled_at": "2026-07-22T10:05:00+07:00",
+      "streams": [],
+      "room_results": [
+        {
+          "url": "https://socolivep.cv/truc-tiep/toluca-vs-pumas-u-n-a-m-22-07-2026-1005?blv=414317",
+          "blv": "TOMMY",
+          "blv_id": "414317",
+          "streams": [
+            "https://pull.niues.live/live/stream-414317_lhd.m3u8?auth_key=1784641328-0-0-08b02a513360019191860f23185e905d"
+          ],
+          "stream_sources": {
+            "https://pull.niues.live/live/stream-414317_lhd.m3u8?auth_key=1784641328-0-0-08b02a513360019191860f23185e905d": [
+              "final-no-stream-scan",
+              "harvest-final"
+            ]
+          },
+          "stream_first_seen": [
+            "https://pull.niues.live/live/stream-414317_lhd.m3u8?auth_key=1784641328-0-0-08b02a513360019191860f23185e905d"
+          ],
+          "discovered_blv_ids": [
+            "414317"
+          ],
+          "diagnostics": {
+            "url": "https://socolivep.cv/truc-tiep/toluca-vs-pumas-u-n-a-m-22-07-2026-1005/?blv=414317",
+            "title": "Xem trực tiếp bóng đá Toluca vs Pumas U.N.A.M. | 10:05 ngày 22/07/2026",
+            "h1": "Trực tiếp bóng đá Socolive Toluca vs Pumas U.N.A.M. lúc 10:05 ngày 22/07/2026",
+            "ready_state": "complete",
+            "visibility_state": "visible",
+            "hidden": false,
+            "video_count": 0,
+            "iframe_count": 0,
+            "body_sample": "Skip to content Socolive Bảng xếp hạng Lịch thi đấu Kết quả bóng đá Tin thể thao Trực tiếp bóng đá Socolive Toluca vs Pumas U.N.A.M. lúc 10:05 ngày 22/07/2026 MEX D1 Toluca 10:05 22/07 Pumas U.N.A.M. Trận đấu sẽ bắt đầu sau Ngày0 : Giờ3 : Phút2 : Giây43 Trận đấu chưa bắt đầu TOMMY CR Bưởi ZIDANE COZY Củ Cải TẠ BIÊN GIỚI Chat Thống kê Đội hình Diễn Biến Bảng XH \" \" Xóa Tin nhắn riêng 😀 😁 😃 😄 😅 😆 😇 😉 😊 🙂 😋 😍 😘 😗 😙 😚 😜 😝 😛 😎 🙄 😳 😡 😕 😫 😤 😨 😥 😪 😓 😵 😲 🤧 😷 🤒 🤕 😴 💤 👏 🤙 👍 👎 👊 ✊ ✌ 👌 ✋ 🤚 💪 🤝 👈 👉 🖕 🖐 👄 👂 👀 🎅 🌞 🌙 ⭐ ⚡ 🔥 ❄️ ⚽ 🏀 🏈 ⚾ 🎁 🎉 ✒️ 📝 ❤️ 💛 💚 🆚 💬 🕐 Vô hiệu hóa tất cả Vô hiệu hóa quà tặng Tắt lời chào Đăng nhập để cùng chat nhé Gửi Tỷ lệ kèo Cược Châu Á Chủ Chấp Khách Cược Châu Âu Chủ Hòa Khách Tài xỉu Tài Tỷ lệ kèo Xỉu Kèo góc Tài Tỷ lệ kèo Xỉu Mô phỏng trận đấu Thống kê trận đấu COL Cup 07:00 22/07 Deportivo Pasto VS null null null - null Sắp diễn ra Xem ngay Bogota FC YONE KÉP COL Cup 07:00 22/07 Deportiva Once Caldas VS null null null - null Sắp diễn ra Xem ngay Envigado FC LOGAN COL Cup 06:00 22/07 Deportes Tolima VS null null null - null Sắp diễn ra Xem ngay Deportes Quindio VOI BRA D1 05:30 22/07 Atlético Mineiro - MG ",
+            "harvest_rounds": 0,
+            "harvest_window_seconds": 0.624,
+            "main_status": 200,
+            "harvested_stream_count": 1,
+            "harvested_blv_ids": [
+              "414317"
+            ],
+            "scan_mode": "browser-event",
+            "elapsed_seconds": 13.777
+          },
+          "http_probe": {
+            "enabled": false,
+            "status": null,
+            "elapsed_seconds": 0.0,
+            "error": ""
+          },
+          "errors": [
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED"
+          ],
+          "failed_requests": [
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/main.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/customize.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/auth.css?ver=495 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat.css?ver=118 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat(1).css?ver=903 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/toast.css?ver=300 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/themes/flatsome/assets/css/flatsome.css?ver=3.18.2 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/themes/flatsome-child/style.css?ver=3.0 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/countdown.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/match.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/livescore.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/style_custom.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/effect/running-border.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/option/option-6.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/highlight/option-1.css?ver=2.8.5 | net::ERR_FAILED"
+          ],
+          "http_errors": [
+            "403 https://socolivep.cv/wp-admin/admin-ajax.php?action=scl_realtime&sport=1"
+          ]
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/toluca-vs-pumas-u-n-a-m-22-07-2026-1005?blv=387694",
+          "blv": "CR Bưởi",
+          "blv_id": "387694",
+          "streams": [
+            "https://pull.niur.live/live/stream-387694_lhd.m3u8?txSecret=f687d3519769ad4b3dcb304c1efcd3a5&txTime=6a5fbccb"
+          ],
+          "stream_sources": {
+            "https://pull.niur.live/live/stream-387694_lhd.m3u8?txSecret=f687d3519769ad4b3dcb304c1efcd3a5&txTime=6a5fbccb": [
+              "final-no-stream-scan",
+              "harvest-final"
+            ]
+          },
+          "stream_first_seen": [
+            "https://pull.niur.live/live/stream-387694_lhd.m3u8?txSecret=f687d3519769ad4b3dcb304c1efcd3a5&txTime=6a5fbccb"
+          ],
+          "discovered_blv_ids": [
+            "387694"
+          ],
+          "diagnostics": {
+            "url": "https://socolivep.cv/truc-tiep/toluca-vs-pumas-u-n-a-m-22-07-2026-1005/?blv=387694",
+            "title": "Xem trực tiếp bóng đá Toluca vs Pumas U.N.A.M. | 10:05 ngày 22/07/2026",
+            "h1": "Trực tiếp bóng đá Socolive Toluca vs Pumas U.N.A.M. lúc 10:05 ngày 22/07/2026",
+            "ready_state": "complete",
+            "visibility_state": "visible",
+            "hidden": false,
+            "video_count": 0,
+            "iframe_count": 0,
+            "body_sample": "Skip to content Socolive Bảng xếp hạng Lịch thi đấu Kết quả bóng đá Tin thể thao Trực tiếp bóng đá Socolive Toluca vs Pumas U.N.A.M. lúc 10:05 ngày 22/07/2026 MEX D1 Toluca 10:05 22/07 Pumas U.N.A.M. Trận đấu sẽ bắt đầu sau Ngày0 : Giờ3 : Phút2 : Giây27 Trận đấu chưa bắt đầu TOMMY CR Bưởi ZIDANE COZY Củ Cải TẠ BIÊN GIỚI Chat Thống kê Đội hình Diễn Biến Bảng XH \" \" Xóa Tin nhắn riêng 😀 😁 😃 😄 😅 😆 😇 😉 😊 🙂 😋 😍 😘 😗 😙 😚 😜 😝 😛 😎 🙄 😳 😡 😕 😫 😤 😨 😥 😪 😓 😵 😲 🤧 😷 🤒 🤕 😴 💤 👏 🤙 👍 👎 👊 ✊ ✌ 👌 ✋ 🤚 💪 🤝 👈 👉 🖕 🖐 👄 👂 👀 🎅 🌞 🌙 ⭐ ⚡ 🔥 ❄️ ⚽ 🏀 🏈 ⚾ 🎁 🎉 ✒️ 📝 ❤️ 💛 💚 🆚 💬 🕐 Vô hiệu hóa tất cả Vô hiệu hóa quà tặng Tắt lời chào Đăng nhập để cùng chat nhé Gửi Tỷ lệ kèo Cược Châu Á Chủ Chấp Khách Cược Châu Âu Chủ Hòa Khách Tài xỉu Tài Tỷ lệ kèo Xỉu Kèo góc Tài Tỷ lệ kèo Xỉu Mô phỏng trận đấu Thống kê trận đấu COL Cup 07:00 22/07 Deportivo Pasto VS null null null - null Sắp diễn ra Xem ngay Bogota FC YONE KÉP COL Cup 07:00 22/07 Deportiva Once Caldas VS null null null - null Sắp diễn ra Xem ngay Envigado FC LOGAN COL Cup 06:00 22/07 Deportes Tolima VS null null null - null Sắp diễn ra Xem ngay Deportes Quindio VOI BRA D1 05:30 22/07 Atlético Mineiro - MG ",
+            "harvest_rounds": 0,
+            "harvest_window_seconds": 0.628,
+            "main_status": 200,
+            "harvested_stream_count": 1,
+            "harvested_blv_ids": [
+              "387694"
+            ],
+            "scan_mode": "browser-event",
+            "elapsed_seconds": 13.769
+          },
+          "http_probe": {
+            "enabled": false,
+            "status": null,
+            "elapsed_seconds": 0.0,
+            "error": ""
+          },
+          "errors": [
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED"
+          ],
+          "failed_requests": [
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/main.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/customize.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/auth.css?ver=136 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat.css?ver=114 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat(1).css?ver=678 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/toast.css?ver=774 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/themes/flatsome/assets/css/flatsome.css?ver=3.18.2 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/themes/flatsome-child/style.css?ver=3.0 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/countdown.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/match.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/livescore.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/style_custom.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/effect/running-border.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/option/option-6.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/highlight/option-1.css?ver=2.8.5 | net::ERR_FAILED"
+          ],
+          "http_errors": [
+            "403 https://socolivep.cv/wp-admin/admin-ajax.php?action=scl_realtime&sport=1"
+          ]
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/toluca-vs-pumas-u-n-a-m-22-07-2026-1005?blv=168740",
+          "blv": "ZIDANE",
+          "blv_id": "168740",
+          "streams": [
+            "https://pull.niues.live/live/stream-9912060_lhd.m3u8?auth_key=1784656818-0-0-2f367c9a6c8f0960f5ca810bd3a63345"
+          ],
+          "stream_sources": {
+            "https://pull.niues.live/live/stream-9912060_lhd.m3u8?auth_key=1784656818-0-0-2f367c9a6c8f0960f5ca810bd3a63345": [
+              "final-no-stream-scan",
+              "harvest-final"
+            ]
+          },
+          "stream_first_seen": [
+            "https://pull.niues.live/live/stream-9912060_lhd.m3u8?auth_key=1784656818-0-0-2f367c9a6c8f0960f5ca810bd3a63345"
+          ],
+          "discovered_blv_ids": [
+            "9912060"
+          ],
+          "diagnostics": {
+            "url": "https://socolivep.cv/truc-tiep/toluca-vs-pumas-u-n-a-m-22-07-2026-1005/?blv=168740",
+            "title": "Xem trực tiếp bóng đá Toluca vs Pumas U.N.A.M. | 10:05 ngày 22/07/2026",
+            "h1": "Trực tiếp bóng đá Socolive Toluca vs Pumas U.N.A.M. lúc 10:05 ngày 22/07/2026",
+            "ready_state": "complete",
+            "visibility_state": "visible",
+            "hidden": false,
+            "video_count": 0,
+            "iframe_count": 0,
+            "body_sample": "Skip to content Socolive Bảng xếp hạng Lịch thi đấu Kết quả bóng đá Tin thể thao Trực tiếp bóng đá Socolive Toluca vs Pumas U.N.A.M. lúc 10:05 ngày 22/07/2026 MEX D1 Toluca 10:05 22/07 Pumas U.N.A.M. Trận đấu sẽ bắt đầu sau Ngày0 : Giờ3 : Phút2 : Giây11 Trận đấu chưa bắt đầu TOMMY CR Bưởi ZIDANE COZY Củ Cải TẠ BIÊN GIỚI Chat Thống kê Đội hình Diễn Biến Bảng XH \" \" Xóa Tin nhắn riêng 😀 😁 😃 😄 😅 😆 😇 😉 😊 🙂 😋 😍 😘 😗 😙 😚 😜 😝 😛 😎 🙄 😳 😡 😕 😫 😤 😨 😥 😪 😓 😵 😲 🤧 😷 🤒 🤕 😴 💤 👏 🤙 👍 👎 👊 ✊ ✌ 👌 ✋ 🤚 💪 🤝 👈 👉 🖕 🖐 👄 👂 👀 🎅 🌞 🌙 ⭐ ⚡ 🔥 ❄️ ⚽ 🏀 🏈 ⚾ 🎁 🎉 ✒️ 📝 ❤️ 💛 💚 🆚 💬 🕐 Vô hiệu hóa tất cả Vô hiệu hóa quà tặng Tắt lời chào Đăng nhập để cùng chat nhé Gửi Tỷ lệ kèo Cược Châu Á Chủ Chấp Khách Cược Châu Âu Chủ Hòa Khách Tài xỉu Tài Tỷ lệ kèo Xỉu Kèo góc Tài Tỷ lệ kèo Xỉu Mô phỏng trận đấu Thống kê trận đấu COL Cup 07:00 22/07 Deportivo Pasto VS null null null - null Sắp diễn ra Xem ngay Bogota FC YONE KÉP COL Cup 07:00 22/07 Deportiva Once Caldas VS null null null - null Sắp diễn ra Xem ngay Envigado FC LOGAN COL Cup 06:00 22/07 Deportes Tolima VS null null null - null Sắp diễn ra Xem ngay Deportes Quindio VOI BRA D1 05:30 22/07 Atlético Mineiro - MG ",
+            "harvest_rounds": 0,
+            "harvest_window_seconds": 0.623,
+            "main_status": 200,
+            "harvested_stream_count": 1,
+            "harvested_blv_ids": [
+              "9912060"
+            ],
+            "scan_mode": "browser-event",
+            "elapsed_seconds": 13.76
+          },
+          "http_probe": {
+            "enabled": false,
+            "status": null,
+            "elapsed_seconds": 0.0,
+            "error": ""
+          },
+          "errors": [
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED"
+          ],
+          "failed_requests": [
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/main.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/customize.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/auth.css?ver=155 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat.css?ver=943 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat(1).css?ver=265 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/toast.css?ver=795 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/themes/flatsome/assets/css/flatsome.css?ver=3.18.2 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/themes/flatsome-child/style.css?ver=3.0 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/countdown.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/match.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/livescore.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/style_custom.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/effect/running-border.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/option/option-6.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/highlight/option-1.css?ver=2.8.5 | net::ERR_FAILED"
+          ],
+          "http_errors": [
+            "403 https://socolivep.cv/wp-admin/admin-ajax.php?action=scl_realtime&sport=1"
+          ]
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/toluca-vs-pumas-u-n-a-m-22-07-2026-1005?blv=531989",
+          "blv": "COZY",
+          "blv_id": "531989",
+          "streams": [
+            "https://pull.niues.live/live/stream-531989_lhd.m3u8?auth_key=1784678755-0-0-9752d76dfe03c2f0452416998c5835fe"
+          ],
+          "stream_sources": {
+            "https://pull.niues.live/live/stream-531989_lhd.m3u8?auth_key=1784678755-0-0-9752d76dfe03c2f0452416998c5835fe": [
+              "final-no-stream-scan",
+              "harvest-final"
+            ]
+          },
+          "stream_first_seen": [
+            "https://pull.niues.live/live/stream-531989_lhd.m3u8?auth_key=1784678755-0-0-9752d76dfe03c2f0452416998c5835fe"
+          ],
+          "discovered_blv_ids": [
+            "531989"
+          ],
+          "diagnostics": {
+            "url": "https://socolivep.cv/truc-tiep/toluca-vs-pumas-u-n-a-m-22-07-2026-1005/?blv=531989",
+            "title": "Xem trực tiếp bóng đá Toluca vs Pumas U.N.A.M. | 10:05 ngày 22/07/2026",
+            "h1": "Trực tiếp bóng đá Socolive Toluca vs Pumas U.N.A.M. lúc 10:05 ngày 22/07/2026",
+            "ready_state": "complete",
+            "visibility_state": "visible",
+            "hidden": false,
+            "video_count": 0,
+            "iframe_count": 0,
+            "body_sample": "Skip to content Socolive Bảng xếp hạng Lịch thi đấu Kết quả bóng đá Tin thể thao Trực tiếp bóng đá Socolive Toluca vs Pumas U.N.A.M. lúc 10:05 ngày 22/07/2026 MEX D1 Toluca 10:05 22/07 Pumas U.N.A.M. Trận đấu sẽ bắt đầu sau Ngày0 : Giờ3 : Phút1 : Giây55 Trận đấu chưa bắt đầu TOMMY CR Bưởi ZIDANE COZY Củ Cải TẠ BIÊN GIỚI Chat Thống kê Đội hình Diễn Biến Bảng XH \" \" 5andwin8x: 5andwin8x vào phòng trò chuyện Xóa Tin nhắn riêng 😀 😁 😃 😄 😅 😆 😇 😉 😊 🙂 😋 😍 😘 😗 😙 😚 😜 😝 😛 😎 🙄 😳 😡 😕 😫 😤 😨 😥 😪 😓 😵 😲 🤧 😷 🤒 🤕 😴 💤 👏 🤙 👍 👎 👊 ✊ ✌ 👌 ✋ 🤚 💪 🤝 👈 👉 🖕 🖐 👄 👂 👀 🎅 🌞 🌙 ⭐ ⚡ 🔥 ❄️ ⚽ 🏀 🏈 ⚾ 🎁 🎉 ✒️ 📝 ❤️ 💛 💚 🆚 💬 🕐 Vô hiệu hóa tất cả Vô hiệu hóa quà tặng Tắt lời chào Đăng nhập để cùng chat nhé Gửi Tỷ lệ kèo Cược Châu Á Chủ Chấp Khách Cược Châu Âu Chủ Hòa Khách Tài xỉu Tài Tỷ lệ kèo Xỉu Kèo góc Tài Tỷ lệ kèo Xỉu Mô phỏng trận đấu Thống kê trận đấu COL Cup 07:00 22/07 Deportivo Pasto VS null null null - null Sắp diễn ra Xem ngay Bogota FC YONE KÉP COL Cup 07:00 22/07 Deportiva Once Caldas VS null null null - null Sắp diễn ra Xem ngay Envigado FC LOGAN COL Cup 06:00 22/07 Deportes Tolima VS null null null - null Sắp diễn ra Xem ngay Deportes Quindio VOI",
+            "harvest_rounds": 0,
+            "harvest_window_seconds": 0.624,
+            "main_status": 200,
+            "harvested_stream_count": 1,
+            "harvested_blv_ids": [
+              "531989"
+            ],
+            "scan_mode": "browser-event",
+            "elapsed_seconds": 13.804
+          },
+          "http_probe": {
+            "enabled": false,
+            "status": null,
+            "elapsed_seconds": 0.0,
+            "error": ""
+          },
+          "errors": [
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED"
+          ],
+          "failed_requests": [
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/main.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/customize.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/auth.css?ver=785 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat.css?ver=861 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat(1).css?ver=97 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/toast.css?ver=598 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/themes/flatsome/assets/css/flatsome.css?ver=3.18.2 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/themes/flatsome-child/style.css?ver=3.0 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/countdown.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/match.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/livescore.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/style_custom.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/effect/running-border.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/option/option-6.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/highlight/option-1.css?ver=2.8.5 | net::ERR_FAILED"
+          ],
+          "http_errors": [
+            "403 https://socolivep.cv/wp-admin/admin-ajax.php?action=scl_realtime&sport=1"
+          ]
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/toluca-vs-pumas-u-n-a-m-22-07-2026-1005?blv=360663",
+          "blv": "Củ Cải",
+          "blv_id": "360663",
+          "streams": [
+            "https://pull.niues.live/live/stream-9912091_lhd.m3u8?auth_key=1784633396-0-0-6e9df0384a60e7107c82f14a7fbad72b"
+          ],
+          "stream_sources": {
+            "https://pull.niues.live/live/stream-9912091_lhd.m3u8?auth_key=1784633396-0-0-6e9df0384a60e7107c82f14a7fbad72b": [
+              "final-no-stream-scan",
+              "harvest-final"
+            ]
+          },
+          "stream_first_seen": [
+            "https://pull.niues.live/live/stream-9912091_lhd.m3u8?auth_key=1784633396-0-0-6e9df0384a60e7107c82f14a7fbad72b"
+          ],
+          "discovered_blv_ids": [
+            "9912091"
+          ],
+          "diagnostics": {
+            "url": "https://socolivep.cv/truc-tiep/toluca-vs-pumas-u-n-a-m-22-07-2026-1005/?blv=360663",
+            "title": "Xem trực tiếp bóng đá Toluca vs Pumas U.N.A.M. | 10:05 ngày 22/07/2026",
+            "h1": "Trực tiếp bóng đá Socolive Toluca vs Pumas U.N.A.M. lúc 10:05 ngày 22/07/2026",
+            "ready_state": "complete",
+            "visibility_state": "visible",
+            "hidden": false,
+            "video_count": 0,
+            "iframe_count": 0,
+            "body_sample": "Skip to content Socolive Bảng xếp hạng Lịch thi đấu Kết quả bóng đá Tin thể thao Trực tiếp bóng đá Socolive Toluca vs Pumas U.N.A.M. lúc 10:05 ngày 22/07/2026 MEX D1 Toluca 10:05 22/07 Pumas U.N.A.M. Trận đấu sẽ bắt đầu sau Ngày0 : Giờ3 : Phút1 : Giây39 Trận đấu chưa bắt đầu TOMMY CR Bưởi ZIDANE COZY Củ Cải TẠ BIÊN GIỚI Chat Thống kê Đội hình Diễn Biến Bảng XH \" \" Xóa Tin nhắn riêng 😀 😁 😃 😄 😅 😆 😇 😉 😊 🙂 😋 😍 😘 😗 😙 😚 😜 😝 😛 😎 🙄 😳 😡 😕 😫 😤 😨 😥 😪 😓 😵 😲 🤧 😷 🤒 🤕 😴 💤 👏 🤙 👍 👎 👊 ✊ ✌ 👌 ✋ 🤚 💪 🤝 👈 👉 🖕 🖐 👄 👂 👀 🎅 🌞 🌙 ⭐ ⚡ 🔥 ❄️ ⚽ 🏀 🏈 ⚾ 🎁 🎉 ✒️ 📝 ❤️ 💛 💚 🆚 💬 🕐 Vô hiệu hóa tất cả Vô hiệu hóa quà tặng Tắt lời chào Đăng nhập để cùng chat nhé Gửi Tỷ lệ kèo Cược Châu Á Chủ Chấp Khách Cược Châu Âu Chủ Hòa Khách Tài xỉu Tài Tỷ lệ kèo Xỉu Kèo góc Tài Tỷ lệ kèo Xỉu Mô phỏng trận đấu Thống kê trận đấu COL Cup 07:00 22/07 Deportivo Pasto VS null null null - null Sắp diễn ra Xem ngay Bogota FC YONE KÉP COL Cup 07:00 22/07 Deportiva Once Caldas VS null null null - null Sắp diễn ra Xem ngay Envigado FC LOGAN COL Cup 06:00 22/07 Deportes Tolima VS null null null - null Sắp diễn ra Xem ngay Deportes Quindio VOI BRA D1 05:30 22/07 Atlético Mineiro - MG ",
+            "harvest_rounds": 0,
+            "harvest_window_seconds": 0.624,
+            "main_status": 200,
+            "harvested_stream_count": 1,
+            "harvested_blv_ids": [
+              "9912091"
+            ],
+            "scan_mode": "browser-event",
+            "elapsed_seconds": 13.815
+          },
+          "http_probe": {
+            "enabled": false,
+            "status": null,
+            "elapsed_seconds": 0.0,
+            "error": ""
+          },
+          "errors": [
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED"
+          ],
+          "failed_requests": [
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/main.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/customize.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/auth.css?ver=137 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat.css?ver=381 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat(1).css?ver=691 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/toast.css?ver=263 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/themes/flatsome/assets/css/flatsome.css?ver=3.18.2 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/themes/flatsome-child/style.css?ver=3.0 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/countdown.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/match.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/livescore.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/style_custom.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/effect/running-border.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/option/option-6.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/highlight/option-1.css?ver=2.8.5 | net::ERR_FAILED"
+          ],
+          "http_errors": [
+            "403 https://socolivep.cv/wp-admin/admin-ajax.php?action=scl_realtime&sport=1"
+          ]
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/toluca-vs-pumas-u-n-a-m-22-07-2026-1005?blv=118206",
+          "blv": "TẠ BIÊN GIỚI",
+          "blv_id": "118206",
+          "streams": [
+            "https://pull.niues.live/live/stream-9912108_lhd.m3u8?auth_key=1784645743-0-0-b7c1327533a12bacf4cb6a1346c54ace"
+          ],
+          "stream_sources": {
+            "https://pull.niues.live/live/stream-9912108_lhd.m3u8?auth_key=1784645743-0-0-b7c1327533a12bacf4cb6a1346c54ace": [
+              "final-no-stream-scan",
+              "harvest-final"
+            ]
+          },
+          "stream_first_seen": [
+            "https://pull.niues.live/live/stream-9912108_lhd.m3u8?auth_key=1784645743-0-0-b7c1327533a12bacf4cb6a1346c54ace"
+          ],
+          "discovered_blv_ids": [
+            "9912108"
+          ],
+          "diagnostics": {
+            "url": "https://socolivep.cv/truc-tiep/toluca-vs-pumas-u-n-a-m-22-07-2026-1005/?blv=118206",
+            "title": "Xem trực tiếp bóng đá Toluca vs Pumas U.N.A.M. | 10:05 ngày 22/07/2026",
+            "h1": "Trực tiếp bóng đá Socolive Toluca vs Pumas U.N.A.M. lúc 10:05 ngày 22/07/2026",
+            "ready_state": "complete",
+            "visibility_state": "visible",
+            "hidden": false,
+            "video_count": 0,
+            "iframe_count": 0,
+            "body_sample": "Skip to content Socolive Bảng xếp hạng Lịch thi đấu Kết quả bóng đá Tin thể thao Trực tiếp bóng đá Socolive Toluca vs Pumas U.N.A.M. lúc 10:05 ngày 22/07/2026 MEX D1 Toluca 10:05 22/07 Pumas U.N.A.M. Trận đấu sẽ bắt đầu sau Ngày0 : Giờ3 : Phút1 : Giây24 Trận đấu chưa bắt đầu TOMMY CR Bưởi ZIDANE COZY Củ Cải TẠ BIÊN GIỚI Chat Thống kê Đội hình Diễn Biến Bảng XH \" \" Xóa Tin nhắn riêng 😀 😁 😃 😄 😅 😆 😇 😉 😊 🙂 😋 😍 😘 😗 😙 😚 😜 😝 😛 😎 🙄 😳 😡 😕 😫 😤 😨 😥 😪 😓 😵 😲 🤧 😷 🤒 🤕 😴 💤 👏 🤙 👍 👎 👊 ✊ ✌ 👌 ✋ 🤚 💪 🤝 👈 👉 🖕 🖐 👄 👂 👀 🎅 🌞 🌙 ⭐ ⚡ 🔥 ❄️ ⚽ 🏀 🏈 ⚾ 🎁 🎉 ✒️ 📝 ❤️ 💛 💚 🆚 💬 🕐 Vô hiệu hóa tất cả Vô hiệu hóa quà tặng Tắt lời chào Đăng nhập để cùng chat nhé Gửi Tỷ lệ kèo Cược Châu Á Chủ Chấp Khách Cược Châu Âu Chủ Hòa Khách Tài xỉu Tài Tỷ lệ kèo Xỉu Kèo góc Tài Tỷ lệ kèo Xỉu Mô phỏng trận đấu Thống kê trận đấu COL Cup 07:00 22/07 Deportivo Pasto VS null null null - null Sắp diễn ra Xem ngay Bogota FC YONE KÉP COL Cup 07:00 22/07 Deportiva Once Caldas VS null null null - null Sắp diễn ra Xem ngay Envigado FC LOGAN COL Cup 06:00 22/07 Deportes Tolima VS null null null - null Sắp diễn ra Xem ngay Deportes Quindio VOI BRA D1 05:30 22/07 Atlético Mineiro - MG ",
+            "harvest_rounds": 0,
+            "harvest_window_seconds": 0.624,
+            "main_status": 200,
+            "harvested_stream_count": 1,
+            "harvested_blv_ids": [
+              "9912108"
+            ],
+            "scan_mode": "browser-event",
+            "elapsed_seconds": 13.714
+          },
+          "http_probe": {
+            "enabled": false,
+            "status": null,
+            "elapsed_seconds": 0.0,
+            "error": ""
+          },
+          "errors": [
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED"
+          ],
+          "failed_requests": [
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/main.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/customize.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/auth.css?ver=903 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat.css?ver=464 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat(1).css?ver=929 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/toast.css?ver=399 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/themes/flatsome/assets/css/flatsome.css?ver=3.18.2 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/themes/flatsome-child/style.css?ver=3.0 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/countdown.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/match.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/livescore.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/style_custom.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/effect/running-border.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/option/option-6.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/highlight/option-1.css?ver=2.8.5 | net::ERR_FAILED"
+          ],
+          "http_errors": [
+            "403 https://socolivep.cv/wp-admin/admin-ajax.php?action=scl_realtime&sport=1"
+          ]
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/toluca-vs-pumas-u-n-a-m-22-07-2026-1005?blv=414317",
+          "blv": "TOMMY",
+          "blv_id": "414317",
+          "streams": [
+            "https://pull.niues.live/live/stream-414317_lhd.m3u8?auth_key=1784641328-0-0-08b02a513360019191860f23185e905d"
+          ],
+          "stream_sources": {
+            "https://pull.niues.live/live/stream-414317_lhd.m3u8?auth_key=1784641328-0-0-08b02a513360019191860f23185e905d": [
+              "final-no-stream-scan",
+              "harvest-final"
+            ]
+          },
+          "stream_first_seen": [
+            "https://pull.niues.live/live/stream-414317_lhd.m3u8?auth_key=1784641328-0-0-08b02a513360019191860f23185e905d"
+          ],
+          "discovered_blv_ids": [
+            "414317"
+          ],
+          "diagnostics": {
+            "url": "https://socolivep.cv/truc-tiep/toluca-vs-pumas-u-n-a-m-22-07-2026-1005/?blv=414317",
+            "title": "Xem trực tiếp bóng đá Toluca vs Pumas U.N.A.M. | 10:05 ngày 22/07/2026",
+            "h1": "Trực tiếp bóng đá Socolive Toluca vs Pumas U.N.A.M. lúc 10:05 ngày 22/07/2026",
+            "ready_state": "complete",
+            "visibility_state": "visible",
+            "hidden": false,
+            "video_count": 0,
+            "iframe_count": 0,
+            "body_sample": "Skip to content Socolive Bảng xếp hạng Lịch thi đấu Kết quả bóng đá Tin thể thao Trực tiếp bóng đá Socolive Toluca vs Pumas U.N.A.M. lúc 10:05 ngày 22/07/2026 MEX D1 Toluca 10:05 22/07 Pumas U.N.A.M. Trận đấu sẽ bắt đầu sau Ngày0 : Giờ3 : Phút0 : Giây22 Trận đấu chưa bắt đầu TOMMY CR Bưởi ZIDANE COZY Củ Cải TẠ BIÊN GIỚI Chat Thống kê Đội hình Diễn Biến Bảng XH \" \" Xóa Tin nhắn riêng 😀 😁 😃 😄 😅 😆 😇 😉 😊 🙂 😋 😍 😘 😗 😙 😚 😜 😝 😛 😎 🙄 😳 😡 😕 😫 😤 😨 😥 😪 😓 😵 😲 🤧 😷 🤒 🤕 😴 💤 👏 🤙 👍 👎 👊 ✊ ✌ 👌 ✋ 🤚 💪 🤝 👈 👉 🖕 🖐 👄 👂 👀 🎅 🌞 🌙 ⭐ ⚡ 🔥 ❄️ ⚽ 🏀 🏈 ⚾ 🎁 🎉 ✒️ 📝 ❤️ 💛 💚 🆚 💬 🕐 Vô hiệu hóa tất cả Vô hiệu hóa quà tặng Tắt lời chào Đăng nhập để cùng chat nhé Gửi Tỷ lệ kèo Cược Châu Á Chủ Chấp Khách Cược Châu Âu Chủ Hòa Khách Tài xỉu Tài Tỷ lệ kèo Xỉu Kèo góc Tài Tỷ lệ kèo Xỉu Mô phỏng trận đấu Thống kê trận đấu COL Cup 07:00 22/07 Deportivo Pasto VS null null null - null Sắp diễn ra Xem ngay Bogota FC YONE KÉP COL Cup 07:00 22/07 Deportiva Once Caldas VS null null null - null Sắp diễn ra Xem ngay Envigado FC LOGAN COL Cup 06:00 22/07 Deportes Tolima VS null null null - null Sắp diễn ra Xem ngay Deportes Quindio VOI BRA D1 05:30 22/07 Atlético Mineiro - MG ",
+            "harvest_rounds": 0,
+            "harvest_window_seconds": 0.634,
+            "main_status": 200,
+            "harvested_stream_count": 1,
+            "harvested_blv_ids": [
+              "414317"
+            ],
+            "scan_mode": "browser-event",
+            "elapsed_seconds": 14.128
+          },
+          "http_probe": {
+            "enabled": false,
+            "status": null,
+            "elapsed_seconds": 0.0,
+            "error": ""
+          },
+          "errors": [
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED"
+          ],
+          "failed_requests": [
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/main.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/customize.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/auth.css?ver=495 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat.css?ver=118 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat(1).css?ver=903 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/toast.css?ver=300 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/themes/flatsome/assets/css/flatsome.css?ver=3.18.2 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/themes/flatsome-child/style.css?ver=3.0 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/countdown.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/match.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/livescore.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/style_custom.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/effect/running-border.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/option/option-6.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/highlight/option-1.css?ver=2.8.5 | net::ERR_FAILED"
+          ],
+          "http_errors": [
+            "403 https://socolivep.cv/wp-admin/admin-ajax.php?action=scl_realtime&sport=1"
+          ]
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/toluca-vs-pumas-u-n-a-m-22-07-2026-1005?blv=387694",
+          "blv": "CR Bưởi",
+          "blv_id": "387694",
+          "streams": [
+            "https://pull.niur.live/live/stream-387694_lhd.m3u8?txSecret=f687d3519769ad4b3dcb304c1efcd3a5&txTime=6a5fbccb"
+          ],
+          "stream_sources": {
+            "https://pull.niur.live/live/stream-387694_lhd.m3u8?txSecret=f687d3519769ad4b3dcb304c1efcd3a5&txTime=6a5fbccb": [
+              "final-no-stream-scan",
+              "harvest-final"
+            ]
+          },
+          "stream_first_seen": [
+            "https://pull.niur.live/live/stream-387694_lhd.m3u8?txSecret=f687d3519769ad4b3dcb304c1efcd3a5&txTime=6a5fbccb"
+          ],
+          "discovered_blv_ids": [
+            "387694"
+          ],
+          "diagnostics": {
+            "url": "https://socolivep.cv/truc-tiep/toluca-vs-pumas-u-n-a-m-22-07-2026-1005/?blv=387694",
+            "title": "Xem trực tiếp bóng đá Toluca vs Pumas U.N.A.M. | 10:05 ngày 22/07/2026",
+            "h1": "Trực tiếp bóng đá Socolive Toluca vs Pumas U.N.A.M. lúc 10:05 ngày 22/07/2026",
+            "ready_state": "complete",
+            "visibility_state": "visible",
+            "hidden": false,
+            "video_count": 0,
+            "iframe_count": 0,
+            "body_sample": "Skip to content Socolive Bảng xếp hạng Lịch thi đấu Kết quả bóng đá Tin thể thao Trực tiếp bóng đá Socolive Toluca vs Pumas U.N.A.M. lúc 10:05 ngày 22/07/2026 MEX D1 Toluca 10:05 22/07 Pumas U.N.A.M. Trận đấu sẽ bắt đầu sau Ngày0 : Giờ3 : Phút0 : Giây6 Trận đấu chưa bắt đầu TOMMY CR Bưởi ZIDANE COZY Củ Cải TẠ BIÊN GIỚI Chat Thống kê Đội hình Diễn Biến Bảng XH \" \" Xóa Tin nhắn riêng 😀 😁 😃 😄 😅 😆 😇 😉 😊 🙂 😋 😍 😘 😗 😙 😚 😜 😝 😛 😎 🙄 😳 😡 😕 😫 😤 😨 😥 😪 😓 😵 😲 🤧 😷 🤒 🤕 😴 💤 👏 🤙 👍 👎 👊 ✊ ✌ 👌 ✋ 🤚 💪 🤝 👈 👉 🖕 🖐 👄 👂 👀 🎅 🌞 🌙 ⭐ ⚡ 🔥 ❄️ ⚽ 🏀 🏈 ⚾ 🎁 🎉 ✒️ 📝 ❤️ 💛 💚 🆚 💬 🕐 Vô hiệu hóa tất cả Vô hiệu hóa quà tặng Tắt lời chào Đăng nhập để cùng chat nhé Gửi Tỷ lệ kèo Cược Châu Á Chủ Chấp Khách Cược Châu Âu Chủ Hòa Khách Tài xỉu Tài Tỷ lệ kèo Xỉu Kèo góc Tài Tỷ lệ kèo Xỉu Mô phỏng trận đấu Thống kê trận đấu COL Cup 07:00 22/07 Deportivo Pasto VS null null null - null Sắp diễn ra Xem ngay Bogota FC YONE KÉP COL Cup 07:00 22/07 Deportiva Once Caldas VS null null null - null Sắp diễn ra Xem ngay Envigado FC LOGAN COL Cup 06:00 22/07 Deportes Tolima VS null null null - null Sắp diễn ra Xem ngay Deportes Quindio VOI BRA D1 05:30 22/07 Atlético Mineiro - MG V",
+            "harvest_rounds": 0,
+            "harvest_window_seconds": 0.631,
+            "main_status": 200,
+            "harvested_stream_count": 1,
+            "harvested_blv_ids": [
+              "387694"
+            ],
+            "scan_mode": "browser-event",
+            "elapsed_seconds": 13.984
+          },
+          "http_probe": {
+            "enabled": false,
+            "status": null,
+            "elapsed_seconds": 0.0,
+            "error": ""
+          },
+          "errors": [
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED"
+          ],
+          "failed_requests": [
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/main.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/customize.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/auth.css?ver=136 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat.css?ver=114 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat(1).css?ver=678 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/toast.css?ver=774 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/themes/flatsome/assets/css/flatsome.css?ver=3.18.2 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/themes/flatsome-child/style.css?ver=3.0 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/countdown.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/match.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/livescore.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/style_custom.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/effect/running-border.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/option/option-6.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/highlight/option-1.css?ver=2.8.5 | net::ERR_FAILED"
+          ],
+          "http_errors": [
+            "403 https://socolivep.cv/wp-admin/admin-ajax.php?action=scl_realtime&sport=1"
+          ]
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/toluca-vs-pumas-u-n-a-m-22-07-2026-1005?blv=168740",
+          "blv": "ZIDANE",
+          "blv_id": "168740",
+          "streams": [
+            "https://pull.niues.live/live/stream-9912060_lhd.m3u8?auth_key=1784656818-0-0-2f367c9a6c8f0960f5ca810bd3a63345"
+          ],
+          "stream_sources": {
+            "https://pull.niues.live/live/stream-9912060_lhd.m3u8?auth_key=1784656818-0-0-2f367c9a6c8f0960f5ca810bd3a63345": [
+              "final-no-stream-scan",
+              "harvest-final"
+            ]
+          },
+          "stream_first_seen": [
+            "https://pull.niues.live/live/stream-9912060_lhd.m3u8?auth_key=1784656818-0-0-2f367c9a6c8f0960f5ca810bd3a63345"
+          ],
+          "discovered_blv_ids": [
+            "9912060"
+          ],
+          "diagnostics": {
+            "url": "https://socolivep.cv/truc-tiep/toluca-vs-pumas-u-n-a-m-22-07-2026-1005/?blv=168740",
+            "title": "Xem trực tiếp bóng đá Toluca vs Pumas U.N.A.M. | 10:05 ngày 22/07/2026",
+            "h1": "Trực tiếp bóng đá Socolive Toluca vs Pumas U.N.A.M. lúc 10:05 ngày 22/07/2026",
+            "ready_state": "complete",
+            "visibility_state": "visible",
+            "hidden": false,
+            "video_count": 0,
+            "iframe_count": 0,
+            "body_sample": "Skip to content Socolive Bảng xếp hạng Lịch thi đấu Kết quả bóng đá Tin thể thao Trực tiếp bóng đá Socolive Toluca vs Pumas U.N.A.M. lúc 10:05 ngày 22/07/2026 MEX D1 Toluca 10:05 22/07 Pumas U.N.A.M. Trận đấu sẽ bắt đầu sau Ngày0 : Giờ2 : Phút59 : Giây50 Trận đấu chưa bắt đầu TOMMY CR Bưởi ZIDANE COZY Củ Cải TẠ BIÊN GIỚI Chat Thống kê Đội hình Diễn Biến Bảng XH \" \" Xóa Tin nhắn riêng 😀 😁 😃 😄 😅 😆 😇 😉 😊 🙂 😋 😍 😘 😗 😙 😚 😜 😝 😛 😎 🙄 😳 😡 😕 😫 😤 😨 😥 😪 😓 😵 😲 🤧 😷 🤒 🤕 😴 💤 👏 🤙 👍 👎 👊 ✊ ✌ 👌 ✋ 🤚 💪 🤝 👈 👉 🖕 🖐 👄 👂 👀 🎅 🌞 🌙 ⭐ ⚡ 🔥 ❄️ ⚽ 🏀 🏈 ⚾ 🎁 🎉 ✒️ 📝 ❤️ 💛 💚 🆚 💬 🕐 Vô hiệu hóa tất cả Vô hiệu hóa quà tặng Tắt lời chào Đăng nhập để cùng chat nhé Gửi Tỷ lệ kèo Cược Châu Á Chủ Chấp Khách Cược Châu Âu Chủ Hòa Khách Tài xỉu Tài Tỷ lệ kèo Xỉu Kèo góc Tài Tỷ lệ kèo Xỉu Mô phỏng trận đấu Thống kê trận đấu COL Cup 07:00 22/07 Deportivo Pasto VS null null null - null Sắp diễn ra Xem ngay Bogota FC YONE KÉP COL Cup 07:00 22/07 Deportiva Once Caldas VS null null null - null Sắp diễn ra Xem ngay Envigado FC LOGAN COL Cup 06:00 22/07 Deportes Tolima VS null null null - null Sắp diễn ra Xem ngay Deportes Quindio VOI BRA D1 05:30 22/07 Atlético Mineiro - MG",
+            "harvest_rounds": 0,
+            "harvest_window_seconds": 0.63,
+            "main_status": 200,
+            "harvested_stream_count": 1,
+            "harvested_blv_ids": [
+              "9912060"
+            ],
+            "scan_mode": "browser-event",
+            "elapsed_seconds": 14.148
+          },
+          "http_probe": {
+            "enabled": false,
+            "status": null,
+            "elapsed_seconds": 0.0,
+            "error": ""
+          },
+          "errors": [
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED"
+          ],
+          "failed_requests": [
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/main.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/customize.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/auth.css?ver=155 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat.css?ver=943 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat(1).css?ver=265 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/toast.css?ver=795 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/themes/flatsome/assets/css/flatsome.css?ver=3.18.2 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/themes/flatsome-child/style.css?ver=3.0 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/countdown.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/match.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/livescore.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/style_custom.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/effect/running-border.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/option/option-6.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/highlight/option-1.css?ver=2.8.5 | net::ERR_FAILED"
+          ],
+          "http_errors": [
+            "403 https://socolivep.cv/wp-admin/admin-ajax.php?action=scl_realtime&sport=1"
+          ]
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/toluca-vs-pumas-u-n-a-m-22-07-2026-1005?blv=360663",
+          "blv": "Củ Cải",
+          "blv_id": "360663",
+          "streams": [
+            "https://pull.niues.live/live/stream-9912091_lhd.m3u8?auth_key=1784633396-0-0-6e9df0384a60e7107c82f14a7fbad72b"
+          ],
+          "stream_sources": {
+            "https://pull.niues.live/live/stream-9912091_lhd.m3u8?auth_key=1784633396-0-0-6e9df0384a60e7107c82f14a7fbad72b": [
+              "final-no-stream-scan",
+              "harvest-final"
+            ]
+          },
+          "stream_first_seen": [
+            "https://pull.niues.live/live/stream-9912091_lhd.m3u8?auth_key=1784633396-0-0-6e9df0384a60e7107c82f14a7fbad72b"
+          ],
+          "discovered_blv_ids": [
+            "9912091"
+          ],
+          "diagnostics": {
+            "url": "https://socolivep.cv/truc-tiep/toluca-vs-pumas-u-n-a-m-22-07-2026-1005/?blv=360663",
+            "title": "Xem trực tiếp bóng đá Toluca vs Pumas U.N.A.M. | 10:05 ngày 22/07/2026",
+            "h1": "Trực tiếp bóng đá Socolive Toluca vs Pumas U.N.A.M. lúc 10:05 ngày 22/07/2026",
+            "ready_state": "complete",
+            "visibility_state": "visible",
+            "hidden": false,
+            "video_count": 0,
+            "iframe_count": 0,
+            "body_sample": "Skip to content Socolive Bảng xếp hạng Lịch thi đấu Kết quả bóng đá Tin thể thao Trực tiếp bóng đá Socolive Toluca vs Pumas U.N.A.M. lúc 10:05 ngày 22/07/2026 MEX D1 Toluca 10:05 22/07 Pumas U.N.A.M. Trận đấu sẽ bắt đầu sau Ngày0 : Giờ2 : Phút59 : Giây34 Trận đấu chưa bắt đầu TOMMY CR Bưởi ZIDANE COZY Củ Cải TẠ BIÊN GIỚI Chat Thống kê Đội hình Diễn Biến Bảng XH \" \" Xóa Tin nhắn riêng 😀 😁 😃 😄 😅 😆 😇 😉 😊 🙂 😋 😍 😘 😗 😙 😚 😜 😝 😛 😎 🙄 😳 😡 😕 😫 😤 😨 😥 😪 😓 😵 😲 🤧 😷 🤒 🤕 😴 💤 👏 🤙 👍 👎 👊 ✊ ✌ 👌 ✋ 🤚 💪 🤝 👈 👉 🖕 🖐 👄 👂 👀 🎅 🌞 🌙 ⭐ ⚡ 🔥 ❄️ ⚽ 🏀 🏈 ⚾ 🎁 🎉 ✒️ 📝 ❤️ 💛 💚 🆚 💬 🕐 Vô hiệu hóa tất cả Vô hiệu hóa quà tặng Tắt lời chào Đăng nhập để cùng chat nhé Gửi Tỷ lệ kèo Cược Châu Á Chủ Chấp Khách Cược Châu Âu Chủ Hòa Khách Tài xỉu Tài Tỷ lệ kèo Xỉu Kèo góc Tài Tỷ lệ kèo Xỉu Mô phỏng trận đấu Thống kê trận đấu COL Cup 07:00 22/07 Deportivo Pasto VS null null null - null Sắp diễn ra Xem ngay Bogota FC YONE KÉP COL Cup 07:00 22/07 Deportiva Once Caldas VS null null null - null Sắp diễn ra Xem ngay Envigado FC LOGAN COL Cup 06:00 22/07 Deportes Tolima VS null null null - null Sắp diễn ra Xem ngay Deportes Quindio VOI BRA D1 05:30 22/07 Atlético Mineiro - MG",
+            "harvest_rounds": 0,
+            "harvest_window_seconds": 0.632,
+            "main_status": 200,
+            "harvested_stream_count": 1,
+            "harvested_blv_ids": [
+              "9912091"
+            ],
+            "scan_mode": "browser-event",
+            "elapsed_seconds": 13.969
+          },
+          "http_probe": {
+            "enabled": false,
+            "status": null,
+            "elapsed_seconds": 0.0,
+            "error": ""
+          },
+          "errors": [
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED"
+          ],
+          "failed_requests": [
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/main.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/customize.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/auth.css?ver=137 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat.css?ver=381 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat(1).css?ver=691 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/toast.css?ver=263 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/themes/flatsome/assets/css/flatsome.css?ver=3.18.2 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/themes/flatsome-child/style.css?ver=3.0 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/countdown.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/match.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/livescore.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/style_custom.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/effect/running-border.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/option/option-6.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/highlight/option-1.css?ver=2.8.5 | net::ERR_FAILED"
+          ],
+          "http_errors": [
+            "403 https://socolivep.cv/wp-admin/admin-ajax.php?action=scl_realtime&sport=1"
+          ]
+        },
+        {
+          "url": "https://socolivep.cv/truc-tiep/toluca-vs-pumas-u-n-a-m-22-07-2026-1005?blv=118206",
+          "blv": "TẠ BIÊN GIỚI",
+          "blv_id": "118206",
+          "streams": [
+            "https://pull.niues.live/live/stream-9912108_lhd.m3u8?auth_key=1784645743-0-0-b7c1327533a12bacf4cb6a1346c54ace"
+          ],
+          "stream_sources": {
+            "https://pull.niues.live/live/stream-9912108_lhd.m3u8?auth_key=1784645743-0-0-b7c1327533a12bacf4cb6a1346c54ace": [
+              "final-no-stream-scan",
+              "harvest-final"
+            ]
+          },
+          "stream_first_seen": [
+            "https://pull.niues.live/live/stream-9912108_lhd.m3u8?auth_key=1784645743-0-0-b7c1327533a12bacf4cb6a1346c54ace"
+          ],
+          "discovered_blv_ids": [
+            "9912108"
+          ],
+          "diagnostics": {
+            "url": "https://socolivep.cv/truc-tiep/toluca-vs-pumas-u-n-a-m-22-07-2026-1005/?blv=118206",
+            "title": "Xem trực tiếp bóng đá Toluca vs Pumas U.N.A.M. | 10:05 ngày 22/07/2026",
+            "h1": "Trực tiếp bóng đá Socolive Toluca vs Pumas U.N.A.M. lúc 10:05 ngày 22/07/2026",
+            "ready_state": "complete",
+            "visibility_state": "visible",
+            "hidden": false,
+            "video_count": 0,
+            "iframe_count": 0,
+            "body_sample": "Skip to content Socolive Bảng xếp hạng Lịch thi đấu Kết quả bóng đá Tin thể thao Trực tiếp bóng đá Socolive Toluca vs Pumas U.N.A.M. lúc 10:05 ngày 22/07/2026 MEX D1 Toluca 10:05 22/07 Pumas U.N.A.M. Trận đấu sẽ bắt đầu sau Ngày0 : Giờ2 : Phút59 : Giây18 Trận đấu chưa bắt đầu TOMMY CR Bưởi ZIDANE COZY Củ Cải TẠ BIÊN GIỚI Chat Thống kê Đội hình Diễn Biến Bảng XH \" \" Xóa Tin nhắn riêng 😀 😁 😃 😄 😅 😆 😇 😉 😊 🙂 😋 😍 😘 😗 😙 😚 😜 😝 😛 😎 🙄 😳 😡 😕 😫 😤 😨 😥 😪 😓 😵 😲 🤧 😷 🤒 🤕 😴 💤 👏 🤙 👍 👎 👊 ✊ ✌ 👌 ✋ 🤚 💪 🤝 👈 👉 🖕 🖐 👄 👂 👀 🎅 🌞 🌙 ⭐ ⚡ 🔥 ❄️ ⚽ 🏀 🏈 ⚾ 🎁 🎉 ✒️ 📝 ❤️ 💛 💚 🆚 💬 🕐 Vô hiệu hóa tất cả Vô hiệu hóa quà tặng Tắt lời chào Đăng nhập để cùng chat nhé Gửi Tỷ lệ kèo Cược Châu Á Chủ Chấp Khách Cược Châu Âu Chủ Hòa Khách Tài xỉu Tài Tỷ lệ kèo Xỉu Kèo góc Tài Tỷ lệ kèo Xỉu Mô phỏng trận đấu Thống kê trận đấu COL Cup 07:00 22/07 Deportivo Pasto VS null null null - null Sắp diễn ra Xem ngay Bogota FC YONE KÉP COL Cup 07:00 22/07 Deportiva Once Caldas VS null null null - null Sắp diễn ra Xem ngay Envigado FC LOGAN COL Cup 06:00 22/07 Deportes Tolima VS null null null - null Sắp diễn ra Xem ngay Deportes Quindio VOI BRA D1 05:30 22/07 Atlético Mineiro - MG",
+            "harvest_rounds": 0,
+            "harvest_window_seconds": 0.631,
+            "main_status": 200,
+            "harvested_stream_count": 1,
+            "harvested_blv_ids": [
+              "9912108"
+            ],
+            "scan_mode": "browser-event",
+            "elapsed_seconds": 13.961
+          },
+          "http_probe": {
+            "enabled": false,
+            "status": null,
+            "elapsed_seconds": 0.0,
+            "error": ""
+          },
+          "errors": [
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED"
+          ],
+          "failed_requests": [
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/main.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/customize.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/auth.css?ver=903 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat.css?ver=464 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat(1).css?ver=929 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/toast.css?ver=399 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/themes/flatsome/assets/css/flatsome.css?ver=3.18.2 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/themes/flatsome-child/style.css?ver=3.0 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/countdown.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/match.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/livescore.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/style_custom.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/effect/running-border.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/option/option-6.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/highlight/option-1.css?ver=2.8.5 | net::ERR_FAILED"
+          ],
+          "http_errors": [
+            "403 https://socolivep.cv/wp-admin/admin-ajax.php?action=scl_realtime&sport=1"
+          ]
+        }
+      ],
+      "attempted_room_ids": [
+        "118206",
+        "168740",
+        "360663",
+        "387694",
+        "414317",
+        "531989"
+      ],
+      "coverage": {
+        "found_streams": 0,
+        "found_blv_ids": [],
+        "goal": 12,
+        "source_goal_reached": false,
+        "room_queue_complete": true,
+        "complete": true,
+        "max_streams_per_blv": 2,
+        "total_explicit_blv_rooms": 6,
+        "pending_room_keys": [],
+        "room_progress": {
+          "414317": {
+            "key": "414317",
+            "url": "https://socolivep.cv/truc-tiep/toluca-vs-pumas-u-n-a-m-22-07-2026-1005?blv=414317",
+            "blv": "TOMMY",
+            "blv_id": "414317",
+            "status": "exhausted",
+            "attempts": 2,
+            "attempts_total": 2,
+            "ever_attempted": true,
+            "valid_stream_ever_found": false,
+            "needs_token_refresh": true,
+            "completion_reason": "no_valid_stream_after_max_attempts",
+            "rate_limit_hits": 0,
+            "last_http_status": 200,
+            "last_stream_count": 0,
+            "last_error": "Token cũ đã hết hạn; giữ nguyên attempts_total và trạng thái hoàn tất của BLV."
+          },
+          "387694": {
+            "key": "387694",
+            "url": "https://socolivep.cv/truc-tiep/toluca-vs-pumas-u-n-a-m-22-07-2026-1005?blv=387694",
+            "blv": "CR Bưởi",
+            "blv_id": "387694",
+            "status": "exhausted",
+            "attempts": 2,
+            "attempts_total": 2,
+            "ever_attempted": true,
+            "valid_stream_ever_found": false,
+            "needs_token_refresh": true,
+            "completion_reason": "no_valid_stream_after_max_attempts",
+            "rate_limit_hits": 0,
+            "last_http_status": 200,
+            "last_stream_count": 0,
+            "last_error": "Token cũ đã hết hạn; giữ nguyên attempts_total và trạng thái hoàn tất của BLV."
+          },
+          "168740": {
+            "key": "168740",
+            "url": "https://socolivep.cv/truc-tiep/toluca-vs-pumas-u-n-a-m-22-07-2026-1005?blv=168740",
+            "blv": "ZIDANE",
+            "blv_id": "168740",
+            "status": "exhausted",
+            "attempts": 2,
+            "attempts_total": 2,
+            "ever_attempted": true,
+            "valid_stream_ever_found": false,
+            "needs_token_refresh": true,
+            "completion_reason": "no_valid_stream_after_max_attempts",
+            "rate_limit_hits": 0,
+            "last_http_status": 200,
+            "last_stream_count": 0,
+            "last_error": "Token cũ đã hết hạn; giữ nguyên attempts_total và trạng thái hoàn tất của BLV."
+          },
+          "531989": {
+            "key": "531989",
+            "url": "https://socolivep.cv/truc-tiep/toluca-vs-pumas-u-n-a-m-22-07-2026-1005?blv=531989",
+            "blv": "COZY",
+            "blv_id": "531989",
+            "status": "success",
+            "attempts": 1,
+            "attempts_total": 1,
+            "ever_attempted": true,
+            "valid_stream_ever_found": true,
+            "needs_token_refresh": true,
+            "completion_reason": "valid_stream_seen_earlier",
+            "rate_limit_hits": 0,
+            "last_http_status": 200,
+            "last_stream_count": 0,
+            "last_error": "Token cũ đã hết hạn; giữ nguyên attempts_total và trạng thái hoàn tất của BLV."
+          },
+          "360663": {
+            "key": "360663",
+            "url": "https://socolivep.cv/truc-tiep/toluca-vs-pumas-u-n-a-m-22-07-2026-1005?blv=360663",
+            "blv": "Củ Cải",
+            "blv_id": "360663",
+            "status": "exhausted",
+            "attempts": 2,
+            "attempts_total": 2,
+            "ever_attempted": true,
+            "valid_stream_ever_found": false,
+            "needs_token_refresh": true,
+            "completion_reason": "no_valid_stream_after_max_attempts",
+            "rate_limit_hits": 0,
+            "last_http_status": 200,
+            "last_stream_count": 0,
+            "last_error": "Token cũ đã hết hạn; giữ nguyên attempts_total và trạng thái hoàn tất của BLV."
+          },
+          "118206": {
+            "key": "118206",
+            "url": "https://socolivep.cv/truc-tiep/toluca-vs-pumas-u-n-a-m-22-07-2026-1005?blv=118206",
+            "blv": "TẠ BIÊN GIỚI",
+            "blv_id": "118206",
+            "status": "exhausted",
+            "attempts": 2,
+            "attempts_total": 2,
+            "ever_attempted": true,
+            "valid_stream_ever_found": false,
+            "needs_token_refresh": true,
+            "completion_reason": "no_valid_stream_after_max_attempts",
+            "rate_limit_hits": 0,
+            "last_http_status": 200,
+            "last_stream_count": 0,
+            "last_error": "Token cũ đã hết hạn; giữ nguyên attempts_total và trạng thái hoàn tất của BLV."
+          },
+          "__base__": {
+            "key": "__base__",
+            "url": "https://socolivep.cv/truc-tiep/toluca-vs-pumas-u-n-a-m-22-07-2026-1005",
+            "blv": "XEM NGAY",
+            "blv_id": "",
+            "status": "pending",
+            "attempts": 0,
+            "attempts_total": 0,
+            "ever_attempted": false,
+            "valid_stream_ever_found": false,
+            "needs_token_refresh": false,
+            "completion_reason": "",
+            "rate_limit_hits": 0,
+            "last_http_status": null,
+            "last_stream_count": 0,
+            "last_error": ""
+          }
+        }
+      },
+      "errors": [],
+      "room_progress": {
+        "414317": {
+          "key": "414317",
+          "url": "https://socolivep.cv/truc-tiep/toluca-vs-pumas-u-n-a-m-22-07-2026-1005?blv=414317",
+          "blv": "TOMMY",
+          "blv_id": "414317",
+          "status": "exhausted",
+          "attempts": 2,
+          "attempts_total": 2,
+          "ever_attempted": true,
+          "valid_stream_ever_found": false,
+          "needs_token_refresh": true,
+          "completion_reason": "no_valid_stream_after_max_attempts",
+          "rate_limit_hits": 0,
+          "last_http_status": 200,
+          "last_stream_count": 0,
+          "last_error": "Token cũ đã hết hạn; giữ nguyên attempts_total và trạng thái hoàn tất của BLV."
+        },
+        "387694": {
+          "key": "387694",
+          "url": "https://socolivep.cv/truc-tiep/toluca-vs-pumas-u-n-a-m-22-07-2026-1005?blv=387694",
+          "blv": "CR Bưởi",
+          "blv_id": "387694",
+          "status": "exhausted",
+          "attempts": 2,
+          "attempts_total": 2,
+          "ever_attempted": true,
+          "valid_stream_ever_found": false,
+          "needs_token_refresh": true,
+          "completion_reason": "no_valid_stream_after_max_attempts",
+          "rate_limit_hits": 0,
+          "last_http_status": 200,
+          "last_stream_count": 0,
+          "last_error": "Token cũ đã hết hạn; giữ nguyên attempts_total và trạng thái hoàn tất của BLV."
+        },
+        "168740": {
+          "key": "168740",
+          "url": "https://socolivep.cv/truc-tiep/toluca-vs-pumas-u-n-a-m-22-07-2026-1005?blv=168740",
+          "blv": "ZIDANE",
+          "blv_id": "168740",
+          "status": "exhausted",
+          "attempts": 2,
+          "attempts_total": 2,
+          "ever_attempted": true,
+          "valid_stream_ever_found": false,
+          "needs_token_refresh": true,
+          "completion_reason": "no_valid_stream_after_max_attempts",
+          "rate_limit_hits": 0,
+          "last_http_status": 200,
+          "last_stream_count": 0,
+          "last_error": "Token cũ đã hết hạn; giữ nguyên attempts_total và trạng thái hoàn tất của BLV."
+        },
+        "531989": {
+          "key": "531989",
+          "url": "https://socolivep.cv/truc-tiep/toluca-vs-pumas-u-n-a-m-22-07-2026-1005?blv=531989",
+          "blv": "COZY",
+          "blv_id": "531989",
+          "status": "success",
+          "attempts": 1,
+          "attempts_total": 1,
+          "ever_attempted": true,
+          "valid_stream_ever_found": true,
+          "needs_token_refresh": true,
+          "completion_reason": "valid_stream_seen_earlier",
+          "rate_limit_hits": 0,
+          "last_http_status": 200,
+          "last_stream_count": 0,
+          "last_error": "Token cũ đã hết hạn; giữ nguyên attempts_total và trạng thái hoàn tất của BLV."
+        },
+        "360663": {
+          "key": "360663",
+          "url": "https://socolivep.cv/truc-tiep/toluca-vs-pumas-u-n-a-m-22-07-2026-1005?blv=360663",
+          "blv": "Củ Cải",
+          "blv_id": "360663",
+          "status": "exhausted",
+          "attempts": 2,
+          "attempts_total": 2,
+          "ever_attempted": true,
+          "valid_stream_ever_found": false,
+          "needs_token_refresh": true,
+          "completion_reason": "no_valid_stream_after_max_attempts",
+          "rate_limit_hits": 0,
+          "last_http_status": 200,
+          "last_stream_count": 0,
+          "last_error": "Token cũ đã hết hạn; giữ nguyên attempts_total và trạng thái hoàn tất của BLV."
+        },
+        "118206": {
+          "key": "118206",
+          "url": "https://socolivep.cv/truc-tiep/toluca-vs-pumas-u-n-a-m-22-07-2026-1005?blv=118206",
+          "blv": "TẠ BIÊN GIỚI",
+          "blv_id": "118206",
+          "status": "exhausted",
+          "attempts": 2,
+          "attempts_total": 2,
+          "ever_attempted": true,
+          "valid_stream_ever_found": false,
+          "needs_token_refresh": true,
+          "completion_reason": "no_valid_stream_after_max_attempts",
+          "rate_limit_hits": 0,
+          "last_http_status": 200,
+          "last_stream_count": 0,
+          "last_error": "Token cũ đã hết hạn; giữ nguyên attempts_total và trạng thái hoàn tất của BLV."
+        },
+        "__base__": {
+          "key": "__base__",
+          "url": "https://socolivep.cv/truc-tiep/toluca-vs-pumas-u-n-a-m-22-07-2026-1005",
+          "blv": "XEM NGAY",
+          "blv_id": "",
+          "status": "pending",
+          "attempts": 0,
+          "attempts_total": 0,
+          "ever_attempted": false,
+          "valid_stream_ever_found": false,
+          "needs_token_refresh": false,
+          "completion_reason": "",
+          "rate_limit_hits": 0,
+          "last_http_status": null,
+          "last_stream_count": 0,
+          "last_error": ""
+        }
+      },
+      "run_attempted_room_keys": [
+        "118206",
+        "168740",
+        "360663",
+        "387694",
+        "414317"
+      ],
+      "run_rate_limited_room_keys": [],
+      "run_completed_room_keys": [
+        "118206",
+        "168740",
+        "360663",
+        "387694",
+        "414317"
+      ],
+      "run_global_budget_used": 5
+    },
     {
       "base_url": "https://socolivep.cv/truc-tiep/deportivo-pasto-vs-bogota-fc-22-07-2026-0700/",
       "raw_title": "Trực tiếp bóng đá Socolive Deportivo Pasto vs Bogota FC lúc 07:00 ngày 22/07/2026",
@@ -5178,896 +6476,6 @@
           "last_error": ""
         }
       }
-    },
-    {
-      "base_url": "https://socolivep.cv/truc-tiep/toluca-vs-pumas-u-n-a-m-22-07-2026-1005/",
-      "raw_title": "Trực tiếp bóng đá Socolive Toluca vs Pumas U.N.A.M. lúc 10:05 ngày 22/07/2026",
-      "home_team": "Toluca",
-      "away_team": "Pumas U.N.A.M.",
-      "home_logo": "https://sta.vnres.co/file/common/20260715/ae9712ee1150ef7d14192c71f9e987b7.png",
-      "away_logo": "https://sta.vnres.co/file/common/20260715/1850bd100bd741d902ce36a85f71cdf8.png",
-      "time_text": "10:05",
-      "date_text": "22/07",
-      "status": "",
-      "card_text": "MEX D1 10:05 22/07 Toluca VS XEM NGAY Pumas U.N.A.M. TOMMY CR Bưởi ZIDANE COZY Củ Cải TẠ BIÊN GIỚI",
-      "rooms": [
-        {
-          "url": "https://socolivep.cv/truc-tiep/toluca-vs-pumas-u-n-a-m-22-07-2026-1005?blv=414317",
-          "blv": "TOMMY",
-          "blv_id": "414317"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/toluca-vs-pumas-u-n-a-m-22-07-2026-1005?blv=387694",
-          "blv": "CR Bưởi",
-          "blv_id": "387694"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/toluca-vs-pumas-u-n-a-m-22-07-2026-1005?blv=168740",
-          "blv": "ZIDANE",
-          "blv_id": "168740"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/toluca-vs-pumas-u-n-a-m-22-07-2026-1005?blv=531989",
-          "blv": "COZY",
-          "blv_id": "531989"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/toluca-vs-pumas-u-n-a-m-22-07-2026-1005?blv=360663",
-          "blv": "Củ Cải",
-          "blv_id": "360663"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/toluca-vs-pumas-u-n-a-m-22-07-2026-1005?blv=118206",
-          "blv": "TẠ BIÊN GIỚI",
-          "blv_id": "118206"
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/toluca-vs-pumas-u-n-a-m-22-07-2026-1005",
-          "blv": "XEM NGAY",
-          "blv_id": ""
-        }
-      ],
-      "match_name": "Toluca vs Pumas U.N.A.M.",
-      "scheduled_at": "2026-07-22T10:05:00+07:00",
-      "streams": [
-        {
-          "url": "https://pull.niues.live/live/stream-531989_lhd.m3u8?auth_key=1784678755-0-0-9752d76dfe03c2f0452416998c5835fe",
-          "queue_room_key": "531989",
-          "room_url": "https://socolivep.cv/truc-tiep/toluca-vs-pumas-u-n-a-m-22-07-2026-1005?blv=531989",
-          "blv": "COZY",
-          "blv_id": "531989",
-          "source_id": "531989",
-          "source_provenance": [
-            "final-no-stream-scan",
-            "harvest-final"
-          ],
-          "source_confidence": "embedded",
-          "mapping_mode": "exact-room-id",
-          "discovered_from_room_url": "https://socolivep.cv/truc-tiep/toluca-vs-pumas-u-n-a-m-22-07-2026-1005?blv=531989",
-          "discovered_from_blv": "COZY",
-          "discovered_at": "2026-07-22T07:03:04.379806+07:00",
-          "valid_until": "2026-07-22T07:05:55+07:00",
-          "is_expired": false
-        }
-      ],
-      "room_results": [
-        {
-          "url": "https://socolivep.cv/truc-tiep/toluca-vs-pumas-u-n-a-m-22-07-2026-1005?blv=414317",
-          "blv": "TOMMY",
-          "blv_id": "414317",
-          "streams": [
-            "https://pull.niues.live/live/stream-414317_lhd.m3u8?auth_key=1784641328-0-0-08b02a513360019191860f23185e905d"
-          ],
-          "stream_sources": {
-            "https://pull.niues.live/live/stream-414317_lhd.m3u8?auth_key=1784641328-0-0-08b02a513360019191860f23185e905d": [
-              "final-no-stream-scan",
-              "harvest-final"
-            ]
-          },
-          "stream_first_seen": [
-            "https://pull.niues.live/live/stream-414317_lhd.m3u8?auth_key=1784641328-0-0-08b02a513360019191860f23185e905d"
-          ],
-          "discovered_blv_ids": [
-            "414317"
-          ],
-          "diagnostics": {
-            "url": "https://socolivep.cv/truc-tiep/toluca-vs-pumas-u-n-a-m-22-07-2026-1005/?blv=414317",
-            "title": "Xem trực tiếp bóng đá Toluca vs Pumas U.N.A.M. | 10:05 ngày 22/07/2026",
-            "h1": "Trực tiếp bóng đá Socolive Toluca vs Pumas U.N.A.M. lúc 10:05 ngày 22/07/2026",
-            "ready_state": "complete",
-            "visibility_state": "visible",
-            "hidden": false,
-            "video_count": 0,
-            "iframe_count": 0,
-            "body_sample": "Skip to content Socolive Bảng xếp hạng Lịch thi đấu Kết quả bóng đá Tin thể thao Trực tiếp bóng đá Socolive Toluca vs Pumas U.N.A.M. lúc 10:05 ngày 22/07/2026 MEX D1 Toluca 10:05 22/07 Pumas U.N.A.M. Trận đấu sẽ bắt đầu sau Ngày0 : Giờ3 : Phút2 : Giây43 Trận đấu chưa bắt đầu TOMMY CR Bưởi ZIDANE COZY Củ Cải TẠ BIÊN GIỚI Chat Thống kê Đội hình Diễn Biến Bảng XH \" \" Xóa Tin nhắn riêng 😀 😁 😃 😄 😅 😆 😇 😉 😊 🙂 😋 😍 😘 😗 😙 😚 😜 😝 😛 😎 🙄 😳 😡 😕 😫 😤 😨 😥 😪 😓 😵 😲 🤧 😷 🤒 🤕 😴 💤 👏 🤙 👍 👎 👊 ✊ ✌ 👌 ✋ 🤚 💪 🤝 👈 👉 🖕 🖐 👄 👂 👀 🎅 🌞 🌙 ⭐ ⚡ 🔥 ❄️ ⚽ 🏀 🏈 ⚾ 🎁 🎉 ✒️ 📝 ❤️ 💛 💚 🆚 💬 🕐 Vô hiệu hóa tất cả Vô hiệu hóa quà tặng Tắt lời chào Đăng nhập để cùng chat nhé Gửi Tỷ lệ kèo Cược Châu Á Chủ Chấp Khách Cược Châu Âu Chủ Hòa Khách Tài xỉu Tài Tỷ lệ kèo Xỉu Kèo góc Tài Tỷ lệ kèo Xỉu Mô phỏng trận đấu Thống kê trận đấu COL Cup 07:00 22/07 Deportivo Pasto VS null null null - null Sắp diễn ra Xem ngay Bogota FC YONE KÉP COL Cup 07:00 22/07 Deportiva Once Caldas VS null null null - null Sắp diễn ra Xem ngay Envigado FC LOGAN COL Cup 06:00 22/07 Deportes Tolima VS null null null - null Sắp diễn ra Xem ngay Deportes Quindio VOI BRA D1 05:30 22/07 Atlético Mineiro - MG ",
-            "harvest_rounds": 0,
-            "harvest_window_seconds": 0.624,
-            "main_status": 200,
-            "harvested_stream_count": 1,
-            "harvested_blv_ids": [
-              "414317"
-            ],
-            "scan_mode": "browser-event",
-            "elapsed_seconds": 13.777
-          },
-          "http_probe": {
-            "enabled": false,
-            "status": null,
-            "elapsed_seconds": 0.0,
-            "error": ""
-          },
-          "errors": [
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED"
-          ],
-          "failed_requests": [
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/main.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/customize.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/auth.css?ver=495 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat.css?ver=118 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat(1).css?ver=903 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/toast.css?ver=300 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/themes/flatsome/assets/css/flatsome.css?ver=3.18.2 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/themes/flatsome-child/style.css?ver=3.0 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/countdown.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/match.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/livescore.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/style_custom.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/effect/running-border.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/option/option-6.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/highlight/option-1.css?ver=2.8.5 | net::ERR_FAILED"
-          ],
-          "http_errors": [
-            "403 https://socolivep.cv/wp-admin/admin-ajax.php?action=scl_realtime&sport=1"
-          ]
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/toluca-vs-pumas-u-n-a-m-22-07-2026-1005?blv=387694",
-          "blv": "CR Bưởi",
-          "blv_id": "387694",
-          "streams": [
-            "https://pull.niur.live/live/stream-387694_lhd.m3u8?txSecret=f687d3519769ad4b3dcb304c1efcd3a5&txTime=6a5fbccb"
-          ],
-          "stream_sources": {
-            "https://pull.niur.live/live/stream-387694_lhd.m3u8?txSecret=f687d3519769ad4b3dcb304c1efcd3a5&txTime=6a5fbccb": [
-              "final-no-stream-scan",
-              "harvest-final"
-            ]
-          },
-          "stream_first_seen": [
-            "https://pull.niur.live/live/stream-387694_lhd.m3u8?txSecret=f687d3519769ad4b3dcb304c1efcd3a5&txTime=6a5fbccb"
-          ],
-          "discovered_blv_ids": [
-            "387694"
-          ],
-          "diagnostics": {
-            "url": "https://socolivep.cv/truc-tiep/toluca-vs-pumas-u-n-a-m-22-07-2026-1005/?blv=387694",
-            "title": "Xem trực tiếp bóng đá Toluca vs Pumas U.N.A.M. | 10:05 ngày 22/07/2026",
-            "h1": "Trực tiếp bóng đá Socolive Toluca vs Pumas U.N.A.M. lúc 10:05 ngày 22/07/2026",
-            "ready_state": "complete",
-            "visibility_state": "visible",
-            "hidden": false,
-            "video_count": 0,
-            "iframe_count": 0,
-            "body_sample": "Skip to content Socolive Bảng xếp hạng Lịch thi đấu Kết quả bóng đá Tin thể thao Trực tiếp bóng đá Socolive Toluca vs Pumas U.N.A.M. lúc 10:05 ngày 22/07/2026 MEX D1 Toluca 10:05 22/07 Pumas U.N.A.M. Trận đấu sẽ bắt đầu sau Ngày0 : Giờ3 : Phút2 : Giây27 Trận đấu chưa bắt đầu TOMMY CR Bưởi ZIDANE COZY Củ Cải TẠ BIÊN GIỚI Chat Thống kê Đội hình Diễn Biến Bảng XH \" \" Xóa Tin nhắn riêng 😀 😁 😃 😄 😅 😆 😇 😉 😊 🙂 😋 😍 😘 😗 😙 😚 😜 😝 😛 😎 🙄 😳 😡 😕 😫 😤 😨 😥 😪 😓 😵 😲 🤧 😷 🤒 🤕 😴 💤 👏 🤙 👍 👎 👊 ✊ ✌ 👌 ✋ 🤚 💪 🤝 👈 👉 🖕 🖐 👄 👂 👀 🎅 🌞 🌙 ⭐ ⚡ 🔥 ❄️ ⚽ 🏀 🏈 ⚾ 🎁 🎉 ✒️ 📝 ❤️ 💛 💚 🆚 💬 🕐 Vô hiệu hóa tất cả Vô hiệu hóa quà tặng Tắt lời chào Đăng nhập để cùng chat nhé Gửi Tỷ lệ kèo Cược Châu Á Chủ Chấp Khách Cược Châu Âu Chủ Hòa Khách Tài xỉu Tài Tỷ lệ kèo Xỉu Kèo góc Tài Tỷ lệ kèo Xỉu Mô phỏng trận đấu Thống kê trận đấu COL Cup 07:00 22/07 Deportivo Pasto VS null null null - null Sắp diễn ra Xem ngay Bogota FC YONE KÉP COL Cup 07:00 22/07 Deportiva Once Caldas VS null null null - null Sắp diễn ra Xem ngay Envigado FC LOGAN COL Cup 06:00 22/07 Deportes Tolima VS null null null - null Sắp diễn ra Xem ngay Deportes Quindio VOI BRA D1 05:30 22/07 Atlético Mineiro - MG ",
-            "harvest_rounds": 0,
-            "harvest_window_seconds": 0.628,
-            "main_status": 200,
-            "harvested_stream_count": 1,
-            "harvested_blv_ids": [
-              "387694"
-            ],
-            "scan_mode": "browser-event",
-            "elapsed_seconds": 13.769
-          },
-          "http_probe": {
-            "enabled": false,
-            "status": null,
-            "elapsed_seconds": 0.0,
-            "error": ""
-          },
-          "errors": [
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED"
-          ],
-          "failed_requests": [
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/main.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/customize.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/auth.css?ver=136 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat.css?ver=114 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat(1).css?ver=678 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/toast.css?ver=774 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/themes/flatsome/assets/css/flatsome.css?ver=3.18.2 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/themes/flatsome-child/style.css?ver=3.0 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/countdown.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/match.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/livescore.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/style_custom.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/effect/running-border.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/option/option-6.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/highlight/option-1.css?ver=2.8.5 | net::ERR_FAILED"
-          ],
-          "http_errors": [
-            "403 https://socolivep.cv/wp-admin/admin-ajax.php?action=scl_realtime&sport=1"
-          ]
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/toluca-vs-pumas-u-n-a-m-22-07-2026-1005?blv=168740",
-          "blv": "ZIDANE",
-          "blv_id": "168740",
-          "streams": [
-            "https://pull.niues.live/live/stream-9912060_lhd.m3u8?auth_key=1784656818-0-0-2f367c9a6c8f0960f5ca810bd3a63345"
-          ],
-          "stream_sources": {
-            "https://pull.niues.live/live/stream-9912060_lhd.m3u8?auth_key=1784656818-0-0-2f367c9a6c8f0960f5ca810bd3a63345": [
-              "final-no-stream-scan",
-              "harvest-final"
-            ]
-          },
-          "stream_first_seen": [
-            "https://pull.niues.live/live/stream-9912060_lhd.m3u8?auth_key=1784656818-0-0-2f367c9a6c8f0960f5ca810bd3a63345"
-          ],
-          "discovered_blv_ids": [
-            "9912060"
-          ],
-          "diagnostics": {
-            "url": "https://socolivep.cv/truc-tiep/toluca-vs-pumas-u-n-a-m-22-07-2026-1005/?blv=168740",
-            "title": "Xem trực tiếp bóng đá Toluca vs Pumas U.N.A.M. | 10:05 ngày 22/07/2026",
-            "h1": "Trực tiếp bóng đá Socolive Toluca vs Pumas U.N.A.M. lúc 10:05 ngày 22/07/2026",
-            "ready_state": "complete",
-            "visibility_state": "visible",
-            "hidden": false,
-            "video_count": 0,
-            "iframe_count": 0,
-            "body_sample": "Skip to content Socolive Bảng xếp hạng Lịch thi đấu Kết quả bóng đá Tin thể thao Trực tiếp bóng đá Socolive Toluca vs Pumas U.N.A.M. lúc 10:05 ngày 22/07/2026 MEX D1 Toluca 10:05 22/07 Pumas U.N.A.M. Trận đấu sẽ bắt đầu sau Ngày0 : Giờ3 : Phút2 : Giây11 Trận đấu chưa bắt đầu TOMMY CR Bưởi ZIDANE COZY Củ Cải TẠ BIÊN GIỚI Chat Thống kê Đội hình Diễn Biến Bảng XH \" \" Xóa Tin nhắn riêng 😀 😁 😃 😄 😅 😆 😇 😉 😊 🙂 😋 😍 😘 😗 😙 😚 😜 😝 😛 😎 🙄 😳 😡 😕 😫 😤 😨 😥 😪 😓 😵 😲 🤧 😷 🤒 🤕 😴 💤 👏 🤙 👍 👎 👊 ✊ ✌ 👌 ✋ 🤚 💪 🤝 👈 👉 🖕 🖐 👄 👂 👀 🎅 🌞 🌙 ⭐ ⚡ 🔥 ❄️ ⚽ 🏀 🏈 ⚾ 🎁 🎉 ✒️ 📝 ❤️ 💛 💚 🆚 💬 🕐 Vô hiệu hóa tất cả Vô hiệu hóa quà tặng Tắt lời chào Đăng nhập để cùng chat nhé Gửi Tỷ lệ kèo Cược Châu Á Chủ Chấp Khách Cược Châu Âu Chủ Hòa Khách Tài xỉu Tài Tỷ lệ kèo Xỉu Kèo góc Tài Tỷ lệ kèo Xỉu Mô phỏng trận đấu Thống kê trận đấu COL Cup 07:00 22/07 Deportivo Pasto VS null null null - null Sắp diễn ra Xem ngay Bogota FC YONE KÉP COL Cup 07:00 22/07 Deportiva Once Caldas VS null null null - null Sắp diễn ra Xem ngay Envigado FC LOGAN COL Cup 06:00 22/07 Deportes Tolima VS null null null - null Sắp diễn ra Xem ngay Deportes Quindio VOI BRA D1 05:30 22/07 Atlético Mineiro - MG ",
-            "harvest_rounds": 0,
-            "harvest_window_seconds": 0.623,
-            "main_status": 200,
-            "harvested_stream_count": 1,
-            "harvested_blv_ids": [
-              "9912060"
-            ],
-            "scan_mode": "browser-event",
-            "elapsed_seconds": 13.76
-          },
-          "http_probe": {
-            "enabled": false,
-            "status": null,
-            "elapsed_seconds": 0.0,
-            "error": ""
-          },
-          "errors": [
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED"
-          ],
-          "failed_requests": [
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/main.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/customize.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/auth.css?ver=155 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat.css?ver=943 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat(1).css?ver=265 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/toast.css?ver=795 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/themes/flatsome/assets/css/flatsome.css?ver=3.18.2 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/themes/flatsome-child/style.css?ver=3.0 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/countdown.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/match.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/livescore.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/style_custom.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/effect/running-border.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/option/option-6.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/highlight/option-1.css?ver=2.8.5 | net::ERR_FAILED"
-          ],
-          "http_errors": [
-            "403 https://socolivep.cv/wp-admin/admin-ajax.php?action=scl_realtime&sport=1"
-          ]
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/toluca-vs-pumas-u-n-a-m-22-07-2026-1005?blv=531989",
-          "blv": "COZY",
-          "blv_id": "531989",
-          "streams": [
-            "https://pull.niues.live/live/stream-531989_lhd.m3u8?auth_key=1784678755-0-0-9752d76dfe03c2f0452416998c5835fe"
-          ],
-          "stream_sources": {
-            "https://pull.niues.live/live/stream-531989_lhd.m3u8?auth_key=1784678755-0-0-9752d76dfe03c2f0452416998c5835fe": [
-              "final-no-stream-scan",
-              "harvest-final"
-            ]
-          },
-          "stream_first_seen": [
-            "https://pull.niues.live/live/stream-531989_lhd.m3u8?auth_key=1784678755-0-0-9752d76dfe03c2f0452416998c5835fe"
-          ],
-          "discovered_blv_ids": [
-            "531989"
-          ],
-          "diagnostics": {
-            "url": "https://socolivep.cv/truc-tiep/toluca-vs-pumas-u-n-a-m-22-07-2026-1005/?blv=531989",
-            "title": "Xem trực tiếp bóng đá Toluca vs Pumas U.N.A.M. | 10:05 ngày 22/07/2026",
-            "h1": "Trực tiếp bóng đá Socolive Toluca vs Pumas U.N.A.M. lúc 10:05 ngày 22/07/2026",
-            "ready_state": "complete",
-            "visibility_state": "visible",
-            "hidden": false,
-            "video_count": 0,
-            "iframe_count": 0,
-            "body_sample": "Skip to content Socolive Bảng xếp hạng Lịch thi đấu Kết quả bóng đá Tin thể thao Trực tiếp bóng đá Socolive Toluca vs Pumas U.N.A.M. lúc 10:05 ngày 22/07/2026 MEX D1 Toluca 10:05 22/07 Pumas U.N.A.M. Trận đấu sẽ bắt đầu sau Ngày0 : Giờ3 : Phút1 : Giây55 Trận đấu chưa bắt đầu TOMMY CR Bưởi ZIDANE COZY Củ Cải TẠ BIÊN GIỚI Chat Thống kê Đội hình Diễn Biến Bảng XH \" \" 5andwin8x: 5andwin8x vào phòng trò chuyện Xóa Tin nhắn riêng 😀 😁 😃 😄 😅 😆 😇 😉 😊 🙂 😋 😍 😘 😗 😙 😚 😜 😝 😛 😎 🙄 😳 😡 😕 😫 😤 😨 😥 😪 😓 😵 😲 🤧 😷 🤒 🤕 😴 💤 👏 🤙 👍 👎 👊 ✊ ✌ 👌 ✋ 🤚 💪 🤝 👈 👉 🖕 🖐 👄 👂 👀 🎅 🌞 🌙 ⭐ ⚡ 🔥 ❄️ ⚽ 🏀 🏈 ⚾ 🎁 🎉 ✒️ 📝 ❤️ 💛 💚 🆚 💬 🕐 Vô hiệu hóa tất cả Vô hiệu hóa quà tặng Tắt lời chào Đăng nhập để cùng chat nhé Gửi Tỷ lệ kèo Cược Châu Á Chủ Chấp Khách Cược Châu Âu Chủ Hòa Khách Tài xỉu Tài Tỷ lệ kèo Xỉu Kèo góc Tài Tỷ lệ kèo Xỉu Mô phỏng trận đấu Thống kê trận đấu COL Cup 07:00 22/07 Deportivo Pasto VS null null null - null Sắp diễn ra Xem ngay Bogota FC YONE KÉP COL Cup 07:00 22/07 Deportiva Once Caldas VS null null null - null Sắp diễn ra Xem ngay Envigado FC LOGAN COL Cup 06:00 22/07 Deportes Tolima VS null null null - null Sắp diễn ra Xem ngay Deportes Quindio VOI",
-            "harvest_rounds": 0,
-            "harvest_window_seconds": 0.624,
-            "main_status": 200,
-            "harvested_stream_count": 1,
-            "harvested_blv_ids": [
-              "531989"
-            ],
-            "scan_mode": "browser-event",
-            "elapsed_seconds": 13.804
-          },
-          "http_probe": {
-            "enabled": false,
-            "status": null,
-            "elapsed_seconds": 0.0,
-            "error": ""
-          },
-          "errors": [
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED"
-          ],
-          "failed_requests": [
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/main.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/customize.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/auth.css?ver=785 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat.css?ver=861 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat(1).css?ver=97 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/toast.css?ver=598 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/themes/flatsome/assets/css/flatsome.css?ver=3.18.2 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/themes/flatsome-child/style.css?ver=3.0 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/countdown.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/match.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/livescore.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/style_custom.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/effect/running-border.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/option/option-6.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/highlight/option-1.css?ver=2.8.5 | net::ERR_FAILED"
-          ],
-          "http_errors": [
-            "403 https://socolivep.cv/wp-admin/admin-ajax.php?action=scl_realtime&sport=1"
-          ]
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/toluca-vs-pumas-u-n-a-m-22-07-2026-1005?blv=360663",
-          "blv": "Củ Cải",
-          "blv_id": "360663",
-          "streams": [
-            "https://pull.niues.live/live/stream-9912091_lhd.m3u8?auth_key=1784633396-0-0-6e9df0384a60e7107c82f14a7fbad72b"
-          ],
-          "stream_sources": {
-            "https://pull.niues.live/live/stream-9912091_lhd.m3u8?auth_key=1784633396-0-0-6e9df0384a60e7107c82f14a7fbad72b": [
-              "final-no-stream-scan",
-              "harvest-final"
-            ]
-          },
-          "stream_first_seen": [
-            "https://pull.niues.live/live/stream-9912091_lhd.m3u8?auth_key=1784633396-0-0-6e9df0384a60e7107c82f14a7fbad72b"
-          ],
-          "discovered_blv_ids": [
-            "9912091"
-          ],
-          "diagnostics": {
-            "url": "https://socolivep.cv/truc-tiep/toluca-vs-pumas-u-n-a-m-22-07-2026-1005/?blv=360663",
-            "title": "Xem trực tiếp bóng đá Toluca vs Pumas U.N.A.M. | 10:05 ngày 22/07/2026",
-            "h1": "Trực tiếp bóng đá Socolive Toluca vs Pumas U.N.A.M. lúc 10:05 ngày 22/07/2026",
-            "ready_state": "complete",
-            "visibility_state": "visible",
-            "hidden": false,
-            "video_count": 0,
-            "iframe_count": 0,
-            "body_sample": "Skip to content Socolive Bảng xếp hạng Lịch thi đấu Kết quả bóng đá Tin thể thao Trực tiếp bóng đá Socolive Toluca vs Pumas U.N.A.M. lúc 10:05 ngày 22/07/2026 MEX D1 Toluca 10:05 22/07 Pumas U.N.A.M. Trận đấu sẽ bắt đầu sau Ngày0 : Giờ3 : Phút1 : Giây39 Trận đấu chưa bắt đầu TOMMY CR Bưởi ZIDANE COZY Củ Cải TẠ BIÊN GIỚI Chat Thống kê Đội hình Diễn Biến Bảng XH \" \" Xóa Tin nhắn riêng 😀 😁 😃 😄 😅 😆 😇 😉 😊 🙂 😋 😍 😘 😗 😙 😚 😜 😝 😛 😎 🙄 😳 😡 😕 😫 😤 😨 😥 😪 😓 😵 😲 🤧 😷 🤒 🤕 😴 💤 👏 🤙 👍 👎 👊 ✊ ✌ 👌 ✋ 🤚 💪 🤝 👈 👉 🖕 🖐 👄 👂 👀 🎅 🌞 🌙 ⭐ ⚡ 🔥 ❄️ ⚽ 🏀 🏈 ⚾ 🎁 🎉 ✒️ 📝 ❤️ 💛 💚 🆚 💬 🕐 Vô hiệu hóa tất cả Vô hiệu hóa quà tặng Tắt lời chào Đăng nhập để cùng chat nhé Gửi Tỷ lệ kèo Cược Châu Á Chủ Chấp Khách Cược Châu Âu Chủ Hòa Khách Tài xỉu Tài Tỷ lệ kèo Xỉu Kèo góc Tài Tỷ lệ kèo Xỉu Mô phỏng trận đấu Thống kê trận đấu COL Cup 07:00 22/07 Deportivo Pasto VS null null null - null Sắp diễn ra Xem ngay Bogota FC YONE KÉP COL Cup 07:00 22/07 Deportiva Once Caldas VS null null null - null Sắp diễn ra Xem ngay Envigado FC LOGAN COL Cup 06:00 22/07 Deportes Tolima VS null null null - null Sắp diễn ra Xem ngay Deportes Quindio VOI BRA D1 05:30 22/07 Atlético Mineiro - MG ",
-            "harvest_rounds": 0,
-            "harvest_window_seconds": 0.624,
-            "main_status": 200,
-            "harvested_stream_count": 1,
-            "harvested_blv_ids": [
-              "9912091"
-            ],
-            "scan_mode": "browser-event",
-            "elapsed_seconds": 13.815
-          },
-          "http_probe": {
-            "enabled": false,
-            "status": null,
-            "elapsed_seconds": 0.0,
-            "error": ""
-          },
-          "errors": [
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED"
-          ],
-          "failed_requests": [
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/main.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/customize.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/auth.css?ver=137 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat.css?ver=381 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat(1).css?ver=691 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/toast.css?ver=263 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/themes/flatsome/assets/css/flatsome.css?ver=3.18.2 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/themes/flatsome-child/style.css?ver=3.0 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/countdown.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/match.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/livescore.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/style_custom.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/effect/running-border.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/option/option-6.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/highlight/option-1.css?ver=2.8.5 | net::ERR_FAILED"
-          ],
-          "http_errors": [
-            "403 https://socolivep.cv/wp-admin/admin-ajax.php?action=scl_realtime&sport=1"
-          ]
-        },
-        {
-          "url": "https://socolivep.cv/truc-tiep/toluca-vs-pumas-u-n-a-m-22-07-2026-1005?blv=118206",
-          "blv": "TẠ BIÊN GIỚI",
-          "blv_id": "118206",
-          "streams": [
-            "https://pull.niues.live/live/stream-9912108_lhd.m3u8?auth_key=1784645743-0-0-b7c1327533a12bacf4cb6a1346c54ace"
-          ],
-          "stream_sources": {
-            "https://pull.niues.live/live/stream-9912108_lhd.m3u8?auth_key=1784645743-0-0-b7c1327533a12bacf4cb6a1346c54ace": [
-              "final-no-stream-scan",
-              "harvest-final"
-            ]
-          },
-          "stream_first_seen": [
-            "https://pull.niues.live/live/stream-9912108_lhd.m3u8?auth_key=1784645743-0-0-b7c1327533a12bacf4cb6a1346c54ace"
-          ],
-          "discovered_blv_ids": [
-            "9912108"
-          ],
-          "diagnostics": {
-            "url": "https://socolivep.cv/truc-tiep/toluca-vs-pumas-u-n-a-m-22-07-2026-1005/?blv=118206",
-            "title": "Xem trực tiếp bóng đá Toluca vs Pumas U.N.A.M. | 10:05 ngày 22/07/2026",
-            "h1": "Trực tiếp bóng đá Socolive Toluca vs Pumas U.N.A.M. lúc 10:05 ngày 22/07/2026",
-            "ready_state": "complete",
-            "visibility_state": "visible",
-            "hidden": false,
-            "video_count": 0,
-            "iframe_count": 0,
-            "body_sample": "Skip to content Socolive Bảng xếp hạng Lịch thi đấu Kết quả bóng đá Tin thể thao Trực tiếp bóng đá Socolive Toluca vs Pumas U.N.A.M. lúc 10:05 ngày 22/07/2026 MEX D1 Toluca 10:05 22/07 Pumas U.N.A.M. Trận đấu sẽ bắt đầu sau Ngày0 : Giờ3 : Phút1 : Giây24 Trận đấu chưa bắt đầu TOMMY CR Bưởi ZIDANE COZY Củ Cải TẠ BIÊN GIỚI Chat Thống kê Đội hình Diễn Biến Bảng XH \" \" Xóa Tin nhắn riêng 😀 😁 😃 😄 😅 😆 😇 😉 😊 🙂 😋 😍 😘 😗 😙 😚 😜 😝 😛 😎 🙄 😳 😡 😕 😫 😤 😨 😥 😪 😓 😵 😲 🤧 😷 🤒 🤕 😴 💤 👏 🤙 👍 👎 👊 ✊ ✌ 👌 ✋ 🤚 💪 🤝 👈 👉 🖕 🖐 👄 👂 👀 🎅 🌞 🌙 ⭐ ⚡ 🔥 ❄️ ⚽ 🏀 🏈 ⚾ 🎁 🎉 ✒️ 📝 ❤️ 💛 💚 🆚 💬 🕐 Vô hiệu hóa tất cả Vô hiệu hóa quà tặng Tắt lời chào Đăng nhập để cùng chat nhé Gửi Tỷ lệ kèo Cược Châu Á Chủ Chấp Khách Cược Châu Âu Chủ Hòa Khách Tài xỉu Tài Tỷ lệ kèo Xỉu Kèo góc Tài Tỷ lệ kèo Xỉu Mô phỏng trận đấu Thống kê trận đấu COL Cup 07:00 22/07 Deportivo Pasto VS null null null - null Sắp diễn ra Xem ngay Bogota FC YONE KÉP COL Cup 07:00 22/07 Deportiva Once Caldas VS null null null - null Sắp diễn ra Xem ngay Envigado FC LOGAN COL Cup 06:00 22/07 Deportes Tolima VS null null null - null Sắp diễn ra Xem ngay Deportes Quindio VOI BRA D1 05:30 22/07 Atlético Mineiro - MG ",
-            "harvest_rounds": 0,
-            "harvest_window_seconds": 0.624,
-            "main_status": 200,
-            "harvested_stream_count": 1,
-            "harvested_blv_ids": [
-              "9912108"
-            ],
-            "scan_mode": "browser-event",
-            "elapsed_seconds": 13.714
-          },
-          "http_probe": {
-            "enabled": false,
-            "status": null,
-            "elapsed_seconds": 0.0,
-            "error": ""
-          },
-          "errors": [
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED"
-          ],
-          "failed_requests": [
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/main.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/dist/customize.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/auth.css?ver=903 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat.css?ver=464 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/chat(1).css?ver=929 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/user-action-plugin/assets/css/toast.css?ver=399 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/themes/flatsome/assets/css/flatsome.css?ver=3.18.2 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/themes/flatsome-child/style.css?ver=3.0 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/countdown.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/match.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/livescore.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/style_custom.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/effect/running-border.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/option/option-6.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolivep.cv/wp-content/plugins/stream-player-plugin/assets/css/highlight/option-1.css?ver=2.8.5 | net::ERR_FAILED"
-          ],
-          "http_errors": [
-            "403 https://socolivep.cv/wp-admin/admin-ajax.php?action=scl_realtime&sport=1"
-          ]
-        }
-      ],
-      "attempted_room_ids": [
-        "118206",
-        "168740",
-        "360663",
-        "387694",
-        "414317",
-        "531989"
-      ],
-      "coverage": {
-        "found_streams": 1,
-        "found_blv_ids": [
-          "531989"
-        ],
-        "goal": 12,
-        "source_goal_reached": false,
-        "room_queue_complete": false,
-        "complete": false,
-        "max_streams_per_blv": 2,
-        "total_explicit_blv_rooms": 6,
-        "pending_room_keys": [
-          "414317",
-          "387694",
-          "168740",
-          "360663",
-          "118206"
-        ],
-        "room_progress": {
-          "414317": {
-            "key": "414317",
-            "url": "https://socolivep.cv/truc-tiep/toluca-vs-pumas-u-n-a-m-22-07-2026-1005?blv=414317",
-            "blv": "TOMMY",
-            "blv_id": "414317",
-            "status": "retry",
-            "attempts": 1,
-            "attempts_total": 1,
-            "ever_attempted": true,
-            "valid_stream_ever_found": false,
-            "needs_token_refresh": true,
-            "completion_reason": "",
-            "rate_limit_hits": 0,
-            "last_http_status": 200,
-            "last_stream_count": 0,
-            "last_error": "Token cũ đã hết hạn; giữ nguyên attempts_total và trạng thái hoàn tất của BLV."
-          },
-          "387694": {
-            "key": "387694",
-            "url": "https://socolivep.cv/truc-tiep/toluca-vs-pumas-u-n-a-m-22-07-2026-1005?blv=387694",
-            "blv": "CR Bưởi",
-            "blv_id": "387694",
-            "status": "retry",
-            "attempts": 1,
-            "attempts_total": 1,
-            "ever_attempted": true,
-            "valid_stream_ever_found": false,
-            "needs_token_refresh": true,
-            "completion_reason": "",
-            "rate_limit_hits": 0,
-            "last_http_status": 200,
-            "last_stream_count": 0,
-            "last_error": "Token cũ đã hết hạn; giữ nguyên attempts_total và trạng thái hoàn tất của BLV."
-          },
-          "168740": {
-            "key": "168740",
-            "url": "https://socolivep.cv/truc-tiep/toluca-vs-pumas-u-n-a-m-22-07-2026-1005?blv=168740",
-            "blv": "ZIDANE",
-            "blv_id": "168740",
-            "status": "retry",
-            "attempts": 1,
-            "attempts_total": 1,
-            "ever_attempted": true,
-            "valid_stream_ever_found": false,
-            "needs_token_refresh": true,
-            "completion_reason": "",
-            "rate_limit_hits": 0,
-            "last_http_status": 200,
-            "last_stream_count": 0,
-            "last_error": "Token cũ đã hết hạn; giữ nguyên attempts_total và trạng thái hoàn tất của BLV."
-          },
-          "531989": {
-            "key": "531989",
-            "url": "https://socolivep.cv/truc-tiep/toluca-vs-pumas-u-n-a-m-22-07-2026-1005?blv=531989",
-            "blv": "COZY",
-            "blv_id": "531989",
-            "status": "success",
-            "attempts": 1,
-            "attempts_total": 1,
-            "ever_attempted": true,
-            "valid_stream_ever_found": true,
-            "needs_token_refresh": false,
-            "completion_reason": "valid_stream",
-            "rate_limit_hits": 0,
-            "last_http_status": 200,
-            "last_stream_count": 1,
-            "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
-          },
-          "360663": {
-            "key": "360663",
-            "url": "https://socolivep.cv/truc-tiep/toluca-vs-pumas-u-n-a-m-22-07-2026-1005?blv=360663",
-            "blv": "Củ Cải",
-            "blv_id": "360663",
-            "status": "retry",
-            "attempts": 1,
-            "attempts_total": 1,
-            "ever_attempted": true,
-            "valid_stream_ever_found": false,
-            "needs_token_refresh": true,
-            "completion_reason": "",
-            "rate_limit_hits": 0,
-            "last_http_status": 200,
-            "last_stream_count": 0,
-            "last_error": "Token cũ đã hết hạn; giữ nguyên attempts_total và trạng thái hoàn tất của BLV."
-          },
-          "118206": {
-            "key": "118206",
-            "url": "https://socolivep.cv/truc-tiep/toluca-vs-pumas-u-n-a-m-22-07-2026-1005?blv=118206",
-            "blv": "TẠ BIÊN GIỚI",
-            "blv_id": "118206",
-            "status": "retry",
-            "attempts": 1,
-            "attempts_total": 1,
-            "ever_attempted": true,
-            "valid_stream_ever_found": false,
-            "needs_token_refresh": true,
-            "completion_reason": "",
-            "rate_limit_hits": 0,
-            "last_http_status": 200,
-            "last_stream_count": 0,
-            "last_error": "Token cũ đã hết hạn; giữ nguyên attempts_total và trạng thái hoàn tất của BLV."
-          },
-          "__base__": {
-            "key": "__base__",
-            "url": "https://socolivep.cv/truc-tiep/toluca-vs-pumas-u-n-a-m-22-07-2026-1005",
-            "blv": "XEM NGAY",
-            "blv_id": "",
-            "status": "pending",
-            "attempts": 0,
-            "attempts_total": 0,
-            "ever_attempted": false,
-            "valid_stream_ever_found": false,
-            "needs_token_refresh": false,
-            "completion_reason": "",
-            "rate_limit_hits": 0,
-            "last_http_status": null,
-            "last_stream_count": 0,
-            "last_error": ""
-          }
-        }
-      },
-      "errors": [],
-      "room_progress": {
-        "414317": {
-          "key": "414317",
-          "url": "https://socolivep.cv/truc-tiep/toluca-vs-pumas-u-n-a-m-22-07-2026-1005?blv=414317",
-          "blv": "TOMMY",
-          "blv_id": "414317",
-          "status": "retry",
-          "attempts": 1,
-          "attempts_total": 1,
-          "ever_attempted": true,
-          "valid_stream_ever_found": false,
-          "needs_token_refresh": true,
-          "completion_reason": "",
-          "rate_limit_hits": 0,
-          "last_http_status": 200,
-          "last_stream_count": 0,
-          "last_error": "Token cũ đã hết hạn; giữ nguyên attempts_total và trạng thái hoàn tất của BLV."
-        },
-        "387694": {
-          "key": "387694",
-          "url": "https://socolivep.cv/truc-tiep/toluca-vs-pumas-u-n-a-m-22-07-2026-1005?blv=387694",
-          "blv": "CR Bưởi",
-          "blv_id": "387694",
-          "status": "retry",
-          "attempts": 1,
-          "attempts_total": 1,
-          "ever_attempted": true,
-          "valid_stream_ever_found": false,
-          "needs_token_refresh": true,
-          "completion_reason": "",
-          "rate_limit_hits": 0,
-          "last_http_status": 200,
-          "last_stream_count": 0,
-          "last_error": "Token cũ đã hết hạn; giữ nguyên attempts_total và trạng thái hoàn tất của BLV."
-        },
-        "168740": {
-          "key": "168740",
-          "url": "https://socolivep.cv/truc-tiep/toluca-vs-pumas-u-n-a-m-22-07-2026-1005?blv=168740",
-          "blv": "ZIDANE",
-          "blv_id": "168740",
-          "status": "retry",
-          "attempts": 1,
-          "attempts_total": 1,
-          "ever_attempted": true,
-          "valid_stream_ever_found": false,
-          "needs_token_refresh": true,
-          "completion_reason": "",
-          "rate_limit_hits": 0,
-          "last_http_status": 200,
-          "last_stream_count": 0,
-          "last_error": "Token cũ đã hết hạn; giữ nguyên attempts_total và trạng thái hoàn tất của BLV."
-        },
-        "531989": {
-          "key": "531989",
-          "url": "https://socolivep.cv/truc-tiep/toluca-vs-pumas-u-n-a-m-22-07-2026-1005?blv=531989",
-          "blv": "COZY",
-          "blv_id": "531989",
-          "status": "success",
-          "attempts": 1,
-          "attempts_total": 1,
-          "ever_attempted": true,
-          "valid_stream_ever_found": true,
-          "needs_token_refresh": false,
-          "completion_reason": "valid_stream",
-          "rate_limit_hits": 0,
-          "last_http_status": 200,
-          "last_stream_count": 1,
-          "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
-        },
-        "360663": {
-          "key": "360663",
-          "url": "https://socolivep.cv/truc-tiep/toluca-vs-pumas-u-n-a-m-22-07-2026-1005?blv=360663",
-          "blv": "Củ Cải",
-          "blv_id": "360663",
-          "status": "retry",
-          "attempts": 1,
-          "attempts_total": 1,
-          "ever_attempted": true,
-          "valid_stream_ever_found": false,
-          "needs_token_refresh": true,
-          "completion_reason": "",
-          "rate_limit_hits": 0,
-          "last_http_status": 200,
-          "last_stream_count": 0,
-          "last_error": "Token cũ đã hết hạn; giữ nguyên attempts_total và trạng thái hoàn tất của BLV."
-        },
-        "118206": {
-          "key": "118206",
-          "url": "https://socolivep.cv/truc-tiep/toluca-vs-pumas-u-n-a-m-22-07-2026-1005?blv=118206",
-          "blv": "TẠ BIÊN GIỚI",
-          "blv_id": "118206",
-          "status": "retry",
-          "attempts": 1,
-          "attempts_total": 1,
-          "ever_attempted": true,
-          "valid_stream_ever_found": false,
-          "needs_token_refresh": true,
-          "completion_reason": "",
-          "rate_limit_hits": 0,
-          "last_http_status": 200,
-          "last_stream_count": 0,
-          "last_error": "Token cũ đã hết hạn; giữ nguyên attempts_total và trạng thái hoàn tất của BLV."
-        },
-        "__base__": {
-          "key": "__base__",
-          "url": "https://socolivep.cv/truc-tiep/toluca-vs-pumas-u-n-a-m-22-07-2026-1005",
-          "blv": "XEM NGAY",
-          "blv_id": "",
-          "status": "pending",
-          "attempts": 0,
-          "attempts_total": 0,
-          "ever_attempted": false,
-          "valid_stream_ever_found": false,
-          "needs_token_refresh": false,
-          "completion_reason": "",
-          "rate_limit_hits": 0,
-          "last_http_status": null,
-          "last_stream_count": 0,
-          "last_error": ""
-        }
-      },
-      "run_attempted_room_keys": [
-        "118206",
-        "168740",
-        "360663",
-        "387694",
-        "414317",
-        "531989"
-      ],
-      "run_rate_limited_room_keys": [],
-      "run_completed_room_keys": [
-        "118206",
-        "168740",
-        "360663",
-        "387694",
-        "414317",
-        "531989"
-      ],
-      "run_global_budget_used": 10
     }
   ]
 }
