@@ -1,36 +1,146 @@
 {
-  "generated_at": "2026-07-23T04:12:44.282946+07:00",
+  "generated_at": "2026-07-23T05:02:01.238761+07:00",
   "state_schema_version": "v10.4-finite-two-pass-queue",
-  "dispatch_next": false,
-  "pending_count": 0,
-  "pending_room_count": 0,
-  "completed_count": 1,
-  "coverage_complete_count": 16,
-  "total_match_count": 16,
-  "total_stream_count": 1,
+  "dispatch_next": true,
+  "pending_count": 1,
+  "pending_room_count": 1,
+  "completed_count": 0,
+  "coverage_complete_count": 13,
+  "total_match_count": 14,
+  "total_stream_count": 0,
   "progress_count": 0,
   "new_link_count": 0,
   "refreshed_link_count": 0,
-  "queue_progress_count": 11,
-  "terminal_progress_count": 11,
-  "newly_attempted_count": 0,
-  "queue_total_rooms": 41,
+  "queue_progress_count": 32,
+  "terminal_progress_count": 31,
+  "newly_attempted_count": 1,
+  "queue_total_rooms": 32,
   "queue_success_rooms": 1,
-  "queue_exhausted_rooms": 40,
-  "queue_terminal_rooms": 41,
-  "queue_attempts_total": 82,
-  "chain_runs": 2,
+  "queue_exhausted_rooms": 30,
+  "queue_terminal_rooms": 31,
+  "queue_attempts_total": 63,
+  "chain_runs": 1,
   "no_progress_runs": 0,
   "no_queue_progress_runs": 0,
   "unchanged_pending_runs": 0,
   "rate_limit_only_runs": 0,
   "rate_limit_only_run": false,
-  "pending_fingerprint": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
-  "stop_reason": "complete",
+  "pending_fingerprint": "ca2319c21733d6bef1edb53fa81adef9811e7d351850e17d64cb261dd07bf762",
+  "stop_reason": "",
   "rate_limited": false,
   "rate_limit_url": "",
   "global_room_budget": 48,
-  "global_room_budget_used": 11,
-  "count": 0,
-  "matches": []
+  "global_room_budget_used": 1,
+  "count": 1,
+  "matches": [
+    {
+      "base_url": "https://socolive.watch/truc-tiep/sao-paulo-sp-vs-athletico-paranaense-pr-23-07-2026-0730/",
+      "match_name": "São Paulo - SP vs Athletico Paranaense - PR",
+      "scheduled_at": "2026-07-23T07:30:00+07:00",
+      "rooms": [
+        {
+          "url": "https://socolive.watch/truc-tiep/sao-paulo-sp-vs-athletico-paranaense-pr-23-07-2026-0730?blv=485739",
+          "blv": "CHIVAS",
+          "blv_id": "485739"
+        },
+        {
+          "url": "https://socolive.watch/truc-tiep/sao-paulo-sp-vs-athletico-paranaense-pr-23-07-2026-0730",
+          "blv": "XEM NGAY",
+          "blv_id": ""
+        }
+      ],
+      "streams": [],
+      "coverage": {
+        "found_streams": 0,
+        "found_blv_ids": [],
+        "goal": 2,
+        "source_goal_reached": false,
+        "room_queue_complete": false,
+        "complete": false,
+        "max_streams_per_blv": 2,
+        "total_explicit_blv_rooms": 1,
+        "pending_room_keys": [
+          "485739"
+        ],
+        "room_progress": {
+          "485739": {
+            "key": "485739",
+            "url": "https://socolive.watch/truc-tiep/sao-paulo-sp-vs-athletico-paranaense-pr-23-07-2026-0730?blv=485739",
+            "blv": "CHIVAS",
+            "blv_id": "485739",
+            "status": "retry",
+            "attempts": 1,
+            "attempts_total": 1,
+            "ever_attempted": true,
+            "valid_stream_ever_found": false,
+            "needs_token_refresh": false,
+            "completion_reason": "",
+            "rate_limit_hits": 0,
+            "last_http_status": 403,
+            "last_stream_count": 0,
+            "last_error": "console/error: Failed to load resource: the server responded with a status of 403 (); console/warning: No available adapters.; console/warning: No available adapters."
+          },
+          "__base__": {
+            "key": "__base__",
+            "url": "https://socolive.watch/truc-tiep/sao-paulo-sp-vs-athletico-paranaense-pr-23-07-2026-0730",
+            "blv": "XEM NGAY",
+            "blv_id": "",
+            "status": "pending",
+            "attempts": 0,
+            "attempts_total": 0,
+            "ever_attempted": false,
+            "valid_stream_ever_found": false,
+            "needs_token_refresh": false,
+            "completion_reason": "",
+            "rate_limit_hits": 0,
+            "last_http_status": null,
+            "last_stream_count": 0,
+            "last_error": ""
+          }
+        }
+      },
+      "attempted_room_ids": [
+        "485739"
+      ],
+      "room_progress": {
+        "485739": {
+          "key": "485739",
+          "url": "https://socolive.watch/truc-tiep/sao-paulo-sp-vs-athletico-paranaense-pr-23-07-2026-0730?blv=485739",
+          "blv": "CHIVAS",
+          "blv_id": "485739",
+          "status": "retry",
+          "attempts": 1,
+          "attempts_total": 1,
+          "ever_attempted": true,
+          "valid_stream_ever_found": false,
+          "needs_token_refresh": false,
+          "completion_reason": "",
+          "rate_limit_hits": 0,
+          "last_http_status": 403,
+          "last_stream_count": 0,
+          "last_error": "console/error: Failed to load resource: the server responded with a status of 403 (); console/warning: No available adapters.; console/warning: No available adapters."
+        },
+        "__base__": {
+          "key": "__base__",
+          "url": "https://socolive.watch/truc-tiep/sao-paulo-sp-vs-athletico-paranaense-pr-23-07-2026-0730",
+          "blv": "XEM NGAY",
+          "blv_id": "",
+          "status": "pending",
+          "attempts": 0,
+          "attempts_total": 0,
+          "ever_attempted": false,
+          "valid_stream_ever_found": false,
+          "needs_token_refresh": false,
+          "completion_reason": "",
+          "rate_limit_hits": 0,
+          "last_http_status": null,
+          "last_stream_count": 0,
+          "last_error": ""
+        }
+      },
+      "pending_room_keys": [
+        "485739"
+      ]
+    }
+  ]
 }
