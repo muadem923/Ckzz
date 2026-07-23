@@ -1,44 +1,46 @@
 {
-  "generated_at": "2026-07-23T11:01:08.468532+07:00",
+  "generated_at": "2026-07-23T12:02:37.761120+07:00",
   "state_schema_version": "v10.4-finite-two-pass-queue",
-  "dispatch_next": false,
-  "pending_count": 0,
-  "pending_room_count": 0,
-  "completed_count": 2,
-  "coverage_complete_count": 5,
+  "dispatch_next": true,
+  "pending_count": 1,
+  "pending_room_count": 6,
+  "completed_count": 1,
+  "coverage_complete_count": 4,
   "total_match_count": 5,
-  "total_stream_count": 2,
+  "total_stream_count": 1,
   "progress_count": 0,
   "new_link_count": 0,
   "refreshed_link_count": 0,
-  "queue_progress_count": 28,
-  "terminal_progress_count": 28,
-  "newly_attempted_count": 0,
-  "queue_total_rooms": 28,
-  "queue_success_rooms": 2,
-  "queue_exhausted_rooms": 26,
-  "queue_terminal_rooms": 28,
-  "queue_attempts_total": 56,
+  "queue_progress_count": 30,
+  "terminal_progress_count": 24,
+  "newly_attempted_count": 6,
+  "queue_total_rooms": 30,
+  "queue_success_rooms": 1,
+  "queue_exhausted_rooms": 23,
+  "queue_terminal_rooms": 24,
+  "queue_attempts_total": 54,
   "chain_runs": 1,
   "no_progress_runs": 0,
   "no_queue_progress_runs": 0,
   "unchanged_pending_runs": 0,
   "rate_limit_only_runs": 0,
   "rate_limit_only_run": false,
-  "pending_fingerprint": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
-  "stop_reason": "complete",
+  "pending_fingerprint": "329a824ddd44ad9cba25944c692d2b85a5554f266f8da98c07a3c9fd558dc6fe",
+  "stop_reason": "",
   "rate_limited": false,
   "rate_limit_url": "",
   "global_room_budget": 48,
-  "global_room_budget_used": 0,
+  "global_room_budget_used": 6,
   "target_base_urls": [
-    "https://socolive.watch/truc-tiep/colorado-rapids-vs-san-diego-fc-23-07-2026-0830/",
+    "https://socolive.watch/truc-tiep/ha-noi-u21-vs-song-lam-nghe-an-u21-23-07-2026-1530/",
     "https://socolive.watch/truc-tiep/los-angeles-fc-vs-real-salt-lake-23-07-2026-0930/",
     "https://socolive.watch/truc-tiep/los-angeles-galaxy-vs-st-louis-city-sc-23-07-2026-0930/",
     "https://socolive.watch/truc-tiep/portland-timbers-vs-fc-dallas-23-07-2026-0930/",
     "https://socolive.watch/truc-tiep/san-jose-earthquakes-vs-orlando-city-23-07-2026-0930/"
   ],
-  "pending_base_urls": [],
+  "pending_base_urls": [
+    "https://socolive.watch/truc-tiep/ha-noi-u21-vs-song-lam-nghe-an-u21-23-07-2026-1530/"
+  ],
   "matches": [
     {
       "base_url": "https://socolive.watch/truc-tiep/los-angeles-fc-vs-real-salt-lake-23-07-2026-0930/",
@@ -4376,77 +4378,67 @@
       }
     },
     {
-      "base_url": "https://socolive.watch/truc-tiep/colorado-rapids-vs-san-diego-fc-23-07-2026-0830/",
-      "raw_title": "Trực tiếp bóng đá Socolive Colorado Rapids vs San Diego FC lúc 08:30 ngày 23/07/2026",
-      "home_team": "Colorado Rapids",
-      "away_team": "San Diego FC",
-      "home_logo": "https://sta.vnres.co/file/common/20260720/e61591a6e5586c7b51ac2c4aad3671c0.png",
-      "away_logo": "https://sta.vnres.co/file/common/20260720/b4b8c61394939b9ae8077140effab526.png",
-      "time_text": "08:30",
+      "base_url": "https://socolive.watch/truc-tiep/ha-noi-u21-vs-song-lam-nghe-an-u21-23-07-2026-1530/",
+      "raw_title": "Trực tiếp bóng đá Socolive Ha Noi U21 vs Song Lam Nghe An U21 lúc 15:30 ngày 23/07/2026",
+      "home_team": "Ha Noi U21",
+      "away_team": "Song Lam Nghe An U21",
+      "home_logo": "https://sta.vnres.co/file/common/20260719/29ccc3d06c5301bc881915af4d0eec59.png",
+      "away_logo": "https://sta.vnres.co/file/common/20260720/1e73cbebbb0d5629ab85de3302d03c49.png",
+      "time_text": "15:30",
       "date_text": "23/07",
       "status": "",
-      "card_text": "USA MLS 08:30 23/07 Colorado Rapids VS XEM NGAY San Diego FC KAN YONE LUCAS RAMBO",
+      "card_text": "VIE U21 15:30 23/07 Ha Noi U21 VS XEM NGAY Song Lam Nghe An U21 ZIDANE A BỆU COCA TẠ BIÊN GIỚI CUỘI TAP",
       "rooms": [
         {
-          "url": "https://socolive.watch/truc-tiep/colorado-rapids-vs-san-diego-fc-23-07-2026-0830?blv=283501",
-          "blv": "KAN",
-          "blv_id": "283501"
+          "url": "https://socolive.watch/truc-tiep/ha-noi-u21-vs-song-lam-nghe-an-u21-23-07-2026-1530?blv=168740",
+          "blv": "ZIDANE",
+          "blv_id": "168740"
         },
         {
-          "url": "https://socolive.watch/truc-tiep/colorado-rapids-vs-san-diego-fc-23-07-2026-0830?blv=372746",
-          "blv": "YONE",
-          "blv_id": "372746"
+          "url": "https://socolive.watch/truc-tiep/ha-noi-u21-vs-song-lam-nghe-an-u21-23-07-2026-1530?blv=484845",
+          "blv": "A BỆU",
+          "blv_id": "484845"
         },
         {
-          "url": "https://socolive.watch/truc-tiep/colorado-rapids-vs-san-diego-fc-23-07-2026-0830?blv=304148",
-          "blv": "LUCAS",
-          "blv_id": "304148"
+          "url": "https://socolive.watch/truc-tiep/ha-noi-u21-vs-song-lam-nghe-an-u21-23-07-2026-1530?blv=327159",
+          "blv": "COCA",
+          "blv_id": "327159"
         },
         {
-          "url": "https://socolive.watch/truc-tiep/colorado-rapids-vs-san-diego-fc-23-07-2026-0830?blv=534055",
-          "blv": "RAMBO",
-          "blv_id": "534055"
+          "url": "https://socolive.watch/truc-tiep/ha-noi-u21-vs-song-lam-nghe-an-u21-23-07-2026-1530?blv=118206",
+          "blv": "TẠ BIÊN GIỚI",
+          "blv_id": "118206"
         },
         {
-          "url": "https://socolive.watch/truc-tiep/colorado-rapids-vs-san-diego-fc-23-07-2026-0830",
+          "url": "https://socolive.watch/truc-tiep/ha-noi-u21-vs-song-lam-nghe-an-u21-23-07-2026-1530?blv=256080",
+          "blv": "CUỘI",
+          "blv_id": "256080"
+        },
+        {
+          "url": "https://socolive.watch/truc-tiep/ha-noi-u21-vs-song-lam-nghe-an-u21-23-07-2026-1530?blv=147801",
+          "blv": "TAP",
+          "blv_id": "147801"
+        },
+        {
+          "url": "https://socolive.watch/truc-tiep/ha-noi-u21-vs-song-lam-nghe-an-u21-23-07-2026-1530",
           "blv": "XEM NGAY",
           "blv_id": ""
         }
       ],
-      "match_name": "Colorado Rapids vs San Diego FC",
-      "scheduled_at": "2026-07-23T08:30:00+07:00",
-      "streams": [
-        {
-          "url": "https://pull.niur.live/live/stream-283501_lhd.m3u8?txSecret=66be98f0dac752a12162446772dd6ead&txTime=6a61a16f",
-          "queue_room_key": "283501",
-          "room_url": "https://socolive.watch/truc-tiep/colorado-rapids-vs-san-diego-fc-23-07-2026-0830?blv=283501",
-          "blv": "KAN",
-          "blv_id": "283501",
-          "source_id": "283501",
-          "source_provenance": [
-            "final-no-stream-scan",
-            "harvest-final"
-          ],
-          "source_confidence": "embedded",
-          "mapping_mode": "exact-room-id",
-          "discovered_from_room_url": "https://socolive.watch/truc-tiep/colorado-rapids-vs-san-diego-fc-23-07-2026-0830?blv=283501",
-          "discovered_from_blv": "KAN",
-          "discovered_at": "2026-07-23T06:07:40.807056+07:00",
-          "valid_until": "2026-07-23T12:06:55+07:00",
-          "is_expired": false
-        }
-      ],
+      "match_name": "Ha Noi U21 vs Song Lam Nghe An U21",
+      "scheduled_at": "2026-07-23T15:30:00+07:00",
+      "streams": [],
       "room_results": [
         {
-          "url": "https://socolive.watch/truc-tiep/colorado-rapids-vs-san-diego-fc-23-07-2026-0830?blv=283501",
-          "blv": "KAN",
-          "blv_id": "283501",
+          "url": "https://socolive.watch/truc-tiep/ha-noi-u21-vs-song-lam-nghe-an-u21-23-07-2026-1530?blv=168740",
+          "blv": "ZIDANE",
+          "blv_id": "168740",
           "streams": [],
           "stream_sources": {},
           "stream_first_seen": [],
           "discovered_blv_ids": [],
           "diagnostics": {
-            "url": "https://socolive.watch/truc-tiep/colorado-rapids-vs-san-diego-fc-23-07-2026-0830?blv=283501",
+            "url": "https://socolive.watch/truc-tiep/ha-noi-u21-vs-song-lam-nghe-an-u21-23-07-2026-1530?blv=168740",
             "title": "Chờ một chút...",
             "h1": "socolive.watch",
             "ready_state": "complete",
@@ -4454,14 +4446,14 @@
             "hidden": false,
             "video_count": 0,
             "iframe_count": 0,
-            "body_sample": "socolive.watch Thực hiện xác minh bảo mật Trang web này sử dụng dịch vụ bảo mật để chống bot độc hại. Trang này hiển thị trong khi trang web xác minh bạn không phải là bot. Ray ID: a1f610c24d1aaee0 Hiệu suất và Tính bảo mật của Cloudflare Quyền riêng tư",
+            "body_sample": "socolive.watch Thực hiện xác minh bảo mật Trang web này sử dụng dịch vụ bảo mật để chống bot độc hại. Trang này hiển thị trong khi trang web xác minh bạn không phải là bot. Ray ID: a1f8201578aa49a4 Hiệu suất và Tính bảo mật của Cloudflare Quyền riêng tư",
             "harvest_rounds": 0,
-            "harvest_window_seconds": 0.623,
+            "harvest_window_seconds": 0.625,
             "main_status": 403,
             "harvested_stream_count": 0,
             "harvested_blv_ids": [],
             "scan_mode": "browser-event",
-            "elapsed_seconds": 13.171
+            "elapsed_seconds": 13.188
           },
           "http_probe": {
             "enabled": false,
@@ -4473,10 +4465,69 @@
             "console/error: Failed to load resource: the server responded with a status of 403 ()",
             "console/warning: No available adapters.",
             "console/warning: No available adapters.",
+            "console/error: Failed to load resource: net::ERR_FAILED",
             "console/error: %c%d font-size:0;color:transparent NaN",
             "console/error: %c%d font-size:0;color:transparent NaN",
             "console/warning: %c%d font-size:0;color:transparent NaN",
             "console/warning: %c%d font-size:0;color:transparent NaN",
+            "console/warning: OTS parsing error: Size of decompressed WOFF 2.0 is less than compressed size",
+            "console/warning: WebGL: INVALID_ENUM: getInternalformatParameter: invalid internalformat",
+            "console/warning: WebGL: INVALID_ENUM: getInternalformatParameter: invalid internalformat",
+            "console/warning: WebGL: INVALID_ENUM: getInternalformatParameter: invalid internalformat",
+            "console/warning: WebGL: INVALID_ENUM: getInternalformatParameter: invalid internalformat",
+            "console/warning: WebGL: INVALID_ENUM: getInternalformatParameter: invalid internalformat",
+            "console/warning: WebGL: INVALID_ENUM: getInternalformatParameter: invalid internalformat",
+            "console/warning: WebGL: INVALID_ENUM: getInternalformatParameter: invalid internalformat",
+            "console/warning: WebGL: INVALID_ENUM: getInternalformatParameter: invalid internalformat",
+            "console/warning: WebGL: INVALID_ENUM: getInternalformatParameter: invalid internalformat",
+            "console/warning: WebGL: INVALID_ENUM: getInternalformatParameter: invalid internalformat",
+            "console/warning: WebGL: INVALID_ENUM: getInternalformatParameter: invalid internalformat"
+          ],
+          "failed_requests": [
+            "fetch https://brunhild.challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/i/a1f820174f9d0579/MbKYi.J38.SuDXCUyknOIEpIaai_YXiVqdSS1uH5grA-1784782867-1.2.1.1-_yM3.v4RTZUiDqRXX2k08GcMfRH5JEyAAmHZhUW_pOCdyffc8epQNndLGgwf.1kP | net::ERR_NAME_NOT_RESOLVED",
+            "image https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/ci/a1f820174f9d0579/1784782867335/yQOM_urRhGovmxR | net::ERR_FAILED"
+          ],
+          "http_errors": [
+            "403 https://socolive.watch/truc-tiep/ha-noi-u21-vs-song-lam-nghe-an-u21-23-07-2026-1530?blv=168740",
+            "401 https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/pat/a1f820174f9d0579/1784782867334/c1b05c9b9f96e6bf9f1f77a034f3cb3967ff7610c0b30b99be9424cca462e981/zfhVYQ0XgHHZxaQ"
+          ]
+        },
+        {
+          "url": "https://socolive.watch/truc-tiep/ha-noi-u21-vs-song-lam-nghe-an-u21-23-07-2026-1530?blv=484845",
+          "blv": "A BỆU",
+          "blv_id": "484845",
+          "streams": [],
+          "stream_sources": {},
+          "stream_first_seen": [],
+          "discovered_blv_ids": [],
+          "diagnostics": {
+            "url": "https://socolive.watch/truc-tiep/ha-noi-u21-vs-song-lam-nghe-an-u21-23-07-2026-1530?blv=484845",
+            "title": "Chờ một chút...",
+            "h1": "socolive.watch",
+            "ready_state": "complete",
+            "visibility_state": "visible",
+            "hidden": false,
+            "video_count": 0,
+            "iframe_count": 0,
+            "body_sample": "socolive.watch Thực hiện xác minh bảo mật Trang web này sử dụng dịch vụ bảo mật để chống bot độc hại. Trang này hiển thị trong khi trang web xác minh bạn không phải là bot. Ray ID: a1f820745e0049a4 Hiệu suất và Tính bảo mật của Cloudflare Quyền riêng tư",
+            "harvest_rounds": 0,
+            "harvest_window_seconds": 0.622,
+            "main_status": 403,
+            "harvested_stream_count": 0,
+            "harvested_blv_ids": [],
+            "scan_mode": "browser-event",
+            "elapsed_seconds": 13.14
+          },
+          "http_probe": {
+            "enabled": false,
+            "status": null,
+            "elapsed_seconds": 0.0,
+            "error": ""
+          },
+          "errors": [
+            "console/error: Failed to load resource: the server responded with a status of 403 ()",
+            "console/warning: No available adapters.",
+            "console/warning: No available adapters.",
             "console/warning: WebGL: INVALID_ENUM: getInternalformatParameter: invalid internalformat",
             "console/warning: WebGL: INVALID_ENUM: getInternalformatParameter: invalid internalformat",
             "console/warning: WebGL: INVALID_ENUM: getInternalformatParameter: invalid internalformat",
@@ -4489,27 +4540,31 @@
             "console/warning: WebGL: INVALID_ENUM: getInternalformatParameter: invalid internalformat",
             "console/warning: WebGL: INVALID_ENUM: getInternalformatParameter: invalid internalformat",
             "console/warning: WebGL: INVALID_ENUM: getInternalformatParameter: invalid internalformat when EXT_color_buffer_[half_]float is not enabled",
+            "console/warning: WebGL: INVALID_ENUM: getInternalformatParameter: invalid internalformat when EXT_color_buffer_float is not enabled",
+            "console/warning: WebGL: INVALID_ENUM: getInternalformatParameter: invalid internalformat when EXT_color_buffer_float is not enabled",
+            "console/warning: WebGL: INVALID_ENUM: getInternalformatParameter: invalid internalformat",
+            "console/warning: WebGL: INVALID_ENUM: getInternalformatParameter: invalid internalformat when EXT_color_buffer_[half_]float is not enabled",
             "console/warning: WebGL: INVALID_ENUM: getInternalformatParameter: invalid internalformat when EXT_color_buffer_float is not enabled"
           ],
           "failed_requests": [
-            "fetch https://brunhild.challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/i/a1f610c408e5992b/8INjswC3I1s8PP74CS5E3BlwFrzD9bY5MlES4jfSyG0-1784761267-1.2.1.1-w21BG8q50rRPshC4s5I.HqDmb489Zrp8lLqd1MinPf3l8oOv9M8OkszkPpvq7VIc | net::ERR_NAME_NOT_RESOLVED",
-            "image https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/ci/a1f610c408e5992b/1784761268117/O4qOu6rJGakoQOJ | net::ERR_FAILED"
+            "fetch https://brunhild.challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/i/a1f820760e0d0579/RZOCKjiZZc.o2wu.YVzIZoOIi7j_oDqOT89DhcvI4MA-1784782882-1.2.1.1-yyKkmdhBJ.uDz_8Yglodj6wW98S_8Qi7y5hwhF30ri_shGKZ6u8VDSpr9w4J34XY | net::ERR_NAME_NOT_RESOLVED",
+            "image https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/ci/a1f820760e0d0579/1784782882522/Q4umj9LY46W9c84 | net::ERR_FAILED"
           ],
           "http_errors": [
-            "403 https://socolive.watch/truc-tiep/colorado-rapids-vs-san-diego-fc-23-07-2026-0830?blv=283501",
-            "401 https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/pat/a1f610c408e5992b/1784761268116/3d9ee8e0d789ea726411b2895c5ae9be2348c1ecb834421e80cb9e256cbdd19b/qqgQmsSsP5zehDK"
+            "403 https://socolive.watch/truc-tiep/ha-noi-u21-vs-song-lam-nghe-an-u21-23-07-2026-1530?blv=484845",
+            "401 https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/pat/a1f820760e0d0579/1784782882522/90050315b5b0040e5bc4e9d103d442af0c361d44c80dc4ad5c07cd920023c3ca/mem2RPn354pf2q9"
           ]
         },
         {
-          "url": "https://socolive.watch/truc-tiep/colorado-rapids-vs-san-diego-fc-23-07-2026-0830?blv=372746",
-          "blv": "YONE",
-          "blv_id": "372746",
+          "url": "https://socolive.watch/truc-tiep/ha-noi-u21-vs-song-lam-nghe-an-u21-23-07-2026-1530?blv=327159",
+          "blv": "COCA",
+          "blv_id": "327159",
           "streams": [],
           "stream_sources": {},
           "stream_first_seen": [],
           "discovered_blv_ids": [],
           "diagnostics": {
-            "url": "https://socolive.watch/truc-tiep/colorado-rapids-vs-san-diego-fc-23-07-2026-0830?blv=372746",
+            "url": "https://socolive.watch/truc-tiep/ha-noi-u21-vs-song-lam-nghe-an-u21-23-07-2026-1530?blv=327159",
             "title": "Chờ một chút...",
             "h1": "socolive.watch",
             "ready_state": "complete",
@@ -4517,9 +4572,9 @@
             "hidden": false,
             "video_count": 0,
             "iframe_count": 0,
-            "body_sample": "socolive.watch Thực hiện xác minh bảo mật Trang web này sử dụng dịch vụ bảo mật để chống bot độc hại. Trang này hiển thị trong khi trang web xác minh bạn không phải là bot. Ray ID: a1f611211b89aee0 Hiệu suất và Tính bảo mật của Cloudflare Quyền riêng tư",
+            "body_sample": "socolive.watch Thực hiện xác minh bảo mật Trang web này sử dụng dịch vụ bảo mật để chống bot độc hại. Trang này hiển thị trong khi trang web xác minh bạn không phải là bot. Ray ID: a1f820d309f749a4 Hiệu suất và Tính bảo mật của Cloudflare Quyền riêng tư",
             "harvest_rounds": 0,
-            "harvest_window_seconds": 0.623,
+            "harvest_window_seconds": 0.624,
             "main_status": 403,
             "harvested_stream_count": 0,
             "harvested_blv_ids": [],
@@ -4555,24 +4610,24 @@
             "console/warning: WebGL: INVALID_ENUM: getInternalformatParameter: invalid internalformat when EXT_color_buffer_float is not enabled"
           ],
           "failed_requests": [
-            "fetch https://brunhild.challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/i/a1f61122cc07992b/b9xMmrcXsMGr8kZ7mxhoQVAd7tXBkrGtxHNTakLJ2Vo-1784761283-1.2.1.1-n6sLWtjkfTTtmCMV8u3wb8zuj.X50JdV437JkdIWdmx_nES5GvLZmFzev.FdMDzb | net::ERR_NAME_NOT_RESOLVED",
-            "image https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/ci/a1f61122cc07992b/1784761283281/DzWGPIh_8S_IiMB | net::ERR_FAILED"
+            "fetch https://brunhild.challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/i/a1f820d4c97b0579/lt5LoFQc41mrXG_StZ0oAa8C5nRMXSJJ9EatGy_ZceU-1784782897-1.2.1.1-QyrIuv57ScUy3rDLKoV9.v5PRQWFjrVm9wQuH_LOFf0CnAao4PfYMuEijMJp6tcr | net::ERR_NAME_NOT_RESOLVED",
+            "image https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/ci/a1f820d4c97b0579/1784782897666/y020yTkRNO832Tr | net::ERR_FAILED"
           ],
           "http_errors": [
-            "403 https://socolive.watch/truc-tiep/colorado-rapids-vs-san-diego-fc-23-07-2026-0830?blv=372746",
-            "401 https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/pat/a1f61122cc07992b/1784761283281/4e29dd6b7bd518cf580c91079164e67d9cb0f4a99183408147f339d7ad6caf8f/4bRVXsWuFpRDf84"
+            "403 https://socolive.watch/truc-tiep/ha-noi-u21-vs-song-lam-nghe-an-u21-23-07-2026-1530?blv=327159",
+            "401 https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/pat/a1f820d4c97b0579/1784782897666/f116cb9b13a78330f3cfd2b4191db7648de36b0658726647be3c66488cddc1fa/SpgqUi5PNTsocyc"
           ]
         },
         {
-          "url": "https://socolive.watch/truc-tiep/colorado-rapids-vs-san-diego-fc-23-07-2026-0830?blv=304148",
-          "blv": "LUCAS",
-          "blv_id": "304148",
+          "url": "https://socolive.watch/truc-tiep/ha-noi-u21-vs-song-lam-nghe-an-u21-23-07-2026-1530?blv=118206",
+          "blv": "TẠ BIÊN GIỚI",
+          "blv_id": "118206",
           "streams": [],
           "stream_sources": {},
           "stream_first_seen": [],
           "discovered_blv_ids": [],
           "diagnostics": {
-            "url": "https://socolive.watch/truc-tiep/colorado-rapids-vs-san-diego-fc-23-07-2026-0830?blv=304148",
+            "url": "https://socolive.watch/truc-tiep/ha-noi-u21-vs-song-lam-nghe-an-u21-23-07-2026-1530?blv=118206",
             "title": "Chờ một chút...",
             "h1": "socolive.watch",
             "ready_state": "complete",
@@ -4580,14 +4635,77 @@
             "hidden": false,
             "video_count": 0,
             "iframe_count": 0,
-            "body_sample": "socolive.watch Thực hiện xác minh bảo mật Trang web này sử dụng dịch vụ bảo mật để chống bot độc hại. Trang này hiển thị trong khi trang web xác minh bạn không phải là bot. Ray ID: a1f6117fd8ecaee0 Hiệu suất và Tính bảo mật của Cloudflare Quyền riêng tư",
+            "body_sample": "socolive.watch Thực hiện xác minh bảo mật Trang web này sử dụng dịch vụ bảo mật để chống bot độc hại. Trang này hiển thị trong khi trang web xác minh bạn không phải là bot. Ray ID: a1f82131cd7149a4 Hiệu suất và Tính bảo mật của Cloudflare Quyền riêng tư",
+            "harvest_rounds": 0,
+            "harvest_window_seconds": 0.624,
+            "main_status": 403,
+            "harvested_stream_count": 0,
+            "harvested_blv_ids": [],
+            "scan_mode": "browser-event",
+            "elapsed_seconds": 13.145
+          },
+          "http_probe": {
+            "enabled": false,
+            "status": null,
+            "elapsed_seconds": 0.0,
+            "error": ""
+          },
+          "errors": [
+            "console/error: Failed to load resource: the server responded with a status of 403 ()",
+            "console/warning: No available adapters.",
+            "console/warning: No available adapters.",
+            "console/warning: WebGL: INVALID_ENUM: getInternalformatParameter: invalid internalformat",
+            "console/warning: WebGL: INVALID_ENUM: getInternalformatParameter: invalid internalformat",
+            "console/warning: WebGL: INVALID_ENUM: getInternalformatParameter: invalid internalformat",
+            "console/warning: WebGL: INVALID_ENUM: getInternalformatParameter: invalid internalformat",
+            "console/warning: WebGL: INVALID_ENUM: getInternalformatParameter: invalid internalformat",
+            "console/warning: WebGL: INVALID_ENUM: getInternalformatParameter: invalid internalformat",
+            "console/warning: WebGL: INVALID_ENUM: getInternalformatParameter: invalid internalformat",
+            "console/warning: WebGL: INVALID_ENUM: getInternalformatParameter: invalid internalformat",
+            "console/warning: WebGL: INVALID_ENUM: getInternalformatParameter: invalid internalformat",
+            "console/warning: WebGL: INVALID_ENUM: getInternalformatParameter: invalid internalformat",
+            "console/warning: WebGL: INVALID_ENUM: getInternalformatParameter: invalid internalformat",
+            "console/warning: WebGL: INVALID_ENUM: getInternalformatParameter: invalid internalformat when EXT_color_buffer_[half_]float is not enabled",
+            "console/warning: WebGL: INVALID_ENUM: getInternalformatParameter: invalid internalformat when EXT_color_buffer_float is not enabled",
+            "console/warning: WebGL: INVALID_ENUM: getInternalformatParameter: invalid internalformat when EXT_color_buffer_float is not enabled",
+            "console/warning: WebGL: INVALID_ENUM: getInternalformatParameter: invalid internalformat",
+            "console/warning: WebGL: INVALID_ENUM: getInternalformatParameter: invalid internalformat when EXT_color_buffer_[half_]float is not enabled",
+            "console/warning: WebGL: INVALID_ENUM: getInternalformatParameter: invalid internalformat when EXT_color_buffer_float is not enabled"
+          ],
+          "failed_requests": [
+            "fetch https://brunhild.challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/i/a1f821338f000579/5yubdYRCjGNWnDC9ZbtcBZW4Yh_TZEkk_feGgYTORxw-1784782912-1.2.1.1-X53ilN1_a43ENiEBywJjn2e8HIhDnrigXNKCcnRb64Pf7tDJR4ZUBZnV.Y.cnZaW | net::ERR_NAME_NOT_RESOLVED",
+            "image https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/ci/a1f821338f000579/1784782912840/i8LzmEPPO18TiJ_ | net::ERR_FAILED"
+          ],
+          "http_errors": [
+            "403 https://socolive.watch/truc-tiep/ha-noi-u21-vs-song-lam-nghe-an-u21-23-07-2026-1530?blv=118206",
+            "401 https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/pat/a1f821338f000579/1784782912839/6ae55bdb1587b925baed0e30b278f39a1da8e2cd7bf5df82778d714da242783f/bv0L7ZXCwDroWSj"
+          ]
+        },
+        {
+          "url": "https://socolive.watch/truc-tiep/ha-noi-u21-vs-song-lam-nghe-an-u21-23-07-2026-1530?blv=256080",
+          "blv": "CUỘI",
+          "blv_id": "256080",
+          "streams": [],
+          "stream_sources": {},
+          "stream_first_seen": [],
+          "discovered_blv_ids": [],
+          "diagnostics": {
+            "url": "https://socolive.watch/truc-tiep/ha-noi-u21-vs-song-lam-nghe-an-u21-23-07-2026-1530?blv=256080",
+            "title": "Chờ một chút...",
+            "h1": "socolive.watch",
+            "ready_state": "complete",
+            "visibility_state": "visible",
+            "hidden": false,
+            "video_count": 0,
+            "iframe_count": 0,
+            "body_sample": "socolive.watch Thực hiện xác minh bảo mật Trang web này sử dụng dịch vụ bảo mật để chống bot độc hại. Trang này hiển thị trong khi trang web xác minh bạn không phải là bot. Ray ID: a1f82190899a49a4 Hiệu suất và Tính bảo mật của Cloudflare Quyền riêng tư",
             "harvest_rounds": 0,
             "harvest_window_seconds": 0.623,
             "main_status": 403,
             "harvested_stream_count": 0,
             "harvested_blv_ids": [],
             "scan_mode": "browser-event",
-            "elapsed_seconds": 13.139
+            "elapsed_seconds": 13.158
           },
           "http_probe": {
             "enabled": false,
@@ -4618,24 +4736,24 @@
             "console/warning: WebGL: INVALID_ENUM: getInternalformatParameter: invalid internalformat when EXT_color_buffer_float is not enabled"
           ],
           "failed_requests": [
-            "fetch https://brunhild.challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/i/a1f6118188b2992b/ZyZAyeDTLMOBb_WgrhnTLcbYAlgXwcO_7jMmXeKspfQ-1784761298-1.2.1.1-NjnnmfZ.LMISgOTJiUyLdtKzt3NBgAtZJV7B5zNiu7_iQGr3hZdU2cgPgstpsbOd | net::ERR_NAME_NOT_RESOLVED",
-            "image https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/ci/a1f6118188b2992b/1784761298432/6jTKMsumic_qvWM | net::ERR_FAILED"
+            "fetch https://brunhild.challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/i/a1f821924e640579/vbhsD9PhyMmRFbwsFWTDbVkwr61g44Mp8nDDQG239jI-1784782927-1.2.1.1-lBfrExzoB5hFsvQeP22ddwbuvflFYGYsi8Rwx.0cysjH3UoTkW_YaqFxSOehKoB8 | net::ERR_NAME_NOT_RESOLVED",
+            "image https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/ci/a1f821924e640579/1784782928022/_fwYJ6r6mjgUSuU | net::ERR_FAILED"
           ],
           "http_errors": [
-            "403 https://socolive.watch/truc-tiep/colorado-rapids-vs-san-diego-fc-23-07-2026-0830?blv=304148",
-            "401 https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/pat/a1f6118188b2992b/1784761298432/d7424830ccac8f89e2aea986c4bff3ae0b2601980a6916629830d9e891d568d6/CIZEEkgU9HQxw6m"
+            "403 https://socolive.watch/truc-tiep/ha-noi-u21-vs-song-lam-nghe-an-u21-23-07-2026-1530?blv=256080",
+            "401 https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/pat/a1f821924e640579/1784782928021/ef85c2309f50db67d69d14574835c6b95d2337ed62bfe89359cb6a5a4bcf1fa9/PJLhLJsQr_DASLR"
           ]
         },
         {
-          "url": "https://socolive.watch/truc-tiep/colorado-rapids-vs-san-diego-fc-23-07-2026-0830?blv=534055",
-          "blv": "RAMBO",
-          "blv_id": "534055",
+          "url": "https://socolive.watch/truc-tiep/ha-noi-u21-vs-song-lam-nghe-an-u21-23-07-2026-1530?blv=147801",
+          "blv": "TAP",
+          "blv_id": "147801",
           "streams": [],
           "stream_sources": {},
           "stream_first_seen": [],
           "discovered_blv_ids": [],
           "diagnostics": {
-            "url": "https://socolive.watch/truc-tiep/colorado-rapids-vs-san-diego-fc-23-07-2026-0830?blv=534055",
+            "url": "https://socolive.watch/truc-tiep/ha-noi-u21-vs-song-lam-nghe-an-u21-23-07-2026-1530?blv=147801",
             "title": "Chờ một chút...",
             "h1": "socolive.watch",
             "ready_state": "complete",
@@ -4643,14 +4761,14 @@
             "hidden": false,
             "video_count": 0,
             "iframe_count": 0,
-            "body_sample": "socolive.watch Thực hiện xác minh bảo mật Trang web này sử dụng dịch vụ bảo mật để chống bot độc hại. Trang này hiển thị trong khi trang web xác minh bạn không phải là bot. Ray ID: a1f611de9fcdaee0 Hiệu suất và Tính bảo mật của Cloudflare Quyền riêng tư",
+            "body_sample": "socolive.watch Thực hiện xác minh bảo mật Trang web này sử dụng dịch vụ bảo mật để chống bot độc hại. Trang này hiển thị trong khi trang web xác minh bạn không phải là bot. Ray ID: a1f821ef5df049a4 Hiệu suất và Tính bảo mật của Cloudflare Quyền riêng tư",
             "harvest_rounds": 0,
             "harvest_window_seconds": 0.623,
             "main_status": 403,
             "harvested_stream_count": 0,
             "harvested_blv_ids": [],
             "scan_mode": "browser-event",
-            "elapsed_seconds": 13.15
+            "elapsed_seconds": 13.164
           },
           "http_probe": {
             "enabled": false,
@@ -4662,6 +4780,8 @@
             "console/error: Failed to load resource: the server responded with a status of 403 ()",
             "console/warning: No available adapters.",
             "console/warning: No available adapters.",
+            "console/warning: OTS parsing error: Size of decompressed WOFF 2.0 is less than compressed size",
+            "console/error: Failed to load resource: net::ERR_FAILED",
             "console/warning: WebGL: INVALID_ENUM: getInternalformatParameter: invalid internalformat",
             "console/warning: WebGL: INVALID_ENUM: getInternalformatParameter: invalid internalformat",
             "console/warning: WebGL: INVALID_ENUM: getInternalformatParameter: invalid internalformat",
@@ -4676,379 +4796,141 @@
             "console/warning: WebGL: INVALID_ENUM: getInternalformatParameter: invalid internalformat when EXT_color_buffer_[half_]float is not enabled",
             "console/warning: WebGL: INVALID_ENUM: getInternalformatParameter: invalid internalformat when EXT_color_buffer_float is not enabled",
             "console/warning: WebGL: INVALID_ENUM: getInternalformatParameter: invalid internalformat when EXT_color_buffer_float is not enabled",
-            "console/warning: WebGL: INVALID_ENUM: getInternalformatParameter: invalid internalformat",
-            "console/warning: WebGL: INVALID_ENUM: getInternalformatParameter: invalid internalformat when EXT_color_buffer_[half_]float is not enabled",
-            "console/warning: WebGL: INVALID_ENUM: getInternalformatParameter: invalid internalformat when EXT_color_buffer_float is not enabled"
+            "console/warning: WebGL: INVALID_ENUM: getInternalformatParameter: invalid internalformat"
           ],
           "failed_requests": [
-            "fetch https://brunhild.challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/i/a1f611e05859992b/91wwdb3cnXXqyYRxbRXCOaSJYjpj49ybV7u_hp5Ii7Q-1784761313-1.2.1.1-CTff8dVkbkhbXVOJtw0YMmGKdyP93KKK2FYCsUs.3DYE2coFzCIuVO8Lf8S.Y_9N | net::ERR_NAME_NOT_RESOLVED",
-            "image https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/ci/a1f611e05859992b/1784761313609/vGW02GfgDtJEGIH | net::ERR_FAILED"
+            "fetch https://brunhild.challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/i/a1f821f11bdc0579/_R.mQVwAT.o8m._K3OQNTcZLcfQiXUpoXnlXAnOCk78-1784782942-1.2.1.1-pnjQMWDM_Lm7gdIgl0xBs9AFtHP52oW_LUnjqIimeA6RyWikWNj.FOGe8s6vy9sj | net::ERR_NAME_NOT_RESOLVED",
+            "image https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/ci/a1f821f11bdc0579/1784782943195/jIT-s00H5Y8QJNr | net::ERR_FAILED"
           ],
           "http_errors": [
-            "403 https://socolive.watch/truc-tiep/colorado-rapids-vs-san-diego-fc-23-07-2026-0830?blv=534055",
-            "401 https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/pat/a1f611e05859992b/1784761313608/049a309789d473f339e8d47284579a18446187d6aa05e44b845a7523b1132314/UsjzK64OWaafrKx"
-          ]
-        },
-        {
-          "url": "https://socolive.watch/truc-tiep/colorado-rapids-vs-san-diego-fc-23-07-2026-0830?blv=283501",
-          "blv": "KAN",
-          "blv_id": "283501",
-          "streams": [
-            "https://pull.niur.live/live/stream-283501_lhd.m3u8?txSecret=66be98f0dac752a12162446772dd6ead&txTime=6a61a16f"
-          ],
-          "stream_sources": {
-            "https://pull.niur.live/live/stream-283501_lhd.m3u8?txSecret=66be98f0dac752a12162446772dd6ead&txTime=6a61a16f": [
-              "final-no-stream-scan",
-              "harvest-final"
-            ]
-          },
-          "stream_first_seen": [
-            "https://pull.niur.live/live/stream-283501_lhd.m3u8?txSecret=66be98f0dac752a12162446772dd6ead&txTime=6a61a16f"
-          ],
-          "discovered_blv_ids": [
-            "283501"
-          ],
-          "diagnostics": {
-            "url": "https://socolive.watch/truc-tiep/colorado-rapids-vs-san-diego-fc-23-07-2026-0830/?blv=283501",
-            "title": "Xem trực tiếp bóng đá Colorado Rapids vs San Diego FC | 08:30 ngày 23/07/2026",
-            "h1": "Trực tiếp bóng đá Socolive Colorado Rapids vs San Diego FC lúc 08:30 ngày 23/07/2026",
-            "ready_state": "complete",
-            "visibility_state": "visible",
-            "hidden": false,
-            "video_count": 0,
-            "iframe_count": 1,
-            "body_sample": "Skip to content Socolive Bảng xếp hạng Lịch thi đấu Kết quả bóng đá Tin thể thao Trực tiếp bóng đá Socolive Colorado Rapids vs San Diego FC lúc 08:30 ngày 23/07/2026 USA MLS Colorado Rapids 08:30 23/07 San Diego FC Trận đấu sẽ bắt đầu sau Ngày0 : Giờ2 : Phút22 : Giây19 Trận đấu chưa bắt đầu KAN YONE LUCAS RAMBO Chat Thống kê Đội hình Diễn Biến Bảng XH \" \" Admin Sóc Má Lúm 💋: Kèo đầu trận đã được gửi trong nhóm, các anh lên nhóm lấy kèo nhé, anh nào chưa vào nhóm thì liên hệ em hỗ trợ ạ ➡️ LIÊN HỆ EM MÃ BUFA: EPXMHR ☎️ telegram: https://t.me/socmalumne ☎️ FACEBOOK: https://www.facebook.com/bsportbty338 ✅BSPORT: https://www.bty0990.com Admin Sóc Má Lúm 💋: AE cần được tư vấn đăng ký vào nhóm liên hệ ZALO: 0565 188 410 Bình Luận Viên BLV KAN: HẾ SỜ LÔ SÓC IU VÀ TOÀN THỂ AE KÊNH CHAT NHÉ Bình Luận Viên BLV KAN: KÈO TRẬN ĐẤU HIỆN ĐÃ CÓ Ở NHÓM KAN , MỜI AE VÀO ĐỌC KÈO ĐỀ XUẤT VÀ ĐỒNG HÀNH CÙNG KAN VÀ CÁC AE BLV TỔ 2 VTY35-BTY338 NHÉ Xóa Tin nhắn riêng 😀 😁 😃 😄 😅 😆 😇 😉 😊 🙂 😋 😍 😘 😗 😙 😚 😜 😝 😛 😎 🙄 😳 😡 😕 😫 😤 😨 😥 😪 😓 😵 😲 🤧 😷 🤒 🤕 😴 💤 👏 🤙 👍 👎 👊 ✊ ✌ 👌 ✋ 🤚 💪 🤝 👈 👉 🖕 🖐 👄 👂 👀 🎅 🌞 🌙 ⭐ ⚡ 🔥 ❄️ ⚽ 🏀 🏈 ⚾ 🎁 🎉 ✒️ 📝 ❤️ 💛 💚 🆚 💬 🕐 Vô hiệu hóa ",
-            "harvest_rounds": 0,
-            "harvest_window_seconds": 0.637,
-            "main_status": 200,
-            "harvested_stream_count": 1,
-            "harvested_blv_ids": [
-              "283501"
-            ],
-            "scan_mode": "browser-event",
-            "elapsed_seconds": 15.189
-          },
-          "http_probe": {
-            "enabled": false,
-            "status": null,
-            "elapsed_seconds": 0.0,
-            "error": ""
-          },
-          "errors": [
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED"
-          ],
-          "failed_requests": [
-            "stylesheet https://socolive.watch/wp-content/plugins/stream-player-plugin/assets/dist/main.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolive.watch/wp-content/plugins/stream-player-plugin/assets/dist/customize.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolive.watch/wp-content/plugins/user-action-plugin/assets/css/auth.css?ver=434 | net::ERR_FAILED",
-            "stylesheet https://socolive.watch/wp-content/plugins/user-action-plugin/assets/css/chat.css?ver=593 | net::ERR_FAILED",
-            "stylesheet https://socolive.watch/wp-content/plugins/user-action-plugin/assets/css/chat(1).css?ver=460 | net::ERR_FAILED",
-            "stylesheet https://socolive.watch/wp-content/plugins/user-action-plugin/assets/css/toast.css?ver=730 | net::ERR_FAILED",
-            "stylesheet https://socolive.watch/wp-content/themes/flatsome/assets/css/flatsome.css?ver=3.18.2 | net::ERR_FAILED",
-            "stylesheet https://socolive.watch/wp-content/themes/flatsome-child/style.css?ver=3.0 | net::ERR_FAILED",
-            "stylesheet https://fonts.googleapis.com/css?family=Roboto:regular,700,regular,700,regular&display=swap&ver=3.9 | net::ERR_FAILED",
-            "stylesheet https://socolive.watch/wp-content/plugins/stream-player-plugin/assets/css/countdown.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolive.watch/wp-content/plugins/stream-player-plugin/assets/css/match.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolive.watch/wp-content/plugins/stream-player-plugin/assets/css/livescore.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolive.watch/wp-content/plugins/stream-player-plugin/assets/css/style_custom.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolive.watch/wp-content/plugins/stream-player-plugin/assets/css/effect/running-border.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolive.watch/wp-content/plugins/stream-player-plugin/assets/css/option/option-6.css?ver=2.8.5 | net::ERR_FAILED"
-          ],
-          "http_errors": [
-            "403 https://socolive.watch/wp-admin/admin-ajax.php?action=scl_realtime&sport=1"
-          ]
-        },
-        {
-          "url": "https://socolive.watch/truc-tiep/colorado-rapids-vs-san-diego-fc-23-07-2026-0830?blv=372746",
-          "blv": "YONE",
-          "blv_id": "372746",
-          "streams": [],
-          "stream_sources": {},
-          "stream_first_seen": [],
-          "discovered_blv_ids": [],
-          "diagnostics": {
-            "url": "https://socolive.watch/truc-tiep/colorado-rapids-vs-san-diego-fc-23-07-2026-0830?blv=372746",
-            "title": "Chờ một chút...",
-            "h1": "socolive.watch",
-            "ready_state": "complete",
-            "visibility_state": "visible",
-            "hidden": false,
-            "video_count": 0,
-            "iframe_count": 0,
-            "body_sample": "socolive.watch Thực hiện xác minh bảo mật Trang web này sử dụng dịch vụ bảo mật để chống bot độc hại. Trang này hiển thị trong khi trang web xác minh bạn không phải là bot. Ray ID: a1f61a68fb87ddff Hiệu suất và Tính bảo mật của Cloudflare Quyền riêng tư",
-            "harvest_rounds": 0,
-            "harvest_window_seconds": 0.622,
-            "main_status": 403,
-            "harvested_stream_count": 0,
-            "harvested_blv_ids": [],
-            "scan_mode": "browser-event",
-            "elapsed_seconds": 13.137
-          },
-          "http_probe": {
-            "enabled": false,
-            "status": null,
-            "elapsed_seconds": 0.0,
-            "error": ""
-          },
-          "errors": [
-            "console/error: Failed to load resource: the server responded with a status of 403 ()",
-            "console/warning: No available adapters.",
-            "console/warning: No available adapters.",
-            "console/warning: WebGL: INVALID_ENUM: getInternalformatParameter: invalid internalformat",
-            "console/warning: WebGL: INVALID_ENUM: getInternalformatParameter: invalid internalformat",
-            "console/warning: WebGL: INVALID_ENUM: getInternalformatParameter: invalid internalformat",
-            "console/warning: WebGL: INVALID_ENUM: getInternalformatParameter: invalid internalformat",
-            "console/warning: WebGL: INVALID_ENUM: getInternalformatParameter: invalid internalformat",
-            "console/warning: WebGL: INVALID_ENUM: getInternalformatParameter: invalid internalformat",
-            "console/warning: WebGL: INVALID_ENUM: getInternalformatParameter: invalid internalformat",
-            "console/warning: WebGL: INVALID_ENUM: getInternalformatParameter: invalid internalformat",
-            "console/warning: WebGL: INVALID_ENUM: getInternalformatParameter: invalid internalformat",
-            "console/warning: WebGL: INVALID_ENUM: getInternalformatParameter: invalid internalformat",
-            "console/warning: WebGL: INVALID_ENUM: getInternalformatParameter: invalid internalformat",
-            "console/warning: WebGL: INVALID_ENUM: getInternalformatParameter: invalid internalformat when EXT_color_buffer_[half_]float is not enabled",
-            "console/warning: WebGL: INVALID_ENUM: getInternalformatParameter: invalid internalformat when EXT_color_buffer_float is not enabled",
-            "console/warning: WebGL: INVALID_ENUM: getInternalformatParameter: invalid internalformat when EXT_color_buffer_float is not enabled",
-            "console/warning: WebGL: INVALID_ENUM: getInternalformatParameter: invalid internalformat",
-            "console/warning: WebGL: INVALID_ENUM: getInternalformatParameter: invalid internalformat when EXT_color_buffer_[half_]float is not enabled",
-            "console/warning: WebGL: INVALID_ENUM: getInternalformatParameter: invalid internalformat when EXT_color_buffer_float is not enabled"
-          ],
-          "failed_requests": [
-            "fetch https://brunhild.challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/i/a1f61a6aac1288f5/72GjZacnPeSPJhqBlbXoYUC.jZRKBuHqjIAJf_ixAuE-1784761663-1.2.1.1-ny2OH9xsdS0dVXxEmEyg_im.gabmqCg78AjxawrdKH.e.AcRhcqTtUZZeYSJemHg | net::ERR_NAME_NOT_RESOLVED",
-            "image https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/ci/a1f61a6aac1288f5/1784761663405/wcTypyNYhAC6Xd0 | net::ERR_FAILED"
-          ],
-          "http_errors": [
-            "403 https://socolive.watch/truc-tiep/colorado-rapids-vs-san-diego-fc-23-07-2026-0830?blv=372746",
-            "401 https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/pat/a1f61a6aac1288f5/1784761663404/3975da69c4603a2a0203b11e3f731503e968d4b91b972241e060650b42439545/RuYSMniFBNCPrqm"
-          ]
-        },
-        {
-          "url": "https://socolive.watch/truc-tiep/colorado-rapids-vs-san-diego-fc-23-07-2026-0830?blv=304148",
-          "blv": "LUCAS",
-          "blv_id": "304148",
-          "streams": [],
-          "stream_sources": {},
-          "stream_first_seen": [],
-          "discovered_blv_ids": [],
-          "diagnostics": {
-            "url": "https://socolive.watch/truc-tiep/colorado-rapids-vs-san-diego-fc-23-07-2026-0830?blv=304148",
-            "title": "Chờ một chút...",
-            "h1": "socolive.watch",
-            "ready_state": "complete",
-            "visibility_state": "visible",
-            "hidden": false,
-            "video_count": 0,
-            "iframe_count": 0,
-            "body_sample": "socolive.watch Thực hiện xác minh bảo mật Trang web này sử dụng dịch vụ bảo mật để chống bot độc hại. Trang này hiển thị trong khi trang web xác minh bạn không phải là bot. Ray ID: a1f61ac7afacddff Hiệu suất và Tính bảo mật của Cloudflare Quyền riêng tư",
-            "harvest_rounds": 0,
-            "harvest_window_seconds": 0.622,
-            "main_status": 403,
-            "harvested_stream_count": 0,
-            "harvested_blv_ids": [],
-            "scan_mode": "browser-event",
-            "elapsed_seconds": 13.131
-          },
-          "http_probe": {
-            "enabled": false,
-            "status": null,
-            "elapsed_seconds": 0.0,
-            "error": ""
-          },
-          "errors": [
-            "console/error: Failed to load resource: the server responded with a status of 403 ()",
-            "console/warning: No available adapters.",
-            "console/warning: No available adapters.",
-            "console/warning: WebGL: INVALID_ENUM: getInternalformatParameter: invalid internalformat",
-            "console/warning: WebGL: INVALID_ENUM: getInternalformatParameter: invalid internalformat",
-            "console/warning: WebGL: INVALID_ENUM: getInternalformatParameter: invalid internalformat",
-            "console/warning: WebGL: INVALID_ENUM: getInternalformatParameter: invalid internalformat",
-            "console/warning: WebGL: INVALID_ENUM: getInternalformatParameter: invalid internalformat",
-            "console/warning: WebGL: INVALID_ENUM: getInternalformatParameter: invalid internalformat",
-            "console/warning: WebGL: INVALID_ENUM: getInternalformatParameter: invalid internalformat",
-            "console/warning: WebGL: INVALID_ENUM: getInternalformatParameter: invalid internalformat",
-            "console/warning: WebGL: INVALID_ENUM: getInternalformatParameter: invalid internalformat",
-            "console/warning: WebGL: INVALID_ENUM: getInternalformatParameter: invalid internalformat",
-            "console/warning: WebGL: INVALID_ENUM: getInternalformatParameter: invalid internalformat",
-            "console/warning: WebGL: INVALID_ENUM: getInternalformatParameter: invalid internalformat when EXT_color_buffer_[half_]float is not enabled",
-            "console/warning: WebGL: INVALID_ENUM: getInternalformatParameter: invalid internalformat when EXT_color_buffer_float is not enabled",
-            "console/warning: WebGL: INVALID_ENUM: getInternalformatParameter: invalid internalformat when EXT_color_buffer_float is not enabled",
-            "console/warning: WebGL: INVALID_ENUM: getInternalformatParameter: invalid internalformat",
-            "console/warning: WebGL: INVALID_ENUM: getInternalformatParameter: invalid internalformat when EXT_color_buffer_[half_]float is not enabled",
-            "console/warning: WebGL: INVALID_ENUM: getInternalformatParameter: invalid internalformat when EXT_color_buffer_float is not enabled"
-          ],
-          "failed_requests": [
-            "fetch https://brunhild.challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/i/a1f61ac958e388f5/T0zDj85XuCBRjZlWpH1nQkHBHZsmvqrLqU9WSPLKZVo-1784761678-1.2.1.1-RfWCY8lkMqPNmcmMUnZznQT0yZRrK6WMpQdPpYbMKU2RWX6W2tp3kd7Oe62lIlpv | net::ERR_NAME_NOT_RESOLVED",
-            "image https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/ci/a1f61ac958e388f5/1784761678546/7kvKS3sDFjyOJ0j | net::ERR_FAILED"
-          ],
-          "http_errors": [
-            "403 https://socolive.watch/truc-tiep/colorado-rapids-vs-san-diego-fc-23-07-2026-0830?blv=304148",
-            "401 https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/pat/a1f61ac958e388f5/1784761678546/670d7869d5340365085b413a95ed5f9fbbdbc4eaaa4673f67af3545112a8918a/6Glg8uwfOWqx6S2"
-          ]
-        },
-        {
-          "url": "https://socolive.watch/truc-tiep/colorado-rapids-vs-san-diego-fc-23-07-2026-0830?blv=534055",
-          "blv": "RAMBO",
-          "blv_id": "534055",
-          "streams": [],
-          "stream_sources": {},
-          "stream_first_seen": [],
-          "discovered_blv_ids": [],
-          "diagnostics": {
-            "url": "https://socolive.watch/truc-tiep/colorado-rapids-vs-san-diego-fc-23-07-2026-0830?blv=534055",
-            "title": "Chờ một chút...",
-            "h1": "socolive.watch",
-            "ready_state": "complete",
-            "visibility_state": "visible",
-            "hidden": false,
-            "video_count": 0,
-            "iframe_count": 0,
-            "body_sample": "socolive.watch Thực hiện xác minh bảo mật Trang web này sử dụng dịch vụ bảo mật để chống bot độc hại. Trang này hiển thị trong khi trang web xác minh bạn không phải là bot. Ray ID: a1f61b266b9addff Hiệu suất và Tính bảo mật của Cloudflare Quyền riêng tư",
-            "harvest_rounds": 0,
-            "harvest_window_seconds": 0.622,
-            "main_status": 403,
-            "harvested_stream_count": 0,
-            "harvested_blv_ids": [],
-            "scan_mode": "browser-event",
-            "elapsed_seconds": 13.132
-          },
-          "http_probe": {
-            "enabled": false,
-            "status": null,
-            "elapsed_seconds": 0.0,
-            "error": ""
-          },
-          "errors": [
-            "console/error: Failed to load resource: the server responded with a status of 403 ()",
-            "console/warning: No available adapters.",
-            "console/warning: No available adapters.",
-            "console/error: %c%d font-size:0;color:transparent NaN",
-            "console/error: %c%d font-size:0;color:transparent NaN",
-            "console/warning: %c%d font-size:0;color:transparent NaN",
-            "console/warning: %c%d font-size:0;color:transparent NaN",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/warning: WebGL: INVALID_ENUM: getInternalformatParameter: invalid internalformat",
-            "console/warning: WebGL: INVALID_ENUM: getInternalformatParameter: invalid internalformat",
-            "console/warning: WebGL: INVALID_ENUM: getInternalformatParameter: invalid internalformat",
-            "console/warning: WebGL: INVALID_ENUM: getInternalformatParameter: invalid internalformat",
-            "console/warning: WebGL: INVALID_ENUM: getInternalformatParameter: invalid internalformat",
-            "console/warning: WebGL: INVALID_ENUM: getInternalformatParameter: invalid internalformat",
-            "console/warning: WebGL: INVALID_ENUM: getInternalformatParameter: invalid internalformat",
-            "console/warning: WebGL: INVALID_ENUM: getInternalformatParameter: invalid internalformat",
-            "console/warning: WebGL: INVALID_ENUM: getInternalformatParameter: invalid internalformat",
-            "console/warning: WebGL: INVALID_ENUM: getInternalformatParameter: invalid internalformat",
-            "console/warning: WebGL: INVALID_ENUM: getInternalformatParameter: invalid internalformat",
-            "console/warning: WebGL: INVALID_ENUM: getInternalformatParameter: invalid internalformat when EXT_color_buffer_[half_]float is not enabled"
-          ],
-          "failed_requests": [
-            "fetch https://brunhild.challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/i/a1f61b27fd8388f5/eTtd3ETffJUljz_c0vVSdsYt7MbN24rhQnVLyXGadAM-1784761693-1.2.1.1-fB.stesfWexJDqYmHUB8NG9.3PHTQ3kqj0v5Kcuh7Q8RZu7f5Qh5zwc5gB3CukTh | net::ERR_NAME_NOT_RESOLVED",
-            "image https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/ci/a1f61b27fd8388f5/1784761693705/2ZDc0Gr2Dg0pdMO | net::ERR_FAILED"
-          ],
-          "http_errors": [
-            "403 https://socolive.watch/truc-tiep/colorado-rapids-vs-san-diego-fc-23-07-2026-0830?blv=534055",
-            "401 https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/pat/a1f61b27fd8388f5/1784761693704/31c8c0a7edf1e0534f2ff1ff70a3241a2add33cdf24e7c2ecfbf8bec8f702510/5aD73jKfvBl-9J7"
+            "403 https://socolive.watch/truc-tiep/ha-noi-u21-vs-song-lam-nghe-an-u21-23-07-2026-1530?blv=147801",
+            "401 https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/pat/a1f821f11bdc0579/1784782943195/049deacd9bccfa84ae3ab070d83d9f005a08f7e8902b3fa943c6af5fc49a0a0e/S6_gaCnHswz1-9T"
           ]
         }
       ],
       "attempted_room_ids": [
-        "283501",
-        "304148",
-        "372746",
-        "534055"
+        "118206",
+        "147801",
+        "168740",
+        "256080",
+        "327159",
+        "484845"
       ],
       "coverage": {
-        "found_streams": 1,
-        "found_blv_ids": [
-          "283501"
-        ],
-        "goal": 8,
+        "found_streams": 0,
+        "found_blv_ids": [],
+        "goal": 12,
         "source_goal_reached": false,
-        "room_queue_complete": true,
-        "complete": true,
+        "room_queue_complete": false,
+        "complete": false,
         "max_streams_per_blv": 2,
-        "total_explicit_blv_rooms": 4,
-        "pending_room_keys": [],
+        "total_explicit_blv_rooms": 6,
+        "pending_room_keys": [
+          "168740",
+          "484845",
+          "327159",
+          "118206",
+          "256080",
+          "147801"
+        ],
         "room_progress": {
-          "283501": {
-            "key": "283501",
-            "url": "https://socolive.watch/truc-tiep/colorado-rapids-vs-san-diego-fc-23-07-2026-0830?blv=283501",
-            "blv": "KAN",
-            "blv_id": "283501",
-            "status": "success",
-            "attempts": 2,
-            "attempts_total": 2,
-            "ever_attempted": true,
-            "valid_stream_ever_found": true,
-            "needs_token_refresh": false,
-            "completion_reason": "valid_stream",
-            "rate_limit_hits": 0,
-            "last_http_status": 200,
-            "last_stream_count": 1,
-            "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
-          },
-          "372746": {
-            "key": "372746",
-            "url": "https://socolive.watch/truc-tiep/colorado-rapids-vs-san-diego-fc-23-07-2026-0830?blv=372746",
-            "blv": "YONE",
-            "blv_id": "372746",
-            "status": "exhausted",
-            "attempts": 2,
-            "attempts_total": 2,
+          "168740": {
+            "key": "168740",
+            "url": "https://socolive.watch/truc-tiep/ha-noi-u21-vs-song-lam-nghe-an-u21-23-07-2026-1530?blv=168740",
+            "blv": "ZIDANE",
+            "blv_id": "168740",
+            "status": "retry",
+            "attempts": 1,
+            "attempts_total": 1,
             "ever_attempted": true,
             "valid_stream_ever_found": false,
             "needs_token_refresh": false,
-            "completion_reason": "no_valid_stream_after_max_attempts",
+            "completion_reason": "",
             "rate_limit_hits": 0,
             "last_http_status": 403,
             "last_stream_count": 0,
             "last_error": "console/error: Failed to load resource: the server responded with a status of 403 (); console/warning: No available adapters.; console/warning: No available adapters."
           },
-          "304148": {
-            "key": "304148",
-            "url": "https://socolive.watch/truc-tiep/colorado-rapids-vs-san-diego-fc-23-07-2026-0830?blv=304148",
-            "blv": "LUCAS",
-            "blv_id": "304148",
-            "status": "exhausted",
-            "attempts": 2,
-            "attempts_total": 2,
+          "484845": {
+            "key": "484845",
+            "url": "https://socolive.watch/truc-tiep/ha-noi-u21-vs-song-lam-nghe-an-u21-23-07-2026-1530?blv=484845",
+            "blv": "A BỆU",
+            "blv_id": "484845",
+            "status": "retry",
+            "attempts": 1,
+            "attempts_total": 1,
             "ever_attempted": true,
             "valid_stream_ever_found": false,
             "needs_token_refresh": false,
-            "completion_reason": "no_valid_stream_after_max_attempts",
+            "completion_reason": "",
             "rate_limit_hits": 0,
             "last_http_status": 403,
             "last_stream_count": 0,
             "last_error": "console/error: Failed to load resource: the server responded with a status of 403 (); console/warning: No available adapters.; console/warning: No available adapters."
           },
-          "534055": {
-            "key": "534055",
-            "url": "https://socolive.watch/truc-tiep/colorado-rapids-vs-san-diego-fc-23-07-2026-0830?blv=534055",
-            "blv": "RAMBO",
-            "blv_id": "534055",
-            "status": "exhausted",
-            "attempts": 2,
-            "attempts_total": 2,
+          "327159": {
+            "key": "327159",
+            "url": "https://socolive.watch/truc-tiep/ha-noi-u21-vs-song-lam-nghe-an-u21-23-07-2026-1530?blv=327159",
+            "blv": "COCA",
+            "blv_id": "327159",
+            "status": "retry",
+            "attempts": 1,
+            "attempts_total": 1,
             "ever_attempted": true,
             "valid_stream_ever_found": false,
             "needs_token_refresh": false,
-            "completion_reason": "no_valid_stream_after_max_attempts",
+            "completion_reason": "",
+            "rate_limit_hits": 0,
+            "last_http_status": 403,
+            "last_stream_count": 0,
+            "last_error": "console/error: Failed to load resource: the server responded with a status of 403 (); console/warning: No available adapters.; console/warning: No available adapters."
+          },
+          "118206": {
+            "key": "118206",
+            "url": "https://socolive.watch/truc-tiep/ha-noi-u21-vs-song-lam-nghe-an-u21-23-07-2026-1530?blv=118206",
+            "blv": "TẠ BIÊN GIỚI",
+            "blv_id": "118206",
+            "status": "retry",
+            "attempts": 1,
+            "attempts_total": 1,
+            "ever_attempted": true,
+            "valid_stream_ever_found": false,
+            "needs_token_refresh": false,
+            "completion_reason": "",
+            "rate_limit_hits": 0,
+            "last_http_status": 403,
+            "last_stream_count": 0,
+            "last_error": "console/error: Failed to load resource: the server responded with a status of 403 (); console/warning: No available adapters.; console/warning: No available adapters."
+          },
+          "256080": {
+            "key": "256080",
+            "url": "https://socolive.watch/truc-tiep/ha-noi-u21-vs-song-lam-nghe-an-u21-23-07-2026-1530?blv=256080",
+            "blv": "CUỘI",
+            "blv_id": "256080",
+            "status": "retry",
+            "attempts": 1,
+            "attempts_total": 1,
+            "ever_attempted": true,
+            "valid_stream_ever_found": false,
+            "needs_token_refresh": false,
+            "completion_reason": "",
+            "rate_limit_hits": 0,
+            "last_http_status": 403,
+            "last_stream_count": 0,
+            "last_error": "console/error: Failed to load resource: the server responded with a status of 403 (); console/warning: No available adapters.; console/warning: No available adapters."
+          },
+          "147801": {
+            "key": "147801",
+            "url": "https://socolive.watch/truc-tiep/ha-noi-u21-vs-song-lam-nghe-an-u21-23-07-2026-1530?blv=147801",
+            "blv": "TAP",
+            "blv_id": "147801",
+            "status": "retry",
+            "attempts": 1,
+            "attempts_total": 1,
+            "ever_attempted": true,
+            "valid_stream_ever_found": false,
+            "needs_token_refresh": false,
+            "completion_reason": "",
             "rate_limit_hits": 0,
             "last_http_status": 403,
             "last_stream_count": 0,
@@ -5056,7 +4938,7 @@
           },
           "__base__": {
             "key": "__base__",
-            "url": "https://socolive.watch/truc-tiep/colorado-rapids-vs-san-diego-fc-23-07-2026-0830",
+            "url": "https://socolive.watch/truc-tiep/ha-noi-u21-vs-song-lam-nghe-an-u21-23-07-2026-1530",
             "blv": "XEM NGAY",
             "blv_id": "",
             "status": "pending",
@@ -5075,69 +4957,103 @@
       },
       "errors": [],
       "room_progress": {
-        "283501": {
-          "key": "283501",
-          "url": "https://socolive.watch/truc-tiep/colorado-rapids-vs-san-diego-fc-23-07-2026-0830?blv=283501",
-          "blv": "KAN",
-          "blv_id": "283501",
-          "status": "success",
-          "attempts": 2,
-          "attempts_total": 2,
-          "ever_attempted": true,
-          "valid_stream_ever_found": true,
-          "needs_token_refresh": false,
-          "completion_reason": "valid_stream",
-          "rate_limit_hits": 0,
-          "last_http_status": 200,
-          "last_stream_count": 1,
-          "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
-        },
-        "372746": {
-          "key": "372746",
-          "url": "https://socolive.watch/truc-tiep/colorado-rapids-vs-san-diego-fc-23-07-2026-0830?blv=372746",
-          "blv": "YONE",
-          "blv_id": "372746",
-          "status": "exhausted",
-          "attempts": 2,
-          "attempts_total": 2,
+        "168740": {
+          "key": "168740",
+          "url": "https://socolive.watch/truc-tiep/ha-noi-u21-vs-song-lam-nghe-an-u21-23-07-2026-1530?blv=168740",
+          "blv": "ZIDANE",
+          "blv_id": "168740",
+          "status": "retry",
+          "attempts": 1,
+          "attempts_total": 1,
           "ever_attempted": true,
           "valid_stream_ever_found": false,
           "needs_token_refresh": false,
-          "completion_reason": "no_valid_stream_after_max_attempts",
+          "completion_reason": "",
           "rate_limit_hits": 0,
           "last_http_status": 403,
           "last_stream_count": 0,
           "last_error": "console/error: Failed to load resource: the server responded with a status of 403 (); console/warning: No available adapters.; console/warning: No available adapters."
         },
-        "304148": {
-          "key": "304148",
-          "url": "https://socolive.watch/truc-tiep/colorado-rapids-vs-san-diego-fc-23-07-2026-0830?blv=304148",
-          "blv": "LUCAS",
-          "blv_id": "304148",
-          "status": "exhausted",
-          "attempts": 2,
-          "attempts_total": 2,
+        "484845": {
+          "key": "484845",
+          "url": "https://socolive.watch/truc-tiep/ha-noi-u21-vs-song-lam-nghe-an-u21-23-07-2026-1530?blv=484845",
+          "blv": "A BỆU",
+          "blv_id": "484845",
+          "status": "retry",
+          "attempts": 1,
+          "attempts_total": 1,
           "ever_attempted": true,
           "valid_stream_ever_found": false,
           "needs_token_refresh": false,
-          "completion_reason": "no_valid_stream_after_max_attempts",
+          "completion_reason": "",
           "rate_limit_hits": 0,
           "last_http_status": 403,
           "last_stream_count": 0,
           "last_error": "console/error: Failed to load resource: the server responded with a status of 403 (); console/warning: No available adapters.; console/warning: No available adapters."
         },
-        "534055": {
-          "key": "534055",
-          "url": "https://socolive.watch/truc-tiep/colorado-rapids-vs-san-diego-fc-23-07-2026-0830?blv=534055",
-          "blv": "RAMBO",
-          "blv_id": "534055",
-          "status": "exhausted",
-          "attempts": 2,
-          "attempts_total": 2,
+        "327159": {
+          "key": "327159",
+          "url": "https://socolive.watch/truc-tiep/ha-noi-u21-vs-song-lam-nghe-an-u21-23-07-2026-1530?blv=327159",
+          "blv": "COCA",
+          "blv_id": "327159",
+          "status": "retry",
+          "attempts": 1,
+          "attempts_total": 1,
           "ever_attempted": true,
           "valid_stream_ever_found": false,
           "needs_token_refresh": false,
-          "completion_reason": "no_valid_stream_after_max_attempts",
+          "completion_reason": "",
+          "rate_limit_hits": 0,
+          "last_http_status": 403,
+          "last_stream_count": 0,
+          "last_error": "console/error: Failed to load resource: the server responded with a status of 403 (); console/warning: No available adapters.; console/warning: No available adapters."
+        },
+        "118206": {
+          "key": "118206",
+          "url": "https://socolive.watch/truc-tiep/ha-noi-u21-vs-song-lam-nghe-an-u21-23-07-2026-1530?blv=118206",
+          "blv": "TẠ BIÊN GIỚI",
+          "blv_id": "118206",
+          "status": "retry",
+          "attempts": 1,
+          "attempts_total": 1,
+          "ever_attempted": true,
+          "valid_stream_ever_found": false,
+          "needs_token_refresh": false,
+          "completion_reason": "",
+          "rate_limit_hits": 0,
+          "last_http_status": 403,
+          "last_stream_count": 0,
+          "last_error": "console/error: Failed to load resource: the server responded with a status of 403 (); console/warning: No available adapters.; console/warning: No available adapters."
+        },
+        "256080": {
+          "key": "256080",
+          "url": "https://socolive.watch/truc-tiep/ha-noi-u21-vs-song-lam-nghe-an-u21-23-07-2026-1530?blv=256080",
+          "blv": "CUỘI",
+          "blv_id": "256080",
+          "status": "retry",
+          "attempts": 1,
+          "attempts_total": 1,
+          "ever_attempted": true,
+          "valid_stream_ever_found": false,
+          "needs_token_refresh": false,
+          "completion_reason": "",
+          "rate_limit_hits": 0,
+          "last_http_status": 403,
+          "last_stream_count": 0,
+          "last_error": "console/error: Failed to load resource: the server responded with a status of 403 (); console/warning: No available adapters.; console/warning: No available adapters."
+        },
+        "147801": {
+          "key": "147801",
+          "url": "https://socolive.watch/truc-tiep/ha-noi-u21-vs-song-lam-nghe-an-u21-23-07-2026-1530?blv=147801",
+          "blv": "TAP",
+          "blv_id": "147801",
+          "status": "retry",
+          "attempts": 1,
+          "attempts_total": 1,
+          "ever_attempted": true,
+          "valid_stream_ever_found": false,
+          "needs_token_refresh": false,
+          "completion_reason": "",
           "rate_limit_hits": 0,
           "last_http_status": 403,
           "last_stream_count": 0,
@@ -5145,7 +5061,7 @@
         },
         "__base__": {
           "key": "__base__",
-          "url": "https://socolive.watch/truc-tiep/colorado-rapids-vs-san-diego-fc-23-07-2026-0830",
+          "url": "https://socolive.watch/truc-tiep/ha-noi-u21-vs-song-lam-nghe-an-u21-23-07-2026-1530",
           "blv": "XEM NGAY",
           "blv_id": "",
           "status": "pending",
@@ -5160,7 +5076,25 @@
           "last_stream_count": 0,
           "last_error": ""
         }
-      }
+      },
+      "run_attempted_room_keys": [
+        "118206",
+        "147801",
+        "168740",
+        "256080",
+        "327159",
+        "484845"
+      ],
+      "run_rate_limited_room_keys": [],
+      "run_completed_room_keys": [
+        "118206",
+        "147801",
+        "168740",
+        "256080",
+        "327159",
+        "484845"
+      ],
+      "run_global_budget_used": 6
     }
   ]
 }
