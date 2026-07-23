@@ -1,36 +1,490 @@
 {
-  "generated_at": "2026-07-23T19:08:15.126137+07:00",
+  "generated_at": "2026-07-23T20:02:50.335604+07:00",
   "state_schema_version": "v10.4-finite-two-pass-queue",
-  "dispatch_next": false,
-  "pending_count": 0,
-  "pending_room_count": 0,
+  "dispatch_next": true,
+  "pending_count": 3,
+  "pending_room_count": 6,
   "completed_count": 1,
   "coverage_complete_count": 14,
-  "total_match_count": 14,
+  "total_match_count": 17,
   "total_stream_count": 1,
-  "progress_count": 1,
-  "new_link_count": 1,
+  "progress_count": 0,
+  "new_link_count": 0,
   "refreshed_link_count": 0,
-  "queue_progress_count": 12,
-  "terminal_progress_count": 12,
-  "newly_attempted_count": 0,
-  "queue_total_rooms": 48,
+  "queue_progress_count": 54,
+  "terminal_progress_count": 48,
+  "newly_attempted_count": 6,
+  "queue_total_rooms": 54,
   "queue_success_rooms": 1,
   "queue_exhausted_rooms": 47,
   "queue_terminal_rooms": 48,
-  "queue_attempts_total": 96,
-  "chain_runs": 2,
+  "queue_attempts_total": 102,
+  "chain_runs": 1,
   "no_progress_runs": 0,
   "no_queue_progress_runs": 0,
   "unchanged_pending_runs": 0,
   "rate_limit_only_runs": 0,
   "rate_limit_only_run": false,
-  "pending_fingerprint": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
-  "stop_reason": "complete",
+  "pending_fingerprint": "8cef2b623c7194e1b50c42fbbb12a46b529e45975b660489ba23470facb1aeae",
+  "stop_reason": "",
   "rate_limited": false,
   "rate_limit_url": "",
   "global_room_budget": 48,
-  "global_room_budget_used": 12,
-  "count": 0,
-  "matches": []
+  "global_room_budget_used": 6,
+  "count": 3,
+  "matches": [
+    {
+      "base_url": "https://socolive.watch/truc-tiep/rigas-futbola-skola-vs-vestri-23-07-2026-2330/",
+      "match_name": "Rigas Futbola Skola vs Vestri",
+      "scheduled_at": "2026-07-23T23:30:00+07:00",
+      "rooms": [
+        {
+          "url": "https://socolive.watch/truc-tiep/rigas-futbola-skola-vs-vestri-23-07-2026-2330?blv=610518",
+          "blv": "XUÂN TÓC ĐỎ",
+          "blv_id": "610518"
+        },
+        {
+          "url": "https://socolive.watch/truc-tiep/rigas-futbola-skola-vs-vestri-23-07-2026-2330?blv=109053",
+          "blv": "PEWPEW",
+          "blv_id": "109053"
+        },
+        {
+          "url": "https://socolive.watch/truc-tiep/rigas-futbola-skola-vs-vestri-23-07-2026-2330",
+          "blv": "XEM NGAY",
+          "blv_id": ""
+        }
+      ],
+      "streams": [],
+      "coverage": {
+        "found_streams": 0,
+        "found_blv_ids": [],
+        "goal": 4,
+        "source_goal_reached": false,
+        "room_queue_complete": false,
+        "complete": false,
+        "max_streams_per_blv": 2,
+        "total_explicit_blv_rooms": 2,
+        "pending_room_keys": [
+          "610518",
+          "109053"
+        ],
+        "room_progress": {
+          "610518": {
+            "key": "610518",
+            "url": "https://socolive.watch/truc-tiep/rigas-futbola-skola-vs-vestri-23-07-2026-2330?blv=610518",
+            "blv": "XUÂN TÓC ĐỎ",
+            "blv_id": "610518",
+            "status": "retry",
+            "attempts": 1,
+            "attempts_total": 1,
+            "ever_attempted": true,
+            "valid_stream_ever_found": false,
+            "needs_token_refresh": false,
+            "completion_reason": "",
+            "rate_limit_hits": 0,
+            "last_http_status": 403,
+            "last_stream_count": 0,
+            "last_error": "console/error: Failed to load resource: the server responded with a status of 403 (); console/warning: No available adapters.; console/warning: No available adapters."
+          },
+          "109053": {
+            "key": "109053",
+            "url": "https://socolive.watch/truc-tiep/rigas-futbola-skola-vs-vestri-23-07-2026-2330?blv=109053",
+            "blv": "PEWPEW",
+            "blv_id": "109053",
+            "status": "retry",
+            "attempts": 1,
+            "attempts_total": 1,
+            "ever_attempted": true,
+            "valid_stream_ever_found": false,
+            "needs_token_refresh": false,
+            "completion_reason": "",
+            "rate_limit_hits": 0,
+            "last_http_status": 403,
+            "last_stream_count": 0,
+            "last_error": "console/error: Failed to load resource: the server responded with a status of 403 (); console/warning: No available adapters.; console/warning: No available adapters."
+          },
+          "__base__": {
+            "key": "__base__",
+            "url": "https://socolive.watch/truc-tiep/rigas-futbola-skola-vs-vestri-23-07-2026-2330",
+            "blv": "XEM NGAY",
+            "blv_id": "",
+            "status": "pending",
+            "attempts": 0,
+            "attempts_total": 0,
+            "ever_attempted": false,
+            "valid_stream_ever_found": false,
+            "needs_token_refresh": false,
+            "completion_reason": "",
+            "rate_limit_hits": 0,
+            "last_http_status": null,
+            "last_stream_count": 0,
+            "last_error": ""
+          }
+        }
+      },
+      "attempted_room_ids": [
+        "109053",
+        "610518"
+      ],
+      "room_progress": {
+        "610518": {
+          "key": "610518",
+          "url": "https://socolive.watch/truc-tiep/rigas-futbola-skola-vs-vestri-23-07-2026-2330?blv=610518",
+          "blv": "XUÂN TÓC ĐỎ",
+          "blv_id": "610518",
+          "status": "retry",
+          "attempts": 1,
+          "attempts_total": 1,
+          "ever_attempted": true,
+          "valid_stream_ever_found": false,
+          "needs_token_refresh": false,
+          "completion_reason": "",
+          "rate_limit_hits": 0,
+          "last_http_status": 403,
+          "last_stream_count": 0,
+          "last_error": "console/error: Failed to load resource: the server responded with a status of 403 (); console/warning: No available adapters.; console/warning: No available adapters."
+        },
+        "109053": {
+          "key": "109053",
+          "url": "https://socolive.watch/truc-tiep/rigas-futbola-skola-vs-vestri-23-07-2026-2330?blv=109053",
+          "blv": "PEWPEW",
+          "blv_id": "109053",
+          "status": "retry",
+          "attempts": 1,
+          "attempts_total": 1,
+          "ever_attempted": true,
+          "valid_stream_ever_found": false,
+          "needs_token_refresh": false,
+          "completion_reason": "",
+          "rate_limit_hits": 0,
+          "last_http_status": 403,
+          "last_stream_count": 0,
+          "last_error": "console/error: Failed to load resource: the server responded with a status of 403 (); console/warning: No available adapters.; console/warning: No available adapters."
+        },
+        "__base__": {
+          "key": "__base__",
+          "url": "https://socolive.watch/truc-tiep/rigas-futbola-skola-vs-vestri-23-07-2026-2330",
+          "blv": "XEM NGAY",
+          "blv_id": "",
+          "status": "pending",
+          "attempts": 0,
+          "attempts_total": 0,
+          "ever_attempted": false,
+          "valid_stream_ever_found": false,
+          "needs_token_refresh": false,
+          "completion_reason": "",
+          "rate_limit_hits": 0,
+          "last_http_status": null,
+          "last_stream_count": 0,
+          "last_error": ""
+        }
+      },
+      "pending_room_keys": [
+        "610518",
+        "109053"
+      ]
+    },
+    {
+      "base_url": "https://socolive.watch/truc-tiep/rakow-czestochowa-vs-valletta-fc-23-07-2026-2330/",
+      "match_name": "Rakow Czestochowa vs Valletta FC",
+      "scheduled_at": "2026-07-23T23:30:00+07:00",
+      "rooms": [
+        {
+          "url": "https://socolive.watch/truc-tiep/rakow-czestochowa-vs-valletta-fc-23-07-2026-2330?blv=603914",
+          "blv": "TRÀ ĐÁ",
+          "blv_id": "603914"
+        },
+        {
+          "url": "https://socolive.watch/truc-tiep/rakow-czestochowa-vs-valletta-fc-23-07-2026-2330?blv=560690",
+          "blv": "KÉP",
+          "blv_id": "560690"
+        },
+        {
+          "url": "https://socolive.watch/truc-tiep/rakow-czestochowa-vs-valletta-fc-23-07-2026-2330",
+          "blv": "XEM NGAY",
+          "blv_id": ""
+        }
+      ],
+      "streams": [],
+      "coverage": {
+        "found_streams": 0,
+        "found_blv_ids": [],
+        "goal": 4,
+        "source_goal_reached": false,
+        "room_queue_complete": false,
+        "complete": false,
+        "max_streams_per_blv": 2,
+        "total_explicit_blv_rooms": 2,
+        "pending_room_keys": [
+          "603914",
+          "560690"
+        ],
+        "room_progress": {
+          "603914": {
+            "key": "603914",
+            "url": "https://socolive.watch/truc-tiep/rakow-czestochowa-vs-valletta-fc-23-07-2026-2330?blv=603914",
+            "blv": "TRÀ ĐÁ",
+            "blv_id": "603914",
+            "status": "retry",
+            "attempts": 1,
+            "attempts_total": 1,
+            "ever_attempted": true,
+            "valid_stream_ever_found": false,
+            "needs_token_refresh": false,
+            "completion_reason": "",
+            "rate_limit_hits": 0,
+            "last_http_status": 403,
+            "last_stream_count": 0,
+            "last_error": "console/error: Failed to load resource: the server responded with a status of 403 (); console/warning: No available adapters.; console/warning: No available adapters."
+          },
+          "560690": {
+            "key": "560690",
+            "url": "https://socolive.watch/truc-tiep/rakow-czestochowa-vs-valletta-fc-23-07-2026-2330?blv=560690",
+            "blv": "KÉP",
+            "blv_id": "560690",
+            "status": "retry",
+            "attempts": 1,
+            "attempts_total": 1,
+            "ever_attempted": true,
+            "valid_stream_ever_found": false,
+            "needs_token_refresh": false,
+            "completion_reason": "",
+            "rate_limit_hits": 0,
+            "last_http_status": 403,
+            "last_stream_count": 0,
+            "last_error": "console/error: Failed to load resource: the server responded with a status of 403 (); console/warning: No available adapters.; console/warning: No available adapters."
+          },
+          "__base__": {
+            "key": "__base__",
+            "url": "https://socolive.watch/truc-tiep/rakow-czestochowa-vs-valletta-fc-23-07-2026-2330",
+            "blv": "XEM NGAY",
+            "blv_id": "",
+            "status": "pending",
+            "attempts": 0,
+            "attempts_total": 0,
+            "ever_attempted": false,
+            "valid_stream_ever_found": false,
+            "needs_token_refresh": false,
+            "completion_reason": "",
+            "rate_limit_hits": 0,
+            "last_http_status": null,
+            "last_stream_count": 0,
+            "last_error": ""
+          }
+        }
+      },
+      "attempted_room_ids": [
+        "560690",
+        "603914"
+      ],
+      "room_progress": {
+        "603914": {
+          "key": "603914",
+          "url": "https://socolive.watch/truc-tiep/rakow-czestochowa-vs-valletta-fc-23-07-2026-2330?blv=603914",
+          "blv": "TRÀ ĐÁ",
+          "blv_id": "603914",
+          "status": "retry",
+          "attempts": 1,
+          "attempts_total": 1,
+          "ever_attempted": true,
+          "valid_stream_ever_found": false,
+          "needs_token_refresh": false,
+          "completion_reason": "",
+          "rate_limit_hits": 0,
+          "last_http_status": 403,
+          "last_stream_count": 0,
+          "last_error": "console/error: Failed to load resource: the server responded with a status of 403 (); console/warning: No available adapters.; console/warning: No available adapters."
+        },
+        "560690": {
+          "key": "560690",
+          "url": "https://socolive.watch/truc-tiep/rakow-czestochowa-vs-valletta-fc-23-07-2026-2330?blv=560690",
+          "blv": "KÉP",
+          "blv_id": "560690",
+          "status": "retry",
+          "attempts": 1,
+          "attempts_total": 1,
+          "ever_attempted": true,
+          "valid_stream_ever_found": false,
+          "needs_token_refresh": false,
+          "completion_reason": "",
+          "rate_limit_hits": 0,
+          "last_http_status": 403,
+          "last_stream_count": 0,
+          "last_error": "console/error: Failed to load resource: the server responded with a status of 403 (); console/warning: No available adapters.; console/warning: No available adapters."
+        },
+        "__base__": {
+          "key": "__base__",
+          "url": "https://socolive.watch/truc-tiep/rakow-czestochowa-vs-valletta-fc-23-07-2026-2330",
+          "blv": "XEM NGAY",
+          "blv_id": "",
+          "status": "pending",
+          "attempts": 0,
+          "attempts_total": 0,
+          "ever_attempted": false,
+          "valid_stream_ever_found": false,
+          "needs_token_refresh": false,
+          "completion_reason": "",
+          "rate_limit_hits": 0,
+          "last_http_status": null,
+          "last_stream_count": 0,
+          "last_error": ""
+        }
+      },
+      "pending_room_keys": [
+        "603914",
+        "560690"
+      ]
+    },
+    {
+      "base_url": "https://socolive.watch/truc-tiep/aek-larnaca-vs-beitar-jerusalem-23-07-2026-2330/",
+      "match_name": "AEK Larnaca vs Beitar Jerusalem",
+      "scheduled_at": "2026-07-23T23:30:00+07:00",
+      "rooms": [
+        {
+          "url": "https://socolive.watch/truc-tiep/aek-larnaca-vs-beitar-jerusalem-23-07-2026-2330?blv=622093",
+          "blv": "GRAP",
+          "blv_id": "622093"
+        },
+        {
+          "url": "https://socolive.watch/truc-tiep/aek-larnaca-vs-beitar-jerusalem-23-07-2026-2330?blv=598549",
+          "blv": "PICK",
+          "blv_id": "598549"
+        },
+        {
+          "url": "https://socolive.watch/truc-tiep/aek-larnaca-vs-beitar-jerusalem-23-07-2026-2330",
+          "blv": "XEM NGAY",
+          "blv_id": ""
+        }
+      ],
+      "streams": [],
+      "coverage": {
+        "found_streams": 0,
+        "found_blv_ids": [],
+        "goal": 4,
+        "source_goal_reached": false,
+        "room_queue_complete": false,
+        "complete": false,
+        "max_streams_per_blv": 2,
+        "total_explicit_blv_rooms": 2,
+        "pending_room_keys": [
+          "622093",
+          "598549"
+        ],
+        "room_progress": {
+          "622093": {
+            "key": "622093",
+            "url": "https://socolive.watch/truc-tiep/aek-larnaca-vs-beitar-jerusalem-23-07-2026-2330?blv=622093",
+            "blv": "GRAP",
+            "blv_id": "622093",
+            "status": "retry",
+            "attempts": 1,
+            "attempts_total": 1,
+            "ever_attempted": true,
+            "valid_stream_ever_found": false,
+            "needs_token_refresh": false,
+            "completion_reason": "",
+            "rate_limit_hits": 0,
+            "last_http_status": 403,
+            "last_stream_count": 0,
+            "last_error": "console/error: Failed to load resource: the server responded with a status of 403 (); console/warning: No available adapters.; console/warning: No available adapters."
+          },
+          "598549": {
+            "key": "598549",
+            "url": "https://socolive.watch/truc-tiep/aek-larnaca-vs-beitar-jerusalem-23-07-2026-2330?blv=598549",
+            "blv": "PICK",
+            "blv_id": "598549",
+            "status": "retry",
+            "attempts": 1,
+            "attempts_total": 1,
+            "ever_attempted": true,
+            "valid_stream_ever_found": false,
+            "needs_token_refresh": false,
+            "completion_reason": "",
+            "rate_limit_hits": 0,
+            "last_http_status": 403,
+            "last_stream_count": 0,
+            "last_error": "console/error: Failed to load resource: the server responded with a status of 403 (); console/warning: No available adapters.; console/warning: No available adapters."
+          },
+          "__base__": {
+            "key": "__base__",
+            "url": "https://socolive.watch/truc-tiep/aek-larnaca-vs-beitar-jerusalem-23-07-2026-2330",
+            "blv": "XEM NGAY",
+            "blv_id": "",
+            "status": "pending",
+            "attempts": 0,
+            "attempts_total": 0,
+            "ever_attempted": false,
+            "valid_stream_ever_found": false,
+            "needs_token_refresh": false,
+            "completion_reason": "",
+            "rate_limit_hits": 0,
+            "last_http_status": null,
+            "last_stream_count": 0,
+            "last_error": ""
+          }
+        }
+      },
+      "attempted_room_ids": [
+        "598549",
+        "622093"
+      ],
+      "room_progress": {
+        "622093": {
+          "key": "622093",
+          "url": "https://socolive.watch/truc-tiep/aek-larnaca-vs-beitar-jerusalem-23-07-2026-2330?blv=622093",
+          "blv": "GRAP",
+          "blv_id": "622093",
+          "status": "retry",
+          "attempts": 1,
+          "attempts_total": 1,
+          "ever_attempted": true,
+          "valid_stream_ever_found": false,
+          "needs_token_refresh": false,
+          "completion_reason": "",
+          "rate_limit_hits": 0,
+          "last_http_status": 403,
+          "last_stream_count": 0,
+          "last_error": "console/error: Failed to load resource: the server responded with a status of 403 (); console/warning: No available adapters.; console/warning: No available adapters."
+        },
+        "598549": {
+          "key": "598549",
+          "url": "https://socolive.watch/truc-tiep/aek-larnaca-vs-beitar-jerusalem-23-07-2026-2330?blv=598549",
+          "blv": "PICK",
+          "blv_id": "598549",
+          "status": "retry",
+          "attempts": 1,
+          "attempts_total": 1,
+          "ever_attempted": true,
+          "valid_stream_ever_found": false,
+          "needs_token_refresh": false,
+          "completion_reason": "",
+          "rate_limit_hits": 0,
+          "last_http_status": 403,
+          "last_stream_count": 0,
+          "last_error": "console/error: Failed to load resource: the server responded with a status of 403 (); console/warning: No available adapters.; console/warning: No available adapters."
+        },
+        "__base__": {
+          "key": "__base__",
+          "url": "https://socolive.watch/truc-tiep/aek-larnaca-vs-beitar-jerusalem-23-07-2026-2330",
+          "blv": "XEM NGAY",
+          "blv_id": "",
+          "status": "pending",
+          "attempts": 0,
+          "attempts_total": 0,
+          "ever_attempted": false,
+          "valid_stream_ever_found": false,
+          "needs_token_refresh": false,
+          "completion_reason": "",
+          "rate_limit_hits": 0,
+          "last_http_status": null,
+          "last_stream_count": 0,
+          "last_error": ""
+        }
+      },
+      "pending_room_keys": [
+        "622093",
+        "598549"
+      ]
+    }
+  ]
 }
