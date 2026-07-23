@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-23T23:01:12.063660+07:00",
+  "generated_at": "2026-07-24T00:01:04.575604+07:00",
   "state_schema_version": "v10.4-finite-two-pass-queue",
   "dispatch_next": false,
   "pending_count": 0,
@@ -11,17 +11,17 @@
   "progress_count": 0,
   "new_link_count": 0,
   "refreshed_link_count": 0,
-  "queue_progress_count": 36,
-  "terminal_progress_count": 36,
+  "queue_progress_count": 0,
+  "terminal_progress_count": 0,
   "newly_attempted_count": 0,
   "queue_total_rooms": 36,
   "queue_success_rooms": 1,
   "queue_exhausted_rooms": 35,
   "queue_terminal_rooms": 36,
   "queue_attempts_total": 72,
-  "chain_runs": 1,
-  "no_progress_runs": 0,
-  "no_queue_progress_runs": 0,
+  "chain_runs": 2,
+  "no_progress_runs": 1,
+  "no_queue_progress_runs": 1,
   "unchanged_pending_runs": 0,
   "rate_limit_only_runs": 0,
   "rate_limit_only_run": false,
@@ -48,6 +48,1142 @@
   ],
   "pending_base_urls": [],
   "matches": [
+    {
+      "base_url": "https://socolive.watch/truc-tiep/aek-larnaca-vs-beitar-jerusalem-23-07-2026-2330/",
+      "raw_title": "Trực tiếp bóng đá Socolive AEK Larnaca vs Beitar Jerusalem lúc 23:30 ngày 23/07/2026",
+      "home_team": "AEK Larnaca",
+      "away_team": "Beitar Jerusalem",
+      "home_logo": "https://sta.vnres.co/file/common/20260720/d97d6a029ce1e97d3decbab61a7b3ed6.png",
+      "away_logo": "https://sta.vnres.co/file/common/20260720/58752fb9c5d6968a593edaab28b35ce0.png",
+      "time_text": "23:30",
+      "date_text": "23/07",
+      "status": "",
+      "card_text": "UEFA ECL 23:30 23/07 AEK Larnaca VS XEM NGAY Beitar Jerusalem GRAP PICK",
+      "rooms": [
+        {
+          "url": "https://socolive.watch/truc-tiep/aek-larnaca-vs-beitar-jerusalem-23-07-2026-2330?blv=622093",
+          "blv": "GRAP",
+          "blv_id": "622093"
+        },
+        {
+          "url": "https://socolive.watch/truc-tiep/aek-larnaca-vs-beitar-jerusalem-23-07-2026-2330?blv=598549",
+          "blv": "PICK",
+          "blv_id": "598549"
+        },
+        {
+          "url": "https://socolive.watch/truc-tiep/aek-larnaca-vs-beitar-jerusalem-23-07-2026-2330",
+          "blv": "XEM NGAY",
+          "blv_id": ""
+        }
+      ],
+      "match_name": "AEK Larnaca vs Beitar Jerusalem",
+      "scheduled_at": "2026-07-23T23:30:00+07:00",
+      "streams": [],
+      "room_results": [
+        {
+          "url": "https://socolive.watch/truc-tiep/aek-larnaca-vs-beitar-jerusalem-23-07-2026-2330?blv=622093",
+          "blv": "GRAP",
+          "blv_id": "622093",
+          "streams": [],
+          "stream_sources": {},
+          "stream_first_seen": [],
+          "discovered_blv_ids": [],
+          "diagnostics": {
+            "url": "https://socolive.watch/truc-tiep/aek-larnaca-vs-beitar-jerusalem-23-07-2026-2330?blv=622093",
+            "title": "Chờ một chút...",
+            "h1": "socolive.watch",
+            "ready_state": "complete",
+            "visibility_state": "visible",
+            "hidden": false,
+            "video_count": 0,
+            "iframe_count": 0,
+            "body_sample": "socolive.watch Thực hiện xác minh bảo mật Trang web này sử dụng dịch vụ bảo mật để chống bot độc hại. Trang này hiển thị trong khi trang web xác minh bạn không phải là bot. Ray ID: a1fae0ff3d20841f Hiệu suất và Tính bảo mật của Cloudflare Quyền riêng tư",
+            "harvest_rounds": 0,
+            "harvest_window_seconds": 0.624,
+            "main_status": 403,
+            "harvested_stream_count": 0,
+            "harvested_blv_ids": [],
+            "scan_mode": "browser-event",
+            "elapsed_seconds": 13.137
+          },
+          "http_probe": {
+            "enabled": false,
+            "status": null,
+            "elapsed_seconds": 0.0,
+            "error": ""
+          },
+          "errors": [
+            "console/error: Failed to load resource: the server responded with a status of 403 ()",
+            "console/warning: No available adapters.",
+            "console/warning: No available adapters.",
+            "console/error: %c%d font-size:0;color:transparent NaN",
+            "console/error: %c%d font-size:0;color:transparent NaN",
+            "console/warning: %c%d font-size:0;color:transparent NaN",
+            "console/warning: %c%d font-size:0;color:transparent NaN",
+            "console/warning: OTS parsing error: Size of decompressed WOFF 2.0 is less than compressed size",
+            "console/error: Failed to load resource: net::ERR_FAILED"
+          ],
+          "failed_requests": [
+            "fetch https://brunhild.challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/i/a1fae1010a7ac890/NF2zGXFmOJ2e.RhMPVvAt1SgjHSvfNalsQ6txHw5EtY-1784811740-1.2.1.1-63qOarBoSyS_IQK1QQX8mSKlMdFVqxrbOiRslJlt8ofJpL_UGT_8mREXlG5oE2Ks | net::ERR_NAME_NOT_RESOLVED",
+            "image https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/ci/a1fae1010a7ac890/1784811740586/qMx6dy3LLriEFMx | net::ERR_FAILED"
+          ],
+          "http_errors": [
+            "403 https://socolive.watch/truc-tiep/aek-larnaca-vs-beitar-jerusalem-23-07-2026-2330?blv=622093",
+            "401 https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/pat/a1fae1010a7ac890/1784811740585/96299dccf33613bdc1910614591ebe9502dbf07bac42689f1d1f53c7bbe5ce51/dE6h5tCB4N1xGuf"
+          ]
+        },
+        {
+          "url": "https://socolive.watch/truc-tiep/aek-larnaca-vs-beitar-jerusalem-23-07-2026-2330?blv=598549",
+          "blv": "PICK",
+          "blv_id": "598549",
+          "streams": [],
+          "stream_sources": {},
+          "stream_first_seen": [],
+          "discovered_blv_ids": [],
+          "diagnostics": {
+            "url": "https://socolive.watch/truc-tiep/aek-larnaca-vs-beitar-jerusalem-23-07-2026-2330?blv=598549",
+            "title": "Chờ một chút...",
+            "h1": "socolive.watch",
+            "ready_state": "complete",
+            "visibility_state": "visible",
+            "hidden": false,
+            "video_count": 0,
+            "iframe_count": 0,
+            "body_sample": "socolive.watch Thực hiện xác minh bảo mật Trang web này sử dụng dịch vụ bảo mật để chống bot độc hại. Trang này hiển thị trong khi trang web xác minh bạn không phải là bot. Ray ID: a1fae15df898841f Hiệu suất và Tính bảo mật của Cloudflare Quyền riêng tư",
+            "harvest_rounds": 0,
+            "harvest_window_seconds": 0.623,
+            "main_status": 403,
+            "harvested_stream_count": 0,
+            "harvested_blv_ids": [],
+            "scan_mode": "browser-event",
+            "elapsed_seconds": 13.162
+          },
+          "http_probe": {
+            "enabled": false,
+            "status": null,
+            "elapsed_seconds": 0.0,
+            "error": ""
+          },
+          "errors": [
+            "console/error: Failed to load resource: the server responded with a status of 403 ()",
+            "console/warning: No available adapters.",
+            "console/warning: No available adapters.",
+            "console/warning: OTS parsing error: Size of decompressed WOFF 2.0 is less than compressed size",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: %c%d font-size:0;color:transparent NaN",
+            "console/error: %c%d font-size:0;color:transparent NaN",
+            "console/warning: %c%d font-size:0;color:transparent NaN",
+            "console/warning: %c%d font-size:0;color:transparent NaN"
+          ],
+          "failed_requests": [
+            "fetch https://brunhild.challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/i/a1fae15fcb64c890/VFzhALOjeDBBvTAIGrAfNtXxMqzy47.YcCN.FmTFhGI-1784811755-1.2.1.1-9yrIYF3qVpu3Eb4YYReR2HzRvOxsHZaXZ1ry6Vg09KBjNEAQXwtluufDI3gEG3.O | net::ERR_NAME_NOT_RESOLVED",
+            "image https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/ci/a1fae15fcb64c890/1784811755760/oUj4Rr4ypXt2-9G | net::ERR_FAILED"
+          ],
+          "http_errors": [
+            "403 https://socolive.watch/truc-tiep/aek-larnaca-vs-beitar-jerusalem-23-07-2026-2330?blv=598549",
+            "401 https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/pat/a1fae15fcb64c890/1784811755760/361465a7df0e913b784b6f7770f3421b859b7f4e376c7891ff4102fb31d2f65c/Mr5kZfKfgNcT77V"
+          ]
+        },
+        {
+          "url": "https://socolive.watch/truc-tiep/aek-larnaca-vs-beitar-jerusalem-23-07-2026-2330?blv=622093",
+          "blv": "GRAP",
+          "blv_id": "622093",
+          "streams": [
+            "https://pull.niues.live/live/stream-622093_lhd.m3u8?auth_key=1784750484-0-0-bacaf15e119cfc135500da65b809f23f"
+          ],
+          "stream_sources": {
+            "https://pull.niues.live/live/stream-622093_lhd.m3u8?auth_key=1784750484-0-0-bacaf15e119cfc135500da65b809f23f": [
+              "final-no-stream-scan",
+              "harvest-final"
+            ]
+          },
+          "stream_first_seen": [
+            "https://pull.niues.live/live/stream-622093_lhd.m3u8?auth_key=1784750484-0-0-bacaf15e119cfc135500da65b809f23f"
+          ],
+          "discovered_blv_ids": [
+            "622093"
+          ],
+          "diagnostics": {
+            "url": "https://socolive.watch/truc-tiep/aek-larnaca-vs-beitar-jerusalem-23-07-2026-2330/?blv=622093",
+            "title": "Xem trực tiếp bóng đá AEK Larnaca vs Beitar Jerusalem | 23:30 ngày 23/07/2026",
+            "h1": "Trực tiếp bóng đá Socolive AEK Larnaca vs Beitar Jerusalem lúc 23:30 ngày 23/07/2026",
+            "ready_state": "complete",
+            "visibility_state": "visible",
+            "hidden": false,
+            "video_count": 0,
+            "iframe_count": 1,
+            "body_sample": "Skip to content Socolive Bảng xếp hạng Lịch thi đấu Kết quả bóng đá Tin thể thao Trực tiếp bóng đá Socolive AEK Larnaca vs Beitar Jerusalem lúc 23:30 ngày 23/07/2026 UEFA ECL AEK Larnaca 23:30 23/07 Beitar Jerusalem Trận đấu sẽ bắt đầu sau Ngày0 : Giờ3 : Phút26 : Giây14 Trận đấu chưa bắt đầu GRAP PICK Chat Thống kê Đội hình Diễn Biến Bảng XH \" \" Xóa Tin nhắn riêng 😀 😁 😃 😄 😅 😆 😇 😉 😊 🙂 😋 😍 😘 😗 😙 😚 😜 😝 😛 😎 🙄 😳 😡 😕 😫 😤 😨 😥 😪 😓 😵 😲 🤧 😷 🤒 🤕 😴 💤 👏 🤙 👍 👎 👊 ✊ ✌ 👌 ✋ 🤚 💪 🤝 👈 👉 🖕 🖐 👄 👂 👀 🎅 🌞 🌙 ⭐ ⚡ 🔥 ❄️ ⚽ 🏀 🏈 ⚾ 🎁 🎉 ✒️ 📝 ❤️ 💛 💚 🆚 💬 🕐 Vô hiệu hóa tất cả Vô hiệu hóa quà tặng Tắt lời chào Đăng nhập để cùng chat nhé Gửi Tỷ lệ kèo Cược Châu Á Chủ Chấp Khách Cược Châu Âu Chủ Hòa Khách Tài xỉu Tài Tỷ lệ kèo Xỉu Kèo góc Tài Tỷ lệ kèo Xỉu Mô phỏng trận đấu Thống kê trận đấu KAZ D1 20:00 23/07 Jaiyq VS null null null - null Sắp diễn ra Xem ngay Khan Tengri FC GIÓ NGƯỜI CÁ QUỐC KHÁNH PEWPEW KAZ D1 20:00 23/07 FK Kaspiy Aktau B VS null null null - null Sắp diễn ra Xem ngay Ekibastuzets A TÚ XUÂN TÓC ĐỎ SEVEN RYO KAZ D1 19:00 23/07 Akademiya Ontustik VS null null null - null Sắp diễn ra Xem ngay Astana B CÁO A TINH ANH TÀI VINFAST VIE U21 18",
+            "harvest_rounds": 0,
+            "harvest_window_seconds": 0.64,
+            "main_status": 200,
+            "harvested_stream_count": 1,
+            "harvested_blv_ids": [
+              "622093"
+            ],
+            "scan_mode": "browser-event",
+            "elapsed_seconds": 15.522
+          },
+          "http_probe": {
+            "enabled": false,
+            "status": null,
+            "elapsed_seconds": 0.0,
+            "error": ""
+          },
+          "errors": [
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED"
+          ],
+          "failed_requests": [
+            "stylesheet https://socolive.watch/wp-content/plugins/stream-player-plugin/assets/dist/main.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolive.watch/wp-content/plugins/stream-player-plugin/assets/dist/customize.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolive.watch/wp-content/plugins/user-action-plugin/assets/css/auth.css?ver=633 | net::ERR_FAILED",
+            "stylesheet https://socolive.watch/wp-content/plugins/user-action-plugin/assets/css/chat.css?ver=423 | net::ERR_FAILED",
+            "stylesheet https://socolive.watch/wp-content/plugins/user-action-plugin/assets/css/chat(1).css?ver=77 | net::ERR_FAILED",
+            "stylesheet https://socolive.watch/wp-content/plugins/user-action-plugin/assets/css/toast.css?ver=117 | net::ERR_FAILED",
+            "stylesheet https://socolive.watch/wp-content/themes/flatsome/assets/css/flatsome.css?ver=3.18.2 | net::ERR_FAILED",
+            "stylesheet https://socolive.watch/wp-content/themes/flatsome-child/style.css?ver=3.0 | net::ERR_FAILED",
+            "stylesheet https://fonts.googleapis.com/css?family=Roboto:regular,700,regular,700,regular&display=swap&ver=3.9 | net::ERR_FAILED",
+            "stylesheet https://socolive.watch/wp-content/plugins/stream-player-plugin/assets/css/countdown.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolive.watch/wp-content/plugins/stream-player-plugin/assets/css/match.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolive.watch/wp-content/plugins/stream-player-plugin/assets/css/livescore.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolive.watch/wp-content/plugins/stream-player-plugin/assets/css/style_custom.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolive.watch/wp-content/plugins/stream-player-plugin/assets/css/effect/running-border.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolive.watch/wp-content/plugins/stream-player-plugin/assets/css/option/option-6.css?ver=2.8.5 | net::ERR_FAILED"
+          ],
+          "http_errors": [
+            "403 https://socolive.watch/wp-admin/admin-ajax.php?action=scl_realtime&sport=1"
+          ]
+        },
+        {
+          "url": "https://socolive.watch/truc-tiep/aek-larnaca-vs-beitar-jerusalem-23-07-2026-2330?blv=598549",
+          "blv": "PICK",
+          "blv_id": "598549",
+          "streams": [],
+          "stream_sources": {},
+          "stream_first_seen": [],
+          "discovered_blv_ids": [],
+          "diagnostics": {
+            "url": "https://socolive.watch/truc-tiep/aek-larnaca-vs-beitar-jerusalem-23-07-2026-2330?blv=598549",
+            "title": "Chờ một chút...",
+            "h1": "socolive.watch",
+            "ready_state": "complete",
+            "visibility_state": "visible",
+            "hidden": false,
+            "video_count": 0,
+            "iframe_count": 0,
+            "body_sample": "socolive.watch Thực hiện xác minh bảo mật Trang web này sử dụng dịch vụ bảo mật để chống bot độc hại. Trang này hiển thị trong khi trang web xác minh bạn không phải là bot. Ray ID: a1fae321bac27bbc Hiệu suất và Tính bảo mật của Cloudflare Quyền riêng tư",
+            "harvest_rounds": 0,
+            "harvest_window_seconds": 0.623,
+            "main_status": 403,
+            "harvested_stream_count": 0,
+            "harvested_blv_ids": [],
+            "scan_mode": "browser-event",
+            "elapsed_seconds": 13.161
+          },
+          "http_probe": {
+            "enabled": false,
+            "status": null,
+            "elapsed_seconds": 0.0,
+            "error": ""
+          },
+          "errors": [
+            "console/error: Failed to load resource: the server responded with a status of 403 ()",
+            "console/warning: No available adapters.",
+            "console/warning: No available adapters.",
+            "console/error: %c%d font-size:0;color:transparent NaN",
+            "console/error: %c%d font-size:0;color:transparent NaN",
+            "console/warning: %c%d font-size:0;color:transparent NaN",
+            "console/warning: %c%d font-size:0;color:transparent NaN",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/warning: [.WebGL-0x3954026e5400]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+            "console/warning: [.WebGL-0x3954026e5400]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+            "console/warning: OTS parsing error: Size of decompressed WOFF 2.0 is less than compressed size"
+          ],
+          "failed_requests": [
+            "fetch https://brunhild.challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/i/a1fae3238e67b227/E0Vn4.qaLzAIhvz6MsZ2rukCfRDswmh2w.GhrdqoG.E-1784811827-1.2.1.1-14QTHcdUwIffmhsAzdQ5lNRUITwO34Mh1GSwe8jQdTt5xXDjEAJEfT7kdbvRdM8h | net::ERR_NAME_NOT_RESOLVED",
+            "image https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/ci/a1fae3238e67b227/1784811828030/JvDG5y6OyLKzvVP | net::ERR_FAILED"
+          ],
+          "http_errors": [
+            "403 https://socolive.watch/truc-tiep/aek-larnaca-vs-beitar-jerusalem-23-07-2026-2330?blv=598549",
+            "401 https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/pat/a1fae3238e67b227/1784811828030/de1621c152cd8962c03b208273e10d3ce2263f406a8550c5d54586d4a3273917/3hVKuBoWHfAELt8"
+          ]
+        }
+      ],
+      "attempted_room_ids": [
+        "598549",
+        "622093"
+      ],
+      "coverage": {
+        "found_streams": 0,
+        "found_blv_ids": [],
+        "goal": 4,
+        "source_goal_reached": false,
+        "room_queue_complete": true,
+        "complete": true,
+        "max_streams_per_blv": 2,
+        "total_explicit_blv_rooms": 2,
+        "pending_room_keys": [],
+        "room_progress": {
+          "622093": {
+            "key": "622093",
+            "url": "https://socolive.watch/truc-tiep/aek-larnaca-vs-beitar-jerusalem-23-07-2026-2330?blv=622093",
+            "blv": "GRAP",
+            "blv_id": "622093",
+            "status": "exhausted",
+            "attempts": 2,
+            "attempts_total": 2,
+            "ever_attempted": true,
+            "valid_stream_ever_found": false,
+            "needs_token_refresh": true,
+            "completion_reason": "no_valid_stream_after_max_attempts",
+            "rate_limit_hits": 0,
+            "last_http_status": 200,
+            "last_stream_count": 0,
+            "last_error": "Token cũ đã hết hạn; giữ nguyên attempts_total và trạng thái hoàn tất của BLV."
+          },
+          "598549": {
+            "key": "598549",
+            "url": "https://socolive.watch/truc-tiep/aek-larnaca-vs-beitar-jerusalem-23-07-2026-2330?blv=598549",
+            "blv": "PICK",
+            "blv_id": "598549",
+            "status": "exhausted",
+            "attempts": 2,
+            "attempts_total": 2,
+            "ever_attempted": true,
+            "valid_stream_ever_found": false,
+            "needs_token_refresh": false,
+            "completion_reason": "no_valid_stream_after_max_attempts",
+            "rate_limit_hits": 0,
+            "last_http_status": 403,
+            "last_stream_count": 0,
+            "last_error": "console/error: Failed to load resource: the server responded with a status of 403 (); console/warning: No available adapters.; console/warning: No available adapters."
+          },
+          "__base__": {
+            "key": "__base__",
+            "url": "https://socolive.watch/truc-tiep/aek-larnaca-vs-beitar-jerusalem-23-07-2026-2330",
+            "blv": "XEM NGAY",
+            "blv_id": "",
+            "status": "pending",
+            "attempts": 0,
+            "attempts_total": 0,
+            "ever_attempted": false,
+            "valid_stream_ever_found": false,
+            "needs_token_refresh": false,
+            "completion_reason": "",
+            "rate_limit_hits": 0,
+            "last_http_status": null,
+            "last_stream_count": 0,
+            "last_error": ""
+          }
+        }
+      },
+      "errors": [],
+      "room_progress": {
+        "622093": {
+          "key": "622093",
+          "url": "https://socolive.watch/truc-tiep/aek-larnaca-vs-beitar-jerusalem-23-07-2026-2330?blv=622093",
+          "blv": "GRAP",
+          "blv_id": "622093",
+          "status": "exhausted",
+          "attempts": 2,
+          "attempts_total": 2,
+          "ever_attempted": true,
+          "valid_stream_ever_found": false,
+          "needs_token_refresh": true,
+          "completion_reason": "no_valid_stream_after_max_attempts",
+          "rate_limit_hits": 0,
+          "last_http_status": 200,
+          "last_stream_count": 0,
+          "last_error": "Token cũ đã hết hạn; giữ nguyên attempts_total và trạng thái hoàn tất của BLV."
+        },
+        "598549": {
+          "key": "598549",
+          "url": "https://socolive.watch/truc-tiep/aek-larnaca-vs-beitar-jerusalem-23-07-2026-2330?blv=598549",
+          "blv": "PICK",
+          "blv_id": "598549",
+          "status": "exhausted",
+          "attempts": 2,
+          "attempts_total": 2,
+          "ever_attempted": true,
+          "valid_stream_ever_found": false,
+          "needs_token_refresh": false,
+          "completion_reason": "no_valid_stream_after_max_attempts",
+          "rate_limit_hits": 0,
+          "last_http_status": 403,
+          "last_stream_count": 0,
+          "last_error": "console/error: Failed to load resource: the server responded with a status of 403 (); console/warning: No available adapters.; console/warning: No available adapters."
+        },
+        "__base__": {
+          "key": "__base__",
+          "url": "https://socolive.watch/truc-tiep/aek-larnaca-vs-beitar-jerusalem-23-07-2026-2330",
+          "blv": "XEM NGAY",
+          "blv_id": "",
+          "status": "pending",
+          "attempts": 0,
+          "attempts_total": 0,
+          "ever_attempted": false,
+          "valid_stream_ever_found": false,
+          "needs_token_refresh": false,
+          "completion_reason": "",
+          "rate_limit_hits": 0,
+          "last_http_status": null,
+          "last_stream_count": 0,
+          "last_error": ""
+        }
+      }
+    },
+    {
+      "base_url": "https://socolive.watch/truc-tiep/rakow-czestochowa-vs-valletta-fc-23-07-2026-2330/",
+      "raw_title": "Trực tiếp bóng đá Socolive Rakow Czestochowa vs Valletta FC lúc 23:30 ngày 23/07/2026",
+      "home_team": "Rakow Czestochowa",
+      "away_team": "Valletta FC",
+      "home_logo": "https://sta.vnres.co/file/common/20260720/7525bfc494879092b9f4c30d09c35772.png",
+      "away_logo": "https://sta.vnres.co/file/common/20260720/e0509fff603020ae1194bb12eaf80bce.png",
+      "time_text": "23:30",
+      "date_text": "23/07",
+      "status": "",
+      "card_text": "UEFA ECL 23:30 23/07 Rakow Czestochowa VS XEM NGAY Valletta FC TRÀ ĐÁ KÉP",
+      "rooms": [
+        {
+          "url": "https://socolive.watch/truc-tiep/rakow-czestochowa-vs-valletta-fc-23-07-2026-2330?blv=603914",
+          "blv": "TRÀ ĐÁ",
+          "blv_id": "603914"
+        },
+        {
+          "url": "https://socolive.watch/truc-tiep/rakow-czestochowa-vs-valletta-fc-23-07-2026-2330?blv=560690",
+          "blv": "KÉP",
+          "blv_id": "560690"
+        },
+        {
+          "url": "https://socolive.watch/truc-tiep/rakow-czestochowa-vs-valletta-fc-23-07-2026-2330",
+          "blv": "XEM NGAY",
+          "blv_id": ""
+        }
+      ],
+      "match_name": "Rakow Czestochowa vs Valletta FC",
+      "scheduled_at": "2026-07-23T23:30:00+07:00",
+      "streams": [],
+      "room_results": [
+        {
+          "url": "https://socolive.watch/truc-tiep/rakow-czestochowa-vs-valletta-fc-23-07-2026-2330?blv=603914",
+          "blv": "TRÀ ĐÁ",
+          "blv_id": "603914",
+          "streams": [],
+          "stream_sources": {},
+          "stream_first_seen": [],
+          "discovered_blv_ids": [],
+          "diagnostics": {
+            "url": "https://socolive.watch/truc-tiep/rakow-czestochowa-vs-valletta-fc-23-07-2026-2330?blv=603914",
+            "title": "Chờ một chút...",
+            "h1": "socolive.watch",
+            "ready_state": "complete",
+            "visibility_state": "visible",
+            "hidden": false,
+            "video_count": 0,
+            "iframe_count": 0,
+            "body_sample": "socolive.watch Thực hiện xác minh bảo mật Trang web này sử dụng dịch vụ bảo mật để chống bot độc hại. Trang này hiển thị trong khi trang web xác minh bạn không phải là bot. Ray ID: a1fae0416f46841f Hiệu suất và Tính bảo mật của Cloudflare Quyền riêng tư",
+            "harvest_rounds": 0,
+            "harvest_window_seconds": 0.624,
+            "main_status": 403,
+            "harvested_stream_count": 0,
+            "harvested_blv_ids": [],
+            "scan_mode": "browser-event",
+            "elapsed_seconds": 13.171
+          },
+          "http_probe": {
+            "enabled": false,
+            "status": null,
+            "elapsed_seconds": 0.0,
+            "error": ""
+          },
+          "errors": [
+            "console/error: Failed to load resource: the server responded with a status of 403 ()",
+            "console/warning: No available adapters.",
+            "console/warning: No available adapters.",
+            "console/warning: OTS parsing error: Size of decompressed WOFF 2.0 is less than compressed size",
+            "console/error: %c%d font-size:0;color:transparent NaN",
+            "console/error: %c%d font-size:0;color:transparent NaN",
+            "console/warning: %c%d font-size:0;color:transparent NaN",
+            "console/warning: %c%d font-size:0;color:transparent NaN",
+            "console/error: Failed to load resource: net::ERR_FAILED"
+          ],
+          "failed_requests": [
+            "fetch https://brunhild.challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/i/a1fae0433a0fc890/3ITohN6DusUCNssw7icKztNDs8C0b8.3yVlf5Y6TLOk-1784811709-1.2.1.1-FiQWxuexqSGv8Y8k8Iv2muA6fzuLqm6SdhRRPc.1dwX29hiGRURqWC63Fx2BFinV | net::ERR_NAME_NOT_RESOLVED",
+            "image https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/ci/a1fae0433a0fc890/1784811710250/5As7TiE9P-ACrL3 | net::ERR_FAILED"
+          ],
+          "http_errors": [
+            "403 https://socolive.watch/truc-tiep/rakow-czestochowa-vs-valletta-fc-23-07-2026-2330?blv=603914",
+            "401 https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/pat/a1fae0433a0fc890/1784811710249/2ba3ceef7da2bd3b0aec34ee924c87c2ed822857293ccab5e05317de561429f7/7_DEnPNq_-QBBkX"
+          ]
+        },
+        {
+          "url": "https://socolive.watch/truc-tiep/rakow-czestochowa-vs-valletta-fc-23-07-2026-2330?blv=560690",
+          "blv": "KÉP",
+          "blv_id": "560690",
+          "streams": [],
+          "stream_sources": {},
+          "stream_first_seen": [],
+          "discovered_blv_ids": [],
+          "diagnostics": {
+            "url": "https://socolive.watch/truc-tiep/rakow-czestochowa-vs-valletta-fc-23-07-2026-2330?blv=560690",
+            "title": "Chờ một chút...",
+            "h1": "socolive.watch",
+            "ready_state": "complete",
+            "visibility_state": "visible",
+            "hidden": false,
+            "video_count": 0,
+            "iframe_count": 0,
+            "body_sample": "socolive.watch Thực hiện xác minh bảo mật Trang web này sử dụng dịch vụ bảo mật để chống bot độc hại. Trang này hiển thị trong khi trang web xác minh bạn không phải là bot. Ray ID: a1fae0a04a58841f Hiệu suất và Tính bảo mật của Cloudflare Quyền riêng tư",
+            "harvest_rounds": 0,
+            "harvest_window_seconds": 0.621,
+            "main_status": 403,
+            "harvested_stream_count": 0,
+            "harvested_blv_ids": [],
+            "scan_mode": "browser-event",
+            "elapsed_seconds": 13.18
+          },
+          "http_probe": {
+            "enabled": false,
+            "status": null,
+            "elapsed_seconds": 0.0,
+            "error": ""
+          },
+          "errors": [
+            "console/error: Failed to load resource: the server responded with a status of 403 ()",
+            "console/warning: No available adapters.",
+            "console/warning: No available adapters.",
+            "console/warning: OTS parsing error: Size of decompressed WOFF 2.0 is less than compressed size",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: %c%d font-size:0;color:transparent NaN",
+            "console/error: %c%d font-size:0;color:transparent NaN",
+            "console/warning: %c%d font-size:0;color:transparent NaN",
+            "console/warning: %c%d font-size:0;color:transparent NaN"
+          ],
+          "failed_requests": [
+            "fetch https://brunhild.challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/i/a1fae0a25caac890/LMyGcNMsOKEUKtM5xnaa9K9iObAb4VZgVoTH44W6FtU-1784811725-1.2.1.1-jw6VXZHANSU6P0.FkFcDNOIGAIyzHxqRoAGbX1IBrGclmDGDE5UExfFrq97Z3gEG | net::ERR_NAME_NOT_RESOLVED",
+            "image https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/ci/a1fae0a25caac890/1784811725474/CmMQUUCRvnXXGR3 | net::ERR_FAILED"
+          ],
+          "http_errors": [
+            "403 https://socolive.watch/truc-tiep/rakow-czestochowa-vs-valletta-fc-23-07-2026-2330?blv=560690",
+            "401 https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/pat/a1fae0a25caac890/1784811725474/a0db7f9fbf8880a2ae75311450319ec49626216875e75326b88551fb6c070943/YUxuUJmgoti34sL"
+          ]
+        },
+        {
+          "url": "https://socolive.watch/truc-tiep/rakow-czestochowa-vs-valletta-fc-23-07-2026-2330?blv=603914",
+          "blv": "TRÀ ĐÁ",
+          "blv_id": "603914",
+          "streams": [],
+          "stream_sources": {},
+          "stream_first_seen": [],
+          "discovered_blv_ids": [],
+          "diagnostics": {
+            "url": "https://socolive.watch/truc-tiep/rakow-czestochowa-vs-valletta-fc-23-07-2026-2330?blv=603914",
+            "title": "Chờ một chút...",
+            "h1": "socolive.watch",
+            "ready_state": "complete",
+            "visibility_state": "visible",
+            "hidden": false,
+            "video_count": 0,
+            "iframe_count": 0,
+            "body_sample": "socolive.watch Thực hiện xác minh bảo mật Trang web này sử dụng dịch vụ bảo mật để chống bot độc hại. Trang này hiển thị trong khi trang web xác minh bạn không phải là bot. Ray ID: a1fae3807dc07bbc Hiệu suất và Tính bảo mật của Cloudflare Quyền riêng tư",
+            "harvest_rounds": 0,
+            "harvest_window_seconds": 0.623,
+            "main_status": 403,
+            "harvested_stream_count": 0,
+            "harvested_blv_ids": [],
+            "scan_mode": "browser-event",
+            "elapsed_seconds": 13.128
+          },
+          "http_probe": {
+            "enabled": false,
+            "status": null,
+            "elapsed_seconds": 0.0,
+            "error": ""
+          },
+          "errors": [
+            "console/error: Failed to load resource: the server responded with a status of 403 ()",
+            "console/warning: No available adapters.",
+            "console/warning: No available adapters.",
+            "console/warning: OTS parsing error: Size of decompressed WOFF 2.0 is less than compressed size",
+            "console/warning: [.WebGL-0x39540256da00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+            "console/warning: [.WebGL-0x39540256da00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels (this message will no longer repeat)",
+            "console/error: %c%d font-size:0;color:transparent NaN",
+            "console/error: %c%d font-size:0;color:transparent NaN",
+            "console/warning: %c%d font-size:0;color:transparent NaN",
+            "console/warning: %c%d font-size:0;color:transparent NaN",
+            "console/error: Failed to load resource: net::ERR_FAILED"
+          ],
+          "failed_requests": [
+            "fetch https://brunhild.challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/i/a1fae3823fcfb227/Ms_J.seuQsvIZSU8ziHf09IsV3ecqshXgSaLfxN4s3A-1784811842-1.2.1.1-1D2Jd6YzsbUPlCnhoyT1ELAhvAHPPm0OdcnIGDbqwrggH6dzKrEJFUL89gCq_A.b | net::ERR_NAME_NOT_RESOLVED",
+            "image https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/ci/a1fae3823fcfb227/1784811843192/MUhuRL0WZTBP78Y | net::ERR_FAILED"
+          ],
+          "http_errors": [
+            "403 https://socolive.watch/truc-tiep/rakow-czestochowa-vs-valletta-fc-23-07-2026-2330?blv=603914",
+            "401 https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/pat/a1fae3823fcfb227/1784811843191/96833d2f4ee1ddaa7731fe91d26382f055d13cf93858955677e7dac2c673563d/linigKO_CUxkQ_S"
+          ]
+        },
+        {
+          "url": "https://socolive.watch/truc-tiep/rakow-czestochowa-vs-valletta-fc-23-07-2026-2330?blv=560690",
+          "blv": "KÉP",
+          "blv_id": "560690",
+          "streams": [],
+          "stream_sources": {},
+          "stream_first_seen": [],
+          "discovered_blv_ids": [],
+          "diagnostics": {
+            "url": "https://socolive.watch/truc-tiep/rakow-czestochowa-vs-valletta-fc-23-07-2026-2330?blv=560690",
+            "title": "Chờ một chút...",
+            "h1": "socolive.watch",
+            "ready_state": "complete",
+            "visibility_state": "visible",
+            "hidden": false,
+            "video_count": 0,
+            "iframe_count": 0,
+            "body_sample": "socolive.watch Thực hiện xác minh bảo mật Trang web này sử dụng dịch vụ bảo mật để chống bot độc hại. Trang này hiển thị trong khi trang web xác minh bạn không phải là bot. Ray ID: a1fae3df18b37bbc Hiệu suất và Tính bảo mật của Cloudflare Quyền riêng tư",
+            "harvest_rounds": 0,
+            "harvest_window_seconds": 0.628,
+            "main_status": 403,
+            "harvested_stream_count": 0,
+            "harvested_blv_ids": [],
+            "scan_mode": "browser-event",
+            "elapsed_seconds": 13.145
+          },
+          "http_probe": {
+            "enabled": false,
+            "status": null,
+            "elapsed_seconds": 0.0,
+            "error": ""
+          },
+          "errors": [
+            "console/error: Failed to load resource: the server responded with a status of 403 ()",
+            "console/warning: No available adapters.",
+            "console/warning: No available adapters.",
+            "console/error: %c%d font-size:0;color:transparent NaN",
+            "console/error: %c%d font-size:0;color:transparent NaN",
+            "console/warning: %c%d font-size:0;color:transparent NaN",
+            "console/warning: %c%d font-size:0;color:transparent NaN",
+            "console/warning: OTS parsing error: Size of decompressed WOFF 2.0 is less than compressed size",
+            "console/error: Failed to load resource: net::ERR_FAILED"
+          ],
+          "failed_requests": [
+            "fetch https://brunhild.challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/i/a1fae3e0d9d2b227/Yrp7te24LI1TQmC64sKTKNwpBhShR_mQ27KLhFOLSpg-1784811858-1.2.1.1-rE9JaZwiTMZYhU2X6GHYdGL6zsnA8Uy8TjnukcVm8oshC9AnB5FtAoiwhO9dh63M | net::ERR_NAME_NOT_RESOLVED",
+            "image https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/ci/a1fae3e0d9d2b227/1784811858320/hJbM6uMo-lYpVaW | net::ERR_FAILED"
+          ],
+          "http_errors": [
+            "403 https://socolive.watch/truc-tiep/rakow-czestochowa-vs-valletta-fc-23-07-2026-2330?blv=560690",
+            "401 https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/pat/a1fae3e0d9d2b227/1784811858320/304985fe3f10938b7590f7f3b22768aa9bd5712a5e3578de6f0ce3ef0d3695ae/5v4YH3I58Z-4-R4"
+          ]
+        }
+      ],
+      "attempted_room_ids": [
+        "560690",
+        "603914"
+      ],
+      "coverage": {
+        "found_streams": 0,
+        "found_blv_ids": [],
+        "goal": 4,
+        "source_goal_reached": false,
+        "room_queue_complete": true,
+        "complete": true,
+        "max_streams_per_blv": 2,
+        "total_explicit_blv_rooms": 2,
+        "pending_room_keys": [],
+        "room_progress": {
+          "603914": {
+            "key": "603914",
+            "url": "https://socolive.watch/truc-tiep/rakow-czestochowa-vs-valletta-fc-23-07-2026-2330?blv=603914",
+            "blv": "TRÀ ĐÁ",
+            "blv_id": "603914",
+            "status": "exhausted",
+            "attempts": 2,
+            "attempts_total": 2,
+            "ever_attempted": true,
+            "valid_stream_ever_found": false,
+            "needs_token_refresh": false,
+            "completion_reason": "no_valid_stream_after_max_attempts",
+            "rate_limit_hits": 0,
+            "last_http_status": 403,
+            "last_stream_count": 0,
+            "last_error": "console/error: Failed to load resource: the server responded with a status of 403 (); console/warning: No available adapters.; console/warning: No available adapters."
+          },
+          "560690": {
+            "key": "560690",
+            "url": "https://socolive.watch/truc-tiep/rakow-czestochowa-vs-valletta-fc-23-07-2026-2330?blv=560690",
+            "blv": "KÉP",
+            "blv_id": "560690",
+            "status": "exhausted",
+            "attempts": 2,
+            "attempts_total": 2,
+            "ever_attempted": true,
+            "valid_stream_ever_found": false,
+            "needs_token_refresh": false,
+            "completion_reason": "no_valid_stream_after_max_attempts",
+            "rate_limit_hits": 0,
+            "last_http_status": 403,
+            "last_stream_count": 0,
+            "last_error": "console/error: Failed to load resource: the server responded with a status of 403 (); console/warning: No available adapters.; console/warning: No available adapters."
+          },
+          "__base__": {
+            "key": "__base__",
+            "url": "https://socolive.watch/truc-tiep/rakow-czestochowa-vs-valletta-fc-23-07-2026-2330",
+            "blv": "XEM NGAY",
+            "blv_id": "",
+            "status": "pending",
+            "attempts": 0,
+            "attempts_total": 0,
+            "ever_attempted": false,
+            "valid_stream_ever_found": false,
+            "needs_token_refresh": false,
+            "completion_reason": "",
+            "rate_limit_hits": 0,
+            "last_http_status": null,
+            "last_stream_count": 0,
+            "last_error": ""
+          }
+        }
+      },
+      "errors": [],
+      "room_progress": {
+        "603914": {
+          "key": "603914",
+          "url": "https://socolive.watch/truc-tiep/rakow-czestochowa-vs-valletta-fc-23-07-2026-2330?blv=603914",
+          "blv": "TRÀ ĐÁ",
+          "blv_id": "603914",
+          "status": "exhausted",
+          "attempts": 2,
+          "attempts_total": 2,
+          "ever_attempted": true,
+          "valid_stream_ever_found": false,
+          "needs_token_refresh": false,
+          "completion_reason": "no_valid_stream_after_max_attempts",
+          "rate_limit_hits": 0,
+          "last_http_status": 403,
+          "last_stream_count": 0,
+          "last_error": "console/error: Failed to load resource: the server responded with a status of 403 (); console/warning: No available adapters.; console/warning: No available adapters."
+        },
+        "560690": {
+          "key": "560690",
+          "url": "https://socolive.watch/truc-tiep/rakow-czestochowa-vs-valletta-fc-23-07-2026-2330?blv=560690",
+          "blv": "KÉP",
+          "blv_id": "560690",
+          "status": "exhausted",
+          "attempts": 2,
+          "attempts_total": 2,
+          "ever_attempted": true,
+          "valid_stream_ever_found": false,
+          "needs_token_refresh": false,
+          "completion_reason": "no_valid_stream_after_max_attempts",
+          "rate_limit_hits": 0,
+          "last_http_status": 403,
+          "last_stream_count": 0,
+          "last_error": "console/error: Failed to load resource: the server responded with a status of 403 (); console/warning: No available adapters.; console/warning: No available adapters."
+        },
+        "__base__": {
+          "key": "__base__",
+          "url": "https://socolive.watch/truc-tiep/rakow-czestochowa-vs-valletta-fc-23-07-2026-2330",
+          "blv": "XEM NGAY",
+          "blv_id": "",
+          "status": "pending",
+          "attempts": 0,
+          "attempts_total": 0,
+          "ever_attempted": false,
+          "valid_stream_ever_found": false,
+          "needs_token_refresh": false,
+          "completion_reason": "",
+          "rate_limit_hits": 0,
+          "last_http_status": null,
+          "last_stream_count": 0,
+          "last_error": ""
+        }
+      }
+    },
+    {
+      "base_url": "https://socolive.watch/truc-tiep/rigas-futbola-skola-vs-vestri-23-07-2026-2330/",
+      "raw_title": "Trực tiếp bóng đá Socolive Rigas Futbola Skola vs Vestri lúc 23:30 ngày 23/07/2026",
+      "home_team": "Rigas Futbola Skola",
+      "away_team": "Vestri",
+      "home_logo": "https://sta.vnres.co/file/common/20260717/9a958c636bf34e2c7641c337973b8ce5.png",
+      "away_logo": "https://sta.vnres.co/file/common/20260720/e4091836e9ee63b98de07897eff75782.png",
+      "time_text": "23:30",
+      "date_text": "23/07",
+      "status": "",
+      "card_text": "UEFA ECL 23:30 23/07 Rigas Futbola Skola VS XEM NGAY Vestri XUÂN TÓC ĐỎ PEWPEW",
+      "rooms": [
+        {
+          "url": "https://socolive.watch/truc-tiep/rigas-futbola-skola-vs-vestri-23-07-2026-2330?blv=610518",
+          "blv": "XUÂN TÓC ĐỎ",
+          "blv_id": "610518"
+        },
+        {
+          "url": "https://socolive.watch/truc-tiep/rigas-futbola-skola-vs-vestri-23-07-2026-2330?blv=109053",
+          "blv": "PEWPEW",
+          "blv_id": "109053"
+        },
+        {
+          "url": "https://socolive.watch/truc-tiep/rigas-futbola-skola-vs-vestri-23-07-2026-2330",
+          "blv": "XEM NGAY",
+          "blv_id": ""
+        }
+      ],
+      "match_name": "Rigas Futbola Skola vs Vestri",
+      "scheduled_at": "2026-07-23T23:30:00+07:00",
+      "streams": [],
+      "room_results": [
+        {
+          "url": "https://socolive.watch/truc-tiep/rigas-futbola-skola-vs-vestri-23-07-2026-2330?blv=610518",
+          "blv": "XUÂN TÓC ĐỎ",
+          "blv_id": "610518",
+          "streams": [],
+          "stream_sources": {},
+          "stream_first_seen": [],
+          "discovered_blv_ids": [],
+          "diagnostics": {
+            "url": "https://socolive.watch/truc-tiep/rigas-futbola-skola-vs-vestri-23-07-2026-2330?blv=610518",
+            "title": "Chờ một chút...",
+            "h1": "socolive.watch",
+            "ready_state": "complete",
+            "visibility_state": "visible",
+            "hidden": false,
+            "video_count": 0,
+            "iframe_count": 0,
+            "body_sample": "socolive.watch Thực hiện xác minh bảo mật Trang web này sử dụng dịch vụ bảo mật để chống bot độc hại. Trang này hiển thị trong khi trang web xác minh bạn không phải là bot. Ray ID: a1fadf83ba3a841f Hiệu suất và Tính bảo mật của Cloudflare Quyền riêng tư",
+            "harvest_rounds": 0,
+            "harvest_window_seconds": 0.624,
+            "main_status": 403,
+            "harvested_stream_count": 0,
+            "harvested_blv_ids": [],
+            "scan_mode": "browser-event",
+            "elapsed_seconds": 13.197
+          },
+          "http_probe": {
+            "enabled": false,
+            "status": null,
+            "elapsed_seconds": 0.0,
+            "error": ""
+          },
+          "errors": [
+            "console/error: Failed to load resource: the server responded with a status of 403 ()",
+            "console/warning: No available adapters.",
+            "console/warning: No available adapters.",
+            "console/error: %c%d font-size:0;color:transparent NaN",
+            "console/error: %c%d font-size:0;color:transparent NaN",
+            "console/warning: %c%d font-size:0;color:transparent NaN",
+            "console/warning: %c%d font-size:0;color:transparent NaN",
+            "console/warning: OTS parsing error: Size of decompressed WOFF 2.0 is less than compressed size",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/warning: [.WebGL-0x10a402076200]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+            "console/warning: [.WebGL-0x10a402076200]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels"
+          ],
+          "failed_requests": [
+            "fetch https://brunhild.challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/i/a1fadf859f0ec890/vlZdpG.._RQjJJJbNlikuPLhaBC44vKK9C5G8U_Utqc-1784811679-1.2.1.1-45zH4TIxpdP3b2DgDhwbZKn8bg_H54PA1FPA3ImZLNdl6r74iAKE0gBSR7KLM7ki | net::ERR_NAME_NOT_RESOLVED",
+            "image https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/ci/a1fadf859f0ec890/1784811679891/YnrxbMNYYDriMR5 | net::ERR_FAILED"
+          ],
+          "http_errors": [
+            "403 https://socolive.watch/truc-tiep/rigas-futbola-skola-vs-vestri-23-07-2026-2330?blv=610518",
+            "401 https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/pat/a1fadf859f0ec890/1784811679891/3a0034629a6c697e51a3a1f0291f34746eea9e6ac312dc3fa8149435eb57635e/umGZWlIpeKsnV5q"
+          ]
+        },
+        {
+          "url": "https://socolive.watch/truc-tiep/rigas-futbola-skola-vs-vestri-23-07-2026-2330?blv=109053",
+          "blv": "PEWPEW",
+          "blv_id": "109053",
+          "streams": [],
+          "stream_sources": {},
+          "stream_first_seen": [],
+          "discovered_blv_ids": [],
+          "diagnostics": {
+            "url": "https://socolive.watch/truc-tiep/rigas-futbola-skola-vs-vestri-23-07-2026-2330?blv=109053",
+            "title": "Chờ một chút...",
+            "h1": "socolive.watch",
+            "ready_state": "complete",
+            "visibility_state": "visible",
+            "hidden": false,
+            "video_count": 0,
+            "iframe_count": 0,
+            "body_sample": "socolive.watch Thực hiện xác minh bảo mật Trang web này sử dụng dịch vụ bảo mật để chống bot độc hại. Trang này hiển thị trong khi trang web xác minh bạn không phải là bot. Ray ID: a1fadfe29cd0841f Hiệu suất và Tính bảo mật của Cloudflare Quyền riêng tư",
+            "harvest_rounds": 0,
+            "harvest_window_seconds": 0.623,
+            "main_status": 403,
+            "harvested_stream_count": 0,
+            "harvested_blv_ids": [],
+            "scan_mode": "browser-event",
+            "elapsed_seconds": 13.153
+          },
+          "http_probe": {
+            "enabled": false,
+            "status": null,
+            "elapsed_seconds": 0.0,
+            "error": ""
+          },
+          "errors": [
+            "console/error: Failed to load resource: the server responded with a status of 403 ()",
+            "console/warning: No available adapters.",
+            "console/warning: No available adapters.",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: %c%d font-size:0;color:transparent NaN",
+            "console/error: %c%d font-size:0;color:transparent NaN",
+            "console/warning: %c%d font-size:0;color:transparent NaN",
+            "console/warning: %c%d font-size:0;color:transparent NaN",
+            "console/warning: OTS parsing error: Size of decompressed WOFF 2.0 is less than compressed size",
+            "console/warning: [.WebGL-0x10a401ff3a00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+            "console/warning: [.WebGL-0x10a401ff3a00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels (this message will no longer repeat)"
+          ],
+          "failed_requests": [
+            "fetch https://brunhild.challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/i/a1fadfe46913c890/lOq..ovp7V6QI1Sn3YEF5P5dXnjC4Ypeiw7hM8GCMKA-1784811694-1.2.1.1-CUq_SWubLnYfcSRfPJ2gtUPqzasF9mtOpbjQTf0QWas2kKgOWQFnqVj7rdzv97Tm | net::ERR_NAME_NOT_RESOLVED",
+            "image https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/ci/a1fadfe46913c890/1784811695056/eSkcNsUlW7P9hTl | net::ERR_FAILED"
+          ],
+          "http_errors": [
+            "403 https://socolive.watch/truc-tiep/rigas-futbola-skola-vs-vestri-23-07-2026-2330?blv=109053",
+            "401 https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/pat/a1fadfe46913c890/1784811695056/ed781c166366d864260f8c369c4c3b95ab21ef65d3be422ab1ac1a53cb4e4adf/G8cUrSBN-rnjLQQ"
+          ]
+        },
+        {
+          "url": "https://socolive.watch/truc-tiep/rigas-futbola-skola-vs-vestri-23-07-2026-2330?blv=610518",
+          "blv": "XUÂN TÓC ĐỎ",
+          "blv_id": "610518",
+          "streams": [],
+          "stream_sources": {},
+          "stream_first_seen": [],
+          "discovered_blv_ids": [],
+          "diagnostics": {
+            "url": "https://socolive.watch/truc-tiep/rigas-futbola-skola-vs-vestri-23-07-2026-2330?blv=610518",
+            "title": "Chờ một chút...",
+            "h1": "socolive.watch",
+            "ready_state": "complete",
+            "visibility_state": "visible",
+            "hidden": false,
+            "video_count": 0,
+            "iframe_count": 0,
+            "body_sample": "socolive.watch Thực hiện xác minh bảo mật Trang web này sử dụng dịch vụ bảo mật để chống bot độc hại. Trang này hiển thị trong khi trang web xác minh bạn không phải là bot. Ray ID: a1fae43ddbc67bbc Hiệu suất và Tính bảo mật của Cloudflare Quyền riêng tư",
+            "harvest_rounds": 0,
+            "harvest_window_seconds": 0.627,
+            "main_status": 403,
+            "harvested_stream_count": 0,
+            "harvested_blv_ids": [],
+            "scan_mode": "browser-event",
+            "elapsed_seconds": 13.143
+          },
+          "http_probe": {
+            "enabled": false,
+            "status": null,
+            "elapsed_seconds": 0.0,
+            "error": ""
+          },
+          "errors": [
+            "console/error: Failed to load resource: the server responded with a status of 403 ()",
+            "console/warning: No available adapters.",
+            "console/warning: No available adapters.",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: %c%d font-size:0;color:transparent NaN",
+            "console/error: %c%d font-size:0;color:transparent NaN",
+            "console/warning: %c%d font-size:0;color:transparent NaN",
+            "console/warning: %c%d font-size:0;color:transparent NaN",
+            "console/warning: OTS parsing error: Size of decompressed WOFF 2.0 is less than compressed size"
+          ],
+          "failed_requests": [
+            "fetch https://brunhild.challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/i/a1fae43fadd0b227/XgQHV8kesoCn11pnwMM9AQYtK_CTGe8DmCU7oImOgYk-1784811873-1.2.1.1-8py_zHMaf.oM5wzY9yneMAuGUY1oAUgPLb63MMNYyPH_ns7M7Y7lbpOgINRkKOcj | net::ERR_NAME_NOT_RESOLVED",
+            "image https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/ci/a1fae43fadd0b227/1784811873492/AZVW1Iy0yJ6LDYv | net::ERR_FAILED"
+          ],
+          "http_errors": [
+            "403 https://socolive.watch/truc-tiep/rigas-futbola-skola-vs-vestri-23-07-2026-2330?blv=610518",
+            "401 https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/pat/a1fae43fadd0b227/1784811873492/eb1a190ab47095ce5472e092f1f237f00e6a5e92f2c59ed9e706c26d5a7e18c7/gPqEYZZiLTht7wl"
+          ]
+        },
+        {
+          "url": "https://socolive.watch/truc-tiep/rigas-futbola-skola-vs-vestri-23-07-2026-2330?blv=109053",
+          "blv": "PEWPEW",
+          "blv_id": "109053",
+          "streams": [],
+          "stream_sources": {},
+          "stream_first_seen": [],
+          "discovered_blv_ids": [],
+          "diagnostics": {
+            "url": "https://socolive.watch/truc-tiep/rigas-futbola-skola-vs-vestri-23-07-2026-2330?blv=109053",
+            "title": "Chờ một chút...",
+            "h1": "socolive.watch",
+            "ready_state": "complete",
+            "visibility_state": "visible",
+            "hidden": false,
+            "video_count": 0,
+            "iframe_count": 0,
+            "body_sample": "socolive.watch Thực hiện xác minh bảo mật Trang web này sử dụng dịch vụ bảo mật để chống bot độc hại. Trang này hiển thị trong khi trang web xác minh bạn không phải là bot. Ray ID: a1fae49c9e5d7bbc Hiệu suất và Tính bảo mật của Cloudflare Quyền riêng tư",
+            "harvest_rounds": 0,
+            "harvest_window_seconds": 0.623,
+            "main_status": 403,
+            "harvested_stream_count": 0,
+            "harvested_blv_ids": [],
+            "scan_mode": "browser-event",
+            "elapsed_seconds": 13.127
+          },
+          "http_probe": {
+            "enabled": false,
+            "status": null,
+            "elapsed_seconds": 0.0,
+            "error": ""
+          },
+          "errors": [
+            "console/error: Failed to load resource: the server responded with a status of 403 ()",
+            "console/warning: No available adapters.",
+            "console/warning: No available adapters.",
+            "console/warning: OTS parsing error: Size of decompressed WOFF 2.0 is less than compressed size",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: %c%d font-size:0;color:transparent NaN",
+            "console/error: %c%d font-size:0;color:transparent NaN",
+            "console/warning: %c%d font-size:0;color:transparent NaN",
+            "console/warning: %c%d font-size:0;color:transparent NaN"
+          ],
+          "failed_requests": [
+            "fetch https://brunhild.challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/i/a1fae49e5c42b227/aLlar9hGWeS7GvfCPxfeiPiVTPtqkSBxj_g8nTKhXyo-1784811888-1.2.1.1-zncqLOKYgd_IHupvwrtS5EHwODrbvi6fpYF_1lglZLT128S9q_zmNIHkuFcP.jec | net::ERR_NAME_NOT_RESOLVED",
+            "image https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/ci/a1fae49e5c42b227/1784811888628/xK01QuE9sNJqcp9 | net::ERR_FAILED"
+          ],
+          "http_errors": [
+            "403 https://socolive.watch/truc-tiep/rigas-futbola-skola-vs-vestri-23-07-2026-2330?blv=109053",
+            "401 https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/pat/a1fae49e5c42b227/1784811888628/472e32bf39f9ae63c84b1741e5e5bc0ca81abac2d54133bfc54661a280b92831/F8O0QcJaexiIE1e"
+          ]
+        }
+      ],
+      "attempted_room_ids": [
+        "109053",
+        "610518"
+      ],
+      "coverage": {
+        "found_streams": 0,
+        "found_blv_ids": [],
+        "goal": 4,
+        "source_goal_reached": false,
+        "room_queue_complete": true,
+        "complete": true,
+        "max_streams_per_blv": 2,
+        "total_explicit_blv_rooms": 2,
+        "pending_room_keys": [],
+        "room_progress": {
+          "610518": {
+            "key": "610518",
+            "url": "https://socolive.watch/truc-tiep/rigas-futbola-skola-vs-vestri-23-07-2026-2330?blv=610518",
+            "blv": "XUÂN TÓC ĐỎ",
+            "blv_id": "610518",
+            "status": "exhausted",
+            "attempts": 2,
+            "attempts_total": 2,
+            "ever_attempted": true,
+            "valid_stream_ever_found": false,
+            "needs_token_refresh": false,
+            "completion_reason": "no_valid_stream_after_max_attempts",
+            "rate_limit_hits": 0,
+            "last_http_status": 403,
+            "last_stream_count": 0,
+            "last_error": "console/error: Failed to load resource: the server responded with a status of 403 (); console/warning: No available adapters.; console/warning: No available adapters."
+          },
+          "109053": {
+            "key": "109053",
+            "url": "https://socolive.watch/truc-tiep/rigas-futbola-skola-vs-vestri-23-07-2026-2330?blv=109053",
+            "blv": "PEWPEW",
+            "blv_id": "109053",
+            "status": "exhausted",
+            "attempts": 2,
+            "attempts_total": 2,
+            "ever_attempted": true,
+            "valid_stream_ever_found": false,
+            "needs_token_refresh": false,
+            "completion_reason": "no_valid_stream_after_max_attempts",
+            "rate_limit_hits": 0,
+            "last_http_status": 403,
+            "last_stream_count": 0,
+            "last_error": "console/error: Failed to load resource: the server responded with a status of 403 (); console/warning: No available adapters.; console/warning: No available adapters."
+          },
+          "__base__": {
+            "key": "__base__",
+            "url": "https://socolive.watch/truc-tiep/rigas-futbola-skola-vs-vestri-23-07-2026-2330",
+            "blv": "XEM NGAY",
+            "blv_id": "",
+            "status": "pending",
+            "attempts": 0,
+            "attempts_total": 0,
+            "ever_attempted": false,
+            "valid_stream_ever_found": false,
+            "needs_token_refresh": false,
+            "completion_reason": "",
+            "rate_limit_hits": 0,
+            "last_http_status": null,
+            "last_stream_count": 0,
+            "last_error": ""
+          }
+        }
+      },
+      "errors": [],
+      "room_progress": {
+        "610518": {
+          "key": "610518",
+          "url": "https://socolive.watch/truc-tiep/rigas-futbola-skola-vs-vestri-23-07-2026-2330?blv=610518",
+          "blv": "XUÂN TÓC ĐỎ",
+          "blv_id": "610518",
+          "status": "exhausted",
+          "attempts": 2,
+          "attempts_total": 2,
+          "ever_attempted": true,
+          "valid_stream_ever_found": false,
+          "needs_token_refresh": false,
+          "completion_reason": "no_valid_stream_after_max_attempts",
+          "rate_limit_hits": 0,
+          "last_http_status": 403,
+          "last_stream_count": 0,
+          "last_error": "console/error: Failed to load resource: the server responded with a status of 403 (); console/warning: No available adapters.; console/warning: No available adapters."
+        },
+        "109053": {
+          "key": "109053",
+          "url": "https://socolive.watch/truc-tiep/rigas-futbola-skola-vs-vestri-23-07-2026-2330?blv=109053",
+          "blv": "PEWPEW",
+          "blv_id": "109053",
+          "status": "exhausted",
+          "attempts": 2,
+          "attempts_total": 2,
+          "ever_attempted": true,
+          "valid_stream_ever_found": false,
+          "needs_token_refresh": false,
+          "completion_reason": "no_valid_stream_after_max_attempts",
+          "rate_limit_hits": 0,
+          "last_http_status": 403,
+          "last_stream_count": 0,
+          "last_error": "console/error: Failed to load resource: the server responded with a status of 403 (); console/warning: No available adapters.; console/warning: No available adapters."
+        },
+        "__base__": {
+          "key": "__base__",
+          "url": "https://socolive.watch/truc-tiep/rigas-futbola-skola-vs-vestri-23-07-2026-2330",
+          "blv": "XEM NGAY",
+          "blv_id": "",
+          "status": "pending",
+          "attempts": 0,
+          "attempts_total": 0,
+          "ever_attempted": false,
+          "valid_stream_ever_found": false,
+          "needs_token_refresh": false,
+          "completion_reason": "",
+          "rate_limit_hits": 0,
+          "last_http_status": null,
+          "last_stream_count": 0,
+          "last_error": ""
+        }
+      }
+    },
     {
       "base_url": "https://socolive.watch/truc-tiep/qarabag-vs-cska-sofia-23-07-2026-2300/",
       "raw_title": "Trực tiếp bóng đá Socolive Qarabag vs CSKA Sofia lúc 23:00 ngày 23/07/2026",
@@ -1702,1142 +2838,6 @@
         "__base__": {
           "key": "__base__",
           "url": "https://socolive.watch/truc-tiep/hjk-helsinki-vs-coleraine-23-07-2026-2300",
-          "blv": "XEM NGAY",
-          "blv_id": "",
-          "status": "pending",
-          "attempts": 0,
-          "attempts_total": 0,
-          "ever_attempted": false,
-          "valid_stream_ever_found": false,
-          "needs_token_refresh": false,
-          "completion_reason": "",
-          "rate_limit_hits": 0,
-          "last_http_status": null,
-          "last_stream_count": 0,
-          "last_error": ""
-        }
-      }
-    },
-    {
-      "base_url": "https://socolive.watch/truc-tiep/rigas-futbola-skola-vs-vestri-23-07-2026-2330/",
-      "raw_title": "Trực tiếp bóng đá Socolive Rigas Futbola Skola vs Vestri lúc 23:30 ngày 23/07/2026",
-      "home_team": "Rigas Futbola Skola",
-      "away_team": "Vestri",
-      "home_logo": "https://sta.vnres.co/file/common/20260717/9a958c636bf34e2c7641c337973b8ce5.png",
-      "away_logo": "https://sta.vnres.co/file/common/20260720/e4091836e9ee63b98de07897eff75782.png",
-      "time_text": "23:30",
-      "date_text": "23/07",
-      "status": "",
-      "card_text": "UEFA ECL 23:30 23/07 Rigas Futbola Skola VS XEM NGAY Vestri XUÂN TÓC ĐỎ PEWPEW",
-      "rooms": [
-        {
-          "url": "https://socolive.watch/truc-tiep/rigas-futbola-skola-vs-vestri-23-07-2026-2330?blv=610518",
-          "blv": "XUÂN TÓC ĐỎ",
-          "blv_id": "610518"
-        },
-        {
-          "url": "https://socolive.watch/truc-tiep/rigas-futbola-skola-vs-vestri-23-07-2026-2330?blv=109053",
-          "blv": "PEWPEW",
-          "blv_id": "109053"
-        },
-        {
-          "url": "https://socolive.watch/truc-tiep/rigas-futbola-skola-vs-vestri-23-07-2026-2330",
-          "blv": "XEM NGAY",
-          "blv_id": ""
-        }
-      ],
-      "match_name": "Rigas Futbola Skola vs Vestri",
-      "scheduled_at": "2026-07-23T23:30:00+07:00",
-      "streams": [],
-      "room_results": [
-        {
-          "url": "https://socolive.watch/truc-tiep/rigas-futbola-skola-vs-vestri-23-07-2026-2330?blv=610518",
-          "blv": "XUÂN TÓC ĐỎ",
-          "blv_id": "610518",
-          "streams": [],
-          "stream_sources": {},
-          "stream_first_seen": [],
-          "discovered_blv_ids": [],
-          "diagnostics": {
-            "url": "https://socolive.watch/truc-tiep/rigas-futbola-skola-vs-vestri-23-07-2026-2330?blv=610518",
-            "title": "Chờ một chút...",
-            "h1": "socolive.watch",
-            "ready_state": "complete",
-            "visibility_state": "visible",
-            "hidden": false,
-            "video_count": 0,
-            "iframe_count": 0,
-            "body_sample": "socolive.watch Thực hiện xác minh bảo mật Trang web này sử dụng dịch vụ bảo mật để chống bot độc hại. Trang này hiển thị trong khi trang web xác minh bạn không phải là bot. Ray ID: a1fadf83ba3a841f Hiệu suất và Tính bảo mật của Cloudflare Quyền riêng tư",
-            "harvest_rounds": 0,
-            "harvest_window_seconds": 0.624,
-            "main_status": 403,
-            "harvested_stream_count": 0,
-            "harvested_blv_ids": [],
-            "scan_mode": "browser-event",
-            "elapsed_seconds": 13.197
-          },
-          "http_probe": {
-            "enabled": false,
-            "status": null,
-            "elapsed_seconds": 0.0,
-            "error": ""
-          },
-          "errors": [
-            "console/error: Failed to load resource: the server responded with a status of 403 ()",
-            "console/warning: No available adapters.",
-            "console/warning: No available adapters.",
-            "console/error: %c%d font-size:0;color:transparent NaN",
-            "console/error: %c%d font-size:0;color:transparent NaN",
-            "console/warning: %c%d font-size:0;color:transparent NaN",
-            "console/warning: %c%d font-size:0;color:transparent NaN",
-            "console/warning: OTS parsing error: Size of decompressed WOFF 2.0 is less than compressed size",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/warning: [.WebGL-0x10a402076200]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
-            "console/warning: [.WebGL-0x10a402076200]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels"
-          ],
-          "failed_requests": [
-            "fetch https://brunhild.challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/i/a1fadf859f0ec890/vlZdpG.._RQjJJJbNlikuPLhaBC44vKK9C5G8U_Utqc-1784811679-1.2.1.1-45zH4TIxpdP3b2DgDhwbZKn8bg_H54PA1FPA3ImZLNdl6r74iAKE0gBSR7KLM7ki | net::ERR_NAME_NOT_RESOLVED",
-            "image https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/ci/a1fadf859f0ec890/1784811679891/YnrxbMNYYDriMR5 | net::ERR_FAILED"
-          ],
-          "http_errors": [
-            "403 https://socolive.watch/truc-tiep/rigas-futbola-skola-vs-vestri-23-07-2026-2330?blv=610518",
-            "401 https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/pat/a1fadf859f0ec890/1784811679891/3a0034629a6c697e51a3a1f0291f34746eea9e6ac312dc3fa8149435eb57635e/umGZWlIpeKsnV5q"
-          ]
-        },
-        {
-          "url": "https://socolive.watch/truc-tiep/rigas-futbola-skola-vs-vestri-23-07-2026-2330?blv=109053",
-          "blv": "PEWPEW",
-          "blv_id": "109053",
-          "streams": [],
-          "stream_sources": {},
-          "stream_first_seen": [],
-          "discovered_blv_ids": [],
-          "diagnostics": {
-            "url": "https://socolive.watch/truc-tiep/rigas-futbola-skola-vs-vestri-23-07-2026-2330?blv=109053",
-            "title": "Chờ một chút...",
-            "h1": "socolive.watch",
-            "ready_state": "complete",
-            "visibility_state": "visible",
-            "hidden": false,
-            "video_count": 0,
-            "iframe_count": 0,
-            "body_sample": "socolive.watch Thực hiện xác minh bảo mật Trang web này sử dụng dịch vụ bảo mật để chống bot độc hại. Trang này hiển thị trong khi trang web xác minh bạn không phải là bot. Ray ID: a1fadfe29cd0841f Hiệu suất và Tính bảo mật của Cloudflare Quyền riêng tư",
-            "harvest_rounds": 0,
-            "harvest_window_seconds": 0.623,
-            "main_status": 403,
-            "harvested_stream_count": 0,
-            "harvested_blv_ids": [],
-            "scan_mode": "browser-event",
-            "elapsed_seconds": 13.153
-          },
-          "http_probe": {
-            "enabled": false,
-            "status": null,
-            "elapsed_seconds": 0.0,
-            "error": ""
-          },
-          "errors": [
-            "console/error: Failed to load resource: the server responded with a status of 403 ()",
-            "console/warning: No available adapters.",
-            "console/warning: No available adapters.",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: %c%d font-size:0;color:transparent NaN",
-            "console/error: %c%d font-size:0;color:transparent NaN",
-            "console/warning: %c%d font-size:0;color:transparent NaN",
-            "console/warning: %c%d font-size:0;color:transparent NaN",
-            "console/warning: OTS parsing error: Size of decompressed WOFF 2.0 is less than compressed size",
-            "console/warning: [.WebGL-0x10a401ff3a00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
-            "console/warning: [.WebGL-0x10a401ff3a00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels (this message will no longer repeat)"
-          ],
-          "failed_requests": [
-            "fetch https://brunhild.challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/i/a1fadfe46913c890/lOq..ovp7V6QI1Sn3YEF5P5dXnjC4Ypeiw7hM8GCMKA-1784811694-1.2.1.1-CUq_SWubLnYfcSRfPJ2gtUPqzasF9mtOpbjQTf0QWas2kKgOWQFnqVj7rdzv97Tm | net::ERR_NAME_NOT_RESOLVED",
-            "image https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/ci/a1fadfe46913c890/1784811695056/eSkcNsUlW7P9hTl | net::ERR_FAILED"
-          ],
-          "http_errors": [
-            "403 https://socolive.watch/truc-tiep/rigas-futbola-skola-vs-vestri-23-07-2026-2330?blv=109053",
-            "401 https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/pat/a1fadfe46913c890/1784811695056/ed781c166366d864260f8c369c4c3b95ab21ef65d3be422ab1ac1a53cb4e4adf/G8cUrSBN-rnjLQQ"
-          ]
-        },
-        {
-          "url": "https://socolive.watch/truc-tiep/rigas-futbola-skola-vs-vestri-23-07-2026-2330?blv=610518",
-          "blv": "XUÂN TÓC ĐỎ",
-          "blv_id": "610518",
-          "streams": [],
-          "stream_sources": {},
-          "stream_first_seen": [],
-          "discovered_blv_ids": [],
-          "diagnostics": {
-            "url": "https://socolive.watch/truc-tiep/rigas-futbola-skola-vs-vestri-23-07-2026-2330?blv=610518",
-            "title": "Chờ một chút...",
-            "h1": "socolive.watch",
-            "ready_state": "complete",
-            "visibility_state": "visible",
-            "hidden": false,
-            "video_count": 0,
-            "iframe_count": 0,
-            "body_sample": "socolive.watch Thực hiện xác minh bảo mật Trang web này sử dụng dịch vụ bảo mật để chống bot độc hại. Trang này hiển thị trong khi trang web xác minh bạn không phải là bot. Ray ID: a1fae43ddbc67bbc Hiệu suất và Tính bảo mật của Cloudflare Quyền riêng tư",
-            "harvest_rounds": 0,
-            "harvest_window_seconds": 0.627,
-            "main_status": 403,
-            "harvested_stream_count": 0,
-            "harvested_blv_ids": [],
-            "scan_mode": "browser-event",
-            "elapsed_seconds": 13.143
-          },
-          "http_probe": {
-            "enabled": false,
-            "status": null,
-            "elapsed_seconds": 0.0,
-            "error": ""
-          },
-          "errors": [
-            "console/error: Failed to load resource: the server responded with a status of 403 ()",
-            "console/warning: No available adapters.",
-            "console/warning: No available adapters.",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: %c%d font-size:0;color:transparent NaN",
-            "console/error: %c%d font-size:0;color:transparent NaN",
-            "console/warning: %c%d font-size:0;color:transparent NaN",
-            "console/warning: %c%d font-size:0;color:transparent NaN",
-            "console/warning: OTS parsing error: Size of decompressed WOFF 2.0 is less than compressed size"
-          ],
-          "failed_requests": [
-            "fetch https://brunhild.challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/i/a1fae43fadd0b227/XgQHV8kesoCn11pnwMM9AQYtK_CTGe8DmCU7oImOgYk-1784811873-1.2.1.1-8py_zHMaf.oM5wzY9yneMAuGUY1oAUgPLb63MMNYyPH_ns7M7Y7lbpOgINRkKOcj | net::ERR_NAME_NOT_RESOLVED",
-            "image https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/ci/a1fae43fadd0b227/1784811873492/AZVW1Iy0yJ6LDYv | net::ERR_FAILED"
-          ],
-          "http_errors": [
-            "403 https://socolive.watch/truc-tiep/rigas-futbola-skola-vs-vestri-23-07-2026-2330?blv=610518",
-            "401 https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/pat/a1fae43fadd0b227/1784811873492/eb1a190ab47095ce5472e092f1f237f00e6a5e92f2c59ed9e706c26d5a7e18c7/gPqEYZZiLTht7wl"
-          ]
-        },
-        {
-          "url": "https://socolive.watch/truc-tiep/rigas-futbola-skola-vs-vestri-23-07-2026-2330?blv=109053",
-          "blv": "PEWPEW",
-          "blv_id": "109053",
-          "streams": [],
-          "stream_sources": {},
-          "stream_first_seen": [],
-          "discovered_blv_ids": [],
-          "diagnostics": {
-            "url": "https://socolive.watch/truc-tiep/rigas-futbola-skola-vs-vestri-23-07-2026-2330?blv=109053",
-            "title": "Chờ một chút...",
-            "h1": "socolive.watch",
-            "ready_state": "complete",
-            "visibility_state": "visible",
-            "hidden": false,
-            "video_count": 0,
-            "iframe_count": 0,
-            "body_sample": "socolive.watch Thực hiện xác minh bảo mật Trang web này sử dụng dịch vụ bảo mật để chống bot độc hại. Trang này hiển thị trong khi trang web xác minh bạn không phải là bot. Ray ID: a1fae49c9e5d7bbc Hiệu suất và Tính bảo mật của Cloudflare Quyền riêng tư",
-            "harvest_rounds": 0,
-            "harvest_window_seconds": 0.623,
-            "main_status": 403,
-            "harvested_stream_count": 0,
-            "harvested_blv_ids": [],
-            "scan_mode": "browser-event",
-            "elapsed_seconds": 13.127
-          },
-          "http_probe": {
-            "enabled": false,
-            "status": null,
-            "elapsed_seconds": 0.0,
-            "error": ""
-          },
-          "errors": [
-            "console/error: Failed to load resource: the server responded with a status of 403 ()",
-            "console/warning: No available adapters.",
-            "console/warning: No available adapters.",
-            "console/warning: OTS parsing error: Size of decompressed WOFF 2.0 is less than compressed size",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: %c%d font-size:0;color:transparent NaN",
-            "console/error: %c%d font-size:0;color:transparent NaN",
-            "console/warning: %c%d font-size:0;color:transparent NaN",
-            "console/warning: %c%d font-size:0;color:transparent NaN"
-          ],
-          "failed_requests": [
-            "fetch https://brunhild.challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/i/a1fae49e5c42b227/aLlar9hGWeS7GvfCPxfeiPiVTPtqkSBxj_g8nTKhXyo-1784811888-1.2.1.1-zncqLOKYgd_IHupvwrtS5EHwODrbvi6fpYF_1lglZLT128S9q_zmNIHkuFcP.jec | net::ERR_NAME_NOT_RESOLVED",
-            "image https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/ci/a1fae49e5c42b227/1784811888628/xK01QuE9sNJqcp9 | net::ERR_FAILED"
-          ],
-          "http_errors": [
-            "403 https://socolive.watch/truc-tiep/rigas-futbola-skola-vs-vestri-23-07-2026-2330?blv=109053",
-            "401 https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/pat/a1fae49e5c42b227/1784811888628/472e32bf39f9ae63c84b1741e5e5bc0ca81abac2d54133bfc54661a280b92831/F8O0QcJaexiIE1e"
-          ]
-        }
-      ],
-      "attempted_room_ids": [
-        "109053",
-        "610518"
-      ],
-      "coverage": {
-        "found_streams": 0,
-        "found_blv_ids": [],
-        "goal": 4,
-        "source_goal_reached": false,
-        "room_queue_complete": true,
-        "complete": true,
-        "max_streams_per_blv": 2,
-        "total_explicit_blv_rooms": 2,
-        "pending_room_keys": [],
-        "room_progress": {
-          "610518": {
-            "key": "610518",
-            "url": "https://socolive.watch/truc-tiep/rigas-futbola-skola-vs-vestri-23-07-2026-2330?blv=610518",
-            "blv": "XUÂN TÓC ĐỎ",
-            "blv_id": "610518",
-            "status": "exhausted",
-            "attempts": 2,
-            "attempts_total": 2,
-            "ever_attempted": true,
-            "valid_stream_ever_found": false,
-            "needs_token_refresh": false,
-            "completion_reason": "no_valid_stream_after_max_attempts",
-            "rate_limit_hits": 0,
-            "last_http_status": 403,
-            "last_stream_count": 0,
-            "last_error": "console/error: Failed to load resource: the server responded with a status of 403 (); console/warning: No available adapters.; console/warning: No available adapters."
-          },
-          "109053": {
-            "key": "109053",
-            "url": "https://socolive.watch/truc-tiep/rigas-futbola-skola-vs-vestri-23-07-2026-2330?blv=109053",
-            "blv": "PEWPEW",
-            "blv_id": "109053",
-            "status": "exhausted",
-            "attempts": 2,
-            "attempts_total": 2,
-            "ever_attempted": true,
-            "valid_stream_ever_found": false,
-            "needs_token_refresh": false,
-            "completion_reason": "no_valid_stream_after_max_attempts",
-            "rate_limit_hits": 0,
-            "last_http_status": 403,
-            "last_stream_count": 0,
-            "last_error": "console/error: Failed to load resource: the server responded with a status of 403 (); console/warning: No available adapters.; console/warning: No available adapters."
-          },
-          "__base__": {
-            "key": "__base__",
-            "url": "https://socolive.watch/truc-tiep/rigas-futbola-skola-vs-vestri-23-07-2026-2330",
-            "blv": "XEM NGAY",
-            "blv_id": "",
-            "status": "pending",
-            "attempts": 0,
-            "attempts_total": 0,
-            "ever_attempted": false,
-            "valid_stream_ever_found": false,
-            "needs_token_refresh": false,
-            "completion_reason": "",
-            "rate_limit_hits": 0,
-            "last_http_status": null,
-            "last_stream_count": 0,
-            "last_error": ""
-          }
-        }
-      },
-      "errors": [],
-      "room_progress": {
-        "610518": {
-          "key": "610518",
-          "url": "https://socolive.watch/truc-tiep/rigas-futbola-skola-vs-vestri-23-07-2026-2330?blv=610518",
-          "blv": "XUÂN TÓC ĐỎ",
-          "blv_id": "610518",
-          "status": "exhausted",
-          "attempts": 2,
-          "attempts_total": 2,
-          "ever_attempted": true,
-          "valid_stream_ever_found": false,
-          "needs_token_refresh": false,
-          "completion_reason": "no_valid_stream_after_max_attempts",
-          "rate_limit_hits": 0,
-          "last_http_status": 403,
-          "last_stream_count": 0,
-          "last_error": "console/error: Failed to load resource: the server responded with a status of 403 (); console/warning: No available adapters.; console/warning: No available adapters."
-        },
-        "109053": {
-          "key": "109053",
-          "url": "https://socolive.watch/truc-tiep/rigas-futbola-skola-vs-vestri-23-07-2026-2330?blv=109053",
-          "blv": "PEWPEW",
-          "blv_id": "109053",
-          "status": "exhausted",
-          "attempts": 2,
-          "attempts_total": 2,
-          "ever_attempted": true,
-          "valid_stream_ever_found": false,
-          "needs_token_refresh": false,
-          "completion_reason": "no_valid_stream_after_max_attempts",
-          "rate_limit_hits": 0,
-          "last_http_status": 403,
-          "last_stream_count": 0,
-          "last_error": "console/error: Failed to load resource: the server responded with a status of 403 (); console/warning: No available adapters.; console/warning: No available adapters."
-        },
-        "__base__": {
-          "key": "__base__",
-          "url": "https://socolive.watch/truc-tiep/rigas-futbola-skola-vs-vestri-23-07-2026-2330",
-          "blv": "XEM NGAY",
-          "blv_id": "",
-          "status": "pending",
-          "attempts": 0,
-          "attempts_total": 0,
-          "ever_attempted": false,
-          "valid_stream_ever_found": false,
-          "needs_token_refresh": false,
-          "completion_reason": "",
-          "rate_limit_hits": 0,
-          "last_http_status": null,
-          "last_stream_count": 0,
-          "last_error": ""
-        }
-      }
-    },
-    {
-      "base_url": "https://socolive.watch/truc-tiep/rakow-czestochowa-vs-valletta-fc-23-07-2026-2330/",
-      "raw_title": "Trực tiếp bóng đá Socolive Rakow Czestochowa vs Valletta FC lúc 23:30 ngày 23/07/2026",
-      "home_team": "Rakow Czestochowa",
-      "away_team": "Valletta FC",
-      "home_logo": "https://sta.vnres.co/file/common/20260720/7525bfc494879092b9f4c30d09c35772.png",
-      "away_logo": "https://sta.vnres.co/file/common/20260720/e0509fff603020ae1194bb12eaf80bce.png",
-      "time_text": "23:30",
-      "date_text": "23/07",
-      "status": "",
-      "card_text": "UEFA ECL 23:30 23/07 Rakow Czestochowa VS XEM NGAY Valletta FC TRÀ ĐÁ KÉP",
-      "rooms": [
-        {
-          "url": "https://socolive.watch/truc-tiep/rakow-czestochowa-vs-valletta-fc-23-07-2026-2330?blv=603914",
-          "blv": "TRÀ ĐÁ",
-          "blv_id": "603914"
-        },
-        {
-          "url": "https://socolive.watch/truc-tiep/rakow-czestochowa-vs-valletta-fc-23-07-2026-2330?blv=560690",
-          "blv": "KÉP",
-          "blv_id": "560690"
-        },
-        {
-          "url": "https://socolive.watch/truc-tiep/rakow-czestochowa-vs-valletta-fc-23-07-2026-2330",
-          "blv": "XEM NGAY",
-          "blv_id": ""
-        }
-      ],
-      "match_name": "Rakow Czestochowa vs Valletta FC",
-      "scheduled_at": "2026-07-23T23:30:00+07:00",
-      "streams": [],
-      "room_results": [
-        {
-          "url": "https://socolive.watch/truc-tiep/rakow-czestochowa-vs-valletta-fc-23-07-2026-2330?blv=603914",
-          "blv": "TRÀ ĐÁ",
-          "blv_id": "603914",
-          "streams": [],
-          "stream_sources": {},
-          "stream_first_seen": [],
-          "discovered_blv_ids": [],
-          "diagnostics": {
-            "url": "https://socolive.watch/truc-tiep/rakow-czestochowa-vs-valletta-fc-23-07-2026-2330?blv=603914",
-            "title": "Chờ một chút...",
-            "h1": "socolive.watch",
-            "ready_state": "complete",
-            "visibility_state": "visible",
-            "hidden": false,
-            "video_count": 0,
-            "iframe_count": 0,
-            "body_sample": "socolive.watch Thực hiện xác minh bảo mật Trang web này sử dụng dịch vụ bảo mật để chống bot độc hại. Trang này hiển thị trong khi trang web xác minh bạn không phải là bot. Ray ID: a1fae0416f46841f Hiệu suất và Tính bảo mật của Cloudflare Quyền riêng tư",
-            "harvest_rounds": 0,
-            "harvest_window_seconds": 0.624,
-            "main_status": 403,
-            "harvested_stream_count": 0,
-            "harvested_blv_ids": [],
-            "scan_mode": "browser-event",
-            "elapsed_seconds": 13.171
-          },
-          "http_probe": {
-            "enabled": false,
-            "status": null,
-            "elapsed_seconds": 0.0,
-            "error": ""
-          },
-          "errors": [
-            "console/error: Failed to load resource: the server responded with a status of 403 ()",
-            "console/warning: No available adapters.",
-            "console/warning: No available adapters.",
-            "console/warning: OTS parsing error: Size of decompressed WOFF 2.0 is less than compressed size",
-            "console/error: %c%d font-size:0;color:transparent NaN",
-            "console/error: %c%d font-size:0;color:transparent NaN",
-            "console/warning: %c%d font-size:0;color:transparent NaN",
-            "console/warning: %c%d font-size:0;color:transparent NaN",
-            "console/error: Failed to load resource: net::ERR_FAILED"
-          ],
-          "failed_requests": [
-            "fetch https://brunhild.challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/i/a1fae0433a0fc890/3ITohN6DusUCNssw7icKztNDs8C0b8.3yVlf5Y6TLOk-1784811709-1.2.1.1-FiQWxuexqSGv8Y8k8Iv2muA6fzuLqm6SdhRRPc.1dwX29hiGRURqWC63Fx2BFinV | net::ERR_NAME_NOT_RESOLVED",
-            "image https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/ci/a1fae0433a0fc890/1784811710250/5As7TiE9P-ACrL3 | net::ERR_FAILED"
-          ],
-          "http_errors": [
-            "403 https://socolive.watch/truc-tiep/rakow-czestochowa-vs-valletta-fc-23-07-2026-2330?blv=603914",
-            "401 https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/pat/a1fae0433a0fc890/1784811710249/2ba3ceef7da2bd3b0aec34ee924c87c2ed822857293ccab5e05317de561429f7/7_DEnPNq_-QBBkX"
-          ]
-        },
-        {
-          "url": "https://socolive.watch/truc-tiep/rakow-czestochowa-vs-valletta-fc-23-07-2026-2330?blv=560690",
-          "blv": "KÉP",
-          "blv_id": "560690",
-          "streams": [],
-          "stream_sources": {},
-          "stream_first_seen": [],
-          "discovered_blv_ids": [],
-          "diagnostics": {
-            "url": "https://socolive.watch/truc-tiep/rakow-czestochowa-vs-valletta-fc-23-07-2026-2330?blv=560690",
-            "title": "Chờ một chút...",
-            "h1": "socolive.watch",
-            "ready_state": "complete",
-            "visibility_state": "visible",
-            "hidden": false,
-            "video_count": 0,
-            "iframe_count": 0,
-            "body_sample": "socolive.watch Thực hiện xác minh bảo mật Trang web này sử dụng dịch vụ bảo mật để chống bot độc hại. Trang này hiển thị trong khi trang web xác minh bạn không phải là bot. Ray ID: a1fae0a04a58841f Hiệu suất và Tính bảo mật của Cloudflare Quyền riêng tư",
-            "harvest_rounds": 0,
-            "harvest_window_seconds": 0.621,
-            "main_status": 403,
-            "harvested_stream_count": 0,
-            "harvested_blv_ids": [],
-            "scan_mode": "browser-event",
-            "elapsed_seconds": 13.18
-          },
-          "http_probe": {
-            "enabled": false,
-            "status": null,
-            "elapsed_seconds": 0.0,
-            "error": ""
-          },
-          "errors": [
-            "console/error: Failed to load resource: the server responded with a status of 403 ()",
-            "console/warning: No available adapters.",
-            "console/warning: No available adapters.",
-            "console/warning: OTS parsing error: Size of decompressed WOFF 2.0 is less than compressed size",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: %c%d font-size:0;color:transparent NaN",
-            "console/error: %c%d font-size:0;color:transparent NaN",
-            "console/warning: %c%d font-size:0;color:transparent NaN",
-            "console/warning: %c%d font-size:0;color:transparent NaN"
-          ],
-          "failed_requests": [
-            "fetch https://brunhild.challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/i/a1fae0a25caac890/LMyGcNMsOKEUKtM5xnaa9K9iObAb4VZgVoTH44W6FtU-1784811725-1.2.1.1-jw6VXZHANSU6P0.FkFcDNOIGAIyzHxqRoAGbX1IBrGclmDGDE5UExfFrq97Z3gEG | net::ERR_NAME_NOT_RESOLVED",
-            "image https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/ci/a1fae0a25caac890/1784811725474/CmMQUUCRvnXXGR3 | net::ERR_FAILED"
-          ],
-          "http_errors": [
-            "403 https://socolive.watch/truc-tiep/rakow-czestochowa-vs-valletta-fc-23-07-2026-2330?blv=560690",
-            "401 https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/pat/a1fae0a25caac890/1784811725474/a0db7f9fbf8880a2ae75311450319ec49626216875e75326b88551fb6c070943/YUxuUJmgoti34sL"
-          ]
-        },
-        {
-          "url": "https://socolive.watch/truc-tiep/rakow-czestochowa-vs-valletta-fc-23-07-2026-2330?blv=603914",
-          "blv": "TRÀ ĐÁ",
-          "blv_id": "603914",
-          "streams": [],
-          "stream_sources": {},
-          "stream_first_seen": [],
-          "discovered_blv_ids": [],
-          "diagnostics": {
-            "url": "https://socolive.watch/truc-tiep/rakow-czestochowa-vs-valletta-fc-23-07-2026-2330?blv=603914",
-            "title": "Chờ một chút...",
-            "h1": "socolive.watch",
-            "ready_state": "complete",
-            "visibility_state": "visible",
-            "hidden": false,
-            "video_count": 0,
-            "iframe_count": 0,
-            "body_sample": "socolive.watch Thực hiện xác minh bảo mật Trang web này sử dụng dịch vụ bảo mật để chống bot độc hại. Trang này hiển thị trong khi trang web xác minh bạn không phải là bot. Ray ID: a1fae3807dc07bbc Hiệu suất và Tính bảo mật của Cloudflare Quyền riêng tư",
-            "harvest_rounds": 0,
-            "harvest_window_seconds": 0.623,
-            "main_status": 403,
-            "harvested_stream_count": 0,
-            "harvested_blv_ids": [],
-            "scan_mode": "browser-event",
-            "elapsed_seconds": 13.128
-          },
-          "http_probe": {
-            "enabled": false,
-            "status": null,
-            "elapsed_seconds": 0.0,
-            "error": ""
-          },
-          "errors": [
-            "console/error: Failed to load resource: the server responded with a status of 403 ()",
-            "console/warning: No available adapters.",
-            "console/warning: No available adapters.",
-            "console/warning: OTS parsing error: Size of decompressed WOFF 2.0 is less than compressed size",
-            "console/warning: [.WebGL-0x39540256da00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
-            "console/warning: [.WebGL-0x39540256da00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels (this message will no longer repeat)",
-            "console/error: %c%d font-size:0;color:transparent NaN",
-            "console/error: %c%d font-size:0;color:transparent NaN",
-            "console/warning: %c%d font-size:0;color:transparent NaN",
-            "console/warning: %c%d font-size:0;color:transparent NaN",
-            "console/error: Failed to load resource: net::ERR_FAILED"
-          ],
-          "failed_requests": [
-            "fetch https://brunhild.challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/i/a1fae3823fcfb227/Ms_J.seuQsvIZSU8ziHf09IsV3ecqshXgSaLfxN4s3A-1784811842-1.2.1.1-1D2Jd6YzsbUPlCnhoyT1ELAhvAHPPm0OdcnIGDbqwrggH6dzKrEJFUL89gCq_A.b | net::ERR_NAME_NOT_RESOLVED",
-            "image https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/ci/a1fae3823fcfb227/1784811843192/MUhuRL0WZTBP78Y | net::ERR_FAILED"
-          ],
-          "http_errors": [
-            "403 https://socolive.watch/truc-tiep/rakow-czestochowa-vs-valletta-fc-23-07-2026-2330?blv=603914",
-            "401 https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/pat/a1fae3823fcfb227/1784811843191/96833d2f4ee1ddaa7731fe91d26382f055d13cf93858955677e7dac2c673563d/linigKO_CUxkQ_S"
-          ]
-        },
-        {
-          "url": "https://socolive.watch/truc-tiep/rakow-czestochowa-vs-valletta-fc-23-07-2026-2330?blv=560690",
-          "blv": "KÉP",
-          "blv_id": "560690",
-          "streams": [],
-          "stream_sources": {},
-          "stream_first_seen": [],
-          "discovered_blv_ids": [],
-          "diagnostics": {
-            "url": "https://socolive.watch/truc-tiep/rakow-czestochowa-vs-valletta-fc-23-07-2026-2330?blv=560690",
-            "title": "Chờ một chút...",
-            "h1": "socolive.watch",
-            "ready_state": "complete",
-            "visibility_state": "visible",
-            "hidden": false,
-            "video_count": 0,
-            "iframe_count": 0,
-            "body_sample": "socolive.watch Thực hiện xác minh bảo mật Trang web này sử dụng dịch vụ bảo mật để chống bot độc hại. Trang này hiển thị trong khi trang web xác minh bạn không phải là bot. Ray ID: a1fae3df18b37bbc Hiệu suất và Tính bảo mật của Cloudflare Quyền riêng tư",
-            "harvest_rounds": 0,
-            "harvest_window_seconds": 0.628,
-            "main_status": 403,
-            "harvested_stream_count": 0,
-            "harvested_blv_ids": [],
-            "scan_mode": "browser-event",
-            "elapsed_seconds": 13.145
-          },
-          "http_probe": {
-            "enabled": false,
-            "status": null,
-            "elapsed_seconds": 0.0,
-            "error": ""
-          },
-          "errors": [
-            "console/error: Failed to load resource: the server responded with a status of 403 ()",
-            "console/warning: No available adapters.",
-            "console/warning: No available adapters.",
-            "console/error: %c%d font-size:0;color:transparent NaN",
-            "console/error: %c%d font-size:0;color:transparent NaN",
-            "console/warning: %c%d font-size:0;color:transparent NaN",
-            "console/warning: %c%d font-size:0;color:transparent NaN",
-            "console/warning: OTS parsing error: Size of decompressed WOFF 2.0 is less than compressed size",
-            "console/error: Failed to load resource: net::ERR_FAILED"
-          ],
-          "failed_requests": [
-            "fetch https://brunhild.challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/i/a1fae3e0d9d2b227/Yrp7te24LI1TQmC64sKTKNwpBhShR_mQ27KLhFOLSpg-1784811858-1.2.1.1-rE9JaZwiTMZYhU2X6GHYdGL6zsnA8Uy8TjnukcVm8oshC9AnB5FtAoiwhO9dh63M | net::ERR_NAME_NOT_RESOLVED",
-            "image https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/ci/a1fae3e0d9d2b227/1784811858320/hJbM6uMo-lYpVaW | net::ERR_FAILED"
-          ],
-          "http_errors": [
-            "403 https://socolive.watch/truc-tiep/rakow-czestochowa-vs-valletta-fc-23-07-2026-2330?blv=560690",
-            "401 https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/pat/a1fae3e0d9d2b227/1784811858320/304985fe3f10938b7590f7f3b22768aa9bd5712a5e3578de6f0ce3ef0d3695ae/5v4YH3I58Z-4-R4"
-          ]
-        }
-      ],
-      "attempted_room_ids": [
-        "560690",
-        "603914"
-      ],
-      "coverage": {
-        "found_streams": 0,
-        "found_blv_ids": [],
-        "goal": 4,
-        "source_goal_reached": false,
-        "room_queue_complete": true,
-        "complete": true,
-        "max_streams_per_blv": 2,
-        "total_explicit_blv_rooms": 2,
-        "pending_room_keys": [],
-        "room_progress": {
-          "603914": {
-            "key": "603914",
-            "url": "https://socolive.watch/truc-tiep/rakow-czestochowa-vs-valletta-fc-23-07-2026-2330?blv=603914",
-            "blv": "TRÀ ĐÁ",
-            "blv_id": "603914",
-            "status": "exhausted",
-            "attempts": 2,
-            "attempts_total": 2,
-            "ever_attempted": true,
-            "valid_stream_ever_found": false,
-            "needs_token_refresh": false,
-            "completion_reason": "no_valid_stream_after_max_attempts",
-            "rate_limit_hits": 0,
-            "last_http_status": 403,
-            "last_stream_count": 0,
-            "last_error": "console/error: Failed to load resource: the server responded with a status of 403 (); console/warning: No available adapters.; console/warning: No available adapters."
-          },
-          "560690": {
-            "key": "560690",
-            "url": "https://socolive.watch/truc-tiep/rakow-czestochowa-vs-valletta-fc-23-07-2026-2330?blv=560690",
-            "blv": "KÉP",
-            "blv_id": "560690",
-            "status": "exhausted",
-            "attempts": 2,
-            "attempts_total": 2,
-            "ever_attempted": true,
-            "valid_stream_ever_found": false,
-            "needs_token_refresh": false,
-            "completion_reason": "no_valid_stream_after_max_attempts",
-            "rate_limit_hits": 0,
-            "last_http_status": 403,
-            "last_stream_count": 0,
-            "last_error": "console/error: Failed to load resource: the server responded with a status of 403 (); console/warning: No available adapters.; console/warning: No available adapters."
-          },
-          "__base__": {
-            "key": "__base__",
-            "url": "https://socolive.watch/truc-tiep/rakow-czestochowa-vs-valletta-fc-23-07-2026-2330",
-            "blv": "XEM NGAY",
-            "blv_id": "",
-            "status": "pending",
-            "attempts": 0,
-            "attempts_total": 0,
-            "ever_attempted": false,
-            "valid_stream_ever_found": false,
-            "needs_token_refresh": false,
-            "completion_reason": "",
-            "rate_limit_hits": 0,
-            "last_http_status": null,
-            "last_stream_count": 0,
-            "last_error": ""
-          }
-        }
-      },
-      "errors": [],
-      "room_progress": {
-        "603914": {
-          "key": "603914",
-          "url": "https://socolive.watch/truc-tiep/rakow-czestochowa-vs-valletta-fc-23-07-2026-2330?blv=603914",
-          "blv": "TRÀ ĐÁ",
-          "blv_id": "603914",
-          "status": "exhausted",
-          "attempts": 2,
-          "attempts_total": 2,
-          "ever_attempted": true,
-          "valid_stream_ever_found": false,
-          "needs_token_refresh": false,
-          "completion_reason": "no_valid_stream_after_max_attempts",
-          "rate_limit_hits": 0,
-          "last_http_status": 403,
-          "last_stream_count": 0,
-          "last_error": "console/error: Failed to load resource: the server responded with a status of 403 (); console/warning: No available adapters.; console/warning: No available adapters."
-        },
-        "560690": {
-          "key": "560690",
-          "url": "https://socolive.watch/truc-tiep/rakow-czestochowa-vs-valletta-fc-23-07-2026-2330?blv=560690",
-          "blv": "KÉP",
-          "blv_id": "560690",
-          "status": "exhausted",
-          "attempts": 2,
-          "attempts_total": 2,
-          "ever_attempted": true,
-          "valid_stream_ever_found": false,
-          "needs_token_refresh": false,
-          "completion_reason": "no_valid_stream_after_max_attempts",
-          "rate_limit_hits": 0,
-          "last_http_status": 403,
-          "last_stream_count": 0,
-          "last_error": "console/error: Failed to load resource: the server responded with a status of 403 (); console/warning: No available adapters.; console/warning: No available adapters."
-        },
-        "__base__": {
-          "key": "__base__",
-          "url": "https://socolive.watch/truc-tiep/rakow-czestochowa-vs-valletta-fc-23-07-2026-2330",
-          "blv": "XEM NGAY",
-          "blv_id": "",
-          "status": "pending",
-          "attempts": 0,
-          "attempts_total": 0,
-          "ever_attempted": false,
-          "valid_stream_ever_found": false,
-          "needs_token_refresh": false,
-          "completion_reason": "",
-          "rate_limit_hits": 0,
-          "last_http_status": null,
-          "last_stream_count": 0,
-          "last_error": ""
-        }
-      }
-    },
-    {
-      "base_url": "https://socolive.watch/truc-tiep/aek-larnaca-vs-beitar-jerusalem-23-07-2026-2330/",
-      "raw_title": "Trực tiếp bóng đá Socolive AEK Larnaca vs Beitar Jerusalem lúc 23:30 ngày 23/07/2026",
-      "home_team": "AEK Larnaca",
-      "away_team": "Beitar Jerusalem",
-      "home_logo": "https://sta.vnres.co/file/common/20260720/d97d6a029ce1e97d3decbab61a7b3ed6.png",
-      "away_logo": "https://sta.vnres.co/file/common/20260720/58752fb9c5d6968a593edaab28b35ce0.png",
-      "time_text": "23:30",
-      "date_text": "23/07",
-      "status": "",
-      "card_text": "UEFA ECL 23:30 23/07 AEK Larnaca VS XEM NGAY Beitar Jerusalem GRAP PICK",
-      "rooms": [
-        {
-          "url": "https://socolive.watch/truc-tiep/aek-larnaca-vs-beitar-jerusalem-23-07-2026-2330?blv=622093",
-          "blv": "GRAP",
-          "blv_id": "622093"
-        },
-        {
-          "url": "https://socolive.watch/truc-tiep/aek-larnaca-vs-beitar-jerusalem-23-07-2026-2330?blv=598549",
-          "blv": "PICK",
-          "blv_id": "598549"
-        },
-        {
-          "url": "https://socolive.watch/truc-tiep/aek-larnaca-vs-beitar-jerusalem-23-07-2026-2330",
-          "blv": "XEM NGAY",
-          "blv_id": ""
-        }
-      ],
-      "match_name": "AEK Larnaca vs Beitar Jerusalem",
-      "scheduled_at": "2026-07-23T23:30:00+07:00",
-      "streams": [],
-      "room_results": [
-        {
-          "url": "https://socolive.watch/truc-tiep/aek-larnaca-vs-beitar-jerusalem-23-07-2026-2330?blv=622093",
-          "blv": "GRAP",
-          "blv_id": "622093",
-          "streams": [],
-          "stream_sources": {},
-          "stream_first_seen": [],
-          "discovered_blv_ids": [],
-          "diagnostics": {
-            "url": "https://socolive.watch/truc-tiep/aek-larnaca-vs-beitar-jerusalem-23-07-2026-2330?blv=622093",
-            "title": "Chờ một chút...",
-            "h1": "socolive.watch",
-            "ready_state": "complete",
-            "visibility_state": "visible",
-            "hidden": false,
-            "video_count": 0,
-            "iframe_count": 0,
-            "body_sample": "socolive.watch Thực hiện xác minh bảo mật Trang web này sử dụng dịch vụ bảo mật để chống bot độc hại. Trang này hiển thị trong khi trang web xác minh bạn không phải là bot. Ray ID: a1fae0ff3d20841f Hiệu suất và Tính bảo mật của Cloudflare Quyền riêng tư",
-            "harvest_rounds": 0,
-            "harvest_window_seconds": 0.624,
-            "main_status": 403,
-            "harvested_stream_count": 0,
-            "harvested_blv_ids": [],
-            "scan_mode": "browser-event",
-            "elapsed_seconds": 13.137
-          },
-          "http_probe": {
-            "enabled": false,
-            "status": null,
-            "elapsed_seconds": 0.0,
-            "error": ""
-          },
-          "errors": [
-            "console/error: Failed to load resource: the server responded with a status of 403 ()",
-            "console/warning: No available adapters.",
-            "console/warning: No available adapters.",
-            "console/error: %c%d font-size:0;color:transparent NaN",
-            "console/error: %c%d font-size:0;color:transparent NaN",
-            "console/warning: %c%d font-size:0;color:transparent NaN",
-            "console/warning: %c%d font-size:0;color:transparent NaN",
-            "console/warning: OTS parsing error: Size of decompressed WOFF 2.0 is less than compressed size",
-            "console/error: Failed to load resource: net::ERR_FAILED"
-          ],
-          "failed_requests": [
-            "fetch https://brunhild.challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/i/a1fae1010a7ac890/NF2zGXFmOJ2e.RhMPVvAt1SgjHSvfNalsQ6txHw5EtY-1784811740-1.2.1.1-63qOarBoSyS_IQK1QQX8mSKlMdFVqxrbOiRslJlt8ofJpL_UGT_8mREXlG5oE2Ks | net::ERR_NAME_NOT_RESOLVED",
-            "image https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/ci/a1fae1010a7ac890/1784811740586/qMx6dy3LLriEFMx | net::ERR_FAILED"
-          ],
-          "http_errors": [
-            "403 https://socolive.watch/truc-tiep/aek-larnaca-vs-beitar-jerusalem-23-07-2026-2330?blv=622093",
-            "401 https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/pat/a1fae1010a7ac890/1784811740585/96299dccf33613bdc1910614591ebe9502dbf07bac42689f1d1f53c7bbe5ce51/dE6h5tCB4N1xGuf"
-          ]
-        },
-        {
-          "url": "https://socolive.watch/truc-tiep/aek-larnaca-vs-beitar-jerusalem-23-07-2026-2330?blv=598549",
-          "blv": "PICK",
-          "blv_id": "598549",
-          "streams": [],
-          "stream_sources": {},
-          "stream_first_seen": [],
-          "discovered_blv_ids": [],
-          "diagnostics": {
-            "url": "https://socolive.watch/truc-tiep/aek-larnaca-vs-beitar-jerusalem-23-07-2026-2330?blv=598549",
-            "title": "Chờ một chút...",
-            "h1": "socolive.watch",
-            "ready_state": "complete",
-            "visibility_state": "visible",
-            "hidden": false,
-            "video_count": 0,
-            "iframe_count": 0,
-            "body_sample": "socolive.watch Thực hiện xác minh bảo mật Trang web này sử dụng dịch vụ bảo mật để chống bot độc hại. Trang này hiển thị trong khi trang web xác minh bạn không phải là bot. Ray ID: a1fae15df898841f Hiệu suất và Tính bảo mật của Cloudflare Quyền riêng tư",
-            "harvest_rounds": 0,
-            "harvest_window_seconds": 0.623,
-            "main_status": 403,
-            "harvested_stream_count": 0,
-            "harvested_blv_ids": [],
-            "scan_mode": "browser-event",
-            "elapsed_seconds": 13.162
-          },
-          "http_probe": {
-            "enabled": false,
-            "status": null,
-            "elapsed_seconds": 0.0,
-            "error": ""
-          },
-          "errors": [
-            "console/error: Failed to load resource: the server responded with a status of 403 ()",
-            "console/warning: No available adapters.",
-            "console/warning: No available adapters.",
-            "console/warning: OTS parsing error: Size of decompressed WOFF 2.0 is less than compressed size",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: %c%d font-size:0;color:transparent NaN",
-            "console/error: %c%d font-size:0;color:transparent NaN",
-            "console/warning: %c%d font-size:0;color:transparent NaN",
-            "console/warning: %c%d font-size:0;color:transparent NaN"
-          ],
-          "failed_requests": [
-            "fetch https://brunhild.challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/i/a1fae15fcb64c890/VFzhALOjeDBBvTAIGrAfNtXxMqzy47.YcCN.FmTFhGI-1784811755-1.2.1.1-9yrIYF3qVpu3Eb4YYReR2HzRvOxsHZaXZ1ry6Vg09KBjNEAQXwtluufDI3gEG3.O | net::ERR_NAME_NOT_RESOLVED",
-            "image https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/ci/a1fae15fcb64c890/1784811755760/oUj4Rr4ypXt2-9G | net::ERR_FAILED"
-          ],
-          "http_errors": [
-            "403 https://socolive.watch/truc-tiep/aek-larnaca-vs-beitar-jerusalem-23-07-2026-2330?blv=598549",
-            "401 https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/pat/a1fae15fcb64c890/1784811755760/361465a7df0e913b784b6f7770f3421b859b7f4e376c7891ff4102fb31d2f65c/Mr5kZfKfgNcT77V"
-          ]
-        },
-        {
-          "url": "https://socolive.watch/truc-tiep/aek-larnaca-vs-beitar-jerusalem-23-07-2026-2330?blv=622093",
-          "blv": "GRAP",
-          "blv_id": "622093",
-          "streams": [
-            "https://pull.niues.live/live/stream-622093_lhd.m3u8?auth_key=1784750484-0-0-bacaf15e119cfc135500da65b809f23f"
-          ],
-          "stream_sources": {
-            "https://pull.niues.live/live/stream-622093_lhd.m3u8?auth_key=1784750484-0-0-bacaf15e119cfc135500da65b809f23f": [
-              "final-no-stream-scan",
-              "harvest-final"
-            ]
-          },
-          "stream_first_seen": [
-            "https://pull.niues.live/live/stream-622093_lhd.m3u8?auth_key=1784750484-0-0-bacaf15e119cfc135500da65b809f23f"
-          ],
-          "discovered_blv_ids": [
-            "622093"
-          ],
-          "diagnostics": {
-            "url": "https://socolive.watch/truc-tiep/aek-larnaca-vs-beitar-jerusalem-23-07-2026-2330/?blv=622093",
-            "title": "Xem trực tiếp bóng đá AEK Larnaca vs Beitar Jerusalem | 23:30 ngày 23/07/2026",
-            "h1": "Trực tiếp bóng đá Socolive AEK Larnaca vs Beitar Jerusalem lúc 23:30 ngày 23/07/2026",
-            "ready_state": "complete",
-            "visibility_state": "visible",
-            "hidden": false,
-            "video_count": 0,
-            "iframe_count": 1,
-            "body_sample": "Skip to content Socolive Bảng xếp hạng Lịch thi đấu Kết quả bóng đá Tin thể thao Trực tiếp bóng đá Socolive AEK Larnaca vs Beitar Jerusalem lúc 23:30 ngày 23/07/2026 UEFA ECL AEK Larnaca 23:30 23/07 Beitar Jerusalem Trận đấu sẽ bắt đầu sau Ngày0 : Giờ3 : Phút26 : Giây14 Trận đấu chưa bắt đầu GRAP PICK Chat Thống kê Đội hình Diễn Biến Bảng XH \" \" Xóa Tin nhắn riêng 😀 😁 😃 😄 😅 😆 😇 😉 😊 🙂 😋 😍 😘 😗 😙 😚 😜 😝 😛 😎 🙄 😳 😡 😕 😫 😤 😨 😥 😪 😓 😵 😲 🤧 😷 🤒 🤕 😴 💤 👏 🤙 👍 👎 👊 ✊ ✌ 👌 ✋ 🤚 💪 🤝 👈 👉 🖕 🖐 👄 👂 👀 🎅 🌞 🌙 ⭐ ⚡ 🔥 ❄️ ⚽ 🏀 🏈 ⚾ 🎁 🎉 ✒️ 📝 ❤️ 💛 💚 🆚 💬 🕐 Vô hiệu hóa tất cả Vô hiệu hóa quà tặng Tắt lời chào Đăng nhập để cùng chat nhé Gửi Tỷ lệ kèo Cược Châu Á Chủ Chấp Khách Cược Châu Âu Chủ Hòa Khách Tài xỉu Tài Tỷ lệ kèo Xỉu Kèo góc Tài Tỷ lệ kèo Xỉu Mô phỏng trận đấu Thống kê trận đấu KAZ D1 20:00 23/07 Jaiyq VS null null null - null Sắp diễn ra Xem ngay Khan Tengri FC GIÓ NGƯỜI CÁ QUỐC KHÁNH PEWPEW KAZ D1 20:00 23/07 FK Kaspiy Aktau B VS null null null - null Sắp diễn ra Xem ngay Ekibastuzets A TÚ XUÂN TÓC ĐỎ SEVEN RYO KAZ D1 19:00 23/07 Akademiya Ontustik VS null null null - null Sắp diễn ra Xem ngay Astana B CÁO A TINH ANH TÀI VINFAST VIE U21 18",
-            "harvest_rounds": 0,
-            "harvest_window_seconds": 0.64,
-            "main_status": 200,
-            "harvested_stream_count": 1,
-            "harvested_blv_ids": [
-              "622093"
-            ],
-            "scan_mode": "browser-event",
-            "elapsed_seconds": 15.522
-          },
-          "http_probe": {
-            "enabled": false,
-            "status": null,
-            "elapsed_seconds": 0.0,
-            "error": ""
-          },
-          "errors": [
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED"
-          ],
-          "failed_requests": [
-            "stylesheet https://socolive.watch/wp-content/plugins/stream-player-plugin/assets/dist/main.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolive.watch/wp-content/plugins/stream-player-plugin/assets/dist/customize.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolive.watch/wp-content/plugins/user-action-plugin/assets/css/auth.css?ver=633 | net::ERR_FAILED",
-            "stylesheet https://socolive.watch/wp-content/plugins/user-action-plugin/assets/css/chat.css?ver=423 | net::ERR_FAILED",
-            "stylesheet https://socolive.watch/wp-content/plugins/user-action-plugin/assets/css/chat(1).css?ver=77 | net::ERR_FAILED",
-            "stylesheet https://socolive.watch/wp-content/plugins/user-action-plugin/assets/css/toast.css?ver=117 | net::ERR_FAILED",
-            "stylesheet https://socolive.watch/wp-content/themes/flatsome/assets/css/flatsome.css?ver=3.18.2 | net::ERR_FAILED",
-            "stylesheet https://socolive.watch/wp-content/themes/flatsome-child/style.css?ver=3.0 | net::ERR_FAILED",
-            "stylesheet https://fonts.googleapis.com/css?family=Roboto:regular,700,regular,700,regular&display=swap&ver=3.9 | net::ERR_FAILED",
-            "stylesheet https://socolive.watch/wp-content/plugins/stream-player-plugin/assets/css/countdown.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolive.watch/wp-content/plugins/stream-player-plugin/assets/css/match.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolive.watch/wp-content/plugins/stream-player-plugin/assets/css/livescore.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolive.watch/wp-content/plugins/stream-player-plugin/assets/css/style_custom.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolive.watch/wp-content/plugins/stream-player-plugin/assets/css/effect/running-border.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolive.watch/wp-content/plugins/stream-player-plugin/assets/css/option/option-6.css?ver=2.8.5 | net::ERR_FAILED"
-          ],
-          "http_errors": [
-            "403 https://socolive.watch/wp-admin/admin-ajax.php?action=scl_realtime&sport=1"
-          ]
-        },
-        {
-          "url": "https://socolive.watch/truc-tiep/aek-larnaca-vs-beitar-jerusalem-23-07-2026-2330?blv=598549",
-          "blv": "PICK",
-          "blv_id": "598549",
-          "streams": [],
-          "stream_sources": {},
-          "stream_first_seen": [],
-          "discovered_blv_ids": [],
-          "diagnostics": {
-            "url": "https://socolive.watch/truc-tiep/aek-larnaca-vs-beitar-jerusalem-23-07-2026-2330?blv=598549",
-            "title": "Chờ một chút...",
-            "h1": "socolive.watch",
-            "ready_state": "complete",
-            "visibility_state": "visible",
-            "hidden": false,
-            "video_count": 0,
-            "iframe_count": 0,
-            "body_sample": "socolive.watch Thực hiện xác minh bảo mật Trang web này sử dụng dịch vụ bảo mật để chống bot độc hại. Trang này hiển thị trong khi trang web xác minh bạn không phải là bot. Ray ID: a1fae321bac27bbc Hiệu suất và Tính bảo mật của Cloudflare Quyền riêng tư",
-            "harvest_rounds": 0,
-            "harvest_window_seconds": 0.623,
-            "main_status": 403,
-            "harvested_stream_count": 0,
-            "harvested_blv_ids": [],
-            "scan_mode": "browser-event",
-            "elapsed_seconds": 13.161
-          },
-          "http_probe": {
-            "enabled": false,
-            "status": null,
-            "elapsed_seconds": 0.0,
-            "error": ""
-          },
-          "errors": [
-            "console/error: Failed to load resource: the server responded with a status of 403 ()",
-            "console/warning: No available adapters.",
-            "console/warning: No available adapters.",
-            "console/error: %c%d font-size:0;color:transparent NaN",
-            "console/error: %c%d font-size:0;color:transparent NaN",
-            "console/warning: %c%d font-size:0;color:transparent NaN",
-            "console/warning: %c%d font-size:0;color:transparent NaN",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/warning: [.WebGL-0x3954026e5400]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
-            "console/warning: [.WebGL-0x3954026e5400]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
-            "console/warning: OTS parsing error: Size of decompressed WOFF 2.0 is less than compressed size"
-          ],
-          "failed_requests": [
-            "fetch https://brunhild.challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/i/a1fae3238e67b227/E0Vn4.qaLzAIhvz6MsZ2rukCfRDswmh2w.GhrdqoG.E-1784811827-1.2.1.1-14QTHcdUwIffmhsAzdQ5lNRUITwO34Mh1GSwe8jQdTt5xXDjEAJEfT7kdbvRdM8h | net::ERR_NAME_NOT_RESOLVED",
-            "image https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/ci/a1fae3238e67b227/1784811828030/JvDG5y6OyLKzvVP | net::ERR_FAILED"
-          ],
-          "http_errors": [
-            "403 https://socolive.watch/truc-tiep/aek-larnaca-vs-beitar-jerusalem-23-07-2026-2330?blv=598549",
-            "401 https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/pat/a1fae3238e67b227/1784811828030/de1621c152cd8962c03b208273e10d3ce2263f406a8550c5d54586d4a3273917/3hVKuBoWHfAELt8"
-          ]
-        }
-      ],
-      "attempted_room_ids": [
-        "598549",
-        "622093"
-      ],
-      "coverage": {
-        "found_streams": 0,
-        "found_blv_ids": [],
-        "goal": 4,
-        "source_goal_reached": false,
-        "room_queue_complete": true,
-        "complete": true,
-        "max_streams_per_blv": 2,
-        "total_explicit_blv_rooms": 2,
-        "pending_room_keys": [],
-        "room_progress": {
-          "622093": {
-            "key": "622093",
-            "url": "https://socolive.watch/truc-tiep/aek-larnaca-vs-beitar-jerusalem-23-07-2026-2330?blv=622093",
-            "blv": "GRAP",
-            "blv_id": "622093",
-            "status": "exhausted",
-            "attempts": 2,
-            "attempts_total": 2,
-            "ever_attempted": true,
-            "valid_stream_ever_found": false,
-            "needs_token_refresh": true,
-            "completion_reason": "no_valid_stream_after_max_attempts",
-            "rate_limit_hits": 0,
-            "last_http_status": 200,
-            "last_stream_count": 0,
-            "last_error": "Token cũ đã hết hạn; giữ nguyên attempts_total và trạng thái hoàn tất của BLV."
-          },
-          "598549": {
-            "key": "598549",
-            "url": "https://socolive.watch/truc-tiep/aek-larnaca-vs-beitar-jerusalem-23-07-2026-2330?blv=598549",
-            "blv": "PICK",
-            "blv_id": "598549",
-            "status": "exhausted",
-            "attempts": 2,
-            "attempts_total": 2,
-            "ever_attempted": true,
-            "valid_stream_ever_found": false,
-            "needs_token_refresh": false,
-            "completion_reason": "no_valid_stream_after_max_attempts",
-            "rate_limit_hits": 0,
-            "last_http_status": 403,
-            "last_stream_count": 0,
-            "last_error": "console/error: Failed to load resource: the server responded with a status of 403 (); console/warning: No available adapters.; console/warning: No available adapters."
-          },
-          "__base__": {
-            "key": "__base__",
-            "url": "https://socolive.watch/truc-tiep/aek-larnaca-vs-beitar-jerusalem-23-07-2026-2330",
-            "blv": "XEM NGAY",
-            "blv_id": "",
-            "status": "pending",
-            "attempts": 0,
-            "attempts_total": 0,
-            "ever_attempted": false,
-            "valid_stream_ever_found": false,
-            "needs_token_refresh": false,
-            "completion_reason": "",
-            "rate_limit_hits": 0,
-            "last_http_status": null,
-            "last_stream_count": 0,
-            "last_error": ""
-          }
-        }
-      },
-      "errors": [],
-      "room_progress": {
-        "622093": {
-          "key": "622093",
-          "url": "https://socolive.watch/truc-tiep/aek-larnaca-vs-beitar-jerusalem-23-07-2026-2330?blv=622093",
-          "blv": "GRAP",
-          "blv_id": "622093",
-          "status": "exhausted",
-          "attempts": 2,
-          "attempts_total": 2,
-          "ever_attempted": true,
-          "valid_stream_ever_found": false,
-          "needs_token_refresh": true,
-          "completion_reason": "no_valid_stream_after_max_attempts",
-          "rate_limit_hits": 0,
-          "last_http_status": 200,
-          "last_stream_count": 0,
-          "last_error": "Token cũ đã hết hạn; giữ nguyên attempts_total và trạng thái hoàn tất của BLV."
-        },
-        "598549": {
-          "key": "598549",
-          "url": "https://socolive.watch/truc-tiep/aek-larnaca-vs-beitar-jerusalem-23-07-2026-2330?blv=598549",
-          "blv": "PICK",
-          "blv_id": "598549",
-          "status": "exhausted",
-          "attempts": 2,
-          "attempts_total": 2,
-          "ever_attempted": true,
-          "valid_stream_ever_found": false,
-          "needs_token_refresh": false,
-          "completion_reason": "no_valid_stream_after_max_attempts",
-          "rate_limit_hits": 0,
-          "last_http_status": 403,
-          "last_stream_count": 0,
-          "last_error": "console/error: Failed to load resource: the server responded with a status of 403 (); console/warning: No available adapters.; console/warning: No available adapters."
-        },
-        "__base__": {
-          "key": "__base__",
-          "url": "https://socolive.watch/truc-tiep/aek-larnaca-vs-beitar-jerusalem-23-07-2026-2330",
           "blv": "XEM NGAY",
           "blv_id": "",
           "status": "pending",
