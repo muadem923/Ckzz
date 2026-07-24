@@ -7,6 +7,7 @@ import os
 import re
 import sys
 import time
+from collections import Counter
 from datetime import datetime, timedelta
 from pathlib import Path
 from typing import Any
@@ -981,42 +982,378 @@ def normalize_absolute_url(url: str, base: str = TARGET_URL) -> str:
 
 def match_datetime_from_url(url: str) -> datetime | None:
     """
-    Ví dụ:
-    /manchester-united-vs-wrexham-18-07-2026-2200/
+    Hỗ trợ cả hai dạng URL Socolive đã gặp:
+
+    - ...-18-07-2026-2200/
+    - ...-luc-2200-ngay-18-07-2026/
+    - ...-vao-luc-2200-18-07-2026/
     """
-    path = urlsplit(url).path.rstrip("/")
-    matched = re.search(
-        r"-(\d{2})-(\d{2})-(\d{4})-(\d{2})(\d{2})$",
-        path,
+    path = unquote(urlsplit(url).path.rstrip("/"))
+
+    patterns: tuple[
+        tuple[re.Pattern[str], tuple[int, int, int, int, int]],
+        ...
+    ] = (
+        (
+            re.compile(
+                r"-(?:vao-)?luc-(\d{1,2})(\d{2})-"
+                r"(?:ngay-)?(\d{1,2})-(\d{1,2})-(\d{4})$",
+                re.I,
+            ),
+            (4, 3, 2, 0, 1),  # year, month, day, hour, minute
+        ),
+        (
+            re.compile(
+                r"-(\d{1,2})-(\d{1,2})-(\d{4})-"
+                r"(\d{1,2})(\d{2})$",
+                re.I,
+            ),
+            (2, 1, 0, 3, 4),
+        ),
     )
-    if not matched:
-        return None
 
-    day, month, year, hour, minute = map(int, matched.groups())
+    for pattern, order in patterns:
+        matched = pattern.search(path)
+        if not matched:
+            continue
 
-    try:
-        return datetime(
-            year,
-            month,
-            day,
-            hour,
-            minute,
-            tzinfo=TIMEZONE,
+        values = [int(value) for value in matched.groups()]
+        year, month, day, hour, minute = (
+            values[index] for index in order
         )
-    except ValueError:
-        return None
+
+        try:
+            return datetime(
+                year,
+                month,
+                day,
+                hour,
+                minute,
+                tzinfo=TIMEZONE,
+            )
+        except ValueError:
+            continue
+
+    return None
 
 
 def match_name_from_url(url: str) -> str:
     slug = urlsplit(url).path.rstrip("/").split("/")[-1]
     slug = unquote(slug)
+
+    # Dạng hiện tại: ...-luc-0000-ngay-25-07-2026
     slug = re.sub(
-        r"-\d{2}-\d{2}-\d{4}-\d{4}$",
+        r"-(?:vao-)?luc-\d{3,4}-"
+        r"(?:ngay-)?\d{1,2}-\d{1,2}-\d{4}$",
         "",
         slug,
+        flags=re.I,
     )
+
+    # Dạng cũ: ...-25-07-2026-0000
+    slug = re.sub(
+        r"-\d{1,2}-\d{1,2}-\d{4}-\d{3,4}$",
+        "",
+        slug,
+        flags=re.I,
+    )
+
     slug = slug.replace("-vs-", " vs ").replace("-", " ")
     return clean_text(slug)
+
+
+def parse_datetime_from_card_fields(
+    time_text: str,
+    date_text: str,
+) -> datetime | None:
+    time_match = re.search(
+        r"\b([01]?\d|2[0-3]):([0-5]\d)\b",
+        clean_text(time_text),
+    )
+    date_match = re.search(
+        r"\b([0-3]?\d)[./-]([01]?\d)"
+        r"(?:[./-](\d{4}))?\b",
+        clean_text(date_text),
+    )
+    if not time_match or not date_match:
+        return None
+
+    hour = int(time_match.group(1))
+    minute = int(time_match.group(2))
+    day = int(date_match.group(1))
+    month = int(date_match.group(2))
+
+    now = datetime.now(TIMEZONE)
+    explicit_year = date_match.group(3)
+    candidate_years = (
+        [int(explicit_year)]
+        if explicit_year
+        else [now.year - 1, now.year, now.year + 1]
+    )
+
+    candidates: list[datetime] = []
+    for year in candidate_years:
+        try:
+            candidates.append(
+                datetime(
+                    year,
+                    month,
+                    day,
+                    hour,
+                    minute,
+                    tzinfo=TIMEZONE,
+                )
+            )
+        except ValueError:
+            continue
+
+    if not candidates:
+        return None
+
+    return min(
+        candidates,
+        key=lambda value: abs(
+            (value - now).total_seconds()
+        ),
+    )
+
+
+def clean_team_name(value: Any) -> str:
+    text = clean_text(str(value or ""))
+    text = re.sub(r"(?i)^logo\s+", "", text)
+    text = re.sub(
+        r"(?i)\s*(?:\||lúc)\s*\d{1,2}:\d{2}.*$",
+        "",
+        text,
+    )
+    return clean_text(text.strip(" -–—|:"))
+
+
+def normalize_blv_name(
+    value: Any,
+    *,
+    room_url: str = "",
+    match_name: str = "",
+) -> str:
+    label = clean_text(str(value or ""))
+    if not label:
+        return ""
+
+    label = re.sub(
+        r"(?i)^(?:blv|bình\s+luận\s+viên)\s*[:\-]?\s*",
+        "",
+        label,
+    )
+    label = re.sub(
+        r"^\+\d+\s*[▸>»\-]*\s*",
+        "",
+        label,
+    )
+    label = clean_text(label)
+
+    lowered = label.lower()
+    match_lowered = clean_text(match_name).lower()
+
+    generic = {
+        "xem",
+        "xem ngay",
+        "trực tiếp",
+        "xem trực tiếp",
+        "chi tiết",
+        "vào trận",
+        "url tổng",
+    }
+    if lowered in generic:
+        return ""
+
+    # Anchor redirectPopup thường mang cả tên trận + giờ + ngày.
+    # Đó không phải tên BLV.
+    looks_like_match_title = bool(
+        " vs " in lowered
+        and (
+            " lúc " in lowered
+            or " ngày " in lowered
+            or re.search(r"\b\d{1,2}:\d{2}\b", label)
+        )
+    )
+    if looks_like_match_title:
+        return ""
+
+    if match_lowered and lowered == match_lowered:
+        return ""
+
+    # Tên BLV thật thường ngắn. Chuỗi quá dài gần như chắc là card text.
+    if len(label) > 48:
+        return ""
+
+    return label
+
+
+def repair_match_metadata(
+    match: dict[str, Any],
+) -> dict[str, Any]:
+    base_url = canonical_match_url(
+        str(match.get("base_url", "") or "")
+    )
+    match["base_url"] = base_url
+
+    raw_title = clean_text(
+        str(match.get("raw_title", "") or "")
+    )
+    existing_name = clean_text(
+        str(match.get("match_name", "") or "")
+    )
+
+    home = clean_team_name(match.get("home_team", ""))
+    away = clean_team_name(match.get("away_team", ""))
+
+    for candidate in (
+        raw_title,
+        existing_name,
+        match_name_from_url(base_url),
+    ):
+        if home and away:
+            break
+        parsed_home, parsed_away = parse_teams_from_title(
+            candidate
+        )
+        home = home or clean_team_name(parsed_home)
+        away = away or clean_team_name(parsed_away)
+
+    match["home_team"] = home
+    match["away_team"] = away
+    match["match_name"] = (
+        f"{home} vs {away}"
+        if home and away
+        else existing_name
+        or match_name_from_url(base_url)
+    )
+
+    for field in ("home_logo", "away_logo"):
+        value = normalize_absolute_url(
+            str(match.get(field, "") or ""),
+            base_url or TARGET_URL,
+        )
+        match[field] = value
+
+    scheduled = parse_iso_datetime(
+        str(match.get("scheduled_at", "") or "")
+    )
+    if scheduled is None:
+        scheduled = match_datetime_from_url(base_url)
+    if scheduled is None:
+        scheduled = parse_datetime_from_card_fields(
+            str(match.get("time_text", "") or ""),
+            str(match.get("date_text", "") or ""),
+        )
+
+    match["scheduled_at"] = (
+        scheduled.isoformat() if scheduled else ""
+    )
+    if scheduled:
+        match["time_text"] = scheduled.strftime("%H:%M")
+        match["date_text"] = scheduled.strftime("%d/%m")
+
+    normalized_rooms: list[dict[str, str]] = []
+    for raw_room in match.get("rooms", []):
+        if not isinstance(raw_room, dict):
+            continue
+        room_url = clean_text(
+            str(raw_room.get("url", "") or "")
+        )
+        room_id = (
+            clean_text(
+                str(raw_room.get("blv_id", "") or "")
+            )
+            or room_blv_id(room_url)
+        )
+        normalized_rooms.append(
+            {
+                "url": room_url,
+                "blv_id": room_id,
+                "blv": normalize_blv_name(
+                    raw_room.get("blv", ""),
+                    room_url=room_url,
+                    match_name=match["match_name"],
+                ),
+            }
+        )
+
+    match["rooms"] = unique_rooms(normalized_rooms)
+    return match
+
+
+_METADATA_NONEMPTY_FIELDS = {
+    "raw_title",
+    "home_team",
+    "away_team",
+    "home_logo",
+    "away_logo",
+    "match_name",
+    "scheduled_at",
+    "time_text",
+    "date_text",
+    "card_text",
+}
+
+
+def metadata_value_is_meaningful(
+    field: str,
+    value: Any,
+) -> bool:
+    if field not in _METADATA_NONEMPTY_FIELDS:
+        return True
+    return bool(clean_text(str(value or "")))
+
+
+def combine_catalog_inputs(
+    home_matches: list[dict[str, Any]],
+    results: list[dict[str, Any]],
+) -> list[dict[str, Any]]:
+    """
+    Dùng metadata của toàn bộ card trang chủ để sửa catalog, kể cả trận
+    nằm ngoài cửa sổ quét nhưng vẫn đang được giữ lại trong playlist.
+    Stream/state của kết quả quét vẫn là dữ liệu ưu tiên.
+    """
+    merged_by_url: dict[str, dict[str, Any]] = {}
+
+    for raw in home_matches:
+        if not isinstance(raw, dict):
+            continue
+        item = repair_match_metadata(copy.deepcopy(raw))
+        key = canonical_match_url(item.get("base_url", ""))
+        if key:
+            merged_by_url[key] = item
+
+    for raw in results:
+        if not isinstance(raw, dict):
+            continue
+        current = repair_match_metadata(copy.deepcopy(raw))
+        key = canonical_match_url(current.get("base_url", ""))
+        if not key:
+            continue
+
+        base = merged_by_url.get(key, {})
+        merged = dict(base)
+
+        for field, value in current.items():
+            if (
+                field in _METADATA_NONEMPTY_FIELDS
+                and not metadata_value_is_meaningful(
+                    field,
+                    value,
+                )
+            ):
+                continue
+            merged[field] = value
+
+        merged["rooms"] = unique_rooms(
+            list(base.get("rooms", []))
+            + list(current.get("rooms", []))
+        )
+        merged_by_url[key] = repair_match_metadata(merged)
+
+    return list(merged_by_url.values())
 
 
 def parse_teams_from_title(title: str) -> tuple[str, str]:
@@ -1325,11 +1662,11 @@ async def collect_home_matches(
                             }
                         }) || links[0];
 
-                    let card = null;
-                    let node = baseAnchor;
+                    let card =
+                        baseAnchor.closest(".grid-matches__item");
+                    let node = card ? null : baseAnchor;
 
-                    // Tìm ancestor nhỏ nhất chứa đúng card trận:
-                    // có VS + ít nhất hai ảnh alt="Logo ..."
+                    // Fallback cho giao diện cũ khi class card thay đổi.
                     for (let depth = 0; node && depth < 12; depth++) {
                         const text = clean(node.innerText);
                         const logos = Array.from(
@@ -1377,34 +1714,91 @@ async def collect_home_matches(
                         continue;
                     }
 
-                    const logoImages = Array.from(
-                        card.querySelectorAll("img")
-                    ).filter((img) =>
-                        /^logo\s+/i.test(
-                            clean(img.getAttribute("alt"))
+                    const homeName = clean(
+                        card.querySelector(
+                            ".grid-match__team--home-name"
+                        )?.innerText
+                    );
+                    const awayName = clean(
+                        card.querySelector(
+                            ".grid-match__team--away-name"
+                        )?.innerText
+                    );
+
+                    const homeLogoImage =
+                        card.querySelector(
+                            ".grid-match__team-home img.team-logo-0"
+                        ) ||
+                        card.querySelector(
+                            ".team-logo-group-home-logo img"
+                        );
+                    const awayLogoImage =
+                        card.querySelector(
+                            ".grid-match__team-away img.team-logo-0"
+                        ) ||
+                        card.querySelector(
+                            ".team-logo-group-away-logo img"
+                        );
+
+                    const fallbackTeamImages = Array.from(
+                        card.querySelectorAll(
+                            "img.team-logo-0, " +
+                            ".team-logo-group img"
                         )
                     );
 
-                    const teams = [];
-                    const teamSeen = new Set();
+                    const teams = [
+                        {
+                            name: homeName,
+                            logo: absoluteImage(
+                                homeLogoImage ||
+                                fallbackTeamImages[0]
+                            ),
+                        },
+                        {
+                            name: awayName,
+                            logo: absoluteImage(
+                                awayLogoImage ||
+                                fallbackTeamImages[1]
+                            ),
+                        },
+                    ];
 
-                    for (const img of logoImages) {
-                        const alt = clean(img.getAttribute("alt"));
-                        const name = clean(
-                            alt.replace(/^logo\s+/i, "")
+                    // Fallback giao diện cũ còn dùng alt="Logo ...".
+                    if (!teams[0].name || !teams[1].name) {
+                        const legacyImages = Array.from(
+                            card.querySelectorAll("img")
+                        ).filter((img) =>
+                            /^logo\s+/i.test(
+                                clean(img.getAttribute("alt"))
+                            )
                         );
-                        if (!name || teamSeen.has(name.toLowerCase())) {
-                            continue;
-                        }
 
-                        teamSeen.add(name.toLowerCase());
-                        teams.push({
-                            name,
-                            logo: absoluteImage(img),
-                        });
+                        for (
+                            let index = 0;
+                            index < Math.min(2, legacyImages.length);
+                            index++
+                        ) {
+                            const img = legacyImages[index];
+                            teams[index].name =
+                                teams[index].name ||
+                                clean(
+                                    clean(
+                                        img.getAttribute("alt")
+                                    ).replace(/^logo\s+/i, "")
+                                );
+                            teams[index].logo =
+                                teams[index].logo ||
+                                absoluteImage(img);
+                        }
                     }
 
                     let title =
+                        (
+                            teams[0]?.name && teams[1]?.name
+                            ? `${teams[0].name} vs ${teams[1].name}`
+                            : ""
+                        ) ||
                         clean(baseAnchor.getAttribute("title")) ||
                         clean(baseAnchor.getAttribute("aria-label")) ||
                         "";
@@ -1438,17 +1832,36 @@ async def collect_home_matches(
                                     ? `link-${linkMatch[1]}`
                                     : ""
                                 );
-                            const blv =
-                                clean(a.innerText) ||
-                                clean(a.getAttribute("title")) ||
-                                clean(a.getAttribute("aria-label")) ||
-                                "";
+                            const isCommentator =
+                                a.matches(
+                                    ".commentator, [class*='commentator']"
+                                ) ||
+                                Boolean(id);
 
-                            roomMap.set(u.href, {
+                            const blv = isCommentator
+                                ? (
+                                    clean(a.innerText) ||
+                                    clean(a.getAttribute("title")) ||
+                                    clean(a.getAttribute("aria-label")) ||
+                                    ""
+                                )
+                                : "";
+
+                            const previous = roomMap.get(u.href);
+                            const candidate = {
                                 url: u.href,
                                 blv,
                                 blv_id: id,
-                            });
+                            };
+
+                            // Cùng URL có thể có redirectPopup rỗng và
+                            // anchor commentator. Giữ bản có tên BLV.
+                            if (
+                                !previous ||
+                                (!previous.blv && candidate.blv)
+                            ) {
+                                roomMap.set(u.href, candidate);
+                            }
                         } catch (_) {}
                     }
 
@@ -1460,11 +1873,19 @@ async def collect_home_matches(
                         });
                     }
 
-                    const timeMatch = cardText.match(
+                    const dateBlock = clean(
+                        card.querySelector(
+                            ".grid-match__date"
+                        )?.innerText
+                    );
+                    const scheduleText =
+                        dateBlock || cardText;
+
+                    const timeMatch = scheduleText.match(
                         /\b([01]?\d|2[0-3]):([0-5]\d)\b/
                     );
-                    const dateMatch = cardText.match(
-                        /\b([0-3]?\d)\/([01]?\d)\b/
+                    const dateMatch = scheduleText.match(
+                        /\b([0-3]?\d)[./-]([01]?\d)\b/
                     );
 
                     let status = "";
@@ -1516,52 +1937,18 @@ async def collect_home_matches(
             if not base_url:
                 continue
 
-            home_team = clean_text(item.get("home_team", ""))
-            away_team = clean_text(item.get("away_team", ""))
-
-            if not home_team or not away_team:
-                title_home, title_away = parse_teams_from_title(
-                    item.get("raw_title", "")
-                )
-                home_team = home_team or title_home
-                away_team = away_team or title_away
-
-            if not home_team or not away_team:
-                slug_home, slug_away = parse_teams_from_title(
-                    match_name_from_url(base_url)
-                )
-                home_team = home_team or slug_home
-                away_team = away_team or slug_away
-
             matches.append(
-                {
-                    **item,
-                    "base_url": base_url,
-                    "home_team": home_team,
-                    "away_team": away_team,
-                    "home_logo": normalize_absolute_url(
-                        item.get("home_logo", "")
-                    ),
-                    "away_logo": normalize_absolute_url(
-                        item.get("away_logo", "")
-                    ),
-                    "match_name": (
-                        f"{home_team} vs {away_team}"
-                        if home_team and away_team
-                        else match_name_from_url(base_url)
-                    ),
-                    "rooms": unique_rooms(item.get("rooms", [])),
-                    "scheduled_at": (
-                        match_datetime_from_url(base_url).isoformat()
-                        if match_datetime_from_url(base_url)
-                        else ""
-                    ),
-                    "streams": [],
-                    "room_results": [],
-                    "attempted_room_ids": [],
-                    "coverage": {},
-                    "errors": [],
-                }
+                repair_match_metadata(
+                    {
+                        **item,
+                        "base_url": base_url,
+                        "streams": [],
+                        "room_results": [],
+                        "attempted_room_ids": [],
+                        "coverage": {},
+                        "errors": [],
+                    }
+                )
             )
 
         # Dedup theo URL trận.
@@ -4630,9 +5017,13 @@ def merge_cumulative_catalog(
     now = datetime.now(TIMEZONE)
     generated_at = now.isoformat()
 
-    old_catalog = load_cumulative_catalog(
-        previous_state
-    )
+    old_catalog = [
+        repair_match_metadata(copy.deepcopy(item))
+        for item in load_cumulative_catalog(
+            previous_state
+        )
+        if isinstance(item, dict)
+    ]
     old_by_url = {
         canonical_match_url(
             str(item.get("base_url", "") or "")
@@ -4662,9 +5053,18 @@ def merge_cumulative_catalog(
 
         merged = dict(previous)
 
-        # Metadata/trạng thái mới ghi đè dữ liệu cũ, nhưng stream được hợp nhất.
+        # Metadata rỗng ở lần quét mới không được xóa logo/ngày/tên tốt
+        # đã có trong catalog. Stream vẫn hợp nhất như trước.
         for field, value in current.items():
-            if field == "streams":
+            if field in {"streams", "rooms"}:
+                continue
+            if (
+                field in _METADATA_NONEMPTY_FIELDS
+                and not metadata_value_is_meaningful(
+                    field,
+                    value,
+                )
+            ):
                 continue
             merged[field] = value
 
@@ -4676,6 +5076,7 @@ def merge_cumulative_catalog(
             list(previous.get("rooms", []))
             + list(current.get("rooms", []))
         )
+        repair_match_metadata(merged)
         merged["catalog_last_seen_at"] = generated_at
 
         previous_paths = {
@@ -4806,8 +5207,35 @@ def write_outputs(matches: list[dict[str, Any]]) -> tuple[int, int]:
         if not streams:
             continue
 
+        repair_match_metadata(match)
         match_counted = False
         match_name = match_display_name(match)
+
+        room_source_totals: Counter[str] = Counter()
+        for stream_item in streams:
+            raw_blv = normalize_blv_name(
+                stream_item.get("blv", ""),
+                room_url=str(
+                    stream_item.get("room_url", "") or ""
+                ),
+                match_name=match_name,
+            )
+            room_key = (
+                clean_text(
+                    str(
+                        stream_item.get("blv_id", "")
+                        or stream_item.get(
+                            "queue_room_key",
+                            "",
+                        )
+                        or raw_blv
+                        or "__base__"
+                    )
+                )
+            )
+            room_source_totals[room_key] += 1
+
+        room_source_seen: Counter[str] = Counter()
 
         # Ưu tiên scheduled_at đã lưu trong catalog; fallback sang ngày/giờ
         # trong URL. V10.4 cũ chỉ format [%H:%M] nên mất ngày đá.
@@ -4845,8 +5273,27 @@ def write_outputs(matches: list[dict[str, Any]]) -> tuple[int, int]:
 
             seen_urls.add(stream)
 
-            blv = clean_text(stream_item.get("blv", ""))
             room_url = stream_item.get("room_url") or match["base_url"]
+            blv = normalize_blv_name(
+                stream_item.get("blv", ""),
+                room_url=str(room_url),
+                match_name=match_name,
+            )
+            room_key = clean_text(
+                str(
+                    stream_item.get("blv_id", "")
+                    or stream_item.get(
+                        "queue_room_key",
+                        "",
+                    )
+                    or blv
+                    or "__base__"
+                )
+            )
+            room_source_seen[room_key] += 1
+            source_number = room_source_seen[room_key]
+            source_total = room_source_totals[room_key]
+
             playback_referer = clean_text(
                 str(
                     stream_item.get("playback_referer", "")
@@ -4866,20 +5313,36 @@ def write_outputs(matches: list[dict[str, Any]]) -> tuple[int, int]:
                 )
             )
 
-            display_name = scheduled_match_name
+            raw_display_name = scheduled_match_name
             if blv:
-                display_name += f" [BLV {blv}]"
-            if len(streams) > 1:
-                display_name += f" (Luồng {index})"
+                raw_display_name += f" [BLV {blv}]"
+            if source_total > 1:
+                raw_display_name += (
+                    f" [Nguồn {source_number}/{source_total}]"
+                )
 
-            display_name = escape_m3u(display_name)
+            display_name = escape_m3u(raw_display_name)
+            stable_id = re.sub(
+                r"[^a-zA-Z0-9._-]+",
+                "-",
+                (
+                    canonical_match_url(
+                        match.get("base_url", "")
+                    )
+                    + "|"
+                    + room_key
+                    + "|"
+                    + str(source_number)
+                ),
+            ).strip("-")[-180:]
 
             extinf_attributes = [
+                f'tvg-id="{escape_m3u(stable_id)}"',
                 'group-title="Socolive"',
                 f'tvg-logo="{standard_logo}"',
                 f'tvg-logo-home="{home_logo}"',
                 f'tvg-logo-away="{away_logo}"',
-                f'tvg-name="{escape_m3u(scheduled_match_name)}"',
+                f'tvg-name="{escape_m3u(raw_display_name)}"',
                 f'tvg-date="{scheduled.strftime("%d/%m/%Y") if scheduled else ""}"',
                 f'tvg-time="{scheduled.strftime("%H:%M") if scheduled else ""}"',
             ]
@@ -4965,7 +5428,7 @@ def write_outputs(matches: list[dict[str, Any]]) -> tuple[int, int]:
                     "http_fetch_timeout_seconds": HTTP_FETCH_TIMEOUT_SECONDS,
                     "enable_cdp": ENABLE_CDP,
                     "stop_on_429": STOP_ON_429,
-                    "strategy": "v10.5-api-first-chromium-fallback",
+                    "strategy": "v10.5.1-api-first-metadata-repair",
                     "state_schema_version": STATE_SCHEMA_VERSION,
                     "state_max_age_minutes": STATE_MAX_AGE_MINUTES,
                     "state_max_chain_runs": STATE_MAX_CHAIN_RUNS,
@@ -4997,11 +5460,13 @@ def write_outputs(matches: list[dict[str, Any]]) -> tuple[int, int]:
 # MAIN
 # ============================================================
 async def main() -> None:
-    print("🥷 SOCOLIVE STREAM SCANNER V10.5 - API FIRST + CHROMIUM FALLBACK")
+    print("🥷 SOCOLIVE STREAM SCANNER V10.5.1 - METADATA REPAIR")
     print(
         "ℹ️ Test riêng một URL:\n"
         '   python main.py "https://socolivem.cv/truc-tiep/.../?blv=..."'
     )
+
+    home_matches_for_catalog: list[dict[str, Any]] = []
 
     direct_urls = [
         arg.strip()
@@ -5150,6 +5615,9 @@ async def main() -> None:
             )
         else:
             all_matches = await collect_home_matches(context)
+            home_matches_for_catalog = copy.deepcopy(
+                all_matches
+            )
             now = datetime.now(TIMEZONE)
 
             matches = [
@@ -5280,9 +5748,13 @@ async def main() -> None:
 
         # M3U không dựng trực tiếp từ riêng run hiện tại nữa.
         # Catalog hợp nhất link của mọi workflow trước rồi mới xuất playlist.
+        catalog_inputs = combine_catalog_inputs(
+            home_matches_for_catalog,
+            results,
+        )
         catalog_matches, catalog_stats = (
             merge_cumulative_catalog(
-                results,
+                catalog_inputs,
                 previous_state,
             )
         )
