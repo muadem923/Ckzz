@@ -13,6 +13,8 @@ from typing import Any
 from urllib.parse import parse_qs, unquote, urlsplit, urlunsplit
 from zoneinfo import ZoneInfo
 
+import httpx
+
 from playwright.async_api import BrowserContext, Page, async_playwright
 
 
@@ -22,7 +24,7 @@ from playwright.async_api import BrowserContext, Page, async_playwright
 TARGET_URL = (
     os.getenv(
         "SOCOLIVE_TARGET_URL",
-        "https://socolivep.cv/",
+        "https://socolivekz.cc/",
     ).rstrip("/")
     + "/"
 )
@@ -59,6 +61,41 @@ HTTP_FETCH_TIMEOUT_SECONDS = float(
 )
 # CDP tạo thêm nhiều sự kiện trùng; mặc định tắt, chỉ bật khi cần debug sâu.
 ENABLE_CDP = os.getenv("SOCOLIVE_ENABLE_CDP", "1") == "1"
+
+# V10.5: nguồn chính là chuỗi HTTP:
+# trang BLV -> list_stream -> endpoint player -> urlStream -> FLV/HLS.
+# Chỉ khi chuỗi này không cho link hợp lệ mới mở Chromium.
+API_FIRST = os.getenv("SOCOLIVE_API_FIRST", "1") != "0"
+API_PAGE_TIMEOUT_SECONDS = float(
+    os.getenv("SOCOLIVE_API_PAGE_TIMEOUT_SECONDS", "15")
+)
+API_STREAM_TIMEOUT_SECONDS = float(
+    os.getenv("SOCOLIVE_API_STREAM_TIMEOUT_SECONDS", "10")
+)
+API_REQUEST_ATTEMPTS = int(
+    os.getenv("SOCOLIVE_API_REQUEST_ATTEMPTS", "2")
+)
+API_MAX_PLAYER_SOURCES = int(
+    os.getenv("SOCOLIVE_API_MAX_PLAYER_SOURCES", "8")
+)
+API_REQUEST_DELAY_SECONDS = float(
+    os.getenv("SOCOLIVE_API_REQUEST_DELAY_SECONDS", "0.20")
+)
+API_STREAM_READ_BYTES = int(
+    os.getenv("SOCOLIVE_API_STREAM_READ_BYTES", "32768")
+)
+API_STOP_AFTER_VALID = int(
+    os.getenv(
+        "SOCOLIVE_API_STOP_AFTER_VALID",
+        os.getenv("SOCOLIVE_MAX_STREAMS_PER_BLV", "2"),
+    )
+)
+API_PLAYER_HOST_SUFFIX = (
+    os.getenv(
+        "SOCOLIVE_API_PLAYER_HOST_SUFFIX",
+        "livepingscorex.com",
+    ).strip().lower()
+)
 
 # Chỉ quét các trận trong khoảng thời gian hợp lý để tránh mở hàng trăm player.
 SCAN_BEFORE_MINUTES = int(
@@ -171,7 +208,7 @@ TOKEN_EXPIRY_GRACE_SECONDS = int(
 # Đổi schema để reset state V10 cũ và cho phép quét lại từng BLV theo
 # mục tiêu tối đa hai nguồn.
 # vì V9 đã loại sai stream-ID không trùng BLV-ID.
-STATE_SCHEMA_VERSION = "v10.4-finite-two-pass-queue"
+STATE_SCHEMA_VERSION = "v10.5-api-first-room-queue"
 
 # Giữ trận trong playlist sau giờ bắt đầu để các workflow sau không làm
 # biến mất link chỉ vì trận rơi khỏi khung quét -180 phút.
@@ -230,7 +267,12 @@ def clean_text(value: str) -> str:
 
 def canonical_match_url(url: str) -> str:
     parsed = urlsplit(url)
-    path = parsed.path
+    path = re.sub(
+        r"/link/\d+/?$",
+        "/",
+        parsed.path,
+        flags=re.I,
+    )
     if not path.endswith("/"):
         path += "/"
     return urlunsplit((parsed.scheme, parsed.netloc, path, "", ""))
@@ -238,9 +280,24 @@ def canonical_match_url(url: str) -> str:
 
 def room_blv_id(url: str) -> str:
     try:
-        return parse_qs(urlsplit(url).query).get("blv", [""])[0]
+        parsed = urlsplit(url)
+        query_id = parse_qs(parsed.query).get(
+            "blv",
+            [""],
+        )[0]
+        if query_id:
+            return clean_text(query_id)
+
+        link_match = re.search(
+            r"/link/([^/?#]+)/?",
+            parsed.path,
+            flags=re.I,
+        )
+        if link_match:
+            return f"link-{clean_text(link_match.group(1))}"
     except Exception:
-        return ""
+        pass
+    return ""
 
 
 def stream_blv_id(stream_url: str) -> str:
@@ -1218,7 +1275,10 @@ async def collect_home_matches(
                 const canonical = (href) => {
                     try {
                         const u = new URL(href, location.href);
-                        let path = u.pathname;
+                        let path = u.pathname.replace(
+                            /\/link\/\d+\/?$/i,
+                            "/"
+                        );
                         if (!path.endsWith("/")) path += "/";
                         return `${u.origin}${path}`;
                     } catch (_) {
@@ -1250,10 +1310,16 @@ async def collect_home_matches(
                     const baseAnchor =
                         links.find((a) => {
                             try {
-                                return !new URL(
+                                const u = new URL(
                                     a.href,
                                     location.href
-                                ).searchParams.has("blv");
+                                );
+                                return (
+                                    !u.searchParams.has("blv") &&
+                                    !/\/link\/\d+\/?$/i.test(
+                                        u.pathname
+                                    )
+                                );
                             } catch (_) {
                                 return false;
                             }
@@ -1362,7 +1428,16 @@ async def collect_home_matches(
                     for (const a of links) {
                         try {
                             const u = new URL(a.href, location.href);
-                            const id = u.searchParams.get("blv") || "";
+                            const linkMatch = u.pathname.match(
+                                /\/link\/([^/?#]+)\/?$/i
+                            );
+                            const id =
+                                u.searchParams.get("blv") ||
+                                (
+                                    linkMatch
+                                    ? `link-${linkMatch[1]}`
+                                    : ""
+                                );
                             const blv =
                                 clean(a.innerText) ||
                                 clean(a.getAttribute("title")) ||
@@ -1886,6 +1961,550 @@ async def diagnose_page(page: Page) -> dict[str, Any]:
         return {"diagnostic_error": f"{type(exc).__name__}: {exc}"}
 
 
+
+API_LIST_STREAM_RE = re.compile(
+    r"\bvar\s+list_stream\s*=\s*(\[[\s\S]*?\])\s*;",
+    re.I,
+)
+API_ACTIVE_STREAM_RE = re.compile(
+    r"\bvar\s+stream_active_link\s*=\s*(\d+)",
+    re.I,
+)
+API_URL_STREAM_PATTERNS = (
+    re.compile(
+        r"\b(?:var|let|const)\s+urlStream\s*=\s*"
+        r"(?P<quote>['\"])(?P<url>.*?)(?P=quote)\s*;",
+        re.I | re.S,
+    ),
+    re.compile(
+        r"\burlStream\s*:\s*"
+        r"(?P<quote>['\"])(?P<url>.*?)(?P=quote)",
+        re.I | re.S,
+    ),
+)
+API_IFRAME_SRC_RE = re.compile(
+    r"<iframe\b[^>]*\bsrc\s*=\s*"
+    r"(?P<quote>['\"])(?P<url>.*?)(?P=quote)",
+    re.I | re.S,
+)
+
+
+def api_decode_js_string(value: str) -> str:
+    output = html.unescape(value or "")
+    output = output.replace("\\/", "/")
+    output = output.replace("\\u0026", "&")
+    output = output.replace("\\x26", "&")
+    return clean_text(output)
+
+
+def api_flatten_stream_values(value: Any) -> list[str]:
+    output: list[str] = []
+    if isinstance(value, str):
+        output.append(api_decode_js_string(value))
+    elif isinstance(value, list):
+        for item in value:
+            output.extend(api_flatten_stream_values(item))
+    elif isinstance(value, dict):
+        for item in value.values():
+            output.extend(api_flatten_stream_values(item))
+    return output
+
+
+def api_room_index_from_url(url: str) -> int:
+    match = re.search(
+        r"/link/(\d+)/?",
+        urlsplit(url).path,
+        flags=re.I,
+    )
+    return int(match.group(1)) if match else 0
+
+
+def api_player_endpoint_allowed(url: str) -> bool:
+    try:
+        parsed = urlsplit(url)
+    except Exception:
+        return False
+
+    host = parsed.netloc.lower().split("@")[-1].split(":")[0]
+    suffix_ok = bool(
+        API_PLAYER_HOST_SUFFIX
+        and (
+            host == API_PLAYER_HOST_SUFFIX
+            or host.endswith("." + API_PLAYER_HOST_SUFFIX)
+        )
+    )
+    return (
+        parsed.scheme.lower() in {"http", "https"}
+        and suffix_ok
+        and "/ajax/chanel/" in parsed.path.lower()
+    )
+
+
+def api_parse_player_sources(
+    body: str,
+    room_url: str,
+) -> tuple[int, list[dict[str, Any]]]:
+    active_match = API_ACTIVE_STREAM_RE.search(body or "")
+    active_index = (
+        int(active_match.group(1))
+        if active_match
+        else api_room_index_from_url(room_url)
+    )
+
+    values: list[str] = []
+    list_match = API_LIST_STREAM_RE.search(body or "")
+    if list_match:
+        raw = api_decode_js_string(list_match.group(1))
+        try:
+            values.extend(
+                api_flatten_stream_values(json.loads(raw))
+            )
+        except json.JSONDecodeError:
+            values.extend(
+                re.findall(
+                    r"https?:\\?/\\?/[^\s\"'<>]+",
+                    raw,
+                    flags=re.I,
+                )
+            )
+
+    for iframe_match in API_IFRAME_SRC_RE.finditer(body or ""):
+        values.append(
+            normalize_absolute_url(
+                api_decode_js_string(
+                    iframe_match.group("url")
+                ),
+                room_url,
+            )
+        )
+
+    deduped: list[tuple[int, str]] = []
+    seen: set[str] = set()
+
+    for original_index, raw_value in enumerate(values):
+        endpoint_base = normalize_absolute_url(
+            api_decode_js_string(raw_value),
+            room_url,
+        )
+        endpoint_base = re.sub(
+            r"/off-tvc/?$",
+            "",
+            endpoint_base.rstrip("/"),
+            flags=re.I,
+        )
+        if (
+            not endpoint_base
+            or endpoint_base in seen
+            or not api_player_endpoint_allowed(endpoint_base)
+        ):
+            continue
+        seen.add(endpoint_base)
+        deduped.append((original_index, endpoint_base))
+
+    sources = [
+        {
+            "index": original_index,
+            "endpoint_base": endpoint_base,
+            "endpoint_url": endpoint_base + "/off-tvc",
+            "active": original_index == active_index,
+        }
+        for original_index, endpoint_base in deduped
+    ]
+    sources.sort(
+        key=lambda item: (
+            not bool(item.get("active")),
+            int(item.get("index", 0)),
+        )
+    )
+
+    if API_MAX_PLAYER_SOURCES > 0:
+        sources = sources[:API_MAX_PLAYER_SOURCES]
+    return active_index, sources
+
+
+def api_parse_url_streams(
+    body: str,
+    endpoint_url: str,
+) -> list[str]:
+    output: list[str] = []
+    for pattern in API_URL_STREAM_PATTERNS:
+        for match in pattern.finditer(body or ""):
+            output.append(
+                normalize_absolute_url(
+                    api_decode_js_string(match.group("url")),
+                    endpoint_url,
+                )
+            )
+    output.extend(
+        sorted(extract_stream_urls_from_value(body or ""))
+    )
+
+    seen: set[str] = set()
+    valid: list[str] = []
+    for value in output:
+        cleaned = clean_candidate_url(value)
+        try:
+            parsed = urlsplit(cleaned)
+        except Exception:
+            continue
+
+        if (
+            not cleaned
+            or cleaned in seen
+            or parsed.scheme.lower() not in {"http", "https"}
+            or not parsed.netloc
+            or not is_direct_stream_url(cleaned)
+        ):
+            continue
+        seen.add(cleaned)
+        valid.append(cleaned)
+    return valid
+
+
+def api_request_headers(
+    *,
+    referer: str,
+    origin: str = "",
+    accept: str = "*/*",
+) -> dict[str, str]:
+    headers = {
+        "User-Agent": UA,
+        "Accept": accept,
+        "Accept-Language":
+            "vi-VN,vi;q=0.9,en-US;q=0.8,en;q=0.7",
+        "Cache-Control": "no-cache",
+        "Pragma": "no-cache",
+    }
+    if referer:
+        headers["Referer"] = referer
+    if origin:
+        headers["Origin"] = origin
+    return headers
+
+
+async def api_get_text(
+    client: httpx.AsyncClient,
+    url: str,
+    *,
+    referer: str,
+) -> tuple[int | None, str, str, float, str]:
+    started = time.monotonic()
+    last_error = ""
+
+    for attempt in range(1, max(1, API_REQUEST_ATTEMPTS) + 1):
+        try:
+            response = await client.get(
+                url,
+                headers=api_request_headers(
+                    referer=referer,
+                    accept=(
+                        "text/html,application/xhtml+xml,"
+                        "application/json,text/plain,*/*"
+                    ),
+                ),
+                timeout=API_PAGE_TIMEOUT_SECONDS,
+            )
+            return (
+                response.status_code,
+                response.headers.get("content-type", ""),
+                response.text,
+                round(time.monotonic() - started, 3),
+                "",
+            )
+        except Exception as exc:
+            last_error = f"{type(exc).__name__}: {exc}"
+            if attempt < max(1, API_REQUEST_ATTEMPTS):
+                await asyncio.sleep(min(3.0, 0.6 * attempt))
+
+    return (
+        None,
+        "",
+        "",
+        round(time.monotonic() - started, 3),
+        last_error,
+    )
+
+
+async def api_verify_stream(
+    client: httpx.AsyncClient,
+    stream_url: str,
+    *,
+    player_url: str,
+) -> dict[str, Any]:
+    parsed_player = urlsplit(player_url)
+    origin = (
+        f"{parsed_player.scheme}://{parsed_player.netloc}"
+        if parsed_player.scheme and parsed_player.netloc
+        else ""
+    )
+    referer = origin + "/" if origin else player_url
+
+    started = time.monotonic()
+    status: int | None = None
+    content_type = ""
+    body = bytearray()
+    error = ""
+
+    try:
+        timeout = httpx.Timeout(
+            connect=API_STREAM_TIMEOUT_SECONDS,
+            read=API_STREAM_TIMEOUT_SECONDS,
+            write=API_STREAM_TIMEOUT_SECONDS,
+            pool=API_STREAM_TIMEOUT_SECONDS,
+        )
+        async with client.stream(
+            "GET",
+            stream_url,
+            headers=api_request_headers(
+                referer=referer,
+                origin=origin,
+            ),
+            timeout=timeout,
+        ) as response:
+            status = response.status_code
+            content_type = response.headers.get(
+                "content-type",
+                "",
+            ).lower()
+            if 200 <= status < 300:
+                try:
+                    async for chunk in response.aiter_bytes():
+                        if not chunk:
+                            continue
+                        remaining = API_STREAM_READ_BYTES - len(body)
+                        if remaining <= 0:
+                            break
+                        body.extend(chunk[:remaining])
+                        if (
+                            body.startswith(b"FLV")
+                            or b"#EXTM3U" in body[:4096]
+                            or len(body) >= API_STREAM_READ_BYTES
+                        ):
+                            break
+                except (
+                    httpx.ReadTimeout,
+                    httpx.RemoteProtocolError,
+                ):
+                    pass
+    except Exception as exc:
+        error = f"{type(exc).__name__}: {exc}"
+
+    signature = ""
+    valid = False
+    if body.startswith(b"FLV"):
+        signature = "FLV"
+        valid = True
+    elif b"#EXTM3U" in body[:4096]:
+        signature = "HLS"
+        valid = True
+    elif (
+        status is not None
+        and 200 <= status < 300
+        and (
+            "video/x-flv" in content_type
+            or "mpegurl" in content_type
+        )
+    ):
+        signature = "CONTENT_TYPE"
+        valid = True
+
+    return {
+        "url": stream_url,
+        "valid": valid,
+        "status": status,
+        "content_type": content_type,
+        "bytes_read": len(body),
+        "signature": signature,
+        "elapsed_seconds": round(
+            time.monotonic() - started,
+            3,
+        ),
+        "error": error,
+        "origin": origin,
+        "referer": referer,
+        "user_agent": UA,
+    }
+
+
+async def api_first_probe(
+    client: httpx.AsyncClient,
+    room_url: str,
+) -> tuple[
+    list[str],
+    dict[str, Any],
+    dict[str, list[str]],
+    dict[str, dict[str, str]],
+]:
+    started = time.monotonic()
+    diagnostics: dict[str, Any] = {
+        "enabled": API_FIRST,
+        "room_status": None,
+        "active_index": 0,
+        "sources_found": 0,
+        "sources_tried": 0,
+        "valid_stream_count": 0,
+        "source_results": [],
+        "fallback_reason": "",
+        "elapsed_seconds": 0.0,
+    }
+    stream_sources: dict[str, list[str]] = {}
+    stream_headers: dict[str, dict[str, str]] = {}
+
+    if not API_FIRST:
+        diagnostics["fallback_reason"] = "api_first_disabled"
+        return [], diagnostics, stream_sources, stream_headers
+
+    (
+        room_status,
+        room_content_type,
+        room_body,
+        room_elapsed,
+        room_error,
+    ) = await api_get_text(
+        client,
+        room_url,
+        referer=TARGET_URL,
+    )
+    diagnostics["room_status"] = room_status
+    diagnostics["room_content_type"] = room_content_type
+    diagnostics["room_elapsed_seconds"] = room_elapsed
+    diagnostics["room_error"] = room_error
+
+    if room_status is None or not 200 <= room_status < 400:
+        diagnostics["fallback_reason"] = (
+            f"room_http_{room_status}"
+            if room_status is not None
+            else "room_request_error"
+        )
+        diagnostics["elapsed_seconds"] = round(
+            time.monotonic() - started,
+            3,
+        )
+        return [], diagnostics, stream_sources, stream_headers
+
+    active_index, sources = api_parse_player_sources(
+        room_body,
+        room_url,
+    )
+    diagnostics["active_index"] = active_index
+    diagnostics["sources_found"] = len(sources)
+
+    if not sources:
+        diagnostics["fallback_reason"] = "list_stream_not_found"
+        diagnostics["elapsed_seconds"] = round(
+            time.monotonic() - started,
+            3,
+        )
+        return [], diagnostics, stream_sources, stream_headers
+
+    valid_streams: list[str] = []
+    seen_streams: set[str] = set()
+
+    for order, source in enumerate(sources, start=1):
+        if API_REQUEST_DELAY_SECONDS > 0 and order > 1:
+            await asyncio.sleep(API_REQUEST_DELAY_SECONDS)
+
+        diagnostics["sources_tried"] += 1
+        (
+            player_status,
+            player_content_type,
+            player_body,
+            player_elapsed,
+            player_error,
+        ) = await api_get_text(
+            client,
+            str(source["endpoint_url"]),
+            referer=TARGET_URL,
+        )
+        stream_urls = (
+            api_parse_url_streams(
+                player_body,
+                str(source["endpoint_url"]),
+            )
+            if (
+                player_status is not None
+                and 200 <= player_status < 400
+            )
+            else []
+        )
+
+        source_mode = (
+            "active" if source.get("active") else "backup"
+        )
+        source_result: dict[str, Any] = {
+            **source,
+            "mode": source_mode,
+            "player_status": player_status,
+            "player_content_type": player_content_type,
+            "player_elapsed_seconds": player_elapsed,
+            "player_error": player_error,
+            "stream_urls": stream_urls,
+            "checks": [],
+        }
+
+        print(
+            f"      🌐 API {source_mode} "
+            f"{order}/{len(sources)}: "
+            f"player={player_status} | "
+            f"{source['endpoint_url']}",
+            flush=True,
+        )
+
+        for stream_url in stream_urls:
+            check = await api_verify_stream(
+                client,
+                stream_url,
+                player_url=str(source["endpoint_url"]),
+            )
+            source_result["checks"].append(check)
+            icon = "✅" if check["valid"] else "❌"
+            print(
+                f"         {icon} stream HTTP={check['status']}"
+                f" | type={check['content_type'] or '-'}"
+                f" | sig={check['signature'] or '-'}"
+                f" | {stream_url}",
+                flush=True,
+            )
+
+            if check["valid"] and stream_url not in seen_streams:
+                seen_streams.add(stream_url)
+                valid_streams.append(stream_url)
+                stream_sources[stream_url] = [
+                    f"api/{source_mode}/player",
+                    f"api/verified/{check['signature'].lower()}",
+                ]
+                stream_headers[stream_url] = {
+                    "referer": str(check["referer"]),
+                    "origin": str(check["origin"]),
+                    "user_agent": UA,
+                    "player_endpoint": str(
+                        source["endpoint_url"]
+                    ),
+                    "api_source_mode": source_mode,
+                }
+
+        diagnostics["source_results"].append(source_result)
+        if (
+            API_STOP_AFTER_VALID > 0
+            and len(valid_streams) >= API_STOP_AFTER_VALID
+        ):
+            break
+
+    diagnostics["valid_stream_count"] = len(valid_streams)
+    diagnostics["elapsed_seconds"] = round(
+        time.monotonic() - started,
+        3,
+    )
+    diagnostics["fallback_reason"] = (
+        "" if valid_streams else "all_api_sources_failed"
+    )
+    return (
+        valid_streams,
+        diagnostics,
+        stream_sources,
+        stream_headers,
+    )
+
 async def fast_http_probe(
     context: BrowserContext,
     room_url: str,
@@ -1993,6 +2612,7 @@ def match_priority_key(match: dict[str, Any]) -> tuple[int, float, str]:
 # ============================================================
 async def scan_room(
     context: BrowserContext,
+    api_client: httpx.AsyncClient,
     match: dict[str, Any],
     room: dict[str, str],
     circuit: RateLimitCircuit,
@@ -2009,32 +2629,114 @@ async def scan_room(
     started = time.monotonic()
     main_status: int | None = None
 
-    # Tầng 1: HTTP nhẹ. Nếu có stream trong HTML/config thì không mở browser.
-    http_streams, http_probe = await fast_http_probe(
-        context,
+    # Tầng 1 — V10.5 API-first.
+    (
+        api_streams,
+        api_probe,
+        api_stream_sources,
+        api_stream_headers,
+    ) = await api_first_probe(
+        api_client,
         room_url,
     )
-    if http_streams:
-        for stream in sorted(http_streams):
-            print(f"      🎯 [http-first] {stream}")
 
+    if api_streams:
+        mode = (
+            "api-backup"
+            if any(
+                value.get("mode") == "backup"
+                and any(
+                    check.get("valid")
+                    for check in value.get("checks", [])
+                )
+                for value in api_probe.get("source_results", [])
+            )
+            else "api-active"
+        )
+        print(
+            f"      ⚡ API-FIRST thành công: "
+            f"{len(api_streams)} link | mode={mode}"
+            " | không mở Chromium.",
+            flush=True,
+        )
         return {
             "url": room_url,
             "blv": room_blv,
-            "blv_id": room.get("blv_id", "") or room_blv_id(room_url),
+            "blv_id":
+                room.get("blv_id", "")
+                or room_blv_id(room_url),
+            "streams": list(api_streams),
+            "stream_sources": api_stream_sources,
+            "stream_headers": api_stream_headers,
+            "stream_first_seen": list(api_streams),
+            "diagnostics": {
+                "scan_mode": mode,
+                "main_status": api_probe.get("room_status"),
+                "elapsed_seconds": round(
+                    time.monotonic() - started,
+                    3,
+                ),
+                "api_sources_found":
+                    api_probe.get("sources_found", 0),
+                "api_sources_tried":
+                    api_probe.get("sources_tried", 0),
+            },
+            "api_probe": api_probe,
+            "http_probe": api_probe,
+            "errors": errors,
+            "failed_requests": failed_requests,
+            "http_errors": http_errors,
+        }
+
+    print(
+        f"      🟡 API-FIRST chưa có link hợp lệ"
+        f" ({api_probe.get('fallback_reason') or 'unknown'})"
+        " — chuyển sang Chromium fallback.",
+        flush=True,
+    )
+
+    http_streams: set[str] = set()
+    legacy_http_probe: dict[str, Any] = {
+        "enabled": False,
+        "status": None,
+        "elapsed_seconds": 0.0,
+        "error": "",
+    }
+    if HTTP_FIRST:
+        http_streams, legacy_http_probe = await fast_http_probe(
+            context,
+            room_url,
+        )
+
+    http_probe = {
+        "api_first": api_probe,
+        "legacy_http": legacy_http_probe,
+    }
+
+    if http_streams:
+        for stream in sorted(http_streams):
+            print(f"      🎯 [legacy-http-first] {stream}")
+        return {
+            "url": room_url,
+            "blv": room_blv,
+            "blv_id":
+                room.get("blv_id", "")
+                or room_blv_id(room_url),
             "streams": sorted(http_streams),
             "stream_sources": {
-                stream: ["http-first"]
+                stream: ["legacy-http-first"]
                 for stream in sorted(http_streams)
             },
+            "stream_headers": {},
             "stream_first_seen": sorted(http_streams),
             "diagnostics": {
-                "scan_mode": "http-first",
+                "scan_mode": "legacy-http-first",
                 "elapsed_seconds": round(
                     time.monotonic() - started,
                     3,
                 ),
             },
+            "api_probe": api_probe,
             "http_probe": http_probe,
             "errors": errors,
             "failed_requests": failed_requests,
@@ -2049,6 +2751,7 @@ async def scan_room(
             "blv_id": room.get("blv_id", "") or room_blv_id(room_url),
             "streams": [],
             "stream_sources": {},
+            "stream_headers": {},
             "stream_first_seen": [],
             "diagnostics": {
                 "scan_mode": "skipped-after-429",
@@ -2333,7 +3036,7 @@ async def scan_room(
                 if stream_blv_id(url)
             }
         )
-        diagnostics["scan_mode"] = "browser-event"
+        diagnostics["scan_mode"] = "chromium-fallback"
         diagnostics["elapsed_seconds"] = round(
             time.monotonic() - started,
             3,
@@ -2341,7 +3044,7 @@ async def scan_room(
 
     except Exception as exc:
         diagnostics = {
-            "scan_mode": "browser-event",
+            "scan_mode": "chromium-fallback",
             "elapsed_seconds": round(
                 time.monotonic() - started,
                 3,
@@ -2366,6 +3069,7 @@ async def scan_room(
             stream: sorted(sources)
             for stream, sources in stream_sources.items()
         },
+        "stream_headers": {},
         "stream_first_seen": list(stream_first_seen),
         "discovered_blv_ids": sorted(
             {
@@ -2375,6 +3079,7 @@ async def scan_room(
             }
         ),
         "diagnostics": diagnostics,
+        "api_probe": api_probe,
         "http_probe": http_probe,
         "errors": errors,
         "failed_requests": failed_requests,
@@ -2408,6 +3113,7 @@ class GlobalRoomBudget:
 # ============================================================
 async def scan_match(
     context: BrowserContext,
+    api_client: httpx.AsyncClient,
     match: dict[str, Any],
     semaphore: asyncio.Semaphore,
     circuit: RateLimitCircuit,
@@ -2523,6 +3229,7 @@ async def scan_match(
 
             room_result = await scan_room(
                 context,
+                api_client,
                 match,
                 room,
                 circuit,
@@ -2630,6 +3337,10 @@ async def scan_match(
                 "stream_sources",
                 {},
             )
+            headers_by_stream = room_result.get(
+                "stream_headers",
+                {},
+            )
             first_seen = room_result.get(
                 "stream_first_seen",
                 room_result.get(
@@ -2712,6 +3423,7 @@ async def scan_match(
                             "request/",
                             "response/",
                             "cdp/",
+                            "api/",
                         )
                     )
                     for source in sources
@@ -2797,6 +3509,31 @@ async def scan_match(
                             detected_id,
                         "source_provenance":
                             sources,
+                        "playback_referer":
+                            headers_by_stream.get(
+                                stream,
+                                {},
+                            ).get("referer", ""),
+                        "playback_origin":
+                            headers_by_stream.get(
+                                stream,
+                                {},
+                            ).get("origin", ""),
+                        "playback_user_agent":
+                            headers_by_stream.get(
+                                stream,
+                                {},
+                            ).get("user_agent", ""),
+                        "api_player_endpoint":
+                            headers_by_stream.get(
+                                stream,
+                                {},
+                            ).get("player_endpoint", ""),
+                        "api_source_mode":
+                            headers_by_stream.get(
+                                stream,
+                                {},
+                            ).get("api_source_mode", ""),
                         "source_confidence":
                             (
                                 "network"
@@ -4110,6 +4847,24 @@ def write_outputs(matches: list[dict[str, Any]]) -> tuple[int, int]:
 
             blv = clean_text(stream_item.get("blv", ""))
             room_url = stream_item.get("room_url") or match["base_url"]
+            playback_referer = clean_text(
+                str(
+                    stream_item.get("playback_referer", "")
+                    or room_url
+                )
+            )
+            playback_origin = clean_text(
+                str(
+                    stream_item.get("playback_origin", "")
+                    or origin
+                )
+            )
+            playback_user_agent = clean_text(
+                str(
+                    stream_item.get("playback_user_agent", "")
+                    or UA
+                )
+            )
 
             display_name = scheduled_match_name
             if blv:
@@ -4134,22 +4889,22 @@ def write_outputs(matches: list[dict[str, Any]]) -> tuple[int, int]:
                 f"{display_name}"
             )
             playlist.append(
-                f"#EXTVLCOPT:http-referrer={room_url}"
+                f"#EXTVLCOPT:http-referrer={playback_referer}"
             )
             playlist.append(
-                f"#EXTVLCOPT:http-referer={room_url}"
+                f"#EXTVLCOPT:http-referer={playback_referer}"
             )
             playlist.append(
-                f"#EXTVLCOPT:http-origin={origin}"
+                f"#EXTVLCOPT:http-origin={playback_origin}"
             )
             playlist.append(
-                f"#EXTVLCOPT:http-user-agent={UA}"
+                f"#EXTVLCOPT:http-user-agent={playback_user_agent}"
             )
             playlist.append(
                 f"{stream}"
-                f"|Referer={room_url}"
-                f"&Origin={origin}"
-                f"&User-Agent={UA}"
+                f"|Referer={playback_referer}"
+                f"&Origin={playback_origin}"
+                f"&User-Agent={playback_user_agent}"
             )
 
             count_links += 1
@@ -4210,7 +4965,7 @@ def write_outputs(matches: list[dict[str, Any]]) -> tuple[int, int]:
                     "http_fetch_timeout_seconds": HTTP_FETCH_TIMEOUT_SECONDS,
                     "enable_cdp": ENABLE_CDP,
                     "stop_on_429": STOP_ON_429,
-                    "strategy": "v10.4.1-date-display-fix",
+                    "strategy": "v10.5-api-first-chromium-fallback",
                     "state_schema_version": STATE_SCHEMA_VERSION,
                     "state_max_age_minutes": STATE_MAX_AGE_MINUTES,
                     "state_max_chain_runs": STATE_MAX_CHAIN_RUNS,
@@ -4242,7 +4997,7 @@ def write_outputs(matches: list[dict[str, Any]]) -> tuple[int, int]:
 # MAIN
 # ============================================================
 async def main() -> None:
-    print("🥷 SOCOLIVE STREAM SCANNER V10.4.1 - DATE DISPLAY FIX")
+    print("🥷 SOCOLIVE STREAM SCANNER V10.5 - API FIRST + CHROMIUM FALLBACK")
     print(
         "ℹ️ Test riêng một URL:\n"
         '   python main.py "https://socolivem.cv/truc-tiep/.../?blv=..."'
@@ -4456,18 +5211,41 @@ async def main() -> None:
             flush=True,
         )
 
-        scanned_results = await asyncio.gather(
-            *[
-                scan_match(
-                    context,
-                    match,
-                    semaphore,
-                    circuit,
-                    room_budget,
-                )
-                for match in to_scan
-            ]
+        api_timeout = httpx.Timeout(
+            connect=API_PAGE_TIMEOUT_SECONDS,
+            read=API_PAGE_TIMEOUT_SECONDS,
+            write=API_PAGE_TIMEOUT_SECONDS,
+            pool=API_PAGE_TIMEOUT_SECONDS,
         )
+        api_limits = httpx.Limits(
+            max_connections=max(4, MATCH_CONCURRENCY * 2),
+            max_keepalive_connections=max(2, MATCH_CONCURRENCY),
+        )
+
+        async with httpx.AsyncClient(
+            follow_redirects=True,
+            timeout=api_timeout,
+            limits=api_limits,
+            verify=False,
+            headers={
+                "User-Agent": UA,
+                "Accept-Language":
+                    "vi-VN,vi;q=0.9,en-US;q=0.8,en;q=0.7",
+            },
+        ) as api_client:
+            scanned_results = await asyncio.gather(
+                *[
+                    scan_match(
+                        context,
+                        api_client,
+                        match,
+                        semaphore,
+                        circuit,
+                        room_budget,
+                    )
+                    for match in to_scan
+                ]
+            )
 
         scanned_by_url = {
             canonical_match_url(
