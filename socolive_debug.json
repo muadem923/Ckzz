@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-24T22:01:45.826590+07:00",
+  "generated_at": "2026-07-24T22:03:00.629482+07:00",
   "configuration": {
     "match_concurrency": 1,
     "room_wait_seconds": 12.0,
@@ -1550,8 +1550,474 @@
           "is_expired": false
         }
       ],
-      "catalog_last_seen_at": "2026-07-24T22:01:45.819089+07:00",
+      "catalog_last_seen_at": "2026-07-24T22:03:00.621644+07:00",
       "catalog_updated_at": "2026-07-24T20:08:10.477967+07:00"
+    },
+    {
+      "base_url": "https://socolive.watch/truc-tiep/turan-vs-tobol-kostanai-b-24-07-2026-2200/",
+      "raw_title": "Trực tiếp bóng đá Socolive Turan vs Tobol Kostanai B lúc 22:00 ngày 24/07/2026",
+      "home_team": "Turan",
+      "away_team": "Tobol Kostanai B",
+      "home_logo": "https://sta.vnres.co/file/common/20260720/26e0e5bd99fe76d35b0dd4f5dd8be797.png",
+      "away_logo": "https://sta.vnres.co/file/common/20260713/c3b5f66415e18bda37e32c43ef398c6f.png",
+      "time_text": "22:00",
+      "date_text": "24/07",
+      "status": "",
+      "card_text": "KAZ D1 22:00 24/07 Turan VS XEM NGAY Tobol Kostanai B BEN 10 CÁP",
+      "rooms": [
+        {
+          "url": "https://socolive.watch/truc-tiep/turan-vs-tobol-kostanai-b-24-07-2026-2200?blv=612098",
+          "blv": "BEN 10",
+          "blv_id": "612098"
+        },
+        {
+          "url": "https://socolive.watch/truc-tiep/turan-vs-tobol-kostanai-b-24-07-2026-2200?blv=610677",
+          "blv": "CÁP",
+          "blv_id": "610677"
+        },
+        {
+          "url": "https://socolive.watch/truc-tiep/turan-vs-tobol-kostanai-b-24-07-2026-2200",
+          "blv": "XEM NGAY",
+          "blv_id": ""
+        }
+      ],
+      "match_name": "Turan vs Tobol Kostanai B",
+      "scheduled_at": "2026-07-24T22:00:00+07:00",
+      "room_results": [
+        {
+          "url": "https://socolive.watch/truc-tiep/turan-vs-tobol-kostanai-b-24-07-2026-2200?blv=612098",
+          "blv": "BEN 10",
+          "blv_id": "612098",
+          "streams": [],
+          "stream_sources": {},
+          "stream_first_seen": [],
+          "discovered_blv_ids": [],
+          "diagnostics": {
+            "url": "https://socolive.watch/truc-tiep/turan-vs-tobol-kostanai-b-24-07-2026-2200?blv=612098",
+            "title": "Chờ một chút...",
+            "h1": "socolive.watch",
+            "ready_state": "complete",
+            "visibility_state": "visible",
+            "hidden": false,
+            "video_count": 0,
+            "iframe_count": 0,
+            "body_sample": "socolive.watch Thực hiện xác minh bảo mật Trang web này sử dụng dịch vụ bảo mật để chống bot độc hại. Trang này hiển thị trong khi trang web xác minh bạn không phải là bot. Ray ID: a203cc93ff355585 Hiệu suất và Tính bảo mật của Cloudflare Quyền riêng tư",
+            "harvest_rounds": 0,
+            "harvest_window_seconds": 0.622,
+            "main_status": 403,
+            "harvested_stream_count": 0,
+            "harvested_blv_ids": [],
+            "scan_mode": "browser-event",
+            "elapsed_seconds": 13.212
+          },
+          "http_probe": {
+            "enabled": false,
+            "status": null,
+            "elapsed_seconds": 0.0,
+            "error": ""
+          },
+          "errors": [
+            "console/error: Failed to load resource: the server responded with a status of 403 ()",
+            "console/warning: No available adapters.",
+            "console/warning: No available adapters.",
+            "console/warning: OTS parsing error: Size of decompressed WOFF 2.0 is less than compressed size",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: %c%d font-size:0;color:transparent NaN",
+            "console/error: %c%d font-size:0;color:transparent NaN",
+            "console/warning: %c%d font-size:0;color:transparent NaN",
+            "console/warning: %c%d font-size:0;color:transparent NaN",
+            "console/warning: [.WebGL-0x82c02479a00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+            "console/warning: [.WebGL-0x82c02479a00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels"
+          ],
+          "failed_requests": [
+            "fetch https://brunhild.challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/i/a203cc95dcb8b5f2/OpaCZo2guqna8EXSRC6L_wHci8d3Dkf1laEo9quM88A-1784905275-1.2.1.1-G0BvwB4C.kXVdGD9.0KdJHKK7a1sQyqqPfKiXbcgNzBDFzH4iyj58siQQPTeK5Xb | net::ERR_NAME_NOT_RESOLVED",
+            "image https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/ci/a203cc95dcb8b5f2/1784905276086/C5gnP3fClNUuNlT | net::ERR_FAILED"
+          ],
+          "http_errors": [
+            "403 https://socolive.watch/truc-tiep/turan-vs-tobol-kostanai-b-24-07-2026-2200?blv=612098",
+            "401 https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/pat/a203cc95dcb8b5f2/1784905276086/88d259cdc6254163113768bd2f1c4a425eece581473d8459bcd222e739c53bfa/VLxfMEnIGgiZsxF"
+          ]
+        },
+        {
+          "url": "https://socolive.watch/truc-tiep/turan-vs-tobol-kostanai-b-24-07-2026-2200?blv=610677",
+          "blv": "CÁP",
+          "blv_id": "610677",
+          "streams": [],
+          "stream_sources": {},
+          "stream_first_seen": [],
+          "discovered_blv_ids": [],
+          "diagnostics": {
+            "url": "https://socolive.watch/truc-tiep/turan-vs-tobol-kostanai-b-24-07-2026-2200?blv=610677",
+            "title": "Chờ một chút...",
+            "h1": "socolive.watch",
+            "ready_state": "complete",
+            "visibility_state": "visible",
+            "hidden": false,
+            "video_count": 0,
+            "iframe_count": 0,
+            "body_sample": "socolive.watch Thực hiện xác minh bảo mật Trang web này sử dụng dịch vụ bảo mật để chống bot độc hại. Trang này hiển thị trong khi trang web xác minh bạn không phải là bot. Ray ID: a203ccf2de265585 Hiệu suất và Tính bảo mật của Cloudflare Quyền riêng tư",
+            "harvest_rounds": 0,
+            "harvest_window_seconds": 0.623,
+            "main_status": 403,
+            "harvested_stream_count": 0,
+            "harvested_blv_ids": [],
+            "scan_mode": "browser-event",
+            "elapsed_seconds": 13.142
+          },
+          "http_probe": {
+            "enabled": false,
+            "status": null,
+            "elapsed_seconds": 0.0,
+            "error": ""
+          },
+          "errors": [
+            "console/error: Failed to load resource: the server responded with a status of 403 ()",
+            "console/warning: No available adapters.",
+            "console/warning: No available adapters.",
+            "console/warning: OTS parsing error: Size of decompressed WOFF 2.0 is less than compressed size",
+            "console/error: %c%d font-size:0;color:transparent NaN",
+            "console/error: %c%d font-size:0;color:transparent NaN",
+            "console/warning: %c%d font-size:0;color:transparent NaN",
+            "console/warning: %c%d font-size:0;color:transparent NaN",
+            "console/warning: [.WebGL-0x82c00108200]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+            "console/warning: [.WebGL-0x82c00108200]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels (this message will no longer repeat)",
+            "console/error: Failed to load resource: net::ERR_FAILED"
+          ],
+          "failed_requests": [
+            "fetch https://brunhild.challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/i/a203ccf4988cb5f2/3GRDNzqoCDfevyj2qjKeBROFWR3KpA1UEQW9LFJC_bk-1784905290-1.2.1.1-hyTMFJ_PBoPGiDDoScDwBtXR8eskEPyDiXZRsgw6PXJwjW_zMycyrWugPJOljLJi | net::ERR_NAME_NOT_RESOLVED",
+            "image https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/ci/a203ccf4988cb5f2/1784905291244/OrY3H8DIogHcEwX | net::ERR_FAILED"
+          ],
+          "http_errors": [
+            "403 https://socolive.watch/truc-tiep/turan-vs-tobol-kostanai-b-24-07-2026-2200?blv=610677",
+            "401 https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/pat/a203ccf4988cb5f2/1784905291243/67389a26338dbd02f7dd7cdabf5f061a31cc8d9724fb8c5fa6121765a8ef39a8/d8Zj6HF-GY-vXbh"
+          ]
+        },
+        {
+          "url": "https://socolive.watch/truc-tiep/turan-vs-tobol-kostanai-b-24-07-2026-2200?blv=612098",
+          "blv": "BEN 10",
+          "blv_id": "612098",
+          "streams": [
+            "https://pull.niues.live/live/stream-612098_lhd.m3u8?auth_key=1784908915-0-0-6c695b96ed4c4abb23d0ce0fcf9cd6d9"
+          ],
+          "stream_sources": {
+            "https://pull.niues.live/live/stream-612098_lhd.m3u8?auth_key=1784908915-0-0-6c695b96ed4c4abb23d0ce0fcf9cd6d9": [
+              "cdp/request",
+              "cdp/response",
+              "harvest-final",
+              "harvest-round-1",
+              "harvest-round-2",
+              "harvest-round-3",
+              "harvest-round-4",
+              "harvest-round-5",
+              "harvest-round-6",
+              "harvest-round-7",
+              "harvest-round-8",
+              "harvest-round-9",
+              "request/image",
+              "request/xhr",
+              "response/200"
+            ]
+          },
+          "stream_first_seen": [
+            "https://pull.niues.live/live/stream-612098_lhd.m3u8?auth_key=1784908915-0-0-6c695b96ed4c4abb23d0ce0fcf9cd6d9"
+          ],
+          "discovered_blv_ids": [
+            "612098"
+          ],
+          "diagnostics": {
+            "url": "https://socolive.watch/truc-tiep/turan-vs-tobol-kostanai-b-24-07-2026-2200/?blv=612098",
+            "title": "Xem trực tiếp bóng đá Turan vs Tobol Kostanai B | 22:00 ngày 24/07/2026",
+            "h1": "Trực tiếp bóng đá Socolive Turan vs Tobol Kostanai B lúc 22:00 ngày 24/07/2026",
+            "ready_state": "complete",
+            "visibility_state": "visible",
+            "hidden": false,
+            "video_count": 1,
+            "iframe_count": 1,
+            "body_sample": "Skip to content Socolive Bảng xếp hạng Lịch thi đấu Kết quả bóng đá Tin thể thao Trực tiếp bóng đá Socolive Turan vs Tobol Kostanai B lúc 22:00 ngày 24/07/2026 KAZ D1 Turan 22:00 24/07 Tobol Kostanai B Volume 0% Tải App Bufa BEN 10 CÁP Chat Thống kê Đội hình Diễn Biến Bảng XH \" \" CUDENKHOI: CUDENKHOI vào phòng trò chuyện Tin nhắn riêng Vô hiệu hóa tất cả Vô hiệu hóa quà tặng Tắt lời chào Đăng nhập để cùng chat nhé Gửi Tỷ lệ kèo Cược Châu Á Chủ Chấp Khách Cược Châu Âu Chủ Hòa Khách Tài xỉu Tài Tỷ lệ kèo Xỉu Kèo góc Tài Tỷ lệ kèo Xỉu Mô phỏng trận đấu Thống kê trận đấu INT CF 21:00 24/07 Bournemouth AFC VS null null null - null Sắp diễn ra Xem ngay FC St. Pauli MESSI KÉP CÁO ENZO AFF SC 20:30 24/07 Timor Leste VS null null null - null Sắp diễn ra Xem ngay Vietnam TẠ BIÊN GIỚI THOMAS TAP ZIDANE A BỆU Củ Cải KAZ D1 20:00 24/07 FK Aktobe II VS null null null - null Sắp diễn ra Xem ngay Kairat Almaty II LION FOX KAZ D1 20:00 24/07 FC Shakhtyor Karagandy VS null null null - null Sắp diễn ra Xem ngay FK Arys ĐỖ TÚ TÀI THÓC INT CF 23:00 24/07 Rosenborg VS null null null - null Sắp diễn ra Xem ngay Manchester United THOMAS CR Bưởi ZIDANE A BỆU Củ Cải TẠ BIÊN GIỚI Thành tích đối đầu Không có ",
+            "harvest_rounds": 9,
+            "harvest_window_seconds": 7.043,
+            "main_status": 200,
+            "harvested_stream_count": 1,
+            "harvested_blv_ids": [
+              "612098"
+            ],
+            "scan_mode": "browser-event",
+            "elapsed_seconds": 9.855
+          },
+          "http_probe": {
+            "enabled": false,
+            "status": null,
+            "elapsed_seconds": 0.0,
+            "error": ""
+          },
+          "errors": [
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED"
+          ],
+          "failed_requests": [
+            "stylesheet https://socolive.watch/wp-content/plugins/stream-player-plugin/assets/dist/main.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolive.watch/wp-content/plugins/stream-player-plugin/assets/dist/customize.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolive.watch/wp-content/plugins/user-action-plugin/assets/css/auth.css?ver=66 | net::ERR_FAILED",
+            "stylesheet https://socolive.watch/wp-content/plugins/user-action-plugin/assets/css/chat.css?ver=435 | net::ERR_FAILED",
+            "stylesheet https://socolive.watch/wp-content/plugins/user-action-plugin/assets/css/chat(1).css?ver=525 | net::ERR_FAILED",
+            "stylesheet https://socolive.watch/wp-content/plugins/user-action-plugin/assets/css/toast.css?ver=90 | net::ERR_FAILED",
+            "stylesheet https://socolive.watch/wp-content/themes/flatsome/assets/css/flatsome.css?ver=3.18.2 | net::ERR_FAILED",
+            "stylesheet https://socolive.watch/wp-content/themes/flatsome-child/style.css?ver=3.0 | net::ERR_FAILED",
+            "stylesheet https://fonts.googleapis.com/css?family=Roboto:regular,700,regular,700,regular&display=swap&ver=3.9 | net::ERR_FAILED",
+            "stylesheet https://socolive.watch/wp-content/plugins/stream-player-plugin/assets/css/countdown.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolive.watch/wp-content/plugins/stream-player-plugin/assets/css/match.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolive.watch/wp-content/plugins/stream-player-plugin/assets/css/livescore.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolive.watch/wp-content/plugins/stream-player-plugin/assets/css/style_custom.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolive.watch/wp-content/plugins/stream-player-plugin/assets/css/effect/running-border.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolive.watch/wp-content/plugins/stream-player-plugin/assets/css/option/option-6.css?ver=2.8.5 | net::ERR_FAILED"
+          ],
+          "http_errors": [
+            "403 https://socolive.watch/wp-admin/admin-ajax.php?action=scl_realtime&sport=1"
+          ]
+        },
+        {
+          "url": "https://socolive.watch/truc-tiep/turan-vs-tobol-kostanai-b-24-07-2026-2200?blv=610677",
+          "blv": "CÁP",
+          "blv_id": "610677",
+          "streams": [],
+          "stream_sources": {},
+          "stream_first_seen": [],
+          "discovered_blv_ids": [],
+          "diagnostics": {
+            "url": "https://socolive.watch/truc-tiep/turan-vs-tobol-kostanai-b-24-07-2026-2200?blv=610677",
+            "title": "Chờ một chút...",
+            "h1": "socolive.watch",
+            "ready_state": "complete",
+            "visibility_state": "visible",
+            "hidden": false,
+            "video_count": 0,
+            "iframe_count": 0,
+            "body_sample": "socolive.watch Thực hiện xác minh bảo mật Trang web này sử dụng dịch vụ bảo mật để chống bot độc hại. Trang này hiển thị trong khi trang web xác minh bạn không phải là bot. Ray ID: a203cec60c59f086 Hiệu suất và Tính bảo mật của Cloudflare Quyền riêng tư",
+            "harvest_rounds": 0,
+            "harvest_window_seconds": 0.623,
+            "main_status": 403,
+            "harvested_stream_count": 0,
+            "harvested_blv_ids": [],
+            "scan_mode": "browser-event",
+            "elapsed_seconds": 13.219
+          },
+          "http_probe": {
+            "enabled": false,
+            "status": null,
+            "elapsed_seconds": 0.0,
+            "error": ""
+          },
+          "errors": [
+            "console/error: Failed to load resource: the server responded with a status of 403 ()",
+            "console/warning: No available adapters.",
+            "console/warning: No available adapters.",
+            "console/warning: [.WebGL-0x359401fa9e00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+            "console/warning: [.WebGL-0x359401fa9e00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+            "console/warning: OTS parsing error: Size of decompressed WOFF 2.0 is less than compressed size",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: %c%d font-size:0;color:transparent NaN",
+            "console/error: %c%d font-size:0;color:transparent NaN",
+            "console/warning: %c%d font-size:0;color:transparent NaN",
+            "console/warning: %c%d font-size:0;color:transparent NaN"
+          ],
+          "failed_requests": [
+            "fetch https://brunhild.challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/i/a203cec82d92ff98/sk1W9pl3S8_tiSXQzxfu6DmRUBXnsVuL7MIX4GGW.40-1784905365-1.2.1.1-w4NweHV6HMoAW4PAp8eLzVP2.bX_iIIM0n3cHxkbaBn8VnhwU2XUg0h6kh37gptJ | net::ERR_NAME_NOT_RESOLVED",
+            "image https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/ci/a203cec82d92ff98/1784905366082/iTQa-VsvqyRyqBs | net::ERR_FAILED"
+          ],
+          "http_errors": [
+            "403 https://socolive.watch/truc-tiep/turan-vs-tobol-kostanai-b-24-07-2026-2200?blv=610677",
+            "401 https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/pat/a203cec82d92ff98/1784905366082/19d5ab5113a4bdc4730eb90e6fc89204d70b85288c23178027b37d648bf2fd85/ZAABGbafSr4A9nU"
+          ]
+        }
+      ],
+      "attempted_room_ids": [
+        "610677",
+        "612098"
+      ],
+      "coverage": {
+        "found_streams": 1,
+        "found_blv_ids": [
+          "612098"
+        ],
+        "goal": 4,
+        "source_goal_reached": false,
+        "room_queue_complete": true,
+        "complete": true,
+        "max_streams_per_blv": 2,
+        "total_explicit_blv_rooms": 2,
+        "pending_room_keys": [],
+        "room_progress": {
+          "612098": {
+            "key": "612098",
+            "url": "https://socolive.watch/truc-tiep/turan-vs-tobol-kostanai-b-24-07-2026-2200?blv=612098",
+            "blv": "BEN 10",
+            "blv_id": "612098",
+            "status": "success",
+            "attempts": 2,
+            "attempts_total": 2,
+            "ever_attempted": true,
+            "valid_stream_ever_found": true,
+            "needs_token_refresh": false,
+            "completion_reason": "valid_stream",
+            "rate_limit_hits": 0,
+            "last_http_status": 200,
+            "last_stream_count": 1,
+            "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
+          },
+          "610677": {
+            "key": "610677",
+            "url": "https://socolive.watch/truc-tiep/turan-vs-tobol-kostanai-b-24-07-2026-2200?blv=610677",
+            "blv": "CÁP",
+            "blv_id": "610677",
+            "status": "exhausted",
+            "attempts": 2,
+            "attempts_total": 2,
+            "ever_attempted": true,
+            "valid_stream_ever_found": false,
+            "needs_token_refresh": false,
+            "completion_reason": "no_valid_stream_after_max_attempts",
+            "rate_limit_hits": 0,
+            "last_http_status": 403,
+            "last_stream_count": 0,
+            "last_error": "console/error: Failed to load resource: the server responded with a status of 403 (); console/warning: No available adapters.; console/warning: No available adapters."
+          },
+          "__base__": {
+            "key": "__base__",
+            "url": "https://socolive.watch/truc-tiep/turan-vs-tobol-kostanai-b-24-07-2026-2200",
+            "blv": "XEM NGAY",
+            "blv_id": "",
+            "status": "pending",
+            "attempts": 0,
+            "attempts_total": 0,
+            "ever_attempted": false,
+            "valid_stream_ever_found": false,
+            "needs_token_refresh": false,
+            "completion_reason": "",
+            "rate_limit_hits": 0,
+            "last_http_status": null,
+            "last_stream_count": 0,
+            "last_error": ""
+          }
+        }
+      },
+      "errors": [],
+      "room_progress": {
+        "612098": {
+          "key": "612098",
+          "url": "https://socolive.watch/truc-tiep/turan-vs-tobol-kostanai-b-24-07-2026-2200?blv=612098",
+          "blv": "BEN 10",
+          "blv_id": "612098",
+          "status": "success",
+          "attempts": 2,
+          "attempts_total": 2,
+          "ever_attempted": true,
+          "valid_stream_ever_found": true,
+          "needs_token_refresh": false,
+          "completion_reason": "valid_stream",
+          "rate_limit_hits": 0,
+          "last_http_status": 200,
+          "last_stream_count": 1,
+          "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
+        },
+        "610677": {
+          "key": "610677",
+          "url": "https://socolive.watch/truc-tiep/turan-vs-tobol-kostanai-b-24-07-2026-2200?blv=610677",
+          "blv": "CÁP",
+          "blv_id": "610677",
+          "status": "exhausted",
+          "attempts": 2,
+          "attempts_total": 2,
+          "ever_attempted": true,
+          "valid_stream_ever_found": false,
+          "needs_token_refresh": false,
+          "completion_reason": "no_valid_stream_after_max_attempts",
+          "rate_limit_hits": 0,
+          "last_http_status": 403,
+          "last_stream_count": 0,
+          "last_error": "console/error: Failed to load resource: the server responded with a status of 403 (); console/warning: No available adapters.; console/warning: No available adapters."
+        },
+        "__base__": {
+          "key": "__base__",
+          "url": "https://socolive.watch/truc-tiep/turan-vs-tobol-kostanai-b-24-07-2026-2200",
+          "blv": "XEM NGAY",
+          "blv_id": "",
+          "status": "pending",
+          "attempts": 0,
+          "attempts_total": 0,
+          "ever_attempted": false,
+          "valid_stream_ever_found": false,
+          "needs_token_refresh": false,
+          "completion_reason": "",
+          "rate_limit_hits": 0,
+          "last_http_status": null,
+          "last_stream_count": 0,
+          "last_error": ""
+        }
+      },
+      "run_attempted_room_keys": [
+        "610677",
+        "612098"
+      ],
+      "run_rate_limited_room_keys": [],
+      "run_completed_room_keys": [
+        "610677",
+        "612098"
+      ],
+      "run_global_budget_used": 2,
+      "streams": [
+        {
+          "url": "https://pull.niues.live/live/stream-612098_lhd.m3u8?auth_key=1784908915-0-0-6c695b96ed4c4abb23d0ce0fcf9cd6d9",
+          "queue_room_key": "612098",
+          "room_url": "https://socolive.watch/truc-tiep/turan-vs-tobol-kostanai-b-24-07-2026-2200?blv=612098",
+          "blv": "BEN 10",
+          "blv_id": "612098",
+          "source_id": "612098",
+          "source_provenance": [
+            "cdp/request",
+            "cdp/response",
+            "harvest-final",
+            "harvest-round-1",
+            "harvest-round-2",
+            "harvest-round-3",
+            "harvest-round-4",
+            "harvest-round-5",
+            "harvest-round-6",
+            "harvest-round-7",
+            "harvest-round-8",
+            "harvest-round-9",
+            "request/image",
+            "request/xhr",
+            "response/200"
+          ],
+          "source_confidence": "network",
+          "mapping_mode": "exact-room-id",
+          "discovered_from_room_url": "https://socolive.watch/truc-tiep/turan-vs-tobol-kostanai-b-24-07-2026-2200?blv=612098",
+          "discovered_from_blv": "BEN 10",
+          "discovered_at": "2026-07-24T22:02:43.357680+07:00",
+          "valid_until": "2026-07-24T23:01:55+07:00",
+          "is_expired": false
+        }
+      ],
+      "catalog_last_seen_at": "2026-07-24T22:03:00.621644+07:00",
+      "catalog_updated_at": "2026-07-24T22:03:00.621644+07:00"
     },
     {
       "base_url": "https://socolive.watch/truc-tiep/jaro-vs-sjk-seinajoen-24-07-2026-2300/",
