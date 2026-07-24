@@ -1,32 +1,32 @@
 {
-  "generated_at": "2026-07-24T21:02:17.060477+07:00",
+  "generated_at": "2026-07-24T21:06:35.848639+07:00",
   "state_schema_version": "v10.4-finite-two-pass-queue",
-  "dispatch_next": true,
-  "pending_count": 1,
-  "pending_room_count": 4,
+  "dispatch_next": false,
+  "pending_count": 0,
+  "pending_room_count": 0,
   "completed_count": 1,
-  "coverage_complete_count": 9,
+  "coverage_complete_count": 10,
   "total_match_count": 10,
   "total_stream_count": 1,
   "progress_count": 0,
   "new_link_count": 0,
   "refreshed_link_count": 0,
-  "queue_progress_count": 40,
-  "terminal_progress_count": 36,
-  "newly_attempted_count": 4,
+  "queue_progress_count": 4,
+  "terminal_progress_count": 4,
+  "newly_attempted_count": 0,
   "queue_total_rooms": 40,
   "queue_success_rooms": 3,
-  "queue_exhausted_rooms": 33,
-  "queue_terminal_rooms": 36,
-  "queue_attempts_total": 76,
-  "chain_runs": 1,
+  "queue_exhausted_rooms": 37,
+  "queue_terminal_rooms": 40,
+  "queue_attempts_total": 80,
+  "chain_runs": 2,
   "no_progress_runs": 0,
   "no_queue_progress_runs": 0,
   "unchanged_pending_runs": 0,
   "rate_limit_only_runs": 0,
   "rate_limit_only_run": false,
-  "pending_fingerprint": "88199337dc3cad9f8a3a3eea72abcb1a80009a7dce280296114c58c19a50b7cd",
-  "stop_reason": "",
+  "pending_fingerprint": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "stop_reason": "complete",
   "rate_limited": false,
   "rate_limit_url": "",
   "global_room_budget": 48,
@@ -43,9 +43,7 @@
     "https://socolive.watch/truc-tiep/timor-leste-vs-vietnam-24-07-2026-2030/",
     "https://socolive.watch/truc-tiep/vasteras-sk-fk-vs-orgryte-25-07-2026-0000/"
   ],
-  "pending_base_urls": [
-    "https://socolive.watch/truc-tiep/bournemouth-afc-vs-fc-st-pauli-24-07-2026-2100/"
-  ],
+  "pending_base_urls": [],
   "matches": [
     {
       "base_url": "https://socolive.watch/truc-tiep/bournemouth-afc-vs-fc-st-pauli-24-07-2026-2100/",
@@ -300,6 +298,202 @@
             "403 https://socolive.watch/truc-tiep/bournemouth-afc-vs-fc-st-pauli-24-07-2026-2100?blv=380460",
             "401 https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/pat/a20375d40831daec/1784901722525/fa156a116205b7d96abdbd4d4036c2b77dc609cc0af752531c504aa62b06d325/etvcLkxse3At1Ia"
           ]
+        },
+        {
+          "url": "https://socolive.watch/truc-tiep/bournemouth-afc-vs-fc-st-pauli-24-07-2026-2100?blv=494201",
+          "blv": "MESSI",
+          "blv_id": "494201",
+          "streams": [],
+          "stream_sources": {},
+          "stream_first_seen": [],
+          "discovered_blv_ids": [],
+          "diagnostics": {
+            "scan_mode": "browser-event",
+            "elapsed_seconds": 18.061,
+            "main_status": null
+          },
+          "http_probe": {
+            "enabled": false,
+            "status": null,
+            "elapsed_seconds": 0.0,
+            "error": ""
+          },
+          "errors": [
+            "TimeoutError: Page.goto: Timeout 18000ms exceeded.\nCall log:\n  - navigating to \"https://socolive.watch/truc-tiep/bournemouth-afc-vs-fc-st-pauli-24-07-2026-2100?blv=494201\", waiting until \"domcontentloaded\"\n",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED"
+          ],
+          "failed_requests": [
+            "stylesheet https://socolive.watch/wp-content/plugins/stream-player-plugin/assets/dist/main.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolive.watch/wp-content/plugins/stream-player-plugin/assets/dist/customize.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolive.watch/wp-content/plugins/user-action-plugin/assets/css/auth.css?ver=933 | net::ERR_FAILED",
+            "stylesheet https://socolive.watch/wp-content/plugins/user-action-plugin/assets/css/chat.css?ver=723 | net::ERR_FAILED",
+            "stylesheet https://socolive.watch/wp-content/plugins/user-action-plugin/assets/css/chat(1).css?ver=680 | net::ERR_FAILED",
+            "stylesheet https://socolive.watch/wp-content/plugins/user-action-plugin/assets/css/toast.css?ver=34 | net::ERR_FAILED",
+            "stylesheet https://socolive.watch/wp-content/themes/flatsome/assets/css/flatsome.css?ver=3.18.2 | net::ERR_FAILED",
+            "stylesheet https://socolive.watch/wp-content/themes/flatsome-child/style.css?ver=3.0 | net::ERR_FAILED",
+            "stylesheet https://fonts.googleapis.com/css?family=Roboto:regular,700,regular,700,regular&display=swap&ver=3.9 | net::ERR_FAILED",
+            "stylesheet https://socolive.watch/wp-content/plugins/stream-player-plugin/assets/css/countdown.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolive.watch/wp-content/plugins/stream-player-plugin/assets/css/match.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolive.watch/wp-content/plugins/stream-player-plugin/assets/css/livescore.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolive.watch/wp-content/plugins/stream-player-plugin/assets/css/style_custom.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolive.watch/wp-content/plugins/stream-player-plugin/assets/css/effect/running-border.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolive.watch/wp-content/plugins/stream-player-plugin/assets/css/option/option-6.css?ver=2.8.5 | net::ERR_FAILED"
+          ],
+          "http_errors": []
+        },
+        {
+          "url": "https://socolive.watch/truc-tiep/bournemouth-afc-vs-fc-st-pauli-24-07-2026-2100?blv=560690",
+          "blv": "KÉP",
+          "blv_id": "560690",
+          "streams": [],
+          "stream_sources": {},
+          "stream_first_seen": [],
+          "discovered_blv_ids": [],
+          "diagnostics": {
+            "scan_mode": "browser-event",
+            "elapsed_seconds": 18.049,
+            "main_status": null
+          },
+          "http_probe": {
+            "enabled": false,
+            "status": null,
+            "elapsed_seconds": 0.0,
+            "error": ""
+          },
+          "errors": [
+            "TimeoutError: Page.goto: Timeout 18000ms exceeded.\nCall log:\n  - navigating to \"https://socolive.watch/truc-tiep/bournemouth-afc-vs-fc-st-pauli-24-07-2026-2100?blv=560690\", waiting until \"domcontentloaded\"\n"
+          ],
+          "failed_requests": [],
+          "http_errors": []
+        },
+        {
+          "url": "https://socolive.watch/truc-tiep/bournemouth-afc-vs-fc-st-pauli-24-07-2026-2100?blv=597929",
+          "blv": "CÁO",
+          "blv_id": "597929",
+          "streams": [],
+          "stream_sources": {},
+          "stream_first_seen": [],
+          "discovered_blv_ids": [],
+          "diagnostics": {
+            "scan_mode": "browser-event",
+            "elapsed_seconds": 18.053,
+            "main_status": null
+          },
+          "http_probe": {
+            "enabled": false,
+            "status": null,
+            "elapsed_seconds": 0.0,
+            "error": ""
+          },
+          "errors": [
+            "TimeoutError: Page.goto: Timeout 18000ms exceeded.\nCall log:\n  - navigating to \"https://socolive.watch/truc-tiep/bournemouth-afc-vs-fc-st-pauli-24-07-2026-2100?blv=597929\", waiting until \"domcontentloaded\"\n",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED"
+          ],
+          "failed_requests": [
+            "stylesheet https://socolive.watch/wp-content/plugins/stream-player-plugin/assets/dist/main.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolive.watch/wp-content/plugins/stream-player-plugin/assets/dist/customize.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolive.watch/wp-content/plugins/user-action-plugin/assets/css/auth.css?ver=569 | net::ERR_FAILED",
+            "stylesheet https://socolive.watch/wp-content/plugins/user-action-plugin/assets/css/chat.css?ver=867 | net::ERR_FAILED",
+            "stylesheet https://socolive.watch/wp-content/plugins/user-action-plugin/assets/css/chat(1).css?ver=814 | net::ERR_FAILED",
+            "stylesheet https://socolive.watch/wp-content/plugins/user-action-plugin/assets/css/toast.css?ver=744 | net::ERR_FAILED",
+            "stylesheet https://socolive.watch/wp-content/themes/flatsome/assets/css/flatsome.css?ver=3.18.2 | net::ERR_FAILED",
+            "stylesheet https://socolive.watch/wp-content/themes/flatsome-child/style.css?ver=3.0 | net::ERR_FAILED",
+            "stylesheet https://fonts.googleapis.com/css?family=Roboto:regular,700,regular,700,regular&display=swap&ver=3.9 | net::ERR_FAILED",
+            "stylesheet https://socolive.watch/wp-content/plugins/stream-player-plugin/assets/css/countdown.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolive.watch/wp-content/plugins/stream-player-plugin/assets/css/match.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolive.watch/wp-content/plugins/stream-player-plugin/assets/css/livescore.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolive.watch/wp-content/plugins/stream-player-plugin/assets/css/style_custom.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolive.watch/wp-content/plugins/stream-player-plugin/assets/css/effect/running-border.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolive.watch/wp-content/plugins/stream-player-plugin/assets/css/option/option-6.css?ver=2.8.5 | net::ERR_FAILED"
+          ],
+          "http_errors": []
+        },
+        {
+          "url": "https://socolive.watch/truc-tiep/bournemouth-afc-vs-fc-st-pauli-24-07-2026-2100?blv=380460",
+          "blv": "ENZO",
+          "blv_id": "380460",
+          "streams": [],
+          "stream_sources": {},
+          "stream_first_seen": [],
+          "discovered_blv_ids": [],
+          "diagnostics": {
+            "scan_mode": "browser-event",
+            "elapsed_seconds": 18.052,
+            "main_status": null
+          },
+          "http_probe": {
+            "enabled": false,
+            "status": null,
+            "elapsed_seconds": 0.0,
+            "error": ""
+          },
+          "errors": [
+            "TimeoutError: Page.goto: Timeout 18000ms exceeded.\nCall log:\n  - navigating to \"https://socolive.watch/truc-tiep/bournemouth-afc-vs-fc-st-pauli-24-07-2026-2100?blv=380460\", waiting until \"domcontentloaded\"\n",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED"
+          ],
+          "failed_requests": [
+            "stylesheet https://socolive.watch/wp-content/plugins/stream-player-plugin/assets/dist/main.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolive.watch/wp-content/plugins/stream-player-plugin/assets/dist/customize.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolive.watch/wp-content/plugins/user-action-plugin/assets/css/auth.css?ver=110 | net::ERR_FAILED",
+            "stylesheet https://socolive.watch/wp-content/plugins/user-action-plugin/assets/css/chat.css?ver=299 | net::ERR_FAILED",
+            "stylesheet https://socolive.watch/wp-content/plugins/user-action-plugin/assets/css/chat(1).css?ver=386 | net::ERR_FAILED",
+            "stylesheet https://socolive.watch/wp-content/plugins/user-action-plugin/assets/css/toast.css?ver=878 | net::ERR_FAILED",
+            "stylesheet https://socolive.watch/wp-content/themes/flatsome/assets/css/flatsome.css?ver=3.18.2 | net::ERR_FAILED",
+            "stylesheet https://socolive.watch/wp-content/themes/flatsome-child/style.css?ver=3.0 | net::ERR_FAILED",
+            "stylesheet https://fonts.googleapis.com/css?family=Roboto:regular,700,regular,700,regular&display=swap&ver=3.9 | net::ERR_FAILED",
+            "stylesheet https://socolive.watch/wp-content/plugins/stream-player-plugin/assets/css/countdown.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolive.watch/wp-content/plugins/stream-player-plugin/assets/css/match.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolive.watch/wp-content/plugins/stream-player-plugin/assets/css/livescore.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolive.watch/wp-content/plugins/stream-player-plugin/assets/css/style_custom.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolive.watch/wp-content/plugins/stream-player-plugin/assets/css/effect/running-border.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolive.watch/wp-content/plugins/stream-player-plugin/assets/css/option/option-6.css?ver=2.8.5 | net::ERR_FAILED"
+          ],
+          "http_errors": []
         }
       ],
       "attempted_room_ids": [
@@ -313,84 +507,79 @@
         "found_blv_ids": [],
         "goal": 8,
         "source_goal_reached": false,
-        "room_queue_complete": false,
-        "complete": false,
+        "room_queue_complete": true,
+        "complete": true,
         "max_streams_per_blv": 2,
         "total_explicit_blv_rooms": 4,
-        "pending_room_keys": [
-          "494201",
-          "560690",
-          "597929",
-          "380460"
-        ],
+        "pending_room_keys": [],
         "room_progress": {
           "494201": {
             "key": "494201",
             "url": "https://socolive.watch/truc-tiep/bournemouth-afc-vs-fc-st-pauli-24-07-2026-2100?blv=494201",
             "blv": "MESSI",
             "blv_id": "494201",
-            "status": "retry",
-            "attempts": 1,
-            "attempts_total": 1,
+            "status": "exhausted",
+            "attempts": 2,
+            "attempts_total": 2,
             "ever_attempted": true,
             "valid_stream_ever_found": false,
             "needs_token_refresh": false,
-            "completion_reason": "",
+            "completion_reason": "no_valid_stream_after_max_attempts",
             "rate_limit_hits": 0,
-            "last_http_status": 403,
+            "last_http_status": null,
             "last_stream_count": 0,
-            "last_error": "console/error: Failed to load resource: the server responded with a status of 403 (); console/warning: No available adapters.; console/warning: No available adapters."
+            "last_error": "TimeoutError: Page.goto: Timeout 18000ms exceeded. Call log: - navigating to \"https://socolive.watch/truc-tiep/bournemouth-afc-vs-fc-st-pauli-24-07-2026-2100?blv=494201\", waiting until \"domcontentloaded\" ; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
           },
           "560690": {
             "key": "560690",
             "url": "https://socolive.watch/truc-tiep/bournemouth-afc-vs-fc-st-pauli-24-07-2026-2100?blv=560690",
             "blv": "KÉP",
             "blv_id": "560690",
-            "status": "retry",
-            "attempts": 1,
-            "attempts_total": 1,
+            "status": "exhausted",
+            "attempts": 2,
+            "attempts_total": 2,
             "ever_attempted": true,
             "valid_stream_ever_found": false,
             "needs_token_refresh": false,
-            "completion_reason": "",
+            "completion_reason": "no_valid_stream_after_max_attempts",
             "rate_limit_hits": 0,
-            "last_http_status": 403,
+            "last_http_status": null,
             "last_stream_count": 0,
-            "last_error": "console/error: Failed to load resource: the server responded with a status of 403 (); console/warning: No available adapters.; console/warning: No available adapters."
+            "last_error": "TimeoutError: Page.goto: Timeout 18000ms exceeded. Call log: - navigating to \"https://socolive.watch/truc-tiep/bournemouth-afc-vs-fc-st-pauli-24-07-2026-2100?blv=560690\", waiting until \"domcontentloaded\""
           },
           "597929": {
             "key": "597929",
             "url": "https://socolive.watch/truc-tiep/bournemouth-afc-vs-fc-st-pauli-24-07-2026-2100?blv=597929",
             "blv": "CÁO",
             "blv_id": "597929",
-            "status": "retry",
-            "attempts": 1,
-            "attempts_total": 1,
+            "status": "exhausted",
+            "attempts": 2,
+            "attempts_total": 2,
             "ever_attempted": true,
             "valid_stream_ever_found": false,
             "needs_token_refresh": false,
-            "completion_reason": "",
+            "completion_reason": "no_valid_stream_after_max_attempts",
             "rate_limit_hits": 0,
-            "last_http_status": 403,
+            "last_http_status": null,
             "last_stream_count": 0,
-            "last_error": "console/error: Failed to load resource: the server responded with a status of 403 (); console/warning: No available adapters.; console/warning: No available adapters."
+            "last_error": "TimeoutError: Page.goto: Timeout 18000ms exceeded. Call log: - navigating to \"https://socolive.watch/truc-tiep/bournemouth-afc-vs-fc-st-pauli-24-07-2026-2100?blv=597929\", waiting until \"domcontentloaded\" ; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
           },
           "380460": {
             "key": "380460",
             "url": "https://socolive.watch/truc-tiep/bournemouth-afc-vs-fc-st-pauli-24-07-2026-2100?blv=380460",
             "blv": "ENZO",
             "blv_id": "380460",
-            "status": "retry",
-            "attempts": 1,
-            "attempts_total": 1,
+            "status": "exhausted",
+            "attempts": 2,
+            "attempts_total": 2,
             "ever_attempted": true,
             "valid_stream_ever_found": false,
             "needs_token_refresh": false,
-            "completion_reason": "",
+            "completion_reason": "no_valid_stream_after_max_attempts",
             "rate_limit_hits": 0,
-            "last_http_status": 403,
+            "last_http_status": null,
             "last_stream_count": 0,
-            "last_error": "console/error: Failed to load resource: the server responded with a status of 403 (); console/warning: No available adapters.; console/warning: No available adapters."
+            "last_error": "TimeoutError: Page.goto: Timeout 18000ms exceeded. Call log: - navigating to \"https://socolive.watch/truc-tiep/bournemouth-afc-vs-fc-st-pauli-24-07-2026-2100?blv=380460\", waiting until \"domcontentloaded\" ; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
           },
           "__base__": {
             "key": "__base__",
@@ -418,68 +607,68 @@
           "url": "https://socolive.watch/truc-tiep/bournemouth-afc-vs-fc-st-pauli-24-07-2026-2100?blv=494201",
           "blv": "MESSI",
           "blv_id": "494201",
-          "status": "retry",
-          "attempts": 1,
-          "attempts_total": 1,
+          "status": "exhausted",
+          "attempts": 2,
+          "attempts_total": 2,
           "ever_attempted": true,
           "valid_stream_ever_found": false,
           "needs_token_refresh": false,
-          "completion_reason": "",
+          "completion_reason": "no_valid_stream_after_max_attempts",
           "rate_limit_hits": 0,
-          "last_http_status": 403,
+          "last_http_status": null,
           "last_stream_count": 0,
-          "last_error": "console/error: Failed to load resource: the server responded with a status of 403 (); console/warning: No available adapters.; console/warning: No available adapters."
+          "last_error": "TimeoutError: Page.goto: Timeout 18000ms exceeded. Call log: - navigating to \"https://socolive.watch/truc-tiep/bournemouth-afc-vs-fc-st-pauli-24-07-2026-2100?blv=494201\", waiting until \"domcontentloaded\" ; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
         },
         "560690": {
           "key": "560690",
           "url": "https://socolive.watch/truc-tiep/bournemouth-afc-vs-fc-st-pauli-24-07-2026-2100?blv=560690",
           "blv": "KÉP",
           "blv_id": "560690",
-          "status": "retry",
-          "attempts": 1,
-          "attempts_total": 1,
+          "status": "exhausted",
+          "attempts": 2,
+          "attempts_total": 2,
           "ever_attempted": true,
           "valid_stream_ever_found": false,
           "needs_token_refresh": false,
-          "completion_reason": "",
+          "completion_reason": "no_valid_stream_after_max_attempts",
           "rate_limit_hits": 0,
-          "last_http_status": 403,
+          "last_http_status": null,
           "last_stream_count": 0,
-          "last_error": "console/error: Failed to load resource: the server responded with a status of 403 (); console/warning: No available adapters.; console/warning: No available adapters."
+          "last_error": "TimeoutError: Page.goto: Timeout 18000ms exceeded. Call log: - navigating to \"https://socolive.watch/truc-tiep/bournemouth-afc-vs-fc-st-pauli-24-07-2026-2100?blv=560690\", waiting until \"domcontentloaded\""
         },
         "597929": {
           "key": "597929",
           "url": "https://socolive.watch/truc-tiep/bournemouth-afc-vs-fc-st-pauli-24-07-2026-2100?blv=597929",
           "blv": "CÁO",
           "blv_id": "597929",
-          "status": "retry",
-          "attempts": 1,
-          "attempts_total": 1,
+          "status": "exhausted",
+          "attempts": 2,
+          "attempts_total": 2,
           "ever_attempted": true,
           "valid_stream_ever_found": false,
           "needs_token_refresh": false,
-          "completion_reason": "",
+          "completion_reason": "no_valid_stream_after_max_attempts",
           "rate_limit_hits": 0,
-          "last_http_status": 403,
+          "last_http_status": null,
           "last_stream_count": 0,
-          "last_error": "console/error: Failed to load resource: the server responded with a status of 403 (); console/warning: No available adapters.; console/warning: No available adapters."
+          "last_error": "TimeoutError: Page.goto: Timeout 18000ms exceeded. Call log: - navigating to \"https://socolive.watch/truc-tiep/bournemouth-afc-vs-fc-st-pauli-24-07-2026-2100?blv=597929\", waiting until \"domcontentloaded\" ; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
         },
         "380460": {
           "key": "380460",
           "url": "https://socolive.watch/truc-tiep/bournemouth-afc-vs-fc-st-pauli-24-07-2026-2100?blv=380460",
           "blv": "ENZO",
           "blv_id": "380460",
-          "status": "retry",
-          "attempts": 1,
-          "attempts_total": 1,
+          "status": "exhausted",
+          "attempts": 2,
+          "attempts_total": 2,
           "ever_attempted": true,
           "valid_stream_ever_found": false,
           "needs_token_refresh": false,
-          "completion_reason": "",
+          "completion_reason": "no_valid_stream_after_max_attempts",
           "rate_limit_hits": 0,
-          "last_http_status": 403,
+          "last_http_status": null,
           "last_stream_count": 0,
-          "last_error": "console/error: Failed to load resource: the server responded with a status of 403 (); console/warning: No available adapters.; console/warning: No available adapters."
+          "last_error": "TimeoutError: Page.goto: Timeout 18000ms exceeded. Call log: - navigating to \"https://socolive.watch/truc-tiep/bournemouth-afc-vs-fc-st-pauli-24-07-2026-2100?blv=380460\", waiting until \"domcontentloaded\" ; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
         },
         "__base__": {
           "key": "__base__",
@@ -3636,698 +3825,6 @@
       }
     },
     {
-      "base_url": "https://socolive.watch/truc-tiep/jaro-vs-sjk-seinajoen-24-07-2026-2300/",
-      "raw_title": "Trực tiếp bóng đá Socolive Jaro vs SJK Seinajoen lúc 23:00 ngày 24/07/2026",
-      "home_team": "Jaro",
-      "away_team": "SJK Seinajoen",
-      "home_logo": "https://sta.vnres.co/file/common/20260715/6fa673295689be792d90afa386ad2492.png",
-      "away_logo": "https://sta.vnres.co/file/common/20260714/8c6a1d4dcdcba22b099e52cec48cb850.png",
-      "time_text": "23:00",
-      "date_text": "24/07",
-      "status": "",
-      "card_text": "FIN D1 23:00 24/07 Jaro VS XEM NGAY SJK Seinajoen CUỘI LOGAN A WIN ALEX",
-      "rooms": [
-        {
-          "url": "https://socolive.watch/truc-tiep/jaro-vs-sjk-seinajoen-24-07-2026-2300?blv=256080",
-          "blv": "CUỘI",
-          "blv_id": "256080"
-        },
-        {
-          "url": "https://socolive.watch/truc-tiep/jaro-vs-sjk-seinajoen-24-07-2026-2300?blv=552832",
-          "blv": "LOGAN",
-          "blv_id": "552832"
-        },
-        {
-          "url": "https://socolive.watch/truc-tiep/jaro-vs-sjk-seinajoen-24-07-2026-2300?blv=536185",
-          "blv": "A WIN",
-          "blv_id": "536185"
-        },
-        {
-          "url": "https://socolive.watch/truc-tiep/jaro-vs-sjk-seinajoen-24-07-2026-2300?blv=532081",
-          "blv": "ALEX",
-          "blv_id": "532081"
-        },
-        {
-          "url": "https://socolive.watch/truc-tiep/jaro-vs-sjk-seinajoen-24-07-2026-2300",
-          "blv": "XEM NGAY",
-          "blv_id": ""
-        }
-      ],
-      "match_name": "Jaro vs SJK Seinajoen",
-      "scheduled_at": "2026-07-24T23:00:00+07:00",
-      "streams": [],
-      "room_results": [
-        {
-          "url": "https://socolive.watch/truc-tiep/jaro-vs-sjk-seinajoen-24-07-2026-2300?blv=256080",
-          "blv": "CUỘI",
-          "blv_id": "256080",
-          "streams": [],
-          "stream_sources": {},
-          "stream_first_seen": [],
-          "discovered_blv_ids": [],
-          "diagnostics": {
-            "url": "https://socolive.watch/truc-tiep/jaro-vs-sjk-seinajoen-24-07-2026-2300?blv=256080",
-            "title": "Chờ một chút...",
-            "h1": "socolive.watch",
-            "ready_state": "complete",
-            "visibility_state": "visible",
-            "hidden": false,
-            "video_count": 0,
-            "iframe_count": 0,
-            "body_sample": "socolive.watch Thực hiện xác minh bảo mật Trang web này sử dụng dịch vụ bảo mật để chống bot độc hại. Trang này hiển thị trong khi trang web xác minh bạn không phải là bot. Ray ID: a202d4900dab6802 Hiệu suất và Tính bảo mật của Cloudflare Quyền riêng tư",
-            "harvest_rounds": 0,
-            "harvest_window_seconds": 0.624,
-            "main_status": 403,
-            "harvested_stream_count": 0,
-            "harvested_blv_ids": [],
-            "scan_mode": "browser-event",
-            "elapsed_seconds": 13.149
-          },
-          "http_probe": {
-            "enabled": false,
-            "status": null,
-            "elapsed_seconds": 0.0,
-            "error": ""
-          },
-          "errors": [
-            "console/error: Failed to load resource: the server responded with a status of 403 ()",
-            "console/warning: No available adapters.",
-            "console/warning: No available adapters.",
-            "console/error: %c%d font-size:0;color:transparent NaN",
-            "console/error: %c%d font-size:0;color:transparent NaN",
-            "console/warning: %c%d font-size:0;color:transparent NaN",
-            "console/warning: %c%d font-size:0;color:transparent NaN",
-            "console/warning: OTS parsing error: Size of decompressed WOFF 2.0 is less than compressed size",
-            "console/error: Failed to load resource: net::ERR_FAILED"
-          ],
-          "failed_requests": [
-            "fetch https://brunhild.challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/i/a202d491de7dcf2a/NiMRUqsv6PV20u84o3bHINVd3y3kRKbqg_Z_suSFlMk-1784895117-1.2.1.1-Jv0lqHTAf1SerrjmlWagIKpiv5jmXJOyBpwpcGi1V_nXHK0toAPOOwoHuX8ZkURf | net::ERR_NAME_NOT_RESOLVED",
-            "image https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/ci/a202d491de7dcf2a/1784895117375/_-Mmd51GRlx0b7r | net::ERR_FAILED"
-          ],
-          "http_errors": [
-            "403 https://socolive.watch/truc-tiep/jaro-vs-sjk-seinajoen-24-07-2026-2300?blv=256080",
-            "401 https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/pat/a202d491de7dcf2a/1784895117375/f8a00beaa28a9db657ba0c0ca4b0166e887c42dcd4b1fbd50181c0cd234cb9e9/9BejCfnuWot4oNr"
-          ]
-        },
-        {
-          "url": "https://socolive.watch/truc-tiep/jaro-vs-sjk-seinajoen-24-07-2026-2300?blv=552832",
-          "blv": "LOGAN",
-          "blv_id": "552832",
-          "streams": [],
-          "stream_sources": {},
-          "stream_first_seen": [],
-          "discovered_blv_ids": [],
-          "diagnostics": {
-            "url": "https://socolive.watch/truc-tiep/jaro-vs-sjk-seinajoen-24-07-2026-2300?blv=552832",
-            "title": "Chờ một chút...",
-            "h1": "socolive.watch",
-            "ready_state": "complete",
-            "visibility_state": "visible",
-            "hidden": false,
-            "video_count": 0,
-            "iframe_count": 0,
-            "body_sample": "socolive.watch Thực hiện xác minh bảo mật Trang web này sử dụng dịch vụ bảo mật để chống bot độc hại. Trang này hiển thị trong khi trang web xác minh bạn không phải là bot. Ray ID: a202d4eede376802 Hiệu suất và Tính bảo mật của Cloudflare Quyền riêng tư",
-            "harvest_rounds": 0,
-            "harvest_window_seconds": 0.622,
-            "main_status": 403,
-            "harvested_stream_count": 0,
-            "harvested_blv_ids": [],
-            "scan_mode": "browser-event",
-            "elapsed_seconds": 13.157
-          },
-          "http_probe": {
-            "enabled": false,
-            "status": null,
-            "elapsed_seconds": 0.0,
-            "error": ""
-          },
-          "errors": [
-            "console/error: Failed to load resource: the server responded with a status of 403 ()",
-            "console/warning: No available adapters.",
-            "console/warning: No available adapters.",
-            "console/warning: OTS parsing error: Size of decompressed WOFF 2.0 is less than compressed size",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: %c%d font-size:0;color:transparent NaN",
-            "console/error: %c%d font-size:0;color:transparent NaN",
-            "console/warning: %c%d font-size:0;color:transparent NaN",
-            "console/warning: %c%d font-size:0;color:transparent NaN"
-          ],
-          "failed_requests": [
-            "fetch https://brunhild.challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/i/a202d4f0abd4cf2a/8cPnfTRPNUVAY3SsvkmeXsUNWwRO7T_pIX9WMIuPDkM-1784895132-1.2.1.1-QON4fEt41XjRkUAAAxihGGmOvxohwD3lBkTLl7RlNEjyC9HLeDfuAyt3Bg_Ut8TO | net::ERR_NAME_NOT_RESOLVED",
-            "image https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/ci/a202d4f0abd4cf2a/1784895132534/kG7SjUdWzDNMGTI | net::ERR_FAILED"
-          ],
-          "http_errors": [
-            "403 https://socolive.watch/truc-tiep/jaro-vs-sjk-seinajoen-24-07-2026-2300?blv=552832",
-            "401 https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/pat/a202d4f0abd4cf2a/1784895132534/f51c7ac35aead6a5a07409b73a5c15aff29e98af06ad1e823ffab05dcbff3a67/WrxXLB4jTWbl5-y"
-          ]
-        },
-        {
-          "url": "https://socolive.watch/truc-tiep/jaro-vs-sjk-seinajoen-24-07-2026-2300?blv=536185",
-          "blv": "A WIN",
-          "blv_id": "536185",
-          "streams": [],
-          "stream_sources": {},
-          "stream_first_seen": [],
-          "discovered_blv_ids": [],
-          "diagnostics": {
-            "url": "https://socolive.watch/truc-tiep/jaro-vs-sjk-seinajoen-24-07-2026-2300?blv=536185",
-            "title": "Chờ một chút...",
-            "h1": "socolive.watch",
-            "ready_state": "complete",
-            "visibility_state": "visible",
-            "hidden": false,
-            "video_count": 0,
-            "iframe_count": 0,
-            "body_sample": "socolive.watch Thực hiện xác minh bảo mật Trang web này sử dụng dịch vụ bảo mật để chống bot độc hại. Trang này hiển thị trong khi trang web xác minh bạn không phải là bot. Ray ID: a202d54dae906802 Hiệu suất và Tính bảo mật của Cloudflare Quyền riêng tư",
-            "harvest_rounds": 0,
-            "harvest_window_seconds": 0.623,
-            "main_status": 403,
-            "harvested_stream_count": 0,
-            "harvested_blv_ids": [],
-            "scan_mode": "browser-event",
-            "elapsed_seconds": 13.16
-          },
-          "http_probe": {
-            "enabled": false,
-            "status": null,
-            "elapsed_seconds": 0.0,
-            "error": ""
-          },
-          "errors": [
-            "console/error: Failed to load resource: the server responded with a status of 403 ()",
-            "console/warning: No available adapters.",
-            "console/warning: No available adapters.",
-            "console/warning: OTS parsing error: Size of decompressed WOFF 2.0 is less than compressed size",
-            "console/error: %c%d font-size:0;color:transparent NaN",
-            "console/error: %c%d font-size:0;color:transparent NaN",
-            "console/warning: %c%d font-size:0;color:transparent NaN",
-            "console/warning: %c%d font-size:0;color:transparent NaN",
-            "console/error: Failed to load resource: net::ERR_FAILED"
-          ],
-          "failed_requests": [
-            "fetch https://brunhild.challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/i/a202d54f7b47cf2a/_XkUJfvxI5wgB18d6Ck5VGgkIpui1JdQ8NPARw4gZho-1784895147-1.2.1.1-D7KD2aL1XV27QHgVW0RsI1ERIcRhOjA1LaDj5c1lxfZOrIo_ZbnsG5gHMkSrxjPj | net::ERR_NAME_NOT_RESOLVED",
-            "image https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/ci/a202d54f7b47cf2a/1784895147714/pggRircrygfe-3f | net::ERR_FAILED"
-          ],
-          "http_errors": [
-            "403 https://socolive.watch/truc-tiep/jaro-vs-sjk-seinajoen-24-07-2026-2300?blv=536185",
-            "401 https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/pat/a202d54f7b47cf2a/1784895147713/564957ceddf797b5b1c6f574f29bac0629f2cc29c14adf746d50699e90d6f948/wTDcIuFyWFz3g0n"
-          ]
-        },
-        {
-          "url": "https://socolive.watch/truc-tiep/jaro-vs-sjk-seinajoen-24-07-2026-2300?blv=532081",
-          "blv": "ALEX",
-          "blv_id": "532081",
-          "streams": [],
-          "stream_sources": {},
-          "stream_first_seen": [],
-          "discovered_blv_ids": [],
-          "diagnostics": {
-            "url": "https://socolive.watch/truc-tiep/jaro-vs-sjk-seinajoen-24-07-2026-2300?blv=532081",
-            "title": "Chờ một chút...",
-            "h1": "socolive.watch",
-            "ready_state": "complete",
-            "visibility_state": "visible",
-            "hidden": false,
-            "video_count": 0,
-            "iframe_count": 0,
-            "body_sample": "socolive.watch Thực hiện xác minh bảo mật Trang web này sử dụng dịch vụ bảo mật để chống bot độc hại. Trang này hiển thị trong khi trang web xác minh bạn không phải là bot. Ray ID: a202d5ac8f016802 Hiệu suất và Tính bảo mật của Cloudflare Quyền riêng tư",
-            "harvest_rounds": 0,
-            "harvest_window_seconds": 0.622,
-            "main_status": 403,
-            "harvested_stream_count": 0,
-            "harvested_blv_ids": [],
-            "scan_mode": "browser-event",
-            "elapsed_seconds": 13.133
-          },
-          "http_probe": {
-            "enabled": false,
-            "status": null,
-            "elapsed_seconds": 0.0,
-            "error": ""
-          },
-          "errors": [
-            "console/error: Failed to load resource: the server responded with a status of 403 ()",
-            "console/warning: No available adapters.",
-            "console/warning: No available adapters.",
-            "console/error: %c%d font-size:0;color:transparent NaN",
-            "console/error: %c%d font-size:0;color:transparent NaN",
-            "console/warning: %c%d font-size:0;color:transparent NaN",
-            "console/warning: %c%d font-size:0;color:transparent NaN",
-            "console/warning: OTS parsing error: Size of decompressed WOFF 2.0 is less than compressed size",
-            "console/error: Failed to load resource: net::ERR_FAILED"
-          ],
-          "failed_requests": [
-            "fetch https://brunhild.challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/i/a202d5ae3e7fcf2a/ffHjOZyHVVzix5ESGfskHIstIy.ZLgk_6aScYaEG0vw-1784895162-1.2.1.1-N51nEF.FSx61.xax.xffd09v9qbQU3YrwfbTb6km4Icx2HkNrMDwPFcU1yGFj5Ws | net::ERR_NAME_NOT_RESOLVED",
-            "image https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/ci/a202d5ae3e7fcf2a/1784895162852/CQuwhN0XqYHSMCz | net::ERR_FAILED"
-          ],
-          "http_errors": [
-            "403 https://socolive.watch/truc-tiep/jaro-vs-sjk-seinajoen-24-07-2026-2300?blv=532081",
-            "401 https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/pat/a202d5ae3e7fcf2a/1784895162852/ee4a97b4b9c25acafbfc85becac63226d4e3c283860010dbd2e9f7dd02ab6d6f/IjqY4czXAxy40En"
-          ]
-        },
-        {
-          "url": "https://socolive.watch/truc-tiep/jaro-vs-sjk-seinajoen-24-07-2026-2300?blv=256080",
-          "blv": "CUỘI",
-          "blv_id": "256080",
-          "streams": [
-            "https://pull.niues.live/live/stream-256080_lhd.m3u8?auth_key=1784899495-0-0-9270c5738c7fae55c61bfd4a84291e04"
-          ],
-          "stream_sources": {
-            "https://pull.niues.live/live/stream-256080_lhd.m3u8?auth_key=1784899495-0-0-9270c5738c7fae55c61bfd4a84291e04": [
-              "final-no-stream-scan",
-              "harvest-final"
-            ]
-          },
-          "stream_first_seen": [
-            "https://pull.niues.live/live/stream-256080_lhd.m3u8?auth_key=1784899495-0-0-9270c5738c7fae55c61bfd4a84291e04"
-          ],
-          "discovered_blv_ids": [
-            "256080"
-          ],
-          "diagnostics": {
-            "url": "https://socolive.watch/truc-tiep/jaro-vs-sjk-seinajoen-24-07-2026-2300/?blv=256080",
-            "title": "Xem trực tiếp bóng đá Jaro vs SJK Seinajoen | 23:00 ngày 24/07/2026",
-            "h1": "Trực tiếp bóng đá Socolive Jaro vs SJK Seinajoen lúc 23:00 ngày 24/07/2026",
-            "ready_state": "complete",
-            "visibility_state": "visible",
-            "hidden": false,
-            "video_count": 0,
-            "iframe_count": 1,
-            "body_sample": "Skip to content Socolive Bảng xếp hạng Lịch thi đấu Kết quả bóng đá Tin thể thao Trực tiếp bóng đá Socolive Jaro vs SJK Seinajoen lúc 23:00 ngày 24/07/2026 FIN D1 Jaro 23:00 24/07 SJK Seinajoen Trận đấu sẽ bắt đầu sau Ngày0 : Giờ3 : Phút32 : Giây38 Trận đấu chưa bắt đầu CUỘI LOGAN A WIN ALEX Chat Thống kê Đội hình Diễn Biến Bảng XH \" \" cuong 123: gôn chụp ngu vl Sốt vang: thủ môn ngu vl vạn sự như ý.: ko thích hdc cứ tài phang Minhmom^: gôn đứng g ngu thế 😂 Mr Quang 628: chọc khe quả đẳng cấp đây phuonghuy68: gol polpot ngu thế cuong 123: đúng là trình độ ao làng NB14: trận việt nam chấp 4 trái ghê v ta Anh Mã: môn bắt ngu vcc Admin Sóc Thăng Hoa: ❤️️Giới thiệu KM đến 600k tại Bsport Link ĐK: https://www.bty6136.com , https://www.bty1282.com/ LH SÓC NHẬN KM NẠP 3600k, KM NGÀY cực hấp dẫn❤️️️️️️ Mã BUFA Sóc: albqws ✨Zalo 0928 769 478 TELE Tele: https://t.me/hoabty1281 . Minhmom^: cày g đi vạn sự như ý.: mưa bàn cho mà xem ngồi đấy mà chê luânko: nó k kém thì làm sao ăn đc cái tài 0.75 h1 Phunguyenvinh20: nhà cái cho đặt ở vn là ae khoẻ Sói Ngây Thơ: rung tiếp vạn sự như ý.: cam trình độ ko ăn thua đâu chẳng qua đc cái mả nhập tịch Minhmom^: g2 sonnnguyen: cam này ngu thật Chunghp9",
-            "harvest_rounds": 0,
-            "harvest_window_seconds": 0.638,
-            "main_status": 200,
-            "harvested_stream_count": 1,
-            "harvested_blv_ids": [
-              "256080"
-            ],
-            "scan_mode": "browser-event",
-            "elapsed_seconds": 16.478
-          },
-          "http_probe": {
-            "enabled": false,
-            "status": null,
-            "elapsed_seconds": 0.0,
-            "error": ""
-          },
-          "errors": [
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED"
-          ],
-          "failed_requests": [
-            "stylesheet https://socolive.watch/wp-content/plugins/stream-player-plugin/assets/dist/main.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolive.watch/wp-content/plugins/stream-player-plugin/assets/dist/customize.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolive.watch/wp-content/plugins/user-action-plugin/assets/css/auth.css?ver=458 | net::ERR_FAILED",
-            "stylesheet https://socolive.watch/wp-content/plugins/user-action-plugin/assets/css/chat.css?ver=639 | net::ERR_FAILED",
-            "stylesheet https://socolive.watch/wp-content/plugins/user-action-plugin/assets/css/chat(1).css?ver=298 | net::ERR_FAILED",
-            "stylesheet https://socolive.watch/wp-content/plugins/user-action-plugin/assets/css/toast.css?ver=762 | net::ERR_FAILED",
-            "stylesheet https://socolive.watch/wp-content/themes/flatsome/assets/css/flatsome.css?ver=3.18.2 | net::ERR_FAILED",
-            "stylesheet https://socolive.watch/wp-content/themes/flatsome-child/style.css?ver=3.0 | net::ERR_FAILED",
-            "stylesheet https://fonts.googleapis.com/css?family=Roboto:regular,700,regular,700,regular&display=swap&ver=3.9 | net::ERR_FAILED",
-            "stylesheet https://socolive.watch/wp-content/plugins/stream-player-plugin/assets/css/countdown.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolive.watch/wp-content/plugins/stream-player-plugin/assets/css/match.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolive.watch/wp-content/plugins/stream-player-plugin/assets/css/livescore.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolive.watch/wp-content/plugins/stream-player-plugin/assets/css/style_custom.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolive.watch/wp-content/plugins/stream-player-plugin/assets/css/effect/running-border.css?ver=2.8.5 | net::ERR_FAILED",
-            "stylesheet https://socolive.watch/wp-content/plugins/stream-player-plugin/assets/css/option/option-6.css?ver=2.8.5 | net::ERR_FAILED"
-          ],
-          "http_errors": [
-            "403 https://socolive.watch/wp-admin/admin-ajax.php?action=scl_realtime&sport=1"
-          ]
-        },
-        {
-          "url": "https://socolive.watch/truc-tiep/jaro-vs-sjk-seinajoen-24-07-2026-2300?blv=552832",
-          "blv": "LOGAN",
-          "blv_id": "552832",
-          "streams": [],
-          "stream_sources": {},
-          "stream_first_seen": [],
-          "discovered_blv_ids": [],
-          "diagnostics": {
-            "url": "https://socolive.watch/truc-tiep/jaro-vs-sjk-seinajoen-24-07-2026-2300?blv=552832",
-            "title": "Chờ một chút...",
-            "h1": "socolive.watch",
-            "ready_state": "complete",
-            "visibility_state": "visible",
-            "hidden": false,
-            "video_count": 0,
-            "iframe_count": 0,
-            "body_sample": "socolive.watch Thực hiện xác minh bảo mật Trang web này sử dụng dịch vụ bảo mật để chống bot độc hại. Trang này hiển thị trong khi trang web xác minh bạn không phải là bot. Ray ID: a202eb328cd86163 Hiệu suất và Tính bảo mật của Cloudflare Quyền riêng tư",
-            "harvest_rounds": 0,
-            "harvest_window_seconds": 0.624,
-            "main_status": 403,
-            "harvested_stream_count": 0,
-            "harvested_blv_ids": [],
-            "scan_mode": "browser-event",
-            "elapsed_seconds": 13.141
-          },
-          "http_probe": {
-            "enabled": false,
-            "status": null,
-            "elapsed_seconds": 0.0,
-            "error": ""
-          },
-          "errors": [
-            "console/error: Failed to load resource: the server responded with a status of 403 ()",
-            "console/warning: No available adapters.",
-            "console/warning: No available adapters.",
-            "console/warning: OTS parsing error: Size of decompressed WOFF 2.0 is less than compressed size",
-            "console/warning: [.WebGL-0x13bc026f0c00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
-            "console/warning: [.WebGL-0x13bc026f0c00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
-            "console/error: %c%d font-size:0;color:transparent NaN",
-            "console/error: %c%d font-size:0;color:transparent NaN",
-            "console/warning: %c%d font-size:0;color:transparent NaN",
-            "console/warning: %c%d font-size:0;color:transparent NaN",
-            "console/error: Failed to load resource: net::ERR_FAILED"
-          ],
-          "failed_requests": [
-            "fetch https://brunhild.challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/i/a202eb345a1efca8/8KdVhR90Ub5kfLDm8rdFy_hX7WrcsdmthmktF4Sk_.k-1784896044-1.2.1.1-CYX5adpYQox1ZwnGXuhyomZTJ2U1EqsfvLs1K62JYAINPiviqdlhZwiFaWYDGNh2 | net::ERR_NAME_NOT_RESOLVED",
-            "image https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/ci/a202eb345a1efca8/1784896044469/wP-osPjiSzvDDEH | net::ERR_FAILED"
-          ],
-          "http_errors": [
-            "403 https://socolive.watch/truc-tiep/jaro-vs-sjk-seinajoen-24-07-2026-2300?blv=552832",
-            "401 https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/pat/a202eb345a1efca8/1784896044469/64ffa103b166cabb9af30fa244bc7c6ae3757a0fb6ed471f12e4007ba74eb81b/wuuip0LbFgTKmiw"
-          ]
-        },
-        {
-          "url": "https://socolive.watch/truc-tiep/jaro-vs-sjk-seinajoen-24-07-2026-2300?blv=536185",
-          "blv": "A WIN",
-          "blv_id": "536185",
-          "streams": [],
-          "stream_sources": {},
-          "stream_first_seen": [],
-          "discovered_blv_ids": [],
-          "diagnostics": {
-            "url": "https://socolive.watch/truc-tiep/jaro-vs-sjk-seinajoen-24-07-2026-2300?blv=536185",
-            "title": "Chờ một chút...",
-            "h1": "socolive.watch",
-            "ready_state": "complete",
-            "visibility_state": "visible",
-            "hidden": false,
-            "video_count": 0,
-            "iframe_count": 0,
-            "body_sample": "socolive.watch Thực hiện xác minh bảo mật Trang web này sử dụng dịch vụ bảo mật để chống bot độc hại. Trang này hiển thị trong khi trang web xác minh bạn không phải là bot. Ray ID: a202eb912dda6163 Hiệu suất và Tính bảo mật của Cloudflare Quyền riêng tư",
-            "harvest_rounds": 0,
-            "harvest_window_seconds": 0.621,
-            "main_status": 403,
-            "harvested_stream_count": 0,
-            "harvested_blv_ids": [],
-            "scan_mode": "browser-event",
-            "elapsed_seconds": 13.124
-          },
-          "http_probe": {
-            "enabled": false,
-            "status": null,
-            "elapsed_seconds": 0.0,
-            "error": ""
-          },
-          "errors": [
-            "console/error: Failed to load resource: the server responded with a status of 403 ()",
-            "console/warning: No available adapters.",
-            "console/warning: No available adapters.",
-            "console/warning: OTS parsing error: Size of decompressed WOFF 2.0 is less than compressed size",
-            "console/error: %c%d font-size:0;color:transparent NaN",
-            "console/error: %c%d font-size:0;color:transparent NaN",
-            "console/warning: %c%d font-size:0;color:transparent NaN",
-            "console/warning: %c%d font-size:0;color:transparent NaN",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/warning: [.WebGL-0x13bc02269000]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
-            "console/warning: [.WebGL-0x13bc02269000]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels (this message will no longer repeat)"
-          ],
-          "failed_requests": [
-            "fetch https://brunhild.challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/i/a202eb92deeffca8/hHVShJb8aaCBSpKQUrApbiIrL9P.2n1C67LcXNuPwy0-1784896059-1.2.1.1-zRaNJqp1NHoycZTJx7g0GL.v6whj3RnwfjQdh2p.22sNAN.nAbczn2XzsuFcmi2q | net::ERR_NAME_NOT_RESOLVED",
-            "image https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/ci/a202eb92deeffca8/1784896059582/SUIL05ihZnrM3fc | net::ERR_FAILED"
-          ],
-          "http_errors": [
-            "403 https://socolive.watch/truc-tiep/jaro-vs-sjk-seinajoen-24-07-2026-2300?blv=536185",
-            "401 https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/pat/a202eb92deeffca8/1784896059582/32311b24fc1b14fa61d3cfe72d8cd4b8713540cc3c8052bb2e5a67fb8b1f01f6/34dRdlv1ytF1BOF"
-          ]
-        },
-        {
-          "url": "https://socolive.watch/truc-tiep/jaro-vs-sjk-seinajoen-24-07-2026-2300?blv=532081",
-          "blv": "ALEX",
-          "blv_id": "532081",
-          "streams": [],
-          "stream_sources": {},
-          "stream_first_seen": [],
-          "discovered_blv_ids": [],
-          "diagnostics": {
-            "url": "https://socolive.watch/truc-tiep/jaro-vs-sjk-seinajoen-24-07-2026-2300?blv=532081",
-            "title": "Chờ một chút...",
-            "h1": "socolive.watch",
-            "ready_state": "complete",
-            "visibility_state": "visible",
-            "hidden": false,
-            "video_count": 0,
-            "iframe_count": 0,
-            "body_sample": "socolive.watch Thực hiện xác minh bảo mật Trang web này sử dụng dịch vụ bảo mật để chống bot độc hại. Trang này hiển thị trong khi trang web xác minh bạn không phải là bot. Ray ID: a202ebefce666163 Hiệu suất và Tính bảo mật của Cloudflare Quyền riêng tư",
-            "harvest_rounds": 0,
-            "harvest_window_seconds": 0.621,
-            "main_status": 403,
-            "harvested_stream_count": 0,
-            "harvested_blv_ids": [],
-            "scan_mode": "browser-event",
-            "elapsed_seconds": 13.12
-          },
-          "http_probe": {
-            "enabled": false,
-            "status": null,
-            "elapsed_seconds": 0.0,
-            "error": ""
-          },
-          "errors": [
-            "console/error: Failed to load resource: the server responded with a status of 403 ()",
-            "console/warning: No available adapters.",
-            "console/warning: No available adapters.",
-            "console/error: %c%d font-size:0;color:transparent NaN",
-            "console/error: %c%d font-size:0;color:transparent NaN",
-            "console/warning: %c%d font-size:0;color:transparent NaN",
-            "console/warning: %c%d font-size:0;color:transparent NaN",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/warning: OTS parsing error: Size of decompressed WOFF 2.0 is less than compressed size"
-          ],
-          "failed_requests": [
-            "fetch https://brunhild.challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/i/a202ebf18a6afca8/ud1l.zQhMzVnXwPn_Ai1X._JZSTjw_qup9K9T.2GlDA-1784896074-1.2.1.1-ORf9OAM8IJSVpCAoAI2gjDzj2k4KxOzNPHK4H_QWBYQTQyAf9WnRcnd8Lo.XJHoG | net::ERR_NAME_NOT_RESOLVED",
-            "image https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/ci/a202ebf18a6afca8/1784896074735/DchJyOM9pgm5lZS | net::ERR_FAILED"
-          ],
-          "http_errors": [
-            "403 https://socolive.watch/truc-tiep/jaro-vs-sjk-seinajoen-24-07-2026-2300?blv=532081",
-            "401 https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/pat/a202ebf18a6afca8/1784896074734/676de60ae2a022f22b7300f56634ce27b8e247fb49d130620b252d84b71aa4ea/6fU7GiLhYxhKo8w"
-          ]
-        }
-      ],
-      "attempted_room_ids": [
-        "256080",
-        "532081",
-        "536185",
-        "552832"
-      ],
-      "coverage": {
-        "found_streams": 0,
-        "found_blv_ids": [],
-        "goal": 8,
-        "source_goal_reached": false,
-        "room_queue_complete": true,
-        "complete": true,
-        "max_streams_per_blv": 2,
-        "total_explicit_blv_rooms": 4,
-        "pending_room_keys": [],
-        "room_progress": {
-          "256080": {
-            "key": "256080",
-            "url": "https://socolive.watch/truc-tiep/jaro-vs-sjk-seinajoen-24-07-2026-2300?blv=256080",
-            "blv": "CUỘI",
-            "blv_id": "256080",
-            "status": "success",
-            "attempts": 2,
-            "attempts_total": 2,
-            "ever_attempted": true,
-            "valid_stream_ever_found": true,
-            "needs_token_refresh": true,
-            "completion_reason": "valid_stream_seen_earlier",
-            "rate_limit_hits": 0,
-            "last_http_status": 200,
-            "last_stream_count": 0,
-            "last_error": "Token cũ đã hết hạn; giữ nguyên attempts_total và trạng thái hoàn tất của BLV."
-          },
-          "552832": {
-            "key": "552832",
-            "url": "https://socolive.watch/truc-tiep/jaro-vs-sjk-seinajoen-24-07-2026-2300?blv=552832",
-            "blv": "LOGAN",
-            "blv_id": "552832",
-            "status": "exhausted",
-            "attempts": 2,
-            "attempts_total": 2,
-            "ever_attempted": true,
-            "valid_stream_ever_found": false,
-            "needs_token_refresh": false,
-            "completion_reason": "no_valid_stream_after_max_attempts",
-            "rate_limit_hits": 0,
-            "last_http_status": 403,
-            "last_stream_count": 0,
-            "last_error": "console/error: Failed to load resource: the server responded with a status of 403 (); console/warning: No available adapters.; console/warning: No available adapters."
-          },
-          "536185": {
-            "key": "536185",
-            "url": "https://socolive.watch/truc-tiep/jaro-vs-sjk-seinajoen-24-07-2026-2300?blv=536185",
-            "blv": "A WIN",
-            "blv_id": "536185",
-            "status": "exhausted",
-            "attempts": 2,
-            "attempts_total": 2,
-            "ever_attempted": true,
-            "valid_stream_ever_found": false,
-            "needs_token_refresh": false,
-            "completion_reason": "no_valid_stream_after_max_attempts",
-            "rate_limit_hits": 0,
-            "last_http_status": 403,
-            "last_stream_count": 0,
-            "last_error": "console/error: Failed to load resource: the server responded with a status of 403 (); console/warning: No available adapters.; console/warning: No available adapters."
-          },
-          "532081": {
-            "key": "532081",
-            "url": "https://socolive.watch/truc-tiep/jaro-vs-sjk-seinajoen-24-07-2026-2300?blv=532081",
-            "blv": "ALEX",
-            "blv_id": "532081",
-            "status": "exhausted",
-            "attempts": 2,
-            "attempts_total": 2,
-            "ever_attempted": true,
-            "valid_stream_ever_found": false,
-            "needs_token_refresh": false,
-            "completion_reason": "no_valid_stream_after_max_attempts",
-            "rate_limit_hits": 0,
-            "last_http_status": 403,
-            "last_stream_count": 0,
-            "last_error": "console/error: Failed to load resource: the server responded with a status of 403 (); console/warning: No available adapters.; console/warning: No available adapters."
-          },
-          "__base__": {
-            "key": "__base__",
-            "url": "https://socolive.watch/truc-tiep/jaro-vs-sjk-seinajoen-24-07-2026-2300",
-            "blv": "XEM NGAY",
-            "blv_id": "",
-            "status": "pending",
-            "attempts": 0,
-            "attempts_total": 0,
-            "ever_attempted": false,
-            "valid_stream_ever_found": false,
-            "needs_token_refresh": false,
-            "completion_reason": "",
-            "rate_limit_hits": 0,
-            "last_http_status": null,
-            "last_stream_count": 0,
-            "last_error": ""
-          }
-        }
-      },
-      "errors": [],
-      "room_progress": {
-        "256080": {
-          "key": "256080",
-          "url": "https://socolive.watch/truc-tiep/jaro-vs-sjk-seinajoen-24-07-2026-2300?blv=256080",
-          "blv": "CUỘI",
-          "blv_id": "256080",
-          "status": "success",
-          "attempts": 2,
-          "attempts_total": 2,
-          "ever_attempted": true,
-          "valid_stream_ever_found": true,
-          "needs_token_refresh": true,
-          "completion_reason": "valid_stream_seen_earlier",
-          "rate_limit_hits": 0,
-          "last_http_status": 200,
-          "last_stream_count": 0,
-          "last_error": "Token cũ đã hết hạn; giữ nguyên attempts_total và trạng thái hoàn tất của BLV."
-        },
-        "552832": {
-          "key": "552832",
-          "url": "https://socolive.watch/truc-tiep/jaro-vs-sjk-seinajoen-24-07-2026-2300?blv=552832",
-          "blv": "LOGAN",
-          "blv_id": "552832",
-          "status": "exhausted",
-          "attempts": 2,
-          "attempts_total": 2,
-          "ever_attempted": true,
-          "valid_stream_ever_found": false,
-          "needs_token_refresh": false,
-          "completion_reason": "no_valid_stream_after_max_attempts",
-          "rate_limit_hits": 0,
-          "last_http_status": 403,
-          "last_stream_count": 0,
-          "last_error": "console/error: Failed to load resource: the server responded with a status of 403 (); console/warning: No available adapters.; console/warning: No available adapters."
-        },
-        "536185": {
-          "key": "536185",
-          "url": "https://socolive.watch/truc-tiep/jaro-vs-sjk-seinajoen-24-07-2026-2300?blv=536185",
-          "blv": "A WIN",
-          "blv_id": "536185",
-          "status": "exhausted",
-          "attempts": 2,
-          "attempts_total": 2,
-          "ever_attempted": true,
-          "valid_stream_ever_found": false,
-          "needs_token_refresh": false,
-          "completion_reason": "no_valid_stream_after_max_attempts",
-          "rate_limit_hits": 0,
-          "last_http_status": 403,
-          "last_stream_count": 0,
-          "last_error": "console/error: Failed to load resource: the server responded with a status of 403 (); console/warning: No available adapters.; console/warning: No available adapters."
-        },
-        "532081": {
-          "key": "532081",
-          "url": "https://socolive.watch/truc-tiep/jaro-vs-sjk-seinajoen-24-07-2026-2300?blv=532081",
-          "blv": "ALEX",
-          "blv_id": "532081",
-          "status": "exhausted",
-          "attempts": 2,
-          "attempts_total": 2,
-          "ever_attempted": true,
-          "valid_stream_ever_found": false,
-          "needs_token_refresh": false,
-          "completion_reason": "no_valid_stream_after_max_attempts",
-          "rate_limit_hits": 0,
-          "last_http_status": 403,
-          "last_stream_count": 0,
-          "last_error": "console/error: Failed to load resource: the server responded with a status of 403 (); console/warning: No available adapters.; console/warning: No available adapters."
-        },
-        "__base__": {
-          "key": "__base__",
-          "url": "https://socolive.watch/truc-tiep/jaro-vs-sjk-seinajoen-24-07-2026-2300",
-          "blv": "XEM NGAY",
-          "blv_id": "",
-          "status": "pending",
-          "attempts": 0,
-          "attempts_total": 0,
-          "ever_attempted": false,
-          "valid_stream_ever_found": false,
-          "needs_token_refresh": false,
-          "completion_reason": "",
-          "rate_limit_hits": 0,
-          "last_http_status": null,
-          "last_stream_count": 0,
-          "last_error": ""
-        }
-      }
-    },
-    {
       "base_url": "https://socolive.watch/truc-tiep/rosenborg-vs-manchester-united-24-07-2026-2300/",
       "raw_title": "Trực tiếp bóng đá Socolive Rosenborg vs Manchester United lúc 23:00 ngày 24/07/2026",
       "home_team": "Rosenborg",
@@ -5268,57 +4765,57 @@
       }
     },
     {
-      "base_url": "https://socolive.watch/truc-tiep/cska-moscow-vs-baltika-kaliningrad-25-07-2026-0000/",
-      "raw_title": "Trực tiếp bóng đá Socolive CSKA Moscow vs Baltika Kaliningrad lúc 00:00 ngày 25/07/2026",
-      "home_team": "CSKA Moscow",
-      "away_team": "Baltika Kaliningrad",
-      "home_logo": "https://sta.vnres.co/file/common/20260721/44765cc4a86c1a9d8d8d76aa3a36dbf5.png",
-      "away_logo": "https://sta.vnres.co/file/common/20260721/5420ff3d703633de2557b3556cffe3d7.png",
-      "time_text": "00:00",
-      "date_text": "25/07",
+      "base_url": "https://socolive.watch/truc-tiep/jaro-vs-sjk-seinajoen-24-07-2026-2300/",
+      "raw_title": "Trực tiếp bóng đá Socolive Jaro vs SJK Seinajoen lúc 23:00 ngày 24/07/2026",
+      "home_team": "Jaro",
+      "away_team": "SJK Seinajoen",
+      "home_logo": "https://sta.vnres.co/file/common/20260715/6fa673295689be792d90afa386ad2492.png",
+      "away_logo": "https://sta.vnres.co/file/common/20260714/8c6a1d4dcdcba22b099e52cec48cb850.png",
+      "time_text": "23:00",
+      "date_text": "24/07",
       "status": "",
-      "card_text": "RUS D1 00:00 25/07 CSKA Moscow VS XEM NGAY Baltika Kaliningrad COZY VOI GIÓ RYO",
+      "card_text": "FIN D1 23:00 24/07 Jaro VS XEM NGAY SJK Seinajoen CUỘI LOGAN A WIN ALEX",
       "rooms": [
         {
-          "url": "https://socolive.watch/truc-tiep/cska-moscow-vs-baltika-kaliningrad-25-07-2026-0000?blv=531989",
-          "blv": "COZY",
-          "blv_id": "531989"
+          "url": "https://socolive.watch/truc-tiep/jaro-vs-sjk-seinajoen-24-07-2026-2300?blv=256080",
+          "blv": "CUỘI",
+          "blv_id": "256080"
         },
         {
-          "url": "https://socolive.watch/truc-tiep/cska-moscow-vs-baltika-kaliningrad-25-07-2026-0000?blv=552716",
-          "blv": "VOI",
-          "blv_id": "552716"
+          "url": "https://socolive.watch/truc-tiep/jaro-vs-sjk-seinajoen-24-07-2026-2300?blv=552832",
+          "blv": "LOGAN",
+          "blv_id": "552832"
         },
         {
-          "url": "https://socolive.watch/truc-tiep/cska-moscow-vs-baltika-kaliningrad-25-07-2026-0000?blv=321443",
-          "blv": "GIÓ",
-          "blv_id": "321443"
+          "url": "https://socolive.watch/truc-tiep/jaro-vs-sjk-seinajoen-24-07-2026-2300?blv=536185",
+          "blv": "A WIN",
+          "blv_id": "536185"
         },
         {
-          "url": "https://socolive.watch/truc-tiep/cska-moscow-vs-baltika-kaliningrad-25-07-2026-0000?blv=602019",
-          "blv": "RYO",
-          "blv_id": "602019"
+          "url": "https://socolive.watch/truc-tiep/jaro-vs-sjk-seinajoen-24-07-2026-2300?blv=532081",
+          "blv": "ALEX",
+          "blv_id": "532081"
         },
         {
-          "url": "https://socolive.watch/truc-tiep/cska-moscow-vs-baltika-kaliningrad-25-07-2026-0000",
+          "url": "https://socolive.watch/truc-tiep/jaro-vs-sjk-seinajoen-24-07-2026-2300",
           "blv": "XEM NGAY",
           "blv_id": ""
         }
       ],
-      "match_name": "CSKA Moscow vs Baltika Kaliningrad",
-      "scheduled_at": "2026-07-25T00:00:00+07:00",
+      "match_name": "Jaro vs SJK Seinajoen",
+      "scheduled_at": "2026-07-24T23:00:00+07:00",
       "streams": [],
       "room_results": [
         {
-          "url": "https://socolive.watch/truc-tiep/cska-moscow-vs-baltika-kaliningrad-25-07-2026-0000?blv=531989",
-          "blv": "COZY",
-          "blv_id": "531989",
+          "url": "https://socolive.watch/truc-tiep/jaro-vs-sjk-seinajoen-24-07-2026-2300?blv=256080",
+          "blv": "CUỘI",
+          "blv_id": "256080",
           "streams": [],
           "stream_sources": {},
           "stream_first_seen": [],
           "discovered_blv_ids": [],
           "diagnostics": {
-            "url": "https://socolive.watch/truc-tiep/cska-moscow-vs-baltika-kaliningrad-25-07-2026-0000?blv=531989",
+            "url": "https://socolive.watch/truc-tiep/jaro-vs-sjk-seinajoen-24-07-2026-2300?blv=256080",
             "title": "Chờ một chút...",
             "h1": "socolive.watch",
             "ready_state": "complete",
@@ -5326,66 +4823,14 @@
             "hidden": false,
             "video_count": 0,
             "iframe_count": 0,
-            "body_sample": "socolive.watch Thực hiện xác minh bảo mật Trang web này sử dụng dịch vụ bảo mật để chống bot độc hại. Trang này hiển thị trong khi trang web xác minh bạn không phải là bot. Ray ID: a2031e5b494ba0e7 Hiệu suất và Tính bảo mật của Cloudflare Quyền riêng tư",
+            "body_sample": "socolive.watch Thực hiện xác minh bảo mật Trang web này sử dụng dịch vụ bảo mật để chống bot độc hại. Trang này hiển thị trong khi trang web xác minh bạn không phải là bot. Ray ID: a202d4900dab6802 Hiệu suất và Tính bảo mật của Cloudflare Quyền riêng tư",
             "harvest_rounds": 0,
-            "harvest_window_seconds": 0.623,
+            "harvest_window_seconds": 0.624,
             "main_status": 403,
             "harvested_stream_count": 0,
             "harvested_blv_ids": [],
             "scan_mode": "browser-event",
-            "elapsed_seconds": 13.126
-          },
-          "http_probe": {
-            "enabled": false,
-            "status": null,
-            "elapsed_seconds": 0.0,
-            "error": ""
-          },
-          "errors": [
-            "console/error: Failed to load resource: the server responded with a status of 403 ()",
-            "console/warning: No available adapters.",
-            "console/warning: No available adapters.",
-            "console/error: %c%d font-size:0;color:transparent NaN",
-            "console/error: %c%d font-size:0;color:transparent NaN",
-            "console/warning: %c%d font-size:0;color:transparent NaN",
-            "console/warning: %c%d font-size:0;color:transparent NaN",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/warning: OTS parsing error: Size of decompressed WOFF 2.0 is less than compressed size"
-          ],
-          "failed_requests": [
-            "fetch https://brunhild.challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/i/a2031e5cfe493e80/mW_2qAwldDOun4MmyWYwpEqLlccE4bXQv3r8FGrtzCM-1784898139-1.2.1.1-cVDbvi5YsQol2cr3YiHfgklRFHP3yxuZgOT.pLP6d9FMXQuBU1k2PDHmaAsjtk0k | net::ERR_NAME_NOT_RESOLVED",
-            "image https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/ci/a2031e5cfe493e80/1784898139933/4m-VhSUiNA4W2-y | net::ERR_FAILED"
-          ],
-          "http_errors": [
-            "403 https://socolive.watch/truc-tiep/cska-moscow-vs-baltika-kaliningrad-25-07-2026-0000?blv=531989",
-            "401 https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/pat/a2031e5cfe493e80/1784898139933/ae2d46080b342e161cb3fc955927efcd3743ae985e19fad6455073d80e44d4cd/SoDngDV2rKFR8pv"
-          ]
-        },
-        {
-          "url": "https://socolive.watch/truc-tiep/cska-moscow-vs-baltika-kaliningrad-25-07-2026-0000?blv=552716",
-          "blv": "VOI",
-          "blv_id": "552716",
-          "streams": [],
-          "stream_sources": {},
-          "stream_first_seen": [],
-          "discovered_blv_ids": [],
-          "diagnostics": {
-            "url": "https://socolive.watch/truc-tiep/cska-moscow-vs-baltika-kaliningrad-25-07-2026-0000?blv=552716",
-            "title": "Chờ một chút...",
-            "h1": "socolive.watch",
-            "ready_state": "complete",
-            "visibility_state": "visible",
-            "hidden": false,
-            "video_count": 0,
-            "iframe_count": 0,
-            "body_sample": "socolive.watch Thực hiện xác minh bảo mật Trang web này sử dụng dịch vụ bảo mật để chống bot độc hại. Trang này hiển thị trong khi trang web xác minh bạn không phải là bot. Ray ID: a2031eb9eb26a0e7 Hiệu suất và Tính bảo mật của Cloudflare Quyền riêng tư",
-            "harvest_rounds": 0,
-            "harvest_window_seconds": 0.623,
-            "main_status": 403,
-            "harvested_stream_count": 0,
-            "harvested_blv_ids": [],
-            "scan_mode": "browser-event",
-            "elapsed_seconds": 13.121
+            "elapsed_seconds": 13.149
           },
           "http_probe": {
             "enabled": false,
@@ -5405,24 +4850,24 @@
             "console/error: Failed to load resource: net::ERR_FAILED"
           ],
           "failed_requests": [
-            "fetch https://brunhild.challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/i/a2031ebb8b8d3e80/RvphOLQLHNm4MeGhseQl9zOtM.Gy6qE1qbOgDoS4HsY-1784898154-1.2.1.1-z.c.t1FN2tkWrf90iElRSWRXnveMVA6M6kiPi2RT.enM7Xx28SP0MdUzV3lziTn3 | net::ERR_NAME_NOT_RESOLVED",
-            "image https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/ci/a2031ebb8b8d3e80/1784898155059/2spsrLDpGn6CRiw | net::ERR_FAILED"
+            "fetch https://brunhild.challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/i/a202d491de7dcf2a/NiMRUqsv6PV20u84o3bHINVd3y3kRKbqg_Z_suSFlMk-1784895117-1.2.1.1-Jv0lqHTAf1SerrjmlWagIKpiv5jmXJOyBpwpcGi1V_nXHK0toAPOOwoHuX8ZkURf | net::ERR_NAME_NOT_RESOLVED",
+            "image https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/ci/a202d491de7dcf2a/1784895117375/_-Mmd51GRlx0b7r | net::ERR_FAILED"
           ],
           "http_errors": [
-            "403 https://socolive.watch/truc-tiep/cska-moscow-vs-baltika-kaliningrad-25-07-2026-0000?blv=552716",
-            "401 https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/pat/a2031ebb8b8d3e80/1784898155058/62aba92a5a78688ccb6f51958d30a1d768f7656dcab6675dadb1b9d1341151a8/z0DMaEC8JmxG35L"
+            "403 https://socolive.watch/truc-tiep/jaro-vs-sjk-seinajoen-24-07-2026-2300?blv=256080",
+            "401 https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/pat/a202d491de7dcf2a/1784895117375/f8a00beaa28a9db657ba0c0ca4b0166e887c42dcd4b1fbd50181c0cd234cb9e9/9BejCfnuWot4oNr"
           ]
         },
         {
-          "url": "https://socolive.watch/truc-tiep/cska-moscow-vs-baltika-kaliningrad-25-07-2026-0000?blv=321443",
-          "blv": "GIÓ",
-          "blv_id": "321443",
+          "url": "https://socolive.watch/truc-tiep/jaro-vs-sjk-seinajoen-24-07-2026-2300?blv=552832",
+          "blv": "LOGAN",
+          "blv_id": "552832",
           "streams": [],
           "stream_sources": {},
           "stream_first_seen": [],
           "discovered_blv_ids": [],
           "diagnostics": {
-            "url": "https://socolive.watch/truc-tiep/cska-moscow-vs-baltika-kaliningrad-25-07-2026-0000?blv=321443",
+            "url": "https://socolive.watch/truc-tiep/jaro-vs-sjk-seinajoen-24-07-2026-2300?blv=552832",
             "title": "Chờ một chút...",
             "h1": "socolive.watch",
             "ready_state": "complete",
@@ -5430,14 +4875,14 @@
             "hidden": false,
             "video_count": 0,
             "iframe_count": 0,
-            "body_sample": "socolive.watch Thực hiện xác minh bảo mật Trang web này sử dụng dịch vụ bảo mật để chống bot độc hại. Trang này hiển thị trong khi trang web xác minh bạn không phải là bot. Ray ID: a2031f187c9ea0e7 Hiệu suất và Tính bảo mật của Cloudflare Quyền riêng tư",
+            "body_sample": "socolive.watch Thực hiện xác minh bảo mật Trang web này sử dụng dịch vụ bảo mật để chống bot độc hại. Trang này hiển thị trong khi trang web xác minh bạn không phải là bot. Ray ID: a202d4eede376802 Hiệu suất và Tính bảo mật của Cloudflare Quyền riêng tư",
             "harvest_rounds": 0,
-            "harvest_window_seconds": 0.624,
+            "harvest_window_seconds": 0.622,
             "main_status": 403,
             "harvested_stream_count": 0,
             "harvested_blv_ids": [],
             "scan_mode": "browser-event",
-            "elapsed_seconds": 13.125
+            "elapsed_seconds": 13.157
           },
           "http_probe": {
             "enabled": false,
@@ -5449,32 +4894,32 @@
             "console/error: Failed to load resource: the server responded with a status of 403 ()",
             "console/warning: No available adapters.",
             "console/warning: No available adapters.",
+            "console/warning: OTS parsing error: Size of decompressed WOFF 2.0 is less than compressed size",
             "console/error: Failed to load resource: net::ERR_FAILED",
             "console/error: %c%d font-size:0;color:transparent NaN",
             "console/error: %c%d font-size:0;color:transparent NaN",
             "console/warning: %c%d font-size:0;color:transparent NaN",
-            "console/warning: %c%d font-size:0;color:transparent NaN",
-            "console/warning: OTS parsing error: Size of decompressed WOFF 2.0 is less than compressed size"
+            "console/warning: %c%d font-size:0;color:transparent NaN"
           ],
           "failed_requests": [
-            "fetch https://brunhild.challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/i/a2031f1a2edf3e80/jt9ch01fhgL1YTPyGIw4jTwtOubYn4N9h4P62uRVtZU-1784898169-1.2.1.1-92oG5v1OqQEtiROyX6L6rQ37l7Tjdh6RFCikxxLNoj1l6MT1W6mChQT6zL6GOiOQ | net::ERR_NAME_NOT_RESOLVED",
-            "image https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/ci/a2031f1a2edf3e80/1784898170202/pf69rhf5V5adveI | net::ERR_FAILED"
+            "fetch https://brunhild.challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/i/a202d4f0abd4cf2a/8cPnfTRPNUVAY3SsvkmeXsUNWwRO7T_pIX9WMIuPDkM-1784895132-1.2.1.1-QON4fEt41XjRkUAAAxihGGmOvxohwD3lBkTLl7RlNEjyC9HLeDfuAyt3Bg_Ut8TO | net::ERR_NAME_NOT_RESOLVED",
+            "image https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/ci/a202d4f0abd4cf2a/1784895132534/kG7SjUdWzDNMGTI | net::ERR_FAILED"
           ],
           "http_errors": [
-            "403 https://socolive.watch/truc-tiep/cska-moscow-vs-baltika-kaliningrad-25-07-2026-0000?blv=321443",
-            "401 https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/pat/a2031f1a2edf3e80/1784898170202/d68c0b66f70c8587fd58a54f0e17bc29d5b2b9cbd153136e2f7ced910ff97da8/Z4HU13oFeFnvckQ"
+            "403 https://socolive.watch/truc-tiep/jaro-vs-sjk-seinajoen-24-07-2026-2300?blv=552832",
+            "401 https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/pat/a202d4f0abd4cf2a/1784895132534/f51c7ac35aead6a5a07409b73a5c15aff29e98af06ad1e823ffab05dcbff3a67/WrxXLB4jTWbl5-y"
           ]
         },
         {
-          "url": "https://socolive.watch/truc-tiep/cska-moscow-vs-baltika-kaliningrad-25-07-2026-0000?blv=602019",
-          "blv": "RYO",
-          "blv_id": "602019",
+          "url": "https://socolive.watch/truc-tiep/jaro-vs-sjk-seinajoen-24-07-2026-2300?blv=536185",
+          "blv": "A WIN",
+          "blv_id": "536185",
           "streams": [],
           "stream_sources": {},
           "stream_first_seen": [],
           "discovered_blv_ids": [],
           "diagnostics": {
-            "url": "https://socolive.watch/truc-tiep/cska-moscow-vs-baltika-kaliningrad-25-07-2026-0000?blv=602019",
+            "url": "https://socolive.watch/truc-tiep/jaro-vs-sjk-seinajoen-24-07-2026-2300?blv=536185",
             "title": "Chờ một chút...",
             "h1": "socolive.watch",
             "ready_state": "complete",
@@ -5482,7 +4927,199 @@
             "hidden": false,
             "video_count": 0,
             "iframe_count": 0,
-            "body_sample": "socolive.watch Thực hiện xác minh bảo mật Trang web này sử dụng dịch vụ bảo mật để chống bot độc hại. Trang này hiển thị trong khi trang web xác minh bạn không phải là bot. Ray ID: a2031f771e08a0e7 Hiệu suất và Tính bảo mật của Cloudflare Quyền riêng tư",
+            "body_sample": "socolive.watch Thực hiện xác minh bảo mật Trang web này sử dụng dịch vụ bảo mật để chống bot độc hại. Trang này hiển thị trong khi trang web xác minh bạn không phải là bot. Ray ID: a202d54dae906802 Hiệu suất và Tính bảo mật của Cloudflare Quyền riêng tư",
+            "harvest_rounds": 0,
+            "harvest_window_seconds": 0.623,
+            "main_status": 403,
+            "harvested_stream_count": 0,
+            "harvested_blv_ids": [],
+            "scan_mode": "browser-event",
+            "elapsed_seconds": 13.16
+          },
+          "http_probe": {
+            "enabled": false,
+            "status": null,
+            "elapsed_seconds": 0.0,
+            "error": ""
+          },
+          "errors": [
+            "console/error: Failed to load resource: the server responded with a status of 403 ()",
+            "console/warning: No available adapters.",
+            "console/warning: No available adapters.",
+            "console/warning: OTS parsing error: Size of decompressed WOFF 2.0 is less than compressed size",
+            "console/error: %c%d font-size:0;color:transparent NaN",
+            "console/error: %c%d font-size:0;color:transparent NaN",
+            "console/warning: %c%d font-size:0;color:transparent NaN",
+            "console/warning: %c%d font-size:0;color:transparent NaN",
+            "console/error: Failed to load resource: net::ERR_FAILED"
+          ],
+          "failed_requests": [
+            "fetch https://brunhild.challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/i/a202d54f7b47cf2a/_XkUJfvxI5wgB18d6Ck5VGgkIpui1JdQ8NPARw4gZho-1784895147-1.2.1.1-D7KD2aL1XV27QHgVW0RsI1ERIcRhOjA1LaDj5c1lxfZOrIo_ZbnsG5gHMkSrxjPj | net::ERR_NAME_NOT_RESOLVED",
+            "image https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/ci/a202d54f7b47cf2a/1784895147714/pggRircrygfe-3f | net::ERR_FAILED"
+          ],
+          "http_errors": [
+            "403 https://socolive.watch/truc-tiep/jaro-vs-sjk-seinajoen-24-07-2026-2300?blv=536185",
+            "401 https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/pat/a202d54f7b47cf2a/1784895147713/564957ceddf797b5b1c6f574f29bac0629f2cc29c14adf746d50699e90d6f948/wTDcIuFyWFz3g0n"
+          ]
+        },
+        {
+          "url": "https://socolive.watch/truc-tiep/jaro-vs-sjk-seinajoen-24-07-2026-2300?blv=532081",
+          "blv": "ALEX",
+          "blv_id": "532081",
+          "streams": [],
+          "stream_sources": {},
+          "stream_first_seen": [],
+          "discovered_blv_ids": [],
+          "diagnostics": {
+            "url": "https://socolive.watch/truc-tiep/jaro-vs-sjk-seinajoen-24-07-2026-2300?blv=532081",
+            "title": "Chờ một chút...",
+            "h1": "socolive.watch",
+            "ready_state": "complete",
+            "visibility_state": "visible",
+            "hidden": false,
+            "video_count": 0,
+            "iframe_count": 0,
+            "body_sample": "socolive.watch Thực hiện xác minh bảo mật Trang web này sử dụng dịch vụ bảo mật để chống bot độc hại. Trang này hiển thị trong khi trang web xác minh bạn không phải là bot. Ray ID: a202d5ac8f016802 Hiệu suất và Tính bảo mật của Cloudflare Quyền riêng tư",
+            "harvest_rounds": 0,
+            "harvest_window_seconds": 0.622,
+            "main_status": 403,
+            "harvested_stream_count": 0,
+            "harvested_blv_ids": [],
+            "scan_mode": "browser-event",
+            "elapsed_seconds": 13.133
+          },
+          "http_probe": {
+            "enabled": false,
+            "status": null,
+            "elapsed_seconds": 0.0,
+            "error": ""
+          },
+          "errors": [
+            "console/error: Failed to load resource: the server responded with a status of 403 ()",
+            "console/warning: No available adapters.",
+            "console/warning: No available adapters.",
+            "console/error: %c%d font-size:0;color:transparent NaN",
+            "console/error: %c%d font-size:0;color:transparent NaN",
+            "console/warning: %c%d font-size:0;color:transparent NaN",
+            "console/warning: %c%d font-size:0;color:transparent NaN",
+            "console/warning: OTS parsing error: Size of decompressed WOFF 2.0 is less than compressed size",
+            "console/error: Failed to load resource: net::ERR_FAILED"
+          ],
+          "failed_requests": [
+            "fetch https://brunhild.challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/i/a202d5ae3e7fcf2a/ffHjOZyHVVzix5ESGfskHIstIy.ZLgk_6aScYaEG0vw-1784895162-1.2.1.1-N51nEF.FSx61.xax.xffd09v9qbQU3YrwfbTb6km4Icx2HkNrMDwPFcU1yGFj5Ws | net::ERR_NAME_NOT_RESOLVED",
+            "image https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/ci/a202d5ae3e7fcf2a/1784895162852/CQuwhN0XqYHSMCz | net::ERR_FAILED"
+          ],
+          "http_errors": [
+            "403 https://socolive.watch/truc-tiep/jaro-vs-sjk-seinajoen-24-07-2026-2300?blv=532081",
+            "401 https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/pat/a202d5ae3e7fcf2a/1784895162852/ee4a97b4b9c25acafbfc85becac63226d4e3c283860010dbd2e9f7dd02ab6d6f/IjqY4czXAxy40En"
+          ]
+        },
+        {
+          "url": "https://socolive.watch/truc-tiep/jaro-vs-sjk-seinajoen-24-07-2026-2300?blv=256080",
+          "blv": "CUỘI",
+          "blv_id": "256080",
+          "streams": [
+            "https://pull.niues.live/live/stream-256080_lhd.m3u8?auth_key=1784899495-0-0-9270c5738c7fae55c61bfd4a84291e04"
+          ],
+          "stream_sources": {
+            "https://pull.niues.live/live/stream-256080_lhd.m3u8?auth_key=1784899495-0-0-9270c5738c7fae55c61bfd4a84291e04": [
+              "final-no-stream-scan",
+              "harvest-final"
+            ]
+          },
+          "stream_first_seen": [
+            "https://pull.niues.live/live/stream-256080_lhd.m3u8?auth_key=1784899495-0-0-9270c5738c7fae55c61bfd4a84291e04"
+          ],
+          "discovered_blv_ids": [
+            "256080"
+          ],
+          "diagnostics": {
+            "url": "https://socolive.watch/truc-tiep/jaro-vs-sjk-seinajoen-24-07-2026-2300/?blv=256080",
+            "title": "Xem trực tiếp bóng đá Jaro vs SJK Seinajoen | 23:00 ngày 24/07/2026",
+            "h1": "Trực tiếp bóng đá Socolive Jaro vs SJK Seinajoen lúc 23:00 ngày 24/07/2026",
+            "ready_state": "complete",
+            "visibility_state": "visible",
+            "hidden": false,
+            "video_count": 0,
+            "iframe_count": 1,
+            "body_sample": "Skip to content Socolive Bảng xếp hạng Lịch thi đấu Kết quả bóng đá Tin thể thao Trực tiếp bóng đá Socolive Jaro vs SJK Seinajoen lúc 23:00 ngày 24/07/2026 FIN D1 Jaro 23:00 24/07 SJK Seinajoen Trận đấu sẽ bắt đầu sau Ngày0 : Giờ3 : Phút32 : Giây38 Trận đấu chưa bắt đầu CUỘI LOGAN A WIN ALEX Chat Thống kê Đội hình Diễn Biến Bảng XH \" \" cuong 123: gôn chụp ngu vl Sốt vang: thủ môn ngu vl vạn sự như ý.: ko thích hdc cứ tài phang Minhmom^: gôn đứng g ngu thế 😂 Mr Quang 628: chọc khe quả đẳng cấp đây phuonghuy68: gol polpot ngu thế cuong 123: đúng là trình độ ao làng NB14: trận việt nam chấp 4 trái ghê v ta Anh Mã: môn bắt ngu vcc Admin Sóc Thăng Hoa: ❤️️Giới thiệu KM đến 600k tại Bsport Link ĐK: https://www.bty6136.com , https://www.bty1282.com/ LH SÓC NHẬN KM NẠP 3600k, KM NGÀY cực hấp dẫn❤️️️️️️ Mã BUFA Sóc: albqws ✨Zalo 0928 769 478 TELE Tele: https://t.me/hoabty1281 . Minhmom^: cày g đi vạn sự như ý.: mưa bàn cho mà xem ngồi đấy mà chê luânko: nó k kém thì làm sao ăn đc cái tài 0.75 h1 Phunguyenvinh20: nhà cái cho đặt ở vn là ae khoẻ Sói Ngây Thơ: rung tiếp vạn sự như ý.: cam trình độ ko ăn thua đâu chẳng qua đc cái mả nhập tịch Minhmom^: g2 sonnnguyen: cam này ngu thật Chunghp9",
+            "harvest_rounds": 0,
+            "harvest_window_seconds": 0.638,
+            "main_status": 200,
+            "harvested_stream_count": 1,
+            "harvested_blv_ids": [
+              "256080"
+            ],
+            "scan_mode": "browser-event",
+            "elapsed_seconds": 16.478
+          },
+          "http_probe": {
+            "enabled": false,
+            "status": null,
+            "elapsed_seconds": 0.0,
+            "error": ""
+          },
+          "errors": [
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED"
+          ],
+          "failed_requests": [
+            "stylesheet https://socolive.watch/wp-content/plugins/stream-player-plugin/assets/dist/main.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolive.watch/wp-content/plugins/stream-player-plugin/assets/dist/customize.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolive.watch/wp-content/plugins/user-action-plugin/assets/css/auth.css?ver=458 | net::ERR_FAILED",
+            "stylesheet https://socolive.watch/wp-content/plugins/user-action-plugin/assets/css/chat.css?ver=639 | net::ERR_FAILED",
+            "stylesheet https://socolive.watch/wp-content/plugins/user-action-plugin/assets/css/chat(1).css?ver=298 | net::ERR_FAILED",
+            "stylesheet https://socolive.watch/wp-content/plugins/user-action-plugin/assets/css/toast.css?ver=762 | net::ERR_FAILED",
+            "stylesheet https://socolive.watch/wp-content/themes/flatsome/assets/css/flatsome.css?ver=3.18.2 | net::ERR_FAILED",
+            "stylesheet https://socolive.watch/wp-content/themes/flatsome-child/style.css?ver=3.0 | net::ERR_FAILED",
+            "stylesheet https://fonts.googleapis.com/css?family=Roboto:regular,700,regular,700,regular&display=swap&ver=3.9 | net::ERR_FAILED",
+            "stylesheet https://socolive.watch/wp-content/plugins/stream-player-plugin/assets/css/countdown.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolive.watch/wp-content/plugins/stream-player-plugin/assets/css/match.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolive.watch/wp-content/plugins/stream-player-plugin/assets/css/livescore.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolive.watch/wp-content/plugins/stream-player-plugin/assets/css/style_custom.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolive.watch/wp-content/plugins/stream-player-plugin/assets/css/effect/running-border.css?ver=2.8.5 | net::ERR_FAILED",
+            "stylesheet https://socolive.watch/wp-content/plugins/stream-player-plugin/assets/css/option/option-6.css?ver=2.8.5 | net::ERR_FAILED"
+          ],
+          "http_errors": [
+            "403 https://socolive.watch/wp-admin/admin-ajax.php?action=scl_realtime&sport=1"
+          ]
+        },
+        {
+          "url": "https://socolive.watch/truc-tiep/jaro-vs-sjk-seinajoen-24-07-2026-2300?blv=552832",
+          "blv": "LOGAN",
+          "blv_id": "552832",
+          "streams": [],
+          "stream_sources": {},
+          "stream_first_seen": [],
+          "discovered_blv_ids": [],
+          "diagnostics": {
+            "url": "https://socolive.watch/truc-tiep/jaro-vs-sjk-seinajoen-24-07-2026-2300?blv=552832",
+            "title": "Chờ một chút...",
+            "h1": "socolive.watch",
+            "ready_state": "complete",
+            "visibility_state": "visible",
+            "hidden": false,
+            "video_count": 0,
+            "iframe_count": 0,
+            "body_sample": "socolive.watch Thực hiện xác minh bảo mật Trang web này sử dụng dịch vụ bảo mật để chống bot độc hại. Trang này hiển thị trong khi trang web xác minh bạn không phải là bot. Ray ID: a202eb328cd86163 Hiệu suất và Tính bảo mật của Cloudflare Quyền riêng tư",
             "harvest_rounds": 0,
             "harvest_window_seconds": 0.624,
             "main_status": 403,
@@ -5501,136 +5138,34 @@
             "console/error: Failed to load resource: the server responded with a status of 403 ()",
             "console/warning: No available adapters.",
             "console/warning: No available adapters.",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: %c%d font-size:0;color:transparent NaN",
-            "console/error: %c%d font-size:0;color:transparent NaN",
-            "console/warning: %c%d font-size:0;color:transparent NaN",
-            "console/warning: %c%d font-size:0;color:transparent NaN",
-            "console/warning: OTS parsing error: Size of decompressed WOFF 2.0 is less than compressed size"
-          ],
-          "failed_requests": [
-            "fetch https://brunhild.challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/i/a2031f78c8af3e80/eGpvpt91QWAtWUtxOopxCKuxi0PVViOxqUQDKdka938-1784898185-1.2.1.1-28HFgwLkAvlPGhk5oYljoLmhkjqA68IkGDtqYSogzTPew_wpWgU.aJ16DJPx8zxB | net::ERR_NAME_NOT_RESOLVED",
-            "image https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/ci/a2031f78c8af3e80/1784898185352/uLSGR-nksmZuicv | net::ERR_FAILED"
-          ],
-          "http_errors": [
-            "403 https://socolive.watch/truc-tiep/cska-moscow-vs-baltika-kaliningrad-25-07-2026-0000?blv=602019",
-            "401 https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/pat/a2031f78c8af3e80/1784898185352/b99b8d12c9fd541d346039c8d1814f9dae449b9a0ae8ee6bafc149f46fc86649/JEMTvtR5HrYfDBQ"
-          ]
-        },
-        {
-          "url": "https://socolive.watch/truc-tiep/cska-moscow-vs-baltika-kaliningrad-25-07-2026-0000?blv=531989",
-          "blv": "COZY",
-          "blv_id": "531989",
-          "streams": [],
-          "stream_sources": {},
-          "stream_first_seen": [],
-          "discovered_blv_ids": [],
-          "diagnostics": {
-            "url": "https://socolive.watch/truc-tiep/cska-moscow-vs-baltika-kaliningrad-25-07-2026-0000?blv=531989",
-            "title": "Chờ một chút...",
-            "h1": "socolive.watch",
-            "ready_state": "complete",
-            "visibility_state": "visible",
-            "hidden": false,
-            "video_count": 0,
-            "iframe_count": 0,
-            "body_sample": "socolive.watch Thực hiện xác minh bảo mật Trang web này sử dụng dịch vụ bảo mật để chống bot độc hại. Trang này hiển thị trong khi trang web xác minh bạn không phải là bot. Ray ID: a20325731e20ae0d Hiệu suất và Tính bảo mật của Cloudflare Quyền riêng tư",
-            "harvest_rounds": 0,
-            "harvest_window_seconds": 0.62,
-            "main_status": 403,
-            "harvested_stream_count": 0,
-            "harvested_blv_ids": [],
-            "scan_mode": "browser-event",
-            "elapsed_seconds": 13.118
-          },
-          "http_probe": {
-            "enabled": false,
-            "status": null,
-            "elapsed_seconds": 0.0,
-            "error": ""
-          },
-          "errors": [
-            "console/error: Failed to load resource: the server responded with a status of 403 ()",
-            "console/warning: No available adapters.",
-            "console/warning: No available adapters.",
-            "console/error: %c%d font-size:0;color:transparent NaN",
-            "console/error: %c%d font-size:0;color:transparent NaN",
-            "console/warning: %c%d font-size:0;color:transparent NaN",
-            "console/warning: %c%d font-size:0;color:transparent NaN",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/warning: OTS parsing error: Size of decompressed WOFF 2.0 is less than compressed size"
-          ],
-          "failed_requests": [
-            "fetch https://brunhild.challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/i/a2032574c8f35707/ix2N94xVMAKn77cDvVe7bwntRNQCkX3eG3wSCzqhgrw-1784898430-1.2.1.1-n1WZPpw0omCKcZdlosE49xyr5Bm9Q989M.1lA6Mp0TvAUxT06h6mIY1OkqHdp6EF | net::ERR_NAME_NOT_RESOLVED",
-            "image https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/ci/a2032574c8f35707/1784898430461/0en92nanMGjXcti | net::ERR_FAILED"
-          ],
-          "http_errors": [
-            "403 https://socolive.watch/truc-tiep/cska-moscow-vs-baltika-kaliningrad-25-07-2026-0000?blv=531989",
-            "401 https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/pat/a2032574c8f35707/1784898430461/e25bf43f2f28504301466e18b566c3fc8bbf43e33b52ad3b21638240650f44f3/Stz2RC5EjQPled8"
-          ]
-        },
-        {
-          "url": "https://socolive.watch/truc-tiep/cska-moscow-vs-baltika-kaliningrad-25-07-2026-0000?blv=552716",
-          "blv": "VOI",
-          "blv_id": "552716",
-          "streams": [],
-          "stream_sources": {},
-          "stream_first_seen": [],
-          "discovered_blv_ids": [],
-          "diagnostics": {
-            "url": "https://socolive.watch/truc-tiep/cska-moscow-vs-baltika-kaliningrad-25-07-2026-0000?blv=552716",
-            "title": "Chờ một chút...",
-            "h1": "socolive.watch",
-            "ready_state": "complete",
-            "visibility_state": "visible",
-            "hidden": false,
-            "video_count": 0,
-            "iframe_count": 0,
-            "body_sample": "socolive.watch Thực hiện xác minh bảo mật Trang web này sử dụng dịch vụ bảo mật để chống bot độc hại. Trang này hiển thị trong khi trang web xác minh bạn không phải là bot. Ray ID: a20325d1a814ae0d Hiệu suất và Tính bảo mật của Cloudflare Quyền riêng tư",
-            "harvest_rounds": 0,
-            "harvest_window_seconds": 0.62,
-            "main_status": 403,
-            "harvested_stream_count": 0,
-            "harvested_blv_ids": [],
-            "scan_mode": "browser-event",
-            "elapsed_seconds": 13.136
-          },
-          "http_probe": {
-            "enabled": false,
-            "status": null,
-            "elapsed_seconds": 0.0,
-            "error": ""
-          },
-          "errors": [
-            "console/error: Failed to load resource: the server responded with a status of 403 ()",
-            "console/warning: No available adapters.",
-            "console/warning: No available adapters.",
-            "console/error: Failed to load resource: net::ERR_FAILED",
             "console/warning: OTS parsing error: Size of decompressed WOFF 2.0 is less than compressed size",
+            "console/warning: [.WebGL-0x13bc026f0c00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+            "console/warning: [.WebGL-0x13bc026f0c00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
             "console/error: %c%d font-size:0;color:transparent NaN",
             "console/error: %c%d font-size:0;color:transparent NaN",
             "console/warning: %c%d font-size:0;color:transparent NaN",
-            "console/warning: %c%d font-size:0;color:transparent NaN"
+            "console/warning: %c%d font-size:0;color:transparent NaN",
+            "console/error: Failed to load resource: net::ERR_FAILED"
           ],
           "failed_requests": [
-            "fetch https://brunhild.challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/i/a20325d34e235707/izbWorXwjVIjFtSXxTlTiabtZ2FisFq_iD_vMiqDQoE-1784898445-1.2.1.1-0TDaX1Slu83BUvz1AhypbEvM.kiV.Kh09M0m.CiiFM3aZ3Nol9VCY0KNxPUI0lmY | net::ERR_NAME_NOT_RESOLVED",
-            "image https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/ci/a20325d34e235707/1784898445602/-31lXidXSXIGIl2 | net::ERR_FAILED"
+            "fetch https://brunhild.challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/i/a202eb345a1efca8/8KdVhR90Ub5kfLDm8rdFy_hX7WrcsdmthmktF4Sk_.k-1784896044-1.2.1.1-CYX5adpYQox1ZwnGXuhyomZTJ2U1EqsfvLs1K62JYAINPiviqdlhZwiFaWYDGNh2 | net::ERR_NAME_NOT_RESOLVED",
+            "image https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/ci/a202eb345a1efca8/1784896044469/wP-osPjiSzvDDEH | net::ERR_FAILED"
           ],
           "http_errors": [
-            "403 https://socolive.watch/truc-tiep/cska-moscow-vs-baltika-kaliningrad-25-07-2026-0000?blv=552716",
-            "401 https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/pat/a20325d34e235707/1784898445602/81d72f3a99a346ee910e429c3e473883b91d91c1d8085b89172bc088a35f2b6d/A0cneeR7pypTT2w"
+            "403 https://socolive.watch/truc-tiep/jaro-vs-sjk-seinajoen-24-07-2026-2300?blv=552832",
+            "401 https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/pat/a202eb345a1efca8/1784896044469/64ffa103b166cabb9af30fa244bc7c6ae3757a0fb6ed471f12e4007ba74eb81b/wuuip0LbFgTKmiw"
           ]
         },
         {
-          "url": "https://socolive.watch/truc-tiep/cska-moscow-vs-baltika-kaliningrad-25-07-2026-0000?blv=321443",
-          "blv": "GIÓ",
-          "blv_id": "321443",
+          "url": "https://socolive.watch/truc-tiep/jaro-vs-sjk-seinajoen-24-07-2026-2300?blv=536185",
+          "blv": "A WIN",
+          "blv_id": "536185",
           "streams": [],
           "stream_sources": {},
           "stream_first_seen": [],
           "discovered_blv_ids": [],
           "diagnostics": {
-            "url": "https://socolive.watch/truc-tiep/cska-moscow-vs-baltika-kaliningrad-25-07-2026-0000?blv=321443",
+            "url": "https://socolive.watch/truc-tiep/jaro-vs-sjk-seinajoen-24-07-2026-2300?blv=536185",
             "title": "Chờ một chút...",
             "h1": "socolive.watch",
             "ready_state": "complete",
@@ -5638,59 +5173,7 @@
             "hidden": false,
             "video_count": 0,
             "iframe_count": 0,
-            "body_sample": "socolive.watch Thực hiện xác minh bảo mật Trang web này sử dụng dịch vụ bảo mật để chống bot độc hại. Trang này hiển thị trong khi trang web xác minh bạn không phải là bot. Ray ID: a2032630596dae0d Hiệu suất và Tính bảo mật của Cloudflare Quyền riêng tư",
-            "harvest_rounds": 0,
-            "harvest_window_seconds": 0.62,
-            "main_status": 403,
-            "harvested_stream_count": 0,
-            "harvested_blv_ids": [],
-            "scan_mode": "browser-event",
-            "elapsed_seconds": 13.124
-          },
-          "http_probe": {
-            "enabled": false,
-            "status": null,
-            "elapsed_seconds": 0.0,
-            "error": ""
-          },
-          "errors": [
-            "console/error: Failed to load resource: the server responded with a status of 403 ()",
-            "console/warning: No available adapters.",
-            "console/warning: No available adapters.",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/warning: OTS parsing error: Size of decompressed WOFF 2.0 is less than compressed size",
-            "console/error: %c%d font-size:0;color:transparent NaN",
-            "console/error: %c%d font-size:0;color:transparent NaN",
-            "console/warning: %c%d font-size:0;color:transparent NaN",
-            "console/warning: %c%d font-size:0;color:transparent NaN"
-          ],
-          "failed_requests": [
-            "fetch https://brunhild.challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/i/a20326320c555707/flkQldJOaU7mrM4TKE8H2Hynj26PSu_0PpM4stPPOJg-1784898460-1.2.1.1-ThPCmRpFZvjIUuSEhSFeMHvkiVc3iRT6AajDZp0e2Joo3aWWZB3UkuA51R9Dcp3Y | net::ERR_NAME_NOT_RESOLVED",
-            "image https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/ci/a20326320c555707/1784898460746/3eXqesFXHhdlji9 | net::ERR_FAILED"
-          ],
-          "http_errors": [
-            "403 https://socolive.watch/truc-tiep/cska-moscow-vs-baltika-kaliningrad-25-07-2026-0000?blv=321443",
-            "401 https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/pat/a20326320c555707/1784898460746/e623a2a894d5863efe095606981f1f088cbf1afcc61bc9f3e59d1a23e351379c/W6ST9QJBQA8BHBl"
-          ]
-        },
-        {
-          "url": "https://socolive.watch/truc-tiep/cska-moscow-vs-baltika-kaliningrad-25-07-2026-0000?blv=602019",
-          "blv": "RYO",
-          "blv_id": "602019",
-          "streams": [],
-          "stream_sources": {},
-          "stream_first_seen": [],
-          "discovered_blv_ids": [],
-          "diagnostics": {
-            "url": "https://socolive.watch/truc-tiep/cska-moscow-vs-baltika-kaliningrad-25-07-2026-0000?blv=602019",
-            "title": "Chờ một chút...",
-            "h1": "socolive.watch",
-            "ready_state": "complete",
-            "visibility_state": "visible",
-            "hidden": false,
-            "video_count": 0,
-            "iframe_count": 0,
-            "body_sample": "socolive.watch Thực hiện xác minh bảo mật Trang web này sử dụng dịch vụ bảo mật để chống bot độc hại. Trang này hiển thị trong khi trang web xác minh bạn không phải là bot. Ray ID: a203268eeb5bae0d Hiệu suất và Tính bảo mật của Cloudflare Quyền riêng tư",
+            "body_sample": "socolive.watch Thực hiện xác minh bảo mật Trang web này sử dụng dịch vụ bảo mật để chống bot độc hại. Trang này hiển thị trong khi trang web xác minh bạn không phải là bot. Ray ID: a202eb912dda6163 Hiệu suất và Tính bảo mật của Cloudflare Quyền riêng tư",
             "harvest_rounds": 0,
             "harvest_window_seconds": 0.621,
             "main_status": 403,
@@ -5709,28 +5192,82 @@
             "console/error: Failed to load resource: the server responded with a status of 403 ()",
             "console/warning: No available adapters.",
             "console/warning: No available adapters.",
-            "console/error: %c%d font-size:0;color:transparent NaN",
-            "console/error: %c%d font-size:0;color:transparent NaN",
-            "console/warning: %c%d font-size:0;color:transparent NaN",
-            "console/warning: %c%d font-size:0;color:transparent NaN",
             "console/warning: OTS parsing error: Size of decompressed WOFF 2.0 is less than compressed size",
-            "console/error: Failed to load resource: net::ERR_FAILED"
+            "console/error: %c%d font-size:0;color:transparent NaN",
+            "console/error: %c%d font-size:0;color:transparent NaN",
+            "console/warning: %c%d font-size:0;color:transparent NaN",
+            "console/warning: %c%d font-size:0;color:transparent NaN",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/warning: [.WebGL-0x13bc02269000]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+            "console/warning: [.WebGL-0x13bc02269000]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels (this message will no longer repeat)"
           ],
           "failed_requests": [
-            "fetch https://brunhild.challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/i/a20326909dcc5707/OucvSZ.FpKoc.j7IW8Z8QCmgZJaDJQ2IMwRL4Q9dwFo-1784898475-1.2.1.1-FUbNK225N0SzReKO.1rGz8MYWK5SmKvKtUxdgLzCQwmi4wbRfCJiB55O56b2v6nJ | net::ERR_NAME_NOT_RESOLVED",
-            "image https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/ci/a20326909dcc5707/1784898475871/_FoMMSh1FkPX1QZ | net::ERR_FAILED"
+            "fetch https://brunhild.challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/i/a202eb92deeffca8/hHVShJb8aaCBSpKQUrApbiIrL9P.2n1C67LcXNuPwy0-1784896059-1.2.1.1-zRaNJqp1NHoycZTJx7g0GL.v6whj3RnwfjQdh2p.22sNAN.nAbczn2XzsuFcmi2q | net::ERR_NAME_NOT_RESOLVED",
+            "image https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/ci/a202eb92deeffca8/1784896059582/SUIL05ihZnrM3fc | net::ERR_FAILED"
           ],
           "http_errors": [
-            "403 https://socolive.watch/truc-tiep/cska-moscow-vs-baltika-kaliningrad-25-07-2026-0000?blv=602019",
-            "401 https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/pat/a20326909dcc5707/1784898475870/e03313b56a1fe502d4ec7727aef6b7df8f1a02213ad857bbe4187d67e0edd0dc/QQTBtxH-WHk-Fou"
+            "403 https://socolive.watch/truc-tiep/jaro-vs-sjk-seinajoen-24-07-2026-2300?blv=536185",
+            "401 https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/pat/a202eb92deeffca8/1784896059582/32311b24fc1b14fa61d3cfe72d8cd4b8713540cc3c8052bb2e5a67fb8b1f01f6/34dRdlv1ytF1BOF"
+          ]
+        },
+        {
+          "url": "https://socolive.watch/truc-tiep/jaro-vs-sjk-seinajoen-24-07-2026-2300?blv=532081",
+          "blv": "ALEX",
+          "blv_id": "532081",
+          "streams": [],
+          "stream_sources": {},
+          "stream_first_seen": [],
+          "discovered_blv_ids": [],
+          "diagnostics": {
+            "url": "https://socolive.watch/truc-tiep/jaro-vs-sjk-seinajoen-24-07-2026-2300?blv=532081",
+            "title": "Chờ một chút...",
+            "h1": "socolive.watch",
+            "ready_state": "complete",
+            "visibility_state": "visible",
+            "hidden": false,
+            "video_count": 0,
+            "iframe_count": 0,
+            "body_sample": "socolive.watch Thực hiện xác minh bảo mật Trang web này sử dụng dịch vụ bảo mật để chống bot độc hại. Trang này hiển thị trong khi trang web xác minh bạn không phải là bot. Ray ID: a202ebefce666163 Hiệu suất và Tính bảo mật của Cloudflare Quyền riêng tư",
+            "harvest_rounds": 0,
+            "harvest_window_seconds": 0.621,
+            "main_status": 403,
+            "harvested_stream_count": 0,
+            "harvested_blv_ids": [],
+            "scan_mode": "browser-event",
+            "elapsed_seconds": 13.12
+          },
+          "http_probe": {
+            "enabled": false,
+            "status": null,
+            "elapsed_seconds": 0.0,
+            "error": ""
+          },
+          "errors": [
+            "console/error: Failed to load resource: the server responded with a status of 403 ()",
+            "console/warning: No available adapters.",
+            "console/warning: No available adapters.",
+            "console/error: %c%d font-size:0;color:transparent NaN",
+            "console/error: %c%d font-size:0;color:transparent NaN",
+            "console/warning: %c%d font-size:0;color:transparent NaN",
+            "console/warning: %c%d font-size:0;color:transparent NaN",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/warning: OTS parsing error: Size of decompressed WOFF 2.0 is less than compressed size"
+          ],
+          "failed_requests": [
+            "fetch https://brunhild.challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/i/a202ebf18a6afca8/ud1l.zQhMzVnXwPn_Ai1X._JZSTjw_qup9K9T.2GlDA-1784896074-1.2.1.1-ORf9OAM8IJSVpCAoAI2gjDzj2k4KxOzNPHK4H_QWBYQTQyAf9WnRcnd8Lo.XJHoG | net::ERR_NAME_NOT_RESOLVED",
+            "image https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/ci/a202ebf18a6afca8/1784896074735/DchJyOM9pgm5lZS | net::ERR_FAILED"
+          ],
+          "http_errors": [
+            "403 https://socolive.watch/truc-tiep/jaro-vs-sjk-seinajoen-24-07-2026-2300?blv=532081",
+            "401 https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/pat/a202ebf18a6afca8/1784896074734/676de60ae2a022f22b7300f56634ce27b8e247fb49d130620b252d84b71aa4ea/6fU7GiLhYxhKo8w"
           ]
         }
       ],
       "attempted_room_ids": [
-        "321443",
-        "531989",
-        "552716",
-        "602019"
+        "256080",
+        "532081",
+        "536185",
+        "552832"
       ],
       "coverage": {
         "found_streams": 0,
@@ -5743,11 +5280,28 @@
         "total_explicit_blv_rooms": 4,
         "pending_room_keys": [],
         "room_progress": {
-          "531989": {
-            "key": "531989",
-            "url": "https://socolive.watch/truc-tiep/cska-moscow-vs-baltika-kaliningrad-25-07-2026-0000?blv=531989",
-            "blv": "COZY",
-            "blv_id": "531989",
+          "256080": {
+            "key": "256080",
+            "url": "https://socolive.watch/truc-tiep/jaro-vs-sjk-seinajoen-24-07-2026-2300?blv=256080",
+            "blv": "CUỘI",
+            "blv_id": "256080",
+            "status": "success",
+            "attempts": 2,
+            "attempts_total": 2,
+            "ever_attempted": true,
+            "valid_stream_ever_found": true,
+            "needs_token_refresh": true,
+            "completion_reason": "valid_stream_seen_earlier",
+            "rate_limit_hits": 0,
+            "last_http_status": 200,
+            "last_stream_count": 0,
+            "last_error": "Token cũ đã hết hạn; giữ nguyên attempts_total và trạng thái hoàn tất của BLV."
+          },
+          "552832": {
+            "key": "552832",
+            "url": "https://socolive.watch/truc-tiep/jaro-vs-sjk-seinajoen-24-07-2026-2300?blv=552832",
+            "blv": "LOGAN",
+            "blv_id": "552832",
             "status": "exhausted",
             "attempts": 2,
             "attempts_total": 2,
@@ -5760,11 +5314,11 @@
             "last_stream_count": 0,
             "last_error": "console/error: Failed to load resource: the server responded with a status of 403 (); console/warning: No available adapters.; console/warning: No available adapters."
           },
-          "552716": {
-            "key": "552716",
-            "url": "https://socolive.watch/truc-tiep/cska-moscow-vs-baltika-kaliningrad-25-07-2026-0000?blv=552716",
-            "blv": "VOI",
-            "blv_id": "552716",
+          "536185": {
+            "key": "536185",
+            "url": "https://socolive.watch/truc-tiep/jaro-vs-sjk-seinajoen-24-07-2026-2300?blv=536185",
+            "blv": "A WIN",
+            "blv_id": "536185",
             "status": "exhausted",
             "attempts": 2,
             "attempts_total": 2,
@@ -5777,28 +5331,11 @@
             "last_stream_count": 0,
             "last_error": "console/error: Failed to load resource: the server responded with a status of 403 (); console/warning: No available adapters.; console/warning: No available adapters."
           },
-          "321443": {
-            "key": "321443",
-            "url": "https://socolive.watch/truc-tiep/cska-moscow-vs-baltika-kaliningrad-25-07-2026-0000?blv=321443",
-            "blv": "GIÓ",
-            "blv_id": "321443",
-            "status": "exhausted",
-            "attempts": 2,
-            "attempts_total": 2,
-            "ever_attempted": true,
-            "valid_stream_ever_found": false,
-            "needs_token_refresh": false,
-            "completion_reason": "no_valid_stream_after_max_attempts",
-            "rate_limit_hits": 0,
-            "last_http_status": 403,
-            "last_stream_count": 0,
-            "last_error": "console/error: Failed to load resource: the server responded with a status of 403 (); console/warning: No available adapters.; console/warning: No available adapters."
-          },
-          "602019": {
-            "key": "602019",
-            "url": "https://socolive.watch/truc-tiep/cska-moscow-vs-baltika-kaliningrad-25-07-2026-0000?blv=602019",
-            "blv": "RYO",
-            "blv_id": "602019",
+          "532081": {
+            "key": "532081",
+            "url": "https://socolive.watch/truc-tiep/jaro-vs-sjk-seinajoen-24-07-2026-2300?blv=532081",
+            "blv": "ALEX",
+            "blv_id": "532081",
             "status": "exhausted",
             "attempts": 2,
             "attempts_total": 2,
@@ -5813,7 +5350,7 @@
           },
           "__base__": {
             "key": "__base__",
-            "url": "https://socolive.watch/truc-tiep/cska-moscow-vs-baltika-kaliningrad-25-07-2026-0000",
+            "url": "https://socolive.watch/truc-tiep/jaro-vs-sjk-seinajoen-24-07-2026-2300",
             "blv": "XEM NGAY",
             "blv_id": "",
             "status": "pending",
@@ -5832,11 +5369,28 @@
       },
       "errors": [],
       "room_progress": {
-        "531989": {
-          "key": "531989",
-          "url": "https://socolive.watch/truc-tiep/cska-moscow-vs-baltika-kaliningrad-25-07-2026-0000?blv=531989",
-          "blv": "COZY",
-          "blv_id": "531989",
+        "256080": {
+          "key": "256080",
+          "url": "https://socolive.watch/truc-tiep/jaro-vs-sjk-seinajoen-24-07-2026-2300?blv=256080",
+          "blv": "CUỘI",
+          "blv_id": "256080",
+          "status": "success",
+          "attempts": 2,
+          "attempts_total": 2,
+          "ever_attempted": true,
+          "valid_stream_ever_found": true,
+          "needs_token_refresh": true,
+          "completion_reason": "valid_stream_seen_earlier",
+          "rate_limit_hits": 0,
+          "last_http_status": 200,
+          "last_stream_count": 0,
+          "last_error": "Token cũ đã hết hạn; giữ nguyên attempts_total và trạng thái hoàn tất của BLV."
+        },
+        "552832": {
+          "key": "552832",
+          "url": "https://socolive.watch/truc-tiep/jaro-vs-sjk-seinajoen-24-07-2026-2300?blv=552832",
+          "blv": "LOGAN",
+          "blv_id": "552832",
           "status": "exhausted",
           "attempts": 2,
           "attempts_total": 2,
@@ -5849,11 +5403,11 @@
           "last_stream_count": 0,
           "last_error": "console/error: Failed to load resource: the server responded with a status of 403 (); console/warning: No available adapters.; console/warning: No available adapters."
         },
-        "552716": {
-          "key": "552716",
-          "url": "https://socolive.watch/truc-tiep/cska-moscow-vs-baltika-kaliningrad-25-07-2026-0000?blv=552716",
-          "blv": "VOI",
-          "blv_id": "552716",
+        "536185": {
+          "key": "536185",
+          "url": "https://socolive.watch/truc-tiep/jaro-vs-sjk-seinajoen-24-07-2026-2300?blv=536185",
+          "blv": "A WIN",
+          "blv_id": "536185",
           "status": "exhausted",
           "attempts": 2,
           "attempts_total": 2,
@@ -5866,28 +5420,11 @@
           "last_stream_count": 0,
           "last_error": "console/error: Failed to load resource: the server responded with a status of 403 (); console/warning: No available adapters.; console/warning: No available adapters."
         },
-        "321443": {
-          "key": "321443",
-          "url": "https://socolive.watch/truc-tiep/cska-moscow-vs-baltika-kaliningrad-25-07-2026-0000?blv=321443",
-          "blv": "GIÓ",
-          "blv_id": "321443",
-          "status": "exhausted",
-          "attempts": 2,
-          "attempts_total": 2,
-          "ever_attempted": true,
-          "valid_stream_ever_found": false,
-          "needs_token_refresh": false,
-          "completion_reason": "no_valid_stream_after_max_attempts",
-          "rate_limit_hits": 0,
-          "last_http_status": 403,
-          "last_stream_count": 0,
-          "last_error": "console/error: Failed to load resource: the server responded with a status of 403 (); console/warning: No available adapters.; console/warning: No available adapters."
-        },
-        "602019": {
-          "key": "602019",
-          "url": "https://socolive.watch/truc-tiep/cska-moscow-vs-baltika-kaliningrad-25-07-2026-0000?blv=602019",
-          "blv": "RYO",
-          "blv_id": "602019",
+        "532081": {
+          "key": "532081",
+          "url": "https://socolive.watch/truc-tiep/jaro-vs-sjk-seinajoen-24-07-2026-2300?blv=532081",
+          "blv": "ALEX",
+          "blv_id": "532081",
           "status": "exhausted",
           "attempts": 2,
           "attempts_total": 2,
@@ -5902,7 +5439,7 @@
         },
         "__base__": {
           "key": "__base__",
-          "url": "https://socolive.watch/truc-tiep/cska-moscow-vs-baltika-kaliningrad-25-07-2026-0000",
+          "url": "https://socolive.watch/truc-tiep/jaro-vs-sjk-seinajoen-24-07-2026-2300",
           "blv": "XEM NGAY",
           "blv_id": "",
           "status": "pending",
@@ -6555,6 +6092,658 @@
         "__base__": {
           "key": "__base__",
           "url": "https://socolive.watch/truc-tiep/vasteras-sk-fk-vs-orgryte-25-07-2026-0000",
+          "blv": "XEM NGAY",
+          "blv_id": "",
+          "status": "pending",
+          "attempts": 0,
+          "attempts_total": 0,
+          "ever_attempted": false,
+          "valid_stream_ever_found": false,
+          "needs_token_refresh": false,
+          "completion_reason": "",
+          "rate_limit_hits": 0,
+          "last_http_status": null,
+          "last_stream_count": 0,
+          "last_error": ""
+        }
+      }
+    },
+    {
+      "base_url": "https://socolive.watch/truc-tiep/cska-moscow-vs-baltika-kaliningrad-25-07-2026-0000/",
+      "raw_title": "Trực tiếp bóng đá Socolive CSKA Moscow vs Baltika Kaliningrad lúc 00:00 ngày 25/07/2026",
+      "home_team": "CSKA Moscow",
+      "away_team": "Baltika Kaliningrad",
+      "home_logo": "https://sta.vnres.co/file/common/20260721/44765cc4a86c1a9d8d8d76aa3a36dbf5.png",
+      "away_logo": "https://sta.vnres.co/file/common/20260721/5420ff3d703633de2557b3556cffe3d7.png",
+      "time_text": "00:00",
+      "date_text": "25/07",
+      "status": "",
+      "card_text": "RUS D1 00:00 25/07 CSKA Moscow VS XEM NGAY Baltika Kaliningrad COZY VOI GIÓ RYO",
+      "rooms": [
+        {
+          "url": "https://socolive.watch/truc-tiep/cska-moscow-vs-baltika-kaliningrad-25-07-2026-0000?blv=531989",
+          "blv": "COZY",
+          "blv_id": "531989"
+        },
+        {
+          "url": "https://socolive.watch/truc-tiep/cska-moscow-vs-baltika-kaliningrad-25-07-2026-0000?blv=552716",
+          "blv": "VOI",
+          "blv_id": "552716"
+        },
+        {
+          "url": "https://socolive.watch/truc-tiep/cska-moscow-vs-baltika-kaliningrad-25-07-2026-0000?blv=321443",
+          "blv": "GIÓ",
+          "blv_id": "321443"
+        },
+        {
+          "url": "https://socolive.watch/truc-tiep/cska-moscow-vs-baltika-kaliningrad-25-07-2026-0000?blv=602019",
+          "blv": "RYO",
+          "blv_id": "602019"
+        },
+        {
+          "url": "https://socolive.watch/truc-tiep/cska-moscow-vs-baltika-kaliningrad-25-07-2026-0000",
+          "blv": "XEM NGAY",
+          "blv_id": ""
+        }
+      ],
+      "match_name": "CSKA Moscow vs Baltika Kaliningrad",
+      "scheduled_at": "2026-07-25T00:00:00+07:00",
+      "streams": [],
+      "room_results": [
+        {
+          "url": "https://socolive.watch/truc-tiep/cska-moscow-vs-baltika-kaliningrad-25-07-2026-0000?blv=531989",
+          "blv": "COZY",
+          "blv_id": "531989",
+          "streams": [],
+          "stream_sources": {},
+          "stream_first_seen": [],
+          "discovered_blv_ids": [],
+          "diagnostics": {
+            "url": "https://socolive.watch/truc-tiep/cska-moscow-vs-baltika-kaliningrad-25-07-2026-0000?blv=531989",
+            "title": "Chờ một chút...",
+            "h1": "socolive.watch",
+            "ready_state": "complete",
+            "visibility_state": "visible",
+            "hidden": false,
+            "video_count": 0,
+            "iframe_count": 0,
+            "body_sample": "socolive.watch Thực hiện xác minh bảo mật Trang web này sử dụng dịch vụ bảo mật để chống bot độc hại. Trang này hiển thị trong khi trang web xác minh bạn không phải là bot. Ray ID: a2031e5b494ba0e7 Hiệu suất và Tính bảo mật của Cloudflare Quyền riêng tư",
+            "harvest_rounds": 0,
+            "harvest_window_seconds": 0.623,
+            "main_status": 403,
+            "harvested_stream_count": 0,
+            "harvested_blv_ids": [],
+            "scan_mode": "browser-event",
+            "elapsed_seconds": 13.126
+          },
+          "http_probe": {
+            "enabled": false,
+            "status": null,
+            "elapsed_seconds": 0.0,
+            "error": ""
+          },
+          "errors": [
+            "console/error: Failed to load resource: the server responded with a status of 403 ()",
+            "console/warning: No available adapters.",
+            "console/warning: No available adapters.",
+            "console/error: %c%d font-size:0;color:transparent NaN",
+            "console/error: %c%d font-size:0;color:transparent NaN",
+            "console/warning: %c%d font-size:0;color:transparent NaN",
+            "console/warning: %c%d font-size:0;color:transparent NaN",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/warning: OTS parsing error: Size of decompressed WOFF 2.0 is less than compressed size"
+          ],
+          "failed_requests": [
+            "fetch https://brunhild.challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/i/a2031e5cfe493e80/mW_2qAwldDOun4MmyWYwpEqLlccE4bXQv3r8FGrtzCM-1784898139-1.2.1.1-cVDbvi5YsQol2cr3YiHfgklRFHP3yxuZgOT.pLP6d9FMXQuBU1k2PDHmaAsjtk0k | net::ERR_NAME_NOT_RESOLVED",
+            "image https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/ci/a2031e5cfe493e80/1784898139933/4m-VhSUiNA4W2-y | net::ERR_FAILED"
+          ],
+          "http_errors": [
+            "403 https://socolive.watch/truc-tiep/cska-moscow-vs-baltika-kaliningrad-25-07-2026-0000?blv=531989",
+            "401 https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/pat/a2031e5cfe493e80/1784898139933/ae2d46080b342e161cb3fc955927efcd3743ae985e19fad6455073d80e44d4cd/SoDngDV2rKFR8pv"
+          ]
+        },
+        {
+          "url": "https://socolive.watch/truc-tiep/cska-moscow-vs-baltika-kaliningrad-25-07-2026-0000?blv=552716",
+          "blv": "VOI",
+          "blv_id": "552716",
+          "streams": [],
+          "stream_sources": {},
+          "stream_first_seen": [],
+          "discovered_blv_ids": [],
+          "diagnostics": {
+            "url": "https://socolive.watch/truc-tiep/cska-moscow-vs-baltika-kaliningrad-25-07-2026-0000?blv=552716",
+            "title": "Chờ một chút...",
+            "h1": "socolive.watch",
+            "ready_state": "complete",
+            "visibility_state": "visible",
+            "hidden": false,
+            "video_count": 0,
+            "iframe_count": 0,
+            "body_sample": "socolive.watch Thực hiện xác minh bảo mật Trang web này sử dụng dịch vụ bảo mật để chống bot độc hại. Trang này hiển thị trong khi trang web xác minh bạn không phải là bot. Ray ID: a2031eb9eb26a0e7 Hiệu suất và Tính bảo mật của Cloudflare Quyền riêng tư",
+            "harvest_rounds": 0,
+            "harvest_window_seconds": 0.623,
+            "main_status": 403,
+            "harvested_stream_count": 0,
+            "harvested_blv_ids": [],
+            "scan_mode": "browser-event",
+            "elapsed_seconds": 13.121
+          },
+          "http_probe": {
+            "enabled": false,
+            "status": null,
+            "elapsed_seconds": 0.0,
+            "error": ""
+          },
+          "errors": [
+            "console/error: Failed to load resource: the server responded with a status of 403 ()",
+            "console/warning: No available adapters.",
+            "console/warning: No available adapters.",
+            "console/error: %c%d font-size:0;color:transparent NaN",
+            "console/error: %c%d font-size:0;color:transparent NaN",
+            "console/warning: %c%d font-size:0;color:transparent NaN",
+            "console/warning: %c%d font-size:0;color:transparent NaN",
+            "console/warning: OTS parsing error: Size of decompressed WOFF 2.0 is less than compressed size",
+            "console/error: Failed to load resource: net::ERR_FAILED"
+          ],
+          "failed_requests": [
+            "fetch https://brunhild.challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/i/a2031ebb8b8d3e80/RvphOLQLHNm4MeGhseQl9zOtM.Gy6qE1qbOgDoS4HsY-1784898154-1.2.1.1-z.c.t1FN2tkWrf90iElRSWRXnveMVA6M6kiPi2RT.enM7Xx28SP0MdUzV3lziTn3 | net::ERR_NAME_NOT_RESOLVED",
+            "image https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/ci/a2031ebb8b8d3e80/1784898155059/2spsrLDpGn6CRiw | net::ERR_FAILED"
+          ],
+          "http_errors": [
+            "403 https://socolive.watch/truc-tiep/cska-moscow-vs-baltika-kaliningrad-25-07-2026-0000?blv=552716",
+            "401 https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/pat/a2031ebb8b8d3e80/1784898155058/62aba92a5a78688ccb6f51958d30a1d768f7656dcab6675dadb1b9d1341151a8/z0DMaEC8JmxG35L"
+          ]
+        },
+        {
+          "url": "https://socolive.watch/truc-tiep/cska-moscow-vs-baltika-kaliningrad-25-07-2026-0000?blv=321443",
+          "blv": "GIÓ",
+          "blv_id": "321443",
+          "streams": [],
+          "stream_sources": {},
+          "stream_first_seen": [],
+          "discovered_blv_ids": [],
+          "diagnostics": {
+            "url": "https://socolive.watch/truc-tiep/cska-moscow-vs-baltika-kaliningrad-25-07-2026-0000?blv=321443",
+            "title": "Chờ một chút...",
+            "h1": "socolive.watch",
+            "ready_state": "complete",
+            "visibility_state": "visible",
+            "hidden": false,
+            "video_count": 0,
+            "iframe_count": 0,
+            "body_sample": "socolive.watch Thực hiện xác minh bảo mật Trang web này sử dụng dịch vụ bảo mật để chống bot độc hại. Trang này hiển thị trong khi trang web xác minh bạn không phải là bot. Ray ID: a2031f187c9ea0e7 Hiệu suất và Tính bảo mật của Cloudflare Quyền riêng tư",
+            "harvest_rounds": 0,
+            "harvest_window_seconds": 0.624,
+            "main_status": 403,
+            "harvested_stream_count": 0,
+            "harvested_blv_ids": [],
+            "scan_mode": "browser-event",
+            "elapsed_seconds": 13.125
+          },
+          "http_probe": {
+            "enabled": false,
+            "status": null,
+            "elapsed_seconds": 0.0,
+            "error": ""
+          },
+          "errors": [
+            "console/error: Failed to load resource: the server responded with a status of 403 ()",
+            "console/warning: No available adapters.",
+            "console/warning: No available adapters.",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: %c%d font-size:0;color:transparent NaN",
+            "console/error: %c%d font-size:0;color:transparent NaN",
+            "console/warning: %c%d font-size:0;color:transparent NaN",
+            "console/warning: %c%d font-size:0;color:transparent NaN",
+            "console/warning: OTS parsing error: Size of decompressed WOFF 2.0 is less than compressed size"
+          ],
+          "failed_requests": [
+            "fetch https://brunhild.challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/i/a2031f1a2edf3e80/jt9ch01fhgL1YTPyGIw4jTwtOubYn4N9h4P62uRVtZU-1784898169-1.2.1.1-92oG5v1OqQEtiROyX6L6rQ37l7Tjdh6RFCikxxLNoj1l6MT1W6mChQT6zL6GOiOQ | net::ERR_NAME_NOT_RESOLVED",
+            "image https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/ci/a2031f1a2edf3e80/1784898170202/pf69rhf5V5adveI | net::ERR_FAILED"
+          ],
+          "http_errors": [
+            "403 https://socolive.watch/truc-tiep/cska-moscow-vs-baltika-kaliningrad-25-07-2026-0000?blv=321443",
+            "401 https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/pat/a2031f1a2edf3e80/1784898170202/d68c0b66f70c8587fd58a54f0e17bc29d5b2b9cbd153136e2f7ced910ff97da8/Z4HU13oFeFnvckQ"
+          ]
+        },
+        {
+          "url": "https://socolive.watch/truc-tiep/cska-moscow-vs-baltika-kaliningrad-25-07-2026-0000?blv=602019",
+          "blv": "RYO",
+          "blv_id": "602019",
+          "streams": [],
+          "stream_sources": {},
+          "stream_first_seen": [],
+          "discovered_blv_ids": [],
+          "diagnostics": {
+            "url": "https://socolive.watch/truc-tiep/cska-moscow-vs-baltika-kaliningrad-25-07-2026-0000?blv=602019",
+            "title": "Chờ một chút...",
+            "h1": "socolive.watch",
+            "ready_state": "complete",
+            "visibility_state": "visible",
+            "hidden": false,
+            "video_count": 0,
+            "iframe_count": 0,
+            "body_sample": "socolive.watch Thực hiện xác minh bảo mật Trang web này sử dụng dịch vụ bảo mật để chống bot độc hại. Trang này hiển thị trong khi trang web xác minh bạn không phải là bot. Ray ID: a2031f771e08a0e7 Hiệu suất và Tính bảo mật của Cloudflare Quyền riêng tư",
+            "harvest_rounds": 0,
+            "harvest_window_seconds": 0.624,
+            "main_status": 403,
+            "harvested_stream_count": 0,
+            "harvested_blv_ids": [],
+            "scan_mode": "browser-event",
+            "elapsed_seconds": 13.141
+          },
+          "http_probe": {
+            "enabled": false,
+            "status": null,
+            "elapsed_seconds": 0.0,
+            "error": ""
+          },
+          "errors": [
+            "console/error: Failed to load resource: the server responded with a status of 403 ()",
+            "console/warning: No available adapters.",
+            "console/warning: No available adapters.",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: %c%d font-size:0;color:transparent NaN",
+            "console/error: %c%d font-size:0;color:transparent NaN",
+            "console/warning: %c%d font-size:0;color:transparent NaN",
+            "console/warning: %c%d font-size:0;color:transparent NaN",
+            "console/warning: OTS parsing error: Size of decompressed WOFF 2.0 is less than compressed size"
+          ],
+          "failed_requests": [
+            "fetch https://brunhild.challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/i/a2031f78c8af3e80/eGpvpt91QWAtWUtxOopxCKuxi0PVViOxqUQDKdka938-1784898185-1.2.1.1-28HFgwLkAvlPGhk5oYljoLmhkjqA68IkGDtqYSogzTPew_wpWgU.aJ16DJPx8zxB | net::ERR_NAME_NOT_RESOLVED",
+            "image https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/ci/a2031f78c8af3e80/1784898185352/uLSGR-nksmZuicv | net::ERR_FAILED"
+          ],
+          "http_errors": [
+            "403 https://socolive.watch/truc-tiep/cska-moscow-vs-baltika-kaliningrad-25-07-2026-0000?blv=602019",
+            "401 https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/pat/a2031f78c8af3e80/1784898185352/b99b8d12c9fd541d346039c8d1814f9dae449b9a0ae8ee6bafc149f46fc86649/JEMTvtR5HrYfDBQ"
+          ]
+        },
+        {
+          "url": "https://socolive.watch/truc-tiep/cska-moscow-vs-baltika-kaliningrad-25-07-2026-0000?blv=531989",
+          "blv": "COZY",
+          "blv_id": "531989",
+          "streams": [],
+          "stream_sources": {},
+          "stream_first_seen": [],
+          "discovered_blv_ids": [],
+          "diagnostics": {
+            "url": "https://socolive.watch/truc-tiep/cska-moscow-vs-baltika-kaliningrad-25-07-2026-0000?blv=531989",
+            "title": "Chờ một chút...",
+            "h1": "socolive.watch",
+            "ready_state": "complete",
+            "visibility_state": "visible",
+            "hidden": false,
+            "video_count": 0,
+            "iframe_count": 0,
+            "body_sample": "socolive.watch Thực hiện xác minh bảo mật Trang web này sử dụng dịch vụ bảo mật để chống bot độc hại. Trang này hiển thị trong khi trang web xác minh bạn không phải là bot. Ray ID: a20325731e20ae0d Hiệu suất và Tính bảo mật của Cloudflare Quyền riêng tư",
+            "harvest_rounds": 0,
+            "harvest_window_seconds": 0.62,
+            "main_status": 403,
+            "harvested_stream_count": 0,
+            "harvested_blv_ids": [],
+            "scan_mode": "browser-event",
+            "elapsed_seconds": 13.118
+          },
+          "http_probe": {
+            "enabled": false,
+            "status": null,
+            "elapsed_seconds": 0.0,
+            "error": ""
+          },
+          "errors": [
+            "console/error: Failed to load resource: the server responded with a status of 403 ()",
+            "console/warning: No available adapters.",
+            "console/warning: No available adapters.",
+            "console/error: %c%d font-size:0;color:transparent NaN",
+            "console/error: %c%d font-size:0;color:transparent NaN",
+            "console/warning: %c%d font-size:0;color:transparent NaN",
+            "console/warning: %c%d font-size:0;color:transparent NaN",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/warning: OTS parsing error: Size of decompressed WOFF 2.0 is less than compressed size"
+          ],
+          "failed_requests": [
+            "fetch https://brunhild.challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/i/a2032574c8f35707/ix2N94xVMAKn77cDvVe7bwntRNQCkX3eG3wSCzqhgrw-1784898430-1.2.1.1-n1WZPpw0omCKcZdlosE49xyr5Bm9Q989M.1lA6Mp0TvAUxT06h6mIY1OkqHdp6EF | net::ERR_NAME_NOT_RESOLVED",
+            "image https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/ci/a2032574c8f35707/1784898430461/0en92nanMGjXcti | net::ERR_FAILED"
+          ],
+          "http_errors": [
+            "403 https://socolive.watch/truc-tiep/cska-moscow-vs-baltika-kaliningrad-25-07-2026-0000?blv=531989",
+            "401 https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/pat/a2032574c8f35707/1784898430461/e25bf43f2f28504301466e18b566c3fc8bbf43e33b52ad3b21638240650f44f3/Stz2RC5EjQPled8"
+          ]
+        },
+        {
+          "url": "https://socolive.watch/truc-tiep/cska-moscow-vs-baltika-kaliningrad-25-07-2026-0000?blv=552716",
+          "blv": "VOI",
+          "blv_id": "552716",
+          "streams": [],
+          "stream_sources": {},
+          "stream_first_seen": [],
+          "discovered_blv_ids": [],
+          "diagnostics": {
+            "url": "https://socolive.watch/truc-tiep/cska-moscow-vs-baltika-kaliningrad-25-07-2026-0000?blv=552716",
+            "title": "Chờ một chút...",
+            "h1": "socolive.watch",
+            "ready_state": "complete",
+            "visibility_state": "visible",
+            "hidden": false,
+            "video_count": 0,
+            "iframe_count": 0,
+            "body_sample": "socolive.watch Thực hiện xác minh bảo mật Trang web này sử dụng dịch vụ bảo mật để chống bot độc hại. Trang này hiển thị trong khi trang web xác minh bạn không phải là bot. Ray ID: a20325d1a814ae0d Hiệu suất và Tính bảo mật của Cloudflare Quyền riêng tư",
+            "harvest_rounds": 0,
+            "harvest_window_seconds": 0.62,
+            "main_status": 403,
+            "harvested_stream_count": 0,
+            "harvested_blv_ids": [],
+            "scan_mode": "browser-event",
+            "elapsed_seconds": 13.136
+          },
+          "http_probe": {
+            "enabled": false,
+            "status": null,
+            "elapsed_seconds": 0.0,
+            "error": ""
+          },
+          "errors": [
+            "console/error: Failed to load resource: the server responded with a status of 403 ()",
+            "console/warning: No available adapters.",
+            "console/warning: No available adapters.",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/warning: OTS parsing error: Size of decompressed WOFF 2.0 is less than compressed size",
+            "console/error: %c%d font-size:0;color:transparent NaN",
+            "console/error: %c%d font-size:0;color:transparent NaN",
+            "console/warning: %c%d font-size:0;color:transparent NaN",
+            "console/warning: %c%d font-size:0;color:transparent NaN"
+          ],
+          "failed_requests": [
+            "fetch https://brunhild.challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/i/a20325d34e235707/izbWorXwjVIjFtSXxTlTiabtZ2FisFq_iD_vMiqDQoE-1784898445-1.2.1.1-0TDaX1Slu83BUvz1AhypbEvM.kiV.Kh09M0m.CiiFM3aZ3Nol9VCY0KNxPUI0lmY | net::ERR_NAME_NOT_RESOLVED",
+            "image https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/ci/a20325d34e235707/1784898445602/-31lXidXSXIGIl2 | net::ERR_FAILED"
+          ],
+          "http_errors": [
+            "403 https://socolive.watch/truc-tiep/cska-moscow-vs-baltika-kaliningrad-25-07-2026-0000?blv=552716",
+            "401 https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/pat/a20325d34e235707/1784898445602/81d72f3a99a346ee910e429c3e473883b91d91c1d8085b89172bc088a35f2b6d/A0cneeR7pypTT2w"
+          ]
+        },
+        {
+          "url": "https://socolive.watch/truc-tiep/cska-moscow-vs-baltika-kaliningrad-25-07-2026-0000?blv=321443",
+          "blv": "GIÓ",
+          "blv_id": "321443",
+          "streams": [],
+          "stream_sources": {},
+          "stream_first_seen": [],
+          "discovered_blv_ids": [],
+          "diagnostics": {
+            "url": "https://socolive.watch/truc-tiep/cska-moscow-vs-baltika-kaliningrad-25-07-2026-0000?blv=321443",
+            "title": "Chờ một chút...",
+            "h1": "socolive.watch",
+            "ready_state": "complete",
+            "visibility_state": "visible",
+            "hidden": false,
+            "video_count": 0,
+            "iframe_count": 0,
+            "body_sample": "socolive.watch Thực hiện xác minh bảo mật Trang web này sử dụng dịch vụ bảo mật để chống bot độc hại. Trang này hiển thị trong khi trang web xác minh bạn không phải là bot. Ray ID: a2032630596dae0d Hiệu suất và Tính bảo mật của Cloudflare Quyền riêng tư",
+            "harvest_rounds": 0,
+            "harvest_window_seconds": 0.62,
+            "main_status": 403,
+            "harvested_stream_count": 0,
+            "harvested_blv_ids": [],
+            "scan_mode": "browser-event",
+            "elapsed_seconds": 13.124
+          },
+          "http_probe": {
+            "enabled": false,
+            "status": null,
+            "elapsed_seconds": 0.0,
+            "error": ""
+          },
+          "errors": [
+            "console/error: Failed to load resource: the server responded with a status of 403 ()",
+            "console/warning: No available adapters.",
+            "console/warning: No available adapters.",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/warning: OTS parsing error: Size of decompressed WOFF 2.0 is less than compressed size",
+            "console/error: %c%d font-size:0;color:transparent NaN",
+            "console/error: %c%d font-size:0;color:transparent NaN",
+            "console/warning: %c%d font-size:0;color:transparent NaN",
+            "console/warning: %c%d font-size:0;color:transparent NaN"
+          ],
+          "failed_requests": [
+            "fetch https://brunhild.challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/i/a20326320c555707/flkQldJOaU7mrM4TKE8H2Hynj26PSu_0PpM4stPPOJg-1784898460-1.2.1.1-ThPCmRpFZvjIUuSEhSFeMHvkiVc3iRT6AajDZp0e2Joo3aWWZB3UkuA51R9Dcp3Y | net::ERR_NAME_NOT_RESOLVED",
+            "image https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/ci/a20326320c555707/1784898460746/3eXqesFXHhdlji9 | net::ERR_FAILED"
+          ],
+          "http_errors": [
+            "403 https://socolive.watch/truc-tiep/cska-moscow-vs-baltika-kaliningrad-25-07-2026-0000?blv=321443",
+            "401 https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/pat/a20326320c555707/1784898460746/e623a2a894d5863efe095606981f1f088cbf1afcc61bc9f3e59d1a23e351379c/W6ST9QJBQA8BHBl"
+          ]
+        },
+        {
+          "url": "https://socolive.watch/truc-tiep/cska-moscow-vs-baltika-kaliningrad-25-07-2026-0000?blv=602019",
+          "blv": "RYO",
+          "blv_id": "602019",
+          "streams": [],
+          "stream_sources": {},
+          "stream_first_seen": [],
+          "discovered_blv_ids": [],
+          "diagnostics": {
+            "url": "https://socolive.watch/truc-tiep/cska-moscow-vs-baltika-kaliningrad-25-07-2026-0000?blv=602019",
+            "title": "Chờ một chút...",
+            "h1": "socolive.watch",
+            "ready_state": "complete",
+            "visibility_state": "visible",
+            "hidden": false,
+            "video_count": 0,
+            "iframe_count": 0,
+            "body_sample": "socolive.watch Thực hiện xác minh bảo mật Trang web này sử dụng dịch vụ bảo mật để chống bot độc hại. Trang này hiển thị trong khi trang web xác minh bạn không phải là bot. Ray ID: a203268eeb5bae0d Hiệu suất và Tính bảo mật của Cloudflare Quyền riêng tư",
+            "harvest_rounds": 0,
+            "harvest_window_seconds": 0.621,
+            "main_status": 403,
+            "harvested_stream_count": 0,
+            "harvested_blv_ids": [],
+            "scan_mode": "browser-event",
+            "elapsed_seconds": 13.124
+          },
+          "http_probe": {
+            "enabled": false,
+            "status": null,
+            "elapsed_seconds": 0.0,
+            "error": ""
+          },
+          "errors": [
+            "console/error: Failed to load resource: the server responded with a status of 403 ()",
+            "console/warning: No available adapters.",
+            "console/warning: No available adapters.",
+            "console/error: %c%d font-size:0;color:transparent NaN",
+            "console/error: %c%d font-size:0;color:transparent NaN",
+            "console/warning: %c%d font-size:0;color:transparent NaN",
+            "console/warning: %c%d font-size:0;color:transparent NaN",
+            "console/warning: OTS parsing error: Size of decompressed WOFF 2.0 is less than compressed size",
+            "console/error: Failed to load resource: net::ERR_FAILED"
+          ],
+          "failed_requests": [
+            "fetch https://brunhild.challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/i/a20326909dcc5707/OucvSZ.FpKoc.j7IW8Z8QCmgZJaDJQ2IMwRL4Q9dwFo-1784898475-1.2.1.1-FUbNK225N0SzReKO.1rGz8MYWK5SmKvKtUxdgLzCQwmi4wbRfCJiB55O56b2v6nJ | net::ERR_NAME_NOT_RESOLVED",
+            "image https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/ci/a20326909dcc5707/1784898475871/_FoMMSh1FkPX1QZ | net::ERR_FAILED"
+          ],
+          "http_errors": [
+            "403 https://socolive.watch/truc-tiep/cska-moscow-vs-baltika-kaliningrad-25-07-2026-0000?blv=602019",
+            "401 https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/pat/a20326909dcc5707/1784898475870/e03313b56a1fe502d4ec7727aef6b7df8f1a02213ad857bbe4187d67e0edd0dc/QQTBtxH-WHk-Fou"
+          ]
+        }
+      ],
+      "attempted_room_ids": [
+        "321443",
+        "531989",
+        "552716",
+        "602019"
+      ],
+      "coverage": {
+        "found_streams": 0,
+        "found_blv_ids": [],
+        "goal": 8,
+        "source_goal_reached": false,
+        "room_queue_complete": true,
+        "complete": true,
+        "max_streams_per_blv": 2,
+        "total_explicit_blv_rooms": 4,
+        "pending_room_keys": [],
+        "room_progress": {
+          "531989": {
+            "key": "531989",
+            "url": "https://socolive.watch/truc-tiep/cska-moscow-vs-baltika-kaliningrad-25-07-2026-0000?blv=531989",
+            "blv": "COZY",
+            "blv_id": "531989",
+            "status": "exhausted",
+            "attempts": 2,
+            "attempts_total": 2,
+            "ever_attempted": true,
+            "valid_stream_ever_found": false,
+            "needs_token_refresh": false,
+            "completion_reason": "no_valid_stream_after_max_attempts",
+            "rate_limit_hits": 0,
+            "last_http_status": 403,
+            "last_stream_count": 0,
+            "last_error": "console/error: Failed to load resource: the server responded with a status of 403 (); console/warning: No available adapters.; console/warning: No available adapters."
+          },
+          "552716": {
+            "key": "552716",
+            "url": "https://socolive.watch/truc-tiep/cska-moscow-vs-baltika-kaliningrad-25-07-2026-0000?blv=552716",
+            "blv": "VOI",
+            "blv_id": "552716",
+            "status": "exhausted",
+            "attempts": 2,
+            "attempts_total": 2,
+            "ever_attempted": true,
+            "valid_stream_ever_found": false,
+            "needs_token_refresh": false,
+            "completion_reason": "no_valid_stream_after_max_attempts",
+            "rate_limit_hits": 0,
+            "last_http_status": 403,
+            "last_stream_count": 0,
+            "last_error": "console/error: Failed to load resource: the server responded with a status of 403 (); console/warning: No available adapters.; console/warning: No available adapters."
+          },
+          "321443": {
+            "key": "321443",
+            "url": "https://socolive.watch/truc-tiep/cska-moscow-vs-baltika-kaliningrad-25-07-2026-0000?blv=321443",
+            "blv": "GIÓ",
+            "blv_id": "321443",
+            "status": "exhausted",
+            "attempts": 2,
+            "attempts_total": 2,
+            "ever_attempted": true,
+            "valid_stream_ever_found": false,
+            "needs_token_refresh": false,
+            "completion_reason": "no_valid_stream_after_max_attempts",
+            "rate_limit_hits": 0,
+            "last_http_status": 403,
+            "last_stream_count": 0,
+            "last_error": "console/error: Failed to load resource: the server responded with a status of 403 (); console/warning: No available adapters.; console/warning: No available adapters."
+          },
+          "602019": {
+            "key": "602019",
+            "url": "https://socolive.watch/truc-tiep/cska-moscow-vs-baltika-kaliningrad-25-07-2026-0000?blv=602019",
+            "blv": "RYO",
+            "blv_id": "602019",
+            "status": "exhausted",
+            "attempts": 2,
+            "attempts_total": 2,
+            "ever_attempted": true,
+            "valid_stream_ever_found": false,
+            "needs_token_refresh": false,
+            "completion_reason": "no_valid_stream_after_max_attempts",
+            "rate_limit_hits": 0,
+            "last_http_status": 403,
+            "last_stream_count": 0,
+            "last_error": "console/error: Failed to load resource: the server responded with a status of 403 (); console/warning: No available adapters.; console/warning: No available adapters."
+          },
+          "__base__": {
+            "key": "__base__",
+            "url": "https://socolive.watch/truc-tiep/cska-moscow-vs-baltika-kaliningrad-25-07-2026-0000",
+            "blv": "XEM NGAY",
+            "blv_id": "",
+            "status": "pending",
+            "attempts": 0,
+            "attempts_total": 0,
+            "ever_attempted": false,
+            "valid_stream_ever_found": false,
+            "needs_token_refresh": false,
+            "completion_reason": "",
+            "rate_limit_hits": 0,
+            "last_http_status": null,
+            "last_stream_count": 0,
+            "last_error": ""
+          }
+        }
+      },
+      "errors": [],
+      "room_progress": {
+        "531989": {
+          "key": "531989",
+          "url": "https://socolive.watch/truc-tiep/cska-moscow-vs-baltika-kaliningrad-25-07-2026-0000?blv=531989",
+          "blv": "COZY",
+          "blv_id": "531989",
+          "status": "exhausted",
+          "attempts": 2,
+          "attempts_total": 2,
+          "ever_attempted": true,
+          "valid_stream_ever_found": false,
+          "needs_token_refresh": false,
+          "completion_reason": "no_valid_stream_after_max_attempts",
+          "rate_limit_hits": 0,
+          "last_http_status": 403,
+          "last_stream_count": 0,
+          "last_error": "console/error: Failed to load resource: the server responded with a status of 403 (); console/warning: No available adapters.; console/warning: No available adapters."
+        },
+        "552716": {
+          "key": "552716",
+          "url": "https://socolive.watch/truc-tiep/cska-moscow-vs-baltika-kaliningrad-25-07-2026-0000?blv=552716",
+          "blv": "VOI",
+          "blv_id": "552716",
+          "status": "exhausted",
+          "attempts": 2,
+          "attempts_total": 2,
+          "ever_attempted": true,
+          "valid_stream_ever_found": false,
+          "needs_token_refresh": false,
+          "completion_reason": "no_valid_stream_after_max_attempts",
+          "rate_limit_hits": 0,
+          "last_http_status": 403,
+          "last_stream_count": 0,
+          "last_error": "console/error: Failed to load resource: the server responded with a status of 403 (); console/warning: No available adapters.; console/warning: No available adapters."
+        },
+        "321443": {
+          "key": "321443",
+          "url": "https://socolive.watch/truc-tiep/cska-moscow-vs-baltika-kaliningrad-25-07-2026-0000?blv=321443",
+          "blv": "GIÓ",
+          "blv_id": "321443",
+          "status": "exhausted",
+          "attempts": 2,
+          "attempts_total": 2,
+          "ever_attempted": true,
+          "valid_stream_ever_found": false,
+          "needs_token_refresh": false,
+          "completion_reason": "no_valid_stream_after_max_attempts",
+          "rate_limit_hits": 0,
+          "last_http_status": 403,
+          "last_stream_count": 0,
+          "last_error": "console/error: Failed to load resource: the server responded with a status of 403 (); console/warning: No available adapters.; console/warning: No available adapters."
+        },
+        "602019": {
+          "key": "602019",
+          "url": "https://socolive.watch/truc-tiep/cska-moscow-vs-baltika-kaliningrad-25-07-2026-0000?blv=602019",
+          "blv": "RYO",
+          "blv_id": "602019",
+          "status": "exhausted",
+          "attempts": 2,
+          "attempts_total": 2,
+          "ever_attempted": true,
+          "valid_stream_ever_found": false,
+          "needs_token_refresh": false,
+          "completion_reason": "no_valid_stream_after_max_attempts",
+          "rate_limit_hits": 0,
+          "last_http_status": 403,
+          "last_stream_count": 0,
+          "last_error": "console/error: Failed to load resource: the server responded with a status of 403 (); console/warning: No available adapters.; console/warning: No available adapters."
+        },
+        "__base__": {
+          "key": "__base__",
+          "url": "https://socolive.watch/truc-tiep/cska-moscow-vs-baltika-kaliningrad-25-07-2026-0000",
           "blv": "XEM NGAY",
           "blv_id": "",
           "status": "pending",
