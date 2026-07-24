@@ -1,4 +1,4 @@
-name: Bot Quet Socolive V10.5 API First Chromium Fallback
+name: Bot Quet Socolive V10.5.1 Metadata Repair
 
 on:
   workflow_dispatch:
@@ -15,7 +15,7 @@ on:
         type: boolean
 
 concurrency:
-  group: socolive-v10-5-api-first-${{ github.ref }}
+  group: socolive-v10-5-1-metadata-${{ github.ref }}
   cancel-in-progress: false
 
 permissions:
@@ -139,6 +139,8 @@ jobs:
           echo "Long harvest: wait=${SOCOLIVE_ROOM_WAIT_SECONDS}s | max=${SOCOLIVE_HARVEST_MAX_SECONDS}s | 2 nguồn/BLV"
           echo "Queue hữu hạn: mỗi BLV tối đa 2 lượt | 1 link hợp lệ = success"
           echo "Chain an toàn: hard_max=$SOCOLIVE_STATE_MAX_CHAIN_RUNS | stall=2 run | resume state trước"
+          echo "V10.5.1: sửa logo, ngày giờ, tên trận và tên BLV trong M3U"
+          echo "Metadata toàn bộ card trang chủ được dùng để sửa catalog tích lũy"
           echo "V10.5: API-first active -> backup -> Chromium fallback"
           echo "API player: list_stream -> /off-tvc -> urlStream -> verify FLV/HLS"
           echo "M3U dùng Referer/Origin của player cho link API"
