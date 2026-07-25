@@ -1,334 +1,5 @@
 [
   {
-    "base_url": "https://socolivekz.cc/truc-tiep/llaneros-fc-vs-deportivo-pereira-luc-0610-ngay-25-07-2026/",
-    "raw_title": "Llaneros FC vs Deportivo Pereira",
-    "home_team": "Llaneros FC",
-    "away_team": "Deportivo Pereira",
-    "home_logo": "https://imgts.sportpulseapiz.com/football/team/n54qllhe8p7qvy9/image/small",
-    "away_logo": "https://imgts.sportpulseapiz.com/football/team/l5ergphoog4r8k0/image/small",
-    "time_text": "06:10",
-    "date_text": "25/07",
-    "status": "Hiệp 2",
-    "card_text": "VĐQG COLOMBIA Hiệp 2: 90' 06:10 - 25.07 Llaneros FC 1 : 0 Deportivo Pereira HT 0 - 0 3 - 3 3 - 1 XMEN 2.00 0/0.5 0.38 2.80 1.5 0.25",
-    "room_results": [
-      {
-        "url": "https://socolivekz.cc/truc-tiep/llaneros-fc-vs-deportivo-pereira-luc-0610-ngay-25-07-2026/",
-        "blv": "XMEN",
-        "blv_id": "",
-        "streams": [
-          "https://live2.streambylivepulse.com/live/channel13.flv",
-          "https://live3.procdnlive.com/livecdn/channel13.flv?auth_key=3000001784926958-0-0-8ac6687d0735a8664fd9e3edbe9183ae"
-        ],
-        "stream_sources": {
-          "https://live2.streambylivepulse.com/live/channel13.flv": [
-            "api/active/player",
-            "api/verified/flv"
-          ],
-          "https://live3.procdnlive.com/livecdn/channel13.flv?auth_key=3000001784926958-0-0-8ac6687d0735a8664fd9e3edbe9183ae": [
-            "api/backup/player",
-            "api/verified/flv"
-          ]
-        },
-        "stream_headers": {
-          "https://live2.streambylivepulse.com/live/channel13.flv": {
-            "referer": "https://soco.livepingscorex.com/",
-            "origin": "https://soco.livepingscorex.com",
-            "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36",
-            "player_endpoint": "https://soco.livepingscorex.com/ajax/chanel/type/8/link/channel13/off-tvc",
-            "api_source_mode": "active"
-          },
-          "https://live3.procdnlive.com/livecdn/channel13.flv?auth_key=3000001784926958-0-0-8ac6687d0735a8664fd9e3edbe9183ae": {
-            "referer": "https://soco.livepingscorex.com/",
-            "origin": "https://soco.livepingscorex.com",
-            "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36",
-            "player_endpoint": "https://soco.livepingscorex.com/ajax/chanel/type/5/link/channel13/off-tvc",
-            "api_source_mode": "backup"
-          }
-        },
-        "stream_first_seen": [
-          "https://live2.streambylivepulse.com/live/channel13.flv",
-          "https://live3.procdnlive.com/livecdn/channel13.flv?auth_key=3000001784926958-0-0-8ac6687d0735a8664fd9e3edbe9183ae"
-        ],
-        "diagnostics": {
-          "scan_mode": "api-backup",
-          "main_status": 200,
-          "elapsed_seconds": 4.81,
-          "api_sources_found": 2,
-          "api_sources_tried": 2
-        },
-        "api_probe": {
-          "enabled": true,
-          "room_status": 200,
-          "active_index": 0,
-          "sources_found": 2,
-          "sources_tried": 2,
-          "valid_stream_count": 2,
-          "source_results": [
-            {
-              "index": 0,
-              "endpoint_base": "https://soco.livepingscorex.com/ajax/chanel/type/8/link/channel13",
-              "endpoint_url": "https://soco.livepingscorex.com/ajax/chanel/type/8/link/channel13/off-tvc",
-              "active": true,
-              "mode": "active",
-              "player_status": 200,
-              "player_content_type": "text/html; charset=utf-8",
-              "player_elapsed_seconds": 0.138,
-              "player_error": "",
-              "stream_urls": [
-                "https://live2.streambylivepulse.com/live/channel13.flv"
-              ],
-              "checks": [
-                {
-                  "url": "https://live2.streambylivepulse.com/live/channel13.flv",
-                  "valid": true,
-                  "status": 200,
-                  "content_type": "video/x-flv",
-                  "bytes_read": 821,
-                  "signature": "FLV",
-                  "elapsed_seconds": 0.724,
-                  "error": "",
-                  "origin": "https://soco.livepingscorex.com",
-                  "referer": "https://soco.livepingscorex.com/",
-                  "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36"
-                }
-              ]
-            },
-            {
-              "index": 1,
-              "endpoint_base": "https://soco.livepingscorex.com/ajax/chanel/type/5/link/channel13",
-              "endpoint_url": "https://soco.livepingscorex.com/ajax/chanel/type/5/link/channel13/off-tvc",
-              "active": false,
-              "mode": "backup",
-              "player_status": 200,
-              "player_content_type": "text/html; charset=utf-8",
-              "player_elapsed_seconds": 0.117,
-              "player_error": "",
-              "stream_urls": [
-                "https://live3.procdnlive.com/livecdn/channel13.flv?auth_key=3000001784926958-0-0-8ac6687d0735a8664fd9e3edbe9183ae"
-              ],
-              "checks": [
-                {
-                  "url": "https://live3.procdnlive.com/livecdn/channel13.flv?auth_key=3000001784926958-0-0-8ac6687d0735a8664fd9e3edbe9183ae",
-                  "valid": true,
-                  "status": 200,
-                  "content_type": "video/x-flv",
-                  "bytes_read": 1177,
-                  "signature": "FLV",
-                  "elapsed_seconds": 3.109,
-                  "error": "",
-                  "origin": "https://soco.livepingscorex.com",
-                  "referer": "https://soco.livepingscorex.com/",
-                  "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36"
-                }
-              ]
-            }
-          ],
-          "fallback_reason": "",
-          "elapsed_seconds": 4.81,
-          "room_content_type": "text/html",
-          "room_elapsed_seconds": 0.514,
-          "room_error": ""
-        },
-        "http_probe": {
-          "enabled": true,
-          "room_status": 200,
-          "active_index": 0,
-          "sources_found": 2,
-          "sources_tried": 2,
-          "valid_stream_count": 2,
-          "source_results": [
-            {
-              "index": 0,
-              "endpoint_base": "https://soco.livepingscorex.com/ajax/chanel/type/8/link/channel13",
-              "endpoint_url": "https://soco.livepingscorex.com/ajax/chanel/type/8/link/channel13/off-tvc",
-              "active": true,
-              "mode": "active",
-              "player_status": 200,
-              "player_content_type": "text/html; charset=utf-8",
-              "player_elapsed_seconds": 0.138,
-              "player_error": "",
-              "stream_urls": [
-                "https://live2.streambylivepulse.com/live/channel13.flv"
-              ],
-              "checks": [
-                {
-                  "url": "https://live2.streambylivepulse.com/live/channel13.flv",
-                  "valid": true,
-                  "status": 200,
-                  "content_type": "video/x-flv",
-                  "bytes_read": 821,
-                  "signature": "FLV",
-                  "elapsed_seconds": 0.724,
-                  "error": "",
-                  "origin": "https://soco.livepingscorex.com",
-                  "referer": "https://soco.livepingscorex.com/",
-                  "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36"
-                }
-              ]
-            },
-            {
-              "index": 1,
-              "endpoint_base": "https://soco.livepingscorex.com/ajax/chanel/type/5/link/channel13",
-              "endpoint_url": "https://soco.livepingscorex.com/ajax/chanel/type/5/link/channel13/off-tvc",
-              "active": false,
-              "mode": "backup",
-              "player_status": 200,
-              "player_content_type": "text/html; charset=utf-8",
-              "player_elapsed_seconds": 0.117,
-              "player_error": "",
-              "stream_urls": [
-                "https://live3.procdnlive.com/livecdn/channel13.flv?auth_key=3000001784926958-0-0-8ac6687d0735a8664fd9e3edbe9183ae"
-              ],
-              "checks": [
-                {
-                  "url": "https://live3.procdnlive.com/livecdn/channel13.flv?auth_key=3000001784926958-0-0-8ac6687d0735a8664fd9e3edbe9183ae",
-                  "valid": true,
-                  "status": 200,
-                  "content_type": "video/x-flv",
-                  "bytes_read": 1177,
-                  "signature": "FLV",
-                  "elapsed_seconds": 3.109,
-                  "error": "",
-                  "origin": "https://soco.livepingscorex.com",
-                  "referer": "https://soco.livepingscorex.com/",
-                  "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36"
-                }
-              ]
-            }
-          ],
-          "fallback_reason": "",
-          "elapsed_seconds": 4.81,
-          "room_content_type": "text/html",
-          "room_elapsed_seconds": 0.514,
-          "room_error": ""
-        },
-        "errors": [],
-        "failed_requests": [],
-        "http_errors": []
-      }
-    ],
-    "attempted_room_ids": [],
-    "coverage": {
-      "found_streams": 2,
-      "found_blv_ids": [],
-      "goal": 2,
-      "source_goal_reached": true,
-      "room_queue_complete": true,
-      "complete": true,
-      "max_streams_per_blv": 2,
-      "total_explicit_blv_rooms": 0,
-      "pending_room_keys": [],
-      "room_progress": {
-        "__base__": {
-          "key": "__base__",
-          "url": "https://socolivekz.cc/truc-tiep/llaneros-fc-vs-deportivo-pereira-luc-0610-ngay-25-07-2026/",
-          "blv": "XMEN",
-          "blv_id": "",
-          "status": "success",
-          "attempts": 1,
-          "attempts_total": 1,
-          "ever_attempted": true,
-          "valid_stream_ever_found": true,
-          "needs_token_refresh": false,
-          "completion_reason": "valid_stream",
-          "rate_limit_hits": 0,
-          "last_http_status": 200,
-          "last_stream_count": 2,
-          "last_error": ""
-        }
-      }
-    },
-    "errors": [],
-    "match_name": "Llaneros FC vs Deportivo Pereira",
-    "scheduled_at": "2026-07-25T06:10:00+07:00",
-    "room_progress": {
-      "__base__": {
-        "key": "__base__",
-        "url": "https://socolivekz.cc/truc-tiep/llaneros-fc-vs-deportivo-pereira-luc-0610-ngay-25-07-2026/",
-        "blv": "XMEN",
-        "blv_id": "",
-        "status": "success",
-        "attempts": 1,
-        "attempts_total": 1,
-        "ever_attempted": true,
-        "valid_stream_ever_found": true,
-        "needs_token_refresh": false,
-        "completion_reason": "valid_stream",
-        "rate_limit_hits": 0,
-        "last_http_status": 200,
-        "last_stream_count": 2,
-        "last_error": ""
-      }
-    },
-    "run_attempted_room_keys": [
-      "__base__"
-    ],
-    "run_rate_limited_room_keys": [],
-    "run_completed_room_keys": [
-      "__base__"
-    ],
-    "run_global_budget_used": 8,
-    "streams": [
-      {
-        "url": "https://live3.procdnlive.com/livecdn/channel13.flv?auth_key=3000001784926958-0-0-8ac6687d0735a8664fd9e3edbe9183ae",
-        "queue_room_key": "__base__",
-        "room_url": "https://socolivekz.cc/truc-tiep/llaneros-fc-vs-deportivo-pereira-luc-0610-ngay-25-07-2026/",
-        "blv": "Nguồn phụ 2",
-        "blv_id": "",
-        "source_id": "",
-        "source_provenance": [
-          "api/backup/player",
-          "api/verified/flv"
-        ],
-        "playback_referer": "https://soco.livepingscorex.com/",
-        "playback_origin": "https://soco.livepingscorex.com",
-        "playback_user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36",
-        "api_player_endpoint": "https://soco.livepingscorex.com/ajax/chanel/type/5/link/channel13/off-tvc",
-        "api_source_mode": "backup",
-        "source_confidence": "network",
-        "mapping_mode": "stream-source-id",
-        "discovered_from_room_url": "https://socolivekz.cc/truc-tiep/llaneros-fc-vs-deportivo-pereira-luc-0610-ngay-25-07-2026/",
-        "discovered_from_blv": "XMEN",
-        "discovered_at": "2026-07-25T04:02:41.898931+07:00",
-        "valid_until": "",
-        "is_expired": false
-      },
-      {
-        "url": "https://live2.streambylivepulse.com/live/channel13.flv",
-        "queue_room_key": "__base__",
-        "room_url": "https://socolivekz.cc/truc-tiep/llaneros-fc-vs-deportivo-pereira-luc-0610-ngay-25-07-2026/",
-        "blv": "Nguồn phụ 1",
-        "blv_id": "",
-        "source_id": "",
-        "source_provenance": [
-          "api/active/player",
-          "api/verified/flv"
-        ],
-        "playback_referer": "https://soco.livepingscorex.com/",
-        "playback_origin": "https://soco.livepingscorex.com",
-        "playback_user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36",
-        "api_player_endpoint": "https://soco.livepingscorex.com/ajax/chanel/type/8/link/channel13/off-tvc",
-        "api_source_mode": "active",
-        "source_confidence": "network",
-        "mapping_mode": "stream-source-id",
-        "discovered_from_room_url": "https://socolivekz.cc/truc-tiep/llaneros-fc-vs-deportivo-pereira-luc-0610-ngay-25-07-2026/",
-        "discovered_from_blv": "XMEN",
-        "discovered_at": "2026-07-25T04:02:41.898915+07:00",
-        "valid_until": "",
-        "is_expired": false
-      }
-    ],
-    "rooms": [
-      {
-        "url": "https://socolivekz.cc/truc-tiep/llaneros-fc-vs-deportivo-pereira-luc-0610-ngay-25-07-2026/",
-        "blv": "XMEN",
-        "blv_id": ""
-      }
-    ],
-    "catalog_last_seen_at": "2026-07-25T08:01:38.088615+07:00",
-    "catalog_updated_at": "2026-07-25T04:03:17.114451+07:00"
-  },
-  {
     "base_url": "https://socolivekz.cc/truc-tiep/sportivo-belgrano-vs-escobar-fc-luc-0635-ngay-25-07-2026/",
     "raw_title": "Sportivo Belgrano vs Escobar FC",
     "home_team": "Sportivo Belgrano",
@@ -11213,8 +10884,8 @@
     "away_logo": "https://imgts.sportpulseapiz.com/football/team/8y39mp1hl85mojx/image/small",
     "time_text": "11:00",
     "date_text": "25/07",
-    "status": "",
-    "card_text": "NSW-N PREMIER LEAGUE HT 11:00 - 25.07 Cooks Hill Utd 0 : 0 Lambton Jarvis HT 0 - 0 1 - 3 0 - 0 0.90 0/0.5 0.90 0.88 1.5/2 0.93",
+    "status": "Hiệp 2",
+    "card_text": "NSW-N PREMIER LEAGUE Hiệp 2: 73' 11:00 - 25.07 Cooks Hill Utd 1 : 0 Lambton Jarvis HT 0 - 0 4 - 3 0 - 0 0.65 0/0.5 1.20 0.80 1.5/2 1.00",
     "room_results": [
       {
         "url": "https://socolivekz.cc/truc-tiep/cooks-hill-utd-vs-lambton-jarvis-luc-1100-ngay-25-07-2026/",
@@ -11515,7 +11186,7 @@
         "blv_id": ""
       }
     ],
-    "catalog_last_seen_at": "2026-07-25T12:02:29.330445+07:00",
+    "catalog_last_seen_at": "2026-07-25T12:31:49.149494+07:00",
     "catalog_updated_at": "2026-07-25T09:32:15.693967+07:00"
   },
   {
@@ -11528,7 +11199,7 @@
     "time_text": "11:00",
     "date_text": "25/07",
     "status": "Hiệp 2",
-    "card_text": "NSW WOMENS PREMIER LEAGUE Hiệp 2: 48' 11:00 - 25.07 Nữ Charlestown Azzuri 0 : 4 Nữ Adamstown Rosebud HT 0 - 4 2 - 0 1 - 0 0.90 -0.5/1 0.90 0.83 6 0.98",
+    "card_text": "NSW WOMENS PREMIER LEAGUE Hiệp 2: 78' 11:00 - 25.07 Nữ Charlestown Azzuri 0 : 6 Nữ Adamstown Rosebud HT 0 - 4 2 - 1 1 - 0 1.00 0/0.5 0.80 0.88 6.5/7 0.93",
     "room_results": [
       {
         "url": "https://socolivekz.cc/truc-tiep/nu-charlestown-azzuri-vs-nu-adamstown-rosebud-luc-1100-ngay-25-07-2026/",
@@ -11826,7 +11497,7 @@
         "blv_id": ""
       }
     ],
-    "catalog_last_seen_at": "2026-07-25T12:02:29.330445+07:00",
+    "catalog_last_seen_at": "2026-07-25T12:31:49.149494+07:00",
     "catalog_updated_at": "2026-07-25T10:31:44.987779+07:00"
   },
   {
@@ -12152,8 +11823,8 @@
     "away_logo": "https://imgts.sportpulseapiz.com/football/team/ednm9whvvwyryox/image/small",
     "time_text": "11:15",
     "date_text": "25/07",
-    "status": "Hiệp 1",
-    "card_text": "AUSTRALIA CAPITAL TERRITORY U23 LEAGUE Hiệp 1: 45' 11:15 - 25.07 Belconnen United U23 1 : 0 OConnor Knights U23 HT 1 - 0 3 - 3 0 - 0 0.93 0.5 0.88 0.95 3 0.85",
+    "status": "Hiệp 2",
+    "card_text": "AUSTRALIA CAPITAL TERRITORY U23 LEAGUE Hiệp 2: 59' 11:15 - 25.07 Belconnen United U23 1 : 0 OConnor Knights U23 HT 1 - 0 3 - 3 0 - 0 0.95 0.5 0.85 1.00 2.5 0.80",
     "room_results": [
       {
         "url": "https://socolivekz.cc/truc-tiep/belconnen-united-u23-vs-oconnor-knights-u23-luc-1115-ngay-25-07-2026/",
@@ -12451,7 +12122,7 @@
         "blv_id": ""
       }
     ],
-    "catalog_last_seen_at": "2026-07-25T12:02:29.330445+07:00",
+    "catalog_last_seen_at": "2026-07-25T12:31:49.149494+07:00",
     "catalog_updated_at": "2026-07-25T12:02:29.330445+07:00"
   },
   {
@@ -12773,8 +12444,8 @@
     "away_logo": "https://imgts.sportpulseapiz.com/football/team/ednm9whz6goryox/image/small",
     "time_text": "11:30",
     "date_text": "25/07",
-    "status": "Hiệp 1",
-    "card_text": "CAPITAL NPL 1 Hiệp 1: 28' 11:30 - 25.07 Canberra Olympic 1 : 1 Queanbeyan City HT 1 - 1 1 - 2 1 - 0 0.95 0/0.5 0.85 0.88 4.5 0.93",
+    "status": "",
+    "card_text": "CAPITAL NPL 1 HT 11:30 - 25.07 Canberra Olympic 1 : 1 Queanbeyan City HT 1 - 1 4 - 2 1 - 0 0.85 0/0.5 0.95 0.93 3.5/4 0.88",
     "room_results": [
       {
         "url": "https://socolivekz.cc/truc-tiep/canberra-olympic-vs-queanbeyan-city-luc-1130-ngay-25-07-2026/",
@@ -13075,7 +12746,7 @@
         "blv_id": ""
       }
     ],
-    "catalog_last_seen_at": "2026-07-25T12:02:29.330445+07:00",
+    "catalog_last_seen_at": "2026-07-25T12:31:49.149494+07:00",
     "catalog_updated_at": "2026-07-25T09:32:15.693967+07:00"
   },
   {
@@ -13087,8 +12758,8 @@
     "away_logo": "https://imgts.sportpulseapiz.com/football/team/n54qllh2285qvy9/image/small",
     "time_text": "11:30",
     "date_text": "25/07",
-    "status": "Hiệp 1",
-    "card_text": "TAS PREMIER LEAGUE Hiệp 1: 31' 11:30 - 25.07 LAN Thurston 0 : 0 Devonport City HT 0 - 0 1 - 2 0 - 0 1.00 -1/1.5 0.80 0.80 2.5 1.00",
+    "status": "",
+    "card_text": "TAS PREMIER LEAGUE HT 11:30 - 25.07 LAN Thurston 0 : 1 Devonport City HT 0 - 1 3 - 2 0 - 0 0.85 -1 0.95 0.83 2.5/3 0.98",
     "room_results": [
       {
         "url": "https://socolivekz.cc/truc-tiep/lan-thurston-vs-devonport-city-luc-1130-ngay-25-07-2026/",
@@ -13386,7 +13057,7 @@
         "blv_id": ""
       }
     ],
-    "catalog_last_seen_at": "2026-07-25T12:02:29.330445+07:00",
+    "catalog_last_seen_at": "2026-07-25T12:31:49.149494+07:00",
     "catalog_updated_at": "2026-07-25T12:02:29.330445+07:00"
   },
   {
@@ -13709,8 +13380,8 @@
     "away_logo": "https://imgts.sportpulseapiz.com/football/team/k82rekhvy40repz/image/small",
     "time_text": "11:30",
     "date_text": "25/07",
-    "status": "Hiệp 1",
-    "card_text": "TAS PREMIER LEAGUE Hiệp 1: 30' 11:30 - 25.07 Riverside Olympic 0 : 0 Launceston City HT 0 - 0 0 - 1 0 - 0 0.80 -0.5/1 1.00 0.95 3.5/4 0.85",
+    "status": "",
+    "card_text": "TAS PREMIER LEAGUE HT 11:30 - 25.07 Riverside Olympic 0 : 0 Launceston City HT 0 - 0 0 - 2 0 - 1 0.83 0/0.5 0.98 0.75 1.5 0.95",
     "room_results": [
       {
         "url": "https://socolivekz.cc/truc-tiep/riverside-olympic-vs-launceston-city-luc-1130-ngay-25-07-2026/",
@@ -14007,7 +13678,7 @@
         "blv_id": ""
       }
     ],
-    "catalog_last_seen_at": "2026-07-25T12:02:29.330445+07:00",
+    "catalog_last_seen_at": "2026-07-25T12:31:49.149494+07:00",
     "catalog_updated_at": "2026-07-25T12:02:29.330445+07:00"
   },
   {
@@ -14333,8 +14004,8 @@
     "away_logo": "https://imgts.sportpulseapiz.com/football/team/6ypq3nh5wl9md7o/image/small",
     "time_text": "12:00",
     "date_text": "25/07",
-    "status": "Đang diễn ra",
-    "card_text": "FFSA PREMIER LEAGUE Đang diễn ra 12:00 - 25.07 Adelaide City West Birkalla 1 - 0 4 - 0 1 - 1 TONI 0.98 0.5 0.83 0.95 3 0.85",
+    "status": "Hiệp 1",
+    "card_text": "FFSA PREMIER LEAGUE Hiệp 1: 25' 12:00 - 25.07 Adelaide City 1 : 0 West Birkalla HT 1 - 0 1 - 0 0 - 0 TONI 0.78 0 1.03 0.90 3.5 0.90",
     "room_results": [
       {
         "url": "https://socolivekz.cc/truc-tiep/adelaide-city-vs-west-birkalla-luc-1200-ngay-25-07-2026/",
@@ -14650,7 +14321,7 @@
         "blv_id": ""
       }
     ],
-    "catalog_last_seen_at": "2026-07-25T12:02:29.330445+07:00",
+    "catalog_last_seen_at": "2026-07-25T12:31:49.149494+07:00",
     "catalog_updated_at": "2026-07-25T10:31:44.987779+07:00"
   },
   {
@@ -14663,7 +14334,7 @@
     "time_text": "12:00",
     "date_text": "25/07",
     "status": "Hiệp 1",
-    "card_text": "CAPITAL NPL 1 Hiệp 1: 1' 12:00 - 25.07 Brindabella Blues FC 0 : 0 Canberra White Eagles HT 0 - 0 0 - 0 0 - 0 0.93 -0.5 0.88 0.85 3/3.5 0.95",
+    "card_text": "CAPITAL NPL 1 Hiệp 1: 31' 12:00 - 25.07 Brindabella Blues FC 0 : 1 Canberra White Eagles HT 0 - 1 0 - 1 0 - 0 0.73 0/0.5 0.98 0.90 3/3.5 0.90",
     "room_results": [
       {
         "url": "https://socolivekz.cc/truc-tiep/brindabella-blues-fc-vs-canberra-white-eagles-luc-1200-ngay-25-07-2026/",
@@ -14960,7 +14631,7 @@
         "blv_id": ""
       }
     ],
-    "catalog_last_seen_at": "2026-07-25T12:02:29.330445+07:00",
+    "catalog_last_seen_at": "2026-07-25T12:31:49.149494+07:00",
     "catalog_updated_at": "2026-07-25T10:31:44.987779+07:00"
   },
   {
@@ -14972,8 +14643,8 @@
     "away_logo": "https://imgts.sportpulseapiz.com/football/team/8yomo4hk7nkq0j6/image/small",
     "time_text": "12:00",
     "date_text": "25/07",
-    "status": "Đang diễn ra",
-    "card_text": "FFSA PREMIER LEAGUE Đang diễn ra 12:00 - 25.07 Croydon Kings Campbelltown SC 1 - 2 1 - 1 5 - 3 JEAN 0.95 0/0.5 0.85 0.90 3.5 0.90",
+    "status": "Hiệp 1",
+    "card_text": "FFSA PREMIER LEAGUE Hiệp 1: 28' 12:00 - 25.07 Croydon Kings 1 : 1 Campbelltown SC HT 1 - 1 0 - 1 0 - 0 JEAN 0.83 0 0.98 0.95 4.5 0.85",
     "room_results": [
       {
         "url": "https://socolivekz.cc/truc-tiep/croydon-kings-vs-campbelltown-sc-luc-1200-ngay-25-07-2026/",
@@ -15289,7 +14960,7 @@
         "blv_id": ""
       }
     ],
-    "catalog_last_seen_at": "2026-07-25T12:02:29.330445+07:00",
+    "catalog_last_seen_at": "2026-07-25T12:31:49.149494+07:00",
     "catalog_updated_at": "2026-07-25T10:02:09.511566+07:00"
   },
   {
@@ -15301,8 +14972,8 @@
     "away_logo": "https://imgts.sportpulseapiz.com/football/team/2y8m4zhj3w7ql07/image/small",
     "time_text": "12:00",
     "date_text": "25/07",
-    "status": "Đang diễn ra",
-    "card_text": "VIC PREMIER LEAGUE Đang diễn ra 12:00 - 25.07 Melbourne City NPL Avondale FC 3 - 1 BRADY 0.93 -0.5/1 0.88 0.83 3/3.5 0.98",
+    "status": "Hiệp 1",
+    "card_text": "VIC PREMIER LEAGUE Hiệp 1: 30' 12:00 - 25.07 Melbourne City NPL 1 : 0 Avondale FC HT 1 - 0 1 - 2 0 - 0 BRADY 0.90 -1 0.90 0.90 3.5 0.90",
     "room_results": [
       {
         "url": "https://socolivekz.cc/truc-tiep/melbourne-city-npl-vs-avondale-fc-luc-1200-ngay-25-07-2026/",
@@ -15581,7 +15252,7 @@
         "blv_id": ""
       }
     ],
-    "catalog_last_seen_at": "2026-07-25T12:02:29.330445+07:00",
+    "catalog_last_seen_at": "2026-07-25T12:31:49.149494+07:00",
     "catalog_updated_at": "2026-07-25T10:02:09.511566+07:00"
   },
   {
@@ -15593,8 +15264,8 @@
     "away_logo": "https://imgts.sportpulseapiz.com/football/team/jw2r09h1g69rz84/image/small",
     "time_text": "12:00",
     "date_text": "25/07",
-    "status": "Đang diễn ra",
-    "card_text": "VIC WOMEN PREMIER LEAGUE Đang diễn ra 12:00 - 25.07 Nữ Essendon Royals Nữ Melbourne Victory FC 0 - 3 0.83 1.5 0.98 0.90 3.5/4 0.90",
+    "status": "Hiệp 1",
+    "card_text": "VIC WOMEN PREMIER LEAGUE Hiệp 1: 30' 12:00 - 25.07 Nữ Essendon Royals 1 : 0 Nữ Melbourne Victory FC HT 1 - 0 1 - 1 0 - 0 0.88 1 0.93 0.95 3.5/4 0.85",
     "room_results": [
       {
         "url": "https://socolivekz.cc/truc-tiep/nu-essendon-royals-vs-nu-melbourne-victory-fc-luc-1200-ngay-25-07-2026/",
@@ -15891,7 +15562,7 @@
         "blv_id": ""
       }
     ],
-    "catalog_last_seen_at": "2026-07-25T12:02:29.330445+07:00",
+    "catalog_last_seen_at": "2026-07-25T12:31:49.149494+07:00",
     "catalog_updated_at": "2026-07-25T10:31:44.987779+07:00"
   },
   {
@@ -16214,8 +15885,8 @@
     "away_logo": "https://imgts.sportpulseapiz.com/football/team/y0or5jh1wygqwzv/image/small",
     "time_text": "12:00",
     "date_text": "25/07",
-    "status": "Đang diễn ra",
-    "card_text": "NSW PREMIER W-LEAGUE Đang diễn ra 12:00 - 25.07 Nữ NWS Spirit Nữ Hills United 5 - 0 0.95 0/0.5 0.85 0.93 3/3.5 0.88",
+    "status": "Hiệp 1",
+    "card_text": "NSW PREMIER W-LEAGUE Hiệp 1: 27' 12:00 - 25.07 Nữ NWS Spirit 0 : 0 Nữ Hills United HT 0 - 0 3 - 0 0 - 1 0.88 0.5 0.93 0.80 2/2.5 1.00",
     "room_results": [
       {
         "url": "https://socolivekz.cc/truc-tiep/nu-nws-spirit-vs-nu-hills-united-luc-1200-ngay-25-07-2026/",
@@ -16516,7 +16187,7 @@
         "blv_id": ""
       }
     ],
-    "catalog_last_seen_at": "2026-07-25T12:02:29.330445+07:00",
+    "catalog_last_seen_at": "2026-07-25T12:31:49.149494+07:00",
     "catalog_updated_at": "2026-07-25T11:02:28.461670+07:00"
   },
   {
@@ -16838,8 +16509,8 @@
     "away_logo": "https://imgts.sportpulseapiz.com/football/team/965mkyh7g2xr1ge/image/small",
     "time_text": "12:15",
     "date_text": "25/07",
-    "status": "Sắp diễn ra",
-    "card_text": "VICTORIAN STATE DIVISION 1 Sắp diễn ra 12:15 - 25.07 Manningham United Blues Melbourne Knights 0 - 0 1 - 0 1 - 2 0.93 -0.5/1 0.88 1.00 3/3.5 0.80",
+    "status": "Hiệp 1",
+    "card_text": "VICTORIAN STATE DIVISION 1 Hiệp 1: 13' 12:15 - 25.07 Manningham United Blues 1 : 2 Melbourne Knights HT 1 - 2 0 - 0 0 - 0 0.95 -0.5 0.85 0.85 5.5/6 0.95",
     "room_results": [
       {
         "url": "https://socolivekz.cc/truc-tiep/manningham-united-blues-vs-melbourne-knights-luc-1215-ngay-25-07-2026/",
@@ -17140,7 +16811,7 @@
         "blv_id": ""
       }
     ],
-    "catalog_last_seen_at": "2026-07-25T12:02:29.330445+07:00",
+    "catalog_last_seen_at": "2026-07-25T12:31:49.149494+07:00",
     "catalog_updated_at": "2026-07-25T11:02:28.461670+07:00"
   },
   {
@@ -17152,8 +16823,8 @@
     "away_logo": "https://imgts.sportpulseapiz.com/football/team/8yomo4hkv0lq0j6/image/small",
     "time_text": "12:30",
     "date_text": "25/07",
-    "status": "",
-    "card_text": "FFSA PREMIER LEAGUE 12:30 - 25.07 Adelaide Comets FC White City 3 - 1 2 - 3 2 - 2 POLO 0.90 -0.5 0.90 0.93 3 0.88",
+    "status": "Đang diễn ra",
+    "card_text": "FFSA PREMIER LEAGUE Đang diễn ra 12:30 - 25.07 Adelaide Comets FC White City 3 - 1 2 - 3 2 - 2 POLO 0.90 -0.5 0.90 0.93 3 0.88",
     "room_results": [
       {
         "url": "https://socolivekz.cc/truc-tiep/adelaide-comets-fc-vs-white-city-luc-1230-ngay-25-07-2026/",
@@ -17432,7 +17103,7 @@
         "blv_id": ""
       }
     ],
-    "catalog_last_seen_at": "2026-07-25T12:02:29.330445+07:00",
+    "catalog_last_seen_at": "2026-07-25T12:31:49.149494+07:00",
     "catalog_updated_at": "2026-07-25T11:02:28.461670+07:00"
   },
   {
@@ -17444,8 +17115,8 @@
     "away_logo": "https://imgts.sportpulseapiz.com/football/team/23xmvkhop1gqg8n/image/small",
     "time_text": "12:30",
     "date_text": "25/07",
-    "status": "",
-    "card_text": "SOUTH AUSTRALIA STATE LEAGUE 1 12:30 - 25.07 Adelaide Raiders SC Fulham United 4 - 2 4 - 2 0 - 2 0.95 0/0.5 0.85 0.90 3/3.5 0.90",
+    "status": "Đang diễn ra",
+    "card_text": "SOUTH AUSTRALIA STATE LEAGUE 1 Đang diễn ra 12:30 - 25.07 Adelaide Raiders SC Fulham United 4 - 2 4 - 2 0 - 2 0.95 0/0.5 0.85 0.90 3/3.5 0.90",
     "room_results": [
       {
         "url": "https://socolivekz.cc/truc-tiep/adelaide-raiders-sc-vs-fulham-united-luc-1230-ngay-25-07-2026/",
@@ -17746,7 +17417,7 @@
         "blv_id": ""
       }
     ],
-    "catalog_last_seen_at": "2026-07-25T12:02:29.330445+07:00",
+    "catalog_last_seen_at": "2026-07-25T12:31:49.149494+07:00",
     "catalog_updated_at": "2026-07-25T11:32:26.945425+07:00"
   },
   {
@@ -17758,8 +17429,8 @@
     "away_logo": "https://imgts.sportpulseapiz.com/football/team/zp5rzgh7wv7q82w/image/small",
     "time_text": "12:30",
     "date_text": "25/07",
-    "status": "",
-    "card_text": "FFSA PREMIER LEAGUE 12:30 - 25.07 Adelaide U21 Sturt Lions 2 - 3 1 - 4 1 - 4 0.98 0.5 0.83 0.93 3/3.5 0.88",
+    "status": "Đang diễn ra",
+    "card_text": "FFSA PREMIER LEAGUE Đang diễn ra 12:30 - 25.07 Adelaide U21 Sturt Lions 2 - 3 1 - 4 1 - 4 0.98 0.5 0.83 0.93 3/3.5 0.88",
     "room_results": [
       {
         "url": "https://socolivekz.cc/truc-tiep/adelaide-u21-vs-sturt-lions-luc-1230-ngay-25-07-2026/",
@@ -18056,7 +17727,7 @@
         "blv_id": ""
       }
     ],
-    "catalog_last_seen_at": "2026-07-25T12:02:29.330445+07:00",
+    "catalog_last_seen_at": "2026-07-25T12:31:49.149494+07:00",
     "catalog_updated_at": "2026-07-25T11:02:28.461670+07:00"
   },
   {
@@ -18068,8 +17739,8 @@
     "away_logo": "https://imgts.sportpulseapiz.com/football/team/23xmvkhodneqg8n/image/small",
     "time_text": "12:30",
     "date_text": "25/07",
-    "status": "",
-    "card_text": "FFSA PREMIER LEAGUE 12:30 - 25.07 Hills Knights SC Playford City 8 - 1 0 - 1 8 - 1 - - - - - -",
+    "status": "Đang diễn ra",
+    "card_text": "FFSA PREMIER LEAGUE Đang diễn ra 12:30 - 25.07 Hills Knights SC Playford City 8 - 1 0 - 1 8 - 1 - - - - - -",
     "room_results": [
       {
         "url": "https://socolivekz.cc/truc-tiep/hills-knights-sc-vs-playford-city-luc-1230-ngay-25-07-2026/",
@@ -18370,7 +18041,7 @@
         "blv_id": ""
       }
     ],
-    "catalog_last_seen_at": "2026-07-25T12:02:29.330445+07:00",
+    "catalog_last_seen_at": "2026-07-25T12:31:49.149494+07:00",
     "catalog_updated_at": "2026-07-25T11:32:26.945425+07:00"
   },
   {
@@ -18382,8 +18053,8 @@
     "away_logo": "https://imgts.sportpulseapiz.com/football/team/dj2ryohkz6nq1zp/image/small",
     "time_text": "12:30",
     "date_text": "25/07",
-    "status": "",
-    "card_text": "VIC WOMEN PREMIER LEAGUE 12:30 - 25.07 Nữ South Melbourne Nữ Bulleen Lions FC 1 - 2 3 - 3 2 - 3 1.03 0/0.5 0.78 0.85 2.5/3 0.95",
+    "status": "Đang diễn ra",
+    "card_text": "VIC WOMEN PREMIER LEAGUE Đang diễn ra 12:30 - 25.07 Nữ South Melbourne Nữ Bulleen Lions FC 1 - 2 3 - 3 2 - 3 1.03 0/0.5 0.78 0.85 2.5/3 0.95",
     "room_results": [
       {
         "url": "https://socolivekz.cc/truc-tiep/nu-south-melbourne-vs-nu-bulleen-lions-fc-luc-1230-ngay-25-07-2026/",
@@ -18681,7 +18352,7 @@
         "blv_id": ""
       }
     ],
-    "catalog_last_seen_at": "2026-07-25T12:02:29.330445+07:00",
+    "catalog_last_seen_at": "2026-07-25T12:31:49.149494+07:00",
     "catalog_updated_at": "2026-07-25T11:32:26.945425+07:00"
   },
   {
@@ -18991,7 +18662,7 @@
         "blv_id": ""
       }
     ],
-    "catalog_last_seen_at": "2026-07-25T12:02:29.330445+07:00",
+    "catalog_last_seen_at": "2026-07-25T12:31:49.149494+07:00",
     "catalog_updated_at": "2026-07-25T11:32:26.945425+07:00"
   },
   {
@@ -19305,7 +18976,7 @@
         "blv_id": ""
       }
     ],
-    "catalog_last_seen_at": "2026-07-25T12:02:29.330445+07:00",
+    "catalog_last_seen_at": "2026-07-25T12:31:49.149494+07:00",
     "catalog_updated_at": "2026-07-25T11:32:26.945425+07:00"
   },
   {
@@ -19615,7 +19286,7 @@
         "blv_id": ""
       }
     ],
-    "catalog_last_seen_at": "2026-07-25T12:02:29.330445+07:00",
+    "catalog_last_seen_at": "2026-07-25T12:31:49.149494+07:00",
     "catalog_updated_at": "2026-07-25T11:32:26.945425+07:00"
   },
   {
@@ -19925,8 +19596,319 @@
         "blv_id": ""
       }
     ],
-    "catalog_last_seen_at": "2026-07-25T12:02:29.330445+07:00",
+    "catalog_last_seen_at": "2026-07-25T12:31:49.149494+07:00",
     "catalog_updated_at": "2026-07-25T11:32:26.945425+07:00"
+  },
+  {
+    "base_url": "https://socolivekz.cc/truc-tiep/belconnen-united-vs-oconnor-knights-luc-1330-ngay-25-07-2026/",
+    "raw_title": "Belconnen United vs OConnor Knights",
+    "home_team": "Belconnen United",
+    "away_team": "OConnor Knights",
+    "home_logo": "https://imgts.sportpulseapiz.com/football/team/ednm9wh9kx1ryox/image/small",
+    "away_logo": "https://imgts.sportpulseapiz.com/football/team/965mkyh3zjnr1ge/image/small",
+    "time_text": "13:30",
+    "date_text": "25/07",
+    "status": "",
+    "card_text": "CAPITAL NPL 1 13:30 - 25.07 Belconnen United OConnor Knights 2 - 1 3 - 1 1 - 0 0.90 0/0.5 0.90 0.95 3.5 0.85",
+    "room_results": [
+      {
+        "url": "https://socolivekz.cc/truc-tiep/belconnen-united-vs-oconnor-knights-luc-1330-ngay-25-07-2026/",
+        "blv": "",
+        "blv_id": "",
+        "streams": [
+          "https://live1.streambylivepulse.com/live/channel21.flv?wsSecret=22a8034f9eb3769966cae500b5bedba2&wsABSTime=1785000657"
+        ],
+        "stream_sources": {
+          "https://live1.streambylivepulse.com/live/channel21.flv?wsSecret=22a8034f9eb3769966cae500b5bedba2&wsABSTime=1785000657": [
+            "cdp/request",
+            "cdp/response",
+            "harvest-final",
+            "harvest-round-1",
+            "harvest-round-2",
+            "harvest-round-3",
+            "harvest-round-4",
+            "harvest-round-5",
+            "harvest-round-6",
+            "harvest-round-7",
+            "harvest-round-8",
+            "request/fetch",
+            "response/403"
+          ]
+        },
+        "stream_headers": {},
+        "stream_first_seen": [
+          "https://live1.streambylivepulse.com/live/channel21.flv?wsSecret=22a8034f9eb3769966cae500b5bedba2&wsABSTime=1785000657"
+        ],
+        "discovered_blv_ids": [],
+        "diagnostics": {
+          "url": "https://socolivekz.cc/truc-tiep/belconnen-united-vs-oconnor-knights-luc-1330-ngay-25-07-2026/",
+          "title": "Trực tiếp Belconnen United vs OConnor Knights full lúc 13:30, ngày 25/07",
+          "h1": "Xem trực tiếp trận đấu Belconnen United vs OConnor Knights full lúc 13:30, ngày 25/07/2026",
+          "ready_state": "complete",
+          "visibility_state": "visible",
+          "hidden": false,
+          "video_count": 0,
+          "iframe_count": 5,
+          "body_sample": "WC 2026 Lịch Thi Đấu Xem Lại Video Highlight Tỷ Lệ Kèo BXH KQBD Tips Tin Tức Livescore Tuyển Dụng Top Nhà Cái Cược 8xbet WC 2026 Lịch Thi Đấu Xem Lại Video Highlight Tỷ Lệ Kèo BXH KQBD Tips Tin Tức Livescore Tuyển Dụng Top nhà cái Xem trực tiếp trận đấu Belconnen United vs OConnor Knights full lúc 13:30, ngày 25/07/2026 Phát sóng link trực tuyến Belconnen United vs OConnor Knights hôm nay tại giải đấu Capital NPL 1 _ _ _ _ _ _ Belconnen United OConnor Knights Theo bạn thì trận này tài hay xỉu? Tài 0% Xỉu 0% Theo bạn thì trận này đội nào sẽ thắng? Chủ nhà 0% Hòa 0% Đội Khách 0% Anh Em Muốn Tham Gia Đặt Cược Thì Click Vào Quảng Cáo Của 8XBET Để Đăng Ký Đặt Cược Tất Cả Các Trận Đấu Trên Toàn Thế Giới. Nếu anh em gặp tình trạng không vào được web, hãy cài VPN 1.1.1.1 để truy cập ổn định hơn nhé . Châu Á Châu Âu Tài xỉu Phạt góc Chọn nhà cái HIỆP 1 FT Châu Á HIỆP 1 FT Châu Á - - - 0.90 0/0.5 0.90 Châu Âu HIỆP 1 FT Châu Âu - - - 2.05 4.20 2.60 Tài xỉu HIỆP 1 FT Tài xỉu - - - 0.95 3.5 0.85 SỚM FT Phạt góc HIỆP 1 FT Phạt góc - - - 0.925 9.5 0.875 Trực tiếp Mô phỏng CHIA SẺ Phát sóng trận đấu Belconnen United vs OConnor Knights full HD lúc 13:30, ngày 25/07/2026 Capital NPL 1 HD 1 CHIA SẺ T",
+          "harvest_rounds": 8,
+          "harvest_window_seconds": 6.313,
+          "main_status": 200,
+          "harvested_stream_count": 1,
+          "harvested_blv_ids": [],
+          "scan_mode": "chromium-fallback",
+          "elapsed_seconds": 8.625
+        },
+        "api_probe": {
+          "enabled": true,
+          "room_status": 200,
+          "active_index": 0,
+          "sources_found": 1,
+          "sources_tried": 1,
+          "valid_stream_count": 0,
+          "source_results": [
+            {
+              "index": 0,
+              "endpoint_base": "https://soco.livepingscorex.com/ajax/chanel/type/7/link/channel21",
+              "endpoint_url": "https://soco.livepingscorex.com/ajax/chanel/type/7/link/channel21/off-tvc",
+              "active": true,
+              "mode": "active",
+              "player_status": 200,
+              "player_content_type": "text/html; charset=utf-8",
+              "player_elapsed_seconds": 0.311,
+              "player_error": "",
+              "stream_urls": [
+                "https://live1.streambylivepulse.com/live/channel21.flv?wsSecret=194c7599e0f9b7bac97e9d70ab12fd80&wsABSTime=1785000655"
+              ],
+              "checks": [
+                {
+                  "url": "https://live1.streambylivepulse.com/live/channel21.flv?wsSecret=194c7599e0f9b7bac97e9d70ab12fd80&wsABSTime=1785000655",
+                  "valid": false,
+                  "status": 403,
+                  "content_type": "text/html",
+                  "bytes_read": 0,
+                  "signature": "",
+                  "elapsed_seconds": 0.939,
+                  "error": "",
+                  "origin": "https://soco.livepingscorex.com",
+                  "referer": "https://soco.livepingscorex.com/",
+                  "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36"
+                }
+              ]
+            }
+          ],
+          "fallback_reason": "all_api_sources_failed",
+          "elapsed_seconds": 1.364,
+          "room_content_type": "text/html",
+          "room_elapsed_seconds": 0.107,
+          "room_error": ""
+        },
+        "http_probe": {
+          "api_first": {
+            "enabled": true,
+            "room_status": 200,
+            "active_index": 0,
+            "sources_found": 1,
+            "sources_tried": 1,
+            "valid_stream_count": 0,
+            "source_results": [
+              {
+                "index": 0,
+                "endpoint_base": "https://soco.livepingscorex.com/ajax/chanel/type/7/link/channel21",
+                "endpoint_url": "https://soco.livepingscorex.com/ajax/chanel/type/7/link/channel21/off-tvc",
+                "active": true,
+                "mode": "active",
+                "player_status": 200,
+                "player_content_type": "text/html; charset=utf-8",
+                "player_elapsed_seconds": 0.311,
+                "player_error": "",
+                "stream_urls": [
+                  "https://live1.streambylivepulse.com/live/channel21.flv?wsSecret=194c7599e0f9b7bac97e9d70ab12fd80&wsABSTime=1785000655"
+                ],
+                "checks": [
+                  {
+                    "url": "https://live1.streambylivepulse.com/live/channel21.flv?wsSecret=194c7599e0f9b7bac97e9d70ab12fd80&wsABSTime=1785000655",
+                    "valid": false,
+                    "status": 403,
+                    "content_type": "text/html",
+                    "bytes_read": 0,
+                    "signature": "",
+                    "elapsed_seconds": 0.939,
+                    "error": "",
+                    "origin": "https://soco.livepingscorex.com",
+                    "referer": "https://soco.livepingscorex.com/",
+                    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36"
+                  }
+                ]
+              }
+            ],
+            "fallback_reason": "all_api_sources_failed",
+            "elapsed_seconds": 1.364,
+            "room_content_type": "text/html",
+            "room_elapsed_seconds": 0.107,
+            "room_error": ""
+          },
+          "legacy_http": {
+            "enabled": false,
+            "status": null,
+            "elapsed_seconds": 0.0,
+            "error": ""
+          }
+        },
+        "errors": [
+          "console/error: Failed to load resource: net::ERR_FAILED",
+          "console/error: Failed to load resource: net::ERR_FAILED",
+          "console/error: Failed to load resource: net::ERR_FAILED",
+          "console/error: Failed to load resource: net::ERR_FAILED",
+          "console/error: Failed to load resource: net::ERR_FAILED",
+          "console/error: Failed to load resource: net::ERR_FAILED",
+          "console/error: Failed to load resource: net::ERR_FAILED",
+          "console/error: Failed to load resource: net::ERR_FAILED",
+          "console/error: Failed to load resource: net::ERR_FAILED",
+          "console/error: Failed to load resource: net::ERR_FAILED",
+          "console/error: Failed to load resource: net::ERR_FAILED",
+          "console/error: Failed to load resource: net::ERR_FAILED",
+          "console/error: Failed to load resource: net::ERR_FAILED",
+          "console/error: Failed to load resource: net::ERR_FAILED",
+          "console/error: Failed to load resource: net::ERR_FAILED",
+          "console/error: Failed to load resource: net::ERR_FAILED",
+          "console/error: Failed to load resource: net::ERR_FAILED",
+          "console/error: Failed to load resource: net::ERR_FAILED",
+          "console/error: Failed to load resource: net::ERR_FAILED",
+          "console/error: Failed to load resource: net::ERR_FAILED"
+        ],
+        "failed_requests": [
+          "stylesheet https://fonts.googleapis.com/css2?family=Bangers&family=Oswald:wght@400;500;700&family=Raleway:wght@400;500;700&family=Roboto+Condensed:wght@300;400;700&display=swap | net::ERR_FAILED",
+          "stylesheet https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0 | net::ERR_FAILED",
+          "stylesheet https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css | net::ERR_FAILED",
+          "stylesheet https://socolivekz.cc/wp-content/plugins/widget-options/assets/css/widget-options.css?ver=4.0.6.1 | net::ERR_FAILED",
+          "stylesheet https://socolivekz.cc/wp-content/plugins/wp-pagenavi/pagenavi-css.css?ver=2.70 | net::ERR_FAILED",
+          "stylesheet https://socolivekz.cc/wp-content/themes/bongda/dist/styles/bootstrap.min.css?ver=1745376853 | net::ERR_FAILED",
+          "stylesheet https://socolivekz.cc/wp-content/themes/bongda/dist/styles/main.css?ver=1781184173 | net::ERR_FAILED",
+          "stylesheet https://socolivekz.cc/wp-content/themes/bongda/dist/styles/pages/single-live.css?ver=1784627923 | net::ERR_FAILED",
+          "image https://socolivekz.cc/wp-content/themes/bongda/dist/images/logo-socolive-tv-official-v2.png | net::ERR_FAILED",
+          "image https://socolivekz.cc/wp-content/themes/bongda/dist/images/wc-2026/menu-wc.svg | net::ERR_FAILED",
+          "image https://socolivekz.cc/wp-content/themes/bongda/dist/images/closemenu.png | net::ERR_FAILED",
+          "image https://cdn.lfastcdn.com/2026/07/ghnwicpkvfkl.gif | net::ERR_FAILED",
+          "stylesheet https://socolivekz.cc/wp-content/plugins/api-sport/public/css/match_detail.css?id=0671c88cfbad4335394b897262a0d662 | net::ERR_FAILED",
+          "image https://cdn.lfastcdn.com/2026/07/nxzutbrtjbof.gif | net::ERR_FAILED",
+          "image https://imgts.sportpulseapiz.com/football/team/ednm9wh9kx1ryox/image/small | net::ERR_FAILED"
+        ],
+        "http_errors": [
+          "403 https://live1.streambylivepulse.com/live/channel21.flv?wsSecret=22a8034f9eb3769966cae500b5bedba2&wsABSTime=1785000657",
+          "403 https://live1.streambylivepulse.com/live/channel21.flv?wsSecret=22a8034f9eb3769966cae500b5bedba2&wsABSTime=1785000657",
+          "403 https://live1.streambylivepulse.com/live/channel21.flv?wsSecret=22a8034f9eb3769966cae500b5bedba2&wsABSTime=1785000657",
+          "403 https://live1.streambylivepulse.com/live/channel21.flv?wsSecret=22a8034f9eb3769966cae500b5bedba2&wsABSTime=1785000657",
+          "403 https://live1.streambylivepulse.com/live/channel21.flv?wsSecret=22a8034f9eb3769966cae500b5bedba2&wsABSTime=1785000657"
+        ]
+      }
+    ],
+    "attempted_room_ids": [],
+    "coverage": {
+      "found_streams": 1,
+      "found_blv_ids": [],
+      "goal": 2,
+      "source_goal_reached": false,
+      "room_queue_complete": true,
+      "complete": true,
+      "max_streams_per_blv": 2,
+      "total_explicit_blv_rooms": 0,
+      "pending_room_keys": [],
+      "room_progress": {
+        "__base__": {
+          "key": "__base__",
+          "url": "https://socolivekz.cc/truc-tiep/belconnen-united-vs-oconnor-knights-luc-1330-ngay-25-07-2026/",
+          "blv": "",
+          "blv_id": "",
+          "status": "success",
+          "attempts": 1,
+          "attempts_total": 1,
+          "ever_attempted": true,
+          "valid_stream_ever_found": true,
+          "needs_token_refresh": false,
+          "completion_reason": "valid_stream",
+          "rate_limit_hits": 0,
+          "last_http_status": 200,
+          "last_stream_count": 1,
+          "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
+        }
+      }
+    },
+    "errors": [],
+    "match_name": "Belconnen United vs OConnor Knights",
+    "scheduled_at": "2026-07-25T13:30:00+07:00",
+    "room_progress": {
+      "__base__": {
+        "key": "__base__",
+        "url": "https://socolivekz.cc/truc-tiep/belconnen-united-vs-oconnor-knights-luc-1330-ngay-25-07-2026/",
+        "blv": "",
+        "blv_id": "",
+        "status": "success",
+        "attempts": 1,
+        "attempts_total": 1,
+        "ever_attempted": true,
+        "valid_stream_ever_found": true,
+        "needs_token_refresh": false,
+        "completion_reason": "valid_stream",
+        "rate_limit_hits": 0,
+        "last_http_status": 200,
+        "last_stream_count": 1,
+        "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
+      }
+    },
+    "run_attempted_room_keys": [
+      "__base__"
+    ],
+    "run_rate_limited_room_keys": [],
+    "run_completed_room_keys": [
+      "__base__"
+    ],
+    "run_global_budget_used": 1,
+    "streams": [
+      {
+        "url": "https://live1.streambylivepulse.com/live/channel21.flv?wsSecret=22a8034f9eb3769966cae500b5bedba2&wsABSTime=1785000657",
+        "queue_room_key": "__base__",
+        "room_url": "https://socolivekz.cc/truc-tiep/belconnen-united-vs-oconnor-knights-luc-1330-ngay-25-07-2026/",
+        "blv": "Nguồn phụ 1",
+        "blv_id": "",
+        "source_id": "",
+        "source_provenance": [
+          "cdp/request",
+          "cdp/response",
+          "harvest-final",
+          "harvest-round-1",
+          "harvest-round-2",
+          "harvest-round-3",
+          "harvest-round-4",
+          "harvest-round-5",
+          "harvest-round-6",
+          "harvest-round-7",
+          "harvest-round-8",
+          "request/fetch",
+          "response/403"
+        ],
+        "playback_referer": "",
+        "playback_origin": "",
+        "playback_user_agent": "",
+        "api_player_endpoint": "",
+        "api_source_mode": "",
+        "source_confidence": "network",
+        "mapping_mode": "stream-source-id",
+        "discovered_from_room_url": "https://socolivekz.cc/truc-tiep/belconnen-united-vs-oconnor-knights-luc-1330-ngay-25-07-2026/",
+        "discovered_from_blv": "URL tổng",
+        "discovered_at": "2026-07-25T12:31:03.740093+07:00",
+        "valid_until": "",
+        "is_expired": false
+      }
+    ],
+    "rooms": [
+      {
+        "url": "https://socolivekz.cc/truc-tiep/belconnen-united-vs-oconnor-knights-luc-1330-ngay-25-07-2026/",
+        "blv": "",
+        "blv_id": ""
+      }
+    ],
+    "catalog_last_seen_at": "2026-07-25T12:31:49.149494+07:00",
+    "catalog_updated_at": "2026-07-25T12:31:49.149494+07:00"
   },
   {
     "base_url": "https://socolivekz.cc/truc-tiep/hakoah-sydney-fc-vs-rydalmere-lions-fc-luc-1330-ngay-25-07-2026/",
@@ -20235,8 +20217,319 @@
         "blv_id": ""
       }
     ],
-    "catalog_last_seen_at": "2026-07-25T12:02:29.330445+07:00",
+    "catalog_last_seen_at": "2026-07-25T12:31:49.149494+07:00",
     "catalog_updated_at": "2026-07-25T12:02:29.330445+07:00"
+  },
+  {
+    "base_url": "https://socolivekz.cc/truc-tiep/macarthur-rams-vs-hearst-neville-luc-1330-ngay-25-07-2026/",
+    "raw_title": "Macarthur Rams vs Hearst Neville",
+    "home_team": "Macarthur Rams",
+    "away_team": "Hearst Neville",
+    "home_logo": "https://imgts.sportpulseapiz.com/football/team/y0or5jhlw80qwzv/image/small",
+    "away_logo": "https://imgts.sportpulseapiz.com/football/team/pxwrxlhg6plryk0/image/small",
+    "time_text": "13:30",
+    "date_text": "25/07",
+    "status": "",
+    "card_text": "AUSTRALIAN WELSH LEAGUE 13:30 - 25.07 Macarthur Rams Hearst Neville 2 - 0 0.90 0/0.5 0.90 0.90 2.5/3 0.90",
+    "room_results": [
+      {
+        "url": "https://socolivekz.cc/truc-tiep/macarthur-rams-vs-hearst-neville-luc-1330-ngay-25-07-2026/",
+        "blv": "",
+        "blv_id": "",
+        "streams": [
+          "https://live1.streambylivepulse.com/live/channel20.flv?wsSecret=cc807b67340bf16e2e3eda666d4f0bdd&wsABSTime=1785000667"
+        ],
+        "stream_sources": {
+          "https://live1.streambylivepulse.com/live/channel20.flv?wsSecret=cc807b67340bf16e2e3eda666d4f0bdd&wsABSTime=1785000667": [
+            "cdp/request",
+            "cdp/response",
+            "harvest-final",
+            "harvest-round-1",
+            "harvest-round-2",
+            "harvest-round-3",
+            "harvest-round-4",
+            "harvest-round-5",
+            "harvest-round-6",
+            "harvest-round-7",
+            "harvest-round-8",
+            "request/fetch",
+            "response/403"
+          ]
+        },
+        "stream_headers": {},
+        "stream_first_seen": [
+          "https://live1.streambylivepulse.com/live/channel20.flv?wsSecret=cc807b67340bf16e2e3eda666d4f0bdd&wsABSTime=1785000667"
+        ],
+        "discovered_blv_ids": [],
+        "diagnostics": {
+          "url": "https://socolivekz.cc/truc-tiep/macarthur-rams-vs-hearst-neville-luc-1330-ngay-25-07-2026/",
+          "title": "Trực tiếp Macarthur Rams vs Hearst Neville full lúc 13:30, ngày 25/07",
+          "h1": "Xem trực tiếp trận đấu Macarthur Rams vs Hearst Neville full lúc 13:30, ngày 25/07/2026",
+          "ready_state": "complete",
+          "visibility_state": "visible",
+          "hidden": false,
+          "video_count": 0,
+          "iframe_count": 5,
+          "body_sample": "WC 2026 Lịch Thi Đấu Xem Lại Video Highlight Tỷ Lệ Kèo BXH KQBD Tips Tin Tức Livescore Tuyển Dụng Top Nhà Cái Cược 8xbet WC 2026 Lịch Thi Đấu Xem Lại Video Highlight Tỷ Lệ Kèo BXH KQBD Tips Tin Tức Livescore Tuyển Dụng Top nhà cái Xem trực tiếp trận đấu Macarthur Rams vs Hearst Neville full lúc 13:30, ngày 25/07/2026 Phát sóng link trực tuyến Macarthur Rams vs Hearst Neville hôm nay tại giải đấu Australian Welsh League _ _ _ _ _ _ Macarthur Rams Hearst Neville Theo bạn thì trận này tài hay xỉu? Tài 0% Xỉu 0% Theo bạn thì trận này đội nào sẽ thắng? Chủ nhà 0% Hòa 0% Đội Khách 0% Anh Em Muốn Tham Gia Đặt Cược Thì Click Vào Quảng Cáo Của 8XBET Để Đăng Ký Đặt Cược Tất Cả Các Trận Đấu Trên Toàn Thế Giới. Nếu anh em gặp tình trạng không vào được web, hãy cài VPN 1.1.1.1 để truy cập ổn định hơn nhé . Châu Á Châu Âu Tài xỉu Phạt góc Chọn nhà cái HIỆP 1 FT Châu Á HIỆP 1 FT Châu Á - - - 0.90 0/0.5 0.90 Châu Âu HIỆP 1 FT Châu Âu - - - 1.85 3.70 3.20 Tài xỉu HIỆP 1 FT Tài xỉu - - - 0.90 2.5/3 0.90 SỚM FT Phạt góc HIỆP 1 FT Phạt góc - - - - - - Trực tiếp Mô phỏng CHIA SẺ Phát sóng trận đấu Macarthur Rams vs Hearst Neville full HD lúc 13:30, ngày 25/07/2026 Australian Welsh League HD 1 CHIA SẺ T",
+          "harvest_rounds": 8,
+          "harvest_window_seconds": 6.321,
+          "main_status": 200,
+          "harvested_stream_count": 1,
+          "harvested_blv_ids": [],
+          "scan_mode": "chromium-fallback",
+          "elapsed_seconds": 8.5
+        },
+        "api_probe": {
+          "enabled": true,
+          "room_status": 200,
+          "active_index": 0,
+          "sources_found": 1,
+          "sources_tried": 1,
+          "valid_stream_count": 0,
+          "source_results": [
+            {
+              "index": 0,
+              "endpoint_base": "https://soco.livepingscorex.com/ajax/chanel/type/7/link/channel20",
+              "endpoint_url": "https://soco.livepingscorex.com/ajax/chanel/type/7/link/channel20/off-tvc",
+              "active": true,
+              "mode": "active",
+              "player_status": 200,
+              "player_content_type": "text/html; charset=utf-8",
+              "player_elapsed_seconds": 0.227,
+              "player_error": "",
+              "stream_urls": [
+                "https://live1.streambylivepulse.com/live/channel20.flv?wsSecret=0da93416bfd985a2530bcec7d72b6c24&wsABSTime=1785000665"
+              ],
+              "checks": [
+                {
+                  "url": "https://live1.streambylivepulse.com/live/channel20.flv?wsSecret=0da93416bfd985a2530bcec7d72b6c24&wsABSTime=1785000665",
+                  "valid": false,
+                  "status": 403,
+                  "content_type": "text/html",
+                  "bytes_read": 0,
+                  "signature": "",
+                  "elapsed_seconds": 0.708,
+                  "error": "",
+                  "origin": "https://soco.livepingscorex.com",
+                  "referer": "https://soco.livepingscorex.com/",
+                  "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36"
+                }
+              ]
+            }
+          ],
+          "fallback_reason": "all_api_sources_failed",
+          "elapsed_seconds": 0.987,
+          "room_content_type": "text/html",
+          "room_elapsed_seconds": 0.046,
+          "room_error": ""
+        },
+        "http_probe": {
+          "api_first": {
+            "enabled": true,
+            "room_status": 200,
+            "active_index": 0,
+            "sources_found": 1,
+            "sources_tried": 1,
+            "valid_stream_count": 0,
+            "source_results": [
+              {
+                "index": 0,
+                "endpoint_base": "https://soco.livepingscorex.com/ajax/chanel/type/7/link/channel20",
+                "endpoint_url": "https://soco.livepingscorex.com/ajax/chanel/type/7/link/channel20/off-tvc",
+                "active": true,
+                "mode": "active",
+                "player_status": 200,
+                "player_content_type": "text/html; charset=utf-8",
+                "player_elapsed_seconds": 0.227,
+                "player_error": "",
+                "stream_urls": [
+                  "https://live1.streambylivepulse.com/live/channel20.flv?wsSecret=0da93416bfd985a2530bcec7d72b6c24&wsABSTime=1785000665"
+                ],
+                "checks": [
+                  {
+                    "url": "https://live1.streambylivepulse.com/live/channel20.flv?wsSecret=0da93416bfd985a2530bcec7d72b6c24&wsABSTime=1785000665",
+                    "valid": false,
+                    "status": 403,
+                    "content_type": "text/html",
+                    "bytes_read": 0,
+                    "signature": "",
+                    "elapsed_seconds": 0.708,
+                    "error": "",
+                    "origin": "https://soco.livepingscorex.com",
+                    "referer": "https://soco.livepingscorex.com/",
+                    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36"
+                  }
+                ]
+              }
+            ],
+            "fallback_reason": "all_api_sources_failed",
+            "elapsed_seconds": 0.987,
+            "room_content_type": "text/html",
+            "room_elapsed_seconds": 0.046,
+            "room_error": ""
+          },
+          "legacy_http": {
+            "enabled": false,
+            "status": null,
+            "elapsed_seconds": 0.0,
+            "error": ""
+          }
+        },
+        "errors": [
+          "console/error: Failed to load resource: net::ERR_FAILED",
+          "console/error: Failed to load resource: net::ERR_FAILED",
+          "console/error: Failed to load resource: net::ERR_FAILED",
+          "console/error: Failed to load resource: net::ERR_FAILED",
+          "console/error: Failed to load resource: net::ERR_FAILED",
+          "console/error: Failed to load resource: net::ERR_FAILED",
+          "console/error: Failed to load resource: net::ERR_FAILED",
+          "console/error: Failed to load resource: net::ERR_FAILED",
+          "console/error: Failed to load resource: net::ERR_FAILED",
+          "console/error: Failed to load resource: net::ERR_FAILED",
+          "console/error: Failed to load resource: net::ERR_FAILED",
+          "console/error: Failed to load resource: net::ERR_FAILED",
+          "console/error: Failed to load resource: net::ERR_FAILED",
+          "console/error: Failed to load resource: net::ERR_FAILED",
+          "console/error: Failed to load resource: net::ERR_FAILED",
+          "console/error: Failed to load resource: net::ERR_FAILED",
+          "console/error: Failed to load resource: net::ERR_FAILED",
+          "console/error: Failed to load resource: net::ERR_FAILED",
+          "console/error: Failed to load resource: net::ERR_FAILED",
+          "console/error: Failed to load resource: net::ERR_FAILED"
+        ],
+        "failed_requests": [
+          "stylesheet https://fonts.googleapis.com/css2?family=Bangers&family=Oswald:wght@400;500;700&family=Raleway:wght@400;500;700&family=Roboto+Condensed:wght@300;400;700&display=swap | net::ERR_FAILED",
+          "stylesheet https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0 | net::ERR_FAILED",
+          "stylesheet https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css | net::ERR_FAILED",
+          "stylesheet https://socolivekz.cc/wp-content/plugins/widget-options/assets/css/widget-options.css?ver=4.0.6.1 | net::ERR_FAILED",
+          "stylesheet https://socolivekz.cc/wp-content/plugins/wp-pagenavi/pagenavi-css.css?ver=2.70 | net::ERR_FAILED",
+          "stylesheet https://socolivekz.cc/wp-content/themes/bongda/dist/styles/bootstrap.min.css?ver=1745376853 | net::ERR_FAILED",
+          "stylesheet https://socolivekz.cc/wp-content/themes/bongda/dist/styles/main.css?ver=1781184173 | net::ERR_FAILED",
+          "stylesheet https://socolivekz.cc/wp-content/themes/bongda/dist/styles/pages/single-live.css?ver=1784627923 | net::ERR_FAILED",
+          "image https://socolivekz.cc/wp-content/themes/bongda/dist/images/logo-socolive-tv-official-v2.png | net::ERR_FAILED",
+          "image https://socolivekz.cc/wp-content/themes/bongda/dist/images/wc-2026/menu-wc.svg | net::ERR_FAILED",
+          "image https://socolivekz.cc/wp-content/themes/bongda/dist/images/closemenu.png | net::ERR_FAILED",
+          "image https://cdn.lfastcdn.com/2026/07/ghnwicpkvfkl.gif | net::ERR_FAILED",
+          "stylesheet https://socolivekz.cc/wp-content/plugins/api-sport/public/css/match_detail.css?id=0671c88cfbad4335394b897262a0d662 | net::ERR_FAILED",
+          "image https://cdn.lfastcdn.com/2026/07/nxzutbrtjbof.gif | net::ERR_FAILED",
+          "image https://imgts.sportpulseapiz.com/football/team/y0or5jhlw80qwzv/image/small | net::ERR_FAILED"
+        ],
+        "http_errors": [
+          "403 https://live1.streambylivepulse.com/live/channel20.flv?wsSecret=cc807b67340bf16e2e3eda666d4f0bdd&wsABSTime=1785000667",
+          "403 https://live1.streambylivepulse.com/live/channel20.flv?wsSecret=cc807b67340bf16e2e3eda666d4f0bdd&wsABSTime=1785000667",
+          "403 https://live1.streambylivepulse.com/live/channel20.flv?wsSecret=cc807b67340bf16e2e3eda666d4f0bdd&wsABSTime=1785000667",
+          "403 https://live1.streambylivepulse.com/live/channel20.flv?wsSecret=cc807b67340bf16e2e3eda666d4f0bdd&wsABSTime=1785000667",
+          "403 https://live1.streambylivepulse.com/live/channel20.flv?wsSecret=cc807b67340bf16e2e3eda666d4f0bdd&wsABSTime=1785000667"
+        ]
+      }
+    ],
+    "attempted_room_ids": [],
+    "coverage": {
+      "found_streams": 1,
+      "found_blv_ids": [],
+      "goal": 2,
+      "source_goal_reached": false,
+      "room_queue_complete": true,
+      "complete": true,
+      "max_streams_per_blv": 2,
+      "total_explicit_blv_rooms": 0,
+      "pending_room_keys": [],
+      "room_progress": {
+        "__base__": {
+          "key": "__base__",
+          "url": "https://socolivekz.cc/truc-tiep/macarthur-rams-vs-hearst-neville-luc-1330-ngay-25-07-2026/",
+          "blv": "",
+          "blv_id": "",
+          "status": "success",
+          "attempts": 1,
+          "attempts_total": 1,
+          "ever_attempted": true,
+          "valid_stream_ever_found": true,
+          "needs_token_refresh": false,
+          "completion_reason": "valid_stream",
+          "rate_limit_hits": 0,
+          "last_http_status": 200,
+          "last_stream_count": 1,
+          "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
+        }
+      }
+    },
+    "errors": [],
+    "match_name": "Macarthur Rams vs Hearst Neville",
+    "scheduled_at": "2026-07-25T13:30:00+07:00",
+    "room_progress": {
+      "__base__": {
+        "key": "__base__",
+        "url": "https://socolivekz.cc/truc-tiep/macarthur-rams-vs-hearst-neville-luc-1330-ngay-25-07-2026/",
+        "blv": "",
+        "blv_id": "",
+        "status": "success",
+        "attempts": 1,
+        "attempts_total": 1,
+        "ever_attempted": true,
+        "valid_stream_ever_found": true,
+        "needs_token_refresh": false,
+        "completion_reason": "valid_stream",
+        "rate_limit_hits": 0,
+        "last_http_status": 200,
+        "last_stream_count": 1,
+        "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
+      }
+    },
+    "run_attempted_room_keys": [
+      "__base__"
+    ],
+    "run_rate_limited_room_keys": [],
+    "run_completed_room_keys": [
+      "__base__"
+    ],
+    "run_global_budget_used": 2,
+    "streams": [
+      {
+        "url": "https://live1.streambylivepulse.com/live/channel20.flv?wsSecret=cc807b67340bf16e2e3eda666d4f0bdd&wsABSTime=1785000667",
+        "queue_room_key": "__base__",
+        "room_url": "https://socolivekz.cc/truc-tiep/macarthur-rams-vs-hearst-neville-luc-1330-ngay-25-07-2026/",
+        "blv": "Nguồn phụ 1",
+        "blv_id": "",
+        "source_id": "",
+        "source_provenance": [
+          "cdp/request",
+          "cdp/response",
+          "harvest-final",
+          "harvest-round-1",
+          "harvest-round-2",
+          "harvest-round-3",
+          "harvest-round-4",
+          "harvest-round-5",
+          "harvest-round-6",
+          "harvest-round-7",
+          "harvest-round-8",
+          "request/fetch",
+          "response/403"
+        ],
+        "playback_referer": "",
+        "playback_origin": "",
+        "playback_user_agent": "",
+        "api_player_endpoint": "",
+        "api_source_mode": "",
+        "source_confidence": "network",
+        "mapping_mode": "stream-source-id",
+        "discovered_from_room_url": "https://socolivekz.cc/truc-tiep/macarthur-rams-vs-hearst-neville-luc-1330-ngay-25-07-2026/",
+        "discovered_from_blv": "URL tổng",
+        "discovered_at": "2026-07-25T12:31:14.264025+07:00",
+        "valid_until": "",
+        "is_expired": false
+      }
+    ],
+    "rooms": [
+      {
+        "url": "https://socolivekz.cc/truc-tiep/macarthur-rams-vs-hearst-neville-luc-1330-ngay-25-07-2026/",
+        "blv": "",
+        "blv_id": ""
+      }
+    ],
+    "catalog_last_seen_at": "2026-07-25T12:31:49.149494+07:00",
+    "catalog_updated_at": "2026-07-25T12:31:49.149494+07:00"
   },
   {
     "base_url": "https://socolivekz.cc/truc-tiep/maitland-vs-broadmeadow-magic-luc-1330-ngay-25-07-2026/",
@@ -20545,7 +20838,7 @@
         "blv_id": ""
       }
     ],
-    "catalog_last_seen_at": "2026-07-25T12:02:29.330445+07:00",
+    "catalog_last_seen_at": "2026-07-25T12:31:49.149494+07:00",
     "catalog_updated_at": "2026-07-25T12:02:29.330445+07:00"
   },
   {
@@ -20856,7 +21149,7 @@
         "blv_id": ""
       }
     ],
-    "catalog_last_seen_at": "2026-07-25T12:02:29.330445+07:00",
+    "catalog_last_seen_at": "2026-07-25T12:31:49.149494+07:00",
     "catalog_updated_at": "2026-07-25T12:02:29.330445+07:00"
   },
   {
@@ -20869,7 +21162,7 @@
     "time_text": "13:30",
     "date_text": "25/07",
     "status": "",
-    "card_text": "NSW-N PREMIER LEAGUE 13:30 - 25.07 Valentine Charleston City Blues 1 - 2 0 - 0 1 - 5 NEMO 0.95 0 0.85 0.83 3 0.98",
+    "card_text": "NSW-N PREMIER LEAGUE 13:30 - 25.07 Valentine Charleston City Blues 1 - 2 0 - 0 1 - 5 NEMO 0.95 0 0.85 0.90 3 0.90",
     "room_results": [
       {
         "url": "https://socolivekz.cc/truc-tiep/valentine-vs-charleston-city-blues-luc-1330-ngay-25-07-2026/",
@@ -21148,8 +21441,611 @@
         "blv_id": ""
       }
     ],
-    "catalog_last_seen_at": "2026-07-25T12:02:29.330445+07:00",
+    "catalog_last_seen_at": "2026-07-25T12:31:49.149494+07:00",
     "catalog_updated_at": "2026-07-25T12:02:29.330445+07:00"
+  },
+  {
+    "base_url": "https://socolivekz.cc/truc-tiep/riverside-olympics-b-vs-somerset-luc-1345-ngay-25-07-2026/",
+    "raw_title": "Riverside Olympics B vs Somerset",
+    "home_team": "Riverside Olympics B",
+    "away_team": "Somerset",
+    "home_logo": "https://imgts.sportpulseapiz.com/football/team/23xmvkhk47gqg8n/image/small",
+    "away_logo": "https://imgts.sportpulseapiz.com/football/team/6ypq3nh5nngmd7o/image/small",
+    "time_text": "13:45",
+    "date_text": "25/07",
+    "status": "",
+    "card_text": "TSAMANIA PREMIER CHAMPIONSHIP 13:45 - 25.07 Riverside Olympics B Somerset 1 - 0 0 - 0 6 - 3 - - - - - -",
+    "room_results": [
+      {
+        "url": "https://socolivekz.cc/truc-tiep/riverside-olympics-b-vs-somerset-luc-1345-ngay-25-07-2026/",
+        "blv": "",
+        "blv_id": "",
+        "streams": [
+          "https://live1.streambylivepulse.com/live/channel22.flv?wsSecret=8a04ad31c5422e380c7e39c4d79fbe7d&wsABSTime=1785000677"
+        ],
+        "stream_sources": {
+          "https://live1.streambylivepulse.com/live/channel22.flv?wsSecret=8a04ad31c5422e380c7e39c4d79fbe7d&wsABSTime=1785000677": [
+            "cdp/request",
+            "cdp/response",
+            "harvest-final",
+            "harvest-round-1",
+            "harvest-round-2",
+            "harvest-round-3",
+            "harvest-round-4",
+            "harvest-round-5",
+            "harvest-round-6",
+            "harvest-round-7",
+            "harvest-round-8",
+            "request/fetch",
+            "response/403"
+          ]
+        },
+        "stream_headers": {},
+        "stream_first_seen": [
+          "https://live1.streambylivepulse.com/live/channel22.flv?wsSecret=8a04ad31c5422e380c7e39c4d79fbe7d&wsABSTime=1785000677"
+        ],
+        "discovered_blv_ids": [],
+        "diagnostics": {
+          "url": "https://socolivekz.cc/truc-tiep/riverside-olympics-b-vs-somerset-luc-1345-ngay-25-07-2026/",
+          "title": "Trực tiếp Riverside Olympics B vs Somerset full lúc 13:45, ngày 25/07",
+          "h1": "Xem trực tiếp trận đấu Riverside Olympics B vs Somerset full lúc 13:45, ngày 25/07/2026",
+          "ready_state": "complete",
+          "visibility_state": "visible",
+          "hidden": false,
+          "video_count": 0,
+          "iframe_count": 5,
+          "body_sample": "WC 2026 Lịch Thi Đấu Xem Lại Video Highlight Tỷ Lệ Kèo BXH KQBD Tips Tin Tức Livescore Tuyển Dụng Top Nhà Cái Cược 8xbet WC 2026 Lịch Thi Đấu Xem Lại Video Highlight Tỷ Lệ Kèo BXH KQBD Tips Tin Tức Livescore Tuyển Dụng Top nhà cái Xem trực tiếp trận đấu Riverside Olympics B vs Somerset full lúc 13:45, ngày 25/07/2026 Phát sóng link trực tuyến Riverside Olympics B vs Somerset hôm nay tại giải đấu TSAmania Premier Championship _ _ _ _ _ _ Riverside Olympics B Somerset Theo bạn thì trận này tài hay xỉu? Tài 0% Xỉu 0% Theo bạn thì trận này đội nào sẽ thắng? Chủ nhà 0% Hòa 0% Đội Khách 0% Anh Em Muốn Tham Gia Đặt Cược Thì Click Vào Quảng Cáo Của 8XBET Để Đăng Ký Đặt Cược Tất Cả Các Trận Đấu Trên Toàn Thế Giới. Nếu anh em gặp tình trạng không vào được web, hãy cài VPN 1.1.1.1 để truy cập ổn định hơn nhé . Châu Á Châu Âu Tài xỉu Phạt góc Chọn nhà cái HIỆP 1 FT Châu Á HIỆP 1 FT Châu Á - - - - - - Châu Âu HIỆP 1 FT Châu Âu - - - - - - Tài xỉu HIỆP 1 FT Tài xỉu - - - - - - SỚM FT Phạt góc HIỆP 1 FT Phạt góc - - - - - - Trực tiếp Mô phỏng CHIA SẺ Phát sóng trận đấu Riverside Olympics B vs Somerset full HD lúc 13:45, ngày 25/07/2026 TSAmania Premier Championship HD 1 CHIA SẺ Thông số Diễn biến",
+          "harvest_rounds": 8,
+          "harvest_window_seconds": 6.304,
+          "main_status": 200,
+          "harvested_stream_count": 1,
+          "harvested_blv_ids": [],
+          "scan_mode": "chromium-fallback",
+          "elapsed_seconds": 8.547
+        },
+        "api_probe": {
+          "enabled": true,
+          "room_status": 200,
+          "active_index": 0,
+          "sources_found": 1,
+          "sources_tried": 1,
+          "valid_stream_count": 0,
+          "source_results": [
+            {
+              "index": 0,
+              "endpoint_base": "https://soco.livepingscorex.com/ajax/chanel/type/7/link/channel22",
+              "endpoint_url": "https://soco.livepingscorex.com/ajax/chanel/type/7/link/channel22/off-tvc",
+              "active": true,
+              "mode": "active",
+              "player_status": 200,
+              "player_content_type": "text/html; charset=utf-8",
+              "player_elapsed_seconds": 0.212,
+              "player_error": "",
+              "stream_urls": [
+                "https://live1.streambylivepulse.com/live/channel22.flv?wsSecret=fe21e3842957daf7a5a1665c4b6785d8&wsABSTime=1785000676"
+              ],
+              "checks": [
+                {
+                  "url": "https://live1.streambylivepulse.com/live/channel22.flv?wsSecret=fe21e3842957daf7a5a1665c4b6785d8&wsABSTime=1785000676",
+                  "valid": false,
+                  "status": 403,
+                  "content_type": "text/html",
+                  "bytes_read": 0,
+                  "signature": "",
+                  "elapsed_seconds": 0.814,
+                  "error": "",
+                  "origin": "https://soco.livepingscorex.com",
+                  "referer": "https://soco.livepingscorex.com/",
+                  "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36"
+                }
+              ]
+            }
+          ],
+          "fallback_reason": "all_api_sources_failed",
+          "elapsed_seconds": 1.081,
+          "room_content_type": "text/html",
+          "room_elapsed_seconds": 0.049,
+          "room_error": ""
+        },
+        "http_probe": {
+          "api_first": {
+            "enabled": true,
+            "room_status": 200,
+            "active_index": 0,
+            "sources_found": 1,
+            "sources_tried": 1,
+            "valid_stream_count": 0,
+            "source_results": [
+              {
+                "index": 0,
+                "endpoint_base": "https://soco.livepingscorex.com/ajax/chanel/type/7/link/channel22",
+                "endpoint_url": "https://soco.livepingscorex.com/ajax/chanel/type/7/link/channel22/off-tvc",
+                "active": true,
+                "mode": "active",
+                "player_status": 200,
+                "player_content_type": "text/html; charset=utf-8",
+                "player_elapsed_seconds": 0.212,
+                "player_error": "",
+                "stream_urls": [
+                  "https://live1.streambylivepulse.com/live/channel22.flv?wsSecret=fe21e3842957daf7a5a1665c4b6785d8&wsABSTime=1785000676"
+                ],
+                "checks": [
+                  {
+                    "url": "https://live1.streambylivepulse.com/live/channel22.flv?wsSecret=fe21e3842957daf7a5a1665c4b6785d8&wsABSTime=1785000676",
+                    "valid": false,
+                    "status": 403,
+                    "content_type": "text/html",
+                    "bytes_read": 0,
+                    "signature": "",
+                    "elapsed_seconds": 0.814,
+                    "error": "",
+                    "origin": "https://soco.livepingscorex.com",
+                    "referer": "https://soco.livepingscorex.com/",
+                    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36"
+                  }
+                ]
+              }
+            ],
+            "fallback_reason": "all_api_sources_failed",
+            "elapsed_seconds": 1.081,
+            "room_content_type": "text/html",
+            "room_elapsed_seconds": 0.049,
+            "room_error": ""
+          },
+          "legacy_http": {
+            "enabled": false,
+            "status": null,
+            "elapsed_seconds": 0.0,
+            "error": ""
+          }
+        },
+        "errors": [
+          "console/error: Failed to load resource: net::ERR_FAILED",
+          "console/error: Failed to load resource: net::ERR_FAILED",
+          "console/error: Failed to load resource: net::ERR_FAILED",
+          "console/error: Failed to load resource: net::ERR_FAILED",
+          "console/error: Failed to load resource: net::ERR_FAILED",
+          "console/error: Failed to load resource: net::ERR_FAILED",
+          "console/error: Failed to load resource: net::ERR_FAILED",
+          "console/error: Failed to load resource: net::ERR_FAILED",
+          "console/error: Failed to load resource: net::ERR_FAILED",
+          "console/error: Failed to load resource: net::ERR_FAILED",
+          "console/error: Failed to load resource: net::ERR_FAILED",
+          "console/error: Failed to load resource: net::ERR_FAILED",
+          "console/error: Failed to load resource: net::ERR_FAILED",
+          "console/error: Failed to load resource: net::ERR_FAILED",
+          "console/error: Failed to load resource: net::ERR_FAILED",
+          "console/error: Failed to load resource: net::ERR_FAILED",
+          "console/error: Failed to load resource: net::ERR_FAILED",
+          "console/error: Failed to load resource: net::ERR_FAILED",
+          "console/error: Failed to load resource: net::ERR_FAILED",
+          "console/error: Failed to load resource: net::ERR_FAILED"
+        ],
+        "failed_requests": [
+          "stylesheet https://fonts.googleapis.com/css2?family=Bangers&family=Oswald:wght@400;500;700&family=Raleway:wght@400;500;700&family=Roboto+Condensed:wght@300;400;700&display=swap | net::ERR_FAILED",
+          "stylesheet https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0 | net::ERR_FAILED",
+          "stylesheet https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css | net::ERR_FAILED",
+          "stylesheet https://socolivekz.cc/wp-content/plugins/widget-options/assets/css/widget-options.css?ver=4.0.6.1 | net::ERR_FAILED",
+          "stylesheet https://socolivekz.cc/wp-content/plugins/wp-pagenavi/pagenavi-css.css?ver=2.70 | net::ERR_FAILED",
+          "stylesheet https://socolivekz.cc/wp-content/themes/bongda/dist/styles/bootstrap.min.css?ver=1745376853 | net::ERR_FAILED",
+          "stylesheet https://socolivekz.cc/wp-content/themes/bongda/dist/styles/main.css?ver=1781184173 | net::ERR_FAILED",
+          "stylesheet https://socolivekz.cc/wp-content/themes/bongda/dist/styles/pages/single-live.css?ver=1784627923 | net::ERR_FAILED",
+          "image https://socolivekz.cc/wp-content/themes/bongda/dist/images/logo-socolive-tv-official-v2.png | net::ERR_FAILED",
+          "image https://socolivekz.cc/wp-content/themes/bongda/dist/images/wc-2026/menu-wc.svg | net::ERR_FAILED",
+          "image https://socolivekz.cc/wp-content/themes/bongda/dist/images/closemenu.png | net::ERR_FAILED",
+          "image https://cdn.lfastcdn.com/2026/07/ghnwicpkvfkl.gif | net::ERR_FAILED",
+          "stylesheet https://socolivekz.cc/wp-content/plugins/api-sport/public/css/match_detail.css?id=0671c88cfbad4335394b897262a0d662 | net::ERR_FAILED",
+          "image https://cdn.lfastcdn.com/2026/07/nxzutbrtjbof.gif | net::ERR_FAILED",
+          "image https://imgts.sportpulseapiz.com/football/team/23xmvkhk47gqg8n/image/small | net::ERR_FAILED"
+        ],
+        "http_errors": [
+          "403 https://live1.streambylivepulse.com/live/channel22.flv?wsSecret=8a04ad31c5422e380c7e39c4d79fbe7d&wsABSTime=1785000677",
+          "403 https://live1.streambylivepulse.com/live/channel22.flv?wsSecret=8a04ad31c5422e380c7e39c4d79fbe7d&wsABSTime=1785000677",
+          "403 https://live1.streambylivepulse.com/live/channel22.flv?wsSecret=8a04ad31c5422e380c7e39c4d79fbe7d&wsABSTime=1785000677",
+          "403 https://live1.streambylivepulse.com/live/channel22.flv?wsSecret=8a04ad31c5422e380c7e39c4d79fbe7d&wsABSTime=1785000677",
+          "403 https://live1.streambylivepulse.com/live/channel22.flv?wsSecret=8a04ad31c5422e380c7e39c4d79fbe7d&wsABSTime=1785000677"
+        ]
+      }
+    ],
+    "attempted_room_ids": [],
+    "coverage": {
+      "found_streams": 1,
+      "found_blv_ids": [],
+      "goal": 2,
+      "source_goal_reached": false,
+      "room_queue_complete": true,
+      "complete": true,
+      "max_streams_per_blv": 2,
+      "total_explicit_blv_rooms": 0,
+      "pending_room_keys": [],
+      "room_progress": {
+        "__base__": {
+          "key": "__base__",
+          "url": "https://socolivekz.cc/truc-tiep/riverside-olympics-b-vs-somerset-luc-1345-ngay-25-07-2026/",
+          "blv": "",
+          "blv_id": "",
+          "status": "success",
+          "attempts": 1,
+          "attempts_total": 1,
+          "ever_attempted": true,
+          "valid_stream_ever_found": true,
+          "needs_token_refresh": false,
+          "completion_reason": "valid_stream",
+          "rate_limit_hits": 0,
+          "last_http_status": 200,
+          "last_stream_count": 1,
+          "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
+        }
+      }
+    },
+    "errors": [],
+    "match_name": "Riverside Olympics B vs Somerset",
+    "scheduled_at": "2026-07-25T13:45:00+07:00",
+    "room_progress": {
+      "__base__": {
+        "key": "__base__",
+        "url": "https://socolivekz.cc/truc-tiep/riverside-olympics-b-vs-somerset-luc-1345-ngay-25-07-2026/",
+        "blv": "",
+        "blv_id": "",
+        "status": "success",
+        "attempts": 1,
+        "attempts_total": 1,
+        "ever_attempted": true,
+        "valid_stream_ever_found": true,
+        "needs_token_refresh": false,
+        "completion_reason": "valid_stream",
+        "rate_limit_hits": 0,
+        "last_http_status": 200,
+        "last_stream_count": 1,
+        "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
+      }
+    },
+    "run_attempted_room_keys": [
+      "__base__"
+    ],
+    "run_rate_limited_room_keys": [],
+    "run_completed_room_keys": [
+      "__base__"
+    ],
+    "run_global_budget_used": 3,
+    "streams": [
+      {
+        "url": "https://live1.streambylivepulse.com/live/channel22.flv?wsSecret=8a04ad31c5422e380c7e39c4d79fbe7d&wsABSTime=1785000677",
+        "queue_room_key": "__base__",
+        "room_url": "https://socolivekz.cc/truc-tiep/riverside-olympics-b-vs-somerset-luc-1345-ngay-25-07-2026/",
+        "blv": "Nguồn phụ 1",
+        "blv_id": "",
+        "source_id": "",
+        "source_provenance": [
+          "cdp/request",
+          "cdp/response",
+          "harvest-final",
+          "harvest-round-1",
+          "harvest-round-2",
+          "harvest-round-3",
+          "harvest-round-4",
+          "harvest-round-5",
+          "harvest-round-6",
+          "harvest-round-7",
+          "harvest-round-8",
+          "request/fetch",
+          "response/403"
+        ],
+        "playback_referer": "",
+        "playback_origin": "",
+        "playback_user_agent": "",
+        "api_player_endpoint": "",
+        "api_source_mode": "",
+        "source_confidence": "network",
+        "mapping_mode": "stream-source-id",
+        "discovered_from_room_url": "https://socolivekz.cc/truc-tiep/riverside-olympics-b-vs-somerset-luc-1345-ngay-25-07-2026/",
+        "discovered_from_blv": "URL tổng",
+        "discovered_at": "2026-07-25T12:31:24.833925+07:00",
+        "valid_until": "",
+        "is_expired": false
+      }
+    ],
+    "rooms": [
+      {
+        "url": "https://socolivekz.cc/truc-tiep/riverside-olympics-b-vs-somerset-luc-1345-ngay-25-07-2026/",
+        "blv": "",
+        "blv_id": ""
+      }
+    ],
+    "catalog_last_seen_at": "2026-07-25T12:31:49.149494+07:00",
+    "catalog_updated_at": "2026-07-25T12:31:49.149494+07:00"
+  },
+  {
+    "base_url": "https://socolivekz.cc/truc-tiep/sd-raiders-fc-vs-marconi-stallions-luc-1400-ngay-25-07-2026/",
+    "raw_title": "SD Raiders FC vs Marconi Stallions",
+    "home_team": "SD Raiders FC",
+    "away_team": "Marconi Stallions",
+    "home_logo": "https://imgts.sportpulseapiz.com/football/team/y0or5jh4ve0qwzv/image/small",
+    "away_logo": "https://imgts.sportpulseapiz.com/football/team/3glrw7hwev9qdyj/image/small",
+    "time_text": "14:00",
+    "date_text": "25/07",
+    "status": "",
+    "card_text": "NSW PREMIER LEAGUE 14:00 - 25.07 SD Raiders FC Marconi Stallions 6 - 1 2 - 4 RIO 0.85 -1 0.95 0.88 2.5/3 0.93",
+    "room_results": [
+      {
+        "url": "https://socolivekz.cc/truc-tiep/sd-raiders-fc-vs-marconi-stallions-luc-1400-ngay-25-07-2026/",
+        "blv": "RIO",
+        "blv_id": "",
+        "streams": [
+          "https://live3.procdnlive.com/livecdn/channel16.flv?auth_key=3000001784957496-0-0-ac04a754f164aed2c4f14a1cdd384c53"
+        ],
+        "stream_sources": {
+          "https://live3.procdnlive.com/livecdn/channel16.flv?auth_key=3000001784957496-0-0-ac04a754f164aed2c4f14a1cdd384c53": [
+            "api/backup/player",
+            "api/verified/content_type"
+          ]
+        },
+        "stream_headers": {
+          "https://live3.procdnlive.com/livecdn/channel16.flv?auth_key=3000001784957496-0-0-ac04a754f164aed2c4f14a1cdd384c53": {
+            "referer": "https://soco.livepingscorex.com/",
+            "origin": "https://soco.livepingscorex.com",
+            "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36",
+            "player_endpoint": "https://soco.livepingscorex.com/ajax/chanel/type/5/link/channel16/off-tvc",
+            "api_source_mode": "backup"
+          }
+        },
+        "stream_first_seen": [
+          "https://live3.procdnlive.com/livecdn/channel16.flv?auth_key=3000001784957496-0-0-ac04a754f164aed2c4f14a1cdd384c53"
+        ],
+        "diagnostics": {
+          "scan_mode": "api-backup",
+          "main_status": 200,
+          "elapsed_seconds": 20.257,
+          "api_sources_found": 2,
+          "api_sources_tried": 2
+        },
+        "api_probe": {
+          "enabled": true,
+          "room_status": 200,
+          "active_index": 0,
+          "sources_found": 2,
+          "sources_tried": 2,
+          "valid_stream_count": 1,
+          "source_results": [
+            {
+              "index": 0,
+              "endpoint_base": "https://soco.livepingscorex.com/ajax/chanel/type/8/link/channel16",
+              "endpoint_url": "https://soco.livepingscorex.com/ajax/chanel/type/8/link/channel16/off-tvc",
+              "active": true,
+              "mode": "active",
+              "player_status": 200,
+              "player_content_type": "text/html; charset=utf-8",
+              "player_elapsed_seconds": 0.202,
+              "player_error": "",
+              "stream_urls": [
+                "https://live2.streambylivepulse.com/live/channel16.flv"
+              ],
+              "checks": [
+                {
+                  "url": "https://live2.streambylivepulse.com/live/channel16.flv",
+                  "valid": false,
+                  "status": 404,
+                  "content_type": "",
+                  "bytes_read": 0,
+                  "signature": "",
+                  "elapsed_seconds": 8.825,
+                  "error": "",
+                  "origin": "https://soco.livepingscorex.com",
+                  "referer": "https://soco.livepingscorex.com/",
+                  "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36"
+                }
+              ]
+            },
+            {
+              "index": 1,
+              "endpoint_base": "https://soco.livepingscorex.com/ajax/chanel/type/5/link/channel16",
+              "endpoint_url": "https://soco.livepingscorex.com/ajax/chanel/type/5/link/channel16/off-tvc",
+              "active": false,
+              "mode": "backup",
+              "player_status": 200,
+              "player_content_type": "text/html; charset=utf-8",
+              "player_elapsed_seconds": 0.21,
+              "player_error": "",
+              "stream_urls": [
+                "https://live3.procdnlive.com/livecdn/channel16.flv?auth_key=3000001784957496-0-0-ac04a754f164aed2c4f14a1cdd384c53"
+              ],
+              "checks": [
+                {
+                  "url": "https://live3.procdnlive.com/livecdn/channel16.flv?auth_key=3000001784957496-0-0-ac04a754f164aed2c4f14a1cdd384c53",
+                  "valid": true,
+                  "status": 200,
+                  "content_type": "video/x-flv",
+                  "bytes_read": 0,
+                  "signature": "CONTENT_TYPE",
+                  "elapsed_seconds": 10.772,
+                  "error": "",
+                  "origin": "https://soco.livepingscorex.com",
+                  "referer": "https://soco.livepingscorex.com/",
+                  "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36"
+                }
+              ]
+            }
+          ],
+          "fallback_reason": "",
+          "elapsed_seconds": 20.257,
+          "room_content_type": "text/html",
+          "room_elapsed_seconds": 0.04,
+          "room_error": ""
+        },
+        "http_probe": {
+          "enabled": true,
+          "room_status": 200,
+          "active_index": 0,
+          "sources_found": 2,
+          "sources_tried": 2,
+          "valid_stream_count": 1,
+          "source_results": [
+            {
+              "index": 0,
+              "endpoint_base": "https://soco.livepingscorex.com/ajax/chanel/type/8/link/channel16",
+              "endpoint_url": "https://soco.livepingscorex.com/ajax/chanel/type/8/link/channel16/off-tvc",
+              "active": true,
+              "mode": "active",
+              "player_status": 200,
+              "player_content_type": "text/html; charset=utf-8",
+              "player_elapsed_seconds": 0.202,
+              "player_error": "",
+              "stream_urls": [
+                "https://live2.streambylivepulse.com/live/channel16.flv"
+              ],
+              "checks": [
+                {
+                  "url": "https://live2.streambylivepulse.com/live/channel16.flv",
+                  "valid": false,
+                  "status": 404,
+                  "content_type": "",
+                  "bytes_read": 0,
+                  "signature": "",
+                  "elapsed_seconds": 8.825,
+                  "error": "",
+                  "origin": "https://soco.livepingscorex.com",
+                  "referer": "https://soco.livepingscorex.com/",
+                  "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36"
+                }
+              ]
+            },
+            {
+              "index": 1,
+              "endpoint_base": "https://soco.livepingscorex.com/ajax/chanel/type/5/link/channel16",
+              "endpoint_url": "https://soco.livepingscorex.com/ajax/chanel/type/5/link/channel16/off-tvc",
+              "active": false,
+              "mode": "backup",
+              "player_status": 200,
+              "player_content_type": "text/html; charset=utf-8",
+              "player_elapsed_seconds": 0.21,
+              "player_error": "",
+              "stream_urls": [
+                "https://live3.procdnlive.com/livecdn/channel16.flv?auth_key=3000001784957496-0-0-ac04a754f164aed2c4f14a1cdd384c53"
+              ],
+              "checks": [
+                {
+                  "url": "https://live3.procdnlive.com/livecdn/channel16.flv?auth_key=3000001784957496-0-0-ac04a754f164aed2c4f14a1cdd384c53",
+                  "valid": true,
+                  "status": 200,
+                  "content_type": "video/x-flv",
+                  "bytes_read": 0,
+                  "signature": "CONTENT_TYPE",
+                  "elapsed_seconds": 10.772,
+                  "error": "",
+                  "origin": "https://soco.livepingscorex.com",
+                  "referer": "https://soco.livepingscorex.com/",
+                  "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36"
+                }
+              ]
+            }
+          ],
+          "fallback_reason": "",
+          "elapsed_seconds": 20.257,
+          "room_content_type": "text/html",
+          "room_elapsed_seconds": 0.04,
+          "room_error": ""
+        },
+        "errors": [],
+        "failed_requests": [],
+        "http_errors": []
+      }
+    ],
+    "attempted_room_ids": [],
+    "coverage": {
+      "found_streams": 1,
+      "found_blv_ids": [],
+      "goal": 2,
+      "source_goal_reached": false,
+      "room_queue_complete": true,
+      "complete": true,
+      "max_streams_per_blv": 2,
+      "total_explicit_blv_rooms": 0,
+      "pending_room_keys": [],
+      "room_progress": {
+        "__base__": {
+          "key": "__base__",
+          "url": "https://socolivekz.cc/truc-tiep/sd-raiders-fc-vs-marconi-stallions-luc-1400-ngay-25-07-2026/",
+          "blv": "RIO",
+          "blv_id": "",
+          "status": "success",
+          "attempts": 1,
+          "attempts_total": 1,
+          "ever_attempted": true,
+          "valid_stream_ever_found": true,
+          "needs_token_refresh": false,
+          "completion_reason": "valid_stream",
+          "rate_limit_hits": 0,
+          "last_http_status": 200,
+          "last_stream_count": 1,
+          "last_error": ""
+        }
+      }
+    },
+    "errors": [],
+    "match_name": "SD Raiders FC vs Marconi Stallions",
+    "scheduled_at": "2026-07-25T14:00:00+07:00",
+    "room_progress": {
+      "__base__": {
+        "key": "__base__",
+        "url": "https://socolivekz.cc/truc-tiep/sd-raiders-fc-vs-marconi-stallions-luc-1400-ngay-25-07-2026/",
+        "blv": "RIO",
+        "blv_id": "",
+        "status": "success",
+        "attempts": 1,
+        "attempts_total": 1,
+        "ever_attempted": true,
+        "valid_stream_ever_found": true,
+        "needs_token_refresh": false,
+        "completion_reason": "valid_stream",
+        "rate_limit_hits": 0,
+        "last_http_status": 200,
+        "last_stream_count": 1,
+        "last_error": ""
+      }
+    },
+    "run_attempted_room_keys": [
+      "__base__"
+    ],
+    "run_rate_limited_room_keys": [],
+    "run_completed_room_keys": [
+      "__base__"
+    ],
+    "run_global_budget_used": 4,
+    "streams": [
+      {
+        "url": "https://live3.procdnlive.com/livecdn/channel16.flv?auth_key=3000001784957496-0-0-ac04a754f164aed2c4f14a1cdd384c53",
+        "queue_room_key": "__base__",
+        "room_url": "https://socolivekz.cc/truc-tiep/sd-raiders-fc-vs-marconi-stallions-luc-1400-ngay-25-07-2026/",
+        "blv": "Nguồn phụ 1",
+        "blv_id": "",
+        "source_id": "",
+        "source_provenance": [
+          "api/backup/player",
+          "api/verified/content_type"
+        ],
+        "playback_referer": "https://soco.livepingscorex.com/",
+        "playback_origin": "https://soco.livepingscorex.com",
+        "playback_user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36",
+        "api_player_endpoint": "https://soco.livepingscorex.com/ajax/chanel/type/5/link/channel16/off-tvc",
+        "api_source_mode": "backup",
+        "source_confidence": "network",
+        "mapping_mode": "stream-source-id",
+        "discovered_from_room_url": "https://socolivekz.cc/truc-tiep/sd-raiders-fc-vs-marconi-stallions-luc-1400-ngay-25-07-2026/",
+        "discovered_from_blv": "RIO",
+        "discovered_at": "2026-07-25T12:31:47.095760+07:00",
+        "valid_until": "",
+        "is_expired": false
+      }
+    ],
+    "rooms": [
+      {
+        "url": "https://socolivekz.cc/truc-tiep/sd-raiders-fc-vs-marconi-stallions-luc-1400-ngay-25-07-2026/",
+        "blv": "RIO",
+        "blv_id": ""
+      }
+    ],
+    "catalog_last_seen_at": "2026-07-25T12:31:49.149494+07:00",
+    "catalog_updated_at": "2026-07-25T12:31:49.149494+07:00"
   },
   {
     "base_url": "https://socolive.watch/truc-tiep/liverpool-vs-sunderland-26-07-2026-0500/",
