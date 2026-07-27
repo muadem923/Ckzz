@@ -1,334 +1,5 @@
 [
   {
-    "base_url": "https://socolivekz.cc/truc-tiep/dep-garcilaso-vs-fc-cajamarca-luc-0700-ngay-27-07-2026/",
-    "raw_title": "Dep. Garcilaso vs FC Cajamarca",
-    "home_team": "Dep. Garcilaso",
-    "away_team": "FC Cajamarca",
-    "home_logo": "https://imgts.sportpulseapiz.com/football/team/6ypq3nh5ylomd7o/image/small",
-    "away_logo": "https://imgts.sportpulseapiz.com/football/team/3glrw7hol1pqdyj/image/small",
-    "time_text": "07:00",
-    "date_text": "27/07",
-    "status": "Hiệp 2",
-    "card_text": "VĐQG PERU Hiệp 2: 73' 07:00 - 27.07 Dep. Garcilaso 2 : 0 FC Cajamarca HT 2 - 0 2 - 2 2 - 0 XMEN 0.70 0 1.10 0.98 2.5 0.83",
-    "room_results": [
-      {
-        "url": "https://socolivekz.cc/truc-tiep/dep-garcilaso-vs-fc-cajamarca-luc-0700-ngay-27-07-2026/",
-        "blv": "XMEN",
-        "blv_id": "",
-        "streams": [
-          "https://live2.streambylivepulse.com/live/channel13.flv",
-          "https://live3.procdnlive.com/livecdn/channel13.flv?auth_key=3000001785108680-0-0-0d90eee409a549bd29a10f50c28806da"
-        ],
-        "stream_sources": {
-          "https://live2.streambylivepulse.com/live/channel13.flv": [
-            "api/active/player",
-            "api/verified/flv"
-          ],
-          "https://live3.procdnlive.com/livecdn/channel13.flv?auth_key=3000001785108680-0-0-0d90eee409a549bd29a10f50c28806da": [
-            "api/backup/player",
-            "api/verified/flv"
-          ]
-        },
-        "stream_headers": {
-          "https://live2.streambylivepulse.com/live/channel13.flv": {
-            "referer": "https://soco.livepingscorex.com/",
-            "origin": "https://soco.livepingscorex.com",
-            "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36",
-            "player_endpoint": "https://soco.livepingscorex.com/ajax/chanel/type/8/link/channel13/off-tvc",
-            "api_source_mode": "active"
-          },
-          "https://live3.procdnlive.com/livecdn/channel13.flv?auth_key=3000001785108680-0-0-0d90eee409a549bd29a10f50c28806da": {
-            "referer": "https://soco.livepingscorex.com/",
-            "origin": "https://soco.livepingscorex.com",
-            "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36",
-            "player_endpoint": "https://soco.livepingscorex.com/ajax/chanel/type/5/link/channel13/off-tvc",
-            "api_source_mode": "backup"
-          }
-        },
-        "stream_first_seen": [
-          "https://live2.streambylivepulse.com/live/channel13.flv",
-          "https://live3.procdnlive.com/livecdn/channel13.flv?auth_key=3000001785108680-0-0-0d90eee409a549bd29a10f50c28806da"
-        ],
-        "diagnostics": {
-          "scan_mode": "api-backup",
-          "main_status": 200,
-          "elapsed_seconds": 3.588,
-          "api_sources_found": 2,
-          "api_sources_tried": 2
-        },
-        "api_probe": {
-          "enabled": true,
-          "room_status": 200,
-          "active_index": 0,
-          "sources_found": 2,
-          "sources_tried": 2,
-          "valid_stream_count": 2,
-          "source_results": [
-            {
-              "index": 0,
-              "endpoint_base": "https://soco.livepingscorex.com/ajax/chanel/type/8/link/channel13",
-              "endpoint_url": "https://soco.livepingscorex.com/ajax/chanel/type/8/link/channel13/off-tvc",
-              "active": true,
-              "mode": "active",
-              "player_status": 200,
-              "player_content_type": "text/html; charset=utf-8",
-              "player_elapsed_seconds": 0.202,
-              "player_error": "",
-              "stream_urls": [
-                "https://live2.streambylivepulse.com/live/channel13.flv"
-              ],
-              "checks": [
-                {
-                  "url": "https://live2.streambylivepulse.com/live/channel13.flv",
-                  "valid": true,
-                  "status": 200,
-                  "content_type": "video/x-flv",
-                  "bytes_read": 821,
-                  "signature": "FLV",
-                  "elapsed_seconds": 0.684,
-                  "error": "",
-                  "origin": "https://soco.livepingscorex.com",
-                  "referer": "https://soco.livepingscorex.com/",
-                  "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36"
-                }
-              ]
-            },
-            {
-              "index": 1,
-              "endpoint_base": "https://soco.livepingscorex.com/ajax/chanel/type/5/link/channel13",
-              "endpoint_url": "https://soco.livepingscorex.com/ajax/chanel/type/5/link/channel13/off-tvc",
-              "active": false,
-              "mode": "backup",
-              "player_status": 200,
-              "player_content_type": "text/html; charset=utf-8",
-              "player_elapsed_seconds": 0.1,
-              "player_error": "",
-              "stream_urls": [
-                "https://live3.procdnlive.com/livecdn/channel13.flv?auth_key=3000001785108680-0-0-0d90eee409a549bd29a10f50c28806da"
-              ],
-              "checks": [
-                {
-                  "url": "https://live3.procdnlive.com/livecdn/channel13.flv?auth_key=3000001785108680-0-0-0d90eee409a549bd29a10f50c28806da",
-                  "valid": true,
-                  "status": 200,
-                  "content_type": "video/x-flv",
-                  "bytes_read": 1177,
-                  "signature": "FLV",
-                  "elapsed_seconds": 1.912,
-                  "error": "",
-                  "origin": "https://soco.livepingscorex.com",
-                  "referer": "https://soco.livepingscorex.com/",
-                  "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36"
-                }
-              ]
-            }
-          ],
-          "fallback_reason": "",
-          "elapsed_seconds": 3.588,
-          "room_content_type": "text/html",
-          "room_elapsed_seconds": 0.484,
-          "room_error": ""
-        },
-        "http_probe": {
-          "enabled": true,
-          "room_status": 200,
-          "active_index": 0,
-          "sources_found": 2,
-          "sources_tried": 2,
-          "valid_stream_count": 2,
-          "source_results": [
-            {
-              "index": 0,
-              "endpoint_base": "https://soco.livepingscorex.com/ajax/chanel/type/8/link/channel13",
-              "endpoint_url": "https://soco.livepingscorex.com/ajax/chanel/type/8/link/channel13/off-tvc",
-              "active": true,
-              "mode": "active",
-              "player_status": 200,
-              "player_content_type": "text/html; charset=utf-8",
-              "player_elapsed_seconds": 0.202,
-              "player_error": "",
-              "stream_urls": [
-                "https://live2.streambylivepulse.com/live/channel13.flv"
-              ],
-              "checks": [
-                {
-                  "url": "https://live2.streambylivepulse.com/live/channel13.flv",
-                  "valid": true,
-                  "status": 200,
-                  "content_type": "video/x-flv",
-                  "bytes_read": 821,
-                  "signature": "FLV",
-                  "elapsed_seconds": 0.684,
-                  "error": "",
-                  "origin": "https://soco.livepingscorex.com",
-                  "referer": "https://soco.livepingscorex.com/",
-                  "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36"
-                }
-              ]
-            },
-            {
-              "index": 1,
-              "endpoint_base": "https://soco.livepingscorex.com/ajax/chanel/type/5/link/channel13",
-              "endpoint_url": "https://soco.livepingscorex.com/ajax/chanel/type/5/link/channel13/off-tvc",
-              "active": false,
-              "mode": "backup",
-              "player_status": 200,
-              "player_content_type": "text/html; charset=utf-8",
-              "player_elapsed_seconds": 0.1,
-              "player_error": "",
-              "stream_urls": [
-                "https://live3.procdnlive.com/livecdn/channel13.flv?auth_key=3000001785108680-0-0-0d90eee409a549bd29a10f50c28806da"
-              ],
-              "checks": [
-                {
-                  "url": "https://live3.procdnlive.com/livecdn/channel13.flv?auth_key=3000001785108680-0-0-0d90eee409a549bd29a10f50c28806da",
-                  "valid": true,
-                  "status": 200,
-                  "content_type": "video/x-flv",
-                  "bytes_read": 1177,
-                  "signature": "FLV",
-                  "elapsed_seconds": 1.912,
-                  "error": "",
-                  "origin": "https://soco.livepingscorex.com",
-                  "referer": "https://soco.livepingscorex.com/",
-                  "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36"
-                }
-              ]
-            }
-          ],
-          "fallback_reason": "",
-          "elapsed_seconds": 3.588,
-          "room_content_type": "text/html",
-          "room_elapsed_seconds": 0.484,
-          "room_error": ""
-        },
-        "errors": [],
-        "failed_requests": [],
-        "http_errors": []
-      }
-    ],
-    "attempted_room_ids": [],
-    "coverage": {
-      "found_streams": 2,
-      "found_blv_ids": [],
-      "goal": 2,
-      "source_goal_reached": true,
-      "room_queue_complete": true,
-      "complete": true,
-      "max_streams_per_blv": 2,
-      "total_explicit_blv_rooms": 0,
-      "pending_room_keys": [],
-      "room_progress": {
-        "__base__": {
-          "key": "__base__",
-          "url": "https://socolivekz.cc/truc-tiep/dep-garcilaso-vs-fc-cajamarca-luc-0700-ngay-27-07-2026/",
-          "blv": "XMEN",
-          "blv_id": "",
-          "status": "success",
-          "attempts": 1,
-          "attempts_total": 1,
-          "ever_attempted": true,
-          "valid_stream_ever_found": true,
-          "needs_token_refresh": false,
-          "completion_reason": "valid_stream",
-          "rate_limit_hits": 0,
-          "last_http_status": 200,
-          "last_stream_count": 2,
-          "last_error": ""
-        }
-      }
-    },
-    "errors": [],
-    "match_name": "Dep. Garcilaso vs FC Cajamarca",
-    "scheduled_at": "2026-07-27T07:00:00+07:00",
-    "room_progress": {
-      "__base__": {
-        "key": "__base__",
-        "url": "https://socolivekz.cc/truc-tiep/dep-garcilaso-vs-fc-cajamarca-luc-0700-ngay-27-07-2026/",
-        "blv": "XMEN",
-        "blv_id": "",
-        "status": "success",
-        "attempts": 1,
-        "attempts_total": 1,
-        "ever_attempted": true,
-        "valid_stream_ever_found": true,
-        "needs_token_refresh": false,
-        "completion_reason": "valid_stream",
-        "rate_limit_hits": 0,
-        "last_http_status": 200,
-        "last_stream_count": 2,
-        "last_error": ""
-      }
-    },
-    "run_attempted_room_keys": [
-      "__base__"
-    ],
-    "run_rate_limited_room_keys": [],
-    "run_completed_room_keys": [
-      "__base__"
-    ],
-    "run_global_budget_used": 3,
-    "streams": [
-      {
-        "url": "https://live3.procdnlive.com/livecdn/channel13.flv?auth_key=3000001785108680-0-0-0d90eee409a549bd29a10f50c28806da",
-        "queue_room_key": "__base__",
-        "room_url": "https://socolivekz.cc/truc-tiep/dep-garcilaso-vs-fc-cajamarca-luc-0700-ngay-27-07-2026/",
-        "blv": "Nguồn phụ 2",
-        "blv_id": "",
-        "source_id": "",
-        "source_provenance": [
-          "api/backup/player",
-          "api/verified/flv"
-        ],
-        "playback_referer": "https://soco.livepingscorex.com/",
-        "playback_origin": "https://soco.livepingscorex.com",
-        "playback_user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36",
-        "api_player_endpoint": "https://soco.livepingscorex.com/ajax/chanel/type/5/link/channel13/off-tvc",
-        "api_source_mode": "backup",
-        "source_confidence": "network",
-        "mapping_mode": "stream-source-id",
-        "discovered_from_room_url": "https://socolivekz.cc/truc-tiep/dep-garcilaso-vs-fc-cajamarca-luc-0700-ngay-27-07-2026/",
-        "discovered_from_blv": "XMEN",
-        "discovered_at": "2026-07-27T06:31:22.074575+07:00",
-        "valid_until": "",
-        "is_expired": false
-      },
-      {
-        "url": "https://live2.streambylivepulse.com/live/channel13.flv",
-        "queue_room_key": "__base__",
-        "room_url": "https://socolivekz.cc/truc-tiep/dep-garcilaso-vs-fc-cajamarca-luc-0700-ngay-27-07-2026/",
-        "blv": "Nguồn phụ 1",
-        "blv_id": "",
-        "source_id": "",
-        "source_provenance": [
-          "api/active/player",
-          "api/verified/flv"
-        ],
-        "playback_referer": "https://soco.livepingscorex.com/",
-        "playback_origin": "https://soco.livepingscorex.com",
-        "playback_user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36",
-        "api_player_endpoint": "https://soco.livepingscorex.com/ajax/chanel/type/8/link/channel13/off-tvc",
-        "api_source_mode": "active",
-        "source_confidence": "network",
-        "mapping_mode": "stream-source-id",
-        "discovered_from_room_url": "https://socolivekz.cc/truc-tiep/dep-garcilaso-vs-fc-cajamarca-luc-0700-ngay-27-07-2026/",
-        "discovered_from_blv": "XMEN",
-        "discovered_at": "2026-07-27T06:31:22.074559+07:00",
-        "valid_until": "",
-        "is_expired": false
-      }
-    ],
-    "rooms": [
-      {
-        "url": "https://socolivekz.cc/truc-tiep/dep-garcilaso-vs-fc-cajamarca-luc-0700-ngay-27-07-2026/",
-        "blv": "XMEN",
-        "blv_id": ""
-      }
-    ],
-    "catalog_last_seen_at": "2026-07-27T08:31:14.047394+07:00",
-    "catalog_updated_at": "2026-07-27T06:32:31.880942+07:00"
-  },
-  {
     "base_url": "https://socolivekz.cc/truc-tiep/barcelona-sc-vs-ldu-quito-luc-0715-ngay-27-07-2026/",
     "raw_title": "Barcelona SC vs LDU Quito",
     "home_team": "Barcelona SC",
@@ -3731,8 +3402,8 @@
     "away_logo": "https://imgts.sportpulseapiz.com/football/team/l5ergph3d4vr8k0/image/small",
     "time_text": "12:30",
     "date_text": "27/07",
-    "status": "Đang diễn ra",
-    "card_text": "INDIAN REGIONAL CUP Đang diễn ra 12:30 - 27.07 Chanmari FC Dinthar FC 0 - 6 2 - 1 2 - 3 0.88 2/2.5 0.93 0.90 4 0.90",
+    "status": "Hiệp 1",
+    "card_text": "INDIAN REGIONAL CUP Hiệp 1: 28' 12:30 - 27.07 Chanmari FC 0 : 0 Dinthar FC HT 0 - 0 2 - 0 0 - 0 1.00 1.5/2 0.80 0.93 3 0.88",
     "room_results": [
       {
         "url": "https://socolivekj.cc/truc-tiep/chanmari-fc-vs-dinthar-fc-luc-1230-ngay-27-07-2026/",
@@ -4000,7 +3671,7 @@
         "blv_id": ""
       }
     ],
-    "catalog_last_seen_at": "2026-07-27T12:31:52.274313+07:00",
+    "catalog_last_seen_at": "2026-07-27T13:01:43.121951+07:00",
     "catalog_updated_at": "2026-07-27T11:02:23.681038+07:00"
   },
   {
@@ -4322,8 +3993,8 @@
     "away_logo": "https://imgts.sportpulseapiz.com/football/team/l5ergphp1dvr8k0/image/small",
     "time_text": "12:30",
     "date_text": "27/07",
-    "status": "Đang diễn ra",
-    "card_text": "INDIAN SIKKIM S-LEAGUE Đang diễn ra 12:30 - 27.07 Sikkim Police Northerners FC HT 0 - 0 0 - 0 0 - 0 0.98 0.5 0.83 0.90 3/3.5 0.90",
+    "status": "Hiệp 1",
+    "card_text": "INDIAN SIKKIM S-LEAGUE Hiệp 1: 27' 12:30 - 27.07 Sikkim Police 1 : 0 Northerners FC HT 1 - 0 1 - 2 0 - 0 0.80 0/0.5 1.00 0.83 3.5 0.98",
     "room_results": [
       {
         "url": "https://socolivekj.cc/truc-tiep/sikkim-police-vs-northerners-fc-luc-1230-ngay-27-07-2026/",
@@ -4592,7 +4263,7 @@
         "blv_id": ""
       }
     ],
-    "catalog_last_seen_at": "2026-07-27T12:31:52.274313+07:00",
+    "catalog_last_seen_at": "2026-07-27T13:01:43.121951+07:00",
     "catalog_updated_at": "2026-07-27T11:02:23.681038+07:00"
   },
   {
@@ -4915,8 +4586,8 @@
     "away_logo": "https://imgts.sportpulseapiz.com/football/team/dn1m1gh17wkmoep/image/small",
     "time_text": "13:00",
     "date_text": "27/07",
-    "status": "",
-    "card_text": "KAZAKHSTAN WOMENS SUPER LEAGUE 13:00 - 27.07 Nữ Kairat Almaty Nữ Ulytau 0 - 7 0 - 0 - - - - - -",
+    "status": "Đang diễn ra",
+    "card_text": "KAZAKHSTAN WOMENS SUPER LEAGUE Đang diễn ra 13:00 - 27.07 Nữ Kairat Almaty Nữ Ulytau 0 - 7 0 - 0 - - - - - -",
     "room_results": [
       {
         "url": "https://socolivekj.cc/truc-tiep/nu-kairat-almaty-vs-nu-ulytau-luc-1300-ngay-27-07-2026/",
@@ -5185,8 +4856,287 @@
         "blv_id": ""
       }
     ],
-    "catalog_last_seen_at": "2026-07-27T12:31:52.274313+07:00",
+    "catalog_last_seen_at": "2026-07-27T13:01:43.121951+07:00",
     "catalog_updated_at": "2026-07-27T11:02:23.681038+07:00"
+  },
+  {
+    "base_url": "https://socolivekj.cc/truc-tiep/huda-hue-vs-shb-da-nang-luc-1400-ngay-27-07-2026/",
+    "raw_title": "Huda Huế vs SHB Đà Nẵng",
+    "home_team": "Huda Huế",
+    "away_team": "SHB Đà Nẵng",
+    "home_logo": "https://imgts.sportpulseapiz.com/football/team/k82rekh96p9repz/image/small",
+    "away_logo": "https://imgts.sportpulseapiz.com/football/team/pxwrxlhg9k9ryk0/image/small",
+    "time_text": "14:00",
+    "date_text": "27/07",
+    "status": "",
+    "card_text": "GIẢI BÓNG ĐÁ U17 VĐQG 2026 14:00 - 27.07 Huda Huế SHB Đà Nẵng HT 0 - 0 0 - 0 0 - 0 - - - - - -",
+    "room_results": [
+      {
+        "url": "https://socolivekj.cc/truc-tiep/huda-hue-vs-shb-da-nang-luc-1400-ngay-27-07-2026/",
+        "blv": "",
+        "blv_id": "",
+        "streams": [
+          "https://live1.streambylivepulse.com/live/channel11.flv?wsSecret=71fdb7be0ebd4f2de6a9fba0b02219f7&wsABSTime=1785175275"
+        ],
+        "stream_sources": {
+          "https://live1.streambylivepulse.com/live/channel11.flv?wsSecret=71fdb7be0ebd4f2de6a9fba0b02219f7&wsABSTime=1785175275": [
+            "cdp/request",
+            "cdp/response",
+            "harvest-final",
+            "harvest-round-1",
+            "harvest-round-2",
+            "harvest-round-3",
+            "harvest-round-4",
+            "harvest-round-5",
+            "harvest-round-6",
+            "harvest-round-7",
+            "harvest-round-8",
+            "request/fetch",
+            "response/403"
+          ]
+        },
+        "stream_headers": {},
+        "stream_first_seen": [
+          "https://live1.streambylivepulse.com/live/channel11.flv?wsSecret=71fdb7be0ebd4f2de6a9fba0b02219f7&wsABSTime=1785175275"
+        ],
+        "discovered_blv_ids": [],
+        "diagnostics": {
+          "url": "https://socolivekj.cc/truc-tiep/huda-hue-vs-shb-da-nang-luc-1400-ngay-27-07-2026/",
+          "title": "Trực tiếp Huda Huế vs SHB Đà Nẵng full lúc 14:00, ngày 27/07",
+          "h1": "Xem trực tiếp trận đấu Huda Huế vs SHB Đà Nẵng full lúc 14:00, ngày 27/07/2026",
+          "ready_state": "complete",
+          "visibility_state": "visible",
+          "hidden": false,
+          "video_count": 0,
+          "iframe_count": 5,
+          "body_sample": "WC 2026 Lịch Thi Đấu Xem Lại Video Highlight Tỷ Lệ Kèo BXH KQBD Tips Tin Tức Livescore Tuyển Dụng Top Nhà Cái Cược 8xbet WC 2026 Lịch Thi Đấu Xem Lại Video Highlight Tỷ Lệ Kèo BXH KQBD Tips Tin Tức Livescore Tuyển Dụng Top nhà cái Xem trực tiếp trận đấu Huda Huế vs SHB Đà Nẵng full lúc 14:00, ngày 27/07/2026 Phát sóng link trực tuyến Huda Huế vs SHB Đà Nẵng hôm nay tại giải đấu Giải Bóng Đá U17 VĐQG 2026 _ _ _ _ _ _ Huda Huế SHB Đà Nẵng Theo bạn thì trận này tài hay xỉu? Tài 0% Xỉu 0% Theo bạn thì trận này đội nào sẽ thắng? Chủ nhà 0% Hòa 0% Đội Khách 0% Anh Em Muốn Tham Gia Đặt Cược Thì Click Vào Quảng Cáo Của 8XBET Để Đăng Ký Đặt Cược Tất Cả Các Trận Đấu Trên Toàn Thế Giới. Nếu anh em gặp tình trạng không vào được web, hãy cài VPN 1.1.1.1 để truy cập ổn định hơn nhé . Châu Á Châu Âu Tài xỉu Phạt góc Chọn nhà cái HIỆP 1 FT Châu Á HIỆP 1 FT Châu Á - - - - - - Châu Âu HIỆP 1 FT Châu Âu - - - - - - Tài xỉu HIỆP 1 FT Tài xỉu - - - - - - SỚM FT Phạt góc HIỆP 1 FT Phạt góc - - - - - - Trực tiếp Mô phỏng CHIA SẺ Phát sóng trận đấu Huda Huế vs SHB Đà Nẵng full HD lúc 14:00, ngày 27/07/2026 Giải Bóng Đá U17 VĐQG 2026 HD 1 CHIA SẺ Thông số Diễn biến Đội hình BXH Chat Đối đầu Trận khác Trận ",
+          "harvest_rounds": 8,
+          "harvest_window_seconds": 6.352,
+          "main_status": 200,
+          "harvested_stream_count": 1,
+          "harvested_blv_ids": [],
+          "scan_mode": "chromium-fallback",
+          "elapsed_seconds": 7.425
+        },
+        "api_probe": {
+          "enabled": true,
+          "room_status": 200,
+          "active_index": 0,
+          "sources_found": 1,
+          "sources_tried": 1,
+          "valid_stream_count": 0,
+          "source_results": [
+            {
+              "index": 0,
+              "endpoint_base": "https://soco.livepingscorex.com/ajax/chanel/type/7/link/channel11",
+              "endpoint_url": "https://soco.livepingscorex.com/ajax/chanel/type/7/link/channel11/off-tvc",
+              "active": true,
+              "mode": "active",
+              "player_status": 403,
+              "player_content_type": "text/html; charset=UTF-8",
+              "player_elapsed_seconds": 0.047,
+              "player_error": "",
+              "stream_urls": [],
+              "checks": []
+            }
+          ],
+          "fallback_reason": "all_api_sources_failed",
+          "elapsed_seconds": 0.114,
+          "room_content_type": "text/html",
+          "room_elapsed_seconds": 0.061,
+          "room_error": ""
+        },
+        "http_probe": {
+          "api_first": {
+            "enabled": true,
+            "room_status": 200,
+            "active_index": 0,
+            "sources_found": 1,
+            "sources_tried": 1,
+            "valid_stream_count": 0,
+            "source_results": [
+              {
+                "index": 0,
+                "endpoint_base": "https://soco.livepingscorex.com/ajax/chanel/type/7/link/channel11",
+                "endpoint_url": "https://soco.livepingscorex.com/ajax/chanel/type/7/link/channel11/off-tvc",
+                "active": true,
+                "mode": "active",
+                "player_status": 403,
+                "player_content_type": "text/html; charset=UTF-8",
+                "player_elapsed_seconds": 0.047,
+                "player_error": "",
+                "stream_urls": [],
+                "checks": []
+              }
+            ],
+            "fallback_reason": "all_api_sources_failed",
+            "elapsed_seconds": 0.114,
+            "room_content_type": "text/html",
+            "room_elapsed_seconds": 0.061,
+            "room_error": ""
+          },
+          "legacy_http": {
+            "enabled": false,
+            "status": null,
+            "elapsed_seconds": 0.0,
+            "error": ""
+          }
+        },
+        "errors": [
+          "console/error: Failed to load resource: net::ERR_FAILED",
+          "console/error: Failed to load resource: net::ERR_FAILED",
+          "console/error: Failed to load resource: net::ERR_FAILED",
+          "console/error: Failed to load resource: net::ERR_FAILED",
+          "console/error: Failed to load resource: net::ERR_FAILED",
+          "console/error: Failed to load resource: net::ERR_FAILED",
+          "console/error: Failed to load resource: net::ERR_FAILED",
+          "console/error: Failed to load resource: net::ERR_FAILED",
+          "console/error: Failed to load resource: net::ERR_FAILED",
+          "console/error: Failed to load resource: net::ERR_FAILED",
+          "console/error: Failed to load resource: net::ERR_FAILED",
+          "console/error: Failed to load resource: net::ERR_FAILED",
+          "console/error: Failed to load resource: net::ERR_FAILED",
+          "console/error: Failed to load resource: net::ERR_FAILED",
+          "console/error: Failed to load resource: net::ERR_FAILED",
+          "console/error: Failed to load resource: net::ERR_FAILED",
+          "console/error: Failed to load resource: net::ERR_FAILED",
+          "console/error: Failed to load resource: net::ERR_FAILED",
+          "console/error: Failed to load resource: net::ERR_FAILED",
+          "console/error: Failed to load resource: net::ERR_FAILED"
+        ],
+        "failed_requests": [
+          "stylesheet https://fonts.googleapis.com/css2?family=Bangers&family=Oswald:wght@400;500;700&family=Raleway:wght@400;500;700&family=Roboto+Condensed:wght@300;400;700&display=swap | net::ERR_FAILED",
+          "stylesheet https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0 | net::ERR_FAILED",
+          "stylesheet https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css | net::ERR_FAILED",
+          "stylesheet https://socolivekj.cc/wp-content/plugins/widget-options/assets/css/widget-options.css?ver=4.0.6.1 | net::ERR_FAILED",
+          "stylesheet https://socolivekj.cc/wp-content/plugins/wp-pagenavi/pagenavi-css.css?ver=2.70 | net::ERR_FAILED",
+          "stylesheet https://socolivekj.cc/wp-content/themes/bongda/dist/styles/bootstrap.min.css?ver=1745376853 | net::ERR_FAILED",
+          "stylesheet https://socolivekj.cc/wp-content/themes/bongda/dist/styles/main.css?ver=1781184173 | net::ERR_FAILED",
+          "stylesheet https://socolivekj.cc/wp-content/themes/bongda/dist/styles/pages/single-live.css?ver=1784627923 | net::ERR_FAILED",
+          "image https://socolivekj.cc/wp-content/themes/bongda/dist/images/logo-socolive-tv-official-v2.png | net::ERR_FAILED",
+          "image https://socolivekj.cc/wp-content/themes/bongda/dist/images/wc-2026/menu-wc.svg | net::ERR_FAILED",
+          "image https://socolivekj.cc/wp-content/themes/bongda/dist/images/closemenu.png | net::ERR_FAILED",
+          "image https://cdn.lfastcdn.com/2026/07/ghnwicpkvfkl.gif | net::ERR_FAILED",
+          "stylesheet https://socolivekj.cc/wp-content/plugins/api-sport/public/css/match_detail.css?id=0671c88cfbad4335394b897262a0d662 | net::ERR_FAILED",
+          "image https://cdn.lfastcdn.com/2026/07/nxzutbrtjbof.gif | net::ERR_FAILED",
+          "image https://imgts.sportpulseapiz.com/football/team/k82rekh96p9repz/image/small | net::ERR_FAILED"
+        ],
+        "http_errors": [
+          "403 https://live1.streambylivepulse.com/live/channel11.flv?wsSecret=71fdb7be0ebd4f2de6a9fba0b02219f7&wsABSTime=1785175275",
+          "403 https://live1.streambylivepulse.com/live/channel11.flv?wsSecret=71fdb7be0ebd4f2de6a9fba0b02219f7&wsABSTime=1785175275",
+          "403 https://live1.streambylivepulse.com/live/channel11.flv?wsSecret=71fdb7be0ebd4f2de6a9fba0b02219f7&wsABSTime=1785175275",
+          "403 https://live1.streambylivepulse.com/live/channel11.flv?wsSecret=71fdb7be0ebd4f2de6a9fba0b02219f7&wsABSTime=1785175275",
+          "403 https://live1.streambylivepulse.com/live/channel11.flv?wsSecret=71fdb7be0ebd4f2de6a9fba0b02219f7&wsABSTime=1785175275"
+        ]
+      }
+    ],
+    "attempted_room_ids": [],
+    "coverage": {
+      "found_streams": 1,
+      "found_blv_ids": [],
+      "goal": 2,
+      "source_goal_reached": false,
+      "room_queue_complete": true,
+      "complete": true,
+      "max_streams_per_blv": 2,
+      "total_explicit_blv_rooms": 0,
+      "pending_room_keys": [],
+      "room_progress": {
+        "__base__": {
+          "key": "__base__",
+          "url": "https://socolivekj.cc/truc-tiep/huda-hue-vs-shb-da-nang-luc-1400-ngay-27-07-2026/",
+          "blv": "",
+          "blv_id": "",
+          "status": "success",
+          "attempts": 1,
+          "attempts_total": 1,
+          "ever_attempted": true,
+          "valid_stream_ever_found": true,
+          "needs_token_refresh": false,
+          "completion_reason": "valid_stream",
+          "rate_limit_hits": 0,
+          "last_http_status": 200,
+          "last_stream_count": 1,
+          "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
+        }
+      }
+    },
+    "errors": [],
+    "match_name": "Huda Huế vs SHB Đà Nẵng",
+    "scheduled_at": "2026-07-27T14:00:00+07:00",
+    "room_progress": {
+      "__base__": {
+        "key": "__base__",
+        "url": "https://socolivekj.cc/truc-tiep/huda-hue-vs-shb-da-nang-luc-1400-ngay-27-07-2026/",
+        "blv": "",
+        "blv_id": "",
+        "status": "success",
+        "attempts": 1,
+        "attempts_total": 1,
+        "ever_attempted": true,
+        "valid_stream_ever_found": true,
+        "needs_token_refresh": false,
+        "completion_reason": "valid_stream",
+        "rate_limit_hits": 0,
+        "last_http_status": 200,
+        "last_stream_count": 1,
+        "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
+      }
+    },
+    "run_attempted_room_keys": [
+      "__base__"
+    ],
+    "run_rate_limited_room_keys": [],
+    "run_completed_room_keys": [
+      "__base__"
+    ],
+    "run_global_budget_used": 1,
+    "streams": [
+      {
+        "url": "https://live1.streambylivepulse.com/live/channel11.flv?wsSecret=71fdb7be0ebd4f2de6a9fba0b02219f7&wsABSTime=1785175275",
+        "queue_room_key": "__base__",
+        "room_url": "https://socolivekj.cc/truc-tiep/huda-hue-vs-shb-da-nang-luc-1400-ngay-27-07-2026/",
+        "blv": "Nguồn phụ 1",
+        "blv_id": "",
+        "source_id": "",
+        "source_provenance": [
+          "cdp/request",
+          "cdp/response",
+          "harvest-final",
+          "harvest-round-1",
+          "harvest-round-2",
+          "harvest-round-3",
+          "harvest-round-4",
+          "harvest-round-5",
+          "harvest-round-6",
+          "harvest-round-7",
+          "harvest-round-8",
+          "request/fetch",
+          "response/403"
+        ],
+        "playback_referer": "",
+        "playback_origin": "",
+        "playback_user_agent": "",
+        "api_player_endpoint": "",
+        "api_source_mode": "",
+        "source_confidence": "network",
+        "mapping_mode": "stream-source-id",
+        "discovered_from_room_url": "https://socolivekj.cc/truc-tiep/huda-hue-vs-shb-da-nang-luc-1400-ngay-27-07-2026/",
+        "discovered_from_blv": "URL tổng",
+        "discovered_at": "2026-07-27T13:01:21.898345+07:00",
+        "valid_until": "",
+        "is_expired": false
+      }
+    ],
+    "rooms": [
+      {
+        "url": "https://socolivekj.cc/truc-tiep/huda-hue-vs-shb-da-nang-luc-1400-ngay-27-07-2026/",
+        "blv": "",
+        "blv_id": ""
+      }
+    ],
+    "catalog_last_seen_at": "2026-07-27T13:01:43.121951+07:00",
+    "catalog_updated_at": "2026-07-27T13:01:43.121951+07:00"
   },
   {
     "base_url": "https://socolivekz.cc/truc-tiep/marbisu-sc-vs-lumshyiap-sc-luc-1430-ngay-27-07-2026/",
@@ -5781,7 +5731,7 @@
         "blv_id": ""
       }
     ],
-    "catalog_last_seen_at": "2026-07-27T12:31:52.274313+07:00",
+    "catalog_last_seen_at": "2026-07-27T13:01:43.121951+07:00",
     "catalog_updated_at": "2026-07-27T11:02:23.681038+07:00"
   },
   {
@@ -6063,7 +6013,7 @@
         "blv_id": ""
       }
     ],
-    "catalog_last_seen_at": "2026-07-27T12:31:52.274313+07:00",
+    "catalog_last_seen_at": "2026-07-27T13:01:43.121951+07:00",
     "catalog_updated_at": "2026-07-27T11:02:23.681038+07:00"
   },
   {
@@ -6342,7 +6292,7 @@
         "blv_id": ""
       }
     ],
-    "catalog_last_seen_at": "2026-07-27T12:31:52.274313+07:00",
+    "catalog_last_seen_at": "2026-07-27T13:01:43.121951+07:00",
     "catalog_updated_at": "2026-07-27T11:31:07.024385+07:00"
   },
   {
@@ -6621,8 +6571,565 @@
         "blv_id": ""
       }
     ],
-    "catalog_last_seen_at": "2026-07-27T12:31:52.274313+07:00",
+    "catalog_last_seen_at": "2026-07-27T13:01:43.121951+07:00",
     "catalog_updated_at": "2026-07-27T12:01:16.605208+07:00"
+  },
+  {
+    "base_url": "https://socolivekj.cc/truc-tiep/nu-son-la-vs-nu-ho-chi-minh-luc-1600-ngay-27-07-2026/",
+    "raw_title": "Nữ Sơn La vs Nữ Hồ Chí Minh",
+    "home_team": "Nữ Sơn La",
+    "away_team": "Nữ Hồ Chí Minh",
+    "home_logo": "https://imgts.sportpulseapiz.com/football/team/y39mp1h5zy7mojx/image/small",
+    "away_logo": "https://imgts.sportpulseapiz.com/football/team/965mkyh7lp7r1ge/image/small",
+    "time_text": "16:00",
+    "date_text": "27/07",
+    "status": "",
+    "card_text": "GIẢI BÓNG ĐÁ NỮ U16 VĐQG 16:00 - 27.07 Nữ Sơn La Nữ Hồ Chí Minh HT 0 - 0 0 - 0 0 - 0 - - - - - -",
+    "room_results": [
+      {
+        "url": "https://socolivekj.cc/truc-tiep/nu-son-la-vs-nu-ho-chi-minh-luc-1600-ngay-27-07-2026/",
+        "blv": "",
+        "blv_id": "",
+        "streams": [
+          "https://live1.streambylivepulse.com/live/channel10.flv?wsSecret=6e1f93022b6e71c019d92252aa3d26eb&wsABSTime=1785175284"
+        ],
+        "stream_sources": {
+          "https://live1.streambylivepulse.com/live/channel10.flv?wsSecret=6e1f93022b6e71c019d92252aa3d26eb&wsABSTime=1785175284": [
+            "cdp/request",
+            "cdp/response",
+            "harvest-final",
+            "harvest-round-1",
+            "harvest-round-2",
+            "harvest-round-3",
+            "harvest-round-4",
+            "harvest-round-5",
+            "harvest-round-6",
+            "harvest-round-7",
+            "harvest-round-8",
+            "request/fetch",
+            "response/403"
+          ]
+        },
+        "stream_headers": {},
+        "stream_first_seen": [
+          "https://live1.streambylivepulse.com/live/channel10.flv?wsSecret=6e1f93022b6e71c019d92252aa3d26eb&wsABSTime=1785175284"
+        ],
+        "discovered_blv_ids": [],
+        "diagnostics": {
+          "url": "https://socolivekj.cc/truc-tiep/nu-son-la-vs-nu-ho-chi-minh-luc-1600-ngay-27-07-2026/",
+          "title": "Trực tiếp Nữ Sơn La vs Nữ Hồ Chí Minh full lúc 16:00, ngày 27/07",
+          "h1": "Xem trực tiếp trận đấu Nữ Sơn La vs Nữ Hồ Chí Minh full lúc 16:00, ngày 27/07/2026",
+          "ready_state": "complete",
+          "visibility_state": "visible",
+          "hidden": false,
+          "video_count": 0,
+          "iframe_count": 5,
+          "body_sample": "WC 2026 Lịch Thi Đấu Xem Lại Video Highlight Tỷ Lệ Kèo BXH KQBD Tips Tin Tức Livescore Tuyển Dụng Top Nhà Cái Cược 8xbet WC 2026 Lịch Thi Đấu Xem Lại Video Highlight Tỷ Lệ Kèo BXH KQBD Tips Tin Tức Livescore Tuyển Dụng Top nhà cái Xem trực tiếp trận đấu Nữ Sơn La vs Nữ Hồ Chí Minh full lúc 16:00, ngày 27/07/2026 Phát sóng link trực tuyến Nữ Sơn La vs Nữ Hồ Chí Minh hôm nay tại giải đấu Giải Bóng Đá Nữ U16 VĐQG _ _ _ _ _ _ Nữ Sơn La Nữ Hồ Chí Minh Theo bạn thì trận này tài hay xỉu? Tài 0% Xỉu 0% Theo bạn thì trận này đội nào sẽ thắng? Chủ nhà 0% Hòa 0% Đội Khách 0% Anh Em Muốn Tham Gia Đặt Cược Thì Click Vào Quảng Cáo Của 8XBET Để Đăng Ký Đặt Cược Tất Cả Các Trận Đấu Trên Toàn Thế Giới. Nếu anh em gặp tình trạng không vào được web, hãy cài VPN 1.1.1.1 để truy cập ổn định hơn nhé . Châu Á Châu Âu Tài xỉu Phạt góc Chọn nhà cái HIỆP 1 FT Châu Á HIỆP 1 FT Châu Á - - - - - - Châu Âu HIỆP 1 FT Châu Âu - - - - - - Tài xỉu HIỆP 1 FT Tài xỉu - - - - - - SỚM FT Phạt góc HIỆP 1 FT Phạt góc - - - - - - Trực tiếp Mô phỏng CHIA SẺ Phát sóng trận đấu Nữ Sơn La vs Nữ Hồ Chí Minh full HD lúc 16:00, ngày 27/07/2026 Giải Bóng Đá Nữ U16 VĐQG HD 1 CHIA SẺ Thông số Diễn biến Đội hình BXH Chat Đối đầu Trậ",
+          "harvest_rounds": 8,
+          "harvest_window_seconds": 6.323,
+          "main_status": 200,
+          "harvested_stream_count": 1,
+          "harvested_blv_ids": [],
+          "scan_mode": "chromium-fallback",
+          "elapsed_seconds": 7.478
+        },
+        "api_probe": {
+          "enabled": true,
+          "room_status": 200,
+          "active_index": 0,
+          "sources_found": 1,
+          "sources_tried": 1,
+          "valid_stream_count": 0,
+          "source_results": [
+            {
+              "index": 0,
+              "endpoint_base": "https://soco.livepingscorex.com/ajax/chanel/type/7/link/channel10",
+              "endpoint_url": "https://soco.livepingscorex.com/ajax/chanel/type/7/link/channel10/off-tvc",
+              "active": true,
+              "mode": "active",
+              "player_status": 403,
+              "player_content_type": "text/html; charset=UTF-8",
+              "player_elapsed_seconds": 0.025,
+              "player_error": "",
+              "stream_urls": [],
+              "checks": []
+            }
+          ],
+          "fallback_reason": "all_api_sources_failed",
+          "elapsed_seconds": 0.066,
+          "room_content_type": "text/html",
+          "room_elapsed_seconds": 0.035,
+          "room_error": ""
+        },
+        "http_probe": {
+          "api_first": {
+            "enabled": true,
+            "room_status": 200,
+            "active_index": 0,
+            "sources_found": 1,
+            "sources_tried": 1,
+            "valid_stream_count": 0,
+            "source_results": [
+              {
+                "index": 0,
+                "endpoint_base": "https://soco.livepingscorex.com/ajax/chanel/type/7/link/channel10",
+                "endpoint_url": "https://soco.livepingscorex.com/ajax/chanel/type/7/link/channel10/off-tvc",
+                "active": true,
+                "mode": "active",
+                "player_status": 403,
+                "player_content_type": "text/html; charset=UTF-8",
+                "player_elapsed_seconds": 0.025,
+                "player_error": "",
+                "stream_urls": [],
+                "checks": []
+              }
+            ],
+            "fallback_reason": "all_api_sources_failed",
+            "elapsed_seconds": 0.066,
+            "room_content_type": "text/html",
+            "room_elapsed_seconds": 0.035,
+            "room_error": ""
+          },
+          "legacy_http": {
+            "enabled": false,
+            "status": null,
+            "elapsed_seconds": 0.0,
+            "error": ""
+          }
+        },
+        "errors": [
+          "console/error: Failed to load resource: net::ERR_FAILED",
+          "console/error: Failed to load resource: net::ERR_FAILED",
+          "console/error: Failed to load resource: net::ERR_FAILED",
+          "console/error: Failed to load resource: net::ERR_FAILED",
+          "console/error: Failed to load resource: net::ERR_FAILED",
+          "console/error: Failed to load resource: net::ERR_FAILED",
+          "console/error: Failed to load resource: net::ERR_FAILED",
+          "console/error: Failed to load resource: net::ERR_FAILED",
+          "console/error: Failed to load resource: net::ERR_FAILED",
+          "console/error: Failed to load resource: net::ERR_FAILED",
+          "console/error: Failed to load resource: net::ERR_FAILED",
+          "console/error: Failed to load resource: net::ERR_FAILED",
+          "console/error: Failed to load resource: net::ERR_FAILED",
+          "console/error: Failed to load resource: net::ERR_FAILED",
+          "console/error: Failed to load resource: net::ERR_FAILED",
+          "console/error: Failed to load resource: net::ERR_FAILED",
+          "console/error: Failed to load resource: net::ERR_FAILED",
+          "console/error: Failed to load resource: net::ERR_FAILED",
+          "console/error: Failed to load resource: net::ERR_FAILED",
+          "console/error: Failed to load resource: net::ERR_FAILED"
+        ],
+        "failed_requests": [
+          "stylesheet https://fonts.googleapis.com/css2?family=Bangers&family=Oswald:wght@400;500;700&family=Raleway:wght@400;500;700&family=Roboto+Condensed:wght@300;400;700&display=swap | net::ERR_FAILED",
+          "stylesheet https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0 | net::ERR_FAILED",
+          "stylesheet https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css | net::ERR_FAILED",
+          "stylesheet https://socolivekj.cc/wp-content/plugins/widget-options/assets/css/widget-options.css?ver=4.0.6.1 | net::ERR_FAILED",
+          "stylesheet https://socolivekj.cc/wp-content/plugins/wp-pagenavi/pagenavi-css.css?ver=2.70 | net::ERR_FAILED",
+          "stylesheet https://socolivekj.cc/wp-content/themes/bongda/dist/styles/bootstrap.min.css?ver=1745376853 | net::ERR_FAILED",
+          "stylesheet https://socolivekj.cc/wp-content/themes/bongda/dist/styles/main.css?ver=1781184173 | net::ERR_FAILED",
+          "stylesheet https://socolivekj.cc/wp-content/themes/bongda/dist/styles/pages/single-live.css?ver=1784627923 | net::ERR_FAILED",
+          "image https://socolivekj.cc/wp-content/themes/bongda/dist/images/logo-socolive-tv-official-v2.png | net::ERR_FAILED",
+          "image https://socolivekj.cc/wp-content/themes/bongda/dist/images/wc-2026/menu-wc.svg | net::ERR_FAILED",
+          "image https://socolivekj.cc/wp-content/themes/bongda/dist/images/closemenu.png | net::ERR_FAILED",
+          "image https://cdn.lfastcdn.com/2026/07/ghnwicpkvfkl.gif | net::ERR_FAILED",
+          "stylesheet https://socolivekj.cc/wp-content/plugins/api-sport/public/css/match_detail.css?id=0671c88cfbad4335394b897262a0d662 | net::ERR_FAILED",
+          "image https://cdn.lfastcdn.com/2026/07/nxzutbrtjbof.gif | net::ERR_FAILED",
+          "image https://imgts.sportpulseapiz.com/football/team/y39mp1h5zy7mojx/image/small | net::ERR_FAILED"
+        ],
+        "http_errors": [
+          "403 https://live1.streambylivepulse.com/live/channel10.flv?wsSecret=6e1f93022b6e71c019d92252aa3d26eb&wsABSTime=1785175284",
+          "403 https://live1.streambylivepulse.com/live/channel10.flv?wsSecret=6e1f93022b6e71c019d92252aa3d26eb&wsABSTime=1785175284",
+          "403 https://live1.streambylivepulse.com/live/channel10.flv?wsSecret=6e1f93022b6e71c019d92252aa3d26eb&wsABSTime=1785175284",
+          "403 https://live1.streambylivepulse.com/live/channel10.flv?wsSecret=6e1f93022b6e71c019d92252aa3d26eb&wsABSTime=1785175284"
+        ]
+      }
+    ],
+    "attempted_room_ids": [],
+    "coverage": {
+      "found_streams": 1,
+      "found_blv_ids": [],
+      "goal": 2,
+      "source_goal_reached": false,
+      "room_queue_complete": true,
+      "complete": true,
+      "max_streams_per_blv": 2,
+      "total_explicit_blv_rooms": 0,
+      "pending_room_keys": [],
+      "room_progress": {
+        "__base__": {
+          "key": "__base__",
+          "url": "https://socolivekj.cc/truc-tiep/nu-son-la-vs-nu-ho-chi-minh-luc-1600-ngay-27-07-2026/",
+          "blv": "",
+          "blv_id": "",
+          "status": "success",
+          "attempts": 1,
+          "attempts_total": 1,
+          "ever_attempted": true,
+          "valid_stream_ever_found": true,
+          "needs_token_refresh": false,
+          "completion_reason": "valid_stream",
+          "rate_limit_hits": 0,
+          "last_http_status": 200,
+          "last_stream_count": 1,
+          "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
+        }
+      }
+    },
+    "errors": [],
+    "match_name": "Nữ Sơn La vs Nữ Hồ Chí Minh",
+    "scheduled_at": "2026-07-27T16:00:00+07:00",
+    "room_progress": {
+      "__base__": {
+        "key": "__base__",
+        "url": "https://socolivekj.cc/truc-tiep/nu-son-la-vs-nu-ho-chi-minh-luc-1600-ngay-27-07-2026/",
+        "blv": "",
+        "blv_id": "",
+        "status": "success",
+        "attempts": 1,
+        "attempts_total": 1,
+        "ever_attempted": true,
+        "valid_stream_ever_found": true,
+        "needs_token_refresh": false,
+        "completion_reason": "valid_stream",
+        "rate_limit_hits": 0,
+        "last_http_status": 200,
+        "last_stream_count": 1,
+        "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
+      }
+    },
+    "run_attempted_room_keys": [
+      "__base__"
+    ],
+    "run_rate_limited_room_keys": [],
+    "run_completed_room_keys": [
+      "__base__"
+    ],
+    "run_global_budget_used": 2,
+    "streams": [
+      {
+        "url": "https://live1.streambylivepulse.com/live/channel10.flv?wsSecret=6e1f93022b6e71c019d92252aa3d26eb&wsABSTime=1785175284",
+        "queue_room_key": "__base__",
+        "room_url": "https://socolivekj.cc/truc-tiep/nu-son-la-vs-nu-ho-chi-minh-luc-1600-ngay-27-07-2026/",
+        "blv": "Nguồn phụ 1",
+        "blv_id": "",
+        "source_id": "",
+        "source_provenance": [
+          "cdp/request",
+          "cdp/response",
+          "harvest-final",
+          "harvest-round-1",
+          "harvest-round-2",
+          "harvest-round-3",
+          "harvest-round-4",
+          "harvest-round-5",
+          "harvest-round-6",
+          "harvest-round-7",
+          "harvest-round-8",
+          "request/fetch",
+          "response/403"
+        ],
+        "playback_referer": "",
+        "playback_origin": "",
+        "playback_user_agent": "",
+        "api_player_endpoint": "",
+        "api_source_mode": "",
+        "source_confidence": "network",
+        "mapping_mode": "stream-source-id",
+        "discovered_from_room_url": "https://socolivekj.cc/truc-tiep/nu-son-la-vs-nu-ho-chi-minh-luc-1600-ngay-27-07-2026/",
+        "discovered_from_blv": "URL tổng",
+        "discovered_at": "2026-07-27T13:01:31.398206+07:00",
+        "valid_until": "",
+        "is_expired": false
+      }
+    ],
+    "rooms": [
+      {
+        "url": "https://socolivekj.cc/truc-tiep/nu-son-la-vs-nu-ho-chi-minh-luc-1600-ngay-27-07-2026/",
+        "blv": "",
+        "blv_id": ""
+      }
+    ],
+    "catalog_last_seen_at": "2026-07-27T13:01:43.121951+07:00",
+    "catalog_updated_at": "2026-07-27T13:01:43.121951+07:00"
+  },
+  {
+    "base_url": "https://socolivekj.cc/truc-tiep/ha-noi-fc-vs-pvf-u17-luc-1630-ngay-27-07-2026/",
+    "raw_title": "Hà Nội FC vs PVF U17",
+    "home_team": "Hà Nội FC",
+    "away_team": "PVF U17",
+    "home_logo": "https://imgts.sportpulseapiz.com/football/team/dn1m1ghen9wmoep/image/small",
+    "away_logo": "https://imgts.sportpulseapiz.com/football/team/y39mp1h101pmojx/image/small",
+    "time_text": "16:30",
+    "date_text": "27/07",
+    "status": "",
+    "card_text": "GIẢI BÓNG ĐÁ U17 VĐQG 2026 16:30 - 27.07 Hà Nội FC PVF U17 HT 0 - 0 0 - 0 0 - 0 - - - - - -",
+    "room_results": [
+      {
+        "url": "https://socolivekj.cc/truc-tiep/ha-noi-fc-vs-pvf-u17-luc-1630-ngay-27-07-2026/",
+        "blv": "",
+        "blv_id": "",
+        "streams": [
+          "https://live1.streambylivepulse.com/live/channel12.flv?wsSecret=1b00c6b34e903224398859035611ca0a&wsABSTime=1785175294"
+        ],
+        "stream_sources": {
+          "https://live1.streambylivepulse.com/live/channel12.flv?wsSecret=1b00c6b34e903224398859035611ca0a&wsABSTime=1785175294": [
+            "cdp/request",
+            "cdp/response",
+            "harvest-final",
+            "harvest-round-1",
+            "harvest-round-2",
+            "harvest-round-3",
+            "harvest-round-4",
+            "harvest-round-5",
+            "harvest-round-6",
+            "harvest-round-7",
+            "harvest-round-8",
+            "request/fetch",
+            "response/403"
+          ]
+        },
+        "stream_headers": {},
+        "stream_first_seen": [
+          "https://live1.streambylivepulse.com/live/channel12.flv?wsSecret=1b00c6b34e903224398859035611ca0a&wsABSTime=1785175294"
+        ],
+        "discovered_blv_ids": [],
+        "diagnostics": {
+          "url": "https://socolivekj.cc/truc-tiep/ha-noi-fc-vs-pvf-u17-luc-1630-ngay-27-07-2026/",
+          "title": "Trực tiếp Hà Nội FC vs PVF U17 full lúc 16:30, ngày 27/07",
+          "h1": "Xem trực tiếp trận đấu Hà Nội FC vs PVF U17 full lúc 16:30, ngày 27/07/2026",
+          "ready_state": "complete",
+          "visibility_state": "visible",
+          "hidden": false,
+          "video_count": 0,
+          "iframe_count": 5,
+          "body_sample": "WC 2026 Lịch Thi Đấu Xem Lại Video Highlight Tỷ Lệ Kèo BXH KQBD Tips Tin Tức Livescore Tuyển Dụng Top Nhà Cái Cược 8xbet WC 2026 Lịch Thi Đấu Xem Lại Video Highlight Tỷ Lệ Kèo BXH KQBD Tips Tin Tức Livescore Tuyển Dụng Top nhà cái Xem trực tiếp trận đấu Hà Nội FC vs PVF U17 full lúc 16:30, ngày 27/07/2026 Phát sóng link trực tuyến Hà Nội FC vs PVF U17 hôm nay tại giải đấu Giải Bóng Đá U17 VĐQG 2026 _ _ _ _ _ _ Hà Nội FC PVF U17 Theo bạn thì trận này tài hay xỉu? Tài 0% Xỉu 0% Theo bạn thì trận này đội nào sẽ thắng? Chủ nhà 0% Hòa 0% Đội Khách 0% Anh Em Muốn Tham Gia Đặt Cược Thì Click Vào Quảng Cáo Của 8XBET Để Đăng Ký Đặt Cược Tất Cả Các Trận Đấu Trên Toàn Thế Giới. Nếu anh em gặp tình trạng không vào được web, hãy cài VPN 1.1.1.1 để truy cập ổn định hơn nhé . Châu Á Châu Âu Tài xỉu Phạt góc Chọn nhà cái HIỆP 1 FT Châu Á HIỆP 1 FT Châu Á - - - - - - Châu Âu HIỆP 1 FT Châu Âu - - - - - - Tài xỉu HIỆP 1 FT Tài xỉu - - - - - - SỚM FT Phạt góc HIỆP 1 FT Phạt góc - - - - - - Trực tiếp Mô phỏng CHIA SẺ Phát sóng trận đấu Hà Nội FC vs PVF U17 full HD lúc 16:30, ngày 27/07/2026 Giải Bóng Đá U17 VĐQG 2026 HD 1 CHIA SẺ Thông số Diễn biến Đội hình BXH Chat Đối đầu Trận khác Trận sắp tới Tỷ l",
+          "harvest_rounds": 8,
+          "harvest_window_seconds": 6.354,
+          "main_status": 200,
+          "harvested_stream_count": 1,
+          "harvested_blv_ids": [],
+          "scan_mode": "chromium-fallback",
+          "elapsed_seconds": 7.669
+        },
+        "api_probe": {
+          "enabled": true,
+          "room_status": 200,
+          "active_index": 0,
+          "sources_found": 1,
+          "sources_tried": 1,
+          "valid_stream_count": 0,
+          "source_results": [
+            {
+              "index": 0,
+              "endpoint_base": "https://soco.livepingscorex.com/ajax/chanel/type/7/link/channel12",
+              "endpoint_url": "https://soco.livepingscorex.com/ajax/chanel/type/7/link/channel12/off-tvc",
+              "active": true,
+              "mode": "active",
+              "player_status": 403,
+              "player_content_type": "text/html; charset=UTF-8",
+              "player_elapsed_seconds": 0.025,
+              "player_error": "",
+              "stream_urls": [],
+              "checks": []
+            }
+          ],
+          "fallback_reason": "all_api_sources_failed",
+          "elapsed_seconds": 0.067,
+          "room_content_type": "text/html",
+          "room_elapsed_seconds": 0.036,
+          "room_error": ""
+        },
+        "http_probe": {
+          "api_first": {
+            "enabled": true,
+            "room_status": 200,
+            "active_index": 0,
+            "sources_found": 1,
+            "sources_tried": 1,
+            "valid_stream_count": 0,
+            "source_results": [
+              {
+                "index": 0,
+                "endpoint_base": "https://soco.livepingscorex.com/ajax/chanel/type/7/link/channel12",
+                "endpoint_url": "https://soco.livepingscorex.com/ajax/chanel/type/7/link/channel12/off-tvc",
+                "active": true,
+                "mode": "active",
+                "player_status": 403,
+                "player_content_type": "text/html; charset=UTF-8",
+                "player_elapsed_seconds": 0.025,
+                "player_error": "",
+                "stream_urls": [],
+                "checks": []
+              }
+            ],
+            "fallback_reason": "all_api_sources_failed",
+            "elapsed_seconds": 0.067,
+            "room_content_type": "text/html",
+            "room_elapsed_seconds": 0.036,
+            "room_error": ""
+          },
+          "legacy_http": {
+            "enabled": false,
+            "status": null,
+            "elapsed_seconds": 0.0,
+            "error": ""
+          }
+        },
+        "errors": [
+          "console/error: Failed to load resource: net::ERR_FAILED",
+          "console/error: Failed to load resource: net::ERR_FAILED",
+          "console/error: Failed to load resource: net::ERR_FAILED",
+          "console/error: Failed to load resource: net::ERR_FAILED",
+          "console/error: Failed to load resource: net::ERR_FAILED",
+          "console/error: Failed to load resource: net::ERR_FAILED",
+          "console/error: Failed to load resource: net::ERR_FAILED",
+          "console/error: Failed to load resource: net::ERR_FAILED",
+          "console/error: Failed to load resource: net::ERR_FAILED",
+          "console/error: Failed to load resource: net::ERR_FAILED",
+          "console/error: Failed to load resource: net::ERR_FAILED",
+          "console/error: Failed to load resource: net::ERR_FAILED",
+          "console/error: Failed to load resource: net::ERR_FAILED",
+          "console/error: Failed to load resource: net::ERR_FAILED",
+          "console/error: Failed to load resource: net::ERR_FAILED",
+          "console/error: Failed to load resource: net::ERR_FAILED",
+          "console/error: Failed to load resource: net::ERR_FAILED",
+          "console/error: Failed to load resource: net::ERR_FAILED",
+          "console/error: Failed to load resource: net::ERR_FAILED",
+          "console/error: Failed to load resource: net::ERR_FAILED"
+        ],
+        "failed_requests": [
+          "stylesheet https://fonts.googleapis.com/css2?family=Bangers&family=Oswald:wght@400;500;700&family=Raleway:wght@400;500;700&family=Roboto+Condensed:wght@300;400;700&display=swap | net::ERR_FAILED",
+          "stylesheet https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0 | net::ERR_FAILED",
+          "stylesheet https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css | net::ERR_FAILED",
+          "stylesheet https://socolivekj.cc/wp-content/plugins/widget-options/assets/css/widget-options.css?ver=4.0.6.1 | net::ERR_FAILED",
+          "stylesheet https://socolivekj.cc/wp-content/plugins/wp-pagenavi/pagenavi-css.css?ver=2.70 | net::ERR_FAILED",
+          "stylesheet https://socolivekj.cc/wp-content/themes/bongda/dist/styles/bootstrap.min.css?ver=1745376853 | net::ERR_FAILED",
+          "stylesheet https://socolivekj.cc/wp-content/themes/bongda/dist/styles/main.css?ver=1781184173 | net::ERR_FAILED",
+          "stylesheet https://socolivekj.cc/wp-content/themes/bongda/dist/styles/pages/single-live.css?ver=1784627923 | net::ERR_FAILED",
+          "image https://socolivekj.cc/wp-content/themes/bongda/dist/images/logo-socolive-tv-official-v2.png | net::ERR_FAILED",
+          "image https://socolivekj.cc/wp-content/themes/bongda/dist/images/wc-2026/menu-wc.svg | net::ERR_FAILED",
+          "image https://socolivekj.cc/wp-content/themes/bongda/dist/images/closemenu.png | net::ERR_FAILED",
+          "image https://cdn.lfastcdn.com/2026/07/ghnwicpkvfkl.gif | net::ERR_FAILED",
+          "stylesheet https://socolivekj.cc/wp-content/plugins/api-sport/public/css/match_detail.css?id=0671c88cfbad4335394b897262a0d662 | net::ERR_FAILED",
+          "image https://cdn.lfastcdn.com/2026/07/nxzutbrtjbof.gif | net::ERR_FAILED",
+          "image https://imgts.sportpulseapiz.com/football/team/dn1m1ghen9wmoep/image/small | net::ERR_FAILED"
+        ],
+        "http_errors": [
+          "403 https://live1.streambylivepulse.com/live/channel12.flv?wsSecret=1b00c6b34e903224398859035611ca0a&wsABSTime=1785175294",
+          "403 https://live1.streambylivepulse.com/live/channel12.flv?wsSecret=1b00c6b34e903224398859035611ca0a&wsABSTime=1785175294",
+          "403 https://live1.streambylivepulse.com/live/channel12.flv?wsSecret=1b00c6b34e903224398859035611ca0a&wsABSTime=1785175294",
+          "403 https://live1.streambylivepulse.com/live/channel12.flv?wsSecret=1b00c6b34e903224398859035611ca0a&wsABSTime=1785175294",
+          "403 https://live1.streambylivepulse.com/live/channel12.flv?wsSecret=1b00c6b34e903224398859035611ca0a&wsABSTime=1785175294"
+        ]
+      }
+    ],
+    "attempted_room_ids": [],
+    "coverage": {
+      "found_streams": 1,
+      "found_blv_ids": [],
+      "goal": 2,
+      "source_goal_reached": false,
+      "room_queue_complete": true,
+      "complete": true,
+      "max_streams_per_blv": 2,
+      "total_explicit_blv_rooms": 0,
+      "pending_room_keys": [],
+      "room_progress": {
+        "__base__": {
+          "key": "__base__",
+          "url": "https://socolivekj.cc/truc-tiep/ha-noi-fc-vs-pvf-u17-luc-1630-ngay-27-07-2026/",
+          "blv": "",
+          "blv_id": "",
+          "status": "success",
+          "attempts": 1,
+          "attempts_total": 1,
+          "ever_attempted": true,
+          "valid_stream_ever_found": true,
+          "needs_token_refresh": false,
+          "completion_reason": "valid_stream",
+          "rate_limit_hits": 0,
+          "last_http_status": 200,
+          "last_stream_count": 1,
+          "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
+        }
+      }
+    },
+    "errors": [],
+    "match_name": "Hà Nội FC vs PVF U17",
+    "scheduled_at": "2026-07-27T16:30:00+07:00",
+    "room_progress": {
+      "__base__": {
+        "key": "__base__",
+        "url": "https://socolivekj.cc/truc-tiep/ha-noi-fc-vs-pvf-u17-luc-1630-ngay-27-07-2026/",
+        "blv": "",
+        "blv_id": "",
+        "status": "success",
+        "attempts": 1,
+        "attempts_total": 1,
+        "ever_attempted": true,
+        "valid_stream_ever_found": true,
+        "needs_token_refresh": false,
+        "completion_reason": "valid_stream",
+        "rate_limit_hits": 0,
+        "last_http_status": 200,
+        "last_stream_count": 1,
+        "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
+      }
+    },
+    "run_attempted_room_keys": [
+      "__base__"
+    ],
+    "run_rate_limited_room_keys": [],
+    "run_completed_room_keys": [
+      "__base__"
+    ],
+    "run_global_budget_used": 3,
+    "streams": [
+      {
+        "url": "https://live1.streambylivepulse.com/live/channel12.flv?wsSecret=1b00c6b34e903224398859035611ca0a&wsABSTime=1785175294",
+        "queue_room_key": "__base__",
+        "room_url": "https://socolivekj.cc/truc-tiep/ha-noi-fc-vs-pvf-u17-luc-1630-ngay-27-07-2026/",
+        "blv": "Nguồn phụ 1",
+        "blv_id": "",
+        "source_id": "",
+        "source_provenance": [
+          "cdp/request",
+          "cdp/response",
+          "harvest-final",
+          "harvest-round-1",
+          "harvest-round-2",
+          "harvest-round-3",
+          "harvest-round-4",
+          "harvest-round-5",
+          "harvest-round-6",
+          "harvest-round-7",
+          "harvest-round-8",
+          "request/fetch",
+          "response/403"
+        ],
+        "playback_referer": "",
+        "playback_origin": "",
+        "playback_user_agent": "",
+        "api_player_endpoint": "",
+        "api_source_mode": "",
+        "source_confidence": "network",
+        "mapping_mode": "stream-source-id",
+        "discovered_from_room_url": "https://socolivekj.cc/truc-tiep/ha-noi-fc-vs-pvf-u17-luc-1630-ngay-27-07-2026/",
+        "discovered_from_blv": "URL tổng",
+        "discovered_at": "2026-07-27T13:01:41.089730+07:00",
+        "valid_until": "",
+        "is_expired": false
+      }
+    ],
+    "rooms": [
+      {
+        "url": "https://socolivekj.cc/truc-tiep/ha-noi-fc-vs-pvf-u17-luc-1630-ngay-27-07-2026/",
+        "blv": "",
+        "blv_id": ""
+      }
+    ],
+    "catalog_last_seen_at": "2026-07-27T13:01:43.121951+07:00",
+    "catalog_updated_at": "2026-07-27T13:01:43.121951+07:00"
   },
   {
     "base_url": "https://socolivekj.cc/truc-tiep/kalighat-sports-lovers-vs-coal-india-luc-1630-ngay-27-07-2026/",
@@ -6899,7 +7406,7 @@
         "blv_id": ""
       }
     ],
-    "catalog_last_seen_at": "2026-07-27T12:31:52.274313+07:00",
+    "catalog_last_seen_at": "2026-07-27T13:01:43.121951+07:00",
     "catalog_updated_at": "2026-07-27T12:31:52.274313+07:00"
   },
   {
@@ -7200,7 +7707,7 @@
         "blv_id": ""
       }
     ],
-    "catalog_last_seen_at": "2026-07-27T12:31:52.274313+07:00",
+    "catalog_last_seen_at": "2026-07-27T13:01:43.121951+07:00",
     "catalog_updated_at": "2026-07-27T12:31:52.274313+07:00"
   },
   {
@@ -7479,7 +7986,7 @@
         "blv_id": ""
       }
     ],
-    "catalog_last_seen_at": "2026-07-27T12:31:52.274313+07:00",
+    "catalog_last_seen_at": "2026-07-27T13:01:43.121951+07:00",
     "catalog_updated_at": "2026-07-27T12:31:52.274313+07:00"
   },
   {
@@ -7758,7 +8265,7 @@
         "blv_id": ""
       }
     ],
-    "catalog_last_seen_at": "2026-07-27T12:31:52.274313+07:00",
+    "catalog_last_seen_at": "2026-07-27T13:01:43.121951+07:00",
     "catalog_updated_at": "2026-07-27T12:31:52.274313+07:00"
   },
   {
@@ -8036,7 +8543,7 @@
         "blv_id": ""
       }
     ],
-    "catalog_last_seen_at": "2026-07-27T12:31:52.274313+07:00",
+    "catalog_last_seen_at": "2026-07-27T13:01:43.121951+07:00",
     "catalog_updated_at": "2026-07-27T12:31:52.274313+07:00"
   }
 ]
