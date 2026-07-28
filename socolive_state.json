@@ -1,24 +1,24 @@
 {
-  "generated_at": "2026-07-29T05:31:18.382884+07:00",
+  "generated_at": "2026-07-29T06:01:09.046814+07:00",
   "state_schema_version": "v10.5-api-first-room-queue",
   "dispatch_next": false,
   "pending_count": 0,
   "pending_room_count": 0,
-  "completed_count": 23,
-  "coverage_complete_count": 23,
-  "total_match_count": 23,
+  "completed_count": 22,
+  "coverage_complete_count": 22,
+  "total_match_count": 22,
   "total_stream_count": 22,
   "progress_count": 0,
   "new_link_count": 0,
   "refreshed_link_count": 0,
-  "queue_progress_count": 23,
-  "terminal_progress_count": 23,
+  "queue_progress_count": 22,
+  "terminal_progress_count": 22,
   "newly_attempted_count": 0,
-  "queue_total_rooms": 23,
-  "queue_success_rooms": 23,
+  "queue_total_rooms": 22,
+  "queue_success_rooms": 22,
   "queue_exhausted_rooms": 0,
-  "queue_terminal_rooms": 23,
-  "queue_attempts_total": 23,
+  "queue_terminal_rooms": 22,
+  "queue_attempts_total": 22,
   "chain_runs": 1,
   "no_progress_runs": 0,
   "no_queue_progress_runs": 0,
@@ -44,7 +44,6 @@
     "https://socolivekj.cc/truc-tiep/el-salvador-u20-vs-usa-u20-luc-0900-ngay-29-07-2026/",
     "https://socolivekj.cc/truc-tiep/esporte-clube-juventude-vs-avai-fc-luc-0530-ngay-29-07-2026/",
     "https://socolivekj.cc/truc-tiep/fortaleza-vs-botafogo-sp-luc-0735-ngay-29-07-2026/",
-    "https://socolivekj.cc/truc-tiep/haiti-u20-vs-cuba-u20-luc-0400-ngay-29-07-2026/",
     "https://socolivekj.cc/truc-tiep/hankook-verdes-vs-cd-motagua-luc-0700-ngay-29-07-2026/",
     "https://socolivekj.cc/truc-tiep/independiente-fbc-vs-deportivo-capiata-luc-0530-ngay-29-07-2026/",
     "https://socolivekj.cc/truc-tiep/nu-bragantino-vs-nu-santos-luc-0500-ngay-29-07-2026/",
@@ -59,6 +58,243 @@
   "pending_base_urls": [],
   "matches": [
     {
+      "base_url": "https://socolivekj.cc/truc-tiep/union-magdalena-vs-ind-santa-fe-luc-0600-ngay-29-07-2026/",
+      "raw_title": "Union Magdalena vs Ind. Santa Fe",
+      "home_team": "Union Magdalena",
+      "away_team": "Ind. Santa Fe",
+      "home_logo": "https://imgts.sportpulseapiz.com/football/team/dn1m1gh446pmoep/image/small",
+      "away_logo": "https://imgts.sportpulseapiz.com/football/team/jednm9wh30nryox/image/small",
+      "time_text": "06:00",
+      "date_text": "29/07",
+      "status": "Đang diễn ra",
+      "card_text": "COLOMBIAN COPA BETPLAY DIMAYOR Đang diễn ra 06:00 - 29.07 Union Magdalena Ind. Santa Fe 2 - 0 0 - 1 2 - 2 SILVA 1.03 0/0.5 0.78 1.00 2.5 0.80",
+      "rooms": [
+        {
+          "url": "https://socolivekj.cc/truc-tiep/union-magdalena-vs-ind-santa-fe-luc-0600-ngay-29-07-2026/",
+          "blv": "SILVA",
+          "blv_id": ""
+        }
+      ],
+      "streams": [
+        {
+          "url": "https://live2.streambylivepulse.com/live/channel20.flv",
+          "queue_room_key": "__base__",
+          "room_url": "https://socolivekj.cc/truc-tiep/union-magdalena-vs-ind-santa-fe-luc-0600-ngay-29-07-2026/",
+          "blv": "Nguồn phụ 1",
+          "blv_id": "",
+          "source_id": "",
+          "source_provenance": [
+            "cdp/request",
+            "cdp/response",
+            "harvest-final",
+            "harvest-round-1",
+            "harvest-round-2",
+            "harvest-round-3",
+            "harvest-round-4",
+            "harvest-round-5",
+            "harvest-round-6",
+            "harvest-round-7",
+            "harvest-round-8",
+            "harvest-round-9",
+            "request/fetch",
+            "response/200"
+          ],
+          "playback_referer": "",
+          "playback_origin": "",
+          "playback_user_agent": "",
+          "api_player_endpoint": "",
+          "api_source_mode": "",
+          "source_confidence": "network",
+          "mapping_mode": "stream-source-id",
+          "discovered_from_room_url": "https://socolivekj.cc/truc-tiep/union-magdalena-vs-ind-santa-fe-luc-0600-ngay-29-07-2026/",
+          "discovered_from_blv": "SILVA",
+          "discovered_at": "2026-07-29T04:01:38.067429+07:00",
+          "valid_until": "",
+          "is_expired": false
+        }
+      ],
+      "room_results": [
+        {
+          "url": "https://socolivekj.cc/truc-tiep/union-magdalena-vs-ind-santa-fe-luc-0600-ngay-29-07-2026/",
+          "blv": "SILVA",
+          "blv_id": "",
+          "streams": [
+            "https://live2.streambylivepulse.com/live/channel20.flv"
+          ],
+          "stream_sources": {
+            "https://live2.streambylivepulse.com/live/channel20.flv": [
+              "cdp/request",
+              "cdp/response",
+              "harvest-final",
+              "harvest-round-1",
+              "harvest-round-2",
+              "harvest-round-3",
+              "harvest-round-4",
+              "harvest-round-5",
+              "harvest-round-6",
+              "harvest-round-7",
+              "harvest-round-8",
+              "harvest-round-9",
+              "request/fetch",
+              "response/200"
+            ]
+          },
+          "stream_headers": {},
+          "stream_first_seen": [
+            "https://live2.streambylivepulse.com/live/channel20.flv"
+          ],
+          "discovered_blv_ids": [],
+          "diagnostics": {
+            "url": "https://socolivekj.cc/truc-tiep/union-magdalena-vs-ind-santa-fe-luc-0600-ngay-29-07-2026/",
+            "title": "Trực tiếp Union Magdalena vs Ind. Santa Fe full lúc 06:00, ngày 29/07",
+            "h1": "Xem trực tiếp trận đấu Union Magdalena vs Ind. Santa Fe full lúc 06:00, ngày 29/07/2026",
+            "ready_state": "complete",
+            "visibility_state": "visible",
+            "hidden": false,
+            "video_count": 0,
+            "iframe_count": 5,
+            "body_sample": "WC 2026 Lịch Thi Đấu Xem Lại Video Highlight Tỷ Lệ Kèo BXH KQBD Tips Tin Tức Livescore Tuyển Dụng Top Nhà Cái Cược 8xbet WC 2026 Lịch Thi Đấu Xem Lại Video Highlight Tỷ Lệ Kèo BXH KQBD Tips Tin Tức Livescore Tuyển Dụng Top nhà cái Xem trực tiếp trận đấu Union Magdalena vs Ind. Santa Fe full lúc 06:00, ngày 29/07/2026 Phát sóng link trực tuyến Union Magdalena vs Ind. Santa Fe hôm nay tại giải đấu Colombian Copa BetPlay DIMAYOR _ _ _ _ _ _ Union Magdalena Ind. Santa Fe Theo bạn thì trận này tài hay xỉu? Tài 0% Xỉu 0% Theo bạn thì trận này đội nào sẽ thắng? Chủ nhà 0% Hòa 0% Đội Khách 0% Anh Em Muốn Tham Gia Đặt Cược Thì Click Vào Quảng Cáo Của 8XBET Để Đăng Ký Đặt Cược Tất Cả Các Trận Đấu Trên Toàn Thế Giới. Nếu anh em gặp tình trạng không vào được web, hãy cài VPN 1.1.1.1 để truy cập ổn định hơn nhé . Châu Á Châu Âu Tài xỉu Phạt góc Chọn nhà cái HIỆP 1 FT Châu Á HIỆP 1 FT Châu Á 0.68 0/0.5 1.15 1.03 0/0.5 0.78 Châu Âu HIỆP 1 FT Châu Âu 4 2.2 2.75 3.25 3.40 2.10 Tài xỉu HIỆP 1 FT Tài xỉu 0.93 1 0.88 1.00 2.5 0.80 SỚM FT Phạt góc HIỆP 1 FT Phạt góc - - - - - - Trực tiếp Mô phỏng CHIA SẺ Phát sóng trận đấu Union Magdalena vs Ind. Santa Fe full HD lúc 06:00, ngày 29/07/2026 Colombian Co",
+            "harvest_rounds": 9,
+            "harvest_window_seconds": 7.058,
+            "main_status": 200,
+            "harvested_stream_count": 1,
+            "harvested_blv_ids": [],
+            "scan_mode": "chromium-fallback",
+            "elapsed_seconds": 8.338
+          },
+          "api_probe": {
+            "enabled": true,
+            "room_status": 200,
+            "active_index": 0,
+            "sources_found": 0,
+            "sources_tried": 0,
+            "valid_stream_count": 0,
+            "source_results": [],
+            "fallback_reason": "list_stream_not_found",
+            "elapsed_seconds": 0.05,
+            "room_content_type": "text/html",
+            "room_elapsed_seconds": 0.045,
+            "room_error": ""
+          },
+          "http_probe": {
+            "api_first": {
+              "enabled": true,
+              "room_status": 200,
+              "active_index": 0,
+              "sources_found": 0,
+              "sources_tried": 0,
+              "valid_stream_count": 0,
+              "source_results": [],
+              "fallback_reason": "list_stream_not_found",
+              "elapsed_seconds": 0.05,
+              "room_content_type": "text/html",
+              "room_elapsed_seconds": 0.045,
+              "room_error": ""
+            },
+            "legacy_http": {
+              "enabled": false,
+              "status": null,
+              "elapsed_seconds": 0.0,
+              "error": ""
+            }
+          },
+          "errors": [
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED"
+          ],
+          "failed_requests": [
+            "stylesheet https://fonts.googleapis.com/css2?family=Bangers&family=Oswald:wght@400;500;700&family=Raleway:wght@400;500;700&family=Roboto+Condensed:wght@300;400;700&display=swap | net::ERR_FAILED",
+            "stylesheet https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0 | net::ERR_FAILED",
+            "stylesheet https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css | net::ERR_FAILED",
+            "stylesheet https://socolivekj.cc/wp-content/plugins/widget-options/assets/css/widget-options.css?ver=4.0.6.1 | net::ERR_FAILED",
+            "stylesheet https://socolivekj.cc/wp-content/plugins/wp-pagenavi/pagenavi-css.css?ver=2.70 | net::ERR_FAILED",
+            "stylesheet https://socolivekj.cc/wp-content/themes/bongda/dist/styles/bootstrap.min.css?ver=1745376853 | net::ERR_FAILED",
+            "stylesheet https://socolivekj.cc/wp-content/themes/bongda/dist/styles/main.css?ver=1781184173 | net::ERR_FAILED",
+            "stylesheet https://socolivekj.cc/wp-content/themes/bongda/dist/styles/pages/single-live.css?ver=1784627923 | net::ERR_FAILED",
+            "image https://socolivekj.cc/wp-content/themes/bongda/dist/images/logo-socolive-tv-official-v2.png | net::ERR_FAILED",
+            "image https://socolivekj.cc/wp-content/themes/bongda/dist/images/wc-2026/menu-wc.svg | net::ERR_FAILED",
+            "image https://socolivekj.cc/wp-content/themes/bongda/dist/images/closemenu.png | net::ERR_FAILED",
+            "image https://imgts.sportpulseapiz.com/football/team/dn1m1gh446pmoep/image/small | net::ERR_FAILED",
+            "stylesheet https://socolivekj.cc/wp-content/plugins/api-sport/public/css/match_detail.css?id=0671c88cfbad4335394b897262a0d662 | net::ERR_FAILED",
+            "image https://imgts.sportpulseapiz.com/football/team/jednm9wh30nryox/image/small | net::ERR_FAILED",
+            "image https://socolivekj.cc/wp-content/themes/bongda/dist/images/company/21-1.png | net::ERR_FAILED"
+          ],
+          "http_errors": []
+        }
+      ],
+      "attempted_room_ids": [],
+      "coverage": {
+        "found_streams": 1,
+        "found_blv_ids": [],
+        "goal": 2,
+        "source_goal_reached": false,
+        "room_queue_complete": true,
+        "complete": true,
+        "max_streams_per_blv": 2,
+        "total_explicit_blv_rooms": 0,
+        "pending_room_keys": [],
+        "room_progress": {
+          "__base__": {
+            "key": "__base__",
+            "url": "https://socolivekj.cc/truc-tiep/union-magdalena-vs-ind-santa-fe-luc-0600-ngay-29-07-2026/",
+            "blv": "SILVA",
+            "blv_id": "",
+            "status": "success",
+            "attempts": 1,
+            "attempts_total": 1,
+            "ever_attempted": true,
+            "valid_stream_ever_found": true,
+            "needs_token_refresh": false,
+            "completion_reason": "valid_stream",
+            "rate_limit_hits": 0,
+            "last_http_status": 200,
+            "last_stream_count": 1,
+            "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
+          }
+        }
+      },
+      "errors": [],
+      "match_name": "Union Magdalena vs Ind. Santa Fe",
+      "scheduled_at": "2026-07-29T06:00:00+07:00",
+      "room_progress": {
+        "__base__": {
+          "key": "__base__",
+          "url": "https://socolivekj.cc/truc-tiep/union-magdalena-vs-ind-santa-fe-luc-0600-ngay-29-07-2026/",
+          "blv": "SILVA",
+          "blv_id": "",
+          "status": "success",
+          "attempts": 1,
+          "attempts_total": 1,
+          "ever_attempted": true,
+          "valid_stream_ever_found": true,
+          "needs_token_refresh": false,
+          "completion_reason": "valid_stream",
+          "rate_limit_hits": 0,
+          "last_http_status": 200,
+          "last_stream_count": 1,
+          "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
+        }
+      }
+    },
+    {
       "base_url": "https://socolivekj.cc/truc-tiep/ponte-preta-vs-athletic-club-luc-0530-ngay-29-07-2026/",
       "raw_title": "Ponte Preta vs Athletic Club",
       "home_team": "Ponte Preta",
@@ -68,7 +304,7 @@
       "time_text": "05:30",
       "date_text": "29/07",
       "status": "Hiệp 1",
-      "card_text": "HẠNG 2 BRAZIL Hiệp 1: 1' 05:30 - 29.07 Ponte Preta 0 : 0 Athletic Club HT 0 - 0 0 - 0 0 - 0 1.05 0/0.5 0.75 0.83 2 0.98",
+      "card_text": "HẠNG 2 BRAZIL Hiệp 1: 31' 05:30 - 29.07 Ponte Preta 1 : 0 Athletic Club HT 1 - 0 0 - 0 1 - 1 0.90 0/0.5 0.90 0.85 2.5 0.95",
       "rooms": [
         {
           "url": "https://socolivekj.cc/truc-tiep/ponte-preta-vs-athletic-club-luc-0530-ngay-29-07-2026/",
@@ -308,7 +544,7 @@
       "time_text": "05:30",
       "date_text": "29/07",
       "status": "Hiệp 1",
-      "card_text": "HẠNG 2 BRAZIL Hiệp 1: 1' 05:30 - 29.07 Esporte Clube Juventude 0 : 0 Avaí FC HT 0 - 0 0 - 0 0 - 0 0.95 0.5/1 0.85 0.78 2 1.03",
+      "card_text": "HẠNG 2 BRAZIL Hiệp 1: 31' 05:30 - 29.07 Esporte Clube Juventude 0 : 0 Avaí FC HT 0 - 0 1 - 0 0 - 0 0.88 0.5 0.93 0.95 1.5 0.85",
       "rooms": [
         {
           "url": "https://socolivekj.cc/truc-tiep/esporte-clube-juventude-vs-avai-fc-luc-0530-ngay-29-07-2026/",
@@ -552,7 +788,7 @@
       "time_text": "05:30",
       "date_text": "29/07",
       "status": "Hiệp 1",
-      "card_text": "HẠNG 2 PARAGUAY Hiệp 1: 1' 05:30 - 29.07 Independiente FBC 0 : 0 Deportivo Capiata HT 0 - 0 0 - 0 0 - 0 0.85 0 0.95 0.90 2 0.90",
+      "card_text": "HẠNG 2 PARAGUAY Hiệp 1: 31' 05:30 - 29.07 Independiente FBC 0 : 0 Deportivo Capiata HT 0 - 0 2 - 0 0 - 0 0.73 0 1.08 0.95 1.5 0.85",
       "rooms": [
         {
           "url": "https://socolivekj.cc/truc-tiep/independiente-fbc-vs-deportivo-capiata-luc-0530-ngay-29-07-2026/",
@@ -784,1426 +1020,6 @@
       }
     },
     {
-      "base_url": "https://socolivekj.cc/truc-tiep/club-atletico-tigre-vs-nacional-montevideo-luc-0500-ngay-29-07-2026/",
-      "raw_title": "Club Atletico Tigre vs Nacional Montevideo",
-      "home_team": "Club Atletico Tigre",
-      "away_team": "Nacional Montevideo",
-      "home_logo": "https://imgts.sportpulseapiz.com/football/team/v2y8m4zhd7dql07/image/small",
-      "away_logo": "https://imgts.sportpulseapiz.com/football/team/k82rekhv9xprepz/image/small",
-      "time_text": "05:00",
-      "date_text": "29/07",
-      "status": "Hiệp 1",
-      "card_text": "SIÊU CÚP NAM MỸ Hiệp 1: 32' 05:00 - 29.07 Club Atletico Tigre 0 : 2 Nacional Montevideo HT 0 - 2 0 - 3 0 - 0 FILIP 1.10 0/0.5 0.70 0.95 2.5 0.85",
-      "rooms": [
-        {
-          "url": "https://socolivekj.cc/truc-tiep/club-atletico-tigre-vs-nacional-montevideo-luc-0500-ngay-29-07-2026/",
-          "blv": "FILIP",
-          "blv_id": ""
-        }
-      ],
-      "streams": [
-        {
-          "url": "https://live2.streambylivepulse.com/live/channel19.flv",
-          "queue_room_key": "__base__",
-          "room_url": "https://socolivekj.cc/truc-tiep/club-atletico-tigre-vs-nacional-montevideo-luc-0500-ngay-29-07-2026/",
-          "blv": "Nguồn phụ 1",
-          "blv_id": "",
-          "source_id": "",
-          "source_provenance": [
-            "cdp/request",
-            "cdp/response",
-            "harvest-final",
-            "harvest-round-1",
-            "harvest-round-2",
-            "harvest-round-3",
-            "harvest-round-4",
-            "harvest-round-5",
-            "harvest-round-6",
-            "harvest-round-7",
-            "harvest-round-8",
-            "request/fetch",
-            "response/200"
-          ],
-          "playback_referer": "",
-          "playback_origin": "",
-          "playback_user_agent": "",
-          "api_player_endpoint": "",
-          "api_source_mode": "",
-          "source_confidence": "network",
-          "mapping_mode": "stream-source-id",
-          "discovered_from_room_url": "https://socolivekj.cc/truc-tiep/club-atletico-tigre-vs-nacional-montevideo-luc-0500-ngay-29-07-2026/",
-          "discovered_from_blv": "FILIP",
-          "discovered_at": "2026-07-29T03:01:42.358034+07:00",
-          "valid_until": "",
-          "is_expired": false
-        }
-      ],
-      "room_results": [
-        {
-          "url": "https://socolivekj.cc/truc-tiep/club-atletico-tigre-vs-nacional-montevideo-luc-0500-ngay-29-07-2026/",
-          "blv": "FILIP",
-          "blv_id": "",
-          "streams": [
-            "https://live2.streambylivepulse.com/live/channel19.flv"
-          ],
-          "stream_sources": {
-            "https://live2.streambylivepulse.com/live/channel19.flv": [
-              "cdp/request",
-              "cdp/response",
-              "harvest-final",
-              "harvest-round-1",
-              "harvest-round-2",
-              "harvest-round-3",
-              "harvest-round-4",
-              "harvest-round-5",
-              "harvest-round-6",
-              "harvest-round-7",
-              "harvest-round-8",
-              "request/fetch",
-              "response/200"
-            ]
-          },
-          "stream_headers": {},
-          "stream_first_seen": [
-            "https://live2.streambylivepulse.com/live/channel19.flv"
-          ],
-          "discovered_blv_ids": [],
-          "diagnostics": {
-            "url": "https://socolivekj.cc/truc-tiep/club-atletico-tigre-vs-nacional-montevideo-luc-0500-ngay-29-07-2026/",
-            "title": "Trực tiếp Club Atletico Tigre vs Nacional Montevideo full lúc 05:00, ngày 29/07",
-            "h1": "Xem trực tiếp trận đấu Club Atletico Tigre vs Nacional Montevideo full lúc 05:00, ngày 29/07/2026",
-            "ready_state": "complete",
-            "visibility_state": "visible",
-            "hidden": false,
-            "video_count": 0,
-            "iframe_count": 5,
-            "body_sample": "WC 2026 Lịch Thi Đấu Xem Lại Video Highlight Tỷ Lệ Kèo BXH KQBD Tips Tin Tức Livescore Tuyển Dụng Top Nhà Cái Cược 8xbet WC 2026 Lịch Thi Đấu Xem Lại Video Highlight Tỷ Lệ Kèo BXH KQBD Tips Tin Tức Livescore Tuyển Dụng Top nhà cái Xem trực tiếp trận đấu Club Atletico Tigre vs Nacional Montevideo full lúc 05:00, ngày 29/07/2026 Phát sóng link trực tuyến Club Atletico Tigre vs Nacional Montevideo hôm nay tại giải đấu Siêu Cúp Nam Mỹ _ _ _ _ _ _ Club Atletico Tigre Nacional Montevideo Lượt đi 3 - 0 Theo bạn thì trận này tài hay xỉu? Tài 0% Xỉu 0% Theo bạn thì trận này đội nào sẽ thắng? Chủ nhà 0% Hòa 0% Đội Khách 0% Anh Em Muốn Tham Gia Đặt Cược Thì Click Vào Quảng Cáo Của 8XBET Để Đăng Ký Đặt Cược Tất Cả Các Trận Đấu Trên Toàn Thế Giới. Nếu anh em gặp tình trạng không vào được web, hãy cài VPN 1.1.1.1 để truy cập ổn định hơn nhé . Châu Á Châu Âu Tài xỉu Phạt góc Chọn nhà cái HIỆP 1 FT Châu Á HIỆP 1 FT Châu Á 1.25 0/0.5 0.63 0.85 0/0.5 1.00 Châu Âu HIỆP 1 FT Châu Âu 2.88 2 4.33 2.15 3.25 3.60 Tài xỉu HIỆP 1 FT Tài xỉu 0.73 0.5/1 1.08 0.78 2 1.10 SỚM FT Phạt góc HIỆP 1 FT Phạt góc - - - 0.775 8 1.025 Trực tiếp Mô phỏng CHIA SẺ Phát sóng trận đấu Club Atletico Tigre vs Nacional Montevid",
-            "harvest_rounds": 8,
-            "harvest_window_seconds": 6.29,
-            "main_status": 200,
-            "harvested_stream_count": 1,
-            "harvested_blv_ids": [],
-            "scan_mode": "chromium-fallback",
-            "elapsed_seconds": 7.387
-          },
-          "api_probe": {
-            "enabled": true,
-            "room_status": 200,
-            "active_index": 0,
-            "sources_found": 0,
-            "sources_tried": 0,
-            "valid_stream_count": 0,
-            "source_results": [],
-            "fallback_reason": "list_stream_not_found",
-            "elapsed_seconds": 0.068,
-            "room_content_type": "text/html",
-            "room_elapsed_seconds": 0.062,
-            "room_error": ""
-          },
-          "http_probe": {
-            "api_first": {
-              "enabled": true,
-              "room_status": 200,
-              "active_index": 0,
-              "sources_found": 0,
-              "sources_tried": 0,
-              "valid_stream_count": 0,
-              "source_results": [],
-              "fallback_reason": "list_stream_not_found",
-              "elapsed_seconds": 0.068,
-              "room_content_type": "text/html",
-              "room_elapsed_seconds": 0.062,
-              "room_error": ""
-            },
-            "legacy_http": {
-              "enabled": false,
-              "status": null,
-              "elapsed_seconds": 0.0,
-              "error": ""
-            }
-          },
-          "errors": [
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED"
-          ],
-          "failed_requests": [
-            "stylesheet https://fonts.googleapis.com/css2?family=Bangers&family=Oswald:wght@400;500;700&family=Raleway:wght@400;500;700&family=Roboto+Condensed:wght@300;400;700&display=swap | net::ERR_FAILED",
-            "stylesheet https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0 | net::ERR_FAILED",
-            "stylesheet https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css | net::ERR_FAILED",
-            "stylesheet https://socolivekj.cc/wp-content/plugins/widget-options/assets/css/widget-options.css?ver=4.0.6.1 | net::ERR_FAILED",
-            "stylesheet https://socolivekj.cc/wp-content/plugins/wp-pagenavi/pagenavi-css.css?ver=2.70 | net::ERR_FAILED",
-            "stylesheet https://socolivekj.cc/wp-content/themes/bongda/dist/styles/bootstrap.min.css?ver=1745376853 | net::ERR_FAILED",
-            "stylesheet https://socolivekj.cc/wp-content/themes/bongda/dist/styles/main.css?ver=1781184173 | net::ERR_FAILED",
-            "stylesheet https://socolivekj.cc/wp-content/themes/bongda/dist/styles/pages/single-live.css?ver=1784627923 | net::ERR_FAILED",
-            "image https://socolivekj.cc/wp-content/themes/bongda/dist/images/logo-socolive-tv-official-v2.png | net::ERR_FAILED",
-            "image https://socolivekj.cc/wp-content/themes/bongda/dist/images/wc-2026/menu-wc.svg | net::ERR_FAILED",
-            "image https://socolivekj.cc/wp-content/themes/bongda/dist/images/closemenu.png | net::ERR_FAILED",
-            "image https://imgts.sportpulseapiz.com/football/team/v2y8m4zhd7dql07/image/small | net::ERR_FAILED",
-            "stylesheet https://socolivekj.cc/wp-content/plugins/api-sport/public/css/match_detail.css?id=0671c88cfbad4335394b897262a0d662 | net::ERR_FAILED",
-            "image https://imgts.sportpulseapiz.com/football/team/k82rekhv9xprepz/image/small | net::ERR_FAILED",
-            "image https://socolivekj.cc/wp-content/themes/bongda/dist/images/company/21-1.png | net::ERR_FAILED"
-          ],
-          "http_errors": []
-        }
-      ],
-      "attempted_room_ids": [],
-      "coverage": {
-        "found_streams": 1,
-        "found_blv_ids": [],
-        "goal": 2,
-        "source_goal_reached": false,
-        "room_queue_complete": true,
-        "complete": true,
-        "max_streams_per_blv": 2,
-        "total_explicit_blv_rooms": 0,
-        "pending_room_keys": [],
-        "room_progress": {
-          "__base__": {
-            "key": "__base__",
-            "url": "https://socolivekj.cc/truc-tiep/club-atletico-tigre-vs-nacional-montevideo-luc-0500-ngay-29-07-2026/",
-            "blv": "FILIP",
-            "blv_id": "",
-            "status": "success",
-            "attempts": 1,
-            "attempts_total": 1,
-            "ever_attempted": true,
-            "valid_stream_ever_found": true,
-            "needs_token_refresh": false,
-            "completion_reason": "valid_stream",
-            "rate_limit_hits": 0,
-            "last_http_status": 200,
-            "last_stream_count": 1,
-            "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
-          }
-        }
-      },
-      "errors": [],
-      "match_name": "Club Atletico Tigre vs Nacional Montevideo",
-      "scheduled_at": "2026-07-29T05:00:00+07:00",
-      "room_progress": {
-        "__base__": {
-          "key": "__base__",
-          "url": "https://socolivekj.cc/truc-tiep/club-atletico-tigre-vs-nacional-montevideo-luc-0500-ngay-29-07-2026/",
-          "blv": "FILIP",
-          "blv_id": "",
-          "status": "success",
-          "attempts": 1,
-          "attempts_total": 1,
-          "ever_attempted": true,
-          "valid_stream_ever_found": true,
-          "needs_token_refresh": false,
-          "completion_reason": "valid_stream",
-          "rate_limit_hits": 0,
-          "last_http_status": 200,
-          "last_stream_count": 1,
-          "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
-        }
-      }
-    },
-    {
-      "base_url": "https://socolivekj.cc/truc-tiep/banfield-vs-sarmiento-junin-luc-0500-ngay-29-07-2026/",
-      "raw_title": "Banfield vs Sarmiento Junin",
-      "home_team": "Banfield",
-      "away_team": "Sarmiento Junin",
-      "home_logo": "https://imgts.sportpulseapiz.com/football/team/p3glrw7hevlqdyj/image/small",
-      "away_logo": "https://imgts.sportpulseapiz.com/football/team/z318q66hd9eqo9j/image/small",
-      "time_text": "05:00",
-      "date_text": "29/07",
-      "status": "Hiệp 1",
-      "card_text": "VĐQG ARGENTINA Hiệp 1: 31' 05:00 - 29.07 Banfield 0 : 0 Sarmiento Junin HT 0 - 0 2 - 0 0 - 0 RIO 1.00 0.5 0.80 0.78 1.5 1.03",
-      "rooms": [
-        {
-          "url": "https://socolivekj.cc/truc-tiep/banfield-vs-sarmiento-junin-luc-0500-ngay-29-07-2026/",
-          "blv": "RIO",
-          "blv_id": ""
-        }
-      ],
-      "streams": [
-        {
-          "url": "https://live2.streambylivepulse.com/live/channel16.flv",
-          "queue_room_key": "__base__",
-          "room_url": "https://socolivekj.cc/truc-tiep/banfield-vs-sarmiento-junin-luc-0500-ngay-29-07-2026/",
-          "blv": "Nguồn phụ 1",
-          "blv_id": "",
-          "source_id": "",
-          "source_provenance": [
-            "cdp/request",
-            "cdp/response",
-            "harvest-final",
-            "harvest-round-1",
-            "harvest-round-2",
-            "harvest-round-3",
-            "harvest-round-4",
-            "harvest-round-5",
-            "harvest-round-6",
-            "harvest-round-7",
-            "harvest-round-8",
-            "harvest-round-9",
-            "request/fetch",
-            "response/200"
-          ],
-          "playback_referer": "",
-          "playback_origin": "",
-          "playback_user_agent": "",
-          "api_player_endpoint": "",
-          "api_source_mode": "",
-          "source_confidence": "network",
-          "mapping_mode": "stream-source-id",
-          "discovered_from_room_url": "https://socolivekj.cc/truc-tiep/banfield-vs-sarmiento-junin-luc-0500-ngay-29-07-2026/",
-          "discovered_from_blv": "RIO",
-          "discovered_at": "2026-07-29T03:01:32.948488+07:00",
-          "valid_until": "",
-          "is_expired": false
-        }
-      ],
-      "room_results": [
-        {
-          "url": "https://socolivekj.cc/truc-tiep/banfield-vs-sarmiento-junin-luc-0500-ngay-29-07-2026/",
-          "blv": "RIO",
-          "blv_id": "",
-          "streams": [
-            "https://live2.streambylivepulse.com/live/channel16.flv"
-          ],
-          "stream_sources": {
-            "https://live2.streambylivepulse.com/live/channel16.flv": [
-              "cdp/request",
-              "cdp/response",
-              "harvest-final",
-              "harvest-round-1",
-              "harvest-round-2",
-              "harvest-round-3",
-              "harvest-round-4",
-              "harvest-round-5",
-              "harvest-round-6",
-              "harvest-round-7",
-              "harvest-round-8",
-              "harvest-round-9",
-              "request/fetch",
-              "response/200"
-            ]
-          },
-          "stream_headers": {},
-          "stream_first_seen": [
-            "https://live2.streambylivepulse.com/live/channel16.flv"
-          ],
-          "discovered_blv_ids": [],
-          "diagnostics": {
-            "url": "https://socolivekj.cc/truc-tiep/banfield-vs-sarmiento-junin-luc-0500-ngay-29-07-2026/",
-            "title": "Trực tiếp Banfield vs Sarmiento Junin full lúc 05:00, ngày 29/07",
-            "h1": "Xem trực tiếp trận đấu Banfield vs Sarmiento Junin full lúc 05:00, ngày 29/07/2026",
-            "ready_state": "complete",
-            "visibility_state": "visible",
-            "hidden": false,
-            "video_count": 0,
-            "iframe_count": 5,
-            "body_sample": "WC 2026 Lịch Thi Đấu Xem Lại Video Highlight Tỷ Lệ Kèo BXH KQBD Tips Tin Tức Livescore Tuyển Dụng Top Nhà Cái Cược 8xbet WC 2026 Lịch Thi Đấu Xem Lại Video Highlight Tỷ Lệ Kèo BXH KQBD Tips Tin Tức Livescore Tuyển Dụng Top nhà cái Xem trực tiếp trận đấu Banfield vs Sarmiento Junin full lúc 05:00, ngày 29/07/2026 Phát sóng link trực tuyến Banfield vs Sarmiento Junin hôm nay tại giải đấu VĐQG Argentina _ _ _ _ _ _ Banfield Sarmiento Junin Theo bạn thì trận này tài hay xỉu? Tài 0% Xỉu 0% Theo bạn thì trận này đội nào sẽ thắng? Chủ nhà 0% Hòa 0% Đội Khách 0% Anh Em Muốn Tham Gia Đặt Cược Thì Click Vào Quảng Cáo Của 8XBET Để Đăng Ký Đặt Cược Tất Cả Các Trận Đấu Trên Toàn Thế Giới. Nếu anh em gặp tình trạng không vào được web, hãy cài VPN 1.1.1.1 để truy cập ổn định hơn nhé . Châu Á Châu Âu Tài xỉu Phạt góc Chọn nhà cái HIỆP 1 FT Châu Á HIỆP 1 FT Châu Á 1.15 0/0.5 0.68 1.05 0.5 0.75 Châu Âu HIỆP 1 FT Châu Âu 2.75 1.95 4.75 2.10 3.00 4.20 Tài xỉu HIỆP 1 FT Tài xỉu 0.80 0.5/1 1.00 0.90 2 0.90 SỚM FT Phạt góc HIỆP 1 FT Phạt góc - - - 0.825 8.5 0.975 Trực tiếp Mô phỏng CHIA SẺ Phát sóng trận đấu Banfield vs Sarmiento Junin full HD lúc 05:00, ngày 29/07/2026 VĐQG Argentina RIO HD RIO CHIA SẺ ",
-            "harvest_rounds": 9,
-            "harvest_window_seconds": 7.12,
-            "main_status": 200,
-            "harvested_stream_count": 1,
-            "harvested_blv_ids": [],
-            "scan_mode": "chromium-fallback",
-            "elapsed_seconds": 8.468
-          },
-          "api_probe": {
-            "enabled": true,
-            "room_status": 200,
-            "active_index": 0,
-            "sources_found": 0,
-            "sources_tried": 0,
-            "valid_stream_count": 0,
-            "source_results": [],
-            "fallback_reason": "list_stream_not_found",
-            "elapsed_seconds": 0.508,
-            "room_content_type": "text/html",
-            "room_elapsed_seconds": 0.502,
-            "room_error": ""
-          },
-          "http_probe": {
-            "api_first": {
-              "enabled": true,
-              "room_status": 200,
-              "active_index": 0,
-              "sources_found": 0,
-              "sources_tried": 0,
-              "valid_stream_count": 0,
-              "source_results": [],
-              "fallback_reason": "list_stream_not_found",
-              "elapsed_seconds": 0.508,
-              "room_content_type": "text/html",
-              "room_elapsed_seconds": 0.502,
-              "room_error": ""
-            },
-            "legacy_http": {
-              "enabled": false,
-              "status": null,
-              "elapsed_seconds": 0.0,
-              "error": ""
-            }
-          },
-          "errors": [
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED"
-          ],
-          "failed_requests": [
-            "stylesheet https://fonts.googleapis.com/css2?family=Bangers&family=Oswald:wght@400;500;700&family=Raleway:wght@400;500;700&family=Roboto+Condensed:wght@300;400;700&display=swap | net::ERR_FAILED",
-            "stylesheet https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0 | net::ERR_FAILED",
-            "stylesheet https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css | net::ERR_FAILED",
-            "stylesheet https://socolivekj.cc/wp-content/plugins/widget-options/assets/css/widget-options.css?ver=4.0.6.1 | net::ERR_FAILED",
-            "stylesheet https://socolivekj.cc/wp-content/plugins/wp-pagenavi/pagenavi-css.css?ver=2.70 | net::ERR_FAILED",
-            "stylesheet https://socolivekj.cc/wp-content/themes/bongda/dist/styles/bootstrap.min.css?ver=1745376853 | net::ERR_FAILED",
-            "stylesheet https://socolivekj.cc/wp-content/themes/bongda/dist/styles/main.css?ver=1781184173 | net::ERR_FAILED",
-            "stylesheet https://socolivekj.cc/wp-content/themes/bongda/dist/styles/pages/single-live.css?ver=1784627923 | net::ERR_FAILED",
-            "image https://socolivekj.cc/wp-content/themes/bongda/dist/images/logo-socolive-tv-official-v2.png | net::ERR_FAILED",
-            "image https://socolivekj.cc/wp-content/themes/bongda/dist/images/wc-2026/menu-wc.svg | net::ERR_FAILED",
-            "image https://socolivekj.cc/wp-content/themes/bongda/dist/images/closemenu.png | net::ERR_FAILED",
-            "image https://imgts.sportpulseapiz.com/football/team/p3glrw7hevlqdyj/image/small | net::ERR_FAILED",
-            "stylesheet https://socolivekj.cc/wp-content/plugins/api-sport/public/css/match_detail.css?id=0671c88cfbad4335394b897262a0d662 | net::ERR_FAILED",
-            "image https://imgts.sportpulseapiz.com/football/team/z318q66hd9eqo9j/image/small | net::ERR_FAILED",
-            "image https://socolivekj.cc/wp-content/themes/bongda/dist/images/company/21-1.png | net::ERR_FAILED"
-          ],
-          "http_errors": []
-        }
-      ],
-      "attempted_room_ids": [],
-      "coverage": {
-        "found_streams": 1,
-        "found_blv_ids": [],
-        "goal": 2,
-        "source_goal_reached": false,
-        "room_queue_complete": true,
-        "complete": true,
-        "max_streams_per_blv": 2,
-        "total_explicit_blv_rooms": 0,
-        "pending_room_keys": [],
-        "room_progress": {
-          "__base__": {
-            "key": "__base__",
-            "url": "https://socolivekj.cc/truc-tiep/banfield-vs-sarmiento-junin-luc-0500-ngay-29-07-2026/",
-            "blv": "RIO",
-            "blv_id": "",
-            "status": "success",
-            "attempts": 1,
-            "attempts_total": 1,
-            "ever_attempted": true,
-            "valid_stream_ever_found": true,
-            "needs_token_refresh": false,
-            "completion_reason": "valid_stream",
-            "rate_limit_hits": 0,
-            "last_http_status": 200,
-            "last_stream_count": 1,
-            "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
-          }
-        }
-      },
-      "errors": [],
-      "match_name": "Banfield vs Sarmiento Junin",
-      "scheduled_at": "2026-07-29T05:00:00+07:00",
-      "room_progress": {
-        "__base__": {
-          "key": "__base__",
-          "url": "https://socolivekj.cc/truc-tiep/banfield-vs-sarmiento-junin-luc-0500-ngay-29-07-2026/",
-          "blv": "RIO",
-          "blv_id": "",
-          "status": "success",
-          "attempts": 1,
-          "attempts_total": 1,
-          "ever_attempted": true,
-          "valid_stream_ever_found": true,
-          "needs_token_refresh": false,
-          "completion_reason": "valid_stream",
-          "rate_limit_hits": 0,
-          "last_http_status": 200,
-          "last_stream_count": 1,
-          "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
-        }
-      }
-    },
-    {
-      "base_url": "https://socolivekj.cc/truc-tiep/san-lorenzo-vs-gimnasia-mendoza-luc-0500-ngay-29-07-2026/",
-      "raw_title": "San Lorenzo vs Gimnasia Mendoza",
-      "home_team": "San Lorenzo",
-      "away_team": "Gimnasia Mendoza",
-      "home_logo": "https://imgts.sportpulseapiz.com/football/team/gpxwrxlh836ryk0/image/small",
-      "away_logo": "https://imgts.sportpulseapiz.com/football/team/jw2r09hlkldrz84/image/small",
-      "time_text": "05:00",
-      "date_text": "29/07",
-      "status": "Hiệp 1",
-      "card_text": "VĐQG ARGENTINA Hiệp 1: 32' 05:00 - 29.07 San Lorenzo 0 : 0 Gimnasia Mendoza HT 0 - 0 0 - 0 0 - 0 HIRO 0.85 0/0.5 0.95 0.80 1/1.5 1.00",
-      "rooms": [
-        {
-          "url": "https://socolivekj.cc/truc-tiep/san-lorenzo-vs-gimnasia-mendoza-luc-0500-ngay-29-07-2026/",
-          "blv": "HIRO",
-          "blv_id": ""
-        }
-      ],
-      "streams": [
-        {
-          "url": "https://live2.streambylivepulse.com/live/channel14.flv",
-          "queue_room_key": "__base__",
-          "room_url": "https://socolivekj.cc/truc-tiep/san-lorenzo-vs-gimnasia-mendoza-luc-0500-ngay-29-07-2026/",
-          "blv": "Nguồn phụ 1",
-          "blv_id": "",
-          "source_id": "",
-          "source_provenance": [
-            "cdp/request",
-            "cdp/response",
-            "harvest-final",
-            "harvest-round-1",
-            "harvest-round-2",
-            "harvest-round-3",
-            "harvest-round-4",
-            "harvest-round-5",
-            "harvest-round-6",
-            "harvest-round-7",
-            "harvest-round-8",
-            "request/fetch",
-            "response/200"
-          ],
-          "playback_referer": "",
-          "playback_origin": "",
-          "playback_user_agent": "",
-          "api_player_endpoint": "",
-          "api_source_mode": "",
-          "source_confidence": "network",
-          "mapping_mode": "stream-source-id",
-          "discovered_from_room_url": "https://socolivekj.cc/truc-tiep/san-lorenzo-vs-gimnasia-mendoza-luc-0500-ngay-29-07-2026/",
-          "discovered_from_blv": "HIRO",
-          "discovered_at": "2026-07-29T03:31:34.571313+07:00",
-          "valid_until": "",
-          "is_expired": false
-        }
-      ],
-      "room_results": [
-        {
-          "url": "https://socolivekj.cc/truc-tiep/san-lorenzo-vs-gimnasia-mendoza-luc-0500-ngay-29-07-2026/",
-          "blv": "HIRO",
-          "blv_id": "",
-          "streams": [
-            "https://live2.streambylivepulse.com/live/channel14.flv"
-          ],
-          "stream_sources": {
-            "https://live2.streambylivepulse.com/live/channel14.flv": [
-              "cdp/request",
-              "cdp/response",
-              "harvest-final",
-              "harvest-round-1",
-              "harvest-round-2",
-              "harvest-round-3",
-              "harvest-round-4",
-              "harvest-round-5",
-              "harvest-round-6",
-              "harvest-round-7",
-              "harvest-round-8",
-              "request/fetch",
-              "response/200"
-            ]
-          },
-          "stream_headers": {},
-          "stream_first_seen": [
-            "https://live2.streambylivepulse.com/live/channel14.flv"
-          ],
-          "discovered_blv_ids": [],
-          "diagnostics": {
-            "url": "https://socolivekj.cc/truc-tiep/san-lorenzo-vs-gimnasia-mendoza-luc-0500-ngay-29-07-2026/",
-            "title": "Trực tiếp San Lorenzo vs Gimnasia Mendoza full lúc 05:00, ngày 29/07",
-            "h1": "Xem trực tiếp trận đấu San Lorenzo vs Gimnasia Mendoza full lúc 05:00, ngày 29/07/2026",
-            "ready_state": "complete",
-            "visibility_state": "visible",
-            "hidden": false,
-            "video_count": 0,
-            "iframe_count": 5,
-            "body_sample": "WC 2026 Lịch Thi Đấu Xem Lại Video Highlight Tỷ Lệ Kèo BXH KQBD Tips Tin Tức Livescore Tuyển Dụng Top Nhà Cái Cược 8xbet WC 2026 Lịch Thi Đấu Xem Lại Video Highlight Tỷ Lệ Kèo BXH KQBD Tips Tin Tức Livescore Tuyển Dụng Top nhà cái Xem trực tiếp trận đấu San Lorenzo vs Gimnasia Mendoza full lúc 05:00, ngày 29/07/2026 Phát sóng link trực tuyến San Lorenzo vs Gimnasia Mendoza hôm nay tại giải đấu VĐQG Argentina _ _ _ _ _ _ San Lorenzo Gimnasia Mendoza Theo bạn thì trận này tài hay xỉu? Tài 0% Xỉu 0% Theo bạn thì trận này đội nào sẽ thắng? Chủ nhà 0% Hòa 0% Đội Khách 0% Anh Em Muốn Tham Gia Đặt Cược Thì Click Vào Quảng Cáo Của 8XBET Để Đăng Ký Đặt Cược Tất Cả Các Trận Đấu Trên Toàn Thế Giới. Nếu anh em gặp tình trạng không vào được web, hãy cài VPN 1.1.1.1 để truy cập ổn định hơn nhé . Châu Á Châu Âu Tài xỉu Phạt góc Chọn nhà cái HIỆP 1 FT Châu Á HIỆP 1 FT Châu Á 1.05 0/0.5 0.75 0.85 0.5 0.95 Châu Âu HIỆP 1 FT Châu Âu 2.63 2 5 1.90 3.25 4.50 Tài xỉu HIỆP 1 FT Tài xỉu 0.78 0.5/1 1.03 0.85 2 0.95 SỚM FT Phạt góc HIỆP 1 FT Phạt góc - - - 0.8 8.5 1 Trực tiếp Mô phỏng CHIA SẺ Phát sóng trận đấu San Lorenzo vs Gimnasia Mendoza full HD lúc 05:00, ngày 29/07/2026 VĐQG Argentina HIRO HD HIRO CH",
-            "harvest_rounds": 8,
-            "harvest_window_seconds": 6.393,
-            "main_status": 200,
-            "harvested_stream_count": 1,
-            "harvested_blv_ids": [],
-            "scan_mode": "chromium-fallback",
-            "elapsed_seconds": 7.633
-          },
-          "api_probe": {
-            "enabled": true,
-            "room_status": 200,
-            "active_index": 0,
-            "sources_found": 0,
-            "sources_tried": 0,
-            "valid_stream_count": 0,
-            "source_results": [],
-            "fallback_reason": "list_stream_not_found",
-            "elapsed_seconds": 0.045,
-            "room_content_type": "text/html",
-            "room_elapsed_seconds": 0.039,
-            "room_error": ""
-          },
-          "http_probe": {
-            "api_first": {
-              "enabled": true,
-              "room_status": 200,
-              "active_index": 0,
-              "sources_found": 0,
-              "sources_tried": 0,
-              "valid_stream_count": 0,
-              "source_results": [],
-              "fallback_reason": "list_stream_not_found",
-              "elapsed_seconds": 0.045,
-              "room_content_type": "text/html",
-              "room_elapsed_seconds": 0.039,
-              "room_error": ""
-            },
-            "legacy_http": {
-              "enabled": false,
-              "status": null,
-              "elapsed_seconds": 0.0,
-              "error": ""
-            }
-          },
-          "errors": [
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED"
-          ],
-          "failed_requests": [
-            "stylesheet https://fonts.googleapis.com/css2?family=Bangers&family=Oswald:wght@400;500;700&family=Raleway:wght@400;500;700&family=Roboto+Condensed:wght@300;400;700&display=swap | net::ERR_FAILED",
-            "stylesheet https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0 | net::ERR_FAILED",
-            "stylesheet https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css | net::ERR_FAILED",
-            "stylesheet https://socolivekj.cc/wp-content/plugins/widget-options/assets/css/widget-options.css?ver=4.0.6.1 | net::ERR_FAILED",
-            "stylesheet https://socolivekj.cc/wp-content/plugins/wp-pagenavi/pagenavi-css.css?ver=2.70 | net::ERR_FAILED",
-            "stylesheet https://socolivekj.cc/wp-content/themes/bongda/dist/styles/bootstrap.min.css?ver=1745376853 | net::ERR_FAILED",
-            "stylesheet https://socolivekj.cc/wp-content/themes/bongda/dist/styles/main.css?ver=1781184173 | net::ERR_FAILED",
-            "stylesheet https://socolivekj.cc/wp-content/themes/bongda/dist/styles/pages/single-live.css?ver=1784627923 | net::ERR_FAILED",
-            "image https://socolivekj.cc/wp-content/themes/bongda/dist/images/logo-socolive-tv-official-v2.png | net::ERR_FAILED",
-            "image https://socolivekj.cc/wp-content/themes/bongda/dist/images/wc-2026/menu-wc.svg | net::ERR_FAILED",
-            "image https://socolivekj.cc/wp-content/themes/bongda/dist/images/closemenu.png | net::ERR_FAILED",
-            "image https://imgts.sportpulseapiz.com/football/team/gpxwrxlh836ryk0/image/small | net::ERR_FAILED",
-            "stylesheet https://socolivekj.cc/wp-content/plugins/api-sport/public/css/match_detail.css?id=0671c88cfbad4335394b897262a0d662 | net::ERR_FAILED",
-            "image https://imgts.sportpulseapiz.com/football/team/jw2r09hlkldrz84/image/small | net::ERR_FAILED",
-            "image https://socolivekj.cc/wp-content/themes/bongda/dist/images/company/21-1.png | net::ERR_FAILED"
-          ],
-          "http_errors": []
-        }
-      ],
-      "attempted_room_ids": [],
-      "coverage": {
-        "found_streams": 1,
-        "found_blv_ids": [],
-        "goal": 2,
-        "source_goal_reached": false,
-        "room_queue_complete": true,
-        "complete": true,
-        "max_streams_per_blv": 2,
-        "total_explicit_blv_rooms": 0,
-        "pending_room_keys": [],
-        "room_progress": {
-          "__base__": {
-            "key": "__base__",
-            "url": "https://socolivekj.cc/truc-tiep/san-lorenzo-vs-gimnasia-mendoza-luc-0500-ngay-29-07-2026/",
-            "blv": "HIRO",
-            "blv_id": "",
-            "status": "success",
-            "attempts": 1,
-            "attempts_total": 1,
-            "ever_attempted": true,
-            "valid_stream_ever_found": true,
-            "needs_token_refresh": false,
-            "completion_reason": "valid_stream",
-            "rate_limit_hits": 0,
-            "last_http_status": 200,
-            "last_stream_count": 1,
-            "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
-          }
-        }
-      },
-      "errors": [],
-      "match_name": "San Lorenzo vs Gimnasia Mendoza",
-      "scheduled_at": "2026-07-29T05:00:00+07:00",
-      "room_progress": {
-        "__base__": {
-          "key": "__base__",
-          "url": "https://socolivekj.cc/truc-tiep/san-lorenzo-vs-gimnasia-mendoza-luc-0500-ngay-29-07-2026/",
-          "blv": "HIRO",
-          "blv_id": "",
-          "status": "success",
-          "attempts": 1,
-          "attempts_total": 1,
-          "ever_attempted": true,
-          "valid_stream_ever_found": true,
-          "needs_token_refresh": false,
-          "completion_reason": "valid_stream",
-          "rate_limit_hits": 0,
-          "last_http_status": 200,
-          "last_stream_count": 1,
-          "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
-        }
-      }
-    },
-    {
-      "base_url": "https://socolivekj.cc/truc-tiep/nu-bragantino-vs-nu-santos-luc-0500-ngay-29-07-2026/",
-      "raw_title": "Nữ Bragantino vs Nữ Santos",
-      "home_team": "Nữ Bragantino",
-      "away_team": "Nữ Santos",
-      "home_logo": "https://imgts.sportpulseapiz.com/football/team/3glrw7hyojlqdyj/image/small",
-      "away_logo": "https://imgts.sportpulseapiz.com/football/team/n54qllhex7dqvy9/image/small",
-      "time_text": "05:00",
-      "date_text": "29/07",
-      "status": "Hiệp 1",
-      "card_text": "BRAZILIAN PAULISTA WOMEN LEAGUE Hiệp 1: 32' 05:00 - 29.07 Nữ Bragantino 0 : 0 Nữ Santos HT 0 - 0 1 - 1 0 - 0 0.80 0 1.00 0.95 1.5 0.85",
-      "rooms": [
-        {
-          "url": "https://socolivekj.cc/truc-tiep/nu-bragantino-vs-nu-santos-luc-0500-ngay-29-07-2026/",
-          "blv": "",
-          "blv_id": ""
-        }
-      ],
-      "streams": [
-        {
-          "url": "https://live1.streambylivepulse.com/live/channel30.flv?wsSecret=cc6d4df51fb030ef12ef96f58c189c10&wsABSTime=1785313877",
-          "queue_room_key": "__base__",
-          "room_url": "https://socolivekj.cc/truc-tiep/nu-bragantino-vs-nu-santos-luc-0500-ngay-29-07-2026/",
-          "blv": "Nguồn phụ 1",
-          "blv_id": "",
-          "source_id": "",
-          "source_provenance": [
-            "cdp/request",
-            "cdp/response",
-            "harvest-final",
-            "harvest-round-1",
-            "harvest-round-2",
-            "harvest-round-3",
-            "harvest-round-4",
-            "harvest-round-5",
-            "harvest-round-6",
-            "harvest-round-7",
-            "harvest-round-8",
-            "request/fetch",
-            "response/403"
-          ],
-          "playback_referer": "",
-          "playback_origin": "",
-          "playback_user_agent": "",
-          "api_player_endpoint": "",
-          "api_source_mode": "",
-          "source_confidence": "network",
-          "mapping_mode": "stream-source-id",
-          "discovered_from_room_url": "https://socolivekj.cc/truc-tiep/nu-bragantino-vs-nu-santos-luc-0500-ngay-29-07-2026/",
-          "discovered_from_blv": "URL tổng",
-          "discovered_at": "2026-07-29T03:31:24.907050+07:00",
-          "valid_until": "",
-          "is_expired": false
-        }
-      ],
-      "room_results": [
-        {
-          "url": "https://socolivekj.cc/truc-tiep/nu-bragantino-vs-nu-santos-luc-0500-ngay-29-07-2026/",
-          "blv": "",
-          "blv_id": "",
-          "streams": [
-            "https://live1.streambylivepulse.com/live/channel30.flv?wsSecret=cc6d4df51fb030ef12ef96f58c189c10&wsABSTime=1785313877"
-          ],
-          "stream_sources": {
-            "https://live1.streambylivepulse.com/live/channel30.flv?wsSecret=cc6d4df51fb030ef12ef96f58c189c10&wsABSTime=1785313877": [
-              "cdp/request",
-              "cdp/response",
-              "harvest-final",
-              "harvest-round-1",
-              "harvest-round-2",
-              "harvest-round-3",
-              "harvest-round-4",
-              "harvest-round-5",
-              "harvest-round-6",
-              "harvest-round-7",
-              "harvest-round-8",
-              "request/fetch",
-              "response/403"
-            ]
-          },
-          "stream_headers": {},
-          "stream_first_seen": [
-            "https://live1.streambylivepulse.com/live/channel30.flv?wsSecret=cc6d4df51fb030ef12ef96f58c189c10&wsABSTime=1785313877"
-          ],
-          "discovered_blv_ids": [],
-          "diagnostics": {
-            "url": "https://socolivekj.cc/truc-tiep/nu-bragantino-vs-nu-santos-luc-0500-ngay-29-07-2026/",
-            "title": "Trực tiếp Nữ Bragantino vs Nữ Santos full lúc 05:00, ngày 29/07",
-            "h1": "Xem trực tiếp trận đấu Nữ Bragantino vs Nữ Santos full lúc 05:00, ngày 29/07/2026",
-            "ready_state": "complete",
-            "visibility_state": "visible",
-            "hidden": false,
-            "video_count": 0,
-            "iframe_count": 5,
-            "body_sample": "WC 2026 Lịch Thi Đấu Xem Lại Video Highlight Tỷ Lệ Kèo BXH KQBD Tips Tin Tức Livescore Tuyển Dụng Top Nhà Cái Cược 8xbet WC 2026 Lịch Thi Đấu Xem Lại Video Highlight Tỷ Lệ Kèo BXH KQBD Tips Tin Tức Livescore Tuyển Dụng Top nhà cái Xem trực tiếp trận đấu Nữ Bragantino vs Nữ Santos full lúc 05:00, ngày 29/07/2026 Phát sóng link trực tuyến Nữ Bragantino vs Nữ Santos hôm nay tại giải đấu Brazilian Paulista Women League _ _ _ _ _ _ Nữ Bragantino Nữ Santos Theo bạn thì trận này tài hay xỉu? Tài 0% Xỉu 0% Theo bạn thì trận này đội nào sẽ thắng? Chủ nhà 0% Hòa 0% Đội Khách 0% Anh Em Muốn Tham Gia Đặt Cược Thì Click Vào Quảng Cáo Của 8XBET Để Đăng Ký Đặt Cược Tất Cả Các Trận Đấu Trên Toàn Thế Giới. Nếu anh em gặp tình trạng không vào được web, hãy cài VPN 1.1.1.1 để truy cập ổn định hơn nhé . Châu Á Châu Âu Tài xỉu Phạt góc Chọn nhà cái HIỆP 1 FT Châu Á HIỆP 1 FT Châu Á - - - 0.80 0/0.5 1.00 Châu Âu HIỆP 1 FT Châu Âu - - - 2.00 3.30 3.20 Tài xỉu HIỆP 1 FT Tài xỉu - - - 0.85 2/2.5 0.95 SỚM FT Phạt góc HIỆP 1 FT Phạt góc - - - 1 9 0.8 Trực tiếp Mô phỏng CHIA SẺ Phát sóng trận đấu Nữ Bragantino vs Nữ Santos full HD lúc 05:00, ngày 29/07/2026 Brazilian Paulista Women League HD 1 CHIA SẺ Thông s",
-            "harvest_rounds": 8,
-            "harvest_window_seconds": 6.33,
-            "main_status": 200,
-            "harvested_stream_count": 1,
-            "harvested_blv_ids": [],
-            "scan_mode": "chromium-fallback",
-            "elapsed_seconds": 8.818
-          },
-          "api_probe": {
-            "enabled": true,
-            "room_status": 200,
-            "active_index": 0,
-            "sources_found": 0,
-            "sources_tried": 0,
-            "valid_stream_count": 0,
-            "source_results": [],
-            "fallback_reason": "list_stream_not_found",
-            "elapsed_seconds": 0.825,
-            "room_content_type": "text/html",
-            "room_elapsed_seconds": 0.82,
-            "room_error": ""
-          },
-          "http_probe": {
-            "api_first": {
-              "enabled": true,
-              "room_status": 200,
-              "active_index": 0,
-              "sources_found": 0,
-              "sources_tried": 0,
-              "valid_stream_count": 0,
-              "source_results": [],
-              "fallback_reason": "list_stream_not_found",
-              "elapsed_seconds": 0.825,
-              "room_content_type": "text/html",
-              "room_elapsed_seconds": 0.82,
-              "room_error": ""
-            },
-            "legacy_http": {
-              "enabled": false,
-              "status": null,
-              "elapsed_seconds": 0.0,
-              "error": ""
-            }
-          },
-          "errors": [
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED"
-          ],
-          "failed_requests": [
-            "stylesheet https://fonts.googleapis.com/css2?family=Bangers&family=Oswald:wght@400;500;700&family=Raleway:wght@400;500;700&family=Roboto+Condensed:wght@300;400;700&display=swap | net::ERR_FAILED",
-            "stylesheet https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0 | net::ERR_FAILED",
-            "stylesheet https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css | net::ERR_FAILED",
-            "stylesheet https://socolivekj.cc/wp-content/plugins/widget-options/assets/css/widget-options.css?ver=4.0.6.1 | net::ERR_FAILED",
-            "stylesheet https://socolivekj.cc/wp-content/plugins/wp-pagenavi/pagenavi-css.css?ver=2.70 | net::ERR_FAILED",
-            "stylesheet https://socolivekj.cc/wp-content/themes/bongda/dist/styles/bootstrap.min.css?ver=1745376853 | net::ERR_FAILED",
-            "stylesheet https://socolivekj.cc/wp-content/themes/bongda/dist/styles/main.css?ver=1781184173 | net::ERR_FAILED",
-            "stylesheet https://socolivekj.cc/wp-content/themes/bongda/dist/styles/pages/single-live.css?ver=1784627923 | net::ERR_FAILED",
-            "image https://socolivekj.cc/wp-content/themes/bongda/dist/images/logo-socolive-tv-official-v2.png | net::ERR_FAILED",
-            "image https://socolivekj.cc/wp-content/themes/bongda/dist/images/wc-2026/menu-wc.svg | net::ERR_FAILED",
-            "image https://socolivekj.cc/wp-content/themes/bongda/dist/images/closemenu.png | net::ERR_FAILED",
-            "image https://imgts.sportpulseapiz.com/football/team/3glrw7hyojlqdyj/image/small | net::ERR_FAILED",
-            "stylesheet https://socolivekj.cc/wp-content/plugins/api-sport/public/css/match_detail.css?id=0671c88cfbad4335394b897262a0d662 | net::ERR_FAILED",
-            "image https://imgts.sportpulseapiz.com/football/team/n54qllhex7dqvy9/image/small | net::ERR_FAILED",
-            "image https://socolivekj.cc/wp-content/themes/bongda/dist/images/company/21-1.png | net::ERR_FAILED"
-          ],
-          "http_errors": [
-            "403 https://live1.streambylivepulse.com/live/channel30.flv?wsSecret=cc6d4df51fb030ef12ef96f58c189c10&wsABSTime=1785313877",
-            "403 https://live1.streambylivepulse.com/live/channel30.flv?wsSecret=cc6d4df51fb030ef12ef96f58c189c10&wsABSTime=1785313877",
-            "403 https://live1.streambylivepulse.com/live/channel30.flv?wsSecret=cc6d4df51fb030ef12ef96f58c189c10&wsABSTime=1785313877",
-            "403 https://live1.streambylivepulse.com/live/channel30.flv?wsSecret=cc6d4df51fb030ef12ef96f58c189c10&wsABSTime=1785313877",
-            "403 https://live1.streambylivepulse.com/live/channel30.flv?wsSecret=cc6d4df51fb030ef12ef96f58c189c10&wsABSTime=1785313877"
-          ]
-        }
-      ],
-      "attempted_room_ids": [],
-      "coverage": {
-        "found_streams": 1,
-        "found_blv_ids": [],
-        "goal": 2,
-        "source_goal_reached": false,
-        "room_queue_complete": true,
-        "complete": true,
-        "max_streams_per_blv": 2,
-        "total_explicit_blv_rooms": 0,
-        "pending_room_keys": [],
-        "room_progress": {
-          "__base__": {
-            "key": "__base__",
-            "url": "https://socolivekj.cc/truc-tiep/nu-bragantino-vs-nu-santos-luc-0500-ngay-29-07-2026/",
-            "blv": "",
-            "blv_id": "",
-            "status": "success",
-            "attempts": 1,
-            "attempts_total": 1,
-            "ever_attempted": true,
-            "valid_stream_ever_found": true,
-            "needs_token_refresh": false,
-            "completion_reason": "valid_stream",
-            "rate_limit_hits": 0,
-            "last_http_status": 200,
-            "last_stream_count": 1,
-            "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
-          }
-        }
-      },
-      "errors": [],
-      "match_name": "Nữ Bragantino vs Nữ Santos",
-      "scheduled_at": "2026-07-29T05:00:00+07:00",
-      "room_progress": {
-        "__base__": {
-          "key": "__base__",
-          "url": "https://socolivekj.cc/truc-tiep/nu-bragantino-vs-nu-santos-luc-0500-ngay-29-07-2026/",
-          "blv": "",
-          "blv_id": "",
-          "status": "success",
-          "attempts": 1,
-          "attempts_total": 1,
-          "ever_attempted": true,
-          "valid_stream_ever_found": true,
-          "needs_token_refresh": false,
-          "completion_reason": "valid_stream",
-          "rate_limit_hits": 0,
-          "last_http_status": 200,
-          "last_stream_count": 1,
-          "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
-        }
-      }
-    },
-    {
-      "base_url": "https://socolivekj.cc/truc-tiep/haiti-u20-vs-cuba-u20-luc-0400-ngay-29-07-2026/",
-      "raw_title": "Haiti U20 vs Cuba U20",
-      "home_team": "Haiti U20",
-      "away_team": "Cuba U20",
-      "home_logo": "https://imgts.sportpulseapiz.com/football/team/1l4rjnh62p1m7vx/image/small",
-      "away_logo": "https://imgts.sportpulseapiz.com/football/team/4wyrn4h8pknq86p/image/small",
-      "time_text": "04:00",
-      "date_text": "29/07",
-      "status": "Hiệp 2",
-      "card_text": "CONCACAF U20 Hiệp 2: 73' 04:00 - 29.07 Haiti U20 2 : 0 Cuba U20 HT 2 - 0 4 - 4 0 - 1 XMEN 1.10 0/0.5 0.70 0.78 2.5/3 1.03",
-      "rooms": [
-        {
-          "url": "https://socolivekj.cc/truc-tiep/haiti-u20-vs-cuba-u20-luc-0400-ngay-29-07-2026/",
-          "blv": "XMEN",
-          "blv_id": ""
-        }
-      ],
-      "streams": [
-        {
-          "url": "https://live2.streambylivepulse.com/live/channel13.flv",
-          "queue_room_key": "__base__",
-          "room_url": "https://socolivekj.cc/truc-tiep/haiti-u20-vs-cuba-u20-luc-0400-ngay-29-07-2026/",
-          "blv": "Nguồn phụ 1",
-          "blv_id": "",
-          "source_id": "",
-          "source_provenance": [
-            "cdp/request",
-            "cdp/response",
-            "harvest-final",
-            "harvest-round-1",
-            "harvest-round-2",
-            "harvest-round-3",
-            "harvest-round-4",
-            "harvest-round-5",
-            "harvest-round-6",
-            "harvest-round-7",
-            "harvest-round-8",
-            "request/fetch",
-            "response/200"
-          ],
-          "playback_referer": "",
-          "playback_origin": "",
-          "playback_user_agent": "",
-          "api_player_endpoint": "",
-          "api_source_mode": "",
-          "source_confidence": "network",
-          "mapping_mode": "stream-source-id",
-          "discovered_from_room_url": "https://socolivekj.cc/truc-tiep/haiti-u20-vs-cuba-u20-luc-0400-ngay-29-07-2026/",
-          "discovered_from_blv": "XMEN",
-          "discovered_at": "2026-07-29T02:31:41.729424+07:00",
-          "valid_until": "",
-          "is_expired": false
-        }
-      ],
-      "room_results": [
-        {
-          "url": "https://socolivekj.cc/truc-tiep/haiti-u20-vs-cuba-u20-luc-0400-ngay-29-07-2026/",
-          "blv": "XMEN",
-          "blv_id": "",
-          "streams": [
-            "https://live2.streambylivepulse.com/live/channel13.flv"
-          ],
-          "stream_sources": {
-            "https://live2.streambylivepulse.com/live/channel13.flv": [
-              "cdp/request",
-              "cdp/response",
-              "harvest-final",
-              "harvest-round-1",
-              "harvest-round-2",
-              "harvest-round-3",
-              "harvest-round-4",
-              "harvest-round-5",
-              "harvest-round-6",
-              "harvest-round-7",
-              "harvest-round-8",
-              "request/fetch",
-              "response/200"
-            ]
-          },
-          "stream_headers": {},
-          "stream_first_seen": [
-            "https://live2.streambylivepulse.com/live/channel13.flv"
-          ],
-          "discovered_blv_ids": [],
-          "diagnostics": {
-            "url": "https://socolivekj.cc/truc-tiep/haiti-u20-vs-cuba-u20-luc-0400-ngay-29-07-2026/",
-            "title": "Trực tiếp Haiti U20 vs Cuba U20 full lúc 04:00, ngày 29/07",
-            "h1": "Xem trực tiếp trận đấu Haiti U20 vs Cuba U20 full lúc 04:00, ngày 29/07/2026",
-            "ready_state": "complete",
-            "visibility_state": "visible",
-            "hidden": false,
-            "video_count": 0,
-            "iframe_count": 5,
-            "body_sample": "WC 2026 Lịch Thi Đấu Xem Lại Video Highlight Tỷ Lệ Kèo BXH KQBD Tips Tin Tức Livescore Tuyển Dụng Top Nhà Cái Cược 8xbet WC 2026 Lịch Thi Đấu Xem Lại Video Highlight Tỷ Lệ Kèo BXH KQBD Tips Tin Tức Livescore Tuyển Dụng Top nhà cái Xem trực tiếp trận đấu Haiti U20 vs Cuba U20 full lúc 04:00, ngày 29/07/2026 Phát sóng link trực tuyến Haiti U20 vs Cuba U20 hôm nay tại giải đấu CONCACAF U20 _ _ _ _ _ _ Haiti U20 Cuba U20 Theo bạn thì trận này tài hay xỉu? Tài 0% Xỉu 0% Theo bạn thì trận này đội nào sẽ thắng? Chủ nhà 0% Hòa 0% Đội Khách 0% Anh Em Muốn Tham Gia Đặt Cược Thì Click Vào Quảng Cáo Của 8XBET Để Đăng Ký Đặt Cược Tất Cả Các Trận Đấu Trên Toàn Thế Giới. Nếu anh em gặp tình trạng không vào được web, hãy cài VPN 1.1.1.1 để truy cập ổn định hơn nhé . Châu Á Châu Âu Tài xỉu Phạt góc Chọn nhà cái HIỆP 1 FT Châu Á HIỆP 1 FT Châu Á - - - 0.95 0.5 0.85 Châu Âu HIỆP 1 FT Châu Âu - - - 1.90 3.60 3.30 Tài xỉu HIỆP 1 FT Tài xỉu - - - 0.85 2.5/3 0.95 SỚM FT Phạt góc HIỆP 1 FT Phạt góc - - - 0.825 9 0.975 Trực tiếp Mô phỏng CHIA SẺ Phát sóng trận đấu Haiti U20 vs Cuba U20 full HD lúc 04:00, ngày 29/07/2026 CONCACAF U20 XMEN HD XMEN CHIA SẺ Thông số Diễn biến Đội hình BXH Chat Đối đầu Trận khá",
-            "harvest_rounds": 8,
-            "harvest_window_seconds": 6.319,
-            "main_status": 200,
-            "harvested_stream_count": 1,
-            "harvested_blv_ids": [],
-            "scan_mode": "chromium-fallback",
-            "elapsed_seconds": 7.549
-          },
-          "api_probe": {
-            "enabled": true,
-            "room_status": 200,
-            "active_index": 0,
-            "sources_found": 0,
-            "sources_tried": 0,
-            "valid_stream_count": 0,
-            "source_results": [],
-            "fallback_reason": "list_stream_not_found",
-            "elapsed_seconds": 0.083,
-            "room_content_type": "text/html",
-            "room_elapsed_seconds": 0.077,
-            "room_error": ""
-          },
-          "http_probe": {
-            "api_first": {
-              "enabled": true,
-              "room_status": 200,
-              "active_index": 0,
-              "sources_found": 0,
-              "sources_tried": 0,
-              "valid_stream_count": 0,
-              "source_results": [],
-              "fallback_reason": "list_stream_not_found",
-              "elapsed_seconds": 0.083,
-              "room_content_type": "text/html",
-              "room_elapsed_seconds": 0.077,
-              "room_error": ""
-            },
-            "legacy_http": {
-              "enabled": false,
-              "status": null,
-              "elapsed_seconds": 0.0,
-              "error": ""
-            }
-          },
-          "errors": [
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED"
-          ],
-          "failed_requests": [
-            "stylesheet https://fonts.googleapis.com/css2?family=Bangers&family=Oswald:wght@400;500;700&family=Raleway:wght@400;500;700&family=Roboto+Condensed:wght@300;400;700&display=swap | net::ERR_FAILED",
-            "stylesheet https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0 | net::ERR_FAILED",
-            "stylesheet https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css | net::ERR_FAILED",
-            "stylesheet https://socolivekj.cc/wp-content/plugins/widget-options/assets/css/widget-options.css?ver=4.0.6.1 | net::ERR_FAILED",
-            "stylesheet https://socolivekj.cc/wp-content/plugins/wp-pagenavi/pagenavi-css.css?ver=2.70 | net::ERR_FAILED",
-            "stylesheet https://socolivekj.cc/wp-content/themes/bongda/dist/styles/bootstrap.min.css?ver=1745376853 | net::ERR_FAILED",
-            "stylesheet https://socolivekj.cc/wp-content/themes/bongda/dist/styles/main.css?ver=1781184173 | net::ERR_FAILED",
-            "stylesheet https://socolivekj.cc/wp-content/themes/bongda/dist/styles/pages/single-live.css?ver=1784627923 | net::ERR_FAILED",
-            "image https://socolivekj.cc/wp-content/themes/bongda/dist/images/logo-socolive-tv-official-v2.png | net::ERR_FAILED",
-            "image https://socolivekj.cc/wp-content/themes/bongda/dist/images/wc-2026/menu-wc.svg | net::ERR_FAILED",
-            "image https://socolivekj.cc/wp-content/themes/bongda/dist/images/closemenu.png | net::ERR_FAILED",
-            "image https://imgts.sportpulseapiz.com/football/team/1l4rjnh62p1m7vx/image/small | net::ERR_FAILED",
-            "stylesheet https://socolivekj.cc/wp-content/plugins/api-sport/public/css/match_detail.css?id=0671c88cfbad4335394b897262a0d662 | net::ERR_FAILED",
-            "image https://imgts.sportpulseapiz.com/football/team/4wyrn4h8pknq86p/image/small | net::ERR_FAILED",
-            "image https://socolivekj.cc/wp-content/themes/bongda/dist/images/company/21-1.png | net::ERR_FAILED"
-          ],
-          "http_errors": []
-        }
-      ],
-      "attempted_room_ids": [],
-      "coverage": {
-        "found_streams": 1,
-        "found_blv_ids": [],
-        "goal": 2,
-        "source_goal_reached": false,
-        "room_queue_complete": true,
-        "complete": true,
-        "max_streams_per_blv": 2,
-        "total_explicit_blv_rooms": 0,
-        "pending_room_keys": [],
-        "room_progress": {
-          "__base__": {
-            "key": "__base__",
-            "url": "https://socolivekj.cc/truc-tiep/haiti-u20-vs-cuba-u20-luc-0400-ngay-29-07-2026/",
-            "blv": "XMEN",
-            "blv_id": "",
-            "status": "success",
-            "attempts": 1,
-            "attempts_total": 1,
-            "ever_attempted": true,
-            "valid_stream_ever_found": true,
-            "needs_token_refresh": false,
-            "completion_reason": "valid_stream",
-            "rate_limit_hits": 0,
-            "last_http_status": 200,
-            "last_stream_count": 1,
-            "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
-          }
-        }
-      },
-      "errors": [],
-      "match_name": "Haiti U20 vs Cuba U20",
-      "scheduled_at": "2026-07-29T04:00:00+07:00",
-      "room_progress": {
-        "__base__": {
-          "key": "__base__",
-          "url": "https://socolivekj.cc/truc-tiep/haiti-u20-vs-cuba-u20-luc-0400-ngay-29-07-2026/",
-          "blv": "XMEN",
-          "blv_id": "",
-          "status": "success",
-          "attempts": 1,
-          "attempts_total": 1,
-          "ever_attempted": true,
-          "valid_stream_ever_found": true,
-          "needs_token_refresh": false,
-          "completion_reason": "valid_stream",
-          "rate_limit_hits": 0,
-          "last_http_status": 200,
-          "last_stream_count": 1,
-          "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
-        }
-      }
-    },
-    {
-      "base_url": "https://socolivekj.cc/truc-tiep/union-magdalena-vs-ind-santa-fe-luc-0600-ngay-29-07-2026/",
-      "raw_title": "Union Magdalena vs Ind. Santa Fe",
-      "home_team": "Union Magdalena",
-      "away_team": "Ind. Santa Fe",
-      "home_logo": "https://imgts.sportpulseapiz.com/football/team/dn1m1gh446pmoep/image/small",
-      "away_logo": "https://imgts.sportpulseapiz.com/football/team/jednm9wh30nryox/image/small",
-      "time_text": "06:00",
-      "date_text": "29/07",
-      "status": "",
-      "card_text": "COLOMBIAN COPA BETPLAY DIMAYOR 06:00 - 29.07 Union Magdalena Ind. Santa Fe 2 - 0 0 - 1 2 - 2 SILVA 1.03 0/0.5 0.78 1.00 2.5 0.80",
-      "rooms": [
-        {
-          "url": "https://socolivekj.cc/truc-tiep/union-magdalena-vs-ind-santa-fe-luc-0600-ngay-29-07-2026/",
-          "blv": "SILVA",
-          "blv_id": ""
-        }
-      ],
-      "streams": [
-        {
-          "url": "https://live2.streambylivepulse.com/live/channel20.flv",
-          "queue_room_key": "__base__",
-          "room_url": "https://socolivekj.cc/truc-tiep/union-magdalena-vs-ind-santa-fe-luc-0600-ngay-29-07-2026/",
-          "blv": "Nguồn phụ 1",
-          "blv_id": "",
-          "source_id": "",
-          "source_provenance": [
-            "cdp/request",
-            "cdp/response",
-            "harvest-final",
-            "harvest-round-1",
-            "harvest-round-2",
-            "harvest-round-3",
-            "harvest-round-4",
-            "harvest-round-5",
-            "harvest-round-6",
-            "harvest-round-7",
-            "harvest-round-8",
-            "harvest-round-9",
-            "request/fetch",
-            "response/200"
-          ],
-          "playback_referer": "",
-          "playback_origin": "",
-          "playback_user_agent": "",
-          "api_player_endpoint": "",
-          "api_source_mode": "",
-          "source_confidence": "network",
-          "mapping_mode": "stream-source-id",
-          "discovered_from_room_url": "https://socolivekj.cc/truc-tiep/union-magdalena-vs-ind-santa-fe-luc-0600-ngay-29-07-2026/",
-          "discovered_from_blv": "SILVA",
-          "discovered_at": "2026-07-29T04:01:38.067429+07:00",
-          "valid_until": "",
-          "is_expired": false
-        }
-      ],
-      "room_results": [
-        {
-          "url": "https://socolivekj.cc/truc-tiep/union-magdalena-vs-ind-santa-fe-luc-0600-ngay-29-07-2026/",
-          "blv": "SILVA",
-          "blv_id": "",
-          "streams": [
-            "https://live2.streambylivepulse.com/live/channel20.flv"
-          ],
-          "stream_sources": {
-            "https://live2.streambylivepulse.com/live/channel20.flv": [
-              "cdp/request",
-              "cdp/response",
-              "harvest-final",
-              "harvest-round-1",
-              "harvest-round-2",
-              "harvest-round-3",
-              "harvest-round-4",
-              "harvest-round-5",
-              "harvest-round-6",
-              "harvest-round-7",
-              "harvest-round-8",
-              "harvest-round-9",
-              "request/fetch",
-              "response/200"
-            ]
-          },
-          "stream_headers": {},
-          "stream_first_seen": [
-            "https://live2.streambylivepulse.com/live/channel20.flv"
-          ],
-          "discovered_blv_ids": [],
-          "diagnostics": {
-            "url": "https://socolivekj.cc/truc-tiep/union-magdalena-vs-ind-santa-fe-luc-0600-ngay-29-07-2026/",
-            "title": "Trực tiếp Union Magdalena vs Ind. Santa Fe full lúc 06:00, ngày 29/07",
-            "h1": "Xem trực tiếp trận đấu Union Magdalena vs Ind. Santa Fe full lúc 06:00, ngày 29/07/2026",
-            "ready_state": "complete",
-            "visibility_state": "visible",
-            "hidden": false,
-            "video_count": 0,
-            "iframe_count": 5,
-            "body_sample": "WC 2026 Lịch Thi Đấu Xem Lại Video Highlight Tỷ Lệ Kèo BXH KQBD Tips Tin Tức Livescore Tuyển Dụng Top Nhà Cái Cược 8xbet WC 2026 Lịch Thi Đấu Xem Lại Video Highlight Tỷ Lệ Kèo BXH KQBD Tips Tin Tức Livescore Tuyển Dụng Top nhà cái Xem trực tiếp trận đấu Union Magdalena vs Ind. Santa Fe full lúc 06:00, ngày 29/07/2026 Phát sóng link trực tuyến Union Magdalena vs Ind. Santa Fe hôm nay tại giải đấu Colombian Copa BetPlay DIMAYOR _ _ _ _ _ _ Union Magdalena Ind. Santa Fe Theo bạn thì trận này tài hay xỉu? Tài 0% Xỉu 0% Theo bạn thì trận này đội nào sẽ thắng? Chủ nhà 0% Hòa 0% Đội Khách 0% Anh Em Muốn Tham Gia Đặt Cược Thì Click Vào Quảng Cáo Của 8XBET Để Đăng Ký Đặt Cược Tất Cả Các Trận Đấu Trên Toàn Thế Giới. Nếu anh em gặp tình trạng không vào được web, hãy cài VPN 1.1.1.1 để truy cập ổn định hơn nhé . Châu Á Châu Âu Tài xỉu Phạt góc Chọn nhà cái HIỆP 1 FT Châu Á HIỆP 1 FT Châu Á 0.68 0/0.5 1.15 1.03 0/0.5 0.78 Châu Âu HIỆP 1 FT Châu Âu 4 2.2 2.75 3.25 3.40 2.10 Tài xỉu HIỆP 1 FT Tài xỉu 0.93 1 0.88 1.00 2.5 0.80 SỚM FT Phạt góc HIỆP 1 FT Phạt góc - - - - - - Trực tiếp Mô phỏng CHIA SẺ Phát sóng trận đấu Union Magdalena vs Ind. Santa Fe full HD lúc 06:00, ngày 29/07/2026 Colombian Co",
-            "harvest_rounds": 9,
-            "harvest_window_seconds": 7.058,
-            "main_status": 200,
-            "harvested_stream_count": 1,
-            "harvested_blv_ids": [],
-            "scan_mode": "chromium-fallback",
-            "elapsed_seconds": 8.338
-          },
-          "api_probe": {
-            "enabled": true,
-            "room_status": 200,
-            "active_index": 0,
-            "sources_found": 0,
-            "sources_tried": 0,
-            "valid_stream_count": 0,
-            "source_results": [],
-            "fallback_reason": "list_stream_not_found",
-            "elapsed_seconds": 0.05,
-            "room_content_type": "text/html",
-            "room_elapsed_seconds": 0.045,
-            "room_error": ""
-          },
-          "http_probe": {
-            "api_first": {
-              "enabled": true,
-              "room_status": 200,
-              "active_index": 0,
-              "sources_found": 0,
-              "sources_tried": 0,
-              "valid_stream_count": 0,
-              "source_results": [],
-              "fallback_reason": "list_stream_not_found",
-              "elapsed_seconds": 0.05,
-              "room_content_type": "text/html",
-              "room_elapsed_seconds": 0.045,
-              "room_error": ""
-            },
-            "legacy_http": {
-              "enabled": false,
-              "status": null,
-              "elapsed_seconds": 0.0,
-              "error": ""
-            }
-          },
-          "errors": [
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED"
-          ],
-          "failed_requests": [
-            "stylesheet https://fonts.googleapis.com/css2?family=Bangers&family=Oswald:wght@400;500;700&family=Raleway:wght@400;500;700&family=Roboto+Condensed:wght@300;400;700&display=swap | net::ERR_FAILED",
-            "stylesheet https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0 | net::ERR_FAILED",
-            "stylesheet https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css | net::ERR_FAILED",
-            "stylesheet https://socolivekj.cc/wp-content/plugins/widget-options/assets/css/widget-options.css?ver=4.0.6.1 | net::ERR_FAILED",
-            "stylesheet https://socolivekj.cc/wp-content/plugins/wp-pagenavi/pagenavi-css.css?ver=2.70 | net::ERR_FAILED",
-            "stylesheet https://socolivekj.cc/wp-content/themes/bongda/dist/styles/bootstrap.min.css?ver=1745376853 | net::ERR_FAILED",
-            "stylesheet https://socolivekj.cc/wp-content/themes/bongda/dist/styles/main.css?ver=1781184173 | net::ERR_FAILED",
-            "stylesheet https://socolivekj.cc/wp-content/themes/bongda/dist/styles/pages/single-live.css?ver=1784627923 | net::ERR_FAILED",
-            "image https://socolivekj.cc/wp-content/themes/bongda/dist/images/logo-socolive-tv-official-v2.png | net::ERR_FAILED",
-            "image https://socolivekj.cc/wp-content/themes/bongda/dist/images/wc-2026/menu-wc.svg | net::ERR_FAILED",
-            "image https://socolivekj.cc/wp-content/themes/bongda/dist/images/closemenu.png | net::ERR_FAILED",
-            "image https://imgts.sportpulseapiz.com/football/team/dn1m1gh446pmoep/image/small | net::ERR_FAILED",
-            "stylesheet https://socolivekj.cc/wp-content/plugins/api-sport/public/css/match_detail.css?id=0671c88cfbad4335394b897262a0d662 | net::ERR_FAILED",
-            "image https://imgts.sportpulseapiz.com/football/team/jednm9wh30nryox/image/small | net::ERR_FAILED",
-            "image https://socolivekj.cc/wp-content/themes/bongda/dist/images/company/21-1.png | net::ERR_FAILED"
-          ],
-          "http_errors": []
-        }
-      ],
-      "attempted_room_ids": [],
-      "coverage": {
-        "found_streams": 1,
-        "found_blv_ids": [],
-        "goal": 2,
-        "source_goal_reached": false,
-        "room_queue_complete": true,
-        "complete": true,
-        "max_streams_per_blv": 2,
-        "total_explicit_blv_rooms": 0,
-        "pending_room_keys": [],
-        "room_progress": {
-          "__base__": {
-            "key": "__base__",
-            "url": "https://socolivekj.cc/truc-tiep/union-magdalena-vs-ind-santa-fe-luc-0600-ngay-29-07-2026/",
-            "blv": "SILVA",
-            "blv_id": "",
-            "status": "success",
-            "attempts": 1,
-            "attempts_total": 1,
-            "ever_attempted": true,
-            "valid_stream_ever_found": true,
-            "needs_token_refresh": false,
-            "completion_reason": "valid_stream",
-            "rate_limit_hits": 0,
-            "last_http_status": 200,
-            "last_stream_count": 1,
-            "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
-          }
-        }
-      },
-      "errors": [],
-      "match_name": "Union Magdalena vs Ind. Santa Fe",
-      "scheduled_at": "2026-07-29T06:00:00+07:00",
-      "room_progress": {
-        "__base__": {
-          "key": "__base__",
-          "url": "https://socolivekj.cc/truc-tiep/union-magdalena-vs-ind-santa-fe-luc-0600-ngay-29-07-2026/",
-          "blv": "SILVA",
-          "blv_id": "",
-          "status": "success",
-          "attempts": 1,
-          "attempts_total": 1,
-          "ever_attempted": true,
-          "valid_stream_ever_found": true,
-          "needs_token_refresh": false,
-          "completion_reason": "valid_stream",
-          "rate_limit_hits": 0,
-          "last_http_status": 200,
-          "last_stream_count": 1,
-          "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
-        }
-      }
-    },
-    {
       "base_url": "https://socolivekj.cc/truc-tiep/sportivo-2-de-mayo-vs-cerro-porteno-luc-0430-ngay-29-07-2026/",
       "raw_title": "Sportivo 2 de Mayo vs Cerro Porteno",
       "home_team": "Sportivo 2 de Mayo",
@@ -2212,8 +1028,8 @@
       "away_logo": "https://imgts.sportpulseapiz.com/football/team/v2y8m4zhk64ql07/image/small",
       "time_text": "04:30",
       "date_text": "29/07",
-      "status": "",
-      "card_text": "HẠNG NHẤT PARAGUAY HT 04:30 - 29.07 Sportivo 2 de Mayo 1 : 0 Cerro Porteno HT 1 - 0 3 - 1 0 - 1 1.05 0/0.5 0.75 0.73 2 1.08",
+      "status": "Hiệp 2",
+      "card_text": "HẠNG NHẤT PARAGUAY Hiệp 2: 70' 04:30 - 29.07 Sportivo 2 de Mayo 2 : 1 Cerro Porteno HT 1 - 0 3 - 2 1 - 1 0.65 0/0.5 1.20 0.80 3.5 1.00",
       "rooms": [
         {
           "url": "https://socolivekj.cc/truc-tiep/sportivo-2-de-mayo-vs-cerro-porteno-luc-0430-ngay-29-07-2026/",
@@ -2452,8 +1268,8 @@
       "away_logo": "https://imgts.sportpulseapiz.com/football/team/318q66ho339qo9j/image/small",
       "time_text": "04:30",
       "date_text": "29/07",
-      "status": "",
-      "card_text": "HẠNG NHẤT EL SALVADOR HT 04:30 - 29.07 CD Cacahuatique 2 : 2 Atletico Balboa HT 2 - 2 3 - 1 2 - 2 1.03 0/0.5 0.78 0.83 5/5.5 0.98",
+      "status": "Hiệp 2",
+      "card_text": "HẠNG NHẤT EL SALVADOR Hiệp 2: 66' 04:30 - 29.07 CD Cacahuatique 4 : 2 Atletico Balboa HT 2 - 2 7 - 2 2 - 3 0.78 0 1.03 1.00 7 0.80",
       "rooms": [
         {
           "url": "https://socolivekj.cc/truc-tiep/cd-cacahuatique-vs-atletico-balboa-luc-0430-ngay-29-07-2026/",
@@ -2693,8 +1509,8 @@
       "away_logo": "https://imgts.sportpulseapiz.com/football/team/4wyrn4h88gxq86p/image/small",
       "time_text": "06:15",
       "date_text": "29/07",
-      "status": "",
-      "card_text": "COLOMBIAN COPA BETPLAY DIMAYOR 06:15 - 29.07 Deportes Quindio Deportes Tolima 2 - 1 3 - 1 1 - 3 TONI 1.03 0/0.5 0.78 0.80 1.5/2 1.00",
+      "status": "Sắp diễn ra",
+      "card_text": "COLOMBIAN COPA BETPLAY DIMAYOR Sắp diễn ra 06:15 - 29.07 Deportes Quindio Deportes Tolima 2 - 1 3 - 1 1 - 3 TONI 0.98 0/0.5 0.83 0.80 1.5/2 1.00",
       "rooms": [
         {
           "url": "https://socolivekj.cc/truc-tiep/deportes-quindio-vs-deportes-tolima-luc-0615-ngay-29-07-2026/",
@@ -2908,6 +1724,954 @@
           "key": "__base__",
           "url": "https://socolivekj.cc/truc-tiep/deportes-quindio-vs-deportes-tolima-luc-0615-ngay-29-07-2026/",
           "blv": "TONI",
+          "blv_id": "",
+          "status": "success",
+          "attempts": 1,
+          "attempts_total": 1,
+          "ever_attempted": true,
+          "valid_stream_ever_found": true,
+          "needs_token_refresh": false,
+          "completion_reason": "valid_stream",
+          "rate_limit_hits": 0,
+          "last_http_status": 200,
+          "last_stream_count": 1,
+          "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
+        }
+      }
+    },
+    {
+      "base_url": "https://socolivekj.cc/truc-tiep/club-atletico-tigre-vs-nacional-montevideo-luc-0500-ngay-29-07-2026/",
+      "raw_title": "Club Atletico Tigre vs Nacional Montevideo",
+      "home_team": "Club Atletico Tigre",
+      "away_team": "Nacional Montevideo",
+      "home_logo": "https://imgts.sportpulseapiz.com/football/team/v2y8m4zhd7dql07/image/small",
+      "away_logo": "https://imgts.sportpulseapiz.com/football/team/k82rekhv9xprepz/image/small",
+      "time_text": "05:00",
+      "date_text": "29/07",
+      "status": "",
+      "card_text": "SIÊU CÚP NAM MỸ HT 05:00 - 29.07 Club Atletico Tigre 0 : 2 Nacional Montevideo HT 0 - 2 1 - 4 0 - 0 FILIP 0.83 0 0.98 0.80 3 1.00",
+      "rooms": [
+        {
+          "url": "https://socolivekj.cc/truc-tiep/club-atletico-tigre-vs-nacional-montevideo-luc-0500-ngay-29-07-2026/",
+          "blv": "FILIP",
+          "blv_id": ""
+        }
+      ],
+      "streams": [
+        {
+          "url": "https://live2.streambylivepulse.com/live/channel19.flv",
+          "queue_room_key": "__base__",
+          "room_url": "https://socolivekj.cc/truc-tiep/club-atletico-tigre-vs-nacional-montevideo-luc-0500-ngay-29-07-2026/",
+          "blv": "Nguồn phụ 1",
+          "blv_id": "",
+          "source_id": "",
+          "source_provenance": [
+            "cdp/request",
+            "cdp/response",
+            "harvest-final",
+            "harvest-round-1",
+            "harvest-round-2",
+            "harvest-round-3",
+            "harvest-round-4",
+            "harvest-round-5",
+            "harvest-round-6",
+            "harvest-round-7",
+            "harvest-round-8",
+            "request/fetch",
+            "response/200"
+          ],
+          "playback_referer": "",
+          "playback_origin": "",
+          "playback_user_agent": "",
+          "api_player_endpoint": "",
+          "api_source_mode": "",
+          "source_confidence": "network",
+          "mapping_mode": "stream-source-id",
+          "discovered_from_room_url": "https://socolivekj.cc/truc-tiep/club-atletico-tigre-vs-nacional-montevideo-luc-0500-ngay-29-07-2026/",
+          "discovered_from_blv": "FILIP",
+          "discovered_at": "2026-07-29T03:01:42.358034+07:00",
+          "valid_until": "",
+          "is_expired": false
+        }
+      ],
+      "room_results": [
+        {
+          "url": "https://socolivekj.cc/truc-tiep/club-atletico-tigre-vs-nacional-montevideo-luc-0500-ngay-29-07-2026/",
+          "blv": "FILIP",
+          "blv_id": "",
+          "streams": [
+            "https://live2.streambylivepulse.com/live/channel19.flv"
+          ],
+          "stream_sources": {
+            "https://live2.streambylivepulse.com/live/channel19.flv": [
+              "cdp/request",
+              "cdp/response",
+              "harvest-final",
+              "harvest-round-1",
+              "harvest-round-2",
+              "harvest-round-3",
+              "harvest-round-4",
+              "harvest-round-5",
+              "harvest-round-6",
+              "harvest-round-7",
+              "harvest-round-8",
+              "request/fetch",
+              "response/200"
+            ]
+          },
+          "stream_headers": {},
+          "stream_first_seen": [
+            "https://live2.streambylivepulse.com/live/channel19.flv"
+          ],
+          "discovered_blv_ids": [],
+          "diagnostics": {
+            "url": "https://socolivekj.cc/truc-tiep/club-atletico-tigre-vs-nacional-montevideo-luc-0500-ngay-29-07-2026/",
+            "title": "Trực tiếp Club Atletico Tigre vs Nacional Montevideo full lúc 05:00, ngày 29/07",
+            "h1": "Xem trực tiếp trận đấu Club Atletico Tigre vs Nacional Montevideo full lúc 05:00, ngày 29/07/2026",
+            "ready_state": "complete",
+            "visibility_state": "visible",
+            "hidden": false,
+            "video_count": 0,
+            "iframe_count": 5,
+            "body_sample": "WC 2026 Lịch Thi Đấu Xem Lại Video Highlight Tỷ Lệ Kèo BXH KQBD Tips Tin Tức Livescore Tuyển Dụng Top Nhà Cái Cược 8xbet WC 2026 Lịch Thi Đấu Xem Lại Video Highlight Tỷ Lệ Kèo BXH KQBD Tips Tin Tức Livescore Tuyển Dụng Top nhà cái Xem trực tiếp trận đấu Club Atletico Tigre vs Nacional Montevideo full lúc 05:00, ngày 29/07/2026 Phát sóng link trực tuyến Club Atletico Tigre vs Nacional Montevideo hôm nay tại giải đấu Siêu Cúp Nam Mỹ _ _ _ _ _ _ Club Atletico Tigre Nacional Montevideo Lượt đi 3 - 0 Theo bạn thì trận này tài hay xỉu? Tài 0% Xỉu 0% Theo bạn thì trận này đội nào sẽ thắng? Chủ nhà 0% Hòa 0% Đội Khách 0% Anh Em Muốn Tham Gia Đặt Cược Thì Click Vào Quảng Cáo Của 8XBET Để Đăng Ký Đặt Cược Tất Cả Các Trận Đấu Trên Toàn Thế Giới. Nếu anh em gặp tình trạng không vào được web, hãy cài VPN 1.1.1.1 để truy cập ổn định hơn nhé . Châu Á Châu Âu Tài xỉu Phạt góc Chọn nhà cái HIỆP 1 FT Châu Á HIỆP 1 FT Châu Á 1.25 0/0.5 0.63 0.85 0/0.5 1.00 Châu Âu HIỆP 1 FT Châu Âu 2.88 2 4.33 2.15 3.25 3.60 Tài xỉu HIỆP 1 FT Tài xỉu 0.73 0.5/1 1.08 0.78 2 1.10 SỚM FT Phạt góc HIỆP 1 FT Phạt góc - - - 0.775 8 1.025 Trực tiếp Mô phỏng CHIA SẺ Phát sóng trận đấu Club Atletico Tigre vs Nacional Montevid",
+            "harvest_rounds": 8,
+            "harvest_window_seconds": 6.29,
+            "main_status": 200,
+            "harvested_stream_count": 1,
+            "harvested_blv_ids": [],
+            "scan_mode": "chromium-fallback",
+            "elapsed_seconds": 7.387
+          },
+          "api_probe": {
+            "enabled": true,
+            "room_status": 200,
+            "active_index": 0,
+            "sources_found": 0,
+            "sources_tried": 0,
+            "valid_stream_count": 0,
+            "source_results": [],
+            "fallback_reason": "list_stream_not_found",
+            "elapsed_seconds": 0.068,
+            "room_content_type": "text/html",
+            "room_elapsed_seconds": 0.062,
+            "room_error": ""
+          },
+          "http_probe": {
+            "api_first": {
+              "enabled": true,
+              "room_status": 200,
+              "active_index": 0,
+              "sources_found": 0,
+              "sources_tried": 0,
+              "valid_stream_count": 0,
+              "source_results": [],
+              "fallback_reason": "list_stream_not_found",
+              "elapsed_seconds": 0.068,
+              "room_content_type": "text/html",
+              "room_elapsed_seconds": 0.062,
+              "room_error": ""
+            },
+            "legacy_http": {
+              "enabled": false,
+              "status": null,
+              "elapsed_seconds": 0.0,
+              "error": ""
+            }
+          },
+          "errors": [
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED"
+          ],
+          "failed_requests": [
+            "stylesheet https://fonts.googleapis.com/css2?family=Bangers&family=Oswald:wght@400;500;700&family=Raleway:wght@400;500;700&family=Roboto+Condensed:wght@300;400;700&display=swap | net::ERR_FAILED",
+            "stylesheet https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0 | net::ERR_FAILED",
+            "stylesheet https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css | net::ERR_FAILED",
+            "stylesheet https://socolivekj.cc/wp-content/plugins/widget-options/assets/css/widget-options.css?ver=4.0.6.1 | net::ERR_FAILED",
+            "stylesheet https://socolivekj.cc/wp-content/plugins/wp-pagenavi/pagenavi-css.css?ver=2.70 | net::ERR_FAILED",
+            "stylesheet https://socolivekj.cc/wp-content/themes/bongda/dist/styles/bootstrap.min.css?ver=1745376853 | net::ERR_FAILED",
+            "stylesheet https://socolivekj.cc/wp-content/themes/bongda/dist/styles/main.css?ver=1781184173 | net::ERR_FAILED",
+            "stylesheet https://socolivekj.cc/wp-content/themes/bongda/dist/styles/pages/single-live.css?ver=1784627923 | net::ERR_FAILED",
+            "image https://socolivekj.cc/wp-content/themes/bongda/dist/images/logo-socolive-tv-official-v2.png | net::ERR_FAILED",
+            "image https://socolivekj.cc/wp-content/themes/bongda/dist/images/wc-2026/menu-wc.svg | net::ERR_FAILED",
+            "image https://socolivekj.cc/wp-content/themes/bongda/dist/images/closemenu.png | net::ERR_FAILED",
+            "image https://imgts.sportpulseapiz.com/football/team/v2y8m4zhd7dql07/image/small | net::ERR_FAILED",
+            "stylesheet https://socolivekj.cc/wp-content/plugins/api-sport/public/css/match_detail.css?id=0671c88cfbad4335394b897262a0d662 | net::ERR_FAILED",
+            "image https://imgts.sportpulseapiz.com/football/team/k82rekhv9xprepz/image/small | net::ERR_FAILED",
+            "image https://socolivekj.cc/wp-content/themes/bongda/dist/images/company/21-1.png | net::ERR_FAILED"
+          ],
+          "http_errors": []
+        }
+      ],
+      "attempted_room_ids": [],
+      "coverage": {
+        "found_streams": 1,
+        "found_blv_ids": [],
+        "goal": 2,
+        "source_goal_reached": false,
+        "room_queue_complete": true,
+        "complete": true,
+        "max_streams_per_blv": 2,
+        "total_explicit_blv_rooms": 0,
+        "pending_room_keys": [],
+        "room_progress": {
+          "__base__": {
+            "key": "__base__",
+            "url": "https://socolivekj.cc/truc-tiep/club-atletico-tigre-vs-nacional-montevideo-luc-0500-ngay-29-07-2026/",
+            "blv": "FILIP",
+            "blv_id": "",
+            "status": "success",
+            "attempts": 1,
+            "attempts_total": 1,
+            "ever_attempted": true,
+            "valid_stream_ever_found": true,
+            "needs_token_refresh": false,
+            "completion_reason": "valid_stream",
+            "rate_limit_hits": 0,
+            "last_http_status": 200,
+            "last_stream_count": 1,
+            "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
+          }
+        }
+      },
+      "errors": [],
+      "match_name": "Club Atletico Tigre vs Nacional Montevideo",
+      "scheduled_at": "2026-07-29T05:00:00+07:00",
+      "room_progress": {
+        "__base__": {
+          "key": "__base__",
+          "url": "https://socolivekj.cc/truc-tiep/club-atletico-tigre-vs-nacional-montevideo-luc-0500-ngay-29-07-2026/",
+          "blv": "FILIP",
+          "blv_id": "",
+          "status": "success",
+          "attempts": 1,
+          "attempts_total": 1,
+          "ever_attempted": true,
+          "valid_stream_ever_found": true,
+          "needs_token_refresh": false,
+          "completion_reason": "valid_stream",
+          "rate_limit_hits": 0,
+          "last_http_status": 200,
+          "last_stream_count": 1,
+          "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
+        }
+      }
+    },
+    {
+      "base_url": "https://socolivekj.cc/truc-tiep/banfield-vs-sarmiento-junin-luc-0500-ngay-29-07-2026/",
+      "raw_title": "Banfield vs Sarmiento Junin",
+      "home_team": "Banfield",
+      "away_team": "Sarmiento Junin",
+      "home_logo": "https://imgts.sportpulseapiz.com/football/team/p3glrw7hevlqdyj/image/small",
+      "away_logo": "https://imgts.sportpulseapiz.com/football/team/z318q66hd9eqo9j/image/small",
+      "time_text": "05:00",
+      "date_text": "29/07",
+      "status": "",
+      "card_text": "VĐQG ARGENTINA HT 05:00 - 29.07 Banfield 0 : 0 Sarmiento Junin HT 0 - 0 2 - 2 0 - 0 RIO 1.05 0/0.5 0.75 0.83 1 0.98",
+      "rooms": [
+        {
+          "url": "https://socolivekj.cc/truc-tiep/banfield-vs-sarmiento-junin-luc-0500-ngay-29-07-2026/",
+          "blv": "RIO",
+          "blv_id": ""
+        }
+      ],
+      "streams": [
+        {
+          "url": "https://live2.streambylivepulse.com/live/channel16.flv",
+          "queue_room_key": "__base__",
+          "room_url": "https://socolivekj.cc/truc-tiep/banfield-vs-sarmiento-junin-luc-0500-ngay-29-07-2026/",
+          "blv": "Nguồn phụ 1",
+          "blv_id": "",
+          "source_id": "",
+          "source_provenance": [
+            "cdp/request",
+            "cdp/response",
+            "harvest-final",
+            "harvest-round-1",
+            "harvest-round-2",
+            "harvest-round-3",
+            "harvest-round-4",
+            "harvest-round-5",
+            "harvest-round-6",
+            "harvest-round-7",
+            "harvest-round-8",
+            "harvest-round-9",
+            "request/fetch",
+            "response/200"
+          ],
+          "playback_referer": "",
+          "playback_origin": "",
+          "playback_user_agent": "",
+          "api_player_endpoint": "",
+          "api_source_mode": "",
+          "source_confidence": "network",
+          "mapping_mode": "stream-source-id",
+          "discovered_from_room_url": "https://socolivekj.cc/truc-tiep/banfield-vs-sarmiento-junin-luc-0500-ngay-29-07-2026/",
+          "discovered_from_blv": "RIO",
+          "discovered_at": "2026-07-29T03:01:32.948488+07:00",
+          "valid_until": "",
+          "is_expired": false
+        }
+      ],
+      "room_results": [
+        {
+          "url": "https://socolivekj.cc/truc-tiep/banfield-vs-sarmiento-junin-luc-0500-ngay-29-07-2026/",
+          "blv": "RIO",
+          "blv_id": "",
+          "streams": [
+            "https://live2.streambylivepulse.com/live/channel16.flv"
+          ],
+          "stream_sources": {
+            "https://live2.streambylivepulse.com/live/channel16.flv": [
+              "cdp/request",
+              "cdp/response",
+              "harvest-final",
+              "harvest-round-1",
+              "harvest-round-2",
+              "harvest-round-3",
+              "harvest-round-4",
+              "harvest-round-5",
+              "harvest-round-6",
+              "harvest-round-7",
+              "harvest-round-8",
+              "harvest-round-9",
+              "request/fetch",
+              "response/200"
+            ]
+          },
+          "stream_headers": {},
+          "stream_first_seen": [
+            "https://live2.streambylivepulse.com/live/channel16.flv"
+          ],
+          "discovered_blv_ids": [],
+          "diagnostics": {
+            "url": "https://socolivekj.cc/truc-tiep/banfield-vs-sarmiento-junin-luc-0500-ngay-29-07-2026/",
+            "title": "Trực tiếp Banfield vs Sarmiento Junin full lúc 05:00, ngày 29/07",
+            "h1": "Xem trực tiếp trận đấu Banfield vs Sarmiento Junin full lúc 05:00, ngày 29/07/2026",
+            "ready_state": "complete",
+            "visibility_state": "visible",
+            "hidden": false,
+            "video_count": 0,
+            "iframe_count": 5,
+            "body_sample": "WC 2026 Lịch Thi Đấu Xem Lại Video Highlight Tỷ Lệ Kèo BXH KQBD Tips Tin Tức Livescore Tuyển Dụng Top Nhà Cái Cược 8xbet WC 2026 Lịch Thi Đấu Xem Lại Video Highlight Tỷ Lệ Kèo BXH KQBD Tips Tin Tức Livescore Tuyển Dụng Top nhà cái Xem trực tiếp trận đấu Banfield vs Sarmiento Junin full lúc 05:00, ngày 29/07/2026 Phát sóng link trực tuyến Banfield vs Sarmiento Junin hôm nay tại giải đấu VĐQG Argentina _ _ _ _ _ _ Banfield Sarmiento Junin Theo bạn thì trận này tài hay xỉu? Tài 0% Xỉu 0% Theo bạn thì trận này đội nào sẽ thắng? Chủ nhà 0% Hòa 0% Đội Khách 0% Anh Em Muốn Tham Gia Đặt Cược Thì Click Vào Quảng Cáo Của 8XBET Để Đăng Ký Đặt Cược Tất Cả Các Trận Đấu Trên Toàn Thế Giới. Nếu anh em gặp tình trạng không vào được web, hãy cài VPN 1.1.1.1 để truy cập ổn định hơn nhé . Châu Á Châu Âu Tài xỉu Phạt góc Chọn nhà cái HIỆP 1 FT Châu Á HIỆP 1 FT Châu Á 1.15 0/0.5 0.68 1.05 0.5 0.75 Châu Âu HIỆP 1 FT Châu Âu 2.75 1.95 4.75 2.10 3.00 4.20 Tài xỉu HIỆP 1 FT Tài xỉu 0.80 0.5/1 1.00 0.90 2 0.90 SỚM FT Phạt góc HIỆP 1 FT Phạt góc - - - 0.825 8.5 0.975 Trực tiếp Mô phỏng CHIA SẺ Phát sóng trận đấu Banfield vs Sarmiento Junin full HD lúc 05:00, ngày 29/07/2026 VĐQG Argentina RIO HD RIO CHIA SẺ ",
+            "harvest_rounds": 9,
+            "harvest_window_seconds": 7.12,
+            "main_status": 200,
+            "harvested_stream_count": 1,
+            "harvested_blv_ids": [],
+            "scan_mode": "chromium-fallback",
+            "elapsed_seconds": 8.468
+          },
+          "api_probe": {
+            "enabled": true,
+            "room_status": 200,
+            "active_index": 0,
+            "sources_found": 0,
+            "sources_tried": 0,
+            "valid_stream_count": 0,
+            "source_results": [],
+            "fallback_reason": "list_stream_not_found",
+            "elapsed_seconds": 0.508,
+            "room_content_type": "text/html",
+            "room_elapsed_seconds": 0.502,
+            "room_error": ""
+          },
+          "http_probe": {
+            "api_first": {
+              "enabled": true,
+              "room_status": 200,
+              "active_index": 0,
+              "sources_found": 0,
+              "sources_tried": 0,
+              "valid_stream_count": 0,
+              "source_results": [],
+              "fallback_reason": "list_stream_not_found",
+              "elapsed_seconds": 0.508,
+              "room_content_type": "text/html",
+              "room_elapsed_seconds": 0.502,
+              "room_error": ""
+            },
+            "legacy_http": {
+              "enabled": false,
+              "status": null,
+              "elapsed_seconds": 0.0,
+              "error": ""
+            }
+          },
+          "errors": [
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED"
+          ],
+          "failed_requests": [
+            "stylesheet https://fonts.googleapis.com/css2?family=Bangers&family=Oswald:wght@400;500;700&family=Raleway:wght@400;500;700&family=Roboto+Condensed:wght@300;400;700&display=swap | net::ERR_FAILED",
+            "stylesheet https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0 | net::ERR_FAILED",
+            "stylesheet https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css | net::ERR_FAILED",
+            "stylesheet https://socolivekj.cc/wp-content/plugins/widget-options/assets/css/widget-options.css?ver=4.0.6.1 | net::ERR_FAILED",
+            "stylesheet https://socolivekj.cc/wp-content/plugins/wp-pagenavi/pagenavi-css.css?ver=2.70 | net::ERR_FAILED",
+            "stylesheet https://socolivekj.cc/wp-content/themes/bongda/dist/styles/bootstrap.min.css?ver=1745376853 | net::ERR_FAILED",
+            "stylesheet https://socolivekj.cc/wp-content/themes/bongda/dist/styles/main.css?ver=1781184173 | net::ERR_FAILED",
+            "stylesheet https://socolivekj.cc/wp-content/themes/bongda/dist/styles/pages/single-live.css?ver=1784627923 | net::ERR_FAILED",
+            "image https://socolivekj.cc/wp-content/themes/bongda/dist/images/logo-socolive-tv-official-v2.png | net::ERR_FAILED",
+            "image https://socolivekj.cc/wp-content/themes/bongda/dist/images/wc-2026/menu-wc.svg | net::ERR_FAILED",
+            "image https://socolivekj.cc/wp-content/themes/bongda/dist/images/closemenu.png | net::ERR_FAILED",
+            "image https://imgts.sportpulseapiz.com/football/team/p3glrw7hevlqdyj/image/small | net::ERR_FAILED",
+            "stylesheet https://socolivekj.cc/wp-content/plugins/api-sport/public/css/match_detail.css?id=0671c88cfbad4335394b897262a0d662 | net::ERR_FAILED",
+            "image https://imgts.sportpulseapiz.com/football/team/z318q66hd9eqo9j/image/small | net::ERR_FAILED",
+            "image https://socolivekj.cc/wp-content/themes/bongda/dist/images/company/21-1.png | net::ERR_FAILED"
+          ],
+          "http_errors": []
+        }
+      ],
+      "attempted_room_ids": [],
+      "coverage": {
+        "found_streams": 1,
+        "found_blv_ids": [],
+        "goal": 2,
+        "source_goal_reached": false,
+        "room_queue_complete": true,
+        "complete": true,
+        "max_streams_per_blv": 2,
+        "total_explicit_blv_rooms": 0,
+        "pending_room_keys": [],
+        "room_progress": {
+          "__base__": {
+            "key": "__base__",
+            "url": "https://socolivekj.cc/truc-tiep/banfield-vs-sarmiento-junin-luc-0500-ngay-29-07-2026/",
+            "blv": "RIO",
+            "blv_id": "",
+            "status": "success",
+            "attempts": 1,
+            "attempts_total": 1,
+            "ever_attempted": true,
+            "valid_stream_ever_found": true,
+            "needs_token_refresh": false,
+            "completion_reason": "valid_stream",
+            "rate_limit_hits": 0,
+            "last_http_status": 200,
+            "last_stream_count": 1,
+            "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
+          }
+        }
+      },
+      "errors": [],
+      "match_name": "Banfield vs Sarmiento Junin",
+      "scheduled_at": "2026-07-29T05:00:00+07:00",
+      "room_progress": {
+        "__base__": {
+          "key": "__base__",
+          "url": "https://socolivekj.cc/truc-tiep/banfield-vs-sarmiento-junin-luc-0500-ngay-29-07-2026/",
+          "blv": "RIO",
+          "blv_id": "",
+          "status": "success",
+          "attempts": 1,
+          "attempts_total": 1,
+          "ever_attempted": true,
+          "valid_stream_ever_found": true,
+          "needs_token_refresh": false,
+          "completion_reason": "valid_stream",
+          "rate_limit_hits": 0,
+          "last_http_status": 200,
+          "last_stream_count": 1,
+          "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
+        }
+      }
+    },
+    {
+      "base_url": "https://socolivekj.cc/truc-tiep/san-lorenzo-vs-gimnasia-mendoza-luc-0500-ngay-29-07-2026/",
+      "raw_title": "San Lorenzo vs Gimnasia Mendoza",
+      "home_team": "San Lorenzo",
+      "away_team": "Gimnasia Mendoza",
+      "home_logo": "https://imgts.sportpulseapiz.com/football/team/gpxwrxlh836ryk0/image/small",
+      "away_logo": "https://imgts.sportpulseapiz.com/football/team/jw2r09hlkldrz84/image/small",
+      "time_text": "05:00",
+      "date_text": "29/07",
+      "status": "",
+      "card_text": "VĐQG ARGENTINA HT 05:00 - 29.07 San Lorenzo 0 : 0 Gimnasia Mendoza HT 0 - 0 1 - 2 0 - 0 HIRO 1.10 0/0.5 0.70 0.95 1 0.85",
+      "rooms": [
+        {
+          "url": "https://socolivekj.cc/truc-tiep/san-lorenzo-vs-gimnasia-mendoza-luc-0500-ngay-29-07-2026/",
+          "blv": "HIRO",
+          "blv_id": ""
+        }
+      ],
+      "streams": [
+        {
+          "url": "https://live2.streambylivepulse.com/live/channel14.flv",
+          "queue_room_key": "__base__",
+          "room_url": "https://socolivekj.cc/truc-tiep/san-lorenzo-vs-gimnasia-mendoza-luc-0500-ngay-29-07-2026/",
+          "blv": "Nguồn phụ 1",
+          "blv_id": "",
+          "source_id": "",
+          "source_provenance": [
+            "cdp/request",
+            "cdp/response",
+            "harvest-final",
+            "harvest-round-1",
+            "harvest-round-2",
+            "harvest-round-3",
+            "harvest-round-4",
+            "harvest-round-5",
+            "harvest-round-6",
+            "harvest-round-7",
+            "harvest-round-8",
+            "request/fetch",
+            "response/200"
+          ],
+          "playback_referer": "",
+          "playback_origin": "",
+          "playback_user_agent": "",
+          "api_player_endpoint": "",
+          "api_source_mode": "",
+          "source_confidence": "network",
+          "mapping_mode": "stream-source-id",
+          "discovered_from_room_url": "https://socolivekj.cc/truc-tiep/san-lorenzo-vs-gimnasia-mendoza-luc-0500-ngay-29-07-2026/",
+          "discovered_from_blv": "HIRO",
+          "discovered_at": "2026-07-29T03:31:34.571313+07:00",
+          "valid_until": "",
+          "is_expired": false
+        }
+      ],
+      "room_results": [
+        {
+          "url": "https://socolivekj.cc/truc-tiep/san-lorenzo-vs-gimnasia-mendoza-luc-0500-ngay-29-07-2026/",
+          "blv": "HIRO",
+          "blv_id": "",
+          "streams": [
+            "https://live2.streambylivepulse.com/live/channel14.flv"
+          ],
+          "stream_sources": {
+            "https://live2.streambylivepulse.com/live/channel14.flv": [
+              "cdp/request",
+              "cdp/response",
+              "harvest-final",
+              "harvest-round-1",
+              "harvest-round-2",
+              "harvest-round-3",
+              "harvest-round-4",
+              "harvest-round-5",
+              "harvest-round-6",
+              "harvest-round-7",
+              "harvest-round-8",
+              "request/fetch",
+              "response/200"
+            ]
+          },
+          "stream_headers": {},
+          "stream_first_seen": [
+            "https://live2.streambylivepulse.com/live/channel14.flv"
+          ],
+          "discovered_blv_ids": [],
+          "diagnostics": {
+            "url": "https://socolivekj.cc/truc-tiep/san-lorenzo-vs-gimnasia-mendoza-luc-0500-ngay-29-07-2026/",
+            "title": "Trực tiếp San Lorenzo vs Gimnasia Mendoza full lúc 05:00, ngày 29/07",
+            "h1": "Xem trực tiếp trận đấu San Lorenzo vs Gimnasia Mendoza full lúc 05:00, ngày 29/07/2026",
+            "ready_state": "complete",
+            "visibility_state": "visible",
+            "hidden": false,
+            "video_count": 0,
+            "iframe_count": 5,
+            "body_sample": "WC 2026 Lịch Thi Đấu Xem Lại Video Highlight Tỷ Lệ Kèo BXH KQBD Tips Tin Tức Livescore Tuyển Dụng Top Nhà Cái Cược 8xbet WC 2026 Lịch Thi Đấu Xem Lại Video Highlight Tỷ Lệ Kèo BXH KQBD Tips Tin Tức Livescore Tuyển Dụng Top nhà cái Xem trực tiếp trận đấu San Lorenzo vs Gimnasia Mendoza full lúc 05:00, ngày 29/07/2026 Phát sóng link trực tuyến San Lorenzo vs Gimnasia Mendoza hôm nay tại giải đấu VĐQG Argentina _ _ _ _ _ _ San Lorenzo Gimnasia Mendoza Theo bạn thì trận này tài hay xỉu? Tài 0% Xỉu 0% Theo bạn thì trận này đội nào sẽ thắng? Chủ nhà 0% Hòa 0% Đội Khách 0% Anh Em Muốn Tham Gia Đặt Cược Thì Click Vào Quảng Cáo Của 8XBET Để Đăng Ký Đặt Cược Tất Cả Các Trận Đấu Trên Toàn Thế Giới. Nếu anh em gặp tình trạng không vào được web, hãy cài VPN 1.1.1.1 để truy cập ổn định hơn nhé . Châu Á Châu Âu Tài xỉu Phạt góc Chọn nhà cái HIỆP 1 FT Châu Á HIỆP 1 FT Châu Á 1.05 0/0.5 0.75 0.85 0.5 0.95 Châu Âu HIỆP 1 FT Châu Âu 2.63 2 5 1.90 3.25 4.50 Tài xỉu HIỆP 1 FT Tài xỉu 0.78 0.5/1 1.03 0.85 2 0.95 SỚM FT Phạt góc HIỆP 1 FT Phạt góc - - - 0.8 8.5 1 Trực tiếp Mô phỏng CHIA SẺ Phát sóng trận đấu San Lorenzo vs Gimnasia Mendoza full HD lúc 05:00, ngày 29/07/2026 VĐQG Argentina HIRO HD HIRO CH",
+            "harvest_rounds": 8,
+            "harvest_window_seconds": 6.393,
+            "main_status": 200,
+            "harvested_stream_count": 1,
+            "harvested_blv_ids": [],
+            "scan_mode": "chromium-fallback",
+            "elapsed_seconds": 7.633
+          },
+          "api_probe": {
+            "enabled": true,
+            "room_status": 200,
+            "active_index": 0,
+            "sources_found": 0,
+            "sources_tried": 0,
+            "valid_stream_count": 0,
+            "source_results": [],
+            "fallback_reason": "list_stream_not_found",
+            "elapsed_seconds": 0.045,
+            "room_content_type": "text/html",
+            "room_elapsed_seconds": 0.039,
+            "room_error": ""
+          },
+          "http_probe": {
+            "api_first": {
+              "enabled": true,
+              "room_status": 200,
+              "active_index": 0,
+              "sources_found": 0,
+              "sources_tried": 0,
+              "valid_stream_count": 0,
+              "source_results": [],
+              "fallback_reason": "list_stream_not_found",
+              "elapsed_seconds": 0.045,
+              "room_content_type": "text/html",
+              "room_elapsed_seconds": 0.039,
+              "room_error": ""
+            },
+            "legacy_http": {
+              "enabled": false,
+              "status": null,
+              "elapsed_seconds": 0.0,
+              "error": ""
+            }
+          },
+          "errors": [
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED"
+          ],
+          "failed_requests": [
+            "stylesheet https://fonts.googleapis.com/css2?family=Bangers&family=Oswald:wght@400;500;700&family=Raleway:wght@400;500;700&family=Roboto+Condensed:wght@300;400;700&display=swap | net::ERR_FAILED",
+            "stylesheet https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0 | net::ERR_FAILED",
+            "stylesheet https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css | net::ERR_FAILED",
+            "stylesheet https://socolivekj.cc/wp-content/plugins/widget-options/assets/css/widget-options.css?ver=4.0.6.1 | net::ERR_FAILED",
+            "stylesheet https://socolivekj.cc/wp-content/plugins/wp-pagenavi/pagenavi-css.css?ver=2.70 | net::ERR_FAILED",
+            "stylesheet https://socolivekj.cc/wp-content/themes/bongda/dist/styles/bootstrap.min.css?ver=1745376853 | net::ERR_FAILED",
+            "stylesheet https://socolivekj.cc/wp-content/themes/bongda/dist/styles/main.css?ver=1781184173 | net::ERR_FAILED",
+            "stylesheet https://socolivekj.cc/wp-content/themes/bongda/dist/styles/pages/single-live.css?ver=1784627923 | net::ERR_FAILED",
+            "image https://socolivekj.cc/wp-content/themes/bongda/dist/images/logo-socolive-tv-official-v2.png | net::ERR_FAILED",
+            "image https://socolivekj.cc/wp-content/themes/bongda/dist/images/wc-2026/menu-wc.svg | net::ERR_FAILED",
+            "image https://socolivekj.cc/wp-content/themes/bongda/dist/images/closemenu.png | net::ERR_FAILED",
+            "image https://imgts.sportpulseapiz.com/football/team/gpxwrxlh836ryk0/image/small | net::ERR_FAILED",
+            "stylesheet https://socolivekj.cc/wp-content/plugins/api-sport/public/css/match_detail.css?id=0671c88cfbad4335394b897262a0d662 | net::ERR_FAILED",
+            "image https://imgts.sportpulseapiz.com/football/team/jw2r09hlkldrz84/image/small | net::ERR_FAILED",
+            "image https://socolivekj.cc/wp-content/themes/bongda/dist/images/company/21-1.png | net::ERR_FAILED"
+          ],
+          "http_errors": []
+        }
+      ],
+      "attempted_room_ids": [],
+      "coverage": {
+        "found_streams": 1,
+        "found_blv_ids": [],
+        "goal": 2,
+        "source_goal_reached": false,
+        "room_queue_complete": true,
+        "complete": true,
+        "max_streams_per_blv": 2,
+        "total_explicit_blv_rooms": 0,
+        "pending_room_keys": [],
+        "room_progress": {
+          "__base__": {
+            "key": "__base__",
+            "url": "https://socolivekj.cc/truc-tiep/san-lorenzo-vs-gimnasia-mendoza-luc-0500-ngay-29-07-2026/",
+            "blv": "HIRO",
+            "blv_id": "",
+            "status": "success",
+            "attempts": 1,
+            "attempts_total": 1,
+            "ever_attempted": true,
+            "valid_stream_ever_found": true,
+            "needs_token_refresh": false,
+            "completion_reason": "valid_stream",
+            "rate_limit_hits": 0,
+            "last_http_status": 200,
+            "last_stream_count": 1,
+            "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
+          }
+        }
+      },
+      "errors": [],
+      "match_name": "San Lorenzo vs Gimnasia Mendoza",
+      "scheduled_at": "2026-07-29T05:00:00+07:00",
+      "room_progress": {
+        "__base__": {
+          "key": "__base__",
+          "url": "https://socolivekj.cc/truc-tiep/san-lorenzo-vs-gimnasia-mendoza-luc-0500-ngay-29-07-2026/",
+          "blv": "HIRO",
+          "blv_id": "",
+          "status": "success",
+          "attempts": 1,
+          "attempts_total": 1,
+          "ever_attempted": true,
+          "valid_stream_ever_found": true,
+          "needs_token_refresh": false,
+          "completion_reason": "valid_stream",
+          "rate_limit_hits": 0,
+          "last_http_status": 200,
+          "last_stream_count": 1,
+          "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
+        }
+      }
+    },
+    {
+      "base_url": "https://socolivekj.cc/truc-tiep/nu-bragantino-vs-nu-santos-luc-0500-ngay-29-07-2026/",
+      "raw_title": "Nữ Bragantino vs Nữ Santos",
+      "home_team": "Nữ Bragantino",
+      "away_team": "Nữ Santos",
+      "home_logo": "https://imgts.sportpulseapiz.com/football/team/3glrw7hyojlqdyj/image/small",
+      "away_logo": "https://imgts.sportpulseapiz.com/football/team/n54qllhex7dqvy9/image/small",
+      "time_text": "05:00",
+      "date_text": "29/07",
+      "status": "",
+      "card_text": "BRAZILIAN PAULISTA WOMEN LEAGUE HT 05:00 - 29.07 Nữ Bragantino 1 : 1 Nữ Santos HT 1 - 1 1 - 2 0 - 0 0.85 0 0.95 0.83 3 0.98",
+      "rooms": [
+        {
+          "url": "https://socolivekj.cc/truc-tiep/nu-bragantino-vs-nu-santos-luc-0500-ngay-29-07-2026/",
+          "blv": "",
+          "blv_id": ""
+        }
+      ],
+      "streams": [
+        {
+          "url": "https://live1.streambylivepulse.com/live/channel30.flv?wsSecret=cc6d4df51fb030ef12ef96f58c189c10&wsABSTime=1785313877",
+          "queue_room_key": "__base__",
+          "room_url": "https://socolivekj.cc/truc-tiep/nu-bragantino-vs-nu-santos-luc-0500-ngay-29-07-2026/",
+          "blv": "Nguồn phụ 1",
+          "blv_id": "",
+          "source_id": "",
+          "source_provenance": [
+            "cdp/request",
+            "cdp/response",
+            "harvest-final",
+            "harvest-round-1",
+            "harvest-round-2",
+            "harvest-round-3",
+            "harvest-round-4",
+            "harvest-round-5",
+            "harvest-round-6",
+            "harvest-round-7",
+            "harvest-round-8",
+            "request/fetch",
+            "response/403"
+          ],
+          "playback_referer": "",
+          "playback_origin": "",
+          "playback_user_agent": "",
+          "api_player_endpoint": "",
+          "api_source_mode": "",
+          "source_confidence": "network",
+          "mapping_mode": "stream-source-id",
+          "discovered_from_room_url": "https://socolivekj.cc/truc-tiep/nu-bragantino-vs-nu-santos-luc-0500-ngay-29-07-2026/",
+          "discovered_from_blv": "URL tổng",
+          "discovered_at": "2026-07-29T03:31:24.907050+07:00",
+          "valid_until": "",
+          "is_expired": false
+        }
+      ],
+      "room_results": [
+        {
+          "url": "https://socolivekj.cc/truc-tiep/nu-bragantino-vs-nu-santos-luc-0500-ngay-29-07-2026/",
+          "blv": "",
+          "blv_id": "",
+          "streams": [
+            "https://live1.streambylivepulse.com/live/channel30.flv?wsSecret=cc6d4df51fb030ef12ef96f58c189c10&wsABSTime=1785313877"
+          ],
+          "stream_sources": {
+            "https://live1.streambylivepulse.com/live/channel30.flv?wsSecret=cc6d4df51fb030ef12ef96f58c189c10&wsABSTime=1785313877": [
+              "cdp/request",
+              "cdp/response",
+              "harvest-final",
+              "harvest-round-1",
+              "harvest-round-2",
+              "harvest-round-3",
+              "harvest-round-4",
+              "harvest-round-5",
+              "harvest-round-6",
+              "harvest-round-7",
+              "harvest-round-8",
+              "request/fetch",
+              "response/403"
+            ]
+          },
+          "stream_headers": {},
+          "stream_first_seen": [
+            "https://live1.streambylivepulse.com/live/channel30.flv?wsSecret=cc6d4df51fb030ef12ef96f58c189c10&wsABSTime=1785313877"
+          ],
+          "discovered_blv_ids": [],
+          "diagnostics": {
+            "url": "https://socolivekj.cc/truc-tiep/nu-bragantino-vs-nu-santos-luc-0500-ngay-29-07-2026/",
+            "title": "Trực tiếp Nữ Bragantino vs Nữ Santos full lúc 05:00, ngày 29/07",
+            "h1": "Xem trực tiếp trận đấu Nữ Bragantino vs Nữ Santos full lúc 05:00, ngày 29/07/2026",
+            "ready_state": "complete",
+            "visibility_state": "visible",
+            "hidden": false,
+            "video_count": 0,
+            "iframe_count": 5,
+            "body_sample": "WC 2026 Lịch Thi Đấu Xem Lại Video Highlight Tỷ Lệ Kèo BXH KQBD Tips Tin Tức Livescore Tuyển Dụng Top Nhà Cái Cược 8xbet WC 2026 Lịch Thi Đấu Xem Lại Video Highlight Tỷ Lệ Kèo BXH KQBD Tips Tin Tức Livescore Tuyển Dụng Top nhà cái Xem trực tiếp trận đấu Nữ Bragantino vs Nữ Santos full lúc 05:00, ngày 29/07/2026 Phát sóng link trực tuyến Nữ Bragantino vs Nữ Santos hôm nay tại giải đấu Brazilian Paulista Women League _ _ _ _ _ _ Nữ Bragantino Nữ Santos Theo bạn thì trận này tài hay xỉu? Tài 0% Xỉu 0% Theo bạn thì trận này đội nào sẽ thắng? Chủ nhà 0% Hòa 0% Đội Khách 0% Anh Em Muốn Tham Gia Đặt Cược Thì Click Vào Quảng Cáo Của 8XBET Để Đăng Ký Đặt Cược Tất Cả Các Trận Đấu Trên Toàn Thế Giới. Nếu anh em gặp tình trạng không vào được web, hãy cài VPN 1.1.1.1 để truy cập ổn định hơn nhé . Châu Á Châu Âu Tài xỉu Phạt góc Chọn nhà cái HIỆP 1 FT Châu Á HIỆP 1 FT Châu Á - - - 0.80 0/0.5 1.00 Châu Âu HIỆP 1 FT Châu Âu - - - 2.00 3.30 3.20 Tài xỉu HIỆP 1 FT Tài xỉu - - - 0.85 2/2.5 0.95 SỚM FT Phạt góc HIỆP 1 FT Phạt góc - - - 1 9 0.8 Trực tiếp Mô phỏng CHIA SẺ Phát sóng trận đấu Nữ Bragantino vs Nữ Santos full HD lúc 05:00, ngày 29/07/2026 Brazilian Paulista Women League HD 1 CHIA SẺ Thông s",
+            "harvest_rounds": 8,
+            "harvest_window_seconds": 6.33,
+            "main_status": 200,
+            "harvested_stream_count": 1,
+            "harvested_blv_ids": [],
+            "scan_mode": "chromium-fallback",
+            "elapsed_seconds": 8.818
+          },
+          "api_probe": {
+            "enabled": true,
+            "room_status": 200,
+            "active_index": 0,
+            "sources_found": 0,
+            "sources_tried": 0,
+            "valid_stream_count": 0,
+            "source_results": [],
+            "fallback_reason": "list_stream_not_found",
+            "elapsed_seconds": 0.825,
+            "room_content_type": "text/html",
+            "room_elapsed_seconds": 0.82,
+            "room_error": ""
+          },
+          "http_probe": {
+            "api_first": {
+              "enabled": true,
+              "room_status": 200,
+              "active_index": 0,
+              "sources_found": 0,
+              "sources_tried": 0,
+              "valid_stream_count": 0,
+              "source_results": [],
+              "fallback_reason": "list_stream_not_found",
+              "elapsed_seconds": 0.825,
+              "room_content_type": "text/html",
+              "room_elapsed_seconds": 0.82,
+              "room_error": ""
+            },
+            "legacy_http": {
+              "enabled": false,
+              "status": null,
+              "elapsed_seconds": 0.0,
+              "error": ""
+            }
+          },
+          "errors": [
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED"
+          ],
+          "failed_requests": [
+            "stylesheet https://fonts.googleapis.com/css2?family=Bangers&family=Oswald:wght@400;500;700&family=Raleway:wght@400;500;700&family=Roboto+Condensed:wght@300;400;700&display=swap | net::ERR_FAILED",
+            "stylesheet https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0 | net::ERR_FAILED",
+            "stylesheet https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css | net::ERR_FAILED",
+            "stylesheet https://socolivekj.cc/wp-content/plugins/widget-options/assets/css/widget-options.css?ver=4.0.6.1 | net::ERR_FAILED",
+            "stylesheet https://socolivekj.cc/wp-content/plugins/wp-pagenavi/pagenavi-css.css?ver=2.70 | net::ERR_FAILED",
+            "stylesheet https://socolivekj.cc/wp-content/themes/bongda/dist/styles/bootstrap.min.css?ver=1745376853 | net::ERR_FAILED",
+            "stylesheet https://socolivekj.cc/wp-content/themes/bongda/dist/styles/main.css?ver=1781184173 | net::ERR_FAILED",
+            "stylesheet https://socolivekj.cc/wp-content/themes/bongda/dist/styles/pages/single-live.css?ver=1784627923 | net::ERR_FAILED",
+            "image https://socolivekj.cc/wp-content/themes/bongda/dist/images/logo-socolive-tv-official-v2.png | net::ERR_FAILED",
+            "image https://socolivekj.cc/wp-content/themes/bongda/dist/images/wc-2026/menu-wc.svg | net::ERR_FAILED",
+            "image https://socolivekj.cc/wp-content/themes/bongda/dist/images/closemenu.png | net::ERR_FAILED",
+            "image https://imgts.sportpulseapiz.com/football/team/3glrw7hyojlqdyj/image/small | net::ERR_FAILED",
+            "stylesheet https://socolivekj.cc/wp-content/plugins/api-sport/public/css/match_detail.css?id=0671c88cfbad4335394b897262a0d662 | net::ERR_FAILED",
+            "image https://imgts.sportpulseapiz.com/football/team/n54qllhex7dqvy9/image/small | net::ERR_FAILED",
+            "image https://socolivekj.cc/wp-content/themes/bongda/dist/images/company/21-1.png | net::ERR_FAILED"
+          ],
+          "http_errors": [
+            "403 https://live1.streambylivepulse.com/live/channel30.flv?wsSecret=cc6d4df51fb030ef12ef96f58c189c10&wsABSTime=1785313877",
+            "403 https://live1.streambylivepulse.com/live/channel30.flv?wsSecret=cc6d4df51fb030ef12ef96f58c189c10&wsABSTime=1785313877",
+            "403 https://live1.streambylivepulse.com/live/channel30.flv?wsSecret=cc6d4df51fb030ef12ef96f58c189c10&wsABSTime=1785313877",
+            "403 https://live1.streambylivepulse.com/live/channel30.flv?wsSecret=cc6d4df51fb030ef12ef96f58c189c10&wsABSTime=1785313877",
+            "403 https://live1.streambylivepulse.com/live/channel30.flv?wsSecret=cc6d4df51fb030ef12ef96f58c189c10&wsABSTime=1785313877"
+          ]
+        }
+      ],
+      "attempted_room_ids": [],
+      "coverage": {
+        "found_streams": 1,
+        "found_blv_ids": [],
+        "goal": 2,
+        "source_goal_reached": false,
+        "room_queue_complete": true,
+        "complete": true,
+        "max_streams_per_blv": 2,
+        "total_explicit_blv_rooms": 0,
+        "pending_room_keys": [],
+        "room_progress": {
+          "__base__": {
+            "key": "__base__",
+            "url": "https://socolivekj.cc/truc-tiep/nu-bragantino-vs-nu-santos-luc-0500-ngay-29-07-2026/",
+            "blv": "",
+            "blv_id": "",
+            "status": "success",
+            "attempts": 1,
+            "attempts_total": 1,
+            "ever_attempted": true,
+            "valid_stream_ever_found": true,
+            "needs_token_refresh": false,
+            "completion_reason": "valid_stream",
+            "rate_limit_hits": 0,
+            "last_http_status": 200,
+            "last_stream_count": 1,
+            "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
+          }
+        }
+      },
+      "errors": [],
+      "match_name": "Nữ Bragantino vs Nữ Santos",
+      "scheduled_at": "2026-07-29T05:00:00+07:00",
+      "room_progress": {
+        "__base__": {
+          "key": "__base__",
+          "url": "https://socolivekj.cc/truc-tiep/nu-bragantino-vs-nu-santos-luc-0500-ngay-29-07-2026/",
+          "blv": "",
           "blv_id": "",
           "status": "success",
           "attempts": 1,
@@ -3166,7 +2930,7 @@
       "time_text": "07:00",
       "date_text": "29/07",
       "status": "",
-      "card_text": "COLOMBIAN COPA BETPLAY DIMAYOR 07:00 - 29.07 Bogota FC Deportivo Pasto 0 - 1 2 - 0 JEAN 1.00 0/0.5 0.80 0.98 2 0.83",
+      "card_text": "COLOMBIAN COPA BETPLAY DIMAYOR 07:00 - 29.07 Bogota FC Deportivo Pasto 0 - 1 2 - 0 JEAN 0.85 -0.5 0.95 0.90 2 0.90",
       "rooms": [
         {
           "url": "https://socolivekj.cc/truc-tiep/bogota-fc-vs-deportivo-pasto-luc-0700-ngay-29-07-2026/",
@@ -3399,7 +3163,7 @@
       "time_text": "07:15",
       "date_text": "29/07",
       "status": "",
-      "card_text": "VĐQG ARGENTINA 07:15 - 29.07 Rosario Central Racing Club 1 - 1 1 - 2 0 - 2 NICK 0.95 0.5 0.85 0.98 2 0.83",
+      "card_text": "VĐQG ARGENTINA 07:15 - 29.07 Rosario Central Racing Club 1 - 1 1 - 2 0 - 2 NICK 0.95 0.5 0.85 1.00 2 0.80",
       "rooms": [
         {
           "url": "https://socolivekj.cc/truc-tiep/rosario-central-vs-racing-club-luc-0715-ngay-29-07-2026/",
@@ -3865,7 +3629,7 @@
       "time_text": "07:30",
       "date_text": "29/07",
       "status": "",
-      "card_text": "SIÊU CÚP NAM MỸ 07:30 - 29.07 Santos U.C.V FC 1 - 4 XMEN 0.85 1.5/2 1.00 1.03 3 0.83",
+      "card_text": "SIÊU CÚP NAM MỸ 07:30 - 29.07 Santos U.C.V FC 1 - 4 XMEN 0.83 1.5/2 1.03 0.93 3 0.93",
       "rooms": [
         {
           "url": "https://socolivekj.cc/truc-tiep/santos-vs-u-c-v-fc-luc-0730-ngay-29-07-2026/",
@@ -4102,7 +3866,7 @@
       "time_text": "07:35",
       "date_text": "29/07",
       "status": "",
-      "card_text": "HẠNG 2 BRAZIL 07:35 - 29.07 Fortaleza Botafogo SP 4 - 0 0.83 0.5 0.98 0.75 2 1.05",
+      "card_text": "HẠNG 2 BRAZIL 07:35 - 29.07 Fortaleza Botafogo SP 4 - 0 0.83 0.5 0.98 1.05 2/2.5 0.75",
       "rooms": [
         {
           "url": "https://socolivekj.cc/truc-tiep/fortaleza-vs-botafogo-sp-luc-0735-ngay-29-07-2026/",
@@ -4816,7 +4580,7 @@
       "time_text": "09:00",
       "date_text": "29/07",
       "status": "",
-      "card_text": "CONCACAF U20 09:00 - 29.07 El Salvador U20 USA U20 2 - 1 2 - 0 2 - 0 NEMO 0.88 -3 0.93 0.98 4 0.83",
+      "card_text": "CONCACAF U20 09:00 - 29.07 El Salvador U20 USA U20 2 - 1 2 - 0 2 - 0 NEMO 0.95 -2.5/3 0.85 0.85 4 0.95",
       "rooms": [
         {
           "url": "https://socolivekj.cc/truc-tiep/el-salvador-u20-vs-usa-u20-luc-0900-ngay-29-07-2026/",
@@ -5284,7 +5048,7 @@
       "time_text": "09:00",
       "date_text": "29/07",
       "status": "",
-      "card_text": "CENTRAL AMERICAN CUP 09:00 - 29.07 CD Olimpia Deportivo Mixco HT 0 - 0 0 - 0 0 - 0 BRADY 0.85 1 0.95 0.98 2.5/3 0.83",
+      "card_text": "CENTRAL AMERICAN CUP 09:00 - 29.07 CD Olimpia Deportivo Mixco HT 0 - 0 0 - 0 0 - 0 BRADY 0.80 1 1.00 0.98 2.5/3 0.83",
       "rooms": [
         {
           "url": "https://socolivekj.cc/truc-tiep/cd-olimpia-vs-deportivo-mixco-luc-0900-ngay-29-07-2026/",
