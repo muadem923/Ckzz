@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-29T13:02:36.670485+07:00",
+  "generated_at": "2026-07-29T13:31:12.181671+07:00",
   "state_schema_version": "v10.5-api-first-room-queue",
   "dispatch_next": false,
   "pending_count": 0,
@@ -7,13 +7,13 @@
   "completed_count": 30,
   "coverage_complete_count": 30,
   "total_match_count": 30,
-  "total_stream_count": 27,
-  "progress_count": 8,
-  "new_link_count": 8,
+  "total_stream_count": 28,
+  "progress_count": 1,
+  "new_link_count": 1,
   "refreshed_link_count": 0,
-  "queue_progress_count": 39,
+  "queue_progress_count": 31,
   "terminal_progress_count": 30,
-  "newly_attempted_count": 9,
+  "newly_attempted_count": 1,
   "queue_total_rooms": 30,
   "queue_success_rooms": 30,
   "queue_exhausted_rooms": 0,
@@ -30,7 +30,7 @@
   "rate_limited": false,
   "rate_limit_url": "",
   "global_room_budget": 48,
-  "global_room_budget_used": 9,
+  "global_room_budget_used": 1,
   "target_base_urls": [
     "https://socolivekj.cc/truc-tiep/auckland-city-vs-bay-olympic-luc-1430-ngay-29-07-2026/",
     "https://socolivekj.cc/truc-tiep/brindabella-blues-fc-u23-vs-queanbeyan-city-u23-luc-1430-ngay-29-07-2026/",
@@ -39,13 +39,13 @@
     "https://socolivekj.cc/truc-tiep/busan-i-park-vs-seoul-fc-luc-1700-ngay-29-07-2026/",
     "https://socolivekj.cc/truc-tiep/busan-trans-fc-vs-jinju-citizen-luc-1700-ngay-29-07-2026/",
     "https://socolivekj.cc/truc-tiep/cd-tondela-vs-sc-sao-joao-de-ver-luc-1600-ngay-29-07-2026/",
+    "https://socolivekj.cc/truc-tiep/chungnam-asan-vs-siheung-city-luc-1700-ngay-29-07-2026/",
     "https://socolivekj.cc/truc-tiep/estrela-amadora-vs-portimonense-luc-1500-ngay-29-07-2026/",
     "https://socolivekj.cc/truc-tiep/gd-braganca-vs-chaves-b-luc-1630-ngay-29-07-2026/",
     "https://socolivekj.cc/truc-tiep/gimcheon-sangmu-vs-suwon-fc-luc-1700-ngay-29-07-2026/",
     "https://socolivekj.cc/truc-tiep/gimpo-fc-vs-incheon-united-luc-1700-ngay-29-07-2026/",
     "https://socolivekj.cc/truc-tiep/gwangju-fc-vs-cheonan-city-luc-1700-ngay-29-07-2026/",
     "https://socolivekj.cc/truc-tiep/huda-hue-vs-pvf-u17-luc-1530-ngay-29-07-2026/",
-    "https://socolivekj.cc/truc-tiep/kossa-fc-vs-green-shield-fc-luc-1100-ngay-29-07-2026/",
     "https://socolivekj.cc/truc-tiep/kustosija-vs-karlovac-luc-1500-ngay-29-07-2026/",
     "https://socolivekj.cc/truc-tiep/logan-roos-vs-north-lakes-united-luc-1600-ngay-29-07-2026/",
     "https://socolivekj.cc/truc-tiep/lusitania-fc-vs-porto-b-luc-1500-ngay-29-07-2026/",
@@ -74,8 +74,8 @@
       "away_logo": "https://imgts.sportpulseapiz.com/football/team/y39mp1hyv05mojx/image/small",
       "time_text": "12:30",
       "date_text": "29/07",
-      "status": "Hiệp 1",
-      "card_text": "INDIAN REGIONAL CUP Hiệp 1: 31' 12:30 - 29.07 Mizoram Police FC 0 : 0 Ganggam SC HT 0 - 0 4 - 1 0 - 0 0.80 0/0.5 1.00 0.90 2.5 0.90",
+      "status": "",
+      "card_text": "INDIAN REGIONAL CUP HT 12:30 - 29.07 Mizoram Police FC 1 : 0 Ganggam SC HT 1 - 0 6 - 1 0 - 0 0.80 0/0.5 1.00 1.03 2.5/3 0.78",
       "rooms": [
         {
           "url": "https://socolivekj.cc/truc-tiep/mizoram-police-fc-vs-ganggam-sc-luc-1230-ngay-29-07-2026/",
@@ -290,247 +290,6 @@
         "__base__": {
           "key": "__base__",
           "url": "https://socolivekj.cc/truc-tiep/mizoram-police-fc-vs-ganggam-sc-luc-1230-ngay-29-07-2026/",
-          "blv": "",
-          "blv_id": "",
-          "status": "success",
-          "attempts": 1,
-          "attempts_total": 1,
-          "ever_attempted": true,
-          "valid_stream_ever_found": true,
-          "needs_token_refresh": false,
-          "completion_reason": "valid_stream",
-          "rate_limit_hits": 0,
-          "last_http_status": 200,
-          "last_stream_count": 1,
-          "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
-        }
-      }
-    },
-    {
-      "base_url": "https://socolivekj.cc/truc-tiep/kossa-fc-vs-green-shield-fc-luc-1100-ngay-29-07-2026/",
-      "raw_title": "Kossa FC vs Green Shield FC",
-      "home_team": "Kossa FC",
-      "away_team": "Green Shield FC",
-      "home_logo": "https://imgts.sportpulseapiz.com/football/team/318q66hognjqo9j/image/small",
-      "away_logo": "https://imgts.sportpulseapiz.com/football/team/3glrw7ho6yxqdyj/image/small",
-      "time_text": "11:00",
-      "date_text": "29/07",
-      "status": "Hiệp 2",
-      "card_text": "SOLOMON ISLANDS TELEKOM S-LEAGUE Hiệp 2: 90+' 11:00 - 29.07 Kossa FC 0 : 2 Green Shield FC HT 0 - 2 2 - 4 2 - 1 0.85 0 0.95 5.80 3.5 0.11",
-      "rooms": [
-        {
-          "url": "https://socolivekj.cc/truc-tiep/kossa-fc-vs-green-shield-fc-luc-1100-ngay-29-07-2026/",
-          "blv": "",
-          "blv_id": ""
-        }
-      ],
-      "streams": [
-        {
-          "url": "https://live1.streambylivepulse.com/live/channel31.flv?wsSecret=9fd39bc10d2da4a32274b97814f73ef9&wsABSTime=1785326468",
-          "queue_room_key": "__base__",
-          "room_url": "https://socolivekj.cc/truc-tiep/kossa-fc-vs-green-shield-fc-luc-1100-ngay-29-07-2026/",
-          "blv": "Nguồn phụ 1",
-          "blv_id": "",
-          "source_id": "",
-          "source_provenance": [
-            "cdp/request",
-            "cdp/response",
-            "harvest-final",
-            "harvest-round-1",
-            "harvest-round-2",
-            "harvest-round-3",
-            "harvest-round-4",
-            "harvest-round-5",
-            "harvest-round-6",
-            "harvest-round-7",
-            "harvest-round-8",
-            "request/fetch",
-            "response/403"
-          ],
-          "playback_referer": "",
-          "playback_origin": "",
-          "playback_user_agent": "",
-          "api_player_endpoint": "",
-          "api_source_mode": "",
-          "source_confidence": "network",
-          "mapping_mode": "stream-source-id",
-          "discovered_from_room_url": "https://socolivekj.cc/truc-tiep/kossa-fc-vs-green-shield-fc-luc-1100-ngay-29-07-2026/",
-          "discovered_from_blv": "URL tổng",
-          "discovered_at": "2026-07-29T07:01:15.452159+07:00",
-          "valid_until": "",
-          "is_expired": false
-        }
-      ],
-      "room_results": [
-        {
-          "url": "https://socolivekj.cc/truc-tiep/kossa-fc-vs-green-shield-fc-luc-1100-ngay-29-07-2026/",
-          "blv": "",
-          "blv_id": "",
-          "streams": [
-            "https://live1.streambylivepulse.com/live/channel31.flv?wsSecret=9fd39bc10d2da4a32274b97814f73ef9&wsABSTime=1785326468"
-          ],
-          "stream_sources": {
-            "https://live1.streambylivepulse.com/live/channel31.flv?wsSecret=9fd39bc10d2da4a32274b97814f73ef9&wsABSTime=1785326468": [
-              "cdp/request",
-              "cdp/response",
-              "harvest-final",
-              "harvest-round-1",
-              "harvest-round-2",
-              "harvest-round-3",
-              "harvest-round-4",
-              "harvest-round-5",
-              "harvest-round-6",
-              "harvest-round-7",
-              "harvest-round-8",
-              "request/fetch",
-              "response/403"
-            ]
-          },
-          "stream_headers": {},
-          "stream_first_seen": [
-            "https://live1.streambylivepulse.com/live/channel31.flv?wsSecret=9fd39bc10d2da4a32274b97814f73ef9&wsABSTime=1785326468"
-          ],
-          "discovered_blv_ids": [],
-          "diagnostics": {
-            "url": "https://socolivekj.cc/truc-tiep/kossa-fc-vs-green-shield-fc-luc-1100-ngay-29-07-2026/",
-            "title": "Trực tiếp Kossa FC vs Green Shield FC full lúc 11:00, ngày 29/07",
-            "h1": "Xem trực tiếp trận đấu Kossa FC vs Green Shield FC full lúc 11:00, ngày 29/07/2026",
-            "ready_state": "complete",
-            "visibility_state": "visible",
-            "hidden": false,
-            "video_count": 0,
-            "iframe_count": 5,
-            "body_sample": "WC 2026 Lịch Thi Đấu Xem Lại Video Highlight Tỷ Lệ Kèo BXH KQBD Tips Tin Tức Livescore Tuyển Dụng Top Nhà Cái Cược 8xbet WC 2026 Lịch Thi Đấu Xem Lại Video Highlight Tỷ Lệ Kèo BXH KQBD Tips Tin Tức Livescore Tuyển Dụng Top nhà cái Xem trực tiếp trận đấu Kossa FC vs Green Shield FC full lúc 11:00, ngày 29/07/2026 Phát sóng link trực tuyến Kossa FC vs Green Shield FC hôm nay tại giải đấu Solomon Islands Telekom S-League _ _ _ _ _ _ Kossa FC Green Shield FC Theo bạn thì trận này tài hay xỉu? Tài 0% Xỉu 0% Theo bạn thì trận này đội nào sẽ thắng? Chủ nhà 0% Hòa 0% Đội Khách 0% Anh Em Muốn Tham Gia Đặt Cược Thì Click Vào Quảng Cáo Của 8XBET Để Đăng Ký Đặt Cược Tất Cả Các Trận Đấu Trên Toàn Thế Giới. Nếu anh em gặp tình trạng không vào được web, hãy cài VPN 1.1.1.1 để truy cập ổn định hơn nhé . Châu Á Châu Âu Tài xỉu Phạt góc Chọn nhà cái HIỆP 1 FT Châu Á HIỆP 1 FT Châu Á - - - 0.80 0 1.00 Châu Âu HIỆP 1 FT Châu Âu - - - 2.25 3.90 2.45 Tài xỉu HIỆP 1 FT Tài xỉu - - - 0.85 3/3.5 0.95 SỚM FT Phạt góc HIỆP 1 FT Phạt góc - - - - - - Trực tiếp Mô phỏng CHIA SẺ Phát sóng trận đấu Kossa FC vs Green Shield FC full HD lúc 11:00, ngày 29/07/2026 Solomon Islands Telekom S-League HD 1 CHIA SẺ Thông s",
-            "harvest_rounds": 8,
-            "harvest_window_seconds": 6.501,
-            "main_status": 200,
-            "harvested_stream_count": 1,
-            "harvested_blv_ids": [],
-            "scan_mode": "chromium-fallback",
-            "elapsed_seconds": 7.52
-          },
-          "api_probe": {
-            "enabled": true,
-            "room_status": 200,
-            "active_index": 0,
-            "sources_found": 0,
-            "sources_tried": 0,
-            "valid_stream_count": 0,
-            "source_results": [],
-            "fallback_reason": "list_stream_not_found",
-            "elapsed_seconds": 0.119,
-            "room_content_type": "text/html",
-            "room_elapsed_seconds": 0.113,
-            "room_error": ""
-          },
-          "http_probe": {
-            "api_first": {
-              "enabled": true,
-              "room_status": 200,
-              "active_index": 0,
-              "sources_found": 0,
-              "sources_tried": 0,
-              "valid_stream_count": 0,
-              "source_results": [],
-              "fallback_reason": "list_stream_not_found",
-              "elapsed_seconds": 0.119,
-              "room_content_type": "text/html",
-              "room_elapsed_seconds": 0.113,
-              "room_error": ""
-            },
-            "legacy_http": {
-              "enabled": false,
-              "status": null,
-              "elapsed_seconds": 0.0,
-              "error": ""
-            }
-          },
-          "errors": [
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED"
-          ],
-          "failed_requests": [
-            "stylesheet https://fonts.googleapis.com/css2?family=Bangers&family=Oswald:wght@400;500;700&family=Raleway:wght@400;500;700&family=Roboto+Condensed:wght@300;400;700&display=swap | net::ERR_FAILED",
-            "stylesheet https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0 | net::ERR_FAILED",
-            "stylesheet https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css | net::ERR_FAILED",
-            "stylesheet https://socolivekj.cc/wp-content/plugins/widget-options/assets/css/widget-options.css?ver=4.0.6.1 | net::ERR_FAILED",
-            "stylesheet https://socolivekj.cc/wp-content/plugins/wp-pagenavi/pagenavi-css.css?ver=2.70 | net::ERR_FAILED",
-            "stylesheet https://socolivekj.cc/wp-content/themes/bongda/dist/styles/bootstrap.min.css?ver=1745376853 | net::ERR_FAILED",
-            "stylesheet https://socolivekj.cc/wp-content/themes/bongda/dist/styles/main.css?ver=1781184173 | net::ERR_FAILED",
-            "stylesheet https://socolivekj.cc/wp-content/themes/bongda/dist/styles/pages/single-live.css?ver=1784627923 | net::ERR_FAILED",
-            "image https://socolivekj.cc/wp-content/themes/bongda/dist/images/logo-socolive-tv-official-v2.png | net::ERR_FAILED",
-            "image https://socolivekj.cc/wp-content/themes/bongda/dist/images/wc-2026/menu-wc.svg | net::ERR_FAILED",
-            "image https://socolivekj.cc/wp-content/themes/bongda/dist/images/closemenu.png | net::ERR_FAILED",
-            "image https://imgts.sportpulseapiz.com/football/team/318q66hognjqo9j/image/small | net::ERR_FAILED",
-            "stylesheet https://socolivekj.cc/wp-content/plugins/api-sport/public/css/match_detail.css?id=0671c88cfbad4335394b897262a0d662 | net::ERR_FAILED",
-            "image https://imgts.sportpulseapiz.com/football/team/3glrw7ho6yxqdyj/image/small | net::ERR_FAILED",
-            "image https://socolivekj.cc/wp-content/themes/bongda/dist/images/company/21-1.png | net::ERR_FAILED"
-          ],
-          "http_errors": [
-            "403 https://live1.streambylivepulse.com/live/channel31.flv?wsSecret=9fd39bc10d2da4a32274b97814f73ef9&wsABSTime=1785326468",
-            "403 https://live1.streambylivepulse.com/live/channel31.flv?wsSecret=9fd39bc10d2da4a32274b97814f73ef9&wsABSTime=1785326468",
-            "403 https://live1.streambylivepulse.com/live/channel31.flv?wsSecret=9fd39bc10d2da4a32274b97814f73ef9&wsABSTime=1785326468",
-            "403 https://live1.streambylivepulse.com/live/channel31.flv?wsSecret=9fd39bc10d2da4a32274b97814f73ef9&wsABSTime=1785326468",
-            "403 https://live1.streambylivepulse.com/live/channel31.flv?wsSecret=9fd39bc10d2da4a32274b97814f73ef9&wsABSTime=1785326468"
-          ]
-        }
-      ],
-      "attempted_room_ids": [],
-      "coverage": {
-        "found_streams": 1,
-        "found_blv_ids": [],
-        "goal": 2,
-        "source_goal_reached": false,
-        "room_queue_complete": true,
-        "complete": true,
-        "max_streams_per_blv": 2,
-        "total_explicit_blv_rooms": 0,
-        "pending_room_keys": [],
-        "room_progress": {
-          "__base__": {
-            "key": "__base__",
-            "url": "https://socolivekj.cc/truc-tiep/kossa-fc-vs-green-shield-fc-luc-1100-ngay-29-07-2026/",
-            "blv": "",
-            "blv_id": "",
-            "status": "success",
-            "attempts": 1,
-            "attempts_total": 1,
-            "ever_attempted": true,
-            "valid_stream_ever_found": true,
-            "needs_token_refresh": false,
-            "completion_reason": "valid_stream",
-            "rate_limit_hits": 0,
-            "last_http_status": 200,
-            "last_stream_count": 1,
-            "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
-          }
-        }
-      },
-      "errors": [],
-      "match_name": "Kossa FC vs Green Shield FC",
-      "scheduled_at": "2026-07-29T11:00:00+07:00",
-      "room_progress": {
-        "__base__": {
-          "key": "__base__",
-          "url": "https://socolivekj.cc/truc-tiep/kossa-fc-vs-green-shield-fc-luc-1100-ngay-29-07-2026/",
           "blv": "",
           "blv_id": "",
           "status": "success",
@@ -1513,7 +1272,7 @@
       "time_text": "15:00",
       "date_text": "29/07",
       "status": "",
-      "card_text": "GIAO HỮU CLB 15:00 - 29.07 Kustosija Karlovac 1 - 0 0 - 0 1 - 0 0.80 -0.5 1.00 0.80 2.5 1.00",
+      "card_text": "GIAO HỮU CLB 15:00 - 29.07 Kustosija Karlovac 1 - 0 0 - 0 1 - 0 1.00 -0.5 0.80 0.80 2.5 1.00",
       "rooms": [
         {
           "url": "https://socolivekj.cc/truc-tiep/kustosija-vs-karlovac-luc-1500-ngay-29-07-2026/",
@@ -2946,7 +2705,7 @@
       "time_text": "16:00",
       "date_text": "29/07",
       "status": "",
-      "card_text": "AUSTRALIAN CLOTH 16:00 - 29.07 Logan Roos North Lakes United 1 - 2 0.83 0/0.5 0.98 0.95 4/4.5 0.85",
+      "card_text": "AUSTRALIAN CLOTH 16:00 - 29.07 Logan Roos North Lakes United 1 - 2 0.83 0/0.5 0.98 0.93 4/4.5 0.88",
       "rooms": [
         {
           "url": "https://socolivekj.cc/truc-tiep/logan-roos-vs-north-lakes-united-luc-1600-ngay-29-07-2026/",
@@ -4364,7 +4123,7 @@
       "time_text": "16:15",
       "date_text": "29/07",
       "status": "",
-      "card_text": "AUSTRALIAN CLOTH 16:15 - 29.07 Newmarket SFC North Pine United 1 - 5 1 - 0 2 - 1 0.83 3.5 0.98 0.98 4.5/5 0.83",
+      "card_text": "AUSTRALIAN CLOTH 16:15 - 29.07 Newmarket SFC North Pine United 1 - 5 1 - 0 2 - 1 0.83 3.5 0.98 0.85 4.5 0.95",
       "rooms": [
         {
           "url": "https://socolivekj.cc/truc-tiep/newmarket-sfc-vs-north-pine-united-luc-1615-ngay-29-07-2026/",
@@ -5079,7 +4838,7 @@
       "time_text": "16:45",
       "date_text": "29/07",
       "status": "",
-      "card_text": "GIAO HỮU CLB 16:45 - 29.07 Tottenham Sydney FC 0 - 1 NICK 0.98 -1.5 0.83 0.80 3.5/4 1.00",
+      "card_text": "GIAO HỮU CLB 16:45 - 29.07 Tottenham Sydney FC 0 - 1 NICK 0.90 -1.5/2 0.90 0.80 3.5/4 1.00",
       "rooms": [
         {
           "url": "https://socolivekj.cc/truc-tiep/tottenham-vs-sydney-fc-luc-1645-ngay-29-07-2026/",
@@ -5306,6 +5065,237 @@
           "last_stream_count": 1,
           "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
         }
+      }
+    },
+    {
+      "base_url": "https://socolivekj.cc/truc-tiep/chungnam-asan-vs-siheung-city-luc-1700-ngay-29-07-2026/",
+      "raw_title": "Chungnam Asan vs Siheung City",
+      "home_team": "Chungnam Asan",
+      "away_team": "Siheung City",
+      "home_logo": "https://imgts.sportpulseapiz.com/football/team/x7lm7phwgelm2wd/image/small",
+      "away_logo": "https://imgts.sportpulseapiz.com/football/team/y0or5jh4zzyqwzv/image/small",
+      "time_text": "17:00",
+      "date_text": "29/07",
+      "status": "",
+      "card_text": "CÚP FA HÀN QUỐC 17:00 - 29.07 Chungnam Asan Siheung City HT 0 - 0 0 - 0 0 - 0 TAGE 0.93 0.5 0.88 0.95 2.5 0.85",
+      "rooms": [
+        {
+          "url": "https://socolivekj.cc/truc-tiep/chungnam-asan-vs-siheung-city-luc-1700-ngay-29-07-2026/",
+          "blv": "TAGE",
+          "blv_id": ""
+        }
+      ],
+      "streams": [
+        {
+          "url": "https://live2.streambylivepulse.com/live/channel27.flv",
+          "queue_room_key": "__base__",
+          "room_url": "https://socolivekj.cc/truc-tiep/chungnam-asan-vs-siheung-city-luc-1700-ngay-29-07-2026/",
+          "blv": "Nguồn phụ 1",
+          "blv_id": "",
+          "source_id": "",
+          "source_provenance": [
+            "cdp/request",
+            "harvest-final",
+            "harvest-round-1",
+            "harvest-round-2",
+            "harvest-round-3",
+            "harvest-round-4",
+            "harvest-round-5",
+            "harvest-round-6",
+            "harvest-round-7",
+            "harvest-round-8",
+            "request/fetch"
+          ],
+          "playback_referer": "",
+          "playback_origin": "",
+          "playback_user_agent": "",
+          "api_player_endpoint": "",
+          "api_source_mode": "",
+          "source_confidence": "network",
+          "mapping_mode": "stream-source-id",
+          "discovered_from_room_url": "https://socolivekj.cc/truc-tiep/chungnam-asan-vs-siheung-city-luc-1700-ngay-29-07-2026/",
+          "discovered_from_blv": "TAGE",
+          "discovered_at": "2026-07-29T13:31:10.152563+07:00",
+          "valid_until": "",
+          "is_expired": false
+        }
+      ],
+      "room_results": [
+        {
+          "url": "https://socolivekj.cc/truc-tiep/chungnam-asan-vs-siheung-city-luc-1700-ngay-29-07-2026/",
+          "blv": "TAGE",
+          "blv_id": "",
+          "streams": [
+            "https://live2.streambylivepulse.com/live/channel27.flv"
+          ],
+          "stream_sources": {
+            "https://live2.streambylivepulse.com/live/channel27.flv": [
+              "cdp/request",
+              "harvest-final",
+              "harvest-round-1",
+              "harvest-round-2",
+              "harvest-round-3",
+              "harvest-round-4",
+              "harvest-round-5",
+              "harvest-round-6",
+              "harvest-round-7",
+              "harvest-round-8",
+              "request/fetch"
+            ]
+          },
+          "stream_headers": {},
+          "stream_first_seen": [
+            "https://live2.streambylivepulse.com/live/channel27.flv"
+          ],
+          "discovered_blv_ids": [],
+          "diagnostics": {
+            "url": "https://socolivekj.cc/truc-tiep/chungnam-asan-vs-siheung-city-luc-1700-ngay-29-07-2026/",
+            "title": "Trực tiếp Chungnam Asan vs Siheung City full lúc 17:00, ngày 29/07",
+            "h1": "Xem trực tiếp trận đấu Chungnam Asan vs Siheung City full lúc 17:00, ngày 29/07/2026",
+            "ready_state": "complete",
+            "visibility_state": "visible",
+            "hidden": false,
+            "video_count": 0,
+            "iframe_count": 5,
+            "body_sample": "WC 2026 Lịch Thi Đấu Xem Lại Video Highlight Tỷ Lệ Kèo BXH KQBD Tips Tin Tức Livescore Tuyển Dụng Top Nhà Cái Cược 8xbet WC 2026 Lịch Thi Đấu Xem Lại Video Highlight Tỷ Lệ Kèo BXH KQBD Tips Tin Tức Livescore Tuyển Dụng Top nhà cái Xem trực tiếp trận đấu Chungnam Asan vs Siheung City full lúc 17:00, ngày 29/07/2026 Phát sóng link trực tuyến Chungnam Asan vs Siheung City hôm nay tại giải đấu Cúp FA Hàn Quốc _ _ _ _ _ _ Chungnam Asan Siheung City Theo bạn thì trận này tài hay xỉu? Tài 0% Xỉu 0% Theo bạn thì trận này đội nào sẽ thắng? Chủ nhà 0% Hòa 0% Đội Khách 0% Anh Em Muốn Tham Gia Đặt Cược Thì Click Vào Quảng Cáo Của 8XBET Để Đăng Ký Đặt Cược Tất Cả Các Trận Đấu Trên Toàn Thế Giới. Nếu anh em gặp tình trạng không vào được web, hãy cài VPN 1.1.1.1 để truy cập ổn định hơn nhé . Châu Á Châu Âu Tài xỉu Phạt góc Chọn nhà cái HIỆP 1 FT Châu Á HIỆP 1 FT Châu Á 1.03 0/0.5 0.78 0.93 0.5 0.88 Châu Âu HIỆP 1 FT Châu Âu 2.5 2.25 4.33 1.90 3.60 3.30 Tài xỉu HIỆP 1 FT Tài xỉu 0.85 1 0.95 0.95 2.5 0.85 SỚM FT Phạt góc HIỆP 1 FT Phạt góc - - - 0.825 8.5 0.975 Trực tiếp Mô phỏng CHIA SẺ Phát sóng trận đấu Chungnam Asan vs Siheung City full HD lúc 17:00, ngày 29/07/2026 Cúp FA Hàn Quốc TAGE HD TAGE",
+            "harvest_rounds": 8,
+            "harvest_window_seconds": 6.589,
+            "main_status": 200,
+            "harvested_stream_count": 1,
+            "harvested_blv_ids": [],
+            "scan_mode": "chromium-fallback",
+            "elapsed_seconds": 8.706
+          },
+          "api_probe": {
+            "enabled": true,
+            "room_status": 200,
+            "active_index": 0,
+            "sources_found": 0,
+            "sources_tried": 0,
+            "valid_stream_count": 0,
+            "source_results": [],
+            "fallback_reason": "list_stream_not_found",
+            "elapsed_seconds": 0.808,
+            "room_content_type": "text/html",
+            "room_elapsed_seconds": 0.803,
+            "room_error": ""
+          },
+          "http_probe": {
+            "api_first": {
+              "enabled": true,
+              "room_status": 200,
+              "active_index": 0,
+              "sources_found": 0,
+              "sources_tried": 0,
+              "valid_stream_count": 0,
+              "source_results": [],
+              "fallback_reason": "list_stream_not_found",
+              "elapsed_seconds": 0.808,
+              "room_content_type": "text/html",
+              "room_elapsed_seconds": 0.803,
+              "room_error": ""
+            },
+            "legacy_http": {
+              "enabled": false,
+              "status": null,
+              "elapsed_seconds": 0.0,
+              "error": ""
+            }
+          },
+          "errors": [
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED"
+          ],
+          "failed_requests": [
+            "stylesheet https://fonts.googleapis.com/css2?family=Bangers&family=Oswald:wght@400;500;700&family=Raleway:wght@400;500;700&family=Roboto+Condensed:wght@300;400;700&display=swap | net::ERR_FAILED",
+            "stylesheet https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0 | net::ERR_FAILED",
+            "stylesheet https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css | net::ERR_FAILED",
+            "stylesheet https://socolivekj.cc/wp-content/plugins/widget-options/assets/css/widget-options.css?ver=4.0.6.1 | net::ERR_FAILED",
+            "stylesheet https://socolivekj.cc/wp-content/plugins/wp-pagenavi/pagenavi-css.css?ver=2.70 | net::ERR_FAILED",
+            "stylesheet https://socolivekj.cc/wp-content/themes/bongda/dist/styles/bootstrap.min.css?ver=1745376853 | net::ERR_FAILED",
+            "stylesheet https://socolivekj.cc/wp-content/themes/bongda/dist/styles/main.css?ver=1781184173 | net::ERR_FAILED",
+            "stylesheet https://socolivekj.cc/wp-content/themes/bongda/dist/styles/pages/single-live.css?ver=1784627923 | net::ERR_FAILED",
+            "image https://socolivekj.cc/wp-content/themes/bongda/dist/images/logo-socolive-tv-official-v2.png | net::ERR_FAILED",
+            "image https://socolivekj.cc/wp-content/themes/bongda/dist/images/wc-2026/menu-wc.svg | net::ERR_FAILED",
+            "image https://socolivekj.cc/wp-content/themes/bongda/dist/images/closemenu.png | net::ERR_FAILED",
+            "image https://imgts.sportpulseapiz.com/football/team/x7lm7phwgelm2wd/image/small | net::ERR_FAILED",
+            "stylesheet https://socolivekj.cc/wp-content/plugins/api-sport/public/css/match_detail.css?id=0671c88cfbad4335394b897262a0d662 | net::ERR_FAILED",
+            "image https://imgts.sportpulseapiz.com/football/team/y0or5jh4zzyqwzv/image/small | net::ERR_FAILED",
+            "image https://socolivekj.cc/wp-content/themes/bongda/dist/images/company/21-1.png | net::ERR_FAILED"
+          ],
+          "http_errors": []
+        }
+      ],
+      "attempted_room_ids": [],
+      "coverage": {
+        "found_streams": 1,
+        "found_blv_ids": [],
+        "goal": 2,
+        "source_goal_reached": false,
+        "room_queue_complete": true,
+        "complete": true,
+        "max_streams_per_blv": 2,
+        "total_explicit_blv_rooms": 0,
+        "pending_room_keys": [],
+        "room_progress": {
+          "__base__": {
+            "key": "__base__",
+            "url": "https://socolivekj.cc/truc-tiep/chungnam-asan-vs-siheung-city-luc-1700-ngay-29-07-2026/",
+            "blv": "TAGE",
+            "blv_id": "",
+            "status": "success",
+            "attempts": 1,
+            "attempts_total": 1,
+            "ever_attempted": true,
+            "valid_stream_ever_found": true,
+            "needs_token_refresh": false,
+            "completion_reason": "valid_stream",
+            "rate_limit_hits": 0,
+            "last_http_status": 200,
+            "last_stream_count": 1,
+            "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
+          }
+        }
+      },
+      "errors": [],
+      "match_name": "Chungnam Asan vs Siheung City",
+      "scheduled_at": "2026-07-29T17:00:00+07:00",
+      "room_progress": {
+        "__base__": {
+          "key": "__base__",
+          "url": "https://socolivekj.cc/truc-tiep/chungnam-asan-vs-siheung-city-luc-1700-ngay-29-07-2026/",
+          "blv": "TAGE",
+          "blv_id": "",
+          "status": "success",
+          "attempts": 1,
+          "attempts_total": 1,
+          "ever_attempted": true,
+          "valid_stream_ever_found": true,
+          "needs_token_refresh": false,
+          "completion_reason": "valid_stream",
+          "rate_limit_hits": 0,
+          "last_http_status": 200,
+          "last_stream_count": 1,
+          "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
+        }
       },
       "run_attempted_room_keys": [
         "__base__"
@@ -5326,7 +5316,7 @@
       "time_text": "17:00",
       "date_text": "29/07",
       "status": "",
-      "card_text": "CÚP FA HÀN QUỐC 17:00 - 29.07 Yeoju Citizen Dangjin Citizen 2 - 2 4 - 1 1 - 5 0.98 0 0.83 0.85 2.5 0.95",
+      "card_text": "CÚP FA HÀN QUỐC 17:00 - 29.07 Yeoju Citizen Dangjin Citizen 2 - 2 4 - 1 1 - 5 0.98 0 0.83 0.83 2.5 0.98",
       "rooms": [
         {
           "url": "https://socolivekj.cc/truc-tiep/yeoju-citizen-vs-dangjin-citizen-luc-1700-ngay-29-07-2026/",
@@ -5555,15 +5545,7 @@
           "last_stream_count": 1,
           "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
         }
-      },
-      "run_attempted_room_keys": [
-        "__base__"
-      ],
-      "run_rate_limited_room_keys": [],
-      "run_completed_room_keys": [
-        "__base__"
-      ],
-      "run_global_budget_used": 2
+      }
     },
     {
       "base_url": "https://socolivekj.cc/truc-tiep/gwangju-fc-vs-cheonan-city-luc-1700-ngay-29-07-2026/",
@@ -5575,7 +5557,7 @@
       "time_text": "17:00",
       "date_text": "29/07",
       "status": "",
-      "card_text": "CÚP FA HÀN QUỐC 17:00 - 29.07 Gwangju FC Cheonan City HT 0 - 0 0 - 0 0 - 0 MAX 1.00 0.5/1 0.80 0.85 2.5 0.95",
+      "card_text": "CÚP FA HÀN QUỐC 17:00 - 29.07 Gwangju FC Cheonan City HT 0 - 0 0 - 0 0 - 0 MAX 0.78 0.5 1.03 0.85 2.5 0.95",
       "rooms": [
         {
           "url": "https://socolivekj.cc/truc-tiep/gwangju-fc-vs-cheonan-city-luc-1700-ngay-29-07-2026/",
@@ -5794,15 +5776,7 @@
           "last_stream_count": 1,
           "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
         }
-      },
-      "run_attempted_room_keys": [
-        "__base__"
-      ],
-      "run_rate_limited_room_keys": [],
-      "run_completed_room_keys": [
-        "__base__"
-      ],
-      "run_global_budget_used": 3
+      }
     },
     {
       "base_url": "https://socolivekj.cc/truc-tiep/bucheon-1995-vs-paju-frontier-fc-luc-1700-ngay-29-07-2026/",
@@ -5814,7 +5788,7 @@
       "time_text": "17:00",
       "date_text": "29/07",
       "status": "",
-      "card_text": "CÚP FA HÀN QUỐC 17:00 - 29.07 Bucheon 1995 Paju Frontier FC 0 - 3 1 - 0 JEAN 0.83 0.5/1 0.98 0.93 2.5 0.88",
+      "card_text": "CÚP FA HÀN QUỐC 17:00 - 29.07 Bucheon 1995 Paju Frontier FC 0 - 3 1 - 0 JEAN 0.85 0.5/1 0.95 0.90 2.5 0.90",
       "rooms": [
         {
           "url": "https://socolivekj.cc/truc-tiep/bucheon-1995-vs-paju-frontier-fc-luc-1700-ngay-29-07-2026/",
@@ -6033,15 +6007,7 @@
           "last_stream_count": 1,
           "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
         }
-      },
-      "run_attempted_room_keys": [
-        "__base__"
-      ],
-      "run_rate_limited_room_keys": [],
-      "run_completed_room_keys": [
-        "__base__"
-      ],
-      "run_global_budget_used": 4
+      }
     },
     {
       "base_url": "https://socolivekj.cc/truc-tiep/busan-i-park-vs-seoul-fc-luc-1700-ngay-29-07-2026/",
@@ -6053,7 +6019,7 @@
       "time_text": "17:00",
       "date_text": "29/07",
       "status": "",
-      "card_text": "CÚP FA HÀN QUỐC 17:00 - 29.07 Busan I Park Seoul FC 1 - 2 1 - 1 2 - 0 ASTRA 1.03 -0.5/1 0.78 0.98 2.5/3 0.83",
+      "card_text": "CÚP FA HÀN QUỐC 17:00 - 29.07 Busan I Park Seoul FC 1 - 2 1 - 1 2 - 0 ASTRA 1.03 -0.5/1 0.78 0.95 2.5/3 0.85",
       "rooms": [
         {
           "url": "https://socolivekj.cc/truc-tiep/busan-i-park-vs-seoul-fc-luc-1700-ngay-29-07-2026/",
@@ -6272,15 +6238,7 @@
           "last_stream_count": 1,
           "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
         }
-      },
-      "run_attempted_room_keys": [
-        "__base__"
-      ],
-      "run_rate_limited_room_keys": [],
-      "run_completed_room_keys": [
-        "__base__"
-      ],
-      "run_global_budget_used": 5
+      }
     },
     {
       "base_url": "https://socolivekj.cc/truc-tiep/gimcheon-sangmu-vs-suwon-fc-luc-1700-ngay-29-07-2026/",
@@ -6292,7 +6250,7 @@
       "time_text": "17:00",
       "date_text": "29/07",
       "status": "",
-      "card_text": "CÚP FA HÀN QUỐC 17:00 - 29.07 Gimcheon Sangmu Suwon FC 3 - 2 1 - 1 3 - 2 TOM 0.85 0/0.5 0.95 0.90 2.5/3 0.90",
+      "card_text": "CÚP FA HÀN QUỐC 17:00 - 29.07 Gimcheon Sangmu Suwon FC 3 - 2 1 - 1 3 - 2 TOM 0.85 0/0.5 0.95 0.88 2.5/3 0.93",
       "rooms": [
         {
           "url": "https://socolivekj.cc/truc-tiep/gimcheon-sangmu-vs-suwon-fc-luc-1700-ngay-29-07-2026/",
@@ -6511,15 +6469,7 @@
           "last_stream_count": 1,
           "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
         }
-      },
-      "run_attempted_room_keys": [
-        "__base__"
-      ],
-      "run_rate_limited_room_keys": [],
-      "run_completed_room_keys": [
-        "__base__"
-      ],
-      "run_global_budget_used": 6
+      }
     },
     {
       "base_url": "https://socolivekj.cc/truc-tiep/gimpo-fc-vs-incheon-united-luc-1700-ngay-29-07-2026/",
@@ -6531,7 +6481,7 @@
       "time_text": "17:00",
       "date_text": "29/07",
       "status": "",
-      "card_text": "CÚP FA HÀN QUỐC 17:00 - 29.07 Gimpo FC Incheon United 1 - 2 1 - 1 3 - 0 RAVEN 0.83 1 0.98 1.00 3 0.80",
+      "card_text": "CÚP FA HÀN QUỐC 17:00 - 29.07 Gimpo FC Incheon United 1 - 2 1 - 1 3 - 0 RAVEN 0.83 1 0.98 0.88 2.5/3 0.93",
       "rooms": [
         {
           "url": "https://socolivekj.cc/truc-tiep/gimpo-fc-vs-incheon-united-luc-1700-ngay-29-07-2026/",
@@ -6758,15 +6708,7 @@
           "last_stream_count": 1,
           "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
         }
-      },
-      "run_attempted_room_keys": [
-        "__base__"
-      ],
-      "run_rate_limited_room_keys": [],
-      "run_completed_room_keys": [
-        "__base__"
-      ],
-      "run_global_budget_used": 7
+      }
     },
     {
       "base_url": "https://socolivekj.cc/truc-tiep/ulsan-citizens-vs-ulsan-hyundai-luc-1700-ngay-29-07-2026/",
@@ -7005,15 +6947,7 @@
           "last_stream_count": 1,
           "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
         }
-      },
-      "run_attempted_room_keys": [
-        "__base__"
-      ],
-      "run_rate_limited_room_keys": [],
-      "run_completed_room_keys": [
-        "__base__"
-      ],
-      "run_global_budget_used": 8
+      }
     },
     {
       "base_url": "https://socolivekj.cc/truc-tiep/busan-trans-fc-vs-jinju-citizen-luc-1700-ngay-29-07-2026/",
@@ -7254,15 +7188,7 @@
           "last_stream_count": 1,
           "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
         }
-      },
-      "run_attempted_room_keys": [
-        "__base__"
-      ],
-      "run_rate_limited_room_keys": [],
-      "run_completed_room_keys": [
-        "__base__"
-      ],
-      "run_global_budget_used": 9
+      }
     }
   ]
 }
