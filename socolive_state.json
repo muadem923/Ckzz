@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-29T13:31:12.181671+07:00",
+  "generated_at": "2026-07-29T14:01:15.495707+07:00",
   "state_schema_version": "v10.5-api-first-room-queue",
   "dispatch_next": false,
   "pending_count": 0,
@@ -8,20 +8,20 @@
   "coverage_complete_count": 30,
   "total_match_count": 30,
   "total_stream_count": 28,
-  "progress_count": 1,
-  "new_link_count": 1,
+  "progress_count": 0,
+  "new_link_count": 0,
   "refreshed_link_count": 0,
-  "queue_progress_count": 31,
-  "terminal_progress_count": 30,
-  "newly_attempted_count": 1,
+  "queue_progress_count": 0,
+  "terminal_progress_count": 0,
+  "newly_attempted_count": 0,
   "queue_total_rooms": 30,
   "queue_success_rooms": 30,
   "queue_exhausted_rooms": 0,
   "queue_terminal_rooms": 30,
   "queue_attempts_total": 30,
-  "chain_runs": 1,
-  "no_progress_runs": 0,
-  "no_queue_progress_runs": 0,
+  "chain_runs": 2,
+  "no_progress_runs": 1,
+  "no_queue_progress_runs": 1,
   "unchanged_pending_runs": 0,
   "rate_limit_only_runs": 0,
   "rate_limit_only_run": false,
@@ -30,7 +30,7 @@
   "rate_limited": false,
   "rate_limit_url": "",
   "global_room_budget": 48,
-  "global_room_budget_used": 1,
+  "global_room_budget_used": 0,
   "target_base_urls": [
     "https://socolivekj.cc/truc-tiep/auckland-city-vs-bay-olympic-luc-1430-ngay-29-07-2026/",
     "https://socolivekj.cc/truc-tiep/brindabella-blues-fc-u23-vs-queanbeyan-city-u23-luc-1430-ngay-29-07-2026/",
@@ -74,8 +74,8 @@
       "away_logo": "https://imgts.sportpulseapiz.com/football/team/y39mp1hyv05mojx/image/small",
       "time_text": "12:30",
       "date_text": "29/07",
-      "status": "",
-      "card_text": "INDIAN REGIONAL CUP HT 12:30 - 29.07 Mizoram Police FC 1 : 0 Ganggam SC HT 1 - 0 6 - 1 0 - 0 0.80 0/0.5 1.00 1.03 2.5/3 0.78",
+      "status": "Hiệp 2",
+      "card_text": "INDIAN REGIONAL CUP Hiệp 2: 72' 12:30 - 29.07 Mizoram Police FC 2 : 0 Ganggam SC HT 1 - 0 7 - 2 0 - 1 1.15 0/0.5 0.68 0.75 2.5/3 1.05",
       "rooms": [
         {
           "url": "https://socolivekj.cc/truc-tiep/mizoram-police-fc-vs-ganggam-sc-luc-1230-ngay-29-07-2026/",
@@ -800,7 +800,7 @@
       "time_text": "14:30",
       "date_text": "29/07",
       "status": "",
-      "card_text": "NZ NORTHERN PREMIER LEAGUE 14:30 - 29.07 Auckland City Bay Olympic 1 - 4 1 - 0 1 - 0 JEAN 0.90 2/2.5 0.90 0.95 3.5 0.85",
+      "card_text": "NZ NORTHERN PREMIER LEAGUE 14:30 - 29.07 Auckland City Bay Olympic 1 - 4 1 - 0 1 - 0 JEAN 0.93 2/2.5 0.88 0.80 3.5 1.00",
       "rooms": [
         {
           "url": "https://socolivekj.cc/truc-tiep/auckland-city-vs-bay-olympic-luc-1430-ngay-29-07-2026/",
@@ -3430,7 +3430,7 @@
       "time_text": "16:00",
       "date_text": "29/07",
       "status": "",
-      "card_text": "GIAO HỮU CLB 16:00 - 29.07 RC Celta Viseu HT 0 - 0 0 - 0 0 - 0 OLER 1.00 1 0.80 0.90 3 0.90",
+      "card_text": "GIAO HỮU CLB 16:00 - 29.07 RC Celta Viseu HT 0 - 0 0 - 0 0 - 0 OLER 0.85 0.5/1 0.95 0.98 3 0.83",
       "rooms": [
         {
           "url": "https://socolivekj.cc/truc-tiep/rc-celta-vs-viseu-luc-1600-ngay-29-07-2026/",
@@ -5077,7 +5077,7 @@
       "time_text": "17:00",
       "date_text": "29/07",
       "status": "",
-      "card_text": "CÚP FA HÀN QUỐC 17:00 - 29.07 Chungnam Asan Siheung City HT 0 - 0 0 - 0 0 - 0 TAGE 0.93 0.5 0.88 0.95 2.5 0.85",
+      "card_text": "CÚP FA HÀN QUỐC 17:00 - 29.07 Chungnam Asan Siheung City HT 0 - 0 0 - 0 0 - 0 TAGE 0.95 0.5 0.85 0.98 2.5 0.83",
       "rooms": [
         {
           "url": "https://socolivekj.cc/truc-tiep/chungnam-asan-vs-siheung-city-luc-1700-ngay-29-07-2026/",
@@ -5296,15 +5296,7 @@
           "last_stream_count": 1,
           "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
         }
-      },
-      "run_attempted_room_keys": [
-        "__base__"
-      ],
-      "run_rate_limited_room_keys": [],
-      "run_completed_room_keys": [
-        "__base__"
-      ],
-      "run_global_budget_used": 1
+      }
     },
     {
       "base_url": "https://socolivekj.cc/truc-tiep/yeoju-citizen-vs-dangjin-citizen-luc-1700-ngay-29-07-2026/",
@@ -5557,7 +5549,7 @@
       "time_text": "17:00",
       "date_text": "29/07",
       "status": "",
-      "card_text": "CÚP FA HÀN QUỐC 17:00 - 29.07 Gwangju FC Cheonan City HT 0 - 0 0 - 0 0 - 0 MAX 0.78 0.5 1.03 0.85 2.5 0.95",
+      "card_text": "CÚP FA HÀN QUỐC 17:00 - 29.07 Gwangju FC Cheonan City HT 0 - 0 0 - 0 0 - 0 MAX 1.03 0.5/1 0.78 0.85 2.5 0.95",
       "rooms": [
         {
           "url": "https://socolivekj.cc/truc-tiep/gwangju-fc-vs-cheonan-city-luc-1700-ngay-29-07-2026/",
@@ -5788,7 +5780,7 @@
       "time_text": "17:00",
       "date_text": "29/07",
       "status": "",
-      "card_text": "CÚP FA HÀN QUỐC 17:00 - 29.07 Bucheon 1995 Paju Frontier FC 0 - 3 1 - 0 JEAN 0.85 0.5/1 0.95 0.90 2.5 0.90",
+      "card_text": "CÚP FA HÀN QUỐC 17:00 - 29.07 Bucheon 1995 Paju Frontier FC 0 - 3 1 - 0 JEAN 0.83 0.5/1 0.98 0.90 2.5 0.90",
       "rooms": [
         {
           "url": "https://socolivekj.cc/truc-tiep/bucheon-1995-vs-paju-frontier-fc-luc-1700-ngay-29-07-2026/",
@@ -6019,7 +6011,7 @@
       "time_text": "17:00",
       "date_text": "29/07",
       "status": "",
-      "card_text": "CÚP FA HÀN QUỐC 17:00 - 29.07 Busan I Park Seoul FC 1 - 2 1 - 1 2 - 0 ASTRA 1.03 -0.5/1 0.78 0.95 2.5/3 0.85",
+      "card_text": "CÚP FA HÀN QUỐC 17:00 - 29.07 Busan I Park Seoul FC 1 - 2 1 - 1 2 - 0 ASTRA 0.80 -1 1.00 0.95 2.5/3 0.85",
       "rooms": [
         {
           "url": "https://socolivekj.cc/truc-tiep/busan-i-park-vs-seoul-fc-luc-1700-ngay-29-07-2026/",
@@ -6250,7 +6242,7 @@
       "time_text": "17:00",
       "date_text": "29/07",
       "status": "",
-      "card_text": "CÚP FA HÀN QUỐC 17:00 - 29.07 Gimcheon Sangmu Suwon FC 3 - 2 1 - 1 3 - 2 TOM 0.85 0/0.5 0.95 0.88 2.5/3 0.93",
+      "card_text": "CÚP FA HÀN QUỐC 17:00 - 29.07 Gimcheon Sangmu Suwon FC 3 - 2 1 - 1 3 - 2 TOM 0.90 0/0.5 0.90 0.83 2.5/3 0.98",
       "rooms": [
         {
           "url": "https://socolivekj.cc/truc-tiep/gimcheon-sangmu-vs-suwon-fc-luc-1700-ngay-29-07-2026/",
@@ -6720,7 +6712,7 @@
       "time_text": "17:00",
       "date_text": "29/07",
       "status": "",
-      "card_text": "CÚP FA HÀN QUỐC 17:00 - 29.07 Ulsan Citizens Ulsan Hyundai HT 0 - 0 0 - 0 0 - 0 BRADY 0.93 -1/1.5 0.88 0.98 3 0.83",
+      "card_text": "CÚP FA HÀN QUỐC 17:00 - 29.07 Ulsan Citizens Ulsan Hyundai HT 0 - 0 0 - 0 0 - 0 BRADY 0.95 -1/1.5 0.85 1.00 3 0.80",
       "rooms": [
         {
           "url": "https://socolivekj.cc/truc-tiep/ulsan-citizens-vs-ulsan-hyundai-luc-1700-ngay-29-07-2026/",
@@ -6959,7 +6951,7 @@
       "time_text": "17:00",
       "date_text": "29/07",
       "status": "",
-      "card_text": "CÚP FA HÀN QUỐC 17:00 - 29.07 Busan Trans FC Jinju Citizen HT 0 - 0 0 - 0 0 - 0 0.95 0.5 0.85 0.93 2.5 0.88",
+      "card_text": "CÚP FA HÀN QUỐC 17:00 - 29.07 Busan Trans FC Jinju Citizen HT 0 - 0 0 - 0 0 - 0 1.03 0.5 0.78 0.93 2.5 0.88",
       "rooms": [
         {
           "url": "https://socolivekj.cc/truc-tiep/busan-trans-fc-vs-jinju-citizen-luc-1700-ngay-29-07-2026/",
