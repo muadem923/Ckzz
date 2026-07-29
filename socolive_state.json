@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-29T15:01:20.485125+07:00",
+  "generated_at": "2026-07-29T15:31:09.538305+07:00",
   "state_schema_version": "v10.5-api-first-room-queue",
   "dispatch_next": false,
   "pending_count": 0,
@@ -8,20 +8,20 @@
   "coverage_complete_count": 30,
   "total_match_count": 30,
   "total_stream_count": 29,
-  "progress_count": 1,
-  "new_link_count": 1,
+  "progress_count": 0,
+  "new_link_count": 0,
   "refreshed_link_count": 0,
-  "queue_progress_count": 31,
-  "terminal_progress_count": 30,
-  "newly_attempted_count": 1,
+  "queue_progress_count": 0,
+  "terminal_progress_count": 0,
+  "newly_attempted_count": 0,
   "queue_total_rooms": 30,
   "queue_success_rooms": 30,
   "queue_exhausted_rooms": 0,
   "queue_terminal_rooms": 30,
   "queue_attempts_total": 30,
-  "chain_runs": 1,
-  "no_progress_runs": 0,
-  "no_queue_progress_runs": 0,
+  "chain_runs": 2,
+  "no_progress_runs": 1,
+  "no_queue_progress_runs": 1,
   "unchanged_pending_runs": 0,
   "rate_limit_only_runs": 0,
   "rate_limit_only_run": false,
@@ -30,7 +30,7 @@
   "rate_limited": false,
   "rate_limit_url": "",
   "global_room_budget": 48,
-  "global_room_budget_used": 1,
+  "global_room_budget_used": 0,
   "target_base_urls": [
     "https://socolivekj.cc/truc-tiep/auckland-city-vs-bay-olympic-luc-1430-ngay-29-07-2026/",
     "https://socolivekj.cc/truc-tiep/brindabella-blues-fc-u23-vs-queanbeyan-city-u23-luc-1430-ngay-29-07-2026/",
@@ -66,34 +66,33 @@
   "pending_base_urls": [],
   "matches": [
     {
-      "base_url": "https://socolivekj.cc/truc-tiep/lusitania-fc-vs-porto-b-luc-1500-ngay-29-07-2026/",
-      "raw_title": "Lusitania FC vs Porto B",
-      "home_team": "Lusitania FC",
-      "away_team": "Porto B",
-      "home_logo": "https://imgts.sportpulseapiz.com/football/team/965mkyh70zer1ge/image/small",
-      "away_logo": "https://imgts.sportpulseapiz.com/football/team/965mkyh7wdxr1ge/image/small",
-      "time_text": "15:00",
+      "base_url": "https://socolivekj.cc/truc-tiep/port-fc-vs-persija-jakarta-luc-1530-ngay-29-07-2026/",
+      "raw_title": "Port FC vs Persija Jakarta",
+      "home_team": "Port FC",
+      "away_team": "Persija Jakarta",
+      "home_logo": "https://imgts.sportpulseapiz.com/football/team/965mkyh7ykdr1ge/image/small",
+      "away_logo": "https://imgts.sportpulseapiz.com/football/team/l5ergpho7p8r8k0/image/small",
+      "time_text": "15:30",
       "date_text": "29/07",
-      "status": "Đang diễn ra",
-      "card_text": "GIAO HỮU CLB Đang diễn ra 15:00 - 29.07 Lusitania FC Porto B 1 - 1 1 - 2 - - - - - -",
+      "status": "Hiệp 1",
+      "card_text": "INDONESIAN PRESIDENT CUP Hiệp 1: 1' 15:30 - 29.07 Port FC 0 : 0 Persija Jakarta HT 0 - 0 0 - 0 0 - 0 FELIX 0.90 0/0.5 0.90 0.88 2.5 0.93",
       "rooms": [
         {
-          "url": "https://socolivekj.cc/truc-tiep/lusitania-fc-vs-porto-b-luc-1500-ngay-29-07-2026/",
-          "blv": "",
+          "url": "https://socolivekj.cc/truc-tiep/port-fc-vs-persija-jakarta-luc-1530-ngay-29-07-2026/",
+          "blv": "FELIX",
           "blv_id": ""
         }
       ],
       "streams": [
         {
-          "url": "https://live1.streambylivepulse.com/live/channel2.flv?wsSecret=7bda423469ee5732a3e894ae49a11504&wsABSTime=1785340903",
+          "url": "https://live2.streambylivepulse.com/live/channel24.flv",
           "queue_room_key": "__base__",
-          "room_url": "https://socolivekj.cc/truc-tiep/lusitania-fc-vs-porto-b-luc-1500-ngay-29-07-2026/",
+          "room_url": "https://socolivekj.cc/truc-tiep/port-fc-vs-persija-jakarta-luc-1530-ngay-29-07-2026/",
           "blv": "Nguồn phụ 1",
           "blv_id": "",
           "source_id": "",
           "source_provenance": [
             "cdp/request",
-            "cdp/response",
             "harvest-final",
             "harvest-round-1",
             "harvest-round-2",
@@ -103,8 +102,7 @@
             "harvest-round-6",
             "harvest-round-7",
             "harvest-round-8",
-            "request/fetch",
-            "response/403"
+            "request/fetch"
           ],
           "playback_referer": "",
           "playback_origin": "",
@@ -113,25 +111,24 @@
           "api_source_mode": "",
           "source_confidence": "network",
           "mapping_mode": "stream-source-id",
-          "discovered_from_room_url": "https://socolivekj.cc/truc-tiep/lusitania-fc-vs-porto-b-luc-1500-ngay-29-07-2026/",
-          "discovered_from_blv": "URL tổng",
-          "discovered_at": "2026-07-29T11:01:50.800077+07:00",
+          "discovered_from_room_url": "https://socolivekj.cc/truc-tiep/port-fc-vs-persija-jakarta-luc-1530-ngay-29-07-2026/",
+          "discovered_from_blv": "FELIX",
+          "discovered_at": "2026-07-29T11:31:18.092394+07:00",
           "valid_until": "",
           "is_expired": false
         }
       ],
       "room_results": [
         {
-          "url": "https://socolivekj.cc/truc-tiep/lusitania-fc-vs-porto-b-luc-1500-ngay-29-07-2026/",
-          "blv": "",
+          "url": "https://socolivekj.cc/truc-tiep/port-fc-vs-persija-jakarta-luc-1530-ngay-29-07-2026/",
+          "blv": "FELIX",
           "blv_id": "",
           "streams": [
-            "https://live1.streambylivepulse.com/live/channel2.flv?wsSecret=7bda423469ee5732a3e894ae49a11504&wsABSTime=1785340903"
+            "https://live2.streambylivepulse.com/live/channel24.flv"
           ],
           "stream_sources": {
-            "https://live1.streambylivepulse.com/live/channel2.flv?wsSecret=7bda423469ee5732a3e894ae49a11504&wsABSTime=1785340903": [
+            "https://live2.streambylivepulse.com/live/channel24.flv": [
               "cdp/request",
-              "cdp/response",
               "harvest-final",
               "harvest-round-1",
               "harvest-round-2",
@@ -141,32 +138,31 @@
               "harvest-round-6",
               "harvest-round-7",
               "harvest-round-8",
-              "request/fetch",
-              "response/403"
+              "request/fetch"
             ]
           },
           "stream_headers": {},
           "stream_first_seen": [
-            "https://live1.streambylivepulse.com/live/channel2.flv?wsSecret=7bda423469ee5732a3e894ae49a11504&wsABSTime=1785340903"
+            "https://live2.streambylivepulse.com/live/channel24.flv"
           ],
           "discovered_blv_ids": [],
           "diagnostics": {
-            "url": "https://socolivekj.cc/truc-tiep/lusitania-fc-vs-porto-b-luc-1500-ngay-29-07-2026/",
-            "title": "Trực tiếp Lusitania FC vs Porto B full lúc 15:00, ngày 29/07",
-            "h1": "Xem trực tiếp trận đấu Lusitania FC vs Porto B full lúc 15:00, ngày 29/07/2026",
+            "url": "https://socolivekj.cc/truc-tiep/port-fc-vs-persija-jakarta-luc-1530-ngay-29-07-2026/",
+            "title": "Trực tiếp Port FC vs Persija Jakarta full lúc 15:30, ngày 29/07",
+            "h1": "Xem trực tiếp trận đấu Port FC vs Persija Jakarta full lúc 15:30, ngày 29/07/2026",
             "ready_state": "complete",
             "visibility_state": "visible",
             "hidden": false,
             "video_count": 0,
             "iframe_count": 5,
-            "body_sample": "WC 2026 Lịch Thi Đấu Xem Lại Video Highlight Tỷ Lệ Kèo BXH KQBD Tips Tin Tức Livescore Tuyển Dụng Top Nhà Cái Cược 8xbet WC 2026 Lịch Thi Đấu Xem Lại Video Highlight Tỷ Lệ Kèo BXH KQBD Tips Tin Tức Livescore Tuyển Dụng Top nhà cái Xem trực tiếp trận đấu Lusitania FC vs Porto B full lúc 15:00, ngày 29/07/2026 Phát sóng link trực tuyến Lusitania FC vs Porto B hôm nay tại giải đấu Giao Hữu CLB _ _ _ _ _ _ Lusitania FC Porto B Theo bạn thì trận này tài hay xỉu? Tài 0% Xỉu 0% Theo bạn thì trận này đội nào sẽ thắng? Chủ nhà 0% Hòa 0% Đội Khách 0% Anh Em Muốn Tham Gia Đặt Cược Thì Click Vào Quảng Cáo Của 8XBET Để Đăng Ký Đặt Cược Tất Cả Các Trận Đấu Trên Toàn Thế Giới. Nếu anh em gặp tình trạng không vào được web, hãy cài VPN 1.1.1.1 để truy cập ổn định hơn nhé . Châu Á Châu Âu Tài xỉu Phạt góc Chọn nhà cái HIỆP 1 FT Châu Á HIỆP 1 FT Châu Á - - - - - - Châu Âu HIỆP 1 FT Châu Âu - - - - - - Tài xỉu HIỆP 1 FT Tài xỉu - - - - - - SỚM FT Phạt góc HIỆP 1 FT Phạt góc - - - - - - Trực tiếp Mô phỏng CHIA SẺ Phát sóng trận đấu Lusitania FC vs Porto B full HD lúc 15:00, ngày 29/07/2026 Giao Hữu CLB HD 1 CHIA SẺ Thông số Diễn biến Đội hình BXH Chat Đối đầu Trận khác Trận sắp tới Tỷ lệ kèo TT trận Mô",
+            "body_sample": "WC 2026 Lịch Thi Đấu Xem Lại Video Highlight Tỷ Lệ Kèo BXH KQBD Tips Tin Tức Livescore Tuyển Dụng Top Nhà Cái Cược 8xbet WC 2026 Lịch Thi Đấu Xem Lại Video Highlight Tỷ Lệ Kèo BXH KQBD Tips Tin Tức Livescore Tuyển Dụng Top nhà cái Xem trực tiếp trận đấu Port FC vs Persija Jakarta full lúc 15:30, ngày 29/07/2026 Phát sóng link trực tuyến Port FC vs Persija Jakarta hôm nay tại giải đấu Indonesian President Cup _ _ _ _ _ _ Port FC Persija Jakarta Theo bạn thì trận này tài hay xỉu? Tài 0% Xỉu 0% Theo bạn thì trận này đội nào sẽ thắng? Chủ nhà 0% Hòa 0% Đội Khách 0% Anh Em Muốn Tham Gia Đặt Cược Thì Click Vào Quảng Cáo Của 8XBET Để Đăng Ký Đặt Cược Tất Cả Các Trận Đấu Trên Toàn Thế Giới. Nếu anh em gặp tình trạng không vào được web, hãy cài VPN 1.1.1.1 để truy cập ổn định hơn nhé . Châu Á Châu Âu Tài xỉu Phạt góc Chọn nhà cái HIỆP 1 FT Châu Á HIỆP 1 FT Châu Á - - - 1.03 0 0.78 Châu Âu HIỆP 1 FT Châu Âu - - - 2.60 3.40 2.30 Tài xỉu HIỆP 1 FT Tài xỉu - - - 0.85 2.5 0.95 SỚM FT Phạt góc HIỆP 1 FT Phạt góc - - - 0.85 8.5 0.95 Trực tiếp Mô phỏng CHIA SẺ Phát sóng trận đấu Port FC vs Persija Jakarta full HD lúc 15:30, ngày 29/07/2026 Indonesian President Cup FELIX HD FELIX CHIA SẺ Thông số Di",
             "harvest_rounds": 8,
-            "harvest_window_seconds": 6.462,
+            "harvest_window_seconds": 6.418,
             "main_status": 200,
             "harvested_stream_count": 1,
             "harvested_blv_ids": [],
             "scan_mode": "chromium-fallback",
-            "elapsed_seconds": 7.704
+            "elapsed_seconds": 8.301
           },
           "api_probe": {
             "enabled": true,
@@ -177,9 +173,9 @@
             "valid_stream_count": 0,
             "source_results": [],
             "fallback_reason": "list_stream_not_found",
-            "elapsed_seconds": 0.054,
+            "elapsed_seconds": 0.638,
             "room_content_type": "text/html",
-            "room_elapsed_seconds": 0.048,
+            "room_elapsed_seconds": 0.632,
             "room_error": ""
           },
           "http_probe": {
@@ -192,9 +188,9 @@
               "valid_stream_count": 0,
               "source_results": [],
               "fallback_reason": "list_stream_not_found",
-              "elapsed_seconds": 0.054,
+              "elapsed_seconds": 0.638,
               "room_content_type": "text/html",
-              "room_elapsed_seconds": 0.048,
+              "room_elapsed_seconds": 0.632,
               "room_error": ""
             },
             "legacy_http": {
@@ -238,17 +234,12 @@
             "image https://socolivekj.cc/wp-content/themes/bongda/dist/images/logo-socolive-tv-official-v2.png | net::ERR_FAILED",
             "image https://socolivekj.cc/wp-content/themes/bongda/dist/images/wc-2026/menu-wc.svg | net::ERR_FAILED",
             "image https://socolivekj.cc/wp-content/themes/bongda/dist/images/closemenu.png | net::ERR_FAILED",
-            "image https://imgts.sportpulseapiz.com/football/team/965mkyh70zer1ge/image/small | net::ERR_FAILED",
+            "image https://imgts.sportpulseapiz.com/football/team/965mkyh7ykdr1ge/image/small | net::ERR_FAILED",
             "stylesheet https://socolivekj.cc/wp-content/plugins/api-sport/public/css/match_detail.css?id=0671c88cfbad4335394b897262a0d662 | net::ERR_FAILED",
-            "image https://imgts.sportpulseapiz.com/football/team/965mkyh7wdxr1ge/image/small | net::ERR_FAILED",
+            "image https://imgts.sportpulseapiz.com/football/team/l5ergpho7p8r8k0/image/small | net::ERR_FAILED",
             "image https://socolivekj.cc/wp-content/themes/bongda/dist/images/company/21-1.png | net::ERR_FAILED"
           ],
-          "http_errors": [
-            "403 https://live1.streambylivepulse.com/live/channel2.flv?wsSecret=7bda423469ee5732a3e894ae49a11504&wsABSTime=1785340903",
-            "403 https://live1.streambylivepulse.com/live/channel2.flv?wsSecret=7bda423469ee5732a3e894ae49a11504&wsABSTime=1785340903",
-            "403 https://live1.streambylivepulse.com/live/channel2.flv?wsSecret=7bda423469ee5732a3e894ae49a11504&wsABSTime=1785340903",
-            "403 https://live1.streambylivepulse.com/live/channel2.flv?wsSecret=7bda423469ee5732a3e894ae49a11504&wsABSTime=1785340903"
-          ]
+          "http_errors": []
         }
       ],
       "attempted_room_ids": [],
@@ -265,8 +256,8 @@
         "room_progress": {
           "__base__": {
             "key": "__base__",
-            "url": "https://socolivekj.cc/truc-tiep/lusitania-fc-vs-porto-b-luc-1500-ngay-29-07-2026/",
-            "blv": "",
+            "url": "https://socolivekj.cc/truc-tiep/port-fc-vs-persija-jakarta-luc-1530-ngay-29-07-2026/",
+            "blv": "FELIX",
             "blv_id": "",
             "status": "success",
             "attempts": 1,
@@ -283,13 +274,13 @@
         }
       },
       "errors": [],
-      "match_name": "Lusitania FC vs Porto B",
-      "scheduled_at": "2026-07-29T15:00:00+07:00",
+      "match_name": "Port FC vs Persija Jakarta",
+      "scheduled_at": "2026-07-29T15:30:00+07:00",
       "room_progress": {
         "__base__": {
           "key": "__base__",
-          "url": "https://socolivekj.cc/truc-tiep/lusitania-fc-vs-porto-b-luc-1500-ngay-29-07-2026/",
-          "blv": "",
+          "url": "https://socolivekj.cc/truc-tiep/port-fc-vs-persija-jakarta-luc-1530-ngay-29-07-2026/",
+          "blv": "FELIX",
           "blv_id": "",
           "status": "success",
           "attempts": 1,
@@ -306,28 +297,28 @@
       }
     },
     {
-      "base_url": "https://socolivekj.cc/truc-tiep/estrela-amadora-vs-portimonense-luc-1500-ngay-29-07-2026/",
-      "raw_title": "Estrela Amadora vs Portimonense",
-      "home_team": "Estrela Amadora",
-      "away_team": "Portimonense",
-      "home_logo": "https://imgts.sportpulseapiz.com/football/team/p4jwq2gh2ovm0ve/image/small",
-      "away_logo": "https://imgts.sportpulseapiz.com/football/team/9k82rekhlg0repz/image/small",
-      "time_text": "15:00",
+      "base_url": "https://socolivekj.cc/truc-tiep/huda-hue-vs-pvf-u17-luc-1530-ngay-29-07-2026/",
+      "raw_title": "Huda Huế vs PVF U17",
+      "home_team": "Huda Huế",
+      "away_team": "PVF U17",
+      "home_logo": "https://imgts.sportpulseapiz.com/football/team/k82rekh96p9repz/image/small",
+      "away_logo": "https://imgts.sportpulseapiz.com/football/team/y39mp1h101pmojx/image/small",
+      "time_text": "15:30",
       "date_text": "29/07",
       "status": "Đang diễn ra",
-      "card_text": "GIAO HỮU CLB Đang diễn ra 15:00 - 29.07 Estrela Amadora Portimonense 3 - 0 1 - 1 3 - 1 - - - - - -",
+      "card_text": "GIẢI BÓNG ĐÁ U17 VĐQG 2026 Đang diễn ra 15:30 - 29.07 Huda Huế PVF U17 HT 0 - 0 0 - 0 0 - 0 - - - - - -",
       "rooms": [
         {
-          "url": "https://socolivekj.cc/truc-tiep/estrela-amadora-vs-portimonense-luc-1500-ngay-29-07-2026/",
+          "url": "https://socolivekj.cc/truc-tiep/huda-hue-vs-pvf-u17-luc-1530-ngay-29-07-2026/",
           "blv": "",
           "blv_id": ""
         }
       ],
       "streams": [
         {
-          "url": "https://live1.streambylivepulse.com/live/channel33.flv?wsSecret=9c409c269a088f4974860bbacfab2097&wsABSTime=1785340894",
+          "url": "https://live1.streambylivepulse.com/live/channel39.flv?wsSecret=6825d40904642163a6f1aaddef5b8f68&wsABSTime=1785344467",
           "queue_room_key": "__base__",
-          "room_url": "https://socolivekj.cc/truc-tiep/estrela-amadora-vs-portimonense-luc-1500-ngay-29-07-2026/",
+          "room_url": "https://socolivekj.cc/truc-tiep/huda-hue-vs-pvf-u17-luc-1530-ngay-29-07-2026/",
           "blv": "Nguồn phụ 1",
           "blv_id": "",
           "source_id": "",
@@ -353,23 +344,23 @@
           "api_source_mode": "",
           "source_confidence": "network",
           "mapping_mode": "stream-source-id",
-          "discovered_from_room_url": "https://socolivekj.cc/truc-tiep/estrela-amadora-vs-portimonense-luc-1500-ngay-29-07-2026/",
+          "discovered_from_room_url": "https://socolivekj.cc/truc-tiep/huda-hue-vs-pvf-u17-luc-1530-ngay-29-07-2026/",
           "discovered_from_blv": "URL tổng",
-          "discovered_at": "2026-07-29T11:01:41.072080+07:00",
+          "discovered_at": "2026-07-29T12:01:13.939208+07:00",
           "valid_until": "",
           "is_expired": false
         }
       ],
       "room_results": [
         {
-          "url": "https://socolivekj.cc/truc-tiep/estrela-amadora-vs-portimonense-luc-1500-ngay-29-07-2026/",
+          "url": "https://socolivekj.cc/truc-tiep/huda-hue-vs-pvf-u17-luc-1530-ngay-29-07-2026/",
           "blv": "",
           "blv_id": "",
           "streams": [
-            "https://live1.streambylivepulse.com/live/channel33.flv?wsSecret=9c409c269a088f4974860bbacfab2097&wsABSTime=1785340894"
+            "https://live1.streambylivepulse.com/live/channel39.flv?wsSecret=6825d40904642163a6f1aaddef5b8f68&wsABSTime=1785344467"
           ],
           "stream_sources": {
-            "https://live1.streambylivepulse.com/live/channel33.flv?wsSecret=9c409c269a088f4974860bbacfab2097&wsABSTime=1785340894": [
+            "https://live1.streambylivepulse.com/live/channel39.flv?wsSecret=6825d40904642163a6f1aaddef5b8f68&wsABSTime=1785344467": [
               "cdp/request",
               "cdp/response",
               "harvest-final",
@@ -387,26 +378,26 @@
           },
           "stream_headers": {},
           "stream_first_seen": [
-            "https://live1.streambylivepulse.com/live/channel33.flv?wsSecret=9c409c269a088f4974860bbacfab2097&wsABSTime=1785340894"
+            "https://live1.streambylivepulse.com/live/channel39.flv?wsSecret=6825d40904642163a6f1aaddef5b8f68&wsABSTime=1785344467"
           ],
           "discovered_blv_ids": [],
           "diagnostics": {
-            "url": "https://socolivekj.cc/truc-tiep/estrela-amadora-vs-portimonense-luc-1500-ngay-29-07-2026/",
-            "title": "Trực tiếp Estrela Amadora vs Portimonense full lúc 15:00, ngày 29/07",
-            "h1": "Xem trực tiếp trận đấu Estrela Amadora vs Portimonense full lúc 15:00, ngày 29/07/2026",
+            "url": "https://socolivekj.cc/truc-tiep/huda-hue-vs-pvf-u17-luc-1530-ngay-29-07-2026/",
+            "title": "Trực tiếp Huda Huế vs PVF U17 full lúc 15:30, ngày 29/07",
+            "h1": "Xem trực tiếp trận đấu Huda Huế vs PVF U17 full lúc 15:30, ngày 29/07/2026",
             "ready_state": "complete",
             "visibility_state": "visible",
             "hidden": false,
             "video_count": 0,
             "iframe_count": 5,
-            "body_sample": "WC 2026 Lịch Thi Đấu Xem Lại Video Highlight Tỷ Lệ Kèo BXH KQBD Tips Tin Tức Livescore Tuyển Dụng Top Nhà Cái Cược 8xbet WC 2026 Lịch Thi Đấu Xem Lại Video Highlight Tỷ Lệ Kèo BXH KQBD Tips Tin Tức Livescore Tuyển Dụng Top nhà cái Xem trực tiếp trận đấu Estrela Amadora vs Portimonense full lúc 15:00, ngày 29/07/2026 Phát sóng link trực tuyến Estrela Amadora vs Portimonense hôm nay tại giải đấu Giao Hữu CLB _ _ _ _ _ _ Estrela Amadora Portimonense Theo bạn thì trận này tài hay xỉu? Tài 0% Xỉu 0% Theo bạn thì trận này đội nào sẽ thắng? Chủ nhà 0% Hòa 0% Đội Khách 0% Anh Em Muốn Tham Gia Đặt Cược Thì Click Vào Quảng Cáo Của 8XBET Để Đăng Ký Đặt Cược Tất Cả Các Trận Đấu Trên Toàn Thế Giới. Nếu anh em gặp tình trạng không vào được web, hãy cài VPN 1.1.1.1 để truy cập ổn định hơn nhé . Châu Á Châu Âu Tài xỉu Phạt góc Chọn nhà cái HIỆP 1 FT Châu Á HIỆP 1 FT Châu Á - - - - - - Châu Âu HIỆP 1 FT Châu Âu - - - - - - Tài xỉu HIỆP 1 FT Tài xỉu - - - - - - SỚM FT Phạt góc HIỆP 1 FT Phạt góc - - - - - - Trực tiếp Mô phỏng CHIA SẺ Phát sóng trận đấu Estrela Amadora vs Portimonense full HD lúc 15:00, ngày 29/07/2026 Giao Hữu CLB HD 1 CHIA SẺ Thông số Diễn biến Đội hình BXH Chat Đối đầu Trận khác T",
+            "body_sample": "WC 2026 Lịch Thi Đấu Xem Lại Video Highlight Tỷ Lệ Kèo BXH KQBD Tips Tin Tức Livescore Tuyển Dụng Top Nhà Cái Cược 8xbet WC 2026 Lịch Thi Đấu Xem Lại Video Highlight Tỷ Lệ Kèo BXH KQBD Tips Tin Tức Livescore Tuyển Dụng Top nhà cái Xem trực tiếp trận đấu Huda Huế vs PVF U17 full lúc 15:30, ngày 29/07/2026 Phát sóng link trực tuyến Huda Huế vs PVF U17 hôm nay tại giải đấu Giải Bóng Đá U17 VĐQG 2026 _ _ _ _ _ _ Huda Huế PVF U17 Theo bạn thì trận này tài hay xỉu? Tài 0% Xỉu 0% Theo bạn thì trận này đội nào sẽ thắng? Chủ nhà 0% Hòa 0% Đội Khách 0% Anh Em Muốn Tham Gia Đặt Cược Thì Click Vào Quảng Cáo Của 8XBET Để Đăng Ký Đặt Cược Tất Cả Các Trận Đấu Trên Toàn Thế Giới. Nếu anh em gặp tình trạng không vào được web, hãy cài VPN 1.1.1.1 để truy cập ổn định hơn nhé . Châu Á Châu Âu Tài xỉu Phạt góc Chọn nhà cái HIỆP 1 FT Châu Á HIỆP 1 FT Châu Á - - - - - - Châu Âu HIỆP 1 FT Châu Âu - - - - - - Tài xỉu HIỆP 1 FT Tài xỉu - - - - - - SỚM FT Phạt góc HIỆP 1 FT Phạt góc - - - - - - Trực tiếp Mô phỏng CHIA SẺ Phát sóng trận đấu Huda Huế vs PVF U17 full HD lúc 15:30, ngày 29/07/2026 Giải Bóng Đá U17 VĐQG 2026 HD 1 CHIA SẺ Thông số Diễn biến Đội hình BXH Chat Đối đầu Trận khác Trận sắp tới Tỷ lệ kè",
             "harvest_rounds": 8,
-            "harvest_window_seconds": 6.44,
+            "harvest_window_seconds": 6.448,
             "main_status": 200,
             "harvested_stream_count": 1,
             "harvested_blv_ids": [],
             "scan_mode": "chromium-fallback",
-            "elapsed_seconds": 7.646
+            "elapsed_seconds": 8.516
           },
           "api_probe": {
             "enabled": true,
@@ -417,9 +408,9 @@
             "valid_stream_count": 0,
             "source_results": [],
             "fallback_reason": "list_stream_not_found",
-            "elapsed_seconds": 0.035,
-            "room_content_type": "text/html",
-            "room_elapsed_seconds": 0.03,
+            "elapsed_seconds": 0.173,
+            "room_content_type": "text/html; charset=UTF-8",
+            "room_elapsed_seconds": 0.168,
             "room_error": ""
           },
           "http_probe": {
@@ -432,9 +423,9 @@
               "valid_stream_count": 0,
               "source_results": [],
               "fallback_reason": "list_stream_not_found",
-              "elapsed_seconds": 0.035,
-              "room_content_type": "text/html",
-              "room_elapsed_seconds": 0.03,
+              "elapsed_seconds": 0.173,
+              "room_content_type": "text/html; charset=UTF-8",
+              "room_elapsed_seconds": 0.168,
               "room_error": ""
             },
             "legacy_http": {
@@ -478,16 +469,17 @@
             "image https://socolivekj.cc/wp-content/themes/bongda/dist/images/logo-socolive-tv-official-v2.png | net::ERR_FAILED",
             "image https://socolivekj.cc/wp-content/themes/bongda/dist/images/wc-2026/menu-wc.svg | net::ERR_FAILED",
             "image https://socolivekj.cc/wp-content/themes/bongda/dist/images/closemenu.png | net::ERR_FAILED",
-            "image https://imgts.sportpulseapiz.com/football/team/p4jwq2gh2ovm0ve/image/small | net::ERR_FAILED",
+            "image https://imgts.sportpulseapiz.com/football/team/k82rekh96p9repz/image/small | net::ERR_FAILED",
             "stylesheet https://socolivekj.cc/wp-content/plugins/api-sport/public/css/match_detail.css?id=0671c88cfbad4335394b897262a0d662 | net::ERR_FAILED",
-            "image https://imgts.sportpulseapiz.com/football/team/9k82rekhlg0repz/image/small | net::ERR_FAILED",
+            "image https://imgts.sportpulseapiz.com/football/team/y39mp1h101pmojx/image/small | net::ERR_FAILED",
             "image https://socolivekj.cc/wp-content/themes/bongda/dist/images/company/21-1.png | net::ERR_FAILED"
           ],
           "http_errors": [
-            "403 https://live1.streambylivepulse.com/live/channel33.flv?wsSecret=9c409c269a088f4974860bbacfab2097&wsABSTime=1785340894",
-            "403 https://live1.streambylivepulse.com/live/channel33.flv?wsSecret=9c409c269a088f4974860bbacfab2097&wsABSTime=1785340894",
-            "403 https://live1.streambylivepulse.com/live/channel33.flv?wsSecret=9c409c269a088f4974860bbacfab2097&wsABSTime=1785340894",
-            "403 https://live1.streambylivepulse.com/live/channel33.flv?wsSecret=9c409c269a088f4974860bbacfab2097&wsABSTime=1785340894"
+            "403 https://live1.streambylivepulse.com/live/channel39.flv?wsSecret=6825d40904642163a6f1aaddef5b8f68&wsABSTime=1785344467",
+            "403 https://live1.streambylivepulse.com/live/channel39.flv?wsSecret=6825d40904642163a6f1aaddef5b8f68&wsABSTime=1785344467",
+            "403 https://live1.streambylivepulse.com/live/channel39.flv?wsSecret=6825d40904642163a6f1aaddef5b8f68&wsABSTime=1785344467",
+            "403 https://live1.streambylivepulse.com/live/channel39.flv?wsSecret=6825d40904642163a6f1aaddef5b8f68&wsABSTime=1785344467",
+            "403 https://live1.streambylivepulse.com/live/channel39.flv?wsSecret=6825d40904642163a6f1aaddef5b8f68&wsABSTime=1785344467"
           ]
         }
       ],
@@ -505,7 +497,7 @@
         "room_progress": {
           "__base__": {
             "key": "__base__",
-            "url": "https://socolivekj.cc/truc-tiep/estrela-amadora-vs-portimonense-luc-1500-ngay-29-07-2026/",
+            "url": "https://socolivekj.cc/truc-tiep/huda-hue-vs-pvf-u17-luc-1530-ngay-29-07-2026/",
             "blv": "",
             "blv_id": "",
             "status": "success",
@@ -523,12 +515,12 @@
         }
       },
       "errors": [],
-      "match_name": "Estrela Amadora vs Portimonense",
-      "scheduled_at": "2026-07-29T15:00:00+07:00",
+      "match_name": "Huda Huế vs PVF U17",
+      "scheduled_at": "2026-07-29T15:30:00+07:00",
       "room_progress": {
         "__base__": {
           "key": "__base__",
-          "url": "https://socolivekj.cc/truc-tiep/estrela-amadora-vs-portimonense-luc-1500-ngay-29-07-2026/",
+          "url": "https://socolivekj.cc/truc-tiep/huda-hue-vs-pvf-u17-luc-1530-ngay-29-07-2026/",
           "blv": "",
           "blv_id": "",
           "status": "success",
@@ -554,8 +546,8 @@
       "away_logo": "https://imgts.sportpulseapiz.com/football/team/pxwrxlhg8nkryk0/image/small",
       "time_text": "15:00",
       "date_text": "29/07",
-      "status": "Đang diễn ra",
-      "card_text": "GIAO HỮU CLB Đang diễn ra 15:00 - 29.07 Kustosija Karlovac 1 - 0 0 - 0 1 - 0 1.00 -0.5 0.80 0.80 2.5 1.00",
+      "status": "Hiệp 1",
+      "card_text": "GIAO HỮU CLB Hiệp 1: 25' 15:00 - 29.07 Kustosija 0 : 0 Karlovac HT 0 - 0 0 - 0 0 - 1 0.85 0/0.5 0.95 0.75 2 1.05",
       "rooms": [
         {
           "url": "https://socolivekj.cc/truc-tiep/kustosija-vs-karlovac-luc-1500-ngay-29-07-2026/",
@@ -1027,477 +1019,6 @@
       }
     },
     {
-      "base_url": "https://socolivekj.cc/truc-tiep/auckland-city-vs-bay-olympic-luc-1430-ngay-29-07-2026/",
-      "raw_title": "Auckland City vs Bay Olympic",
-      "home_team": "Auckland City",
-      "away_team": "Bay Olympic",
-      "home_logo": "https://imgts.sportpulseapiz.com/football/team/4jwq2gh478ym0ve/image/small",
-      "away_logo": "https://imgts.sportpulseapiz.com/football/team/l5ergph346or8k0/image/small",
-      "time_text": "14:30",
-      "date_text": "29/07",
-      "status": "Hiệp 1",
-      "card_text": "NZ NORTHERN PREMIER LEAGUE Hiệp 1: 32' 14:30 - 29.07 Auckland City 3 : 1 Bay Olympic HT 3 - 1 3 - 0 0 - 1 0.75 1.5 0.95 0.85 6.5/7 0.95",
-      "rooms": [
-        {
-          "url": "https://socolivekj.cc/truc-tiep/auckland-city-vs-bay-olympic-luc-1430-ngay-29-07-2026/",
-          "blv": "",
-          "blv_id": ""
-        }
-      ],
-      "streams": [
-        {
-          "url": "https://live2.streambylivepulse.com/live/channel7.flv",
-          "queue_room_key": "__base__",
-          "room_url": "https://socolivekj.cc/truc-tiep/auckland-city-vs-bay-olympic-luc-1430-ngay-29-07-2026/",
-          "blv": "Nguồn phụ 1",
-          "blv_id": "",
-          "source_id": "",
-          "source_provenance": [
-            "cdp/request",
-            "harvest-final",
-            "harvest-round-1",
-            "harvest-round-2",
-            "harvest-round-3",
-            "harvest-round-4",
-            "harvest-round-5",
-            "harvest-round-6",
-            "harvest-round-7",
-            "harvest-round-8",
-            "request/fetch"
-          ],
-          "playback_referer": "",
-          "playback_origin": "",
-          "playback_user_agent": "",
-          "api_player_endpoint": "",
-          "api_source_mode": "",
-          "source_confidence": "network",
-          "mapping_mode": "stream-source-id",
-          "discovered_from_room_url": "https://socolivekj.cc/truc-tiep/auckland-city-vs-bay-olympic-luc-1430-ngay-29-07-2026/",
-          "discovered_from_blv": "JEAN",
-          "discovered_at": "2026-07-29T10:31:43.595013+07:00",
-          "valid_until": "",
-          "is_expired": false
-        }
-      ],
-      "room_results": [
-        {
-          "url": "https://socolivekj.cc/truc-tiep/auckland-city-vs-bay-olympic-luc-1430-ngay-29-07-2026/",
-          "blv": "JEAN",
-          "blv_id": "",
-          "streams": [
-            "https://live2.streambylivepulse.com/live/channel7.flv"
-          ],
-          "stream_sources": {
-            "https://live2.streambylivepulse.com/live/channel7.flv": [
-              "cdp/request",
-              "harvest-final",
-              "harvest-round-1",
-              "harvest-round-2",
-              "harvest-round-3",
-              "harvest-round-4",
-              "harvest-round-5",
-              "harvest-round-6",
-              "harvest-round-7",
-              "harvest-round-8",
-              "request/fetch"
-            ]
-          },
-          "stream_headers": {},
-          "stream_first_seen": [
-            "https://live2.streambylivepulse.com/live/channel7.flv"
-          ],
-          "discovered_blv_ids": [],
-          "diagnostics": {
-            "url": "https://socolivekj.cc/truc-tiep/auckland-city-vs-bay-olympic-luc-1430-ngay-29-07-2026/",
-            "title": "Trực tiếp Auckland City vs Bay Olympic full lúc 14:30, ngày 29/07",
-            "h1": "Xem trực tiếp trận đấu Auckland City vs Bay Olympic full lúc 14:30, ngày 29/07/2026",
-            "ready_state": "complete",
-            "visibility_state": "visible",
-            "hidden": false,
-            "video_count": 0,
-            "iframe_count": 5,
-            "body_sample": "WC 2026 Lịch Thi Đấu Xem Lại Video Highlight Tỷ Lệ Kèo BXH KQBD Tips Tin Tức Livescore Tuyển Dụng Top Nhà Cái Cược 8xbet WC 2026 Lịch Thi Đấu Xem Lại Video Highlight Tỷ Lệ Kèo BXH KQBD Tips Tin Tức Livescore Tuyển Dụng Top nhà cái Xem trực tiếp trận đấu Auckland City vs Bay Olympic full lúc 14:30, ngày 29/07/2026 Phát sóng link trực tuyến Auckland City vs Bay Olympic hôm nay tại giải đấu NZ Northern Premier League _ _ _ _ _ _ Auckland City Bay Olympic Theo bạn thì trận này tài hay xỉu? Tài 0% Xỉu 0% Theo bạn thì trận này đội nào sẽ thắng? Chủ nhà 0% Hòa 0% Đội Khách 0% Anh Em Muốn Tham Gia Đặt Cược Thì Click Vào Quảng Cáo Của 8XBET Để Đăng Ký Đặt Cược Tất Cả Các Trận Đấu Trên Toàn Thế Giới. Nếu anh em gặp tình trạng không vào được web, hãy cài VPN 1.1.1.1 để truy cập ổn định hơn nhé . Châu Á Châu Âu Tài xỉu Phạt góc Chọn nhà cái HIỆP 1 FT Châu Á HIỆP 1 FT Châu Á - - - 0.83 2/2.5 0.98 Châu Âu HIỆP 1 FT Châu Âu - - - 1.17 7.50 12.00 Tài xỉu HIỆP 1 FT Tài xỉu - - - 0.85 3.5 0.95 SỚM FT Phạt góc HIỆP 1 FT Phạt góc - - - 0.875 10.5 0.925 Trực tiếp Mô phỏng CHIA SẺ Phát sóng trận đấu Auckland City vs Bay Olympic full HD lúc 14:30, ngày 29/07/2026 NZ Northern Premier League JEAN HD JEAN C",
-            "harvest_rounds": 8,
-            "harvest_window_seconds": 6.289,
-            "main_status": 200,
-            "harvested_stream_count": 1,
-            "harvested_blv_ids": [],
-            "scan_mode": "chromium-fallback",
-            "elapsed_seconds": 7.538
-          },
-          "api_probe": {
-            "enabled": true,
-            "room_status": 200,
-            "active_index": 0,
-            "sources_found": 0,
-            "sources_tried": 0,
-            "valid_stream_count": 0,
-            "source_results": [],
-            "fallback_reason": "list_stream_not_found",
-            "elapsed_seconds": 0.033,
-            "room_content_type": "text/html",
-            "room_elapsed_seconds": 0.028,
-            "room_error": ""
-          },
-          "http_probe": {
-            "api_first": {
-              "enabled": true,
-              "room_status": 200,
-              "active_index": 0,
-              "sources_found": 0,
-              "sources_tried": 0,
-              "valid_stream_count": 0,
-              "source_results": [],
-              "fallback_reason": "list_stream_not_found",
-              "elapsed_seconds": 0.033,
-              "room_content_type": "text/html",
-              "room_elapsed_seconds": 0.028,
-              "room_error": ""
-            },
-            "legacy_http": {
-              "enabled": false,
-              "status": null,
-              "elapsed_seconds": 0.0,
-              "error": ""
-            }
-          },
-          "errors": [
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED"
-          ],
-          "failed_requests": [
-            "stylesheet https://fonts.googleapis.com/css2?family=Bangers&family=Oswald:wght@400;500;700&family=Raleway:wght@400;500;700&family=Roboto+Condensed:wght@300;400;700&display=swap | net::ERR_FAILED",
-            "stylesheet https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0 | net::ERR_FAILED",
-            "stylesheet https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css | net::ERR_FAILED",
-            "stylesheet https://socolivekj.cc/wp-content/plugins/widget-options/assets/css/widget-options.css?ver=4.0.6.1 | net::ERR_FAILED",
-            "stylesheet https://socolivekj.cc/wp-content/plugins/wp-pagenavi/pagenavi-css.css?ver=2.70 | net::ERR_FAILED",
-            "stylesheet https://socolivekj.cc/wp-content/themes/bongda/dist/styles/bootstrap.min.css?ver=1745376853 | net::ERR_FAILED",
-            "stylesheet https://socolivekj.cc/wp-content/themes/bongda/dist/styles/main.css?ver=1781184173 | net::ERR_FAILED",
-            "stylesheet https://socolivekj.cc/wp-content/themes/bongda/dist/styles/pages/single-live.css?ver=1784627923 | net::ERR_FAILED",
-            "image https://socolivekj.cc/wp-content/themes/bongda/dist/images/logo-socolive-tv-official-v2.png | net::ERR_FAILED",
-            "image https://socolivekj.cc/wp-content/themes/bongda/dist/images/wc-2026/menu-wc.svg | net::ERR_FAILED",
-            "image https://socolivekj.cc/wp-content/themes/bongda/dist/images/closemenu.png | net::ERR_FAILED",
-            "image https://imgts.sportpulseapiz.com/football/team/4jwq2gh478ym0ve/image/small | net::ERR_FAILED",
-            "stylesheet https://socolivekj.cc/wp-content/plugins/api-sport/public/css/match_detail.css?id=0671c88cfbad4335394b897262a0d662 | net::ERR_FAILED",
-            "image https://imgts.sportpulseapiz.com/football/team/l5ergph346or8k0/image/small | net::ERR_FAILED",
-            "image https://socolivekj.cc/wp-content/themes/bongda/dist/images/company/21-1.png | net::ERR_FAILED"
-          ],
-          "http_errors": []
-        }
-      ],
-      "attempted_room_ids": [],
-      "coverage": {
-        "found_streams": 1,
-        "found_blv_ids": [],
-        "goal": 2,
-        "source_goal_reached": false,
-        "room_queue_complete": true,
-        "complete": true,
-        "max_streams_per_blv": 2,
-        "total_explicit_blv_rooms": 0,
-        "pending_room_keys": [],
-        "room_progress": {
-          "__base__": {
-            "key": "__base__",
-            "url": "https://socolivekj.cc/truc-tiep/auckland-city-vs-bay-olympic-luc-1430-ngay-29-07-2026/",
-            "blv": "",
-            "blv_id": "",
-            "status": "success",
-            "attempts": 1,
-            "attempts_total": 1,
-            "ever_attempted": true,
-            "valid_stream_ever_found": true,
-            "needs_token_refresh": false,
-            "completion_reason": "valid_stream",
-            "rate_limit_hits": 0,
-            "last_http_status": 200,
-            "last_stream_count": 1,
-            "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
-          }
-        }
-      },
-      "errors": [],
-      "match_name": "Auckland City vs Bay Olympic",
-      "scheduled_at": "2026-07-29T14:30:00+07:00",
-      "room_progress": {
-        "__base__": {
-          "key": "__base__",
-          "url": "https://socolivekj.cc/truc-tiep/auckland-city-vs-bay-olympic-luc-1430-ngay-29-07-2026/",
-          "blv": "",
-          "blv_id": "",
-          "status": "success",
-          "attempts": 1,
-          "attempts_total": 1,
-          "ever_attempted": true,
-          "valid_stream_ever_found": true,
-          "needs_token_refresh": false,
-          "completion_reason": "valid_stream",
-          "rate_limit_hits": 0,
-          "last_http_status": 200,
-          "last_stream_count": 1,
-          "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
-        }
-      }
-    },
-    {
-      "base_url": "https://socolivekj.cc/truc-tiep/brindabella-blues-fc-u23-vs-queanbeyan-city-u23-luc-1430-ngay-29-07-2026/",
-      "raw_title": "Brindabella Blues FC U23 vs Queanbeyan City U23",
-      "home_team": "Brindabella Blues FC U23",
-      "away_team": "Queanbeyan City U23",
-      "home_logo": "https://imgts.sportpulseapiz.com/football/team/6ypq3nhwwjomd7o/image/small",
-      "away_logo": "https://imgts.sportpulseapiz.com/football/team/4jwq2ghxxjlm0ve/image/small",
-      "time_text": "14:30",
-      "date_text": "29/07",
-      "status": "Hiệp 1",
-      "card_text": "AUSTRALIA CAPITAL TERRITORY U23 LEAGUE Hiệp 1: 20' 14:40 - 29.07 Brindabella Blues FC U23 0 : 0 Queanbeyan City U23 HT 0 - 0 0 - 2 1 - 0 1.08 -0.5 0.73 0.88 2.5 0.93",
-      "rooms": [
-        {
-          "url": "https://socolivekj.cc/truc-tiep/brindabella-blues-fc-u23-vs-queanbeyan-city-u23-luc-1430-ngay-29-07-2026/",
-          "blv": "",
-          "blv_id": ""
-        }
-      ],
-      "streams": [
-        {
-          "url": "https://live1.streambylivepulse.com/live/channel32.flv?wsSecret=c97962c3aec5c944412c36cbd2860367&wsABSTime=1785339076",
-          "queue_room_key": "__base__",
-          "room_url": "https://socolivekj.cc/truc-tiep/brindabella-blues-fc-u23-vs-queanbeyan-city-u23-luc-1430-ngay-29-07-2026/",
-          "blv": "Nguồn phụ 1",
-          "blv_id": "",
-          "source_id": "",
-          "source_provenance": [
-            "cdp/request",
-            "cdp/response",
-            "harvest-final",
-            "harvest-round-1",
-            "harvest-round-2",
-            "harvest-round-3",
-            "harvest-round-4",
-            "harvest-round-5",
-            "harvest-round-6",
-            "harvest-round-7",
-            "harvest-round-8",
-            "request/fetch",
-            "response/403"
-          ],
-          "playback_referer": "",
-          "playback_origin": "",
-          "playback_user_agent": "",
-          "api_player_endpoint": "",
-          "api_source_mode": "",
-          "source_confidence": "network",
-          "mapping_mode": "stream-source-id",
-          "discovered_from_room_url": "https://socolivekj.cc/truc-tiep/brindabella-blues-fc-u23-vs-queanbeyan-city-u23-luc-1430-ngay-29-07-2026/",
-          "discovered_from_blv": "URL tổng",
-          "discovered_at": "2026-07-29T10:31:23.643435+07:00",
-          "valid_until": "",
-          "is_expired": false
-        }
-      ],
-      "room_results": [
-        {
-          "url": "https://socolivekj.cc/truc-tiep/brindabella-blues-fc-u23-vs-queanbeyan-city-u23-luc-1430-ngay-29-07-2026/",
-          "blv": "",
-          "blv_id": "",
-          "streams": [
-            "https://live1.streambylivepulse.com/live/channel32.flv?wsSecret=c97962c3aec5c944412c36cbd2860367&wsABSTime=1785339076"
-          ],
-          "stream_sources": {
-            "https://live1.streambylivepulse.com/live/channel32.flv?wsSecret=c97962c3aec5c944412c36cbd2860367&wsABSTime=1785339076": [
-              "cdp/request",
-              "cdp/response",
-              "harvest-final",
-              "harvest-round-1",
-              "harvest-round-2",
-              "harvest-round-3",
-              "harvest-round-4",
-              "harvest-round-5",
-              "harvest-round-6",
-              "harvest-round-7",
-              "harvest-round-8",
-              "request/fetch",
-              "response/403"
-            ]
-          },
-          "stream_headers": {},
-          "stream_first_seen": [
-            "https://live1.streambylivepulse.com/live/channel32.flv?wsSecret=c97962c3aec5c944412c36cbd2860367&wsABSTime=1785339076"
-          ],
-          "discovered_blv_ids": [],
-          "diagnostics": {
-            "url": "https://socolivekj.cc/truc-tiep/brindabella-blues-fc-u23-vs-queanbeyan-city-u23-luc-1430-ngay-29-07-2026/",
-            "title": "Trực tiếp Brindabella Blues FC U23 vs Queanbeyan City U23 full lúc 14:30, ngày 29/07",
-            "h1": "Xem trực tiếp trận đấu Brindabella Blues FC U23 vs Queanbeyan City U23 full lúc 14:30, ngày 29/07/2026",
-            "ready_state": "complete",
-            "visibility_state": "visible",
-            "hidden": false,
-            "video_count": 0,
-            "iframe_count": 5,
-            "body_sample": "WC 2026 Lịch Thi Đấu Xem Lại Video Highlight Tỷ Lệ Kèo BXH KQBD Tips Tin Tức Livescore Tuyển Dụng Top Nhà Cái Cược 8xbet WC 2026 Lịch Thi Đấu Xem Lại Video Highlight Tỷ Lệ Kèo BXH KQBD Tips Tin Tức Livescore Tuyển Dụng Top nhà cái Xem trực tiếp trận đấu Brindabella Blues FC U23 vs Queanbeyan City U23 full lúc 14:30, ngày 29/07/2026 Phát sóng link trực tuyến Brindabella Blues FC U23 vs Queanbeyan City U23 hôm nay tại giải đấu Australia Capital Territory U23 League _ _ _ _ _ _ Brindabella Blues FC U23 Queanbeyan City U23 Theo bạn thì trận này tài hay xỉu? Tài 0% Xỉu 0% Theo bạn thì trận này đội nào sẽ thắng? Chủ nhà 0% Hòa 0% Đội Khách 0% Anh Em Muốn Tham Gia Đặt Cược Thì Click Vào Quảng Cáo Của 8XBET Để Đăng Ký Đặt Cược Tất Cả Các Trận Đấu Trên Toàn Thế Giới. Nếu anh em gặp tình trạng không vào được web, hãy cài VPN 1.1.1.1 để truy cập ổn định hơn nhé . Châu Á Châu Âu Tài xỉu Phạt góc Chọn nhà cái HIỆP 1 FT Châu Á HIỆP 1 FT Châu Á - - - 0.95 -2 0.85 Châu Âu HIỆP 1 FT Châu Âu - - - 8.00 5.75 1.22 Tài xỉu HIỆP 1 FT Tài xỉu - - - 0.85 4 0.95 SỚM FT Phạt góc HIỆP 1 FT Phạt góc - - - - - - Trực tiếp Mô phỏng CHIA SẺ Phát sóng trận đấu Brindabella Blues FC U23 vs Queanbeyan City U23 full ",
-            "harvest_rounds": 8,
-            "harvest_window_seconds": 6.435,
-            "main_status": 200,
-            "harvested_stream_count": 1,
-            "harvested_blv_ids": [],
-            "scan_mode": "chromium-fallback",
-            "elapsed_seconds": 7.66
-          },
-          "api_probe": {
-            "enabled": true,
-            "room_status": 200,
-            "active_index": 0,
-            "sources_found": 0,
-            "sources_tried": 0,
-            "valid_stream_count": 0,
-            "source_results": [],
-            "fallback_reason": "list_stream_not_found",
-            "elapsed_seconds": 0.043,
-            "room_content_type": "text/html",
-            "room_elapsed_seconds": 0.037,
-            "room_error": ""
-          },
-          "http_probe": {
-            "api_first": {
-              "enabled": true,
-              "room_status": 200,
-              "active_index": 0,
-              "sources_found": 0,
-              "sources_tried": 0,
-              "valid_stream_count": 0,
-              "source_results": [],
-              "fallback_reason": "list_stream_not_found",
-              "elapsed_seconds": 0.043,
-              "room_content_type": "text/html",
-              "room_elapsed_seconds": 0.037,
-              "room_error": ""
-            },
-            "legacy_http": {
-              "enabled": false,
-              "status": null,
-              "elapsed_seconds": 0.0,
-              "error": ""
-            }
-          },
-          "errors": [
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED"
-          ],
-          "failed_requests": [
-            "stylesheet https://fonts.googleapis.com/css2?family=Bangers&family=Oswald:wght@400;500;700&family=Raleway:wght@400;500;700&family=Roboto+Condensed:wght@300;400;700&display=swap | net::ERR_FAILED",
-            "stylesheet https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0 | net::ERR_FAILED",
-            "stylesheet https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css | net::ERR_FAILED",
-            "stylesheet https://socolivekj.cc/wp-content/plugins/widget-options/assets/css/widget-options.css?ver=4.0.6.1 | net::ERR_FAILED",
-            "stylesheet https://socolivekj.cc/wp-content/plugins/wp-pagenavi/pagenavi-css.css?ver=2.70 | net::ERR_FAILED",
-            "stylesheet https://socolivekj.cc/wp-content/themes/bongda/dist/styles/bootstrap.min.css?ver=1745376853 | net::ERR_FAILED",
-            "stylesheet https://socolivekj.cc/wp-content/themes/bongda/dist/styles/main.css?ver=1781184173 | net::ERR_FAILED",
-            "stylesheet https://socolivekj.cc/wp-content/themes/bongda/dist/styles/pages/single-live.css?ver=1784627923 | net::ERR_FAILED",
-            "image https://socolivekj.cc/wp-content/themes/bongda/dist/images/logo-socolive-tv-official-v2.png | net::ERR_FAILED",
-            "image https://socolivekj.cc/wp-content/themes/bongda/dist/images/wc-2026/menu-wc.svg | net::ERR_FAILED",
-            "image https://socolivekj.cc/wp-content/themes/bongda/dist/images/closemenu.png | net::ERR_FAILED",
-            "image https://imgts.sportpulseapiz.com/football/team/6ypq3nhwwjomd7o/image/small | net::ERR_FAILED",
-            "stylesheet https://socolivekj.cc/wp-content/plugins/api-sport/public/css/match_detail.css?id=0671c88cfbad4335394b897262a0d662 | net::ERR_FAILED",
-            "image https://imgts.sportpulseapiz.com/football/team/4jwq2ghxxjlm0ve/image/small | net::ERR_FAILED",
-            "image https://socolivekj.cc/wp-content/themes/bongda/dist/images/company/21-1.png | net::ERR_FAILED"
-          ],
-          "http_errors": [
-            "403 https://live1.streambylivepulse.com/live/channel32.flv?wsSecret=c97962c3aec5c944412c36cbd2860367&wsABSTime=1785339076",
-            "403 https://live1.streambylivepulse.com/live/channel32.flv?wsSecret=c97962c3aec5c944412c36cbd2860367&wsABSTime=1785339076",
-            "403 https://live1.streambylivepulse.com/live/channel32.flv?wsSecret=c97962c3aec5c944412c36cbd2860367&wsABSTime=1785339076",
-            "403 https://live1.streambylivepulse.com/live/channel32.flv?wsSecret=c97962c3aec5c944412c36cbd2860367&wsABSTime=1785339076"
-          ]
-        }
-      ],
-      "attempted_room_ids": [],
-      "coverage": {
-        "found_streams": 1,
-        "found_blv_ids": [],
-        "goal": 2,
-        "source_goal_reached": false,
-        "room_queue_complete": true,
-        "complete": true,
-        "max_streams_per_blv": 2,
-        "total_explicit_blv_rooms": 0,
-        "pending_room_keys": [],
-        "room_progress": {
-          "__base__": {
-            "key": "__base__",
-            "url": "https://socolivekj.cc/truc-tiep/brindabella-blues-fc-u23-vs-queanbeyan-city-u23-luc-1430-ngay-29-07-2026/",
-            "blv": "",
-            "blv_id": "",
-            "status": "success",
-            "attempts": 1,
-            "attempts_total": 1,
-            "ever_attempted": true,
-            "valid_stream_ever_found": true,
-            "needs_token_refresh": false,
-            "completion_reason": "valid_stream",
-            "rate_limit_hits": 0,
-            "last_http_status": 200,
-            "last_stream_count": 1,
-            "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
-          }
-        }
-      },
-      "errors": [],
-      "match_name": "Brindabella Blues FC U23 vs Queanbeyan City U23",
-      "scheduled_at": "2026-07-29T14:30:00+07:00",
-      "room_progress": {
-        "__base__": {
-          "key": "__base__",
-          "url": "https://socolivekj.cc/truc-tiep/brindabella-blues-fc-u23-vs-queanbeyan-city-u23-luc-1430-ngay-29-07-2026/",
-          "blv": "",
-          "blv_id": "",
-          "status": "success",
-          "attempts": 1,
-          "attempts_total": 1,
-          "ever_attempted": true,
-          "valid_stream_ever_found": true,
-          "needs_token_refresh": false,
-          "completion_reason": "valid_stream",
-          "rate_limit_hits": 0,
-          "last_http_status": 200,
-          "last_stream_count": 1,
-          "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
-        }
-      }
-    },
-    {
       "base_url": "https://socolivekj.cc/truc-tiep/mallorca-b-vs-sant-andreu-luc-1430-ngay-29-07-2026/",
       "raw_title": "Mallorca B vs Sant Andreu",
       "home_team": "Mallorca B",
@@ -1507,7 +1028,7 @@
       "time_text": "14:30",
       "date_text": "29/07",
       "status": "Hiệp 1",
-      "card_text": "GIAO HỮU CLB Hiệp 1: 16' 14:45 - 29.07 Mallorca B 0 : 0 Sant Andreu HT 0 - 0 0 - 0 0 - 0 - - - - - -",
+      "card_text": "GIAO HỮU CLB Hiệp 1: 45+' 14:30 - 29.07 Mallorca B 0 : 0 Sant Andreu HT 0 - 0 0 - 0 0 - 0 - - - - - -",
       "rooms": [
         {
           "url": "https://socolivekj.cc/truc-tiep/mallorca-b-vs-sant-andreu-luc-1430-ngay-29-07-2026/",
@@ -1726,478 +1247,6 @@
           "key": "__base__",
           "url": "https://socolivekj.cc/truc-tiep/mallorca-b-vs-sant-andreu-luc-1430-ngay-29-07-2026/",
           "blv": "",
-          "blv_id": "",
-          "status": "success",
-          "attempts": 1,
-          "attempts_total": 1,
-          "ever_attempted": true,
-          "valid_stream_ever_found": true,
-          "needs_token_refresh": false,
-          "completion_reason": "valid_stream",
-          "rate_limit_hits": 0,
-          "last_http_status": 200,
-          "last_stream_count": 1,
-          "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
-        }
-      }
-    },
-    {
-      "base_url": "https://socolivekj.cc/truc-tiep/huda-hue-vs-pvf-u17-luc-1530-ngay-29-07-2026/",
-      "raw_title": "Huda Huế vs PVF U17",
-      "home_team": "Huda Huế",
-      "away_team": "PVF U17",
-      "home_logo": "https://imgts.sportpulseapiz.com/football/team/k82rekh96p9repz/image/small",
-      "away_logo": "https://imgts.sportpulseapiz.com/football/team/y39mp1h101pmojx/image/small",
-      "time_text": "15:30",
-      "date_text": "29/07",
-      "status": "",
-      "card_text": "GIẢI BÓNG ĐÁ U17 VĐQG 2026 15:30 - 29.07 Huda Huế PVF U17 HT 0 - 0 0 - 0 0 - 0 - - - - - -",
-      "rooms": [
-        {
-          "url": "https://socolivekj.cc/truc-tiep/huda-hue-vs-pvf-u17-luc-1530-ngay-29-07-2026/",
-          "blv": "",
-          "blv_id": ""
-        }
-      ],
-      "streams": [
-        {
-          "url": "https://live1.streambylivepulse.com/live/channel39.flv?wsSecret=6825d40904642163a6f1aaddef5b8f68&wsABSTime=1785344467",
-          "queue_room_key": "__base__",
-          "room_url": "https://socolivekj.cc/truc-tiep/huda-hue-vs-pvf-u17-luc-1530-ngay-29-07-2026/",
-          "blv": "Nguồn phụ 1",
-          "blv_id": "",
-          "source_id": "",
-          "source_provenance": [
-            "cdp/request",
-            "cdp/response",
-            "harvest-final",
-            "harvest-round-1",
-            "harvest-round-2",
-            "harvest-round-3",
-            "harvest-round-4",
-            "harvest-round-5",
-            "harvest-round-6",
-            "harvest-round-7",
-            "harvest-round-8",
-            "request/fetch",
-            "response/403"
-          ],
-          "playback_referer": "",
-          "playback_origin": "",
-          "playback_user_agent": "",
-          "api_player_endpoint": "",
-          "api_source_mode": "",
-          "source_confidence": "network",
-          "mapping_mode": "stream-source-id",
-          "discovered_from_room_url": "https://socolivekj.cc/truc-tiep/huda-hue-vs-pvf-u17-luc-1530-ngay-29-07-2026/",
-          "discovered_from_blv": "URL tổng",
-          "discovered_at": "2026-07-29T12:01:13.939208+07:00",
-          "valid_until": "",
-          "is_expired": false
-        }
-      ],
-      "room_results": [
-        {
-          "url": "https://socolivekj.cc/truc-tiep/huda-hue-vs-pvf-u17-luc-1530-ngay-29-07-2026/",
-          "blv": "",
-          "blv_id": "",
-          "streams": [
-            "https://live1.streambylivepulse.com/live/channel39.flv?wsSecret=6825d40904642163a6f1aaddef5b8f68&wsABSTime=1785344467"
-          ],
-          "stream_sources": {
-            "https://live1.streambylivepulse.com/live/channel39.flv?wsSecret=6825d40904642163a6f1aaddef5b8f68&wsABSTime=1785344467": [
-              "cdp/request",
-              "cdp/response",
-              "harvest-final",
-              "harvest-round-1",
-              "harvest-round-2",
-              "harvest-round-3",
-              "harvest-round-4",
-              "harvest-round-5",
-              "harvest-round-6",
-              "harvest-round-7",
-              "harvest-round-8",
-              "request/fetch",
-              "response/403"
-            ]
-          },
-          "stream_headers": {},
-          "stream_first_seen": [
-            "https://live1.streambylivepulse.com/live/channel39.flv?wsSecret=6825d40904642163a6f1aaddef5b8f68&wsABSTime=1785344467"
-          ],
-          "discovered_blv_ids": [],
-          "diagnostics": {
-            "url": "https://socolivekj.cc/truc-tiep/huda-hue-vs-pvf-u17-luc-1530-ngay-29-07-2026/",
-            "title": "Trực tiếp Huda Huế vs PVF U17 full lúc 15:30, ngày 29/07",
-            "h1": "Xem trực tiếp trận đấu Huda Huế vs PVF U17 full lúc 15:30, ngày 29/07/2026",
-            "ready_state": "complete",
-            "visibility_state": "visible",
-            "hidden": false,
-            "video_count": 0,
-            "iframe_count": 5,
-            "body_sample": "WC 2026 Lịch Thi Đấu Xem Lại Video Highlight Tỷ Lệ Kèo BXH KQBD Tips Tin Tức Livescore Tuyển Dụng Top Nhà Cái Cược 8xbet WC 2026 Lịch Thi Đấu Xem Lại Video Highlight Tỷ Lệ Kèo BXH KQBD Tips Tin Tức Livescore Tuyển Dụng Top nhà cái Xem trực tiếp trận đấu Huda Huế vs PVF U17 full lúc 15:30, ngày 29/07/2026 Phát sóng link trực tuyến Huda Huế vs PVF U17 hôm nay tại giải đấu Giải Bóng Đá U17 VĐQG 2026 _ _ _ _ _ _ Huda Huế PVF U17 Theo bạn thì trận này tài hay xỉu? Tài 0% Xỉu 0% Theo bạn thì trận này đội nào sẽ thắng? Chủ nhà 0% Hòa 0% Đội Khách 0% Anh Em Muốn Tham Gia Đặt Cược Thì Click Vào Quảng Cáo Của 8XBET Để Đăng Ký Đặt Cược Tất Cả Các Trận Đấu Trên Toàn Thế Giới. Nếu anh em gặp tình trạng không vào được web, hãy cài VPN 1.1.1.1 để truy cập ổn định hơn nhé . Châu Á Châu Âu Tài xỉu Phạt góc Chọn nhà cái HIỆP 1 FT Châu Á HIỆP 1 FT Châu Á - - - - - - Châu Âu HIỆP 1 FT Châu Âu - - - - - - Tài xỉu HIỆP 1 FT Tài xỉu - - - - - - SỚM FT Phạt góc HIỆP 1 FT Phạt góc - - - - - - Trực tiếp Mô phỏng CHIA SẺ Phát sóng trận đấu Huda Huế vs PVF U17 full HD lúc 15:30, ngày 29/07/2026 Giải Bóng Đá U17 VĐQG 2026 HD 1 CHIA SẺ Thông số Diễn biến Đội hình BXH Chat Đối đầu Trận khác Trận sắp tới Tỷ lệ kè",
-            "harvest_rounds": 8,
-            "harvest_window_seconds": 6.448,
-            "main_status": 200,
-            "harvested_stream_count": 1,
-            "harvested_blv_ids": [],
-            "scan_mode": "chromium-fallback",
-            "elapsed_seconds": 8.516
-          },
-          "api_probe": {
-            "enabled": true,
-            "room_status": 200,
-            "active_index": 0,
-            "sources_found": 0,
-            "sources_tried": 0,
-            "valid_stream_count": 0,
-            "source_results": [],
-            "fallback_reason": "list_stream_not_found",
-            "elapsed_seconds": 0.173,
-            "room_content_type": "text/html; charset=UTF-8",
-            "room_elapsed_seconds": 0.168,
-            "room_error": ""
-          },
-          "http_probe": {
-            "api_first": {
-              "enabled": true,
-              "room_status": 200,
-              "active_index": 0,
-              "sources_found": 0,
-              "sources_tried": 0,
-              "valid_stream_count": 0,
-              "source_results": [],
-              "fallback_reason": "list_stream_not_found",
-              "elapsed_seconds": 0.173,
-              "room_content_type": "text/html; charset=UTF-8",
-              "room_elapsed_seconds": 0.168,
-              "room_error": ""
-            },
-            "legacy_http": {
-              "enabled": false,
-              "status": null,
-              "elapsed_seconds": 0.0,
-              "error": ""
-            }
-          },
-          "errors": [
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED"
-          ],
-          "failed_requests": [
-            "stylesheet https://fonts.googleapis.com/css2?family=Bangers&family=Oswald:wght@400;500;700&family=Raleway:wght@400;500;700&family=Roboto+Condensed:wght@300;400;700&display=swap | net::ERR_FAILED",
-            "stylesheet https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0 | net::ERR_FAILED",
-            "stylesheet https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css | net::ERR_FAILED",
-            "stylesheet https://socolivekj.cc/wp-content/plugins/widget-options/assets/css/widget-options.css?ver=4.0.6.1 | net::ERR_FAILED",
-            "stylesheet https://socolivekj.cc/wp-content/plugins/wp-pagenavi/pagenavi-css.css?ver=2.70 | net::ERR_FAILED",
-            "stylesheet https://socolivekj.cc/wp-content/themes/bongda/dist/styles/bootstrap.min.css?ver=1745376853 | net::ERR_FAILED",
-            "stylesheet https://socolivekj.cc/wp-content/themes/bongda/dist/styles/main.css?ver=1781184173 | net::ERR_FAILED",
-            "stylesheet https://socolivekj.cc/wp-content/themes/bongda/dist/styles/pages/single-live.css?ver=1784627923 | net::ERR_FAILED",
-            "image https://socolivekj.cc/wp-content/themes/bongda/dist/images/logo-socolive-tv-official-v2.png | net::ERR_FAILED",
-            "image https://socolivekj.cc/wp-content/themes/bongda/dist/images/wc-2026/menu-wc.svg | net::ERR_FAILED",
-            "image https://socolivekj.cc/wp-content/themes/bongda/dist/images/closemenu.png | net::ERR_FAILED",
-            "image https://imgts.sportpulseapiz.com/football/team/k82rekh96p9repz/image/small | net::ERR_FAILED",
-            "stylesheet https://socolivekj.cc/wp-content/plugins/api-sport/public/css/match_detail.css?id=0671c88cfbad4335394b897262a0d662 | net::ERR_FAILED",
-            "image https://imgts.sportpulseapiz.com/football/team/y39mp1h101pmojx/image/small | net::ERR_FAILED",
-            "image https://socolivekj.cc/wp-content/themes/bongda/dist/images/company/21-1.png | net::ERR_FAILED"
-          ],
-          "http_errors": [
-            "403 https://live1.streambylivepulse.com/live/channel39.flv?wsSecret=6825d40904642163a6f1aaddef5b8f68&wsABSTime=1785344467",
-            "403 https://live1.streambylivepulse.com/live/channel39.flv?wsSecret=6825d40904642163a6f1aaddef5b8f68&wsABSTime=1785344467",
-            "403 https://live1.streambylivepulse.com/live/channel39.flv?wsSecret=6825d40904642163a6f1aaddef5b8f68&wsABSTime=1785344467",
-            "403 https://live1.streambylivepulse.com/live/channel39.flv?wsSecret=6825d40904642163a6f1aaddef5b8f68&wsABSTime=1785344467",
-            "403 https://live1.streambylivepulse.com/live/channel39.flv?wsSecret=6825d40904642163a6f1aaddef5b8f68&wsABSTime=1785344467"
-          ]
-        }
-      ],
-      "attempted_room_ids": [],
-      "coverage": {
-        "found_streams": 1,
-        "found_blv_ids": [],
-        "goal": 2,
-        "source_goal_reached": false,
-        "room_queue_complete": true,
-        "complete": true,
-        "max_streams_per_blv": 2,
-        "total_explicit_blv_rooms": 0,
-        "pending_room_keys": [],
-        "room_progress": {
-          "__base__": {
-            "key": "__base__",
-            "url": "https://socolivekj.cc/truc-tiep/huda-hue-vs-pvf-u17-luc-1530-ngay-29-07-2026/",
-            "blv": "",
-            "blv_id": "",
-            "status": "success",
-            "attempts": 1,
-            "attempts_total": 1,
-            "ever_attempted": true,
-            "valid_stream_ever_found": true,
-            "needs_token_refresh": false,
-            "completion_reason": "valid_stream",
-            "rate_limit_hits": 0,
-            "last_http_status": 200,
-            "last_stream_count": 1,
-            "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
-          }
-        }
-      },
-      "errors": [],
-      "match_name": "Huda Huế vs PVF U17",
-      "scheduled_at": "2026-07-29T15:30:00+07:00",
-      "room_progress": {
-        "__base__": {
-          "key": "__base__",
-          "url": "https://socolivekj.cc/truc-tiep/huda-hue-vs-pvf-u17-luc-1530-ngay-29-07-2026/",
-          "blv": "",
-          "blv_id": "",
-          "status": "success",
-          "attempts": 1,
-          "attempts_total": 1,
-          "ever_attempted": true,
-          "valid_stream_ever_found": true,
-          "needs_token_refresh": false,
-          "completion_reason": "valid_stream",
-          "rate_limit_hits": 0,
-          "last_http_status": 200,
-          "last_stream_count": 1,
-          "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
-        }
-      }
-    },
-    {
-      "base_url": "https://socolivekj.cc/truc-tiep/port-fc-vs-persija-jakarta-luc-1530-ngay-29-07-2026/",
-      "raw_title": "Port FC vs Persija Jakarta",
-      "home_team": "Port FC",
-      "away_team": "Persija Jakarta",
-      "home_logo": "https://imgts.sportpulseapiz.com/football/team/965mkyh7ykdr1ge/image/small",
-      "away_logo": "https://imgts.sportpulseapiz.com/football/team/l5ergpho7p8r8k0/image/small",
-      "time_text": "15:30",
-      "date_text": "29/07",
-      "status": "",
-      "card_text": "INDONESIAN PRESIDENT CUP 15:30 - 29.07 Port FC Persija Jakarta HT 0 - 0 0 - 0 0 - 0 FELIX 1.03 0 0.78 0.85 2.5 0.95",
-      "rooms": [
-        {
-          "url": "https://socolivekj.cc/truc-tiep/port-fc-vs-persija-jakarta-luc-1530-ngay-29-07-2026/",
-          "blv": "FELIX",
-          "blv_id": ""
-        }
-      ],
-      "streams": [
-        {
-          "url": "https://live2.streambylivepulse.com/live/channel24.flv",
-          "queue_room_key": "__base__",
-          "room_url": "https://socolivekj.cc/truc-tiep/port-fc-vs-persija-jakarta-luc-1530-ngay-29-07-2026/",
-          "blv": "Nguồn phụ 1",
-          "blv_id": "",
-          "source_id": "",
-          "source_provenance": [
-            "cdp/request",
-            "harvest-final",
-            "harvest-round-1",
-            "harvest-round-2",
-            "harvest-round-3",
-            "harvest-round-4",
-            "harvest-round-5",
-            "harvest-round-6",
-            "harvest-round-7",
-            "harvest-round-8",
-            "request/fetch"
-          ],
-          "playback_referer": "",
-          "playback_origin": "",
-          "playback_user_agent": "",
-          "api_player_endpoint": "",
-          "api_source_mode": "",
-          "source_confidence": "network",
-          "mapping_mode": "stream-source-id",
-          "discovered_from_room_url": "https://socolivekj.cc/truc-tiep/port-fc-vs-persija-jakarta-luc-1530-ngay-29-07-2026/",
-          "discovered_from_blv": "FELIX",
-          "discovered_at": "2026-07-29T11:31:18.092394+07:00",
-          "valid_until": "",
-          "is_expired": false
-        }
-      ],
-      "room_results": [
-        {
-          "url": "https://socolivekj.cc/truc-tiep/port-fc-vs-persija-jakarta-luc-1530-ngay-29-07-2026/",
-          "blv": "FELIX",
-          "blv_id": "",
-          "streams": [
-            "https://live2.streambylivepulse.com/live/channel24.flv"
-          ],
-          "stream_sources": {
-            "https://live2.streambylivepulse.com/live/channel24.flv": [
-              "cdp/request",
-              "harvest-final",
-              "harvest-round-1",
-              "harvest-round-2",
-              "harvest-round-3",
-              "harvest-round-4",
-              "harvest-round-5",
-              "harvest-round-6",
-              "harvest-round-7",
-              "harvest-round-8",
-              "request/fetch"
-            ]
-          },
-          "stream_headers": {},
-          "stream_first_seen": [
-            "https://live2.streambylivepulse.com/live/channel24.flv"
-          ],
-          "discovered_blv_ids": [],
-          "diagnostics": {
-            "url": "https://socolivekj.cc/truc-tiep/port-fc-vs-persija-jakarta-luc-1530-ngay-29-07-2026/",
-            "title": "Trực tiếp Port FC vs Persija Jakarta full lúc 15:30, ngày 29/07",
-            "h1": "Xem trực tiếp trận đấu Port FC vs Persija Jakarta full lúc 15:30, ngày 29/07/2026",
-            "ready_state": "complete",
-            "visibility_state": "visible",
-            "hidden": false,
-            "video_count": 0,
-            "iframe_count": 5,
-            "body_sample": "WC 2026 Lịch Thi Đấu Xem Lại Video Highlight Tỷ Lệ Kèo BXH KQBD Tips Tin Tức Livescore Tuyển Dụng Top Nhà Cái Cược 8xbet WC 2026 Lịch Thi Đấu Xem Lại Video Highlight Tỷ Lệ Kèo BXH KQBD Tips Tin Tức Livescore Tuyển Dụng Top nhà cái Xem trực tiếp trận đấu Port FC vs Persija Jakarta full lúc 15:30, ngày 29/07/2026 Phát sóng link trực tuyến Port FC vs Persija Jakarta hôm nay tại giải đấu Indonesian President Cup _ _ _ _ _ _ Port FC Persija Jakarta Theo bạn thì trận này tài hay xỉu? Tài 0% Xỉu 0% Theo bạn thì trận này đội nào sẽ thắng? Chủ nhà 0% Hòa 0% Đội Khách 0% Anh Em Muốn Tham Gia Đặt Cược Thì Click Vào Quảng Cáo Của 8XBET Để Đăng Ký Đặt Cược Tất Cả Các Trận Đấu Trên Toàn Thế Giới. Nếu anh em gặp tình trạng không vào được web, hãy cài VPN 1.1.1.1 để truy cập ổn định hơn nhé . Châu Á Châu Âu Tài xỉu Phạt góc Chọn nhà cái HIỆP 1 FT Châu Á HIỆP 1 FT Châu Á - - - 1.03 0 0.78 Châu Âu HIỆP 1 FT Châu Âu - - - 2.60 3.40 2.30 Tài xỉu HIỆP 1 FT Tài xỉu - - - 0.85 2.5 0.95 SỚM FT Phạt góc HIỆP 1 FT Phạt góc - - - 0.85 8.5 0.95 Trực tiếp Mô phỏng CHIA SẺ Phát sóng trận đấu Port FC vs Persija Jakarta full HD lúc 15:30, ngày 29/07/2026 Indonesian President Cup FELIX HD FELIX CHIA SẺ Thông số Di",
-            "harvest_rounds": 8,
-            "harvest_window_seconds": 6.418,
-            "main_status": 200,
-            "harvested_stream_count": 1,
-            "harvested_blv_ids": [],
-            "scan_mode": "chromium-fallback",
-            "elapsed_seconds": 8.301
-          },
-          "api_probe": {
-            "enabled": true,
-            "room_status": 200,
-            "active_index": 0,
-            "sources_found": 0,
-            "sources_tried": 0,
-            "valid_stream_count": 0,
-            "source_results": [],
-            "fallback_reason": "list_stream_not_found",
-            "elapsed_seconds": 0.638,
-            "room_content_type": "text/html",
-            "room_elapsed_seconds": 0.632,
-            "room_error": ""
-          },
-          "http_probe": {
-            "api_first": {
-              "enabled": true,
-              "room_status": 200,
-              "active_index": 0,
-              "sources_found": 0,
-              "sources_tried": 0,
-              "valid_stream_count": 0,
-              "source_results": [],
-              "fallback_reason": "list_stream_not_found",
-              "elapsed_seconds": 0.638,
-              "room_content_type": "text/html",
-              "room_elapsed_seconds": 0.632,
-              "room_error": ""
-            },
-            "legacy_http": {
-              "enabled": false,
-              "status": null,
-              "elapsed_seconds": 0.0,
-              "error": ""
-            }
-          },
-          "errors": [
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED"
-          ],
-          "failed_requests": [
-            "stylesheet https://fonts.googleapis.com/css2?family=Bangers&family=Oswald:wght@400;500;700&family=Raleway:wght@400;500;700&family=Roboto+Condensed:wght@300;400;700&display=swap | net::ERR_FAILED",
-            "stylesheet https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0 | net::ERR_FAILED",
-            "stylesheet https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css | net::ERR_FAILED",
-            "stylesheet https://socolivekj.cc/wp-content/plugins/widget-options/assets/css/widget-options.css?ver=4.0.6.1 | net::ERR_FAILED",
-            "stylesheet https://socolivekj.cc/wp-content/plugins/wp-pagenavi/pagenavi-css.css?ver=2.70 | net::ERR_FAILED",
-            "stylesheet https://socolivekj.cc/wp-content/themes/bongda/dist/styles/bootstrap.min.css?ver=1745376853 | net::ERR_FAILED",
-            "stylesheet https://socolivekj.cc/wp-content/themes/bongda/dist/styles/main.css?ver=1781184173 | net::ERR_FAILED",
-            "stylesheet https://socolivekj.cc/wp-content/themes/bongda/dist/styles/pages/single-live.css?ver=1784627923 | net::ERR_FAILED",
-            "image https://socolivekj.cc/wp-content/themes/bongda/dist/images/logo-socolive-tv-official-v2.png | net::ERR_FAILED",
-            "image https://socolivekj.cc/wp-content/themes/bongda/dist/images/wc-2026/menu-wc.svg | net::ERR_FAILED",
-            "image https://socolivekj.cc/wp-content/themes/bongda/dist/images/closemenu.png | net::ERR_FAILED",
-            "image https://imgts.sportpulseapiz.com/football/team/965mkyh7ykdr1ge/image/small | net::ERR_FAILED",
-            "stylesheet https://socolivekj.cc/wp-content/plugins/api-sport/public/css/match_detail.css?id=0671c88cfbad4335394b897262a0d662 | net::ERR_FAILED",
-            "image https://imgts.sportpulseapiz.com/football/team/l5ergpho7p8r8k0/image/small | net::ERR_FAILED",
-            "image https://socolivekj.cc/wp-content/themes/bongda/dist/images/company/21-1.png | net::ERR_FAILED"
-          ],
-          "http_errors": []
-        }
-      ],
-      "attempted_room_ids": [],
-      "coverage": {
-        "found_streams": 1,
-        "found_blv_ids": [],
-        "goal": 2,
-        "source_goal_reached": false,
-        "room_queue_complete": true,
-        "complete": true,
-        "max_streams_per_blv": 2,
-        "total_explicit_blv_rooms": 0,
-        "pending_room_keys": [],
-        "room_progress": {
-          "__base__": {
-            "key": "__base__",
-            "url": "https://socolivekj.cc/truc-tiep/port-fc-vs-persija-jakarta-luc-1530-ngay-29-07-2026/",
-            "blv": "FELIX",
-            "blv_id": "",
-            "status": "success",
-            "attempts": 1,
-            "attempts_total": 1,
-            "ever_attempted": true,
-            "valid_stream_ever_found": true,
-            "needs_token_refresh": false,
-            "completion_reason": "valid_stream",
-            "rate_limit_hits": 0,
-            "last_http_status": 200,
-            "last_stream_count": 1,
-            "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
-          }
-        }
-      },
-      "errors": [],
-      "match_name": "Port FC vs Persija Jakarta",
-      "scheduled_at": "2026-07-29T15:30:00+07:00",
-      "room_progress": {
-        "__base__": {
-          "key": "__base__",
-          "url": "https://socolivekj.cc/truc-tiep/port-fc-vs-persija-jakarta-luc-1530-ngay-29-07-2026/",
-          "blv": "FELIX",
           "blv_id": "",
           "status": "success",
           "attempts": 1,
@@ -3873,6 +2922,957 @@
       }
     },
     {
+      "base_url": "https://socolivekj.cc/truc-tiep/lusitania-fc-vs-porto-b-luc-1500-ngay-29-07-2026/",
+      "raw_title": "Lusitania FC vs Porto B",
+      "home_team": "Lusitania FC",
+      "away_team": "Porto B",
+      "home_logo": "https://imgts.sportpulseapiz.com/football/team/965mkyh70zer1ge/image/small",
+      "away_logo": "https://imgts.sportpulseapiz.com/football/team/965mkyh7wdxr1ge/image/small",
+      "time_text": "15:00",
+      "date_text": "29/07",
+      "status": "",
+      "card_text": "GIAO HỮU CLB Chưa xác định 15:00 - 29.07 Lusitania FC 0 : 0 Porto B HT 0 - 0 0 - 0 0 - 0 - - - - - -",
+      "rooms": [
+        {
+          "url": "https://socolivekj.cc/truc-tiep/lusitania-fc-vs-porto-b-luc-1500-ngay-29-07-2026/",
+          "blv": "",
+          "blv_id": ""
+        }
+      ],
+      "streams": [
+        {
+          "url": "https://live1.streambylivepulse.com/live/channel2.flv?wsSecret=7bda423469ee5732a3e894ae49a11504&wsABSTime=1785340903",
+          "queue_room_key": "__base__",
+          "room_url": "https://socolivekj.cc/truc-tiep/lusitania-fc-vs-porto-b-luc-1500-ngay-29-07-2026/",
+          "blv": "Nguồn phụ 1",
+          "blv_id": "",
+          "source_id": "",
+          "source_provenance": [
+            "cdp/request",
+            "cdp/response",
+            "harvest-final",
+            "harvest-round-1",
+            "harvest-round-2",
+            "harvest-round-3",
+            "harvest-round-4",
+            "harvest-round-5",
+            "harvest-round-6",
+            "harvest-round-7",
+            "harvest-round-8",
+            "request/fetch",
+            "response/403"
+          ],
+          "playback_referer": "",
+          "playback_origin": "",
+          "playback_user_agent": "",
+          "api_player_endpoint": "",
+          "api_source_mode": "",
+          "source_confidence": "network",
+          "mapping_mode": "stream-source-id",
+          "discovered_from_room_url": "https://socolivekj.cc/truc-tiep/lusitania-fc-vs-porto-b-luc-1500-ngay-29-07-2026/",
+          "discovered_from_blv": "URL tổng",
+          "discovered_at": "2026-07-29T11:01:50.800077+07:00",
+          "valid_until": "",
+          "is_expired": false
+        }
+      ],
+      "room_results": [
+        {
+          "url": "https://socolivekj.cc/truc-tiep/lusitania-fc-vs-porto-b-luc-1500-ngay-29-07-2026/",
+          "blv": "",
+          "blv_id": "",
+          "streams": [
+            "https://live1.streambylivepulse.com/live/channel2.flv?wsSecret=7bda423469ee5732a3e894ae49a11504&wsABSTime=1785340903"
+          ],
+          "stream_sources": {
+            "https://live1.streambylivepulse.com/live/channel2.flv?wsSecret=7bda423469ee5732a3e894ae49a11504&wsABSTime=1785340903": [
+              "cdp/request",
+              "cdp/response",
+              "harvest-final",
+              "harvest-round-1",
+              "harvest-round-2",
+              "harvest-round-3",
+              "harvest-round-4",
+              "harvest-round-5",
+              "harvest-round-6",
+              "harvest-round-7",
+              "harvest-round-8",
+              "request/fetch",
+              "response/403"
+            ]
+          },
+          "stream_headers": {},
+          "stream_first_seen": [
+            "https://live1.streambylivepulse.com/live/channel2.flv?wsSecret=7bda423469ee5732a3e894ae49a11504&wsABSTime=1785340903"
+          ],
+          "discovered_blv_ids": [],
+          "diagnostics": {
+            "url": "https://socolivekj.cc/truc-tiep/lusitania-fc-vs-porto-b-luc-1500-ngay-29-07-2026/",
+            "title": "Trực tiếp Lusitania FC vs Porto B full lúc 15:00, ngày 29/07",
+            "h1": "Xem trực tiếp trận đấu Lusitania FC vs Porto B full lúc 15:00, ngày 29/07/2026",
+            "ready_state": "complete",
+            "visibility_state": "visible",
+            "hidden": false,
+            "video_count": 0,
+            "iframe_count": 5,
+            "body_sample": "WC 2026 Lịch Thi Đấu Xem Lại Video Highlight Tỷ Lệ Kèo BXH KQBD Tips Tin Tức Livescore Tuyển Dụng Top Nhà Cái Cược 8xbet WC 2026 Lịch Thi Đấu Xem Lại Video Highlight Tỷ Lệ Kèo BXH KQBD Tips Tin Tức Livescore Tuyển Dụng Top nhà cái Xem trực tiếp trận đấu Lusitania FC vs Porto B full lúc 15:00, ngày 29/07/2026 Phát sóng link trực tuyến Lusitania FC vs Porto B hôm nay tại giải đấu Giao Hữu CLB _ _ _ _ _ _ Lusitania FC Porto B Theo bạn thì trận này tài hay xỉu? Tài 0% Xỉu 0% Theo bạn thì trận này đội nào sẽ thắng? Chủ nhà 0% Hòa 0% Đội Khách 0% Anh Em Muốn Tham Gia Đặt Cược Thì Click Vào Quảng Cáo Của 8XBET Để Đăng Ký Đặt Cược Tất Cả Các Trận Đấu Trên Toàn Thế Giới. Nếu anh em gặp tình trạng không vào được web, hãy cài VPN 1.1.1.1 để truy cập ổn định hơn nhé . Châu Á Châu Âu Tài xỉu Phạt góc Chọn nhà cái HIỆP 1 FT Châu Á HIỆP 1 FT Châu Á - - - - - - Châu Âu HIỆP 1 FT Châu Âu - - - - - - Tài xỉu HIỆP 1 FT Tài xỉu - - - - - - SỚM FT Phạt góc HIỆP 1 FT Phạt góc - - - - - - Trực tiếp Mô phỏng CHIA SẺ Phát sóng trận đấu Lusitania FC vs Porto B full HD lúc 15:00, ngày 29/07/2026 Giao Hữu CLB HD 1 CHIA SẺ Thông số Diễn biến Đội hình BXH Chat Đối đầu Trận khác Trận sắp tới Tỷ lệ kèo TT trận Mô",
+            "harvest_rounds": 8,
+            "harvest_window_seconds": 6.462,
+            "main_status": 200,
+            "harvested_stream_count": 1,
+            "harvested_blv_ids": [],
+            "scan_mode": "chromium-fallback",
+            "elapsed_seconds": 7.704
+          },
+          "api_probe": {
+            "enabled": true,
+            "room_status": 200,
+            "active_index": 0,
+            "sources_found": 0,
+            "sources_tried": 0,
+            "valid_stream_count": 0,
+            "source_results": [],
+            "fallback_reason": "list_stream_not_found",
+            "elapsed_seconds": 0.054,
+            "room_content_type": "text/html",
+            "room_elapsed_seconds": 0.048,
+            "room_error": ""
+          },
+          "http_probe": {
+            "api_first": {
+              "enabled": true,
+              "room_status": 200,
+              "active_index": 0,
+              "sources_found": 0,
+              "sources_tried": 0,
+              "valid_stream_count": 0,
+              "source_results": [],
+              "fallback_reason": "list_stream_not_found",
+              "elapsed_seconds": 0.054,
+              "room_content_type": "text/html",
+              "room_elapsed_seconds": 0.048,
+              "room_error": ""
+            },
+            "legacy_http": {
+              "enabled": false,
+              "status": null,
+              "elapsed_seconds": 0.0,
+              "error": ""
+            }
+          },
+          "errors": [
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED"
+          ],
+          "failed_requests": [
+            "stylesheet https://fonts.googleapis.com/css2?family=Bangers&family=Oswald:wght@400;500;700&family=Raleway:wght@400;500;700&family=Roboto+Condensed:wght@300;400;700&display=swap | net::ERR_FAILED",
+            "stylesheet https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0 | net::ERR_FAILED",
+            "stylesheet https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css | net::ERR_FAILED",
+            "stylesheet https://socolivekj.cc/wp-content/plugins/widget-options/assets/css/widget-options.css?ver=4.0.6.1 | net::ERR_FAILED",
+            "stylesheet https://socolivekj.cc/wp-content/plugins/wp-pagenavi/pagenavi-css.css?ver=2.70 | net::ERR_FAILED",
+            "stylesheet https://socolivekj.cc/wp-content/themes/bongda/dist/styles/bootstrap.min.css?ver=1745376853 | net::ERR_FAILED",
+            "stylesheet https://socolivekj.cc/wp-content/themes/bongda/dist/styles/main.css?ver=1781184173 | net::ERR_FAILED",
+            "stylesheet https://socolivekj.cc/wp-content/themes/bongda/dist/styles/pages/single-live.css?ver=1784627923 | net::ERR_FAILED",
+            "image https://socolivekj.cc/wp-content/themes/bongda/dist/images/logo-socolive-tv-official-v2.png | net::ERR_FAILED",
+            "image https://socolivekj.cc/wp-content/themes/bongda/dist/images/wc-2026/menu-wc.svg | net::ERR_FAILED",
+            "image https://socolivekj.cc/wp-content/themes/bongda/dist/images/closemenu.png | net::ERR_FAILED",
+            "image https://imgts.sportpulseapiz.com/football/team/965mkyh70zer1ge/image/small | net::ERR_FAILED",
+            "stylesheet https://socolivekj.cc/wp-content/plugins/api-sport/public/css/match_detail.css?id=0671c88cfbad4335394b897262a0d662 | net::ERR_FAILED",
+            "image https://imgts.sportpulseapiz.com/football/team/965mkyh7wdxr1ge/image/small | net::ERR_FAILED",
+            "image https://socolivekj.cc/wp-content/themes/bongda/dist/images/company/21-1.png | net::ERR_FAILED"
+          ],
+          "http_errors": [
+            "403 https://live1.streambylivepulse.com/live/channel2.flv?wsSecret=7bda423469ee5732a3e894ae49a11504&wsABSTime=1785340903",
+            "403 https://live1.streambylivepulse.com/live/channel2.flv?wsSecret=7bda423469ee5732a3e894ae49a11504&wsABSTime=1785340903",
+            "403 https://live1.streambylivepulse.com/live/channel2.flv?wsSecret=7bda423469ee5732a3e894ae49a11504&wsABSTime=1785340903",
+            "403 https://live1.streambylivepulse.com/live/channel2.flv?wsSecret=7bda423469ee5732a3e894ae49a11504&wsABSTime=1785340903"
+          ]
+        }
+      ],
+      "attempted_room_ids": [],
+      "coverage": {
+        "found_streams": 1,
+        "found_blv_ids": [],
+        "goal": 2,
+        "source_goal_reached": false,
+        "room_queue_complete": true,
+        "complete": true,
+        "max_streams_per_blv": 2,
+        "total_explicit_blv_rooms": 0,
+        "pending_room_keys": [],
+        "room_progress": {
+          "__base__": {
+            "key": "__base__",
+            "url": "https://socolivekj.cc/truc-tiep/lusitania-fc-vs-porto-b-luc-1500-ngay-29-07-2026/",
+            "blv": "",
+            "blv_id": "",
+            "status": "success",
+            "attempts": 1,
+            "attempts_total": 1,
+            "ever_attempted": true,
+            "valid_stream_ever_found": true,
+            "needs_token_refresh": false,
+            "completion_reason": "valid_stream",
+            "rate_limit_hits": 0,
+            "last_http_status": 200,
+            "last_stream_count": 1,
+            "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
+          }
+        }
+      },
+      "errors": [],
+      "match_name": "Lusitania FC vs Porto B",
+      "scheduled_at": "2026-07-29T15:00:00+07:00",
+      "room_progress": {
+        "__base__": {
+          "key": "__base__",
+          "url": "https://socolivekj.cc/truc-tiep/lusitania-fc-vs-porto-b-luc-1500-ngay-29-07-2026/",
+          "blv": "",
+          "blv_id": "",
+          "status": "success",
+          "attempts": 1,
+          "attempts_total": 1,
+          "ever_attempted": true,
+          "valid_stream_ever_found": true,
+          "needs_token_refresh": false,
+          "completion_reason": "valid_stream",
+          "rate_limit_hits": 0,
+          "last_http_status": 200,
+          "last_stream_count": 1,
+          "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
+        }
+      }
+    },
+    {
+      "base_url": "https://socolivekj.cc/truc-tiep/estrela-amadora-vs-portimonense-luc-1500-ngay-29-07-2026/",
+      "raw_title": "Estrela Amadora vs Portimonense",
+      "home_team": "Estrela Amadora",
+      "away_team": "Portimonense",
+      "home_logo": "https://imgts.sportpulseapiz.com/football/team/p4jwq2gh2ovm0ve/image/small",
+      "away_logo": "https://imgts.sportpulseapiz.com/football/team/9k82rekhlg0repz/image/small",
+      "time_text": "15:00",
+      "date_text": "29/07",
+      "status": "",
+      "card_text": "GIAO HỮU CLB Chưa xác định 15:00 - 29.07 Estrela Amadora 0 : 0 Portimonense HT 0 - 0 0 - 0 0 - 0 - - - - - -",
+      "rooms": [
+        {
+          "url": "https://socolivekj.cc/truc-tiep/estrela-amadora-vs-portimonense-luc-1500-ngay-29-07-2026/",
+          "blv": "",
+          "blv_id": ""
+        }
+      ],
+      "streams": [
+        {
+          "url": "https://live1.streambylivepulse.com/live/channel33.flv?wsSecret=9c409c269a088f4974860bbacfab2097&wsABSTime=1785340894",
+          "queue_room_key": "__base__",
+          "room_url": "https://socolivekj.cc/truc-tiep/estrela-amadora-vs-portimonense-luc-1500-ngay-29-07-2026/",
+          "blv": "Nguồn phụ 1",
+          "blv_id": "",
+          "source_id": "",
+          "source_provenance": [
+            "cdp/request",
+            "cdp/response",
+            "harvest-final",
+            "harvest-round-1",
+            "harvest-round-2",
+            "harvest-round-3",
+            "harvest-round-4",
+            "harvest-round-5",
+            "harvest-round-6",
+            "harvest-round-7",
+            "harvest-round-8",
+            "request/fetch",
+            "response/403"
+          ],
+          "playback_referer": "",
+          "playback_origin": "",
+          "playback_user_agent": "",
+          "api_player_endpoint": "",
+          "api_source_mode": "",
+          "source_confidence": "network",
+          "mapping_mode": "stream-source-id",
+          "discovered_from_room_url": "https://socolivekj.cc/truc-tiep/estrela-amadora-vs-portimonense-luc-1500-ngay-29-07-2026/",
+          "discovered_from_blv": "URL tổng",
+          "discovered_at": "2026-07-29T11:01:41.072080+07:00",
+          "valid_until": "",
+          "is_expired": false
+        }
+      ],
+      "room_results": [
+        {
+          "url": "https://socolivekj.cc/truc-tiep/estrela-amadora-vs-portimonense-luc-1500-ngay-29-07-2026/",
+          "blv": "",
+          "blv_id": "",
+          "streams": [
+            "https://live1.streambylivepulse.com/live/channel33.flv?wsSecret=9c409c269a088f4974860bbacfab2097&wsABSTime=1785340894"
+          ],
+          "stream_sources": {
+            "https://live1.streambylivepulse.com/live/channel33.flv?wsSecret=9c409c269a088f4974860bbacfab2097&wsABSTime=1785340894": [
+              "cdp/request",
+              "cdp/response",
+              "harvest-final",
+              "harvest-round-1",
+              "harvest-round-2",
+              "harvest-round-3",
+              "harvest-round-4",
+              "harvest-round-5",
+              "harvest-round-6",
+              "harvest-round-7",
+              "harvest-round-8",
+              "request/fetch",
+              "response/403"
+            ]
+          },
+          "stream_headers": {},
+          "stream_first_seen": [
+            "https://live1.streambylivepulse.com/live/channel33.flv?wsSecret=9c409c269a088f4974860bbacfab2097&wsABSTime=1785340894"
+          ],
+          "discovered_blv_ids": [],
+          "diagnostics": {
+            "url": "https://socolivekj.cc/truc-tiep/estrela-amadora-vs-portimonense-luc-1500-ngay-29-07-2026/",
+            "title": "Trực tiếp Estrela Amadora vs Portimonense full lúc 15:00, ngày 29/07",
+            "h1": "Xem trực tiếp trận đấu Estrela Amadora vs Portimonense full lúc 15:00, ngày 29/07/2026",
+            "ready_state": "complete",
+            "visibility_state": "visible",
+            "hidden": false,
+            "video_count": 0,
+            "iframe_count": 5,
+            "body_sample": "WC 2026 Lịch Thi Đấu Xem Lại Video Highlight Tỷ Lệ Kèo BXH KQBD Tips Tin Tức Livescore Tuyển Dụng Top Nhà Cái Cược 8xbet WC 2026 Lịch Thi Đấu Xem Lại Video Highlight Tỷ Lệ Kèo BXH KQBD Tips Tin Tức Livescore Tuyển Dụng Top nhà cái Xem trực tiếp trận đấu Estrela Amadora vs Portimonense full lúc 15:00, ngày 29/07/2026 Phát sóng link trực tuyến Estrela Amadora vs Portimonense hôm nay tại giải đấu Giao Hữu CLB _ _ _ _ _ _ Estrela Amadora Portimonense Theo bạn thì trận này tài hay xỉu? Tài 0% Xỉu 0% Theo bạn thì trận này đội nào sẽ thắng? Chủ nhà 0% Hòa 0% Đội Khách 0% Anh Em Muốn Tham Gia Đặt Cược Thì Click Vào Quảng Cáo Của 8XBET Để Đăng Ký Đặt Cược Tất Cả Các Trận Đấu Trên Toàn Thế Giới. Nếu anh em gặp tình trạng không vào được web, hãy cài VPN 1.1.1.1 để truy cập ổn định hơn nhé . Châu Á Châu Âu Tài xỉu Phạt góc Chọn nhà cái HIỆP 1 FT Châu Á HIỆP 1 FT Châu Á - - - - - - Châu Âu HIỆP 1 FT Châu Âu - - - - - - Tài xỉu HIỆP 1 FT Tài xỉu - - - - - - SỚM FT Phạt góc HIỆP 1 FT Phạt góc - - - - - - Trực tiếp Mô phỏng CHIA SẺ Phát sóng trận đấu Estrela Amadora vs Portimonense full HD lúc 15:00, ngày 29/07/2026 Giao Hữu CLB HD 1 CHIA SẺ Thông số Diễn biến Đội hình BXH Chat Đối đầu Trận khác T",
+            "harvest_rounds": 8,
+            "harvest_window_seconds": 6.44,
+            "main_status": 200,
+            "harvested_stream_count": 1,
+            "harvested_blv_ids": [],
+            "scan_mode": "chromium-fallback",
+            "elapsed_seconds": 7.646
+          },
+          "api_probe": {
+            "enabled": true,
+            "room_status": 200,
+            "active_index": 0,
+            "sources_found": 0,
+            "sources_tried": 0,
+            "valid_stream_count": 0,
+            "source_results": [],
+            "fallback_reason": "list_stream_not_found",
+            "elapsed_seconds": 0.035,
+            "room_content_type": "text/html",
+            "room_elapsed_seconds": 0.03,
+            "room_error": ""
+          },
+          "http_probe": {
+            "api_first": {
+              "enabled": true,
+              "room_status": 200,
+              "active_index": 0,
+              "sources_found": 0,
+              "sources_tried": 0,
+              "valid_stream_count": 0,
+              "source_results": [],
+              "fallback_reason": "list_stream_not_found",
+              "elapsed_seconds": 0.035,
+              "room_content_type": "text/html",
+              "room_elapsed_seconds": 0.03,
+              "room_error": ""
+            },
+            "legacy_http": {
+              "enabled": false,
+              "status": null,
+              "elapsed_seconds": 0.0,
+              "error": ""
+            }
+          },
+          "errors": [
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED"
+          ],
+          "failed_requests": [
+            "stylesheet https://fonts.googleapis.com/css2?family=Bangers&family=Oswald:wght@400;500;700&family=Raleway:wght@400;500;700&family=Roboto+Condensed:wght@300;400;700&display=swap | net::ERR_FAILED",
+            "stylesheet https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0 | net::ERR_FAILED",
+            "stylesheet https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css | net::ERR_FAILED",
+            "stylesheet https://socolivekj.cc/wp-content/plugins/widget-options/assets/css/widget-options.css?ver=4.0.6.1 | net::ERR_FAILED",
+            "stylesheet https://socolivekj.cc/wp-content/plugins/wp-pagenavi/pagenavi-css.css?ver=2.70 | net::ERR_FAILED",
+            "stylesheet https://socolivekj.cc/wp-content/themes/bongda/dist/styles/bootstrap.min.css?ver=1745376853 | net::ERR_FAILED",
+            "stylesheet https://socolivekj.cc/wp-content/themes/bongda/dist/styles/main.css?ver=1781184173 | net::ERR_FAILED",
+            "stylesheet https://socolivekj.cc/wp-content/themes/bongda/dist/styles/pages/single-live.css?ver=1784627923 | net::ERR_FAILED",
+            "image https://socolivekj.cc/wp-content/themes/bongda/dist/images/logo-socolive-tv-official-v2.png | net::ERR_FAILED",
+            "image https://socolivekj.cc/wp-content/themes/bongda/dist/images/wc-2026/menu-wc.svg | net::ERR_FAILED",
+            "image https://socolivekj.cc/wp-content/themes/bongda/dist/images/closemenu.png | net::ERR_FAILED",
+            "image https://imgts.sportpulseapiz.com/football/team/p4jwq2gh2ovm0ve/image/small | net::ERR_FAILED",
+            "stylesheet https://socolivekj.cc/wp-content/plugins/api-sport/public/css/match_detail.css?id=0671c88cfbad4335394b897262a0d662 | net::ERR_FAILED",
+            "image https://imgts.sportpulseapiz.com/football/team/9k82rekhlg0repz/image/small | net::ERR_FAILED",
+            "image https://socolivekj.cc/wp-content/themes/bongda/dist/images/company/21-1.png | net::ERR_FAILED"
+          ],
+          "http_errors": [
+            "403 https://live1.streambylivepulse.com/live/channel33.flv?wsSecret=9c409c269a088f4974860bbacfab2097&wsABSTime=1785340894",
+            "403 https://live1.streambylivepulse.com/live/channel33.flv?wsSecret=9c409c269a088f4974860bbacfab2097&wsABSTime=1785340894",
+            "403 https://live1.streambylivepulse.com/live/channel33.flv?wsSecret=9c409c269a088f4974860bbacfab2097&wsABSTime=1785340894",
+            "403 https://live1.streambylivepulse.com/live/channel33.flv?wsSecret=9c409c269a088f4974860bbacfab2097&wsABSTime=1785340894"
+          ]
+        }
+      ],
+      "attempted_room_ids": [],
+      "coverage": {
+        "found_streams": 1,
+        "found_blv_ids": [],
+        "goal": 2,
+        "source_goal_reached": false,
+        "room_queue_complete": true,
+        "complete": true,
+        "max_streams_per_blv": 2,
+        "total_explicit_blv_rooms": 0,
+        "pending_room_keys": [],
+        "room_progress": {
+          "__base__": {
+            "key": "__base__",
+            "url": "https://socolivekj.cc/truc-tiep/estrela-amadora-vs-portimonense-luc-1500-ngay-29-07-2026/",
+            "blv": "",
+            "blv_id": "",
+            "status": "success",
+            "attempts": 1,
+            "attempts_total": 1,
+            "ever_attempted": true,
+            "valid_stream_ever_found": true,
+            "needs_token_refresh": false,
+            "completion_reason": "valid_stream",
+            "rate_limit_hits": 0,
+            "last_http_status": 200,
+            "last_stream_count": 1,
+            "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
+          }
+        }
+      },
+      "errors": [],
+      "match_name": "Estrela Amadora vs Portimonense",
+      "scheduled_at": "2026-07-29T15:00:00+07:00",
+      "room_progress": {
+        "__base__": {
+          "key": "__base__",
+          "url": "https://socolivekj.cc/truc-tiep/estrela-amadora-vs-portimonense-luc-1500-ngay-29-07-2026/",
+          "blv": "",
+          "blv_id": "",
+          "status": "success",
+          "attempts": 1,
+          "attempts_total": 1,
+          "ever_attempted": true,
+          "valid_stream_ever_found": true,
+          "needs_token_refresh": false,
+          "completion_reason": "valid_stream",
+          "rate_limit_hits": 0,
+          "last_http_status": 200,
+          "last_stream_count": 1,
+          "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
+        }
+      }
+    },
+    {
+      "base_url": "https://socolivekj.cc/truc-tiep/auckland-city-vs-bay-olympic-luc-1430-ngay-29-07-2026/",
+      "raw_title": "Auckland City vs Bay Olympic",
+      "home_team": "Auckland City",
+      "away_team": "Bay Olympic",
+      "home_logo": "https://imgts.sportpulseapiz.com/football/team/4jwq2gh478ym0ve/image/small",
+      "away_logo": "https://imgts.sportpulseapiz.com/football/team/l5ergph346or8k0/image/small",
+      "time_text": "14:30",
+      "date_text": "29/07",
+      "status": "",
+      "card_text": "NZ NORTHERN PREMIER LEAGUE HT 14:30 - 29.07 Auckland City 4 : 1 Bay Olympic HT 4 - 1 3 - 0 0 - 1 0.83 1 0.98 0.88 7 0.93",
+      "rooms": [
+        {
+          "url": "https://socolivekj.cc/truc-tiep/auckland-city-vs-bay-olympic-luc-1430-ngay-29-07-2026/",
+          "blv": "",
+          "blv_id": ""
+        }
+      ],
+      "streams": [
+        {
+          "url": "https://live2.streambylivepulse.com/live/channel7.flv",
+          "queue_room_key": "__base__",
+          "room_url": "https://socolivekj.cc/truc-tiep/auckland-city-vs-bay-olympic-luc-1430-ngay-29-07-2026/",
+          "blv": "Nguồn phụ 1",
+          "blv_id": "",
+          "source_id": "",
+          "source_provenance": [
+            "cdp/request",
+            "harvest-final",
+            "harvest-round-1",
+            "harvest-round-2",
+            "harvest-round-3",
+            "harvest-round-4",
+            "harvest-round-5",
+            "harvest-round-6",
+            "harvest-round-7",
+            "harvest-round-8",
+            "request/fetch"
+          ],
+          "playback_referer": "",
+          "playback_origin": "",
+          "playback_user_agent": "",
+          "api_player_endpoint": "",
+          "api_source_mode": "",
+          "source_confidence": "network",
+          "mapping_mode": "stream-source-id",
+          "discovered_from_room_url": "https://socolivekj.cc/truc-tiep/auckland-city-vs-bay-olympic-luc-1430-ngay-29-07-2026/",
+          "discovered_from_blv": "JEAN",
+          "discovered_at": "2026-07-29T10:31:43.595013+07:00",
+          "valid_until": "",
+          "is_expired": false
+        }
+      ],
+      "room_results": [
+        {
+          "url": "https://socolivekj.cc/truc-tiep/auckland-city-vs-bay-olympic-luc-1430-ngay-29-07-2026/",
+          "blv": "JEAN",
+          "blv_id": "",
+          "streams": [
+            "https://live2.streambylivepulse.com/live/channel7.flv"
+          ],
+          "stream_sources": {
+            "https://live2.streambylivepulse.com/live/channel7.flv": [
+              "cdp/request",
+              "harvest-final",
+              "harvest-round-1",
+              "harvest-round-2",
+              "harvest-round-3",
+              "harvest-round-4",
+              "harvest-round-5",
+              "harvest-round-6",
+              "harvest-round-7",
+              "harvest-round-8",
+              "request/fetch"
+            ]
+          },
+          "stream_headers": {},
+          "stream_first_seen": [
+            "https://live2.streambylivepulse.com/live/channel7.flv"
+          ],
+          "discovered_blv_ids": [],
+          "diagnostics": {
+            "url": "https://socolivekj.cc/truc-tiep/auckland-city-vs-bay-olympic-luc-1430-ngay-29-07-2026/",
+            "title": "Trực tiếp Auckland City vs Bay Olympic full lúc 14:30, ngày 29/07",
+            "h1": "Xem trực tiếp trận đấu Auckland City vs Bay Olympic full lúc 14:30, ngày 29/07/2026",
+            "ready_state": "complete",
+            "visibility_state": "visible",
+            "hidden": false,
+            "video_count": 0,
+            "iframe_count": 5,
+            "body_sample": "WC 2026 Lịch Thi Đấu Xem Lại Video Highlight Tỷ Lệ Kèo BXH KQBD Tips Tin Tức Livescore Tuyển Dụng Top Nhà Cái Cược 8xbet WC 2026 Lịch Thi Đấu Xem Lại Video Highlight Tỷ Lệ Kèo BXH KQBD Tips Tin Tức Livescore Tuyển Dụng Top nhà cái Xem trực tiếp trận đấu Auckland City vs Bay Olympic full lúc 14:30, ngày 29/07/2026 Phát sóng link trực tuyến Auckland City vs Bay Olympic hôm nay tại giải đấu NZ Northern Premier League _ _ _ _ _ _ Auckland City Bay Olympic Theo bạn thì trận này tài hay xỉu? Tài 0% Xỉu 0% Theo bạn thì trận này đội nào sẽ thắng? Chủ nhà 0% Hòa 0% Đội Khách 0% Anh Em Muốn Tham Gia Đặt Cược Thì Click Vào Quảng Cáo Của 8XBET Để Đăng Ký Đặt Cược Tất Cả Các Trận Đấu Trên Toàn Thế Giới. Nếu anh em gặp tình trạng không vào được web, hãy cài VPN 1.1.1.1 để truy cập ổn định hơn nhé . Châu Á Châu Âu Tài xỉu Phạt góc Chọn nhà cái HIỆP 1 FT Châu Á HIỆP 1 FT Châu Á - - - 0.83 2/2.5 0.98 Châu Âu HIỆP 1 FT Châu Âu - - - 1.17 7.50 12.00 Tài xỉu HIỆP 1 FT Tài xỉu - - - 0.85 3.5 0.95 SỚM FT Phạt góc HIỆP 1 FT Phạt góc - - - 0.875 10.5 0.925 Trực tiếp Mô phỏng CHIA SẺ Phát sóng trận đấu Auckland City vs Bay Olympic full HD lúc 14:30, ngày 29/07/2026 NZ Northern Premier League JEAN HD JEAN C",
+            "harvest_rounds": 8,
+            "harvest_window_seconds": 6.289,
+            "main_status": 200,
+            "harvested_stream_count": 1,
+            "harvested_blv_ids": [],
+            "scan_mode": "chromium-fallback",
+            "elapsed_seconds": 7.538
+          },
+          "api_probe": {
+            "enabled": true,
+            "room_status": 200,
+            "active_index": 0,
+            "sources_found": 0,
+            "sources_tried": 0,
+            "valid_stream_count": 0,
+            "source_results": [],
+            "fallback_reason": "list_stream_not_found",
+            "elapsed_seconds": 0.033,
+            "room_content_type": "text/html",
+            "room_elapsed_seconds": 0.028,
+            "room_error": ""
+          },
+          "http_probe": {
+            "api_first": {
+              "enabled": true,
+              "room_status": 200,
+              "active_index": 0,
+              "sources_found": 0,
+              "sources_tried": 0,
+              "valid_stream_count": 0,
+              "source_results": [],
+              "fallback_reason": "list_stream_not_found",
+              "elapsed_seconds": 0.033,
+              "room_content_type": "text/html",
+              "room_elapsed_seconds": 0.028,
+              "room_error": ""
+            },
+            "legacy_http": {
+              "enabled": false,
+              "status": null,
+              "elapsed_seconds": 0.0,
+              "error": ""
+            }
+          },
+          "errors": [
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED"
+          ],
+          "failed_requests": [
+            "stylesheet https://fonts.googleapis.com/css2?family=Bangers&family=Oswald:wght@400;500;700&family=Raleway:wght@400;500;700&family=Roboto+Condensed:wght@300;400;700&display=swap | net::ERR_FAILED",
+            "stylesheet https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0 | net::ERR_FAILED",
+            "stylesheet https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css | net::ERR_FAILED",
+            "stylesheet https://socolivekj.cc/wp-content/plugins/widget-options/assets/css/widget-options.css?ver=4.0.6.1 | net::ERR_FAILED",
+            "stylesheet https://socolivekj.cc/wp-content/plugins/wp-pagenavi/pagenavi-css.css?ver=2.70 | net::ERR_FAILED",
+            "stylesheet https://socolivekj.cc/wp-content/themes/bongda/dist/styles/bootstrap.min.css?ver=1745376853 | net::ERR_FAILED",
+            "stylesheet https://socolivekj.cc/wp-content/themes/bongda/dist/styles/main.css?ver=1781184173 | net::ERR_FAILED",
+            "stylesheet https://socolivekj.cc/wp-content/themes/bongda/dist/styles/pages/single-live.css?ver=1784627923 | net::ERR_FAILED",
+            "image https://socolivekj.cc/wp-content/themes/bongda/dist/images/logo-socolive-tv-official-v2.png | net::ERR_FAILED",
+            "image https://socolivekj.cc/wp-content/themes/bongda/dist/images/wc-2026/menu-wc.svg | net::ERR_FAILED",
+            "image https://socolivekj.cc/wp-content/themes/bongda/dist/images/closemenu.png | net::ERR_FAILED",
+            "image https://imgts.sportpulseapiz.com/football/team/4jwq2gh478ym0ve/image/small | net::ERR_FAILED",
+            "stylesheet https://socolivekj.cc/wp-content/plugins/api-sport/public/css/match_detail.css?id=0671c88cfbad4335394b897262a0d662 | net::ERR_FAILED",
+            "image https://imgts.sportpulseapiz.com/football/team/l5ergph346or8k0/image/small | net::ERR_FAILED",
+            "image https://socolivekj.cc/wp-content/themes/bongda/dist/images/company/21-1.png | net::ERR_FAILED"
+          ],
+          "http_errors": []
+        }
+      ],
+      "attempted_room_ids": [],
+      "coverage": {
+        "found_streams": 1,
+        "found_blv_ids": [],
+        "goal": 2,
+        "source_goal_reached": false,
+        "room_queue_complete": true,
+        "complete": true,
+        "max_streams_per_blv": 2,
+        "total_explicit_blv_rooms": 0,
+        "pending_room_keys": [],
+        "room_progress": {
+          "__base__": {
+            "key": "__base__",
+            "url": "https://socolivekj.cc/truc-tiep/auckland-city-vs-bay-olympic-luc-1430-ngay-29-07-2026/",
+            "blv": "",
+            "blv_id": "",
+            "status": "success",
+            "attempts": 1,
+            "attempts_total": 1,
+            "ever_attempted": true,
+            "valid_stream_ever_found": true,
+            "needs_token_refresh": false,
+            "completion_reason": "valid_stream",
+            "rate_limit_hits": 0,
+            "last_http_status": 200,
+            "last_stream_count": 1,
+            "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
+          }
+        }
+      },
+      "errors": [],
+      "match_name": "Auckland City vs Bay Olympic",
+      "scheduled_at": "2026-07-29T14:30:00+07:00",
+      "room_progress": {
+        "__base__": {
+          "key": "__base__",
+          "url": "https://socolivekj.cc/truc-tiep/auckland-city-vs-bay-olympic-luc-1430-ngay-29-07-2026/",
+          "blv": "",
+          "blv_id": "",
+          "status": "success",
+          "attempts": 1,
+          "attempts_total": 1,
+          "ever_attempted": true,
+          "valid_stream_ever_found": true,
+          "needs_token_refresh": false,
+          "completion_reason": "valid_stream",
+          "rate_limit_hits": 0,
+          "last_http_status": 200,
+          "last_stream_count": 1,
+          "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
+        }
+      }
+    },
+    {
+      "base_url": "https://socolivekj.cc/truc-tiep/brindabella-blues-fc-u23-vs-queanbeyan-city-u23-luc-1430-ngay-29-07-2026/",
+      "raw_title": "Brindabella Blues FC U23 vs Queanbeyan City U23",
+      "home_team": "Brindabella Blues FC U23",
+      "away_team": "Queanbeyan City U23",
+      "home_logo": "https://imgts.sportpulseapiz.com/football/team/6ypq3nhwwjomd7o/image/small",
+      "away_logo": "https://imgts.sportpulseapiz.com/football/team/4jwq2ghxxjlm0ve/image/small",
+      "time_text": "14:30",
+      "date_text": "29/07",
+      "status": "",
+      "card_text": "AUSTRALIA CAPITAL TERRITORY U23 LEAGUE HT 14:40 - 29.07 Brindabella Blues FC U23 0 : 0 Queanbeyan City U23 HT 0 - 0 0 - 0 0 - 0 0.93 0/0.5 0.88 0.95 2/2.5 0.85",
+      "rooms": [
+        {
+          "url": "https://socolivekj.cc/truc-tiep/brindabella-blues-fc-u23-vs-queanbeyan-city-u23-luc-1430-ngay-29-07-2026/",
+          "blv": "",
+          "blv_id": ""
+        }
+      ],
+      "streams": [
+        {
+          "url": "https://live1.streambylivepulse.com/live/channel32.flv?wsSecret=c97962c3aec5c944412c36cbd2860367&wsABSTime=1785339076",
+          "queue_room_key": "__base__",
+          "room_url": "https://socolivekj.cc/truc-tiep/brindabella-blues-fc-u23-vs-queanbeyan-city-u23-luc-1430-ngay-29-07-2026/",
+          "blv": "Nguồn phụ 1",
+          "blv_id": "",
+          "source_id": "",
+          "source_provenance": [
+            "cdp/request",
+            "cdp/response",
+            "harvest-final",
+            "harvest-round-1",
+            "harvest-round-2",
+            "harvest-round-3",
+            "harvest-round-4",
+            "harvest-round-5",
+            "harvest-round-6",
+            "harvest-round-7",
+            "harvest-round-8",
+            "request/fetch",
+            "response/403"
+          ],
+          "playback_referer": "",
+          "playback_origin": "",
+          "playback_user_agent": "",
+          "api_player_endpoint": "",
+          "api_source_mode": "",
+          "source_confidence": "network",
+          "mapping_mode": "stream-source-id",
+          "discovered_from_room_url": "https://socolivekj.cc/truc-tiep/brindabella-blues-fc-u23-vs-queanbeyan-city-u23-luc-1430-ngay-29-07-2026/",
+          "discovered_from_blv": "URL tổng",
+          "discovered_at": "2026-07-29T10:31:23.643435+07:00",
+          "valid_until": "",
+          "is_expired": false
+        }
+      ],
+      "room_results": [
+        {
+          "url": "https://socolivekj.cc/truc-tiep/brindabella-blues-fc-u23-vs-queanbeyan-city-u23-luc-1430-ngay-29-07-2026/",
+          "blv": "",
+          "blv_id": "",
+          "streams": [
+            "https://live1.streambylivepulse.com/live/channel32.flv?wsSecret=c97962c3aec5c944412c36cbd2860367&wsABSTime=1785339076"
+          ],
+          "stream_sources": {
+            "https://live1.streambylivepulse.com/live/channel32.flv?wsSecret=c97962c3aec5c944412c36cbd2860367&wsABSTime=1785339076": [
+              "cdp/request",
+              "cdp/response",
+              "harvest-final",
+              "harvest-round-1",
+              "harvest-round-2",
+              "harvest-round-3",
+              "harvest-round-4",
+              "harvest-round-5",
+              "harvest-round-6",
+              "harvest-round-7",
+              "harvest-round-8",
+              "request/fetch",
+              "response/403"
+            ]
+          },
+          "stream_headers": {},
+          "stream_first_seen": [
+            "https://live1.streambylivepulse.com/live/channel32.flv?wsSecret=c97962c3aec5c944412c36cbd2860367&wsABSTime=1785339076"
+          ],
+          "discovered_blv_ids": [],
+          "diagnostics": {
+            "url": "https://socolivekj.cc/truc-tiep/brindabella-blues-fc-u23-vs-queanbeyan-city-u23-luc-1430-ngay-29-07-2026/",
+            "title": "Trực tiếp Brindabella Blues FC U23 vs Queanbeyan City U23 full lúc 14:30, ngày 29/07",
+            "h1": "Xem trực tiếp trận đấu Brindabella Blues FC U23 vs Queanbeyan City U23 full lúc 14:30, ngày 29/07/2026",
+            "ready_state": "complete",
+            "visibility_state": "visible",
+            "hidden": false,
+            "video_count": 0,
+            "iframe_count": 5,
+            "body_sample": "WC 2026 Lịch Thi Đấu Xem Lại Video Highlight Tỷ Lệ Kèo BXH KQBD Tips Tin Tức Livescore Tuyển Dụng Top Nhà Cái Cược 8xbet WC 2026 Lịch Thi Đấu Xem Lại Video Highlight Tỷ Lệ Kèo BXH KQBD Tips Tin Tức Livescore Tuyển Dụng Top nhà cái Xem trực tiếp trận đấu Brindabella Blues FC U23 vs Queanbeyan City U23 full lúc 14:30, ngày 29/07/2026 Phát sóng link trực tuyến Brindabella Blues FC U23 vs Queanbeyan City U23 hôm nay tại giải đấu Australia Capital Territory U23 League _ _ _ _ _ _ Brindabella Blues FC U23 Queanbeyan City U23 Theo bạn thì trận này tài hay xỉu? Tài 0% Xỉu 0% Theo bạn thì trận này đội nào sẽ thắng? Chủ nhà 0% Hòa 0% Đội Khách 0% Anh Em Muốn Tham Gia Đặt Cược Thì Click Vào Quảng Cáo Của 8XBET Để Đăng Ký Đặt Cược Tất Cả Các Trận Đấu Trên Toàn Thế Giới. Nếu anh em gặp tình trạng không vào được web, hãy cài VPN 1.1.1.1 để truy cập ổn định hơn nhé . Châu Á Châu Âu Tài xỉu Phạt góc Chọn nhà cái HIỆP 1 FT Châu Á HIỆP 1 FT Châu Á - - - 0.95 -2 0.85 Châu Âu HIỆP 1 FT Châu Âu - - - 8.00 5.75 1.22 Tài xỉu HIỆP 1 FT Tài xỉu - - - 0.85 4 0.95 SỚM FT Phạt góc HIỆP 1 FT Phạt góc - - - - - - Trực tiếp Mô phỏng CHIA SẺ Phát sóng trận đấu Brindabella Blues FC U23 vs Queanbeyan City U23 full ",
+            "harvest_rounds": 8,
+            "harvest_window_seconds": 6.435,
+            "main_status": 200,
+            "harvested_stream_count": 1,
+            "harvested_blv_ids": [],
+            "scan_mode": "chromium-fallback",
+            "elapsed_seconds": 7.66
+          },
+          "api_probe": {
+            "enabled": true,
+            "room_status": 200,
+            "active_index": 0,
+            "sources_found": 0,
+            "sources_tried": 0,
+            "valid_stream_count": 0,
+            "source_results": [],
+            "fallback_reason": "list_stream_not_found",
+            "elapsed_seconds": 0.043,
+            "room_content_type": "text/html",
+            "room_elapsed_seconds": 0.037,
+            "room_error": ""
+          },
+          "http_probe": {
+            "api_first": {
+              "enabled": true,
+              "room_status": 200,
+              "active_index": 0,
+              "sources_found": 0,
+              "sources_tried": 0,
+              "valid_stream_count": 0,
+              "source_results": [],
+              "fallback_reason": "list_stream_not_found",
+              "elapsed_seconds": 0.043,
+              "room_content_type": "text/html",
+              "room_elapsed_seconds": 0.037,
+              "room_error": ""
+            },
+            "legacy_http": {
+              "enabled": false,
+              "status": null,
+              "elapsed_seconds": 0.0,
+              "error": ""
+            }
+          },
+          "errors": [
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED"
+          ],
+          "failed_requests": [
+            "stylesheet https://fonts.googleapis.com/css2?family=Bangers&family=Oswald:wght@400;500;700&family=Raleway:wght@400;500;700&family=Roboto+Condensed:wght@300;400;700&display=swap | net::ERR_FAILED",
+            "stylesheet https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0 | net::ERR_FAILED",
+            "stylesheet https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css | net::ERR_FAILED",
+            "stylesheet https://socolivekj.cc/wp-content/plugins/widget-options/assets/css/widget-options.css?ver=4.0.6.1 | net::ERR_FAILED",
+            "stylesheet https://socolivekj.cc/wp-content/plugins/wp-pagenavi/pagenavi-css.css?ver=2.70 | net::ERR_FAILED",
+            "stylesheet https://socolivekj.cc/wp-content/themes/bongda/dist/styles/bootstrap.min.css?ver=1745376853 | net::ERR_FAILED",
+            "stylesheet https://socolivekj.cc/wp-content/themes/bongda/dist/styles/main.css?ver=1781184173 | net::ERR_FAILED",
+            "stylesheet https://socolivekj.cc/wp-content/themes/bongda/dist/styles/pages/single-live.css?ver=1784627923 | net::ERR_FAILED",
+            "image https://socolivekj.cc/wp-content/themes/bongda/dist/images/logo-socolive-tv-official-v2.png | net::ERR_FAILED",
+            "image https://socolivekj.cc/wp-content/themes/bongda/dist/images/wc-2026/menu-wc.svg | net::ERR_FAILED",
+            "image https://socolivekj.cc/wp-content/themes/bongda/dist/images/closemenu.png | net::ERR_FAILED",
+            "image https://imgts.sportpulseapiz.com/football/team/6ypq3nhwwjomd7o/image/small | net::ERR_FAILED",
+            "stylesheet https://socolivekj.cc/wp-content/plugins/api-sport/public/css/match_detail.css?id=0671c88cfbad4335394b897262a0d662 | net::ERR_FAILED",
+            "image https://imgts.sportpulseapiz.com/football/team/4jwq2ghxxjlm0ve/image/small | net::ERR_FAILED",
+            "image https://socolivekj.cc/wp-content/themes/bongda/dist/images/company/21-1.png | net::ERR_FAILED"
+          ],
+          "http_errors": [
+            "403 https://live1.streambylivepulse.com/live/channel32.flv?wsSecret=c97962c3aec5c944412c36cbd2860367&wsABSTime=1785339076",
+            "403 https://live1.streambylivepulse.com/live/channel32.flv?wsSecret=c97962c3aec5c944412c36cbd2860367&wsABSTime=1785339076",
+            "403 https://live1.streambylivepulse.com/live/channel32.flv?wsSecret=c97962c3aec5c944412c36cbd2860367&wsABSTime=1785339076",
+            "403 https://live1.streambylivepulse.com/live/channel32.flv?wsSecret=c97962c3aec5c944412c36cbd2860367&wsABSTime=1785339076"
+          ]
+        }
+      ],
+      "attempted_room_ids": [],
+      "coverage": {
+        "found_streams": 1,
+        "found_blv_ids": [],
+        "goal": 2,
+        "source_goal_reached": false,
+        "room_queue_complete": true,
+        "complete": true,
+        "max_streams_per_blv": 2,
+        "total_explicit_blv_rooms": 0,
+        "pending_room_keys": [],
+        "room_progress": {
+          "__base__": {
+            "key": "__base__",
+            "url": "https://socolivekj.cc/truc-tiep/brindabella-blues-fc-u23-vs-queanbeyan-city-u23-luc-1430-ngay-29-07-2026/",
+            "blv": "",
+            "blv_id": "",
+            "status": "success",
+            "attempts": 1,
+            "attempts_total": 1,
+            "ever_attempted": true,
+            "valid_stream_ever_found": true,
+            "needs_token_refresh": false,
+            "completion_reason": "valid_stream",
+            "rate_limit_hits": 0,
+            "last_http_status": 200,
+            "last_stream_count": 1,
+            "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
+          }
+        }
+      },
+      "errors": [],
+      "match_name": "Brindabella Blues FC U23 vs Queanbeyan City U23",
+      "scheduled_at": "2026-07-29T14:30:00+07:00",
+      "room_progress": {
+        "__base__": {
+          "key": "__base__",
+          "url": "https://socolivekj.cc/truc-tiep/brindabella-blues-fc-u23-vs-queanbeyan-city-u23-luc-1430-ngay-29-07-2026/",
+          "blv": "",
+          "blv_id": "",
+          "status": "success",
+          "attempts": 1,
+          "attempts_total": 1,
+          "ever_attempted": true,
+          "valid_stream_ever_found": true,
+          "needs_token_refresh": false,
+          "completion_reason": "valid_stream",
+          "rate_limit_hits": 0,
+          "last_http_status": 200,
+          "last_stream_count": 1,
+          "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
+        }
+      }
+    },
+    {
       "base_url": "https://socolivekj.cc/truc-tiep/newmarket-sfc-vs-north-pine-united-luc-1615-ngay-29-07-2026/",
       "raw_title": "Newmarket SFC vs North Pine United",
       "home_team": "Newmarket SFC",
@@ -3882,7 +3882,7 @@
       "time_text": "16:15",
       "date_text": "29/07",
       "status": "",
-      "card_text": "AUSTRALIAN CLOTH 16:15 - 29.07 Newmarket SFC North Pine United 1 - 5 1 - 0 2 - 1 0.83 4 0.98 0.83 4.5/5 0.98",
+      "card_text": "AUSTRALIAN CLOTH 16:15 - 29.07 Newmarket SFC North Pine United 1 - 5 1 - 0 2 - 1 0.93 3.5/4 0.88 0.95 5 0.85",
       "rooms": [
         {
           "url": "https://socolivekj.cc/truc-tiep/newmarket-sfc-vs-north-pine-united-luc-1615-ngay-29-07-2026/",
@@ -4364,7 +4364,7 @@
       "time_text": "16:30",
       "date_text": "29/07",
       "status": "",
-      "card_text": "CAPITAL NPL 1 16:30 - 29.07 Brindabella Blues FC Queanbeyan City 2 - 0 2 - 0 1 - 1 BEE 0.95 -2 0.85 0.90 3.5/4 0.90",
+      "card_text": "CAPITAL NPL 1 16:30 - 29.07 Brindabella Blues FC Queanbeyan City 2 - 0 2 - 0 1 - 1 BEE 0.95 -2 0.85 0.83 3.5/4 0.98",
       "rooms": [
         {
           "url": "https://socolivekj.cc/truc-tiep/brindabella-blues-fc-vs-queanbeyan-city-luc-1630-ngay-29-07-2026/",
@@ -4597,7 +4597,7 @@
       "time_text": "16:45",
       "date_text": "29/07",
       "status": "",
-      "card_text": "GIAO HỮU CLB 16:45 - 29.07 Tottenham Sydney FC 0 - 1 NICK 0.85 -1.5/2 0.95 0.85 4 0.95",
+      "card_text": "GIAO HỮU CLB 16:45 - 29.07 Tottenham Sydney FC 0 - 1 NICK 0.90 -1.5/2 0.90 0.85 4 0.95",
       "rooms": [
         {
           "url": "https://socolivekj.cc/truc-tiep/tottenham-vs-sydney-fc-luc-1645-ngay-29-07-2026/",
@@ -4836,7 +4836,7 @@
       "time_text": "17:00",
       "date_text": "29/07",
       "status": "",
-      "card_text": "GIAO HỮU CLB 17:00 - 29.07 Cerezo Osaka Dortmund 2 - 3 FILIP 0.98 -1 0.83 0.98 4 0.83",
+      "card_text": "GIAO HỮU CLB 17:00 - 29.07 Cerezo Osaka Dortmund 2 - 3 FILIP 0.90 -1 0.90 0.95 4 0.85",
       "rooms": [
         {
           "url": "https://socolivekj.cc/truc-tiep/cerezo-osaka-vs-dortmund-luc-1700-ngay-29-07-2026/",
@@ -5055,15 +5055,7 @@
           "last_stream_count": 1,
           "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
         }
-      },
-      "run_attempted_room_keys": [
-        "__base__"
-      ],
-      "run_rate_limited_room_keys": [],
-      "run_completed_room_keys": [
-        "__base__"
-      ],
-      "run_global_budget_used": 1
+      }
     },
     {
       "base_url": "https://socolivekj.cc/truc-tiep/chungnam-asan-vs-siheung-city-luc-1700-ngay-29-07-2026/",
@@ -5075,7 +5067,7 @@
       "time_text": "17:00",
       "date_text": "29/07",
       "status": "",
-      "card_text": "CÚP FA HÀN QUỐC 17:00 - 29.07 Chungnam Asan Siheung City HT 0 - 0 0 - 0 0 - 0 TAGE 0.95 0.5 0.85 1.00 2.5 0.80",
+      "card_text": "CÚP FA HÀN QUỐC 17:00 - 29.07 Chungnam Asan Siheung City HT 0 - 0 0 - 0 0 - 0 TAGE 0.98 0.5 0.83 1.00 2.5 0.80",
       "rooms": [
         {
           "url": "https://socolivekj.cc/truc-tiep/chungnam-asan-vs-siheung-city-luc-1700-ngay-29-07-2026/",
@@ -5306,7 +5298,7 @@
       "time_text": "17:00",
       "date_text": "29/07",
       "status": "",
-      "card_text": "CÚP FA HÀN QUỐC 17:00 - 29.07 Yeoju Citizen Dangjin Citizen 2 - 2 4 - 1 1 - 5 1.03 0 0.78 0.85 2.5 0.95",
+      "card_text": "CÚP FA HÀN QUỐC 17:00 - 29.07 Yeoju Citizen Dangjin Citizen 2 - 2 4 - 1 1 - 5 1.03 0 0.78 0.83 2.5 0.98",
       "rooms": [
         {
           "url": "https://socolivekj.cc/truc-tiep/yeoju-citizen-vs-dangjin-citizen-luc-1700-ngay-29-07-2026/",
@@ -5778,7 +5770,7 @@
       "time_text": "17:00",
       "date_text": "29/07",
       "status": "",
-      "card_text": "CÚP FA HÀN QUỐC 17:00 - 29.07 Bucheon 1995 Paju Frontier FC 0 - 3 1 - 0 JEAN 0.83 0.5/1 0.98 0.90 2.5 0.90",
+      "card_text": "CÚP FA HÀN QUỐC 17:00 - 29.07 Bucheon 1995 Paju Frontier FC 0 - 3 1 - 0 JEAN 0.80 0.5/1 1.00 0.90 2.5 0.90",
       "rooms": [
         {
           "url": "https://socolivekj.cc/truc-tiep/bucheon-1995-vs-paju-frontier-fc-luc-1700-ngay-29-07-2026/",
@@ -6009,7 +6001,7 @@
       "time_text": "17:00",
       "date_text": "29/07",
       "status": "",
-      "card_text": "CÚP FA HÀN QUỐC 17:00 - 29.07 Busan I Park Seoul FC 1 - 2 1 - 1 2 - 0 ASTRA 1.00 -0.5/1 0.80 0.95 2.5/3 0.85",
+      "card_text": "CÚP FA HÀN QUỐC 17:00 - 29.07 Busan I Park Seoul FC 1 - 2 1 - 1 2 - 0 ASTRA 1.03 -0.5/1 0.78 0.95 2.5/3 0.85",
       "rooms": [
         {
           "url": "https://socolivekj.cc/truc-tiep/busan-i-park-vs-seoul-fc-luc-1700-ngay-29-07-2026/",
@@ -6240,7 +6232,7 @@
       "time_text": "17:00",
       "date_text": "29/07",
       "status": "",
-      "card_text": "CÚP FA HÀN QUỐC 17:00 - 29.07 Gimcheon Sangmu Suwon FC 3 - 2 1 - 1 3 - 2 TOM 0.90 0/0.5 0.90 0.80 2.5/3 1.00",
+      "card_text": "CÚP FA HÀN QUỐC 17:00 - 29.07 Gimcheon Sangmu Suwon FC 3 - 2 1 - 1 3 - 2 TOM 0.90 0/0.5 0.90 1.03 3 0.78",
       "rooms": [
         {
           "url": "https://socolivekj.cc/truc-tiep/gimcheon-sangmu-vs-suwon-fc-luc-1700-ngay-29-07-2026/",
