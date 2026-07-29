@@ -1,23 +1,23 @@
 {
-  "generated_at": "2026-07-30T00:02:29.300705+07:00",
+  "generated_at": "2026-07-30T00:32:32.809488+07:00",
   "state_schema_version": "v10.5-api-first-room-queue",
-  "dispatch_next": false,
-  "pending_count": 0,
-  "pending_room_count": 0,
-  "completed_count": 30,
-  "coverage_complete_count": 30,
+  "dispatch_next": true,
+  "pending_count": 1,
+  "pending_room_count": 1,
+  "completed_count": 29,
+  "coverage_complete_count": 29,
   "total_match_count": 30,
-  "total_stream_count": 30,
-  "progress_count": 7,
-  "new_link_count": 7,
+  "total_stream_count": 29,
+  "progress_count": 4,
+  "new_link_count": 4,
   "refreshed_link_count": 0,
-  "queue_progress_count": 37,
-  "terminal_progress_count": 30,
-  "newly_attempted_count": 7,
+  "queue_progress_count": 34,
+  "terminal_progress_count": 29,
+  "newly_attempted_count": 5,
   "queue_total_rooms": 30,
-  "queue_success_rooms": 30,
+  "queue_success_rooms": 29,
   "queue_exhausted_rooms": 0,
-  "queue_terminal_rooms": 30,
+  "queue_terminal_rooms": 29,
   "queue_attempts_total": 30,
   "chain_runs": 1,
   "no_progress_runs": 0,
@@ -25,12 +25,81 @@
   "unchanged_pending_runs": 0,
   "rate_limit_only_runs": 0,
   "rate_limit_only_run": false,
-  "pending_fingerprint": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
-  "stop_reason": "complete",
+  "pending_fingerprint": "73d9c9c31af27ed6a5a4c34c78ef322b6413df379b32f2a6abd3285f9004f613",
+  "stop_reason": "",
   "rate_limited": false,
   "rate_limit_url": "",
   "global_room_budget": 48,
-  "global_room_budget_used": 7,
-  "count": 0,
-  "matches": []
+  "global_room_budget_used": 5,
+  "count": 1,
+  "matches": [
+    {
+      "base_url": "https://socolivekj.cc/truc-tiep/gornik-zabrze-vs-fenerbahce-luc-0100-ngay-30-07-2026/",
+      "match_name": "Gornik Zabrze vs Fenerbahce",
+      "scheduled_at": "2026-07-30T01:00:00+07:00",
+      "rooms": [
+        {
+          "url": "https://socolivekj.cc/truc-tiep/gornik-zabrze-vs-fenerbahce-luc-0100-ngay-30-07-2026/",
+          "blv": "BRADY",
+          "blv_id": ""
+        }
+      ],
+      "streams": [],
+      "coverage": {
+        "found_streams": 0,
+        "found_blv_ids": [],
+        "goal": 2,
+        "source_goal_reached": false,
+        "room_queue_complete": false,
+        "complete": false,
+        "max_streams_per_blv": 2,
+        "total_explicit_blv_rooms": 0,
+        "pending_room_keys": [
+          "__base__"
+        ],
+        "room_progress": {
+          "__base__": {
+            "key": "__base__",
+            "url": "https://socolivekj.cc/truc-tiep/gornik-zabrze-vs-fenerbahce-luc-0100-ngay-30-07-2026/",
+            "blv": "BRADY",
+            "blv_id": "",
+            "status": "retry",
+            "attempts": 1,
+            "attempts_total": 1,
+            "ever_attempted": true,
+            "valid_stream_ever_found": false,
+            "needs_token_refresh": false,
+            "completion_reason": "",
+            "rate_limit_hits": 0,
+            "last_http_status": 200,
+            "last_stream_count": 0,
+            "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
+          }
+        }
+      },
+      "attempted_room_ids": [],
+      "room_progress": {
+        "__base__": {
+          "key": "__base__",
+          "url": "https://socolivekj.cc/truc-tiep/gornik-zabrze-vs-fenerbahce-luc-0100-ngay-30-07-2026/",
+          "blv": "BRADY",
+          "blv_id": "",
+          "status": "retry",
+          "attempts": 1,
+          "attempts_total": 1,
+          "ever_attempted": true,
+          "valid_stream_ever_found": false,
+          "needs_token_refresh": false,
+          "completion_reason": "",
+          "rate_limit_hits": 0,
+          "last_http_status": 200,
+          "last_stream_count": 0,
+          "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
+        }
+      },
+      "pending_room_keys": [
+        "__base__"
+      ]
+    }
+  ]
 }
