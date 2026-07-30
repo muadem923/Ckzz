@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-30T15:01:45.618763+07:00",
+  "generated_at": "2026-07-30T15:31:27.811807+07:00",
   "state_schema_version": "v10.5-api-first-room-queue",
   "dispatch_next": false,
   "pending_count": 0,
@@ -8,20 +8,20 @@
   "coverage_complete_count": 26,
   "total_match_count": 26,
   "total_stream_count": 22,
-  "progress_count": 3,
-  "new_link_count": 2,
-  "refreshed_link_count": 1,
-  "queue_progress_count": 29,
-  "terminal_progress_count": 26,
-  "newly_attempted_count": 3,
+  "progress_count": 0,
+  "new_link_count": 0,
+  "refreshed_link_count": 0,
+  "queue_progress_count": 0,
+  "terminal_progress_count": 0,
+  "newly_attempted_count": 0,
   "queue_total_rooms": 26,
   "queue_success_rooms": 26,
   "queue_exhausted_rooms": 0,
   "queue_terminal_rooms": 26,
   "queue_attempts_total": 26,
-  "chain_runs": 1,
-  "no_progress_runs": 0,
-  "no_queue_progress_runs": 0,
+  "chain_runs": 2,
+  "no_progress_runs": 1,
+  "no_queue_progress_runs": 1,
   "unchanged_pending_runs": 0,
   "rate_limit_only_runs": 0,
   "rate_limit_only_run": false,
@@ -30,7 +30,7 @@
   "rate_limited": false,
   "rate_limit_url": "",
   "global_room_budget": 48,
-  "global_room_budget_used": 3,
+  "global_room_budget_used": 0,
   "target_base_urls": [
     "https://socolivekj.cc/truc-tiep/al-rayyan-vs-al-diraiyah-luc-1530-ngay-30-07-2026/",
     "https://socolivekj.cc/truc-tiep/amedspor-vs-duhok-luc-1500-ngay-30-07-2026/",
@@ -62,6 +62,483 @@
   "pending_base_urls": [],
   "matches": [
     {
+      "base_url": "https://socolivekj.cc/truc-tiep/al-rayyan-vs-al-diraiyah-luc-1530-ngay-30-07-2026/",
+      "raw_title": "Al Rayyan vs Al Diraiyah",
+      "home_team": "Al Rayyan",
+      "away_team": "Al Diraiyah",
+      "home_logo": "https://imgts.sportpulseapiz.com/football/team/y39mp1h391pmojx/image/small",
+      "away_logo": "https://imgts.sportpulseapiz.com/football/team/318q66ho8e1qo9j/image/small",
+      "time_text": "15:30",
+      "date_text": "30/07",
+      "status": "Đang diễn ra",
+      "card_text": "GIAO HỮU CLB Đang diễn ra 15:30 - 30.07 Al Rayyan Al Diraiyah HT 0 - 0 0 - 0 0 - 0 TOM - - - - - -",
+      "rooms": [
+        {
+          "url": "https://socolivekj.cc/truc-tiep/al-rayyan-vs-al-diraiyah-luc-1530-ngay-30-07-2026/",
+          "blv": "TOM",
+          "blv_id": ""
+        }
+      ],
+      "streams": [
+        {
+          "url": "https://live2.streambylivepulse.com/live/channel4.flv",
+          "queue_room_key": "__base__",
+          "room_url": "https://socolivekj.cc/truc-tiep/al-rayyan-vs-al-diraiyah-luc-1530-ngay-30-07-2026/",
+          "blv": "Nguồn phụ 1",
+          "blv_id": "",
+          "source_id": "",
+          "source_provenance": [
+            "cdp/request",
+            "harvest-final",
+            "harvest-round-1",
+            "harvest-round-2",
+            "harvest-round-3",
+            "harvest-round-4",
+            "harvest-round-5",
+            "harvest-round-6",
+            "harvest-round-7",
+            "harvest-round-8",
+            "harvest-round-9",
+            "request/fetch"
+          ],
+          "playback_referer": "",
+          "playback_origin": "",
+          "playback_user_agent": "",
+          "api_player_endpoint": "",
+          "api_source_mode": "",
+          "source_confidence": "network",
+          "mapping_mode": "stream-source-id",
+          "discovered_from_room_url": "https://socolivekj.cc/truc-tiep/al-rayyan-vs-al-diraiyah-luc-1530-ngay-30-07-2026/",
+          "discovered_from_blv": "TOM",
+          "discovered_at": "2026-07-30T11:31:42.345686+07:00",
+          "valid_until": "",
+          "is_expired": false
+        }
+      ],
+      "room_results": [
+        {
+          "url": "https://socolivekj.cc/truc-tiep/al-rayyan-vs-al-diraiyah-luc-1530-ngay-30-07-2026/",
+          "blv": "TOM",
+          "blv_id": "",
+          "streams": [
+            "https://live2.streambylivepulse.com/live/channel4.flv"
+          ],
+          "stream_sources": {
+            "https://live2.streambylivepulse.com/live/channel4.flv": [
+              "cdp/request",
+              "harvest-final",
+              "harvest-round-1",
+              "harvest-round-2",
+              "harvest-round-3",
+              "harvest-round-4",
+              "harvest-round-5",
+              "harvest-round-6",
+              "harvest-round-7",
+              "harvest-round-8",
+              "harvest-round-9",
+              "request/fetch"
+            ]
+          },
+          "stream_headers": {},
+          "stream_first_seen": [
+            "https://live2.streambylivepulse.com/live/channel4.flv"
+          ],
+          "discovered_blv_ids": [],
+          "diagnostics": {
+            "url": "https://socolivekj.cc/truc-tiep/al-rayyan-vs-al-diraiyah-luc-1530-ngay-30-07-2026/",
+            "title": "Trực tiếp Al Rayyan vs Al Diraiyah full lúc 15:30, ngày 30/07",
+            "h1": "Xem trực tiếp trận đấu Al Rayyan vs Al Diraiyah full lúc 15:30, ngày 30/07/2026",
+            "ready_state": "complete",
+            "visibility_state": "visible",
+            "hidden": false,
+            "video_count": 0,
+            "iframe_count": 5,
+            "body_sample": "WC 2026 Lịch Thi Đấu Xem Lại Video Highlight Tỷ Lệ Kèo BXH KQBD Tips Tin Tức Livescore Tuyển Dụng Top Nhà Cái Cược 8xbet WC 2026 Lịch Thi Đấu Xem Lại Video Highlight Tỷ Lệ Kèo BXH KQBD Tips Tin Tức Livescore Tuyển Dụng Top nhà cái Xem trực tiếp trận đấu Al Rayyan vs Al Diraiyah full lúc 15:30, ngày 30/07/2026 Phát sóng link trực tuyến Al Rayyan vs Al Diraiyah hôm nay tại giải đấu Giao Hữu CLB _ _ _ _ _ _ Al Rayyan Al Diraiyah Theo bạn thì trận này tài hay xỉu? Tài 0% Xỉu 0% Theo bạn thì trận này đội nào sẽ thắng? Chủ nhà 0% Hòa 0% Đội Khách 0% Anh Em Muốn Tham Gia Đặt Cược Thì Click Vào Quảng Cáo Của 8XBET Để Đăng Ký Đặt Cược Tất Cả Các Trận Đấu Trên Toàn Thế Giới. Nếu anh em gặp tình trạng không vào được web, hãy cài VPN 1.1.1.1 để truy cập ổn định hơn nhé . Châu Á Châu Âu Tài xỉu Phạt góc Chọn nhà cái HIỆP 1 FT Châu Á HIỆP 1 FT Châu Á - - - - - - Châu Âu HIỆP 1 FT Châu Âu - - - - - - Tài xỉu HIỆP 1 FT Tài xỉu - - - - - - SỚM FT Phạt góc HIỆP 1 FT Phạt góc - - - - - - Trực tiếp Mô phỏng CHIA SẺ Phát sóng trận đấu Al Rayyan vs Al Diraiyah full HD lúc 15:30, ngày 30/07/2026 Giao Hữu CLB TOM HD TOM CHIA SẺ Thông số Diễn biến Đội hình BXH Chat Đối đầu Trận khác Trận sắp tới Tỷ lệ kèo ",
+            "harvest_rounds": 9,
+            "harvest_window_seconds": 7.047,
+            "main_status": 200,
+            "harvested_stream_count": 1,
+            "harvested_blv_ids": [],
+            "scan_mode": "chromium-fallback",
+            "elapsed_seconds": 8.313
+          },
+          "api_probe": {
+            "enabled": true,
+            "room_status": 200,
+            "active_index": 0,
+            "sources_found": 0,
+            "sources_tried": 0,
+            "valid_stream_count": 0,
+            "source_results": [],
+            "fallback_reason": "list_stream_not_found",
+            "elapsed_seconds": 0.069,
+            "room_content_type": "text/html",
+            "room_elapsed_seconds": 0.064,
+            "room_error": ""
+          },
+          "http_probe": {
+            "api_first": {
+              "enabled": true,
+              "room_status": 200,
+              "active_index": 0,
+              "sources_found": 0,
+              "sources_tried": 0,
+              "valid_stream_count": 0,
+              "source_results": [],
+              "fallback_reason": "list_stream_not_found",
+              "elapsed_seconds": 0.069,
+              "room_content_type": "text/html",
+              "room_elapsed_seconds": 0.064,
+              "room_error": ""
+            },
+            "legacy_http": {
+              "enabled": false,
+              "status": null,
+              "elapsed_seconds": 0.0,
+              "error": ""
+            }
+          },
+          "errors": [
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED"
+          ],
+          "failed_requests": [
+            "stylesheet https://fonts.googleapis.com/css2?family=Bangers&family=Oswald:wght@400;500;700&family=Raleway:wght@400;500;700&family=Roboto+Condensed:wght@300;400;700&display=swap | net::ERR_FAILED",
+            "stylesheet https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0 | net::ERR_FAILED",
+            "stylesheet https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css | net::ERR_FAILED",
+            "stylesheet https://socolivekj.cc/wp-content/plugins/widget-options/assets/css/widget-options.css?ver=4.0.6.1 | net::ERR_FAILED",
+            "stylesheet https://socolivekj.cc/wp-content/plugins/wp-pagenavi/pagenavi-css.css?ver=2.70 | net::ERR_FAILED",
+            "stylesheet https://socolivekj.cc/wp-content/themes/bongda/dist/styles/bootstrap.min.css?ver=1745376853 | net::ERR_FAILED",
+            "stylesheet https://socolivekj.cc/wp-content/themes/bongda/dist/styles/main.css?ver=1781184173 | net::ERR_FAILED",
+            "stylesheet https://socolivekj.cc/wp-content/themes/bongda/dist/styles/pages/single-live.css?ver=1784627923 | net::ERR_FAILED",
+            "image https://socolivekj.cc/wp-content/themes/bongda/dist/images/logo-socolive-tv-official-v2.png | net::ERR_FAILED",
+            "image https://socolivekj.cc/wp-content/themes/bongda/dist/images/wc-2026/menu-wc.svg | net::ERR_FAILED",
+            "image https://socolivekj.cc/wp-content/themes/bongda/dist/images/closemenu.png | net::ERR_FAILED",
+            "image https://imgts.sportpulseapiz.com/football/team/y39mp1h391pmojx/image/small | net::ERR_FAILED",
+            "stylesheet https://socolivekj.cc/wp-content/plugins/api-sport/public/css/match_detail.css?id=0671c88cfbad4335394b897262a0d662 | net::ERR_FAILED",
+            "image https://imgts.sportpulseapiz.com/football/team/318q66ho8e1qo9j/image/small | net::ERR_FAILED",
+            "image https://socolivekj.cc/wp-content/themes/bongda/dist/images/company/21-1.png | net::ERR_FAILED"
+          ],
+          "http_errors": []
+        }
+      ],
+      "attempted_room_ids": [],
+      "coverage": {
+        "found_streams": 1,
+        "found_blv_ids": [],
+        "goal": 2,
+        "source_goal_reached": false,
+        "room_queue_complete": true,
+        "complete": true,
+        "max_streams_per_blv": 2,
+        "total_explicit_blv_rooms": 0,
+        "pending_room_keys": [],
+        "room_progress": {
+          "__base__": {
+            "key": "__base__",
+            "url": "https://socolivekj.cc/truc-tiep/al-rayyan-vs-al-diraiyah-luc-1530-ngay-30-07-2026/",
+            "blv": "TOM",
+            "blv_id": "",
+            "status": "success",
+            "attempts": 1,
+            "attempts_total": 1,
+            "ever_attempted": true,
+            "valid_stream_ever_found": true,
+            "needs_token_refresh": false,
+            "completion_reason": "valid_stream",
+            "rate_limit_hits": 0,
+            "last_http_status": 200,
+            "last_stream_count": 1,
+            "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
+          }
+        }
+      },
+      "errors": [],
+      "match_name": "Al Rayyan vs Al Diraiyah",
+      "scheduled_at": "2026-07-30T15:30:00+07:00",
+      "room_progress": {
+        "__base__": {
+          "key": "__base__",
+          "url": "https://socolivekj.cc/truc-tiep/al-rayyan-vs-al-diraiyah-luc-1530-ngay-30-07-2026/",
+          "blv": "TOM",
+          "blv_id": "",
+          "status": "success",
+          "attempts": 1,
+          "attempts_total": 1,
+          "ever_attempted": true,
+          "valid_stream_ever_found": true,
+          "needs_token_refresh": false,
+          "completion_reason": "valid_stream",
+          "rate_limit_hits": 0,
+          "last_http_status": 200,
+          "last_stream_count": 1,
+          "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
+        }
+      }
+    },
+    {
+      "base_url": "https://socolivekj.cc/truc-tiep/sabah-u20-vs-negeri-sembilan-u20-luc-1515-ngay-30-07-2026/",
+      "raw_title": "Sabah U20 vs Negeri Sembilan U20",
+      "home_team": "Sabah U20",
+      "away_team": "Negeri Sembilan U20",
+      "home_logo": "https://imgts.sportpulseapiz.com/football/team/vjxm8ghpywlr6od/image/small",
+      "away_logo": "https://imgts.sportpulseapiz.com/football/team/y0or5jhg7o9qwzv/image/small",
+      "time_text": "15:15",
+      "date_text": "30/07",
+      "status": "Hiệp 1",
+      "card_text": "MALAYSIAN PRESIDENT CUP Hiệp 1: 17' 15:15 - 30.07 Sabah U20 0 : 1 Negeri Sembilan U20 HT 0 - 1 1 - 0 0 - 1 0.78 0.5/1 1.03 0.88 3 0.93",
+      "rooms": [
+        {
+          "url": "https://socolivekj.cc/truc-tiep/sabah-u20-vs-negeri-sembilan-u20-luc-1515-ngay-30-07-2026/",
+          "blv": "",
+          "blv_id": ""
+        }
+      ],
+      "streams": [
+        {
+          "url": "https://live1.streambylivepulse.com/live/channel11.flv?wsSecret=c53babef948276a16ad9b06530306fa8&wsABSTime=1785429084",
+          "queue_room_key": "__base__",
+          "room_url": "https://socolivekj.cc/truc-tiep/sabah-u20-vs-negeri-sembilan-u20-luc-1515-ngay-30-07-2026/",
+          "blv": "Nguồn phụ 1",
+          "blv_id": "",
+          "source_id": "",
+          "source_provenance": [
+            "cdp/request",
+            "cdp/response",
+            "harvest-final",
+            "harvest-round-1",
+            "harvest-round-2",
+            "harvest-round-3",
+            "harvest-round-4",
+            "harvest-round-5",
+            "harvest-round-6",
+            "harvest-round-7",
+            "harvest-round-8",
+            "harvest-round-9",
+            "request/fetch",
+            "response/403"
+          ],
+          "playback_referer": "",
+          "playback_origin": "",
+          "playback_user_agent": "",
+          "api_player_endpoint": "",
+          "api_source_mode": "",
+          "source_confidence": "network",
+          "mapping_mode": "stream-source-id",
+          "discovered_from_room_url": "https://socolivekj.cc/truc-tiep/sabah-u20-vs-negeri-sembilan-u20-luc-1515-ngay-30-07-2026/",
+          "discovered_from_blv": "URL tổng",
+          "discovered_at": "2026-07-30T11:31:32.013988+07:00",
+          "valid_until": "",
+          "is_expired": false
+        }
+      ],
+      "room_results": [
+        {
+          "url": "https://socolivekj.cc/truc-tiep/sabah-u20-vs-negeri-sembilan-u20-luc-1515-ngay-30-07-2026/",
+          "blv": "",
+          "blv_id": "",
+          "streams": [
+            "https://live1.streambylivepulse.com/live/channel11.flv?wsSecret=c53babef948276a16ad9b06530306fa8&wsABSTime=1785429084"
+          ],
+          "stream_sources": {
+            "https://live1.streambylivepulse.com/live/channel11.flv?wsSecret=c53babef948276a16ad9b06530306fa8&wsABSTime=1785429084": [
+              "cdp/request",
+              "cdp/response",
+              "harvest-final",
+              "harvest-round-1",
+              "harvest-round-2",
+              "harvest-round-3",
+              "harvest-round-4",
+              "harvest-round-5",
+              "harvest-round-6",
+              "harvest-round-7",
+              "harvest-round-8",
+              "harvest-round-9",
+              "request/fetch",
+              "response/403"
+            ]
+          },
+          "stream_headers": {},
+          "stream_first_seen": [
+            "https://live1.streambylivepulse.com/live/channel11.flv?wsSecret=c53babef948276a16ad9b06530306fa8&wsABSTime=1785429084"
+          ],
+          "discovered_blv_ids": [],
+          "diagnostics": {
+            "url": "https://socolivekj.cc/truc-tiep/sabah-u20-vs-negeri-sembilan-u20-luc-1515-ngay-30-07-2026/",
+            "title": "Trực tiếp Sabah U20 vs Negeri Sembilan U20 full lúc 15:15, ngày 30/07",
+            "h1": "Xem trực tiếp trận đấu Sabah U20 vs Negeri Sembilan U20 full lúc 15:15, ngày 30/07/2026",
+            "ready_state": "complete",
+            "visibility_state": "visible",
+            "hidden": false,
+            "video_count": 0,
+            "iframe_count": 5,
+            "body_sample": "WC 2026 Lịch Thi Đấu Xem Lại Video Highlight Tỷ Lệ Kèo BXH KQBD Tips Tin Tức Livescore Tuyển Dụng Top Nhà Cái Cược 8xbet WC 2026 Lịch Thi Đấu Xem Lại Video Highlight Tỷ Lệ Kèo BXH KQBD Tips Tin Tức Livescore Tuyển Dụng Top nhà cái Xem trực tiếp trận đấu Sabah U20 vs Negeri Sembilan U20 full lúc 15:15, ngày 30/07/2026 Phát sóng link trực tuyến Sabah U20 vs Negeri Sembilan U20 hôm nay tại giải đấu Malaysian President Cup _ _ _ _ _ _ Sabah U20 Negeri Sembilan U20 Theo bạn thì trận này tài hay xỉu? Tài 0% Xỉu 0% Theo bạn thì trận này đội nào sẽ thắng? Chủ nhà 0% Hòa 0% Đội Khách 0% Anh Em Muốn Tham Gia Đặt Cược Thì Click Vào Quảng Cáo Của 8XBET Để Đăng Ký Đặt Cược Tất Cả Các Trận Đấu Trên Toàn Thế Giới. Nếu anh em gặp tình trạng không vào được web, hãy cài VPN 1.1.1.1 để truy cập ổn định hơn nhé . Châu Á Châu Âu Tài xỉu Phạt góc Chọn nhà cái HIỆP 1 FT Châu Á HIỆP 1 FT Châu Á - - - 0.95 1 0.85 Châu Âu HIỆP 1 FT Châu Âu - - - 1.55 3.60 5.25 Tài xỉu HIỆP 1 FT Tài xỉu - - - 0.85 2.5 0.95 SỚM FT Phạt góc HIỆP 1 FT Phạt góc - - - - - - Trực tiếp Mô phỏng CHIA SẺ Phát sóng trận đấu Sabah U20 vs Negeri Sembilan U20 full HD lúc 15:15, ngày 30/07/2026 Malaysian President Cup HD 1 CHIA SẺ Thông s",
+            "harvest_rounds": 9,
+            "harvest_window_seconds": 7.0,
+            "main_status": 200,
+            "harvested_stream_count": 1,
+            "harvested_blv_ids": [],
+            "scan_mode": "chromium-fallback",
+            "elapsed_seconds": 8.587
+          },
+          "api_probe": {
+            "enabled": true,
+            "room_status": 200,
+            "active_index": 0,
+            "sources_found": 0,
+            "sources_tried": 0,
+            "valid_stream_count": 0,
+            "source_results": [],
+            "fallback_reason": "list_stream_not_found",
+            "elapsed_seconds": 0.44,
+            "room_content_type": "text/html",
+            "room_elapsed_seconds": 0.436,
+            "room_error": ""
+          },
+          "http_probe": {
+            "api_first": {
+              "enabled": true,
+              "room_status": 200,
+              "active_index": 0,
+              "sources_found": 0,
+              "sources_tried": 0,
+              "valid_stream_count": 0,
+              "source_results": [],
+              "fallback_reason": "list_stream_not_found",
+              "elapsed_seconds": 0.44,
+              "room_content_type": "text/html",
+              "room_elapsed_seconds": 0.436,
+              "room_error": ""
+            },
+            "legacy_http": {
+              "enabled": false,
+              "status": null,
+              "elapsed_seconds": 0.0,
+              "error": ""
+            }
+          },
+          "errors": [
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED"
+          ],
+          "failed_requests": [
+            "stylesheet https://fonts.googleapis.com/css2?family=Bangers&family=Oswald:wght@400;500;700&family=Raleway:wght@400;500;700&family=Roboto+Condensed:wght@300;400;700&display=swap | net::ERR_FAILED",
+            "stylesheet https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0 | net::ERR_FAILED",
+            "stylesheet https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css | net::ERR_FAILED",
+            "stylesheet https://socolivekj.cc/wp-content/plugins/widget-options/assets/css/widget-options.css?ver=4.0.6.1 | net::ERR_FAILED",
+            "stylesheet https://socolivekj.cc/wp-content/plugins/wp-pagenavi/pagenavi-css.css?ver=2.70 | net::ERR_FAILED",
+            "stylesheet https://socolivekj.cc/wp-content/themes/bongda/dist/styles/bootstrap.min.css?ver=1745376853 | net::ERR_FAILED",
+            "stylesheet https://socolivekj.cc/wp-content/themes/bongda/dist/styles/main.css?ver=1781184173 | net::ERR_FAILED",
+            "stylesheet https://socolivekj.cc/wp-content/themes/bongda/dist/styles/pages/single-live.css?ver=1784627923 | net::ERR_FAILED",
+            "image https://socolivekj.cc/wp-content/themes/bongda/dist/images/logo-socolive-tv-official-v2.png | net::ERR_FAILED",
+            "image https://socolivekj.cc/wp-content/themes/bongda/dist/images/wc-2026/menu-wc.svg | net::ERR_FAILED",
+            "image https://socolivekj.cc/wp-content/themes/bongda/dist/images/closemenu.png | net::ERR_FAILED",
+            "image https://imgts.sportpulseapiz.com/football/team/vjxm8ghpywlr6od/image/small | net::ERR_FAILED",
+            "stylesheet https://socolivekj.cc/wp-content/plugins/api-sport/public/css/match_detail.css?id=0671c88cfbad4335394b897262a0d662 | net::ERR_FAILED",
+            "image https://imgts.sportpulseapiz.com/football/team/y0or5jhg7o9qwzv/image/small | net::ERR_FAILED",
+            "image https://socolivekj.cc/wp-content/themes/bongda/dist/images/company/21-1.png | net::ERR_FAILED"
+          ],
+          "http_errors": [
+            "403 https://live1.streambylivepulse.com/live/channel11.flv?wsSecret=c53babef948276a16ad9b06530306fa8&wsABSTime=1785429084",
+            "403 https://live1.streambylivepulse.com/live/channel11.flv?wsSecret=c53babef948276a16ad9b06530306fa8&wsABSTime=1785429084",
+            "403 https://live1.streambylivepulse.com/live/channel11.flv?wsSecret=c53babef948276a16ad9b06530306fa8&wsABSTime=1785429084",
+            "403 https://live1.streambylivepulse.com/live/channel11.flv?wsSecret=c53babef948276a16ad9b06530306fa8&wsABSTime=1785429084",
+            "403 https://live1.streambylivepulse.com/live/channel11.flv?wsSecret=c53babef948276a16ad9b06530306fa8&wsABSTime=1785429084",
+            "403 https://live1.streambylivepulse.com/live/channel11.flv?wsSecret=c53babef948276a16ad9b06530306fa8&wsABSTime=1785429084"
+          ]
+        }
+      ],
+      "attempted_room_ids": [],
+      "coverage": {
+        "found_streams": 1,
+        "found_blv_ids": [],
+        "goal": 2,
+        "source_goal_reached": false,
+        "room_queue_complete": true,
+        "complete": true,
+        "max_streams_per_blv": 2,
+        "total_explicit_blv_rooms": 0,
+        "pending_room_keys": [],
+        "room_progress": {
+          "__base__": {
+            "key": "__base__",
+            "url": "https://socolivekj.cc/truc-tiep/sabah-u20-vs-negeri-sembilan-u20-luc-1515-ngay-30-07-2026/",
+            "blv": "",
+            "blv_id": "",
+            "status": "success",
+            "attempts": 1,
+            "attempts_total": 1,
+            "ever_attempted": true,
+            "valid_stream_ever_found": true,
+            "needs_token_refresh": false,
+            "completion_reason": "valid_stream",
+            "rate_limit_hits": 0,
+            "last_http_status": 200,
+            "last_stream_count": 1,
+            "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
+          }
+        }
+      },
+      "errors": [],
+      "match_name": "Sabah U20 vs Negeri Sembilan U20",
+      "scheduled_at": "2026-07-30T15:15:00+07:00",
+      "room_progress": {
+        "__base__": {
+          "key": "__base__",
+          "url": "https://socolivekj.cc/truc-tiep/sabah-u20-vs-negeri-sembilan-u20-luc-1515-ngay-30-07-2026/",
+          "blv": "",
+          "blv_id": "",
+          "status": "success",
+          "attempts": 1,
+          "attempts_total": 1,
+          "ever_attempted": true,
+          "valid_stream_ever_found": true,
+          "needs_token_refresh": false,
+          "completion_reason": "valid_stream",
+          "rate_limit_hits": 0,
+          "last_http_status": 200,
+          "last_stream_count": 1,
+          "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
+        }
+      }
+    },
+    {
       "base_url": "https://socolivekj.cc/truc-tiep/rcd-mallorca-vs-al-ittihadksa-luc-1500-ngay-30-07-2026/",
       "raw_title": "RCD Mallorca vs Al Ittihad(KSA)",
       "home_team": "RCD Mallorca",
@@ -70,8 +547,8 @@
       "away_logo": "https://imgts.sportpulseapiz.com/football/team/9vjxm8ghyv3r6od/image/small",
       "time_text": "15:00",
       "date_text": "30/07",
-      "status": "Đang diễn ra",
-      "card_text": "GIAO HỮU CLB Đang diễn ra 15:00 - 30.07 RCD Mallorca Al Ittihad(KSA) HT 0 - 0 0 - 0 0 - 0 NICK 0.95 1/1.5 0.85 0.95 3/3.5 0.85",
+      "status": "Hiệp 1",
+      "card_text": "GIAO HỮU CLB Hiệp 1: 26' 15:00 - 30.07 RCD Mallorca 2 : 1 Al Ittihad(KSA) HT 2 - 1 1 - 0 0 - 0 NICK 0.88 1/1.5 0.93 0.80 5.5 1.00",
       "rooms": [
         {
           "url": "https://socolivekj.cc/truc-tiep/rcd-mallorca-vs-al-ittihadksa-luc-1500-ngay-30-07-2026/",
@@ -301,8 +778,8 @@
       "away_logo": "https://imgts.sportpulseapiz.com/football/team/dj2ryoh2e2nq1zp/image/small",
       "time_text": "15:00",
       "date_text": "30/07",
-      "status": "Đang diễn ra",
-      "card_text": "VĐQG NỮ UKRAINA Đang diễn ra 15:00 - 30.07 Nữ Metalist 1925 Nữ SeaSters Odessa 1 - 0 0 - 0 2 - 3 0.85 0/0.5 0.95 0.85 2.5/3 0.95",
+      "status": "Hiệp 1",
+      "card_text": "VĐQG NỮ UKRAINA Hiệp 1: 30' 15:00 - 30.07 Nữ Metalist 1925 0 : 0 Nữ SeaSters Odessa HT 0 - 0 1 - 2 0 - 0 0.90 0/0.5 0.90 0.88 2 0.93",
       "rooms": [
         {
           "url": "https://socolivekj.cc/truc-tiep/nu-metalist-1925-vs-nu-seasters-odessa-luc-1500-ngay-30-07-2026/",
@@ -541,8 +1018,8 @@
       "away_logo": "https://imgts.sportpulseapiz.com/football/team/4jwq2gh479xm0ve/image/small",
       "time_text": "15:00",
       "date_text": "30/07",
-      "status": "Đang diễn ra",
-      "card_text": "GIAO HỮU CLB Đang diễn ra 15:00 - 30.07 Amedspor Duhok HT 0 - 0 0 - 0 0 - 0 - - - - - -",
+      "status": "Hiệp 1",
+      "card_text": "GIAO HỮU CLB Hiệp 1: 32' 15:00 - 30.07 Amedspor 0 : 0 Duhok HT 0 - 0 0 - 0 0 - 0 - - - - - -",
       "rooms": [
         {
           "url": "https://socolivekj.cc/truc-tiep/amedspor-vs-duhok-luc-1500-ngay-30-07-2026/",
@@ -782,8 +1259,8 @@
       "away_logo": "https://imgts.sportpulseapiz.com/football/team/x7lm7pho7p5m2wd/image/small",
       "time_text": "15:00",
       "date_text": "30/07",
-      "status": "Đang diễn ra",
-      "card_text": "GIAO HỮU CLB Đang diễn ra 15:00 - 30.07 Petro Atletico de Luanda Teruel HT 0 - 0 0 - 0 0 - 0 0.78 0 1.03 0.80 2.5 1.00",
+      "status": "Hiệp 1",
+      "card_text": "GIAO HỮU CLB Hiệp 1: 27' 15:00 - 30.07 Petro Atletico de Luanda 1 : 0 Teruel HT 1 - 0 1 - 0 0 - 0 0.78 0 1.03 0.80 2.5 1.00",
       "rooms": [
         {
           "url": "https://socolivekj.cc/truc-tiep/petro-atletico-de-luanda-vs-teruel-luc-1500-ngay-30-07-2026/",
@@ -1017,723 +1494,6 @@
       }
     },
     {
-      "base_url": "https://socolivekj.cc/truc-tiep/lawsohtun-sc-vs-sohiong-united-luc-1430-ngay-30-07-2026/",
-      "raw_title": "Lawsohtun SC vs Sohiong United",
-      "home_team": "Lawsohtun SC",
-      "away_team": "Sohiong United",
-      "home_logo": "https://imgts.sportpulseapiz.com/football/team/jw2r09h1w9lrz84/image/small",
-      "away_logo": "https://imgts.sportpulseapiz.com/football/team/6ypq3nhlolzmd7o/image/small",
-      "time_text": "14:30",
-      "date_text": "30/07",
-      "status": "Hiệp 1",
-      "card_text": "INDIAN SHILLONG PREMIER LEAGUE Hiệp 1: 26' 14:30 - 30.07 Lawsohtun SC 1 : 0 Sohiong United HT 1 - 0 1 - 0 1 - 1 0.95 1 0.85 0.80 5 1.00",
-      "rooms": [
-        {
-          "url": "https://socolivekj.cc/truc-tiep/lawsohtun-sc-vs-sohiong-united-luc-1430-ngay-30-07-2026/",
-          "blv": "",
-          "blv_id": ""
-        }
-      ],
-      "streams": [
-        {
-          "url": "https://live1.streambylivepulse.com/live/channel31.flv?wsSecret=79a7af1ec9177bb6735c775d62a4a38c&wsABSTime=1785425500",
-          "queue_room_key": "__base__",
-          "room_url": "https://socolivekj.cc/truc-tiep/lawsohtun-sc-vs-sohiong-united-luc-1430-ngay-30-07-2026/",
-          "blv": "Nguồn phụ 1",
-          "blv_id": "",
-          "source_id": "",
-          "source_provenance": [
-            "cdp/request",
-            "cdp/response",
-            "harvest-final",
-            "harvest-round-1",
-            "harvest-round-2",
-            "harvest-round-3",
-            "harvest-round-4",
-            "harvest-round-5",
-            "harvest-round-6",
-            "harvest-round-7",
-            "harvest-round-8",
-            "request/fetch",
-            "response/403"
-          ],
-          "playback_referer": "",
-          "playback_origin": "",
-          "playback_user_agent": "",
-          "api_player_endpoint": "",
-          "api_source_mode": "",
-          "source_confidence": "network",
-          "mapping_mode": "stream-source-id",
-          "discovered_from_room_url": "https://socolivekj.cc/truc-tiep/lawsohtun-sc-vs-sohiong-united-luc-1430-ngay-30-07-2026/",
-          "discovered_from_blv": "URL tổng",
-          "discovered_at": "2026-07-30T10:31:47.377071+07:00",
-          "valid_until": "",
-          "is_expired": false
-        }
-      ],
-      "room_results": [
-        {
-          "url": "https://socolivekj.cc/truc-tiep/lawsohtun-sc-vs-sohiong-united-luc-1430-ngay-30-07-2026/",
-          "blv": "",
-          "blv_id": "",
-          "streams": [
-            "https://live1.streambylivepulse.com/live/channel31.flv?wsSecret=79a7af1ec9177bb6735c775d62a4a38c&wsABSTime=1785425500"
-          ],
-          "stream_sources": {
-            "https://live1.streambylivepulse.com/live/channel31.flv?wsSecret=79a7af1ec9177bb6735c775d62a4a38c&wsABSTime=1785425500": [
-              "cdp/request",
-              "cdp/response",
-              "harvest-final",
-              "harvest-round-1",
-              "harvest-round-2",
-              "harvest-round-3",
-              "harvest-round-4",
-              "harvest-round-5",
-              "harvest-round-6",
-              "harvest-round-7",
-              "harvest-round-8",
-              "request/fetch",
-              "response/403"
-            ]
-          },
-          "stream_headers": {},
-          "stream_first_seen": [
-            "https://live1.streambylivepulse.com/live/channel31.flv?wsSecret=79a7af1ec9177bb6735c775d62a4a38c&wsABSTime=1785425500"
-          ],
-          "discovered_blv_ids": [],
-          "diagnostics": {
-            "url": "https://socolivekj.cc/truc-tiep/lawsohtun-sc-vs-sohiong-united-luc-1430-ngay-30-07-2026/",
-            "title": "Trực tiếp Lawsohtun SC vs Sohiong United full lúc 14:30, ngày 30/07",
-            "h1": "Xem trực tiếp trận đấu Lawsohtun SC vs Sohiong United full lúc 14:30, ngày 30/07/2026",
-            "ready_state": "complete",
-            "visibility_state": "visible",
-            "hidden": false,
-            "video_count": 0,
-            "iframe_count": 5,
-            "body_sample": "WC 2026 Lịch Thi Đấu Xem Lại Video Highlight Tỷ Lệ Kèo BXH KQBD Tips Tin Tức Livescore Tuyển Dụng Top Nhà Cái Cược 8xbet WC 2026 Lịch Thi Đấu Xem Lại Video Highlight Tỷ Lệ Kèo BXH KQBD Tips Tin Tức Livescore Tuyển Dụng Top nhà cái Xem trực tiếp trận đấu Lawsohtun SC vs Sohiong United full lúc 14:30, ngày 30/07/2026 Phát sóng link trực tuyến Lawsohtun SC vs Sohiong United hôm nay tại giải đấu Indian Shillong Premier League _ _ _ _ _ _ Lawsohtun SC Sohiong United Theo bạn thì trận này tài hay xỉu? Tài 0% Xỉu 0% Theo bạn thì trận này đội nào sẽ thắng? Chủ nhà 0% Hòa 0% Đội Khách 0% Anh Em Muốn Tham Gia Đặt Cược Thì Click Vào Quảng Cáo Của 8XBET Để Đăng Ký Đặt Cược Tất Cả Các Trận Đấu Trên Toàn Thế Giới. Nếu anh em gặp tình trạng không vào được web, hãy cài VPN 1.1.1.1 để truy cập ổn định hơn nhé . Châu Á Châu Âu Tài xỉu Phạt góc Chọn nhà cái HIỆP 1 FT Châu Á HIỆP 1 FT Châu Á - - - 0.98 0.5/1 0.83 Châu Âu HIỆP 1 FT Châu Âu - - - 1.73 4.00 3.50 Tài xỉu HIỆP 1 FT Tài xỉu - - - 1.00 3.5 0.80 SỚM FT Phạt góc HIỆP 1 FT Phạt góc - - - - - - Trực tiếp Mô phỏng CHIA SẺ Phát sóng trận đấu Lawsohtun SC vs Sohiong United full HD lúc 14:30, ngày 30/07/2026 Indian Shillong Premier League HD 1 CHIA ",
-            "harvest_rounds": 8,
-            "harvest_window_seconds": 6.328,
-            "main_status": 200,
-            "harvested_stream_count": 1,
-            "harvested_blv_ids": [],
-            "scan_mode": "chromium-fallback",
-            "elapsed_seconds": 8.225
-          },
-          "api_probe": {
-            "enabled": true,
-            "room_status": 200,
-            "active_index": 0,
-            "sources_found": 0,
-            "sources_tried": 0,
-            "valid_stream_count": 0,
-            "source_results": [],
-            "fallback_reason": "list_stream_not_found",
-            "elapsed_seconds": 0.651,
-            "room_content_type": "text/html",
-            "room_elapsed_seconds": 0.646,
-            "room_error": ""
-          },
-          "http_probe": {
-            "api_first": {
-              "enabled": true,
-              "room_status": 200,
-              "active_index": 0,
-              "sources_found": 0,
-              "sources_tried": 0,
-              "valid_stream_count": 0,
-              "source_results": [],
-              "fallback_reason": "list_stream_not_found",
-              "elapsed_seconds": 0.651,
-              "room_content_type": "text/html",
-              "room_elapsed_seconds": 0.646,
-              "room_error": ""
-            },
-            "legacy_http": {
-              "enabled": false,
-              "status": null,
-              "elapsed_seconds": 0.0,
-              "error": ""
-            }
-          },
-          "errors": [
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED"
-          ],
-          "failed_requests": [
-            "stylesheet https://fonts.googleapis.com/css2?family=Bangers&family=Oswald:wght@400;500;700&family=Raleway:wght@400;500;700&family=Roboto+Condensed:wght@300;400;700&display=swap | net::ERR_FAILED",
-            "stylesheet https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0 | net::ERR_FAILED",
-            "stylesheet https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css | net::ERR_FAILED",
-            "stylesheet https://socolivekj.cc/wp-content/plugins/widget-options/assets/css/widget-options.css?ver=4.0.6.1 | net::ERR_FAILED",
-            "stylesheet https://socolivekj.cc/wp-content/plugins/wp-pagenavi/pagenavi-css.css?ver=2.70 | net::ERR_FAILED",
-            "stylesheet https://socolivekj.cc/wp-content/themes/bongda/dist/styles/bootstrap.min.css?ver=1745376853 | net::ERR_FAILED",
-            "stylesheet https://socolivekj.cc/wp-content/themes/bongda/dist/styles/main.css?ver=1781184173 | net::ERR_FAILED",
-            "stylesheet https://socolivekj.cc/wp-content/themes/bongda/dist/styles/pages/single-live.css?ver=1784627923 | net::ERR_FAILED",
-            "image https://socolivekj.cc/wp-content/themes/bongda/dist/images/logo-socolive-tv-official-v2.png | net::ERR_FAILED",
-            "image https://socolivekj.cc/wp-content/themes/bongda/dist/images/wc-2026/menu-wc.svg | net::ERR_FAILED",
-            "image https://socolivekj.cc/wp-content/themes/bongda/dist/images/closemenu.png | net::ERR_FAILED",
-            "image https://imgts.sportpulseapiz.com/football/team/jw2r09h1w9lrz84/image/small | net::ERR_FAILED",
-            "stylesheet https://socolivekj.cc/wp-content/plugins/api-sport/public/css/match_detail.css?id=0671c88cfbad4335394b897262a0d662 | net::ERR_FAILED",
-            "image https://imgts.sportpulseapiz.com/football/team/6ypq3nhlolzmd7o/image/small | net::ERR_FAILED",
-            "image https://socolivekj.cc/wp-content/themes/bongda/dist/images/company/21-1.png | net::ERR_FAILED"
-          ],
-          "http_errors": [
-            "403 https://live1.streambylivepulse.com/live/channel31.flv?wsSecret=79a7af1ec9177bb6735c775d62a4a38c&wsABSTime=1785425500",
-            "403 https://live1.streambylivepulse.com/live/channel31.flv?wsSecret=79a7af1ec9177bb6735c775d62a4a38c&wsABSTime=1785425500",
-            "403 https://live1.streambylivepulse.com/live/channel31.flv?wsSecret=79a7af1ec9177bb6735c775d62a4a38c&wsABSTime=1785425500",
-            "403 https://live1.streambylivepulse.com/live/channel31.flv?wsSecret=79a7af1ec9177bb6735c775d62a4a38c&wsABSTime=1785425500"
-          ]
-        }
-      ],
-      "attempted_room_ids": [],
-      "coverage": {
-        "found_streams": 1,
-        "found_blv_ids": [],
-        "goal": 2,
-        "source_goal_reached": false,
-        "room_queue_complete": true,
-        "complete": true,
-        "max_streams_per_blv": 2,
-        "total_explicit_blv_rooms": 0,
-        "pending_room_keys": [],
-        "room_progress": {
-          "__base__": {
-            "key": "__base__",
-            "url": "https://socolivekj.cc/truc-tiep/lawsohtun-sc-vs-sohiong-united-luc-1430-ngay-30-07-2026/",
-            "blv": "",
-            "blv_id": "",
-            "status": "success",
-            "attempts": 1,
-            "attempts_total": 1,
-            "ever_attempted": true,
-            "valid_stream_ever_found": true,
-            "needs_token_refresh": false,
-            "completion_reason": "valid_stream",
-            "rate_limit_hits": 0,
-            "last_http_status": 200,
-            "last_stream_count": 1,
-            "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
-          }
-        }
-      },
-      "errors": [],
-      "match_name": "Lawsohtun SC vs Sohiong United",
-      "scheduled_at": "2026-07-30T14:30:00+07:00",
-      "room_progress": {
-        "__base__": {
-          "key": "__base__",
-          "url": "https://socolivekj.cc/truc-tiep/lawsohtun-sc-vs-sohiong-united-luc-1430-ngay-30-07-2026/",
-          "blv": "",
-          "blv_id": "",
-          "status": "success",
-          "attempts": 1,
-          "attempts_total": 1,
-          "ever_attempted": true,
-          "valid_stream_ever_found": true,
-          "needs_token_refresh": false,
-          "completion_reason": "valid_stream",
-          "rate_limit_hits": 0,
-          "last_http_status": 200,
-          "last_stream_count": 1,
-          "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
-        }
-      }
-    },
-    {
-      "base_url": "https://socolivekj.cc/truc-tiep/sabah-u20-vs-negeri-sembilan-u20-luc-1515-ngay-30-07-2026/",
-      "raw_title": "Sabah U20 vs Negeri Sembilan U20",
-      "home_team": "Sabah U20",
-      "away_team": "Negeri Sembilan U20",
-      "home_logo": "https://imgts.sportpulseapiz.com/football/team/vjxm8ghpywlr6od/image/small",
-      "away_logo": "https://imgts.sportpulseapiz.com/football/team/y0or5jhg7o9qwzv/image/small",
-      "time_text": "15:15",
-      "date_text": "30/07",
-      "status": "Sắp diễn ra",
-      "card_text": "MALAYSIAN PRESIDENT CUP Sắp diễn ra 15:15 - 30.07 Sabah U20 Negeri Sembilan U20 2 - 1 0.95 1 0.85 0.85 2.5 0.95",
-      "rooms": [
-        {
-          "url": "https://socolivekj.cc/truc-tiep/sabah-u20-vs-negeri-sembilan-u20-luc-1515-ngay-30-07-2026/",
-          "blv": "",
-          "blv_id": ""
-        }
-      ],
-      "streams": [
-        {
-          "url": "https://live1.streambylivepulse.com/live/channel11.flv?wsSecret=c53babef948276a16ad9b06530306fa8&wsABSTime=1785429084",
-          "queue_room_key": "__base__",
-          "room_url": "https://socolivekj.cc/truc-tiep/sabah-u20-vs-negeri-sembilan-u20-luc-1515-ngay-30-07-2026/",
-          "blv": "Nguồn phụ 1",
-          "blv_id": "",
-          "source_id": "",
-          "source_provenance": [
-            "cdp/request",
-            "cdp/response",
-            "harvest-final",
-            "harvest-round-1",
-            "harvest-round-2",
-            "harvest-round-3",
-            "harvest-round-4",
-            "harvest-round-5",
-            "harvest-round-6",
-            "harvest-round-7",
-            "harvest-round-8",
-            "harvest-round-9",
-            "request/fetch",
-            "response/403"
-          ],
-          "playback_referer": "",
-          "playback_origin": "",
-          "playback_user_agent": "",
-          "api_player_endpoint": "",
-          "api_source_mode": "",
-          "source_confidence": "network",
-          "mapping_mode": "stream-source-id",
-          "discovered_from_room_url": "https://socolivekj.cc/truc-tiep/sabah-u20-vs-negeri-sembilan-u20-luc-1515-ngay-30-07-2026/",
-          "discovered_from_blv": "URL tổng",
-          "discovered_at": "2026-07-30T11:31:32.013988+07:00",
-          "valid_until": "",
-          "is_expired": false
-        }
-      ],
-      "room_results": [
-        {
-          "url": "https://socolivekj.cc/truc-tiep/sabah-u20-vs-negeri-sembilan-u20-luc-1515-ngay-30-07-2026/",
-          "blv": "",
-          "blv_id": "",
-          "streams": [
-            "https://live1.streambylivepulse.com/live/channel11.flv?wsSecret=c53babef948276a16ad9b06530306fa8&wsABSTime=1785429084"
-          ],
-          "stream_sources": {
-            "https://live1.streambylivepulse.com/live/channel11.flv?wsSecret=c53babef948276a16ad9b06530306fa8&wsABSTime=1785429084": [
-              "cdp/request",
-              "cdp/response",
-              "harvest-final",
-              "harvest-round-1",
-              "harvest-round-2",
-              "harvest-round-3",
-              "harvest-round-4",
-              "harvest-round-5",
-              "harvest-round-6",
-              "harvest-round-7",
-              "harvest-round-8",
-              "harvest-round-9",
-              "request/fetch",
-              "response/403"
-            ]
-          },
-          "stream_headers": {},
-          "stream_first_seen": [
-            "https://live1.streambylivepulse.com/live/channel11.flv?wsSecret=c53babef948276a16ad9b06530306fa8&wsABSTime=1785429084"
-          ],
-          "discovered_blv_ids": [],
-          "diagnostics": {
-            "url": "https://socolivekj.cc/truc-tiep/sabah-u20-vs-negeri-sembilan-u20-luc-1515-ngay-30-07-2026/",
-            "title": "Trực tiếp Sabah U20 vs Negeri Sembilan U20 full lúc 15:15, ngày 30/07",
-            "h1": "Xem trực tiếp trận đấu Sabah U20 vs Negeri Sembilan U20 full lúc 15:15, ngày 30/07/2026",
-            "ready_state": "complete",
-            "visibility_state": "visible",
-            "hidden": false,
-            "video_count": 0,
-            "iframe_count": 5,
-            "body_sample": "WC 2026 Lịch Thi Đấu Xem Lại Video Highlight Tỷ Lệ Kèo BXH KQBD Tips Tin Tức Livescore Tuyển Dụng Top Nhà Cái Cược 8xbet WC 2026 Lịch Thi Đấu Xem Lại Video Highlight Tỷ Lệ Kèo BXH KQBD Tips Tin Tức Livescore Tuyển Dụng Top nhà cái Xem trực tiếp trận đấu Sabah U20 vs Negeri Sembilan U20 full lúc 15:15, ngày 30/07/2026 Phát sóng link trực tuyến Sabah U20 vs Negeri Sembilan U20 hôm nay tại giải đấu Malaysian President Cup _ _ _ _ _ _ Sabah U20 Negeri Sembilan U20 Theo bạn thì trận này tài hay xỉu? Tài 0% Xỉu 0% Theo bạn thì trận này đội nào sẽ thắng? Chủ nhà 0% Hòa 0% Đội Khách 0% Anh Em Muốn Tham Gia Đặt Cược Thì Click Vào Quảng Cáo Của 8XBET Để Đăng Ký Đặt Cược Tất Cả Các Trận Đấu Trên Toàn Thế Giới. Nếu anh em gặp tình trạng không vào được web, hãy cài VPN 1.1.1.1 để truy cập ổn định hơn nhé . Châu Á Châu Âu Tài xỉu Phạt góc Chọn nhà cái HIỆP 1 FT Châu Á HIỆP 1 FT Châu Á - - - 0.95 1 0.85 Châu Âu HIỆP 1 FT Châu Âu - - - 1.55 3.60 5.25 Tài xỉu HIỆP 1 FT Tài xỉu - - - 0.85 2.5 0.95 SỚM FT Phạt góc HIỆP 1 FT Phạt góc - - - - - - Trực tiếp Mô phỏng CHIA SẺ Phát sóng trận đấu Sabah U20 vs Negeri Sembilan U20 full HD lúc 15:15, ngày 30/07/2026 Malaysian President Cup HD 1 CHIA SẺ Thông s",
-            "harvest_rounds": 9,
-            "harvest_window_seconds": 7.0,
-            "main_status": 200,
-            "harvested_stream_count": 1,
-            "harvested_blv_ids": [],
-            "scan_mode": "chromium-fallback",
-            "elapsed_seconds": 8.587
-          },
-          "api_probe": {
-            "enabled": true,
-            "room_status": 200,
-            "active_index": 0,
-            "sources_found": 0,
-            "sources_tried": 0,
-            "valid_stream_count": 0,
-            "source_results": [],
-            "fallback_reason": "list_stream_not_found",
-            "elapsed_seconds": 0.44,
-            "room_content_type": "text/html",
-            "room_elapsed_seconds": 0.436,
-            "room_error": ""
-          },
-          "http_probe": {
-            "api_first": {
-              "enabled": true,
-              "room_status": 200,
-              "active_index": 0,
-              "sources_found": 0,
-              "sources_tried": 0,
-              "valid_stream_count": 0,
-              "source_results": [],
-              "fallback_reason": "list_stream_not_found",
-              "elapsed_seconds": 0.44,
-              "room_content_type": "text/html",
-              "room_elapsed_seconds": 0.436,
-              "room_error": ""
-            },
-            "legacy_http": {
-              "enabled": false,
-              "status": null,
-              "elapsed_seconds": 0.0,
-              "error": ""
-            }
-          },
-          "errors": [
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED"
-          ],
-          "failed_requests": [
-            "stylesheet https://fonts.googleapis.com/css2?family=Bangers&family=Oswald:wght@400;500;700&family=Raleway:wght@400;500;700&family=Roboto+Condensed:wght@300;400;700&display=swap | net::ERR_FAILED",
-            "stylesheet https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0 | net::ERR_FAILED",
-            "stylesheet https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css | net::ERR_FAILED",
-            "stylesheet https://socolivekj.cc/wp-content/plugins/widget-options/assets/css/widget-options.css?ver=4.0.6.1 | net::ERR_FAILED",
-            "stylesheet https://socolivekj.cc/wp-content/plugins/wp-pagenavi/pagenavi-css.css?ver=2.70 | net::ERR_FAILED",
-            "stylesheet https://socolivekj.cc/wp-content/themes/bongda/dist/styles/bootstrap.min.css?ver=1745376853 | net::ERR_FAILED",
-            "stylesheet https://socolivekj.cc/wp-content/themes/bongda/dist/styles/main.css?ver=1781184173 | net::ERR_FAILED",
-            "stylesheet https://socolivekj.cc/wp-content/themes/bongda/dist/styles/pages/single-live.css?ver=1784627923 | net::ERR_FAILED",
-            "image https://socolivekj.cc/wp-content/themes/bongda/dist/images/logo-socolive-tv-official-v2.png | net::ERR_FAILED",
-            "image https://socolivekj.cc/wp-content/themes/bongda/dist/images/wc-2026/menu-wc.svg | net::ERR_FAILED",
-            "image https://socolivekj.cc/wp-content/themes/bongda/dist/images/closemenu.png | net::ERR_FAILED",
-            "image https://imgts.sportpulseapiz.com/football/team/vjxm8ghpywlr6od/image/small | net::ERR_FAILED",
-            "stylesheet https://socolivekj.cc/wp-content/plugins/api-sport/public/css/match_detail.css?id=0671c88cfbad4335394b897262a0d662 | net::ERR_FAILED",
-            "image https://imgts.sportpulseapiz.com/football/team/y0or5jhg7o9qwzv/image/small | net::ERR_FAILED",
-            "image https://socolivekj.cc/wp-content/themes/bongda/dist/images/company/21-1.png | net::ERR_FAILED"
-          ],
-          "http_errors": [
-            "403 https://live1.streambylivepulse.com/live/channel11.flv?wsSecret=c53babef948276a16ad9b06530306fa8&wsABSTime=1785429084",
-            "403 https://live1.streambylivepulse.com/live/channel11.flv?wsSecret=c53babef948276a16ad9b06530306fa8&wsABSTime=1785429084",
-            "403 https://live1.streambylivepulse.com/live/channel11.flv?wsSecret=c53babef948276a16ad9b06530306fa8&wsABSTime=1785429084",
-            "403 https://live1.streambylivepulse.com/live/channel11.flv?wsSecret=c53babef948276a16ad9b06530306fa8&wsABSTime=1785429084",
-            "403 https://live1.streambylivepulse.com/live/channel11.flv?wsSecret=c53babef948276a16ad9b06530306fa8&wsABSTime=1785429084",
-            "403 https://live1.streambylivepulse.com/live/channel11.flv?wsSecret=c53babef948276a16ad9b06530306fa8&wsABSTime=1785429084"
-          ]
-        }
-      ],
-      "attempted_room_ids": [],
-      "coverage": {
-        "found_streams": 1,
-        "found_blv_ids": [],
-        "goal": 2,
-        "source_goal_reached": false,
-        "room_queue_complete": true,
-        "complete": true,
-        "max_streams_per_blv": 2,
-        "total_explicit_blv_rooms": 0,
-        "pending_room_keys": [],
-        "room_progress": {
-          "__base__": {
-            "key": "__base__",
-            "url": "https://socolivekj.cc/truc-tiep/sabah-u20-vs-negeri-sembilan-u20-luc-1515-ngay-30-07-2026/",
-            "blv": "",
-            "blv_id": "",
-            "status": "success",
-            "attempts": 1,
-            "attempts_total": 1,
-            "ever_attempted": true,
-            "valid_stream_ever_found": true,
-            "needs_token_refresh": false,
-            "completion_reason": "valid_stream",
-            "rate_limit_hits": 0,
-            "last_http_status": 200,
-            "last_stream_count": 1,
-            "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
-          }
-        }
-      },
-      "errors": [],
-      "match_name": "Sabah U20 vs Negeri Sembilan U20",
-      "scheduled_at": "2026-07-30T15:15:00+07:00",
-      "room_progress": {
-        "__base__": {
-          "key": "__base__",
-          "url": "https://socolivekj.cc/truc-tiep/sabah-u20-vs-negeri-sembilan-u20-luc-1515-ngay-30-07-2026/",
-          "blv": "",
-          "blv_id": "",
-          "status": "success",
-          "attempts": 1,
-          "attempts_total": 1,
-          "ever_attempted": true,
-          "valid_stream_ever_found": true,
-          "needs_token_refresh": false,
-          "completion_reason": "valid_stream",
-          "rate_limit_hits": 0,
-          "last_http_status": 200,
-          "last_stream_count": 1,
-          "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
-        }
-      }
-    },
-    {
-      "base_url": "https://socolivekj.cc/truc-tiep/al-rayyan-vs-al-diraiyah-luc-1530-ngay-30-07-2026/",
-      "raw_title": "Al Rayyan vs Al Diraiyah",
-      "home_team": "Al Rayyan",
-      "away_team": "Al Diraiyah",
-      "home_logo": "https://imgts.sportpulseapiz.com/football/team/y39mp1h391pmojx/image/small",
-      "away_logo": "https://imgts.sportpulseapiz.com/football/team/318q66ho8e1qo9j/image/small",
-      "time_text": "15:30",
-      "date_text": "30/07",
-      "status": "",
-      "card_text": "GIAO HỮU CLB 15:30 - 30.07 Al Rayyan Al Diraiyah HT 0 - 0 0 - 0 0 - 0 TOM - - - - - -",
-      "rooms": [
-        {
-          "url": "https://socolivekj.cc/truc-tiep/al-rayyan-vs-al-diraiyah-luc-1530-ngay-30-07-2026/",
-          "blv": "TOM",
-          "blv_id": ""
-        }
-      ],
-      "streams": [
-        {
-          "url": "https://live2.streambylivepulse.com/live/channel4.flv",
-          "queue_room_key": "__base__",
-          "room_url": "https://socolivekj.cc/truc-tiep/al-rayyan-vs-al-diraiyah-luc-1530-ngay-30-07-2026/",
-          "blv": "Nguồn phụ 1",
-          "blv_id": "",
-          "source_id": "",
-          "source_provenance": [
-            "cdp/request",
-            "harvest-final",
-            "harvest-round-1",
-            "harvest-round-2",
-            "harvest-round-3",
-            "harvest-round-4",
-            "harvest-round-5",
-            "harvest-round-6",
-            "harvest-round-7",
-            "harvest-round-8",
-            "harvest-round-9",
-            "request/fetch"
-          ],
-          "playback_referer": "",
-          "playback_origin": "",
-          "playback_user_agent": "",
-          "api_player_endpoint": "",
-          "api_source_mode": "",
-          "source_confidence": "network",
-          "mapping_mode": "stream-source-id",
-          "discovered_from_room_url": "https://socolivekj.cc/truc-tiep/al-rayyan-vs-al-diraiyah-luc-1530-ngay-30-07-2026/",
-          "discovered_from_blv": "TOM",
-          "discovered_at": "2026-07-30T11:31:42.345686+07:00",
-          "valid_until": "",
-          "is_expired": false
-        }
-      ],
-      "room_results": [
-        {
-          "url": "https://socolivekj.cc/truc-tiep/al-rayyan-vs-al-diraiyah-luc-1530-ngay-30-07-2026/",
-          "blv": "TOM",
-          "blv_id": "",
-          "streams": [
-            "https://live2.streambylivepulse.com/live/channel4.flv"
-          ],
-          "stream_sources": {
-            "https://live2.streambylivepulse.com/live/channel4.flv": [
-              "cdp/request",
-              "harvest-final",
-              "harvest-round-1",
-              "harvest-round-2",
-              "harvest-round-3",
-              "harvest-round-4",
-              "harvest-round-5",
-              "harvest-round-6",
-              "harvest-round-7",
-              "harvest-round-8",
-              "harvest-round-9",
-              "request/fetch"
-            ]
-          },
-          "stream_headers": {},
-          "stream_first_seen": [
-            "https://live2.streambylivepulse.com/live/channel4.flv"
-          ],
-          "discovered_blv_ids": [],
-          "diagnostics": {
-            "url": "https://socolivekj.cc/truc-tiep/al-rayyan-vs-al-diraiyah-luc-1530-ngay-30-07-2026/",
-            "title": "Trực tiếp Al Rayyan vs Al Diraiyah full lúc 15:30, ngày 30/07",
-            "h1": "Xem trực tiếp trận đấu Al Rayyan vs Al Diraiyah full lúc 15:30, ngày 30/07/2026",
-            "ready_state": "complete",
-            "visibility_state": "visible",
-            "hidden": false,
-            "video_count": 0,
-            "iframe_count": 5,
-            "body_sample": "WC 2026 Lịch Thi Đấu Xem Lại Video Highlight Tỷ Lệ Kèo BXH KQBD Tips Tin Tức Livescore Tuyển Dụng Top Nhà Cái Cược 8xbet WC 2026 Lịch Thi Đấu Xem Lại Video Highlight Tỷ Lệ Kèo BXH KQBD Tips Tin Tức Livescore Tuyển Dụng Top nhà cái Xem trực tiếp trận đấu Al Rayyan vs Al Diraiyah full lúc 15:30, ngày 30/07/2026 Phát sóng link trực tuyến Al Rayyan vs Al Diraiyah hôm nay tại giải đấu Giao Hữu CLB _ _ _ _ _ _ Al Rayyan Al Diraiyah Theo bạn thì trận này tài hay xỉu? Tài 0% Xỉu 0% Theo bạn thì trận này đội nào sẽ thắng? Chủ nhà 0% Hòa 0% Đội Khách 0% Anh Em Muốn Tham Gia Đặt Cược Thì Click Vào Quảng Cáo Của 8XBET Để Đăng Ký Đặt Cược Tất Cả Các Trận Đấu Trên Toàn Thế Giới. Nếu anh em gặp tình trạng không vào được web, hãy cài VPN 1.1.1.1 để truy cập ổn định hơn nhé . Châu Á Châu Âu Tài xỉu Phạt góc Chọn nhà cái HIỆP 1 FT Châu Á HIỆP 1 FT Châu Á - - - - - - Châu Âu HIỆP 1 FT Châu Âu - - - - - - Tài xỉu HIỆP 1 FT Tài xỉu - - - - - - SỚM FT Phạt góc HIỆP 1 FT Phạt góc - - - - - - Trực tiếp Mô phỏng CHIA SẺ Phát sóng trận đấu Al Rayyan vs Al Diraiyah full HD lúc 15:30, ngày 30/07/2026 Giao Hữu CLB TOM HD TOM CHIA SẺ Thông số Diễn biến Đội hình BXH Chat Đối đầu Trận khác Trận sắp tới Tỷ lệ kèo ",
-            "harvest_rounds": 9,
-            "harvest_window_seconds": 7.047,
-            "main_status": 200,
-            "harvested_stream_count": 1,
-            "harvested_blv_ids": [],
-            "scan_mode": "chromium-fallback",
-            "elapsed_seconds": 8.313
-          },
-          "api_probe": {
-            "enabled": true,
-            "room_status": 200,
-            "active_index": 0,
-            "sources_found": 0,
-            "sources_tried": 0,
-            "valid_stream_count": 0,
-            "source_results": [],
-            "fallback_reason": "list_stream_not_found",
-            "elapsed_seconds": 0.069,
-            "room_content_type": "text/html",
-            "room_elapsed_seconds": 0.064,
-            "room_error": ""
-          },
-          "http_probe": {
-            "api_first": {
-              "enabled": true,
-              "room_status": 200,
-              "active_index": 0,
-              "sources_found": 0,
-              "sources_tried": 0,
-              "valid_stream_count": 0,
-              "source_results": [],
-              "fallback_reason": "list_stream_not_found",
-              "elapsed_seconds": 0.069,
-              "room_content_type": "text/html",
-              "room_elapsed_seconds": 0.064,
-              "room_error": ""
-            },
-            "legacy_http": {
-              "enabled": false,
-              "status": null,
-              "elapsed_seconds": 0.0,
-              "error": ""
-            }
-          },
-          "errors": [
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED"
-          ],
-          "failed_requests": [
-            "stylesheet https://fonts.googleapis.com/css2?family=Bangers&family=Oswald:wght@400;500;700&family=Raleway:wght@400;500;700&family=Roboto+Condensed:wght@300;400;700&display=swap | net::ERR_FAILED",
-            "stylesheet https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0 | net::ERR_FAILED",
-            "stylesheet https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css | net::ERR_FAILED",
-            "stylesheet https://socolivekj.cc/wp-content/plugins/widget-options/assets/css/widget-options.css?ver=4.0.6.1 | net::ERR_FAILED",
-            "stylesheet https://socolivekj.cc/wp-content/plugins/wp-pagenavi/pagenavi-css.css?ver=2.70 | net::ERR_FAILED",
-            "stylesheet https://socolivekj.cc/wp-content/themes/bongda/dist/styles/bootstrap.min.css?ver=1745376853 | net::ERR_FAILED",
-            "stylesheet https://socolivekj.cc/wp-content/themes/bongda/dist/styles/main.css?ver=1781184173 | net::ERR_FAILED",
-            "stylesheet https://socolivekj.cc/wp-content/themes/bongda/dist/styles/pages/single-live.css?ver=1784627923 | net::ERR_FAILED",
-            "image https://socolivekj.cc/wp-content/themes/bongda/dist/images/logo-socolive-tv-official-v2.png | net::ERR_FAILED",
-            "image https://socolivekj.cc/wp-content/themes/bongda/dist/images/wc-2026/menu-wc.svg | net::ERR_FAILED",
-            "image https://socolivekj.cc/wp-content/themes/bongda/dist/images/closemenu.png | net::ERR_FAILED",
-            "image https://imgts.sportpulseapiz.com/football/team/y39mp1h391pmojx/image/small | net::ERR_FAILED",
-            "stylesheet https://socolivekj.cc/wp-content/plugins/api-sport/public/css/match_detail.css?id=0671c88cfbad4335394b897262a0d662 | net::ERR_FAILED",
-            "image https://imgts.sportpulseapiz.com/football/team/318q66ho8e1qo9j/image/small | net::ERR_FAILED",
-            "image https://socolivekj.cc/wp-content/themes/bongda/dist/images/company/21-1.png | net::ERR_FAILED"
-          ],
-          "http_errors": []
-        }
-      ],
-      "attempted_room_ids": [],
-      "coverage": {
-        "found_streams": 1,
-        "found_blv_ids": [],
-        "goal": 2,
-        "source_goal_reached": false,
-        "room_queue_complete": true,
-        "complete": true,
-        "max_streams_per_blv": 2,
-        "total_explicit_blv_rooms": 0,
-        "pending_room_keys": [],
-        "room_progress": {
-          "__base__": {
-            "key": "__base__",
-            "url": "https://socolivekj.cc/truc-tiep/al-rayyan-vs-al-diraiyah-luc-1530-ngay-30-07-2026/",
-            "blv": "TOM",
-            "blv_id": "",
-            "status": "success",
-            "attempts": 1,
-            "attempts_total": 1,
-            "ever_attempted": true,
-            "valid_stream_ever_found": true,
-            "needs_token_refresh": false,
-            "completion_reason": "valid_stream",
-            "rate_limit_hits": 0,
-            "last_http_status": 200,
-            "last_stream_count": 1,
-            "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
-          }
-        }
-      },
-      "errors": [],
-      "match_name": "Al Rayyan vs Al Diraiyah",
-      "scheduled_at": "2026-07-30T15:30:00+07:00",
-      "room_progress": {
-        "__base__": {
-          "key": "__base__",
-          "url": "https://socolivekj.cc/truc-tiep/al-rayyan-vs-al-diraiyah-luc-1530-ngay-30-07-2026/",
-          "blv": "TOM",
-          "blv_id": "",
-          "status": "success",
-          "attempts": 1,
-          "attempts_total": 1,
-          "ever_attempted": true,
-          "valid_stream_ever_found": true,
-          "needs_token_refresh": false,
-          "completion_reason": "valid_stream",
-          "rate_limit_hits": 0,
-          "last_http_status": 200,
-          "last_stream_count": 1,
-          "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
-        }
-      }
-    },
-    {
       "base_url": "https://socolivekj.cc/truc-tiep/university-of-salerno-vs-university-of-jyvaskyla-luc-1400-ngay-30-07-2026/",
       "raw_title": "University of Salerno vs University of Jyvaskyla",
       "home_team": "University of Salerno",
@@ -1742,8 +1502,8 @@
       "away_logo": "https://imgts.sportpulseapiz.com/football/team/y0or5jh1pwyqwzv/image/small",
       "time_text": "14:00",
       "date_text": "30/07",
-      "status": "",
-      "card_text": "UNI TOUR HT 14:00 - 30.07 University of Salerno 1 : 0 University of Jyvaskyla HT 1 - 0 0 - 2 1 - 0 - - - - - -",
+      "status": "Hiệp 2",
+      "card_text": "UNI TOUR Hiệp 2: 75' 14:00 - 30.07 University of Salerno 1 : 0 University of Jyvaskyla HT 1 - 0 0 - 2 1 - 2 - - - - - -",
       "rooms": [
         {
           "url": "https://socolivekj.cc/truc-tiep/university-of-salerno-vs-university-of-jyvaskyla-luc-1400-ngay-30-07-2026/",
@@ -2674,6 +2434,246 @@
           "key": "__base__",
           "url": "https://socolivekj.cc/truc-tiep/ugyen-academy-vs-rtc-fc-luc-1600-ngay-30-07-2026/",
           "blv": "JEAN",
+          "blv_id": "",
+          "status": "success",
+          "attempts": 1,
+          "attempts_total": 1,
+          "ever_attempted": true,
+          "valid_stream_ever_found": true,
+          "needs_token_refresh": false,
+          "completion_reason": "valid_stream",
+          "rate_limit_hits": 0,
+          "last_http_status": 200,
+          "last_stream_count": 1,
+          "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
+        }
+      }
+    },
+    {
+      "base_url": "https://socolivekj.cc/truc-tiep/lawsohtun-sc-vs-sohiong-united-luc-1430-ngay-30-07-2026/",
+      "raw_title": "Lawsohtun SC vs Sohiong United",
+      "home_team": "Lawsohtun SC",
+      "away_team": "Sohiong United",
+      "home_logo": "https://imgts.sportpulseapiz.com/football/team/jw2r09h1w9lrz84/image/small",
+      "away_logo": "https://imgts.sportpulseapiz.com/football/team/6ypq3nhlolzmd7o/image/small",
+      "time_text": "14:30",
+      "date_text": "30/07",
+      "status": "",
+      "card_text": "INDIAN SHILLONG PREMIER LEAGUE HT 14:30 - 30.07 Lawsohtun SC 4 : 0 Sohiong United HT 4 - 0 4 - 1 1 - 1 0.85 1.5 0.95 0.95 7/7.5 0.85",
+      "rooms": [
+        {
+          "url": "https://socolivekj.cc/truc-tiep/lawsohtun-sc-vs-sohiong-united-luc-1430-ngay-30-07-2026/",
+          "blv": "",
+          "blv_id": ""
+        }
+      ],
+      "streams": [
+        {
+          "url": "https://live1.streambylivepulse.com/live/channel31.flv?wsSecret=79a7af1ec9177bb6735c775d62a4a38c&wsABSTime=1785425500",
+          "queue_room_key": "__base__",
+          "room_url": "https://socolivekj.cc/truc-tiep/lawsohtun-sc-vs-sohiong-united-luc-1430-ngay-30-07-2026/",
+          "blv": "Nguồn phụ 1",
+          "blv_id": "",
+          "source_id": "",
+          "source_provenance": [
+            "cdp/request",
+            "cdp/response",
+            "harvest-final",
+            "harvest-round-1",
+            "harvest-round-2",
+            "harvest-round-3",
+            "harvest-round-4",
+            "harvest-round-5",
+            "harvest-round-6",
+            "harvest-round-7",
+            "harvest-round-8",
+            "request/fetch",
+            "response/403"
+          ],
+          "playback_referer": "",
+          "playback_origin": "",
+          "playback_user_agent": "",
+          "api_player_endpoint": "",
+          "api_source_mode": "",
+          "source_confidence": "network",
+          "mapping_mode": "stream-source-id",
+          "discovered_from_room_url": "https://socolivekj.cc/truc-tiep/lawsohtun-sc-vs-sohiong-united-luc-1430-ngay-30-07-2026/",
+          "discovered_from_blv": "URL tổng",
+          "discovered_at": "2026-07-30T10:31:47.377071+07:00",
+          "valid_until": "",
+          "is_expired": false
+        }
+      ],
+      "room_results": [
+        {
+          "url": "https://socolivekj.cc/truc-tiep/lawsohtun-sc-vs-sohiong-united-luc-1430-ngay-30-07-2026/",
+          "blv": "",
+          "blv_id": "",
+          "streams": [
+            "https://live1.streambylivepulse.com/live/channel31.flv?wsSecret=79a7af1ec9177bb6735c775d62a4a38c&wsABSTime=1785425500"
+          ],
+          "stream_sources": {
+            "https://live1.streambylivepulse.com/live/channel31.flv?wsSecret=79a7af1ec9177bb6735c775d62a4a38c&wsABSTime=1785425500": [
+              "cdp/request",
+              "cdp/response",
+              "harvest-final",
+              "harvest-round-1",
+              "harvest-round-2",
+              "harvest-round-3",
+              "harvest-round-4",
+              "harvest-round-5",
+              "harvest-round-6",
+              "harvest-round-7",
+              "harvest-round-8",
+              "request/fetch",
+              "response/403"
+            ]
+          },
+          "stream_headers": {},
+          "stream_first_seen": [
+            "https://live1.streambylivepulse.com/live/channel31.flv?wsSecret=79a7af1ec9177bb6735c775d62a4a38c&wsABSTime=1785425500"
+          ],
+          "discovered_blv_ids": [],
+          "diagnostics": {
+            "url": "https://socolivekj.cc/truc-tiep/lawsohtun-sc-vs-sohiong-united-luc-1430-ngay-30-07-2026/",
+            "title": "Trực tiếp Lawsohtun SC vs Sohiong United full lúc 14:30, ngày 30/07",
+            "h1": "Xem trực tiếp trận đấu Lawsohtun SC vs Sohiong United full lúc 14:30, ngày 30/07/2026",
+            "ready_state": "complete",
+            "visibility_state": "visible",
+            "hidden": false,
+            "video_count": 0,
+            "iframe_count": 5,
+            "body_sample": "WC 2026 Lịch Thi Đấu Xem Lại Video Highlight Tỷ Lệ Kèo BXH KQBD Tips Tin Tức Livescore Tuyển Dụng Top Nhà Cái Cược 8xbet WC 2026 Lịch Thi Đấu Xem Lại Video Highlight Tỷ Lệ Kèo BXH KQBD Tips Tin Tức Livescore Tuyển Dụng Top nhà cái Xem trực tiếp trận đấu Lawsohtun SC vs Sohiong United full lúc 14:30, ngày 30/07/2026 Phát sóng link trực tuyến Lawsohtun SC vs Sohiong United hôm nay tại giải đấu Indian Shillong Premier League _ _ _ _ _ _ Lawsohtun SC Sohiong United Theo bạn thì trận này tài hay xỉu? Tài 0% Xỉu 0% Theo bạn thì trận này đội nào sẽ thắng? Chủ nhà 0% Hòa 0% Đội Khách 0% Anh Em Muốn Tham Gia Đặt Cược Thì Click Vào Quảng Cáo Của 8XBET Để Đăng Ký Đặt Cược Tất Cả Các Trận Đấu Trên Toàn Thế Giới. Nếu anh em gặp tình trạng không vào được web, hãy cài VPN 1.1.1.1 để truy cập ổn định hơn nhé . Châu Á Châu Âu Tài xỉu Phạt góc Chọn nhà cái HIỆP 1 FT Châu Á HIỆP 1 FT Châu Á - - - 0.98 0.5/1 0.83 Châu Âu HIỆP 1 FT Châu Âu - - - 1.73 4.00 3.50 Tài xỉu HIỆP 1 FT Tài xỉu - - - 1.00 3.5 0.80 SỚM FT Phạt góc HIỆP 1 FT Phạt góc - - - - - - Trực tiếp Mô phỏng CHIA SẺ Phát sóng trận đấu Lawsohtun SC vs Sohiong United full HD lúc 14:30, ngày 30/07/2026 Indian Shillong Premier League HD 1 CHIA ",
+            "harvest_rounds": 8,
+            "harvest_window_seconds": 6.328,
+            "main_status": 200,
+            "harvested_stream_count": 1,
+            "harvested_blv_ids": [],
+            "scan_mode": "chromium-fallback",
+            "elapsed_seconds": 8.225
+          },
+          "api_probe": {
+            "enabled": true,
+            "room_status": 200,
+            "active_index": 0,
+            "sources_found": 0,
+            "sources_tried": 0,
+            "valid_stream_count": 0,
+            "source_results": [],
+            "fallback_reason": "list_stream_not_found",
+            "elapsed_seconds": 0.651,
+            "room_content_type": "text/html",
+            "room_elapsed_seconds": 0.646,
+            "room_error": ""
+          },
+          "http_probe": {
+            "api_first": {
+              "enabled": true,
+              "room_status": 200,
+              "active_index": 0,
+              "sources_found": 0,
+              "sources_tried": 0,
+              "valid_stream_count": 0,
+              "source_results": [],
+              "fallback_reason": "list_stream_not_found",
+              "elapsed_seconds": 0.651,
+              "room_content_type": "text/html",
+              "room_elapsed_seconds": 0.646,
+              "room_error": ""
+            },
+            "legacy_http": {
+              "enabled": false,
+              "status": null,
+              "elapsed_seconds": 0.0,
+              "error": ""
+            }
+          },
+          "errors": [
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED"
+          ],
+          "failed_requests": [
+            "stylesheet https://fonts.googleapis.com/css2?family=Bangers&family=Oswald:wght@400;500;700&family=Raleway:wght@400;500;700&family=Roboto+Condensed:wght@300;400;700&display=swap | net::ERR_FAILED",
+            "stylesheet https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0 | net::ERR_FAILED",
+            "stylesheet https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css | net::ERR_FAILED",
+            "stylesheet https://socolivekj.cc/wp-content/plugins/widget-options/assets/css/widget-options.css?ver=4.0.6.1 | net::ERR_FAILED",
+            "stylesheet https://socolivekj.cc/wp-content/plugins/wp-pagenavi/pagenavi-css.css?ver=2.70 | net::ERR_FAILED",
+            "stylesheet https://socolivekj.cc/wp-content/themes/bongda/dist/styles/bootstrap.min.css?ver=1745376853 | net::ERR_FAILED",
+            "stylesheet https://socolivekj.cc/wp-content/themes/bongda/dist/styles/main.css?ver=1781184173 | net::ERR_FAILED",
+            "stylesheet https://socolivekj.cc/wp-content/themes/bongda/dist/styles/pages/single-live.css?ver=1784627923 | net::ERR_FAILED",
+            "image https://socolivekj.cc/wp-content/themes/bongda/dist/images/logo-socolive-tv-official-v2.png | net::ERR_FAILED",
+            "image https://socolivekj.cc/wp-content/themes/bongda/dist/images/wc-2026/menu-wc.svg | net::ERR_FAILED",
+            "image https://socolivekj.cc/wp-content/themes/bongda/dist/images/closemenu.png | net::ERR_FAILED",
+            "image https://imgts.sportpulseapiz.com/football/team/jw2r09h1w9lrz84/image/small | net::ERR_FAILED",
+            "stylesheet https://socolivekj.cc/wp-content/plugins/api-sport/public/css/match_detail.css?id=0671c88cfbad4335394b897262a0d662 | net::ERR_FAILED",
+            "image https://imgts.sportpulseapiz.com/football/team/6ypq3nhlolzmd7o/image/small | net::ERR_FAILED",
+            "image https://socolivekj.cc/wp-content/themes/bongda/dist/images/company/21-1.png | net::ERR_FAILED"
+          ],
+          "http_errors": [
+            "403 https://live1.streambylivepulse.com/live/channel31.flv?wsSecret=79a7af1ec9177bb6735c775d62a4a38c&wsABSTime=1785425500",
+            "403 https://live1.streambylivepulse.com/live/channel31.flv?wsSecret=79a7af1ec9177bb6735c775d62a4a38c&wsABSTime=1785425500",
+            "403 https://live1.streambylivepulse.com/live/channel31.flv?wsSecret=79a7af1ec9177bb6735c775d62a4a38c&wsABSTime=1785425500",
+            "403 https://live1.streambylivepulse.com/live/channel31.flv?wsSecret=79a7af1ec9177bb6735c775d62a4a38c&wsABSTime=1785425500"
+          ]
+        }
+      ],
+      "attempted_room_ids": [],
+      "coverage": {
+        "found_streams": 1,
+        "found_blv_ids": [],
+        "goal": 2,
+        "source_goal_reached": false,
+        "room_queue_complete": true,
+        "complete": true,
+        "max_streams_per_blv": 2,
+        "total_explicit_blv_rooms": 0,
+        "pending_room_keys": [],
+        "room_progress": {
+          "__base__": {
+            "key": "__base__",
+            "url": "https://socolivekj.cc/truc-tiep/lawsohtun-sc-vs-sohiong-united-luc-1430-ngay-30-07-2026/",
+            "blv": "",
+            "blv_id": "",
+            "status": "success",
+            "attempts": 1,
+            "attempts_total": 1,
+            "ever_attempted": true,
+            "valid_stream_ever_found": true,
+            "needs_token_refresh": false,
+            "completion_reason": "valid_stream",
+            "rate_limit_hits": 0,
+            "last_http_status": 200,
+            "last_stream_count": 1,
+            "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
+          }
+        }
+      },
+      "errors": [],
+      "match_name": "Lawsohtun SC vs Sohiong United",
+      "scheduled_at": "2026-07-30T14:30:00+07:00",
+      "room_progress": {
+        "__base__": {
+          "key": "__base__",
+          "url": "https://socolivekj.cc/truc-tiep/lawsohtun-sc-vs-sohiong-united-luc-1430-ngay-30-07-2026/",
+          "blv": "",
           "blv_id": "",
           "status": "success",
           "attempts": 1,
@@ -3906,7 +3906,7 @@
       "time_text": "16:30",
       "date_text": "30/07",
       "status": "",
-      "card_text": "AUSTRALIA FFA CUP 16:30 - 30.07 Sydney Olympic Brisbane Roar HT 0 - 0 0 - 0 0 - 0 BRADY 0.95 -1/1.5 0.85 0.93 3/3.5 0.88",
+      "card_text": "AUSTRALIA FFA CUP 16:30 - 30.07 Sydney Olympic Brisbane Roar HT 0 - 0 0 - 0 0 - 0 BRADY 0.98 -1/1.5 0.83 0.90 3/3.5 0.90",
       "rooms": [
         {
           "url": "https://socolivekj.cc/truc-tiep/sydney-olympic-vs-brisbane-roar-luc-1630-ngay-30-07-2026/",
@@ -5350,7 +5350,7 @@
       "time_text": "18:00",
       "date_text": "30/07",
       "status": "",
-      "card_text": "CHINESE MACAU FA CUP 18:00 - 30.07 Chao Pak Kei Gala FC 2 - 2 3 - 1 4 - 0 0.95 2/2.5 0.85 1.00 4 0.80",
+      "card_text": "CHINESE MACAU FA CUP 18:00 - 30.07 Chao Pak Kei Gala FC 2 - 2 3 - 1 4 - 0 0.93 2/2.5 0.88 0.93 4 0.88",
       "rooms": [
         {
           "url": "https://socolivekj.cc/truc-tiep/chao-pak-kei-vs-gala-fc-luc-1800-ngay-30-07-2026/",
@@ -5810,15 +5810,7 @@
           "last_stream_count": 1,
           "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
         }
-      },
-      "run_attempted_room_keys": [
-        "__base__"
-      ],
-      "run_rate_limited_room_keys": [],
-      "run_completed_room_keys": [
-        "__base__"
-      ],
-      "run_global_budget_used": 1
+      }
     },
     {
       "base_url": "https://socolivekj.cc/truc-tiep/ekibastuzets-vs-fk-yelimay-semey-b-luc-1900-ngay-30-07-2026/",
@@ -6051,15 +6043,7 @@
           "last_stream_count": 1,
           "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
         }
-      },
-      "run_attempted_room_keys": [
-        "__base__"
-      ],
-      "run_rate_limited_room_keys": [],
-      "run_completed_room_keys": [
-        "__base__"
-      ],
-      "run_global_budget_used": 2
+      }
     },
     {
       "base_url": "https://socolivekj.cc/truc-tiep/viking-u19-vs-lyn-oslo-u19-luc-1900-ngay-30-07-2026/",
@@ -6300,15 +6284,7 @@
           "last_stream_count": 1,
           "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
         }
-      },
-      "run_attempted_room_keys": [
-        "__base__"
-      ],
-      "run_rate_limited_room_keys": [],
-      "run_completed_room_keys": [
-        "__base__"
-      ],
-      "run_global_budget_used": 3
+      }
     }
   ]
 }
