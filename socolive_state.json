@@ -1,32 +1,32 @@
 {
-  "generated_at": "2026-07-31T18:03:38.339524+07:00",
+  "generated_at": "2026-07-31T18:04:34.127377+07:00",
   "state_schema_version": "v10.5-api-first-room-queue",
-  "dispatch_next": true,
-  "pending_count": 1,
-  "pending_room_count": 1,
-  "completed_count": 29,
-  "coverage_complete_count": 29,
+  "dispatch_next": false,
+  "pending_count": 0,
+  "pending_room_count": 0,
+  "completed_count": 30,
+  "coverage_complete_count": 30,
   "total_match_count": 30,
-  "total_stream_count": 30,
-  "progress_count": 9,
-  "new_link_count": 9,
+  "total_stream_count": 31,
+  "progress_count": 1,
+  "new_link_count": 1,
   "refreshed_link_count": 0,
-  "queue_progress_count": 40,
-  "terminal_progress_count": 30,
-  "newly_attempted_count": 10,
+  "queue_progress_count": 1,
+  "terminal_progress_count": 1,
+  "newly_attempted_count": 0,
   "queue_total_rooms": 31,
-  "queue_success_rooms": 30,
+  "queue_success_rooms": 31,
   "queue_exhausted_rooms": 0,
-  "queue_terminal_rooms": 30,
-  "queue_attempts_total": 31,
-  "chain_runs": 1,
+  "queue_terminal_rooms": 31,
+  "queue_attempts_total": 32,
+  "chain_runs": 2,
   "no_progress_runs": 0,
   "no_queue_progress_runs": 0,
   "unchanged_pending_runs": 0,
   "rate_limit_only_runs": 0,
   "rate_limit_only_run": false,
-  "pending_fingerprint": "4fd407fd54379a177d788b2f16e4db5750ee1f5b1151c53324f643c98591253d",
-  "stop_reason": "",
+  "pending_fingerprint": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "stop_reason": "complete",
   "rate_limited": false,
   "rate_limit_url": "",
   "global_room_budget": 48,
@@ -63,10 +63,363 @@
     "https://socolivekj.cc/truc-tiep/ucsa-vs-fk-oleksandria-luc-1700-ngay-31-07-2026/",
     "https://socolivekj.cc/truc-tiep/viet-nam-vs-singapore-luc-2000-ngay-31-07-2026/"
   ],
-  "pending_base_urls": [
-    "https://socolivekj.cc/truc-tiep/nu-paris-fc-vs-nu-auxerre-luc-1800-ngay-31-07-2026/"
-  ],
+  "pending_base_urls": [],
   "matches": [
+    {
+      "base_url": "https://socolivekj.cc/truc-tiep/nu-paris-fc-vs-nu-auxerre-luc-1800-ngay-31-07-2026/",
+      "raw_title": "Nữ Paris FC vs Nữ Auxerre",
+      "home_team": "Nữ Paris FC",
+      "away_team": "Nữ Auxerre",
+      "home_logo": "https://imgts.sportpulseapiz.com/football/team/8yomo4h27n8q0j6/image/small",
+      "away_logo": "https://imgts.sportpulseapiz.com/football/team/k82rekh18z5repz/image/small",
+      "time_text": "18:00",
+      "date_text": "31/07",
+      "status": "Đang diễn ra",
+      "card_text": "GIAO HỮU CLB Đang diễn ra 18:00 - 31.07 Nữ Paris FC Nữ Auxerre HT 0 - 0 0 - 0 0 - 0 - - - - - -",
+      "rooms": [
+        {
+          "url": "https://socolivekj.cc/truc-tiep/nu-paris-fc-vs-nu-auxerre-luc-1800-ngay-31-07-2026/",
+          "blv": "",
+          "blv_id": ""
+        }
+      ],
+      "streams": [
+        {
+          "url": "https://live1.streambylivepulse.com/live/channel30.flv?wsSecret=cab12be2d8f936b1e093a785a4b3f4a3&wsABSTime=1785539065",
+          "queue_room_key": "__base__",
+          "room_url": "https://socolivekj.cc/truc-tiep/nu-paris-fc-vs-nu-auxerre-luc-1800-ngay-31-07-2026/",
+          "blv": "Nguồn phụ 1",
+          "blv_id": "",
+          "source_id": "",
+          "source_provenance": [
+            "cdp/request",
+            "cdp/response",
+            "harvest-final",
+            "harvest-round-1",
+            "harvest-round-2",
+            "harvest-round-3",
+            "harvest-round-4",
+            "harvest-round-5",
+            "harvest-round-6",
+            "harvest-round-7",
+            "harvest-round-8",
+            "request/fetch",
+            "response/403"
+          ],
+          "playback_referer": "",
+          "playback_origin": "",
+          "playback_user_agent": "",
+          "api_player_endpoint": "",
+          "api_source_mode": "",
+          "source_confidence": "network",
+          "mapping_mode": "stream-source-id",
+          "discovered_from_room_url": "https://socolivekj.cc/truc-tiep/nu-paris-fc-vs-nu-auxerre-luc-1800-ngay-31-07-2026/",
+          "discovered_from_blv": "URL tổng",
+          "discovered_at": "2026-07-31T18:04:32.097176+07:00",
+          "valid_until": "",
+          "is_expired": false
+        }
+      ],
+      "room_results": [
+        {
+          "url": "https://socolivekj.cc/truc-tiep/nu-paris-fc-vs-nu-auxerre-luc-1800-ngay-31-07-2026/",
+          "blv": "",
+          "blv_id": "",
+          "streams": [],
+          "stream_sources": {},
+          "stream_headers": {},
+          "stream_first_seen": [],
+          "discovered_blv_ids": [],
+          "diagnostics": {
+            "url": "https://socolivekj.cc/truc-tiep/nu-paris-fc-vs-nu-auxerre-luc-1800-ngay-31-07-2026/",
+            "title": "Trực tiếp Nữ Paris FC vs Nữ Auxerre full lúc 18:00, ngày 31/07",
+            "h1": "Xem trực tiếp trận đấu Nữ Paris FC vs Nữ Auxerre full lúc 18:00, ngày 31/07/2026",
+            "ready_state": "complete",
+            "visibility_state": "visible",
+            "hidden": false,
+            "video_count": 0,
+            "iframe_count": 5,
+            "body_sample": "WC 2026 Lịch Thi Đấu Xem Lại Video Highlight Tỷ Lệ Kèo BXH KQBD Tips Tin Tức Livescore Tuyển Dụng Top Nhà Cái Cược 8xbet WC 2026 Lịch Thi Đấu Xem Lại Video Highlight Tỷ Lệ Kèo BXH KQBD Tips Tin Tức Livescore Tuyển Dụng Top nhà cái Xem trực tiếp trận đấu Nữ Paris FC vs Nữ Auxerre full lúc 18:00, ngày 31/07/2026 Phát sóng link trực tuyến Nữ Paris FC vs Nữ Auxerre hôm nay tại giải đấu Giao Hữu CLB _ _ _ _ _ _ Nữ Paris FC Nữ Auxerre Theo bạn thì trận này tài hay xỉu? Tài 0% Xỉu 0% Theo bạn thì trận này đội nào sẽ thắng? Chủ nhà 0% Hòa 0% Đội Khách 0% Anh Em Muốn Tham Gia Đặt Cược Thì Click Vào Quảng Cáo Của 8XBET Để Đăng Ký Đặt Cược Tất Cả Các Trận Đấu Trên Toàn Thế Giới. Nếu anh em gặp tình trạng không vào được web, hãy cài VPN 1.1.1.1 để truy cập ổn định hơn nhé . Châu Á Châu Âu Tài xỉu Phạt góc Chọn nhà cái HIỆP 1 FT Châu Á HIỆP 1 FT Châu Á - - - - - - Châu Âu HIỆP 1 FT Châu Âu - - - - - - Tài xỉu HIỆP 1 FT Tài xỉu - - - - - - SỚM FT Phạt góc HIỆP 1 FT Phạt góc - - - - - - Trực tiếp Mô phỏng CHIA SẺ Phát sóng trận đấu Nữ Paris FC vs Nữ Auxerre full HD lúc 18:00, ngày 31/07/2026 Giao Hữu CLB HD 1 CHIA SẺ Thông số Diễn biến Đội hình BXH Chat Đối đầu Trận khác Trận sắp tới Tỷ lệ kèo TT",
+            "harvest_rounds": 0,
+            "harvest_window_seconds": 0.68,
+            "main_status": 200,
+            "harvested_stream_count": 0,
+            "harvested_blv_ids": [],
+            "scan_mode": "chromium-fallback",
+            "elapsed_seconds": 33.097
+          },
+          "api_probe": {
+            "enabled": true,
+            "room_status": 200,
+            "active_index": 0,
+            "sources_found": 0,
+            "sources_tried": 0,
+            "valid_stream_count": 0,
+            "source_results": [],
+            "fallback_reason": "list_stream_not_found",
+            "elapsed_seconds": 0.695,
+            "room_content_type": "text/html",
+            "room_elapsed_seconds": 0.691,
+            "room_error": ""
+          },
+          "http_probe": {
+            "api_first": {
+              "enabled": true,
+              "room_status": 200,
+              "active_index": 0,
+              "sources_found": 0,
+              "sources_tried": 0,
+              "valid_stream_count": 0,
+              "source_results": [],
+              "fallback_reason": "list_stream_not_found",
+              "elapsed_seconds": 0.695,
+              "room_content_type": "text/html",
+              "room_elapsed_seconds": 0.691,
+              "room_error": ""
+            },
+            "legacy_http": {
+              "enabled": false,
+              "status": null,
+              "elapsed_seconds": 0.0,
+              "error": ""
+            }
+          },
+          "errors": [
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED"
+          ],
+          "failed_requests": [
+            "stylesheet https://fonts.googleapis.com/css2?family=Bangers&family=Oswald:wght@400;500;700&family=Raleway:wght@400;500;700&family=Roboto+Condensed:wght@300;400;700&display=swap | net::ERR_FAILED",
+            "stylesheet https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0 | net::ERR_FAILED",
+            "stylesheet https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css | net::ERR_FAILED",
+            "stylesheet https://socolivekj.cc/wp-content/plugins/widget-options/assets/css/widget-options.css?ver=4.0.6.1 | net::ERR_FAILED",
+            "stylesheet https://socolivekj.cc/wp-content/plugins/wp-pagenavi/pagenavi-css.css?ver=2.70 | net::ERR_FAILED",
+            "stylesheet https://socolivekj.cc/wp-content/themes/bongda/dist/styles/bootstrap.min.css?ver=1745376853 | net::ERR_FAILED",
+            "stylesheet https://socolivekj.cc/wp-content/themes/bongda/dist/styles/main.css?ver=1781184173 | net::ERR_FAILED",
+            "stylesheet https://socolivekj.cc/wp-content/themes/bongda/dist/styles/pages/single-live.css?ver=1784627923 | net::ERR_FAILED",
+            "image https://socolivekj.cc/wp-content/themes/bongda/dist/images/logo-socolive-tv-official-v2.png | net::ERR_FAILED",
+            "image https://socolivekj.cc/wp-content/themes/bongda/dist/images/wc-2026/menu-wc.svg | net::ERR_FAILED",
+            "image https://socolivekj.cc/wp-content/themes/bongda/dist/images/closemenu.png | net::ERR_FAILED",
+            "image https://imgts.sportpulseapiz.com/football/team/8yomo4h27n8q0j6/image/small | net::ERR_FAILED",
+            "stylesheet https://socolivekj.cc/wp-content/plugins/api-sport/public/css/match_detail.css?id=0671c88cfbad4335394b897262a0d662 | net::ERR_FAILED",
+            "image https://imgts.sportpulseapiz.com/football/team/k82rekh18z5repz/image/small | net::ERR_FAILED",
+            "image https://socolivekj.cc/wp-content/themes/bongda/dist/images/company/21-1.png | net::ERR_FAILED"
+          ],
+          "http_errors": [
+            "522 https://soco.scorecastbytextz.com/ajax/chanel/type/7/link/channel30/off-tvc"
+          ]
+        },
+        {
+          "url": "https://socolivekj.cc/truc-tiep/nu-paris-fc-vs-nu-auxerre-luc-1800-ngay-31-07-2026/",
+          "blv": "",
+          "blv_id": "",
+          "streams": [
+            "https://live1.streambylivepulse.com/live/channel30.flv?wsSecret=cab12be2d8f936b1e093a785a4b3f4a3&wsABSTime=1785539065"
+          ],
+          "stream_sources": {
+            "https://live1.streambylivepulse.com/live/channel30.flv?wsSecret=cab12be2d8f936b1e093a785a4b3f4a3&wsABSTime=1785539065": [
+              "cdp/request",
+              "cdp/response",
+              "harvest-final",
+              "harvest-round-1",
+              "harvest-round-2",
+              "harvest-round-3",
+              "harvest-round-4",
+              "harvest-round-5",
+              "harvest-round-6",
+              "harvest-round-7",
+              "harvest-round-8",
+              "request/fetch",
+              "response/403"
+            ]
+          },
+          "stream_headers": {},
+          "stream_first_seen": [
+            "https://live1.streambylivepulse.com/live/channel30.flv?wsSecret=cab12be2d8f936b1e093a785a4b3f4a3&wsABSTime=1785539065"
+          ],
+          "discovered_blv_ids": [],
+          "diagnostics": {
+            "url": "https://socolivekj.cc/truc-tiep/nu-paris-fc-vs-nu-auxerre-luc-1800-ngay-31-07-2026/",
+            "title": "Trực tiếp Nữ Paris FC vs Nữ Auxerre full lúc 18:00, ngày 31/07",
+            "h1": "Xem trực tiếp trận đấu Nữ Paris FC vs Nữ Auxerre full lúc 18:00, ngày 31/07/2026",
+            "ready_state": "complete",
+            "visibility_state": "visible",
+            "hidden": false,
+            "video_count": 0,
+            "iframe_count": 5,
+            "body_sample": "WC 2026 Lịch Thi Đấu Xem Lại Video Highlight Tỷ Lệ Kèo BXH KQBD Tips Tin Tức Livescore Tuyển Dụng Top Nhà Cái Cược 8xbet WC 2026 Lịch Thi Đấu Xem Lại Video Highlight Tỷ Lệ Kèo BXH KQBD Tips Tin Tức Livescore Tuyển Dụng Top nhà cái Xem trực tiếp trận đấu Nữ Paris FC vs Nữ Auxerre full lúc 18:00, ngày 31/07/2026 Phát sóng link trực tuyến Nữ Paris FC vs Nữ Auxerre hôm nay tại giải đấu Giao Hữu CLB _ _ _ _ _ _ Nữ Paris FC Nữ Auxerre Theo bạn thì trận này tài hay xỉu? Tài 0% Xỉu 0% Theo bạn thì trận này đội nào sẽ thắng? Chủ nhà 0% Hòa 0% Đội Khách 0% Anh Em Muốn Tham Gia Đặt Cược Thì Click Vào Quảng Cáo Của 8XBET Để Đăng Ký Đặt Cược Tất Cả Các Trận Đấu Trên Toàn Thế Giới. Nếu anh em gặp tình trạng không vào được web, hãy cài VPN 1.1.1.1 để truy cập ổn định hơn nhé . Châu Á Châu Âu Tài xỉu Phạt góc Chọn nhà cái HIỆP 1 FT Châu Á HIỆP 1 FT Châu Á - - - - - - Châu Âu HIỆP 1 FT Châu Âu - - - - - - Tài xỉu HIỆP 1 FT Tài xỉu - - - - - - SỚM FT Phạt góc HIỆP 1 FT Phạt góc - - - - - - Trực tiếp Mô phỏng CHIA SẺ Phát sóng trận đấu Nữ Paris FC vs Nữ Auxerre full HD lúc 18:00, ngày 31/07/2026 Giao Hữu CLB HD 1 CHIA SẺ Thông số Diễn biến Đội hình BXH Chat Đối đầu Trận khác Trận sắp tới Tỷ lệ kèo TT",
+            "harvest_rounds": 8,
+            "harvest_window_seconds": 6.685,
+            "main_status": 200,
+            "harvested_stream_count": 1,
+            "harvested_blv_ids": [],
+            "scan_mode": "chromium-fallback",
+            "elapsed_seconds": 7.842
+          },
+          "api_probe": {
+            "enabled": true,
+            "room_status": 200,
+            "active_index": 0,
+            "sources_found": 0,
+            "sources_tried": 0,
+            "valid_stream_count": 0,
+            "source_results": [],
+            "fallback_reason": "list_stream_not_found",
+            "elapsed_seconds": 0.103,
+            "room_content_type": "text/html",
+            "room_elapsed_seconds": 0.098,
+            "room_error": ""
+          },
+          "http_probe": {
+            "api_first": {
+              "enabled": true,
+              "room_status": 200,
+              "active_index": 0,
+              "sources_found": 0,
+              "sources_tried": 0,
+              "valid_stream_count": 0,
+              "source_results": [],
+              "fallback_reason": "list_stream_not_found",
+              "elapsed_seconds": 0.103,
+              "room_content_type": "text/html",
+              "room_elapsed_seconds": 0.098,
+              "room_error": ""
+            },
+            "legacy_http": {
+              "enabled": false,
+              "status": null,
+              "elapsed_seconds": 0.0,
+              "error": ""
+            }
+          },
+          "errors": [
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED"
+          ],
+          "failed_requests": [
+            "stylesheet https://fonts.googleapis.com/css2?family=Bangers&family=Oswald:wght@400;500;700&family=Raleway:wght@400;500;700&family=Roboto+Condensed:wght@300;400;700&display=swap | net::ERR_FAILED",
+            "stylesheet https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0 | net::ERR_FAILED",
+            "stylesheet https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css | net::ERR_FAILED",
+            "stylesheet https://socolivekj.cc/wp-content/plugins/widget-options/assets/css/widget-options.css?ver=4.0.6.1 | net::ERR_FAILED",
+            "stylesheet https://socolivekj.cc/wp-content/plugins/wp-pagenavi/pagenavi-css.css?ver=2.70 | net::ERR_FAILED",
+            "stylesheet https://socolivekj.cc/wp-content/themes/bongda/dist/styles/bootstrap.min.css?ver=1745376853 | net::ERR_FAILED",
+            "stylesheet https://socolivekj.cc/wp-content/themes/bongda/dist/styles/main.css?ver=1781184173 | net::ERR_FAILED",
+            "stylesheet https://socolivekj.cc/wp-content/themes/bongda/dist/styles/pages/single-live.css?ver=1784627923 | net::ERR_FAILED",
+            "image https://socolivekj.cc/wp-content/themes/bongda/dist/images/logo-socolive-tv-official-v2.png | net::ERR_FAILED",
+            "image https://socolivekj.cc/wp-content/themes/bongda/dist/images/wc-2026/menu-wc.svg | net::ERR_FAILED",
+            "image https://socolivekj.cc/wp-content/themes/bongda/dist/images/closemenu.png | net::ERR_FAILED",
+            "image https://imgts.sportpulseapiz.com/football/team/8yomo4h27n8q0j6/image/small | net::ERR_FAILED",
+            "stylesheet https://socolivekj.cc/wp-content/plugins/api-sport/public/css/match_detail.css?id=0671c88cfbad4335394b897262a0d662 | net::ERR_FAILED",
+            "image https://imgts.sportpulseapiz.com/football/team/k82rekh18z5repz/image/small | net::ERR_FAILED",
+            "image https://socolivekj.cc/wp-content/themes/bongda/dist/images/company/21-1.png | net::ERR_FAILED"
+          ],
+          "http_errors": [
+            "403 https://live1.streambylivepulse.com/live/channel30.flv?wsSecret=cab12be2d8f936b1e093a785a4b3f4a3&wsABSTime=1785539065",
+            "403 https://live1.streambylivepulse.com/live/channel30.flv?wsSecret=cab12be2d8f936b1e093a785a4b3f4a3&wsABSTime=1785539065",
+            "403 https://live1.streambylivepulse.com/live/channel30.flv?wsSecret=cab12be2d8f936b1e093a785a4b3f4a3&wsABSTime=1785539065",
+            "403 https://live1.streambylivepulse.com/live/channel30.flv?wsSecret=cab12be2d8f936b1e093a785a4b3f4a3&wsABSTime=1785539065",
+            "403 https://live1.streambylivepulse.com/live/channel30.flv?wsSecret=cab12be2d8f936b1e093a785a4b3f4a3&wsABSTime=1785539065"
+          ]
+        }
+      ],
+      "attempted_room_ids": [],
+      "coverage": {
+        "found_streams": 1,
+        "found_blv_ids": [],
+        "goal": 2,
+        "source_goal_reached": false,
+        "room_queue_complete": true,
+        "complete": true,
+        "max_streams_per_blv": 2,
+        "total_explicit_blv_rooms": 0,
+        "pending_room_keys": [],
+        "room_progress": {
+          "__base__": {
+            "key": "__base__",
+            "url": "https://socolivekj.cc/truc-tiep/nu-paris-fc-vs-nu-auxerre-luc-1800-ngay-31-07-2026/",
+            "blv": "",
+            "blv_id": "",
+            "status": "success",
+            "attempts": 2,
+            "attempts_total": 2,
+            "ever_attempted": true,
+            "valid_stream_ever_found": true,
+            "needs_token_refresh": false,
+            "completion_reason": "valid_stream",
+            "rate_limit_hits": 0,
+            "last_http_status": 200,
+            "last_stream_count": 1,
+            "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
+          }
+        }
+      },
+      "errors": [],
+      "match_name": "Nữ Paris FC vs Nữ Auxerre",
+      "scheduled_at": "2026-07-31T18:00:00+07:00",
+      "room_progress": {
+        "__base__": {
+          "key": "__base__",
+          "url": "https://socolivekj.cc/truc-tiep/nu-paris-fc-vs-nu-auxerre-luc-1800-ngay-31-07-2026/",
+          "blv": "",
+          "blv_id": "",
+          "status": "success",
+          "attempts": 2,
+          "attempts_total": 2,
+          "ever_attempted": true,
+          "valid_stream_ever_found": true,
+          "needs_token_refresh": false,
+          "completion_reason": "valid_stream",
+          "rate_limit_hits": 0,
+          "last_http_status": 200,
+          "last_stream_count": 1,
+          "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
+        }
+      },
+      "run_attempted_room_keys": [
+        "__base__"
+      ],
+      "run_rate_limited_room_keys": [],
+      "run_completed_room_keys": [
+        "__base__"
+      ],
+      "run_global_budget_used": 1
+    },
     {
       "base_url": "https://socolivekj.cc/truc-tiep/fk-gigant-saedinie-vs-fk-krumovgrad-luc-1800-ngay-31-07-2026/",
       "raw_title": "FK Gigant Saedinie vs FK Krumovgrad",
@@ -563,197 +916,6 @@
         "__base__"
       ],
       "run_global_budget_used": 2
-    },
-    {
-      "base_url": "https://socolivekj.cc/truc-tiep/nu-paris-fc-vs-nu-auxerre-luc-1800-ngay-31-07-2026/",
-      "raw_title": "Nữ Paris FC vs Nữ Auxerre",
-      "home_team": "Nữ Paris FC",
-      "away_team": "Nữ Auxerre",
-      "home_logo": "https://imgts.sportpulseapiz.com/football/team/8yomo4h27n8q0j6/image/small",
-      "away_logo": "https://imgts.sportpulseapiz.com/football/team/k82rekh18z5repz/image/small",
-      "time_text": "18:00",
-      "date_text": "31/07",
-      "status": "Đang diễn ra",
-      "card_text": "GIAO HỮU CLB Đang diễn ra 18:00 - 31.07 Nữ Paris FC Nữ Auxerre HT 0 - 0 0 - 0 0 - 0 - - - - - -",
-      "rooms": [
-        {
-          "url": "https://socolivekj.cc/truc-tiep/nu-paris-fc-vs-nu-auxerre-luc-1800-ngay-31-07-2026/",
-          "blv": "",
-          "blv_id": ""
-        }
-      ],
-      "streams": [],
-      "room_results": [
-        {
-          "url": "https://socolivekj.cc/truc-tiep/nu-paris-fc-vs-nu-auxerre-luc-1800-ngay-31-07-2026/",
-          "blv": "",
-          "blv_id": "",
-          "streams": [],
-          "stream_sources": {},
-          "stream_headers": {},
-          "stream_first_seen": [],
-          "discovered_blv_ids": [],
-          "diagnostics": {
-            "url": "https://socolivekj.cc/truc-tiep/nu-paris-fc-vs-nu-auxerre-luc-1800-ngay-31-07-2026/",
-            "title": "Trực tiếp Nữ Paris FC vs Nữ Auxerre full lúc 18:00, ngày 31/07",
-            "h1": "Xem trực tiếp trận đấu Nữ Paris FC vs Nữ Auxerre full lúc 18:00, ngày 31/07/2026",
-            "ready_state": "complete",
-            "visibility_state": "visible",
-            "hidden": false,
-            "video_count": 0,
-            "iframe_count": 5,
-            "body_sample": "WC 2026 Lịch Thi Đấu Xem Lại Video Highlight Tỷ Lệ Kèo BXH KQBD Tips Tin Tức Livescore Tuyển Dụng Top Nhà Cái Cược 8xbet WC 2026 Lịch Thi Đấu Xem Lại Video Highlight Tỷ Lệ Kèo BXH KQBD Tips Tin Tức Livescore Tuyển Dụng Top nhà cái Xem trực tiếp trận đấu Nữ Paris FC vs Nữ Auxerre full lúc 18:00, ngày 31/07/2026 Phát sóng link trực tuyến Nữ Paris FC vs Nữ Auxerre hôm nay tại giải đấu Giao Hữu CLB _ _ _ _ _ _ Nữ Paris FC Nữ Auxerre Theo bạn thì trận này tài hay xỉu? Tài 0% Xỉu 0% Theo bạn thì trận này đội nào sẽ thắng? Chủ nhà 0% Hòa 0% Đội Khách 0% Anh Em Muốn Tham Gia Đặt Cược Thì Click Vào Quảng Cáo Của 8XBET Để Đăng Ký Đặt Cược Tất Cả Các Trận Đấu Trên Toàn Thế Giới. Nếu anh em gặp tình trạng không vào được web, hãy cài VPN 1.1.1.1 để truy cập ổn định hơn nhé . Châu Á Châu Âu Tài xỉu Phạt góc Chọn nhà cái HIỆP 1 FT Châu Á HIỆP 1 FT Châu Á - - - - - - Châu Âu HIỆP 1 FT Châu Âu - - - - - - Tài xỉu HIỆP 1 FT Tài xỉu - - - - - - SỚM FT Phạt góc HIỆP 1 FT Phạt góc - - - - - - Trực tiếp Mô phỏng CHIA SẺ Phát sóng trận đấu Nữ Paris FC vs Nữ Auxerre full HD lúc 18:00, ngày 31/07/2026 Giao Hữu CLB HD 1 CHIA SẺ Thông số Diễn biến Đội hình BXH Chat Đối đầu Trận khác Trận sắp tới Tỷ lệ kèo TT",
-            "harvest_rounds": 0,
-            "harvest_window_seconds": 0.68,
-            "main_status": 200,
-            "harvested_stream_count": 0,
-            "harvested_blv_ids": [],
-            "scan_mode": "chromium-fallback",
-            "elapsed_seconds": 33.097
-          },
-          "api_probe": {
-            "enabled": true,
-            "room_status": 200,
-            "active_index": 0,
-            "sources_found": 0,
-            "sources_tried": 0,
-            "valid_stream_count": 0,
-            "source_results": [],
-            "fallback_reason": "list_stream_not_found",
-            "elapsed_seconds": 0.695,
-            "room_content_type": "text/html",
-            "room_elapsed_seconds": 0.691,
-            "room_error": ""
-          },
-          "http_probe": {
-            "api_first": {
-              "enabled": true,
-              "room_status": 200,
-              "active_index": 0,
-              "sources_found": 0,
-              "sources_tried": 0,
-              "valid_stream_count": 0,
-              "source_results": [],
-              "fallback_reason": "list_stream_not_found",
-              "elapsed_seconds": 0.695,
-              "room_content_type": "text/html",
-              "room_elapsed_seconds": 0.691,
-              "room_error": ""
-            },
-            "legacy_http": {
-              "enabled": false,
-              "status": null,
-              "elapsed_seconds": 0.0,
-              "error": ""
-            }
-          },
-          "errors": [
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED"
-          ],
-          "failed_requests": [
-            "stylesheet https://fonts.googleapis.com/css2?family=Bangers&family=Oswald:wght@400;500;700&family=Raleway:wght@400;500;700&family=Roboto+Condensed:wght@300;400;700&display=swap | net::ERR_FAILED",
-            "stylesheet https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0 | net::ERR_FAILED",
-            "stylesheet https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css | net::ERR_FAILED",
-            "stylesheet https://socolivekj.cc/wp-content/plugins/widget-options/assets/css/widget-options.css?ver=4.0.6.1 | net::ERR_FAILED",
-            "stylesheet https://socolivekj.cc/wp-content/plugins/wp-pagenavi/pagenavi-css.css?ver=2.70 | net::ERR_FAILED",
-            "stylesheet https://socolivekj.cc/wp-content/themes/bongda/dist/styles/bootstrap.min.css?ver=1745376853 | net::ERR_FAILED",
-            "stylesheet https://socolivekj.cc/wp-content/themes/bongda/dist/styles/main.css?ver=1781184173 | net::ERR_FAILED",
-            "stylesheet https://socolivekj.cc/wp-content/themes/bongda/dist/styles/pages/single-live.css?ver=1784627923 | net::ERR_FAILED",
-            "image https://socolivekj.cc/wp-content/themes/bongda/dist/images/logo-socolive-tv-official-v2.png | net::ERR_FAILED",
-            "image https://socolivekj.cc/wp-content/themes/bongda/dist/images/wc-2026/menu-wc.svg | net::ERR_FAILED",
-            "image https://socolivekj.cc/wp-content/themes/bongda/dist/images/closemenu.png | net::ERR_FAILED",
-            "image https://imgts.sportpulseapiz.com/football/team/8yomo4h27n8q0j6/image/small | net::ERR_FAILED",
-            "stylesheet https://socolivekj.cc/wp-content/plugins/api-sport/public/css/match_detail.css?id=0671c88cfbad4335394b897262a0d662 | net::ERR_FAILED",
-            "image https://imgts.sportpulseapiz.com/football/team/k82rekh18z5repz/image/small | net::ERR_FAILED",
-            "image https://socolivekj.cc/wp-content/themes/bongda/dist/images/company/21-1.png | net::ERR_FAILED"
-          ],
-          "http_errors": [
-            "522 https://soco.scorecastbytextz.com/ajax/chanel/type/7/link/channel30/off-tvc"
-          ]
-        }
-      ],
-      "attempted_room_ids": [],
-      "coverage": {
-        "found_streams": 0,
-        "found_blv_ids": [],
-        "goal": 2,
-        "source_goal_reached": false,
-        "room_queue_complete": false,
-        "complete": false,
-        "max_streams_per_blv": 2,
-        "total_explicit_blv_rooms": 0,
-        "pending_room_keys": [
-          "__base__"
-        ],
-        "room_progress": {
-          "__base__": {
-            "key": "__base__",
-            "url": "https://socolivekj.cc/truc-tiep/nu-paris-fc-vs-nu-auxerre-luc-1800-ngay-31-07-2026/",
-            "blv": "",
-            "blv_id": "",
-            "status": "retry",
-            "attempts": 1,
-            "attempts_total": 1,
-            "ever_attempted": true,
-            "valid_stream_ever_found": false,
-            "needs_token_refresh": false,
-            "completion_reason": "",
-            "rate_limit_hits": 0,
-            "last_http_status": 200,
-            "last_stream_count": 0,
-            "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
-          }
-        }
-      },
-      "errors": [],
-      "match_name": "Nữ Paris FC vs Nữ Auxerre",
-      "scheduled_at": "2026-07-31T18:00:00+07:00",
-      "room_progress": {
-        "__base__": {
-          "key": "__base__",
-          "url": "https://socolivekj.cc/truc-tiep/nu-paris-fc-vs-nu-auxerre-luc-1800-ngay-31-07-2026/",
-          "blv": "",
-          "blv_id": "",
-          "status": "retry",
-          "attempts": 1,
-          "attempts_total": 1,
-          "ever_attempted": true,
-          "valid_stream_ever_found": false,
-          "needs_token_refresh": false,
-          "completion_reason": "",
-          "rate_limit_hits": 0,
-          "last_http_status": 200,
-          "last_stream_count": 0,
-          "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
-        }
-      },
-      "run_attempted_room_keys": [
-        "__base__"
-      ],
-      "run_rate_limited_room_keys": [],
-      "run_completed_room_keys": [
-        "__base__"
-      ],
-      "run_global_budget_used": 3
     },
     {
       "base_url": "https://socolivekj.cc/truc-tiep/preston-lions-vs-green-gully-fc-luc-1730-ngay-31-07-2026/",
