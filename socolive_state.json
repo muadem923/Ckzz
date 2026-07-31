@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-31T13:31:25.857475+07:00",
+  "generated_at": "2026-07-31T14:01:02.992247+07:00",
   "state_schema_version": "v10.5-api-first-room-queue",
   "dispatch_next": false,
   "pending_count": 0,
@@ -8,20 +8,20 @@
   "coverage_complete_count": 30,
   "total_match_count": 30,
   "total_stream_count": 27,
-  "progress_count": 1,
+  "progress_count": 0,
   "new_link_count": 0,
-  "refreshed_link_count": 1,
-  "queue_progress_count": 31,
-  "terminal_progress_count": 30,
-  "newly_attempted_count": 1,
+  "refreshed_link_count": 0,
+  "queue_progress_count": 0,
+  "terminal_progress_count": 0,
+  "newly_attempted_count": 0,
   "queue_total_rooms": 30,
   "queue_success_rooms": 30,
   "queue_exhausted_rooms": 0,
   "queue_terminal_rooms": 30,
   "queue_attempts_total": 30,
-  "chain_runs": 1,
-  "no_progress_runs": 0,
-  "no_queue_progress_runs": 0,
+  "chain_runs": 2,
+  "no_progress_runs": 1,
+  "no_queue_progress_runs": 1,
   "unchanged_pending_runs": 0,
   "rate_limit_only_runs": 0,
   "rate_limit_only_run": false,
@@ -30,7 +30,7 @@
   "rate_limited": false,
   "rate_limit_url": "",
   "global_room_budget": 48,
-  "global_room_budget_used": 1,
+  "global_room_budget_used": 0,
   "target_base_urls": [
     "https://socolivekj.cc/truc-tiep/alaves-vs-castellon-luc-1530-ngay-31-07-2026/",
     "https://socolivekj.cc/truc-tiep/almaz-antey-y-vs-konoplev-u19-luc-1700-ngay-31-07-2026/",
@@ -74,8 +74,8 @@
       "away_logo": "https://imgts.sportpulseapiz.com/football/team/318q66h01wzqo9j/image/small",
       "time_text": "12:30",
       "date_text": "31/07",
-      "status": "",
-      "card_text": "INDIAN MFA SUPER CUP HT 12:30 - 31.07 Bawngkawn West 0 : 2 Chanmari FC HT 0 - 2 1 - 9 0 - 0 - - - - - -",
+      "status": "Hiệp 2",
+      "card_text": "INDIAN MFA SUPER CUP Hiệp 2: 75' 12:30 - 31.07 Bawngkawn West 0 : 4 Chanmari FC HT 0 - 2 1 - 12 0 - 2 - - - - - -",
       "rooms": [
         {
           "url": "https://socolivekj.cc/truc-tiep/bawngkawn-west-vs-chanmari-fc-luc-1230-ngay-31-07-2026/",
@@ -304,15 +304,7 @@
           "last_stream_count": 1,
           "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
         }
-      },
-      "run_attempted_room_keys": [
-        "__base__"
-      ],
-      "run_rate_limited_room_keys": [],
-      "run_completed_room_keys": [
-        "__base__"
-      ],
-      "run_global_budget_used": 1
+      }
     },
     {
       "base_url": "https://socolivekj.cc/truc-tiep/nu-fencibles-united-vs-nu-auckland-united-luc-1430-ngay-31-07-2026/",
@@ -324,7 +316,7 @@
       "time_text": "14:30",
       "date_text": "31/07",
       "status": "",
-      "card_text": "NEW ZEALAND WOMEN PREMIER DIVISION 14:30 - 31.07 Nữ Fencibles United Nữ Auckland United 1 - 1 0.90 -1 0.90 0.98 3 0.83",
+      "card_text": "NEW ZEALAND WOMEN PREMIER DIVISION 14:30 - 31.07 Nữ Fencibles United Nữ Auckland United 1 - 1 0.90 -1 0.90 0.95 3/3.5 0.85",
       "rooms": [
         {
           "url": "https://socolivekj.cc/truc-tiep/nu-fencibles-united-vs-nu-auckland-united-luc-1430-ngay-31-07-2026/",
@@ -805,7 +797,7 @@
       "time_text": "15:00",
       "date_text": "31/07",
       "status": "",
-      "card_text": "AUS U20 NSWSL 15:00 - 31.07 Prospect United U20 Blacktown Spartans U20 1 - 2 0.95 0.5/1 0.85 0.88 3/3.5 0.93",
+      "card_text": "AUS U20 NSWSL 15:00 - 31.07 Prospect United U20 Blacktown Spartans U20 1 - 2 0.83 0.5/1 0.98 0.85 3/3.5 0.95",
       "rooms": [
         {
           "url": "https://socolivekj.cc/truc-tiep/prospect-united-u20-vs-blacktown-spartans-u20-luc-1500-ngay-31-07-2026/",
@@ -1531,7 +1523,7 @@
       "time_text": "15:15",
       "date_text": "31/07",
       "status": "",
-      "card_text": "AUS NPL U23 15:15 - 31.07 Northcote City U23 Eltham Redbacks FC U23 0 - 2 0.80 1 1.00 0.85 3.5/4 0.95",
+      "card_text": "AUS NPL U23 15:15 - 31.07 Northcote City U23 Eltham Redbacks FC U23 0 - 2 0.90 1 0.90 0.80 3.5/4 1.00",
       "rooms": [
         {
           "url": "https://socolivekj.cc/truc-tiep/northcote-city-u23-vs-eltham-redbacks-fc-u23-luc-1515-ngay-31-07-2026/",
@@ -1772,7 +1764,7 @@
       "time_text": "15:15",
       "date_text": "31/07",
       "status": "",
-      "card_text": "AUS NPL U23 15:15 - 31.07 Preston Lions U23 Green Gully U23 0 - 2 2 - 3 5 - 0 0.90 0 0.90 0.80 3.5/4 1.00",
+      "card_text": "AUS NPL U23 15:15 - 31.07 Preston Lions U23 Green Gully U23 0 - 2 2 - 3 5 - 0 0.83 0 0.98 1.00 4 0.80",
       "rooms": [
         {
           "url": "https://socolivekj.cc/truc-tiep/preston-lions-u23-vs-green-gully-u23-luc-1515-ngay-31-07-2026/",
@@ -2013,7 +2005,7 @@
       "time_text": "15:30",
       "date_text": "31/07",
       "status": "",
-      "card_text": "GIAO HỮU CLB 15:30 - 31.07 Cordoba B Sevilla Atletico 2 - 0 1 - 1 4 - 0 0.83 -0.5 0.98 0.95 2.5/3 0.85",
+      "card_text": "GIAO HỮU CLB 15:30 - 31.07 Cordoba B Sevilla Atletico 2 - 0 1 - 1 4 - 0 1.03 0/0.5 0.78 0.93 2.5 0.88",
       "rooms": [
         {
           "url": "https://socolivekj.cc/truc-tiep/cordoba-b-vs-sevilla-atletico-luc-1530-ngay-31-07-2026/",
@@ -2493,7 +2485,7 @@
       "time_text": "15:30",
       "date_text": "31/07",
       "status": "",
-      "card_text": "AUSTRALIA QUEENSLAND U23 LEAGUE 15:30 - 31.07 Broadbeach United U23 Logan Lightning U23 3 - 1 0.95 0/0.5 0.85 0.83 3.5 0.98",
+      "card_text": "AUSTRALIA QUEENSLAND U23 LEAGUE 15:30 - 31.07 Broadbeach United U23 Logan Lightning U23 3 - 1 0.83 -0.5 0.98 0.95 3.5/4 0.85",
       "rooms": [
         {
           "url": "https://socolivekj.cc/truc-tiep/broadbeach-united-u23-vs-logan-lightning-u23-luc-1530-ngay-31-07-2026/",
@@ -2982,7 +2974,7 @@
       "time_text": "15:30",
       "date_text": "31/07",
       "status": "",
-      "card_text": "GIAO HỮU CLB 15:30 - 31.07 Elche Cordoba 1 - 2 3 - 1 1 - 0 KEN 1.00 0.5/1 0.80 0.90 2.5 0.90",
+      "card_text": "GIAO HỮU CLB 15:30 - 31.07 Elche Cordoba 1 - 2 3 - 1 1 - 0 KEN 1.00 0.5/1 0.80 0.95 2.5 0.85",
       "rooms": [
         {
           "url": "https://socolivekj.cc/truc-tiep/elche-vs-cordoba-luc-1530-ngay-31-07-2026/",
@@ -3215,7 +3207,7 @@
       "time_text": "15:30",
       "date_text": "31/07",
       "status": "",
-      "card_text": "INDONESIAN PRESIDENT CUP 15:30 - 31.07 Arema FC DPMM FC HT 0 - 0 0 - 0 0 - 0 BRADY 0.78 1 1.03 0.78 2.5/3 1.03",
+      "card_text": "INDONESIAN PRESIDENT CUP 15:30 - 31.07 Arema FC DPMM FC HT 0 - 0 0 - 0 0 - 0 BRADY 0.80 1 1.00 0.80 2.5/3 1.00",
       "rooms": [
         {
           "url": "https://socolivekj.cc/truc-tiep/arema-fc-vs-dpmm-fc-luc-1530-ngay-31-07-2026/",
@@ -4171,7 +4163,7 @@
       "time_text": "16:00",
       "date_text": "31/07",
       "status": "",
-      "card_text": "GIAO HỮU CLB 16:00 - 31.07 Las Palmas Neom SC HT 0 - 0 0 - 0 0 - 0 RAVEN 0.90 0.5 0.90 0.80 2.5/3 1.00",
+      "card_text": "GIAO HỮU CLB 16:00 - 31.07 Las Palmas Neom SC HT 0 - 0 0 - 0 0 - 0 RAVEN 0.90 0.5 0.90 0.90 2.5/3 0.90",
       "rooms": [
         {
           "url": "https://socolivekj.cc/truc-tiep/las-palmas-vs-neom-sc-luc-1600-ngay-31-07-2026/",
@@ -5374,7 +5366,7 @@
       "time_text": "16:30",
       "date_text": "31/07",
       "status": "",
-      "card_text": "VIC PREMIER LEAGUE 16:30 - 31.07 Bentleigh greens Oakleigh Cannons 4 - 0 1 - 3 3 - 0 JOHAN 1.00 -1/1.5 0.80 0.90 2.5/3 0.90",
+      "card_text": "VIC PREMIER LEAGUE 16:30 - 31.07 Bentleigh greens Oakleigh Cannons 4 - 0 1 - 3 3 - 0 JOHAN 1.00 -1/1.5 0.80 0.95 2.5/3 0.85",
       "rooms": [
         {
           "url": "https://socolivekj.cc/truc-tiep/bentleigh-greens-vs-oakleigh-cannons-luc-1630-ngay-31-07-2026/",
@@ -5616,7 +5608,7 @@
       "time_text": "16:30",
       "date_text": "31/07",
       "status": "",
-      "card_text": "QLD PREMIER LEAGUE 16:30 - 31.07 Brisbane Wolves Brisbane City 3 - 0 3 - 4 0 - 0 SILVA 0.83 0 0.98 0.88 3.5 0.93",
+      "card_text": "QLD PREMIER LEAGUE 16:30 - 31.07 Brisbane Wolves Brisbane City 3 - 0 3 - 4 0 - 0 SILVA 0.90 0 0.90 0.88 3.5/4 0.93",
       "rooms": [
         {
           "url": "https://socolivekj.cc/truc-tiep/brisbane-wolves-vs-brisbane-city-luc-1630-ngay-31-07-2026/",
@@ -5849,7 +5841,7 @@
       "time_text": "16:30",
       "date_text": "31/07",
       "status": "",
-      "card_text": "QLD PREMIER LEAGUE 16:30 - 31.07 Rochedale Rovers Eastern Suburbs 6 - 1 3 - 1 1 - 6 JEAN 0.80 -0.5 1.00 1.00 3.5 0.80",
+      "card_text": "QLD PREMIER LEAGUE 16:30 - 31.07 Rochedale Rovers Eastern Suburbs 6 - 1 3 - 1 1 - 6 JEAN 0.80 -0.5 1.00 0.83 3.5 0.98",
       "rooms": [
         {
           "url": "https://socolivekj.cc/truc-tiep/rochedale-rovers-vs-eastern-suburbs-luc-1630-ngay-31-07-2026/",
@@ -6322,7 +6314,7 @@
       "time_text": "17:00",
       "date_text": "31/07",
       "status": "",
-      "card_text": "AUSTRALIAN WELSH LEAGUE 17:00 - 31.07 Prospect United SC Blacktown Spartans 4 - 0 1.00 -1/1.5 0.80 0.93 3/3.5 0.88",
+      "card_text": "AUSTRALIAN WELSH LEAGUE 17:00 - 31.07 Prospect United SC Blacktown Spartans 4 - 0 0.88 -1/1.5 0.93 1.00 3.5 0.80",
       "rooms": [
         {
           "url": "https://socolivekj.cc/truc-tiep/prospect-united-sc-vs-blacktown-spartans-luc-1700-ngay-31-07-2026/",
@@ -6563,7 +6555,7 @@
       "time_text": "17:00",
       "date_text": "31/07",
       "status": "",
-      "card_text": "WK LEAGUE 17:00 - 31.07 Nữ Hyundai SteelRed Nữ KSPO 2 - 2 1 - 3 3 - 1 0.88 -0.5 0.93 0.93 2/2.5 0.88",
+      "card_text": "WK LEAGUE 17:00 - 31.07 Nữ Hyundai SteelRed Nữ KSPO 2 - 2 1 - 3 3 - 1 0.98 -0.5 0.83 0.88 2/2.5 0.93",
       "rooms": [
         {
           "url": "https://socolivekj.cc/truc-tiep/nu-hyundai-steelred-vs-nu-kspo-luc-1700-ngay-31-07-2026/",
@@ -6803,7 +6795,7 @@
       "time_text": "17:00",
       "date_text": "31/07",
       "status": "",
-      "card_text": "NSW-N PREMIER LEAGUE 17:00 - 31.07 Cooks Hill Utd Broadmeadow Magic 6 - 0 4 - 2 0 - 2 0.80 -1 1.00 0.93 3.5 0.88",
+      "card_text": "NSW-N PREMIER LEAGUE 17:00 - 31.07 Cooks Hill Utd Broadmeadow Magic 6 - 0 4 - 2 0 - 2 0.95 -0.5/1 0.85 0.95 3.5 0.85",
       "rooms": [
         {
           "url": "https://socolivekj.cc/truc-tiep/cooks-hill-utd-vs-broadmeadow-magic-luc-1700-ngay-31-07-2026/",
@@ -7047,7 +7039,7 @@
       "time_text": "17:00",
       "date_text": "31/07",
       "status": "",
-      "card_text": "ASEAN CHAMPIONSHIP 17:00 - 31.07 Timor Leste Indonesia 3 - 0 4 - 1 3 - 1 NICK +1 ▸ 0.90 -5 0.90 0.95 5.5 0.85",
+      "card_text": "ASEAN CHAMPIONSHIP 17:00 - 31.07 Timor Leste Indonesia 3 - 0 4 - 1 3 - 1 NICK +1 ▸ 0.95 -4.5/5 0.85 0.83 5/5.5 0.98",
       "rooms": [
         {
           "url": "https://socolivekj.cc/truc-tiep/timor-leste-vs-indonesia-luc-1700-ngay-31-07-2026/link/1",
