@@ -1,24 +1,24 @@
 {
-  "generated_at": "2026-08-01T07:01:21.165056+07:00",
+  "generated_at": "2026-08-01T07:32:08.818827+07:00",
   "state_schema_version": "v10.5-api-first-room-queue",
   "dispatch_next": false,
   "pending_count": 0,
   "pending_room_count": 0,
-  "completed_count": 28,
-  "coverage_complete_count": 28,
-  "total_match_count": 28,
-  "total_stream_count": 28,
-  "progress_count": 1,
-  "new_link_count": 1,
+  "completed_count": 30,
+  "coverage_complete_count": 30,
+  "total_match_count": 30,
+  "total_stream_count": 30,
+  "progress_count": 5,
+  "new_link_count": 5,
   "refreshed_link_count": 0,
-  "queue_progress_count": 29,
-  "terminal_progress_count": 28,
-  "newly_attempted_count": 1,
-  "queue_total_rooms": 28,
-  "queue_success_rooms": 28,
+  "queue_progress_count": 35,
+  "terminal_progress_count": 30,
+  "newly_attempted_count": 5,
+  "queue_total_rooms": 30,
+  "queue_success_rooms": 30,
   "queue_exhausted_rooms": 0,
-  "queue_terminal_rooms": 28,
-  "queue_attempts_total": 28,
+  "queue_terminal_rooms": 30,
+  "queue_attempts_total": 30,
   "chain_runs": 1,
   "no_progress_runs": 0,
   "no_queue_progress_runs": 0,
@@ -30,18 +30,20 @@
   "rate_limited": false,
   "rate_limit_url": "",
   "global_room_budget": 48,
-  "global_room_budget_used": 1,
+  "global_room_budget_used": 5,
   "target_base_urls": [
     "https://socolivell.tv/truc-tiep/academia-anzoategui-vs-deportivo-tachira-luc-0530-ngay-01-08-2026/",
     "https://socolivell.tv/truc-tiep/cd-arabe-unido-vs-alianza-fc-pan-luc-0830-ngay-01-08-2026/",
+    "https://socolivell.tv/truc-tiep/comercial-sp-vs-uniao-sao-joao-luc-0200-ngay-02-08-2026/",
     "https://socolivell.tv/truc-tiep/concepcion-vs-audax-italiano-luc-0700-ngay-01-08-2026/",
     "https://socolivell.tv/truc-tiep/correcaminos-de-la-u-a-t-vs-tepatitlan-fc-luc-0800-ngay-01-08-2026/",
     "https://socolivell.tv/truc-tiep/diriangen-vs-unan-managua-luc-0700-ngay-01-08-2026/",
-    "https://socolivell.tv/truc-tiep/fernando-mora-vs-12-de-junio-vh-luc-0530-ngay-01-08-2026/",
     "https://socolivell.tv/truc-tiep/fortaleza-f-c-vs-deportivo-pereira-luc-0800-ngay-01-08-2026/",
     "https://socolivell.tv/truc-tiep/inter-miami-b-vs-chattanooga-luc-0600-ngay-01-08-2026/",
     "https://socolivell.tv/truc-tiep/island-bay-united-vs-fc-western-luc-0800-ngay-01-08-2026/",
+    "https://socolivell.tv/truc-tiep/labasa-fc-vs-ba-luc-0830-ngay-01-08-2026/",
     "https://socolivell.tv/truc-tiep/libertad-fc-vs-orense-sc-luc-0700-ngay-01-08-2026/",
+    "https://socolivell.tv/truc-tiep/los-angeles-fc-ii-vs-colorado-rapids-ii-luc-0900-ngay-01-08-2026/",
     "https://socolivell.tv/truc-tiep/m-zacatecas-vs-tlaxcala-fc-luc-0800-ngay-01-08-2026/",
     "https://socolivell.tv/truc-tiep/minnesota-utd-ii-vs-portland-timbers-r-luc-0700-ngay-01-08-2026/",
     "https://socolivell.tv/truc-tiep/new-york-city-vs-toronto-fc-luc-0630-ngay-01-08-2026/",
@@ -50,19 +52,504 @@
     "https://socolivell.tv/truc-tiep/nu-cruz-azul-vs-nu-atlas-luc-0800-ngay-01-08-2026/",
     "https://socolivell.tv/truc-tiep/nu-dominican-republic-vs-nu-costa-rica-luc-0600-ngay-01-08-2026/",
     "https://socolivell.tv/truc-tiep/nu-north-carolina-vs-nu-orlando-pride-luc-0700-ngay-01-08-2026/",
+    "https://socolivell.tv/truc-tiep/pacific-fc-vs-supra-du-quebec-luc-0900-ngay-01-08-2026/",
     "https://socolivell.tv/truc-tiep/platense-vs-real-espana-luc-0800-ngay-01-08-2026/",
     "https://socolivell.tv/truc-tiep/puebla-vs-club-guadalajara-luc-0800-ngay-01-08-2026/",
     "https://socolivell.tv/truc-tiep/real-tomayapo-vs-academia-del-balompie-boliviano-luc-0600-ngay-01-08-2026/",
     "https://socolivell.tv/truc-tiep/san-antonio-vs-indy-eleven-luc-0800-ngay-01-08-2026/",
-    "https://socolivell.tv/truc-tiep/san-luis-quillota-vs-rangers-talca-luc-0500-ngay-01-08-2026/",
     "https://socolivell.tv/truc-tiep/san-marcos-vs-municipal-iquique-luc-0730-ngay-01-08-2026/",
     "https://socolivell.tv/truc-tiep/sporting-kansas-r-vs-houston-dynamo-b-luc-0700-ngay-01-08-2026/",
     "https://socolivell.tv/truc-tiep/toronto-fc-ii-vs-columbus-crew-b-luc-0600-ngay-01-08-2026/",
     "https://socolivell.tv/truc-tiep/union-magdalena-vs-orsomarso-luc-0600-ngay-01-08-2026/",
-    "https://socolivell.tv/truc-tiep/velo-clube-u20-vs-paulinense-youth-luc-0500-ngay-01-08-2026/"
+    "https://socolivell.tv/truc-tiep/ventura-county-fc-vs-north-texas-sc-luc-0900-ngay-01-08-2026/"
   ],
   "pending_base_urls": [],
   "matches": [
+    {
+      "base_url": "https://socolivell.tv/truc-tiep/nomads-vs-nelson-suburbs-luc-0730-ngay-01-08-2026/",
+      "raw_title": "Nomads vs Nelson Suburbs",
+      "home_team": "Nomads",
+      "away_team": "Nelson Suburbs",
+      "home_logo": "https://imgts.sportpulseapiz.com/football/team/3glrw7hw7pyqdyj/image/small",
+      "away_logo": "https://imgts.sportpulseapiz.com/football/team/pxwrxlh1yn9ryk0/image/small",
+      "time_text": "07:30",
+      "date_text": "01/08",
+      "status": "Hiệp 1",
+      "card_text": "NEW ZEALAND SOUTH PREMIER LEAGUE Hiệp 1: 2' 07:30 - 01.08 Nomads 0 : 0 Nelson Suburbs HT 0 - 0 0 - 0 0 - 0 0.88 -0.5 0.93 0.93 3.5/4 0.78",
+      "rooms": [
+        {
+          "url": "https://socolivell.tv/truc-tiep/nomads-vs-nelson-suburbs-luc-0730-ngay-01-08-2026/",
+          "blv": "",
+          "blv_id": ""
+        }
+      ],
+      "streams": [
+        {
+          "url": "https://live1.streambylivepulse.com/live/channel21.flv?wsSecret=5b72d69599a5e8cad231418806c725a3&wsABSTime=1785580289",
+          "queue_room_key": "__base__",
+          "room_url": "https://socolivell.tv/truc-tiep/nomads-vs-nelson-suburbs-luc-0730-ngay-01-08-2026/",
+          "blv": "Nguồn phụ 1",
+          "blv_id": "",
+          "source_id": "",
+          "source_provenance": [
+            "cdp/request",
+            "cdp/response",
+            "harvest-final",
+            "harvest-round-1",
+            "harvest-round-2",
+            "harvest-round-3",
+            "harvest-round-4",
+            "harvest-round-5",
+            "harvest-round-6",
+            "harvest-round-7",
+            "harvest-round-8",
+            "harvest-round-9",
+            "request/fetch",
+            "response/403"
+          ],
+          "playback_referer": "",
+          "playback_origin": "",
+          "playback_user_agent": "",
+          "api_player_endpoint": "",
+          "api_source_mode": "",
+          "source_confidence": "network",
+          "mapping_mode": "stream-source-id",
+          "discovered_from_room_url": "https://socolivell.tv/truc-tiep/nomads-vs-nelson-suburbs-luc-0730-ngay-01-08-2026/",
+          "discovered_from_blv": "URL tổng",
+          "discovered_at": "2026-08-01T05:31:36.661701+07:00",
+          "valid_until": "",
+          "is_expired": false
+        }
+      ],
+      "room_results": [
+        {
+          "url": "https://socolivell.tv/truc-tiep/nomads-vs-nelson-suburbs-luc-0730-ngay-01-08-2026/",
+          "blv": "",
+          "blv_id": "",
+          "streams": [
+            "https://live1.streambylivepulse.com/live/channel21.flv?wsSecret=5b72d69599a5e8cad231418806c725a3&wsABSTime=1785580289"
+          ],
+          "stream_sources": {
+            "https://live1.streambylivepulse.com/live/channel21.flv?wsSecret=5b72d69599a5e8cad231418806c725a3&wsABSTime=1785580289": [
+              "cdp/request",
+              "cdp/response",
+              "harvest-final",
+              "harvest-round-1",
+              "harvest-round-2",
+              "harvest-round-3",
+              "harvest-round-4",
+              "harvest-round-5",
+              "harvest-round-6",
+              "harvest-round-7",
+              "harvest-round-8",
+              "harvest-round-9",
+              "request/fetch",
+              "response/403"
+            ]
+          },
+          "stream_headers": {},
+          "stream_first_seen": [
+            "https://live1.streambylivepulse.com/live/channel21.flv?wsSecret=5b72d69599a5e8cad231418806c725a3&wsABSTime=1785580289"
+          ],
+          "discovered_blv_ids": [],
+          "diagnostics": {
+            "url": "https://socolivell.tv/truc-tiep/nomads-vs-nelson-suburbs-luc-0730-ngay-01-08-2026/",
+            "title": "Trực tiếp Nomads vs Nelson Suburbs full lúc 07:30, ngày 01/08",
+            "h1": "Xem trực tiếp trận đấu Nomads vs Nelson Suburbs full lúc 07:30, ngày 01/08/2026",
+            "ready_state": "complete",
+            "visibility_state": "visible",
+            "hidden": false,
+            "video_count": 0,
+            "iframe_count": 5,
+            "body_sample": "WC 2026 Lịch Thi Đấu Xem Lại Video Highlight Tỷ Lệ Kèo BXH KQBD Tips Tin Tức Livescore Tuyển Dụng Top Nhà Cái Cược 8xbet WC 2026 Lịch Thi Đấu Xem Lại Video Highlight Tỷ Lệ Kèo BXH KQBD Tips Tin Tức Livescore Tuyển Dụng Top nhà cái Xem trực tiếp trận đấu Nomads vs Nelson Suburbs full lúc 07:30, ngày 01/08/2026 Phát sóng link trực tuyến Nomads vs Nelson Suburbs hôm nay tại giải đấu New Zealand South Premier League _ _ _ _ _ _ Nomads Nelson Suburbs Theo bạn thì trận này tài hay xỉu? Tài 0% Xỉu 0% Theo bạn thì trận này đội nào sẽ thắng? Chủ nhà 0% Hòa 0% Đội Khách 0% Anh Em Muốn Tham Gia Đặt Cược Thì Click Vào Quảng Cáo Của 8XBET Để Đăng Ký Đặt Cược Tất Cả Các Trận Đấu Trên Toàn Thế Giới. Nếu anh em gặp tình trạng không vào được web, hãy cài VPN 1.1.1.1 để truy cập ổn định hơn nhé . Châu Á Châu Âu Tài xỉu Phạt góc Chọn nhà cái HIỆP 1 FT Châu Á HIỆP 1 FT Châu Á - - - 0.85 -0.5 0.95 Châu Âu HIỆP 1 FT Châu Âu - - - 3.00 4.10 1.90 Tài xỉu HIỆP 1 FT Tài xỉu - - - 0.95 3.5/4 0.85 SỚM FT Phạt góc HIỆP 1 FT Phạt góc - - - - - - Trực tiếp Mô phỏng CHIA SẺ Phát sóng trận đấu Nomads vs Nelson Suburbs full HD lúc 07:30, ngày 01/08/2026 New Zealand South Premier League HD 1 CHIA SẺ Thông số Diễn bi",
+            "harvest_rounds": 9,
+            "harvest_window_seconds": 7.02,
+            "main_status": 200,
+            "harvested_stream_count": 1,
+            "harvested_blv_ids": [],
+            "scan_mode": "chromium-fallback",
+            "elapsed_seconds": 8.43
+          },
+          "api_probe": {
+            "enabled": true,
+            "room_status": 200,
+            "active_index": 0,
+            "sources_found": 0,
+            "sources_tried": 0,
+            "valid_stream_count": 0,
+            "source_results": [],
+            "fallback_reason": "list_stream_not_found",
+            "elapsed_seconds": 0.203,
+            "room_content_type": "text/html",
+            "room_elapsed_seconds": 0.197,
+            "room_error": ""
+          },
+          "http_probe": {
+            "api_first": {
+              "enabled": true,
+              "room_status": 200,
+              "active_index": 0,
+              "sources_found": 0,
+              "sources_tried": 0,
+              "valid_stream_count": 0,
+              "source_results": [],
+              "fallback_reason": "list_stream_not_found",
+              "elapsed_seconds": 0.203,
+              "room_content_type": "text/html",
+              "room_elapsed_seconds": 0.197,
+              "room_error": ""
+            },
+            "legacy_http": {
+              "enabled": false,
+              "status": null,
+              "elapsed_seconds": 0.0,
+              "error": ""
+            }
+          },
+          "errors": [
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED"
+          ],
+          "failed_requests": [
+            "stylesheet https://fonts.googleapis.com/css2?family=Bangers&family=Oswald:wght@400;500;700&family=Raleway:wght@400;500;700&family=Roboto+Condensed:wght@300;400;700&display=swap | net::ERR_FAILED",
+            "stylesheet https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0 | net::ERR_FAILED",
+            "stylesheet https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css | net::ERR_FAILED",
+            "stylesheet https://socolivell.tv/wp-content/plugins/widget-options/assets/css/widget-options.css?ver=4.0.6.1 | net::ERR_FAILED",
+            "stylesheet https://socolivell.tv/wp-content/plugins/wp-pagenavi/pagenavi-css.css?ver=2.70 | net::ERR_FAILED",
+            "stylesheet https://socolivell.tv/wp-content/themes/bongda/dist/styles/bootstrap.min.css?ver=1745376853 | net::ERR_FAILED",
+            "stylesheet https://socolivell.tv/wp-content/themes/bongda/dist/styles/main.css?ver=1781184173 | net::ERR_FAILED",
+            "stylesheet https://socolivell.tv/wp-content/themes/bongda/dist/styles/pages/single-live.css?ver=1784627923 | net::ERR_FAILED",
+            "image https://socolivell.tv/wp-content/themes/bongda/dist/images/logo-socolive-tv-official-v2.png | net::ERR_FAILED",
+            "image https://socolivell.tv/wp-content/themes/bongda/dist/images/wc-2026/menu-wc.svg | net::ERR_FAILED",
+            "image https://socolivell.tv/wp-content/themes/bongda/dist/images/closemenu.png | net::ERR_FAILED",
+            "image https://imgts.sportpulseapiz.com/football/team/3glrw7hw7pyqdyj/image/small | net::ERR_FAILED",
+            "stylesheet https://socolivell.tv/wp-content/plugins/api-sport/public/css/match_detail.css?id=0671c88cfbad4335394b897262a0d662 | net::ERR_FAILED",
+            "image https://imgts.sportpulseapiz.com/football/team/pxwrxlh1yn9ryk0/image/small | net::ERR_FAILED",
+            "image https://socolivell.tv/wp-content/themes/bongda/dist/images/company/21-1.png | net::ERR_FAILED"
+          ],
+          "http_errors": [
+            "403 https://live1.streambylivepulse.com/live/channel21.flv?wsSecret=5b72d69599a5e8cad231418806c725a3&wsABSTime=1785580289",
+            "403 https://live1.streambylivepulse.com/live/channel21.flv?wsSecret=5b72d69599a5e8cad231418806c725a3&wsABSTime=1785580289",
+            "403 https://live1.streambylivepulse.com/live/channel21.flv?wsSecret=5b72d69599a5e8cad231418806c725a3&wsABSTime=1785580289",
+            "403 https://live1.streambylivepulse.com/live/channel21.flv?wsSecret=5b72d69599a5e8cad231418806c725a3&wsABSTime=1785580289",
+            "403 https://live1.streambylivepulse.com/live/channel21.flv?wsSecret=5b72d69599a5e8cad231418806c725a3&wsABSTime=1785580289",
+            "403 https://live1.streambylivepulse.com/live/channel21.flv?wsSecret=5b72d69599a5e8cad231418806c725a3&wsABSTime=1785580289"
+          ]
+        }
+      ],
+      "attempted_room_ids": [],
+      "coverage": {
+        "found_streams": 1,
+        "found_blv_ids": [],
+        "goal": 2,
+        "source_goal_reached": false,
+        "room_queue_complete": true,
+        "complete": true,
+        "max_streams_per_blv": 2,
+        "total_explicit_blv_rooms": 0,
+        "pending_room_keys": [],
+        "room_progress": {
+          "__base__": {
+            "key": "__base__",
+            "url": "https://socolivell.tv/truc-tiep/nomads-vs-nelson-suburbs-luc-0730-ngay-01-08-2026/",
+            "blv": "",
+            "blv_id": "",
+            "status": "success",
+            "attempts": 1,
+            "attempts_total": 1,
+            "ever_attempted": true,
+            "valid_stream_ever_found": true,
+            "needs_token_refresh": false,
+            "completion_reason": "valid_stream",
+            "rate_limit_hits": 0,
+            "last_http_status": 200,
+            "last_stream_count": 1,
+            "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
+          }
+        }
+      },
+      "errors": [],
+      "match_name": "Nomads vs Nelson Suburbs",
+      "scheduled_at": "2026-08-01T07:30:00+07:00",
+      "room_progress": {
+        "__base__": {
+          "key": "__base__",
+          "url": "https://socolivell.tv/truc-tiep/nomads-vs-nelson-suburbs-luc-0730-ngay-01-08-2026/",
+          "blv": "",
+          "blv_id": "",
+          "status": "success",
+          "attempts": 1,
+          "attempts_total": 1,
+          "ever_attempted": true,
+          "valid_stream_ever_found": true,
+          "needs_token_refresh": false,
+          "completion_reason": "valid_stream",
+          "rate_limit_hits": 0,
+          "last_http_status": 200,
+          "last_stream_count": 1,
+          "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
+        }
+      }
+    },
+    {
+      "base_url": "https://socolivell.tv/truc-tiep/san-marcos-vs-municipal-iquique-luc-0730-ngay-01-08-2026/",
+      "raw_title": "San Marcos vs Municipal Iquique",
+      "home_team": "San Marcos",
+      "away_team": "Municipal Iquique",
+      "home_logo": "https://imgts.sportpulseapiz.com/football/team/k82rekhvdj5repz/image/small",
+      "away_logo": "https://imgts.sportpulseapiz.com/football/team/vl7oqdehp5jr510/image/small",
+      "time_text": "07:30",
+      "date_text": "01/08",
+      "status": "Đang diễn ra",
+      "card_text": "HẠNG 2 CHILE Đang diễn ra 07:30 - 01.08 San Marcos Municipal Iquique 0 - 0 0 - 0 4 - 0 0.80 0/0.5 1.00 0.98 2.5 0.83",
+      "rooms": [
+        {
+          "url": "https://socolivell.tv/truc-tiep/san-marcos-vs-municipal-iquique-luc-0730-ngay-01-08-2026/",
+          "blv": "",
+          "blv_id": ""
+        }
+      ],
+      "streams": [
+        {
+          "url": "https://live1.streambylivepulse.com/live/channel22.flv?wsSecret=5356e2db39f50473a34fae8de2b73426&wsABSTime=1785580279",
+          "queue_room_key": "__base__",
+          "room_url": "https://socolivell.tv/truc-tiep/san-marcos-vs-municipal-iquique-luc-0730-ngay-01-08-2026/",
+          "blv": "Nguồn phụ 1",
+          "blv_id": "",
+          "source_id": "",
+          "source_provenance": [
+            "cdp/request",
+            "cdp/response",
+            "harvest-final",
+            "harvest-round-1",
+            "harvest-round-2",
+            "harvest-round-3",
+            "harvest-round-4",
+            "harvest-round-5",
+            "harvest-round-6",
+            "harvest-round-7",
+            "harvest-round-8",
+            "request/fetch",
+            "response/403"
+          ],
+          "playback_referer": "",
+          "playback_origin": "",
+          "playback_user_agent": "",
+          "api_player_endpoint": "",
+          "api_source_mode": "",
+          "source_confidence": "network",
+          "mapping_mode": "stream-source-id",
+          "discovered_from_room_url": "https://socolivell.tv/truc-tiep/san-marcos-vs-municipal-iquique-luc-0730-ngay-01-08-2026/",
+          "discovered_from_blv": "URL tổng",
+          "discovered_at": "2026-08-01T05:31:26.210032+07:00",
+          "valid_until": "",
+          "is_expired": false
+        }
+      ],
+      "room_results": [
+        {
+          "url": "https://socolivell.tv/truc-tiep/san-marcos-vs-municipal-iquique-luc-0730-ngay-01-08-2026/",
+          "blv": "",
+          "blv_id": "",
+          "streams": [
+            "https://live1.streambylivepulse.com/live/channel22.flv?wsSecret=5356e2db39f50473a34fae8de2b73426&wsABSTime=1785580279"
+          ],
+          "stream_sources": {
+            "https://live1.streambylivepulse.com/live/channel22.flv?wsSecret=5356e2db39f50473a34fae8de2b73426&wsABSTime=1785580279": [
+              "cdp/request",
+              "cdp/response",
+              "harvest-final",
+              "harvest-round-1",
+              "harvest-round-2",
+              "harvest-round-3",
+              "harvest-round-4",
+              "harvest-round-5",
+              "harvest-round-6",
+              "harvest-round-7",
+              "harvest-round-8",
+              "request/fetch",
+              "response/403"
+            ]
+          },
+          "stream_headers": {},
+          "stream_first_seen": [
+            "https://live1.streambylivepulse.com/live/channel22.flv?wsSecret=5356e2db39f50473a34fae8de2b73426&wsABSTime=1785580279"
+          ],
+          "discovered_blv_ids": [],
+          "diagnostics": {
+            "url": "https://socolivell.tv/truc-tiep/san-marcos-vs-municipal-iquique-luc-0730-ngay-01-08-2026/",
+            "title": "Trực tiếp San Marcos vs Municipal Iquique full lúc 07:30, ngày 01/08",
+            "h1": "Xem trực tiếp trận đấu San Marcos vs Municipal Iquique full lúc 07:30, ngày 01/08/2026",
+            "ready_state": "complete",
+            "visibility_state": "visible",
+            "hidden": false,
+            "video_count": 0,
+            "iframe_count": 5,
+            "body_sample": "WC 2026 Lịch Thi Đấu Xem Lại Video Highlight Tỷ Lệ Kèo BXH KQBD Tips Tin Tức Livescore Tuyển Dụng Top Nhà Cái Cược 8xbet WC 2026 Lịch Thi Đấu Xem Lại Video Highlight Tỷ Lệ Kèo BXH KQBD Tips Tin Tức Livescore Tuyển Dụng Top nhà cái Xem trực tiếp trận đấu San Marcos vs Municipal Iquique full lúc 07:30, ngày 01/08/2026 Phát sóng link trực tuyến San Marcos vs Municipal Iquique hôm nay tại giải đấu Hạng 2 Chile _ _ _ _ _ _ San Marcos Municipal Iquique Theo bạn thì trận này tài hay xỉu? Tài 0% Xỉu 0% Theo bạn thì trận này đội nào sẽ thắng? Chủ nhà 0% Hòa 0% Đội Khách 0% Anh Em Muốn Tham Gia Đặt Cược Thì Click Vào Quảng Cáo Của 8XBET Để Đăng Ký Đặt Cược Tất Cả Các Trận Đấu Trên Toàn Thế Giới. Nếu anh em gặp tình trạng không vào được web, hãy cài VPN 1.1.1.1 để truy cập ổn định hơn nhé . Châu Á Châu Âu Tài xỉu Phạt góc Chọn nhà cái HIỆP 1 FT Châu Á HIỆP 1 FT Châu Á - - - 0.83 0/0.5 0.98 Châu Âu HIỆP 1 FT Châu Âu - - - 1.95 3.20 3.40 Tài xỉu HIỆP 1 FT Tài xỉu - - - 1.00 2.5 0.80 SỚM FT Phạt góc HIỆP 1 FT Phạt góc - - - - - - Trực tiếp Mô phỏng CHIA SẺ Phát sóng trận đấu San Marcos vs Municipal Iquique full HD lúc 07:30, ngày 01/08/2026 Hạng 2 Chile HD 1 CHIA SẺ Thông số Diễn biến Đội hình B",
+            "harvest_rounds": 8,
+            "harvest_window_seconds": 6.302,
+            "main_status": 200,
+            "harvested_stream_count": 1,
+            "harvested_blv_ids": [],
+            "scan_mode": "chromium-fallback",
+            "elapsed_seconds": 8.347
+          },
+          "api_probe": {
+            "enabled": true,
+            "room_status": 200,
+            "active_index": 0,
+            "sources_found": 0,
+            "sources_tried": 0,
+            "valid_stream_count": 0,
+            "source_results": [],
+            "fallback_reason": "list_stream_not_found",
+            "elapsed_seconds": 0.926,
+            "room_content_type": "text/html",
+            "room_elapsed_seconds": 0.92,
+            "room_error": ""
+          },
+          "http_probe": {
+            "api_first": {
+              "enabled": true,
+              "room_status": 200,
+              "active_index": 0,
+              "sources_found": 0,
+              "sources_tried": 0,
+              "valid_stream_count": 0,
+              "source_results": [],
+              "fallback_reason": "list_stream_not_found",
+              "elapsed_seconds": 0.926,
+              "room_content_type": "text/html",
+              "room_elapsed_seconds": 0.92,
+              "room_error": ""
+            },
+            "legacy_http": {
+              "enabled": false,
+              "status": null,
+              "elapsed_seconds": 0.0,
+              "error": ""
+            }
+          },
+          "errors": [
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED"
+          ],
+          "failed_requests": [
+            "stylesheet https://fonts.googleapis.com/css2?family=Bangers&family=Oswald:wght@400;500;700&family=Raleway:wght@400;500;700&family=Roboto+Condensed:wght@300;400;700&display=swap | net::ERR_FAILED",
+            "stylesheet https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0 | net::ERR_FAILED",
+            "stylesheet https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css | net::ERR_FAILED",
+            "stylesheet https://socolivell.tv/wp-content/plugins/widget-options/assets/css/widget-options.css?ver=4.0.6.1 | net::ERR_FAILED",
+            "stylesheet https://socolivell.tv/wp-content/plugins/wp-pagenavi/pagenavi-css.css?ver=2.70 | net::ERR_FAILED",
+            "stylesheet https://socolivell.tv/wp-content/themes/bongda/dist/styles/bootstrap.min.css?ver=1745376853 | net::ERR_FAILED",
+            "stylesheet https://socolivell.tv/wp-content/themes/bongda/dist/styles/main.css?ver=1781184173 | net::ERR_FAILED",
+            "stylesheet https://socolivell.tv/wp-content/themes/bongda/dist/styles/pages/single-live.css?ver=1784627923 | net::ERR_FAILED",
+            "image https://socolivell.tv/wp-content/themes/bongda/dist/images/logo-socolive-tv-official-v2.png | net::ERR_FAILED",
+            "image https://socolivell.tv/wp-content/themes/bongda/dist/images/wc-2026/menu-wc.svg | net::ERR_FAILED",
+            "image https://socolivell.tv/wp-content/themes/bongda/dist/images/closemenu.png | net::ERR_FAILED",
+            "image https://imgts.sportpulseapiz.com/football/team/k82rekhvdj5repz/image/small | net::ERR_FAILED",
+            "stylesheet https://socolivell.tv/wp-content/plugins/api-sport/public/css/match_detail.css?id=0671c88cfbad4335394b897262a0d662 | net::ERR_FAILED",
+            "image https://imgts.sportpulseapiz.com/football/team/vl7oqdehp5jr510/image/small | net::ERR_FAILED",
+            "image https://socolivell.tv/wp-content/themes/bongda/dist/images/company/21-1.png | net::ERR_FAILED"
+          ],
+          "http_errors": [
+            "403 https://live1.streambylivepulse.com/live/channel22.flv?wsSecret=5356e2db39f50473a34fae8de2b73426&wsABSTime=1785580279",
+            "403 https://live1.streambylivepulse.com/live/channel22.flv?wsSecret=5356e2db39f50473a34fae8de2b73426&wsABSTime=1785580279",
+            "403 https://live1.streambylivepulse.com/live/channel22.flv?wsSecret=5356e2db39f50473a34fae8de2b73426&wsABSTime=1785580279",
+            "403 https://live1.streambylivepulse.com/live/channel22.flv?wsSecret=5356e2db39f50473a34fae8de2b73426&wsABSTime=1785580279",
+            "403 https://live1.streambylivepulse.com/live/channel22.flv?wsSecret=5356e2db39f50473a34fae8de2b73426&wsABSTime=1785580279"
+          ]
+        }
+      ],
+      "attempted_room_ids": [],
+      "coverage": {
+        "found_streams": 1,
+        "found_blv_ids": [],
+        "goal": 2,
+        "source_goal_reached": false,
+        "room_queue_complete": true,
+        "complete": true,
+        "max_streams_per_blv": 2,
+        "total_explicit_blv_rooms": 0,
+        "pending_room_keys": [],
+        "room_progress": {
+          "__base__": {
+            "key": "__base__",
+            "url": "https://socolivell.tv/truc-tiep/san-marcos-vs-municipal-iquique-luc-0730-ngay-01-08-2026/",
+            "blv": "",
+            "blv_id": "",
+            "status": "success",
+            "attempts": 1,
+            "attempts_total": 1,
+            "ever_attempted": true,
+            "valid_stream_ever_found": true,
+            "needs_token_refresh": false,
+            "completion_reason": "valid_stream",
+            "rate_limit_hits": 0,
+            "last_http_status": 200,
+            "last_stream_count": 1,
+            "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
+          }
+        }
+      },
+      "errors": [],
+      "match_name": "San Marcos vs Municipal Iquique",
+      "scheduled_at": "2026-08-01T07:30:00+07:00",
+      "room_progress": {
+        "__base__": {
+          "key": "__base__",
+          "url": "https://socolivell.tv/truc-tiep/san-marcos-vs-municipal-iquique-luc-0730-ngay-01-08-2026/",
+          "blv": "",
+          "blv_id": "",
+          "status": "success",
+          "attempts": 1,
+          "attempts_total": 1,
+          "ever_attempted": true,
+          "valid_stream_ever_found": true,
+          "needs_token_refresh": false,
+          "completion_reason": "valid_stream",
+          "rate_limit_hits": 0,
+          "last_http_status": 200,
+          "last_stream_count": 1,
+          "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
+        }
+      }
+    },
     {
       "base_url": "https://socolivell.tv/truc-tiep/concepcion-vs-audax-italiano-luc-0700-ngay-01-08-2026/",
       "raw_title": "Concepcion vs Audax Italiano",
@@ -73,7 +560,7 @@
       "time_text": "07:00",
       "date_text": "01/08",
       "status": "Hiệp 1",
-      "card_text": "VĐQG CHILE Hiệp 1: 1' 07:00 - 01.08 Concepcion 0 : 0 Audax Italiano HT 0 - 0 0 - 0 0 - 0 0.88 0 0.93 0.85 2/2.5 0.95",
+      "card_text": "VĐQG CHILE Hiệp 1: 31' 07:00 - 01.08 Concepcion 0 : 1 Audax Italiano HT 0 - 1 1 - 0 0 - 0 1.03 0/0.5 0.78 0.80 2.5/3 1.00",
       "rooms": [
         {
           "url": "https://socolivell.tv/truc-tiep/concepcion-vs-audax-italiano-luc-0700-ngay-01-08-2026/",
@@ -314,7 +801,7 @@
       "time_text": "07:00",
       "date_text": "01/08",
       "status": "Hiệp 1",
-      "card_text": "VĐQG ECUADOR Hiệp 1: 2' 07:00 - 01.08 Libertad FC 0 : 0 Orense SC HT 0 - 0 0 - 0 0 - 0 1.05 0 0.75 0.93 2/2.5 0.88",
+      "card_text": "VĐQG ECUADOR Hiệp 1: 32' 07:00 - 01.08 Libertad FC 0 : 0 Orense SC HT 0 - 0 0 - 0 0 - 0 0.78 0 1.03 0.83 1/1.5 0.98",
       "rooms": [
         {
           "url": "https://socolivell.tv/truc-tiep/libertad-fc-vs-orense-sc-luc-0700-ngay-01-08-2026/",
@@ -556,8 +1043,8 @@
       "away_logo": "https://imgts.sportpulseapiz.com/football/team/l5ergph3d5zr8k0/image/small",
       "time_text": "07:00",
       "date_text": "01/08",
-      "status": "Đang diễn ra",
-      "card_text": "VĐQG NICARAGUA Đang diễn ra 07:00 - 01.08 Diriangen UNAN Managua 1 - 2 3 - 1 2 - 1 0.80 1/1.5 1.00 0.88 3 0.93",
+      "status": "Hiệp 1",
+      "card_text": "VĐQG NICARAGUA Hiệp 1: 30' 07:00 - 01.08 Diriangen 1 : 0 UNAN Managua HT 1 - 0 2 - 0 0 - 1 0.93 0.5/1 0.88 0.88 3 0.93",
       "rooms": [
         {
           "url": "https://socolivell.tv/truc-tiep/diriangen-vs-unan-managua-luc-0700-ngay-01-08-2026/",
@@ -800,8 +1287,8 @@
       "away_logo": "https://imgts.sportpulseapiz.com/football/team/4jwq2gh7o88m0ve/image/small",
       "time_text": "07:00",
       "date_text": "01/08",
-      "status": "Đang diễn ra",
-      "card_text": "MLS NEXT PRO Đang diễn ra 07:00 - 01.08 Sporting Kansas (R) Houston Dynamo B 0 - 0 1 - 3 1 - 1 0.95 -0.5 0.85 0.88 3 0.93",
+      "status": "Hiệp 1",
+      "card_text": "MLS NEXT PRO Hiệp 1: 28' 07:00 - 01.08 Sporting Kansas (R) 0 : 1 Houston Dynamo B HT 0 - 1 2 - 1 2 - 0 0.93 0 0.88 1.00 3.5 0.80",
       "rooms": [
         {
           "url": "https://socolivell.tv/truc-tiep/sporting-kansas-r-vs-houston-dynamo-b-luc-0700-ngay-01-08-2026/",
@@ -1044,8 +1531,8 @@
       "away_logo": "https://imgts.sportpulseapiz.com/football/team/x7lm7phogkgm2wd/image/small",
       "time_text": "07:00",
       "date_text": "01/08",
-      "status": "Đang diễn ra",
-      "card_text": "MLS NEXT PRO Đang diễn ra 07:00 - 01.08 Minnesota Utd II Portland Timbers (R) 2 - 1 1 - 1 2 - 3 1.00 0 0.80 0.95 3/3.5 0.85",
+      "status": "Hiệp 1",
+      "card_text": "MLS NEXT PRO Hiệp 1: 27' 07:00 - 01.08 Minnesota Utd II 0 : 0 Portland Timbers (R) HT 0 - 0 3 - 0 0 - 0 0.95 0/0.5 0.85 0.93 2/2.5 0.88",
       "rooms": [
         {
           "url": "https://socolivell.tv/truc-tiep/minnesota-utd-ii-vs-portland-timbers-r-luc-0700-ngay-01-08-2026/",
@@ -1288,8 +1775,8 @@
       "away_logo": "https://imgts.sportpulseapiz.com/football/team/ednm9wh924eryox/image/small",
       "time_text": "07:00",
       "date_text": "01/08",
-      "status": "Đang diễn ra",
-      "card_text": "NỮ USA Đang diễn ra 07:00 - 01.08 Nữ North Carolina Nữ Orlando Pride 1 - 0 0 - 1 1 - 1 0.95 0.5 0.85 0.83 2.5/3 0.98",
+      "status": "Hiệp 1",
+      "card_text": "NỮ USA Hiệp 1: 21' 07:10 - 01.08 Nữ North Carolina 1 : 0 Nữ Orlando Pride HT 1 - 0 0 - 1 0 - 1 0.88 0 0.93 0.85 3 0.95",
       "rooms": [
         {
           "url": "https://socolivell.tv/truc-tiep/nu-north-carolina-vs-nu-orlando-pride-luc-0700-ngay-01-08-2026/",
@@ -1532,7 +2019,7 @@
       "time_text": "06:30",
       "date_text": "01/08",
       "status": "Hiệp 1",
-      "card_text": "MLS_NHÀ NGHỀ MỸ Hiệp 1: 21' 06:40 - 01.08 New York City 1 : 0 Toronto FC HT 1 - 0 1 - 1 2 - 1 FILIP 1.00 0.5 0.80 0.80 3/3.5 1.00",
+      "card_text": "MLS_NHÀ NGHỀ MỸ Hiệp 1: 45+' 06:40 - 01.08 New York City 1 : 0 Toronto FC HT 1 - 0 1 - 1 2 - 1 FILIP 0.90 0/0.5 0.90 0.83 2.5 0.98",
       "rooms": [
         {
           "url": "https://socolivell.tv/truc-tiep/new-york-city-vs-toronto-fc-luc-0630-ngay-01-08-2026/",
@@ -1740,6 +2227,250 @@
           "key": "__base__",
           "url": "https://socolivell.tv/truc-tiep/new-york-city-vs-toronto-fc-luc-0630-ngay-01-08-2026/",
           "blv": "FILIP",
+          "blv_id": "",
+          "status": "success",
+          "attempts": 1,
+          "attempts_total": 1,
+          "ever_attempted": true,
+          "valid_stream_ever_found": true,
+          "needs_token_refresh": false,
+          "completion_reason": "valid_stream",
+          "rate_limit_hits": 0,
+          "last_http_status": 200,
+          "last_stream_count": 1,
+          "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
+        }
+      }
+    },
+    {
+      "base_url": "https://socolivell.tv/truc-tiep/inter-miami-b-vs-chattanooga-luc-0600-ngay-01-08-2026/",
+      "raw_title": "Inter Miami B vs Chattanooga",
+      "home_team": "Inter Miami B",
+      "away_team": "Chattanooga",
+      "home_logo": "https://imgts.sportpulseapiz.com/football/team/4wyrn4hvzgvq86p/image/small",
+      "away_logo": "https://imgts.sportpulseapiz.com/football/team/6ypq3nh5z76md7o/image/small",
+      "time_text": "06:00",
+      "date_text": "01/08",
+      "status": "Hiệp 2",
+      "card_text": "MLS NEXT PRO Hiệp 2: 70' 06:00 - 01.08 Inter Miami B 0 : 1 Chattanooga HT 0 - 1 2 - 5 0 - 1 0.73 0/0.5 1.08 0.73 1.5/2 1.08",
+      "rooms": [
+        {
+          "url": "https://socolivell.tv/truc-tiep/inter-miami-b-vs-chattanooga-luc-0600-ngay-01-08-2026/",
+          "blv": "",
+          "blv_id": ""
+        }
+      ],
+      "streams": [
+        {
+          "url": "https://live1.streambylivepulse.com/live/channel9.flv?wsSecret=85d745cd74c635de74f885d695b3aefb&wsABSTime=1785574969",
+          "queue_room_key": "__base__",
+          "room_url": "https://socolivell.tv/truc-tiep/inter-miami-b-vs-chattanooga-luc-0600-ngay-01-08-2026/",
+          "blv": "Nguồn phụ 1",
+          "blv_id": "",
+          "source_id": "",
+          "source_provenance": [
+            "cdp/request",
+            "cdp/response",
+            "harvest-final",
+            "harvest-round-1",
+            "harvest-round-2",
+            "harvest-round-3",
+            "harvest-round-4",
+            "harvest-round-5",
+            "harvest-round-6",
+            "harvest-round-7",
+            "harvest-round-8",
+            "harvest-round-9",
+            "request/fetch",
+            "response/403"
+          ],
+          "playback_referer": "",
+          "playback_origin": "",
+          "playback_user_agent": "",
+          "api_player_endpoint": "",
+          "api_source_mode": "",
+          "source_confidence": "network",
+          "mapping_mode": "stream-source-id",
+          "discovered_from_room_url": "https://socolivell.tv/truc-tiep/inter-miami-b-vs-chattanooga-luc-0600-ngay-01-08-2026/",
+          "discovered_from_blv": "URL tổng",
+          "discovered_at": "2026-08-01T04:02:56.666107+07:00",
+          "valid_until": "",
+          "is_expired": false
+        }
+      ],
+      "room_results": [
+        {
+          "url": "https://socolivell.tv/truc-tiep/inter-miami-b-vs-chattanooga-luc-0600-ngay-01-08-2026/",
+          "blv": "",
+          "blv_id": "",
+          "streams": [
+            "https://live1.streambylivepulse.com/live/channel9.flv?wsSecret=85d745cd74c635de74f885d695b3aefb&wsABSTime=1785574969"
+          ],
+          "stream_sources": {
+            "https://live1.streambylivepulse.com/live/channel9.flv?wsSecret=85d745cd74c635de74f885d695b3aefb&wsABSTime=1785574969": [
+              "cdp/request",
+              "cdp/response",
+              "harvest-final",
+              "harvest-round-1",
+              "harvest-round-2",
+              "harvest-round-3",
+              "harvest-round-4",
+              "harvest-round-5",
+              "harvest-round-6",
+              "harvest-round-7",
+              "harvest-round-8",
+              "harvest-round-9",
+              "request/fetch",
+              "response/403"
+            ]
+          },
+          "stream_headers": {},
+          "stream_first_seen": [
+            "https://live1.streambylivepulse.com/live/channel9.flv?wsSecret=85d745cd74c635de74f885d695b3aefb&wsABSTime=1785574969"
+          ],
+          "discovered_blv_ids": [],
+          "diagnostics": {
+            "url": "https://socolivell.tv/truc-tiep/inter-miami-b-vs-chattanooga-luc-0600-ngay-01-08-2026/",
+            "title": "Trực tiếp Inter Miami B vs Chattanooga full lúc 06:00, ngày 01/08",
+            "h1": "Xem trực tiếp trận đấu Inter Miami B vs Chattanooga full lúc 06:00, ngày 01/08/2026",
+            "ready_state": "complete",
+            "visibility_state": "visible",
+            "hidden": false,
+            "video_count": 0,
+            "iframe_count": 5,
+            "body_sample": "WC 2026 Lịch Thi Đấu Xem Lại Video Highlight Tỷ Lệ Kèo BXH KQBD Tips Tin Tức Livescore Tuyển Dụng Top Nhà Cái Cược 8xbet WC 2026 Lịch Thi Đấu Xem Lại Video Highlight Tỷ Lệ Kèo BXH KQBD Tips Tin Tức Livescore Tuyển Dụng Top nhà cái Xem trực tiếp trận đấu Inter Miami B vs Chattanooga full lúc 06:00, ngày 01/08/2026 Phát sóng link trực tuyến Inter Miami B vs Chattanooga hôm nay tại giải đấu MLS Next Pro _ _ _ _ _ _ Inter Miami B Chattanooga Theo bạn thì trận này tài hay xỉu? Tài 0% Xỉu 0% Theo bạn thì trận này đội nào sẽ thắng? Chủ nhà 0% Hòa 0% Đội Khách 0% Anh Em Muốn Tham Gia Đặt Cược Thì Click Vào Quảng Cáo Của 8XBET Để Đăng Ký Đặt Cược Tất Cả Các Trận Đấu Trên Toàn Thế Giới. Nếu anh em gặp tình trạng không vào được web, hãy cài VPN 1.1.1.1 để truy cập ổn định hơn nhé . Châu Á Châu Âu Tài xỉu Phạt góc Chọn nhà cái HIỆP 1 FT Châu Á HIỆP 1 FT Châu Á - - - 0.85 -1.5 0.95 Châu Âu HIỆP 1 FT Châu Âu - - - 7.00 5.00 1.30 Tài xỉu HIỆP 1 FT Tài xỉu - - - 0.98 3.5 0.83 SỚM FT Phạt góc HIỆP 1 FT Phạt góc - - - 0.975 9.5 0.825 Trực tiếp Mô phỏng CHIA SẺ Phát sóng trận đấu Inter Miami B vs Chattanooga full HD lúc 06:00, ngày 01/08/2026 MLS Next Pro HD 1 CHIA SẺ Thông số Diễn biến Đội hình BXH ",
+            "harvest_rounds": 9,
+            "harvest_window_seconds": 6.98,
+            "main_status": 200,
+            "harvested_stream_count": 1,
+            "harvested_blv_ids": [],
+            "scan_mode": "chromium-fallback",
+            "elapsed_seconds": 8.163
+          },
+          "api_probe": {
+            "enabled": true,
+            "room_status": 200,
+            "active_index": 0,
+            "sources_found": 0,
+            "sources_tried": 0,
+            "valid_stream_count": 0,
+            "source_results": [],
+            "fallback_reason": "list_stream_not_found",
+            "elapsed_seconds": 0.049,
+            "room_content_type": "text/html",
+            "room_elapsed_seconds": 0.043,
+            "room_error": ""
+          },
+          "http_probe": {
+            "api_first": {
+              "enabled": true,
+              "room_status": 200,
+              "active_index": 0,
+              "sources_found": 0,
+              "sources_tried": 0,
+              "valid_stream_count": 0,
+              "source_results": [],
+              "fallback_reason": "list_stream_not_found",
+              "elapsed_seconds": 0.049,
+              "room_content_type": "text/html",
+              "room_elapsed_seconds": 0.043,
+              "room_error": ""
+            },
+            "legacy_http": {
+              "enabled": false,
+              "status": null,
+              "elapsed_seconds": 0.0,
+              "error": ""
+            }
+          },
+          "errors": [
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED"
+          ],
+          "failed_requests": [
+            "stylesheet https://fonts.googleapis.com/css2?family=Bangers&family=Oswald:wght@400;500;700&family=Raleway:wght@400;500;700&family=Roboto+Condensed:wght@300;400;700&display=swap | net::ERR_FAILED",
+            "stylesheet https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0 | net::ERR_FAILED",
+            "stylesheet https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css | net::ERR_FAILED",
+            "stylesheet https://socolivell.tv/wp-content/plugins/widget-options/assets/css/widget-options.css?ver=4.0.6.1 | net::ERR_FAILED",
+            "stylesheet https://socolivell.tv/wp-content/plugins/wp-pagenavi/pagenavi-css.css?ver=2.70 | net::ERR_FAILED",
+            "stylesheet https://socolivell.tv/wp-content/themes/bongda/dist/styles/bootstrap.min.css?ver=1745376853 | net::ERR_FAILED",
+            "stylesheet https://socolivell.tv/wp-content/themes/bongda/dist/styles/main.css?ver=1781184173 | net::ERR_FAILED",
+            "stylesheet https://socolivell.tv/wp-content/themes/bongda/dist/styles/pages/single-live.css?ver=1784627923 | net::ERR_FAILED",
+            "image https://socolivell.tv/wp-content/themes/bongda/dist/images/logo-socolive-tv-official-v2.png | net::ERR_FAILED",
+            "image https://socolivell.tv/wp-content/themes/bongda/dist/images/wc-2026/menu-wc.svg | net::ERR_FAILED",
+            "image https://socolivell.tv/wp-content/themes/bongda/dist/images/closemenu.png | net::ERR_FAILED",
+            "image https://imgts.sportpulseapiz.com/football/team/4wyrn4hvzgvq86p/image/small | net::ERR_FAILED",
+            "stylesheet https://socolivell.tv/wp-content/plugins/api-sport/public/css/match_detail.css?id=0671c88cfbad4335394b897262a0d662 | net::ERR_FAILED",
+            "image https://imgts.sportpulseapiz.com/football/team/6ypq3nh5z76md7o/image/small | net::ERR_FAILED",
+            "image https://socolivell.tv/wp-content/themes/bongda/dist/images/company/21-1.png | net::ERR_FAILED"
+          ],
+          "http_errors": [
+            "403 https://live1.streambylivepulse.com/live/channel9.flv?wsSecret=85d745cd74c635de74f885d695b3aefb&wsABSTime=1785574969",
+            "403 https://live1.streambylivepulse.com/live/channel9.flv?wsSecret=85d745cd74c635de74f885d695b3aefb&wsABSTime=1785574969",
+            "403 https://live1.streambylivepulse.com/live/channel9.flv?wsSecret=85d745cd74c635de74f885d695b3aefb&wsABSTime=1785574969",
+            "403 https://live1.streambylivepulse.com/live/channel9.flv?wsSecret=85d745cd74c635de74f885d695b3aefb&wsABSTime=1785574969",
+            "403 https://live1.streambylivepulse.com/live/channel9.flv?wsSecret=85d745cd74c635de74f885d695b3aefb&wsABSTime=1785574969",
+            "403 https://live1.streambylivepulse.com/live/channel9.flv?wsSecret=85d745cd74c635de74f885d695b3aefb&wsABSTime=1785574969"
+          ]
+        }
+      ],
+      "attempted_room_ids": [],
+      "coverage": {
+        "found_streams": 1,
+        "found_blv_ids": [],
+        "goal": 2,
+        "source_goal_reached": false,
+        "room_queue_complete": true,
+        "complete": true,
+        "max_streams_per_blv": 2,
+        "total_explicit_blv_rooms": 0,
+        "pending_room_keys": [],
+        "room_progress": {
+          "__base__": {
+            "key": "__base__",
+            "url": "https://socolivell.tv/truc-tiep/inter-miami-b-vs-chattanooga-luc-0600-ngay-01-08-2026/",
+            "blv": "",
+            "blv_id": "",
+            "status": "success",
+            "attempts": 1,
+            "attempts_total": 1,
+            "ever_attempted": true,
+            "valid_stream_ever_found": true,
+            "needs_token_refresh": false,
+            "completion_reason": "valid_stream",
+            "rate_limit_hits": 0,
+            "last_http_status": 200,
+            "last_stream_count": 1,
+            "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
+          }
+        }
+      },
+      "errors": [],
+      "match_name": "Inter Miami B vs Chattanooga",
+      "scheduled_at": "2026-08-01T06:00:00+07:00",
+      "room_progress": {
+        "__base__": {
+          "key": "__base__",
+          "url": "https://socolivell.tv/truc-tiep/inter-miami-b-vs-chattanooga-luc-0600-ngay-01-08-2026/",
+          "blv": "",
           "blv_id": "",
           "status": "success",
           "attempts": 1,
@@ -2000,979 +2731,6 @@
       }
     },
     {
-      "base_url": "https://socolivell.tv/truc-tiep/fernando-mora-vs-12-de-junio-vh-luc-0530-ngay-01-08-2026/",
-      "raw_title": "Fernando Mora vs 12 de Junio VH",
-      "home_team": "Fernando Mora",
-      "away_team": "12 de Junio VH",
-      "home_logo": "https://imgts.sportpulseapiz.com/football/team/1l4rjnh66g0m7vx/image/small",
-      "away_logo": "https://imgts.sportpulseapiz.com/football/team/pxwrxlhzkkyryk0/image/small",
-      "time_text": "05:30",
-      "date_text": "01/08",
-      "status": "Hiệp 2",
-      "card_text": "HẠNG 2 PARAGUAY Hiệp 2: 73' 05:30 - 01.08 Fernando Mora 1 : 1 12 de Junio VH HT 0 - 1 2 - 1 2 - 1 1.35 0 0.58 1.20 2.5 0.65",
-      "rooms": [
-        {
-          "url": "https://socolivell.tv/truc-tiep/fernando-mora-vs-12-de-junio-vh-luc-0530-ngay-01-08-2026/",
-          "blv": "",
-          "blv_id": ""
-        }
-      ],
-      "streams": [
-        {
-          "url": "https://live1.streambylivepulse.com/live/channel7.flv?wsSecret=ccbdf0028902ca321fae3a7c624a2a9d&wsABSTime=1785574908",
-          "queue_room_key": "__base__",
-          "room_url": "https://socolivell.tv/truc-tiep/fernando-mora-vs-12-de-junio-vh-luc-0530-ngay-01-08-2026/",
-          "blv": "Nguồn phụ 1",
-          "blv_id": "",
-          "source_id": "",
-          "source_provenance": [
-            "cdp/request",
-            "cdp/response",
-            "harvest-final",
-            "harvest-round-1",
-            "harvest-round-2",
-            "harvest-round-3",
-            "harvest-round-4",
-            "harvest-round-5",
-            "harvest-round-6",
-            "harvest-round-7",
-            "harvest-round-8",
-            "harvest-round-9",
-            "request/fetch",
-            "response/403"
-          ],
-          "playback_referer": "",
-          "playback_origin": "",
-          "playback_user_agent": "",
-          "api_player_endpoint": "",
-          "api_source_mode": "",
-          "source_confidence": "network",
-          "mapping_mode": "stream-source-id",
-          "discovered_from_room_url": "https://socolivell.tv/truc-tiep/fernando-mora-vs-12-de-junio-vh-luc-0530-ngay-01-08-2026/",
-          "discovered_from_blv": "URL tổng",
-          "discovered_at": "2026-08-01T04:01:55.681261+07:00",
-          "valid_until": "",
-          "is_expired": false
-        }
-      ],
-      "room_results": [
-        {
-          "url": "https://socolivell.tv/truc-tiep/fernando-mora-vs-12-de-junio-vh-luc-0530-ngay-01-08-2026/",
-          "blv": "",
-          "blv_id": "",
-          "streams": [
-            "https://live1.streambylivepulse.com/live/channel7.flv?wsSecret=ccbdf0028902ca321fae3a7c624a2a9d&wsABSTime=1785574908"
-          ],
-          "stream_sources": {
-            "https://live1.streambylivepulse.com/live/channel7.flv?wsSecret=ccbdf0028902ca321fae3a7c624a2a9d&wsABSTime=1785574908": [
-              "cdp/request",
-              "cdp/response",
-              "harvest-final",
-              "harvest-round-1",
-              "harvest-round-2",
-              "harvest-round-3",
-              "harvest-round-4",
-              "harvest-round-5",
-              "harvest-round-6",
-              "harvest-round-7",
-              "harvest-round-8",
-              "harvest-round-9",
-              "request/fetch",
-              "response/403"
-            ]
-          },
-          "stream_headers": {},
-          "stream_first_seen": [
-            "https://live1.streambylivepulse.com/live/channel7.flv?wsSecret=ccbdf0028902ca321fae3a7c624a2a9d&wsABSTime=1785574908"
-          ],
-          "discovered_blv_ids": [],
-          "diagnostics": {
-            "url": "https://socolivell.tv/truc-tiep/fernando-mora-vs-12-de-junio-vh-luc-0530-ngay-01-08-2026/",
-            "title": "Trực tiếp Fernando Mora vs 12 de Junio VH full lúc 05:30, ngày 01/08",
-            "h1": "Xem trực tiếp trận đấu Fernando Mora vs 12 de Junio VH full lúc 05:30, ngày 01/08/2026",
-            "ready_state": "complete",
-            "visibility_state": "visible",
-            "hidden": false,
-            "video_count": 0,
-            "iframe_count": 5,
-            "body_sample": "WC 2026 Lịch Thi Đấu Xem Lại Video Highlight Tỷ Lệ Kèo BXH KQBD Tips Tin Tức Livescore Tuyển Dụng Top Nhà Cái Cược 8xbet WC 2026 Lịch Thi Đấu Xem Lại Video Highlight Tỷ Lệ Kèo BXH KQBD Tips Tin Tức Livescore Tuyển Dụng Top nhà cái Xem trực tiếp trận đấu Fernando Mora vs 12 de Junio VH full lúc 05:30, ngày 01/08/2026 Phát sóng link trực tuyến Fernando Mora vs 12 de Junio VH hôm nay tại giải đấu Hạng 2 Paraguay _ _ _ _ _ _ Fernando Mora 12 de Junio VH Theo bạn thì trận này tài hay xỉu? Tài 0% Xỉu 0% Theo bạn thì trận này đội nào sẽ thắng? Chủ nhà 0% Hòa 0% Đội Khách 0% Anh Em Muốn Tham Gia Đặt Cược Thì Click Vào Quảng Cáo Của 8XBET Để Đăng Ký Đặt Cược Tất Cả Các Trận Đấu Trên Toàn Thế Giới. Nếu anh em gặp tình trạng không vào được web, hãy cài VPN 1.1.1.1 để truy cập ổn định hơn nhé . Châu Á Châu Âu Tài xỉu Phạt góc Chọn nhà cái HIỆP 1 FT Châu Á HIỆP 1 FT Châu Á - - - 0.85 0/0.5 0.95 Châu Âu HIỆP 1 FT Châu Âu - - - 3.25 2.88 2.20 Tài xỉu HIỆP 1 FT Tài xỉu - - - 0.78 1.5/2 1.03 SỚM FT Phạt góc HIỆP 1 FT Phạt góc - - - - - - Trực tiếp Mô phỏng CHIA SẺ Phát sóng trận đấu Fernando Mora vs 12 de Junio VH full HD lúc 05:30, ngày 01/08/2026 Hạng 2 Paraguay HD 1 CHIA SẺ Thông số Diễn biến Độ",
-            "harvest_rounds": 9,
-            "harvest_window_seconds": 6.995,
-            "main_status": 200,
-            "harvested_stream_count": 1,
-            "harvested_blv_ids": [],
-            "scan_mode": "chromium-fallback",
-            "elapsed_seconds": 7.962
-          },
-          "api_probe": {
-            "enabled": true,
-            "room_status": 200,
-            "active_index": 0,
-            "sources_found": 0,
-            "sources_tried": 0,
-            "valid_stream_count": 0,
-            "source_results": [],
-            "fallback_reason": "list_stream_not_found",
-            "elapsed_seconds": 0.036,
-            "room_content_type": "text/html",
-            "room_elapsed_seconds": 0.031,
-            "room_error": ""
-          },
-          "http_probe": {
-            "api_first": {
-              "enabled": true,
-              "room_status": 200,
-              "active_index": 0,
-              "sources_found": 0,
-              "sources_tried": 0,
-              "valid_stream_count": 0,
-              "source_results": [],
-              "fallback_reason": "list_stream_not_found",
-              "elapsed_seconds": 0.036,
-              "room_content_type": "text/html",
-              "room_elapsed_seconds": 0.031,
-              "room_error": ""
-            },
-            "legacy_http": {
-              "enabled": false,
-              "status": null,
-              "elapsed_seconds": 0.0,
-              "error": ""
-            }
-          },
-          "errors": [
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED"
-          ],
-          "failed_requests": [
-            "stylesheet https://fonts.googleapis.com/css2?family=Bangers&family=Oswald:wght@400;500;700&family=Raleway:wght@400;500;700&family=Roboto+Condensed:wght@300;400;700&display=swap | net::ERR_FAILED",
-            "stylesheet https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0 | net::ERR_FAILED",
-            "stylesheet https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css | net::ERR_FAILED",
-            "stylesheet https://socolivell.tv/wp-content/plugins/widget-options/assets/css/widget-options.css?ver=4.0.6.1 | net::ERR_FAILED",
-            "stylesheet https://socolivell.tv/wp-content/plugins/wp-pagenavi/pagenavi-css.css?ver=2.70 | net::ERR_FAILED",
-            "stylesheet https://socolivell.tv/wp-content/themes/bongda/dist/styles/bootstrap.min.css?ver=1745376853 | net::ERR_FAILED",
-            "stylesheet https://socolivell.tv/wp-content/themes/bongda/dist/styles/main.css?ver=1781184173 | net::ERR_FAILED",
-            "stylesheet https://socolivell.tv/wp-content/themes/bongda/dist/styles/pages/single-live.css?ver=1784627923 | net::ERR_FAILED",
-            "image https://socolivell.tv/wp-content/themes/bongda/dist/images/logo-socolive-tv-official-v2.png | net::ERR_FAILED",
-            "image https://socolivell.tv/wp-content/themes/bongda/dist/images/wc-2026/menu-wc.svg | net::ERR_FAILED",
-            "image https://socolivell.tv/wp-content/themes/bongda/dist/images/closemenu.png | net::ERR_FAILED",
-            "image https://imgts.sportpulseapiz.com/football/team/1l4rjnh66g0m7vx/image/small | net::ERR_FAILED",
-            "stylesheet https://socolivell.tv/wp-content/plugins/api-sport/public/css/match_detail.css?id=0671c88cfbad4335394b897262a0d662 | net::ERR_FAILED",
-            "image https://imgts.sportpulseapiz.com/football/team/pxwrxlhzkkyryk0/image/small | net::ERR_FAILED",
-            "image https://socolivell.tv/wp-content/themes/bongda/dist/images/company/21-1.png | net::ERR_FAILED"
-          ],
-          "http_errors": [
-            "403 https://live1.streambylivepulse.com/live/channel7.flv?wsSecret=ccbdf0028902ca321fae3a7c624a2a9d&wsABSTime=1785574908",
-            "403 https://live1.streambylivepulse.com/live/channel7.flv?wsSecret=ccbdf0028902ca321fae3a7c624a2a9d&wsABSTime=1785574908",
-            "403 https://live1.streambylivepulse.com/live/channel7.flv?wsSecret=ccbdf0028902ca321fae3a7c624a2a9d&wsABSTime=1785574908",
-            "403 https://live1.streambylivepulse.com/live/channel7.flv?wsSecret=ccbdf0028902ca321fae3a7c624a2a9d&wsABSTime=1785574908",
-            "403 https://live1.streambylivepulse.com/live/channel7.flv?wsSecret=ccbdf0028902ca321fae3a7c624a2a9d&wsABSTime=1785574908",
-            "403 https://live1.streambylivepulse.com/live/channel7.flv?wsSecret=ccbdf0028902ca321fae3a7c624a2a9d&wsABSTime=1785574908"
-          ]
-        }
-      ],
-      "attempted_room_ids": [],
-      "coverage": {
-        "found_streams": 1,
-        "found_blv_ids": [],
-        "goal": 2,
-        "source_goal_reached": false,
-        "room_queue_complete": true,
-        "complete": true,
-        "max_streams_per_blv": 2,
-        "total_explicit_blv_rooms": 0,
-        "pending_room_keys": [],
-        "room_progress": {
-          "__base__": {
-            "key": "__base__",
-            "url": "https://socolivell.tv/truc-tiep/fernando-mora-vs-12-de-junio-vh-luc-0530-ngay-01-08-2026/",
-            "blv": "",
-            "blv_id": "",
-            "status": "success",
-            "attempts": 1,
-            "attempts_total": 1,
-            "ever_attempted": true,
-            "valid_stream_ever_found": true,
-            "needs_token_refresh": false,
-            "completion_reason": "valid_stream",
-            "rate_limit_hits": 0,
-            "last_http_status": 200,
-            "last_stream_count": 1,
-            "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
-          }
-        }
-      },
-      "errors": [],
-      "match_name": "Fernando Mora vs 12 de Junio VH",
-      "scheduled_at": "2026-08-01T05:30:00+07:00",
-      "room_progress": {
-        "__base__": {
-          "key": "__base__",
-          "url": "https://socolivell.tv/truc-tiep/fernando-mora-vs-12-de-junio-vh-luc-0530-ngay-01-08-2026/",
-          "blv": "",
-          "blv_id": "",
-          "status": "success",
-          "attempts": 1,
-          "attempts_total": 1,
-          "ever_attempted": true,
-          "valid_stream_ever_found": true,
-          "needs_token_refresh": false,
-          "completion_reason": "valid_stream",
-          "rate_limit_hits": 0,
-          "last_http_status": 200,
-          "last_stream_count": 1,
-          "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
-        }
-      }
-    },
-    {
-      "base_url": "https://socolivell.tv/truc-tiep/san-marcos-vs-municipal-iquique-luc-0730-ngay-01-08-2026/",
-      "raw_title": "San Marcos vs Municipal Iquique",
-      "home_team": "San Marcos",
-      "away_team": "Municipal Iquique",
-      "home_logo": "https://imgts.sportpulseapiz.com/football/team/k82rekhvdj5repz/image/small",
-      "away_logo": "https://imgts.sportpulseapiz.com/football/team/vl7oqdehp5jr510/image/small",
-      "time_text": "07:30",
-      "date_text": "01/08",
-      "status": "",
-      "card_text": "HẠNG 2 CHILE 07:30 - 01.08 San Marcos Municipal Iquique 0 - 0 0 - 0 4 - 0 0.88 0/0.5 0.93 1.00 2.5 0.80",
-      "rooms": [
-        {
-          "url": "https://socolivell.tv/truc-tiep/san-marcos-vs-municipal-iquique-luc-0730-ngay-01-08-2026/",
-          "blv": "",
-          "blv_id": ""
-        }
-      ],
-      "streams": [
-        {
-          "url": "https://live1.streambylivepulse.com/live/channel22.flv?wsSecret=5356e2db39f50473a34fae8de2b73426&wsABSTime=1785580279",
-          "queue_room_key": "__base__",
-          "room_url": "https://socolivell.tv/truc-tiep/san-marcos-vs-municipal-iquique-luc-0730-ngay-01-08-2026/",
-          "blv": "Nguồn phụ 1",
-          "blv_id": "",
-          "source_id": "",
-          "source_provenance": [
-            "cdp/request",
-            "cdp/response",
-            "harvest-final",
-            "harvest-round-1",
-            "harvest-round-2",
-            "harvest-round-3",
-            "harvest-round-4",
-            "harvest-round-5",
-            "harvest-round-6",
-            "harvest-round-7",
-            "harvest-round-8",
-            "request/fetch",
-            "response/403"
-          ],
-          "playback_referer": "",
-          "playback_origin": "",
-          "playback_user_agent": "",
-          "api_player_endpoint": "",
-          "api_source_mode": "",
-          "source_confidence": "network",
-          "mapping_mode": "stream-source-id",
-          "discovered_from_room_url": "https://socolivell.tv/truc-tiep/san-marcos-vs-municipal-iquique-luc-0730-ngay-01-08-2026/",
-          "discovered_from_blv": "URL tổng",
-          "discovered_at": "2026-08-01T05:31:26.210032+07:00",
-          "valid_until": "",
-          "is_expired": false
-        }
-      ],
-      "room_results": [
-        {
-          "url": "https://socolivell.tv/truc-tiep/san-marcos-vs-municipal-iquique-luc-0730-ngay-01-08-2026/",
-          "blv": "",
-          "blv_id": "",
-          "streams": [
-            "https://live1.streambylivepulse.com/live/channel22.flv?wsSecret=5356e2db39f50473a34fae8de2b73426&wsABSTime=1785580279"
-          ],
-          "stream_sources": {
-            "https://live1.streambylivepulse.com/live/channel22.flv?wsSecret=5356e2db39f50473a34fae8de2b73426&wsABSTime=1785580279": [
-              "cdp/request",
-              "cdp/response",
-              "harvest-final",
-              "harvest-round-1",
-              "harvest-round-2",
-              "harvest-round-3",
-              "harvest-round-4",
-              "harvest-round-5",
-              "harvest-round-6",
-              "harvest-round-7",
-              "harvest-round-8",
-              "request/fetch",
-              "response/403"
-            ]
-          },
-          "stream_headers": {},
-          "stream_first_seen": [
-            "https://live1.streambylivepulse.com/live/channel22.flv?wsSecret=5356e2db39f50473a34fae8de2b73426&wsABSTime=1785580279"
-          ],
-          "discovered_blv_ids": [],
-          "diagnostics": {
-            "url": "https://socolivell.tv/truc-tiep/san-marcos-vs-municipal-iquique-luc-0730-ngay-01-08-2026/",
-            "title": "Trực tiếp San Marcos vs Municipal Iquique full lúc 07:30, ngày 01/08",
-            "h1": "Xem trực tiếp trận đấu San Marcos vs Municipal Iquique full lúc 07:30, ngày 01/08/2026",
-            "ready_state": "complete",
-            "visibility_state": "visible",
-            "hidden": false,
-            "video_count": 0,
-            "iframe_count": 5,
-            "body_sample": "WC 2026 Lịch Thi Đấu Xem Lại Video Highlight Tỷ Lệ Kèo BXH KQBD Tips Tin Tức Livescore Tuyển Dụng Top Nhà Cái Cược 8xbet WC 2026 Lịch Thi Đấu Xem Lại Video Highlight Tỷ Lệ Kèo BXH KQBD Tips Tin Tức Livescore Tuyển Dụng Top nhà cái Xem trực tiếp trận đấu San Marcos vs Municipal Iquique full lúc 07:30, ngày 01/08/2026 Phát sóng link trực tuyến San Marcos vs Municipal Iquique hôm nay tại giải đấu Hạng 2 Chile _ _ _ _ _ _ San Marcos Municipal Iquique Theo bạn thì trận này tài hay xỉu? Tài 0% Xỉu 0% Theo bạn thì trận này đội nào sẽ thắng? Chủ nhà 0% Hòa 0% Đội Khách 0% Anh Em Muốn Tham Gia Đặt Cược Thì Click Vào Quảng Cáo Của 8XBET Để Đăng Ký Đặt Cược Tất Cả Các Trận Đấu Trên Toàn Thế Giới. Nếu anh em gặp tình trạng không vào được web, hãy cài VPN 1.1.1.1 để truy cập ổn định hơn nhé . Châu Á Châu Âu Tài xỉu Phạt góc Chọn nhà cái HIỆP 1 FT Châu Á HIỆP 1 FT Châu Á - - - 0.83 0/0.5 0.98 Châu Âu HIỆP 1 FT Châu Âu - - - 1.95 3.20 3.40 Tài xỉu HIỆP 1 FT Tài xỉu - - - 1.00 2.5 0.80 SỚM FT Phạt góc HIỆP 1 FT Phạt góc - - - - - - Trực tiếp Mô phỏng CHIA SẺ Phát sóng trận đấu San Marcos vs Municipal Iquique full HD lúc 07:30, ngày 01/08/2026 Hạng 2 Chile HD 1 CHIA SẺ Thông số Diễn biến Đội hình B",
-            "harvest_rounds": 8,
-            "harvest_window_seconds": 6.302,
-            "main_status": 200,
-            "harvested_stream_count": 1,
-            "harvested_blv_ids": [],
-            "scan_mode": "chromium-fallback",
-            "elapsed_seconds": 8.347
-          },
-          "api_probe": {
-            "enabled": true,
-            "room_status": 200,
-            "active_index": 0,
-            "sources_found": 0,
-            "sources_tried": 0,
-            "valid_stream_count": 0,
-            "source_results": [],
-            "fallback_reason": "list_stream_not_found",
-            "elapsed_seconds": 0.926,
-            "room_content_type": "text/html",
-            "room_elapsed_seconds": 0.92,
-            "room_error": ""
-          },
-          "http_probe": {
-            "api_first": {
-              "enabled": true,
-              "room_status": 200,
-              "active_index": 0,
-              "sources_found": 0,
-              "sources_tried": 0,
-              "valid_stream_count": 0,
-              "source_results": [],
-              "fallback_reason": "list_stream_not_found",
-              "elapsed_seconds": 0.926,
-              "room_content_type": "text/html",
-              "room_elapsed_seconds": 0.92,
-              "room_error": ""
-            },
-            "legacy_http": {
-              "enabled": false,
-              "status": null,
-              "elapsed_seconds": 0.0,
-              "error": ""
-            }
-          },
-          "errors": [
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED"
-          ],
-          "failed_requests": [
-            "stylesheet https://fonts.googleapis.com/css2?family=Bangers&family=Oswald:wght@400;500;700&family=Raleway:wght@400;500;700&family=Roboto+Condensed:wght@300;400;700&display=swap | net::ERR_FAILED",
-            "stylesheet https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0 | net::ERR_FAILED",
-            "stylesheet https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css | net::ERR_FAILED",
-            "stylesheet https://socolivell.tv/wp-content/plugins/widget-options/assets/css/widget-options.css?ver=4.0.6.1 | net::ERR_FAILED",
-            "stylesheet https://socolivell.tv/wp-content/plugins/wp-pagenavi/pagenavi-css.css?ver=2.70 | net::ERR_FAILED",
-            "stylesheet https://socolivell.tv/wp-content/themes/bongda/dist/styles/bootstrap.min.css?ver=1745376853 | net::ERR_FAILED",
-            "stylesheet https://socolivell.tv/wp-content/themes/bongda/dist/styles/main.css?ver=1781184173 | net::ERR_FAILED",
-            "stylesheet https://socolivell.tv/wp-content/themes/bongda/dist/styles/pages/single-live.css?ver=1784627923 | net::ERR_FAILED",
-            "image https://socolivell.tv/wp-content/themes/bongda/dist/images/logo-socolive-tv-official-v2.png | net::ERR_FAILED",
-            "image https://socolivell.tv/wp-content/themes/bongda/dist/images/wc-2026/menu-wc.svg | net::ERR_FAILED",
-            "image https://socolivell.tv/wp-content/themes/bongda/dist/images/closemenu.png | net::ERR_FAILED",
-            "image https://imgts.sportpulseapiz.com/football/team/k82rekhvdj5repz/image/small | net::ERR_FAILED",
-            "stylesheet https://socolivell.tv/wp-content/plugins/api-sport/public/css/match_detail.css?id=0671c88cfbad4335394b897262a0d662 | net::ERR_FAILED",
-            "image https://imgts.sportpulseapiz.com/football/team/vl7oqdehp5jr510/image/small | net::ERR_FAILED",
-            "image https://socolivell.tv/wp-content/themes/bongda/dist/images/company/21-1.png | net::ERR_FAILED"
-          ],
-          "http_errors": [
-            "403 https://live1.streambylivepulse.com/live/channel22.flv?wsSecret=5356e2db39f50473a34fae8de2b73426&wsABSTime=1785580279",
-            "403 https://live1.streambylivepulse.com/live/channel22.flv?wsSecret=5356e2db39f50473a34fae8de2b73426&wsABSTime=1785580279",
-            "403 https://live1.streambylivepulse.com/live/channel22.flv?wsSecret=5356e2db39f50473a34fae8de2b73426&wsABSTime=1785580279",
-            "403 https://live1.streambylivepulse.com/live/channel22.flv?wsSecret=5356e2db39f50473a34fae8de2b73426&wsABSTime=1785580279",
-            "403 https://live1.streambylivepulse.com/live/channel22.flv?wsSecret=5356e2db39f50473a34fae8de2b73426&wsABSTime=1785580279"
-          ]
-        }
-      ],
-      "attempted_room_ids": [],
-      "coverage": {
-        "found_streams": 1,
-        "found_blv_ids": [],
-        "goal": 2,
-        "source_goal_reached": false,
-        "room_queue_complete": true,
-        "complete": true,
-        "max_streams_per_blv": 2,
-        "total_explicit_blv_rooms": 0,
-        "pending_room_keys": [],
-        "room_progress": {
-          "__base__": {
-            "key": "__base__",
-            "url": "https://socolivell.tv/truc-tiep/san-marcos-vs-municipal-iquique-luc-0730-ngay-01-08-2026/",
-            "blv": "",
-            "blv_id": "",
-            "status": "success",
-            "attempts": 1,
-            "attempts_total": 1,
-            "ever_attempted": true,
-            "valid_stream_ever_found": true,
-            "needs_token_refresh": false,
-            "completion_reason": "valid_stream",
-            "rate_limit_hits": 0,
-            "last_http_status": 200,
-            "last_stream_count": 1,
-            "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
-          }
-        }
-      },
-      "errors": [],
-      "match_name": "San Marcos vs Municipal Iquique",
-      "scheduled_at": "2026-08-01T07:30:00+07:00",
-      "room_progress": {
-        "__base__": {
-          "key": "__base__",
-          "url": "https://socolivell.tv/truc-tiep/san-marcos-vs-municipal-iquique-luc-0730-ngay-01-08-2026/",
-          "blv": "",
-          "blv_id": "",
-          "status": "success",
-          "attempts": 1,
-          "attempts_total": 1,
-          "ever_attempted": true,
-          "valid_stream_ever_found": true,
-          "needs_token_refresh": false,
-          "completion_reason": "valid_stream",
-          "rate_limit_hits": 0,
-          "last_http_status": 200,
-          "last_stream_count": 1,
-          "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
-        }
-      }
-    },
-    {
-      "base_url": "https://socolivell.tv/truc-tiep/nomads-vs-nelson-suburbs-luc-0730-ngay-01-08-2026/",
-      "raw_title": "Nomads vs Nelson Suburbs",
-      "home_team": "Nomads",
-      "away_team": "Nelson Suburbs",
-      "home_logo": "https://imgts.sportpulseapiz.com/football/team/3glrw7hw7pyqdyj/image/small",
-      "away_logo": "https://imgts.sportpulseapiz.com/football/team/pxwrxlh1yn9ryk0/image/small",
-      "time_text": "07:30",
-      "date_text": "01/08",
-      "status": "",
-      "card_text": "NEW ZEALAND SOUTH PREMIER LEAGUE 07:30 - 01.08 Nomads Nelson Suburbs 0 - 2 1 - 4 2 - 2 0.85 -0.5 0.95 0.95 3.5/4 0.85",
-      "rooms": [
-        {
-          "url": "https://socolivell.tv/truc-tiep/nomads-vs-nelson-suburbs-luc-0730-ngay-01-08-2026/",
-          "blv": "",
-          "blv_id": ""
-        }
-      ],
-      "streams": [
-        {
-          "url": "https://live1.streambylivepulse.com/live/channel21.flv?wsSecret=5b72d69599a5e8cad231418806c725a3&wsABSTime=1785580289",
-          "queue_room_key": "__base__",
-          "room_url": "https://socolivell.tv/truc-tiep/nomads-vs-nelson-suburbs-luc-0730-ngay-01-08-2026/",
-          "blv": "Nguồn phụ 1",
-          "blv_id": "",
-          "source_id": "",
-          "source_provenance": [
-            "cdp/request",
-            "cdp/response",
-            "harvest-final",
-            "harvest-round-1",
-            "harvest-round-2",
-            "harvest-round-3",
-            "harvest-round-4",
-            "harvest-round-5",
-            "harvest-round-6",
-            "harvest-round-7",
-            "harvest-round-8",
-            "harvest-round-9",
-            "request/fetch",
-            "response/403"
-          ],
-          "playback_referer": "",
-          "playback_origin": "",
-          "playback_user_agent": "",
-          "api_player_endpoint": "",
-          "api_source_mode": "",
-          "source_confidence": "network",
-          "mapping_mode": "stream-source-id",
-          "discovered_from_room_url": "https://socolivell.tv/truc-tiep/nomads-vs-nelson-suburbs-luc-0730-ngay-01-08-2026/",
-          "discovered_from_blv": "URL tổng",
-          "discovered_at": "2026-08-01T05:31:36.661701+07:00",
-          "valid_until": "",
-          "is_expired": false
-        }
-      ],
-      "room_results": [
-        {
-          "url": "https://socolivell.tv/truc-tiep/nomads-vs-nelson-suburbs-luc-0730-ngay-01-08-2026/",
-          "blv": "",
-          "blv_id": "",
-          "streams": [
-            "https://live1.streambylivepulse.com/live/channel21.flv?wsSecret=5b72d69599a5e8cad231418806c725a3&wsABSTime=1785580289"
-          ],
-          "stream_sources": {
-            "https://live1.streambylivepulse.com/live/channel21.flv?wsSecret=5b72d69599a5e8cad231418806c725a3&wsABSTime=1785580289": [
-              "cdp/request",
-              "cdp/response",
-              "harvest-final",
-              "harvest-round-1",
-              "harvest-round-2",
-              "harvest-round-3",
-              "harvest-round-4",
-              "harvest-round-5",
-              "harvest-round-6",
-              "harvest-round-7",
-              "harvest-round-8",
-              "harvest-round-9",
-              "request/fetch",
-              "response/403"
-            ]
-          },
-          "stream_headers": {},
-          "stream_first_seen": [
-            "https://live1.streambylivepulse.com/live/channel21.flv?wsSecret=5b72d69599a5e8cad231418806c725a3&wsABSTime=1785580289"
-          ],
-          "discovered_blv_ids": [],
-          "diagnostics": {
-            "url": "https://socolivell.tv/truc-tiep/nomads-vs-nelson-suburbs-luc-0730-ngay-01-08-2026/",
-            "title": "Trực tiếp Nomads vs Nelson Suburbs full lúc 07:30, ngày 01/08",
-            "h1": "Xem trực tiếp trận đấu Nomads vs Nelson Suburbs full lúc 07:30, ngày 01/08/2026",
-            "ready_state": "complete",
-            "visibility_state": "visible",
-            "hidden": false,
-            "video_count": 0,
-            "iframe_count": 5,
-            "body_sample": "WC 2026 Lịch Thi Đấu Xem Lại Video Highlight Tỷ Lệ Kèo BXH KQBD Tips Tin Tức Livescore Tuyển Dụng Top Nhà Cái Cược 8xbet WC 2026 Lịch Thi Đấu Xem Lại Video Highlight Tỷ Lệ Kèo BXH KQBD Tips Tin Tức Livescore Tuyển Dụng Top nhà cái Xem trực tiếp trận đấu Nomads vs Nelson Suburbs full lúc 07:30, ngày 01/08/2026 Phát sóng link trực tuyến Nomads vs Nelson Suburbs hôm nay tại giải đấu New Zealand South Premier League _ _ _ _ _ _ Nomads Nelson Suburbs Theo bạn thì trận này tài hay xỉu? Tài 0% Xỉu 0% Theo bạn thì trận này đội nào sẽ thắng? Chủ nhà 0% Hòa 0% Đội Khách 0% Anh Em Muốn Tham Gia Đặt Cược Thì Click Vào Quảng Cáo Của 8XBET Để Đăng Ký Đặt Cược Tất Cả Các Trận Đấu Trên Toàn Thế Giới. Nếu anh em gặp tình trạng không vào được web, hãy cài VPN 1.1.1.1 để truy cập ổn định hơn nhé . Châu Á Châu Âu Tài xỉu Phạt góc Chọn nhà cái HIỆP 1 FT Châu Á HIỆP 1 FT Châu Á - - - 0.85 -0.5 0.95 Châu Âu HIỆP 1 FT Châu Âu - - - 3.00 4.10 1.90 Tài xỉu HIỆP 1 FT Tài xỉu - - - 0.95 3.5/4 0.85 SỚM FT Phạt góc HIỆP 1 FT Phạt góc - - - - - - Trực tiếp Mô phỏng CHIA SẺ Phát sóng trận đấu Nomads vs Nelson Suburbs full HD lúc 07:30, ngày 01/08/2026 New Zealand South Premier League HD 1 CHIA SẺ Thông số Diễn bi",
-            "harvest_rounds": 9,
-            "harvest_window_seconds": 7.02,
-            "main_status": 200,
-            "harvested_stream_count": 1,
-            "harvested_blv_ids": [],
-            "scan_mode": "chromium-fallback",
-            "elapsed_seconds": 8.43
-          },
-          "api_probe": {
-            "enabled": true,
-            "room_status": 200,
-            "active_index": 0,
-            "sources_found": 0,
-            "sources_tried": 0,
-            "valid_stream_count": 0,
-            "source_results": [],
-            "fallback_reason": "list_stream_not_found",
-            "elapsed_seconds": 0.203,
-            "room_content_type": "text/html",
-            "room_elapsed_seconds": 0.197,
-            "room_error": ""
-          },
-          "http_probe": {
-            "api_first": {
-              "enabled": true,
-              "room_status": 200,
-              "active_index": 0,
-              "sources_found": 0,
-              "sources_tried": 0,
-              "valid_stream_count": 0,
-              "source_results": [],
-              "fallback_reason": "list_stream_not_found",
-              "elapsed_seconds": 0.203,
-              "room_content_type": "text/html",
-              "room_elapsed_seconds": 0.197,
-              "room_error": ""
-            },
-            "legacy_http": {
-              "enabled": false,
-              "status": null,
-              "elapsed_seconds": 0.0,
-              "error": ""
-            }
-          },
-          "errors": [
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED"
-          ],
-          "failed_requests": [
-            "stylesheet https://fonts.googleapis.com/css2?family=Bangers&family=Oswald:wght@400;500;700&family=Raleway:wght@400;500;700&family=Roboto+Condensed:wght@300;400;700&display=swap | net::ERR_FAILED",
-            "stylesheet https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0 | net::ERR_FAILED",
-            "stylesheet https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css | net::ERR_FAILED",
-            "stylesheet https://socolivell.tv/wp-content/plugins/widget-options/assets/css/widget-options.css?ver=4.0.6.1 | net::ERR_FAILED",
-            "stylesheet https://socolivell.tv/wp-content/plugins/wp-pagenavi/pagenavi-css.css?ver=2.70 | net::ERR_FAILED",
-            "stylesheet https://socolivell.tv/wp-content/themes/bongda/dist/styles/bootstrap.min.css?ver=1745376853 | net::ERR_FAILED",
-            "stylesheet https://socolivell.tv/wp-content/themes/bongda/dist/styles/main.css?ver=1781184173 | net::ERR_FAILED",
-            "stylesheet https://socolivell.tv/wp-content/themes/bongda/dist/styles/pages/single-live.css?ver=1784627923 | net::ERR_FAILED",
-            "image https://socolivell.tv/wp-content/themes/bongda/dist/images/logo-socolive-tv-official-v2.png | net::ERR_FAILED",
-            "image https://socolivell.tv/wp-content/themes/bongda/dist/images/wc-2026/menu-wc.svg | net::ERR_FAILED",
-            "image https://socolivell.tv/wp-content/themes/bongda/dist/images/closemenu.png | net::ERR_FAILED",
-            "image https://imgts.sportpulseapiz.com/football/team/3glrw7hw7pyqdyj/image/small | net::ERR_FAILED",
-            "stylesheet https://socolivell.tv/wp-content/plugins/api-sport/public/css/match_detail.css?id=0671c88cfbad4335394b897262a0d662 | net::ERR_FAILED",
-            "image https://imgts.sportpulseapiz.com/football/team/pxwrxlh1yn9ryk0/image/small | net::ERR_FAILED",
-            "image https://socolivell.tv/wp-content/themes/bongda/dist/images/company/21-1.png | net::ERR_FAILED"
-          ],
-          "http_errors": [
-            "403 https://live1.streambylivepulse.com/live/channel21.flv?wsSecret=5b72d69599a5e8cad231418806c725a3&wsABSTime=1785580289",
-            "403 https://live1.streambylivepulse.com/live/channel21.flv?wsSecret=5b72d69599a5e8cad231418806c725a3&wsABSTime=1785580289",
-            "403 https://live1.streambylivepulse.com/live/channel21.flv?wsSecret=5b72d69599a5e8cad231418806c725a3&wsABSTime=1785580289",
-            "403 https://live1.streambylivepulse.com/live/channel21.flv?wsSecret=5b72d69599a5e8cad231418806c725a3&wsABSTime=1785580289",
-            "403 https://live1.streambylivepulse.com/live/channel21.flv?wsSecret=5b72d69599a5e8cad231418806c725a3&wsABSTime=1785580289",
-            "403 https://live1.streambylivepulse.com/live/channel21.flv?wsSecret=5b72d69599a5e8cad231418806c725a3&wsABSTime=1785580289"
-          ]
-        }
-      ],
-      "attempted_room_ids": [],
-      "coverage": {
-        "found_streams": 1,
-        "found_blv_ids": [],
-        "goal": 2,
-        "source_goal_reached": false,
-        "room_queue_complete": true,
-        "complete": true,
-        "max_streams_per_blv": 2,
-        "total_explicit_blv_rooms": 0,
-        "pending_room_keys": [],
-        "room_progress": {
-          "__base__": {
-            "key": "__base__",
-            "url": "https://socolivell.tv/truc-tiep/nomads-vs-nelson-suburbs-luc-0730-ngay-01-08-2026/",
-            "blv": "",
-            "blv_id": "",
-            "status": "success",
-            "attempts": 1,
-            "attempts_total": 1,
-            "ever_attempted": true,
-            "valid_stream_ever_found": true,
-            "needs_token_refresh": false,
-            "completion_reason": "valid_stream",
-            "rate_limit_hits": 0,
-            "last_http_status": 200,
-            "last_stream_count": 1,
-            "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
-          }
-        }
-      },
-      "errors": [],
-      "match_name": "Nomads vs Nelson Suburbs",
-      "scheduled_at": "2026-08-01T07:30:00+07:00",
-      "room_progress": {
-        "__base__": {
-          "key": "__base__",
-          "url": "https://socolivell.tv/truc-tiep/nomads-vs-nelson-suburbs-luc-0730-ngay-01-08-2026/",
-          "blv": "",
-          "blv_id": "",
-          "status": "success",
-          "attempts": 1,
-          "attempts_total": 1,
-          "ever_attempted": true,
-          "valid_stream_ever_found": true,
-          "needs_token_refresh": false,
-          "completion_reason": "valid_stream",
-          "rate_limit_hits": 0,
-          "last_http_status": 200,
-          "last_stream_count": 1,
-          "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
-        }
-      }
-    },
-    {
-      "base_url": "https://socolivell.tv/truc-tiep/inter-miami-b-vs-chattanooga-luc-0600-ngay-01-08-2026/",
-      "raw_title": "Inter Miami B vs Chattanooga",
-      "home_team": "Inter Miami B",
-      "away_team": "Chattanooga",
-      "home_logo": "https://imgts.sportpulseapiz.com/football/team/4wyrn4hvzgvq86p/image/small",
-      "away_logo": "https://imgts.sportpulseapiz.com/football/team/6ypq3nh5z76md7o/image/small",
-      "time_text": "06:00",
-      "date_text": "01/08",
-      "status": "",
-      "card_text": "MLS NEXT PRO HT 06:00 - 01.08 Inter Miami B 0 : 1 Chattanooga HT 0 - 1 1 - 3 0 - 1 0.80 -0.5 1.00 0.95 2.5/3 0.85",
-      "rooms": [
-        {
-          "url": "https://socolivell.tv/truc-tiep/inter-miami-b-vs-chattanooga-luc-0600-ngay-01-08-2026/",
-          "blv": "",
-          "blv_id": ""
-        }
-      ],
-      "streams": [
-        {
-          "url": "https://live1.streambylivepulse.com/live/channel9.flv?wsSecret=85d745cd74c635de74f885d695b3aefb&wsABSTime=1785574969",
-          "queue_room_key": "__base__",
-          "room_url": "https://socolivell.tv/truc-tiep/inter-miami-b-vs-chattanooga-luc-0600-ngay-01-08-2026/",
-          "blv": "Nguồn phụ 1",
-          "blv_id": "",
-          "source_id": "",
-          "source_provenance": [
-            "cdp/request",
-            "cdp/response",
-            "harvest-final",
-            "harvest-round-1",
-            "harvest-round-2",
-            "harvest-round-3",
-            "harvest-round-4",
-            "harvest-round-5",
-            "harvest-round-6",
-            "harvest-round-7",
-            "harvest-round-8",
-            "harvest-round-9",
-            "request/fetch",
-            "response/403"
-          ],
-          "playback_referer": "",
-          "playback_origin": "",
-          "playback_user_agent": "",
-          "api_player_endpoint": "",
-          "api_source_mode": "",
-          "source_confidence": "network",
-          "mapping_mode": "stream-source-id",
-          "discovered_from_room_url": "https://socolivell.tv/truc-tiep/inter-miami-b-vs-chattanooga-luc-0600-ngay-01-08-2026/",
-          "discovered_from_blv": "URL tổng",
-          "discovered_at": "2026-08-01T04:02:56.666107+07:00",
-          "valid_until": "",
-          "is_expired": false
-        }
-      ],
-      "room_results": [
-        {
-          "url": "https://socolivell.tv/truc-tiep/inter-miami-b-vs-chattanooga-luc-0600-ngay-01-08-2026/",
-          "blv": "",
-          "blv_id": "",
-          "streams": [
-            "https://live1.streambylivepulse.com/live/channel9.flv?wsSecret=85d745cd74c635de74f885d695b3aefb&wsABSTime=1785574969"
-          ],
-          "stream_sources": {
-            "https://live1.streambylivepulse.com/live/channel9.flv?wsSecret=85d745cd74c635de74f885d695b3aefb&wsABSTime=1785574969": [
-              "cdp/request",
-              "cdp/response",
-              "harvest-final",
-              "harvest-round-1",
-              "harvest-round-2",
-              "harvest-round-3",
-              "harvest-round-4",
-              "harvest-round-5",
-              "harvest-round-6",
-              "harvest-round-7",
-              "harvest-round-8",
-              "harvest-round-9",
-              "request/fetch",
-              "response/403"
-            ]
-          },
-          "stream_headers": {},
-          "stream_first_seen": [
-            "https://live1.streambylivepulse.com/live/channel9.flv?wsSecret=85d745cd74c635de74f885d695b3aefb&wsABSTime=1785574969"
-          ],
-          "discovered_blv_ids": [],
-          "diagnostics": {
-            "url": "https://socolivell.tv/truc-tiep/inter-miami-b-vs-chattanooga-luc-0600-ngay-01-08-2026/",
-            "title": "Trực tiếp Inter Miami B vs Chattanooga full lúc 06:00, ngày 01/08",
-            "h1": "Xem trực tiếp trận đấu Inter Miami B vs Chattanooga full lúc 06:00, ngày 01/08/2026",
-            "ready_state": "complete",
-            "visibility_state": "visible",
-            "hidden": false,
-            "video_count": 0,
-            "iframe_count": 5,
-            "body_sample": "WC 2026 Lịch Thi Đấu Xem Lại Video Highlight Tỷ Lệ Kèo BXH KQBD Tips Tin Tức Livescore Tuyển Dụng Top Nhà Cái Cược 8xbet WC 2026 Lịch Thi Đấu Xem Lại Video Highlight Tỷ Lệ Kèo BXH KQBD Tips Tin Tức Livescore Tuyển Dụng Top nhà cái Xem trực tiếp trận đấu Inter Miami B vs Chattanooga full lúc 06:00, ngày 01/08/2026 Phát sóng link trực tuyến Inter Miami B vs Chattanooga hôm nay tại giải đấu MLS Next Pro _ _ _ _ _ _ Inter Miami B Chattanooga Theo bạn thì trận này tài hay xỉu? Tài 0% Xỉu 0% Theo bạn thì trận này đội nào sẽ thắng? Chủ nhà 0% Hòa 0% Đội Khách 0% Anh Em Muốn Tham Gia Đặt Cược Thì Click Vào Quảng Cáo Của 8XBET Để Đăng Ký Đặt Cược Tất Cả Các Trận Đấu Trên Toàn Thế Giới. Nếu anh em gặp tình trạng không vào được web, hãy cài VPN 1.1.1.1 để truy cập ổn định hơn nhé . Châu Á Châu Âu Tài xỉu Phạt góc Chọn nhà cái HIỆP 1 FT Châu Á HIỆP 1 FT Châu Á - - - 0.85 -1.5 0.95 Châu Âu HIỆP 1 FT Châu Âu - - - 7.00 5.00 1.30 Tài xỉu HIỆP 1 FT Tài xỉu - - - 0.98 3.5 0.83 SỚM FT Phạt góc HIỆP 1 FT Phạt góc - - - 0.975 9.5 0.825 Trực tiếp Mô phỏng CHIA SẺ Phát sóng trận đấu Inter Miami B vs Chattanooga full HD lúc 06:00, ngày 01/08/2026 MLS Next Pro HD 1 CHIA SẺ Thông số Diễn biến Đội hình BXH ",
-            "harvest_rounds": 9,
-            "harvest_window_seconds": 6.98,
-            "main_status": 200,
-            "harvested_stream_count": 1,
-            "harvested_blv_ids": [],
-            "scan_mode": "chromium-fallback",
-            "elapsed_seconds": 8.163
-          },
-          "api_probe": {
-            "enabled": true,
-            "room_status": 200,
-            "active_index": 0,
-            "sources_found": 0,
-            "sources_tried": 0,
-            "valid_stream_count": 0,
-            "source_results": [],
-            "fallback_reason": "list_stream_not_found",
-            "elapsed_seconds": 0.049,
-            "room_content_type": "text/html",
-            "room_elapsed_seconds": 0.043,
-            "room_error": ""
-          },
-          "http_probe": {
-            "api_first": {
-              "enabled": true,
-              "room_status": 200,
-              "active_index": 0,
-              "sources_found": 0,
-              "sources_tried": 0,
-              "valid_stream_count": 0,
-              "source_results": [],
-              "fallback_reason": "list_stream_not_found",
-              "elapsed_seconds": 0.049,
-              "room_content_type": "text/html",
-              "room_elapsed_seconds": 0.043,
-              "room_error": ""
-            },
-            "legacy_http": {
-              "enabled": false,
-              "status": null,
-              "elapsed_seconds": 0.0,
-              "error": ""
-            }
-          },
-          "errors": [
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED"
-          ],
-          "failed_requests": [
-            "stylesheet https://fonts.googleapis.com/css2?family=Bangers&family=Oswald:wght@400;500;700&family=Raleway:wght@400;500;700&family=Roboto+Condensed:wght@300;400;700&display=swap | net::ERR_FAILED",
-            "stylesheet https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0 | net::ERR_FAILED",
-            "stylesheet https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css | net::ERR_FAILED",
-            "stylesheet https://socolivell.tv/wp-content/plugins/widget-options/assets/css/widget-options.css?ver=4.0.6.1 | net::ERR_FAILED",
-            "stylesheet https://socolivell.tv/wp-content/plugins/wp-pagenavi/pagenavi-css.css?ver=2.70 | net::ERR_FAILED",
-            "stylesheet https://socolivell.tv/wp-content/themes/bongda/dist/styles/bootstrap.min.css?ver=1745376853 | net::ERR_FAILED",
-            "stylesheet https://socolivell.tv/wp-content/themes/bongda/dist/styles/main.css?ver=1781184173 | net::ERR_FAILED",
-            "stylesheet https://socolivell.tv/wp-content/themes/bongda/dist/styles/pages/single-live.css?ver=1784627923 | net::ERR_FAILED",
-            "image https://socolivell.tv/wp-content/themes/bongda/dist/images/logo-socolive-tv-official-v2.png | net::ERR_FAILED",
-            "image https://socolivell.tv/wp-content/themes/bongda/dist/images/wc-2026/menu-wc.svg | net::ERR_FAILED",
-            "image https://socolivell.tv/wp-content/themes/bongda/dist/images/closemenu.png | net::ERR_FAILED",
-            "image https://imgts.sportpulseapiz.com/football/team/4wyrn4hvzgvq86p/image/small | net::ERR_FAILED",
-            "stylesheet https://socolivell.tv/wp-content/plugins/api-sport/public/css/match_detail.css?id=0671c88cfbad4335394b897262a0d662 | net::ERR_FAILED",
-            "image https://imgts.sportpulseapiz.com/football/team/6ypq3nh5z76md7o/image/small | net::ERR_FAILED",
-            "image https://socolivell.tv/wp-content/themes/bongda/dist/images/company/21-1.png | net::ERR_FAILED"
-          ],
-          "http_errors": [
-            "403 https://live1.streambylivepulse.com/live/channel9.flv?wsSecret=85d745cd74c635de74f885d695b3aefb&wsABSTime=1785574969",
-            "403 https://live1.streambylivepulse.com/live/channel9.flv?wsSecret=85d745cd74c635de74f885d695b3aefb&wsABSTime=1785574969",
-            "403 https://live1.streambylivepulse.com/live/channel9.flv?wsSecret=85d745cd74c635de74f885d695b3aefb&wsABSTime=1785574969",
-            "403 https://live1.streambylivepulse.com/live/channel9.flv?wsSecret=85d745cd74c635de74f885d695b3aefb&wsABSTime=1785574969",
-            "403 https://live1.streambylivepulse.com/live/channel9.flv?wsSecret=85d745cd74c635de74f885d695b3aefb&wsABSTime=1785574969",
-            "403 https://live1.streambylivepulse.com/live/channel9.flv?wsSecret=85d745cd74c635de74f885d695b3aefb&wsABSTime=1785574969"
-          ]
-        }
-      ],
-      "attempted_room_ids": [],
-      "coverage": {
-        "found_streams": 1,
-        "found_blv_ids": [],
-        "goal": 2,
-        "source_goal_reached": false,
-        "room_queue_complete": true,
-        "complete": true,
-        "max_streams_per_blv": 2,
-        "total_explicit_blv_rooms": 0,
-        "pending_room_keys": [],
-        "room_progress": {
-          "__base__": {
-            "key": "__base__",
-            "url": "https://socolivell.tv/truc-tiep/inter-miami-b-vs-chattanooga-luc-0600-ngay-01-08-2026/",
-            "blv": "",
-            "blv_id": "",
-            "status": "success",
-            "attempts": 1,
-            "attempts_total": 1,
-            "ever_attempted": true,
-            "valid_stream_ever_found": true,
-            "needs_token_refresh": false,
-            "completion_reason": "valid_stream",
-            "rate_limit_hits": 0,
-            "last_http_status": 200,
-            "last_stream_count": 1,
-            "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
-          }
-        }
-      },
-      "errors": [],
-      "match_name": "Inter Miami B vs Chattanooga",
-      "scheduled_at": "2026-08-01T06:00:00+07:00",
-      "room_progress": {
-        "__base__": {
-          "key": "__base__",
-          "url": "https://socolivell.tv/truc-tiep/inter-miami-b-vs-chattanooga-luc-0600-ngay-01-08-2026/",
-          "blv": "",
-          "blv_id": "",
-          "status": "success",
-          "attempts": 1,
-          "attempts_total": 1,
-          "ever_attempted": true,
-          "valid_stream_ever_found": true,
-          "needs_token_refresh": false,
-          "completion_reason": "valid_stream",
-          "rate_limit_hits": 0,
-          "last_http_status": 200,
-          "last_stream_count": 1,
-          "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
-        }
-      }
-    },
-    {
       "base_url": "https://socolivell.tv/truc-tiep/real-tomayapo-vs-academia-del-balompie-boliviano-luc-0600-ngay-01-08-2026/",
       "raw_title": "Real Tomayapo vs Academia del Balompié Boliviano",
       "home_team": "Real Tomayapo",
@@ -2981,8 +2739,8 @@
       "away_logo": "https://imgts.sportpulseapiz.com/football/team/vjxm8ghpdxlr6od/image/small",
       "time_text": "06:00",
       "date_text": "01/08",
-      "status": "",
-      "card_text": "VĐQG BOLIVIA HT 06:00 - 01.08 Real Tomayapo 0 : 1 Academia del Balompié Boliviano HT 0 - 1 2 - 0 0 - 0 0.98 0/0.5 0.83 0.80 2/2.5 1.00",
+      "status": "Hiệp 2",
+      "card_text": "VĐQG BOLIVIA Hiệp 2: 74' 06:00 - 01.08 Real Tomayapo 1 : 1 Academia del Balompié Boliviano HT 0 - 1 5 - 1 1 - 1 0.65 0 1.20 0.80 2.5 1.00",
       "rooms": [
         {
           "url": "https://socolivell.tv/truc-tiep/real-tomayapo-vs-academia-del-balompie-boliviano-luc-0600-ngay-01-08-2026/",
@@ -3225,8 +2983,8 @@
       "away_logo": "https://imgts.sportpulseapiz.com/football/team/vjxm8gh40jer6od/image/small",
       "time_text": "06:00",
       "date_text": "01/08",
-      "status": "",
-      "card_text": "UNCAF WOMEN'S AMERICAN GAMES HT 06:00 - 01.08 Nữ Dominican Republic 0 : 0 Nữ Costa Rica HT 0 - 0 2 - 1 1 - 1 RAVEN 0.83 0/0.5 0.98 0.83 1 0.98",
+      "status": "Hiệp 2",
+      "card_text": "UNCAF WOMEN'S AMERICAN GAMES Hiệp 2: 73' 06:00 - 01.08 Nữ Dominican Republic 0 : 1 Nữ Costa Rica HT 0 - 0 3 - 4 2 - 2 RAVEN 1.25 0 0.63 1.03 1.5 0.78",
       "rooms": [
         {
           "url": "https://socolivell.tv/truc-tiep/nu-dominican-republic-vs-nu-costa-rica-luc-0600-ngay-01-08-2026/",
@@ -3462,8 +3220,8 @@
       "away_logo": "https://imgts.sportpulseapiz.com/football/team/4wyrn4heo4kq86p/image/small",
       "time_text": "06:00",
       "date_text": "01/08",
-      "status": "",
-      "card_text": "HẠNG 2 COLOMBIA HT 06:00 - 01.08 Union Magdalena 0 : 0 Orsomarso HT 0 - 0 4 - 1 1 - 1 0.98 0.5/1 0.83 0.85 1/1.5 0.95",
+      "status": "Hiệp 2",
+      "card_text": "HẠNG 2 COLOMBIA Hiệp 2: 67' 06:00 - 01.08 Union Magdalena 0 : 0 Orsomarso HT 0 - 0 6 - 1 1 - 1 0.75 0/0.5 1.05 0.98 0.5/1 0.83",
       "rooms": [
         {
           "url": "https://socolivell.tv/truc-tiep/union-magdalena-vs-orsomarso-luc-0600-ngay-01-08-2026/",
@@ -3706,8 +3464,8 @@
       "away_logo": "https://imgts.sportpulseapiz.com/football/team/k82rekhvvkorepz/image/small",
       "time_text": "06:00",
       "date_text": "01/08",
-      "status": "",
-      "card_text": "UNCAF WOMEN'S AMERICAN GAMES HT 06:00 - 01.08 Nữ Colombia 0 : 1 Nữ Mexico HT 0 - 1 3 - 0 1 - 1 FELIX 1.03 0/0.5 0.78 0.75 2 1.05",
+      "status": "Hiệp 2",
+      "card_text": "UNCAF WOMEN'S AMERICAN GAMES Hiệp 2: 74' 06:00 - 01.08 Nữ Colombia 0 : 1 Nữ Mexico HT 0 - 1 6 - 2 2 - 2 FELIX 1.38 0/0.5 0.55 0.98 1.5 0.83",
       "rooms": [
         {
           "url": "https://socolivell.tv/truc-tiep/nu-colombia-vs-nu-mexico-luc-0600-ngay-01-08-2026/",
@@ -3943,8 +3701,8 @@
       "away_logo": "https://imgts.sportpulseapiz.com/football/team/gy0or5jh73wqwzv/image/small",
       "time_text": "05:30",
       "date_text": "01/08",
-      "status": "",
-      "card_text": "VĐQG VENEZUELA Chưa xác định 07:00 - 01.08 Academia Anzoategui 0 : 0 Deportivo Tachira HT 0 - 0 0 - 0 0 - 0 0.88 -0.5/1 0.93 0.85 2/2.5 0.95",
+      "status": "Đang diễn ra",
+      "card_text": "VĐQG VENEZUELA Đang diễn ra 07:30 - 01.08 Academia Anzoategui Deportivo Tachira 3 - 1 1 - 0 0 - 0 0.88 -0.5/1 0.93 0.85 2/2.5 0.95",
       "rooms": [
         {
           "url": "https://socolivell.tv/truc-tiep/academia-anzoategui-vs-deportivo-tachira-luc-0530-ngay-01-08-2026/",
@@ -4179,28 +3937,28 @@
       }
     },
     {
-      "base_url": "https://socolivell.tv/truc-tiep/san-luis-quillota-vs-rangers-talca-luc-0500-ngay-01-08-2026/",
-      "raw_title": "San Luis Quillota vs Rangers Talca",
-      "home_team": "San Luis Quillota",
-      "away_team": "Rangers Talca",
-      "home_logo": "https://imgts.sportpulseapiz.com/football/team/kjw2r09hzokrz84/image/small",
-      "away_logo": "https://imgts.sportpulseapiz.com/football/team/8y39mp1h28jmojx/image/small",
-      "time_text": "05:00",
-      "date_text": "01/08",
-      "status": "",
-      "card_text": "HẠNG 2 CHILE Kết thúc 05:00 - 01.08 San Luis Quillota 1 : 1 Rangers Talca HT 0 - 0 10 - 4 0 - 3 0.63 0 1.25 8.00 2.5 0.07",
+      "base_url": "https://socolivell.tv/truc-tiep/comercial-sp-vs-uniao-sao-joao-luc-0200-ngay-02-08-2026/",
+      "raw_title": "Comercial-SP vs Uniao Sao Joao",
+      "home_team": "Comercial-SP",
+      "away_team": "Uniao Sao Joao",
+      "home_logo": "https://imgts.sportpulseapiz.com/football/team/23xmvkhogolqg8n/image/small",
+      "away_logo": "https://imgts.sportpulseapiz.com/football/team/x7lm7ph9kzzm2wd/image/small",
+      "time_text": "02:00",
+      "date_text": "02/08",
+      "status": "Hiệp 2",
+      "card_text": "BRAZILIAN SAO PAULO CUP Hiệp 2: 69' 06:00 - 01.08 Comercial-SP 0 : 1 Uniao Sao Joao HT 0 - 0 5 - 5 2 - 1 0.75 0 1.05 0.78 1.5 1.03",
       "rooms": [
         {
-          "url": "https://socolivell.tv/truc-tiep/san-luis-quillota-vs-rangers-talca-luc-0500-ngay-01-08-2026/",
+          "url": "https://socolivell.tv/truc-tiep/comercial-sp-vs-uniao-sao-joao-luc-0200-ngay-02-08-2026/",
           "blv": "",
           "blv_id": ""
         }
       ],
       "streams": [
         {
-          "url": "https://live1.streambylivepulse.com/live/channel5.flv?wsSecret=2ac06e2d5855867e3e1039f03af71461&wsABSTime=1785574887",
+          "url": "https://live1.streambylivepulse.com/live/channel25.flv?wsSecret=269b8dfb6be62efa10f9d9d68409607f&wsABSTime=1785587473",
           "queue_room_key": "__base__",
-          "room_url": "https://socolivell.tv/truc-tiep/san-luis-quillota-vs-rangers-talca-luc-0500-ngay-01-08-2026/",
+          "room_url": "https://socolivell.tv/truc-tiep/comercial-sp-vs-uniao-sao-joao-luc-0200-ngay-02-08-2026/",
           "blv": "Nguồn phụ 1",
           "blv_id": "",
           "source_id": "",
@@ -4227,23 +3985,23 @@
           "api_source_mode": "",
           "source_confidence": "network",
           "mapping_mode": "stream-source-id",
-          "discovered_from_room_url": "https://socolivell.tv/truc-tiep/san-luis-quillota-vs-rangers-talca-luc-0500-ngay-01-08-2026/",
+          "discovered_from_room_url": "https://socolivell.tv/truc-tiep/comercial-sp-vs-uniao-sao-joao-luc-0200-ngay-02-08-2026/",
           "discovered_from_blv": "URL tổng",
-          "discovered_at": "2026-08-01T04:01:35.486490+07:00",
+          "discovered_at": "2026-08-01T07:31:21.226165+07:00",
           "valid_until": "",
           "is_expired": false
         }
       ],
       "room_results": [
         {
-          "url": "https://socolivell.tv/truc-tiep/san-luis-quillota-vs-rangers-talca-luc-0500-ngay-01-08-2026/",
+          "url": "https://socolivell.tv/truc-tiep/comercial-sp-vs-uniao-sao-joao-luc-0200-ngay-02-08-2026/",
           "blv": "",
           "blv_id": "",
           "streams": [
-            "https://live1.streambylivepulse.com/live/channel5.flv?wsSecret=2ac06e2d5855867e3e1039f03af71461&wsABSTime=1785574887"
+            "https://live1.streambylivepulse.com/live/channel25.flv?wsSecret=269b8dfb6be62efa10f9d9d68409607f&wsABSTime=1785587473"
           ],
           "stream_sources": {
-            "https://live1.streambylivepulse.com/live/channel5.flv?wsSecret=2ac06e2d5855867e3e1039f03af71461&wsABSTime=1785574887": [
+            "https://live1.streambylivepulse.com/live/channel25.flv?wsSecret=269b8dfb6be62efa10f9d9d68409607f&wsABSTime=1785587473": [
               "cdp/request",
               "cdp/response",
               "harvest-final",
@@ -4262,26 +4020,26 @@
           },
           "stream_headers": {},
           "stream_first_seen": [
-            "https://live1.streambylivepulse.com/live/channel5.flv?wsSecret=2ac06e2d5855867e3e1039f03af71461&wsABSTime=1785574887"
+            "https://live1.streambylivepulse.com/live/channel25.flv?wsSecret=269b8dfb6be62efa10f9d9d68409607f&wsABSTime=1785587473"
           ],
           "discovered_blv_ids": [],
           "diagnostics": {
-            "url": "https://socolivell.tv/truc-tiep/san-luis-quillota-vs-rangers-talca-luc-0500-ngay-01-08-2026/",
-            "title": "Trực tiếp San Luis Quillota vs Rangers Talca full lúc 05:00, ngày 01/08",
-            "h1": "Xem trực tiếp trận đấu San Luis Quillota vs Rangers Talca full lúc 05:00, ngày 01/08/2026",
+            "url": "https://socolivell.tv/truc-tiep/comercial-sp-vs-uniao-sao-joao-luc-0200-ngay-02-08-2026/",
+            "title": "Trực tiếp Comercial-SP vs Uniao Sao Joao full lúc 06:00, ngày 01/08",
+            "h1": "Xem trực tiếp trận đấu Comercial-SP vs Uniao Sao Joao full lúc 06:00, ngày 01/08/2026",
             "ready_state": "complete",
             "visibility_state": "visible",
             "hidden": false,
             "video_count": 0,
             "iframe_count": 5,
-            "body_sample": "WC 2026 Lịch Thi Đấu Xem Lại Video Highlight Tỷ Lệ Kèo BXH KQBD Tips Tin Tức Livescore Tuyển Dụng Top Nhà Cái Cược 8xbet WC 2026 Lịch Thi Đấu Xem Lại Video Highlight Tỷ Lệ Kèo BXH KQBD Tips Tin Tức Livescore Tuyển Dụng Top nhà cái Xem trực tiếp trận đấu San Luis Quillota vs Rangers Talca full lúc 05:00, ngày 01/08/2026 Phát sóng link trực tuyến San Luis Quillota vs Rangers Talca hôm nay tại giải đấu Hạng 2 Chile _ _ _ _ _ _ San Luis Quillota Rangers Talca Theo bạn thì trận này tài hay xỉu? Tài 0% Xỉu 0% Theo bạn thì trận này đội nào sẽ thắng? Chủ nhà 0% Hòa 0% Đội Khách 0% Anh Em Muốn Tham Gia Đặt Cược Thì Click Vào Quảng Cáo Của 8XBET Để Đăng Ký Đặt Cược Tất Cả Các Trận Đấu Trên Toàn Thế Giới. Nếu anh em gặp tình trạng không vào được web, hãy cài VPN 1.1.1.1 để truy cập ổn định hơn nhé . Châu Á Châu Âu Tài xỉu Phạt góc Chọn nhà cái HIỆP 1 FT Châu Á HIỆP 1 FT Châu Á - - - 0.83 0.5 0.98 Châu Âu HIỆP 1 FT Châu Âu - - - 1.85 3.25 3.75 Tài xỉu HIỆP 1 FT Tài xỉu - - - 0.83 2/2.5 0.98 SỚM FT Phạt góc HIỆP 1 FT Phạt góc - - - 0.9 10 0.9 Trực tiếp Mô phỏng CHIA SẺ Phát sóng trận đấu San Luis Quillota vs Rangers Talca full HD lúc 05:00, ngày 01/08/2026 Hạng 2 Chile HD 1 CHIA SẺ Thông số Diễ",
+            "body_sample": "WC 2026 Lịch Thi Đấu Xem Lại Video Highlight Tỷ Lệ Kèo BXH KQBD Tips Tin Tức Livescore Tuyển Dụng Top Nhà Cái Cược 8xbet WC 2026 Lịch Thi Đấu Xem Lại Video Highlight Tỷ Lệ Kèo BXH KQBD Tips Tin Tức Livescore Tuyển Dụng Top nhà cái Xem trực tiếp trận đấu Comercial-SP vs Uniao Sao Joao full lúc 06:00, ngày 01/08/2026 Phát sóng link trực tuyến Comercial-SP vs Uniao Sao Joao hôm nay tại giải đấu Brazilian Sao Paulo Cup 4 5 5 5 2 1 Hiệp 2: 69' Comercial-SP 0 : 1 Uniao Sao Joao Theo bạn thì trận này tài hay xỉu? Tài 0% Xỉu 0% Theo bạn thì trận này đội nào sẽ thắng? Chủ nhà 0% Hòa 0% Đội Khách 0% Anh Em Muốn Tham Gia Đặt Cược Thì Click Vào Quảng Cáo Của 8XBET Để Đăng Ký Đặt Cược Tất Cả Các Trận Đấu Trên Toàn Thế Giới. Nếu anh em gặp tình trạng không vào được web, hãy cài VPN 1.1.1.1 để truy cập ổn định hơn nhé . Châu Á Châu Âu Tài xỉu Phạt góc Chọn nhà cái HIỆP 1 FT Châu Á HIỆP 1 FT Châu Á 1.10 0 0.70 0.75 0 1.05 Châu Âu HIỆP 1 FT Châu Âu - - - 13.00 4.33 1.28 Tài xỉu HIỆP 1 FT Tài xỉu 6.80 0.5 0.09 0.78 1.5 1.03 SỚM FT Phạt góc HIỆP 1 FT Phạt góc 1.35 8.5 0.57 0 0 0 Trực tiếp Mô phỏng CHIA SẺ Phát sóng trận đấu Comercial-SP vs Uniao Sao Joao full HD lúc 06:00, ngày 01/08/2026 Brazilian S",
             "harvest_rounds": 9,
-            "harvest_window_seconds": 6.998,
+            "harvest_window_seconds": 7.06,
             "main_status": 200,
             "harvested_stream_count": 1,
             "harvested_blv_ids": [],
             "scan_mode": "chromium-fallback",
-            "elapsed_seconds": 8.008
+            "elapsed_seconds": 10.96
           },
           "api_probe": {
             "enabled": true,
@@ -4292,9 +4050,9 @@
             "valid_stream_count": 0,
             "source_results": [],
             "fallback_reason": "list_stream_not_found",
-            "elapsed_seconds": 0.051,
-            "room_content_type": "text/html",
-            "room_elapsed_seconds": 0.046,
+            "elapsed_seconds": 1.63,
+            "room_content_type": "text/html; charset=UTF-8",
+            "room_elapsed_seconds": 1.624,
             "room_error": ""
           },
           "http_probe": {
@@ -4307,9 +4065,9 @@
               "valid_stream_count": 0,
               "source_results": [],
               "fallback_reason": "list_stream_not_found",
-              "elapsed_seconds": 0.051,
-              "room_content_type": "text/html",
-              "room_elapsed_seconds": 0.046,
+              "elapsed_seconds": 1.63,
+              "room_content_type": "text/html; charset=UTF-8",
+              "room_elapsed_seconds": 1.624,
               "room_error": ""
             },
             "legacy_http": {
@@ -4353,18 +4111,17 @@
             "image https://socolivell.tv/wp-content/themes/bongda/dist/images/logo-socolive-tv-official-v2.png | net::ERR_FAILED",
             "image https://socolivell.tv/wp-content/themes/bongda/dist/images/wc-2026/menu-wc.svg | net::ERR_FAILED",
             "image https://socolivell.tv/wp-content/themes/bongda/dist/images/closemenu.png | net::ERR_FAILED",
-            "image https://imgts.sportpulseapiz.com/football/team/kjw2r09hzokrz84/image/small | net::ERR_FAILED",
+            "image https://imgts.sportpulseapiz.com/football/team/23xmvkhogolqg8n/image/small | net::ERR_FAILED",
             "stylesheet https://socolivell.tv/wp-content/plugins/api-sport/public/css/match_detail.css?id=0671c88cfbad4335394b897262a0d662 | net::ERR_FAILED",
-            "image https://imgts.sportpulseapiz.com/football/team/8y39mp1h28jmojx/image/small | net::ERR_FAILED",
+            "image https://imgts.sportpulseapiz.com/football/team/x7lm7ph9kzzm2wd/image/small | net::ERR_FAILED",
             "image https://socolivell.tv/wp-content/themes/bongda/dist/images/company/21-1.png | net::ERR_FAILED"
           ],
           "http_errors": [
-            "403 https://live1.streambylivepulse.com/live/channel5.flv?wsSecret=2ac06e2d5855867e3e1039f03af71461&wsABSTime=1785574887",
-            "403 https://live1.streambylivepulse.com/live/channel5.flv?wsSecret=2ac06e2d5855867e3e1039f03af71461&wsABSTime=1785574887",
-            "403 https://live1.streambylivepulse.com/live/channel5.flv?wsSecret=2ac06e2d5855867e3e1039f03af71461&wsABSTime=1785574887",
-            "403 https://live1.streambylivepulse.com/live/channel5.flv?wsSecret=2ac06e2d5855867e3e1039f03af71461&wsABSTime=1785574887",
-            "403 https://live1.streambylivepulse.com/live/channel5.flv?wsSecret=2ac06e2d5855867e3e1039f03af71461&wsABSTime=1785574887",
-            "403 https://live1.streambylivepulse.com/live/channel5.flv?wsSecret=2ac06e2d5855867e3e1039f03af71461&wsABSTime=1785574887"
+            "403 https://live1.streambylivepulse.com/live/channel25.flv?wsSecret=269b8dfb6be62efa10f9d9d68409607f&wsABSTime=1785587473",
+            "403 https://live1.streambylivepulse.com/live/channel25.flv?wsSecret=269b8dfb6be62efa10f9d9d68409607f&wsABSTime=1785587473",
+            "403 https://live1.streambylivepulse.com/live/channel25.flv?wsSecret=269b8dfb6be62efa10f9d9d68409607f&wsABSTime=1785587473",
+            "403 https://live1.streambylivepulse.com/live/channel25.flv?wsSecret=269b8dfb6be62efa10f9d9d68409607f&wsABSTime=1785587473",
+            "403 https://live1.streambylivepulse.com/live/channel25.flv?wsSecret=269b8dfb6be62efa10f9d9d68409607f&wsABSTime=1785587473"
           ]
         }
       ],
@@ -4382,7 +4139,7 @@
         "room_progress": {
           "__base__": {
             "key": "__base__",
-            "url": "https://socolivell.tv/truc-tiep/san-luis-quillota-vs-rangers-talca-luc-0500-ngay-01-08-2026/",
+            "url": "https://socolivell.tv/truc-tiep/comercial-sp-vs-uniao-sao-joao-luc-0200-ngay-02-08-2026/",
             "blv": "",
             "blv_id": "",
             "status": "success",
@@ -4400,12 +4157,12 @@
         }
       },
       "errors": [],
-      "match_name": "San Luis Quillota vs Rangers Talca",
-      "scheduled_at": "2026-08-01T05:00:00+07:00",
+      "match_name": "Comercial-SP vs Uniao Sao Joao",
+      "scheduled_at": "2026-08-02T02:00:00+07:00",
       "room_progress": {
         "__base__": {
           "key": "__base__",
-          "url": "https://socolivell.tv/truc-tiep/san-luis-quillota-vs-rangers-talca-luc-0500-ngay-01-08-2026/",
+          "url": "https://socolivell.tv/truc-tiep/comercial-sp-vs-uniao-sao-joao-luc-0200-ngay-02-08-2026/",
           "blv": "",
           "blv_id": "",
           "status": "success",
@@ -4419,249 +4176,16 @@
           "last_http_status": 200,
           "last_stream_count": 1,
           "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
-        }
-      }
-    },
-    {
-      "base_url": "https://socolivell.tv/truc-tiep/velo-clube-u20-vs-paulinense-youth-luc-0500-ngay-01-08-2026/",
-      "raw_title": "Velo Clube U20 vs Paulinense Youth",
-      "home_team": "Velo Clube U20",
-      "away_team": "Paulinense Youth",
-      "home_logo": "https://imgts.sportpulseapiz.com/football/team/kjw2r09he14rz84/image/small",
-      "away_logo": "https://imgts.sportpulseapiz.com/football/team/dj2ryoh26n7q1zp/image/small",
-      "time_text": "05:00",
-      "date_text": "01/08",
-      "status": "",
-      "card_text": "BRA CAMPEONATO PAULISTA (Y) Kết thúc 05:00 - 01.08 Velo Clube U20 1 : 0 Paulinense Youth HT 0 - 0 4 - 6 3 - 1 0.63 0 1.25 8.50 1.5 0.07",
-      "rooms": [
-        {
-          "url": "https://socolivell.tv/truc-tiep/velo-clube-u20-vs-paulinense-youth-luc-0500-ngay-01-08-2026/",
-          "blv": "",
-          "blv_id": ""
-        }
-      ],
-      "streams": [
-        {
-          "url": "https://live1.streambylivepulse.com/live/channel6.flv?wsSecret=7e040b6fd10a7ee40b8e3bfc1cd28ded&wsABSTime=1785574878",
-          "queue_room_key": "__base__",
-          "room_url": "https://socolivell.tv/truc-tiep/velo-clube-u20-vs-paulinense-youth-luc-0500-ngay-01-08-2026/",
-          "blv": "Nguồn phụ 1",
-          "blv_id": "",
-          "source_id": "",
-          "source_provenance": [
-            "cdp/request",
-            "cdp/response",
-            "harvest-final",
-            "harvest-round-1",
-            "harvest-round-2",
-            "harvest-round-3",
-            "harvest-round-4",
-            "harvest-round-5",
-            "harvest-round-6",
-            "harvest-round-7",
-            "harvest-round-8",
-            "request/fetch",
-            "response/403"
-          ],
-          "playback_referer": "",
-          "playback_origin": "",
-          "playback_user_agent": "",
-          "api_player_endpoint": "",
-          "api_source_mode": "",
-          "source_confidence": "network",
-          "mapping_mode": "stream-source-id",
-          "discovered_from_room_url": "https://socolivell.tv/truc-tiep/velo-clube-u20-vs-paulinense-youth-luc-0500-ngay-01-08-2026/",
-          "discovered_from_blv": "URL tổng",
-          "discovered_at": "2026-08-01T04:01:25.452004+07:00",
-          "valid_until": "",
-          "is_expired": false
-        }
-      ],
-      "room_results": [
-        {
-          "url": "https://socolivell.tv/truc-tiep/velo-clube-u20-vs-paulinense-youth-luc-0500-ngay-01-08-2026/",
-          "blv": "",
-          "blv_id": "",
-          "streams": [
-            "https://live1.streambylivepulse.com/live/channel6.flv?wsSecret=7e040b6fd10a7ee40b8e3bfc1cd28ded&wsABSTime=1785574878"
-          ],
-          "stream_sources": {
-            "https://live1.streambylivepulse.com/live/channel6.flv?wsSecret=7e040b6fd10a7ee40b8e3bfc1cd28ded&wsABSTime=1785574878": [
-              "cdp/request",
-              "cdp/response",
-              "harvest-final",
-              "harvest-round-1",
-              "harvest-round-2",
-              "harvest-round-3",
-              "harvest-round-4",
-              "harvest-round-5",
-              "harvest-round-6",
-              "harvest-round-7",
-              "harvest-round-8",
-              "request/fetch",
-              "response/403"
-            ]
-          },
-          "stream_headers": {},
-          "stream_first_seen": [
-            "https://live1.streambylivepulse.com/live/channel6.flv?wsSecret=7e040b6fd10a7ee40b8e3bfc1cd28ded&wsABSTime=1785574878"
-          ],
-          "discovered_blv_ids": [],
-          "diagnostics": {
-            "url": "https://socolivell.tv/truc-tiep/velo-clube-u20-vs-paulinense-youth-luc-0500-ngay-01-08-2026/",
-            "title": "Trực tiếp Velo Clube U20 vs Paulinense Youth full lúc 05:00, ngày 01/08",
-            "h1": "Xem trực tiếp trận đấu Velo Clube U20 vs Paulinense Youth full lúc 05:00, ngày 01/08/2026",
-            "ready_state": "complete",
-            "visibility_state": "visible",
-            "hidden": false,
-            "video_count": 0,
-            "iframe_count": 5,
-            "body_sample": "WC 2026 Lịch Thi Đấu Xem Lại Video Highlight Tỷ Lệ Kèo BXH KQBD Tips Tin Tức Livescore Tuyển Dụng Top Nhà Cái Cược 8xbet WC 2026 Lịch Thi Đấu Xem Lại Video Highlight Tỷ Lệ Kèo BXH KQBD Tips Tin Tức Livescore Tuyển Dụng Top nhà cái Xem trực tiếp trận đấu Velo Clube U20 vs Paulinense Youth full lúc 05:00, ngày 01/08/2026 Phát sóng link trực tuyến Velo Clube U20 vs Paulinense Youth hôm nay tại giải đấu BRA Campeonato Paulista (Y) _ _ _ _ _ _ Velo Clube U20 Paulinense Youth Theo bạn thì trận này tài hay xỉu? Tài 0% Xỉu 0% Theo bạn thì trận này đội nào sẽ thắng? Chủ nhà 0% Hòa 0% Đội Khách 0% Anh Em Muốn Tham Gia Đặt Cược Thì Click Vào Quảng Cáo Của 8XBET Để Đăng Ký Đặt Cược Tất Cả Các Trận Đấu Trên Toàn Thế Giới. Nếu anh em gặp tình trạng không vào được web, hãy cài VPN 1.1.1.1 để truy cập ổn định hơn nhé . Châu Á Châu Âu Tài xỉu Phạt góc Chọn nhà cái HIỆP 1 FT Châu Á HIỆP 1 FT Châu Á - - - 0.95 0/0.5 0.85 Châu Âu HIỆP 1 FT Châu Âu - - - 2.15 3.40 2.80 Tài xỉu HIỆP 1 FT Tài xỉu - - - 0.80 2.5 1.00 SỚM FT Phạt góc HIỆP 1 FT Phạt góc - - - 0.9 9 0.9 Trực tiếp Mô phỏng CHIA SẺ Phát sóng trận đấu Velo Clube U20 vs Paulinense Youth full HD lúc 05:00, ngày 01/08/2026 BRA Campeonato Paulista ",
-            "harvest_rounds": 8,
-            "harvest_window_seconds": 6.501,
-            "main_status": 200,
-            "harvested_stream_count": 1,
-            "harvested_blv_ids": [],
-            "scan_mode": "chromium-fallback",
-            "elapsed_seconds": 7.543
-          },
-          "api_probe": {
-            "enabled": true,
-            "room_status": 200,
-            "active_index": 0,
-            "sources_found": 0,
-            "sources_tried": 0,
-            "valid_stream_count": 0,
-            "source_results": [],
-            "fallback_reason": "list_stream_not_found",
-            "elapsed_seconds": 0.089,
-            "room_content_type": "text/html",
-            "room_elapsed_seconds": 0.084,
-            "room_error": ""
-          },
-          "http_probe": {
-            "api_first": {
-              "enabled": true,
-              "room_status": 200,
-              "active_index": 0,
-              "sources_found": 0,
-              "sources_tried": 0,
-              "valid_stream_count": 0,
-              "source_results": [],
-              "fallback_reason": "list_stream_not_found",
-              "elapsed_seconds": 0.089,
-              "room_content_type": "text/html",
-              "room_elapsed_seconds": 0.084,
-              "room_error": ""
-            },
-            "legacy_http": {
-              "enabled": false,
-              "status": null,
-              "elapsed_seconds": 0.0,
-              "error": ""
-            }
-          },
-          "errors": [
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED",
-            "console/error: Failed to load resource: net::ERR_FAILED"
-          ],
-          "failed_requests": [
-            "stylesheet https://fonts.googleapis.com/css2?family=Bangers&family=Oswald:wght@400;500;700&family=Raleway:wght@400;500;700&family=Roboto+Condensed:wght@300;400;700&display=swap | net::ERR_FAILED",
-            "stylesheet https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0 | net::ERR_FAILED",
-            "stylesheet https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css | net::ERR_FAILED",
-            "stylesheet https://socolivell.tv/wp-content/plugins/widget-options/assets/css/widget-options.css?ver=4.0.6.1 | net::ERR_FAILED",
-            "stylesheet https://socolivell.tv/wp-content/plugins/wp-pagenavi/pagenavi-css.css?ver=2.70 | net::ERR_FAILED",
-            "stylesheet https://socolivell.tv/wp-content/themes/bongda/dist/styles/bootstrap.min.css?ver=1745376853 | net::ERR_FAILED",
-            "stylesheet https://socolivell.tv/wp-content/themes/bongda/dist/styles/main.css?ver=1781184173 | net::ERR_FAILED",
-            "stylesheet https://socolivell.tv/wp-content/themes/bongda/dist/styles/pages/single-live.css?ver=1784627923 | net::ERR_FAILED",
-            "image https://socolivell.tv/wp-content/themes/bongda/dist/images/logo-socolive-tv-official-v2.png | net::ERR_FAILED",
-            "image https://socolivell.tv/wp-content/themes/bongda/dist/images/wc-2026/menu-wc.svg | net::ERR_FAILED",
-            "image https://socolivell.tv/wp-content/themes/bongda/dist/images/closemenu.png | net::ERR_FAILED",
-            "image https://imgts.sportpulseapiz.com/football/team/kjw2r09he14rz84/image/small | net::ERR_FAILED",
-            "stylesheet https://socolivell.tv/wp-content/plugins/api-sport/public/css/match_detail.css?id=0671c88cfbad4335394b897262a0d662 | net::ERR_FAILED",
-            "image https://imgts.sportpulseapiz.com/football/team/dj2ryoh26n7q1zp/image/small | net::ERR_FAILED",
-            "image https://socolivell.tv/wp-content/themes/bongda/dist/images/company/21-1.png | net::ERR_FAILED"
-          ],
-          "http_errors": [
-            "403 https://live1.streambylivepulse.com/live/channel6.flv?wsSecret=7e040b6fd10a7ee40b8e3bfc1cd28ded&wsABSTime=1785574878",
-            "403 https://live1.streambylivepulse.com/live/channel6.flv?wsSecret=7e040b6fd10a7ee40b8e3bfc1cd28ded&wsABSTime=1785574878",
-            "403 https://live1.streambylivepulse.com/live/channel6.flv?wsSecret=7e040b6fd10a7ee40b8e3bfc1cd28ded&wsABSTime=1785574878",
-            "403 https://live1.streambylivepulse.com/live/channel6.flv?wsSecret=7e040b6fd10a7ee40b8e3bfc1cd28ded&wsABSTime=1785574878",
-            "403 https://live1.streambylivepulse.com/live/channel6.flv?wsSecret=7e040b6fd10a7ee40b8e3bfc1cd28ded&wsABSTime=1785574878"
-          ]
-        }
-      ],
-      "attempted_room_ids": [],
-      "coverage": {
-        "found_streams": 1,
-        "found_blv_ids": [],
-        "goal": 2,
-        "source_goal_reached": false,
-        "room_queue_complete": true,
-        "complete": true,
-        "max_streams_per_blv": 2,
-        "total_explicit_blv_rooms": 0,
-        "pending_room_keys": [],
-        "room_progress": {
-          "__base__": {
-            "key": "__base__",
-            "url": "https://socolivell.tv/truc-tiep/velo-clube-u20-vs-paulinense-youth-luc-0500-ngay-01-08-2026/",
-            "blv": "",
-            "blv_id": "",
-            "status": "success",
-            "attempts": 1,
-            "attempts_total": 1,
-            "ever_attempted": true,
-            "valid_stream_ever_found": true,
-            "needs_token_refresh": false,
-            "completion_reason": "valid_stream",
-            "rate_limit_hits": 0,
-            "last_http_status": 200,
-            "last_stream_count": 1,
-            "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
-          }
         }
       },
-      "errors": [],
-      "match_name": "Velo Clube U20 vs Paulinense Youth",
-      "scheduled_at": "2026-08-01T05:00:00+07:00",
-      "room_progress": {
-        "__base__": {
-          "key": "__base__",
-          "url": "https://socolivell.tv/truc-tiep/velo-clube-u20-vs-paulinense-youth-luc-0500-ngay-01-08-2026/",
-          "blv": "",
-          "blv_id": "",
-          "status": "success",
-          "attempts": 1,
-          "attempts_total": 1,
-          "ever_attempted": true,
-          "valid_stream_ever_found": true,
-          "needs_token_refresh": false,
-          "completion_reason": "valid_stream",
-          "rate_limit_hits": 0,
-          "last_http_status": 200,
-          "last_stream_count": 1,
-          "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
-        }
-      }
+      "run_attempted_room_keys": [
+        "__base__"
+      ],
+      "run_rate_limited_room_keys": [],
+      "run_completed_room_keys": [
+        "__base__"
+      ],
+      "run_global_budget_used": 1
     },
     {
       "base_url": "https://socolivell.tv/truc-tiep/island-bay-united-vs-fc-western-luc-0800-ngay-01-08-2026/",
@@ -5634,7 +5158,7 @@
       "time_text": "08:00",
       "date_text": "01/08",
       "status": "",
-      "card_text": "VĐQG COLOMBIA 08:00 - 01.08 Fortaleza F.C Deportivo Pereira 0 - 0 0 - 0 0 - 0 JEAN 0.90 1 0.90 0.93 2/2.5 0.88",
+      "card_text": "VĐQG COLOMBIA 08:00 - 01.08 Fortaleza F.C Deportivo Pereira 0 - 0 0 - 0 0 - 0 JEAN 0.93 1 0.88 0.95 2/2.5 0.85",
       "rooms": [
         {
           "url": "https://socolivell.tv/truc-tiep/fortaleza-f-c-vs-deportivo-pereira-luc-0800-ngay-01-08-2026/",
@@ -5867,7 +5391,7 @@
       "time_text": "08:00",
       "date_text": "01/08",
       "status": "",
-      "card_text": "HẠNG 2 MEXICO 08:00 - 01.08 Correcaminos de la U.A.T. Tepatitlan FC 2 - 1 1 - 4 2 - 1 POLO 1.03 0/0.5 0.78 1.00 2.5 0.80",
+      "card_text": "HẠNG 2 MEXICO 08:00 - 01.08 Correcaminos de la U.A.T. Tepatitlan FC 2 - 1 1 - 4 2 - 1 POLO 0.83 0/0.5 0.98 0.98 2.5 0.83",
       "rooms": [
         {
           "url": "https://socolivell.tv/truc-tiep/correcaminos-de-la-u-a-t-vs-tepatitlan-fc-luc-0800-ngay-01-08-2026/",
@@ -6339,7 +5863,7 @@
       "time_text": "08:00",
       "date_text": "01/08",
       "status": "",
-      "card_text": "VĐQG MEXICO 08:00 - 01.08 Puebla Club Guadalajara 5 - 0 0 - 2 1 - 0 NICK 0.95 -1 0.85 1.00 3 0.80",
+      "card_text": "VĐQG MEXICO 08:00 - 01.08 Puebla Club Guadalajara 5 - 0 0 - 2 1 - 0 NICK 0.95 -1 0.85 1.03 3 0.78",
       "rooms": [
         {
           "url": "https://socolivell.tv/truc-tiep/puebla-vs-club-guadalajara-luc-0800-ngay-01-08-2026/",
@@ -6559,6 +6083,258 @@
           "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
         }
       }
+    },
+    {
+      "base_url": "https://socolivell.tv/truc-tiep/labasa-fc-vs-ba-luc-0830-ngay-01-08-2026/",
+      "raw_title": "Labasa FC vs Ba",
+      "home_team": "Labasa FC",
+      "away_team": "Ba",
+      "home_logo": "https://imgts.sportpulseapiz.com/football/team/vjxm8ghglz3r6od/image/small",
+      "away_logo": "https://imgts.sportpulseapiz.com/football/team/318q66ho87zqo9j/image/small",
+      "time_text": "08:30",
+      "date_text": "01/08",
+      "status": "",
+      "card_text": "CÚP LIÊN ĐOÀN FIJIAN 09:00 - 01.08 Labasa FC Ba 0 - 0 1 - 2 3 - 0 1.00 0/0.5 0.80 0.83 3 0.98",
+      "rooms": [
+        {
+          "url": "https://socolivell.tv/truc-tiep/labasa-fc-vs-ba-luc-0830-ngay-01-08-2026/",
+          "blv": "",
+          "blv_id": ""
+        }
+      ],
+      "streams": [
+        {
+          "url": "https://live1.streambylivepulse.com/live/channel2.flv?wsSecret=ea4ad43cf98845fd6256e8496d8e5bf7&wsABSTime=1785587485",
+          "queue_room_key": "__base__",
+          "room_url": "https://socolivell.tv/truc-tiep/labasa-fc-vs-ba-luc-0830-ngay-01-08-2026/",
+          "blv": "Nguồn phụ 1",
+          "blv_id": "",
+          "source_id": "",
+          "source_provenance": [
+            "cdp/request",
+            "cdp/response",
+            "harvest-final",
+            "harvest-round-1",
+            "harvest-round-2",
+            "harvest-round-3",
+            "harvest-round-4",
+            "harvest-round-5",
+            "harvest-round-6",
+            "harvest-round-7",
+            "harvest-round-8",
+            "harvest-round-9",
+            "request/fetch",
+            "response/403"
+          ],
+          "playback_referer": "",
+          "playback_origin": "",
+          "playback_user_agent": "",
+          "api_player_endpoint": "",
+          "api_source_mode": "",
+          "source_confidence": "network",
+          "mapping_mode": "stream-source-id",
+          "discovered_from_room_url": "https://socolivell.tv/truc-tiep/labasa-fc-vs-ba-luc-0830-ngay-01-08-2026/",
+          "discovered_from_blv": "URL tổng",
+          "discovered_at": "2026-08-01T07:31:32.570266+07:00",
+          "valid_until": "",
+          "is_expired": false
+        }
+      ],
+      "room_results": [
+        {
+          "url": "https://socolivell.tv/truc-tiep/labasa-fc-vs-ba-luc-0830-ngay-01-08-2026/",
+          "blv": "",
+          "blv_id": "",
+          "streams": [
+            "https://live1.streambylivepulse.com/live/channel2.flv?wsSecret=ea4ad43cf98845fd6256e8496d8e5bf7&wsABSTime=1785587485"
+          ],
+          "stream_sources": {
+            "https://live1.streambylivepulse.com/live/channel2.flv?wsSecret=ea4ad43cf98845fd6256e8496d8e5bf7&wsABSTime=1785587485": [
+              "cdp/request",
+              "cdp/response",
+              "harvest-final",
+              "harvest-round-1",
+              "harvest-round-2",
+              "harvest-round-3",
+              "harvest-round-4",
+              "harvest-round-5",
+              "harvest-round-6",
+              "harvest-round-7",
+              "harvest-round-8",
+              "harvest-round-9",
+              "request/fetch",
+              "response/403"
+            ]
+          },
+          "stream_headers": {},
+          "stream_first_seen": [
+            "https://live1.streambylivepulse.com/live/channel2.flv?wsSecret=ea4ad43cf98845fd6256e8496d8e5bf7&wsABSTime=1785587485"
+          ],
+          "discovered_blv_ids": [],
+          "diagnostics": {
+            "url": "https://socolivell.tv/truc-tiep/labasa-fc-vs-ba-luc-0830-ngay-01-08-2026/",
+            "title": "Trực tiếp Labasa FC vs Ba full lúc 09:00, ngày 01/08",
+            "h1": "Xem trực tiếp trận đấu Labasa FC vs Ba full lúc 09:00, ngày 01/08/2026",
+            "ready_state": "complete",
+            "visibility_state": "visible",
+            "hidden": false,
+            "video_count": 0,
+            "iframe_count": 5,
+            "body_sample": "WC 2026 Lịch Thi Đấu Xem Lại Video Highlight Tỷ Lệ Kèo BXH KQBD Tips Tin Tức Livescore Tuyển Dụng Top Nhà Cái Cược 8xbet WC 2026 Lịch Thi Đấu Xem Lại Video Highlight Tỷ Lệ Kèo BXH KQBD Tips Tin Tức Livescore Tuyển Dụng Top nhà cái Xem trực tiếp trận đấu Labasa FC vs Ba full lúc 09:00, ngày 01/08/2026 Phát sóng link trực tuyến Labasa FC vs Ba hôm nay tại giải đấu Cúp Liên Đoàn Fijian _ _ _ _ _ _ Labasa FC Ba Theo bạn thì trận này tài hay xỉu? Tài 0% Xỉu 0% Theo bạn thì trận này đội nào sẽ thắng? Chủ nhà 0% Hòa 0% Đội Khách 0% Anh Em Muốn Tham Gia Đặt Cược Thì Click Vào Quảng Cáo Của 8XBET Để Đăng Ký Đặt Cược Tất Cả Các Trận Đấu Trên Toàn Thế Giới. Nếu anh em gặp tình trạng không vào được web, hãy cài VPN 1.1.1.1 để truy cập ổn định hơn nhé . Châu Á Châu Âu Tài xỉu Phạt góc Chọn nhà cái HIỆP 1 FT Châu Á HIỆP 1 FT Châu Á - - - 1.00 0/0.5 0.80 Châu Âu HIỆP 1 FT Châu Âu - - - 2.90 3.75 2.00 Tài xỉu HIỆP 1 FT Tài xỉu - - - 0.83 3 0.98 SỚM FT Phạt góc HIỆP 1 FT Phạt góc - - - - - - Trực tiếp Mô phỏng CHIA SẺ Phát sóng trận đấu Labasa FC vs Ba full HD lúc 09:00, ngày 01/08/2026 Cúp Liên Đoàn Fijian HD 1 CHIA SẺ Thông số Diễn biến Đội hình BXH Chat Đối đầu Trận khác Trận sắp tới Tỷ lệ kèo T",
+            "harvest_rounds": 9,
+            "harvest_window_seconds": 7.067,
+            "main_status": 200,
+            "harvested_stream_count": 1,
+            "harvested_blv_ids": [],
+            "scan_mode": "chromium-fallback",
+            "elapsed_seconds": 9.322
+          },
+          "api_probe": {
+            "enabled": true,
+            "room_status": 200,
+            "active_index": 0,
+            "sources_found": 0,
+            "sources_tried": 0,
+            "valid_stream_count": 0,
+            "source_results": [],
+            "fallback_reason": "list_stream_not_found",
+            "elapsed_seconds": 1.404,
+            "room_content_type": "text/html; charset=UTF-8",
+            "room_elapsed_seconds": 1.398,
+            "room_error": ""
+          },
+          "http_probe": {
+            "api_first": {
+              "enabled": true,
+              "room_status": 200,
+              "active_index": 0,
+              "sources_found": 0,
+              "sources_tried": 0,
+              "valid_stream_count": 0,
+              "source_results": [],
+              "fallback_reason": "list_stream_not_found",
+              "elapsed_seconds": 1.404,
+              "room_content_type": "text/html; charset=UTF-8",
+              "room_elapsed_seconds": 1.398,
+              "room_error": ""
+            },
+            "legacy_http": {
+              "enabled": false,
+              "status": null,
+              "elapsed_seconds": 0.0,
+              "error": ""
+            }
+          },
+          "errors": [
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED"
+          ],
+          "failed_requests": [
+            "stylesheet https://fonts.googleapis.com/css2?family=Bangers&family=Oswald:wght@400;500;700&family=Raleway:wght@400;500;700&family=Roboto+Condensed:wght@300;400;700&display=swap | net::ERR_FAILED",
+            "stylesheet https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0 | net::ERR_FAILED",
+            "stylesheet https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css | net::ERR_FAILED",
+            "stylesheet https://socolivell.tv/wp-content/plugins/widget-options/assets/css/widget-options.css?ver=4.0.6.1 | net::ERR_FAILED",
+            "stylesheet https://socolivell.tv/wp-content/plugins/wp-pagenavi/pagenavi-css.css?ver=2.70 | net::ERR_FAILED",
+            "stylesheet https://socolivell.tv/wp-content/themes/bongda/dist/styles/bootstrap.min.css?ver=1745376853 | net::ERR_FAILED",
+            "stylesheet https://socolivell.tv/wp-content/themes/bongda/dist/styles/main.css?ver=1781184173 | net::ERR_FAILED",
+            "stylesheet https://socolivell.tv/wp-content/themes/bongda/dist/styles/pages/single-live.css?ver=1784627923 | net::ERR_FAILED",
+            "image https://socolivell.tv/wp-content/themes/bongda/dist/images/logo-socolive-tv-official-v2.png | net::ERR_FAILED",
+            "image https://socolivell.tv/wp-content/themes/bongda/dist/images/wc-2026/menu-wc.svg | net::ERR_FAILED",
+            "image https://socolivell.tv/wp-content/themes/bongda/dist/images/closemenu.png | net::ERR_FAILED",
+            "image https://imgts.sportpulseapiz.com/football/team/vjxm8ghglz3r6od/image/small | net::ERR_FAILED",
+            "stylesheet https://socolivell.tv/wp-content/plugins/api-sport/public/css/match_detail.css?id=0671c88cfbad4335394b897262a0d662 | net::ERR_FAILED",
+            "image https://imgts.sportpulseapiz.com/football/team/318q66ho87zqo9j/image/small | net::ERR_FAILED",
+            "image https://socolivell.tv/wp-content/themes/bongda/dist/images/company/21-1.png | net::ERR_FAILED"
+          ],
+          "http_errors": [
+            "403 https://live1.streambylivepulse.com/live/channel2.flv?wsSecret=ea4ad43cf98845fd6256e8496d8e5bf7&wsABSTime=1785587485",
+            "403 https://live1.streambylivepulse.com/live/channel2.flv?wsSecret=ea4ad43cf98845fd6256e8496d8e5bf7&wsABSTime=1785587485",
+            "403 https://live1.streambylivepulse.com/live/channel2.flv?wsSecret=ea4ad43cf98845fd6256e8496d8e5bf7&wsABSTime=1785587485",
+            "403 https://live1.streambylivepulse.com/live/channel2.flv?wsSecret=ea4ad43cf98845fd6256e8496d8e5bf7&wsABSTime=1785587485",
+            "403 https://live1.streambylivepulse.com/live/channel2.flv?wsSecret=ea4ad43cf98845fd6256e8496d8e5bf7&wsABSTime=1785587485",
+            "403 https://live1.streambylivepulse.com/live/channel2.flv?wsSecret=ea4ad43cf98845fd6256e8496d8e5bf7&wsABSTime=1785587485"
+          ]
+        }
+      ],
+      "attempted_room_ids": [],
+      "coverage": {
+        "found_streams": 1,
+        "found_blv_ids": [],
+        "goal": 2,
+        "source_goal_reached": false,
+        "room_queue_complete": true,
+        "complete": true,
+        "max_streams_per_blv": 2,
+        "total_explicit_blv_rooms": 0,
+        "pending_room_keys": [],
+        "room_progress": {
+          "__base__": {
+            "key": "__base__",
+            "url": "https://socolivell.tv/truc-tiep/labasa-fc-vs-ba-luc-0830-ngay-01-08-2026/",
+            "blv": "",
+            "blv_id": "",
+            "status": "success",
+            "attempts": 1,
+            "attempts_total": 1,
+            "ever_attempted": true,
+            "valid_stream_ever_found": true,
+            "needs_token_refresh": false,
+            "completion_reason": "valid_stream",
+            "rate_limit_hits": 0,
+            "last_http_status": 200,
+            "last_stream_count": 1,
+            "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
+          }
+        }
+      },
+      "errors": [],
+      "match_name": "Labasa FC vs Ba",
+      "scheduled_at": "2026-08-01T08:30:00+07:00",
+      "room_progress": {
+        "__base__": {
+          "key": "__base__",
+          "url": "https://socolivell.tv/truc-tiep/labasa-fc-vs-ba-luc-0830-ngay-01-08-2026/",
+          "blv": "",
+          "blv_id": "",
+          "status": "success",
+          "attempts": 1,
+          "attempts_total": 1,
+          "ever_attempted": true,
+          "valid_stream_ever_found": true,
+          "needs_token_refresh": false,
+          "completion_reason": "valid_stream",
+          "rate_limit_hits": 0,
+          "last_http_status": 200,
+          "last_stream_count": 1,
+          "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
+        }
+      },
+      "run_attempted_room_keys": [
+        "__base__"
+      ],
+      "run_rate_limited_room_keys": [],
+      "run_completed_room_keys": [
+        "__base__"
+      ],
+      "run_global_budget_used": 2
     },
     {
       "base_url": "https://socolivell.tv/truc-tiep/cd-arabe-unido-vs-alianza-fc-pan-luc-0830-ngay-01-08-2026/",
@@ -6799,6 +6575,250 @@
           "last_stream_count": 1,
           "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
         }
+      }
+    },
+    {
+      "base_url": "https://socolivell.tv/truc-tiep/ventura-county-fc-vs-north-texas-sc-luc-0900-ngay-01-08-2026/",
+      "raw_title": "Ventura County FC vs North Texas SC",
+      "home_team": "Ventura County FC",
+      "away_team": "North Texas SC",
+      "home_logo": "https://imgts.sportpulseapiz.com/football/team/ednm9whekxzryox/image/small",
+      "away_logo": "https://imgts.sportpulseapiz.com/football/team/965mkyh30zzr1ge/image/small",
+      "time_text": "09:00",
+      "date_text": "01/08",
+      "status": "",
+      "card_text": "MLS NEXT PRO 09:00 - 01.08 Ventura County FC North Texas SC 1 - 1 0 - 1 1 - 3 0.80 0/0.5 1.00 0.80 3 1.00",
+      "rooms": [
+        {
+          "url": "https://socolivell.tv/truc-tiep/ventura-county-fc-vs-north-texas-sc-luc-0900-ngay-01-08-2026/",
+          "blv": "",
+          "blv_id": ""
+        }
+      ],
+      "streams": [
+        {
+          "url": "https://live1.streambylivepulse.com/live/channel5.flv?wsSecret=f030242c12d4cab6839f11ee6061f32d&wsABSTime=1785587496",
+          "queue_room_key": "__base__",
+          "room_url": "https://socolivell.tv/truc-tiep/ventura-county-fc-vs-north-texas-sc-luc-0900-ngay-01-08-2026/",
+          "blv": "Nguồn phụ 1",
+          "blv_id": "",
+          "source_id": "",
+          "source_provenance": [
+            "cdp/request",
+            "cdp/response",
+            "harvest-final",
+            "harvest-round-1",
+            "harvest-round-2",
+            "harvest-round-3",
+            "harvest-round-4",
+            "harvest-round-5",
+            "harvest-round-6",
+            "harvest-round-7",
+            "harvest-round-8",
+            "harvest-round-9",
+            "request/fetch",
+            "response/403"
+          ],
+          "playback_referer": "",
+          "playback_origin": "",
+          "playback_user_agent": "",
+          "api_player_endpoint": "",
+          "api_source_mode": "",
+          "source_confidence": "network",
+          "mapping_mode": "stream-source-id",
+          "discovered_from_room_url": "https://socolivell.tv/truc-tiep/ventura-county-fc-vs-north-texas-sc-luc-0900-ngay-01-08-2026/",
+          "discovered_from_blv": "URL tổng",
+          "discovered_at": "2026-08-01T07:31:43.679807+07:00",
+          "valid_until": "",
+          "is_expired": false
+        }
+      ],
+      "room_results": [
+        {
+          "url": "https://socolivell.tv/truc-tiep/ventura-county-fc-vs-north-texas-sc-luc-0900-ngay-01-08-2026/",
+          "blv": "",
+          "blv_id": "",
+          "streams": [
+            "https://live1.streambylivepulse.com/live/channel5.flv?wsSecret=f030242c12d4cab6839f11ee6061f32d&wsABSTime=1785587496"
+          ],
+          "stream_sources": {
+            "https://live1.streambylivepulse.com/live/channel5.flv?wsSecret=f030242c12d4cab6839f11ee6061f32d&wsABSTime=1785587496": [
+              "cdp/request",
+              "cdp/response",
+              "harvest-final",
+              "harvest-round-1",
+              "harvest-round-2",
+              "harvest-round-3",
+              "harvest-round-4",
+              "harvest-round-5",
+              "harvest-round-6",
+              "harvest-round-7",
+              "harvest-round-8",
+              "harvest-round-9",
+              "request/fetch",
+              "response/403"
+            ]
+          },
+          "stream_headers": {},
+          "stream_first_seen": [
+            "https://live1.streambylivepulse.com/live/channel5.flv?wsSecret=f030242c12d4cab6839f11ee6061f32d&wsABSTime=1785587496"
+          ],
+          "discovered_blv_ids": [],
+          "diagnostics": {
+            "url": "https://socolivell.tv/truc-tiep/ventura-county-fc-vs-north-texas-sc-luc-0900-ngay-01-08-2026/",
+            "title": "Trực tiếp Ventura County FC vs North Texas SC full lúc 09:00, ngày 01/08",
+            "h1": "Xem trực tiếp trận đấu Ventura County FC vs North Texas SC full lúc 09:00, ngày 01/08/2026",
+            "ready_state": "complete",
+            "visibility_state": "visible",
+            "hidden": false,
+            "video_count": 0,
+            "iframe_count": 5,
+            "body_sample": "WC 2026 Lịch Thi Đấu Xem Lại Video Highlight Tỷ Lệ Kèo BXH KQBD Tips Tin Tức Livescore Tuyển Dụng Top Nhà Cái Cược 8xbet WC 2026 Lịch Thi Đấu Xem Lại Video Highlight Tỷ Lệ Kèo BXH KQBD Tips Tin Tức Livescore Tuyển Dụng Top nhà cái Xem trực tiếp trận đấu Ventura County FC vs North Texas SC full lúc 09:00, ngày 01/08/2026 Phát sóng link trực tuyến Ventura County FC vs North Texas SC hôm nay tại giải đấu MLS Next Pro _ _ _ _ _ _ Ventura County FC North Texas SC Theo bạn thì trận này tài hay xỉu? Tài 0% Xỉu 0% Theo bạn thì trận này đội nào sẽ thắng? Chủ nhà 0% Hòa 0% Đội Khách 0% Anh Em Muốn Tham Gia Đặt Cược Thì Click Vào Quảng Cáo Của 8XBET Để Đăng Ký Đặt Cược Tất Cả Các Trận Đấu Trên Toàn Thế Giới. Nếu anh em gặp tình trạng không vào được web, hãy cài VPN 1.1.1.1 để truy cập ổn định hơn nhé . Châu Á Châu Âu Tài xỉu Phạt góc Chọn nhà cái HIỆP 1 FT Châu Á HIỆP 1 FT Châu Á - - - 0.80 0/0.5 1.00 Châu Âu HIỆP 1 FT Châu Âu - - - 2.05 3.70 2.88 Tài xỉu HIỆP 1 FT Tài xỉu - - - 0.80 3 1.00 SỚM FT Phạt góc HIỆP 1 FT Phạt góc - - - 0.875 9.5 0.925 Trực tiếp Mô phỏng CHIA SẺ Phát sóng trận đấu Ventura County FC vs North Texas SC full HD lúc 09:00, ngày 01/08/2026 MLS Next Pro HD 1 CHIA SẺ Thông",
+            "harvest_rounds": 9,
+            "harvest_window_seconds": 7.01,
+            "main_status": 200,
+            "harvested_stream_count": 1,
+            "harvested_blv_ids": [],
+            "scan_mode": "chromium-fallback",
+            "elapsed_seconds": 9.091
+          },
+          "api_probe": {
+            "enabled": true,
+            "room_status": 200,
+            "active_index": 0,
+            "sources_found": 0,
+            "sources_tried": 0,
+            "valid_stream_count": 0,
+            "source_results": [],
+            "fallback_reason": "list_stream_not_found",
+            "elapsed_seconds": 1.053,
+            "room_content_type": "text/html; charset=UTF-8",
+            "room_elapsed_seconds": 1.047,
+            "room_error": ""
+          },
+          "http_probe": {
+            "api_first": {
+              "enabled": true,
+              "room_status": 200,
+              "active_index": 0,
+              "sources_found": 0,
+              "sources_tried": 0,
+              "valid_stream_count": 0,
+              "source_results": [],
+              "fallback_reason": "list_stream_not_found",
+              "elapsed_seconds": 1.053,
+              "room_content_type": "text/html; charset=UTF-8",
+              "room_elapsed_seconds": 1.047,
+              "room_error": ""
+            },
+            "legacy_http": {
+              "enabled": false,
+              "status": null,
+              "elapsed_seconds": 0.0,
+              "error": ""
+            }
+          },
+          "errors": [
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED"
+          ],
+          "failed_requests": [
+            "stylesheet https://fonts.googleapis.com/css2?family=Bangers&family=Oswald:wght@400;500;700&family=Raleway:wght@400;500;700&family=Roboto+Condensed:wght@300;400;700&display=swap | net::ERR_FAILED",
+            "stylesheet https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0 | net::ERR_FAILED",
+            "stylesheet https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css | net::ERR_FAILED",
+            "stylesheet https://socolivell.tv/wp-content/plugins/widget-options/assets/css/widget-options.css?ver=4.0.6.1 | net::ERR_FAILED",
+            "stylesheet https://socolivell.tv/wp-content/plugins/wp-pagenavi/pagenavi-css.css?ver=2.70 | net::ERR_FAILED",
+            "stylesheet https://socolivell.tv/wp-content/themes/bongda/dist/styles/bootstrap.min.css?ver=1745376853 | net::ERR_FAILED",
+            "stylesheet https://socolivell.tv/wp-content/themes/bongda/dist/styles/main.css?ver=1781184173 | net::ERR_FAILED",
+            "stylesheet https://socolivell.tv/wp-content/themes/bongda/dist/styles/pages/single-live.css?ver=1784627923 | net::ERR_FAILED",
+            "image https://socolivell.tv/wp-content/themes/bongda/dist/images/logo-socolive-tv-official-v2.png | net::ERR_FAILED",
+            "image https://socolivell.tv/wp-content/themes/bongda/dist/images/wc-2026/menu-wc.svg | net::ERR_FAILED",
+            "image https://socolivell.tv/wp-content/themes/bongda/dist/images/closemenu.png | net::ERR_FAILED",
+            "image https://imgts.sportpulseapiz.com/football/team/ednm9whekxzryox/image/small | net::ERR_FAILED",
+            "stylesheet https://socolivell.tv/wp-content/plugins/api-sport/public/css/match_detail.css?id=0671c88cfbad4335394b897262a0d662 | net::ERR_FAILED",
+            "image https://imgts.sportpulseapiz.com/football/team/965mkyh30zzr1ge/image/small | net::ERR_FAILED",
+            "image https://socolivell.tv/wp-content/themes/bongda/dist/images/company/21-1.png | net::ERR_FAILED"
+          ],
+          "http_errors": [
+            "403 https://live1.streambylivepulse.com/live/channel5.flv?wsSecret=f030242c12d4cab6839f11ee6061f32d&wsABSTime=1785587496",
+            "403 https://live1.streambylivepulse.com/live/channel5.flv?wsSecret=f030242c12d4cab6839f11ee6061f32d&wsABSTime=1785587496",
+            "403 https://live1.streambylivepulse.com/live/channel5.flv?wsSecret=f030242c12d4cab6839f11ee6061f32d&wsABSTime=1785587496",
+            "403 https://live1.streambylivepulse.com/live/channel5.flv?wsSecret=f030242c12d4cab6839f11ee6061f32d&wsABSTime=1785587496",
+            "403 https://live1.streambylivepulse.com/live/channel5.flv?wsSecret=f030242c12d4cab6839f11ee6061f32d&wsABSTime=1785587496",
+            "403 https://live1.streambylivepulse.com/live/channel5.flv?wsSecret=f030242c12d4cab6839f11ee6061f32d&wsABSTime=1785587496"
+          ]
+        }
+      ],
+      "attempted_room_ids": [],
+      "coverage": {
+        "found_streams": 1,
+        "found_blv_ids": [],
+        "goal": 2,
+        "source_goal_reached": false,
+        "room_queue_complete": true,
+        "complete": true,
+        "max_streams_per_blv": 2,
+        "total_explicit_blv_rooms": 0,
+        "pending_room_keys": [],
+        "room_progress": {
+          "__base__": {
+            "key": "__base__",
+            "url": "https://socolivell.tv/truc-tiep/ventura-county-fc-vs-north-texas-sc-luc-0900-ngay-01-08-2026/",
+            "blv": "",
+            "blv_id": "",
+            "status": "success",
+            "attempts": 1,
+            "attempts_total": 1,
+            "ever_attempted": true,
+            "valid_stream_ever_found": true,
+            "needs_token_refresh": false,
+            "completion_reason": "valid_stream",
+            "rate_limit_hits": 0,
+            "last_http_status": 200,
+            "last_stream_count": 1,
+            "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
+          }
+        }
+      },
+      "errors": [],
+      "match_name": "Ventura County FC vs North Texas SC",
+      "scheduled_at": "2026-08-01T09:00:00+07:00",
+      "room_progress": {
+        "__base__": {
+          "key": "__base__",
+          "url": "https://socolivell.tv/truc-tiep/ventura-county-fc-vs-north-texas-sc-luc-0900-ngay-01-08-2026/",
+          "blv": "",
+          "blv_id": "",
+          "status": "success",
+          "attempts": 1,
+          "attempts_total": 1,
+          "ever_attempted": true,
+          "valid_stream_ever_found": true,
+          "needs_token_refresh": false,
+          "completion_reason": "valid_stream",
+          "rate_limit_hits": 0,
+          "last_http_status": 200,
+          "last_stream_count": 1,
+          "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
+        }
       },
       "run_attempted_room_keys": [
         "__base__"
@@ -6807,7 +6827,500 @@
       "run_completed_room_keys": [
         "__base__"
       ],
-      "run_global_budget_used": 1
+      "run_global_budget_used": 3
+    },
+    {
+      "base_url": "https://socolivell.tv/truc-tiep/los-angeles-fc-ii-vs-colorado-rapids-ii-luc-0900-ngay-01-08-2026/",
+      "raw_title": "Los Angeles FC II vs Colorado Rapids II",
+      "home_team": "Los Angeles FC II",
+      "away_team": "Colorado Rapids II",
+      "home_logo": "https://imgts.sportpulseapiz.com/football/team/4wyrn4hv22vq86p/image/small",
+      "away_logo": "https://imgts.sportpulseapiz.com/football/team/3glrw7hzwzkqdyj/image/small",
+      "time_text": "09:00",
+      "date_text": "01/08",
+      "status": "",
+      "card_text": "MLS NEXT PRO 09:00 - 01.08 Los Angeles FC II Colorado Rapids II 3 - 2 3 - 2 1 - 1 0.98 1 0.83 0.98 3/3.5 0.83",
+      "rooms": [
+        {
+          "url": "https://socolivell.tv/truc-tiep/los-angeles-fc-ii-vs-colorado-rapids-ii-luc-0900-ngay-01-08-2026/",
+          "blv": "",
+          "blv_id": ""
+        }
+      ],
+      "streams": [
+        {
+          "url": "https://live1.streambylivepulse.com/live/channel4.flv?wsSecret=026e523e6322998be9dab89e8a15a4f8&wsABSTime=1785587507",
+          "queue_room_key": "__base__",
+          "room_url": "https://socolivell.tv/truc-tiep/los-angeles-fc-ii-vs-colorado-rapids-ii-luc-0900-ngay-01-08-2026/",
+          "blv": "Nguồn phụ 1",
+          "blv_id": "",
+          "source_id": "",
+          "source_provenance": [
+            "cdp/request",
+            "cdp/response",
+            "harvest-final",
+            "harvest-round-1",
+            "harvest-round-2",
+            "harvest-round-3",
+            "harvest-round-4",
+            "harvest-round-5",
+            "harvest-round-6",
+            "harvest-round-7",
+            "harvest-round-8",
+            "harvest-round-9",
+            "request/fetch",
+            "response/403"
+          ],
+          "playback_referer": "",
+          "playback_origin": "",
+          "playback_user_agent": "",
+          "api_player_endpoint": "",
+          "api_source_mode": "",
+          "source_confidence": "network",
+          "mapping_mode": "stream-source-id",
+          "discovered_from_room_url": "https://socolivell.tv/truc-tiep/los-angeles-fc-ii-vs-colorado-rapids-ii-luc-0900-ngay-01-08-2026/",
+          "discovered_from_blv": "URL tổng",
+          "discovered_at": "2026-08-01T07:31:55.195199+07:00",
+          "valid_until": "",
+          "is_expired": false
+        }
+      ],
+      "room_results": [
+        {
+          "url": "https://socolivell.tv/truc-tiep/los-angeles-fc-ii-vs-colorado-rapids-ii-luc-0900-ngay-01-08-2026/",
+          "blv": "",
+          "blv_id": "",
+          "streams": [
+            "https://live1.streambylivepulse.com/live/channel4.flv?wsSecret=026e523e6322998be9dab89e8a15a4f8&wsABSTime=1785587507"
+          ],
+          "stream_sources": {
+            "https://live1.streambylivepulse.com/live/channel4.flv?wsSecret=026e523e6322998be9dab89e8a15a4f8&wsABSTime=1785587507": [
+              "cdp/request",
+              "cdp/response",
+              "harvest-final",
+              "harvest-round-1",
+              "harvest-round-2",
+              "harvest-round-3",
+              "harvest-round-4",
+              "harvest-round-5",
+              "harvest-round-6",
+              "harvest-round-7",
+              "harvest-round-8",
+              "harvest-round-9",
+              "request/fetch",
+              "response/403"
+            ]
+          },
+          "stream_headers": {},
+          "stream_first_seen": [
+            "https://live1.streambylivepulse.com/live/channel4.flv?wsSecret=026e523e6322998be9dab89e8a15a4f8&wsABSTime=1785587507"
+          ],
+          "discovered_blv_ids": [],
+          "diagnostics": {
+            "url": "https://socolivell.tv/truc-tiep/los-angeles-fc-ii-vs-colorado-rapids-ii-luc-0900-ngay-01-08-2026/",
+            "title": "Trực tiếp Los Angeles FC II vs Colorado Rapids II full lúc 09:00, ngày 01/08",
+            "h1": "Xem trực tiếp trận đấu Los Angeles FC II vs Colorado Rapids II full lúc 09:00, ngày 01/08/2026",
+            "ready_state": "complete",
+            "visibility_state": "visible",
+            "hidden": false,
+            "video_count": 0,
+            "iframe_count": 5,
+            "body_sample": "WC 2026 Lịch Thi Đấu Xem Lại Video Highlight Tỷ Lệ Kèo BXH KQBD Tips Tin Tức Livescore Tuyển Dụng Top Nhà Cái Cược 8xbet WC 2026 Lịch Thi Đấu Xem Lại Video Highlight Tỷ Lệ Kèo BXH KQBD Tips Tin Tức Livescore Tuyển Dụng Top nhà cái Xem trực tiếp trận đấu Los Angeles FC II vs Colorado Rapids II full lúc 09:00, ngày 01/08/2026 Phát sóng link trực tuyến Los Angeles FC II vs Colorado Rapids II hôm nay tại giải đấu MLS Next Pro _ _ _ _ _ _ Los Angeles FC II Colorado Rapids II Theo bạn thì trận này tài hay xỉu? Tài 0% Xỉu 0% Theo bạn thì trận này đội nào sẽ thắng? Chủ nhà 0% Hòa 0% Đội Khách 0% Anh Em Muốn Tham Gia Đặt Cược Thì Click Vào Quảng Cáo Của 8XBET Để Đăng Ký Đặt Cược Tất Cả Các Trận Đấu Trên Toàn Thế Giới. Nếu anh em gặp tình trạng không vào được web, hãy cài VPN 1.1.1.1 để truy cập ổn định hơn nhé . Châu Á Châu Âu Tài xỉu Phạt góc Chọn nhà cái HIỆP 1 FT Châu Á HIỆP 1 FT Châu Á - - - 0.98 1 0.83 Châu Âu HIỆP 1 FT Châu Âu - - - 1.60 3.80 4.33 Tài xỉu HIỆP 1 FT Tài xỉu - - - 0.98 3/3.5 0.83 SỚM FT Phạt góc HIỆP 1 FT Phạt góc - - - 0.8 8.5 1 Trực tiếp Mô phỏng CHIA SẺ Phát sóng trận đấu Los Angeles FC II vs Colorado Rapids II full HD lúc 09:00, ngày 01/08/2026 MLS Next Pro HD 1 CHI",
+            "harvest_rounds": 9,
+            "harvest_window_seconds": 6.981,
+            "main_status": 200,
+            "harvested_stream_count": 1,
+            "harvested_blv_ids": [],
+            "scan_mode": "chromium-fallback",
+            "elapsed_seconds": 9.496
+          },
+          "api_probe": {
+            "enabled": true,
+            "room_status": 200,
+            "active_index": 0,
+            "sources_found": 0,
+            "sources_tried": 0,
+            "valid_stream_count": 0,
+            "source_results": [],
+            "fallback_reason": "list_stream_not_found",
+            "elapsed_seconds": 1.423,
+            "room_content_type": "text/html; charset=UTF-8",
+            "room_elapsed_seconds": 1.418,
+            "room_error": ""
+          },
+          "http_probe": {
+            "api_first": {
+              "enabled": true,
+              "room_status": 200,
+              "active_index": 0,
+              "sources_found": 0,
+              "sources_tried": 0,
+              "valid_stream_count": 0,
+              "source_results": [],
+              "fallback_reason": "list_stream_not_found",
+              "elapsed_seconds": 1.423,
+              "room_content_type": "text/html; charset=UTF-8",
+              "room_elapsed_seconds": 1.418,
+              "room_error": ""
+            },
+            "legacy_http": {
+              "enabled": false,
+              "status": null,
+              "elapsed_seconds": 0.0,
+              "error": ""
+            }
+          },
+          "errors": [
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED"
+          ],
+          "failed_requests": [
+            "stylesheet https://fonts.googleapis.com/css2?family=Bangers&family=Oswald:wght@400;500;700&family=Raleway:wght@400;500;700&family=Roboto+Condensed:wght@300;400;700&display=swap | net::ERR_FAILED",
+            "stylesheet https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0 | net::ERR_FAILED",
+            "stylesheet https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css | net::ERR_FAILED",
+            "stylesheet https://socolivell.tv/wp-content/plugins/widget-options/assets/css/widget-options.css?ver=4.0.6.1 | net::ERR_FAILED",
+            "stylesheet https://socolivell.tv/wp-content/plugins/wp-pagenavi/pagenavi-css.css?ver=2.70 | net::ERR_FAILED",
+            "stylesheet https://socolivell.tv/wp-content/themes/bongda/dist/styles/bootstrap.min.css?ver=1745376853 | net::ERR_FAILED",
+            "stylesheet https://socolivell.tv/wp-content/themes/bongda/dist/styles/main.css?ver=1781184173 | net::ERR_FAILED",
+            "stylesheet https://socolivell.tv/wp-content/themes/bongda/dist/styles/pages/single-live.css?ver=1784627923 | net::ERR_FAILED",
+            "image https://socolivell.tv/wp-content/themes/bongda/dist/images/logo-socolive-tv-official-v2.png | net::ERR_FAILED",
+            "image https://socolivell.tv/wp-content/themes/bongda/dist/images/wc-2026/menu-wc.svg | net::ERR_FAILED",
+            "image https://socolivell.tv/wp-content/themes/bongda/dist/images/closemenu.png | net::ERR_FAILED",
+            "image https://imgts.sportpulseapiz.com/football/team/4wyrn4hv22vq86p/image/small | net::ERR_FAILED",
+            "stylesheet https://socolivell.tv/wp-content/plugins/api-sport/public/css/match_detail.css?id=0671c88cfbad4335394b897262a0d662 | net::ERR_FAILED",
+            "image https://imgts.sportpulseapiz.com/football/team/3glrw7hzwzkqdyj/image/small | net::ERR_FAILED",
+            "image https://socolivell.tv/wp-content/themes/bongda/dist/images/company/21-1.png | net::ERR_FAILED"
+          ],
+          "http_errors": [
+            "403 https://live1.streambylivepulse.com/live/channel4.flv?wsSecret=026e523e6322998be9dab89e8a15a4f8&wsABSTime=1785587507",
+            "403 https://live1.streambylivepulse.com/live/channel4.flv?wsSecret=026e523e6322998be9dab89e8a15a4f8&wsABSTime=1785587507",
+            "403 https://live1.streambylivepulse.com/live/channel4.flv?wsSecret=026e523e6322998be9dab89e8a15a4f8&wsABSTime=1785587507",
+            "403 https://live1.streambylivepulse.com/live/channel4.flv?wsSecret=026e523e6322998be9dab89e8a15a4f8&wsABSTime=1785587507",
+            "403 https://live1.streambylivepulse.com/live/channel4.flv?wsSecret=026e523e6322998be9dab89e8a15a4f8&wsABSTime=1785587507",
+            "403 https://live1.streambylivepulse.com/live/channel4.flv?wsSecret=026e523e6322998be9dab89e8a15a4f8&wsABSTime=1785587507"
+          ]
+        }
+      ],
+      "attempted_room_ids": [],
+      "coverage": {
+        "found_streams": 1,
+        "found_blv_ids": [],
+        "goal": 2,
+        "source_goal_reached": false,
+        "room_queue_complete": true,
+        "complete": true,
+        "max_streams_per_blv": 2,
+        "total_explicit_blv_rooms": 0,
+        "pending_room_keys": [],
+        "room_progress": {
+          "__base__": {
+            "key": "__base__",
+            "url": "https://socolivell.tv/truc-tiep/los-angeles-fc-ii-vs-colorado-rapids-ii-luc-0900-ngay-01-08-2026/",
+            "blv": "",
+            "blv_id": "",
+            "status": "success",
+            "attempts": 1,
+            "attempts_total": 1,
+            "ever_attempted": true,
+            "valid_stream_ever_found": true,
+            "needs_token_refresh": false,
+            "completion_reason": "valid_stream",
+            "rate_limit_hits": 0,
+            "last_http_status": 200,
+            "last_stream_count": 1,
+            "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
+          }
+        }
+      },
+      "errors": [],
+      "match_name": "Los Angeles FC II vs Colorado Rapids II",
+      "scheduled_at": "2026-08-01T09:00:00+07:00",
+      "room_progress": {
+        "__base__": {
+          "key": "__base__",
+          "url": "https://socolivell.tv/truc-tiep/los-angeles-fc-ii-vs-colorado-rapids-ii-luc-0900-ngay-01-08-2026/",
+          "blv": "",
+          "blv_id": "",
+          "status": "success",
+          "attempts": 1,
+          "attempts_total": 1,
+          "ever_attempted": true,
+          "valid_stream_ever_found": true,
+          "needs_token_refresh": false,
+          "completion_reason": "valid_stream",
+          "rate_limit_hits": 0,
+          "last_http_status": 200,
+          "last_stream_count": 1,
+          "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
+        }
+      },
+      "run_attempted_room_keys": [
+        "__base__"
+      ],
+      "run_rate_limited_room_keys": [],
+      "run_completed_room_keys": [
+        "__base__"
+      ],
+      "run_global_budget_used": 4
+    },
+    {
+      "base_url": "https://socolivell.tv/truc-tiep/pacific-fc-vs-supra-du-quebec-luc-0900-ngay-01-08-2026/",
+      "raw_title": "Pacific FC vs Supra Du Quebec",
+      "home_team": "Pacific FC",
+      "away_team": "Supra Du Quebec",
+      "home_logo": "https://imgts.sportpulseapiz.com/football/team/dj2ryohj33dq1zp/image/small",
+      "away_logo": "https://imgts.sportpulseapiz.com/football/team/y0or5jh1d8lqwzv/image/small",
+      "time_text": "09:00",
+      "date_text": "01/08",
+      "status": "",
+      "card_text": "NGOẠI HẠNG CANADA 09:00 - 01.08 Pacific FC Supra Du Quebec 1 - 1 2 - 3 TAGE 0.78 0/0.5 1.03 0.83 3 0.98",
+      "rooms": [
+        {
+          "url": "https://socolivell.tv/truc-tiep/pacific-fc-vs-supra-du-quebec-luc-0900-ngay-01-08-2026/",
+          "blv": "TAGE",
+          "blv_id": ""
+        }
+      ],
+      "streams": [
+        {
+          "url": "https://live2.streambylivepulse.com/live/channel27.flv",
+          "queue_room_key": "__base__",
+          "room_url": "https://socolivell.tv/truc-tiep/pacific-fc-vs-supra-du-quebec-luc-0900-ngay-01-08-2026/",
+          "blv": "Nguồn phụ 1",
+          "blv_id": "",
+          "source_id": "",
+          "source_provenance": [
+            "cdp/request",
+            "harvest-final",
+            "harvest-round-1",
+            "harvest-round-2",
+            "harvest-round-3",
+            "harvest-round-4",
+            "harvest-round-5",
+            "harvest-round-6",
+            "harvest-round-7",
+            "harvest-round-8",
+            "harvest-round-9",
+            "request/fetch"
+          ],
+          "playback_referer": "",
+          "playback_origin": "",
+          "playback_user_agent": "",
+          "api_player_endpoint": "",
+          "api_source_mode": "",
+          "source_confidence": "network",
+          "mapping_mode": "stream-source-id",
+          "discovered_from_room_url": "https://socolivell.tv/truc-tiep/pacific-fc-vs-supra-du-quebec-luc-0900-ngay-01-08-2026/",
+          "discovered_from_blv": "TAGE",
+          "discovered_at": "2026-08-01T07:32:06.792862+07:00",
+          "valid_until": "",
+          "is_expired": false
+        }
+      ],
+      "room_results": [
+        {
+          "url": "https://socolivell.tv/truc-tiep/pacific-fc-vs-supra-du-quebec-luc-0900-ngay-01-08-2026/",
+          "blv": "TAGE",
+          "blv_id": "",
+          "streams": [
+            "https://live2.streambylivepulse.com/live/channel27.flv"
+          ],
+          "stream_sources": {
+            "https://live2.streambylivepulse.com/live/channel27.flv": [
+              "cdp/request",
+              "harvest-final",
+              "harvest-round-1",
+              "harvest-round-2",
+              "harvest-round-3",
+              "harvest-round-4",
+              "harvest-round-5",
+              "harvest-round-6",
+              "harvest-round-7",
+              "harvest-round-8",
+              "harvest-round-9",
+              "request/fetch"
+            ]
+          },
+          "stream_headers": {},
+          "stream_first_seen": [
+            "https://live2.streambylivepulse.com/live/channel27.flv"
+          ],
+          "discovered_blv_ids": [],
+          "diagnostics": {
+            "url": "https://socolivell.tv/truc-tiep/pacific-fc-vs-supra-du-quebec-luc-0900-ngay-01-08-2026/",
+            "title": "Trực tiếp Pacific FC vs Supra Du Quebec full lúc 09:00, ngày 01/08",
+            "h1": "Xem trực tiếp trận đấu Pacific FC vs Supra Du Quebec full lúc 09:00, ngày 01/08/2026",
+            "ready_state": "complete",
+            "visibility_state": "visible",
+            "hidden": false,
+            "video_count": 0,
+            "iframe_count": 5,
+            "body_sample": "WC 2026 Lịch Thi Đấu Xem Lại Video Highlight Tỷ Lệ Kèo BXH KQBD Tips Tin Tức Livescore Tuyển Dụng Top Nhà Cái Cược 8xbet WC 2026 Lịch Thi Đấu Xem Lại Video Highlight Tỷ Lệ Kèo BXH KQBD Tips Tin Tức Livescore Tuyển Dụng Top nhà cái Xem trực tiếp trận đấu Pacific FC vs Supra Du Quebec full lúc 09:00, ngày 01/08/2026 Phát sóng link trực tuyến Pacific FC vs Supra Du Quebec hôm nay tại giải đấu Ngoại Hạng Canada _ _ _ _ _ _ Pacific FC Supra Du Quebec Theo bạn thì trận này tài hay xỉu? Tài 0% Xỉu 0% Theo bạn thì trận này đội nào sẽ thắng? Chủ nhà 0% Hòa 0% Đội Khách 0% Anh Em Muốn Tham Gia Đặt Cược Thì Click Vào Quảng Cáo Của 8XBET Để Đăng Ký Đặt Cược Tất Cả Các Trận Đấu Trên Toàn Thế Giới. Nếu anh em gặp tình trạng không vào được web, hãy cài VPN 1.1.1.1 để truy cập ổn định hơn nhé . Châu Á Châu Âu Tài xỉu Phạt góc Chọn nhà cái HIỆP 1 FT Châu Á HIỆP 1 FT Châu Á - - - 0.78 0/0.5 1.03 Châu Âu HIỆP 1 FT Châu Âu - - - 2.70 3.40 2.20 Tài xỉu HIỆP 1 FT Tài xỉu - - - 0.83 3 0.98 SỚM FT Phạt góc HIỆP 1 FT Phạt góc - - - - - - Trực tiếp Mô phỏng CHIA SẺ Phát sóng trận đấu Pacific FC vs Supra Du Quebec full HD lúc 09:00, ngày 01/08/2026 Ngoại Hạng Canada TAGE HD TAGE CHIA SẺ Thông số Diễn biến Độ",
+            "harvest_rounds": 9,
+            "harvest_window_seconds": 7.024,
+            "main_status": 200,
+            "harvested_stream_count": 1,
+            "harvested_blv_ids": [],
+            "scan_mode": "chromium-fallback",
+            "elapsed_seconds": 9.575
+          },
+          "api_probe": {
+            "enabled": true,
+            "room_status": 200,
+            "active_index": 0,
+            "sources_found": 0,
+            "sources_tried": 0,
+            "valid_stream_count": 0,
+            "source_results": [],
+            "fallback_reason": "list_stream_not_found",
+            "elapsed_seconds": 1.46,
+            "room_content_type": "text/html; charset=UTF-8",
+            "room_elapsed_seconds": 1.455,
+            "room_error": ""
+          },
+          "http_probe": {
+            "api_first": {
+              "enabled": true,
+              "room_status": 200,
+              "active_index": 0,
+              "sources_found": 0,
+              "sources_tried": 0,
+              "valid_stream_count": 0,
+              "source_results": [],
+              "fallback_reason": "list_stream_not_found",
+              "elapsed_seconds": 1.46,
+              "room_content_type": "text/html; charset=UTF-8",
+              "room_elapsed_seconds": 1.455,
+              "room_error": ""
+            },
+            "legacy_http": {
+              "enabled": false,
+              "status": null,
+              "elapsed_seconds": 0.0,
+              "error": ""
+            }
+          },
+          "errors": [
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED",
+            "console/error: Failed to load resource: net::ERR_FAILED"
+          ],
+          "failed_requests": [
+            "stylesheet https://fonts.googleapis.com/css2?family=Bangers&family=Oswald:wght@400;500;700&family=Raleway:wght@400;500;700&family=Roboto+Condensed:wght@300;400;700&display=swap | net::ERR_FAILED",
+            "stylesheet https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0 | net::ERR_FAILED",
+            "stylesheet https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css | net::ERR_FAILED",
+            "stylesheet https://socolivell.tv/wp-content/plugins/widget-options/assets/css/widget-options.css?ver=4.0.6.1 | net::ERR_FAILED",
+            "stylesheet https://socolivell.tv/wp-content/plugins/wp-pagenavi/pagenavi-css.css?ver=2.70 | net::ERR_FAILED",
+            "stylesheet https://socolivell.tv/wp-content/themes/bongda/dist/styles/bootstrap.min.css?ver=1745376853 | net::ERR_FAILED",
+            "stylesheet https://socolivell.tv/wp-content/themes/bongda/dist/styles/main.css?ver=1781184173 | net::ERR_FAILED",
+            "stylesheet https://socolivell.tv/wp-content/themes/bongda/dist/styles/pages/single-live.css?ver=1784627923 | net::ERR_FAILED",
+            "image https://socolivell.tv/wp-content/themes/bongda/dist/images/logo-socolive-tv-official-v2.png | net::ERR_FAILED",
+            "image https://socolivell.tv/wp-content/themes/bongda/dist/images/wc-2026/menu-wc.svg | net::ERR_FAILED",
+            "image https://socolivell.tv/wp-content/themes/bongda/dist/images/closemenu.png | net::ERR_FAILED",
+            "image https://imgts.sportpulseapiz.com/football/team/dj2ryohj33dq1zp/image/small | net::ERR_FAILED",
+            "stylesheet https://socolivell.tv/wp-content/plugins/api-sport/public/css/match_detail.css?id=0671c88cfbad4335394b897262a0d662 | net::ERR_FAILED",
+            "image https://imgts.sportpulseapiz.com/football/team/y0or5jh1d8lqwzv/image/small | net::ERR_FAILED",
+            "image https://socolivell.tv/wp-content/themes/bongda/dist/images/company/21-1.png | net::ERR_FAILED"
+          ],
+          "http_errors": []
+        }
+      ],
+      "attempted_room_ids": [],
+      "coverage": {
+        "found_streams": 1,
+        "found_blv_ids": [],
+        "goal": 2,
+        "source_goal_reached": false,
+        "room_queue_complete": true,
+        "complete": true,
+        "max_streams_per_blv": 2,
+        "total_explicit_blv_rooms": 0,
+        "pending_room_keys": [],
+        "room_progress": {
+          "__base__": {
+            "key": "__base__",
+            "url": "https://socolivell.tv/truc-tiep/pacific-fc-vs-supra-du-quebec-luc-0900-ngay-01-08-2026/",
+            "blv": "TAGE",
+            "blv_id": "",
+            "status": "success",
+            "attempts": 1,
+            "attempts_total": 1,
+            "ever_attempted": true,
+            "valid_stream_ever_found": true,
+            "needs_token_refresh": false,
+            "completion_reason": "valid_stream",
+            "rate_limit_hits": 0,
+            "last_http_status": 200,
+            "last_stream_count": 1,
+            "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
+          }
+        }
+      },
+      "errors": [],
+      "match_name": "Pacific FC vs Supra Du Quebec",
+      "scheduled_at": "2026-08-01T09:00:00+07:00",
+      "room_progress": {
+        "__base__": {
+          "key": "__base__",
+          "url": "https://socolivell.tv/truc-tiep/pacific-fc-vs-supra-du-quebec-luc-0900-ngay-01-08-2026/",
+          "blv": "TAGE",
+          "blv_id": "",
+          "status": "success",
+          "attempts": 1,
+          "attempts_total": 1,
+          "ever_attempted": true,
+          "valid_stream_ever_found": true,
+          "needs_token_refresh": false,
+          "completion_reason": "valid_stream",
+          "rate_limit_hits": 0,
+          "last_http_status": 200,
+          "last_stream_count": 1,
+          "last_error": "console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED; console/error: Failed to load resource: net::ERR_FAILED"
+        }
+      },
+      "run_attempted_room_keys": [
+        "__base__"
+      ],
+      "run_rate_limited_room_keys": [],
+      "run_completed_room_keys": [
+        "__base__"
+      ],
+      "run_global_budget_used": 5
     }
   ]
 }
